@@ -12,7 +12,6 @@
 import os
 import sys
 from datetime import datetime
-from importlib.metadata import version as metadata_version
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -48,16 +47,16 @@ master_doc = "index"
 
 # General information about the project.
 project = "BeeWare"
-copyright = f"{datetime.now().year}, Russell Keith-Magee"
+copyright = "Russell Keith-Magee"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The full version, including alpha/beta/rc tags.
-release = metadata_version("beeware")
+release = datetime.now().strftime("%Y-%m-%d")
 # The short X.Y version
-version = ".".join(release.split(".")[:2])
+version = release
 
 autoclass_content = "both"
 
