@@ -1,0 +1,2 @@
+# Docs are always built on a specific Python version; see RTD and tox config files.
+tox == 4.28.4
