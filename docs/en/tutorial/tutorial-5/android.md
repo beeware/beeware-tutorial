@@ -250,30 +250,32 @@ emulator" option, and accept the default choice for the device name
 Briefcase `run` will automatically boot the virtual device. When the
 device is booting, you will see the Android logo:
 
-<figure class="align-center">
-<img src="/tutorial/images/android/tutorial-5-booting.png" style="width:30.0%"
-alt="/tutorial/images/android/tutorial-5-booting.png" />
-<figcaption>Android virtual device booting</figcaption>
-</figure>
+![Android virtual device booting](/tutorial/images/android/tutorial-5-booting.png)
+/// caption
+
+Android virtual device booting
+
+///
 
 Once the device has finished booting, Briefcase will install your app on
 the device. You will briefly see a launcher screen:
 
-<figure class="align-center">
-<img src="/tutorial/images/android/tutorial-5-running.png" style="width:30.0%"
-alt="/tutorial/images/android/tutorial-5-running.png" />
-<figcaption>Android virtual device fully started, on the launcher
-screen</figcaption>
-</figure>
+![Android virtual device fully started, on the launcher screen](/tutorial/images/android/tutorial-5-running.png)
+/// caption
+
+Android virtual device fully started, on the launcher screen
+
+///
 
 The app will then start. You'll see a splash screen while the app starts
 up:
 
-<figure class="align-center">
-<img src="/tutorial/images/android/tutorial-5-splash.png" style="width:30.0%"
-alt="/tutorial/images/android/tutorial-5-splash.png" />
-<figcaption>App splash screen</figcaption>
-</figure>
+![App splash screen](/tutorial/images/android/tutorial-5-splash.png)
+/// caption
+
+App splash screen
+
+///
 
 /// admonition | The emulator didn't start!
 
@@ -291,11 +293,12 @@ The first time the app starts, it needs to unpack itself onto the
 device. This may take a few seconds. Once it's unpacked, you'll see the
 Android version of our desktop app:
 
-<figure class="align-center">
-<img src="/tutorial/images/android/tutorial-5-launched.png" style="width:30.0%"
-alt="/tutorial/images/android/tutorial-5-launched.png" />
-<figcaption>Demo app fully launched</figcaption>
-</figure>
+![Demo app fully launched](/tutorial/images/android/tutorial-5-launched.png)
+/// caption
+
+Demo app fully launched
+
+///
 
 If you fail to see your app launching, you may need to check your
 terminal where you ran `briefcase run` and look for any error messages.

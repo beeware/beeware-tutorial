@@ -204,25 +204,25 @@ This should open a GUI window:
 
 /// tab | macOS
 
-<figure class="align-center">
-    <img src="/tutorial/images/macOS/tutorial-1.png" alt="Hello World Tutorial 1 window, on macOS" />
-</figure>
+![Hello World Tutorial 1 window, on macOS](/tutorial/images/macOS/tutorial-1.png)
+/// caption
+///
 
 ///
 
 /// tab | Linux
 
-<figure class="align-center">
-    <img src="/tutorial/images/linux/tutorial-1.png" alt="Hello World Tutorial 1 window, on Linux" />
-</figure>
+![Hello World Tutorial 1 window, on Linux](/tutorial/images/linux/tutorial-1.png)
+/// caption
+///
 
 ///
 
 /// tab | Windows
 
-<figure class="align-center">
-    <img src="/tutorial/images/windows/tutorial-1.png" alt="Hello World Tutorial 1 window, on Windows" />
-</figure>
+![Hello World Tutorial 1 window, on Windows](/tutorial/images/windows/tutorial-1.png)
+/// caption
+///
 
 /// admonition | Invalid requirements or pip unable to connect
 

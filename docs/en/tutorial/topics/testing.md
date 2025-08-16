@@ -14,9 +14,11 @@ the code for our app; the `tests` folder contains our test suite. Inside
 the `tests` folder is a file named `test_app.py` with the following
 content:
 
-    def test_first():
-        "An initial test for the app"
-        assert 1 + 1 == 2
+```python
+def test_first():
+    "An initial test for the app"
+    assert 1 + 1 == 2
+```
 
 This is a [Pytest](https://pytest.org) *test case* - a block of code
 that can be executed to verify some behavior of your app. In this case,
@@ -116,19 +118,21 @@ Let's replace this placeholder test with a test to verify that our
 `greeting()` method behaves the way we'd expect. Replace the contents of
 `test_app.py` with the following:
 
-    from helloworld.app import greeting
+```python
+from helloworld.app import greeting
 
 
-    def test_name():
-        """If a name is provided, the greeting includes the name"""
+def test_name():
+    """If a name is provided, the greeting includes the name"""
 
-        assert greeting("Alice") == "Hello, Alice"
+    assert greeting("Alice") == "Hello, Alice"
 
 
-    def test_empty():
-        """If a name is not provided, a generic greeting is provided"""
+def test_empty():
+    """If a name is not provided, a generic greeting is provided"""
 
-        assert greeting("") == "Hello, stranger"
+    assert greeting("") == "Hello, stranger"
+```
 
 This defines two new tests, verifying the two behaviors we expect to
 see: the output when a name is provided, and the output when the name is
@@ -195,7 +199,6 @@ tests/test_app.py::test_empty PASSED                                     [100%]
 
 ///
 
-
 Excellent! Our `greeting()` utility method is working as expected.
 
 ## Test driven development
@@ -205,10 +208,12 @@ new features. Let's modify our app to have a special greeting for one
 particular user. We can start by adding a test case for the new behavior
 that we'd like to see to the bottom of `test_app.py`:
 
-    def test_brutus():
-        """If the name is Brutus, a special greeting is provided"""
+```python
+def test_brutus():
+    """If the name is Brutus, a special greeting is provided"""
 
-        assert greeting("Brutus") == "BeeWare the IDEs of Python!"
+    assert greeting("Brutus") == "BeeWare the IDEs of Python!"
+```
 
 Then, run the test suite with this new test:
 
@@ -316,21 +321,22 @@ FAILED tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...
 
 ///
 
-
 This time, we see a test failure - and the output explains the source of
 the failure: the test is expecting the output "BeeWare the IDEs of
 Python!", but our implementation of `greeting()` is returning "Hello,
 Brutus". Let's modify the implementation of `greeting()` in
 `src/helloworld/app.py` to have the new behavior:
 
-    def greeting(name):
-        if name:
-            if name == "Brutus":
-                return "BeeWare the IDEs of Python!"
-            else:
-                return f"Hello, {name}"
+```python
+def greeting(name):
+    if name:
+        if name == "Brutus":
+            return "BeeWare the IDEs of Python!"
         else:
-            return "Hello, stranger"
+            return f"Hello, {name}"
+    else:
+        return "Hello, stranger"
+```
 
 If we run the tests again, we'll now see our tests pass:
 
@@ -393,7 +399,6 @@ tests/test_app.py::test_brutus PASSED                                    [100%]
 ```
 
 ///
-
 
 ## Runtime tests
 

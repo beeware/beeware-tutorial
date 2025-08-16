@@ -40,10 +40,6 @@ see the new dialog box:
 
 /// tab | macOS
 
-<figure class="align-center">
-    <img src="/tutorial/images/macOS/tutorial-4.png" alt="Hello World Tutorial 4 dialog, on macOS" />
-</figure>
-
 ![Hello World Tutorial 4 dialog, on macOS](/tutorial/images/macOS/tutorial-4.png)
 /// caption
 ///
@@ -52,17 +48,17 @@ see the new dialog box:
 
 /// tab | Linux
 
-<figure class="align-center">
-    <img src="/tutorial/images/linux/tutorial-4.png" alt="Hello World Tutorial 4 dialog, on Linux" />
-</figure>
+![Hello World Tutorial 4 dialog, on Linux](/tutorial/images/linux/tutorial-4.png)
+/// caption
+///
 
 ///
 
 /// tab | Windows
 
-<figure class="align-center">
-    <img src="/tutorial/images/windows/tutorial-4.png" alt="Hello World Tutorial 4 dialog, on Windows" />
-</figure>
+![Hello World Tutorial 4 dialog, on Windows](/tutorial/images/windows/tutorial-4.png)
+/// caption
+///
 
 ///
 

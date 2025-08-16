@@ -107,9 +107,9 @@ developer mode to reinstall requirements, by using the `-r` argument:
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-<figure class="align-center">
-    <img src="/tutorial/images/macOS/tutorial-8.png" alt="Hello World Tutorial 8 dialog, on macOS" />
-</figure>
+![Hello World Tutorial 8 dialog, on macOS](/tutorial/images/macOS/tutorial-8.png)
+/// caption
+///
 
 ///
 
@@ -127,9 +127,9 @@ looks something like:
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-<figure class="align-center">
-    <img src="/tutorial/images/linux/tutorial-8.png" alt="Hello World Tutorial 8 dialog, on Linux" />
-</figure>
+![Hello World Tutorial 8 dialog, on Linux](/tutorial/images/linux/tutorial-8.png)
+/// caption
+///
 
 ///
 
@@ -147,9 +147,9 @@ looks something like:
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-<figure class="align-center">
-    <img src="/tutorial/images/windows/tutorial-8.png" alt="Hello World Tutorial 8 dialog, on Windows" />
-</figure>
+![Hello World Tutorial 8 dialog, on Windows](/tutorial/images/windows/tutorial-8.png)
+/// caption
+///
 
 ///
 

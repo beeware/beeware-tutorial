@@ -195,9 +195,9 @@ beeware-tutorial/
 There's a *lot* of icons in this folder, but most of them should look
 the same: a green snake on a light blue background:
 
-<figure class="align-center">
-    <img src="../../resources/icon.png" alt="Icon of green snake with a light blue background" />
-</figure>
+![Icon of green snake with a light blue background](/tutorial/resources/icon.png)
+/// caption
+///
 
 The only exception will be the icons with `-adaptive-` in their name;
 these will have a transparent background. This represents all the
