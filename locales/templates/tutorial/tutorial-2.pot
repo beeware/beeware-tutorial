@@ -1,0 +1,350 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.15.6\n"
+
+#: docs/en/tutorial/tutorial-2.md:1
+msgid "Tutorial 2 - Making it interesting { id=\"tutorial-2\" }"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:3
+msgid ""
+"In [Tutorial 1][tutorial-1], we generated a stub project that was able to "
+"run, but we didn't write any code ourselves. Let's take a look at what was "
+"generated for us."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:7
+msgid "What was generated"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:9
+msgid ""
+"In the `src/helloworld` directory, you should see 3 files: `__init__.py`, "
+"`__main__.py` and `app.py`."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:12
+msgid ""
+"`__init__.py` marks the `helloworld` directory as an importable Python "
+"module. It is an empty file; the very fact it exists tells the Python "
+"interpreter that the `helloworld` directory defines a module."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:16
+msgid ""
+"`__main__.py` marks the `helloworld` module as a special kind of module -an "
+"executable module. If you try to run the `helloworld` module using `python -"
+"m helloworld`, the `__main__.py` file is where Python will start executing. "
+"The contents of `__main__.py` is relatively simple:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:28
+msgid "This file does two things:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:30
+msgid "It imports the `main` method from the `helloworld` app."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:31
+msgid ""
+"Then, it starts the application’s main loop. The main loop is the way a GUI "
+"application listens for user input (like mouse clicks and keyboard presses)."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:35
+msgid ""
+"The more interesting file is `app.py` - this contains the logic that creates "
+"our application window:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:54
+msgid "Let's go through this line by line:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:61
+msgid ""
+"First, we import the `toga` widget toolkit, as well as some style-related "
+"utility constants. Our code doesn't use these yet - but we'll make use of "
+"them shortly."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:65
+msgid "Then, we define a class:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:71
+msgid ""
+"Each Toga application has a single `toga.App` instance, representing the "
+"running entity that is the application. The app may end up managing multiple "
+"windows; but for simple applications, there will be a single main window."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:76
+msgid "Next, we define a `startup()` method:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:83
+msgid ""
+"The first thing the startup method does is to define a main box. Toga's "
+"layout scheme behaves similar to HTML. You build an application by "
+"constructing a collection of boxes, each of which contains other boxes, or "
+"actual widgets. You then apply styles to these boxes to define how they will "
+"consume the available window space."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:89
+msgid ""
+"In this application, we define a single box, but we don't put anything into "
+"it."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:92
+msgid "Next, we define a window into which we can put this empty box:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:98
+msgid ""
+"This creates an instance of a `toga.MainWindow`, which will have a title "
+"matching the application's name. A Main Window is a special kind of window "
+"in Toga - it's a window that is closely bound to the life cycle of the app. "
+"When the Main Window is closed, the application exits. The Main Window is "
+"also the window that has the application's menu (if you're on a platform "
+"like Windows where menu bars are part of the window)."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:106
+msgid "/// admonition | Where is my window?"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:108
+msgid ""
+"If you have made an error in your code, the main window of the app may not "
+"display. If this happens, you can type **Ctrl+C** in the terminal where you "
+"started the app. This will stop the app. You can then fix the error and "
+"restart the app."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:113
+#: docs/en/tutorial/tutorial-2.md:148
+#: docs/en/tutorial/tutorial-2.md:211
+#: docs/en/tutorial/tutorial-2.md:302
+#: docs/en/tutorial/tutorial-2.md:313
+#: docs/en/tutorial/tutorial-2.md:324
+#: docs/en/tutorial/tutorial-2.md:340
+#: docs/en/tutorial/tutorial-2.md:348
+#: docs/en/tutorial/tutorial-2.md:356
+msgid "///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:115
+msgid ""
+"We then add our empty box as the content of the main window, and instruct "
+"the application to show our window:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:123
+msgid ""
+"Last of all, we define a `main()` function. This is what creates the "
+"instance of our application:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:131
+msgid ""
+"This `main()` method is the one that is imported and invoked by `__main__.py`"
+". It creates and returns an instance of our `HelloWorld` application."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:135
+msgid ""
+"That's the simplest possible Toga application. Let's put some of our own "
+"content into the application, and make the app do something interesting."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:138
+msgid "Adding some content of our own"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:140
+msgid "Let's do something more interesting with our `HelloWorld` app."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:142
+#: docs/en/tutorial/tutorial-2.md:201
+msgid "/// note | Note"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:144
+msgid ""
+"When you make these changes, make sure you keep the imports at the top of "
+"the file, and the `main()` at the bottom of the file. You only need to "
+"update the `HelloWorld` class."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:150
+msgid ""
+"Modify your `HelloWorld` class inside `src/helloworld/app.py` so that it "
+"looks like this:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:185
+msgid "Let's look in detail at what has changed."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:187
+msgid "We're still creating a main box; however, we are now applying a style:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:193
+msgid ""
+"Toga's built-in layout system is called \"Pack\". It behaves a lot like CSS. "
+"You define objects in a hierarchy - in HTML, the objects are `<div>`, "
+"`<span>`, and other DOM elements; in Toga, they're widgets and boxes. You "
+"can then assign styles to the individual elements. In this case, we're "
+"indicating that this is a `COLUMN` box - that is, it is a box that will "
+"consume all the available width, and will expand its height as content is "
+"added, but it will try to be as short as possible."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:203
+msgid ""
+"For more advanced uses, Toga also supports a separate style object, which is "
+"used like this:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:213
+msgid "Next, we define a couple of widgets:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:223
+msgid ""
+"Here, we define a Label and a TextInput. Both widgets have styles associated "
+"with them; the label will have 5px of margin on its left and right, and no "
+"margin on the top and bottom. The TextInput is marked as being flexible - "
+"that is, it will absorb all available space in its layout axis."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:229
+msgid ""
+"The TextInput is assigned as an instance variable of the class. This gives "
+"us easy access to the widget instance - something that we'll use in a moment."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:233
+msgid "Next, we define a box to hold these two widgets:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:241
+msgid ""
+"The `name_box` is a box just like the main box; however, this time, it's a "
+"`ROW` box. That means content will be added horizontally, and it will try to "
+"make its width as narrow as possible. The box also has some margin - 5px on "
+"all sides."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:246
+msgid "Now we define a button:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:256
+msgid ""
+"The button also has 5px of margin on all sides. We also define a *handler* -"
+"a method to invoke when the button is pressed."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:259
+msgid "Then, we add the name box and the button to the main box:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:266
+msgid ""
+"This completes our layout; the rest of the startup method is as it was "
+"previously - defining a `MainWindow`, and assigning the main box as the "
+"window's content:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:276
+msgid ""
+"The last thing we need to do is define the handler for the button. A handler "
+"can be any method, generator, or asynchronous coroutine; it accepts the "
+"widget that generated the event as an argument, and will be invoked whenever "
+"the button is pressed:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:286
+msgid ""
+"The body of the method is a simple print statement - however, it will "
+"interrogate the current value of the name input, and use that content as the "
+"text that is printed."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:290
+msgid ""
+"Now that we've made these changes we can see what they look like by starting "
+"the application again. As before, we'll use developer mode:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:293
+#: docs/en/tutorial/tutorial-2.md:334
+msgid "/// tab | macOS"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:304
+#: docs/en/tutorial/tutorial-2.md:342
+msgid "/// tab | Linux"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:315
+#: docs/en/tutorial/tutorial-2.md:350
+msgid "/// tab | Windows"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:326
+msgid ""
+"You'll notice that this time, it *doesn't* install dependencies. Briefcase "
+"can detect that the application has been run before, and to save time, will "
+"only run the application. If you add new dependencies to your app, you need "
+"to make sure that they're installed by passing in a `-r` option when you run "
+"`briefcase dev`."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:332
+msgid "This should open a GUI window:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:358
+msgid ""
+"If you enter a name in the text box, and press the GUI button, you should "
+"see output appear in the console where you started the application."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:362
+msgid ""
+"Before continuing, close the app. As with Tutorial 1, you can do this by "
+"pressing the close button on the application window, by selecting Quit/Exit "
+"from the application's menu, or by typing **Ctrl+C** in the terminal where "
+"you ran `briefcase dev`."
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:367
+msgid "Next steps"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:369
+msgid ""
+"We've now got an application that does something a little more interesting. "
+"But it only runs on our own computer. Let's package this application for "
+"distribution. In [Tutorial 3][tutorial-3], we'll wrap our application up as "
+"a standalone installer that we could send to a friend, a customer, or upload "
+"to an App Store."
+msgstr ""

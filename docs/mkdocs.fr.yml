@@ -7,5 +7,4 @@ theme:
   language: fr
 
 extra:
-  human_translation: true
-  machine_translation: false
+  translation_type: human

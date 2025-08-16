@@ -1,4 +1,4 @@
-# Tutorial 4 - Updating your application  { id="tutorial-4" }
+# Tutorial 4 - Updating your application { id="tutorial-4" }
 
 In the last tutorial, we packaged our application as a native
 application. If you're dealing with a real-world app, that isn't going

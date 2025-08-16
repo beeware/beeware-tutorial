@@ -1,4 +1,4 @@
-# Customizing icons  { id="custom-icons" }
+# Customizing icons { id="custom-icons" }
 
 The app we developed in the main tutorial uses a default "gray bee" icon
 when it is packaged. Let's personalize this application by configuring

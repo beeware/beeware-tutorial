@@ -1,4 +1,4 @@
-# Tutorial 2 - Making it interesting  { id="tutorial-2" }
+# Tutorial 2 - Making it interesting { id="tutorial-2" }
 
 In [Tutorial 1][tutorial-1], we generated
 a stub project that was able to run, but we didn't write any code

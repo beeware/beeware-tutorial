@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+copyright: © Russell Keith-Magee 2025
 
 not_in_nav: |
   /index.md
@@ -9,6 +10,19 @@ validation:
   anchors: warn
   unrecognized_links: warn
 
+extra:
+  project_name: beeware-tutorial
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/beeware
+      name: BeeWare on GitHub
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@beeware
+      name: BeeWare on Mastodon
+    - icon: fontawesome/brands/discord
+      link: https://beeware.org/bee/chat/
+      name: BeeWare on Discord
+
 theme:
   name: material
   language: en
@@ -16,12 +30,11 @@ theme:
   features:
     - content.tabs.link
     - toc.follow
-    - content.code.copy
     - navigation.indexes
-#    - navigation.expand
-#    - search.suggest
-#    - search.highlight
-#    - search.share
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
   custom_dir: overrides
   palette:
     # Palette toggle for automatic mode

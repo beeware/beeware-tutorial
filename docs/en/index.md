@@ -1,4 +1,4 @@
-# Welcome to the BeeWare Tutorial! { id=tutorial-0 }
+# Welcome to the BeeWare Tutorial! { id=tutorial }
 
 **Write Python. Run Anywhere.**
 
@@ -8,7 +8,7 @@ a mobile application, and as a single page web app. We'll also look at
 how you can use BeeWare tools to perform some of the common tasks that
 you'll need to do as an app developer, such as testing your app.
 
-{% if config.extra.original_translation == true %}
+{% if config.extra.translation_type == original %}
 
 /// admonition | Translations are available
 
@@ -21,12 +21,11 @@ are available in [Deutsch](https://docs.beeware.org/de),
 [中文(简体)](https://docs.beeware.org/zh-cn), and
 [中文(繁體)](https://docs.beeware.org/zh-tw).
 
-
 ///
 
 {% endif %}
 
-{% if config.extra.machine_translation == true %}
+{% if config.extra.translation_type == machine %}
 
 /// admonition | This is a machine translation!
 
@@ -38,12 +37,11 @@ If you'd like the help improve the translation, get in touch! We have a
 `#translations` channel in [Discord](https://beeware.org/bee/chat/).
 Introduce yourself there and we will add you to the translation team.
 
-
 ///
 
 {% endif %}
 
-{% if config.extra.human_translation == true %}
+{% if config.extra.translation_type == human %}
 
 /// admonition | This is a translation!
 
@@ -54,7 +52,6 @@ machine translation, or not translated at all.
 If you'd like the help improve the translation, get in touch! We have a
 `#translations` channel in [Discord](https://beeware.org/bee/chat/).
 Introduce yourself there and we will add you to the translation team.
-
 
 ///
 

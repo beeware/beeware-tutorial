@@ -1,4 +1,4 @@
-# Tutorial 6 - Put it on the web!  { id="tutorial-6" }
+# Tutorial 6 - Put it on the web! { id="tutorial-6" }
 
 In addition to supporting mobile platforms, the Toga widget toolkit also
 supports the web! Using the same API that you used to deploy your

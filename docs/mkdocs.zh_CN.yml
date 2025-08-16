@@ -1,0 +1,10 @@
+INHERIT: config.yml
+site_name: BeeWare Tutorial
+site_url: https://tutorial.beeware.org/zh_CN
+docs_dir: zh_CN
+
+theme:
+  language: zh-Hant
+
+extra:
+  translation_type: human

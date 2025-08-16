@@ -1,4 +1,4 @@
-# Using the camera { id="using-camera" }
+# Using the camera { id="camera-access" }
 
 Almost every modern computing device has a camera of some sort. In this
 tutorial, we'll write new application that is able to request access to

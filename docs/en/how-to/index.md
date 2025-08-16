@@ -1,4 +1,4 @@
-# Contributing to this tutorial
+# Contributing to this tutorial { id=contributing }
 
 This tutorial is written using [MkDocs and Markdown](https://www.mkdocs.org/).
 This guide will help you contribute fixes or new content to this
@@ -77,12 +77,12 @@ C:\...>venv\Scripts\activate
 
 Your prompt should now have a `(venv)` prefix in front of it.
 
-### Clone the BeeWare repository
+### Clone the BeeWare Tutorial repository
 
 For updates to BeeWare documentation:
 
-Next, go to [the BeeWare page on
-GitHub](https://github.com/beeware/beeware), fork the repository into
+Next, go to [the BeeWare Tutorial page on
+GitHub](https://github.com/beeware/beeware-tutorial), fork the repository into
 your own account, and then clone a copy of that repository onto your
 computer by clicking on "Clone or Download". If you have the GitHub
 desktop application installed on your computer, you can select "Open in
@@ -91,10 +91,10 @@ the command line:
 
 /// tab | macOS
 
-Fork the BeeWare repository, and then:
+Fork the BeeWare Tutorial repository, and then:
 
 ```console
-(venv) $ git clone https://github.com/<your username>/beeware.git
+(venv) $ git clone https://github.com/<your username>/beeware-tutorial.git
 ```
 
 (substituting your GitHub username)
@@ -103,10 +103,10 @@ Fork the BeeWare repository, and then:
 
 /// tab | Linux
 
-Fork the BeeWare repository, and then:
+Fork the BeeWare Tutorial repository, and then:
 
 ```console
-(venv) $ git clone https://github.com/<your username>/beeware.git
+(venv) $ git clone https://github.com/<your username>/beeware-tutorial.git
 ```
 
 (substituting your GitHub username)
@@ -115,10 +115,10 @@ Fork the BeeWare repository, and then:
 
 /// tab | Windows
 
-Fork the BeeWare repository, and then:
+Fork the BeeWare Tutorial repository, and then:
 
 ```doscon
-(venv) C:\...>git clone https://github.com/<your username>/beeware.git
+(venv) C:\...>git clone https://github.com/<your username>/beeware-tutorial.git
 ```
 
 (substituting your GitHub username)

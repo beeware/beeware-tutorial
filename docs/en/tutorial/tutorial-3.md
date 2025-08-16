@@ -1,4 +1,4 @@
-# Tutorial 3 - Packaging for distribution  { id="tutorial-3" }
+# Tutorial 3 - Packaging for distribution { id="tutorial-3" }
 
 So far, we've been running our application in "Developer mode". This
 makes it easy for us to run our application locally - but what we really
