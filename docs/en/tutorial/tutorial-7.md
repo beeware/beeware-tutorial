@@ -1,4 +1,4 @@
-# Tutorial 7 - Get this (third-)party started  { id="tutorial-7" }
+# Tutorial 7 - Get this (third-)party started
 
 So far, the app we've built has only used our own code, plus the code
 provided by BeeWare. However, in a real-world app, you'll likely want to
@@ -202,7 +202,7 @@ development mode!
 
 Let's get this updated application code packaged as a standalone app.
 Since we've made code changes, we need to follow the same steps as in
-[Tutorial 4][tutorial-4]:
+[Tutorial 4](tutorial-4.md):
 
 /// tab | macOS
 
@@ -733,5 +733,5 @@ tutorial like this one.
 ## Next steps
 
 We've now got an app that uses a third-party library! In
-[Tutorial 8][tutorial-8] we'll learn how to ensure
+[Tutorial 8](tutorial-8.md) we'll learn how to ensure
 our app remains responsive as we add more complex application logic.

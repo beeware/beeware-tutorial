@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-01-23 12:02+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,14 +13,16 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-2.md:1
-msgid "Tutorial 2 - Making it interesting { id=\"tutorial-2\" }"
-msgstr ""
+#, fuzzy
+msgid "Tutorial 2 - Making it interesting"
+msgstr "Tutorial 2 - Hacerlo interesante"
 
 #: docs/en/tutorial/tutorial-2.md:3
+#, fuzzy
 msgid ""
-"In [Tutorial 1][tutorial-1], we generated a stub project that was able to "
-"run, but we didn't write any code ourselves. Let's take a look at what was "
-"generated for us."
+"In [Tutorial 1]{1}, we generated a stub project that was able to run, but we "
+"didn't write any code ourselves. Let's take a look at what was generated for "
+"us."
 msgstr ""
 "En [Tutorial 1][tutorial-1], generamos un proyecto stub que era capaz de "
 "ejecutarse, pero no escribimos ningún código nosotros mismos. Echemos un "
@@ -190,8 +192,11 @@ msgstr ""
 #: docs/en/tutorial/tutorial-2.md:313
 #: docs/en/tutorial/tutorial-2.md:324
 #: docs/en/tutorial/tutorial-2.md:340
-#: docs/en/tutorial/tutorial-2.md:348
-#: docs/en/tutorial/tutorial-2.md:356
+#: docs/en/tutorial/tutorial-2.md:342
+#: docs/en/tutorial/tutorial-2.md:350
+#: docs/en/tutorial/tutorial-2.md:352
+#: docs/en/tutorial/tutorial-2.md:360
+#: docs/en/tutorial/tutorial-2.md:362
 msgid "///"
 msgstr ""
 
@@ -416,12 +421,12 @@ msgid "/// tab | macOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:304
-#: docs/en/tutorial/tutorial-2.md:342
+#: docs/en/tutorial/tutorial-2.md:344
 msgid "/// tab | Linux"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:315
-#: docs/en/tutorial/tutorial-2.md:350
+#: docs/en/tutorial/tutorial-2.md:354
 msgid "/// tab | Windows"
 msgstr ""
 
@@ -446,18 +451,24 @@ msgid "This should open a GUI window:"
 msgstr "Esto debería abrir una ventana GUI:"
 
 #: docs/en/tutorial/tutorial-2.md:336
-msgid "![Hello World Tutorial 2 window, on macOS]{1} /// caption ///"
+msgid "![Hello World Tutorial 2 window, on macOS]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-2.md:344
-msgid "![Hello World Tutorial 2 window, on Linux]{1} /// caption ///"
-msgstr ""
-
-#: docs/en/tutorial/tutorial-2.md:352
-msgid "![Hello World Tutorial 2 window, on Windows]{1} /// caption ///"
-msgstr ""
-
+#: docs/en/tutorial/tutorial-2.md:338
+#: docs/en/tutorial/tutorial-2.md:348
 #: docs/en/tutorial/tutorial-2.md:358
+msgid "/// caption"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:346
+msgid "![Hello World Tutorial 2 window, on Linux]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:356
+msgid "![Hello World Tutorial 2 window, on Windows]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:364
 #, fuzzy
 msgid ""
 "If you enter a name in the text box, and press the GUI button, you should "
@@ -466,7 +477,7 @@ msgstr ""
 "Si introduce un nombre en el cuadro de texto y pulsa el botón GUI, debería "
 "ver aparecer la salida en la consola donde inició la aplicación."
 
-#: docs/en/tutorial/tutorial-2.md:362
+#: docs/en/tutorial/tutorial-2.md:368
 msgid ""
 "Before continuing, close the app. As with Tutorial 1, you can do this by "
 "pressing the close button on the application window, by selecting Quit/Exit "
@@ -474,17 +485,17 @@ msgid ""
 "you ran `briefcase dev`."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-2.md:367
+#: docs/en/tutorial/tutorial-2.md:373
 msgid "Next steps"
 msgstr "Siguientes pasos"
 
-#: docs/en/tutorial/tutorial-2.md:369
+#: docs/en/tutorial/tutorial-2.md:375
 #, fuzzy
 msgid ""
 "We've now got an application that does something a little more interesting. "
 "But it only runs on our own computer. Let's package this application for "
-"distribution. In [Tutorial 3][tutorial-3], we'll wrap our application up as "
-"a standalone installer that we could send to a friend, a customer, or upload "
+"distribution. In [Tutorial 3]{1}, we'll wrap our application up as a "
+"standalone installer that we could send to a friend, a customer, or upload "
 "to an App Store."
 msgstr ""
 "Ahora tenemos una aplicación que hace algo un poco más interesante. Pero "
@@ -492,7 +503,3 @@ msgstr ""
 "aplicación para su distribución. En [Tutorial 3][tutorial-3], vamos a "
 "empaquetar nuestra aplicación como un instalador independiente que podríamos "
 "enviar a un amigo, un cliente, o subir a una App Store."
-
-#, fuzzy
-#~ msgid "Tutorial 2 - Making it interesting"
-#~ msgstr "Tutorial 2 - Hacerlo interesante"

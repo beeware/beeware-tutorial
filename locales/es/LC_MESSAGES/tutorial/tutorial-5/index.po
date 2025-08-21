@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-01-18 18:00+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-5/index.md:1
-msgid "Tutorial 5 - Taking it Mobile { id=\"tutorial-5\" }"
-msgstr ""
+msgid "Tutorial 5 - Taking it Mobile"
+msgstr "Tutorial 5 - Móviles"
 
 #: docs/en/tutorial/tutorial-5/index.md:3
 msgid ""
@@ -28,7 +28,7 @@ msgstr ""
 "dispositivo móvil!"
 
 #: docs/en/tutorial/tutorial-5/index.md:7
-msgid "[Android][mobile-android]"
+msgid "[Android]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/index.md:9
@@ -36,12 +36,9 @@ msgid "Android applications can be compiled on macOS, Windows or Linux."
 msgstr "Las aplicaciones Android pueden compilarse en macOS, Windows o Linux."
 
 #: docs/en/tutorial/tutorial-5/index.md:11
-msgid "[iOS][mobile-ios]"
+msgid "[iOS]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/index.md:13
 msgid "iOS applications can only be compiled on macOS."
 msgstr "Las aplicaciones de iOS solo pueden compilarse en macOS."
-
-#~ msgid "Tutorial 5 - Taking it Mobile"
-#~ msgstr "Tutorial 5 - Móviles"

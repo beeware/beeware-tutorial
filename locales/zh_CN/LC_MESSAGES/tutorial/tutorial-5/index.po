@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-06-20 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-5/index.md:1
-msgid "Tutorial 5 - Taking it Mobile { id=\"tutorial-5\" }"
-msgstr ""
+msgid "Tutorial 5 - Taking it Mobile"
+msgstr "教程 5 - 在移动设备上"
 
 #: docs/en/tutorial/tutorial-5/index.md:3
 msgid ""
@@ -25,7 +25,7 @@ msgstr "到目前为止，我们一直在电脑上运行和测试应用程序。
 "同样支持移动平台，我们编写的应用程序也可以部署到您的移动设备上！"
 
 #: docs/en/tutorial/tutorial-5/index.md:7
-msgid "[Android][mobile-android]"
+msgid "[Android]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/index.md:9
@@ -33,12 +33,9 @@ msgid "Android applications can be compiled on macOS, Windows or Linux."
 msgstr "安卓应用程序可在 macOS、Windows 或 Linux 上编译。"
 
 #: docs/en/tutorial/tutorial-5/index.md:11
-msgid "[iOS][mobile-ios]"
+msgid "[iOS]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/index.md:13
 msgid "iOS applications can only be compiled on macOS."
 msgstr "iOS 应用程序只能在 macOS 上编译。"
-
-#~ msgid "Tutorial 5 - Taking it Mobile"
-#~ msgstr "教程 5 - 在移动设备上"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-02-13 12:11+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-3.md:1
-msgid "Tutorial 3 - Packaging for distribution { id=\"tutorial-3\" }"
-msgstr ""
+#, fuzzy
+msgid "Tutorial 3 - Packaging for distribution"
+msgstr "Esercitazione 3 - Confezionamento per la distribuzione"
 
 #: docs/en/tutorial/tutorial-3.md:3
 #, fuzzy
@@ -425,7 +426,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "The `dist` folder will contain a file named `Hello World-0.0.1.dmg`. If you "
-"locate this file in the Finder, and double click on its icon, you'll mount "
+"locate this file in the Finder, and double-click on its icon, you'll mount "
 "the DMG, giving you a copy of the Hello World app, and a link to your "
 "Applications folder for easy installation. Drag the app file into "
 "Applications, and you've installed your application. Send the DMG file to a "
@@ -635,10 +636,6 @@ msgstr "Prossimi passi"
 msgid ""
 "We now have our application packaged for distribution on desktop platforms. "
 "But what happens when we need to update the code in our application? How do "
-"we get those updates into our packaged application? Turn to [Tutorial 4]"
-"[tutorial-4] to find out..."
+"we get those updates into our packaged application? Turn to [Tutorial 4]{1} "
+"to find out..."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Tutorial 3 - Packaging for distribution"
-#~ msgstr "Esercitazione 3 - Confezionamento per la distribuzione"

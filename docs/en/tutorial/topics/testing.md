@@ -1,4 +1,4 @@
-# Testing times { id="testing" }
+# Testing times
 
 Most software development doesn't involve writing new code - it's
 modifying existing code. Ensuring that existing code continues to work

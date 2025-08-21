@@ -1,4 +1,4 @@
-# Tutorial 3 - Packaging for distribution { id="tutorial-3" }
+# Tutorial 3 - Packaging for distribution
 
 So far, we've been running our application in "Developer mode". This
 makes it easy for us to run our application locally - but what we really
@@ -599,4 +599,4 @@ start menu.
 We now have our application packaged for distribution on desktop
 platforms. But what happens when we need to update the code in our
 application? How do we get those updates into our packaged application?
-Turn to [Tutorial 4][tutorial-4] to find out...
+Turn to [Tutorial 4](tutorial-4.md) to find out...

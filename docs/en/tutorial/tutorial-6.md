@@ -1,4 +1,4 @@
-# Tutorial 6 - Put it on the web! { id="tutorial-6" }
+# Tutorial 6 - Put it on the web!
 
 In addition to supporting mobile platforms, the Toga widget toolkit also
 supports the web! Using the same API that you used to deploy your
@@ -176,4 +176,4 @@ handling code in the browser.
 Although we've now deployed this app on desktop, mobile and the web, the
 app is fairly simple, and doesn't involve any third-party libraries. Can
 we include libraries from the Python Package Index (PyPI) in our app?
-Turn to [Tutorial 7][tutorial-7] to find out...
+Turn to [Tutorial 7](tutorial-7.md) to find out...

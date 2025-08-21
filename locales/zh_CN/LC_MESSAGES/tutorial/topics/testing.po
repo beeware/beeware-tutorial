@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-06-07 05:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/topics/testing.md:1
-msgid "Testing times { id=\"testing\" }"
-msgstr ""
+msgid "Testing times"
+msgstr "测试的时候"
 
 #: docs/en/tutorial/topics/testing.md:3
 msgid ""
@@ -219,6 +219,3 @@ msgid ""
 msgstr ""
 "你也可以在移动后端使用 `--test` 选项：`briefcase run iOS --test` 和 `"
 "briefcase run android --test`` 都可以在你选择的移动设备上运行测试套件。"
-
-#~ msgid "Testing times"
-#~ msgstr "测试的时候"

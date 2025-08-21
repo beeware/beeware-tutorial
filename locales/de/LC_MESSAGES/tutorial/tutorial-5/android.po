@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-08-19 20:02+0000\n"
 "Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-5/android.md:1
-msgid "Tutorial 5 - Taking it mobile: Android { id=\"mobile-android\" }"
-msgstr "Tutorial 5 - Mobiles Arbeiten: Android { id=\"mobile-android\" }"
+msgid "Tutorial 5 - Taking it mobile: Android"
+msgstr "Tutorial 5 - Mobiles Arbeiten: Android"
 
 #: docs/en/tutorial/tutorial-5/android.md:3
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 #: docs/en/tutorial/tutorial-5/android.md:16
 #: docs/en/tutorial/tutorial-5/android.md:121
 #: docs/en/tutorial/tutorial-5/android.md:204
-#: docs/en/tutorial/tutorial-5/android.md:336
+#: docs/en/tutorial/tutorial-5/android.md:340
 msgid "/// tab | macOS"
 msgstr ""
 
@@ -65,29 +65,29 @@ msgstr ""
 #: docs/en/tutorial/tutorial-5/android.md:216
 #: docs/en/tutorial/tutorial-5/android.md:230
 #: docs/en/tutorial/tutorial-5/android.md:244
-#: docs/en/tutorial/tutorial-5/android.md:258
-#: docs/en/tutorial/tutorial-5/android.md:268
-#: docs/en/tutorial/tutorial-5/android.md:278
-#: docs/en/tutorial/tutorial-5/android.md:290
-#: docs/en/tutorial/tutorial-5/android.md:301
-#: docs/en/tutorial/tutorial-5/android.md:350
-#: docs/en/tutorial/tutorial-5/android.md:366
-#: docs/en/tutorial/tutorial-5/android.md:382
-#: docs/en/tutorial/tutorial-5/android.md:402
+#: docs/en/tutorial/tutorial-5/android.md:259
+#: docs/en/tutorial/tutorial-5/android.md:270
+#: docs/en/tutorial/tutorial-5/android.md:281
+#: docs/en/tutorial/tutorial-5/android.md:293
+#: docs/en/tutorial/tutorial-5/android.md:305
+#: docs/en/tutorial/tutorial-5/android.md:354
+#: docs/en/tutorial/tutorial-5/android.md:370
+#: docs/en/tutorial/tutorial-5/android.md:386
+#: docs/en/tutorial/tutorial-5/android.md:406
 msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/android.md:45
 #: docs/en/tutorial/tutorial-5/android.md:141
 #: docs/en/tutorial/tutorial-5/android.md:218
-#: docs/en/tutorial/tutorial-5/android.md:352
+#: docs/en/tutorial/tutorial-5/android.md:356
 msgid "/// tab | Linux"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/android.md:74
 #: docs/en/tutorial/tutorial-5/android.md:161
 #: docs/en/tutorial/tutorial-5/android.md:232
-#: docs/en/tutorial/tutorial-5/android.md:368
+#: docs/en/tutorial/tutorial-5/android.md:372
 msgid "/// tab | Windows"
 msgstr ""
 
@@ -195,14 +195,22 @@ msgstr ""
 "hochfährt, sehen Sie das Android-Logo:"
 
 #: docs/en/tutorial/tutorial-5/android.md:253
-msgid "![Android virtual device booting]{1} /// caption"
+#, fuzzy
+msgid "![Android virtual device booting]{1}"
+msgstr "Booten eines virtuellen Android-Geräts"
+
+#: docs/en/tutorial/tutorial-5/android.md:255
+#: docs/en/tutorial/tutorial-5/android.md:266
+#: docs/en/tutorial/tutorial-5/android.md:277
+#: docs/en/tutorial/tutorial-5/android.md:301
+msgid "/// caption"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/android.md:256
+#: docs/en/tutorial/tutorial-5/android.md:257
 msgid "Android virtual device booting"
 msgstr "Booten eines virtuellen Android-Geräts"
 
-#: docs/en/tutorial/tutorial-5/android.md:260
+#: docs/en/tutorial/tutorial-5/android.md:261
 msgid ""
 "Once the device has finished booting, Briefcase will install your app on the "
 "device. You will briefly see a launcher screen:"
@@ -210,36 +218,35 @@ msgstr ""
 "Sobald das Gerät hochgefahren ist, wird Briefcase Ihre Anwendung auf dem "
 "Gerät installieren. Sie sehen kurz einen Startbildschirm:"
 
-#: docs/en/tutorial/tutorial-5/android.md:263
-msgid ""
-"![Android virtual device fully started, on the launcher screen]{1} /// "
-"caption"
-msgstr ""
+#: docs/en/tutorial/tutorial-5/android.md:264
+#, fuzzy
+msgid "![Android virtual device fully started, on the launcher screen]{1}"
+msgstr "Virtuelles Android-Gerät vollständig gestartet, auf dem Startbildschirm"
 
-#: docs/en/tutorial/tutorial-5/android.md:266
+#: docs/en/tutorial/tutorial-5/android.md:268
 msgid "Android virtual device fully started, on the launcher screen"
 msgstr "Virtuelles Android-Gerät vollständig gestartet, auf dem Startbildschirm"
 
-#: docs/en/tutorial/tutorial-5/android.md:270
+#: docs/en/tutorial/tutorial-5/android.md:272
 msgid ""
 "The app will then start. You'll see a splash screen while the app starts up:"
 msgstr ""
 "Die Anwendung wird dann gestartet. Während die App startet, wird ein "
 "Begrüßungsbildschirm angezeigt:"
 
-#: docs/en/tutorial/tutorial-5/android.md:273
-msgid "![App splash screen]{1} /// caption"
+#: docs/en/tutorial/tutorial-5/android.md:275
+msgid "![App splash screen]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/android.md:276
+#: docs/en/tutorial/tutorial-5/android.md:279
 msgid "App splash screen"
 msgstr "App-Startbildschirm"
 
-#: docs/en/tutorial/tutorial-5/android.md:280
+#: docs/en/tutorial/tutorial-5/android.md:283
 msgid "/// admonition | The emulator didn't start!"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/android.md:282
+#: docs/en/tutorial/tutorial-5/android.md:285
 msgid ""
 "The Android emulator is a complex piece of software that relies on a number "
 "of hardware and operating system features - features that may not be "
@@ -254,7 +261,7 @@ msgstr ""
 "Abschnitt [Anforderungen und Empfehlungen]{1} in der Android-"
 "Entwicklerdokumentation."
 
-#: docs/en/tutorial/tutorial-5/android.md:292
+#: docs/en/tutorial/tutorial-5/android.md:295
 msgid ""
 "The first time the app starts, it needs to unpack itself onto the device. "
 "This may take a few seconds. Once it's unpacked, you'll see the Android "
@@ -264,15 +271,16 @@ msgstr ""
 "entpacken. Das kann ein paar Sekunden dauern. Sobald sie entpackt ist, sehen "
 "Sie die Android-Version unserer Desktop-App:"
 
-#: docs/en/tutorial/tutorial-5/android.md:296
-msgid "![Demo app fully launched]{1} /// caption"
-msgstr ""
-
 #: docs/en/tutorial/tutorial-5/android.md:299
-msgid "Demo app fully launched"
+#, fuzzy
+msgid "![Demo app fully launched]{1}"
 msgstr "Demo-App vollständig gestartet"
 
 #: docs/en/tutorial/tutorial-5/android.md:303
+msgid "Demo app fully launched"
+msgstr "Demo-App vollständig gestartet"
+
+#: docs/en/tutorial/tutorial-5/android.md:307
 msgid ""
 "If you fail to see your app launching, you may need to check your terminal "
 "where you ran `briefcase run` and look for any error messages."
@@ -281,7 +289,7 @@ msgstr ""
 "überprüfen, in dem Sie `briefcase run` ausgeführt haben, und nach "
 "Fehlermeldungen suchen."
 
-#: docs/en/tutorial/tutorial-5/android.md:306
+#: docs/en/tutorial/tutorial-5/android.md:310
 msgid ""
 "While the app is running, you'll see a lot of messages being streamed in the "
 "console. This is a stream of the application's logs from the emulator. "
@@ -296,7 +304,7 @@ msgstr ""
 "geschlossen. Auf diese Weise können Sie neue Änderungen testen, ohne den "
 "Emulator neu starten zu müssen."
 
-#: docs/en/tutorial/tutorial-5/android.md:312
+#: docs/en/tutorial/tutorial-5/android.md:316
 msgid ""
 "In future, if you want to run on this device without using the menu, you can "
 "provide the emulator's name to Briefcase, using `briefcase run android -d "
@@ -307,11 +315,11 @@ msgstr ""
 "briefcase run android -d @beePhone` verwenden, um direkt auf dem virtuellen "
 "Gerät zu arbeiten."
 
-#: docs/en/tutorial/tutorial-5/android.md:317
+#: docs/en/tutorial/tutorial-5/android.md:321
 msgid "Run the app on a physical device"
 msgstr "Ausführen der App auf einem physischen Gerät"
 
-#: docs/en/tutorial/tutorial-5/android.md:319
+#: docs/en/tutorial/tutorial-5/android.md:323
 msgid ""
 "If you have a physical Android phone or tablet, you can connect it to your "
 "computer with a USB cable, and then use the Briefcase to target your "
@@ -321,7 +329,7 @@ msgstr ""
 "mit einem USB-Kabel an Ihren Computer anschließen und dann Briefcase "
 "verwenden, um Ihr physisches Gerät anzusteuern."
 
-#: docs/en/tutorial/tutorial-5/android.md:323
+#: docs/en/tutorial/tutorial-5/android.md:327
 msgid ""
 "Android requires that you prepare your device before it can be used for "
 "development. You will need to make 2 changes to the options on your device:"
@@ -330,15 +338,15 @@ msgstr ""
 "Entwicklung verwenden können. Sie müssen 2 Änderungen an den Optionen auf "
 "Ihrem Gerät vornehmen:"
 
-#: docs/en/tutorial/tutorial-5/android.md:327
+#: docs/en/tutorial/tutorial-5/android.md:331
 msgid "Enable developer options"
 msgstr "Entwickleroptionen aktivieren"
 
-#: docs/en/tutorial/tutorial-5/android.md:328
+#: docs/en/tutorial/tutorial-5/android.md:332
 msgid "Enable USB debugging"
 msgstr "USB-Debugging einschalten"
 
-#: docs/en/tutorial/tutorial-5/android.md:330
+#: docs/en/tutorial/tutorial-5/android.md:334
 msgid ""
 "Details on how to make these changes can be found "
 "[in the Android developer documentation]{1}."
@@ -346,7 +354,7 @@ msgstr ""
 "Details zur Durchführung dieser Änderungen können "
 "[in der Android-Entwicklerdokumentation]{1} nachgelesen werden."
 
-#: docs/en/tutorial/tutorial-5/android.md:333
+#: docs/en/tutorial/tutorial-5/android.md:337
 msgid ""
 "Once these steps have been completed, your device should appear in the list "
 "of available devices when you run `briefcase run android`."
@@ -354,7 +362,7 @@ msgstr ""
 "Sobald diese Schritte abgeschlossen sind, sollte Ihr Gerät in der Liste der "
 "verfügbaren Geräte erscheinen, wenn Sie `briefcase run android` ausführen."
 
-#: docs/en/tutorial/tutorial-5/android.md:384
+#: docs/en/tutorial/tutorial-5/android.md:388
 msgid ""
 "Here we can see a new physical device with it's serial number on the "
 "deployment list - in this case, a Pixel 3a. In the future, if you want to "
@@ -369,11 +377,11 @@ msgstr ""
 "run android -d 94ZZY0LNE8`). Dies wird direkt auf dem Gerät ausgeführt, ohne "
 "dass Sie gefragt werden."
 
-#: docs/en/tutorial/tutorial-5/android.md:391
+#: docs/en/tutorial/tutorial-5/android.md:395
 msgid "/// admonition | My device doesn't appear!"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/android.md:393
+#: docs/en/tutorial/tutorial-5/android.md:397
 msgid ""
 "If your device doesn't appear on this list at all, either you haven't "
 "enabled USB debugging, (or the device isn't plugged in!)."
@@ -381,7 +389,7 @@ msgstr ""
 "Wenn Ihr Gerät in dieser Liste nicht erscheint, haben Sie entweder das USB-"
 "Debugging nicht aktiviert (oder das Gerät ist nicht eingesteckt!)."
 
-#: docs/en/tutorial/tutorial-5/android.md:396
+#: docs/en/tutorial/tutorial-5/android.md:400
 msgid ""
 "If your device appears, but is listed as "
 "\"Unknown device (not authorized for development)\", developer mode hasn't "
@@ -394,12 +402,12 @@ msgstr ""
 "[Schritte zum Aktivieren der Entwickleroptionen]{1} erneut aus, und führen "
 "Sie \"Briefcase run android\" erneut aus."
 
-#: docs/en/tutorial/tutorial-5/android.md:404
+#: docs/en/tutorial/tutorial-5/android.md:408
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
-#: docs/en/tutorial/tutorial-5/android.md:406
+#: docs/en/tutorial/tutorial-5/android.md:410
 msgid ""
 "We've now got an application on our phone! Is there anywhere else we can "
-"deploy a BeeWare app? Turn to [Tutorial 6][tutorial-6] to find out..."
+"deploy a BeeWare app? Turn to [Tutorial 6]{1} to find out..."
 msgstr ""

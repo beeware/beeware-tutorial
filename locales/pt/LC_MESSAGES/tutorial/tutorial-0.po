@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-03-04 19:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-0.md:1
-msgid "Tutorial 0 - Let's get set up! { id=\"tutorial-0\" }"
-msgstr ""
+msgid "Tutorial 0 - Let's get set up!"
+msgstr "Tutorial 0 - Vamos nos preparar!"
 
 #: docs/en/tutorial/tutorial-0.md:3
 msgid ""
@@ -25,8 +25,8 @@ msgstr ""
 "tenhamos todos os pré-requisitos para executar o BeeWare."
 
 #: docs/en/tutorial/tutorial-0.md:6
-msgid "Install Python"
-msgstr "Instalando o Python"
+msgid "Install Python { id=\"install-python\" }"
+msgstr ""
 
 #: docs/en/tutorial/tutorial-0.md:8
 msgid "The first thing we'll need is a working Python interpreter."
@@ -35,8 +35,8 @@ msgstr ""
 "funcionando."
 
 #: docs/en/tutorial/tutorial-0.md:10
-#: docs/en/tutorial/tutorial-0.md:88
-#: docs/en/tutorial/tutorial-0.md:158
+#: docs/en/tutorial/tutorial-0.md:87
+#: docs/en/tutorial/tutorial-0.md:156
 msgid "/// tab | macOS"
 msgstr ""
 
@@ -57,7 +57,7 @@ msgstr ""
 #: docs/en/tutorial/tutorial-0.md:18
 #, fuzzy
 msgid ""
-"You can also install Python through [homebrew]{1}, use [pyenv]{2} to manage "
+"You can also install Python through [Homebrew]{1}, use [pyenv]{2} to manage "
 "multiple Python installs, or use [Anaconda]{3} or [Miniconda]{4}. It doesn't "
 "matter *how* you've installed Python - it only matters that you can run "
 "`python3` from your terminal and get a working, supported Python interpreter."
@@ -89,20 +89,20 @@ msgstr ""
 #: docs/en/tutorial/tutorial-0.md:42
 #: docs/en/tutorial/tutorial-0.md:62
 #: docs/en/tutorial/tutorial-0.md:80
-#: docs/en/tutorial/tutorial-0.md:98
-#: docs/en/tutorial/tutorial-0.md:131
-#: docs/en/tutorial/tutorial-0.md:144
-#: docs/en/tutorial/tutorial-0.md:167
-#: docs/en/tutorial/tutorial-0.md:178
+#: docs/en/tutorial/tutorial-0.md:97
+#: docs/en/tutorial/tutorial-0.md:130
+#: docs/en/tutorial/tutorial-0.md:143
+#: docs/en/tutorial/tutorial-0.md:165
+#: docs/en/tutorial/tutorial-0.md:176
+#: docs/en/tutorial/tutorial-0.md:209
 #: docs/en/tutorial/tutorial-0.md:211
-#: docs/en/tutorial/tutorial-0.md:213
-#: docs/en/tutorial/tutorial-0.md:231
+#: docs/en/tutorial/tutorial-0.md:229
 msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-0.md:44
-#: docs/en/tutorial/tutorial-0.md:100
-#: docs/en/tutorial/tutorial-0.md:169
+#: docs/en/tutorial/tutorial-0.md:99
+#: docs/en/tutorial/tutorial-0.md:167
 msgid "/// tab | Linux"
 msgstr ""
 
@@ -139,8 +139,8 @@ msgid ""
 msgstr ""
 
 #: docs/en/tutorial/tutorial-0.md:64
-#: docs/en/tutorial/tutorial-0.md:133
-#: docs/en/tutorial/tutorial-0.md:180
+#: docs/en/tutorial/tutorial-0.md:132
+#: docs/en/tutorial/tutorial-0.md:178
 msgid "/// tab | Windows"
 msgstr ""
 
@@ -176,22 +176,22 @@ msgstr ""
 "executar o comando `python3` no prompt de comando/terminal do seu sistema "
 "operacional."
 
-#: docs/en/tutorial/tutorial-0.md:83
-msgid "Install dependencies"
-msgstr "Instale as dependências"
+#: docs/en/tutorial/tutorial-0.md:82
+msgid "Install dependencies { id=\"install-dependencies\" }"
+msgstr ""
 
-#: docs/en/tutorial/tutorial-0.md:85
+#: docs/en/tutorial/tutorial-0.md:84
 msgid ""
 "Next, install the additional dependencies needed for your operating system:"
 msgstr ""
 "Em seguida, instale as dependências adicionais necessárias para o seu "
 "sistema operacional:"
 
-#: docs/en/tutorial/tutorial-0.md:90
+#: docs/en/tutorial/tutorial-0.md:89
 msgid "Building BeeWare apps on macOS requires:"
 msgstr "Para criar aplicativos BeeWare no macOS, é necessário:"
 
-#: docs/en/tutorial/tutorial-0.md:92
+#: docs/en/tutorial/tutorial-0.md:91
 msgid ""
 "**Git**, a version control system. This is included with Xcode or the "
 "command line developer tools, which you installed above. You may need to "
@@ -200,7 +200,7 @@ msgid ""
 "restart your terminal session."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-0.md:102
+#: docs/en/tutorial/tutorial-0.md:101
 msgid ""
 "To support local development, you'll need to install some system packages. "
 "The list of packages required varies depending on your distribution:"
@@ -209,37 +209,38 @@ msgstr ""
 "pacotes do sistema. A lista de pacotes necessários pode variar de acordo com "
 "a sua distribuição:"
 
-#: docs/en/tutorial/tutorial-0.md:106
+#: docs/en/tutorial/tutorial-0.md:105
 #, fuzzy
 msgid "**Ubuntu / Debian**"
 msgstr "**Ubuntu 20.04+ / Debian 10+**"
 
-#: docs/en/tutorial/tutorial-0.md:113
+#: docs/en/tutorial/tutorial-0.md:112
 msgid "**Fedora**"
 msgstr "**Fedora**"
 
-#: docs/en/tutorial/tutorial-0.md:119
+#: docs/en/tutorial/tutorial-0.md:118
 #, fuzzy
 msgid "**Arch / Manjaro**"
 msgstr "**Arch, Manjaro**"
 
-#: docs/en/tutorial/tutorial-0.md:125
+#: docs/en/tutorial/tutorial-0.md:124
 msgid "**OpenSUSE Tumbleweed**"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-0.md:135
+#: docs/en/tutorial/tutorial-0.md:134
 msgid "Building BeeWare apps on Windows requires:"
 msgstr "Para criar aplicativos BeeWare no Windows, é necessário:"
 
-#: docs/en/tutorial/tutorial-0.md:137
+#: docs/en/tutorial/tutorial-0.md:136
+#, fuzzy
 msgid ""
-"**Git**, a version control system. You can download Git from from "
-"[git-scm.com]{1}."
+"**Git**, a version control system. You can download Git from from {1}[git-"
+"scm.com]{2}."
 msgstr ""
 "**Git**, um sistema de controle de versão. Você pode baixar o Git em "
 "[git-scm.com]{1}."
 
-#: docs/en/tutorial/tutorial-0.md:140
+#: docs/en/tutorial/tutorial-0.md:139
 msgid ""
 "After installing these tools, you should ensure you restart any terminal "
 "sessions. Windows will only expose newly installed tools terminals started "
@@ -249,11 +250,11 @@ msgstr ""
 "terminal. No Windows, apenas os terminais iniciados *após* a conclusão da "
 "instalação mostrarão as ferramentas recém-instaladas."
 
-#: docs/en/tutorial/tutorial-0.md:147
+#: docs/en/tutorial/tutorial-0.md:145
 msgid "Set up a virtual environment"
 msgstr "Configurar um ambiente virtual"
 
-#: docs/en/tutorial/tutorial-0.md:149
+#: docs/en/tutorial/tutorial-0.md:147
 msgid ""
 "We're now going to create a virtual environment - a \"sandbox\" that we can "
 "use to isolate our work on this tutorial from our main Python installation. "
@@ -272,40 +273,40 @@ msgstr ""
 "projeto Python em nosso computador e sem a necessidade de reinstalar o "
 "Python."
 
-#: docs/en/tutorial/tutorial-0.md:189
+#: docs/en/tutorial/tutorial-0.md:187
 msgid ""
 "If you're not using Python 3.12, replace the `-3.12` in these instructions "
 "with the version number that you are using."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-0.md:192
+#: docs/en/tutorial/tutorial-0.md:190
 msgid "/// admonition | Errors running PowerShell Scripts"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-0.md:194
+#: docs/en/tutorial/tutorial-0.md:192
 msgid "If you're using PowerShell, and you receive the error:"
 msgstr "Se você estiver usando o PowerShell e receber o erro:"
 
-#: docs/en/tutorial/tutorial-0.md:200
+#: docs/en/tutorial/tutorial-0.md:198
 msgid ""
 "Your Windows account doesn't have permissions to run scripts. To fix this:"
 msgstr ""
 "Sua conta do Windows não possui permissões para executar scripts. Para "
 "corrigir isso:"
 
-#: docs/en/tutorial/tutorial-0.md:203
+#: docs/en/tutorial/tutorial-0.md:201
 msgid "Run [Windows PowerShell as Administrator]{1}."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-0.md:204
+#: docs/en/tutorial/tutorial-0.md:202
 msgid "Run `set-executionpolicy RemoteSigned`"
 msgstr "Execute `set-executionpolicy RemoteSigned`"
 
-#: docs/en/tutorial/tutorial-0.md:205
+#: docs/en/tutorial/tutorial-0.md:203
 msgid "Select `Y` to change the execution policy."
 msgstr "Selecione `Y` para alterar a política de execução."
 
-#: docs/en/tutorial/tutorial-0.md:207
+#: docs/en/tutorial/tutorial-0.md:205
 msgid ""
 "Once you've done this you can rerun `beeware-venv\\Scripts\\activate.ps1` in "
 "your original PowerShell session (or a new session in the same directory)."
@@ -315,7 +316,7 @@ msgstr ""
 "as alterações nas permissões (a janela original) ou em uma nova janela do "
 "PowerShell no mesmo diretório."
 
-#: docs/en/tutorial/tutorial-0.md:215
+#: docs/en/tutorial/tutorial-0.md:213
 msgid ""
 "If this worked, your prompt should now be changed - it should have a "
 "`(beeware-venv)` prefix. This lets you know that you're currently in your "
@@ -330,11 +331,11 @@ msgstr ""
 "execute novamente o último comando (o comando `activate`) para reativar seu "
 "ambiente."
 
-#: docs/en/tutorial/tutorial-0.md:222
+#: docs/en/tutorial/tutorial-0.md:220
 msgid "/// admonition | Alternative virtual environments"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-0.md:224
+#: docs/en/tutorial/tutorial-0.md:222
 msgid ""
 "If you're using Anaconda or miniconda, you may be more familiar with using "
 "conda environments. You might also have heard of `virtualenv`, a predecessor "
@@ -344,17 +345,21 @@ msgid ""
 "to `venv` and the system Python."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-0.md:233
+#: docs/en/tutorial/tutorial-0.md:231
 msgid "Next steps"
 msgstr "Próximos passos"
 
-#: docs/en/tutorial/tutorial-0.md:235
+#: docs/en/tutorial/tutorial-0.md:233
+#, fuzzy
 msgid ""
 "We've now set up our environment. We're ready to "
-"[create our first BeeWare application][tutorial-1]."
+"[create our first BeeWare application]{1}."
 msgstr ""
 "Agora que configuramos nosso ambiente, estamos prontos para "
 "[criar nossa primeira aplicação BeeWare][tutorial-1]."
 
-#~ msgid "Tutorial 0 - Let's get set up!"
-#~ msgstr "Tutorial 0 - Vamos nos preparar!"
+#~ msgid "Install Python"
+#~ msgstr "Instalando o Python"
+
+#~ msgid "Install dependencies"
+#~ msgstr "Instale as dependências"

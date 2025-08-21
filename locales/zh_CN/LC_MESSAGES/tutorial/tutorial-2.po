@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-07-07 01:02+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -13,14 +13,15 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-2.md:1
-msgid "Tutorial 2 - Making it interesting { id=\"tutorial-2\" }"
-msgstr ""
+msgid "Tutorial 2 - Making it interesting"
+msgstr "教程 2 - 使之更有趣"
 
 #: docs/en/tutorial/tutorial-2.md:3
+#, fuzzy
 msgid ""
-"In [Tutorial 1][tutorial-1], we generated a stub project that was able to "
-"run, but we didn't write any code ourselves. Let's take a look at what was "
-"generated for us."
+"In [Tutorial 1]{1}, we generated a stub project that was able to run, but we "
+"didn't write any code ourselves. Let's take a look at what was generated for "
+"us."
 msgstr ""
 "在 [教程 1<tutorial-1>` "
 "中，我们生成了一个可以运行的基础项目，但我们自己并没有编写任何代码。"
@@ -167,8 +168,11 @@ msgstr ""
 #: docs/en/tutorial/tutorial-2.md:313
 #: docs/en/tutorial/tutorial-2.md:324
 #: docs/en/tutorial/tutorial-2.md:340
-#: docs/en/tutorial/tutorial-2.md:348
-#: docs/en/tutorial/tutorial-2.md:356
+#: docs/en/tutorial/tutorial-2.md:342
+#: docs/en/tutorial/tutorial-2.md:350
+#: docs/en/tutorial/tutorial-2.md:352
+#: docs/en/tutorial/tutorial-2.md:360
+#: docs/en/tutorial/tutorial-2.md:362
 msgid "///"
 msgstr ""
 
@@ -350,12 +354,12 @@ msgid "/// tab | macOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:304
-#: docs/en/tutorial/tutorial-2.md:342
+#: docs/en/tutorial/tutorial-2.md:344
 msgid "/// tab | Linux"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:315
-#: docs/en/tutorial/tutorial-2.md:350
+#: docs/en/tutorial/tutorial-2.md:354
 msgid "/// tab | Windows"
 msgstr ""
 
@@ -377,25 +381,31 @@ msgid "This should open a GUI window:"
 msgstr "这将打开一个图形用户界面 (GUI) 窗口："
 
 #: docs/en/tutorial/tutorial-2.md:336
-msgid "![Hello World Tutorial 2 window, on macOS]{1} /// caption ///"
+msgid "![Hello World Tutorial 2 window, on macOS]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-2.md:344
-msgid "![Hello World Tutorial 2 window, on Linux]{1} /// caption ///"
-msgstr ""
-
-#: docs/en/tutorial/tutorial-2.md:352
-msgid "![Hello World Tutorial 2 window, on Windows]{1} /// caption ///"
-msgstr ""
-
+#: docs/en/tutorial/tutorial-2.md:338
+#: docs/en/tutorial/tutorial-2.md:348
 #: docs/en/tutorial/tutorial-2.md:358
+msgid "/// caption"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:346
+msgid "![Hello World Tutorial 2 window, on Linux]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:356
+msgid "![Hello World Tutorial 2 window, on Windows]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:364
 msgid ""
 "If you enter a name in the text box, and press the GUI button, you should "
 "see output appear in the console where you started the application."
 msgstr "如果在文本框中输入名称，并按下图形用户界面中的按钮，就会在启动程序的控制台中"
 "看到输出结果。"
 
-#: docs/en/tutorial/tutorial-2.md:362
+#: docs/en/tutorial/tutorial-2.md:368
 msgid ""
 "Before continuing, close the app. As with Tutorial 1, you can do this by "
 "pressing the close button on the application window, by selecting Quit/Exit "
@@ -406,18 +416,15 @@ msgstr ""
 "一样，您可以使用应用程序窗口上的关闭按钮、从应用程序的菜单栏选择关闭/退出、"
 "或在您运行 `briefcase dev` 的命令行窗口中按 **Ctrl+C** 以关闭应用程序。"
 
-#: docs/en/tutorial/tutorial-2.md:367
+#: docs/en/tutorial/tutorial-2.md:373
 msgid "Next steps"
 msgstr "下一步"
 
-#: docs/en/tutorial/tutorial-2.md:369
+#: docs/en/tutorial/tutorial-2.md:375
 msgid ""
 "We've now got an application that does something a little more interesting. "
 "But it only runs on our own computer. Let's package this application for "
-"distribution. In [Tutorial 3][tutorial-3], we'll wrap our application up as "
-"a standalone installer that we could send to a friend, a customer, or upload "
+"distribution. In [Tutorial 3]{1}, we'll wrap our application up as a "
+"standalone installer that we could send to a friend, a customer, or upload "
 "to an App Store."
 msgstr ""
-
-#~ msgid "Tutorial 2 - Making it interesting"
-#~ msgstr "教程 2 - 使之更有趣"

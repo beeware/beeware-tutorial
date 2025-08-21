@@ -1,13 +1,13 @@
-# Tutorial 5 - Taking it Mobile { id="tutorial-5" }
+# Tutorial 5 - Taking it Mobile
 
 So far, we've been running and testing our application on the desktop.
 However, BeeWare also supports mobile platforms - and the application
 we've written can be deployed to your mobile device, too!
 
-### [Android][mobile-android]
+### [Android](android.md)
 
 Android applications can be compiled on macOS, Windows or Linux.
 
-### <nospell>[iOS][mobile-ios]</nospell>
+### [iOS](iOS.md)
 
 iOS applications can only be compiled on macOS.

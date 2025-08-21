@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-12-10 11:00+0000\n"
 "Last-Translator: pp pp <serdarkhan12@proton.me>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/topics/testing.md:1
-msgid "Testing times { id=\"testing\" }"
-msgstr ""
+msgid "Testing times"
+msgstr "Tempi di verifica"
 
 #: docs/en/tutorial/topics/testing.md:3
 #, fuzzy
@@ -265,6 +265,3 @@ msgstr ""
 "Si può anche usare l'opzione `--test` sui backend mobili: - quindi `"
 "briefcase run iOS --test` e `briefcase run android --test` funzioneranno "
 "entrambi, eseguendo la suite di test sul dispositivo mobile selezionato."
-
-#~ msgid "Testing times"
-#~ msgstr "Tempi di verifica"

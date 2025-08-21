@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-06-21 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:1
-msgid "Tutorial 5 - Taking it mobile: iOS { id=\"mobile-ios\" }"
-msgstr ""
+msgid "Tutorial 5 - Taking it mobile: iOS"
+msgstr "教程 5 - 在移动设备上：iOS"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:3
 msgid ""
@@ -85,6 +85,14 @@ msgid "![Hello World Tutorial 5 window, on iOS]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/iOS.md:122
+msgid "/// caption"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-5/iOS.md:124
+msgid "///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-5/iOS.md:126
 msgid ""
 "While the app is running, you'll see a series of Simulator log output "
 "messages in the console. Typing Ctrl+C into the terminal will halt the "
@@ -96,7 +104,7 @@ msgstr ""
 "会停止控制台中的信息，但不会关闭模拟器。这样，您无需重启模拟器，也能可以继续"
 "测试新更改。"
 
-#: docs/en/tutorial/tutorial-5/iOS.md:127
+#: docs/en/tutorial/tutorial-5/iOS.md:131
 msgid ""
 "If you know ahead of time which iOS simulator you want to target, you can "
 "tell Briefcase to use that simulator by providing a `-d` (or `--device`) "
@@ -106,7 +114,7 @@ msgstr ""
 "如果事先知道要使用哪个 iOS 模拟器，可以通过提供 `-d`（或 `--device`）"
 "选项告诉 Briefcase 使用该模拟器。使用创建应用程序时选择的设备名称，运行:"
 
-#: docs/en/tutorial/tutorial-5/iOS.md:136
+#: docs/en/tutorial/tutorial-5/iOS.md:140
 msgid ""
 "If you have multiple iOS versions available, Briefcase will pick the highest "
 "iOS version; if you want to pick a particular iOS version, you tell it to "
@@ -114,19 +122,16 @@ msgid ""
 msgstr "如果你有多个 iOS 版本，Briefcase 会选择最高的 iOS 版本；如果你想选择某个 iOS "
 "版本，你可以告诉它使用该特定版本："
 
-#: docs/en/tutorial/tutorial-5/iOS.md:144
+#: docs/en/tutorial/tutorial-5/iOS.md:148
 msgid "Or, you can name a specific device UDID:"
 msgstr "或者，您也可以命名一个特定的设备 UDID："
 
-#: docs/en/tutorial/tutorial-5/iOS.md:150
+#: docs/en/tutorial/tutorial-5/iOS.md:154
 msgid "Next steps"
 msgstr "下一步"
 
-#: docs/en/tutorial/tutorial-5/iOS.md:152
+#: docs/en/tutorial/tutorial-5/iOS.md:156
 msgid ""
 "We've now got an application on our phone! Is there anywhere else we can "
-"deploy a BeeWare app? Turn to [Tutorial 6][tutorial-6] to find out..."
+"deploy a BeeWare app? Turn to [Tutorial 6]{1} to find out..."
 msgstr ""
-
-#~ msgid "Tutorial 5 - Taking it mobile: iOS"
-#~ msgstr "教程 5 - 在移动设备上：iOS"

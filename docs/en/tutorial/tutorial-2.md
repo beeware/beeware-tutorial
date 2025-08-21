@@ -1,6 +1,6 @@
-# Tutorial 2 - Making it interesting { id="tutorial-2" }
+# Tutorial 2 - Making it interesting
 
-In [Tutorial 1][tutorial-1], we generated
+In [Tutorial 1](tutorial-1.md), we generated
 a stub project that was able to run, but we didn't write any code
 ourselves. Let's take a look at what was generated for us.
 
@@ -374,6 +374,6 @@ terminal where you ran `briefcase dev`.
 
 We've now got an application that does something a little more
 interesting. But it only runs on our own computer. Let's package this
-application for distribution. In [Tutorial 3][tutorial-3], we'll wrap our
+application for distribution. In [Tutorial 3](tutorial-3.md), we'll wrap our
 application up as a standalone installer that we could send to a friend,
 a customer, or upload to an App Store.

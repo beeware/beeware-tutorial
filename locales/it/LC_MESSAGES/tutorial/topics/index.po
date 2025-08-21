@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-12-10 11:00+0000\n"
 "Last-Translator: pp pp <serdarkhan12@proton.me>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/topics/index.md:1
-msgid "Going further { #topics }"
-msgstr ""
+msgid "Going further"
+msgstr "Andare avanti"
 
 #: docs/en/tutorial/topics/index.md:3
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 "tutorial di base."
 
 #: docs/en/tutorial/topics/index.md:8
-msgid "[Customizing icons][custom-icons]"
+msgid "[Customizing icons]{1}"
 msgstr ""
 
 #: docs/en/tutorial/topics/index.md:10
@@ -42,7 +42,7 @@ msgstr ""
 "predefinita \"gray bee\"."
 
 #: docs/en/tutorial/topics/index.md:13
-msgid "[Using the camera][camera-access]"
+msgid "[Using the camera]{1}"
 msgstr ""
 
 #: docs/en/tutorial/topics/index.md:15
@@ -54,7 +54,7 @@ msgstr ""
 "visualizzare un immagine dall'interno della tua applicazione."
 
 #: docs/en/tutorial/topics/index.md:18
-msgid "[Testing times][testing]"
+msgid "[Testing times]{1}"
 msgstr ""
 
 #: docs/en/tutorial/topics/index.md:20
@@ -64,6 +64,3 @@ msgid ""
 msgstr ""
 "Come fai ad assicurarti che la tua applicazione funzioni, e che continui a "
 "funzionare? Aggiungendo una suite di prova al tuo progetto!"
-
-#~ msgid "Going further"
-#~ msgstr "Andare avanti"

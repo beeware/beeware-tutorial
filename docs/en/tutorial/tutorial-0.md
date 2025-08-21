@@ -1,4 +1,4 @@
-# Tutorial 0 - Let's get set up! { id="tutorial-0" }
+# Tutorial 0 - Let's get set up!
 
 Before we build our first BeeWare app, we have to make sure we've got
 all the prerequisites for running BeeWare.
@@ -231,4 +231,4 @@ should stick to `venv` and the system Python.
 ## Next steps
 
 We've now set up our environment. We're ready to
-[create our first BeeWare application][tutorial-1].
+[create our first BeeWare application](tutorial-1.md).

@@ -1,4 +1,4 @@
-# Contributing to this tutorial { id=contributing }
+# Contributing to this tutorial
 
 This tutorial is written using [MkDocs and Markdown](https://www.mkdocs.org/).
 This guide will help you contribute fixes or new content to this

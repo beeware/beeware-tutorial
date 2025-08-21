@@ -1,4 +1,4 @@
-# Tutorial 4 - Updating your application { id="tutorial-4" }
+# Tutorial 4 - Updating your application
 
 In the last tutorial, we packaged our application as a native
 application. If you're dealing with a real-world app, that isn't going
@@ -31,7 +31,7 @@ async def say_hello(self, widget):
 We need to make the method `async` so that when we display the dialog,
 the rest of the application continues to run. Don't worry about this
 detail too much right now -we'll give a more detailed explanation in
-[Tutorial 8][tutorial-8].
+[Tutorial 8](tutorial-8.md).
 
 This directs Toga to open a modal dialog box when the button is pressed.
 
@@ -147,7 +147,7 @@ Now that we've updated the installer code, we can then run
 updated app, and `briefcase package` to repackage the application for
 distribution.
 
-(macOS users, remember that as noted in [Tutorial 3][tutorial-3], for the
+(macOS users, remember that as noted in [Tutorial 3](tutorial-3.md), for the
 tutorial we recommend running `briefcase package` with the
 `--adhoc-sign` flag to avoid the complexity of setting up a code signing
 identity and keep the tutorial as simple as possible.)
@@ -276,6 +276,6 @@ can run `briefcase package -u`.
 We now have our application packaged for distribution on desktop
 platforms, and we've been able to update the code in our application.
 
-But what about mobile? In [Tutorial 5][tutorial-5], we'll
+But what about mobile? In [Tutorial 5](tutorial-5/index.md), we'll
 convert our application into a mobile application, and deploy it onto a
 device simulator, and onto a phone.

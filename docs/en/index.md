@@ -1,4 +1,4 @@
-# Welcome to the BeeWare Tutorial! { id=tutorial }
+# Welcome to the BeeWare Tutorial!
 
 **Write Python. Run Anywhere.**
 
@@ -84,4 +84,4 @@ mobile platforms such as Android and iOS; and for the Web.
 ## Let's go!
 
 Ready to try BeeWare for yourself?
-[Let's build a cross-platform application in Python!][tutorial-0]
+[Let's build a cross-platform application in Python!](tutorial/tutorial-0.md)

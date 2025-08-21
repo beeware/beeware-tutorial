@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-03-01 19:00+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/index.md:1
-msgid "Welcome to the BeeWare Tutorial! { id=tutorial }"
-msgstr "Bem-vindo ao Tutorial da BeeWare! { id=tutorial }"
+msgid "Welcome to the BeeWare Tutorial!"
+msgstr "Bem-vindo ao Tutorial da BeeWare!"
 
 #: docs/en/index.md:3
 msgid "**Write Python. Run Anywhere.**"
@@ -36,7 +36,7 @@ msgstr ""
 "exemplo, testar seu aplicativo."
 
 #: docs/en/index.md:11
-msgid "{% if config.extra.translation_type == original %}"
+msgid "{% if config.extra.translation_type == \"original\" %}"
 msgstr ""
 
 #: docs/en/index.md:13
@@ -67,7 +67,7 @@ msgid "{% endif %}"
 msgstr ""
 
 #: docs/en/index.md:28
-msgid "{% if config.extra.translation_type == machine %}"
+msgid "{% if config.extra.translation_type == \"machine\" %}"
 msgstr ""
 
 #: docs/en/index.md:30
@@ -96,7 +96,7 @@ msgstr ""
 "à equipe de tradução."
 
 #: docs/en/index.md:44
-msgid "{% if config.extra.translation_type == human %}"
+msgid "{% if config.extra.translation_type == \"human\" %}"
 msgstr ""
 
 #: docs/en/index.md:46
@@ -187,8 +187,5 @@ msgstr "Vamos lá!"
 #: docs/en/index.md:86
 msgid ""
 "Ready to try BeeWare for yourself? "
-"[Let's build a cross-platform application in Python!][tutorial-0]"
+"[Let's build a cross-platform application in Python!]{1}"
 msgstr ""
-
-#~ msgid "Welcome to the BeeWare Tutorial!"
-#~ msgstr "Bem-vindo ao Tutorial da BeeWare!"

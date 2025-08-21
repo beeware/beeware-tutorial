@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-02-13 12:12+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-5/index.md:1
-msgid "Tutorial 5 - Taking it Mobile { id=\"tutorial-5\" }"
-msgstr ""
+#, fuzzy
+msgid "Tutorial 5 - Taking it Mobile"
+msgstr "Esercitazione 5 - Il mobile"
 
 #: docs/en/tutorial/tutorial-5/index.md:3
 #, fuzzy
@@ -27,7 +28,7 @@ msgstr ""
 "abbiamo scritto può essere distribuita anche sul vostro dispositivo mobile!"
 
 #: docs/en/tutorial/tutorial-5/index.md:7
-msgid "[Android][mobile-android]"
+msgid "[Android]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/index.md:9
@@ -37,14 +38,10 @@ msgstr ""
 "Le applicazioni Android possono essere compilate su macOS, Windows o Linux."
 
 #: docs/en/tutorial/tutorial-5/index.md:11
-msgid "[iOS][mobile-ios]"
+msgid "[iOS]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/index.md:13
 #, fuzzy
 msgid "iOS applications can only be compiled on macOS."
 msgstr "le applicazioni iOS possono essere compilate solo su macOS."
-
-#, fuzzy
-#~ msgid "Tutorial 5 - Taking it Mobile"
-#~ msgstr "Esercitazione 5 - Il mobile"

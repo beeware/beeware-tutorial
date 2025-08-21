@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-06-05 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/topics/index.md:1
-msgid "Going further { #topics }"
-msgstr ""
+msgid "Going further"
+msgstr "更进一步"
 
 #: docs/en/tutorial/topics/index.md:3
 msgid ""
@@ -26,7 +26,7 @@ msgstr "想在一些主题更加深入吗？这里有一些探索应用程序开
 "独立，可以任意顺序完成，但它们都假设您已学习了主教程。"
 
 #: docs/en/tutorial/topics/index.md:8
-msgid "[Customizing icons][custom-icons]"
+msgid "[Customizing icons]{1}"
 msgstr ""
 
 #: docs/en/tutorial/topics/index.md:10
@@ -36,7 +36,7 @@ msgid ""
 msgstr "替换“灰蜜蜂”图标以自定义您的应用程序的外观。"
 
 #: docs/en/tutorial/topics/index.md:13
-msgid "[Using the camera][camera-access]"
+msgid "[Using the camera]{1}"
 msgstr ""
 
 #: docs/en/tutorial/topics/index.md:15
@@ -46,7 +46,7 @@ msgid ""
 msgstr "使用在移动或桌面设备上的相机在您的应用程序中拍与查看图片。"
 
 #: docs/en/tutorial/topics/index.md:18
-msgid "[Testing times][testing]"
+msgid "[Testing times]{1}"
 msgstr ""
 
 #: docs/en/tutorial/topics/index.md:20
@@ -54,6 +54,3 @@ msgid ""
 "How do you ensure that your application works, and stays working? By adding "
 "a test suite to your project!"
 msgstr "怎样确保您的应用程序始终正常工作？向您的项目加入一个测试组！"
-
-#~ msgid "Going further"
-#~ msgstr "更进一步"

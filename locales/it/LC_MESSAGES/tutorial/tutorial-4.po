@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-02-13 12:12+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-4.md:1
-msgid "Tutorial 4 - Updating your application { id=\"tutorial-4\" }"
-msgstr ""
+#, fuzzy
+msgid "Tutorial 4 - Updating your application"
+msgstr "Esercitazione 4 - Aggiornamento dell'applicazione"
 
 #: docs/en/tutorial/tutorial-4.md:3
 #, fuzzy
@@ -68,8 +69,7 @@ msgstr ""
 msgid ""
 "We need to make the method `async` so that when we display the dialog, the "
 "rest of the application continues to run. Don't worry about this detail too "
-"much right now -we'll give a more detailed explanation in [Tutorial 8]"
-"[tutorial-8]."
+"much right now -we'll give a more detailed explanation in [Tutorial 8]{1}."
 msgstr ""
 
 #: docs/en/tutorial/tutorial-4.md:36
@@ -90,54 +90,63 @@ msgstr ""
 "si vedrà la nuova finestra di dialogo:"
 
 #: docs/en/tutorial/tutorial-4.md:41
-#: docs/en/tutorial/tutorial-4.md:81
-#: docs/en/tutorial/tutorial-4.md:194
+#: docs/en/tutorial/tutorial-4.md:87
+#: docs/en/tutorial/tutorial-4.md:200
 msgid "/// tab | macOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-4.md:43
-msgid "![Hello World Tutorial 4 dialog, on macOS]{1} /// caption ///"
+msgid "![Hello World Tutorial 4 dialog, on macOS]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-4.md:45
+#: docs/en/tutorial/tutorial-4.md:55
+#: docs/en/tutorial/tutorial-4.md:65
+msgid "/// caption"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-4.md:47
-#: docs/en/tutorial/tutorial-4.md:55
-#: docs/en/tutorial/tutorial-4.md:63
-#: docs/en/tutorial/tutorial-4.md:95
-#: docs/en/tutorial/tutorial-4.md:118
-#: docs/en/tutorial/tutorial-4.md:134
-#: docs/en/tutorial/tutorial-4.md:215
-#: docs/en/tutorial/tutorial-4.md:244
-#: docs/en/tutorial/tutorial-4.md:262
+#: docs/en/tutorial/tutorial-4.md:49
+#: docs/en/tutorial/tutorial-4.md:57
+#: docs/en/tutorial/tutorial-4.md:59
+#: docs/en/tutorial/tutorial-4.md:67
+#: docs/en/tutorial/tutorial-4.md:69
+#: docs/en/tutorial/tutorial-4.md:101
+#: docs/en/tutorial/tutorial-4.md:124
+#: docs/en/tutorial/tutorial-4.md:140
+#: docs/en/tutorial/tutorial-4.md:221
+#: docs/en/tutorial/tutorial-4.md:250
+#: docs/en/tutorial/tutorial-4.md:268
 msgid "///"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:49
-#: docs/en/tutorial/tutorial-4.md:97
-#: docs/en/tutorial/tutorial-4.md:217
+#: docs/en/tutorial/tutorial-4.md:51
+#: docs/en/tutorial/tutorial-4.md:103
+#: docs/en/tutorial/tutorial-4.md:223
 msgid "/// tab | Linux"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:51
-msgid "![Hello World Tutorial 4 dialog, on Linux]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-4.md:53
+msgid "![Hello World Tutorial 4 dialog, on Linux]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:57
-#: docs/en/tutorial/tutorial-4.md:120
-#: docs/en/tutorial/tutorial-4.md:246
+#: docs/en/tutorial/tutorial-4.md:61
+#: docs/en/tutorial/tutorial-4.md:126
+#: docs/en/tutorial/tutorial-4.md:252
 msgid "/// tab | Windows"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:59
-msgid "![Hello World Tutorial 4 dialog, on Windows]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-4.md:63
+msgid "![Hello World Tutorial 4 dialog, on Windows]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:65
+#: docs/en/tutorial/tutorial-4.md:71
 #, fuzzy
 msgid "However, if you run `briefcase run`, the dialog box won't appear."
 msgstr ""
 "Tuttavia, se si esegue `briefcase run`, la finestra di dialogo non appare."
 
-#: docs/en/tutorial/tutorial-4.md:67
+#: docs/en/tutorial/tutorial-4.md:73
 msgid ""
 "Why is this? Well, `briefcase dev` operates by running your code in place -"
 "it tries to produce as realistic runtime environment for your code as "
@@ -147,7 +156,7 @@ msgid ""
 "the moment, your application still has the old code in it."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:75
+#: docs/en/tutorial/tutorial-4.md:81
 #, fuzzy
 msgid ""
 "So - we need to tell briefcase to update your app, copying in the new "
@@ -160,7 +169,7 @@ msgstr ""
 "della piattaforma e ricominciando da zero. Tuttavia, Briefcase offre un modo "
 "più semplice: è possibile aggiornare il codice dell'applicazione esistente:"
 
-#: docs/en/tutorial/tutorial-4.md:136
+#: docs/en/tutorial/tutorial-4.md:142
 #, fuzzy
 msgid ""
 "If Briefcase can't find the scaffolded template, it will automatically "
@@ -169,7 +178,7 @@ msgstr ""
 "Se Briefcase non riesce a trovare il modello impalcabile, invocherà "
 "automaticamente `create` per generare un nuovo scaffold."
 
-#: docs/en/tutorial/tutorial-4.md:139
+#: docs/en/tutorial/tutorial-4.md:145
 #, fuzzy
 msgid ""
 "Now that we've updated the installer code, we can then run `briefcase build` "
@@ -181,13 +190,13 @@ msgstr ""
 "eseguire l'applicazione aggiornata e `briefcase package` per riconfezionare "
 "l'applicazione per la distribuzione."
 
-#: docs/en/tutorial/tutorial-4.md:144
+#: docs/en/tutorial/tutorial-4.md:150
 #, fuzzy
 msgid ""
-"(macOS users, remember that as noted in [Tutorial 3][tutorial-3], for the "
-"tutorial we recommend running `briefcase package` with the `--adhoc-sign` "
-"flag to avoid the complexity of setting up a code signing identity and keep "
-"the tutorial as simple as possible.)"
+"(macOS users, remember that as noted in [Tutorial 3]{1}, for the tutorial we "
+"recommend running `briefcase package` with the `--adhoc-sign` flag to avoid "
+"the complexity of setting up a code signing identity and keep the tutorial "
+"as simple as possible.)"
 msgstr ""
 "(Per gli utenti di macOS, ricordate che, come indicato in [Tutorial 3]"
 "[tutorial-3], per il tutorial si consiglia di eseguire il pacchetto "
@@ -195,12 +204,12 @@ msgstr ""
 "impostare un'identità di firma del codice e mantenere il tutorial il più "
 "semplice possibile)"
 
-#: docs/en/tutorial/tutorial-4.md:149
+#: docs/en/tutorial/tutorial-4.md:155
 #, fuzzy
 msgid "Update and run in one step"
 msgstr "Aggiornamento ed esecuzione in un unico passaggio"
 
-#: docs/en/tutorial/tutorial-4.md:151
+#: docs/en/tutorial/tutorial-4.md:157
 #, fuzzy
 msgid ""
 "If you're rapidly iterating code changes, you'll likely want to make a code "
@@ -225,7 +234,7 @@ msgstr ""
 "dell'applicazione in bundle, Briefcase ha una scorciatoia per supportare "
 "questo modello di utilizzo: l'opzione `-u` (o `--update`) del comando `run`."
 
-#: docs/en/tutorial/tutorial-4.md:162
+#: docs/en/tutorial/tutorial-4.md:168
 #, fuzzy
 msgid ""
 "Let's try making another change. You may have noticed that if you don't type "
@@ -236,7 +245,7 @@ msgstr ""
 "nome nella casella di testo, la finestra di dialogo dirà \"Ciao\". "
 "Modifichiamo di nuovo la funzione `say_hello` per gestire questo caso limite."
 
-#: docs/en/tutorial/tutorial-4.md:166
+#: docs/en/tutorial/tutorial-4.md:172
 #, fuzzy
 msgid ""
 "At the top of the file, between the imports and the `class HelloWorld` "
@@ -247,14 +256,14 @@ msgstr ""
 "HelloWorld`, aggiungiamo un metodo di utilità per generare un saluto "
 "appropriato a seconda del valore del nome fornito:"
 
-#: docs/en/tutorial/tutorial-4.md:178
+#: docs/en/tutorial/tutorial-4.md:184
 #, fuzzy
 msgid "Then, modify the `say_hello` callback to use this new utility method:"
 msgstr ""
 "Quindi, modificare il callback `say_hello` per utilizzare questo nuovo "
 "metodo di utilità:"
 
-#: docs/en/tutorial/tutorial-4.md:190
+#: docs/en/tutorial/tutorial-4.md:196
 #, fuzzy
 msgid ""
 "Run your app in development mode (with `briefcase dev`) to confirm that the "
@@ -264,7 +273,7 @@ msgstr ""
 "verificare che la nuova logica funzioni; quindi aggiornare, compilare ed "
 "eseguire l'applicazione con un solo comando:"
 
-#: docs/en/tutorial/tutorial-4.md:264
+#: docs/en/tutorial/tutorial-4.md:270
 #, fuzzy
 msgid ""
 "The package command also accepts the `-u` argument, so if you make a change "
@@ -275,11 +284,11 @@ msgstr ""
 "modifica al codice dell'applicazione e si desidera eseguire immediatamente "
 "il repackaging, si può eseguire `briefcase package -u`."
 
-#: docs/en/tutorial/tutorial-4.md:268
+#: docs/en/tutorial/tutorial-4.md:274
 msgid "Next steps"
 msgstr "Prossimi passi"
 
-#: docs/en/tutorial/tutorial-4.md:270
+#: docs/en/tutorial/tutorial-4.md:276
 #, fuzzy
 msgid ""
 "We now have our application packaged for distribution on desktop platforms, "
@@ -289,13 +298,9 @@ msgstr ""
 "piattaforme desktop e siamo stati in grado di aggiornare il codice della "
 "nostra applicazione."
 
-#: docs/en/tutorial/tutorial-4.md:273
+#: docs/en/tutorial/tutorial-4.md:279
 msgid ""
-"But what about mobile? In [Tutorial 5][tutorial-5], we'll convert our "
-"application into a mobile application, and deploy it onto a device "
-"simulator, and onto a phone."
+"But what about mobile? In [Tutorial 5]{1}, we'll convert our application "
+"into a mobile application, and deploy it onto a device simulator, and onto a "
+"phone."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Tutorial 4 - Updating your application"
-#~ msgstr "Esercitazione 4 - Aggiornamento dell'applicazione"

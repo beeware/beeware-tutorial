@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/how-to/index.md:1
-msgid "Contributing to this tutorial { id=contributing }"
+msgid "Contributing to this tutorial"
 msgstr ""
 
 #: docs/en/how-to/index.md:3
@@ -45,12 +45,13 @@ msgstr ""
 #: docs/en/how-to/index.md:135
 #: docs/en/how-to/index.md:169
 #: docs/en/how-to/index.md:201
-#: docs/en/how-to/index.md:288
-#: docs/en/how-to/index.md:360
-#: docs/en/how-to/index.md:392
-#: docs/en/how-to/index.md:427
-#: docs/en/how-to/index.md:472
-#: docs/en/how-to/index.md:535
+#: docs/en/how-to/index.md:264
+#: docs/en/how-to/index.md:318
+#: docs/en/how-to/index.md:350
+#: docs/en/how-to/index.md:385
+#: docs/en/how-to/index.md:435
+#: docs/en/how-to/index.md:468
+#: docs/en/how-to/index.md:532
 msgid "/// tab | macOS"
 msgstr ""
 
@@ -69,27 +70,30 @@ msgstr ""
 #: docs/en/how-to/index.md:176
 #: docs/en/how-to/index.md:185
 #: docs/en/how-to/index.md:194
-#: docs/en/how-to/index.md:227
-#: docs/en/how-to/index.md:255
-#: docs/en/how-to/index.md:283
+#: docs/en/how-to/index.md:219
+#: docs/en/how-to/index.md:239
+#: docs/en/how-to/index.md:259
+#: docs/en/how-to/index.md:278
+#: docs/en/how-to/index.md:294
 #: docs/en/how-to/index.md:308
-#: docs/en/how-to/index.md:330
-#: docs/en/how-to/index.md:350
-#: docs/en/how-to/index.md:366
-#: docs/en/how-to/index.md:374
-#: docs/en/how-to/index.md:382
-#: docs/en/how-to/index.md:398
-#: docs/en/how-to/index.md:406
-#: docs/en/how-to/index.md:414
-#: docs/en/how-to/index.md:433
+#: docs/en/how-to/index.md:324
+#: docs/en/how-to/index.md:332
+#: docs/en/how-to/index.md:340
+#: docs/en/how-to/index.md:356
+#: docs/en/how-to/index.md:364
+#: docs/en/how-to/index.md:372
+#: docs/en/how-to/index.md:391
+#: docs/en/how-to/index.md:399
+#: docs/en/how-to/index.md:407
 #: docs/en/how-to/index.md:441
 #: docs/en/how-to/index.md:449
-#: docs/en/how-to/index.md:478
-#: docs/en/how-to/index.md:486
-#: docs/en/how-to/index.md:494
-#: docs/en/how-to/index.md:541
-#: docs/en/how-to/index.md:549
-#: docs/en/how-to/index.md:557
+#: docs/en/how-to/index.md:457
+#: docs/en/how-to/index.md:474
+#: docs/en/how-to/index.md:482
+#: docs/en/how-to/index.md:490
+#: docs/en/how-to/index.md:538
+#: docs/en/how-to/index.md:546
+#: docs/en/how-to/index.md:554
 msgid "///"
 msgstr ""
 
@@ -98,13 +102,14 @@ msgstr ""
 #: docs/en/how-to/index.md:104
 #: docs/en/how-to/index.md:144
 #: docs/en/how-to/index.md:178
-#: docs/en/how-to/index.md:229
-#: docs/en/how-to/index.md:310
-#: docs/en/how-to/index.md:368
-#: docs/en/how-to/index.md:400
-#: docs/en/how-to/index.md:435
-#: docs/en/how-to/index.md:480
-#: docs/en/how-to/index.md:543
+#: docs/en/how-to/index.md:221
+#: docs/en/how-to/index.md:280
+#: docs/en/how-to/index.md:326
+#: docs/en/how-to/index.md:358
+#: docs/en/how-to/index.md:393
+#: docs/en/how-to/index.md:443
+#: docs/en/how-to/index.md:476
+#: docs/en/how-to/index.md:540
 msgid "/// tab | Linux"
 msgstr ""
 
@@ -113,13 +118,14 @@ msgstr ""
 #: docs/en/how-to/index.md:116
 #: docs/en/how-to/index.md:153
 #: docs/en/how-to/index.md:187
-#: docs/en/how-to/index.md:257
-#: docs/en/how-to/index.md:332
-#: docs/en/how-to/index.md:376
-#: docs/en/how-to/index.md:408
-#: docs/en/how-to/index.md:443
-#: docs/en/how-to/index.md:488
-#: docs/en/how-to/index.md:551
+#: docs/en/how-to/index.md:241
+#: docs/en/how-to/index.md:296
+#: docs/en/how-to/index.md:334
+#: docs/en/how-to/index.md:366
+#: docs/en/how-to/index.md:401
+#: docs/en/how-to/index.md:451
+#: docs/en/how-to/index.md:484
+#: docs/en/how-to/index.md:548
 msgid "/// tab | Windows"
 msgstr ""
 
@@ -135,7 +141,7 @@ msgid ""
 msgstr ""
 
 #: docs/en/how-to/index.md:78
-msgid "Your prompt should now have a `(venv)` prefix in front of it."
+msgid "Your prompt should now have a `(.venv)` prefix in front of it."
 msgstr ""
 
 #: docs/en/how-to/index.md:80
@@ -200,45 +206,45 @@ msgid ""
 "has found:"
 msgstr ""
 
-#: docs/en/how-to/index.md:285
+#: docs/en/how-to/index.md:261
 msgid ""
 "You can then re-add any files that were modified as a result of the pre-"
 "commit checks, and re-commit the change."
 msgstr ""
 
-#: docs/en/how-to/index.md:352
+#: docs/en/how-to/index.md:310
 msgid "Now you are ready to start hacking on BeeWare docs!"
 msgstr ""
 
-#: docs/en/how-to/index.md:354
-msgid "Building BeeWare's documentation"
+#: docs/en/how-to/index.md:312
+msgid "Building the BeeWare Tutorial"
 msgstr ""
 
-#: docs/en/how-to/index.md:356
-msgid "Build documentation locally"
+#: docs/en/how-to/index.md:314
+msgid "Build the Tutorial locally"
 msgstr ""
 
-#: docs/en/how-to/index.md:358
+#: docs/en/how-to/index.md:316
 msgid "Once your development environment is set up, run:"
 msgstr ""
 
-#: docs/en/how-to/index.md:384
+#: docs/en/how-to/index.md:342
 msgid ""
 "The output of the file should be in the `docs/_build/html` folder. If there "
 "are any markup problems, they'll raise an error."
 msgstr ""
 
-#: docs/en/how-to/index.md:387
-msgid "Live documentation preview"
+#: docs/en/how-to/index.md:345
+msgid "Live Tutorial preview"
 msgstr ""
 
-#: docs/en/how-to/index.md:389
+#: docs/en/how-to/index.md:347
 msgid ""
 "To support rapid editing of documentation, BeeWare also has a "
 "\"live preview\" mode:"
 msgstr ""
 
-#: docs/en/how-to/index.md:416
+#: docs/en/how-to/index.md:374
 msgid ""
 "This will build the documentation, start a web server to serve the build "
 "documentation, and watch the file system for any changes to the "
@@ -247,79 +253,105 @@ msgid ""
 "refreshed."
 msgstr ""
 
-#: docs/en/how-to/index.md:422
-msgid "Documentation linting"
+#: docs/en/how-to/index.md:380
+msgid "Tutorial linting"
 msgstr ""
 
-#: docs/en/how-to/index.md:424
+#: docs/en/how-to/index.md:382
 msgid ""
 "The build process will identify reStructuredText problems, but BeeWare "
 "performs some additional \"lint\" checks. To run the lint checks:"
 msgstr ""
 
-#: docs/en/how-to/index.md:451
+#: docs/en/how-to/index.md:409
 msgid "This will validate the documentation does not contain:"
 msgstr ""
 
-#: docs/en/how-to/index.md:453
+#: docs/en/how-to/index.md:411
 msgid "dead hyperlinks"
 msgstr ""
 
-#: docs/en/how-to/index.md:454
+#: docs/en/how-to/index.md:412
 msgid "misspelled words"
 msgstr ""
 
-#: docs/en/how-to/index.md:456
+#: docs/en/how-to/index.md:414
 msgid ""
 "If a valid spelling of a word is identified as misspelled, then add the word "
 "to the list in `docs/spelling_wordlist`. This will add the word to the "
 "spellchecker's dictionary. When adding to this list, remember:"
 msgstr ""
 
-#: docs/en/how-to/index.md:460
+#: docs/en/how-to/index.md:418
 msgid ""
 "We prefer US spelling, with some liberties for programming-specific "
 "colloquialisms (e.g., \"apps\") and verbing of nouns (e.g., \"scrollable\")"
 msgstr ""
 
-#: docs/en/how-to/index.md:462
+#: docs/en/how-to/index.md:420
 msgid ""
 "Any reference to a product name should use the product's preferred "
 "capitalization. (e.g., \"macOS\", \"GTK\", \"pytest\", \"Pygame\", "
 "\"PyScript\")."
 msgstr ""
 
-#: docs/en/how-to/index.md:465
+#: docs/en/how-to/index.md:423
 msgid ""
 "If a term is being used \"as code\", then it should be quoted as inline code "
 "rather than being added to the dictionary."
 msgstr ""
 
-#: docs/en/how-to/index.md:468
-msgid "Rebuilding all documentation"
+#: docs/en/how-to/index.md:426
+msgid "Building translations"
 msgstr ""
 
-#: docs/en/how-to/index.md:470
-msgid "To force a rebuild for all the documentation:"
+#: docs/en/how-to/index.md:428
+msgid ""
+"The BeeWare tutorial is available in multiple languages, which you can build "
+"individually or all at the same time."
+msgstr ""
+
+#: docs/en/how-to/index.md:431
+msgid ""
+"To build a single translation, you run the `docs` command with the language "
+"code for the translation you wish to build. For example, to build French:"
+msgstr ""
+
+#: docs/en/how-to/index.md:459
+msgid ""
+"The French translation should be built in the `docs/_build/html` folder. If "
+"there are any markup problems, they'll raise an error."
+msgstr ""
+
+#: docs/en/how-to/index.md:462
+msgid ""
+"An error is also raised if you enter a language code for an unavailable "
+"language. If this happens, verify that you are using the proper language "
+"code."
+msgstr ""
+
+#: docs/en/how-to/index.md:466
+msgid "To build all the translations at the same time:"
+msgstr ""
+
+#: docs/en/how-to/index.md:492
+msgid ""
+"This will build all available translations in the `docs/_build/html` "
+"directory, inside a language-specific subdirectory. For example, the French "
+"translation would be available in `docs/_build/html/fr`."
 msgstr ""
 
 #: docs/en/how-to/index.md:496
-msgid ""
-"The documentation should be fully rebuilt in the `docs/_build/html` folder. "
-"If there are any markup problems, they'll raise an error."
-msgstr ""
-
-#: docs/en/how-to/index.md:499
 msgid "What to work on?"
 msgstr ""
 
-#: docs/en/how-to/index.md:501
+#: docs/en/how-to/index.md:498
 msgid ""
 "If you're looking for specific areas to improve, there are "
 "[tickets tagged \"documentation\"]{1} in BeeWare's issue tracker."
 msgstr ""
 
-#: docs/en/how-to/index.md:505
+#: docs/en/how-to/index.md:502
 msgid ""
 "However, you don't need to be constrained by these tickets. If you can "
 "identify an error in the tutorial, or an improvement that can be made, start "
@@ -327,20 +359,20 @@ msgid ""
 "change."
 msgstr ""
 
-#: docs/en/how-to/index.md:510
+#: docs/en/how-to/index.md:507
 msgid "Submitting a pull request"
 msgstr ""
 
-#: docs/en/how-to/index.md:512
+#: docs/en/how-to/index.md:509
 msgid ""
 "Before you submit a pull request, there's a few bits of housekeeping to do."
 msgstr ""
 
-#: docs/en/how-to/index.md:515
+#: docs/en/how-to/index.md:512
 msgid "Submit from a feature branch, not your `main` branch"
 msgstr ""
 
-#: docs/en/how-to/index.md:517
+#: docs/en/how-to/index.md:514
 msgid ""
 "Before you start working on your change, make sure you've created a branch. "
 "By default, when you clone your repository fork, you'll be checked out on "
@@ -348,7 +380,7 @@ msgid ""
 "contribute to BeeWare itself, not the docs, please review the repo README."
 msgstr ""
 
-#: docs/en/how-to/index.md:523
+#: docs/en/how-to/index.md:520
 msgid ""
 "While you *can* submit a pull request from your `main` branch, it's "
 "preferable if you *don't* do this. If you submit a pull request that is "
@@ -358,17 +390,17 @@ msgid ""
 "branch, reviewers are prevented from making modifications."
 msgstr ""
 
-#: docs/en/how-to/index.md:530
+#: docs/en/how-to/index.md:527
 msgid ""
 "Instead, you should make your changes on a *feature branch*. A feature "
 "branch has a simple name to identify the change that you've made."
 msgstr ""
 
-#: docs/en/how-to/index.md:533
+#: docs/en/how-to/index.md:530
 msgid "To create a feature branch, run:"
 msgstr ""
 
-#: docs/en/how-to/index.md:559
+#: docs/en/how-to/index.md:556
 msgid ""
 "Commit your changes to this branch, then push to GitHub and create a pull "
 "request."

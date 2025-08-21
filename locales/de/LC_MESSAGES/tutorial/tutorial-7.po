@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-08-19 23:52+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-7.md:1
-msgid "Tutorial 7 - Get this (third-)party started { id=\"tutorial-7\" }"
-msgstr "Tutorial 7 – Starten Sie diese (Dritt-)Anwendung { id=\"tutorial-7\" }"
+msgid "Tutorial 7 - Get this (third-)party started"
+msgstr "Tutorial 7 – Starten Sie diese (Dritt-)Anwendung"
 
 #: docs/en/tutorial/tutorial-7.md:3
 msgid ""
@@ -78,8 +78,8 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:46
 #: docs/en/tutorial/tutorial-7.md:130
-#: docs/en/tutorial/tutorial-7.md:201
-#: docs/en/tutorial/tutorial-7.md:545
+#: docs/en/tutorial/tutorial-7.md:207
+#: docs/en/tutorial/tutorial-7.md:555
 msgid "/// tab | macOS"
 msgstr ""
 
@@ -89,47 +89,52 @@ msgstr ""
 #: docs/en/tutorial/tutorial-7.md:117
 #: docs/en/tutorial/tutorial-7.md:124
 #: docs/en/tutorial/tutorial-7.md:144
-#: docs/en/tutorial/tutorial-7.md:160
-#: docs/en/tutorial/tutorial-7.md:176
-#: docs/en/tutorial/tutorial-7.md:183
-#: docs/en/tutorial/tutorial-7.md:190
-#: docs/en/tutorial/tutorial-7.md:239
-#: docs/en/tutorial/tutorial-7.md:294
-#: docs/en/tutorial/tutorial-7.md:334
-#: docs/en/tutorial/tutorial-7.md:409
-#: docs/en/tutorial/tutorial-7.md:457
-#: docs/en/tutorial/tutorial-7.md:566
-#: docs/en/tutorial/tutorial-7.md:595
-#: docs/en/tutorial/tutorial-7.md:618
-#: docs/en/tutorial/tutorial-7.md:637
-#: docs/en/tutorial/tutorial-7.md:661
-#: docs/en/tutorial/tutorial-7.md:672
+#: docs/en/tutorial/tutorial-7.md:146
+#: docs/en/tutorial/tutorial-7.md:162
+#: docs/en/tutorial/tutorial-7.md:164
+#: docs/en/tutorial/tutorial-7.md:180
+#: docs/en/tutorial/tutorial-7.md:182
+#: docs/en/tutorial/tutorial-7.md:189
+#: docs/en/tutorial/tutorial-7.md:196
+#: docs/en/tutorial/tutorial-7.md:245
+#: docs/en/tutorial/tutorial-7.md:247
+#: docs/en/tutorial/tutorial-7.md:302
+#: docs/en/tutorial/tutorial-7.md:342
+#: docs/en/tutorial/tutorial-7.md:344
+#: docs/en/tutorial/tutorial-7.md:419
+#: docs/en/tutorial/tutorial-7.md:467
+#: docs/en/tutorial/tutorial-7.md:576
+#: docs/en/tutorial/tutorial-7.md:605
+#: docs/en/tutorial/tutorial-7.md:628
+#: docs/en/tutorial/tutorial-7.md:647
+#: docs/en/tutorial/tutorial-7.md:671
+#: docs/en/tutorial/tutorial-7.md:682
 msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:68
-#: docs/en/tutorial/tutorial-7.md:146
-#: docs/en/tutorial/tutorial-7.md:241
-#: docs/en/tutorial/tutorial-7.md:568
+#: docs/en/tutorial/tutorial-7.md:148
+#: docs/en/tutorial/tutorial-7.md:249
+#: docs/en/tutorial/tutorial-7.md:578
 msgid "/// tab | Linux"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:90
-#: docs/en/tutorial/tutorial-7.md:162
-#: docs/en/tutorial/tutorial-7.md:296
-#: docs/en/tutorial/tutorial-7.md:597
+#: docs/en/tutorial/tutorial-7.md:166
+#: docs/en/tutorial/tutorial-7.md:304
+#: docs/en/tutorial/tutorial-7.md:607
 msgid "/// tab | Windows"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:112
-#: docs/en/tutorial/tutorial-7.md:178
-#: docs/en/tutorial/tutorial-7.md:336
-#: docs/en/tutorial/tutorial-7.md:620
+#: docs/en/tutorial/tutorial-7.md:184
+#: docs/en/tutorial/tutorial-7.md:346
+#: docs/en/tutorial/tutorial-7.md:630
 msgid "/// tab | Android"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:114
-#: docs/en/tutorial/tutorial-7.md:180
+#: docs/en/tutorial/tutorial-7.md:186
 msgid ""
 "You can't run an Android app in developer mode - use the instructions for "
 "your chosen desktop platform."
@@ -138,14 +143,14 @@ msgstr ""
 "Sie die Anweisungen für die von Ihnen gewählte Desktop-Plattform."
 
 #: docs/en/tutorial/tutorial-7.md:119
-#: docs/en/tutorial/tutorial-7.md:185
-#: docs/en/tutorial/tutorial-7.md:411
-#: docs/en/tutorial/tutorial-7.md:639
+#: docs/en/tutorial/tutorial-7.md:191
+#: docs/en/tutorial/tutorial-7.md:421
+#: docs/en/tutorial/tutorial-7.md:649
 msgid "/// tab | iOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:121
-#: docs/en/tutorial/tutorial-7.md:187
+#: docs/en/tutorial/tutorial-7.md:193
 msgid ""
 "You can't run an iOS app in developer mode - use the instructions for your "
 "chosen desktop platform."
@@ -166,8 +171,8 @@ msgstr ""
 "briefcase dev` erneut ausführen:"
 
 #: docs/en/tutorial/tutorial-7.md:137
-#: docs/en/tutorial/tutorial-7.md:153
-#: docs/en/tutorial/tutorial-7.md:169
+#: docs/en/tutorial/tutorial-7.md:155
+#: docs/en/tutorial/tutorial-7.md:173
 msgid ""
 "When you enter a name and press the button, you should see a dialog that "
 "looks something like:"
@@ -176,18 +181,26 @@ msgstr ""
 "Dialogfeld angezeigt werden, das in etwa wie folgt aussieht:"
 
 #: docs/en/tutorial/tutorial-7.md:140
-msgid "![Hello World Tutorial 7 dialog, on macOS]{1} /// caption ///"
+msgid "![Hello World Tutorial 7 dialog, on macOS]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-7.md:156
-msgid "![Hello World Tutorial 7 dialog, on Linux]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-7.md:142
+#: docs/en/tutorial/tutorial-7.md:160
+#: docs/en/tutorial/tutorial-7.md:178
+#: docs/en/tutorial/tutorial-7.md:243
+#: docs/en/tutorial/tutorial-7.md:340
+msgid "/// caption"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-7.md:172
-msgid "![Hello World Tutorial 7 dialog, on Windows]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-7.md:158
+msgid "![Hello World Tutorial 7 dialog, on Linux]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-7.md:192
+#: docs/en/tutorial/tutorial-7.md:176
+msgid "![Hello World Tutorial 7 dialog, on Windows]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:198
 #, fuzzy
 msgid ""
 "We've now got a working app, using a third party library, running in "
@@ -196,49 +209,49 @@ msgstr ""
 "Wir haben jetzt eine funktionierende Anwendung, die eine Bibliothek eines "
 "Drittanbieters verwendet und im Entwicklungsmodus läuft!"
 
-#: docs/en/tutorial/tutorial-7.md:195
+#: docs/en/tutorial/tutorial-7.md:201
 #, fuzzy
 msgid "Running the updated app"
 msgstr "Ausführen der aktualisierten Anwendung"
 
-#: docs/en/tutorial/tutorial-7.md:197
+#: docs/en/tutorial/tutorial-7.md:203
 #, fuzzy
 msgid ""
 "Let's get this updated application code packaged as a standalone app. Since "
 "we've made code changes, we need to follow the same steps as in [Tutorial 4]"
-"[tutorial-4]:"
+"{1}:"
 msgstr ""
 "Lassen Sie uns diesen aktualisierten Anwendungscode als eigenständige "
 "Anwendung verpacken. Da wir Änderungen am Code vorgenommen haben, müssen wir "
 "die gleichen Schritte wie in [Tutorial 4][tutorial-4] ausführen:"
 
-#: docs/en/tutorial/tutorial-7.md:203
-#: docs/en/tutorial/tutorial-7.md:243
-#: docs/en/tutorial/tutorial-7.md:298
-#: docs/en/tutorial/tutorial-7.md:338
-#: docs/en/tutorial/tutorial-7.md:413
+#: docs/en/tutorial/tutorial-7.md:209
+#: docs/en/tutorial/tutorial-7.md:251
+#: docs/en/tutorial/tutorial-7.md:306
+#: docs/en/tutorial/tutorial-7.md:348
+#: docs/en/tutorial/tutorial-7.md:423
 #, fuzzy
 msgid "Update the code in the packaged app:"
 msgstr "Aktualisieren Sie den Code in der gepackten Anwendung:"
 
-#: docs/en/tutorial/tutorial-7.md:214
-#: docs/en/tutorial/tutorial-7.md:254
-#: docs/en/tutorial/tutorial-7.md:309
-#: docs/en/tutorial/tutorial-7.md:349
-#: docs/en/tutorial/tutorial-7.md:424
+#: docs/en/tutorial/tutorial-7.md:220
+#: docs/en/tutorial/tutorial-7.md:262
+#: docs/en/tutorial/tutorial-7.md:317
+#: docs/en/tutorial/tutorial-7.md:359
+#: docs/en/tutorial/tutorial-7.md:434
 #, fuzzy
 msgid "Rebuild the app:"
 msgstr "Bauen Sie die Anwendung neu auf:"
 
-#: docs/en/tutorial/tutorial-7.md:223
-#: docs/en/tutorial/tutorial-7.md:268
-#: docs/en/tutorial/tutorial-7.md:318
+#: docs/en/tutorial/tutorial-7.md:229
+#: docs/en/tutorial/tutorial-7.md:276
+#: docs/en/tutorial/tutorial-7.md:326
 #, fuzzy
 msgid "And finally, run the app:"
 msgstr "Und schließlich führen Sie die Anwendung aus:"
 
-#: docs/en/tutorial/tutorial-7.md:232
-#: docs/en/tutorial/tutorial-7.md:327
+#: docs/en/tutorial/tutorial-7.md:238
+#: docs/en/tutorial/tutorial-7.md:335
 #, fuzzy
 msgid ""
 "However, when the app runs, you'll see an error in the console, plus a crash "
@@ -247,43 +260,43 @@ msgstr ""
 "Wenn die Anwendung jedoch ausgeführt wird, wird in der Konsole ein Fehler "
 "und ein Absturzdialog angezeigt:"
 
-#: docs/en/tutorial/tutorial-7.md:235
-msgid "![Hello World Tutorial 7 app crash, on macOS]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-7.md:241
+msgid "![Hello World Tutorial 7 app crash, on macOS]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-7.md:277
-#: docs/en/tutorial/tutorial-7.md:368
+#: docs/en/tutorial/tutorial-7.md:285
+#: docs/en/tutorial/tutorial-7.md:378
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console:"
 msgstr ""
 "Wenn die Anwendung jedoch ausgeführt wird, wird in der Konsole ein Fehler "
 "angezeigt:"
 
-#: docs/en/tutorial/tutorial-7.md:330
-msgid "![Hello World Tutorial 7 app crash, on Windows]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-7.md:338
+msgid "![Hello World Tutorial 7 app crash, on Windows]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-7.md:359
-#: docs/en/tutorial/tutorial-7.md:434
+#: docs/en/tutorial/tutorial-7.md:369
+#: docs/en/tutorial/tutorial-7.md:444
 msgid "And finally, run the app (selecting a simulator when prompted):"
 msgstr ""
 "Und schließlich starten Sie die App (wählen Sie einen Simulator aus, wenn "
 "Sie dazu aufgefordert werden):"
 
-#: docs/en/tutorial/tutorial-7.md:444
+#: docs/en/tutorial/tutorial-7.md:454
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console"
 msgstr ""
 "Wenn die Anwendung jedoch ausgeführt wird, wird in der Konsole ein Fehler "
 "angezeigt:"
 
-#: docs/en/tutorial/tutorial-7.md:459
+#: docs/en/tutorial/tutorial-7.md:469
 msgid ""
 "Once again, the app has failed to start because `faker` has not been "
 "installed -but why? Haven't we already installed `faker`?"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-7.md:462
+#: docs/en/tutorial/tutorial-7.md:472
 #, fuzzy
 msgid ""
 "We have - but only in the development environment. Your development "
@@ -298,7 +311,7 @@ msgstr ""
 "Entwicklungsmodus hat, ist der Hauptgrund für die Verwendung von Briefcase, "
 "Ihren Code zu verpacken, damit Sie ihn an jemand anderen weitergeben können."
 
-#: docs/en/tutorial/tutorial-7.md:468
+#: docs/en/tutorial/tutorial-7.md:478
 #, fuzzy
 msgid ""
 "The only way to guarantee that someone else will have a Python environment "
@@ -318,19 +331,19 @@ msgstr ""
 "installiert ist - es wurde in Ihrer *Entwicklungsumgebung* installiert, aber "
 "nicht in der gepackten Anwendung."
 
-#: docs/en/tutorial/tutorial-7.md:477
+#: docs/en/tutorial/tutorial-7.md:487
 #, fuzzy
 msgid "So - we need to tell Briefcase that our app has an external dependency."
 msgstr ""
 "Wir müssen also Briefcase mitteilen, dass unsere Anwendung eine externe "
 "Abhängigkeit hat."
 
-#: docs/en/tutorial/tutorial-7.md:479
+#: docs/en/tutorial/tutorial-7.md:489
 #, fuzzy
 msgid "Updating dependencies"
 msgstr "Aktualisieren von Abhängigkeiten"
 
-#: docs/en/tutorial/tutorial-7.md:481
+#: docs/en/tutorial/tutorial-7.md:491
 #, fuzzy
 msgid ""
 "In the root directory of your app, there is a file named `pyproject.toml`. "
@@ -341,7 +354,7 @@ msgstr ""
 "`pyproject.toml`. Diese Datei enthält alle Konfigurationsdetails der "
 "Anwendung, die Sie beim Ausführen von `briefcase new` angegeben haben."
 
-#: docs/en/tutorial/tutorial-7.md:485
+#: docs/en/tutorial/tutorial-7.md:495
 #, fuzzy
 msgid ""
 "`pyproject.toml` is broken up into sections; one of the sections describes "
@@ -350,7 +363,7 @@ msgstr ""
 "`pyproject.toml` ist in Abschnitte unterteilt; einer der Abschnitte "
 "beschreibt die Einstellungen für Ihre Anwendung:"
 
-#: docs/en/tutorial/tutorial-7.md:498
+#: docs/en/tutorial/tutorial-7.md:508
 #, fuzzy
 msgid ""
 "The `requires` option describes the dependencies of our application. It is a "
@@ -362,12 +375,12 @@ msgstr ""
 "Versionen) der Bibliotheken angeben, die Sie in Ihre Anwendung aufnehmen "
 "möchten."
 
-#: docs/en/tutorial/tutorial-7.md:502
+#: docs/en/tutorial/tutorial-7.md:512
 #, fuzzy
 msgid "Modify the `requires` setting so that it reads:"
 msgstr "Ändern Sie die Einstellung `requires` so, dass sie lautet:"
 
-#: docs/en/tutorial/tutorial-7.md:510
+#: docs/en/tutorial/tutorial-7.md:520
 #, fuzzy
 msgid ""
 "By adding this setting, we're telling Briefcase \"when you build my app, run "
@@ -379,17 +392,17 @@ msgstr ""
 "ein\". Alles, was eine legale Eingabe für `pip install` wäre, kann hier "
 "verwendet werden - Sie könnten also angeben:"
 
-#: docs/en/tutorial/tutorial-7.md:515
+#: docs/en/tutorial/tutorial-7.md:525
 #, fuzzy
 msgid "A specific library version (e.g., `\"faker==37.3.0\"`);"
 msgstr "Eine bestimmte Bibliotheksversion (z.B. `\"httpx==0.19.0\"`);"
 
-#: docs/en/tutorial/tutorial-7.md:516
+#: docs/en/tutorial/tutorial-7.md:526
 #, fuzzy
 msgid "A range of library versions (e.g., `\"faker>=37\"`);"
 msgstr "Eine Reihe von Bibliotheksversionen (z.B. `\"httpx>=0.19\"`);"
 
-#: docs/en/tutorial/tutorial-7.md:517
+#: docs/en/tutorial/tutorial-7.md:527
 #, fuzzy
 msgid ""
 "A path to a git repository (e.g., `\"git+https://github.com/joke2k/faker/\""
@@ -398,7 +411,7 @@ msgstr ""
 "Ein Pfad zu einem Git-Repository (z. B. `"
 "\"git+https://github.com/encode/httpx\"`); oder"
 
-#: docs/en/tutorial/tutorial-7.md:519
+#: docs/en/tutorial/tutorial-7.md:529
 #, fuzzy
 msgid ""
 "A local file path (However - be warned: if you give your code to someone "
@@ -407,7 +420,7 @@ msgstr ""
 "Ein lokaler Dateipfad (Aber Achtung: Wenn Sie Ihren Code an jemand anderen "
 "weitergeben, existiert dieser Pfad wahrscheinlich nicht auf dessen Rechner!)"
 
-#: docs/en/tutorial/tutorial-7.md:522
+#: docs/en/tutorial/tutorial-7.md:532
 #, fuzzy
 msgid ""
 "Further down in `pyproject.toml`, you'll notice other sections that are "
@@ -434,7 +447,7 @@ msgstr ""
 "angegeben sind - das liegt daran, dass die Bibliotheken, die für die Anzeige "
 "einer Benutzeroberfläche benötigt werden, plattformspezifisch sind."
 
-#: docs/en/tutorial/tutorial-7.md:534
+#: docs/en/tutorial/tutorial-7.md:544
 #, fuzzy
 msgid ""
 "In our case, we want `faker` to be installed on all platforms, so we use the "
@@ -448,7 +461,7 @@ msgstr ""
 "plattformspezifischen Abhängigkeiten werden *zusätzlich* zu den "
 "Abhängigkeiten auf Anwendungsebene installiert."
 
-#: docs/en/tutorial/tutorial-7.md:539
+#: docs/en/tutorial/tutorial-7.md:549
 #, fuzzy
 msgid ""
 "Now that we've told Briefcase about our additional requirements, we can try "
@@ -463,7 +476,7 @@ msgstr ""
 "mit dem Flag `-r`. Dadurch wird Briefcase angewiesen, die Anforderungen in "
 "der gepackten Anwendung zu aktualisieren:"
 
-#: docs/en/tutorial/tutorial-7.md:663
+#: docs/en/tutorial/tutorial-7.md:673
 #, fuzzy
 msgid ""
 "Once you've updated, you can run `briefcase build` and `briefcase run` - and "
@@ -473,11 +486,11 @@ msgstr ""
 "briefcase run` ausführen - und Sie sollten Ihre gepackte Anwendung mit dem "
 "neuen Dialogverhalten sehen."
 
-#: docs/en/tutorial/tutorial-7.md:666
+#: docs/en/tutorial/tutorial-7.md:676
 msgid "/// note | Note"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-7.md:668
+#: docs/en/tutorial/tutorial-7.md:678
 #, fuzzy
 msgid ""
 "The `-r` option for updating requirements is also honored by the `build` and "
@@ -489,11 +502,11 @@ msgstr ""
 "aktualisieren, bauen und ausführen wollen, können Sie `briefcase run -u -r` "
 "verwenden."
 
-#: docs/en/tutorial/tutorial-7.md:674
+#: docs/en/tutorial/tutorial-7.md:684
 msgid "Third-Party Python Packages for Mobile and Web"
 msgstr "Python-Pakete von Drittanbietern für Mobilgeräte und das Web"
 
-#: docs/en/tutorial/tutorial-7.md:676
+#: docs/en/tutorial/tutorial-7.md:686
 msgid ""
 "Faker is just one example of a third-party Python package - a collection of "
 "code that isn't part what Python provides out of the box. These third-party "
@@ -509,7 +522,7 @@ msgstr ""
 "Umgebung installiert. In diesem Tutorial haben wir `pip` verwendet, aber es "
 "gibt auch andere Optionen."
 
-#: docs/en/tutorial/tutorial-7.md:683
+#: docs/en/tutorial/tutorial-7.md:693
 #, fuzzy
 msgid ""
 "On desktop platforms (macOS, Windows, Linux), essentially any package on "
@@ -521,7 +534,7 @@ msgstr ""
 "zu Ihren Anforderungen hinzugefügt werden. Auf mobilen und Web-Plattformen "
 "[sind Ihre Möglichkeiten etwas eingeschränkt]{1}."
 
-#: docs/en/tutorial/tutorial-7.md:689
+#: docs/en/tutorial/tutorial-7.md:699
 msgid ""
 "In short; any *pure Python* package (i.e. any package created from a project "
 "written *only* in Python) can be used without difficulty. Some packages, "
@@ -544,7 +557,7 @@ msgstr ""
 "„Standard“-Desktop-Plattformen. Derzeit bieten die meisten Python-Pakete "
 "keine vorkompilierten Binärdateien für mobile und Web-Plattformen an."
 
-#: docs/en/tutorial/tutorial-7.md:700
+#: docs/en/tutorial/tutorial-7.md:710
 msgid ""
 "On PyPI, packages are often provided in a pre-built distribution format "
 "called *wheels*. To check whether a package is pure Python, look at the PyPI "
@@ -569,7 +582,7 @@ msgstr ""
 "installiert werden, es sei denn, es wurde ein mit diesen Plattformen "
 "kompatibles Wheel bereitgestellt."
 
-#: docs/en/tutorial/tutorial-7.md:713
+#: docs/en/tutorial/tutorial-7.md:723
 msgid ""
 "At this time, *most* binary packages on PyPI don't provide mobile- or web-"
 "compatible wheels. To fill this gap, BeeWare provides binaries for some "
@@ -583,7 +596,7 @@ msgstr ""
 "`cryptography`) zur Verfügung. Diese Wheels werden *nicht* auf PyPI "
 "verteilt, aber Briefcase installiert sie, sofern sie verfügbar sind."
 
-#: docs/en/tutorial/tutorial-7.md:719
+#: docs/en/tutorial/tutorial-7.md:729
 #, fuzzy
 msgid ""
 "It's *usually* possible to compile binary packages for mobile platforms, but "
@@ -596,15 +609,16 @@ msgstr ""
 "einfach einzurichten - das würde den Rahmen eines einführenden Tutorials wie "
 "diesem sprengen."
 
-#: docs/en/tutorial/tutorial-7.md:723
+#: docs/en/tutorial/tutorial-7.md:733
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
-#: docs/en/tutorial/tutorial-7.md:725
+#: docs/en/tutorial/tutorial-7.md:735
+#, fuzzy
 msgid ""
-"We've now got an app that uses a third-party library! In [Tutorial 8]"
-"[tutorial-8] we'll learn how to ensure our app remains responsive as we add "
-"more complex application logic."
+"We've now got an app that uses a third-party library! In [Tutorial 8]{1} "
+"we'll learn how to ensure our app remains responsive as we add more complex "
+"application logic."
 msgstr ""
 "Wir haben jetzt eine App, die eine Bibliothek eines Drittanbieters "
 "verwendet! In [Tutorial 8][tutorial-8] lernen wir, wie wir sicherstellen "

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-01-18 12:00+0000\n"
 "Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,9 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-6.md:1
-msgid "Tutorial 6 - Put it on the web! { id=\"tutorial-6\" }"
-msgstr ""
+#, fuzzy
+msgid "Tutorial 6 - Put it on the web!"
+msgstr "Tutorial 6 - ¡Ponlo en la web!"
 
 #: docs/en/tutorial/tutorial-6.md:3
 #, fuzzy
@@ -166,14 +167,10 @@ msgid ""
 "Although we've now deployed this app on desktop, mobile and the web, the app "
 "is fairly simple, and doesn't involve any third-party libraries. Can we "
 "include libraries from the Python Package Index (PyPI) in our app? Turn to "
-"[Tutorial 7][tutorial-7] to find out..."
+"[Tutorial 7]{1} to find out..."
 msgstr ""
 "Aunque ya hemos desplegado esta aplicación en ordenadores de sobremesa, "
 "dispositivos móviles y la web, la aplicación es bastante sencilla y no "
 "incluye bibliotecas de terceros. ¿Podemos incluir librerías del Python "
 "Package Index (PyPI) en nuestra aplicación? Visita [Tutorial 7][tutorial-7] "
 "para averiguarlo..."
-
-#, fuzzy
-#~ msgid "Tutorial 6 - Put it on the web!"
-#~ msgstr "Tutorial 6 - ¡Ponlo en la web!"

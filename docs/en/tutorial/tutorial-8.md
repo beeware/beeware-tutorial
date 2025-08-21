@@ -1,4 +1,4 @@
-# Tutorial 8 - Making it Smooooth  { id="tutorial-8" }
+# Tutorial 8 - Making it Smooooth
 
 So far, our application has been relatively simple - displaying GUI
 widgets, calling a simple third-party library, and displaying output in
@@ -389,7 +389,7 @@ BeeWare project. Over the course of this tutorial, you have:
 So - where to from here?
 
 - If you'd like to go further, there are some additional
-  [topic tutorials][topics] that go into
+  [topic tutorials](topics/index.md) that go into
   detail on specific aspects of application development.
 - If you'd like to know more about how to build complex user interfaces
   with Toga, you can dive into [Toga's

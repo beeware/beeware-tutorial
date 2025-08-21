@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-08-03 20:51+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-1.md:1
-msgid "Tutorial 1 - Your first app { id=\"tutorial-1\" }"
-msgstr ""
+msgid "Tutorial 1 - Your first app"
+msgstr "教程 1 - 您的第一个应用程序"
 
 #: docs/en/tutorial/tutorial-1.md:3
 msgid "We're ready to create our first application."
@@ -25,12 +25,13 @@ msgid "Install the BeeWare tools"
 msgstr "安装 BeeWare 工具"
 
 #: docs/en/tutorial/tutorial-1.md:7
+#, fuzzy
 msgid ""
 "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that "
 "can be used to package your application for distribution to end users - but "
 "it can also be used to bootstrap a new project. Make sure you're in the "
-"`beeware-tutorial` directory you created in [Tutorial 0][tutorial-0], with "
-"the `beeware-venv` virtual environment activated, and run:"
+"`beeware-tutorial` directory you created in [Tutorial 0], with the `beeware-"
+"venv` virtual environment activated, and run:"
 msgstr ""
 "首先，我们需要安装 **Briefcase**。Briefcase 是一款 BeeWare "
 "工具，可用于打包应用程序，以便分发给最终用户；但它也可用于引导新项目。"
@@ -38,58 +39,60 @@ msgstr ""
 "`beeware-venv` 虚拟环境，然后运行："
 
 #: docs/en/tutorial/tutorial-1.md:14
-#: docs/en/tutorial/tutorial-1.md:63
-#: docs/en/tutorial/tutorial-1.md:157
-#: docs/en/tutorial/tutorial-1.md:205
+#: docs/en/tutorial/tutorial-1.md:62
+#: docs/en/tutorial/tutorial-1.md:156
+#: docs/en/tutorial/tutorial-1.md:204
 msgid "/// tab | macOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:20
-#: docs/en/tutorial/tutorial-1.md:35
-#: docs/en/tutorial/tutorial-1.md:37
-#: docs/en/tutorial/tutorial-1.md:53
-#: docs/en/tutorial/tutorial-1.md:55
-#: docs/en/tutorial/tutorial-1.md:69
-#: docs/en/tutorial/tutorial-1.md:77
-#: docs/en/tutorial/tutorial-1.md:85
-#: docs/en/tutorial/tutorial-1.md:170
-#: docs/en/tutorial/tutorial-1.md:185
-#: docs/en/tutorial/tutorial-1.md:200
-#: docs/en/tutorial/tutorial-1.md:211
-#: docs/en/tutorial/tutorial-1.md:219
-#: docs/en/tutorial/tutorial-1.md:244
-#: docs/en/tutorial/tutorial-1.md:246
+#: docs/en/tutorial/tutorial-1.md:34
+#: docs/en/tutorial/tutorial-1.md:36
+#: docs/en/tutorial/tutorial-1.md:52
+#: docs/en/tutorial/tutorial-1.md:54
+#: docs/en/tutorial/tutorial-1.md:68
+#: docs/en/tutorial/tutorial-1.md:76
+#: docs/en/tutorial/tutorial-1.md:84
+#: docs/en/tutorial/tutorial-1.md:169
+#: docs/en/tutorial/tutorial-1.md:184
+#: docs/en/tutorial/tutorial-1.md:199
+#: docs/en/tutorial/tutorial-1.md:210
+#: docs/en/tutorial/tutorial-1.md:212
+#: docs/en/tutorial/tutorial-1.md:220
+#: docs/en/tutorial/tutorial-1.md:222
+#: docs/en/tutorial/tutorial-1.md:230
+#: docs/en/tutorial/tutorial-1.md:248
+#: docs/en/tutorial/tutorial-1.md:250
 msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:22
-#: docs/en/tutorial/tutorial-1.md:71
-#: docs/en/tutorial/tutorial-1.md:172
-#: docs/en/tutorial/tutorial-1.md:213
+#: docs/en/tutorial/tutorial-1.md:70
+#: docs/en/tutorial/tutorial-1.md:171
+#: docs/en/tutorial/tutorial-1.md:214
 msgid "/// tab | Linux"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:28
-#: docs/en/tutorial/tutorial-1.md:45
+#: docs/en/tutorial/tutorial-1.md:44
 msgid "/// admonition | Possible errors during installation"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:30
 msgid ""
 "If you see errors during installation, it's almost certainly because some of "
-"the system requirements haven't been installed. Make sure you have `"
-"installed all the platform pre-requisites <install-dependencies"
-">`{.interpreted-text role=\"ref\"}."
+"the system requirements haven't been installed. Make sure you have "
+"[installed all the platform pre-requisites][install-dependencies]."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:39
-#: docs/en/tutorial/tutorial-1.md:79
-#: docs/en/tutorial/tutorial-1.md:187
-#: docs/en/tutorial/tutorial-1.md:221
+#: docs/en/tutorial/tutorial-1.md:38
+#: docs/en/tutorial/tutorial-1.md:78
+#: docs/en/tutorial/tutorial-1.md:186
+#: docs/en/tutorial/tutorial-1.md:224
 msgid "/// tab | Windows"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:47
+#: docs/en/tutorial/tutorial-1.md:46
 msgid ""
 "It is important that you use `python -m pip`, rather than a bare `pip`. "
 "Briefcase needs to ensure that it has an up-to-date version of `pip` and "
@@ -101,32 +104,32 @@ msgstr ""
 "无法自我更新。如果您想了解更多，[Brett Cannon 有一篇关于这个问题的详细博文]"
 "{1}。"
 
-#: docs/en/tutorial/tutorial-1.md:57
+#: docs/en/tutorial/tutorial-1.md:56
 msgid "Bootstrap a new project"
 msgstr "引导新项目"
 
-#: docs/en/tutorial/tutorial-1.md:59
+#: docs/en/tutorial/tutorial-1.md:58
 msgid ""
 "Let's start our first BeeWare project! We're going to use the Briefcase `new`"
 " command to create an application called **Hello World**. Run the following "
 "from your command prompt:"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:87
+#: docs/en/tutorial/tutorial-1.md:86
 msgid ""
 "Briefcase will ask us for some details of our new application. For the "
 "purposes of this tutorial, use the following:"
 msgstr "Briefcase会要求我们提供新应用程序的一些详细信息。在本教程中，请使用以下内容："
 
-#: docs/en/tutorial/tutorial-1.md:90
+#: docs/en/tutorial/tutorial-1.md:89
 msgid "**Formal Name** - Accept the default value: `Hello World`."
 msgstr "**Formal Name** - 接受默认值：`Hello World`。"
 
-#: docs/en/tutorial/tutorial-1.md:91
+#: docs/en/tutorial/tutorial-1.md:90
 msgid "**App Name** - Accept the default value: `helloworld`."
 msgstr "**App Name** - 接受默认值：`helloworld`。"
 
-#: docs/en/tutorial/tutorial-1.md:92
+#: docs/en/tutorial/tutorial-1.md:91
 msgid ""
 "**Bundle Identifier** - If you own your own domain, enter that domain in "
 "reversed order. (For example, if you own the domain \"cupcakes.com\", enter "
@@ -138,22 +141,22 @@ msgstr ""
 "\"cupcakes.com\"，则输入 `com.cupcakes` "
 "作为捆绑标识符）。如果您没有自己的域名，请接受默认值（`com.example`）。"
 
-#: docs/en/tutorial/tutorial-1.md:96
+#: docs/en/tutorial/tutorial-1.md:95
 msgid "**Project Name** - Accept the default value: `Hello World`."
 msgstr "**Project Name** - 接受默认值：`Hello World`。"
 
-#: docs/en/tutorial/tutorial-1.md:97
+#: docs/en/tutorial/tutorial-1.md:96
 msgid ""
 "**Description** - Accept the default value (or, if you want to be really "
 "creative, come up with your own description!)"
 msgstr "**描述** - "
 "接受默认值（或者，如果您想发挥自己的创造力，也可以提出自己的描述！）"
 
-#: docs/en/tutorial/tutorial-1.md:99
+#: docs/en/tutorial/tutorial-1.md:98
 msgid "**Author** - Enter your own name here."
 msgstr "**Author** - 在此处输入您自己的名字。"
 
-#: docs/en/tutorial/tutorial-1.md:100
+#: docs/en/tutorial/tutorial-1.md:99
 msgid ""
 "**Author's Email** - Enter your own email address. This will be used in the "
 "configuration file, in help text, and anywhere that an email is required "
@@ -163,7 +166,7 @@ msgstr ""
 "输入您自己的电子邮件地址。这将用于配置文件、帮助文本以及向应用程序商店提交应"
 "用程序时需要电子邮件的任何地方。"
 
-#: docs/en/tutorial/tutorial-1.md:103
+#: docs/en/tutorial/tutorial-1.md:102
 msgid ""
 "**Application URL** - The URL of the landing page for your application. "
 "Again, if you own your own domain, enter a URL at that domain (including the "
@@ -176,7 +179,7 @@ msgstr ""
 " 即可。此 "
 "URL（暂时）不需要实际存在；只有在您将应用程序发布到应用程序商店时才会使用。"
 
-#: docs/en/tutorial/tutorial-1.md:109
+#: docs/en/tutorial/tutorial-1.md:108
 msgid ""
 "**Project License** - Accept the default license (BSD). This won't affect "
 "anything about the operation of the tutorial, though - so if you have "
@@ -187,13 +190,13 @@ msgstr ""
 "接受默认许可证（BSD）。这不会影响本教程的任何操作，因此，如果您对许可证选择有"
 "特别强烈的意见，请随意选择其他许可证。"
 
-#: docs/en/tutorial/tutorial-1.md:113
+#: docs/en/tutorial/tutorial-1.md:112
 msgid ""
 "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI "
 "toolkit)."
 msgstr "**GUI Framework** - 接受默认选项 Toga（BeeWare 自己的图形用户界面工具包）。"
 
-#: docs/en/tutorial/tutorial-1.md:116
+#: docs/en/tutorial/tutorial-1.md:115
 msgid ""
 "Briefcase will then generate a project skeleton for you to use. If you've "
 "followed this tutorial so far, and accepted the defaults as described, your "
@@ -203,7 +206,7 @@ msgstr ""
 "会生成一个项目骨架供你使用。如果你到目前为止都已经跟着这个教程走的话，并接受"
 "了所述的默认设置，那么你的文件系统应该是这样的:"
 
-#: docs/en/tutorial/tutorial-1.md:142
+#: docs/en/tutorial/tutorial-1.md:141
 msgid ""
 "This skeleton is actually a fully functioning application without adding "
 "anything else. The `src` folder contains all the code for the application, "
@@ -218,60 +221,66 @@ msgstr ""
 "如果您用编辑器打开 `pyproject.toml`，就会看到刚才提供给 Briefcase "
 "的配置详细信息。"
 
-#: docs/en/tutorial/tutorial-1.md:149
+#: docs/en/tutorial/tutorial-1.md:148
 msgid ""
 "Now that we have a stub application, we can use Briefcase to run the "
 "application."
 msgstr "现在我们有了一个包含占位代码的应用程序，可以使用 Briefcase 来运行它。"
 
-#: docs/en/tutorial/tutorial-1.md:152
+#: docs/en/tutorial/tutorial-1.md:151
 msgid "Run the app in developer mode"
 msgstr "在开发者模式下运行应用程序"
 
-#: docs/en/tutorial/tutorial-1.md:154
+#: docs/en/tutorial/tutorial-1.md:153
 msgid ""
 "Move into the `helloworld` project directory and tell briefcase to start the "
 "project in Developer (or `dev`) mode:"
 msgstr "移动到 `helloworld` 项目目录，告诉 Briefcase 以开发者（或 "
 "`dev`）模式启动项目："
 
-#: docs/en/tutorial/tutorial-1.md:203
+#: docs/en/tutorial/tutorial-1.md:202
 msgid "This should open a GUI window:"
 msgstr "这将打开一个图形用户界面 (GUI) 窗口："
 
-#: docs/en/tutorial/tutorial-1.md:207
-msgid "![Hello World Tutorial 1 window, on macOS]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-1.md:206
+msgid "![Hello World Tutorial 1 window, on macOS]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:215
-msgid "![Hello World Tutorial 1 window, on Linux]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-1.md:208
+#: docs/en/tutorial/tutorial-1.md:218
+#: docs/en/tutorial/tutorial-1.md:228
+msgid "/// caption"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:223
-msgid "![Hello World Tutorial 1 window, on Windows]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-1.md:216
+msgid "![Hello World Tutorial 1 window, on Linux]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:227
+#: docs/en/tutorial/tutorial-1.md:226
+msgid "![Hello World Tutorial 1 window, on Windows]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-1.md:232
 msgid "/// admonition | Invalid requirements or pip unable to connect"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:229
+#: docs/en/tutorial/tutorial-1.md:234
 msgid "If you encounter the error:"
 msgstr "如果您遇到错误："
 
-#: docs/en/tutorial/tutorial-1.md:237
+#: docs/en/tutorial/tutorial-1.md:242
 msgid ""
-"Confirm that you are running a `version of python that this tutorial "
-"supports <install-python>`{.interpreted-text role=\"ref\"}."
+"Confirm that you are running a "
+"[version of python that this tutorial supports][install-python]."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:241
+#: docs/en/tutorial/tutorial-1.md:245
 msgid ""
 "If your version of python is *not* a supported version, you will have to "
 "restart the tutorial."
 msgstr "如果您的 Python 版本\\ *不*\\ 被支持，则需重新开始本教程。"
 
-#: docs/en/tutorial/tutorial-1.md:248
+#: docs/en/tutorial/tutorial-1.md:252
 msgid ""
 "Close the application - either by pressing the close button on the "
 "application window, by selecting Quit/Exit from the application's menu, or "
@@ -284,20 +293,18 @@ msgstr ""
 "或在您运行 `briefcase dev` 的命令行窗口中按 **Ctrl+C** -- 就完成了！恭喜您，"
 "您刚刚使用 Python 编写了一个独立、原生的应用程序！"
 
-#: docs/en/tutorial/tutorial-1.md:254
+#: docs/en/tutorial/tutorial-1.md:258
 msgid "Next steps"
 msgstr "下一步"
 
-#: docs/en/tutorial/tutorial-1.md:256
+#: docs/en/tutorial/tutorial-1.md:260
+#, fuzzy
 msgid ""
 "We now have a working application, running in developer mode. Now we can add "
 "some logic of our own to make our application do something a little more "
-"interesting. In [Tutorial 2][tutorial-2], we'll put a more useful user "
-"interface onto our application."
+"interesting. In [Tutorial 2]{1}, we'll put a more useful user interface onto "
+"our application."
 msgstr ""
 "现在，我们有了一个在开发者模式下运行的应用程序。现在我们可以添加一些自己的逻"
 "辑，让应用程序做更有趣一些的事情。在\\ :doc:`教程 2<tutorial-2>` "
 "中，我们将为应用程序添加一个更有用的用户界面。"
-
-#~ msgid "Tutorial 1 - Your first app"
-#~ msgstr "教程 1 - 您的第一个应用程序"

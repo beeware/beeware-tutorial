@@ -1,4 +1,4 @@
-# Tutorial 5 - Taking it mobile: Android { id="mobile-android" }
+# Tutorial 5 - Taking it mobile: Android
 
 Now, we're going to take our application, and deploy it as an Android
 application.
@@ -408,4 +408,4 @@ and re-run `briefcase run android`.
 ## Next steps
 
 We've now got an application on our phone! Is there anywhere else we can
-deploy a BeeWare app? Turn to [Tutorial 6][tutorial-6] to find out...
+deploy a BeeWare app? Turn to [Tutorial 6](../tutorial-6.md) to find out...

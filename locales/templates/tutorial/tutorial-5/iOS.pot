@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:1
-msgid "Tutorial 5 - Taking it mobile: iOS { id=\"mobile-ios\" }"
+msgid "Tutorial 5 - Taking it mobile: iOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/iOS.md:3
@@ -73,6 +73,14 @@ msgid "![Hello World Tutorial 5 window, on iOS]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/iOS.md:122
+msgid "/// caption"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-5/iOS.md:124
+msgid "///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-5/iOS.md:126
 msgid ""
 "While the app is running, you'll see a series of Simulator log output "
 "messages in the console. Typing Ctrl+C into the terminal will halt the "
@@ -80,7 +88,7 @@ msgid ""
 "can test new changes without restarting the simulator."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/iOS.md:127
+#: docs/en/tutorial/tutorial-5/iOS.md:131
 msgid ""
 "If you know ahead of time which iOS simulator you want to target, you can "
 "tell Briefcase to use that simulator by providing a `-d` (or `--device`) "
@@ -88,23 +96,23 @@ msgid ""
 "application, run:"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/iOS.md:136
+#: docs/en/tutorial/tutorial-5/iOS.md:140
 msgid ""
 "If you have multiple iOS versions available, Briefcase will pick the highest "
 "iOS version; if you want to pick a particular iOS version, you tell it to "
 "use that specific version:"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/iOS.md:144
+#: docs/en/tutorial/tutorial-5/iOS.md:148
 msgid "Or, you can name a specific device UDID:"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/iOS.md:150
+#: docs/en/tutorial/tutorial-5/iOS.md:154
 msgid "Next steps"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/iOS.md:152
+#: docs/en/tutorial/tutorial-5/iOS.md:156
 msgid ""
 "We've now got an application on our phone! Is there anywhere else we can "
-"deploy a BeeWare app? Turn to [Tutorial 6][tutorial-6] to find out..."
+"deploy a BeeWare app? Turn to [Tutorial 6]{1} to find out..."
 msgstr ""

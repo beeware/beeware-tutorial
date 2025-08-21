@@ -1,4 +1,4 @@
-# Tutorial 1 - Your first app { id="tutorial-1" }
+# Tutorial 1 - Your first app
 
 We're ready to create our first application.
 
@@ -8,7 +8,7 @@ First, we need to install **Briefcase**. Briefcase is a BeeWare tool
 that can be used to package your application for distribution to end
 users - but it can also be used to bootstrap a new project. Make sure
 you're in the `beeware-tutorial` directory you created in
-[Tutorial 0][tutorial-0], with the
+[Tutorial 0], with the
 `beeware-venv` virtual environment activated, and run:
 
 /// tab | macOS
@@ -259,5 +259,5 @@ native application in Python!
 
 We now have a working application, running in developer mode. Now we can
 add some logic of our own to make our application do something a little
-more interesting. In [Tutorial 2][tutorial-2], we'll put a more useful
+more interesting. In [Tutorial 2](tutorial-2.md), we'll put a more useful
 user interface onto our application.

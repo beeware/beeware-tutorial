@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2024-02-13 12:08+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:1
-msgid "Tutorial 5 - Taking it mobile: iOS { id=\"mobile-ios\" }"
-msgstr ""
+msgid "Tutorial 5 - Taking it mobile: iOS"
+msgstr "Tutorial 5 - Levando para o Mobile: iOS"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:3
 msgid ""
@@ -94,6 +94,14 @@ msgid "![Hello World Tutorial 5 window, on iOS]{1}"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/iOS.md:122
+msgid "/// caption"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-5/iOS.md:124
+msgid "///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-5/iOS.md:126
 msgid ""
 "While the app is running, you'll see a series of Simulator log output "
 "messages in the console. Typing Ctrl+C into the terminal will halt the "
@@ -101,7 +109,7 @@ msgid ""
 "can test new changes without restarting the simulator."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-5/iOS.md:127
+#: docs/en/tutorial/tutorial-5/iOS.md:131
 #, fuzzy
 msgid ""
 "If you know ahead of time which iOS simulator you want to target, you can "
@@ -114,7 +122,7 @@ msgstr ""
 "`--device`). Usando o nome do dispositivo que você selecionou ao criar o "
 "aplicativo, execute:"
 
-#: docs/en/tutorial/tutorial-5/iOS.md:136
+#: docs/en/tutorial/tutorial-5/iOS.md:140
 #, fuzzy
 msgid ""
 "If you have multiple iOS versions available, Briefcase will pick the highest "
@@ -125,20 +133,17 @@ msgstr ""
 "versão mais alta do iOS; se você quiser escolher uma versão específica do "
 "iOS, diga a ele para usar essa versão específica:"
 
-#: docs/en/tutorial/tutorial-5/iOS.md:144
+#: docs/en/tutorial/tutorial-5/iOS.md:148
 #, fuzzy
 msgid "Or, you can name a specific device UDID:"
 msgstr "Ou você pode nomear um UDID de dispositivo específico:"
 
-#: docs/en/tutorial/tutorial-5/iOS.md:150
+#: docs/en/tutorial/tutorial-5/iOS.md:154
 msgid "Next steps"
 msgstr "Próximos passos"
 
-#: docs/en/tutorial/tutorial-5/iOS.md:152
+#: docs/en/tutorial/tutorial-5/iOS.md:156
 msgid ""
 "We've now got an application on our phone! Is there anywhere else we can "
-"deploy a BeeWare app? Turn to [Tutorial 6][tutorial-6] to find out..."
+"deploy a BeeWare app? Turn to [Tutorial 6]{1} to find out..."
 msgstr ""
-
-#~ msgid "Tutorial 5 - Taking it mobile: iOS"
-#~ msgstr "Tutorial 5 - Levando para o Mobile: iOS"

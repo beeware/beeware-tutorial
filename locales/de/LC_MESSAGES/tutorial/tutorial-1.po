@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-08-19 20:01+0000\n"
 "Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-1.md:1
-msgid "Tutorial 1 - Your first app { id=\"tutorial-1\" }"
-msgstr "Tutorial 1 - Ihre erste App { id=\"tutorial-1\" }"
+msgid "Tutorial 1 - Your first app"
+msgstr "Tutorial 1 - Ihre erste App"
 
 #: docs/en/tutorial/tutorial-1.md:3
 msgid "We're ready to create our first application."
@@ -25,12 +25,13 @@ msgid "Install the BeeWare tools"
 msgstr "Installieren Sie die BeeWare-Tools"
 
 #: docs/en/tutorial/tutorial-1.md:7
+#, fuzzy
 msgid ""
 "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that "
 "can be used to package your application for distribution to end users - but "
 "it can also be used to bootstrap a new project. Make sure you're in the "
-"`beeware-tutorial` directory you created in [Tutorial 0][tutorial-0], with "
-"the `beeware-venv` virtual environment activated, and run:"
+"`beeware-tutorial` directory you created in [Tutorial 0], with the `beeware-"
+"venv` virtual environment activated, and run:"
 msgstr ""
 "Zunächst müssen wir **Briefcase** installieren. Briefcase ist ein BeeWare-"
 "Werkzeug, das verwendet werden kann, um Ihre Anwendung für die Verteilung an "
@@ -41,58 +42,60 @@ msgstr ""
 "starten Sie:"
 
 #: docs/en/tutorial/tutorial-1.md:14
-#: docs/en/tutorial/tutorial-1.md:63
-#: docs/en/tutorial/tutorial-1.md:157
-#: docs/en/tutorial/tutorial-1.md:205
+#: docs/en/tutorial/tutorial-1.md:62
+#: docs/en/tutorial/tutorial-1.md:156
+#: docs/en/tutorial/tutorial-1.md:204
 msgid "/// tab | macOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:20
-#: docs/en/tutorial/tutorial-1.md:35
-#: docs/en/tutorial/tutorial-1.md:37
-#: docs/en/tutorial/tutorial-1.md:53
-#: docs/en/tutorial/tutorial-1.md:55
-#: docs/en/tutorial/tutorial-1.md:69
-#: docs/en/tutorial/tutorial-1.md:77
-#: docs/en/tutorial/tutorial-1.md:85
-#: docs/en/tutorial/tutorial-1.md:170
-#: docs/en/tutorial/tutorial-1.md:185
-#: docs/en/tutorial/tutorial-1.md:200
-#: docs/en/tutorial/tutorial-1.md:211
-#: docs/en/tutorial/tutorial-1.md:219
-#: docs/en/tutorial/tutorial-1.md:244
-#: docs/en/tutorial/tutorial-1.md:246
+#: docs/en/tutorial/tutorial-1.md:34
+#: docs/en/tutorial/tutorial-1.md:36
+#: docs/en/tutorial/tutorial-1.md:52
+#: docs/en/tutorial/tutorial-1.md:54
+#: docs/en/tutorial/tutorial-1.md:68
+#: docs/en/tutorial/tutorial-1.md:76
+#: docs/en/tutorial/tutorial-1.md:84
+#: docs/en/tutorial/tutorial-1.md:169
+#: docs/en/tutorial/tutorial-1.md:184
+#: docs/en/tutorial/tutorial-1.md:199
+#: docs/en/tutorial/tutorial-1.md:210
+#: docs/en/tutorial/tutorial-1.md:212
+#: docs/en/tutorial/tutorial-1.md:220
+#: docs/en/tutorial/tutorial-1.md:222
+#: docs/en/tutorial/tutorial-1.md:230
+#: docs/en/tutorial/tutorial-1.md:248
+#: docs/en/tutorial/tutorial-1.md:250
 msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:22
-#: docs/en/tutorial/tutorial-1.md:71
-#: docs/en/tutorial/tutorial-1.md:172
-#: docs/en/tutorial/tutorial-1.md:213
+#: docs/en/tutorial/tutorial-1.md:70
+#: docs/en/tutorial/tutorial-1.md:171
+#: docs/en/tutorial/tutorial-1.md:214
 msgid "/// tab | Linux"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:28
-#: docs/en/tutorial/tutorial-1.md:45
+#: docs/en/tutorial/tutorial-1.md:44
 msgid "/// admonition | Possible errors during installation"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:30
 msgid ""
 "If you see errors during installation, it's almost certainly because some of "
-"the system requirements haven't been installed. Make sure you have `"
-"installed all the platform pre-requisites <install-dependencies"
-">`{.interpreted-text role=\"ref\"}."
+"the system requirements haven't been installed. Make sure you have "
+"[installed all the platform pre-requisites][install-dependencies]."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:39
-#: docs/en/tutorial/tutorial-1.md:79
-#: docs/en/tutorial/tutorial-1.md:187
-#: docs/en/tutorial/tutorial-1.md:221
+#: docs/en/tutorial/tutorial-1.md:38
+#: docs/en/tutorial/tutorial-1.md:78
+#: docs/en/tutorial/tutorial-1.md:186
+#: docs/en/tutorial/tutorial-1.md:224
 msgid "/// tab | Windows"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:47
+#: docs/en/tutorial/tutorial-1.md:46
 msgid ""
 "It is important that you use `python -m pip`, rather than a bare `pip`. "
 "Briefcase needs to ensure that it has an up-to-date version of `pip` and "
@@ -105,18 +108,18 @@ msgstr ""
 "aktualisieren. Wenn Sie mehr darüber wissen wollen, hat "
 "[Brett Cannon einen detaillierten Blogbeitrag zu diesem Problem]{1}."
 
-#: docs/en/tutorial/tutorial-1.md:57
+#: docs/en/tutorial/tutorial-1.md:56
 msgid "Bootstrap a new project"
 msgstr "Erstellen Sie ein neues Projekt"
 
-#: docs/en/tutorial/tutorial-1.md:59
+#: docs/en/tutorial/tutorial-1.md:58
 msgid ""
 "Let's start our first BeeWare project! We're going to use the Briefcase `new`"
 " command to create an application called **Hello World**. Run the following "
 "from your command prompt:"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:87
+#: docs/en/tutorial/tutorial-1.md:86
 msgid ""
 "Briefcase will ask us for some details of our new application. For the "
 "purposes of this tutorial, use the following:"
@@ -124,15 +127,15 @@ msgstr ""
 "Briefcase wird uns nach einigen Details zu unserer neuen Anwendung fragen. "
 "Verwenden Sie für dieses Tutorial die folgenden Angaben:"
 
-#: docs/en/tutorial/tutorial-1.md:90
+#: docs/en/tutorial/tutorial-1.md:89
 msgid "**Formal Name** - Accept the default value: `Hello World`."
 msgstr "**Formaler Name** - Akzeptieren Sie den Standardwert: `Hello World`."
 
-#: docs/en/tutorial/tutorial-1.md:91
+#: docs/en/tutorial/tutorial-1.md:90
 msgid "**App Name** - Accept the default value: `helloworld`."
 msgstr "**App Name** - Akzeptieren Sie den Standardwert: `helloworld`."
 
-#: docs/en/tutorial/tutorial-1.md:92
+#: docs/en/tutorial/tutorial-1.md:91
 #, fuzzy
 msgid ""
 "**Bundle Identifier** - If you own your own domain, enter that domain in "
@@ -146,11 +149,11 @@ msgstr ""
 "Sie keine eigene Domain besitzen, akzeptieren Sie das Standard-Bundle "
 "(`com.example`)."
 
-#: docs/en/tutorial/tutorial-1.md:96
+#: docs/en/tutorial/tutorial-1.md:95
 msgid "**Project Name** - Accept the default value: `Hello World`."
 msgstr "**Projektname** - Übernehmen Sie den Standardwert: `Hello World`."
 
-#: docs/en/tutorial/tutorial-1.md:97
+#: docs/en/tutorial/tutorial-1.md:96
 msgid ""
 "**Description** - Accept the default value (or, if you want to be really "
 "creative, come up with your own description!)"
@@ -158,11 +161,11 @@ msgstr ""
 "**Description** - Übernehmen Sie den Standardwert (wenn Sie wirklich kreativ "
 "sein wollen, denken Sie sich Ihre eigene Beschreibung aus!)"
 
-#: docs/en/tutorial/tutorial-1.md:99
+#: docs/en/tutorial/tutorial-1.md:98
 msgid "**Author** - Enter your own name here."
 msgstr "**Author** - Geben Sie hier Ihren eigenen Namen ein."
 
-#: docs/en/tutorial/tutorial-1.md:100
+#: docs/en/tutorial/tutorial-1.md:99
 #, fuzzy
 msgid ""
 "**Author's Email** - Enter your own email address. This will be used in the "
@@ -173,7 +176,7 @@ msgstr ""
 "der Konfigurationsdatei, im Hilfetext und überall dort verwendet, wo bei der "
 "Einreichung der App bei einem App-Store eine E-Mail erforderlich ist."
 
-#: docs/en/tutorial/tutorial-1.md:103
+#: docs/en/tutorial/tutorial-1.md:102
 #, fuzzy
 msgid ""
 "**Application URL** - The URL of the landing page for your application. "
@@ -189,7 +192,7 @@ msgstr ""
 "tatsächlich existieren; sie wird nur verwendet, wenn Sie Ihre Anwendung in "
 "einem App Store veröffentlichen."
 
-#: docs/en/tutorial/tutorial-1.md:109
+#: docs/en/tutorial/tutorial-1.md:108
 #, fuzzy
 msgid ""
 "**Project License** - Accept the default license (BSD). This won't affect "
@@ -202,7 +205,7 @@ msgstr ""
 "besonders starke Gefühle bezüglich der Lizenzwahl haben, können Sie gerne "
 "eine andere Lizenz wählen."
 
-#: docs/en/tutorial/tutorial-1.md:113
+#: docs/en/tutorial/tutorial-1.md:112
 msgid ""
 "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI "
 "toolkit)."
@@ -210,7 +213,7 @@ msgstr ""
 "**GUI-Framework** - Akzeptieren Sie die Standardoption Toga (BeeWare's "
 "eigenes GUI-Toolkit)."
 
-#: docs/en/tutorial/tutorial-1.md:116
+#: docs/en/tutorial/tutorial-1.md:115
 msgid ""
 "Briefcase will then generate a project skeleton for you to use. If you've "
 "followed this tutorial so far, and accepted the defaults as described, your "
@@ -220,7 +223,7 @@ msgstr ""
 "Sie diesem Tutorial bis hierher gefolgt sind und die Vorgaben wie "
 "beschrieben akzeptiert haben, sollte Ihr Dateisystem etwa so aussehen:"
 
-#: docs/en/tutorial/tutorial-1.md:142
+#: docs/en/tutorial/tutorial-1.md:141
 msgid ""
 "This skeleton is actually a fully functioning application without adding "
 "anything else. The `src` folder contains all the code for the application, "
@@ -237,7 +240,7 @@ msgstr ""
 "sehen Sie die Konfigurationsdetails, die Sie Briefcase gerade mitgeteilt "
 "haben."
 
-#: docs/en/tutorial/tutorial-1.md:149
+#: docs/en/tutorial/tutorial-1.md:148
 msgid ""
 "Now that we have a stub application, we can use Briefcase to run the "
 "application."
@@ -245,11 +248,11 @@ msgstr ""
 "Nun, da wir eine Rumpfanwendung haben, können wir Briefcase verwenden, um "
 "die Anwendung auszuführen."
 
-#: docs/en/tutorial/tutorial-1.md:152
+#: docs/en/tutorial/tutorial-1.md:151
 msgid "Run the app in developer mode"
 msgstr "Führen Sie die Anwendung im Entwicklermodus aus"
 
-#: docs/en/tutorial/tutorial-1.md:154
+#: docs/en/tutorial/tutorial-1.md:153
 #, fuzzy
 msgid ""
 "Move into the `helloworld` project directory and tell briefcase to start the "
@@ -258,37 +261,43 @@ msgstr ""
 "Wechseln Sie in das `helloworld` Projektverzeichnis und sagen Sie briefcase, "
 "daß es das Projekt im Developer (oder `dev`) Modus starten soll:"
 
-#: docs/en/tutorial/tutorial-1.md:203
+#: docs/en/tutorial/tutorial-1.md:202
 msgid "This should open a GUI window:"
 msgstr "Dies sollte ein GUI-Fenster öffnen:"
 
-#: docs/en/tutorial/tutorial-1.md:207
-msgid "![Hello World Tutorial 1 window, on macOS]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-1.md:206
+msgid "![Hello World Tutorial 1 window, on macOS]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:215
-msgid "![Hello World Tutorial 1 window, on Linux]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-1.md:208
+#: docs/en/tutorial/tutorial-1.md:218
+#: docs/en/tutorial/tutorial-1.md:228
+msgid "/// caption"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:223
-msgid "![Hello World Tutorial 1 window, on Windows]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-1.md:216
+msgid "![Hello World Tutorial 1 window, on Linux]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:227
+#: docs/en/tutorial/tutorial-1.md:226
+msgid "![Hello World Tutorial 1 window, on Windows]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-1.md:232
 msgid "/// admonition | Invalid requirements or pip unable to connect"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:229
+#: docs/en/tutorial/tutorial-1.md:234
 msgid "If you encounter the error:"
 msgstr "Wenn Sie die folgende Fehlermeldung erhalten:"
 
-#: docs/en/tutorial/tutorial-1.md:237
+#: docs/en/tutorial/tutorial-1.md:242
 msgid ""
-"Confirm that you are running a `version of python that this tutorial "
-"supports <install-python>`{.interpreted-text role=\"ref\"}."
+"Confirm that you are running a "
+"[version of python that this tutorial supports][install-python]."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-1.md:241
+#: docs/en/tutorial/tutorial-1.md:245
 msgid ""
 "If your version of python is *not* a supported version, you will have to "
 "restart the tutorial."
@@ -296,7 +305,7 @@ msgstr ""
 "Wenn Ihre Python-Version *nicht* unterstützt wird, müssen Sie das Tutorial "
 "neu starten."
 
-#: docs/en/tutorial/tutorial-1.md:248
+#: docs/en/tutorial/tutorial-1.md:252
 #, fuzzy
 msgid ""
 "Close the application - either by pressing the close button on the "
@@ -309,16 +318,17 @@ msgstr ""
 "dem Menü der Anwendung), und Sie sind fertig! Herzlichen Glückwunsch - Sie "
 "haben gerade eine eigenständige, native Anwendung in Python geschrieben!"
 
-#: docs/en/tutorial/tutorial-1.md:254
+#: docs/en/tutorial/tutorial-1.md:258
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
-#: docs/en/tutorial/tutorial-1.md:256
+#: docs/en/tutorial/tutorial-1.md:260
+#, fuzzy
 msgid ""
 "We now have a working application, running in developer mode. Now we can add "
 "some logic of our own to make our application do something a little more "
-"interesting. In [Tutorial 2][tutorial-2], we'll put a more useful user "
-"interface onto our application."
+"interesting. In [Tutorial 2]{1}, we'll put a more useful user interface onto "
+"our application."
 msgstr ""
 "Wir haben jetzt eine funktionierende Anwendung, die im Entwicklermodus "
 "läuft. Jetzt können wir unsere eigene Logik hinzufügen, damit unsere "

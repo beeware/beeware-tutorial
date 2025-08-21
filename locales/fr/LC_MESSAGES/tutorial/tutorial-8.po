@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"POT-Creation-Date: 2025-08-21 16:18-0400\n"
 "PO-Revision-Date: 2025-06-21 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,9 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/tutorial-8.md:1
-msgid "Tutorial 8 - Making it Smooooth { id=\"tutorial-8\" }"
-msgstr ""
+#, fuzzy
+msgid "Tutorial 8 - Making it Smooooth"
+msgstr "Tutoriel 8 - Le rendre lisse"
 
 #: docs/en/tutorial/tutorial-8.md:3
 msgid ""
@@ -71,9 +72,9 @@ msgid ""
 "As a result, people have developed third-party libraries that wrap the built-"
 "in APIs and provide a simpler API that is a closer match for the everyday "
 "browser experience. We're going to use one of those libraries to access the "
-"{JSON} Placeholder API - a library called [httpx]{1}. Briefcase uses `httpx` "
-"internally, so it's already in your local environment -you don't need to "
-"install it separately to use it here."
+"{JSON} Placeholder API - a library called [`httpx`]{1}. Briefcase uses "
+"`httpx` internally, so it's already in your local environment -you don't "
+"need to install it separately to use it here."
 msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:49
@@ -125,76 +126,85 @@ msgid ""
 msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:96
-#: docs/en/tutorial/tutorial-8.md:326
+#: docs/en/tutorial/tutorial-8.md:332
 msgid "/// tab | macOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:107
-#: docs/en/tutorial/tutorial-8.md:127
-#: docs/en/tutorial/tutorial-8.md:147
+#: docs/en/tutorial/tutorial-8.md:129
+#: docs/en/tutorial/tutorial-8.md:151
 msgid ""
 "When you enter a name and press the button, you should see a dialog that "
 "looks something like:"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:110
-msgid "![Hello World Tutorial 8 dialog, on macOS]{1} /// caption ///"
+msgid "![Hello World Tutorial 8 dialog, on macOS]{1}"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-8.md:112
+#: docs/en/tutorial/tutorial-8.md:134
+#: docs/en/tutorial/tutorial-8.md:156
+msgid "/// caption"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:114
-#: docs/en/tutorial/tutorial-8.md:134
-#: docs/en/tutorial/tutorial-8.md:154
-#: docs/en/tutorial/tutorial-8.md:161
-#: docs/en/tutorial/tutorial-8.md:168
-#: docs/en/tutorial/tutorial-8.md:332
-#: docs/en/tutorial/tutorial-8.md:340
-#: docs/en/tutorial/tutorial-8.md:348
-#: docs/en/tutorial/tutorial-8.md:356
-#: docs/en/tutorial/tutorial-8.md:364
+#: docs/en/tutorial/tutorial-8.md:116
+#: docs/en/tutorial/tutorial-8.md:136
+#: docs/en/tutorial/tutorial-8.md:138
+#: docs/en/tutorial/tutorial-8.md:158
+#: docs/en/tutorial/tutorial-8.md:160
+#: docs/en/tutorial/tutorial-8.md:167
+#: docs/en/tutorial/tutorial-8.md:174
+#: docs/en/tutorial/tutorial-8.md:338
+#: docs/en/tutorial/tutorial-8.md:346
+#: docs/en/tutorial/tutorial-8.md:354
+#: docs/en/tutorial/tutorial-8.md:362
+#: docs/en/tutorial/tutorial-8.md:370
 msgid "///"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:116
-#: docs/en/tutorial/tutorial-8.md:334
+#: docs/en/tutorial/tutorial-8.md:118
+#: docs/en/tutorial/tutorial-8.md:340
 msgid "/// tab | Linux"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:130
-msgid "![Hello World Tutorial 8 dialog, on Linux]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-8.md:132
+msgid "![Hello World Tutorial 8 dialog, on Linux]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:136
-#: docs/en/tutorial/tutorial-8.md:342
+#: docs/en/tutorial/tutorial-8.md:140
+#: docs/en/tutorial/tutorial-8.md:348
 msgid "/// tab | Windows"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:150
-msgid "![Hello World Tutorial 8 dialog, on Windows]{1} /// caption ///"
+#: docs/en/tutorial/tutorial-8.md:154
+msgid "![Hello World Tutorial 8 dialog, on Windows]{1}"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:156
-#: docs/en/tutorial/tutorial-8.md:350
+#: docs/en/tutorial/tutorial-8.md:162
+#: docs/en/tutorial/tutorial-8.md:356
 msgid "/// tab | Android"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:158
+#: docs/en/tutorial/tutorial-8.md:164
 msgid ""
 "You can't run an Android app in developer mode - use the instructions for "
 "your chosen desktop platform."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:163
-#: docs/en/tutorial/tutorial-8.md:358
+#: docs/en/tutorial/tutorial-8.md:169
+#: docs/en/tutorial/tutorial-8.md:364
 msgid "/// tab | iOS"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:165
+#: docs/en/tutorial/tutorial-8.md:171
 msgid ""
 "You can't run an iOS app in developer mode - use the instructions for your "
 "chosen desktop platform."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:170
+#: docs/en/tutorial/tutorial-8.md:176
 msgid ""
 "Unless you've got a *really* fast internet connection, you may notice that "
 "when you press the button, the GUI for your app locks up for a little bit. "
@@ -202,7 +212,7 @@ msgid ""
 "\"spinner\" cursor to indicate that the app is being unresponsive."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:176
+#: docs/en/tutorial/tutorial-8.md:182
 #, fuzzy
 msgid ""
 "This is because the web request we have made is *synchronous*. When our "
@@ -218,12 +228,12 @@ msgstr ""
 "réponse avant de continuer. Pendant cette attente, l'API ne permet pas à "
 "l'application de se redessiner, ce qui a pour effet de bloquer l'application."
 
-#: docs/en/tutorial/tutorial-8.md:181
+#: docs/en/tutorial/tutorial-8.md:187
 #, fuzzy
 msgid "GUI Event Loops"
 msgstr "Boucles d'événements de l'interface graphique"
 
-#: docs/en/tutorial/tutorial-8.md:183
+#: docs/en/tutorial/tutorial-8.md:189
 #, fuzzy
 msgid ""
 "To understand why this happens, we need to dig into the details of how a GUI "
@@ -237,14 +247,14 @@ msgstr ""
 "quelle que soit la plate-forme ou l'environnement d'interface graphique que "
 "vous utilisez."
 
-#: docs/en/tutorial/tutorial-8.md:188
+#: docs/en/tutorial/tutorial-8.md:194
 #, fuzzy
 msgid "A GUI app is, fundamentally, a single loop that looks something like:"
 msgstr ""
 "Une application GUI est, fondamentalement, une boucle unique qui ressemble à "
 "quelque chose comme: :"
 
-#: docs/en/tutorial/tutorial-8.md:196
+#: docs/en/tutorial/tutorial-8.md:202
 #, fuzzy
 msgid ""
 "This loop is called the *Event Loop*. (These aren't actual method names - "
@@ -254,7 +264,7 @@ msgstr ""
 "méthodes réels, mais d'une illustration de ce qui se passe dans le "
 "\"pseudo-code\")."
 
-#: docs/en/tutorial/tutorial-8.md:199
+#: docs/en/tutorial/tutorial-8.md:205
 #, fuzzy
 msgid ""
 "When you click on a button, or drag a scroll bar, or type a key, you are "
@@ -272,7 +282,7 @@ msgstr ""
 "gestionnaires d'événements sont invoqués dans le cadre de l'appel "
 "`process_events()`."
 
-#: docs/en/tutorial/tutorial-8.md:206
+#: docs/en/tutorial/tutorial-8.md:212
 #, fuzzy
 msgid ""
 "Once an app has processed all the available events, it will `redraw()` the "
@@ -290,7 +300,7 @@ msgstr ""
 "de la fenêtre de notre application, et le redessin de notre application "
 "devra refléter la partie de la fenêtre qui est actuellement visible."
 
-#: docs/en/tutorial/tutorial-8.md:213
+#: docs/en/tutorial/tutorial-8.md:219
 #, fuzzy
 msgid ""
 "The important detail to notice: while an application is processing an event, "
@@ -299,7 +309,7 @@ msgstr ""
 "Détail important : pendant qu'une application traite un événement, *elle ne "
 "peut pas redessiner*, et *elle ne peut pas traiter d'autres événements*."
 
-#: docs/en/tutorial/tutorial-8.md:216
+#: docs/en/tutorial/tutorial-8.md:222
 #, fuzzy
 msgid ""
 "This means any user logic contained in an event handler needs to complete "
@@ -318,7 +328,7 @@ msgstr ""
 "\"spinner\" indiquent que votre application prend trop de temps dans un "
 "gestionnaire d'événements."
 
-#: docs/en/tutorial/tutorial-8.md:224
+#: docs/en/tutorial/tutorial-8.md:230
 #, fuzzy
 msgid ""
 "Simple operations like \"update a label\", or "
@@ -336,19 +346,19 @@ msgstr ""
 "requête réseau importante, vous ne pouvez pas \"faire vite\" - les "
 "opérations sont intrinsèquement lentes."
 
-#: docs/en/tutorial/tutorial-8.md:231
+#: docs/en/tutorial/tutorial-8.md:237
 #, fuzzy
 msgid "So - how do we perform long-lived operations in a GUI application?"
 msgstr ""
 "Alors, comment effectuer des opérations à long terme dans une application "
 "GUI ?"
 
-#: docs/en/tutorial/tutorial-8.md:233
+#: docs/en/tutorial/tutorial-8.md:239
 #, fuzzy
 msgid "Asynchronous programming"
 msgstr "Programmation asynchrone"
 
-#: docs/en/tutorial/tutorial-8.md:235
+#: docs/en/tutorial/tutorial-8.md:241
 #, fuzzy
 msgid ""
 "What we need is a way to tell an app in the middle of a long-lived event "
@@ -367,7 +377,7 @@ msgstr ""
 "avoir un gestionnaire d'événements de longue durée *et* maintenir une "
 "interface utilisateur réactive."
 
-#: docs/en/tutorial/tutorial-8.md:242
+#: docs/en/tutorial/tutorial-8.md:248
 #, fuzzy
 msgid ""
 "We can do this by using *asynchronous programming*. Asynchronous programming "
@@ -380,7 +390,7 @@ msgstr ""
 "l'interpréteur d'exécuter plusieurs fonctions en même temps, en partageant "
 "les ressources entre toutes les fonctions qui s'exécutent simultanément."
 
-#: docs/en/tutorial/tutorial-8.md:247
+#: docs/en/tutorial/tutorial-8.md:253
 #, fuzzy
 msgid ""
 "Asynchronous functions (known as *coroutines*) need to be explicitly "
@@ -392,7 +402,7 @@ msgstr ""
 "déclarer en interne lorsqu'il est possible de changer de contexte et de "
 "passer à une autre co-routine."
 
-#: docs/en/tutorial/tutorial-8.md:251
+#: docs/en/tutorial/tutorial-8.md:257
 #, fuzzy
 msgid ""
 "In Python, asynchronous programming is implemented using the `async` and "
@@ -410,12 +420,12 @@ msgstr ""
 "`asyncio]{2} fournit d'autres outils et primitives utiles pour le codage "
 "asynchrone."
 
-#: docs/en/tutorial/tutorial-8.md:261
+#: docs/en/tutorial/tutorial-8.md:267
 #, fuzzy
 msgid "Making the tutorial asynchronous"
 msgstr "Rendre le didacticiel asynchrone"
 
-#: docs/en/tutorial/tutorial-8.md:263
+#: docs/en/tutorial/tutorial-8.md:269
 #, fuzzy
 msgid ""
 "To make our tutorial asynchronous, modify the `say_hello()` event handler so "
@@ -424,14 +434,14 @@ msgstr ""
 "Pour rendre notre tutoriel asynchrone, modifiez le gestionnaire d'événement "
 "`say_hello()` pour qu'il ressemble à ceci: :"
 
-#: docs/en/tutorial/tutorial-8.md:282
+#: docs/en/tutorial/tutorial-8.md:288
 #, fuzzy
 msgid ""
 "There are only three changes to this callback from the previous version:"
 msgstr ""
 "Il n'y a que 4 changements dans ce code par rapport à la version précédente :"
 
-#: docs/en/tutorial/tutorial-8.md:284
+#: docs/en/tutorial/tutorial-8.md:290
 #, fuzzy
 msgid ""
 "The client that is created is an asynchronous `AsyncClient()`, rather than a "
@@ -442,7 +452,7 @@ msgstr ""
 "synchrone. Cela indique à `httpx` qu'il doit fonctionner en mode asynchrone, "
 "plutôt qu'en mode synchrone."
 
-#: docs/en/tutorial/tutorial-8.md:287
+#: docs/en/tutorial/tutorial-8.md:293
 #, fuzzy
 msgid ""
 "The context manager used to create the client is marked as `async`. This "
@@ -453,7 +463,7 @@ msgstr ""
 "`async`. Cela indique à Python qu'il y a une opportunité de relâcher le "
 "contrôle lorsque le gestionnaire de contexte est entré et sorti."
 
-#: docs/en/tutorial/tutorial-8.md:290
+#: docs/en/tutorial/tutorial-8.md:296
 msgid ""
 "The `get` call is made with an `await` keyword. This instructs the app that "
 "while we are waiting for the response from the network, the app can release "
@@ -464,7 +474,7 @@ msgid ""
 "OK to release control back to the event loop."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:299
+#: docs/en/tutorial/tutorial-8.md:305
 msgid ""
 "It's also important to note that the handler itself is defined as `async def`"
 ", rather than just `def`. This tells Python that the method is an "
@@ -473,7 +483,7 @@ msgid ""
 "declared as `async def`."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:305
+#: docs/en/tutorial/tutorial-8.md:311
 #, fuzzy
 msgid ""
 "Toga allows you to use regular methods or asynchronous coroutines as "
@@ -484,7 +494,7 @@ msgstr ""
 "asynchrones en tant que gestionnaires ; Toga gère tout en coulisses pour "
 "s'assurer que le gestionnaire est invoqué ou attendu selon les besoins."
 
-#: docs/en/tutorial/tutorial-8.md:309
+#: docs/en/tutorial/tutorial-8.md:315
 #, fuzzy
 msgid ""
 "If you save these changes and re-run the app in development mode, there "
@@ -498,7 +508,7 @@ msgstr ""
 "le dialogue, vous pouvez remarquer un certain nombre d'améliorations "
 "subtiles :"
 
-#: docs/en/tutorial/tutorial-8.md:314
+#: docs/en/tutorial/tutorial-8.md:320
 #, fuzzy
 msgid ""
 "The button returns to an \"unclicked\" state, rather than being stuck in a "
@@ -507,11 +517,11 @@ msgstr ""
 "Le bouton revient à l'état \"décliqué\" au lieu d'être bloqué à l'état "
 "\"cliqué\"."
 
-#: docs/en/tutorial/tutorial-8.md:316
+#: docs/en/tutorial/tutorial-8.md:322
 msgid "The \"beachball\"/\"spinner\" icon won't appear."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:317
+#: docs/en/tutorial/tutorial-8.md:323
 #, fuzzy
 msgid ""
 "If you move/resize the app window while waiting for the dialog to appear, "
@@ -520,14 +530,14 @@ msgstr ""
 "Si vous déplacez ou redimensionnez la fenêtre de l'application en attendant "
 "que la boîte de dialogue s'affiche, la fenêtre se redessinera."
 
-#: docs/en/tutorial/tutorial-8.md:319
+#: docs/en/tutorial/tutorial-8.md:325
 #, fuzzy
 msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr ""
 "Si vous essayez d'ouvrir un menu d'application, le menu s'affiche "
 "immédiatement."
 
-#: docs/en/tutorial/tutorial-8.md:321
+#: docs/en/tutorial/tutorial-8.md:327
 msgid ""
 "We can now run the full app. However, as we've added an extra requirement "
 "(`httpx`) we also need to update our app's requirements; we can do this by "
@@ -535,65 +545,65 @@ msgid ""
 "then re-build the app, then launch the app:"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:366
+#: docs/en/tutorial/tutorial-8.md:372
 msgid ""
 "You should see you app running, and remaining responsive when you press the "
 "button and network content is retrieved."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:369
+#: docs/en/tutorial/tutorial-8.md:375
 msgid "Next steps"
 msgstr "Étapes suivantes"
 
-#: docs/en/tutorial/tutorial-8.md:371
+#: docs/en/tutorial/tutorial-8.md:377
 msgid ""
 "This has been a taste for what you can do with the tools provided by the "
 "BeeWare project. Over the course of this tutorial, you have:"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:374
+#: docs/en/tutorial/tutorial-8.md:380
 msgid "Created a new GUI app project;"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:375
+#: docs/en/tutorial/tutorial-8.md:381
 msgid "Run that app in development mode;"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:376
+#: docs/en/tutorial/tutorial-8.md:382
 msgid "Built the app as a standalone binary for a desktop operating system;"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:377
+#: docs/en/tutorial/tutorial-8.md:383
 msgid "Packaged that project for distribution to others;"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:378
+#: docs/en/tutorial/tutorial-8.md:384
 msgid "Run the app on a mobile simulator and/or device;"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:379
+#: docs/en/tutorial/tutorial-8.md:385
 msgid "Run the app as a web app;"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:380
+#: docs/en/tutorial/tutorial-8.md:386
 msgid "Added a third-party dependency to your app; and"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:381
+#: docs/en/tutorial/tutorial-8.md:387
 msgid "Modified the app so that it remains responsive."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:383
+#: docs/en/tutorial/tutorial-8.md:389
 msgid "So - where to from here?"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:385
+#: docs/en/tutorial/tutorial-8.md:391
 msgid ""
-"If you'd like to go further, there are some additional [topic tutorials]"
-"[topics] that go into detail on specific aspects of application development."
+"If you'd like to go further, there are some additional [topic tutorials]{1} "
+"that go into detail on specific aspects of application development."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:388
+#: docs/en/tutorial/tutorial-8.md:394
 msgid ""
 "If you'd like to know more about how to build complex user interfaces with "
 "Toga, you can dive into [Toga's documentation]{1}. Toga also has its own "
@@ -601,12 +611,8 @@ msgid ""
 "{2}."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-8.md:393
+#: docs/en/tutorial/tutorial-8.md:399
 msgid ""
 "If you'd like to know more about the capabilities of Briefcase, you can dive "
 "into [Briefcase's documentation]{1}."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Tutorial 8 - Making it Smooooth"
-#~ msgstr "Tutoriel 8 - Le rendre lisse"
