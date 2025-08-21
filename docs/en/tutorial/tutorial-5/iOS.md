@@ -117,7 +117,7 @@ This will start the iOS simulator, install your app, and start it. You
 should see the simulator start, and eventually open your iOS
 application:
 
-![Hello World Tutorial 5 window, on iOS](../../tutorial/images/iOS/tutorial-5.png)
+![Hello World Tutorial 5 window, on iOS](../../images/iOS/tutorial-5.png)
 
 While the app is running, you'll see a series of Simulator log output
 messages in the console. Typing Ctrl+C into the terminal will halt the

@@ -8,7 +8,7 @@ a mobile application, and as a single page web app. We'll also look at
 how you can use BeeWare tools to perform some of the common tasks that
 you'll need to do as an app developer, such as testing your app.
 
-{% if config.extra.translation_type == original %}
+{% if config.extra.translation_type == "original" %}
 
 /// admonition | Translations are available
 
@@ -25,7 +25,7 @@ are available in [Deutsch](https://docs.beeware.org/de),
 
 {% endif %}
 
-{% if config.extra.translation_type == machine %}
+{% if config.extra.translation_type == "machine" %}
 
 /// admonition | This is a machine translation!
 
@@ -41,7 +41,7 @@ Introduce yourself there and we will add you to the translation team.
 
 {% endif %}
 
-{% if config.extra.translation_type == human %}
+{% if config.extra.translation_type == "human" %}
 
 /// admonition | This is a translation!
 

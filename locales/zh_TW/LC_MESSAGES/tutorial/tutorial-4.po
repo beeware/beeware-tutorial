@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2024-04-10 21:02+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -79,45 +79,53 @@ msgid ""
 msgstr "如果執行`briefcase dev`，輸入名稱，然後按按鈕，您將看到新的對話方塊："
 
 #: docs/en/tutorial/tutorial-4.md:41
-#: docs/en/tutorial/tutorial-4.md:85
-#: docs/en/tutorial/tutorial-4.md:198
+#: docs/en/tutorial/tutorial-4.md:81
+#: docs/en/tutorial/tutorial-4.md:194
 msgid "/// tab | macOS"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:47
+#: docs/en/tutorial/tutorial-4.md:43
 msgid "![Hello World Tutorial 4 dialog, on macOS]{1} /// caption ///"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:51
-#: docs/en/tutorial/tutorial-4.md:59
-#: docs/en/tutorial/tutorial-4.md:67
-#: docs/en/tutorial/tutorial-4.md:99
-#: docs/en/tutorial/tutorial-4.md:122
-#: docs/en/tutorial/tutorial-4.md:138
-#: docs/en/tutorial/tutorial-4.md:219
-#: docs/en/tutorial/tutorial-4.md:248
-#: docs/en/tutorial/tutorial-4.md:266
+#: docs/en/tutorial/tutorial-4.md:47
+#: docs/en/tutorial/tutorial-4.md:55
+#: docs/en/tutorial/tutorial-4.md:63
+#: docs/en/tutorial/tutorial-4.md:95
+#: docs/en/tutorial/tutorial-4.md:118
+#: docs/en/tutorial/tutorial-4.md:134
+#: docs/en/tutorial/tutorial-4.md:215
+#: docs/en/tutorial/tutorial-4.md:244
+#: docs/en/tutorial/tutorial-4.md:262
 msgid "///"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:53
-#: docs/en/tutorial/tutorial-4.md:101
-#: docs/en/tutorial/tutorial-4.md:221
+#: docs/en/tutorial/tutorial-4.md:49
+#: docs/en/tutorial/tutorial-4.md:97
+#: docs/en/tutorial/tutorial-4.md:217
 msgid "/// tab | Linux"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:61
-#: docs/en/tutorial/tutorial-4.md:124
-#: docs/en/tutorial/tutorial-4.md:250
+#: docs/en/tutorial/tutorial-4.md:51
+msgid "![Hello World Tutorial 4 dialog, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-4.md:57
+#: docs/en/tutorial/tutorial-4.md:120
+#: docs/en/tutorial/tutorial-4.md:246
 msgid "/// tab | Windows"
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:69
+#: docs/en/tutorial/tutorial-4.md:59
+msgid "![Hello World Tutorial 4 dialog, on Windows]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-4.md:65
 #, fuzzy
 msgid "However, if you run `briefcase run`, the dialog box won't appear."
 msgstr "但是，如果執行`briefcase run`，則不會出現該對話方塊。"
 
-#: docs/en/tutorial/tutorial-4.md:71
+#: docs/en/tutorial/tutorial-4.md:67
 msgid ""
 "Why is this? Well, `briefcase dev` operates by running your code in place -"
 "it tries to produce as realistic runtime environment for your code as "
@@ -127,7 +135,7 @@ msgid ""
 "the moment, your application still has the old code in it."
 msgstr ""
 
-#: docs/en/tutorial/tutorial-4.md:79
+#: docs/en/tutorial/tutorial-4.md:75
 #, fuzzy
 msgid ""
 "So - we need to tell briefcase to update your app, copying in the new "
@@ -140,14 +148,14 @@ msgstr ""
 "台目錄並從頭開始來做到這一點。但是，Briefcase 提供了一種更簡單的方法 - "
 "您可以更新現有捆綁應用程式的程式碼："
 
-#: docs/en/tutorial/tutorial-4.md:140
+#: docs/en/tutorial/tutorial-4.md:136
 #, fuzzy
 msgid ""
 "If Briefcase can't find the scaffolded template, it will automatically "
 "invoke `create` to generate a fresh scaffold."
 msgstr "如果Briefcase找不到鷹架模板，它會自動呼叫`create`來產生一個新的鷹架。"
 
-#: docs/en/tutorial/tutorial-4.md:143
+#: docs/en/tutorial/tutorial-4.md:139
 #, fuzzy
 msgid ""
 "Now that we've updated the installer code, we can then run `briefcase build` "
@@ -159,7 +167,7 @@ msgstr ""
 "run`來運行更新後的應用程序，以及運行`briefcase "
 "package`來重新打包應用程式用於分發。"
 
-#: docs/en/tutorial/tutorial-4.md:148
+#: docs/en/tutorial/tutorial-4.md:144
 #, fuzzy
 msgid ""
 "(macOS users, remember that as noted in [Tutorial 3][tutorial-3], for the "
@@ -171,12 +179,12 @@ msgstr ""
 "`--adhoc-sign`標誌運行`briefcase "
 "package`，以避免設置代碼簽名身份的複雜性，並使教程盡可能簡單。）"
 
-#: docs/en/tutorial/tutorial-4.md:153
+#: docs/en/tutorial/tutorial-4.md:149
 #, fuzzy
 msgid "Update and run in one step"
 msgstr "一步更新並運行"
 
-#: docs/en/tutorial/tutorial-4.md:155
+#: docs/en/tutorial/tutorial-4.md:151
 #, fuzzy
 msgid ""
 "If you're rapidly iterating code changes, you'll likely want to make a code "
@@ -196,7 +204,7 @@ msgstr ""
 "需要重複調用`briefcase run`。為了簡化更新和執行捆綁應用程式的過程，Briefcase "
 "有一個快捷方式來支援這種使用模式 - `run` 命令上的`-u`（或`--update`）選項。"
 
-#: docs/en/tutorial/tutorial-4.md:166
+#: docs/en/tutorial/tutorial-4.md:162
 #, fuzzy
 msgid ""
 "Let's try making another change. You may have noticed that if you don't type "
@@ -207,7 +215,7 @@ msgstr ""
 "，則對話方塊將顯示 \"Hello，\"。讓我們再次修改 `say_hello` "
 "函數來處理這種邊緣情況。"
 
-#: docs/en/tutorial/tutorial-4.md:170
+#: docs/en/tutorial/tutorial-4.md:166
 #, fuzzy
 msgid ""
 "At the top of the file, between the imports and the `class HelloWorld` "
@@ -216,12 +224,12 @@ msgid ""
 msgstr "在檔案頂部的匯入和`class "
 "HelloWorld`定義之間，新增實用程式方法以根據已提供的名稱值產生適當的問候語："
 
-#: docs/en/tutorial/tutorial-4.md:182
+#: docs/en/tutorial/tutorial-4.md:178
 #, fuzzy
 msgid "Then, modify the `say_hello` callback to use this new utility method:"
 msgstr "然後，修改`say_hello`回調以使用這個新的實用方法："
 
-#: docs/en/tutorial/tutorial-4.md:194
+#: docs/en/tutorial/tutorial-4.md:190
 #, fuzzy
 msgid ""
 "Run your app in development mode (with `briefcase dev`) to confirm that the "
@@ -229,7 +237,7 @@ msgid ""
 msgstr "在開發模式下運行您的應用程式（使用`briefcase "
 "dev`）以確認新邏輯有效；然後使用一個命令更新、建置和運行應用程式："
 
-#: docs/en/tutorial/tutorial-4.md:268
+#: docs/en/tutorial/tutorial-4.md:264
 #, fuzzy
 msgid ""
 "The package command also accepts the `-u` argument, so if you make a change "
@@ -240,11 +248,11 @@ msgstr ""
 "命令也接受`-u`參數，因此如果您對應用程式程式碼進行了更改並希望立即重新打包，"
 "則可以運行`briefcase package -u`。"
 
-#: docs/en/tutorial/tutorial-4.md:272
+#: docs/en/tutorial/tutorial-4.md:268
 msgid "Next steps"
 msgstr "下一步"
 
-#: docs/en/tutorial/tutorial-4.md:274
+#: docs/en/tutorial/tutorial-4.md:270
 #, fuzzy
 msgid ""
 "We now have our application packaged for distribution on desktop platforms, "
@@ -252,7 +260,7 @@ msgid ""
 msgstr "現在，我們已經將應用程式打包以便在桌面平台上分發，並且我們已經能夠更新應用程"
 "式中的程式碼。"
 
-#: docs/en/tutorial/tutorial-4.md:277
+#: docs/en/tutorial/tutorial-4.md:273
 msgid ""
 "But what about mobile? In [Tutorial 5][tutorial-5], we'll convert our "
 "application into a mobile application, and deploy it onto a device "

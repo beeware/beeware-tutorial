@@ -333,24 +333,30 @@ This should open a GUI window:
 
 /// tab | macOS
 
-![Hello World Tutorial 2 window, on macOS](/tutorial/images/macOS/tutorial-2.png)
+![Hello World Tutorial 2 window, on macOS](../images/macOS/tutorial-2.png)
+
 /// caption
+
 ///
 
 ///
 
 /// tab | Linux
 
-![Hello World Tutorial 2 window, on Linux](/tutorial/images/linux/tutorial-2.png)
+![Hello World Tutorial 2 window, on Linux](../images/linux/tutorial-2.png)
+
 /// caption
+
 ///
 
 ///
 
 /// tab | Windows
 
-![Hello World Tutorial 2 window, on Windows](/tutorial/images/windows/tutorial-2.png)
+![Hello World Tutorial 2 window, on Windows](../images/windows/tutorial-2.png)
+
 /// caption
+
 ///
 
 ///

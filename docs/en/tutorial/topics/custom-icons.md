@@ -170,8 +170,7 @@ expecting. However, as we haven't provided the actual icon files, the
 install fails, and Briefcase falls back to a default value (the same
 "gray bee" icon).
 
-Let's provide some actual icons. Download `this icons.zip bundle
-<../resources/icons.zip>`{.interpreted-text role="download"}, and unzip
+Let's provide some actual icons. Download [this icons.zip bundle](../../resources/icons.zip), and unzip
 it into the root of your project directory. After unzipping, your
 project directory should look something like:
 
@@ -195,8 +194,10 @@ beeware-tutorial/
 There's a *lot* of icons in this folder, but most of them should look
 the same: a green snake on a light blue background:
 
-![Icon of green snake with a light blue background](/tutorial/resources/icon.png)
+![Icon of green snake with a light blue background](../../images/icon.png)
+
 /// caption
+
 ///
 
 The only exception will be the icons with `-adaptive-` in their name;

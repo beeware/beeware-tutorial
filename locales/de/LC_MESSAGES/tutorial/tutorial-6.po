@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"PO-Revision-Date: 2025-08-19 20:01+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-6/de/>\n"
 "MIME-Version: 1.0\n"
@@ -14,27 +14,25 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-6.md:1
 msgid "Tutorial 6 - Put it on the web! { id=\"tutorial-6\" }"
-msgstr ""
+msgstr "Tutorial 6 - Ins Netz stellen! { id=\"tutorial-6\" }"
 
 #: docs/en/tutorial/tutorial-6.md:3
-#, fuzzy
 msgid ""
 "In addition to supporting mobile platforms, the Toga widget toolkit also "
 "supports the web! Using the same API that you used to deploy your desktop "
 "and mobile applications, you can deploy your application as a single-page "
 "web app."
 msgstr ""
-"Das Toga Widget Toolkit unterstützt nicht nur mobile Plattformen, sondern "
-"auch das Web! Mit der gleichen API, die Sie für die Bereitstellung Ihrer "
-"Desktop- und mobilen Anwendungen verwendet haben, können Sie Ihre Anwendung "
-"als einseitige Webanwendung bereitstellen."
+"Neben mobilen Plattformen unterstützt das Toga-Widget-Toolkit auch das Web! "
+"Mit derselben API, die Sie für die Bereitstellung Ihrer Desktop- und "
+"Mobilanwendungen verwendet haben, können Sie Ihre Anwendung als Single-Page-"
+"Web-App bereitstellen."
 
 #: docs/en/tutorial/tutorial-6.md:8
 msgid "/// admonition | Proof of Concept"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-6.md:10
-#, fuzzy
 msgid ""
 "The Toga Web backend is the least mature of all the Toga backends. It's "
 "mature enough to show off a few features, but it's likely to be buggy, and "
@@ -43,22 +41,21 @@ msgid ""
 "\"Proof of Concept\" - enough to demonstrate what can be done, but not "
 "enough to be relied on for serious development."
 msgstr ""
-"Das Toga Web Backend ist das am wenigsten ausgereifte von allen Toga "
-"Backends. Es ist ausgereift genug, um ein paar Funktionen zu zeigen, aber es "
-"wird wahrscheinlich fehlerhaft sein und viele der Widgets, die auf anderen "
-"Plattformen verfügbar sind, fehlen. Zum jetzigen Zeitpunkt sollte Web "
-"Deployment als \"Proof of Concept\" betrachtet werden - genug, um zu "
-"demonstrieren, was getan werden kann, aber nicht genug, um sich auf eine "
-"ernsthafte Entwicklung zu verlassen."
+"Das Toga-Web-Backend ist das am wenigsten ausgereifte aller Toga-Backends. "
+"Es ist zwar ausgereift genug, um einige Funktionen zu demonstrieren, aber es "
+"ist wahrscheinlich fehlerhaft und es fehlen viele der Widgets, die auf "
+"anderen Plattformen verfügbar sind. Zum jetzigen Zeitpunkt sollte die Web-"
+"Bereitstellung als „Proof of Concept“ betrachtet werden – ausreichend, um zu "
+"zeigen, was möglich ist, aber nicht ausreichend, um sich bei ernsthaften "
+"Entwicklungsprojekten darauf zu verlassen."
 
 #: docs/en/tutorial/tutorial-6.md:17
-#, fuzzy
 msgid ""
 "If you have problems with this step of the tutorial, you can skip to the "
 "next page."
 msgstr ""
 "Wenn Sie Probleme mit diesem Schritt des Tutorials haben, können Sie zur "
-"nächsten Seite wechseln."
+"nächsten Seite springen."
 
 #: docs/en/tutorial/tutorial-6.md:20
 #: docs/en/tutorial/tutorial-6.md:70
@@ -68,12 +65,10 @@ msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-6.md:22
-#, fuzzy
 msgid "Deploying as a web app"
 msgstr "Als Webanwendung bereitstellen"
 
 #: docs/en/tutorial/tutorial-6.md:24
-#, fuzzy
 msgid ""
 "The process of deploying as a single-page web app follows the same familiar "
 "pattern - you create the application, then build the application, then run "
@@ -83,13 +78,14 @@ msgid ""
 "you. Since this is our first time running the app for the web, we can "
 "perform all three steps with one command:"
 msgstr ""
-"Der Prozess der Bereitstellung als einseitige Webanwendung folgt dem "
-"gleichen bekannten Muster - Sie erstellen die Anwendung, bauen die Anwendung "
-"und führen sie dann aus. Wenn Sie versuchen, eine Anwendung auszuführen und "
-"Briefcase feststellt, dass sie nicht für die angestrebte Plattform erstellt "
-"oder gebaut wurde, führt es die Schritte zum Erstellen und Bauen für Sie "
-"aus. Da wir die Anwendung zum ersten Mal für das Web ausführen, können wir "
-"alle drei Schritte mit einem Befehl ausführen:"
+"Der Prozess der Bereitstellung als Single-Page-Web-App folgt dem gleichen "
+"bekannten Muster: Sie erstellen die Anwendung, bauen sie dann und führen sie "
+"anschließend aus. Briefcase kann jedoch etwas intelligenter sein: Wenn Sie "
+"versuchen, eine Anwendung auszuführen, und Briefcase feststellt, dass sie "
+"nicht für die Zielplattform erstellt oder gebaut wurde, führt es die "
+"Schritte zum Erstellen und Bauen für Sie aus. Da wir die App zum ersten Mal "
+"für das Web ausführen, können wir alle drei Schritte mit einem einzigen "
+"Befehl ausführen:"
 
 #: docs/en/tutorial/tutorial-6.md:32
 msgid "/// tab | macOS"
@@ -174,6 +170,3 @@ msgstr ""
 "Bibliotheken von Drittanbietern. Können wir Bibliotheken aus dem Python "
 "Package Index (PyPI) in unsere App einbinden? Schauen Sie sich [Tutorial 7]"
 "[tutorial-7] an, um das herauszufinden..."
-
-#~ msgid "Tutorial 6 - Put it on the web!"
-#~ msgstr "Tutorial 6 - Ins Netz stellen!"

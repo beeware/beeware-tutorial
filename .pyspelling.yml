@@ -1,0 +1,34 @@
+matrix:
+- name: markdown
+  dictionary:
+    wordlists:
+    - docs/spelling_wordlist
+    output: _build/dictionary/python.dic
+  sources:
+  - '**/*.md'
+  pipeline:
+  - pyspelling.filters.markdown:
+      markdown_extensions:
+      - markdown.extensions.toc
+      - markdown.extensions.admonition
+      - markdown.extensions.attr_list
+      - pymdownx.superfences
+      - pymdownx.blocks.admonition
+      - pymdownx.blocks.caption
+      - pymdownx.blocks.tab
+  - pyspelling.filters.html:
+      comments: true
+      attributes:
+        - title
+        - alt
+      ignores:
+        - 'code'
+        - 'pre'
+        - 'nospell'
+  - pyspelling.filters.context:
+      context_visible_first: true
+      escapes: '\\[\\`~]'
+      delimiters:
+        - open: '{%'
+          content: '[\d\D]*'
+          close: '%}'

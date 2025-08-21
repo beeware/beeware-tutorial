@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
-"PO-Revision-Date: 2024-08-19 17:09+0000\n"
-"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"PO-Revision-Date: 2025-08-19 20:02+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "topics/custom-icons/de/>\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:1
 msgid "Customizing icons { id=\"custom-icons\" }"
-msgstr ""
+msgstr "Symbole anpassen { id=\"custom-icons\" }"
 
 #: docs/en/tutorial/topics/custom-icons.md:3
 msgid ""
@@ -64,6 +64,12 @@ msgid ""
 "icon files; this prefix will be combined with file size and variant "
 "modifiers to generate the list of icon files that are used."
 msgstr ""
+"Diese Icon-Definition gibt keine Dateierweiterung an. Der Wert wird als "
+"Präfix verwendet; jede Plattform fügt diesem Präfix zusätzliche Elemente "
+"hinzu, um die für die jeweilige Plattform erforderlichen Dateien zu "
+"erstellen. Einige Plattformen erfordern *mehrere* Icon-Dateien; dieses "
+"Präfix wird mit Dateigröße und Variantenmodifikatoren kombiniert, um die "
+"Liste der verwendeten Icon-Dateien zu generieren."
 
 #: docs/en/tutorial/topics/custom-icons.md:30
 msgid ""
@@ -71,10 +77,13 @@ msgid ""
 "`--update-resources` flag, telling Briefcase that we want to install new "
 "application resources (i.e., the icons):"
 msgstr ""
+"Wir können nun erneut `briefcase update` ausführen – diesmal jedoch mit dem "
+"Flag `--update-resources`, um Briefcase mitzuteilen, dass wir neue "
+"Anwendungsressourcen (d. h. die Symbole) installieren möchten:"
 
 #: docs/en/tutorial/topics/custom-icons.md:34
-#: docs/en/tutorial/topics/custom-icons.md:214
-#: docs/en/tutorial/topics/custom-icons.md:411
+#: docs/en/tutorial/topics/custom-icons.md:213
+#: docs/en/tutorial/topics/custom-icons.md:410
 msgid "/// tab | macOS"
 msgstr ""
 
@@ -83,42 +92,42 @@ msgstr ""
 #: docs/en/tutorial/topics/custom-icons.md:94
 #: docs/en/tutorial/topics/custom-icons.md:132
 #: docs/en/tutorial/topics/custom-icons.md:166
-#: docs/en/tutorial/topics/custom-icons.md:238
-#: docs/en/tutorial/topics/custom-icons.md:270
-#: docs/en/tutorial/topics/custom-icons.md:297
-#: docs/en/tutorial/topics/custom-icons.md:343
-#: docs/en/tutorial/topics/custom-icons.md:345
-#: docs/en/tutorial/topics/custom-icons.md:381
-#: docs/en/tutorial/topics/custom-icons.md:390
-#: docs/en/tutorial/topics/custom-icons.md:426
-#: docs/en/tutorial/topics/custom-icons.md:443
-#: docs/en/tutorial/topics/custom-icons.md:460
-#: docs/en/tutorial/topics/custom-icons.md:476
-#: docs/en/tutorial/topics/custom-icons.md:492
+#: docs/en/tutorial/topics/custom-icons.md:237
+#: docs/en/tutorial/topics/custom-icons.md:269
+#: docs/en/tutorial/topics/custom-icons.md:296
+#: docs/en/tutorial/topics/custom-icons.md:342
+#: docs/en/tutorial/topics/custom-icons.md:344
+#: docs/en/tutorial/topics/custom-icons.md:380
+#: docs/en/tutorial/topics/custom-icons.md:389
+#: docs/en/tutorial/topics/custom-icons.md:425
+#: docs/en/tutorial/topics/custom-icons.md:442
+#: docs/en/tutorial/topics/custom-icons.md:459
+#: docs/en/tutorial/topics/custom-icons.md:475
+#: docs/en/tutorial/topics/custom-icons.md:491
 msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:53
-#: docs/en/tutorial/topics/custom-icons.md:240
-#: docs/en/tutorial/topics/custom-icons.md:428
+#: docs/en/tutorial/topics/custom-icons.md:239
+#: docs/en/tutorial/topics/custom-icons.md:427
 msgid "/// tab | Linux"
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:77
-#: docs/en/tutorial/topics/custom-icons.md:272
-#: docs/en/tutorial/topics/custom-icons.md:445
+#: docs/en/tutorial/topics/custom-icons.md:271
+#: docs/en/tutorial/topics/custom-icons.md:444
 msgid "/// tab | Windows"
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:96
-#: docs/en/tutorial/topics/custom-icons.md:299
-#: docs/en/tutorial/topics/custom-icons.md:462
+#: docs/en/tutorial/topics/custom-icons.md:298
+#: docs/en/tutorial/topics/custom-icons.md:461
 msgid "/// tab | Android"
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:134
-#: docs/en/tutorial/topics/custom-icons.md:347
-#: docs/en/tutorial/topics/custom-icons.md:478
+#: docs/en/tutorial/topics/custom-icons.md:346
+#: docs/en/tutorial/topics/custom-icons.md:477
 msgid "/// tab | iOS"
 msgstr ""
 
@@ -128,30 +137,43 @@ msgid ""
 "However, as we haven't provided the actual icon files, the install fails, "
 "and Briefcase falls back to a default value (the same \"gray bee\" icon)."
 msgstr ""
+"Dies gibt die spezifische(n) Icon-Datei(en) an, die Briefcase erwartet. Da "
+"wir jedoch keine tatsächlichen Icon-Dateien bereitgestellt haben, schlägt "
+"die Installation fehl und Briefcase greift auf einen Standardwert zurück ("
+"das gleiche „graue Bienen”-Icon)."
 
 #: docs/en/tutorial/topics/custom-icons.md:173
 msgid ""
-"Let's provide some actual icons. Download `this icons.zip bundle <../"
-"resources/icons.zip>`{.interpreted-text role=\"download\"}, and unzip it "
-"into the root of your project directory. After unzipping, your project "
-"directory should look something like:"
+"Let's provide some actual icons. Download [this icons.zip bundle]{1}, and "
+"unzip it into the root of your project directory. After unzipping, your "
+"project directory should look something like:"
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:195
+#: docs/en/tutorial/topics/custom-icons.md:194
 msgid ""
 "There's a *lot* of icons in this folder, but most of them should look the "
 "same: a green snake on a light blue background:"
 msgstr ""
+"In diesem Ordner befinden sich *sehr viele* Symbole, aber die meisten davon "
+"sollten gleich aussehen: eine grüne Schlange auf hellblauem Hintergrund:"
 
-#: docs/en/tutorial/topics/custom-icons.md:202
+#: docs/en/tutorial/topics/custom-icons.md:197
+msgid "![Icon of green snake with a light blue background]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/topics/custom-icons.md:201
 msgid ""
 "The only exception will be the icons with `-adaptive-` in their name; these "
 "will have a transparent background. This represents all the different icon "
 "sizes and shapes you need to support an app on every platform that Briefcase "
 "supports."
 msgstr ""
+"Die einzige Ausnahme bilden die Symbole mit '-adaptive-' im Namen; diese "
+"haben einen transparenten Hintergrund. Dies umfasst alle verschiedenen "
+"Symbolgrößen und -formen, die Sie benötigen, um eine App auf jeder von "
+"Briefcase unterstützten Plattform zu unterstützen."
 
-#: docs/en/tutorial/topics/custom-icons.md:207
+#: docs/en/tutorial/topics/custom-icons.md:206
 msgid ""
 "Now that we have icons, we can update the application again. However, `"
 "briefcase update` will only copy the updated resources into the build "
@@ -160,28 +182,44 @@ msgid ""
 "`--update-resources` to our call to `run` - this will update the app, update "
 "the app's resources, and then start the app:"
 msgstr ""
+"Jetzt, da wir über Symbole verfügen, können wir die Anwendung erneut "
+"aktualisieren. Allerdings kopiert `briefcase update` nur die aktualisierten "
+"Ressourcen in das Build-Verzeichnis. Wir möchten jedoch auch die Anwendung "
+"neu erstellen, um sicherzustellen, dass das neue Symbol enthalten ist, und "
+"dann die Anwendung starten. Wir können diesen Vorgang abkürzen, indem wir "
+"`--update-resources` an unseren Aufruf von `run` übergeben. Dadurch wird die "
+"Anwendung aktualisiert, die Ressourcen der Anwendung aktualisiert und "
+"anschließend die Anwendung gestartet:"
 
-#: docs/en/tutorial/topics/custom-icons.md:337
-#: docs/en/tutorial/topics/custom-icons.md:383
+#: docs/en/tutorial/topics/custom-icons.md:336
+#: docs/en/tutorial/topics/custom-icons.md:382
 msgid "/// note | Note"
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:339
+#: docs/en/tutorial/topics/custom-icons.md:338
 msgid ""
 "If you're using a recent version of Android, you may notice that the app "
 "icon has been changed to a green snake, but the background of the icon is "
 "*white*, rather than light blue. We'll fix this in the next step."
 msgstr ""
+"Wenn Sie eine aktuelle Version von Android verwenden, werden Sie "
+"möglicherweise feststellen, dass das App-Symbol zu einer grünen Schlange "
+"geändert wurde, der Hintergrund des Symbols jedoch *weiß* statt hellblau "
+"ist. Wir werden dies im nächsten Schritt beheben."
 
-#: docs/en/tutorial/topics/custom-icons.md:385
+#: docs/en/tutorial/topics/custom-icons.md:384
 msgid ""
 "If you get a stack trace referencing `faker` or `httpx` when you run the "
 "app, it's possible you missed running your app during step 7 or 8 of the "
 "tutorial. Re-run the app, adding the `-r` argument to update the app "
 "requirements."
 msgstr ""
+"Wenn Sie beim Ausführen der App einen Stacktrace erhalten, der auf `faker` "
+"oder `httpx` verweist, haben Sie möglicherweise Schritt 7 oder 8 des "
+"Tutorials übersprungen. Führen Sie die App erneut aus und fügen Sie das "
+"Argument `-r` hinzu, um die App-Anforderungen zu aktualisieren."
 
-#: docs/en/tutorial/topics/custom-icons.md:392
+#: docs/en/tutorial/topics/custom-icons.md:391
 msgid ""
 "When you run the app on iOS or Android, in addition to the icon change, you "
 "should also notice that the splash screen incorporates the new icon. "
@@ -190,8 +228,15 @@ msgid ""
 "customizing the background color of the splash screen. Add the following "
 "definition to your `pyproject.toml`, just after the `icon` definition:"
 msgstr ""
+"Wenn Sie die App auf iOS oder Android ausführen, sollten Sie neben der "
+"Änderung des Symbols auch feststellen, dass das neue Symbol in den "
+"Begrüßungsbildschirm integriert ist. Allerdings wirkt der hellblaue "
+"Hintergrund des Symbols vor dem weißen Hintergrund des Begrüßungsbildschirms "
+"etwas deplatziert. Wir können dies beheben, indem wir die Hintergrundfarbe "
+"des Begrüßungsbildschirms anpassen. Fügen Sie die folgende Definition zu "
+"Ihrer `pyproject.toml` hinzu, direkt nach der Definition `icon`:"
 
-#: docs/en/tutorial/topics/custom-icons.md:404
+#: docs/en/tutorial/topics/custom-icons.md:403
 msgid ""
 "Unfortunately, Briefcase isn't able to apply this change to an already "
 "generated project, as it requires making modifications to one of the files "
@@ -200,15 +245,26 @@ msgid ""
 "When we do this, we'll be prompted to confirm that we want to overwrite the "
 "existing project:"
 msgstr ""
+"Leider kann Briefcase diese Änderung nicht auf ein bereits generiertes "
+"Projekt anwenden, da dafür Änderungen an einer der Dateien vorgenommen "
+"werden müssen, die beim ursprünglichen Aufruf von `briefcase create` "
+"generiert wurden. Um diese Änderung anzuwenden, müssen wir die App neu "
+"erstellen, indem wir `briefcase create` erneut ausführen. Dabei werden wir "
+"aufgefordert, zu bestätigen, dass wir das vorhandene Projekt überschreiben "
+"möchten:"
 
-#: docs/en/tutorial/topics/custom-icons.md:495
+#: docs/en/tutorial/topics/custom-icons.md:494
 msgid ""
 "You can then re-build and re-run the app using `briefcase run`. You won't "
 "notice any changes to the desktop app; but the Android or iOS apps should "
 "now have a light blue splash screen background."
 msgstr ""
+"Sie können die App dann mit `briefcase run` neu erstellen und erneut "
+"ausführen. An der Desktop-App werden Sie keine Änderungen bemerken, aber die "
+"Android- oder iOS-Apps sollten nun einen hellblauen Hintergrund für den "
+"Begrüßungsbildschirm haben."
 
-#: docs/en/tutorial/topics/custom-icons.md:499
+#: docs/en/tutorial/topics/custom-icons.md:498
 msgid ""
 "You'll need to re-create the app like this whenever you make a change to "
 "your `pyproject.toml` that doesn't relate to source code or dependencies. "
@@ -220,6 +276,13 @@ msgid ""
 "output of the build system that can be recreated as needed to reflect the "
 "current configuration of your project."
 msgstr ""
-
-#~ msgid "Customizing icons"
-#~ msgstr "Symbole anpassen"
+"Sie müssen die App jedes Mal neu erstellen, wenn Sie Änderungen an Ihrer "
+"`pyproject.toml` vornehmen, die nicht den Quellcode oder die Abhängigkeiten "
+"betreffen. Jede Änderung an Beschreibungen, Versionsnummern, Farben oder "
+"Berechtigungen erfordert einen Neuanlegungsvorgang. Aus diesem Grund sollten "
+"Sie während der Entwicklung Ihres Projekts keine manuellen Änderungen am "
+"Inhalt des Ordners `build` vornehmen und den Ordner `build` nicht zu Ihrem "
+"Versionskontrollsystem hinzufügen. Der Ordner `build` sollte als vollständig "
+"vergänglich betrachtet werden – als Ausgabe des Build-Systems, die bei "
+"Bedarf neu erstellt werden kann, um die aktuelle Konfiguration Ihres "
+"Projekts widerzuspiegeln."

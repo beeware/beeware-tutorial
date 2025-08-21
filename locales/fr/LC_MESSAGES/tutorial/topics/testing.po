@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2024-01-14 01:02+0000\n"
 "Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -51,7 +51,7 @@ msgstr ""
 "le dossier `tests` se trouve un fichier nommé `test_app.py` avec le contenu "
 "suivant: :"
 
-#: docs/en/tutorial/topics/testing.md:21
+#: docs/en/tutorial/topics/testing.md:23
 #, fuzzy
 msgid ""
 "This is a [Pytest]{1} *test case* - a block of code that can be executed to "
@@ -64,7 +64,7 @@ msgstr ""
 "test est un placeholder, et ne teste rien de notre application - mais c'est "
 "un test que nous pouvons effectuer."
 
-#: docs/en/tutorial/topics/testing.md:26
+#: docs/en/tutorial/topics/testing.md:28
 #, fuzzy
 msgid ""
 "We can run this test suite using the `--test` option to `briefcase dev`. As "
@@ -76,49 +76,49 @@ msgstr ""
 "nous devons également passer l'option `-r` pour nous assurer que les "
 "exigences de test sont également installées :"
 
-#: docs/en/tutorial/topics/testing.md:30
-#: docs/en/tutorial/topics/testing.md:141
-#: docs/en/tutorial/topics/testing.md:215
-#: docs/en/tutorial/topics/testing.md:337
-#: docs/en/tutorial/topics/testing.md:411
+#: docs/en/tutorial/topics/testing.md:32
+#: docs/en/tutorial/topics/testing.md:145
+#: docs/en/tutorial/topics/testing.md:220
+#: docs/en/tutorial/topics/testing.md:343
+#: docs/en/tutorial/topics/testing.md:416
 msgid "/// tab | macOS"
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:53
-#: docs/en/tutorial/topics/testing.md:81
-#: docs/en/tutorial/topics/testing.md:109
-#: docs/en/tutorial/topics/testing.md:158
-#: docs/en/tutorial/topics/testing.md:177
-#: docs/en/tutorial/topics/testing.md:196
-#: docs/en/tutorial/topics/testing.md:247
-#: docs/en/tutorial/topics/testing.md:283
-#: docs/en/tutorial/topics/testing.md:317
-#: docs/en/tutorial/topics/testing.md:355
-#: docs/en/tutorial/topics/testing.md:375
-#: docs/en/tutorial/topics/testing.md:395
-#: docs/en/tutorial/topics/testing.md:453
-#: docs/en/tutorial/topics/testing.md:487
-#: docs/en/tutorial/topics/testing.md:526
+#: docs/en/tutorial/topics/testing.md:55
+#: docs/en/tutorial/topics/testing.md:83
+#: docs/en/tutorial/topics/testing.md:111
+#: docs/en/tutorial/topics/testing.md:162
+#: docs/en/tutorial/topics/testing.md:181
+#: docs/en/tutorial/topics/testing.md:200
+#: docs/en/tutorial/topics/testing.md:252
+#: docs/en/tutorial/topics/testing.md:288
+#: docs/en/tutorial/topics/testing.md:322
+#: docs/en/tutorial/topics/testing.md:361
+#: docs/en/tutorial/topics/testing.md:381
+#: docs/en/tutorial/topics/testing.md:401
+#: docs/en/tutorial/topics/testing.md:458
+#: docs/en/tutorial/topics/testing.md:492
+#: docs/en/tutorial/topics/testing.md:531
 msgid "///"
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:55
-#: docs/en/tutorial/topics/testing.md:160
-#: docs/en/tutorial/topics/testing.md:249
-#: docs/en/tutorial/topics/testing.md:357
-#: docs/en/tutorial/topics/testing.md:455
+#: docs/en/tutorial/topics/testing.md:57
+#: docs/en/tutorial/topics/testing.md:164
+#: docs/en/tutorial/topics/testing.md:254
+#: docs/en/tutorial/topics/testing.md:363
+#: docs/en/tutorial/topics/testing.md:460
 msgid "/// tab | Linux"
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:83
-#: docs/en/tutorial/topics/testing.md:179
-#: docs/en/tutorial/topics/testing.md:285
-#: docs/en/tutorial/topics/testing.md:377
-#: docs/en/tutorial/topics/testing.md:489
+#: docs/en/tutorial/topics/testing.md:85
+#: docs/en/tutorial/topics/testing.md:183
+#: docs/en/tutorial/topics/testing.md:290
+#: docs/en/tutorial/topics/testing.md:383
+#: docs/en/tutorial/topics/testing.md:494
 msgid "/// tab | Windows"
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:112
+#: docs/en/tutorial/topics/testing.md:114
 #, fuzzy
 msgid ""
 "Success! We've just executed a single test that verifies Python math works "
@@ -128,7 +128,7 @@ msgstr ""
 "mathématiques Python fonctionnent de la manière attendue (Quel soulagement "
 "!)."
 
-#: docs/en/tutorial/topics/testing.md:115
+#: docs/en/tutorial/topics/testing.md:117
 #, fuzzy
 msgid ""
 "Let's replace this placeholder test with a test to verify that our "
@@ -139,7 +139,7 @@ msgstr ""
 "`greeting()` se comporte comme nous l'attendons. Remplacez le contenu de "
 "`test_app.py` par ce qui suit: :"
 
-#: docs/en/tutorial/topics/testing.md:133
+#: docs/en/tutorial/topics/testing.md:137
 #, fuzzy
 msgid ""
 "This defines two new tests, verifying the two behaviors we expect to see: "
@@ -149,7 +149,7 @@ msgstr ""
 "attendons : la sortie lorsqu'un nom est fourni, et la sortie lorsque le nom "
 "est vide."
 
-#: docs/en/tutorial/topics/testing.md:137
+#: docs/en/tutorial/topics/testing.md:141
 #, fuzzy
 msgid ""
 "We can now re-run the test suite. This time, we don't need to provided the "
@@ -161,18 +161,18 @@ msgstr ""
 "tests ont déjà été installés ; nous avons seulement besoin d'utiliser "
 "l'option `--test` :"
 
-#: docs/en/tutorial/topics/testing.md:199
+#: docs/en/tutorial/topics/testing.md:202
 #, fuzzy
 msgid "Excellent! Our `greeting()` utility method is working as expected."
 msgstr ""
 "Excellent ! Notre méthode utilitaire `greeting()` fonctionne comme prévu."
 
-#: docs/en/tutorial/topics/testing.md:201
+#: docs/en/tutorial/topics/testing.md:204
 #, fuzzy
 msgid "Test driven development"
 msgstr "Développement piloté par les tests"
 
-#: docs/en/tutorial/topics/testing.md:203
+#: docs/en/tutorial/topics/testing.md:206
 #, fuzzy
 msgid ""
 "Now that we have a test suite, we can use it to drive the development of new "
@@ -186,12 +186,12 @@ msgstr ""
 "Nous pouvons commencer par ajouter un scénario de test pour le nouveau "
 "comportement que nous aimerions voir au bas de `test_app.py`: :"
 
-#: docs/en/tutorial/topics/testing.md:213
+#: docs/en/tutorial/topics/testing.md:218
 #, fuzzy
 msgid "Then, run the test suite with this new test:"
 msgstr "Ensuite, exécutez la suite de tests avec ce nouveau test :"
 
-#: docs/en/tutorial/topics/testing.md:320
+#: docs/en/tutorial/topics/testing.md:324
 #, fuzzy
 msgid ""
 "This time, we see a test failure - and the output explains the source of the "
@@ -206,18 +206,18 @@ msgstr ""
 "l'implémentation de `greeting()` dans `src/helloworld/app.py` pour avoir le "
 "nouveau comportement: :"
 
-#: docs/en/tutorial/topics/testing.md:335
+#: docs/en/tutorial/topics/testing.md:341
 #, fuzzy
 msgid "If we run the tests again, we'll now see our tests pass:"
 msgstr ""
 "Si nous exécutons à nouveau les tests, nous constatons qu'ils sont réussis :"
 
-#: docs/en/tutorial/topics/testing.md:398
+#: docs/en/tutorial/topics/testing.md:403
 #, fuzzy
 msgid "Runtime tests"
 msgstr "Tests d'exécution"
 
-#: docs/en/tutorial/topics/testing.md:400
+#: docs/en/tutorial/topics/testing.md:405
 #, fuzzy
 msgid ""
 "So far, we've been running the tests in development mode. This is especially "
@@ -233,7 +233,7 @@ msgstr ""
 "vérifier que votre code s'exécute correctement dans l'environnement de "
 "l'application groupée."
 
-#: docs/en/tutorial/topics/testing.md:406
+#: docs/en/tutorial/topics/testing.md:411
 #, fuzzy
 msgid ""
 "The `--test` and `-r` options can also be passed to the `run` command. If "
@@ -246,7 +246,7 @@ msgstr ""
 "s'exécutera, mais elle s'exécutera dans le paquetage de l'application plutôt "
 "que dans votre environnement de développement :"
 
-#: docs/en/tutorial/topics/testing.md:529
+#: docs/en/tutorial/topics/testing.md:534
 #, fuzzy
 msgid ""
 "As with `briefcase dev --test`, the `-r` option is only needed the first "
@@ -258,7 +258,7 @@ msgstr ""
 "dépendances des tests sont présentes. Lors des exécutions suivantes, vous "
 "pouvez omettre cette option."
 
-#: docs/en/tutorial/topics/testing.md:533
+#: docs/en/tutorial/topics/testing.md:538
 #, fuzzy
 msgid ""
 "You can also use the `--test` option on mobile backends: - so `briefcase run "

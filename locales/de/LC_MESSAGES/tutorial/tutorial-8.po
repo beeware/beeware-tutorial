@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"PO-Revision-Date: 2025-08-19 23:52+0000\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-8/de/>\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:1
 msgid "Tutorial 8 - Making it Smooooth { id=\"tutorial-8\" }"
-msgstr ""
+msgstr "Tutorial 8 – Damit alles glatt läuft { id=\"tutorial-8\" }"
 
 #: docs/en/tutorial/tutorial-8.md:3
 msgid ""
@@ -22,6 +22,10 @@ msgid ""
 "calling a simple third-party library, and displaying output in a dialog. All "
 "these operations happen very quickly, and our application remains responsive."
 msgstr ""
+"Bisher war unsere Anwendung relativ einfach – sie zeigte GUI-Widgets an, "
+"rief eine einfache Bibliothek eines Drittanbieters auf und zeigte die "
+"Ausgabe in einem Dialogfeld an. All diese Vorgänge laufen sehr schnell ab, "
+"und unsere Anwendung bleibt reaktionsschnell."
 
 #: docs/en/tutorial/tutorial-8.md:8
 msgid ""
@@ -31,10 +35,17 @@ msgid ""
 "to our application that might take a little time to complete, and see the "
 "changes that need to be made to accommodate that behavior."
 msgstr ""
+"In einer realen Anwendung müssen wir jedoch komplexe Aufgaben oder "
+"Berechnungen ausführen, deren Ausführung einige Zeit in Anspruch nehmen kann "
+"– und während diese Aufgaben ausgeführt werden, soll unsere Anwendung "
+"weiterhin reaktionsfähig bleiben. Nehmen wir eine Änderung an unserer "
+"Anwendung vor, deren Ausführung etwas Zeit in Anspruch nehmen könnte, und "
+"sehen wir uns an, welche Änderungen erforderlich sind, um dieses Verhalten "
+"zu berücksichtigen."
 
 #: docs/en/tutorial/tutorial-8.md:15
 msgid "Accessing an API"
-msgstr ""
+msgstr "Zugriff auf API"
 
 #: docs/en/tutorial/tutorial-8.md:17
 msgid ""
@@ -44,6 +55,12 @@ msgid ""
 "API like that, we need to ensure our application doesn't become unresponsive "
 "while we wait for the web API to return an answer."
 msgstr ""
+"Eine häufige zeitaufwändige Aufgabe, die eine App ausführen muss, besteht "
+"darin, eine Anfrage an eine Web-API zu stellen, um Daten abzurufen und diese "
+"Daten dem Benutzer anzuzeigen. Web-APIs benötigen manchmal ein oder zwei "
+"Sekunden, um zu antworten. Wenn wir also eine solche API aufrufen, müssen "
+"wir sicherstellen, dass unsere Anwendung nicht unempfänglich wird, während "
+"wir auf die Antwort der Web-API warten."
 
 #: docs/en/tutorial/tutorial-8.md:23
 msgid ""
@@ -55,6 +72,15 @@ msgid ""
 "get a JSON payload describing a single post - some [Lorum ipsum]{2} content "
 "for a blog post with ID 42."
 msgstr ""
+"Dies ist eine Spielzeug-App, daher haben wir keine *echte* API, mit der wir "
+"arbeiten können. Deshalb verwenden wir die [{JSON} Placeholder API]{1} als "
+"Datenquelle. Die {JSON} Placeholder API verfügt über eine Reihe von "
+"„gefälschten” API-Endpunkten, die Sie als Testdaten verwenden können. Eine "
+"dieser APIs ist der Endpunkt „/posts/“, der gefälschte Blog-Beiträge "
+"zurückgibt. Wenn Sie „https://jsonplaceholder.typicode.com/posts/42“ in "
+"Ihrem Browser öffnen, erhalten Sie eine JSON-Nutzlast, die einen einzelnen "
+"Beitrag beschreibt – einen [Lorum ipsum]{2}-Inhalt für einen Blogbeitrag mit "
+"der ID 42."
 
 #: docs/en/tutorial/tutorial-8.md:33
 msgid ""
@@ -65,6 +91,14 @@ msgid ""
 "and payload encoding. As a \"normal browser user\" you're probably used to "
 "taking these details for granted, as a browser manages them for you."
 msgstr ""
+"Die Python-Standardbibliothek enthält alle Tools, die Sie für den Zugriff "
+"auf eine API benötigen. Die integrierten APIs sind jedoch sehr "
+"niedrigschwellig. Sie sind gute Implementierungen des HTTP-Protokolls, "
+"erfordern jedoch vom Benutzer die Verwaltung vieler niedrigschwelliger "
+"Details wie URL-Umleitung, Sitzungen, Authentifizierung und Payload-"
+"Kodierung. Als „normaler Browser-Benutzer” sind Sie wahrscheinlich daran "
+"gewöhnt, diese Details als selbstverständlich hinzunehmen, da der Browser "
+"sie für Sie verwaltet."
 
 #: docs/en/tutorial/tutorial-8.md:41
 msgid ""
@@ -81,41 +115,50 @@ msgid ""
 "Let's add a `httpx` API call to our app. Modify the `requires` setting in "
 "our `pyproject.toml` to include the new requirement:"
 msgstr ""
+"Fügen wir unserer App einen `httpx`-API-Aufruf hinzu. Ändern Sie die "
+"Einstellung `requires` in unserer `pyproject.toml`, um die neue Anforderung "
+"aufzunehmen:"
 
 #: docs/en/tutorial/tutorial-8.md:59
 msgid "Add an import to the top of the `app.py` to import `httpx`:"
 msgstr ""
+"Fügen Sie am Anfang der Datei `app.py` einen Import hinzu, um `httpx` zu "
+"importieren:"
 
 #: docs/en/tutorial/tutorial-8.md:65
-#, fuzzy
 msgid "Then modify the `say_hello()` callback so it looks like this:"
 msgstr ""
-"Um unser Tutorial asynchron zu machen, ändern Sie den \"say_hello()\"-"
-"Ereignishandler so, dass er wie folgt aussieht:"
+"Dann ändern Sie den Callback `say_hello()` so, dass er wie folgt aussieht:"
 
 #: docs/en/tutorial/tutorial-8.md:83
 msgid ""
 "This will change the `say_hello()` callback so that when it is invoked, it "
 "will:"
 msgstr ""
+"Dadurch wird der Callback `say_hello()` so geändert, dass er bei Aufruf "
+"Folgendes ausführt:"
 
 #: docs/en/tutorial/tutorial-8.md:86
 msgid "make a GET request on the JSON placeholder API to obtain post 42;"
 msgstr ""
+"Führen Sie eine GET-Anfrage an die JSON-Platzhalter-API durch, um Beitrag 42 "
+"abzurufen;"
 
 #: docs/en/tutorial/tutorial-8.md:87
 msgid "decode the response as JSON;"
-msgstr ""
+msgstr "Die Antwort als JSON dekodieren;"
 
 #: docs/en/tutorial/tutorial-8.md:88
 msgid "extract the body of the post; and"
-msgstr ""
+msgstr "den Text des Beitrags extrahieren; und"
 
 #: docs/en/tutorial/tutorial-8.md:89
 msgid ""
 "include the body of that post as the text of the \"message\" dialog, in "
 "place of the text generated by Faker."
 msgstr ""
+"Fügen Sie den Text dieses Beitrags als Text des „Nachrichten”-Dialogfelds "
+"ein, anstelle des von Faker generierten Textes."
 
 #: docs/en/tutorial/tutorial-8.md:92
 msgid ""
@@ -123,6 +166,11 @@ msgid ""
 "change has worked. As we've added a new requirement, we need to tell "
 "developer mode to reinstall requirements, by using the `-r` argument:"
 msgstr ""
+"Lassen Sie uns unsere aktualisierte App im Briefcase-Entwicklermodus "
+"ausführen, um zu überprüfen, ob unsere Änderung funktioniert hat. Da wir "
+"eine neue Anforderung hinzugefügt haben, müssen wir den Entwicklermodus "
+"anweisen, die Anforderungen neu zu installieren, indem wir das Argument `-r` "
+"verwenden:"
 
 #: docs/en/tutorial/tutorial-8.md:96
 #: docs/en/tutorial/tutorial-8.md:326
@@ -135,6 +183,12 @@ msgstr ""
 msgid ""
 "When you enter a name and press the button, you should see a dialog that "
 "looks something like:"
+msgstr ""
+"Wenn Sie einen Namen eingeben und auf die Schaltfläche klicken, sollte ein "
+"Dialogfeld angezeigt werden, das in etwa wie folgt aussieht:"
+
+#: docs/en/tutorial/tutorial-8.md:110
+msgid "![Hello World Tutorial 8 dialog, on macOS]{1} /// caption ///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:114
@@ -155,9 +209,17 @@ msgstr ""
 msgid "/// tab | Linux"
 msgstr ""
 
+#: docs/en/tutorial/tutorial-8.md:130
+msgid "![Hello World Tutorial 8 dialog, on Linux]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-8.md:136
 #: docs/en/tutorial/tutorial-8.md:342
 msgid "/// tab | Windows"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-8.md:150
+msgid "![Hello World Tutorial 8 dialog, on Windows]{1} /// caption ///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:156
@@ -170,6 +232,8 @@ msgid ""
 "You can't run an Android app in developer mode - use the instructions for "
 "your chosen desktop platform."
 msgstr ""
+"Sie können eine Android-App nicht im Entwicklermodus ausführen – befolgen "
+"Sie die Anweisungen für die von Ihnen gewählte Desktop-Plattform."
 
 #: docs/en/tutorial/tutorial-8.md:163
 #: docs/en/tutorial/tutorial-8.md:358
@@ -181,6 +245,8 @@ msgid ""
 "You can't run an iOS app in developer mode - use the instructions for your "
 "chosen desktop platform."
 msgstr ""
+"Sie können eine iOS-App nicht im Entwicklermodus ausführen – befolgen Sie "
+"die Anweisungen für die von Ihnen gewählte Desktop-Plattform."
 
 #: docs/en/tutorial/tutorial-8.md:170
 msgid ""
@@ -189,6 +255,11 @@ msgid ""
 "The operating system may even manifest this with a \"beachball\" or "
 "\"spinner\" cursor to indicate that the app is being unresponsive."
 msgstr ""
+"Wenn Sie keine *wirklich* schnelle Internetverbindung haben, werden Sie "
+"möglicherweise feststellen, dass die Benutzeroberfläche Ihrer App für einen "
+"Moment einfriert, wenn Sie die Taste drücken. Das Betriebssystem zeigt dies "
+"möglicherweise sogar mit einem „Beachball”- oder „Spinner”-Cursor an, um zu "
+"signalisieren, dass die App nicht reagiert."
 
 #: docs/en/tutorial/tutorial-8.md:176
 #, fuzzy
@@ -450,6 +521,14 @@ msgid ""
 "dialog is displayed, and we're waiting for the user to push a button, it's "
 "OK to release control back to the event loop."
 msgstr ""
+"Der Aufruf von `get` erfolgt mit dem Schlüsselwort `await`. Damit wird der "
+"App mitgeteilt, dass sie während des Wartens auf die Antwort vom Netzwerk "
+"die Kontrolle an die Ereignisschleife abgeben kann. Dieses Schlüsselwort "
+"haben wir bereits gesehen – wir verwenden `await` auch beim Anzeigen des "
+"Dialogfelds. Der Grund für diese Verwendung ist derselbe wie bei der HTTP-"
+"Anfrage: Wir müssen der App mitteilen, dass es in Ordnung ist, die Kontrolle "
+"an die Ereignisschleife zurückzugeben, während das Dialogfeld angezeigt wird "
+"und wir darauf warten, dass der Benutzer eine Schaltfläche drückt."
 
 #: docs/en/tutorial/tutorial-8.md:299
 msgid ""
@@ -459,6 +538,12 @@ msgid ""
 "the dialog box. You can only use `await` statements inside a method that is "
 "declared as `async def`."
 msgstr ""
+"Es ist auch wichtig zu beachten, dass der Handler selbst als `async def` "
+"definiert ist und nicht nur als `def`. Dadurch wird Python mitgeteilt, dass "
+"es sich bei der Methode um eine asynchrone Coroutine handelt. Diese Änderung "
+"haben wir bereits in Tutorial 3 vorgenommen, als wir das Dialogfeld "
+"hinzugefügt haben. Sie können `await`-Anweisungen nur innerhalb einer "
+"Methode verwenden, die als `async def` deklariert ist."
 
 #: docs/en/tutorial/tutorial-8.md:305
 #, fuzzy
@@ -522,12 +607,19 @@ msgid ""
 "passing `-r` to `briefcase run`. This will update our app's requirements, "
 "then re-build the app, then launch the app:"
 msgstr ""
+"Wir können nun die vollständige App ausführen. Da wir jedoch eine "
+"zusätzliche Anforderung (`httpx`) hinzugefügt haben, müssen wir auch die "
+"Anforderungen unserer App aktualisieren. Dies können wir tun, indem wir `-r` "
+"an `briefcase run` übergeben. Dadurch werden die Anforderungen unserer App "
+"aktualisiert, die App neu erstellt und anschließend gestartet:"
 
 #: docs/en/tutorial/tutorial-8.md:366
 msgid ""
 "You should see you app running, and remaining responsive when you press the "
 "button and network content is retrieved."
 msgstr ""
+"Sie sollten sehen, dass Ihre App ausgeführt wird und weiterhin reagiert, "
+"wenn Sie die Schaltfläche drücken und Netzwerk-Inhalte abgerufen werden."
 
 #: docs/en/tutorial/tutorial-8.md:369
 msgid "Next steps"
@@ -538,42 +630,45 @@ msgid ""
 "This has been a taste for what you can do with the tools provided by the "
 "BeeWare project. Over the course of this tutorial, you have:"
 msgstr ""
+"Dies war ein kleiner Vorgeschmack darauf, was Sie mit den Tools des BeeWare-"
+"Projekts alles machen können. Im Laufe dieses Tutorials haben Sie:"
 
 #: docs/en/tutorial/tutorial-8.md:374
 msgid "Created a new GUI app project;"
-msgstr ""
+msgstr "Ein neues GUI-App-Projekt erstellt;"
 
 #: docs/en/tutorial/tutorial-8.md:375
 msgid "Run that app in development mode;"
-msgstr ""
+msgstr "Führen Sie diese App im Entwicklungsmodus aus;"
 
 #: docs/en/tutorial/tutorial-8.md:376
 msgid "Built the app as a standalone binary for a desktop operating system;"
 msgstr ""
+"Die App als eigenständige Binärdatei für ein Desktop-Betriebssystem erstellt;"
 
 #: docs/en/tutorial/tutorial-8.md:377
 msgid "Packaged that project for distribution to others;"
-msgstr ""
+msgstr "Dieses Projekt für die Weitergabe an andere vorbereitet;"
 
 #: docs/en/tutorial/tutorial-8.md:378
 msgid "Run the app on a mobile simulator and/or device;"
-msgstr ""
+msgstr "Führen Sie die App auf einem mobilen Simulator und/oder Gerät aus;"
 
 #: docs/en/tutorial/tutorial-8.md:379
 msgid "Run the app as a web app;"
-msgstr ""
+msgstr "Führen Sie die App als Web-App aus;"
 
 #: docs/en/tutorial/tutorial-8.md:380
 msgid "Added a third-party dependency to your app; and"
-msgstr ""
+msgstr "Eine Abhängigkeit von Drittanbietern zu Ihrer App hinzugefügt; und"
 
 #: docs/en/tutorial/tutorial-8.md:381
 msgid "Modified the app so that it remains responsive."
-msgstr ""
+msgstr "Die App wurde so geändert, dass sie weiterhin reaktionsschnell bleibt."
 
 #: docs/en/tutorial/tutorial-8.md:383
 msgid "So - where to from here?"
-msgstr ""
+msgstr "Also – wie geht es nun weiter?"
 
 #: docs/en/tutorial/tutorial-8.md:385
 msgid ""
@@ -594,7 +689,3 @@ msgid ""
 "If you'd like to know more about the capabilities of Briefcase, you can dive "
 "into [Briefcase's documentation]{1}."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Tutorial 8 - Making it Smooooth"
-#~ msgstr "Tutorial 8 - Glatt machen"

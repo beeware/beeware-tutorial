@@ -42,7 +42,7 @@ As a result, people have developed third-party libraries that wrap the
 built-in APIs and provide a simpler API that is a closer match for the
 everyday browser experience. We're going to use one of those libraries
 to access the {JSON} Placeholder API - a library called
-[httpx](https://www.python-httpx.org). Briefcase uses `httpx`
+[`httpx`](https://www.python-httpx.org). Briefcase uses `httpx`
 internally, so it's already in your local environment -you don't need to
 install it separately to use it here.
 
@@ -107,8 +107,10 @@ developer mode to reinstall requirements, by using the `-r` argument:
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 8 dialog, on macOS](/tutorial/images/macOS/tutorial-8.png)
+![Hello World Tutorial 8 dialog, on macOS](../images/macOS/tutorial-8.png)
+
 /// caption
+
 ///
 
 ///
@@ -127,8 +129,10 @@ looks something like:
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 8 dialog, on Linux](/tutorial/images/linux/tutorial-8.png)
+![Hello World Tutorial 8 dialog, on Linux](../images/linux/tutorial-8.png)
+
 /// caption
+
 ///
 
 ///
@@ -147,8 +151,10 @@ looks something like:
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 8 dialog, on Windows](/tutorial/images/windows/tutorial-8.png)
+![Hello World Tutorial 8 dialog, on Windows](../images/windows/tutorial-8.png)
+
 /// caption
+
 ///
 
 ///

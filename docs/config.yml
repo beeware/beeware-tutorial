@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-copyright: © Russell Keith-Magee 2025
+copyright: © Russell Keith-Magee
 
 not_in_nav: |
   /index.md
@@ -12,6 +12,7 @@ validation:
 
 extra:
   project_name: beeware-tutorial
+  hide_version: true
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/beeware
@@ -27,6 +28,7 @@ theme:
   name: material
   language: en
   logo: assets/images/brutus-256.png
+  favicon: assets/images/brutus-256.png
   features:
     - content.tabs.link
     - toc.follow
@@ -58,11 +60,9 @@ theme:
         name: Switch to system preference
 
 markdown_extensions:
-  pymdownx.highlight:
-    anchor_linenums: true
+  pymdownx.highlight: {}
   pymdownx.superfences: {}
   pymdownx.blocks.admonition: {}
-  pymdownx.caret: {}
   pymdownx.blocks.caption: {}
   pymdownx.blocks.tab:
     alternate_style: true

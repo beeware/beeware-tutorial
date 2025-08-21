@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,6 +134,10 @@ msgid ""
 "looks something like:"
 msgstr ""
 
+#: docs/en/tutorial/tutorial-8.md:110
+msgid "![Hello World Tutorial 8 dialog, on macOS]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-8.md:114
 #: docs/en/tutorial/tutorial-8.md:134
 #: docs/en/tutorial/tutorial-8.md:154
@@ -152,9 +156,17 @@ msgstr ""
 msgid "/// tab | Linux"
 msgstr ""
 
+#: docs/en/tutorial/tutorial-8.md:130
+msgid "![Hello World Tutorial 8 dialog, on Linux]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-8.md:136
 #: docs/en/tutorial/tutorial-8.md:342
 msgid "/// tab | Windows"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-8.md:150
+msgid "![Hello World Tutorial 8 dialog, on Windows]{1} /// caption ///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-8.md:156

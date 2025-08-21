@@ -8,6 +8,6 @@ we've written can be deployed to your mobile device, too!
 
 Android applications can be compiled on macOS, Windows or Linux.
 
-### [iOS][mobile-ios]
+### <nospell>[iOS][mobile-ios]</nospell>
 
 iOS applications can only be compiled on macOS.

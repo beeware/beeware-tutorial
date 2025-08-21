@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -320,6 +320,18 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:332
 msgid "This should open a GUI window:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:336
+msgid "![Hello World Tutorial 2 window, on macOS]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:344
+msgid "![Hello World Tutorial 2 window, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:352
+msgid "![Hello World Tutorial 2 window, on Windows]{1} /// caption ///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:358

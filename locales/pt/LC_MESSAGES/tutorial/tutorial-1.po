@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2024-03-04 19:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
@@ -256,6 +256,18 @@ msgstr ""
 #: docs/en/tutorial/tutorial-1.md:203
 msgid "This should open a GUI window:"
 msgstr "Isso deve abrir uma janela GUI:"
+
+#: docs/en/tutorial/tutorial-1.md:207
+msgid "![Hello World Tutorial 1 window, on macOS]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-1.md:215
+msgid "![Hello World Tutorial 1 window, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-1.md:223
+msgid "![Hello World Tutorial 1 window, on Windows]{1} /// caption ///"
+msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:227
 msgid "/// admonition | Invalid requirements or pip unable to connect"

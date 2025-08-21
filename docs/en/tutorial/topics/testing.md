@@ -16,7 +16,7 @@ content:
 
 ```python
 def test_first():
-    "An initial test for the app"
+    """An initial test for the app"""
     assert 1 + 1 == 2
 ```
 

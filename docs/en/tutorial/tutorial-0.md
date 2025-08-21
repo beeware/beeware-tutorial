@@ -3,7 +3,7 @@
 Before we build our first BeeWare app, we have to make sure we've got
 all the prerequisites for running BeeWare.
 
-## Install Python
+## Install Python { id="install-python" }
 
 The first thing we'll need is a working Python interpreter.
 
@@ -16,7 +16,7 @@ betas and release candidates). We strongly recommend using Python 3.13
 or newer.
 
 You can also install Python through
-[homebrew](https://docs.brew.sh/Homebrew-and-Python), use
+[Homebrew](https://docs.brew.sh/Homebrew-and-Python), use
 [pyenv](https://github.com/pyenv/pyenv#simple-python-version-management-pyenv)
 to manage multiple Python installs, or use
 [Anaconda](https://docs.anaconda.com/anaconda/install/) or
@@ -79,8 +79,7 @@ interpreter.
 
 ///
 
-
-## Install dependencies
+## Install dependencies { id="install-dependencies" }
 
 Next, install the additional dependencies needed for your operating
 system:
@@ -135,14 +134,13 @@ $ sudo zypper install git patterns-devel-base-devel_basis pkgconf-pkg-config pyt
 Building BeeWare apps on Windows requires:
 
 - **Git**, a version control system. You can download Git from from
-  [git-scm.com](https://git-scm.com/downloads/).
+  <nospell>[git-scm.com](https://git-scm.com/downloads/)</nospell>.
 
 After installing these tools, you should ensure you restart any terminal
 sessions. Windows will only expose newly installed tools terminals
 started *after* the install has completed.
 
 ///
-
 
 ## Set up a virtual environment
 

@@ -137,8 +137,10 @@ it to our development virtual environment. We can fix this by installing
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 7 dialog, on macOS](/tutorial/images/macOS/tutorial-7.png)
+![Hello World Tutorial 7 dialog, on macOS](../images/macOS/tutorial-7.png)
+
 /// caption
+
 ///
 
 ///
@@ -153,8 +155,10 @@ looks something like:
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 7 dialog, on Linux](/tutorial/images/linux/tutorial-7.png)
+![Hello World Tutorial 7 dialog, on Linux](../images/linux/tutorial-7.png)
+
 /// caption
+
 ///
 
 ///
@@ -169,8 +173,10 @@ looks something like:
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 7 dialog, on Windows](/tutorial/images/windows/tutorial-7.png)
+![Hello World Tutorial 7 dialog, on Windows](../images/windows/tutorial-7.png)
+
 /// caption
+
 ///
 
 ///
@@ -232,8 +238,10 @@ And finally, run the app:
 However, when the app runs, you'll see an error in the console, plus a
 crash dialog:
 
-![Hello World Tutorial 7 app crash, on macOS](/tutorial/images/macOS/tutorial-7-crash.png)
+![Hello World Tutorial 7 app crash, on macOS](../images/macOS/tutorial-7-crash.png)
+
 /// caption
+
 ///
 
 ///
@@ -327,8 +335,10 @@ And finally, run the app:
 However, when the app runs, you'll see an error in the console, plus a
 crash dialog:
 
-![Hello World Tutorial 7 app crash, on Windows](/tutorial/images/windows/tutorial-7-crash.png)
+![Hello World Tutorial 7 app crash, on Windows](../images/windows/tutorial-7-crash.png)
+
 /// caption
+
 ///
 
 ///

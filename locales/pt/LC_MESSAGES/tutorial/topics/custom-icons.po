@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2024-02-13 12:06+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
@@ -64,8 +64,8 @@ msgid ""
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:34
-#: docs/en/tutorial/topics/custom-icons.md:214
-#: docs/en/tutorial/topics/custom-icons.md:411
+#: docs/en/tutorial/topics/custom-icons.md:213
+#: docs/en/tutorial/topics/custom-icons.md:410
 msgid "/// tab | macOS"
 msgstr ""
 
@@ -74,42 +74,42 @@ msgstr ""
 #: docs/en/tutorial/topics/custom-icons.md:94
 #: docs/en/tutorial/topics/custom-icons.md:132
 #: docs/en/tutorial/topics/custom-icons.md:166
-#: docs/en/tutorial/topics/custom-icons.md:238
-#: docs/en/tutorial/topics/custom-icons.md:270
-#: docs/en/tutorial/topics/custom-icons.md:297
-#: docs/en/tutorial/topics/custom-icons.md:343
-#: docs/en/tutorial/topics/custom-icons.md:345
-#: docs/en/tutorial/topics/custom-icons.md:381
-#: docs/en/tutorial/topics/custom-icons.md:390
-#: docs/en/tutorial/topics/custom-icons.md:426
-#: docs/en/tutorial/topics/custom-icons.md:443
-#: docs/en/tutorial/topics/custom-icons.md:460
-#: docs/en/tutorial/topics/custom-icons.md:476
-#: docs/en/tutorial/topics/custom-icons.md:492
+#: docs/en/tutorial/topics/custom-icons.md:237
+#: docs/en/tutorial/topics/custom-icons.md:269
+#: docs/en/tutorial/topics/custom-icons.md:296
+#: docs/en/tutorial/topics/custom-icons.md:342
+#: docs/en/tutorial/topics/custom-icons.md:344
+#: docs/en/tutorial/topics/custom-icons.md:380
+#: docs/en/tutorial/topics/custom-icons.md:389
+#: docs/en/tutorial/topics/custom-icons.md:425
+#: docs/en/tutorial/topics/custom-icons.md:442
+#: docs/en/tutorial/topics/custom-icons.md:459
+#: docs/en/tutorial/topics/custom-icons.md:475
+#: docs/en/tutorial/topics/custom-icons.md:491
 msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:53
-#: docs/en/tutorial/topics/custom-icons.md:240
-#: docs/en/tutorial/topics/custom-icons.md:428
+#: docs/en/tutorial/topics/custom-icons.md:239
+#: docs/en/tutorial/topics/custom-icons.md:427
 msgid "/// tab | Linux"
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:77
-#: docs/en/tutorial/topics/custom-icons.md:272
-#: docs/en/tutorial/topics/custom-icons.md:445
+#: docs/en/tutorial/topics/custom-icons.md:271
+#: docs/en/tutorial/topics/custom-icons.md:444
 msgid "/// tab | Windows"
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:96
-#: docs/en/tutorial/topics/custom-icons.md:299
-#: docs/en/tutorial/topics/custom-icons.md:462
+#: docs/en/tutorial/topics/custom-icons.md:298
+#: docs/en/tutorial/topics/custom-icons.md:461
 msgid "/// tab | Android"
 msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:134
-#: docs/en/tutorial/topics/custom-icons.md:347
-#: docs/en/tutorial/topics/custom-icons.md:478
+#: docs/en/tutorial/topics/custom-icons.md:346
+#: docs/en/tutorial/topics/custom-icons.md:477
 msgid "/// tab | iOS"
 msgstr ""
 
@@ -122,19 +122,22 @@ msgstr ""
 
 #: docs/en/tutorial/topics/custom-icons.md:173
 msgid ""
-"Let's provide some actual icons. Download `this icons.zip bundle <../"
-"resources/icons.zip>`{.interpreted-text role=\"download\"}, and unzip it "
-"into the root of your project directory. After unzipping, your project "
-"directory should look something like:"
+"Let's provide some actual icons. Download [this icons.zip bundle]{1}, and "
+"unzip it into the root of your project directory. After unzipping, your "
+"project directory should look something like:"
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:195
+#: docs/en/tutorial/topics/custom-icons.md:194
 msgid ""
 "There's a *lot* of icons in this folder, but most of them should look the "
 "same: a green snake on a light blue background:"
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:202
+#: docs/en/tutorial/topics/custom-icons.md:197
+msgid "![Icon of green snake with a light blue background]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/topics/custom-icons.md:201
 msgid ""
 "The only exception will be the icons with `-adaptive-` in their name; these "
 "will have a transparent background. This represents all the different icon "
@@ -142,7 +145,7 @@ msgid ""
 "supports."
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:207
+#: docs/en/tutorial/topics/custom-icons.md:206
 msgid ""
 "Now that we have icons, we can update the application again. However, `"
 "briefcase update` will only copy the updated resources into the build "
@@ -152,19 +155,19 @@ msgid ""
 "the app's resources, and then start the app:"
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:337
-#: docs/en/tutorial/topics/custom-icons.md:383
+#: docs/en/tutorial/topics/custom-icons.md:336
+#: docs/en/tutorial/topics/custom-icons.md:382
 msgid "/// note | Note"
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:339
+#: docs/en/tutorial/topics/custom-icons.md:338
 msgid ""
 "If you're using a recent version of Android, you may notice that the app "
 "icon has been changed to a green snake, but the background of the icon is "
 "*white*, rather than light blue. We'll fix this in the next step."
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:385
+#: docs/en/tutorial/topics/custom-icons.md:384
 msgid ""
 "If you get a stack trace referencing `faker` or `httpx` when you run the "
 "app, it's possible you missed running your app during step 7 or 8 of the "
@@ -172,7 +175,7 @@ msgid ""
 "requirements."
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:392
+#: docs/en/tutorial/topics/custom-icons.md:391
 msgid ""
 "When you run the app on iOS or Android, in addition to the icon change, you "
 "should also notice that the splash screen incorporates the new icon. "
@@ -182,7 +185,7 @@ msgid ""
 "definition to your `pyproject.toml`, just after the `icon` definition:"
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:404
+#: docs/en/tutorial/topics/custom-icons.md:403
 msgid ""
 "Unfortunately, Briefcase isn't able to apply this change to an already "
 "generated project, as it requires making modifications to one of the files "
@@ -192,14 +195,14 @@ msgid ""
 "existing project:"
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:495
+#: docs/en/tutorial/topics/custom-icons.md:494
 msgid ""
 "You can then re-build and re-run the app using `briefcase run`. You won't "
 "notice any changes to the desktop app; but the Android or iOS apps should "
 "now have a light blue splash screen background."
 msgstr ""
 
-#: docs/en/tutorial/topics/custom-icons.md:499
+#: docs/en/tutorial/topics/custom-icons.md:498
 msgid ""
 "You'll need to re-create the app like this whenever you make a change to "
 "your `pyproject.toml` that doesn't relate to source code or dependencies. "

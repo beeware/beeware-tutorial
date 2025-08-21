@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
-"PO-Revision-Date: 2024-02-03 01:43+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"PO-Revision-Date: 2025-08-19 20:01+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-2/de/>\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:1
 msgid "Tutorial 2 - Making it interesting { id=\"tutorial-2\" }"
-msgstr ""
+msgstr "Tutorial 2 - Es wird interessant { id=\"tutorial-2\" }"
 
 #: docs/en/tutorial/tutorial-2.md:3
 msgid ""
@@ -59,26 +59,22 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:28
 msgid "This file does two things:"
-msgstr ""
+msgstr "Diese Datei hat zwei Funktionen:"
 
 #: docs/en/tutorial/tutorial-2.md:30
 msgid "It imports the `main` method from the `helloworld` app."
 msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:31
-#, fuzzy
 msgid ""
 "Then, it starts the application’s main loop. The main loop is the way a GUI "
 "application listens for user input (like mouse clicks and keyboard presses)."
 msgstr ""
-"Das heißt, es importiert die Methode `main` aus der Anwendung `helloworld`; "
-"und wenn es als Einstiegspunkt ausgeführt wird, ruft es die Methode main() "
-"auf und startet die Hauptschleife der Anwendung. Die Hauptschleife ist die "
-"Art und Weise, wie eine GUI-Anwendung auf Benutzereingaben (wie Mausklicks "
-"und Tastatureingaben) wartet."
+"Anschließend startet es die Hauptschleife der Anwendung. Die Hauptschleife "
+"ist die Methode, mit der eine GUI-Anwendung auf Benutzereingaben (wie "
+"Mausklicks und Tastatureingaben) reagiert."
 
 #: docs/en/tutorial/tutorial-2.md:35
-#, fuzzy
 msgid ""
 "The more interesting file is `app.py` - this contains the logic that creates "
 "our application window:"
@@ -183,6 +179,11 @@ msgid ""
 "started the app. This will stop the app. You can then fix the error and "
 "restart the app."
 msgstr ""
+"Wenn Sie einen Fehler in Ihrem Code gemacht haben, wird das Hauptfenster der "
+"App möglicherweise nicht angezeigt. In diesem Fall können Sie **Strg+C** in "
+"dem Terminal eingeben, in dem Sie die App gestartet haben. Dadurch wird die "
+"App beendet. Anschließend können Sie den Fehler beheben und die App neu "
+"starten."
 
 #: docs/en/tutorial/tutorial-2.md:113
 #: docs/en/tutorial/tutorial-2.md:148
@@ -242,6 +243,7 @@ msgstr "Hinzufügen von eigenen Inhalten"
 #: docs/en/tutorial/tutorial-2.md:140
 msgid "Let's do something more interesting with our `HelloWorld` app."
 msgstr ""
+"Lassen Sie uns etwas Interessanteres mit unserer `HelloWorld` App machen."
 
 #: docs/en/tutorial/tutorial-2.md:142
 #: docs/en/tutorial/tutorial-2.md:201
@@ -303,6 +305,8 @@ msgid ""
 "For more advanced uses, Toga also supports a separate style object, which is "
 "used like this:"
 msgstr ""
+"Für fortgeschrittenere Anwendungen unterstützt Toga auch ein separates Style-"
+"Objekt, das wie folgt verwendet wird:"
 
 #: docs/en/tutorial/tutorial-2.md:213
 #, fuzzy
@@ -446,6 +450,18 @@ msgstr ""
 msgid "This should open a GUI window:"
 msgstr "Dies sollte ein GUI-Fenster öffnen:"
 
+#: docs/en/tutorial/tutorial-2.md:336
+msgid "![Hello World Tutorial 2 window, on macOS]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:344
+msgid "![Hello World Tutorial 2 window, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:352
+msgid "![Hello World Tutorial 2 window, on Windows]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-2.md:358
 #, fuzzy
 msgid ""
@@ -463,6 +479,10 @@ msgid ""
 "from the application's menu, or by typing **Ctrl+C** in the terminal where "
 "you ran `briefcase dev`."
 msgstr ""
+"Bevor Sie fortfahren, schließen Sie die App. Wie in Tutorial 1 können Sie "
+"dies tun, indem Sie auf die Schaltfläche „Schließen” im Anwendungsfenster "
+"klicken, im Menü der Anwendung „Beenden/Exit” auswählen oder **Strg+C** in "
+"dem Terminal eingeben, in dem Sie `briefcase dev` ausgeführt haben."
 
 #: docs/en/tutorial/tutorial-2.md:367
 msgid "Next steps"
@@ -482,6 +502,3 @@ msgstr ""
 "die Verteilung verpacken. In [Tutorial 3][tutorial-3] werden wir unsere "
 "Anwendung als eigenständiges Installationsprogramm verpacken, das wir an "
 "einen Freund oder Kunden schicken oder in einen App Store hochladen können."
-
-#~ msgid "Tutorial 2 - Making it interesting"
-#~ msgstr "Tutorial 2 - Es wird interessant"

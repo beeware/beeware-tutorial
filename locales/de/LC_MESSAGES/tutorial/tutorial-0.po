@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
-"PO-Revision-Date: 2024-08-19 17:09+0000\n"
-"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"PO-Revision-Date: 2025-08-19 20:02+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-0/de/>\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-0.md:1
 msgid "Tutorial 0 - Let's get set up! { id=\"tutorial-0\" }"
-msgstr ""
+msgstr "Tutorial 0 - Erstinstallation { id=\"tutorial-0\" }"
 
 #: docs/en/tutorial/tutorial-0.md:3
 msgid ""
@@ -39,33 +39,31 @@ msgid "/// tab | macOS"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-0.md:12
-#, fuzzy
 msgid ""
 "If you're on macOS, you can get an official Python installer from "
 "[the Python website]{1}. You can use any version of Python from 3.10 or "
 "newer (although you should avoid alphas, betas and release candidates). We "
 "strongly recommend using Python 3.13 or newer."
 msgstr ""
-"Wenn Sie unter Windows arbeiten, können Sie das offizielle "
-"Installationsprogramm von der [Python-Website]{1} herunterladen. Sie können "
-"jede stabile Version von Python ab 3.8 verwenden. Wir raten dazu, Alphas, "
-"Betas und Release Candidates zu meiden, es sei denn, Sie wissen *wirklich*, "
-"was Sie tun."
+"Wenn Sie macOS verwenden, können Sie einen offiziellen Python-Installer von "
+"[der Python-Website]{1} herunterladen. Sie können jede Version von Python ab "
+"3.10 verwenden (allerdings sollten Sie Alpha-, Beta- und Release-Candidate-"
+"Versionen vermeiden). Wir empfehlen dringend die Verwendung von Python 3.13 "
+"oder neuer."
 
 #: docs/en/tutorial/tutorial-0.md:18
-#, fuzzy
 msgid ""
 "You can also install Python through [homebrew]{1}, use [pyenv]{2} to manage "
 "multiple Python installs, or use [Anaconda]{3} or [Miniconda]{4}. It doesn't "
 "matter *how* you've installed Python - it only matters that you can run "
 "`python3` from your terminal and get a working, supported Python interpreter."
 msgstr ""
-"Es gibt viele verschiedene Möglichkeiten, Python zu installieren. Sie können "
-"Python über [homebrew]{1} installieren. Sie können [pyenv]{2} verwenden, um "
-"mehrere Python-Installationen auf demselben Rechner zu verwalten. Windows-"
-"Benutzer können Python aus dem Windows App Store installieren. Für Benutzer "
-"mit einem datenwissenschaftlichen Hintergrund könnten auch [Anaconda]{3} "
-"oder [Miniconda]{4} interessant sein."
+"Sie können Python auch über [homebrew]{1} installieren, [pyenv]{2} zur "
+"Verwaltung mehrerer Python-Installationen verwenden oder [Anaconda]{3} oder "
+"[Miniconda]{4} verwenden. Es spielt keine Rolle, *wie* Sie Python "
+"installiert haben – wichtig ist nur, dass Sie `python3` von Ihrem Terminal "
+"aus ausführen können und einen funktionierenden, unterstützten Python-"
+"Interpreter erhalten."
 
 #: docs/en/tutorial/tutorial-0.md:28
 msgid ""
@@ -74,16 +72,23 @@ msgid ""
 "is no longer supported by Python or BeeWare. You will *not* be able to the "
 "Xcode-provided version of Python to run this tutorial."
 msgstr ""
+"Xcode und die Befehlszeilen-Entwicklertools bieten eine Version von Python "
+"an; allerdings handelt es sich dabei um Python 3.9. Python 3.9 hat das Ende "
+"seiner Lebensdauer erreicht und wird von Python oder BeeWare nicht mehr "
+"unterstützt. Sie können die von Xcode bereitgestellte Version von Python "
+"*nicht* verwenden, um dieses Tutorial auszuführen."
 
 #: docs/en/tutorial/tutorial-0.md:33
 msgid ""
 "To check the version of Python that you have installed, run the following "
 "command:"
 msgstr ""
+"Um die Version von Python zu überprüfen, die Sie installiert haben, führen "
+"Sie den folgenden Befehl aus:"
 
 #: docs/en/tutorial/tutorial-0.md:40
 msgid "If Python is installed, you'll see its version number."
-msgstr ""
+msgstr "Wenn Python installiert ist, wird die Versionsnummer angezeigt."
 
 #: docs/en/tutorial/tutorial-0.md:42
 #: docs/en/tutorial/tutorial-0.md:62
@@ -136,6 +141,11 @@ msgid ""
 "Python, etc.) will prevent you from successfully packaging your application "
 "for distribution in later steps of this tutorial."
 msgstr ""
+"**Wichtig:** Sie *müssen* das von Ihrem Betriebssystem bereitgestellte "
+"Python-System verwenden. Alternative Python-Installationen (pyenv, Anaconda, "
+"manuell kompiliertes Python usw.) verhindern, dass Sie Ihre Anwendung in "
+"späteren Schritten dieses Tutorials erfolgreich für die Verteilung verpacken "
+"können."
 
 #: docs/en/tutorial/tutorial-0.md:64
 #: docs/en/tutorial/tutorial-0.md:133
@@ -152,7 +162,7 @@ msgid ""
 "strongly recommend using Python 3.13."
 msgstr ""
 "Wenn Sie unter Windows arbeiten, können Sie das offizielle "
-"Installationsprogramm von der [Python-Website]{1} herunterladen. Sie können "
+"Installationsprogramm von [der Python-Website]{1} herunterladen. Sie können "
 "jede stabile Version von Python ab 3.8 verwenden. Wir raten dazu, Alphas, "
 "Betas und Release Candidates zu meiden, es sei denn, Sie wissen *wirklich*, "
 "was Sie tun."
@@ -280,6 +290,8 @@ msgid ""
 "If you're not using Python 3.12, replace the `-3.12` in these instructions "
 "with the version number that you are using."
 msgstr ""
+"Wenn Sie nicht Python 3.12 verwenden, ersetzen Sie das `-3.12` in dieser "
+"Anleitung durch die Versionsnummer, die Sie verwenden."
 
 #: docs/en/tutorial/tutorial-0.md:192
 msgid "/// admonition | Errors running PowerShell Scripts"
@@ -358,6 +370,3 @@ msgid ""
 msgstr ""
 "Wir haben jetzt unsere Umgebung eingerichtet. Wir sind bereit, "
 "[unsere erste BeeWare-Anwendung zu erstellen][tutorial-1]."
-
-#~ msgid "Tutorial 0 - Let's get set up!"
-#~ msgstr "Tutorial 0 - Erstinstallation"

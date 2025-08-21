@@ -5,12 +5,3 @@ docs_dir: en
 
 extra:
   translation_type: original
-
-plugins:
-  spellcheck:
-    backends:
-      - codespell:
-          dictionaries: [clear]
-    # Location of spelling_wordlist is relative to docs_dir above.
-    known_words: ../spelling_wordlist
-    ignore_code: yes

@@ -29,8 +29,7 @@ you're in the `beeware-tutorial` directory you created in
 
 If you see errors during installation, it's almost certainly because
 some of the system requirements haven't been installed. Make sure you
-have `installed all the platform pre-requisites
-<install-dependencies>`{.interpreted-text role="ref"}.
+have [installed all the platform pre-requisites][install-dependencies].
 
 ///
 
@@ -204,24 +203,30 @@ This should open a GUI window:
 
 /// tab | macOS
 
-![Hello World Tutorial 1 window, on macOS](/tutorial/images/macOS/tutorial-1.png)
+![Hello World Tutorial 1 window, on macOS](../images/macOS/tutorial-1.png)
+
 /// caption
+
 ///
 
 ///
 
 /// tab | Linux
 
-![Hello World Tutorial 1 window, on Linux](/tutorial/images/linux/tutorial-1.png)
+![Hello World Tutorial 1 window, on Linux](../images/linux/tutorial-1.png)
+
 /// caption
+
 ///
 
 ///
 
 /// tab | Windows
 
-![Hello World Tutorial 1 window, on Windows](/tutorial/images/windows/tutorial-1.png)
+![Hello World Tutorial 1 window, on Windows](../images/windows/tutorial-1.png)
+
 /// caption
+
 ///
 
 /// admonition | Invalid requirements or pip unable to connect
@@ -235,8 +240,7 @@ to the PyPI server.
 ```
 
 Confirm that you are running a
-`version of python that this tutorial supports
-<install-python>`{.interpreted-text role="ref"}.
+[version of python that this tutorial supports][install-python].
 
 If your version of python is *not* a supported version, you will have to
 restart the tutorial.

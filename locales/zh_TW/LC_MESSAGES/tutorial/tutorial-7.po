@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2024-04-10 21:02+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -165,6 +165,18 @@ msgid ""
 "looks something like:"
 msgstr "當您輸入名稱並按下按鈕時，您應該會看到一個類似以下內容的對話框："
 
+#: docs/en/tutorial/tutorial-7.md:140
+msgid "![Hello World Tutorial 7 dialog, on macOS]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:156
+msgid "![Hello World Tutorial 7 dialog, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:172
+msgid "![Hello World Tutorial 7 dialog, on Windows]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-7.md:192
 #, fuzzy
 msgid ""
@@ -220,11 +232,19 @@ msgid ""
 "dialog:"
 msgstr "但是，當應用程式運行時，您會在控制台中看到錯誤，以及崩潰對話框："
 
+#: docs/en/tutorial/tutorial-7.md:235
+msgid "![Hello World Tutorial 7 app crash, on macOS]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-7.md:277
 #: docs/en/tutorial/tutorial-7.md:368
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console:"
 msgstr "但是，當應用程式運行時，您會在控制台中看到錯誤："
+
+#: docs/en/tutorial/tutorial-7.md:330
+msgid "![Hello World Tutorial 7 app crash, on Windows]{1} /// caption ///"
+msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:359
 #: docs/en/tutorial/tutorial-7.md:434

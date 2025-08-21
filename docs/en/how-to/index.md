@@ -51,7 +51,7 @@ dependencies and start coding. To set up a virtual environment, run:
 /// tab | macOS
 
 ```console
-$ python3 -m venv venv
+$ python3 -m venv .venv
 $ source venv/bin/activate
 ```
 
@@ -60,7 +60,7 @@ $ source venv/bin/activate
 /// tab | Linux
 
 ```console
-$ python3 -m venv venv
+$ python3 -m venv .venv
 $ source venv/bin/activate
 ```
 
@@ -69,13 +69,13 @@ $ source venv/bin/activate
 /// tab | Windows
 
 ```doscon
-C:\...>python3 -m venv venv
+C:\...>python3 -m venv .venv
 C:\...>venv\Scripts\activate
 ```
 
 ///
 
-Your prompt should now have a `(venv)` prefix in front of it.
+Your prompt should now have a `(.venv)` prefix in front of it.
 
 ### Clone the BeeWare Tutorial repository
 
@@ -94,7 +94,7 @@ the command line:
 Fork the BeeWare Tutorial repository, and then:
 
 ```console
-(venv) $ git clone https://github.com/<your username>/beeware-tutorial.git
+(.venv) $ git clone https://github.com/<your username>/beeware-tutorial.git
 ```
 
 (substituting your GitHub username)
@@ -106,7 +106,7 @@ Fork the BeeWare Tutorial repository, and then:
 Fork the BeeWare Tutorial repository, and then:
 
 ```console
-(venv) $ git clone https://github.com/<your username>/beeware-tutorial.git
+(.venv) $ git clone https://github.com/<your username>/beeware-tutorial.git
 ```
 
 (substituting your GitHub username)
@@ -118,7 +118,7 @@ Fork the BeeWare Tutorial repository, and then:
 Fork the BeeWare Tutorial repository, and then:
 
 ```doscon
-(venv) C:\...>git clone https://github.com/<your username>/beeware-tutorial.git
+(.venv) C:\...>git clone https://github.com/<your username>/beeware-tutorial.git
 ```
 
 (substituting your GitHub username)
@@ -135,8 +135,8 @@ packages, so we have to manually install each package:
 /// tab | macOS
 
 ```console
-(venv) $ cd beeware
-(venv) $ python -m pip install -e ".[dev]"
+(.venv) $ cd beeware
+(.venv) $ python -m pip install -e ".[dev]"
 ```
 
 ///
@@ -144,8 +144,8 @@ packages, so we have to manually install each package:
 /// tab | Linux
 
 ```console
-(venv) $ cd beeware
-(venv) $ python -m pip install -e .[dev]
+(.venv) $ cd beeware
+(.venv) $ python -m pip install -e .[dev]
 ```
 
 ///
@@ -153,8 +153,8 @@ packages, so we have to manually install each package:
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>cd beeware
-(venv) C:\...>python -m pip install -e .[dev]
+(.venv) C:\...>cd beeware
+(.venv) C:\...>python -m pip install -e .[dev]
 ```
 
 ///
@@ -169,7 +169,7 @@ prior to finalizing any git commit. To enable pre-commit, run:
 /// tab | macOS
 
 ```console
-(venv) $ pre-commit install
+(.venv) $ pre-commit install
 pre-commit installed at .git/hooks/pre-commit
 ```
 
@@ -178,7 +178,7 @@ pre-commit installed at .git/hooks/pre-commit
 /// tab | Linux
 
 ```console
-(venv) $ pre-commit install
+(.venv) $ pre-commit install
 pre-commit installed at .git/hooks/pre-commit
 ```
 
@@ -187,7 +187,7 @@ pre-commit installed at .git/hooks/pre-commit
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>pre-commit install
+(.venv) C:\...>pre-commit install
 pre-commit installed at .git/hooks/pre-commit
 ```
 
@@ -201,27 +201,19 @@ the problems it has found:
 /// tab | macOS
 
 ```console
-(venv) $ git add some/interesting_file.py
-(venv) $ git commit -m "Minor change"
-black....................................................................Failed
-- hook id: black
+(.venv) $ git add some/interesting_file.py
+(.venv) $ git commit -m "Minor change"
+check toml...........................................(no files to check)Skipped
+check yaml...............................................................Passed
+check for case conflicts.................................................Passed
+fix end of files.........................................................Failed
+- hook id: end-of-file-fixer
+- exit code: 1
 - files were modified by this hook
 
-reformatted some/interesting_file.py
+Fixing some/interesting_file.py
 
-All done! ✨ 🍰 ✨
-1 file reformatted.
-
-flake8...................................................................Passed
-check toml...........................................(no files to check)Skipped
-check yaml...........................................(no files to check)Skipped
-check for case conflicts.................................................Passed
-check docstring is first.................................................Passed
-fix end of files.........................................................Passed
 trim trailing whitespace.................................................Passed
-isort....................................................................Passed
-pyupgrade................................................................Passed
-docformatter.............................................................Passed
 ```
 
 ///
@@ -229,27 +221,19 @@ docformatter.............................................................Passed
 /// tab | Linux
 
 ```console
-(venv) $ git add some/interesting_file.py
-(venv) $ git commit -m "Minor change"
-black....................................................................Failed
-- hook id: black
+(.venv) $ git add some/interesting_file.py
+(.venv) $ git commit -m "Minor change"
+check toml...........................................(no files to check)Skipped
+check yaml...............................................................Passed
+check for case conflicts.................................................Passed
+fix end of files.........................................................Failed
+- hook id: end-of-file-fixer
+- exit code: 1
 - files were modified by this hook
 
-reformatted some/interesting_file.py
+Fixing some/interesting_file.py
 
-All done! ✨ 🍰 ✨
-1 file reformatted.
-
-flake8...................................................................Passed
-check toml...........................................(no files to check)Skipped
-check yaml...........................................(no files to check)Skipped
-check for case conflicts.................................................Passed
-check docstring is first.................................................Passed
-fix end of files.........................................................Passed
 trim trailing whitespace.................................................Passed
-isort....................................................................Passed
-pyupgrade................................................................Passed
-docformatter.............................................................Passed
 ```
 
 ///
@@ -257,27 +241,19 @@ docformatter.............................................................Passed
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>git add some/interesting_file.py
-(venv) C:\...>git commit -m "Minor change"
-black....................................................................Failed
-- hook id: black
+(.venv) C:\...>git add some/interesting_file.py
+(.venv) C:\...>git commit -m "Minor change"
+check toml...........................................(no files to check)Skipped
+check yaml...............................................................Passed
+check for case conflicts.................................................Passed
+fix end of files.........................................................Failed
+- hook id: end-of-file-fixer
+- exit code: 1
 - files were modified by this hook
 
-reformatted some\interesting_file.py
+Fixing some/interesting_file.py
 
-All done! ✨ 🍰 ✨
-1 file reformatted.
-
-flake8...................................................................Passed
-check toml...........................................(no files to check)Skipped
-check yaml...........................................(no files to check)Skipped
-check for case conflicts.................................................Passed
-check docstring is first.................................................Passed
-fix end of files.........................................................Passed
 trim trailing whitespace.................................................Passed
-isort....................................................................Passed
-pyupgrade................................................................Passed
-docformatter.............................................................Passed
 ```
 
 ///
@@ -288,19 +264,13 @@ pre-commit checks, and re-commit the change.
 /// tab | macOS
 
 ```console
-(venv) $ git add some/interesting_file.py
-(venv) $ git commit -m "Minor change"
-black....................................................................Passed
-flake8...................................................................Passed
+(.venv) $ git add some/interesting_file.py
+(.venv) $ git commit -m "Minor change"
 check toml...........................................(no files to check)Skipped
-check yaml...........................................(no files to check)Skipped
+check yaml...............................................................Passed
 check for case conflicts.................................................Passed
-check docstring is first.................................................Passed
 fix end of files.........................................................Passed
 trim trailing whitespace.................................................Passed
-isort....................................................................Passed
-pyupgrade................................................................Passed
-docformatter.............................................................Passed
 [bugfix e3e0f73] Minor change
 1 file changed, 4 insertions(+), 2 deletions(-)
 ```
@@ -310,19 +280,13 @@ docformatter.............................................................Passed
 /// tab | Linux
 
 ```console
-(venv) $ git add some/interesting_file.py
-(venv) $ git commit -m "Minor change"
-black....................................................................Passed
-flake8...................................................................Passed
+(.venv) $ git add some/interesting_file.py
+(.venv) $ git commit -m "Minor change"
 check toml...........................................(no files to check)Skipped
-check yaml...........................................(no files to check)Skipped
+check yaml...............................................................Passed
 check for case conflicts.................................................Passed
-check docstring is first.................................................Passed
 fix end of files.........................................................Passed
 trim trailing whitespace.................................................Passed
-isort....................................................................Passed
-pyupgrade................................................................Passed
-docformatter.............................................................Passed
 [bugfix e3e0f73] Minor change
 1 file changed, 4 insertions(+), 2 deletions(-)
 ```
@@ -332,35 +296,29 @@ docformatter.............................................................Passed
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>git add some\interesting_file.py
-(venv) C:\...>git commit -m "Minor change"
-black....................................................................Passed
-flake8...................................................................Passed
+(.venv) C:\...>git add some\interesting_file.py
+(.venv) C:\...>git commit -m "Minor change"
 check toml...........................................(no files to check)Skipped
-check yaml...........................................(no files to check)Skipped
+check yaml...............................................................Passed
 check for case conflicts.................................................Passed
-check docstring is first.................................................Passed
 fix end of files.........................................................Passed
 trim trailing whitespace.................................................Passed
-isort....................................................................Passed
-pyupgrade................................................................Passed
-docformatter.............................................................Passed
 ```
 
 ///
 
 Now you are ready to start hacking on BeeWare docs!
 
-## Building BeeWare's documentation
+## Building the BeeWare Tutorial
 
-### Build documentation locally
+### Build the Tutorial locally
 
 Once your development environment is set up, run:
 
 /// tab | macOS
 
 ```console
-(venv) $ tox -e docs
+(.venv) $ tox -e docs
 ```
 
 ///
@@ -368,7 +326,7 @@ Once your development environment is set up, run:
 /// tab | Linux
 
 ```console
-(venv) $ tox -e docs
+(.venv) $ tox -e docs
 ```
 
 ///
@@ -376,7 +334,7 @@ Once your development environment is set up, run:
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>tox -e docs
+(.venv) C:\...>tox -e docs
 ```
 
 ///
@@ -384,7 +342,7 @@ Once your development environment is set up, run:
 The output of the file should be in the `docs/_build/html` folder. If
 there are any markup problems, they'll raise an error.
 
-### Live documentation preview
+### Live Tutorial preview
 
 To support rapid editing of documentation, BeeWare also has a "live
 preview" mode:
@@ -392,7 +350,7 @@ preview" mode:
 /// tab | macOS
 
 ```console
-(venv) $ tox -e docs-live
+(.venv) $ tox -e docs-live
 ```
 
 ///
@@ -400,7 +358,7 @@ preview" mode:
 /// tab | Linux
 
 ```console
-(venv) $ tox -e docs-live
+(.venv) $ tox -e docs-live
 ```
 
 ///
@@ -408,7 +366,7 @@ preview" mode:
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>tox -e docs-live
+(.venv) C:\...>tox -e docs-live
 ```
 
 ///
@@ -419,7 +377,7 @@ documentation source. If a change is detected, the documentation will be
 rebuilt, and any browser viewing the modified page will be automatically
 refreshed.
 
-### Documentation linting
+### Tutorial linting
 
 The build process will identify reStructuredText problems, but BeeWare
 performs some additional "lint" checks. To run the lint checks:
@@ -427,7 +385,7 @@ performs some additional "lint" checks. To run the lint checks:
 /// tab | macOS
 
 ```console
-(venv) $ tox -e docs-lint
+(.venv) $ tox -e docs-lint
 ```
 
 ///
@@ -435,7 +393,7 @@ performs some additional "lint" checks. To run the lint checks:
 /// tab | Linux
 
 ```console
-(venv) $ tox -e docs-lint
+(.venv) $ tox -e docs-lint
 ```
 
 ///
@@ -443,7 +401,7 @@ performs some additional "lint" checks. To run the lint checks:
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>tox -e docs-lint
+(.venv) C:\...>tox -e docs-lint
 ```
 
 ///
@@ -465,14 +423,19 @@ the spellchecker's dictionary. When adding to this list, remember:
 - If a term is being used "as code", then it should be quoted as inline
   code rather than being added to the dictionary.
 
-### Rebuilding all documentation
+### Building translations
 
-To force a rebuild for all the documentation:
+The BeeWare tutorial is available in multiple languages, which you can
+build individually or all at the same time.
+
+To build a single translation, you run the `docs` command with the
+language code for the translation you wish to build. For example,
+to build French:
 
 /// tab | macOS
 
 ```console
-(venv) $ tox -e docs-all
+(.venv) $ tox -e docs-fr
 ```
 
 ///
@@ -480,7 +443,7 @@ To force a rebuild for all the documentation:
 /// tab | Linux
 
 ```console
-(venv) $ tox -e docs-all
+(.venv) $ tox -e docs-fr
 ```
 
 ///
@@ -488,13 +451,47 @@ To force a rebuild for all the documentation:
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>tox -e docs-all
+(.venv) C:\...>tox -e docs-fr
 ```
 
 ///
 
-The documentation should be fully rebuilt in the `docs/_build/html`
+The French translation should be built in the `docs/_build/html`
 folder. If there are any markup problems, they'll raise an error.
+
+An error is also raised if you enter a language code for an
+unavailable language. If this happens, verify that you are using
+the proper language code.
+
+To build all the translations at the same time:
+
+/// tab | macOS
+
+```console
+(.venv) $ tox -e docs-all
+```
+
+///
+
+/// tab | Linux
+
+```console
+(.venv) $ tox -e docs-all
+```
+
+///
+
+/// tab | Windows
+
+```doscon
+(.venv) C:\...>tox -e docs-all
+```
+
+///
+
+This will build all available translations in the `docs/_build/html`
+directory, inside a language-specific subdirectory. For example, the
+French translation would be available in `docs/_build/html/fr`.
 
 ## What to work on?
 
@@ -535,7 +532,7 @@ To create a feature branch, run:
 /// tab | macOS
 
 ```console
-(venv) $ git checkout -b fix-layout-bug
+(.venv) $ git checkout -b fix-layout-bug
 ```
 
 ///
@@ -543,7 +540,7 @@ To create a feature branch, run:
 /// tab | Linux
 
 ```console
-(venv) $ git checkout -b fix-layout-bug
+(.venv) $ git checkout -b fix-layout-bug
 ```
 
 ///
@@ -551,7 +548,7 @@ To create a feature branch, run:
 /// tab | Windows
 
 ```doscon
-(venv) C:\...>git checkout -b fix-layout-bug
+(.venv) C:\...>git checkout -b fix-layout-bug
 ```
 
 ///

@@ -149,9 +149,9 @@ Web server open on http://127.0.0.1:8080
 
 ///
 
-This will open a web browser, pointing at <http://127.0.0.1:8080>:
+This will open a web browser, pointing at <nospell><http://127.0.0.1:8080></nospell>:
 
-![Hello World Tutorial 6 dialog, in a browser](../tutorial/images/tutorial-6.png)
+![Hello World Tutorial 6 dialog, in a browser](../images/tutorial-6.png)
 
 If you enter your name and click the button, a dialog will appear.
 

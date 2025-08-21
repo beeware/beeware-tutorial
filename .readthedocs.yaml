@@ -15,7 +15,7 @@ build:
     pre_install:
       - python -m pip install -r requirements.dev.txt
     pre_build:
-      - tox -e docs-lint
+      - python -m tox -e docs-lint
     build:
       html:
         - python -m tox -e docs-$READTHEDOCS_LANGUAGE -- --output=$READTHEDOCS_OUTPUT/html/

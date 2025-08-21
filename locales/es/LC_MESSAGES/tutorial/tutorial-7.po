@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2025-06-12 02:04+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -172,6 +172,18 @@ msgstr ""
 "Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de "
 "diálogo parecido a:"
 
+#: docs/en/tutorial/tutorial-7.md:140
+msgid "![Hello World Tutorial 7 dialog, on macOS]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:156
+msgid "![Hello World Tutorial 7 dialog, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:172
+msgid "![Hello World Tutorial 7 dialog, on Windows]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-7.md:192
 #, fuzzy
 msgid ""
@@ -231,12 +243,20 @@ msgstr ""
 "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola y "
 "un cuadro de diálogo de bloqueo:"
 
+#: docs/en/tutorial/tutorial-7.md:235
+msgid "![Hello World Tutorial 7 app crash, on macOS]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-7.md:277
 #: docs/en/tutorial/tutorial-7.md:368
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console:"
 msgstr ""
 "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola:"
+
+#: docs/en/tutorial/tutorial-7.md:330
+msgid "![Hello World Tutorial 7 app crash, on Windows]{1} /// caption ///"
+msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:359
 #: docs/en/tutorial/tutorial-7.md:434

@@ -408,7 +408,7 @@ Building dist/Hello World-0.0.1.dmg
 ```
 
 The `dist` folder will contain a file named `Hello World-0.0.1.dmg`. If
-you locate this file in the Finder, and double click on its icon, you'll
+you locate this file in the Finder, and double-click on its icon, you'll
 mount the DMG, giving you a copy of the Hello World app, and a link to
 your Applications folder for easy installation. Drag the app file into
 Applications, and you've installed your application. Send the DMG file

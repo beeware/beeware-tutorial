@@ -40,24 +40,30 @@ see the new dialog box:
 
 /// tab | macOS
 
-![Hello World Tutorial 4 dialog, on macOS](/tutorial/images/macOS/tutorial-4.png)
+![Hello World Tutorial 4 dialog, on macOS](../images/macOS/tutorial-4.png)
+
 /// caption
+
 ///
 
 ///
 
 /// tab | Linux
 
-![Hello World Tutorial 4 dialog, on Linux](/tutorial/images/linux/tutorial-4.png)
+![Hello World Tutorial 4 dialog, on Linux](../images/linux/tutorial-4.png)
+
 /// caption
+
 ///
 
 ///
 
 /// tab | Windows
 
-![Hello World Tutorial 4 dialog, on Windows](/tutorial/images/windows/tutorial-4.png)
+![Hello World Tutorial 4 dialog, on Windows](../images/windows/tutorial-4.png)
+
 /// caption
+
 ///
 
 ///

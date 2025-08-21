@@ -1,4 +1,4 @@
-# Going further { #topics }
+# Going further { id="topics" }
 
 Want to go deeper on specific topics? Here are some additional tutorials
 that explore common aspects of application development. Each tutorial is

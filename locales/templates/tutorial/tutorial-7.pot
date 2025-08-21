@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,6 +151,18 @@ msgid ""
 "looks something like:"
 msgstr ""
 
+#: docs/en/tutorial/tutorial-7.md:140
+msgid "![Hello World Tutorial 7 dialog, on macOS]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:156
+msgid "![Hello World Tutorial 7 dialog, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:172
+msgid "![Hello World Tutorial 7 dialog, on Windows]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-7.md:192
 msgid ""
 "We've now got a working app, using a third party library, running in "
@@ -197,9 +209,17 @@ msgid ""
 "dialog:"
 msgstr ""
 
+#: docs/en/tutorial/tutorial-7.md:235
+msgid "![Hello World Tutorial 7 app crash, on macOS]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-7.md:277
 #: docs/en/tutorial/tutorial-7.md:368
 msgid "However, when the app runs, you'll see an error in the console:"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:330
+msgid "![Hello World Tutorial 7 app crash, on Windows]{1} /// caption ///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:359

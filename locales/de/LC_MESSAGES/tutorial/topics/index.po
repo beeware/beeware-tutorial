@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2024-08-14 00:09+0000\n"
 "Last-Translator: tct123 <tct1234@protonmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -13,8 +13,8 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/tutorial/topics/index.md:1
-msgid "Going further { #topics }"
-msgstr ""
+msgid "Going further { id=\"topic\" }"
+msgstr "Weiterführende Informationen { id=\"topic\" }"
 
 #: docs/en/tutorial/topics/index.md:3
 msgid ""
@@ -64,6 +64,3 @@ msgid ""
 msgstr ""
 "Wie stellen Sie sicher, dass Ihre Anwendung funktioniert und funktioniert? "
 "Indem Sie Ihrem Projekt eine Testsuite hinzufügen!"
-
-#~ msgid "Going further"
-#~ msgstr "Weiterführende Informationen"

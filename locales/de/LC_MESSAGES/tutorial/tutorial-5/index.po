@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2024-08-14 00:09+0000\n"
 "Last-Translator: tct123 <tct1234@protonmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-5/index.md:1
 msgid "Tutorial 5 - Taking it Mobile { id=\"tutorial-5\" }"
-msgstr ""
+msgstr "Tutorial 5 - Mobil nutzen { id=\"tutorial-5\" }"
 
 #: docs/en/tutorial/tutorial-5/index.md:3
 msgid ""
@@ -42,6 +42,3 @@ msgstr ""
 #: docs/en/tutorial/tutorial-5/index.md:13
 msgid "iOS applications can only be compiled on macOS."
 msgstr "iOS-Anwendungen können nur unter macOS kompiliert werden."
-
-#~ msgid "Tutorial 5 - Taking it Mobile"
-#~ msgstr "Tutorial 5 - Mobil nutzen"

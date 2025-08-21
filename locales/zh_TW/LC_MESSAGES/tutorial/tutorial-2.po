@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2025-04-20 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
@@ -401,6 +401,18 @@ msgstr ""
 #: docs/en/tutorial/tutorial-2.md:332
 msgid "This should open a GUI window:"
 msgstr "這應該打開一個 GUI 視窗："
+
+#: docs/en/tutorial/tutorial-2.md:336
+msgid "![Hello World Tutorial 2 window, on macOS]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:344
+msgid "![Hello World Tutorial 2 window, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-2.md:352
+msgid "![Hello World Tutorial 2 window, on Windows]{1} /// caption ///"
+msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:358
 #, fuzzy

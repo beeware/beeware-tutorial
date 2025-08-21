@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
+"PO-Revision-Date: 2025-08-19 23:52+0000\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-7/de/>\n"
 "MIME-Version: 1.0\n"
@@ -14,37 +14,36 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:1
 msgid "Tutorial 7 - Get this (third-)party started { id=\"tutorial-7\" }"
-msgstr ""
+msgstr "Tutorial 7 – Starten Sie diese (Dritt-)Anwendung { id=\"tutorial-7\" }"
 
 #: docs/en/tutorial/tutorial-7.md:3
-#, fuzzy
 msgid ""
 "So far, the app we've built has only used our own code, plus the code "
 "provided by BeeWare. However, in a real-world app, you'll likely want to use "
 "a third-party library, downloaded from the Python Package Index (PyPI)."
 msgstr ""
-"Bisher haben wir in der von uns erstellten Anwendung nur unseren eigenen "
-"Code sowie den von BeeWare bereitgestellten Code verwendet. In einer realen "
-"Anwendung werden Sie jedoch wahrscheinlich eine Bibliothek eines "
-"Drittanbieters verwenden wollen, die Sie aus dem Python Package Index (PyPI) "
-"herunterladen."
+"Bisher hat die von uns entwickelte App nur unseren eigenen Code sowie den "
+"von BeeWare bereitgestellten Code verwendet. In einer realen App werden Sie "
+"jedoch wahrscheinlich eine Bibliothek eines Drittanbieters verwenden wollen, "
+"die Sie aus dem Python Package Index (PyPI) herunterladen können."
 
 #: docs/en/tutorial/tutorial-7.md:8
-#, fuzzy
 msgid "Let's modify our app to include a third-party library."
 msgstr ""
-"Ändern wir unsere Anwendung so, dass sie eine Bibliothek eines "
+"Lassen Sie uns unsere App so ändern, dass sie eine Bibliothek eines "
 "Drittanbieters enthält."
 
 #: docs/en/tutorial/tutorial-7.md:10
 msgid "Adding a package"
-msgstr ""
+msgstr "Paket hinzufügen"
 
 #: docs/en/tutorial/tutorial-7.md:12
 msgid ""
 "Let's modify our application to say a little bit more than just "
 "\"Hi, there!\"."
 msgstr ""
+"Lassen Sie uns unsere Anwendung so ändern, dass sie etwas mehr sagt als nur "
+"„Hallo!“."
 
 #: docs/en/tutorial/tutorial-7.md:15
 msgid ""
@@ -57,7 +56,6 @@ msgid ""
 msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:23
-#, fuzzy
 msgid ""
 "We start by adding `faker` to our app. Add an import to the top of the "
 "`app.py` to import `faker`:"
@@ -66,14 +64,11 @@ msgstr ""
 "einen Import am Anfang der `app.py` hinzu, um `httpx` zu importieren:"
 
 #: docs/en/tutorial/tutorial-7.md:30
-#, fuzzy
 msgid "Then modify the `say_hello()` callback so it looks like this:"
 msgstr ""
-"Dann modifizieren Sie den `say_hello()` Callback so, dass er wie folgt "
-"aussieht:"
+"Dann ändern Sie den Callback `say_hello()` so, dass er wie folgt aussieht:"
 
 #: docs/en/tutorial/tutorial-7.md:43
-#, fuzzy
 msgid ""
 "Let's run our updated app in Briefcase developer mode to check that our "
 "change has worked."
@@ -139,6 +134,8 @@ msgid ""
 "You can't run an Android app in developer mode - use the instructions for "
 "your chosen desktop platform."
 msgstr ""
+"Sie können eine Android-App nicht im Entwicklermodus ausführen – befolgen "
+"Sie die Anweisungen für die von Ihnen gewählte Desktop-Plattform."
 
 #: docs/en/tutorial/tutorial-7.md:119
 #: docs/en/tutorial/tutorial-7.md:185
@@ -153,6 +150,8 @@ msgid ""
 "You can't run an iOS app in developer mode - use the instructions for your "
 "chosen desktop platform."
 msgstr ""
+"Sie können eine iOS-App nicht im Entwicklermodus ausführen – befolgen Sie "
+"die Anweisungen für die von Ihnen gewählte Desktop-Plattform."
 
 #: docs/en/tutorial/tutorial-7.md:126
 #, fuzzy
@@ -169,13 +168,24 @@ msgstr ""
 #: docs/en/tutorial/tutorial-7.md:137
 #: docs/en/tutorial/tutorial-7.md:153
 #: docs/en/tutorial/tutorial-7.md:169
-#, fuzzy
 msgid ""
 "When you enter a name and press the button, you should see a dialog that "
 "looks something like:"
 msgstr ""
-"Wenn Sie einen Namen eingeben und auf die Schaltfläche drücken, sollte ein "
-"Dialogfeld angezeigt werden, das etwa so aussieht:"
+"Wenn Sie einen Namen eingeben und auf die Schaltfläche klicken, sollte ein "
+"Dialogfeld angezeigt werden, das in etwa wie folgt aussieht:"
+
+#: docs/en/tutorial/tutorial-7.md:140
+msgid "![Hello World Tutorial 7 dialog, on macOS]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:156
+msgid "![Hello World Tutorial 7 dialog, on Linux]{1} /// caption ///"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-7.md:172
+msgid "![Hello World Tutorial 7 dialog, on Windows]{1} /// caption ///"
+msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:192
 #, fuzzy
@@ -237,6 +247,10 @@ msgstr ""
 "Wenn die Anwendung jedoch ausgeführt wird, wird in der Konsole ein Fehler "
 "und ein Absturzdialog angezeigt:"
 
+#: docs/en/tutorial/tutorial-7.md:235
+msgid "![Hello World Tutorial 7 app crash, on macOS]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-7.md:277
 #: docs/en/tutorial/tutorial-7.md:368
 #, fuzzy
@@ -245,10 +259,16 @@ msgstr ""
 "Wenn die Anwendung jedoch ausgeführt wird, wird in der Konsole ein Fehler "
 "angezeigt:"
 
+#: docs/en/tutorial/tutorial-7.md:330
+msgid "![Hello World Tutorial 7 app crash, on Windows]{1} /// caption ///"
+msgstr ""
+
 #: docs/en/tutorial/tutorial-7.md:359
 #: docs/en/tutorial/tutorial-7.md:434
 msgid "And finally, run the app (selecting a simulator when prompted):"
 msgstr ""
+"Und schließlich starten Sie die App (wählen Sie einen Simulator aus, wenn "
+"Sie dazu aufgefordert werden):"
 
 #: docs/en/tutorial/tutorial-7.md:444
 #, fuzzy
@@ -471,7 +491,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:674
 msgid "Third-Party Python Packages for Mobile and Web"
-msgstr ""
+msgstr "Python-Pakete von Drittanbietern für Mobilgeräte und das Web"
 
 #: docs/en/tutorial/tutorial-7.md:676
 msgid ""
@@ -482,6 +502,12 @@ msgid ""
 "environment. We've been using `pip` in this tutorial, but there are other "
 "options."
 msgstr ""
+"Faker ist nur ein Beispiel für ein Python-Paket eines Drittanbieters – eine "
+"Sammlung von Code, der nicht Teil der Standardausstattung von Python ist. "
+"Diese Pakete von Drittanbietern werden meist über den "
+"[Python Package Index (PyPI)]{1} verteilt und in Ihrer lokalen virtuellen "
+"Umgebung installiert. In diesem Tutorial haben wir `pip` verwendet, aber es "
+"gibt auch andere Optionen."
 
 #: docs/en/tutorial/tutorial-7.md:683
 #, fuzzy
@@ -507,6 +533,16 @@ msgid ""
 "desktop platforms. At this time, most Python packages don't provide pre-"
 "compiled binaries for mobile and web platforms."
 msgstr ""
+"Kurz gesagt: Jedes *reine Python*-Paket (d. h. jedes Paket, das aus einem "
+"*ausschließlich* in Python geschriebenen Projekt erstellt wurde) kann ohne "
+"Probleme verwendet werden. Einige Pakete werden jedoch aus Projekten "
+"erstellt, die sowohl Python als auch andere Sprachen (z. B. C, C++, Rust "
+"usw.) enthalten. Code, der in diesen Sprachen geschrieben wurde, muss vor "
+"der Verwendung zu plattformspezifischen Binärmodulen kompiliert werden, und "
+"diese vorkompilierten Binärmodule sind nur auf bestimmten Plattformen "
+"verfügbar. Mobile und Web-Plattformen haben ganz andere Anforderungen als "
+"„Standard“-Desktop-Plattformen. Derzeit bieten die meisten Python-Pakete "
+"keine vorkompilierten Binärdateien für mobile und Web-Plattformen an."
 
 #: docs/en/tutorial/tutorial-7.md:700
 msgid ""
@@ -521,6 +557,17 @@ msgid ""
 "mobile or web platforms unless a wheel compatible with those platforms has "
 "been provided."
 msgstr ""
+"Auf PyPI werden Pakete oft in einem vorgefertigten Distributionsformat "
+"namens *wheels* bereitgestellt. Um zu überprüfen, ob ein Paket reines Python "
+"ist, schauen Sie auf der PyPI-Downloadseite für das Projekt nach. Wenn die "
+"bereitgestellten Wheels die Endung `-py3-none-any.whl` haben (z. B. [Faker]"
+"{1}), dann handelt es sich um reine Python-Wheels. Wenn die Wheels jedoch "
+"versions- und plattformspezifische Erweiterungen haben (z. B. [Pillow]{2}, "
+"das Wheels mit Suffixen wie `-cp313-cp313-macosx_11_0_arm64.whl` und "
+"`-cp39-cp39-win_amd64.whl` hat), dann enthält das Wheel *eine binäre "
+"Komponente*. Dieses Paket kann nicht auf mobilen oder Web-Plattformen "
+"installiert werden, es sei denn, es wurde ein mit diesen Plattformen "
+"kompatibles Wheel bereitgestellt."
 
 #: docs/en/tutorial/tutorial-7.md:713
 msgid ""
@@ -530,6 +577,11 @@ msgid ""
 "These wheels are *not* distributed on PyPI, but Briefcase will install those "
 "wheels if they're available."
 msgstr ""
+"Derzeit bieten die meisten Binärpakete auf PyPI keine mobil- oder webfähigen "
+"Wheels an. Um diese Lücke zu schließen, stellt BeeWare Binärdateien für "
+"einige beliebte Binärmodule (einschließlich `numpy`, `pandas` und "
+"`cryptography`) zur Verfügung. Diese Wheels werden *nicht* auf PyPI "
+"verteilt, aber Briefcase installiert sie, sofern sie verfügbar sind."
 
 #: docs/en/tutorial/tutorial-7.md:719
 #, fuzzy
@@ -554,6 +606,7 @@ msgid ""
 "[tutorial-8] we'll learn how to ensure our app remains responsive as we add "
 "more complex application logic."
 msgstr ""
-
-#~ msgid "Tutorial 7 - Get this (third-)party started"
-#~ msgstr "Tutorial 7 - Die (Dritt-)Partei in Gang bringen"
+"Wir haben jetzt eine App, die eine Bibliothek eines Drittanbieters "
+"verwendet! In [Tutorial 8][tutorial-8] lernen wir, wie wir sicherstellen "
+"können, dass unsere App auch dann reaktionsschnell bleibt, wenn wir "
+"komplexere Anwendungslogik hinzufügen."

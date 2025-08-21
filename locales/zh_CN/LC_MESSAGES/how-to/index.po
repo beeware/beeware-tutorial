@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/en/how-to/index.md:1
-msgid "Contributing to this tutorial"
+msgid "Contributing to this tutorial { id=contributing }"
 msgstr ""
 
 #: docs/en/how-to/index.md:3
@@ -139,7 +139,7 @@ msgid "Your prompt should now have a `(venv)` prefix in front of it."
 msgstr ""
 
 #: docs/en/how-to/index.md:80
-msgid "Clone the BeeWare repository"
+msgid "Clone the BeeWare Tutorial repository"
 msgstr ""
 
 #: docs/en/how-to/index.md:82
@@ -148,17 +148,18 @@ msgstr ""
 
 #: docs/en/how-to/index.md:84
 msgid ""
-"Next, go to [the BeeWare page on GitHub]{1}, fork the repository into your "
-"own account, and then clone a copy of that repository onto your computer by "
-"clicking on \"Clone or Download\". If you have the GitHub desktop "
-"application installed on your computer, you can select \"Open in Desktop\"; "
-"otherwise, copy the URL provided, and use it to clone using the command line:"
+"Next, go to [the BeeWare Tutorial page on GitHub]{1}, fork the repository "
+"into your own account, and then clone a copy of that repository onto your "
+"computer by clicking on \"Clone or Download\". If you have the GitHub "
+"desktop application installed on your computer, you can select "
+"\"Open in Desktop\"; otherwise, copy the URL provided, and use it to clone "
+"using the command line:"
 msgstr ""
 
 #: docs/en/how-to/index.md:94
 #: docs/en/how-to/index.md:106
 #: docs/en/how-to/index.md:118
-msgid "Fork the BeeWare repository, and then:"
+msgid "Fork the BeeWare Tutorial repository, and then:"
 msgstr ""
 
 #: docs/en/how-to/index.md:100

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 23:09-0400\n"
+"POT-Creation-Date: 2025-08-15 23:26-0400\n"
 "PO-Revision-Date: 2025-06-07 05:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -44,7 +44,7 @@ msgstr ""
 "文件夹包含测试套件。在\\ `tests`\\ 文件夹中，有一个名为\\ `test_app.py`\\ "
 "的文件，内容如下:"
 
-#: docs/en/tutorial/topics/testing.md:21
+#: docs/en/tutorial/topics/testing.md:23
 msgid ""
 "This is a [Pytest]{1} *test case* - a block of code that can be executed to "
 "verify some behavior of your app. In this case, the test is a placeholder, "
@@ -52,7 +52,7 @@ msgid ""
 "perform."
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:26
+#: docs/en/tutorial/topics/testing.md:28
 msgid ""
 "We can run this test suite using the `--test` option to `briefcase dev`. As "
 "this is the first time we are running tests, we also need to pass in the `-r`"
@@ -62,56 +62,56 @@ msgstr ""
 "选项来运行这个测试套件。由于这是第一次运行测试，我们还需要传递 `-r` "
 "选项，以确保测试以来想也已安装："
 
-#: docs/en/tutorial/topics/testing.md:30
-#: docs/en/tutorial/topics/testing.md:141
-#: docs/en/tutorial/topics/testing.md:215
-#: docs/en/tutorial/topics/testing.md:337
-#: docs/en/tutorial/topics/testing.md:411
+#: docs/en/tutorial/topics/testing.md:32
+#: docs/en/tutorial/topics/testing.md:145
+#: docs/en/tutorial/topics/testing.md:220
+#: docs/en/tutorial/topics/testing.md:343
+#: docs/en/tutorial/topics/testing.md:416
 msgid "/// tab | macOS"
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:53
-#: docs/en/tutorial/topics/testing.md:81
-#: docs/en/tutorial/topics/testing.md:109
-#: docs/en/tutorial/topics/testing.md:158
-#: docs/en/tutorial/topics/testing.md:177
-#: docs/en/tutorial/topics/testing.md:196
-#: docs/en/tutorial/topics/testing.md:247
-#: docs/en/tutorial/topics/testing.md:283
-#: docs/en/tutorial/topics/testing.md:317
-#: docs/en/tutorial/topics/testing.md:355
-#: docs/en/tutorial/topics/testing.md:375
-#: docs/en/tutorial/topics/testing.md:395
-#: docs/en/tutorial/topics/testing.md:453
-#: docs/en/tutorial/topics/testing.md:487
-#: docs/en/tutorial/topics/testing.md:526
+#: docs/en/tutorial/topics/testing.md:55
+#: docs/en/tutorial/topics/testing.md:83
+#: docs/en/tutorial/topics/testing.md:111
+#: docs/en/tutorial/topics/testing.md:162
+#: docs/en/tutorial/topics/testing.md:181
+#: docs/en/tutorial/topics/testing.md:200
+#: docs/en/tutorial/topics/testing.md:252
+#: docs/en/tutorial/topics/testing.md:288
+#: docs/en/tutorial/topics/testing.md:322
+#: docs/en/tutorial/topics/testing.md:361
+#: docs/en/tutorial/topics/testing.md:381
+#: docs/en/tutorial/topics/testing.md:401
+#: docs/en/tutorial/topics/testing.md:458
+#: docs/en/tutorial/topics/testing.md:492
+#: docs/en/tutorial/topics/testing.md:531
 msgid "///"
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:55
-#: docs/en/tutorial/topics/testing.md:160
-#: docs/en/tutorial/topics/testing.md:249
-#: docs/en/tutorial/topics/testing.md:357
-#: docs/en/tutorial/topics/testing.md:455
+#: docs/en/tutorial/topics/testing.md:57
+#: docs/en/tutorial/topics/testing.md:164
+#: docs/en/tutorial/topics/testing.md:254
+#: docs/en/tutorial/topics/testing.md:363
+#: docs/en/tutorial/topics/testing.md:460
 msgid "/// tab | Linux"
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:83
-#: docs/en/tutorial/topics/testing.md:179
-#: docs/en/tutorial/topics/testing.md:285
-#: docs/en/tutorial/topics/testing.md:377
-#: docs/en/tutorial/topics/testing.md:489
+#: docs/en/tutorial/topics/testing.md:85
+#: docs/en/tutorial/topics/testing.md:183
+#: docs/en/tutorial/topics/testing.md:290
+#: docs/en/tutorial/topics/testing.md:383
+#: docs/en/tutorial/topics/testing.md:494
 msgid "/// tab | Windows"
 msgstr ""
 
-#: docs/en/tutorial/topics/testing.md:112
+#: docs/en/tutorial/topics/testing.md:114
 msgid ""
 "Success! We've just executed a single test that verifies Python math works "
 "in the way we'd expect (What a relief!)."
 msgstr "成功了！我们刚刚执行了一个测试，验证了 Python "
 "数学以我们预期的方式运行（真是松了一口气！）。"
 
-#: docs/en/tutorial/topics/testing.md:115
+#: docs/en/tutorial/topics/testing.md:117
 msgid ""
 "Let's replace this placeholder test with a test to verify that our "
 "`greeting()` method behaves the way we'd expect. Replace the contents of "
@@ -120,14 +120,14 @@ msgstr ""
 "让我们用一个测试来替换这个占位符测试，以验证我们的 `greeting()` "
 "方法是否按照我们预期的方式运行。用以下内容替换 `test_app.py` 中的内容:"
 
-#: docs/en/tutorial/topics/testing.md:133
+#: docs/en/tutorial/topics/testing.md:137
 msgid ""
 "This defines two new tests, verifying the two behaviors we expect to see: "
 "the output when a name is provided, and the output when the name is empty."
 msgstr "这将定义两个新测试，验证我们期望看到的两种行为：提供名称时的输出和名称为空时"
 "的输出。"
 
-#: docs/en/tutorial/topics/testing.md:137
+#: docs/en/tutorial/topics/testing.md:141
 msgid ""
 "We can now re-run the test suite. This time, we don't need to provided the "
 "`-r` option, as the test requirements have already been installed; we only "
@@ -135,15 +135,15 @@ msgid ""
 msgstr "现在我们可以重新运行测试套件。这一次，我们不需要提供 `-r` "
 "选项，因为测试需求已经安装完毕；我们只需要使用 `--test` 选项："
 
-#: docs/en/tutorial/topics/testing.md:199
+#: docs/en/tutorial/topics/testing.md:202
 msgid "Excellent! Our `greeting()` utility method is working as expected."
 msgstr "非常好！我们的 `greeting()` 实用程序方法如期工作了。"
 
-#: docs/en/tutorial/topics/testing.md:201
+#: docs/en/tutorial/topics/testing.md:204
 msgid "Test driven development"
 msgstr "测试驱动开发"
 
-#: docs/en/tutorial/topics/testing.md:203
+#: docs/en/tutorial/topics/testing.md:206
 msgid ""
 "Now that we have a test suite, we can use it to drive the development of new "
 "features. Let's modify our app to have a special greeting for one particular "
@@ -154,11 +154,11 @@ msgstr ""
 "用户添加特殊的问候语。首先，我们可以在 `test_app.py` "
 "的底部为我们希望看到的新行为添加一个测试用例:"
 
-#: docs/en/tutorial/topics/testing.md:213
+#: docs/en/tutorial/topics/testing.md:218
 msgid "Then, run the test suite with this new test:"
 msgstr "然后，用这个新测试运行测试套件："
 
-#: docs/en/tutorial/topics/testing.md:320
+#: docs/en/tutorial/topics/testing.md:324
 msgid ""
 "This time, we see a test failure - and the output explains the source of the "
 "failure: the test is expecting the output \"BeeWare the IDEs of Python!\", "
@@ -171,15 +171,15 @@ msgstr ""
 "\"Hello, Brutus\"。让我们修改 `src/helloworld/app.py` 中 `greeting()` "
 "的实现，使其具有新的行为:"
 
-#: docs/en/tutorial/topics/testing.md:335
+#: docs/en/tutorial/topics/testing.md:341
 msgid "If we run the tests again, we'll now see our tests pass:"
 msgstr "如果我们再次运行测试，就会发现测试通过了："
 
-#: docs/en/tutorial/topics/testing.md:398
+#: docs/en/tutorial/topics/testing.md:403
 msgid "Runtime tests"
 msgstr "运行时测试"
 
-#: docs/en/tutorial/topics/testing.md:400
+#: docs/en/tutorial/topics/testing.md:405
 msgid ""
 "So far, we've been running the tests in development mode. This is especially "
 "useful when you're developing new features, as you can rapidly iterate on "
@@ -191,7 +191,7 @@ msgstr ""
 "以快速迭代添加测试，并添加代码使测试通过。不过，在某些情况下，您会希望验证您"
 "的代码在捆绑应用程序环境下是否也能正确运行。"
 
-#: docs/en/tutorial/topics/testing.md:406
+#: docs/en/tutorial/topics/testing.md:411
 msgid ""
 "The `--test` and `-r` options can also be passed to the `run` command. If "
 "you use `briefcase run --test -r`, the same test suite will run, but it will "
@@ -202,7 +202,7 @@ msgstr ""
 "-r`，将运行相同的测试套件，但它将在打包的应用程序捆绑包内运行，而不是在开发环"
 "境中运行："
 
-#: docs/en/tutorial/topics/testing.md:529
+#: docs/en/tutorial/topics/testing.md:534
 msgid ""
 "As with `briefcase dev --test`, the `-r` option is only needed the first "
 "time you run the test suite to ensure that the test dependencies are "
@@ -211,7 +211,7 @@ msgstr ""
 "与 `briefcase dev --test` 一样，只有在第一次运行测试套件时才需要使用 `-r` "
 "选项，以确保测试依赖项的存在。以后运行时，可以省略该选项。"
 
-#: docs/en/tutorial/topics/testing.md:533
+#: docs/en/tutorial/topics/testing.md:538
 msgid ""
 "You can also use the `--test` option on mobile backends: - so `briefcase run "
 "iOS --test` and `briefcase run android --test` will both work, running the "

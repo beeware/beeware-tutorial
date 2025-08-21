@@ -1,2 +1,2 @@
 # Docs are always built on a specific Python version; see RTD and tox config files.
-beeware-docs-tools @ git+https://github.com/kattni/beeware-docs-tools@tooling/mkdocs
+beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools
