@@ -356,7 +356,7 @@ msgid ""
 "[create our first BeeWare application]{1}."
 msgstr ""
 "Agora que configuramos nosso ambiente, estamos prontos para "
-"[criar nossa primeira aplicação BeeWare][tutorial-1]."
+"[criar nossa primeira aplicação BeeWare]{1}."
 
 #~ msgid "Install Python"
 #~ msgstr "Instalando o Python"

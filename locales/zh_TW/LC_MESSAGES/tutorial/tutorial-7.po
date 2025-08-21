@@ -210,7 +210,7 @@ msgid ""
 "{1}:"
 msgstr ""
 "讓我們將此更新的應用程式程式碼打包為獨立應用程式。由於我們已經更改了程式碼，"
-"因此我們需要遵循 [教程 4][tutorial-4] 中的相同步驟："
+"因此我們需要遵循 [教程 4]{1} 中的相同步驟："
 
 #: docs/en/tutorial/tutorial-7.md:209
 #: docs/en/tutorial/tutorial-7.md:251

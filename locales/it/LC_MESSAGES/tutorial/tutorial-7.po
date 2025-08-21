@@ -222,7 +222,7 @@ msgid ""
 msgstr ""
 "Facciamo in modo che il codice aggiornato dell'applicazione venga "
 "confezionato come applicazione autonoma. Poiché abbiamo apportato modifiche "
-"al codice, dobbiamo seguire gli stessi passi di [Tutorial 4][tutorial-4]:"
+"al codice, dobbiamo seguire gli stessi passi di [Tutorial 4]{1}:"
 
 #: docs/en/tutorial/tutorial-7.md:209
 #: docs/en/tutorial/tutorial-7.md:251

@@ -223,7 +223,7 @@ msgid ""
 msgstr ""
 "Lassen Sie uns diesen aktualisierten Anwendungscode als eigenständige "
 "Anwendung verpacken. Da wir Änderungen am Code vorgenommen haben, müssen wir "
-"die gleichen Schritte wie in [Tutorial 4][tutorial-4] ausführen:"
+"die gleichen Schritte wie in [Tutorial 4]{1} ausführen:"
 
 #: docs/en/tutorial/tutorial-7.md:209
 #: docs/en/tutorial/tutorial-7.md:251
@@ -621,6 +621,6 @@ msgid ""
 "application logic."
 msgstr ""
 "Wir haben jetzt eine App, die eine Bibliothek eines Drittanbieters "
-"verwendet! In [Tutorial 8][tutorial-8] lernen wir, wie wir sicherstellen "
+"verwendet! In [Tutorial 8]{1} lernen wir, wie wir sicherstellen "
 "können, dass unsere App auch dann reaktionsschnell bleibt, wenn wir "
 "komplexere Anwendungslogik hinzufügen."

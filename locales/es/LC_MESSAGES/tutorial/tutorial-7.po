@@ -220,7 +220,7 @@ msgid ""
 msgstr ""
 "Vamos a empaquetar este código de aplicación actualizado como una aplicación "
 "independiente. Como hemos hecho cambios en el código, tenemos que seguir los "
-"mismos pasos que en [Tutorial 4][tutorial-4]:"
+"mismos pasos que en [Tutorial 4]{1}:"
 
 #: docs/en/tutorial/tutorial-7.md:209
 #: docs/en/tutorial/tutorial-7.md:251

@@ -8,7 +8,7 @@ First, we need to install **Briefcase**. Briefcase is a BeeWare tool
 that can be used to package your application for distribution to end
 users - but it can also be used to bootstrap a new project. Make sure
 you're in the `beeware-tutorial` directory you created in
-[Tutorial 0], with the
+[Tutorial 0](tutorial-0.md), with the
 `beeware-venv` virtual environment activated, and run:
 
 /// tab | macOS

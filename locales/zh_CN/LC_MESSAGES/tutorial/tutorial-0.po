@@ -327,7 +327,7 @@ msgstr "下一步"
 msgid ""
 "We've now set up our environment. We're ready to "
 "[create our first BeeWare application]{1}."
-msgstr "现在我们已经设置好了环境。我们已经准备创建\\ [您的第一个应用程序][tutorial-1]"
+msgstr "现在我们已经设置好了环境。我们已经准备创建\\ [您的第一个应用程序]{1}"
 "\\ 了。"
 
 #~ msgid "Install Python"

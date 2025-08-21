@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "首先，我們需要安裝 **Briefcase**。 它是一個 BeeWare 工具，"
 "可用於打包應用程式以分發給最終用戶 - 但它也可用於引導新專案。確保您位於 "
-"[教學 0][tutorial-0] 中建立的 `beeware-tutorial` 目錄中，啟動 `beeware-venv` "
+"[教學 0]{1} 中建立的 `beeware-tutorial` 目錄中，啟動 `beeware-venv` "
 "虛擬環境，然後執行："
 
 #: docs/en/tutorial/tutorial-1.md:14
