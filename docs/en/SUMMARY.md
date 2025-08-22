@@ -7,7 +7,7 @@
     - [Tutorial 5 - Taking it Mobile](tutorial/tutorial-5/index.md)
     - [Tutorial 5 - Taking it mobile: Android](tutorial/tutorial-5/android.md)
     - [Tutorial 5 - Taking it mobile: iOS](tutorial/tutorial-5/iOS.md)
-- [Tutorial 6 -Put it on the web!](tutorial/tutorial-6.md)
+- [Tutorial 6 - Put it on the web!](tutorial/tutorial-6.md)
 - [Tutorial 7 - Get this (third-)party started](tutorial/tutorial-7.md)
 - [Tutorial 8 - Making it Smooooth](tutorial/tutorial-8.md)
 - Going further

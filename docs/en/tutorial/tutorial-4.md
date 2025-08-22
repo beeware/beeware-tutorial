@@ -30,7 +30,7 @@ async def say_hello(self, widget):
 
 We need to make the method `async` so that when we display the dialog,
 the rest of the application continues to run. Don't worry about this
-detail too much right now -we'll give a more detailed explanation in
+detail too much right now - we'll give a more detailed explanation in
 [Tutorial 8](tutorial-8.md).
 
 This directs Toga to open a modal dialog box when the button is pressed.
@@ -71,7 +71,7 @@ see the new dialog box:
 However, if you run `briefcase run`, the dialog box won't appear.
 
 Why is this? Well, `briefcase dev` operates by running your code in
-place -it tries to produce as realistic runtime environment for your
+place - it tries to produce as realistic runtime environment for your
 code as possible, but it doesn't provide or use any of the platform
 infrastructure for wrapping your code as an application. Part of the
 process of packaging your app involves copying your code *into* the
@@ -147,10 +147,14 @@ Now that we've updated the installer code, we can then run
 updated app, and `briefcase package` to repackage the application for
 distribution.
 
-(macOS users, remember that as noted in [Tutorial 3](tutorial-3.md), for the
+/// note | Note
+
+macOS users, remember that as noted in [Tutorial 3](tutorial-3.md), for the
 tutorial we recommend running `briefcase package` with the
 `--adhoc-sign` flag to avoid the complexity of setting up a code signing
-identity and keep the tutorial as simple as possible.)
+identity and keep the tutorial as simple as possible.
+
+///
 
 ## Update and run in one step
 

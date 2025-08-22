@@ -136,7 +136,7 @@ packages, so we have to manually install each package:
 
 ```console
 (.venv) $ cd beeware
-(.venv) $ python -m pip install -e ".[dev]"
+(.venv) $ python -m pip install -r requirements.dev.txt
 ```
 
 ///
@@ -145,7 +145,7 @@ packages, so we have to manually install each package:
 
 ```console
 (.venv) $ cd beeware
-(.venv) $ python -m pip install -e .[dev]
+(.venv) $ python -m pip install  -r requirements.dev.txt
 ```
 
 ///
@@ -154,7 +154,7 @@ packages, so we have to manually install each package:
 
 ```doscon
 (.venv) C:\...>cd beeware
-(.venv) C:\...>python -m pip install -e .[dev]
+(.venv) C:\...>python -m pip install -r requirements.dev.txt
 ```
 
 ///
@@ -339,7 +339,7 @@ Once your development environment is set up, run:
 
 ///
 
-The output of the file should be in the `docs/_build/html` folder. If
+The output of the file should be in the `_build/html` folder. If
 there are any markup problems, they'll raise an error.
 
 ### Live Tutorial preview
@@ -379,7 +379,7 @@ refreshed.
 
 ### Tutorial linting
 
-The build process will identify reStructuredText problems, but BeeWare
+The build process will identify most Markdown problems, but BeeWare
 performs some additional "lint" checks. To run the lint checks:
 
 /// tab | macOS
@@ -423,10 +423,44 @@ the spellchecker's dictionary. When adding to this list, remember:
 - If a term is being used "as code", then it should be quoted as inline
   code rather than being added to the dictionary.
 
-### Building translations
+### Translations
 
 The BeeWare tutorial is available in multiple languages, which you can
 build individually or all at the same time.
+
+#### Updating translations
+
+If you have made changes to the English content, the first step to
+building the translations is to update the translation files. To
+update the translations:
+
+/// tab | macOS
+
+```console
+(.venv) $ tox -e docs-translate
+```
+
+///
+
+/// tab | Linux
+
+```console
+(.venv) $ tox -e docs-translate
+```
+
+///
+
+/// tab | Windows
+
+```doscon
+(.venv) C:\...>tox -e docs-translate
+```
+
+///
+
+This will update the
+
+#### Building translations
 
 To build a single translation, you run the `docs` command with the
 language code for the translation you wish to build. For example,
@@ -456,7 +490,7 @@ to build French:
 
 ///
 
-The French translation should be built in the `docs/_build/html`
+The French translation should be built in the `_build/html`
 folder. If there are any markup problems, they'll raise an error.
 
 An error is also raised if you enter a language code for an
@@ -489,9 +523,9 @@ To build all the translations at the same time:
 
 ///
 
-This will build all available translations in the `docs/_build/html`
+This will build all available translations in the `_build/html`
 directory, inside a language-specific subdirectory. For example, the
-French translation would be available in `docs/_build/html/fr`.
+French translation would be available in `_build/html/fr`.
 
 ## What to work on?
 
