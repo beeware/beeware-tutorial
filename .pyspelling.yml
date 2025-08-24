@@ -29,6 +29,15 @@ matrix:
       context_visible_first: true
       escapes: '\\[\\`~]'
       delimiters:
+        # Ignore the Jinja directives
         - open: '{%'
           content: '[\d\D]*'
           close: '%}'
+        # Ignore the single line Snippets syntax
+        - open: '-8<\-'
+          content: '[\d\D]*'
+          close: '\n'
+        # Ignore the multiline Snippets syntax
+        - open: '-8<\-\n'
+          content: '[\d\D]*'
+          close: '-8<-\n'
