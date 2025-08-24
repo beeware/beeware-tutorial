@@ -66,6 +66,10 @@ markdown_extensions:
   pymdownx.blocks.caption: {}
   pymdownx.blocks.tab:
     alternate_style: true
+  pymdownx.snippets:
+    base_path: ["docs"]
+    url_download: true
+    check_paths: true
   toc:
     permalink: true
     title: On this page
@@ -74,7 +78,6 @@ markdown_extensions:
 plugins:
   search: {}
   autorefs: {}
-  include-markdown: {}
   literate-nav:
     nav_file: SUMMARY.md
   macros: {}
