@@ -15,7 +15,7 @@ application and deploy it as an iOS app.
 
 The process of deploying an application to iOS is very similar to the
 process for deploying as a desktop application. First, you run the
-`create` command -but this time, we specify that we want to create an
+`create` command - but this time, we specify that we want to create an
 iOS application:
 
 ```console
