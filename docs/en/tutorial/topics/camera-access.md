@@ -159,7 +159,8 @@ We can now generate and run the app:
 /// tab | macOS
 
 ```console
-(beeware-venv) $ briefcase create (beeware-venv) $ briefcase build
+(beeware-venv) $ briefcase create
+(beeware-venv) $ briefcase build
 (beeware-venv) $ briefcase run
 ```
 
