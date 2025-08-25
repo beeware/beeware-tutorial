@@ -43,7 +43,7 @@ built-in APIs and provide a simpler API that is a closer match for the
 everyday browser experience. We're going to use one of those libraries
 to access the {JSON} Placeholder API - a library called
 [`httpx`](https://www.python-httpx.org). Briefcase uses `httpx`
-internally, so it's already in your local environment -you don't need to
+internally, so it's already in your local environment - you don't need to
 install it separately to use it here.
 
 Let's add a `httpx` API call to our app. Modify the `requires` setting
