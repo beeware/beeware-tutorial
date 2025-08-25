@@ -467,7 +467,7 @@ ModuleNotFoundError: No module named 'faker'
 ///
 
 Once again, the app has failed to start because `faker` has not been
-installed -but why? Haven't we already installed `faker`?
+installed - but why? Haven't we already installed `faker`?
 
 We have - but only in the development environment. Your development
 environment is entirely local to your machine - and is only enabled when
