@@ -28,10 +28,10 @@ Community Code of Conduct](http://beeware.org/community/behavior/).
 
 ## Contributing
 
-If you experience problems with BeeWare, [log them on
-GitHub](https://github.com/beeware/beeware/issues). If you want to contribute
-code, please [fork the code](https://github.com/beeware/beeware) and [submit a
-pull request](https://github.com/beeware/beeware/pulls).
+If you experience problems with the BeeWare Tutorial, [log them on
+GitHub](https://github.com/beeware/beeware-tutorial/issues). If you want to contribute
+code, please [fork the code](https://github.com/beeware/beeware-tutorial) and [submit a
+pull request](https://github.com/beeware/beeware-tutorial/pulls).
 
 ### Translations
 

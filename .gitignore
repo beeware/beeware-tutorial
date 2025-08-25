@@ -1,3 +1,11 @@
+# MkDocs
+_build
+comment.md
+
+# Translations
+*.mo
+*.pot
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -44,10 +52,6 @@ nosetests.xml
 coverage.xml
 *,cover
 .hypothesis/
-
-# Translations
-*.mo
-*.pot
 
 # Django stuff:
 *.log
