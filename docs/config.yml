@@ -12,7 +12,6 @@ validation:
 
 extra:
   project_name: beeware-tutorial
-  hide_version: true
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/beeware
