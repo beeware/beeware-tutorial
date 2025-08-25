@@ -168,8 +168,9 @@ We can now generate and run the app:
 /// tab | Android
 
 ```console
-(beeware-venv) $ briefcase create android (beeware-venv) $ briefcase
-build android (beeware-venv) $ briefcase run android
+(beeware-venv) $ briefcase create android
+(beeware-venv) $ briefcase build android
+(beeware-venv) $ briefcase run android
 ```
 
 ///
