@@ -1,0 +1,7 @@
+INHERIT: config.yml
+site_name: BeeWare Tutorial
+site_url: https://tutorial.beeware.org/
+docs_dir: en
+
+extra:
+  translation_type: original
