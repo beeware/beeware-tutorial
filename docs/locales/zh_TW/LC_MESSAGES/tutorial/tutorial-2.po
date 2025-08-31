@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:18-0400\n"
+"POT-Creation-Date: 2025-08-31 22:29+0000\n"
 "PO-Revision-Date: 2025-04-20 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
@@ -328,7 +328,7 @@ msgstr "現在我們定義一個按鈕:"
 
 #: docs/en/tutorial/tutorial-2.md:256
 msgid ""
-"The button also has 5px of margin on all sides. We also define a *handler* -"
+"The button also has 5px of margin on all sides. We also define a *handler* - "
 "a method to invoke when the button is pressed."
 msgstr ""
 

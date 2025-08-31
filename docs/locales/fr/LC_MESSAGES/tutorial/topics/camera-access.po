@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:18-0400\n"
+"POT-Creation-Date: 2025-08-31 22:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -52,8 +52,8 @@ msgid ""
 msgstr ""
 
 #: docs/en/tutorial/topics/camera-access.md:24
-#: docs/en/tutorial/topics/camera-access.md:166
-#: docs/en/tutorial/topics/camera-access.md:175
+#: docs/en/tutorial/topics/camera-access.md:167
+#: docs/en/tutorial/topics/camera-access.md:177
 msgid "///"
 msgstr ""
 
@@ -163,11 +163,11 @@ msgstr ""
 msgid "/// tab | macOS"
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:168
+#: docs/en/tutorial/topics/camera-access.md:169
 msgid "/// tab | Android"
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:177
+#: docs/en/tutorial/topics/camera-access.md:179
 msgid ""
 "When the app runs, you'll be presented with a button. Press the button, and "
 "the platform's default camera dialog will be displayed. Take a photo; the "
@@ -176,11 +176,11 @@ msgid ""
 "the first photo."
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:183
+#: docs/en/tutorial/topics/camera-access.md:185
 msgid "Adding more permissions"
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:185
+#: docs/en/tutorial/topics/camera-access.md:187
 msgid ""
 "Permissions are declared in the files that are generated during the original "
 "call to `briefcase create`. Unfortunately, Briefcase can't update these "

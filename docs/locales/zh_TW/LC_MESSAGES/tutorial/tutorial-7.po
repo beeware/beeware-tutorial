@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:18-0400\n"
+"POT-Creation-Date: 2025-08-31 22:29+0000\n"
 "PO-Revision-Date: 2024-04-10 21:02+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -208,8 +208,7 @@ msgid ""
 "Let's get this updated application code packaged as a standalone app. Since "
 "we've made code changes, we need to follow the same steps as in [Tutorial 4]"
 "{1}:"
-msgstr ""
-"讓我們將此更新的應用程式程式碼打包為獨立應用程式。由於我們已經更改了程式碼，"
+msgstr "讓我們將此更新的應用程式程式碼打包為獨立應用程式。由於我們已經更改了程式碼，"
 "因此我們需要遵循 [教程 4]{1} 中的相同步驟："
 
 #: docs/en/tutorial/tutorial-7.md:209
@@ -272,7 +271,7 @@ msgstr "但是，當應用程式運行時，您會在控制台中看到錯誤：
 #: docs/en/tutorial/tutorial-7.md:469
 msgid ""
 "Once again, the app has failed to start because `faker` has not been "
-"installed -but why? Haven't we already installed `faker`?"
+"installed - but why? Haven't we already installed `faker`?"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:472

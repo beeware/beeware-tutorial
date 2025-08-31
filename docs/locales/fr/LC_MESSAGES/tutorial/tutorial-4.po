@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:18-0400\n"
+"POT-Creation-Date: 2025-08-31 22:29+0000\n"
 "PO-Revision-Date: 2024-01-14 01:02+0000\n"
 "Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -70,7 +70,7 @@ msgstr ""
 msgid ""
 "We need to make the method `async` so that when we display the dialog, the "
 "rest of the application continues to run. Don't worry about this detail too "
-"much right now -we'll give a more detailed explanation in [Tutorial 8]{1}."
+"much right now - we'll give a more detailed explanation in [Tutorial 8]{1}."
 msgstr ""
 
 #: docs/en/tutorial/tutorial-4.md:36
@@ -91,7 +91,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-4.md:41
 #: docs/en/tutorial/tutorial-4.md:87
-#: docs/en/tutorial/tutorial-4.md:200
+#: docs/en/tutorial/tutorial-4.md:204
 msgid "/// tab | macOS"
 msgstr ""
 
@@ -114,15 +114,16 @@ msgstr ""
 #: docs/en/tutorial/tutorial-4.md:101
 #: docs/en/tutorial/tutorial-4.md:124
 #: docs/en/tutorial/tutorial-4.md:140
-#: docs/en/tutorial/tutorial-4.md:221
-#: docs/en/tutorial/tutorial-4.md:250
-#: docs/en/tutorial/tutorial-4.md:268
+#: docs/en/tutorial/tutorial-4.md:157
+#: docs/en/tutorial/tutorial-4.md:225
+#: docs/en/tutorial/tutorial-4.md:254
+#: docs/en/tutorial/tutorial-4.md:272
 msgid "///"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-4.md:51
 #: docs/en/tutorial/tutorial-4.md:103
-#: docs/en/tutorial/tutorial-4.md:223
+#: docs/en/tutorial/tutorial-4.md:227
 msgid "/// tab | Linux"
 msgstr ""
 
@@ -132,7 +133,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-4.md:61
 #: docs/en/tutorial/tutorial-4.md:126
-#: docs/en/tutorial/tutorial-4.md:252
+#: docs/en/tutorial/tutorial-4.md:256
 msgid "/// tab | Windows"
 msgstr ""
 
@@ -149,7 +150,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-4.md:73
 msgid ""
-"Why is this? Well, `briefcase dev` operates by running your code in place -"
+"Why is this? Well, `briefcase dev` operates by running your code in place - "
 "it tries to produce as realistic runtime environment for your code as "
 "possible, but it doesn't provide or use any of the platform infrastructure "
 "for wrapping your code as an application. Part of the process of packaging "
@@ -193,25 +194,29 @@ msgstr ""
 "reconditionner l'application en vue de sa distribution."
 
 #: docs/en/tutorial/tutorial-4.md:150
+msgid "/// note | Note"
+msgstr ""
+
+#: docs/en/tutorial/tutorial-4.md:152
 #, fuzzy
 msgid ""
-"(macOS users, remember that as noted in [Tutorial 3]{1}, for the tutorial we "
+"macOS users, remember that as noted in [Tutorial 3]{1}, for the tutorial we "
 "recommend running `briefcase package` with the `--adhoc-sign` flag to avoid "
 "the complexity of setting up a code signing identity and keep the tutorial "
-"as simple as possible.)"
+"as simple as possible."
 msgstr ""
-"(Utilisateurs de macOS, rappelez-vous que comme indiqué dans [Tutoriel 3]"
-"{1}, pour le tutoriel nous recommandons d'exécuter `briefcase "
-"package` avec le drapeau `--adhoc-sign` pour éviter la complexité de la mise "
-"en place d'une identité de signature de code et garder le tutoriel aussi "
-"simple que possible)"
+"(Utilisateurs de macOS, rappelez-vous que comme indiqué dans [Tutoriel 3]{1}"
+", pour le tutoriel nous recommandons d'exécuter `briefcase package` avec le "
+"drapeau `--adhoc-sign` pour éviter la complexité de la mise en place d'une "
+"identité de signature de code et garder le tutoriel aussi simple que "
+"possible)"
 
-#: docs/en/tutorial/tutorial-4.md:155
+#: docs/en/tutorial/tutorial-4.md:159
 #, fuzzy
 msgid "Update and run in one step"
 msgstr "Mise à jour et exécution en une seule étape"
 
-#: docs/en/tutorial/tutorial-4.md:157
+#: docs/en/tutorial/tutorial-4.md:161
 #, fuzzy
 msgid ""
 "If you're rapidly iterating code changes, you'll likely want to make a code "
@@ -236,7 +241,7 @@ msgstr ""
 "de l'application packagée, Briefcase dispose d'un raccourci pour supporter "
 "ce schéma d'utilisation - l'option `-u` (ou `--update`) de la commande `run`."
 
-#: docs/en/tutorial/tutorial-4.md:168
+#: docs/en/tutorial/tutorial-4.md:172
 #, fuzzy
 msgid ""
 "Let's try making another change. You may have noticed that if you don't type "
@@ -248,7 +253,7 @@ msgstr ""
 "dira \"Hello, \". Modifions à nouveau la fonction `say_hello` pour gérer ce "
 "cas particulier."
 
-#: docs/en/tutorial/tutorial-4.md:172
+#: docs/en/tutorial/tutorial-4.md:176
 #, fuzzy
 msgid ""
 "At the top of the file, between the imports and the `class HelloWorld` "
@@ -259,14 +264,14 @@ msgstr ""
 ", ajoutez une méthode utilitaire pour générer un message d'accueil approprié "
 "en fonction de la valeur du nom qui a été fourni: :"
 
-#: docs/en/tutorial/tutorial-4.md:184
+#: docs/en/tutorial/tutorial-4.md:188
 #, fuzzy
 msgid "Then, modify the `say_hello` callback to use this new utility method:"
 msgstr ""
 "Ensuite, modifiez le callback `say_hello` pour utiliser cette nouvelle "
 "méthode utilitaire: :"
 
-#: docs/en/tutorial/tutorial-4.md:196
+#: docs/en/tutorial/tutorial-4.md:200
 #, fuzzy
 msgid ""
 "Run your app in development mode (with `briefcase dev`) to confirm that the "
@@ -276,7 +281,7 @@ msgstr ""
 "confirmer que la nouvelle logique fonctionne ; puis mettez à jour, compilez "
 "et exécutez l'application avec une seule commande :"
 
-#: docs/en/tutorial/tutorial-4.md:270
+#: docs/en/tutorial/tutorial-4.md:274
 #, fuzzy
 msgid ""
 "The package command also accepts the `-u` argument, so if you make a change "
@@ -287,11 +292,11 @@ msgstr ""
 "changement dans le code de votre application et que vous voulez repackager "
 "immédiatement, vous pouvez lancer `briefcase package -u`."
 
-#: docs/en/tutorial/tutorial-4.md:274
+#: docs/en/tutorial/tutorial-4.md:278
 msgid "Next steps"
 msgstr "Étapes suivantes"
 
-#: docs/en/tutorial/tutorial-4.md:276
+#: docs/en/tutorial/tutorial-4.md:280
 #, fuzzy
 msgid ""
 "We now have our application packaged for distribution on desktop platforms, "
@@ -300,7 +305,7 @@ msgstr ""
 "Notre application est désormais prête à être distribuée sur les plates-"
 "formes de bureau et nous avons pu mettre à jour le code de notre application."
 
-#: docs/en/tutorial/tutorial-4.md:279
+#: docs/en/tutorial/tutorial-4.md:283
 msgid ""
 "But what about mobile? In [Tutorial 5]{1}, we'll convert our application "
 "into a mobile application, and deploy it onto a device simulator, and onto a "

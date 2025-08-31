@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:18-0400\n"
+"POT-Creation-Date: 2025-08-31 22:29+0000\n"
 "PO-Revision-Date: 2025-08-09 01:02+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -58,8 +58,8 @@ msgid ""
 msgstr "这段代码在 iOS 设备上会正常工作，但部署到 iOS 虚拟器时，它将无法正常拍照。"
 
 #: docs/en/tutorial/topics/camera-access.md:24
-#: docs/en/tutorial/topics/camera-access.md:166
-#: docs/en/tutorial/topics/camera-access.md:175
+#: docs/en/tutorial/topics/camera-access.md:167
+#: docs/en/tutorial/topics/camera-access.md:177
 msgid "///"
 msgstr ""
 
@@ -169,11 +169,11 @@ msgstr "我们现在可以生成并运行应用程序："
 msgid "/// tab | macOS"
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:168
+#: docs/en/tutorial/topics/camera-access.md:169
 msgid "/// tab | Android"
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:177
+#: docs/en/tutorial/topics/camera-access.md:179
 msgid ""
 "When the app runs, you'll be presented with a button. Press the button, and "
 "the platform's default camera dialog will be displayed. Take a photo; the "
@@ -182,12 +182,12 @@ msgid ""
 "the first photo."
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:183
+#: docs/en/tutorial/topics/camera-access.md:185
 #, fuzzy
 msgid "Adding more permissions"
 msgstr "添加设备权限"
 
-#: docs/en/tutorial/topics/camera-access.md:185
+#: docs/en/tutorial/topics/camera-access.md:187
 msgid ""
 "Permissions are declared in the files that are generated during the original "
 "call to `briefcase create`. Unfortunately, Briefcase can't update these "

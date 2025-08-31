@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:18-0400\n"
+"POT-Creation-Date: 2025-08-31 22:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -49,9 +49,10 @@ msgstr ""
 #: docs/en/how-to/index.md:318
 #: docs/en/how-to/index.md:350
 #: docs/en/how-to/index.md:385
-#: docs/en/how-to/index.md:435
-#: docs/en/how-to/index.md:468
-#: docs/en/how-to/index.md:532
+#: docs/en/how-to/index.md:437
+#: docs/en/how-to/index.md:469
+#: docs/en/how-to/index.md:502
+#: docs/en/how-to/index.md:566
 msgid "/// tab | macOS"
 msgstr ""
 
@@ -85,15 +86,18 @@ msgstr ""
 #: docs/en/how-to/index.md:391
 #: docs/en/how-to/index.md:399
 #: docs/en/how-to/index.md:407
-#: docs/en/how-to/index.md:441
-#: docs/en/how-to/index.md:449
-#: docs/en/how-to/index.md:457
-#: docs/en/how-to/index.md:474
-#: docs/en/how-to/index.md:482
-#: docs/en/how-to/index.md:490
-#: docs/en/how-to/index.md:538
-#: docs/en/how-to/index.md:546
-#: docs/en/how-to/index.md:554
+#: docs/en/how-to/index.md:443
+#: docs/en/how-to/index.md:451
+#: docs/en/how-to/index.md:459
+#: docs/en/how-to/index.md:475
+#: docs/en/how-to/index.md:483
+#: docs/en/how-to/index.md:491
+#: docs/en/how-to/index.md:508
+#: docs/en/how-to/index.md:516
+#: docs/en/how-to/index.md:524
+#: docs/en/how-to/index.md:572
+#: docs/en/how-to/index.md:580
+#: docs/en/how-to/index.md:588
 msgid "///"
 msgstr ""
 
@@ -107,9 +111,10 @@ msgstr ""
 #: docs/en/how-to/index.md:326
 #: docs/en/how-to/index.md:358
 #: docs/en/how-to/index.md:393
-#: docs/en/how-to/index.md:443
-#: docs/en/how-to/index.md:476
-#: docs/en/how-to/index.md:540
+#: docs/en/how-to/index.md:445
+#: docs/en/how-to/index.md:477
+#: docs/en/how-to/index.md:510
+#: docs/en/how-to/index.md:574
 msgid "/// tab | Linux"
 msgstr ""
 
@@ -123,9 +128,10 @@ msgstr ""
 #: docs/en/how-to/index.md:334
 #: docs/en/how-to/index.md:366
 #: docs/en/how-to/index.md:401
-#: docs/en/how-to/index.md:451
-#: docs/en/how-to/index.md:484
-#: docs/en/how-to/index.md:548
+#: docs/en/how-to/index.md:453
+#: docs/en/how-to/index.md:485
+#: docs/en/how-to/index.md:518
+#: docs/en/how-to/index.md:582
 msgid "/// tab | Windows"
 msgstr ""
 
@@ -230,8 +236,8 @@ msgstr ""
 
 #: docs/en/how-to/index.md:342
 msgid ""
-"The output of the file should be in the `docs/_build/html` folder. If there "
-"are any markup problems, they'll raise an error."
+"The output of the file should be in the `_build/html` folder. If there are "
+"any markup problems, they'll raise an error."
 msgstr ""
 
 #: docs/en/how-to/index.md:345
@@ -259,8 +265,8 @@ msgstr ""
 
 #: docs/en/how-to/index.md:382
 msgid ""
-"The build process will identify reStructuredText problems, but BeeWare "
-"performs some additional \"lint\" checks. To run the lint checks:"
+"The build process will identify most Markdown problems, but BeeWare performs "
+"some additional \"lint\" checks. To run the lint checks:"
 msgstr ""
 
 #: docs/en/how-to/index.md:409
@@ -302,7 +308,7 @@ msgid ""
 msgstr ""
 
 #: docs/en/how-to/index.md:426
-msgid "Building translations"
+msgid "Translations"
 msgstr ""
 
 #: docs/en/how-to/index.md:428
@@ -312,46 +318,65 @@ msgid ""
 msgstr ""
 
 #: docs/en/how-to/index.md:431
+msgid "Updating translations"
+msgstr ""
+
+#: docs/en/how-to/index.md:433
+msgid ""
+"If you have made changes to the English content, the first step to building "
+"the translations is to update the translation files. To update the "
+"translations:"
+msgstr ""
+
+#: docs/en/how-to/index.md:461
+msgid "This will update the"
+msgstr ""
+
+#: docs/en/how-to/index.md:463
+msgid "Building translations"
+msgstr ""
+
+#: docs/en/how-to/index.md:465
 msgid ""
 "To build a single translation, you run the `docs` command with the language "
 "code for the translation you wish to build. For example, to build French:"
 msgstr ""
 
-#: docs/en/how-to/index.md:459
+#: docs/en/how-to/index.md:493
 msgid ""
-"The French translation should be built in the `docs/_build/html` folder. If "
-"there are any markup problems, they'll raise an error."
+"The French translation should be built in the `_build/html` folder. If there "
+"are any markup problems, they'll raise an error."
 msgstr ""
 
-#: docs/en/how-to/index.md:462
+#: docs/en/how-to/index.md:496
 msgid ""
 "An error is also raised if you enter a language code for an unavailable "
 "language. If this happens, verify that you are using the proper language "
 "code."
 msgstr ""
 
-#: docs/en/how-to/index.md:466
+#: docs/en/how-to/index.md:500
 msgid "To build all the translations at the same time:"
 msgstr ""
 
-#: docs/en/how-to/index.md:492
+#: docs/en/how-to/index.md:526
 msgid ""
-"This will build all available translations in the `docs/_build/html` "
-"directory, inside a language-specific subdirectory. For example, the French "
-"translation would be available in `docs/_build/html/fr`."
+"This will build all available translations in the `_build/html` directory, "
+"inside a language-specific subdirectory. For example, the French translation "
+"would be available in `_build/html/fr`."
 msgstr ""
 
-#: docs/en/how-to/index.md:496
+#: docs/en/how-to/index.md:530
 msgid "What to work on?"
 msgstr ""
 
-#: docs/en/how-to/index.md:498
+#: docs/en/how-to/index.md:532
 msgid ""
 "If you're looking for specific areas to improve, there are "
 "[tickets tagged \"documentation\"]{1} in BeeWare's issue tracker."
 msgstr ""
 
-#: docs/en/how-to/index.md:502
+#: docs/en/how-to/index.md:536
 msgid ""
 "However, you don't need to be constrained by these tickets. If you can "
 "identify an error in the tutorial, or an improvement that can be made, start "
@@ -359,20 +384,20 @@ msgid ""
 "change."
 msgstr ""
 
-#: docs/en/how-to/index.md:507
+#: docs/en/how-to/index.md:541
 msgid "Submitting a pull request"
 msgstr ""
 
-#: docs/en/how-to/index.md:509
+#: docs/en/how-to/index.md:543
 msgid ""
 "Before you submit a pull request, there's a few bits of housekeeping to do."
 msgstr ""
 
-#: docs/en/how-to/index.md:512
+#: docs/en/how-to/index.md:546
 msgid "Submit from a feature branch, not your `main` branch"
 msgstr ""
 
-#: docs/en/how-to/index.md:514
+#: docs/en/how-to/index.md:548
 msgid ""
 "Before you start working on your change, make sure you've created a branch. "
 "By default, when you clone your repository fork, you'll be checked out on "
@@ -380,7 +405,7 @@ msgid ""
 "contribute to BeeWare itself, not the docs, please review the repo README."
 msgstr ""
 
-#: docs/en/how-to/index.md:520
+#: docs/en/how-to/index.md:554
 msgid ""
 "While you *can* submit a pull request from your `main` branch, it's "
 "preferable if you *don't* do this. If you submit a pull request that is "
@@ -390,17 +415,17 @@ msgid ""
 "branch, reviewers are prevented from making modifications."
 msgstr ""
 
-#: docs/en/how-to/index.md:527
+#: docs/en/how-to/index.md:561
 msgid ""
 "Instead, you should make your changes on a *feature branch*. A feature "
 "branch has a simple name to identify the change that you've made."
 msgstr ""
 
-#: docs/en/how-to/index.md:530
+#: docs/en/how-to/index.md:564
 msgid "To create a feature branch, run:"
 msgstr ""
 
-#: docs/en/how-to/index.md:556
+#: docs/en/how-to/index.md:590
 msgid ""
 "Commit your changes to this branch, then push to GitHub and create a pull "
 "request."

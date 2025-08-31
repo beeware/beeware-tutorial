@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:18-0400\n"
+"POT-Creation-Date: 2025-08-31 22:29+0000\n"
 "PO-Revision-Date: 2024-04-08 11:58+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -38,7 +38,8 @@ msgstr "一旦我們安裝了 Xcode，我們就可以將我們的應用程式部
 msgid ""
 "The process of deploying an application to iOS is very similar to the "
 "process for deploying as a desktop application. First, you run the `create` "
-"command -but this time, we specify that we want to create an iOS application:"
+"command - but this time, we specify that we want to create an iOS "
+"application:"
 msgstr ""
 
 #: docs/en/tutorial/tutorial-5/iOS.md:46

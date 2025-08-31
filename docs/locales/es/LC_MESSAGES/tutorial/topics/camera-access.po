@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:18-0400\n"
+"POT-Creation-Date: 2025-08-31 22:29+0000\n"
 "PO-Revision-Date: 2024-08-28 16:09+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
@@ -68,8 +68,8 @@ msgstr ""
 "hacer una foto si se implementa en el emulador de iOS."
 
 #: docs/en/tutorial/topics/camera-access.md:24
-#: docs/en/tutorial/topics/camera-access.md:166
-#: docs/en/tutorial/topics/camera-access.md:175
+#: docs/en/tutorial/topics/camera-access.md:167
+#: docs/en/tutorial/topics/camera-access.md:177
 msgid "///"
 msgstr ""
 
@@ -226,11 +226,11 @@ msgstr "Ahora podemos generar y ejecutar la aplicación:"
 msgid "/// tab | macOS"
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:168
+#: docs/en/tutorial/topics/camera-access.md:169
 msgid "/// tab | Android"
 msgstr ""
 
-#: docs/en/tutorial/topics/camera-access.md:177
+#: docs/en/tutorial/topics/camera-access.md:179
 msgid ""
 "When the app runs, you'll be presented with a button. Press the button, and "
 "the platform's default camera dialog will be displayed. Take a photo; the "
@@ -244,11 +244,11 @@ msgstr ""
 "la foto se mostrará en la aplicación, justo encima del botón. Luego, puedes "
 "tomar otra foto; esta reemplazará la primera foto."
 
-#: docs/en/tutorial/topics/camera-access.md:183
+#: docs/en/tutorial/topics/camera-access.md:185
 msgid "Adding more permissions"
 msgstr "Agregar más permisos"
 
-#: docs/en/tutorial/topics/camera-access.md:185
+#: docs/en/tutorial/topics/camera-access.md:187
 msgid ""
 "Permissions are declared in the files that are generated during the original "
 "call to `briefcase create`. Unfortunately, Briefcase can't update these "
