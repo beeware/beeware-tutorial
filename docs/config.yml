@@ -3,7 +3,6 @@ copyright: © Russell Keith-Magee
 
 not_in_nav: |
   /index.md
-  shared_content/
 
 validation:
   omitted_files: warn
