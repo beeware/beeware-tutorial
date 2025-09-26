@@ -14,27 +14,27 @@ msgstr ""
 #: docs/en/SUMMARY.md:1
 #, fuzzy
 msgid "[Tutorial 0 - Let's get set up!]{1}"
-msgstr "Esercitazione 0 - Configuriamoci!"
+msgstr "[Esercitazione 0 - Configuriamoci!]{1}"
 
 #: docs/en/SUMMARY.md:2
 #, fuzzy
 msgid "[Tutorial 1 - Your first app]{1}"
-msgstr "Esercitazione 1 - La vostra prima applicazione"
+msgstr "[Esercitazione 1 - La vostra prima applicazione]{1}"
 
 #: docs/en/SUMMARY.md:3
 #, fuzzy
 msgid "[Tutorial 2 - Making it interesting]{1}"
-msgstr "Esercitazione 2 - Rendere interessante"
+msgstr "[Esercitazione 2 - Rendere interessante]{1}"
 
 #: docs/en/SUMMARY.md:4
 #, fuzzy
 msgid "[Tutorial 3 - Packaging for distribution]{1}"
-msgstr "Esercitazione 3 - Confezionamento per la distribuzione"
+msgstr "[Esercitazione 3 - Confezionamento per la distribuzione]{1}"
 
 #: docs/en/SUMMARY.md:5
 #, fuzzy
 msgid "[Tutorial 4 - Updating your application]{1}"
-msgstr "Esercitazione 4 - Aggiornamento dell'applicazione"
+msgstr "[Esercitazione 4 - Aggiornamento dell'applicazione]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
@@ -44,32 +44,32 @@ msgstr "Esercitazione 5 - Il mobile"
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile]{1}"
-msgstr "Esercitazione 5 - Il mobile"
+msgstr "[Esercitazione 5 - Il mobile]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: Android]{1}"
-msgstr "Esercitazione 5 - Il mobile: Android"
+msgstr "[Esercitazione 5 - Il mobile: Android]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: iOS]{1}"
-msgstr "Esercitazione 5 - Il mobile: iOS"
+msgstr "[Esercitazione 5 - Il mobile: iOS]{1}"
 
 #: docs/en/SUMMARY.md:10
 #, fuzzy
 msgid "[Tutorial 6 - Put it on the web!]{1}"
-msgstr "Tutorial 6 - Mettetelo sul web!"
+msgstr "[Tutorial 6 - Mettetelo sul web!]{1}"
 
 #: docs/en/SUMMARY.md:11
 #, fuzzy
 msgid "[Tutorial 7 - Get this (third-)party started]{1}"
-msgstr "Esercitazione 7 - Iniziare questa (terza-)festa"
+msgstr "[Esercitazione 7 - Iniziare questa (terza-)festa]{1}"
 
 #: docs/en/SUMMARY.md:12
 #, fuzzy
 msgid "[Tutorial 8 - Making it Smooooth]{1}"
-msgstr "Esercitazione 8 - Renderlo liscio"
+msgstr "[Esercitazione 8 - Renderlo liscio]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:1

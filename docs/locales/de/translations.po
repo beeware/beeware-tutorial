@@ -14,27 +14,27 @@ msgstr ""
 #: docs/en/SUMMARY.md:1
 #, fuzzy
 msgid "[Tutorial 0 - Let's get set up!]{1}"
-msgstr "Tutorial 0 - Erstinstallation"
+msgstr "[Tutorial 0 - Erstinstallation!]{1}"
 
 #: docs/en/SUMMARY.md:2
 #, fuzzy
 msgid "[Tutorial 1 - Your first app]{1}"
-msgstr "Tutorial 1 - Ihre erste App"
+msgstr "[Tutorial 1 - Ihre erste App]{1}"
 
 #: docs/en/SUMMARY.md:3
 #, fuzzy
 msgid "[Tutorial 2 - Making it interesting]{1}"
-msgstr "Tutorial 2 - Es wird interessant"
+msgstr "[Tutorial 2 - Es wird interessant]{1}"
 
 #: docs/en/SUMMARY.md:4
 #, fuzzy
 msgid "[Tutorial 3 - Packaging for distribution]{1}"
-msgstr "Tutorial 3 - Verpackung für den Vertrieb"
+msgstr "[Tutorial 3 - Verpackung für den Vertrieb]{1}"
 
 #: docs/en/SUMMARY.md:5
 #, fuzzy
 msgid "[Tutorial 4 - Updating your application]{1}"
-msgstr "Tutorial 4 - Aktualisieren Ihrer Anwendung"
+msgstr "[Tutorial 4 - Aktualisieren Ihrer Anwendung]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
@@ -44,32 +44,32 @@ msgstr "Tutorial 5 - Mobil nutzen"
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile]{1}"
-msgstr "Tutorial 5 - Mobil nutzen"
+msgstr "[Tutorial 5 - Mobil nutzen]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: Android]{1}"
-msgstr "Tutorial 5 - Mobiles Arbeiten: Android"
+msgstr "[Tutorial 5 - Mobiles Arbeiten: Android]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: iOS]{1}"
-msgstr "Tutorial 5 – Mobil nutzen: iOS"
+msgstr "[Tutorial 5 – Mobil nutzen: iOS]{1}"
 
 #: docs/en/SUMMARY.md:10
 #, fuzzy
 msgid "[Tutorial 6 - Put it on the web!]{1}"
-msgstr "Tutorial 6 - Ins Netz stellen!"
+msgstr "[Tutorial 6 - Ins Netz stellen!]{1}"
 
 #: docs/en/SUMMARY.md:11
 #, fuzzy
 msgid "[Tutorial 7 - Get this (third-)party started]{1}"
-msgstr "Tutorial 7 – Starten Sie diese (Dritt-)Anwendung"
+msgstr "[Tutorial 7 – Starten Sie diese (Dritt-)Anwendung]{1}"
 
 #: docs/en/SUMMARY.md:12
 #, fuzzy
 msgid "[Tutorial 8 - Making it Smooooth]{1}"
-msgstr "Tutorial 8 – Damit alles glatt läuft"
+msgstr "[Tutorial 8 – Damit alles glatt läuft]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:1
@@ -84,13 +84,13 @@ msgstr ""
 #: docs/en/tutorial/topics/index.md:8
 #, fuzzy
 msgid "[Customizing icons]{1}"
-msgstr "Symbole anpassen"
+msgstr "[Symbole anpassen]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:13
 #, fuzzy
 msgid "[Using the camera]{1}"
-msgstr "Kameranutzung"
+msgstr "[Kameranutzung]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:18

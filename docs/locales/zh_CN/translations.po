@@ -14,62 +14,62 @@ msgstr ""
 #: docs/en/SUMMARY.md:1
 #, fuzzy
 msgid "[Tutorial 0 - Let's get set up!]{1}"
-msgstr "教程 0 - 让我们开始吧！"
+msgstr "[教程 0 - 让我们开始吧！]{1}"
 
 #: docs/en/SUMMARY.md:2
 #, fuzzy
 msgid "[Tutorial 1 - Your first app]{1}"
-msgstr "教程 1 - 您的第一个应用程序"
+msgstr "[教程 1 - 您的第一个应用程序]{1}"
 
 #: docs/en/SUMMARY.md:3
 #, fuzzy
 msgid "[Tutorial 2 - Making it interesting]{1}"
-msgstr "教程 2 - 使之更有趣"
+msgstr "[教程 2 - 使之更有趣]{1}"
 
 #: docs/en/SUMMARY.md:4
 #, fuzzy
 msgid "[Tutorial 3 - Packaging for distribution]{1}"
-msgstr "教程 3 - 打包与分发"
+msgstr "[教程 3 - 打包与分发]{1}"
 
 #: docs/en/SUMMARY.md:5
 #, fuzzy
 msgid "[Tutorial 4 - Updating your application]{1}"
-msgstr "教程 4 - 更新应用程序"
+msgstr "[教程 4 - 更新应用程序]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "Tutorial 5 - Taking it mobile"
-msgstr "教程 5 - 在移动设备上"
+msgstr "[教程 5 - 在移动设备上]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile]{1}"
-msgstr "教程 5 - 在移动设备上"
+msgstr "[教程 5 - 在移动设备上]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: Android]{1}"
-msgstr "教程 5 - 在移动设备上：安卓"
+msgstr "[教程 5 - 在移动设备上：安卓]{1}"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: iOS]{1}"
-msgstr "教程 5 - 在移动设备上：iOS"
+msgstr "[教程 5 - 在移动设备上：iOS]{1}"
 
 #: docs/en/SUMMARY.md:10
 #, fuzzy
 msgid "[Tutorial 6 - Put it on the web!]{1}"
-msgstr "教程 6 - 把它放上网！"
+msgstr "[教程 6 - 把它放上网！]{1}"
 
 #: docs/en/SUMMARY.md:11
 #, fuzzy
 msgid "[Tutorial 7 - Get this (third-)party started]{1}"
-msgstr "教程 7 - 使用第三方库"
+msgstr "[教程 7 - 使用第三方库]{1}"
 
 #: docs/en/SUMMARY.md:12
 #, fuzzy
 msgid "[Tutorial 8 - Making it Smooooth]{1}"
-msgstr "教程 8 - 使其光滑"
+msgstr "[教程 8 - 使其光滑]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:1
@@ -84,13 +84,13 @@ msgstr ""
 #: docs/en/tutorial/topics/index.md:8
 #, fuzzy
 msgid "[Customizing icons]{1}"
-msgstr "自定义图标"
+msgstr "[自定义图标]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:13
 #, fuzzy
 msgid "[Using the camera]{1}"
-msgstr "使用相机"
+msgstr "[使用相机]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:18
