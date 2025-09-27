@@ -3,8 +3,8 @@
 - [Tutorial 2 - Making it interesting](tutorial/tutorial-2.md)
 - [Tutorial 3 - Packaging for distribution](tutorial/tutorial-3.md)
 - [Tutorial 4 - Updating your application](tutorial/tutorial-4.md)
-- Tutorial 5 - Taking it Mobile
-    - [Tutorial 5 - Taking it Mobile](tutorial/tutorial-5/index.md)
+- Tutorial 5 - Taking it mobile
+    - [Tutorial 5 - Taking it mobile](tutorial/tutorial-5/index.md)
     - [Tutorial 5 - Taking it mobile: Android](tutorial/tutorial-5/android.md)
     - [Tutorial 5 - Taking it mobile: iOS](tutorial/tutorial-5/iOS.md)
 - [Tutorial 6 - Put it on the web!](tutorial/tutorial-6.md)
@@ -15,4 +15,6 @@
     - [Customizing icons](tutorial/topics/custom-icons.md)
     - [Using the camera](tutorial/topics/camera-access.md)
     - [Testing times](tutorial/topics/testing.md)
-- [Contributing to this tutorial](how-to/index.md)
+- How-to guides
+    - [Contributing to this tutorial](how-to/contribute.md)
+    - [Style guide](how-to/style-guide.md)
