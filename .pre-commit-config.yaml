@@ -9,3 +9,8 @@ repos:
         # PO files may not have a trailing EOL, as they are tool generated
         exclude: "locales"
       - id: trailing-whitespace
+  - repo: https://github.com/rvben/rumdl-pre-commit
+    rev: v0.0.143
+    hooks:
+      - id: rumdl
+        args: [--force-exclude, --fix]

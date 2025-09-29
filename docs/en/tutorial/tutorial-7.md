@@ -1,27 +1,16 @@
 # Tutorial 7 - Get this (third-)party started
 
-So far, the app we've built has only used our own code, plus the code
-provided by BeeWare. However, in a real-world app, you'll likely want to
-use a third-party library, downloaded from the Python Package Index
-(PyPI).
+So far, the app we've built has only used our own code, plus the code provided by BeeWare. However, in a real-world app, you'll likely want to use a third-party library, downloaded from the Python Package Index (PyPI).
 
 Let's modify our app to include a third-party library.
 
 ## Adding a package
 
-Let's modify our application to say a little bit more than just "Hi,
-there!".
+Let's modify our application to say a little bit more than just "Hi, there!".
 
-To generate some more interesting text for the dialog, we're going to
-use a library called [Faker](https://faker.readthedocs.io/en/stable/).
-Faker is a Python package that generates fake content, including names
-and text blocks. The names and words in the text block are generated
-from an arbitrary list of words provided by Faker. We're going to use
-Faker to construct a fake message, as if someone is responding to the
-user.
+To generate some more interesting text for the dialog, we're going to use a library called [Faker](https://faker.readthedocs.io/en/stable/). Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user.
 
-We start by adding `faker` to our app. Add an import to the top of the
-`app.py` to import `faker`:
+We start by adding `faker` to our app. Add an import to the top of the `app.py` to import `faker`:
 
 ```python
 import faker
@@ -40,8 +29,7 @@ async def say_hello(self, widget):
     )
 ```
 
-Let's run our updated app in Briefcase developer mode to check that our
-change has worked.
+Let's run our updated app in Briefcase developer mode to check that our change has worked.
 
 /// tab | macOS
 
@@ -111,21 +99,17 @@ ModuleNotFoundError: No module named 'faker'
 
 /// tab | Android
 
-You can't run an Android app in developer mode - use the instructions
-for your chosen desktop platform.
+You can't run an Android app in developer mode - use the instructions for your chosen desktop platform.
 
 ///
 
 /// tab | iOS
 
-You can't run an iOS app in developer mode - use the instructions for
-your chosen desktop platform.
+You can't run an iOS app in developer mode - use the instructions for your chosen desktop platform.
 
 ///
 
-What happened? We've added `faker` to our *code*, but we haven't added
-it to our development virtual environment. We can fix this by installing
-`faker` with `pip`, and then re-running `briefcase dev`:
+What happened? We've added `faker` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing `faker` with `pip`, and then re-running `briefcase dev`:
 
 /// tab | macOS
 
@@ -134,8 +118,7 @@ it to our development virtual environment. We can fix this by installing
 (beeware-venv) $ briefcase dev
 ```
 
-When you enter a name and press the button, you should see a dialog that
-looks something like:
+When you enter a name and press the button, you should see a dialog that looks something like:
 
 ![Hello World Tutorial 7 dialog, on macOS](../images/macOS/tutorial-7.png)
 
@@ -152,8 +135,7 @@ looks something like:
 (beeware-venv) $ briefcase dev
 ```
 
-When you enter a name and press the button, you should see a dialog that
-looks something like:
+When you enter a name and press the button, you should see a dialog that looks something like:
 
 ![Hello World Tutorial 7 dialog, on Linux](../images/linux/tutorial-7.png)
 
@@ -170,8 +152,7 @@ looks something like:
 (beeware-venv) C:\...>briefcase dev
 ```
 
-When you enter a name and press the button, you should see a dialog that
-looks something like:
+When you enter a name and press the button, you should see a dialog that looks something like:
 
 ![Hello World Tutorial 7 dialog, on Windows](../images/windows/tutorial-7.png)
 
@@ -183,26 +164,21 @@ looks something like:
 
 /// tab | Android
 
-You can't run an Android app in developer mode - use the instructions
-for your chosen desktop platform.
+You can't run an Android app in developer mode - use the instructions for your chosen desktop platform.
 
 ///
 
 /// tab | iOS
 
-You can't run an iOS app in developer mode - use the instructions for
-your chosen desktop platform.
+You can't run an iOS app in developer mode - use the instructions for your chosen desktop platform.
 
 ///
 
-We've now got a working app, using a third party library, running in
-development mode!
+We've now got a working app, using a third party library, running in development mode!
 
 ## Running the updated app
 
-Let's get this updated application code packaged as a standalone app.
-Since we've made code changes, we need to follow the same steps as in
-[Tutorial 4](tutorial-4.md):
+Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in [Tutorial 4](tutorial-4.md):
 
 /// tab | macOS
 
@@ -235,8 +211,7 @@ And finally, run the app:
 ===========================================================================
 ```
 
-However, when the app runs, you'll see an error in the console, plus a
-crash dialog:
+However, when the app runs, you'll see an error in the console, plus a crash dialog:
 
 ![Hello World Tutorial 7 app crash, on macOS](../images/macOS/tutorial-7-crash.png)
 
@@ -332,8 +307,7 @@ And finally, run the app:
 ===========================================================================
 ```
 
-However, when the app runs, you'll see an error in the console, plus a
-crash dialog:
+However, when the app runs, you'll see an error in the console, plus a crash dialog:
 
 ![Hello World Tutorial 7 app crash, on Windows](../images/windows/tutorial-7-crash.png)
 
@@ -466,34 +440,19 @@ ModuleNotFoundError: No module named 'faker'
 
 ///
 
-Once again, the app has failed to start because `faker` has not been
-installed - but why? Haven't we already installed `faker`?
+Once again, the app has failed to start because `faker` has not been installed - but why? Haven't we already installed `faker`?
 
-We have - but only in the development environment. Your development
-environment is entirely local to your machine - and is only enabled when
-you explicitly activate it. Although Briefcase has a development mode,
-the main reason you'd use Briefcase is to package up your code so you
-can give it to someone else.
+We have - but only in the development environment. Your development environment is entirely local to your machine - and is only enabled when you explicitly activate it. Although Briefcase has a development mode, the main reason you'd use Briefcase is to package up your code so you can give it to someone else.
 
-The only way to guarantee that someone else will have a Python
-environment that contains everything it needs is to build a completely
-isolated Python environment. This means there's a completely isolated
-Python install, and a completely isolated set of dependencies. This is
-what Briefcase is building when you run `briefcase build` - an isolated
-Python environment. This also explains why `faker` isn't installed - it
-has been installed in your *development* environment, but not in the
-packaged app.
+The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run `briefcase build` - an isolated Python environment. This also explains why `faker` isn't installed - it has been installed in your *development* environment, but not in the packaged app.
 
 So - we need to tell Briefcase that our app has an external dependency.
 
 ## Updating dependencies
 
-In the root directory of your app, there is a file named
-`pyproject.toml`. This file contains all the app configuration details
-that you provided when you originally ran `briefcase new`.
+In the root directory of your app, there is a file named `pyproject.toml`. This file contains all the app configuration details that you provided when you originally ran `briefcase new`.
 
-`pyproject.toml` is broken up into sections; one of the sections
-describes the settings for your app:
+`pyproject.toml` is broken up into sections; one of the sections describes the settings for your app:
 
 ```toml
 [tool.briefcase.app.helloworld]
@@ -505,9 +464,7 @@ sources = ["src/helloworld"]
 requires = []
 ```
 
-The `requires` option describes the dependencies of our application. It
-is a list of strings, specifying libraries (and, optionally, versions)
-of libraries that you want to be included with your app.
+The `requires` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app.
 
 Modify the `requires` setting so that it reads:
 
@@ -517,40 +474,18 @@ requires = [
 ]
 ```
 
-By adding this setting, we're telling Briefcase "when you build my app,
-run `pip install faker` into the application bundle". Anything that
-would be legal input to `pip install` can be used here - so, you could
-specify:
+By adding this setting, we're telling Briefcase "when you build my app, run `pip install faker` into the application bundle". Anything that would be legal input to `pip install` can be used here - so, you could specify:
 
 - A specific library version (e.g., `"faker==37.3.0"`);
 - A range of library versions (e.g., `"faker>=37"`);
-- A path to a git repository (e.g.,
-  `"git+https://github.com/joke2k/faker/"`); or
-- A local file path (However - be warned: if you give your code to
-  someone else, this path probably won't exist on their machine!)
+- A path to a git repository (e.g., `"git+https://github.com/joke2k/faker/"`); or
+- A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)
 
-Further down in `pyproject.toml`, you'll notice other sections that are
-operating system dependent, like `[tool.briefcase.app.helloworld.macOS]`
-and `[tool.briefcase.app.helloworld.windows]`. These sections *also*
-have a `requires` setting. These settings allow you to define additional
-platform-specific dependencies - so, for example, if you need a
-platform-specific library to handle some aspect of your app, you can
-specify that library in the platform-specific `requires` section, and
-that setting will only be used for that platform. You will notice that
-the `toga` libraries are all specified in the platform-specific
-`requires` section - this is because the libraries needed to display a
-user interface are platform specific.
+Further down in `pyproject.toml`, you'll notice other sections that are operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and `[tool.briefcase.app.helloworld.windows]`. These sections *also* have a `requires` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific `requires` section, and that setting will only be used for that platform. You will notice that the `toga` libraries are all specified in the platform-specific `requires` section - this is because the libraries needed to display a user interface are platform specific.
 
-In our case, we want `faker` to be installed on all platforms, so we use
-the app-level `requires` setting. The app-level dependencies will always
-be installed; the platform-specific dependencies are installed *in
-addition* to the app-level ones.
+In our case, we want `faker` to be installed on all platforms, so we use the app-level `requires` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones.
 
-Now that we've told Briefcase about our additional requirements, we can
-try packaging our app again. Ensure that you've saved your changes to
-`pyproject.toml`, and then update your app again - this time, passing in
-the `-r` flag. This tells Briefcase to update requirements in the
-packaged app:
+Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to `pyproject.toml`, and then update your app again - this time, passing in the `-r` flag. This tells Briefcase to update requirements in the packaged app:
 
 /// tab | macOS
 
@@ -670,68 +605,28 @@ Removing unneeded app bundle content... done
 
 ///
 
-Once you've updated, you can run `briefcase build` and `briefcase run` -
-and you should see your packaged app, with the new dialog behavior.
+Once you've updated, you can run `briefcase build` and `briefcase run` - and you should see your packaged app, with the new dialog behavior.
 
 /// note | Note
 
-The `-r` option for updating requirements is also honored by the `build`
-and `run` command, so if you want to update, build, and run in one step,
-you could use `briefcase run -u -r`.
+The `-r` option for updating requirements is also honored by the `build` and `run` command, so if you want to update, build, and run in one step, you could use `briefcase run -u -r`.
 
 ///
 
 ## Third-Party Python Packages for Mobile and Web
 
-Faker is just one example of a third-party Python package - a collection
-of code that isn't part what Python provides out of the box. These
-third-party packages are most commonly distributed using the [Python
-Package Index (PyPI)](https://pypi.org), and installed into your local
-virtual environment. We've been using `pip` in this tutorial, but there
-are other options.
+Faker is just one example of a third-party Python package - a collection of code that isn't part what Python provides out of the box. These third-party packages are most commonly distributed using the [Python Package Index (PyPI)](https://pypi.org), and installed into your local virtual environment. We've been using `pip` in this tutorial, but there are other options.
 
-On desktop platforms (macOS, Windows, Linux), essentially any package on
-PyPI package can be installed into your virtual environment, or added to
-your app's requirements. However, when building an app for mobile or web
-platforms, [your options are slightly
-limited](https://briefcase.beeware.org/en/latest/about/faq.html#can-i-use-third-party-python-packages-in-my-app).
+On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI package can be installed into your virtual environment, or added to your app's requirements. However, when building an app for mobile or web platforms, [your options are slightly limited](https://briefcase.beeware.org/en/latest/about/faq.html#can-i-use-third-party-python-packages-in-my-app).
 
-In short; any *pure Python* package (i.e. any package created from a
-project written *only* in Python) can be used without difficulty. Some
-packages, though, are created from projects that contain both Python and
-other languages (e.g. C, C++, Rust, etc). Code written in those
-languages needs to be compiled to platform-specific binary modules
-before it can be used, and those pre-compiled binary modules are only
-available on specific platforms. Mobile and web platforms have very
-different requirements than "standard" desktop platforms. At this time,
-most Python packages don't provide pre-compiled binaries for mobile and
-web platforms.
+In short; any *pure Python* package (i.e. any package created from a project written *only* in Python) can be used without difficulty. Some packages, though, are created from projects that contain both Python and other languages (e.g. C, C++, Rust, etc). Code written in those languages needs to be compiled to platform-specific binary modules before it can be used, and those pre-compiled binary modules are only available on specific platforms. Mobile and web platforms have very different requirements than "standard" desktop platforms. At this time, most Python packages don't provide pre-compiled binaries for mobile and web platforms.
 
-On PyPI, packages are often provided in a pre-built distribution format
-called *wheels*. To check whether a package is pure Python, look at the
-PyPI downloads page for the project. If the wheels provided have a
-`-py3-none-any.whl` suffix (e.g.,
-[Faker](https://pypi.org/project/Faker/37.3.0/#files)), then they are
-pure Python wheels. However, if the wheels have version and
-platform-specific extensions (e.g.,
-[Pillow](https://pypi.org/project/pillow/11.2.1/#files), which has
-wheels with suffixes like `-cp313-cp313-macosx_11_0_arm64.whl` and
-`-cp39-cp39-win_amd64.whl`), then the wheel *contains a binary
-component*. That package cannot be installed on mobile or web platforms
-unless a wheel compatible with those platforms has been provided.
+On PyPI, packages are often provided in a pre-built distribution format called *wheels*. To check whether a package is pure Python, look at the PyPI downloads page for the project. If the wheels provided have a `-py3-none-any.whl` suffix (e.g., [Faker](https://pypi.org/project/Faker/37.3.0/#files)), then they are pure Python wheels. However, if the wheels have version and platform-specific extensions (e.g., [Pillow](https://pypi.org/project/pillow/11.2.1/#files), which has wheels with suffixes like `-cp313-cp313-macosx_11_0_arm64.whl` and `-cp39-cp39-win_amd64.whl`), then the wheel *contains a binary component*. That package cannot be installed on mobile or web platforms unless a wheel compatible with those platforms has been provided.
 
-At this time, *most* binary packages on PyPI don't provide mobile- or
-web-compatible wheels. To fill this gap, BeeWare provides binaries for
-some popular binary modules (including `numpy`, `pandas`, and
-`cryptography`). These wheels are *not* distributed on PyPI, but
-Briefcase will install those wheels if they're available.
+At this time, *most* binary packages on PyPI don't provide mobile- or web-compatible wheels. To fill this gap, BeeWare provides binaries for some popular binary modules (including `numpy`, `pandas`, and `cryptography`). These wheels are *not* distributed on PyPI, but Briefcase will install those wheels if they're available.
 
-It's *usually* possible to compile binary packages for mobile platforms,
-but it's not easy to set up -- well outside the scope of an introductory
-tutorial like this one.
+It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one.
 
 ## Next steps
 
-We've now got an app that uses a third-party library! In
-[Tutorial 8](tutorial-8.md) we'll learn how to ensure
-our app remains responsive as we add more complex application logic.
+We've now got an app that uses a third-party library! In [Tutorial 8](tutorial-8.md) we'll learn how to ensure our app remains responsive as we add more complex application logic.

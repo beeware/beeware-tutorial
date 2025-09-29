@@ -1,19 +1,12 @@
 # Contributing to this tutorial
 
-This tutorial is written using [MkDocs and Markdown](https://www.mkdocs.org/).
-This guide will help you contribute fixes or new content to this
-tutorial.
+This tutorial is written using [MkDocs and Markdown](https://www.mkdocs.org/). This guide will help you contribute fixes or new content to this tutorial.
 
-Translations of this tutorial are managed using
-[Weblate](https://hosted.weblate.org/engage/beeware/). If you'd like to
-contribute to the translation effort, join the `#translations` channel
-on [Discord](https://beeware.org/bee/chat/) and introduce yourself!
+Translations of this tutorial are managed using [Weblate](https://hosted.weblate.org/engage/beeware/). If you'd like to contribute to the translation effort, join the `#translations` channel on [Discord](https://beeware.org/bee/chat/) and introduce yourself!
 
 ## Set up your development environment
 
-To build the BeeWare tutorial you **must** have a Python 3.12
-interpreter installed and available on your path (i.e., `python3` must
-start a Python 3.12 interpreter).
+To build the BeeWare tutorial you **must** have a Python 3.12 interpreter installed and available on your path (i.e., `python3` must start a Python 3.12 interpreter).
 
 /// tab | macOS
 
@@ -44,9 +37,7 @@ C:\...>pip3 --version
 
 ### Create a virtual environment
 
-The recommended way of setting up your development environment for
-BeeWare is to install a virtual environment, install the required
-dependencies and start coding. To set up a virtual environment, run:
+The recommended way of setting up your development environment for BeeWare is to install a virtual environment, install the required dependencies and start coding. To set up a virtual environment, run:
 
 /// tab | macOS
 
@@ -81,13 +72,7 @@ Your prompt should now have a `(.venv)` prefix in front of it.
 
 For updates to BeeWare documentation:
 
-Next, go to [the BeeWare Tutorial page on
-GitHub](https://github.com/beeware/beeware-tutorial), fork the repository into
-your own account, and then clone a copy of that repository onto your
-computer by clicking on "Clone or Download". If you have the GitHub
-desktop application installed on your computer, you can select "Open in
-Desktop"; otherwise, copy the URL provided, and use it to clone using
-the command line:
+Next, go to [the BeeWare Tutorial page on GitHub](https://github.com/beeware/beeware-tutorial), fork the repository into your own account, and then clone a copy of that repository onto your computer by clicking on "Clone or Download". If you have the GitHub desktop application installed on your computer, you can select "Open in Desktop"; otherwise, copy the URL provided, and use it to clone using the command line:
 
 /// tab | macOS
 
@@ -127,10 +112,7 @@ Fork the BeeWare Tutorial repository, and then:
 
 ### Install BeeWare tutorial docs dependencies
 
-Now that you have the source code, you can install BeeWare docs
-requirements into your development environment. Since we're installing
-from source, we can't rely on pip to resolve the dependencies to source
-packages, so we have to manually install each package:
+Now that you have the source code, you can install BeeWare docs requirements into your development environment. Since we're installing from source, we can't rely on pip to resolve the dependencies to source packages, so we have to manually install each package:
 
 /// tab | macOS
 
@@ -161,10 +143,7 @@ packages, so we have to manually install each package:
 
 ### Install pre-commit
 
-BeeWare uses a tool called [Pre-Commit](https://pre-commit.com) to
-identify simple issues and standardize code formatting. It does this by
-installing a git hook that automatically runs a series of code linters
-prior to finalizing any git commit. To enable pre-commit, run:
+BeeWare uses a tool called [Pre-Commit](https://pre-commit.com) to identify simple issues and standardize code formatting. It does this by installing a git hook that automatically runs a series of code linters prior to finalizing any git commit. To enable pre-commit, run:
 
 /// tab | macOS
 
@@ -193,10 +172,7 @@ pre-commit installed at .git/hooks/pre-commit
 
 ///
 
-When you commit any change, pre-commit will run automatically. If there
-are any issues found with the commit, this will cause your commit to
-fail. Where possible, pre-commit will make the changes needed to correct
-the problems it has found:
+When you commit any change, pre-commit will run automatically. If there are any issues found with the commit, this will cause your commit to fail. Where possible, pre-commit will make the changes needed to correct the problems it has found:
 
 /// tab | macOS
 
@@ -258,8 +234,7 @@ trim trailing whitespace.................................................Passed
 
 ///
 
-You can then re-add any files that were modified as a result of the
-pre-commit checks, and re-commit the change.
+You can then re-add any files that were modified as a result of the pre-commit checks, and re-commit the change.
 
 /// tab | macOS
 
@@ -339,13 +314,11 @@ Once your development environment is set up, run:
 
 ///
 
-The output of the file should be in the `_build/html` folder. If
-there are any markup problems, they'll raise an error.
+The output of the file should be in the `_build/html` folder. If there are any markup problems, they'll raise an error.
 
 ### Live Tutorial preview
 
-To support rapid editing of documentation, BeeWare also has a "live
-preview" mode:
+To support rapid editing of documentation, BeeWare also has a "live preview" mode:
 
 /// tab | macOS
 
@@ -371,16 +344,11 @@ preview" mode:
 
 ///
 
-This will build the documentation, start a web server to serve the build
-documentation, and watch the file system for any changes to the
-documentation source. If a change is detected, the documentation will be
-rebuilt, and any browser viewing the modified page will be automatically
-refreshed.
+This will build the documentation, start a web server to serve the build documentation, and watch the file system for any changes to the documentation source. If a change is detected, the documentation will be rebuilt, and any browser viewing the modified page will be automatically refreshed.
 
 ### Tutorial linting
 
-The build process will identify most Markdown problems, but BeeWare
-performs some additional "lint" checks. To run the lint checks:
+The build process will identify most Markdown problems, but BeeWare performs some additional "lint" checks. To run the lint checks:
 
 /// tab | macOS
 
@@ -411,28 +379,19 @@ This will validate the documentation does not contain:
 - dead hyperlinks
 - misspelled words
 
-If a valid spelling of a word is identified as misspelled, then add the
-word to the list in `docs/spelling_wordlist`. This will add the word to
-the spellchecker's dictionary. When adding to this list, remember:
+If a valid spelling of a word is identified as misspelled, then add the word to the list in `docs/spelling_wordlist`. This will add the word to the spellchecker's dictionary. When adding to this list, remember:
 
-- We prefer US spelling, with some liberties for programming-specific
-  colloquialisms (e.g., "apps") and verbing of nouns (e.g., "scrollable")
-- Any reference to a product name should use the product's preferred
-  capitalization. (e.g., "macOS", "GTK", "pytest", "Pygame",
-  "PyScript").
-- If a term is being used "as code", then it should be quoted as inline
-  code rather than being added to the dictionary.
+- We prefer US spelling, with some liberties for programming-specific colloquialisms (e.g., "apps") and verbing of nouns (e.g., "scrollable")
+- Any reference to a product name should use the product's preferred capitalization. (e.g., "macOS", "GTK", "pytest", "Pygame", "PyScript").
+- If a term is being used "as code", then it should be quoted as inline code rather than being added to the dictionary.
 
 ### Translations
 
-The BeeWare tutorial is available in multiple languages, which you can
-build individually or all at the same time.
+The BeeWare tutorial is available in multiple languages, which you can build individually or all at the same time.
 
 #### Updating translations
 
-If you have made changes to the English content, the first step to
-building the translations is to update the translation files. To
-update the translations:
+If you have made changes to the English content, the first step to building the translations is to update the translation files. To update the translations:
 
 /// tab | macOS
 
@@ -462,9 +421,7 @@ This will update the
 
 #### Building translations
 
-To build a single translation, you run the `docs` command with the
-language code for the translation you wish to build. For example,
-to build French:
+To build a single translation, you run the `docs` command with the language code for the translation you wish to build. For example, to build French:
 
 /// tab | macOS
 
@@ -490,12 +447,9 @@ to build French:
 
 ///
 
-The French translation should be built in the `_build/html`
-folder. If there are any markup problems, they'll raise an error.
+The French translation should be built in the `_build/html` folder. If there are any markup problems, they'll raise an error.
 
-An error is also raised if you enter a language code for an
-unavailable language. If this happens, verify that you are using
-the proper language code.
+An error is also raised if you enter a language code for an unavailable language. If this happens, verify that you are using the proper language code.
 
 To build all the translations at the same time:
 
@@ -523,43 +477,25 @@ To build all the translations at the same time:
 
 ///
 
-This will build all available translations in the `_build/html`
-directory, inside a language-specific subdirectory. For example, the
-French translation would be available in `_build/html/fr`.
+This will build all available translations in the `_build/html` directory, inside a language-specific subdirectory. For example, the French translation would be available in `_build/html/fr`.
 
 ## What to work on?
 
-If you're looking for specific areas to improve, there are [tickets tagged
-"documentation"](https://github.com/beeware/BeeWare/issues?q=is%3Aopen+is%3Aissue+label%3Adocumentation)
-in BeeWare's issue tracker.
+If you're looking for specific areas to improve, there are [tickets tagged "documentation"](https://github.com/beeware/BeeWare/issues?q=is%3Aopen+is%3Aissue+label%3Adocumentation) in BeeWare's issue tracker.
 
-However, you don't need to be constrained by these tickets. If you can
-identify an error in the tutorial, or an improvement that can be made,
-start writing! Anything that improves the experience of the end user is
-a welcome change.
+However, you don't need to be constrained by these tickets. If you can identify an error in the tutorial, or an improvement that can be made, start writing! Anything that improves the experience of the end user is a welcome change.
 
 ## Submitting a pull request
 
-Before you submit a pull request, there's a few bits of housekeeping to
-do.
+Before you submit a pull request, there's a few bits of housekeeping to do.
 
 ### Submit from a feature branch, not your `main` branch
 
-Before you start working on your change, make sure you've created a
-branch. By default, when you clone your repository fork, you'll be
-checked out on your `main` branch. This is a direct copy of BeeWare's
-`main` branch. To contribute to BeeWare itself, not the docs, please
-review the repo README.
+Before you start working on your change, make sure you've created a branch. By default, when you clone your repository fork, you'll be checked out on your `main` branch. This is a direct copy of BeeWare's `main` branch. To contribute to BeeWare itself, not the docs, please review the repo README.
 
-While you *can* submit a pull request from your `main` branch, it's
-preferable if you *don't* do this. If you submit a pull request that is
-*almost* right, the core team member who reviews your pull request may
-be able to make the necessary changes, rather than giving feedback
-asking for a minor change. However, if you submit your pull request from
-your `main` branch, reviewers are prevented from making modifications.
+While you *can* submit a pull request from your `main` branch, it's preferable if you *don't* do this. If you submit a pull request that is *almost* right, the core team member who reviews your pull request may be able to make the necessary changes, rather than giving feedback asking for a minor change. However, if you submit your pull request from your `main` branch, reviewers are prevented from making modifications.
 
-Instead, you should make your changes on a *feature branch*. A feature
-branch has a simple name to identify the change that you've made.
+Instead, you should make your changes on a *feature branch*. A feature branch has a simple name to identify the change that you've made.
 
 To create a feature branch, run:
 
@@ -587,5 +523,4 @@ To create a feature branch, run:
 
 ///
 
-Commit your changes to this branch, then push to GitHub and create a
-pull request.
+Commit your changes to this branch, then push to GitHub and create a pull request.
