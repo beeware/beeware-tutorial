@@ -1,18 +1,10 @@
 # Testing times
 
-Most software development doesn't involve writing new code - it's
-modifying existing code. Ensuring that existing code continues to work
-in the way we expect is a key part of the software development process.
-One way to do ensure the behavior of our app is with a *test suite*.
+Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*.
 
 ## Running the test suite
 
-It turns out the project from the core tutorial already has a test
-suite! When we originally generated our project, two top-level
-directories were generated: `src` and `tests`. The `src` folder contains
-the code for our app; the `tests` folder contains our test suite. Inside
-the `tests` folder is a file named `test_app.py` with the following
-content:
+It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: `src` and `tests`. The `src` folder contains the code for our app; the `tests` folder contains our test suite. Inside the `tests` folder is a file named `test_app.py` with the following content:
 
 ```python
 def test_first():
@@ -20,14 +12,9 @@ def test_first():
     assert 1 + 1 == 2
 ```
 
-This is a [Pytest](https://pytest.org) *test case* - a block of code
-that can be executed to verify some behavior of your app. In this case,
-the test is a placeholder, and doesn't test anything about our app - but
-it is a test that we can perform.
+This is a [Pytest](https://pytest.org) *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform.
 
-We can run this test suite using the `--test` option to `briefcase dev`.
-As this is the first time we are running tests, we also need to pass in
-the `-r` option to ensure that the test requirements are also installed:
+We can run this test suite using the `--test` option to `briefcase dev`. As this is the first time we are running tests, we also need to pass in the `-r` option to ensure that the test requirements are also installed:
 
 /// tab | macOS
 
@@ -110,13 +97,9 @@ tests/test_app.py::test_first PASSED                                     [100%]
 
 ///
 
+Success! We've just executed a single test that verifies Python math works in the way we'd expect (What a relief!).
 
-Success! We've just executed a single test that verifies Python math
-works in the way we'd expect (What a relief!).
-
-Let's replace this placeholder test with a test to verify that our
-`greeting()` method behaves the way we'd expect. Replace the contents of
-`test_app.py` with the following:
+Let's replace this placeholder test with a test to verify that our `greeting()` method behaves the way we'd expect. Replace the contents of `test_app.py` with the following:
 
 ```python
 from helloworld.app import greeting
@@ -134,13 +117,9 @@ def test_empty():
     assert greeting("") == "Hello, stranger"
 ```
 
-This defines two new tests, verifying the two behaviors we expect to
-see: the output when a name is provided, and the output when the name is
-empty.
+This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty.
 
-We can now re-run the test suite. This time, we don't need to provided
-the `-r` option, as the test requirements have already been installed;
-we only need to use the `--test` option:
+We can now re-run the test suite. This time, we don't need to provided the `-r` option, as the test requirements have already been installed; we only need to use the `--test` option:
 
 /// tab | macOS
 
@@ -203,10 +182,7 @@ Excellent! Our `greeting()` utility method is working as expected.
 
 ## Test driven development
 
-Now that we have a test suite, we can use it to drive the development of
-new features. Let's modify our app to have a special greeting for one
-particular user. We can start by adding a test case for the new behavior
-that we'd like to see to the bottom of `test_app.py`:
+Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of `test_app.py`:
 
 ```python
 def test_brutus():
@@ -321,11 +297,7 @@ FAILED tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...
 
 ///
 
-This time, we see a test failure - and the output explains the source of
-the failure: the test is expecting the output "BeeWare the IDEs of
-Python!", but our implementation of `greeting()` is returning "Hello,
-Brutus". Let's modify the implementation of `greeting()` in
-`src/helloworld/app.py` to have the new behavior:
+This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output "BeeWare the IDEs of Python!", but our implementation of `greeting()` is returning "Hello, Brutus". Let's modify the implementation of `greeting()` in `src/helloworld/app.py` to have the new behavior:
 
 ```python
 def greeting(name):
@@ -402,16 +374,9 @@ tests/test_app.py::test_brutus PASSED                                    [100%]
 
 ## Runtime tests
 
-So far, we've been running the tests in development mode. This is
-especially useful when you're developing new features, as you can
-rapidly iterate on adding tests, and adding code to make those tests
-pass. However, at some point, you'll want to verify that your code also
-runs correctly when inside the bundle app environment.
+So far, we've been running the tests in development mode. This is especially useful when you're developing new features, as you can rapidly iterate on adding tests, and adding code to make those tests pass. However, at some point, you'll want to verify that your code also runs correctly when inside the bundle app environment.
 
-The `--test` and `-r` options can also be passed to the `run` command.
-If you use `briefcase run --test -r`, the same test suite will run, but
-it will run inside the packaged application bundle rather than your
-development environment:
+The `--test` and `-r` options can also be passed to the `run` command. If you use `briefcase run --test -r`, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:
 
 /// tab | macOS
 
@@ -530,11 +495,6 @@ tests/test_app.py::test_brutus PASSED [100%]
 
 ///
 
+As with `briefcase dev --test`, the `-r` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option.
 
-As with `briefcase dev --test`, the `-r` option is only needed the first
-time you run the test suite to ensure that the test dependencies are
-present. On subsequent runs, you can omit this option.
-
-You can also use the `--test` option on mobile backends: - so
-`briefcase run iOS --test` and `briefcase run android --test` will both
-work, running the test suite on the mobile device you select.
+You can also use the `--test` option on mobile backends: - so `briefcase run iOS --test` and `briefcase run android --test` will both work, running the test suite on the mobile device you select.

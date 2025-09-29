@@ -1,35 +1,20 @@
 # Customizing icons
 
-The app we developed in the main tutorial uses a default "gray bee" icon
-when it is packaged. Let's personalize this application by configuring
-it to use our own icon.
+The app we developed in the main tutorial uses a default "gray bee" icon when it is packaged. Let's personalize this application by configuring it to use our own icon.
 
 ## Adding an icon
 
-Every platform uses a different format for application icons - and some
-platforms need *multiple* icons in different sizes and shapes. To
-account for this, Briefcase provides a shorthand way to configure an
-icon once, and then have that definition expand in to all the different
-icons needed for each individual platform.
+Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform.
 
-Edit your `pyproject.toml`, adding a new `icon` configuration item in
-the `[tool.briefcase.app.helloworld]` configuration section, just above
-the `sources` definition:
+Edit your `pyproject.toml`, adding a new `icon` configuration item in the `[tool.briefcase.app.helloworld]` configuration section, just above the `sources` definition:
 
 ```toml
 icon = "icons/helloworld"
 ```
 
-This icon definition doesn't specify any file extension. The value will
-be used as a prefix; each platform will add additional items to this
-prefix to build the files needed for each platform. Some platforms
-require *multiple* icon files; this prefix will be combined with file
-size and variant modifiers to generate the list of icon files that are
-used.
+This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used.
 
-We can now run `briefcase update` again - but this time, we pass in the
-`--update-resources` flag, telling Briefcase that we want to install new
-application resources (i.e., the icons):
+We can now run `briefcase update` again - but this time, we pass in the `--update-resources` flag, telling Briefcase that we want to install new application resources (i.e., the icons):
 
 /// tab | macOS
 
@@ -165,14 +150,9 @@ Removing unneeded app bundle content... done
 
 ///
 
-This reports the specific icon file (or files) that Briefcase is
-expecting. However, as we haven't provided the actual icon files, the
-install fails, and Briefcase falls back to a default value (the same
-"gray bee" icon).
+This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and Briefcase falls back to a default value (the same "gray bee" icon).
 
-Let's provide some actual icons. Download [this icons.zip bundle](../../resources/icons.zip), and unzip
-it into the root of your project directory. After unzipping, your
-project directory should look something like:
+Let's provide some actual icons. Download [this icons.zip bundle](../../resources/icons.zip), and unzip it into the root of your project directory. After unzipping, your project directory should look something like:
 
 ```text
 beeware-tutorial/
@@ -191,8 +171,7 @@ beeware-tutorial/
     └── pyproject.toml
 ```
 
-There's a *lot* of icons in this folder, but most of them should look
-the same: a green snake on a light blue background:
+There's a *lot* of icons in this folder, but most of them should look the same: a green snake on a light blue background:
 
 ![Icon of green snake with a light blue background](../../images/icon.png)
 
@@ -200,17 +179,9 @@ the same: a green snake on a light blue background:
 
 ///
 
-The only exception will be the icons with `-adaptive-` in their name;
-these will have a transparent background. This represents all the
-different icon sizes and shapes you need to support an app on every
-platform that Briefcase supports.
+The only exception will be the icons with `-adaptive-` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports.
 
-Now that we have icons, we can update the application again. However,
-`briefcase update` will only copy the updated resources into the build
-directory; we also want to rebuild the app to make sure the new icon is
-included, then start the app. We can shortcut this process by passing
-`--update-resources` to our call to `run` - this will update the app,
-update the app's resources, and then start the app:
+Now that we have icons, we can update the application again. However, `briefcase update` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the new icon is included, then start the app. We can shortcut this process by passing `--update-resources` to our call to `run` - this will update the app, update the app's resources, and then start the app:
 
 /// tab | macOS
 
@@ -337,9 +308,7 @@ Removing unneeded app bundle content... done
 
 /// note | Note
 
-If you're using a recent version of Android, you may notice that the app
-icon has been changed to a green snake, but the background of the icon
-is *white*, rather than light blue. We'll fix this in the next step.
+If you're using a recent version of Android, you may notice that the app icon has been changed to a green snake, but the background of the icon is *white*, rather than light blue. We'll fix this in the next step.
 
 ///
 
@@ -383,31 +352,17 @@ Removing unneeded app bundle content... done
 
 /// note | Note
 
-If you get a stack trace referencing `faker` or `httpx` when you run the
-app, it's possible you missed running your app during step 7 or 8 of the
-tutorial. Re-run the app, adding the `-r` argument to update the app
-requirements.
+If you get a stack trace referencing `faker` or `httpx` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements.
 
 ///
 
-When you run the app on iOS or Android, in addition to the icon change,
-you should also notice that the splash screen incorporates the new icon.
-However, the light blue background of the icon looks a little out of
-place against the white background of the splash screen. We can fix this
-by customizing the background color of the splash screen. Add the
-following definition to your `pyproject.toml`, just after the `icon`
-definition:
+When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your `pyproject.toml`, just after the `icon` definition:
 
 ```toml
 splash_background_color = "#D3E6F5"
 ```
 
-Unfortunately, Briefcase isn't able to apply this change to an already
-generated project, as it requires making modifications to one of the
-files that was generated during the original call to `briefcase create`.
-To apply this change, we have to re-create the app by re-running
-`briefcase create`. When we do this, we'll be prompted to confirm that
-we want to overwrite the existing project:
+Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to `briefcase create`. To apply this change, we have to re-create the app by re-running `briefcase create`. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:
 
 /// tab | macOS
 
@@ -492,18 +447,6 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 
 ///
 
+You can then re-build and re-run the app using `briefcase run`. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background.
 
-You can then re-build and re-run the app using `briefcase run`. You
-won't notice any changes to the desktop app; but the Android or iOS apps
-should now have a light blue splash screen background.
-
-You'll need to re-create the app like this whenever you make a change to
-your `pyproject.toml` that doesn't relate to source code or
-dependencies. Any change to descriptions, version numbers, colors, or
-permissions will require a re-create step. Because of this, while you
-are developing your project, you shouldn't make any manual changes to
-the contents of the `build` folder, and you shouldn't add the `build`
-folder to your version control system. The `build` folder should be
-considered entirely ephemeral - an output of the build system that can
-be recreated as needed to reflect the current configuration of your
-project.
+You'll need to re-create the app like this whenever you make a change to your `pyproject.toml` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the `build` folder, and you shouldn't add the `build` folder to your version control system. The `build` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project.

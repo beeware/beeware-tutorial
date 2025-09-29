@@ -1,3 +1,7 @@
+<!-- rumdl-disable-line MD041 -->
+
+<!-- rumdl-disable MD007 -->
+
 - [Tutorial 0 - Let's get set up!](tutorial/tutorial-0.md)
 - [Tutorial 1 - Your first app](tutorial/tutorial-1.md)
 - [Tutorial 2 - Making it interesting](tutorial/tutorial-2.md)
