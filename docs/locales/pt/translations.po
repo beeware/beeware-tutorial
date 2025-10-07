@@ -2377,7 +2377,7 @@ msgid ""
 msgstr ""
 "Se você observar erros durante a instalação, é quase certo que alguns dos "
 "requisitos do sistema não foram instalados. Certifique-se de ter "
-"[instalado todos os pré-requisitos da plataforma][instalar dependências]."
+"[instalado todos os pré-requisitos da plataforma][install-dependencies]."
 
 #: docs/en/tutorial/tutorial-1.md:39
 msgid ""

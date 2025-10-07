@@ -1,4 +1,4 @@
-# Tutorial 6 - Put it on the web
+# Tutorial 6 - Put it on the web!
 
 In addition to supporting mobile platforms, the Toga widget toolkit also supports the web! Using the same API that you used to deploy your desktop and mobile applications, you can deploy your application as a single-page web app.
 
