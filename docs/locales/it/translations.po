@@ -59,7 +59,7 @@ msgstr "[Esercitazione 5 - Il mobile: iOS]{1}"
 #: docs/en/SUMMARY.md:10
 #, fuzzy
 msgid "[Tutorial 6 - Put it on the web!]{1}"
-msgstr "[Tutorial 6 - Mettetelo sul web!]{1}"
+msgstr "[Esercitazione 6 - Mettetelo sul web!]{1}"
 
 #: docs/en/SUMMARY.md:11
 #, fuzzy
@@ -74,12 +74,12 @@ msgstr "[Esercitazione 8 - Renderlo liscio]{1}"
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:1
 msgid "Going further"
-msgstr "Andare avanti"
+msgstr "Approfondimento"
 
 #: docs/en/SUMMARY.md:13
 #, fuzzy
 msgid "[Going further]{1}"
-msgstr "[Approfondimento] {1}"
+msgstr "[Approfondimento]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:5
@@ -91,7 +91,7 @@ msgstr "[Personalizzazione delle icone]{1}"
 #: docs/en/tutorial/topics/index.md:9
 #, fuzzy
 msgid "[Using the camera]{1}"
-msgstr "[Uso della fotocamera]{1}"
+msgstr "[Utilizzo della fotocamera]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:13
@@ -1771,7 +1771,7 @@ msgstr ""
 
 #: docs/en/tutorial/topics/testing.md:1
 msgid "Testing times"
-msgstr "Tempi di verifica"
+msgstr "Tempi di prova"
 
 #: docs/en/tutorial/topics/testing.md:3
 #, fuzzy
@@ -1983,7 +1983,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-0.md:1
 #, fuzzy
-msgid "Tutorial 0 - Let's get set up"
+msgid "Tutorial 0 - Let's get set up!"
 msgstr "Esercitazione 0 - Configuriamoci!"
 
 #: docs/en/tutorial/tutorial-0.md:3
@@ -4609,8 +4609,8 @@ msgstr "le applicazioni iOS possono essere compilate solo su macOS."
 
 #: docs/en/tutorial/tutorial-6.md:1
 #, fuzzy
-msgid "Tutorial 6 - Put it on the web"
-msgstr "Tutorial 6 - Mettetelo sul web!"
+msgid "Tutorial 6 - Put it on the web!"
+msgstr "Esercitazione 6 - Mettetelo sul web!"
 
 #: docs/en/tutorial/tutorial-6.md:3
 #, fuzzy

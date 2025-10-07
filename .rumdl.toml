@@ -8,6 +8,9 @@ respect-gitignore = true
 # MD014: Forces commands in codeblocks to show output
 disable = ["MD014",]
 
+[MD026]  # Remove punctuation at the end of headings
+punctuation = ",;:"
+
 [MD033]  # No inline HTML
 allowed_elements = ["nospell",]  # pyspelling inline disable tag
 

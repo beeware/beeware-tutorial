@@ -39,7 +39,7 @@ msgstr "[教程 4 - 更新应用程序]{1}"
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "Tutorial 5 - Taking it mobile"
-msgstr "[教程 5 - 在移动设备上]{1}"
+msgstr "教程 5 - 在移动设备上"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
@@ -97,7 +97,7 @@ msgstr "[使用相机]{1}"
 #: docs/en/tutorial/topics/index.md:13
 #, fuzzy
 msgid "[Testing times]{1}"
-msgstr "{1}[测试次数｝"
+msgstr "[测试次数]{1}"
 
 #: docs/en/SUMMARY.md:18
 #, fuzzy
@@ -107,12 +107,12 @@ msgstr "操作指南"
 #: docs/en/SUMMARY.md:18
 #, fuzzy
 msgid "[Contributing to this tutorial]{1}"
-msgstr "[为本教程做出贡献]{1}。"
+msgstr "[为本教程做出贡献]{1}"
 
 #: docs/en/SUMMARY.md:18
 #, fuzzy
 msgid "[Style guide]{1}"
-msgstr "{1}[样式指南｝"
+msgstr "[样式指南]{1}"
 
 #: docs/en/how-to/contribute.md:1
 #, fuzzy
@@ -1599,7 +1599,7 @@ msgstr "怎样确保您的应用程序始终正常工作？向您的项目加入
 
 #: docs/en/tutorial/topics/testing.md:1
 msgid "Testing times"
-msgstr "测试的时候"
+msgstr "测试次数"
 
 #: docs/en/tutorial/topics/testing.md:3
 msgid ""
@@ -2125,7 +2125,7 @@ msgid ""
 "the system requirements haven't been installed. Make sure you have "
 "[installed all the platform pre-requisites][install-dependencies]."
 msgstr "如果在安装过程中出现错误，几乎可以肯定是因为某些系统要求尚未安装。请确保已"
-"[安装所有平台先决条件][安装依赖项]。"
+"[安装所有平台先决条件][install-dependencies]。"
 
 #: docs/en/tutorial/tutorial-1.md:39
 msgid ""

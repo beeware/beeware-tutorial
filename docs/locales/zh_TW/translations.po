@@ -92,7 +92,7 @@ msgstr "[Customizing icons]{1}"
 #: docs/en/tutorial/topics/index.md:9
 #, fuzzy
 msgid "[Using the camera]{1}"
-msgstr "[使用相機]{1}。"
+msgstr "[使用相機]{1}"
 
 #: docs/en/SUMMARY.md:13
 #: docs/en/tutorial/topics/index.md:13
@@ -108,7 +108,7 @@ msgstr "操作指南"
 #: docs/en/SUMMARY.md:18
 #, fuzzy
 msgid "[Contributing to this tutorial]{1}"
-msgstr "[對本教學的貢獻]{1}。"
+msgstr "[對本教學的貢獻]{1}"
 
 #: docs/en/SUMMARY.md:18
 #, fuzzy
