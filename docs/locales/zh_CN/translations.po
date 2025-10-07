@@ -39,7 +39,7 @@ msgstr "[教程 4 - 更新应用程序]{1}"
 #: docs/en/SUMMARY.md:6
 #, fuzzy
 msgid "Tutorial 5 - Taking it mobile"
-msgstr "[教程 5 - 在移动设备上]"
+msgstr "教程 5 - 在移动设备上"
 
 #: docs/en/SUMMARY.md:6
 #, fuzzy
