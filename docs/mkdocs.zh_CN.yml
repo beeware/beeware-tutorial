@@ -4,7 +4,7 @@ site_url: https://tutorial.beeware.org/zh_CN
 docs_dir: zh_CN
 
 theme:
-  language: zh-Hant
+  language: zh
 
 extra:
   translation_type: machine
