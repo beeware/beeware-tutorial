@@ -1,5 +1,18 @@
 msgid ""
-msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-10-12 23:01+0000\nPO-Revision-Date: 2025-10-13 04:07+0000\nLast-Translator: John <johnzhou721@gmail.com>\nLanguage-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/zh_Hans/>\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.14-dev\n"
+msgstr ""
+"Project-Id-Version: BeeWare 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-14 01:31+0000\n"
+"PO-Revision-Date: 2025-10-13 04:07+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/zh_Hans/>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Translate Toolkit 3.16.2\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -93,14 +106,17 @@ msgstr "为本教程做出贡献"
 msgid ""
 "This tutorial is written using [MkDocs and Markdown]{1}. This guide will "
 "help you contribute fixes or new content to this tutorial."
-msgstr "本教程使用 [MkDocs 和 Markdown]{1} 编写。本指南将帮助您为本教程贡献修复或者新内容。"
+msgstr "本教程使用 [MkDocs 和 Markdown]{1} 编写。本指南将帮助您为本教程贡献修复或者新"
+"内容。"
 
 #: docs/en/how-to/contribute.md:5
 msgid ""
 "Translations of this tutorial are managed using [Weblate]{1}. If you'd like "
 "to contribute to the translation effort, join the `#translations` channel on "
 "[Discord]{2} and introduce yourself!"
-msgstr "本教程使用 [Weblate]{1} 进行翻译管理。如果您想参与翻译工作，请加入 [Discord]{2} 上的 `#translations` 频道并介绍自己！"
+msgstr ""
+"本教程使用 [Weblate]{1} 进行翻译管理。如果您想参与翻译工作，请加入 [Discord]"
+"{2} 上的 `#translations` 频道并介绍自己！"
 
 #: docs/en/how-to/contribute.md:7
 msgid "Set up your development environment"
@@ -111,7 +127,9 @@ msgid ""
 "To build the BeeWare tutorial you **must** have a Python 3.12 interpreter "
 "installed and available on your path "
 "(i.e., `python3` must start a Python 3.12 interpreter)."
-msgstr "要编译 BeeWare 教程，path 上**必须**安装有 Python 3.12 解释器（即 `python3` 必须启动 Python 3.12 解释器）。"
+msgstr ""
+"要编译 BeeWare 教程，path 上**必须**安装有 Python 3.12 解释器（即 `python3` "
+"必须启动 Python 3.12 解释器）。"
 
 #: docs/en/how-to/contribute.md:11
 #: docs/en/how-to/contribute.md:42
@@ -494,7 +512,8 @@ msgid ""
 "The recommended way of setting up your development environment for BeeWare "
 "is to install a virtual environment, install the required dependencies and "
 "start coding. To set up a virtual environment, run:"
-msgstr "设置 BeeWare 开发环境的推荐方法是安装虚拟环境、安装所需的依赖项并开始写代码。要设置虚拟环境，请运行："
+msgstr "设置 BeeWare 开发环境的推荐方法是安装虚拟环境、安装所需的依赖项并开始写代码。"
+"要设置虚拟环境，请运行："
 
 #: docs/en/how-to/contribute.md:69
 msgid "Your prompt should now have a `(.venv)` prefix in front of it."
@@ -516,7 +535,11 @@ msgid ""
 "desktop application installed on your computer, you can select "
 "\"Open in Desktop\"; otherwise, copy the URL provided, and use it to clone "
 "using the command line:"
-msgstr "接下来，访问 [GitHub 上的 BeeWare 教程页面]{1}，将仓库 fork 到自己的账户中，然后点击 “Clone or Download” 以将仓库克隆到电脑上。如果电脑上安装了 GitHub Desktop 程序，可以选择 “Open in Desktop”；否则，请复制显示的 URL，然后使用命令行克隆："
+msgstr ""
+"接下来，访问 [GitHub 上的 BeeWare 教程页面]{1}，将仓库 fork 到自己的账户中，"
+"然后点击 “Clone or Download” 以将仓库克隆到电脑上。如果电脑上安装了 GitHub "
+"Desktop 程序，可以选择 “Open in Desktop”；否则，请复制显示的 URL，然后使用命"
+"令行克隆："
 
 #: docs/en/how-to/contribute.md:79
 #: docs/en/how-to/contribute.md:91
@@ -540,7 +563,10 @@ msgid ""
 "into your development environment. Since we're installing from source, we "
 "can't rely on pip to resolve the dependencies to source packages, so we have "
 "to manually install each package:"
-msgstr "有了源代码，就可以在开发环境中安装 BeeWare 文档依赖项了。由于我们是从源代码安装，因此不能依靠 pip 来解析源代码包的依赖关系，所以我们必须手动安装每个软件包："
+msgstr ""
+"有了源代码，就可以在开发环境中安装 BeeWare 文档依赖项了。由于我们是从源代码安"
+"装，因此不能依靠 pip 来解析源代码包的依赖关系，所以我们必须手动安装每个软件包"
+"："
 
 #: docs/en/how-to/contribute.md:144
 msgid "Install pre-commit"
@@ -552,7 +578,10 @@ msgid ""
 "standardize code formatting. It does this by installing a git hook that "
 "automatically runs a series of code linters prior to finalizing any git "
 "commit. To enable pre-commit, run:"
-msgstr "BeeWare 使用一个名为 [Pre-Commit]{1} 的工具来识别简单问题并规范代码格式。它通过安装一个 git 钩子，在完成任何 git commit 之前自动运行一系列 linters。要启用 pre-commit，请运行："
+msgstr ""
+"BeeWare 使用一个名为 [Pre-Commit]{1} 的工具来识别简单问题并规范代码格式。它通"
+"过安装一个 git 钩子，在完成任何 git commit 之前自动运行一系列 linters。要启用"
+" pre-commit，请运行："
 
 #: docs/en/how-to/contribute.md:175
 msgid ""
@@ -560,7 +589,9 @@ msgid ""
 "any issues found with the commit, this will cause your commit to fail. Where "
 "possible, pre-commit will make the changes needed to correct the problems it "
 "has found:"
-msgstr "提交任何更改时，pre-commit 会自动运行。如果在提交过程中发现任何问题，都会导致提交失败。在可能的情况下，pre-commit 会对发现的问题进行必要的修改："
+msgstr ""
+"提交任何更改时，pre-commit 会自动运行。如果在提交过程中发现任何问题，都会导致"
+"提交失败。在可能的情况下，pre-commit 会对发现的问题进行必要的修改："
 
 #: docs/en/how-to/contribute.md:237
 #, fuzzy
@@ -1888,7 +1919,8 @@ msgid ""
 "After installing these tools, you should ensure you restart any terminal "
 "sessions. Windows will only expose newly installed tools terminals started "
 "*after* the install has completed."
-msgstr "安装这些工具后，应确保重新启动任何终端会话。Windows 只在安装完成后开始的命令行*才*会暴露新安装的工具。"
+msgstr "安装这些工具后，应确保重新启动任何终端会话。Windows 只在安装完成后开始的命令"
+"行*才*会暴露新安装的工具。"
 
 #: docs/en/tutorial/tutorial-0.md:102
 msgid "Set up a virtual environment"
@@ -3036,7 +3068,10 @@ msgid ""
 "create a container that is able to run Briefcase builds, and build the app "
 "package inside the image. Once it's completed, the `dist` folder will "
 "contain the package for the target Linux distribution."
-msgstr "这将下载所选操作系统的 Docker 镜像，创建一个能够运行 Briefcase 构建的容器，并在镜像中构建应用程序软件包。完成后，`dist` 文件夹将包含目标 Linux 发行版的软件包。"
+msgstr ""
+"这将下载所选操作系统的 Docker 镜像，创建一个能够运行 Briefcase 构建的容器，并"
+"在镜像中构建应用程序软件包。完成后，`dist` 文件夹将包含目标 Linux 发行版的软"
+"件包。"
 
 #: docs/en/tutorial/tutorial-3.md:455
 msgid ""
