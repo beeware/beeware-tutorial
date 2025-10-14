@@ -1,18 +1,5 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-14 03:14+0000\n"
-"PO-Revision-Date: 2025-10-13 04:07+0000\n"
-"Last-Translator: John <johnzhou721@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
-"projects/beeware/tutorial/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 3.16.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-10-14 03:14+0000\nPO-Revision-Date: 2025-10-14 18:38+0000\nLast-Translator: John <johnzhou721@gmail.com>\nLanguage-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/zh_Hans/>\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.14-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -594,51 +581,42 @@ msgstr ""
 "提交失败。在可能的情况下，pre-commit 会对发现的问题进行必要的修改："
 
 #: docs/en/how-to/contribute.md:237
-#, fuzzy
 msgid ""
 "You can then re-add any files that were modified as a result of the pre-"
 "commit checks, and re-commit the change."
-msgstr "然后，你可以重新添加任何因预提交检查而被修改的文件，并重新提交更改。"
+msgstr "然后，你可以重新添加任何被 pre-commit 修改的文件，并重新 commit 更改。"
 
 #: docs/en/how-to/contribute.md:285
-#, fuzzy
 msgid "Now you are ready to start hacking on BeeWare docs!"
-msgstr "现在，您可以开始对 BeeWare 文档进行黑客攻击了！"
+msgstr "现在，您已经准备好为 BeeWare 做贡献了！"
 
 #: docs/en/how-to/contribute.md:287
-#, fuzzy
 msgid "Building the BeeWare Tutorial"
-msgstr "构建 BeeWare 教程"
+msgstr "编译 BeeWare 教程"
 
 #: docs/en/how-to/contribute.md:289
-#, fuzzy
 msgid "Build the Tutorial locally"
 msgstr "在本地构建教程"
 
 #: docs/en/how-to/contribute.md:291
-#, fuzzy
 msgid "Once your development environment is set up, run:"
-msgstr "设置好开发环境后，运行"
+msgstr "设置好开发环境后，运行："
 
 #: docs/en/how-to/contribute.md:317
-#, fuzzy
 msgid ""
 "The output of the file should be in the `_build/html` folder. If there are "
 "any markup problems, they'll raise an error."
-msgstr "该文件的输出应位于 `_build/html`文件夹中。如果出现任何标记问题，都会引发错误"
-"。"
+msgstr "该文件的输出应位于 `_build/html` 文件夹中。如果出现任何标记语法问题，它将会引发错误。"
 
 #: docs/en/how-to/contribute.md:319
-#, fuzzy
 msgid "Live Tutorial preview"
 msgstr "实时教程预览"
 
 #: docs/en/how-to/contribute.md:321
-#, fuzzy
 msgid ""
 "To support rapid editing of documentation, BeeWare also has a "
 "\"live preview\" mode:"
-msgstr "为了支持文档的快速编辑，BeeWare 还提供了 \"实时预览 \"模式："
+msgstr "为了支持文档的快速编辑，BeeWare 还提供了“实时预览”模式："
 
 #: docs/en/how-to/contribute.md:347
 #, fuzzy
