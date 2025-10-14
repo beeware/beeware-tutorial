@@ -2,7 +2,7 @@
 
 # BeeWare Tutorial
 
-[![CI Status](https://github.com/beeware/beeware-tutorial/workflows/CI/badge.svg?branch=main)](https://github.com/beeware/beeware-tutorial/actions) [![Discord server](https://img.shields.io/discord/836455665257021440?label=Discord%20Chat&logo=discord&style=plastic)](https://beeware.org/bee/chat/)
+[![Discord server](https://img.shields.io/discord/836455665257021440?label=Discord%20Chat&logo=discord&style=plastic)](https://beeware.org/bee/chat/)
 
 BeeWare is a collection of tools and libraries for building and distributing native applications in Python.
 
