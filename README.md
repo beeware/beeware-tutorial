@@ -2,7 +2,7 @@
 
 # BeeWare Tutorial
 
-[![Python Versions](https://img.shields.io/pypi/pyversions/beeware.svg)](https://pypi.python.org/pypi/beeware) [![PyPI Version](https://img.shields.io/pypi/v/beeware.svg)](https://pypi.python.org/pypi/beeware) [![Maturity](https://img.shields.io/pypi/status/beeware.svg)](https://pypi.python.org/pypi/beeware) [![BSD License](https://img.shields.io/pypi/l/beeware.svg)](https://github.com/beeware/beeware/blob/main/LICENSE) [![Build Status](https://github.com/beeware/beeware/workflows/CI/badge.svg?branch=main)](https://github.com/beeware/beeware/actions) [![Discord server](https://img.shields.io/discord/836455665257021440?label=Discord%20Chat&logo=discord&style=plastic)](https://beeware.org/bee/chat/)
+[![CI Status](https://github.com/beeware/beeware-tutorial/workflows/CI/badge.svg?branch=main)](https://github.com/beeware/beeware-tutorial/actions) [![Discord server](https://img.shields.io/discord/836455665257021440?label=Discord%20Chat&logo=discord&style=plastic)](https://beeware.org/bee/chat/)
 
 BeeWare is a collection of tools and libraries for building and distributing native applications in Python.
 
@@ -15,7 +15,7 @@ You can talk to the BeeWare community through:
 - [@beeware@fosstodon.org on Mastodon](https://fosstodon.org/@beeware)
 - [Discord](https://beeware.org/bee/chat/)
 
-We foster a welcoming and respectful community as described in our [BeeWare Community Code of Conduct](http://beeware.org/community/behavior/).
+We foster a welcoming and respectful community as described in our [BeeWare Community Code of Conduct](https://beeware.org/community/behavior/code-of-conduct/).
 
 ## Contributing
 
