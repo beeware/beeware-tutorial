@@ -1,18 +1,5 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-15 06:08+0000\n"
-"PO-Revision-Date: 2025-10-15 06:07+0000\n"
-"Last-Translator: John <johnzhou721@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
-"projects/beeware/tutorial/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 3.16.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-10-15 06:08+0000\nPO-Revision-Date: 2025-10-15 17:07+0000\nLast-Translator: John <johnzhou721@gmail.com>\nLanguage-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/zh_Hans/>\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.14-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -2243,7 +2230,7 @@ msgstr "确认运行的是[本教程支持的 python 版本][install-python]。"
 msgid ""
 "If your version of python is *not* a supported version, you will have to "
 "restart the tutorial."
-msgstr "如果您的 Python 版本\\ *不*\\ 被支持，则需重新开始本教程。"
+msgstr "如果您的 Python 版本*不*被支持，则需重新开始本教程。"
 
 #: docs/en/tutorial/tutorial-1.md:211
 msgid ""
@@ -4550,17 +4537,12 @@ msgstr ""
 "应用程序反应迟钝。"
 
 #: docs/en/tutorial/tutorial-8.md:136
-#, fuzzy
 msgid ""
 "This is because the web request we have made is *synchronous*. When our "
 "application makes the web request, it waits for the API to return a response "
 "before continuing. While it's waiting, it *isn't* allowing the application "
 "to redraw - and as a result, the application locks up."
-msgstr ""
-"除非您的网络连接速度\\ *非常*\\ 快，否则您可能会注意到，当您按下按钮时，应用"
-"程序的图形用户界面会锁定一会儿。这是因为我们发出的网络请求是\\ *同步*\\ 的。"
-"当我们的应用程序发出网络请求时，它会等待应用程序接口返回响应，然后再继续。在"
-"等待的过程中，应用程序\\ *不*\\ 允许重新绘制，结果导致应用程序锁定。"
+msgstr "除非您的网络连接速度*非常*快，否则您可能会注意到，当您按下按钮时，应用程序的图形用户界面会锁定一会儿。这是因为我们发出的网络请求是\\ *同步*\\ 的。当我们的应用程序发出网络请求时，它会等待应用程序接口返回响应，然后再继续。在等待的过程中，应用程序*不*允许重新绘制，结果导致应用程序锁定。"
 
 #: docs/en/tutorial/tutorial-8.md:138
 msgid "GUI Event Loops"
