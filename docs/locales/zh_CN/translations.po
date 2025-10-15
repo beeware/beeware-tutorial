@@ -1,18 +1,5 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-14 18:38+0000\n"
-"PO-Revision-Date: 2025-10-14 18:38+0000\n"
-"Last-Translator: John <johnzhou721@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
-"projects/beeware/tutorial/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 3.16.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-10-14 18:38+0000\nPO-Revision-Date: 2025-10-15 06:07+0000\nLast-Translator: John <johnzhou721@gmail.com>\nLanguage-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/zh_Hans/>\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.14-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -633,42 +620,33 @@ msgid ""
 msgstr "为了支持文档的快速编辑，BeeWare 还提供了“实时预览”模式："
 
 #: docs/en/how-to/contribute.md:347
-#, fuzzy
 msgid ""
 "This will build the documentation, start a web server to serve the build "
 "documentation, and watch the file system for any changes to the "
 "documentation source. If a change is detected, the documentation will be "
 "rebuilt, and any browser viewing the modified page will be automatically "
 "refreshed."
-msgstr ""
-"这将构建文档，启动网络服务器为构建的文档提供服务，并监视文件系统是否对文档源"
-"进行了任何更改。如果检测到更改，将重建文档，并自动刷新查看修改页面的浏览器。"
+msgstr "这将构建文档，启动网络服务器以提供构建文档，并监视是否对文档源进行了任何更改。如果检测到了更改，它将重建文档，并自动刷新查看修改过的页面的任何浏览器。"
 
 #: docs/en/how-to/contribute.md:349
-#, fuzzy
 msgid "Tutorial linting"
-msgstr "教程衬垫"
+msgstr "教程 lint"
 
 #: docs/en/how-to/contribute.md:351
-#, fuzzy
 msgid ""
 "The build process will identify most Markdown problems, but BeeWare performs "
 "some additional \"lint\" checks. To run the lint checks:"
-msgstr "构建过程会识别出大多数 Markdown 问题，但 BeeWare 还会执行一些额外的 \"内核 \""
-"检查。运行 \"内核 \"检查"
+msgstr "构建过程会识别出大多数 Markdown 问题，但 BeeWare 还会执行一些额外的 \"lint\" 检查。要运行 \"lint\" 检查："
 
 #: docs/en/how-to/contribute.md:377
-#, fuzzy
 msgid "This will validate the documentation does not contain:"
-msgstr "这将验证文件是否包含："
+msgstr "这将验证文档不包含："
 
 #: docs/en/how-to/contribute.md:379
-#, fuzzy
 msgid "dead hyperlinks"
 msgstr "死超链接"
 
 #: docs/en/how-to/contribute.md:380
-#, fuzzy
 msgid "misspelled words"
 msgstr "错别字"
 
@@ -684,33 +662,25 @@ msgstr ""
 "列表时，请记住"
 
 #: docs/en/how-to/contribute.md:384
-#, fuzzy
 msgid ""
 "We prefer US spelling, with some liberties for programming-specific "
 "colloquialisms (e.g., \"apps\") and verbing of nouns (e.g., \"scrollable\")"
-msgstr "我们倾向于使用美式拼写法，但对程序特定的口语（如 \"应用程序\"）和名词的动词化"
-"（如 \"可滚动\"）有一定的自由度。"
+msgstr "我们倾向于使用美式拼写法，但对程序特定的口语（如 “apps”）和名词的动词化（如 “scrollable”）有一定的自由度"
 
 #: docs/en/how-to/contribute.md:385
-#, fuzzy
 msgid ""
 "Any reference to a product name should use the product's preferred "
 "capitalization. "
 "(e.g., \"macOS\", \"GTK\", \"pytest\", \"Pygame\", \"PyScript\")."
-msgstr ""
-"任何对产品名称的引用都应使用该产品的首选大写字母。(例如，\"macOS\"、\"GTK\"、"
-"\"pytest\"、\"Pygame\"、\"PyScript\"）。"
+msgstr "任何对产品名称的引用都应使用该产品的首选大小写。(例如，“macOS”、“GTK”、“pytest”、“Pygame”、“PyScript”）。"
 
 #: docs/en/how-to/contribute.md:386
-#, fuzzy
 msgid ""
 "If a term is being used \"as code\", then it should be quoted as inline code "
 "rather than being added to the dictionary."
-msgstr "如果一个术语是 \"作为代码 \"使用的，那么它应该作为内嵌代码被引用，而不是被添"
-"加到词典中。"
+msgstr "如果一个术语是作为代码使用的，那么它应该作为内嵌代码被引用，而不是被添加到词典中。"
 
 #: docs/en/how-to/contribute.md:388
-#, fuzzy
 msgid "Translations"
 msgstr "翻译"
 
@@ -722,9 +692,8 @@ msgid ""
 msgstr "BeeWare 教程有多种语言版本，您可以单独或同时构建所有语言版本。"
 
 #: docs/en/how-to/contribute.md:392
-#, fuzzy
 msgid "Updating translations"
-msgstr "更新翻译"
+msgstr "更新翻译文件"
 
 #: docs/en/how-to/contribute.md:394
 #, fuzzy
