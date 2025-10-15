@@ -1,0 +1,18 @@
+[dependency-groups]
+pre-commit = [
+    "pre-commit == 4.3.0",
+]
+
+tox-uv = [
+    "tox-uv == 1.28.0",
+]
+
+dev = [
+    "wlc == 1.16.1",
+    {include-group = "pre-commit"},
+    {include-group = "tox-uv"},
+]
+
+docs = [
+    "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
+]

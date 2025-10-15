@@ -29,15 +29,14 @@ jobs:
           python-version: "3.X"
           cache: pip
           cache-dependency-path: |
-            requirements.dev.txt
-            requirements.docs.txt
+            pyproject.toml
             .pre-commit-config.yaml
 
       - name: Update pip
         run: python -m pip install -U pip
 
       - name: Install tox
-        run: python -m pip install -r requirements.dev.txt
+        run: python -m pip install --group 'dev'
 
       - name: Configure git
         run: |

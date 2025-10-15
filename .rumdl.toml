@@ -8,6 +8,9 @@ respect-gitignore = true
 # MD014: Forces commands in codeblocks to show output
 disable = ["MD014",]
 
+[per-file-ignores]
+"docs/en/how-to/style-guide.md" = ["MD041"]
+
 [MD026]  # Remove punctuation at the end of headings
 punctuation = ",;:"
 
