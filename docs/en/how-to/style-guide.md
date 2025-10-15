@@ -1,1 +1,1 @@
--8<- "style_guide.md" <!-- rumdl-disable-line MD041 -->
+-8<- "style_guide.md"
