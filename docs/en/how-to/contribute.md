@@ -72,7 +72,7 @@ Your prompt should now have a `(.venv)` prefix in front of it.
 
 For updates to BeeWare documentation:
 
-Next, go to [the BeeWare Tutorial page on GitHub](https://github.com/beeware/beeware-tutorial), fork the repository into your own account, and then clone a copy of that repository onto your computer by clicking on "Clone or Download". If you have the GitHub desktop application installed on your computer, you can select "Open in Desktop"; otherwise, copy the URL provided, and use it to clone using the command line:
+Next, go to [the BeeWare Tutorial page on GitHub](https://github.com/beeware/beeware-tutorial), fork the repository into your own account, and then clone a copy of that repository onto your computer by clicking on "Code". If you have the GitHub desktop application installed on your computer, you can select "Open in Desktop"; otherwise, copy the URL provided, and use it to clone using the command line:
 
 /// tab | macOS
 
