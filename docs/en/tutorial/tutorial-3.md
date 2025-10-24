@@ -321,7 +321,7 @@ The `dist` folder will contain a file named `Hello World-0.0.1.dmg`. If you loca
 
 In this example, we've used the `--adhoc-sign` option - that is, we're signing our application with *ad hoc* credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials.
 
-When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a macOS code signing identity](https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS.html).
+When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a macOS code signing identity](https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS).
 
 ///
 
@@ -454,7 +454,7 @@ Linking... done
 
 In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate.
 
-When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a Windows code signing identity](https://briefcase.beeware.org/en/latest/how-to/code-signing/windows.html).
+When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a Windows code signing identity](https://briefcase.beeware.org/en/latest/how-to/code-signing/windows).
 
 Once this step completes, the `dist` folder will contain a file named `Hello_World-0.0.1.msi`. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a "Hello World" entry in your start menu.
 
