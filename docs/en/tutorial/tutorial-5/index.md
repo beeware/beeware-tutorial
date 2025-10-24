@@ -6,6 +6,6 @@ So far, we've been running and testing our application on the desktop. However, 
 
 Android applications can be compiled on macOS, Windows or Linux.
 
-### [iOS](iOS.md)
+## [iOS](iOS.md)
 
 iOS applications can only be compiled on macOS.
