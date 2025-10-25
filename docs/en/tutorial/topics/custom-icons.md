@@ -2,6 +2,15 @@
 
 The app we developed in the main tutorial uses a default "gray bee" icon when it is packaged. Let's personalize this application by configuring it to use our own icon.
 
+/// note | Note
+In BeeWare, the term *icon* can refer to two different things:
+
+- **Application icon** — The image that represents your app on the desktop, dock, or home screen. This tutorial describes how to set the *application icon*.
+
+- **Runtime icons** — Images used inside your app’s interface (for example, in buttons or tables). These should be placed inside your app’s package directory (e.g. `src/helloworld/icons/`) and loaded in code with `toga.Icon("icons/example")`.
+
+///
+
 ## Adding an icon
 
 Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform.
