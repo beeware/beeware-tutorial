@@ -5,10 +5,11 @@ The app we developed in the main tutorial uses a default "gray bee" icon when it
 /// note | Note
 In BeeWare, the term *icon* can refer to two different things:
 
-- **Application icon** — The image that represents your app on the desktop, dock, or home screen. This tutorial describes how to set the *application icon*.
+- **Application icon** — The image that represents your app on the desktop, dock, or home screen.
 
-- **Runtime icons** — Images used inside your app’s interface (for example, in buttons or tables). These should be placed inside your app’s package directory (e.g. `src/helloworld/icons/`) and loaded in code with `toga.Icon("icons/example")`.
+- **Runtime icons** — Images used inside your app’s interface (for example, in buttons or tables).
 
+This tutorial describes how to set the *application icon*. It will not discuss how to package and use runtime icons.
 ///
 
 ## Adding an icon
