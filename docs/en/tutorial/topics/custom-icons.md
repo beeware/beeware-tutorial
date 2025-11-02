@@ -9,8 +9,7 @@ In BeeWare, the term *icon* can refer to two different things:
 
 - **Runtime icons** — Images used inside your app’s interface (for example, in buttons or tables).
 
-This tutorial describes how to set the *application icon*. It will not discuss how to package and use runtime icons.
-///
+This tutorial describes how to set the *application icon*. It will not discuss how to package and use runtime icons. ///
 
 ## Adding an icon
 
