@@ -460,3 +460,27 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 You can then re-build and re-run the app using `briefcase run`. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background.
 
 You'll need to re-create the app like this whenever you make a change to your `pyproject.toml` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the `build` folder, and you shouldn't add the `build` folder to your version control system. The `build` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project.
+
+## Adding a runtime icon
+
+When it comes to adding an icon to the app interface, this type of icon must be stored in a separate directory from the application icons. Download [this runtime-icons.zip bundle](../../resources/runtime-icons.zip), then unzip to your application source package. Your directory will resemble the following:
+
+```text
+beeware-tutorial/
+├── beeware-venv/
+│   └── ...
+└── helloworld/
+    ├── ...
+    ├── icons/
+    │   ├── helloworld.icns
+    │   ├── helloworld.ico
+    │   ├── helloworld.png
+    │   ├── helloworld-16.png
+    │   └──...
+    ├── src/
+    │   ├── helloworld
+    │   │   └── icons/
+    │   │       └── helloworld.png
+    │   └──...
+    └── pyproject.toml
+```
