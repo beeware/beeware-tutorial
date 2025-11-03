@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-28 03:21+0000\n"
+"POT-Creation-Date: 2025-11-03 00:24+0000\n"
 "PO-Revision-Date: 2025-10-15 17:07+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/zh_Hans/>\n"
@@ -134,9 +134,9 @@ msgstr ""
 #: docs/en/how-to/contribute.md:396 docs/en/how-to/contribute.md:426
 #: docs/en/how-to/contribute.md:456 docs/en/how-to/contribute.md:502
 #: docs/en/tutorial/topics/camera-access.md:115
-#: docs/en/tutorial/topics/custom-icons.md:29
-#: docs/en/tutorial/topics/custom-icons.md:196
-#: docs/en/tutorial/topics/custom-icons.md:377
+#: docs/en/tutorial/topics/custom-icons.md:31
+#: docs/en/tutorial/topics/custom-icons.md:198
+#: docs/en/tutorial/topics/custom-icons.md:379
 #: docs/en/tutorial/topics/testing.md:19
 #: docs/en/tutorial/topics/testing.md:124
 #: docs/en/tutorial/topics/testing.md:196
@@ -186,24 +186,25 @@ msgstr "/// tab | macOS"
 #: docs/en/tutorial/topics/camera-access.md:15
 #: docs/en/tutorial/topics/camera-access.md:123
 #: docs/en/tutorial/topics/camera-access.md:133
-#: docs/en/tutorial/topics/custom-icons.md:46
-#: docs/en/tutorial/topics/custom-icons.md:70
-#: docs/en/tutorial/topics/custom-icons.md:89
-#: docs/en/tutorial/topics/custom-icons.md:127
-#: docs/en/tutorial/topics/custom-icons.md:161
-#: docs/en/tutorial/topics/custom-icons.md:190
-#: docs/en/tutorial/topics/custom-icons.md:220
-#: docs/en/tutorial/topics/custom-icons.md:252
-#: docs/en/tutorial/topics/custom-icons.md:279
-#: docs/en/tutorial/topics/custom-icons.md:323
+#: docs/en/tutorial/topics/custom-icons.md:15
+#: docs/en/tutorial/topics/custom-icons.md:48
+#: docs/en/tutorial/topics/custom-icons.md:72
+#: docs/en/tutorial/topics/custom-icons.md:91
+#: docs/en/tutorial/topics/custom-icons.md:129
+#: docs/en/tutorial/topics/custom-icons.md:163
+#: docs/en/tutorial/topics/custom-icons.md:192
+#: docs/en/tutorial/topics/custom-icons.md:222
+#: docs/en/tutorial/topics/custom-icons.md:254
+#: docs/en/tutorial/topics/custom-icons.md:281
 #: docs/en/tutorial/topics/custom-icons.md:325
-#: docs/en/tutorial/topics/custom-icons.md:361
-#: docs/en/tutorial/topics/custom-icons.md:367
-#: docs/en/tutorial/topics/custom-icons.md:392
-#: docs/en/tutorial/topics/custom-icons.md:409
-#: docs/en/tutorial/topics/custom-icons.md:426
-#: docs/en/tutorial/topics/custom-icons.md:442
-#: docs/en/tutorial/topics/custom-icons.md:458
+#: docs/en/tutorial/topics/custom-icons.md:327
+#: docs/en/tutorial/topics/custom-icons.md:363
+#: docs/en/tutorial/topics/custom-icons.md:369
+#: docs/en/tutorial/topics/custom-icons.md:394
+#: docs/en/tutorial/topics/custom-icons.md:411
+#: docs/en/tutorial/topics/custom-icons.md:428
+#: docs/en/tutorial/topics/custom-icons.md:444
+#: docs/en/tutorial/topics/custom-icons.md:460
 #: docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70
 #: docs/en/tutorial/topics/testing.md:98
 #: docs/en/tutorial/topics/testing.md:141
@@ -303,9 +304,9 @@ msgstr "///"
 #: docs/en/how-to/contribute.md:331 docs/en/how-to/contribute.md:361
 #: docs/en/how-to/contribute.md:404 docs/en/how-to/contribute.md:434
 #: docs/en/how-to/contribute.md:464 docs/en/how-to/contribute.md:510
-#: docs/en/tutorial/topics/custom-icons.md:48
-#: docs/en/tutorial/topics/custom-icons.md:222
-#: docs/en/tutorial/topics/custom-icons.md:394
+#: docs/en/tutorial/topics/custom-icons.md:50
+#: docs/en/tutorial/topics/custom-icons.md:224
+#: docs/en/tutorial/topics/custom-icons.md:396
 #: docs/en/tutorial/topics/testing.md:44
 #: docs/en/tutorial/topics/testing.md:143
 #: docs/en/tutorial/topics/testing.md:230
@@ -337,9 +338,9 @@ msgstr "/// tab | Linux"
 #: docs/en/how-to/contribute.md:339 docs/en/how-to/contribute.md:369
 #: docs/en/how-to/contribute.md:412 docs/en/how-to/contribute.md:442
 #: docs/en/how-to/contribute.md:472 docs/en/how-to/contribute.md:518
-#: docs/en/tutorial/topics/custom-icons.md:72
-#: docs/en/tutorial/topics/custom-icons.md:254
-#: docs/en/tutorial/topics/custom-icons.md:411
+#: docs/en/tutorial/topics/custom-icons.md:74
+#: docs/en/tutorial/topics/custom-icons.md:256
+#: docs/en/tutorial/topics/custom-icons.md:413
 #: docs/en/tutorial/topics/testing.md:72
 #: docs/en/tutorial/topics/testing.md:162
 #: docs/en/tutorial/topics/testing.md:266
@@ -1029,9 +1030,9 @@ msgid "We can now generate and run the app:"
 msgstr "我们现在可以生成并运行应用程序："
 
 #: docs/en/tutorial/topics/camera-access.md:125
-#: docs/en/tutorial/topics/custom-icons.md:91
-#: docs/en/tutorial/topics/custom-icons.md:281
-#: docs/en/tutorial/topics/custom-icons.md:428
+#: docs/en/tutorial/topics/custom-icons.md:93
+#: docs/en/tutorial/topics/custom-icons.md:283
+#: docs/en/tutorial/topics/custom-icons.md:430
 #: docs/en/tutorial/tutorial-7.md:100 docs/en/tutorial/tutorial-7.md:165
 #: docs/en/tutorial/tutorial-7.md:320 docs/en/tutorial/tutorial-7.md:565
 #: docs/en/tutorial/tutorial-8.md:122 docs/en/tutorial/tutorial-8.md:237
@@ -1082,38 +1083,45 @@ msgid ""
 msgstr "我们在主教程中开发的应用在打包时使用了默认的 “灰色蜜蜂” 图标。让我们通过配置使用我们自己的图标来个性化此应用程序。"
 
 #: docs/en/tutorial/topics/custom-icons.md:5
+#: docs/en/tutorial/topics/custom-icons.md:321
+#: docs/en/tutorial/topics/custom-icons.md:365
+#: docs/en/tutorial/tutorial-2.md:107 docs/en/tutorial/tutorial-2.md:157
+#: docs/en/tutorial/tutorial-4.md:124 docs/en/tutorial/tutorial-7.md:610
 #, fuzzy
-msgid ""
-"/// note | Note In BeeWare, the term *icon* can refer to two different "
-"things:"
-msgstr "/// note |注意 在 BeeWare 中，*icon* 一词可指代两种不同的事物："
+msgid "/// note | Note"
+msgstr "/// note |备注"
 
-#: docs/en/tutorial/topics/custom-icons.md:8
+#: docs/en/tutorial/topics/custom-icons.md:7
+#, fuzzy
+msgid "In BeeWare, the term *icon* can refer to two different things:"
+msgstr "在 BeeWare 中，*icon* 一词可以指两种不同的东西："
+
+#: docs/en/tutorial/topics/custom-icons.md:9
 #, fuzzy
 msgid ""
 "**Application icon** — The image that represents your app on the desktop, "
 "dock, or home screen."
 msgstr "** 应用程序图标** - 在桌面、Dock 或主屏幕上代表应用程序的图像。"
 
-#: docs/en/tutorial/topics/custom-icons.md:10
+#: docs/en/tutorial/topics/custom-icons.md:11
 #, fuzzy
 msgid ""
 "**Runtime icons** — Images used inside your app’s interface (for example, in"
 " buttons or tables)."
 msgstr "**运行时图标** - 应用程序界面中使用的图片（例如，按钮或表格中的图片）。"
 
-#: docs/en/tutorial/topics/custom-icons.md:12
+#: docs/en/tutorial/topics/custom-icons.md:13
 #, fuzzy
 msgid ""
 "This tutorial describes how to set the *application icon*. It will not "
-"discuss how to package and use runtime icons. ///"
-msgstr "本教程介绍如何设置 * 应用程序图标*。它不会讨论如何打包和使用运行时图标。///"
+"discuss how to package and use runtime icons."
+msgstr "本教程介绍如何设置 * 应用程序图标*。它不会讨论如何打包和使用运行时图标。"
 
-#: docs/en/tutorial/topics/custom-icons.md:15
+#: docs/en/tutorial/topics/custom-icons.md:17
 msgid "Adding an icon"
 msgstr "添加图标"
 
-#: docs/en/tutorial/topics/custom-icons.md:17
+#: docs/en/tutorial/topics/custom-icons.md:19
 msgid ""
 "Every platform uses a different format for application icons - and some "
 "platforms need *multiple* icons in different sizes and shapes. To account "
@@ -1124,7 +1132,7 @@ msgstr ""
 "每个平台都使用不同的应用程序图标格式 -- 有些还需要\\ *多个*\\ 不同大小和形状的。为此考虑，Briefcase "
 "提供了一种简短的方法，可以配置一次图标，并让这种定义扩充到每个单个平台的所有所需要的图标。"
 
-#: docs/en/tutorial/topics/custom-icons.md:19
+#: docs/en/tutorial/topics/custom-icons.md:21
 msgid ""
 "Edit your `pyproject.toml`, adding a new `icon` configuration item in the "
 "`[tool.briefcase.app.helloworld]` configuration section, just above the "
@@ -1133,7 +1141,7 @@ msgstr ""
 "编辑您的 `project.toml`，在 `[tool.briefcase.app.helloworld]` 配置部分中，在 `sources` "
 "的正上方添加一个 `icon` 配置项:"
 
-#: docs/en/tutorial/topics/custom-icons.md:25
+#: docs/en/tutorial/topics/custom-icons.md:27
 msgid ""
 "This icon definition doesn't specify any file extension. The value will be "
 "used as a prefix; each platform will add additional items to this prefix to "
@@ -1144,7 +1152,7 @@ msgstr ""
 "图标配置时，无需指定任何扩展文件名。这里的值将会被作为前缀使用；每个平台将会在此前缀基础上添加更多项目，以构建在那个平台上所需的文件。有些平台需要\\ "
 "*多个*\\ 图标文件；在这种情况下，前缀将与文件大小和变种结合在一起，生成使用的图标列表。"
 
-#: docs/en/tutorial/topics/custom-icons.md:27
+#: docs/en/tutorial/topics/custom-icons.md:29
 msgid ""
 "We can now run `briefcase update` again - but this time, we pass in the "
 "`--update-resources` flag, telling Briefcase that we want to install new "
@@ -1153,16 +1161,16 @@ msgstr ""
 "我们现在可以重新运行 `briefcase update` — 但这次，我们传入 `--update-resources` 标志，以告诉 "
 "Briefcase 我们想要安装新的应用资源（图标）："
 
-#: docs/en/tutorial/topics/custom-icons.md:129
-#: docs/en/tutorial/topics/custom-icons.md:327
-#: docs/en/tutorial/topics/custom-icons.md:444
+#: docs/en/tutorial/topics/custom-icons.md:131
+#: docs/en/tutorial/topics/custom-icons.md:329
+#: docs/en/tutorial/topics/custom-icons.md:446
 #: docs/en/tutorial/tutorial-7.md:106 docs/en/tutorial/tutorial-7.md:171
 #: docs/en/tutorial/tutorial-7.md:395 docs/en/tutorial/tutorial-7.md:584
 #: docs/en/tutorial/tutorial-8.md:128 docs/en/tutorial/tutorial-8.md:245
 msgid "/// tab | iOS"
 msgstr "/// tab | iOS"
 
-#: docs/en/tutorial/topics/custom-icons.md:163
+#: docs/en/tutorial/topics/custom-icons.md:165
 #, fuzzy
 msgid ""
 "This reports the specific icon file (or files) that Briefcase is expecting. "
@@ -1172,7 +1180,7 @@ msgstr ""
 "这将报告 Briefcase 期望的特定图标文件（或多个文件）。但是，由于我们没有提供实际的图标文件，安装失败，Briefcase 恢复到默认值（相同的"
 " \"灰色蜜蜂 \"图标）。"
 
-#: docs/en/tutorial/topics/custom-icons.md:165
+#: docs/en/tutorial/topics/custom-icons.md:167
 #, fuzzy
 msgid ""
 "Let's provide some actual icons. Download [this icons.zip bundle]{1}, and "
@@ -1181,19 +1189,19 @@ msgid ""
 msgstr ""
 "让我们提供一些实际的图标。下载 [this icons.zip bundle]{1}，并解压到项目目录根目录。解压缩后，你的项目目录应该如下所示："
 
-#: docs/en/tutorial/topics/custom-icons.md:184
+#: docs/en/tutorial/topics/custom-icons.md:186
 #, fuzzy
 msgid ""
 "There's a *lot* of icons in this folder, but most of them should look the "
 "same: a green snake on a light blue background:"
 msgstr "这个文件夹中有很多图标，但大多数看起来都一样：浅蓝色背景上有一条绿色的蛇："
 
-#: docs/en/tutorial/topics/custom-icons.md:186
+#: docs/en/tutorial/topics/custom-icons.md:188
 #, fuzzy
 msgid "![Icon of green snake with a light blue background]{1}"
 msgstr "浅蓝色背景下的绿蛇图标]{1}。"
 
-#: docs/en/tutorial/topics/custom-icons.md:188
+#: docs/en/tutorial/topics/custom-icons.md:190
 #: docs/en/tutorial/tutorial-1.md:169 docs/en/tutorial/tutorial-1.md:179
 #: docs/en/tutorial/tutorial-1.md:189 docs/en/tutorial/tutorial-2.md:271
 #: docs/en/tutorial/tutorial-2.md:281 docs/en/tutorial/tutorial-2.md:291
@@ -1211,7 +1219,7 @@ msgstr "浅蓝色背景下的绿蛇图标]{1}。"
 msgid "/// caption"
 msgstr "/// caption"
 
-#: docs/en/tutorial/topics/custom-icons.md:192
+#: docs/en/tutorial/topics/custom-icons.md:194
 #, fuzzy
 msgid ""
 "The only exception will be the icons with `-adaptive-` in their name; these "
@@ -1222,7 +1230,7 @@ msgstr ""
 "唯一的例外是名称中带有\"-adaptive-\"的图标；这些图标将有透明背景。这代表了在 Briefcase "
 "支持的每个平台上支持应用程序所需的所有不同图标尺寸和形状。"
 
-#: docs/en/tutorial/topics/custom-icons.md:194
+#: docs/en/tutorial/topics/custom-icons.md:196
 #, fuzzy
 msgid ""
 "Now that we have icons, we can update the application again. However, "
@@ -1236,15 +1244,7 @@ msgstr ""
 "\"只会将更新后的资源复制到构建目录中；我们还需要重建应用程序以确保包含新图标，然后启动应用程序。我们可以通过在调用 `run` 时传递 "
 "`--update-resources`来缩短这一过程，这将更新应用程序，更新应用程序的资源，然后启动应用程序："
 
-#: docs/en/tutorial/topics/custom-icons.md:319
-#: docs/en/tutorial/topics/custom-icons.md:363
-#: docs/en/tutorial/tutorial-2.md:107 docs/en/tutorial/tutorial-2.md:157
-#: docs/en/tutorial/tutorial-4.md:124 docs/en/tutorial/tutorial-7.md:610
-#, fuzzy
-msgid "/// note | Note"
-msgstr "/// note |备注"
-
-#: docs/en/tutorial/topics/custom-icons.md:321
+#: docs/en/tutorial/topics/custom-icons.md:323
 #, fuzzy
 msgid ""
 "If you're using a recent version of Android, you may notice that the app "
@@ -1253,7 +1253,7 @@ msgid ""
 msgstr ""
 "如果您使用的是最新版本的安卓系统，您可能会注意到应用程序图标已更改为绿色的蛇形，但图标的背景却是*白色*，而不是浅蓝色。我们将在下一步中解决这个问题。"
 
-#: docs/en/tutorial/topics/custom-icons.md:365
+#: docs/en/tutorial/topics/custom-icons.md:367
 #, fuzzy
 msgid ""
 "If you get a stack trace referencing `faker` or `httpx` when you run the "
@@ -1264,7 +1264,7 @@ msgstr ""
 "如果在运行应用程序时出现引用 `faker` 或 `httpx` 的堆栈跟踪，则有可能是在教程的第 7 或第 8 "
 "步中没有运行应用程序。重新运行应用程序，添加 `-r` 参数以更新应用程序需求。"
 
-#: docs/en/tutorial/topics/custom-icons.md:369
+#: docs/en/tutorial/topics/custom-icons.md:371
 #, fuzzy
 msgid ""
 "When you run the app on iOS or Android, in addition to the icon change, you "
@@ -1278,7 +1278,7 @@ msgstr ""
 "上运行应用程序时，除了图标的变化外，您还会发现闪屏也加入了新图标。不过，图标的淡蓝色背景与闪屏的白色背景显得有些格格不入。我们可以通过自定义闪屏的背景颜色来解决这个问题。将以下定义添加到"
 " `pyproject.toml` 中，就在 icon` 定义之后："
 
-#: docs/en/tutorial/topics/custom-icons.md:375
+#: docs/en/tutorial/topics/custom-icons.md:377
 #, fuzzy
 msgid ""
 "Unfortunately, Briefcase isn't able to apply this change to an already "
@@ -1292,7 +1292,7 @@ msgstr ""
 "时生成的文件之一。要应用这一更改，我们必须通过重新运行 `briefcase create` "
 "来重新创建应用程序。当我们这样做时，系统会提示我们确认是否要覆盖现有项目："
 
-#: docs/en/tutorial/topics/custom-icons.md:460
+#: docs/en/tutorial/topics/custom-icons.md:462
 #, fuzzy
 msgid ""
 "You can then re-build and re-run the app using `briefcase run`. You won't "
@@ -1302,7 +1302,7 @@ msgstr ""
 "然后，您可以使用 \"briefcase run \"重新构建和运行应用程序。您不会注意到桌面应用程序有任何变化；但安卓或 iOS "
 "应用程序现在应该有一个淡蓝色的闪屏背景。"
 
-#: docs/en/tutorial/topics/custom-icons.md:462
+#: docs/en/tutorial/topics/custom-icons.md:464
 #, fuzzy
 msgid ""
 "You'll need to re-create the app like this whenever you make a change to "
@@ -4509,6 +4509,18 @@ msgid ""
 "If you'd like to know more about the capabilities of Briefcase, you can dive"
 " into [Briefcase's documentation]{1}."
 msgstr "如果你想了解更多有关公文包功能的信息，可以查阅[公文包文档]{1}。"
+
+#, fuzzy
+#~ msgid ""
+#~ "/// note | Note In BeeWare, the term *icon* can refer to two different "
+#~ "things:"
+#~ msgstr "/// note |注意 在 BeeWare 中，*icon* 一词可指代两种不同的事物："
+
+#, fuzzy
+#~ msgid ""
+#~ "This tutorial describes how to set the *application icon*. It will not "
+#~ "discuss how to package and use runtime icons. ///"
+#~ msgstr "本教程介绍如何设置 * 应用程序图标*。它不会讨论如何打包和使用运行时图标。///"
 
 #~ msgid ""
 #~ "Next, go to [the BeeWare Tutorial page on GitHub]{1}, fork the repository "

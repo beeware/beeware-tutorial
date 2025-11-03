@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-28 03:21+0000\n"
+"POT-Creation-Date: 2025-11-03 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -161,9 +161,9 @@ msgstr ""
 #: docs/en/how-to/contribute.md:396 docs/en/how-to/contribute.md:426
 #: docs/en/how-to/contribute.md:456 docs/en/how-to/contribute.md:502
 #: docs/en/tutorial/topics/camera-access.md:115
-#: docs/en/tutorial/topics/custom-icons.md:29
-#: docs/en/tutorial/topics/custom-icons.md:196
-#: docs/en/tutorial/topics/custom-icons.md:377
+#: docs/en/tutorial/topics/custom-icons.md:31
+#: docs/en/tutorial/topics/custom-icons.md:198
+#: docs/en/tutorial/topics/custom-icons.md:379
 #: docs/en/tutorial/topics/testing.md:19
 #: docs/en/tutorial/topics/testing.md:124
 #: docs/en/tutorial/topics/testing.md:196
@@ -213,24 +213,25 @@ msgstr "/// tab | macOS"
 #: docs/en/tutorial/topics/camera-access.md:15
 #: docs/en/tutorial/topics/camera-access.md:123
 #: docs/en/tutorial/topics/camera-access.md:133
-#: docs/en/tutorial/topics/custom-icons.md:46
-#: docs/en/tutorial/topics/custom-icons.md:70
-#: docs/en/tutorial/topics/custom-icons.md:89
-#: docs/en/tutorial/topics/custom-icons.md:127
-#: docs/en/tutorial/topics/custom-icons.md:161
-#: docs/en/tutorial/topics/custom-icons.md:190
-#: docs/en/tutorial/topics/custom-icons.md:220
-#: docs/en/tutorial/topics/custom-icons.md:252
-#: docs/en/tutorial/topics/custom-icons.md:279
-#: docs/en/tutorial/topics/custom-icons.md:323
+#: docs/en/tutorial/topics/custom-icons.md:15
+#: docs/en/tutorial/topics/custom-icons.md:48
+#: docs/en/tutorial/topics/custom-icons.md:72
+#: docs/en/tutorial/topics/custom-icons.md:91
+#: docs/en/tutorial/topics/custom-icons.md:129
+#: docs/en/tutorial/topics/custom-icons.md:163
+#: docs/en/tutorial/topics/custom-icons.md:192
+#: docs/en/tutorial/topics/custom-icons.md:222
+#: docs/en/tutorial/topics/custom-icons.md:254
+#: docs/en/tutorial/topics/custom-icons.md:281
 #: docs/en/tutorial/topics/custom-icons.md:325
-#: docs/en/tutorial/topics/custom-icons.md:361
-#: docs/en/tutorial/topics/custom-icons.md:367
-#: docs/en/tutorial/topics/custom-icons.md:392
-#: docs/en/tutorial/topics/custom-icons.md:409
-#: docs/en/tutorial/topics/custom-icons.md:426
-#: docs/en/tutorial/topics/custom-icons.md:442
-#: docs/en/tutorial/topics/custom-icons.md:458
+#: docs/en/tutorial/topics/custom-icons.md:327
+#: docs/en/tutorial/topics/custom-icons.md:363
+#: docs/en/tutorial/topics/custom-icons.md:369
+#: docs/en/tutorial/topics/custom-icons.md:394
+#: docs/en/tutorial/topics/custom-icons.md:411
+#: docs/en/tutorial/topics/custom-icons.md:428
+#: docs/en/tutorial/topics/custom-icons.md:444
+#: docs/en/tutorial/topics/custom-icons.md:460
 #: docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70
 #: docs/en/tutorial/topics/testing.md:98
 #: docs/en/tutorial/topics/testing.md:141
@@ -330,9 +331,9 @@ msgstr "///"
 #: docs/en/how-to/contribute.md:331 docs/en/how-to/contribute.md:361
 #: docs/en/how-to/contribute.md:404 docs/en/how-to/contribute.md:434
 #: docs/en/how-to/contribute.md:464 docs/en/how-to/contribute.md:510
-#: docs/en/tutorial/topics/custom-icons.md:48
-#: docs/en/tutorial/topics/custom-icons.md:222
-#: docs/en/tutorial/topics/custom-icons.md:394
+#: docs/en/tutorial/topics/custom-icons.md:50
+#: docs/en/tutorial/topics/custom-icons.md:224
+#: docs/en/tutorial/topics/custom-icons.md:396
 #: docs/en/tutorial/topics/testing.md:44
 #: docs/en/tutorial/topics/testing.md:143
 #: docs/en/tutorial/topics/testing.md:230
@@ -364,9 +365,9 @@ msgstr "/// tab | Linux"
 #: docs/en/how-to/contribute.md:339 docs/en/how-to/contribute.md:369
 #: docs/en/how-to/contribute.md:412 docs/en/how-to/contribute.md:442
 #: docs/en/how-to/contribute.md:472 docs/en/how-to/contribute.md:518
-#: docs/en/tutorial/topics/custom-icons.md:72
-#: docs/en/tutorial/topics/custom-icons.md:254
-#: docs/en/tutorial/topics/custom-icons.md:411
+#: docs/en/tutorial/topics/custom-icons.md:74
+#: docs/en/tutorial/topics/custom-icons.md:256
+#: docs/en/tutorial/topics/custom-icons.md:413
 #: docs/en/tutorial/topics/testing.md:72
 #: docs/en/tutorial/topics/testing.md:162
 #: docs/en/tutorial/topics/testing.md:266
@@ -1257,9 +1258,9 @@ msgid "We can now generate and run the app:"
 msgstr "Ora possiamo generare ed eseguire l'applicazione:"
 
 #: docs/en/tutorial/topics/camera-access.md:125
-#: docs/en/tutorial/topics/custom-icons.md:91
-#: docs/en/tutorial/topics/custom-icons.md:281
-#: docs/en/tutorial/topics/custom-icons.md:428
+#: docs/en/tutorial/topics/custom-icons.md:93
+#: docs/en/tutorial/topics/custom-icons.md:283
+#: docs/en/tutorial/topics/custom-icons.md:430
 #: docs/en/tutorial/tutorial-7.md:100 docs/en/tutorial/tutorial-7.md:165
 #: docs/en/tutorial/tutorial-7.md:320 docs/en/tutorial/tutorial-7.md:565
 #: docs/en/tutorial/tutorial-8.md:122 docs/en/tutorial/tutorial-8.md:237
@@ -1323,15 +1324,20 @@ msgstr ""
 "grigia\". Come possiamo aggiornare l'app per utilizzare la nostra icona?"
 
 #: docs/en/tutorial/topics/custom-icons.md:5
+#: docs/en/tutorial/topics/custom-icons.md:321
+#: docs/en/tutorial/topics/custom-icons.md:365
+#: docs/en/tutorial/tutorial-2.md:107 docs/en/tutorial/tutorial-2.md:157
+#: docs/en/tutorial/tutorial-4.md:124 docs/en/tutorial/tutorial-7.md:610
 #, fuzzy
-msgid ""
-"/// note | Note In BeeWare, the term *icon* can refer to two different "
-"things:"
-msgstr ""
-"/// note | Nota In BeeWare, il termine *icona* può riferirsi a due cose "
-"diverse:"
+msgid "/// note | Note"
+msgstr "/// note | Nota"
 
-#: docs/en/tutorial/topics/custom-icons.md:8
+#: docs/en/tutorial/topics/custom-icons.md:7
+#, fuzzy
+msgid "In BeeWare, the term *icon* can refer to two different things:"
+msgstr "In BeeWare, il termine *icona* può riferirsi a due cose diverse:"
+
+#: docs/en/tutorial/topics/custom-icons.md:9
 #, fuzzy
 msgid ""
 "**Application icon** — The image that represents your app on the desktop, "
@@ -1340,7 +1346,7 @@ msgstr ""
 "**Icona dell'applicazione** - L'immagine che rappresenta l'applicazione sul "
 "desktop, sul dock o sulla schermata iniziale."
 
-#: docs/en/tutorial/topics/custom-icons.md:10
+#: docs/en/tutorial/topics/custom-icons.md:11
 #, fuzzy
 msgid ""
 "**Runtime icons** — Images used inside your app’s interface (for example, in"
@@ -1349,21 +1355,21 @@ msgstr ""
 "**Icone runtime** - Immagini utilizzate all'interno dell'interfaccia "
 "dell'applicazione (ad esempio, nei pulsanti o nelle tabelle)."
 
-#: docs/en/tutorial/topics/custom-icons.md:12
+#: docs/en/tutorial/topics/custom-icons.md:13
 #, fuzzy
 msgid ""
 "This tutorial describes how to set the *application icon*. It will not "
-"discuss how to package and use runtime icons. ///"
+"discuss how to package and use runtime icons."
 msgstr ""
 "Questa esercitazione descrive come impostare l'icona *dell'applicazione*. "
-"Non tratta di come confezionare e utilizzare le icone di runtime. ///"
+"Non tratta di come confezionare e utilizzare le icone di runtime."
 
-#: docs/en/tutorial/topics/custom-icons.md:15
+#: docs/en/tutorial/topics/custom-icons.md:17
 #, fuzzy
 msgid "Adding an icon"
 msgstr "Aggiunta di un'icona"
 
-#: docs/en/tutorial/topics/custom-icons.md:17
+#: docs/en/tutorial/topics/custom-icons.md:19
 #, fuzzy
 msgid ""
 "Every platform uses a different format for application icons - and some "
@@ -1378,7 +1384,7 @@ msgstr ""
 "configurare un'icona una volta sola, e poi far sì che la definizione si "
 "espanda a tutte le diverse icone necessarie per ogni singola piattaforma."
 
-#: docs/en/tutorial/topics/custom-icons.md:19
+#: docs/en/tutorial/topics/custom-icons.md:21
 #, fuzzy
 msgid ""
 "Edit your `pyproject.toml`, adding a new `icon` configuration item in the "
@@ -1389,7 +1395,7 @@ msgstr ""
 "configurazione `icon` nella sezione di configurazione "
 "`[tool.briefcase.app.helloworld]`, appena sopra la definizione `sources`:"
 
-#: docs/en/tutorial/topics/custom-icons.md:25
+#: docs/en/tutorial/topics/custom-icons.md:27
 #, fuzzy
 msgid ""
 "This icon definition doesn't specify any file extension. The value will be "
@@ -1405,7 +1411,7 @@ msgstr ""
 "sarà combinato con i modificatori di dimensione e variante del file per "
 "generare l'elenco dei file di icone utilizzati."
 
-#: docs/en/tutorial/topics/custom-icons.md:27
+#: docs/en/tutorial/topics/custom-icons.md:29
 #, fuzzy
 msgid ""
 "We can now run `briefcase update` again - but this time, we pass in the "
@@ -1416,16 +1422,16 @@ msgstr ""
 "passiamo il flag `--update-resources`, indicando a Briefcase che vogliamo "
 "installare le nuove risorse dell'applicazione (cioè le icone):"
 
-#: docs/en/tutorial/topics/custom-icons.md:129
-#: docs/en/tutorial/topics/custom-icons.md:327
-#: docs/en/tutorial/topics/custom-icons.md:444
+#: docs/en/tutorial/topics/custom-icons.md:131
+#: docs/en/tutorial/topics/custom-icons.md:329
+#: docs/en/tutorial/topics/custom-icons.md:446
 #: docs/en/tutorial/tutorial-7.md:106 docs/en/tutorial/tutorial-7.md:171
 #: docs/en/tutorial/tutorial-7.md:395 docs/en/tutorial/tutorial-7.md:584
 #: docs/en/tutorial/tutorial-8.md:128 docs/en/tutorial/tutorial-8.md:245
 msgid "/// tab | iOS"
 msgstr "/// tab | iOS"
 
-#: docs/en/tutorial/topics/custom-icons.md:163
+#: docs/en/tutorial/topics/custom-icons.md:165
 #, fuzzy
 msgid ""
 "This reports the specific icon file (or files) that Briefcase is expecting. "
@@ -1437,7 +1443,7 @@ msgstr ""
 "l'installazione fallisce e Briefcase torna al valore predefinito (la stessa "
 "icona \"ape grigia\")."
 
-#: docs/en/tutorial/topics/custom-icons.md:165
+#: docs/en/tutorial/topics/custom-icons.md:167
 #, fuzzy
 msgid ""
 "Let's provide some actual icons. Download [this icons.zip bundle]{1}, and "
@@ -1448,7 +1454,7 @@ msgstr ""
 "decomprimerlo nella cartella principale del progetto. Dopo la "
 "decompressione, la cartella del progetto dovrebbe avere un aspetto simile a:"
 
-#: docs/en/tutorial/topics/custom-icons.md:184
+#: docs/en/tutorial/topics/custom-icons.md:186
 #, fuzzy
 msgid ""
 "There's a *lot* of icons in this folder, but most of them should look the "
@@ -1457,12 +1463,12 @@ msgstr ""
 "Ci sono *molte* icone in questa cartella, ma la maggior parte di esse "
 "dovrebbe avere lo stesso aspetto: un serpente verde su uno sfondo azzurro:"
 
-#: docs/en/tutorial/topics/custom-icons.md:186
+#: docs/en/tutorial/topics/custom-icons.md:188
 #, fuzzy
 msgid "![Icon of green snake with a light blue background]{1}"
 msgstr "![Icona di un serpente verde con sfondo azzurro] {1}"
 
-#: docs/en/tutorial/topics/custom-icons.md:188
+#: docs/en/tutorial/topics/custom-icons.md:190
 #: docs/en/tutorial/tutorial-1.md:169 docs/en/tutorial/tutorial-1.md:179
 #: docs/en/tutorial/tutorial-1.md:189 docs/en/tutorial/tutorial-2.md:271
 #: docs/en/tutorial/tutorial-2.md:281 docs/en/tutorial/tutorial-2.md:291
@@ -1480,7 +1486,7 @@ msgstr "![Icona di un serpente verde con sfondo azzurro] {1}"
 msgid "/// caption"
 msgstr "/// caption"
 
-#: docs/en/tutorial/topics/custom-icons.md:192
+#: docs/en/tutorial/topics/custom-icons.md:194
 #, fuzzy
 msgid ""
 "The only exception will be the icons with `-adaptive-` in their name; these "
@@ -1493,7 +1499,7 @@ msgstr ""
 "dimensioni e forme di icone necessarie per supportare un'applicazione su "
 "tutte le piattaforme supportate da Briefcase."
 
-#: docs/en/tutorial/topics/custom-icons.md:194
+#: docs/en/tutorial/topics/custom-icons.md:196
 #, fuzzy
 msgid ""
 "Now that we have icons, we can update the application again. However, "
@@ -1511,15 +1517,7 @@ msgstr ""
 "chiamata a `run`: questo aggiornerà l'applicazione, aggiornerà le risorse "
 "dell'applicazione e poi la avvierà:"
 
-#: docs/en/tutorial/topics/custom-icons.md:319
-#: docs/en/tutorial/topics/custom-icons.md:363
-#: docs/en/tutorial/tutorial-2.md:107 docs/en/tutorial/tutorial-2.md:157
-#: docs/en/tutorial/tutorial-4.md:124 docs/en/tutorial/tutorial-7.md:610
-#, fuzzy
-msgid "/// note | Note"
-msgstr "/// note | Nota"
-
-#: docs/en/tutorial/topics/custom-icons.md:321
+#: docs/en/tutorial/topics/custom-icons.md:323
 #, fuzzy
 msgid ""
 "If you're using a recent version of Android, you may notice that the app "
@@ -1531,7 +1529,7 @@ msgstr ""
 "*bianco*, anziché azzurro. Risolveremo questo problema nella fase "
 "successiva."
 
-#: docs/en/tutorial/topics/custom-icons.md:365
+#: docs/en/tutorial/topics/custom-icons.md:367
 #, fuzzy
 msgid ""
 "If you get a stack trace referencing `faker` or `httpx` when you run the "
@@ -1545,7 +1543,7 @@ msgstr ""
 "l'applicazione, aggiungendo l'argomento `-r` per aggiornare i requisiti "
 "dell'applicazione."
 
-#: docs/en/tutorial/topics/custom-icons.md:369
+#: docs/en/tutorial/topics/custom-icons.md:371
 #, fuzzy
 msgid ""
 "When you run the app on iOS or Android, in addition to the icon change, you "
@@ -1563,7 +1561,7 @@ msgstr ""
 "seguente definizione al file `pyproject.toml`, subito dopo la definizione "
 "`icon`:"
 
-#: docs/en/tutorial/topics/custom-icons.md:375
+#: docs/en/tutorial/topics/custom-icons.md:377
 #, fuzzy
 msgid ""
 "Unfortunately, Briefcase isn't able to apply this change to an already "
@@ -1580,7 +1578,7 @@ msgstr ""
 "create`. Quando lo facciamo, ci verrà chiesto di confermare che vogliamo "
 "sovrascrivere il progetto esistente:"
 
-#: docs/en/tutorial/topics/custom-icons.md:460
+#: docs/en/tutorial/topics/custom-icons.md:462
 #, fuzzy
 msgid ""
 "You can then re-build and re-run the app using `briefcase run`. You won't "
@@ -1592,7 +1590,7 @@ msgstr ""
 "nell'applicazione desktop, ma le applicazioni per Android o iOS dovrebbero "
 "ora avere uno sfondo azzurro."
 
-#: docs/en/tutorial/topics/custom-icons.md:462
+#: docs/en/tutorial/topics/custom-icons.md:464
 #, fuzzy
 msgid ""
 "You'll need to re-create the app like this whenever you make a change to "
@@ -5814,6 +5812,22 @@ msgid ""
 msgstr ""
 "Per saperne di più sulle funzionalità di Briefcase, è possibile consultare "
 "la [documentazione di Briefcase]{1}."
+
+#, fuzzy
+#~ msgid ""
+#~ "/// note | Note In BeeWare, the term *icon* can refer to two different "
+#~ "things:"
+#~ msgstr ""
+#~ "/// note | Nota In BeeWare, il termine *icona* può riferirsi a due cose "
+#~ "diverse:"
+
+#, fuzzy
+#~ msgid ""
+#~ "This tutorial describes how to set the *application icon*. It will not "
+#~ "discuss how to package and use runtime icons. ///"
+#~ msgstr ""
+#~ "Questa esercitazione descrive come impostare l'icona *dell'applicazione*. "
+#~ "Non tratta di come confezionare e utilizzare le icone di runtime. ///"
 
 #, fuzzy
 #~ msgid ""
