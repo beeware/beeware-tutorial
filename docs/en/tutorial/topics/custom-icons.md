@@ -497,4 +497,10 @@ button = toga.Button(
 )
 ```
 
-Since runtime icons are app resources bundled inside your Python package, no rebuild or resource update is needed. At this point you can run `briefcase dev` (or `briefcase run`) to see the icon added to the button.
+Since runtime icons are app resources bundled inside your Python package, no rebuild or resource update is needed. At this point you can run `briefcase dev` (or `briefcase run`) to see the icon added to the button. The icon is Tiberius the yak.
+
+![Icon of Tiberius the yak](../../images/runtime-icon.png)
+
+/// caption
+
+///
