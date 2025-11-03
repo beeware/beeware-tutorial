@@ -484,3 +484,17 @@ beeware-tutorial/
     │   └──...
     └── pyproject.toml
 ```
+
+Now that the runtime icon is in place, let's add an icon to our button. The Toga button widget will only accommodate either an icon or text (not both), so let's update the code for the button to include the runtime icon.
+
+```python
+helloworld_icon = toga.Icon("icons/helloworld")
+
+button = toga.Button(
+    icon=helloworld_icon,
+    on_press=self.say_hello,
+    margin=5,
+)
+```
+
+Since runtime icons are app resources bundled inside your Python package, no rebuild or resource update is needed. At this point you can run `briefcase dev` (or `briefcase run`) to see the icon added to the button.
