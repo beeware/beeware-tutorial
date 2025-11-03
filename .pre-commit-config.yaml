@@ -13,4 +13,4 @@ repos:
     rev: v0.0.170
     hooks:
       - id: rumdl
-        args: [--force-exclude, --fix]
+        args: [--fix]
