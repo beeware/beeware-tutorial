@@ -12,6 +12,31 @@ validation:
 
 extra:
   project_name: beeware-tutorial
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
+    - name: Español
+      link: /es/
+      lang: es
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: Italiano
+      link: /it/
+      lang: it
+    - name: Português
+      link: /pt/
+      lang: pt
+    - name: 中文(简体)
+      link: /zh-cn/
+      lang: zh-Hant
+    - name: 中文(繁體)
+      link: /zh-tw/
+      lang: zh-TW
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/beeware
