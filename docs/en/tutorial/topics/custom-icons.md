@@ -463,7 +463,15 @@ You'll need to re-create the app like this whenever you make a change to your `p
 
 ## Adding a runtime icon
 
-When it comes to adding an icon to the app interface, this type of icon must be stored in a separate directory from the application icons. Download [this runtime-icons.zip bundle](../../resources/runtime-icons.zip), then unzip to your application source package. Your directory will resemble the following:
+When it comes to adding an icon to the app interface, this type of icon must be stored in a separate directory from the application icons. Right click Tiberius the yak, save that image as a `.png` file and name it `helloworld`. The file should then be saved to the `icons/` folder in your application source package.
+
+![Icon of Tiberius the yak](../../images/runtime-icon.png)
+
+/// caption
+
+///
+
+Your directory will resemble the following:
 
 ```text
 beeware-tutorial/
@@ -497,10 +505,4 @@ button = toga.Button(
 )
 ```
 
-Since runtime icons are app resources bundled inside your Python package, no rebuild or resource update is needed. At this point you can run `briefcase dev` (or `briefcase run`) to see the icon added to the button. The icon is Tiberius the yak.
-
-![Icon of Tiberius the yak](../../images/runtime-icon.png)
-
-/// caption
-
-///
+Since runtime icons are app resources bundled inside your Python package, no rebuild or resource update is needed. At this point you can run `briefcase dev` (or `briefcase run`) to see the icon added to the button.
