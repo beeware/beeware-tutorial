@@ -1,6 +1,6 @@
 [dependency-groups]
 pre-commit = [
-    "pre-commit == 4.3.0",
+    "pre-commit == 4.4.0",
 ]
 
 tox-uv = [
