@@ -10,8 +10,6 @@ In BeeWare, the term *icon* can refer to two different things:
 
 - **Runtime icons** — Images used inside your app’s interface (for example, in buttons or tables).
 
-This tutorial describes how to set the *application icon*. It will not discuss how to package and use runtime icons.
-
 ///
 
 ## Adding an icon
@@ -462,3 +460,49 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 You can then re-build and re-run the app using `briefcase run`. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background.
 
 You'll need to re-create the app like this whenever you make a change to your `pyproject.toml` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the `build` folder, and you shouldn't add the `build` folder to your version control system. The `build` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project.
+
+## Adding a runtime icon
+
+When it comes to adding an icon to the app interface, this type of icon must be stored in a separate directory from the application icons. Right click Tiberius the yak, save that image as a `.png` file and name it `helloworld`. The file should then be saved to the `icons/` folder in your application source package.
+
+![Icon of Tiberius the yak](../../images/runtime-icon.png)
+
+/// caption
+
+///
+
+Your directory will resemble the following:
+
+```text
+beeware-tutorial/
+├── beeware-venv/
+│   └── ...
+└── helloworld/
+    ├── ...
+    ├── icons/
+    │   ├── helloworld.icns
+    │   ├── helloworld.ico
+    │   ├── helloworld.png
+    │   ├── helloworld-16.png
+    │   └──...
+    ├── src/
+    │   ├── helloworld
+    │   │   └── icons/
+    │   │       └── helloworld.png
+    │   └──...
+    └── pyproject.toml
+```
+
+Now that the runtime icon is in place, let's add an icon to our button. The Toga button widget will only accommodate either an icon or text (not both), so let's update the code for the button to include the runtime icon.
+
+```python
+helloworld_icon = toga.Icon("icons/helloworld")
+
+button = toga.Button(
+    icon=helloworld_icon,
+    on_press=self.say_hello,
+    margin=5,
+)
+```
+
+Since runtime icons are app resources bundled inside your Python package, no rebuild or resource update is needed. At this point you can run `briefcase dev` (or `briefcase run`) to see the icon added to the button.
