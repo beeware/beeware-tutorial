@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-10 18:23+0000\n"
+"POT-Creation-Date: 2025-11-15 03:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -1667,8 +1667,8 @@ msgstr ""
 msgid ""
 "Xcode and the Command-line Developer Tools provide a version of Python; "
 "however that Python is version 3.9. Python 3.9 has reached end-of-life, and "
-"is no longer supported by Python or BeeWare. You will *not* be able to the "
-"Xcode-provided version of Python to run this tutorial."
+"is no longer supported by Python or BeeWare. You will *not* be able to use "
+"the Xcode-provided version of Python to run this tutorial."
 msgstr ""
 "Xcode 和 Command-line 開發者工具提供了 Python 版本，但該 Python 版本為 3.9。Python 3.9 "
 "已經到了生命末期，Python 或 BeeWare 都不再支援。您將**無法使用 Xcode 提供的 Python 版本來執行本教學。"
@@ -1851,9 +1851,10 @@ msgid "If you're using PowerShell, and you receive the error:"
 msgstr "如果您使用 PowerShell，並且收到錯誤:"
 
 #: docs/en/tutorial/tutorial-0.md:147
+#, fuzzy
 msgid ""
-"Your Windows account doesn't have permissions to run scripts. To fix this:"
-msgstr "您的 Windows 帳戶沒有執行腳本的權限。要解決此問題："
+"Your Windows account doesn't have permission to run scripts. To fix this:"
+msgstr "您的 Windows 帳戶沒有執行指令碼的權限。要解決這個問題："
 
 #: docs/en/tutorial/tutorial-0.md:149
 #, fuzzy
@@ -4775,6 +4776,20 @@ msgid ""
 "If you'd like to know more about the capabilities of Briefcase, you can dive"
 " into [Briefcase's documentation]{1}."
 msgstr "如果您想瞭解更多關於 Briefcase 的功能，可以深入閱讀 [Briefcase 的說明文件]{1}。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Xcode and the Command-line Developer Tools provide a version of Python; "
+#~ "however that Python is version 3.9. Python 3.9 has reached end-of-life, and "
+#~ "is no longer supported by Python or BeeWare. You will *not* be able to the "
+#~ "Xcode-provided version of Python to run this tutorial."
+#~ msgstr ""
+#~ "Xcode 和 Command-line 開發者工具提供了 Python 版本，但該 Python 版本為 3.9。Python 3.9 "
+#~ "已經到了生命末期，Python 或 BeeWare 都不再支援。您將**無法使用 Xcode 提供的 Python 版本來執行本教學。"
+
+#~ msgid ""
+#~ "Your Windows account doesn't have permissions to run scripts. To fix this:"
+#~ msgstr "您的 Windows 帳戶沒有執行腳本的權限。要解決此問題："
 
 #, fuzzy
 #~ msgid ""

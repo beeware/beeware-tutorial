@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-10 18:23+0000\n"
+"POT-Creation-Date: 2025-11-15 03:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: es <LL@li.org>\n"
@@ -1919,14 +1919,14 @@ msgstr ""
 msgid ""
 "Xcode and the Command-line Developer Tools provide a version of Python; "
 "however that Python is version 3.9. Python 3.9 has reached end-of-life, and "
-"is no longer supported by Python or BeeWare. You will *not* be able to the "
-"Xcode-provided version of Python to run this tutorial."
+"is no longer supported by Python or BeeWare. You will *not* be able to use "
+"the Xcode-provided version of Python to run this tutorial."
 msgstr ""
 "Xcode y las herramientas de desarrollo de línea de comandos proporcionan una"
 " versión de Python; sin embargo, esa Python es la versión 3.9. Python 3.9 ha"
 " llegado al final de su vida útil, y ya no está soportado por Python o "
-"BeeWare. Usted *no* podrá utilizar la versión de Python proporcionada por "
-"Xcode para ejecutar este tutorial."
+"BeeWare. Usted *no* será capaz de utilizar la versión de Python "
+"proporcionada por Xcode para ejecutar este tutorial."
 
 #: docs/en/tutorial/tutorial-0.md:17
 #, fuzzy
@@ -2134,10 +2134,11 @@ msgid "If you're using PowerShell, and you receive the error:"
 msgstr "Si está utilizando PowerShell y recibe el error:"
 
 #: docs/en/tutorial/tutorial-0.md:147
+#, fuzzy
 msgid ""
-"Your Windows account doesn't have permissions to run scripts. To fix this:"
+"Your Windows account doesn't have permission to run scripts. To fix this:"
 msgstr ""
-"Tu cuenta de Windows no tiene permisos para ejecutar scripts. Para "
+"Su cuenta de Windows no tiene permiso para ejecutar scripts. Para "
 "solucionarlo:"
 
 #: docs/en/tutorial/tutorial-0.md:149
@@ -5700,6 +5701,25 @@ msgid ""
 msgstr ""
 "Si desea saber más sobre las capacidades de Briefcase, puede sumergirse en "
 "[la documentación de Briefcase]{1}."
+
+#, fuzzy
+#~ msgid ""
+#~ "Xcode and the Command-line Developer Tools provide a version of Python; "
+#~ "however that Python is version 3.9. Python 3.9 has reached end-of-life, and "
+#~ "is no longer supported by Python or BeeWare. You will *not* be able to the "
+#~ "Xcode-provided version of Python to run this tutorial."
+#~ msgstr ""
+#~ "Xcode y las herramientas de desarrollo de línea de comandos proporcionan una"
+#~ " versión de Python; sin embargo, esa Python es la versión 3.9. Python 3.9 ha"
+#~ " llegado al final de su vida útil, y ya no está soportado por Python o "
+#~ "BeeWare. Usted *no* podrá utilizar la versión de Python proporcionada por "
+#~ "Xcode para ejecutar este tutorial."
+
+#~ msgid ""
+#~ "Your Windows account doesn't have permissions to run scripts. To fix this:"
+#~ msgstr ""
+#~ "Tu cuenta de Windows no tiene permisos para ejecutar scripts. Para "
+#~ "solucionarlo:"
 
 #, fuzzy
 #~ msgid ""
