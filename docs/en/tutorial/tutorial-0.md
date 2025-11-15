@@ -12,7 +12,7 @@ If you're on macOS, you can get an official Python installer from [the Python we
 
 You can also install Python through [Homebrew](https://docs.brew.sh/Homebrew-and-Python), use [pyenv](https://github.com/pyenv/pyenv#simple-python-version-management-pyenv) to manage multiple Python installs, or use [Anaconda](https://docs.anaconda.com/anaconda/install/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html). It doesn't matter *how* you've installed Python - it only matters that you can run `python3` from your terminal and get a working, supported Python interpreter.
 
-Xcode and the Command-line Developer Tools provide a version of Python; however that Python is version 3.9. Python 3.9 has reached end-of-life, and is no longer supported by Python or BeeWare. You will *not* be able to the Xcode-provided version of Python to run this tutorial.
+Xcode and the Command-line Developer Tools provide a version of Python; however that Python is version 3.9. Python 3.9 has reached end-of-life, and is no longer supported by Python or BeeWare. You will *not* be able to use the Xcode-provided version of Python to run this tutorial.
 
 To check the version of Python that you have installed, run the following command:
 
@@ -144,7 +144,7 @@ If you're using PowerShell, and you receive the error:
 File C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system.
 ```
 
-Your Windows account doesn't have permissions to run scripts. To fix this:
+Your Windows account doesn't have permission to run scripts. To fix this:
 
 1. Run [Windows PowerShell as Administrator](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4).
 2. Run `set-executionpolicy RemoteSigned`
