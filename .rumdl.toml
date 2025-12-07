@@ -10,6 +10,7 @@ disable = ["MD014",]
 
 [per-file-ignores]
 "docs/en/how-to/style-guide.md" = ["MD041"]
+"docs/en/SUMMARY.md" = ["MD041"]
 
 [MD026]  # Remove punctuation at the end of headings
 punctuation = ",;:"
