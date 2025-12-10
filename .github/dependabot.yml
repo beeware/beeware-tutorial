@@ -5,7 +5,7 @@ multi-ecosystem-groups:
     schedule:
       # Check for updates on the first Sunday of every month, 8PM UTC
       interval: "cron"
-      cronjob: "0 20 * * sun#2"
+      cronjob: "0 20 * * sun#1"
 
 updates:
   - package-ecosystem: "github-actions"
