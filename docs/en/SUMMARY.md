@@ -19,6 +19,3 @@
     - [Customizing icons](tutorial/topics/custom-icons.md)
     - [Using the camera](tutorial/topics/camera-access.md)
     - [Testing times](tutorial/topics/testing.md)
-- How-to guides
-    - [Contributing to this tutorial](how-to/contribute.md)
-    - [Style guide](how-to/style-guide.md)
