@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-07 22:55+0000\n"
+"POT-Creation-Date: 2025-12-11 07:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -100,157 +100,50 @@ msgstr "[Utilisation de l'appareil photo]{1}"
 msgid "[Testing times]{1}"
 msgstr "[Temps d'essai]{1}"
 
-#: docs/en/SUMMARY.md:22
+#: docs/en/index.md:1
 #, fuzzy
-msgid "How-to guides"
-msgstr "Guides pratiques"
+msgid "Welcome to the BeeWare Tutorial"
+msgstr "Bienvenue dans le didacticiel BeeWare !"
 
-#: docs/en/SUMMARY.md:22
-#, fuzzy
-msgid "[Contributing to this tutorial]{1}"
-msgstr "[Contribuer à ce tutoriel]{1}"
+#: docs/en/index.md:3
+msgid "**Write Python. Run Anywhere.**"
+msgstr "**Écrire en Python. Exécutez n'importe où.**"
 
-#: docs/en/SUMMARY.md:22
-#, fuzzy
-msgid "[Style guide]{1}"
-msgstr "[Style guide]{1}"
-
-#: docs/en/how-to/contribute.md:1
-#, fuzzy
-msgid "Contributing to this tutorial"
-msgstr "Contribuer à ce tutoriel"
-
-#: docs/en/how-to/contribute.md:3
-#, fuzzy
+#: docs/en/index.md:5
 msgid ""
-"This tutorial is written using [MkDocs and Markdown]{1}. This guide will "
-"help you contribute fixes or new content to this tutorial."
+"Welcome to BeeWare! In this tutorial, we're going to build a graphical user "
+"interface using Python, and deploy it as a desktop application, as a mobile "
+"application, and as a single page web app. We'll also look at how you can "
+"use BeeWare tools to perform some of the common tasks that you'll need to do "
+"as an app developer, such as testing your app."
 msgstr ""
-"Ce tutoriel est écrit en utilisant [MkDocs et Markdown]{1}. Ce guide vous "
-"aidera à apporter des corrections ou du nouveau contenu à ce tutoriel."
+"Bienvenue à BeeWare ! Dans ce tutoriel, nous allons construire une interface "
+"utilisateur graphique en utilisant Python, et la déployer en tant "
+"qu'application de bureau, application mobile et application web à page "
+"unique. Nous allons également voir comment vous pouvez utiliser les outils "
+"de BeeWare pour effectuer certaines tâches courantes pour les développeur "
+"d'applications, telles que tester votre application."
 
-#: docs/en/how-to/contribute.md:5
+#: docs/en/index.md:7
 #, fuzzy
+msgid "{% if config.extra.translation_type == \"original\" %}"
+msgstr "{% if config.extra.translation_type == \"original\" %}"
+
+#: docs/en/index.md:9
+#, fuzzy
+msgid "/// admonition | Translations are available"
+msgstr "/// admonition | Des traductions sont disponibles"
+
+#: docs/en/index.md:11
 msgid ""
-"Translations of this tutorial are managed using [Weblate]{1}. If you'd like "
-"to contribute to the translation effort, join the `#translations` channel on "
-"[Discord]{2} and introduce yourself!"
+"If you're not comfortable with English, translations of this tutorial are "
+"available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, "
+"[Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
 msgstr ""
-"Les traductions de ce tutoriel sont gérées par [Weblate]{1}. Si vous "
-"souhaitez contribuer à l'effort de traduction, rejoignez le canal "
-"`#translations` sur [Discord]{2} et présentez-vous !"
+"Si vous n'êtes pas à l'aise en français, vous pouvez trouver des traductions "
+"de ce didacticiel en [English]{1}, [Deutsch]{2}, [Español]{3}, [Português]{4}"
+", and [汉语]{5}."
 
-#: docs/en/how-to/contribute.md:7
-#, fuzzy
-msgid "Set up your development environment"
-msgstr "Mise en place de l'environnement de développement"
-
-#: docs/en/how-to/contribute.md:9
-#, fuzzy
-msgid ""
-"To build the BeeWare tutorial you **must** have a Python 3.12 interpreter "
-"installed and available on your path (i.e., `python3` must start a Python "
-"3.12 interpreter)."
-msgstr ""
-"Pour construire le tutoriel BeeWare, vous **devez** avoir un interpréteur "
-"Python 3.12 installé et disponible sur votre chemin (c'est-à-dire que "
-"`python3` doit démarrer un interpréteur Python 3.12)."
-
-#: docs/en/how-to/contribute.md:11
-#: docs/en/how-to/contribute.md:42
-#: docs/en/how-to/contribute.md:77
-#: docs/en/how-to/contribute.md:117
-#: docs/en/how-to/contribute.md:148
-#: docs/en/how-to/contribute.md:177
-#: docs/en/how-to/contribute.md:239
-#: docs/en/how-to/contribute.md:293
-#: docs/en/how-to/contribute.md:323
-#: docs/en/how-to/contribute.md:353
-#: docs/en/how-to/contribute.md:396
-#: docs/en/how-to/contribute.md:426
-#: docs/en/how-to/contribute.md:456
-#: docs/en/how-to/contribute.md:502
-#: docs/en/tutorial/topics/camera-access.md:115
-#: docs/en/tutorial/topics/custom-icons.md:29
-#: docs/en/tutorial/topics/custom-icons.md:196
-#: docs/en/tutorial/topics/custom-icons.md:377
-#: docs/en/tutorial/topics/testing.md:19
-#: docs/en/tutorial/topics/testing.md:124
-#: docs/en/tutorial/topics/testing.md:196
-#: docs/en/tutorial/topics/testing.md:315
-#: docs/en/tutorial/topics/testing.md:381
-#: docs/en/tutorial/tutorial-0.md:9
-#: docs/en/tutorial/tutorial-0.md:53
-#: docs/en/tutorial/tutorial-0.md:106
-#: docs/en/tutorial/tutorial-1.md:9
-#: docs/en/tutorial/tutorial-1.md:49
-#: docs/en/tutorial/tutorial-1.md:118
-#: docs/en/tutorial/tutorial-1.md:165
-#: docs/en/tutorial/tutorial-2.md:230
-#: docs/en/tutorial/tutorial-2.md:267
-#: docs/en/tutorial/tutorial-3.md:13
-#: docs/en/tutorial/tutorial-3.md:132
-#: docs/en/tutorial/tutorial-3.md:202
-#: docs/en/tutorial/tutorial-3.md:289
-#: docs/en/tutorial/tutorial-4.md:29
-#: docs/en/tutorial/tutorial-4.md:65
-#: docs/en/tutorial/tutorial-4.md:160
-#: docs/en/tutorial/tutorial-5/android.md:11
-#: docs/en/tutorial/tutorial-5/android.md:104
-#: docs/en/tutorial/tutorial-5/android.md:176
-#: docs/en/tutorial/tutorial-5/android.md:285
-#: docs/en/tutorial/tutorial-6.md:17
-#: docs/en/tutorial/tutorial-7.md:34
-#: docs/en/tutorial/tutorial-7.md:114
-#: docs/en/tutorial/tutorial-7.md:183
-#: docs/en/tutorial/tutorial-7.md:490
-#: docs/en/tutorial/tutorial-8.md:59
-#: docs/en/tutorial/tutorial-8.md:213
-msgid "/// tab | macOS"
-msgstr "/// tab | macOS"
-
-#: docs/en/how-to/contribute.md:18
-#: docs/en/how-to/contribute.md:27
-#: docs/en/how-to/contribute.md:36
-#: docs/en/how-to/contribute.md:49
-#: docs/en/how-to/contribute.md:58
-#: docs/en/how-to/contribute.md:67
-#: docs/en/how-to/contribute.md:87
-#: docs/en/how-to/contribute.md:99
-#: docs/en/how-to/contribute.md:111
-#: docs/en/how-to/contribute.md:124
-#: docs/en/how-to/contribute.md:133
-#: docs/en/how-to/contribute.md:142
-#: docs/en/how-to/contribute.md:155
-#: docs/en/how-to/contribute.md:164
-#: docs/en/how-to/contribute.md:173
-#: docs/en/how-to/contribute.md:195
-#: docs/en/how-to/contribute.md:215
-#: docs/en/how-to/contribute.md:235
-#: docs/en/how-to/contribute.md:253
-#: docs/en/how-to/contribute.md:269
-#: docs/en/how-to/contribute.md:283
-#: docs/en/how-to/contribute.md:299
-#: docs/en/how-to/contribute.md:307
-#: docs/en/how-to/contribute.md:315
-#: docs/en/how-to/contribute.md:329
-#: docs/en/how-to/contribute.md:337
-#: docs/en/how-to/contribute.md:345
-#: docs/en/how-to/contribute.md:359
-#: docs/en/how-to/contribute.md:367
-#: docs/en/how-to/contribute.md:375
-#: docs/en/how-to/contribute.md:402
-#: docs/en/how-to/contribute.md:410
-#: docs/en/how-to/contribute.md:418
-#: docs/en/how-to/contribute.md:432
-#: docs/en/how-to/contribute.md:440
-#: docs/en/how-to/contribute.md:448
-#: docs/en/how-to/contribute.md:462
-#: docs/en/how-to/contribute.md:470
-#: docs/en/how-to/contribute.md:478
-#: docs/en/how-to/contribute.md:508
-#: docs/en/how-to/contribute.md:516
-#: docs/en/how-to/contribute.md:524
 #: docs/en/index.md:13
 #: docs/en/index.md:25
 #: docs/en/index.md:37
@@ -425,602 +318,6 @@ msgstr "/// tab | macOS"
 #: docs/en/tutorial/tutorial-8.md:251
 msgid "///"
 msgstr "///"
-
-#: docs/en/how-to/contribute.md:20
-#: docs/en/how-to/contribute.md:51
-#: docs/en/how-to/contribute.md:89
-#: docs/en/how-to/contribute.md:126
-#: docs/en/how-to/contribute.md:157
-#: docs/en/how-to/contribute.md:197
-#: docs/en/how-to/contribute.md:255
-#: docs/en/how-to/contribute.md:301
-#: docs/en/how-to/contribute.md:331
-#: docs/en/how-to/contribute.md:361
-#: docs/en/how-to/contribute.md:404
-#: docs/en/how-to/contribute.md:434
-#: docs/en/how-to/contribute.md:464
-#: docs/en/how-to/contribute.md:510
-#: docs/en/tutorial/topics/custom-icons.md:48
-#: docs/en/tutorial/topics/custom-icons.md:222
-#: docs/en/tutorial/topics/custom-icons.md:394
-#: docs/en/tutorial/topics/testing.md:44
-#: docs/en/tutorial/topics/testing.md:143
-#: docs/en/tutorial/topics/testing.md:230
-#: docs/en/tutorial/topics/testing.md:335
-#: docs/en/tutorial/topics/testing.md:425
-#: docs/en/tutorial/tutorial-0.md:27
-#: docs/en/tutorial/tutorial-0.md:61
-#: docs/en/tutorial/tutorial-0.md:117
-#: docs/en/tutorial/tutorial-1.md:17
-#: docs/en/tutorial/tutorial-1.md:57
-#: docs/en/tutorial/tutorial-1.md:133
-#: docs/en/tutorial/tutorial-1.md:175
-#: docs/en/tutorial/tutorial-2.md:241
-#: docs/en/tutorial/tutorial-2.md:277
-#: docs/en/tutorial/tutorial-3.md:42
-#: docs/en/tutorial/tutorial-3.md:149
-#: docs/en/tutorial/tutorial-3.md:227
-#: docs/en/tutorial/tutorial-3.md:328
-#: docs/en/tutorial/tutorial-4.md:39
-#: docs/en/tutorial/tutorial-4.md:81
-#: docs/en/tutorial/tutorial-4.md:183
-#: docs/en/tutorial/tutorial-5/android.md:40
-#: docs/en/tutorial/tutorial-5/android.md:124
-#: docs/en/tutorial/tutorial-5/android.md:190
-#: docs/en/tutorial/tutorial-5/android.md:301
-#: docs/en/tutorial/tutorial-6.md:57
-#: docs/en/tutorial/tutorial-7.md:56
-#: docs/en/tutorial/tutorial-7.md:131
-#: docs/en/tutorial/tutorial-7.md:224
-#: docs/en/tutorial/tutorial-7.md:513
-#: docs/en/tutorial/tutorial-8.md:80
-#: docs/en/tutorial/tutorial-8.md:221
-msgid "/// tab | Linux"
-msgstr "/// tab | Linux"
-
-#: docs/en/how-to/contribute.md:29
-#: docs/en/how-to/contribute.md:60
-#: docs/en/how-to/contribute.md:101
-#: docs/en/how-to/contribute.md:135
-#: docs/en/how-to/contribute.md:166
-#: docs/en/how-to/contribute.md:217
-#: docs/en/how-to/contribute.md:271
-#: docs/en/how-to/contribute.md:309
-#: docs/en/how-to/contribute.md:339
-#: docs/en/how-to/contribute.md:369
-#: docs/en/how-to/contribute.md:412
-#: docs/en/how-to/contribute.md:442
-#: docs/en/how-to/contribute.md:472
-#: docs/en/how-to/contribute.md:518
-#: docs/en/tutorial/topics/custom-icons.md:72
-#: docs/en/tutorial/topics/custom-icons.md:254
-#: docs/en/tutorial/topics/custom-icons.md:411
-#: docs/en/tutorial/topics/testing.md:72
-#: docs/en/tutorial/topics/testing.md:162
-#: docs/en/tutorial/topics/testing.md:266
-#: docs/en/tutorial/topics/testing.md:355
-#: docs/en/tutorial/topics/testing.md:459
-#: docs/en/tutorial/tutorial-0.md:39
-#: docs/en/tutorial/tutorial-0.md:92
-#: docs/en/tutorial/tutorial-0.md:128
-#: docs/en/tutorial/tutorial-1.md:31
-#: docs/en/tutorial/tutorial-1.md:65
-#: docs/en/tutorial/tutorial-1.md:148
-#: docs/en/tutorial/tutorial-1.md:185
-#: docs/en/tutorial/tutorial-2.md:252
-#: docs/en/tutorial/tutorial-2.md:287
-#: docs/en/tutorial/tutorial-3.md:88
-#: docs/en/tutorial/tutorial-3.md:179
-#: docs/en/tutorial/tutorial-3.md:255
-#: docs/en/tutorial/tutorial-3.md:425
-#: docs/en/tutorial/tutorial-4.md:49
-#: docs/en/tutorial/tutorial-4.md:104
-#: docs/en/tutorial/tutorial-4.md:212
-#: docs/en/tutorial/tutorial-5/android.md:69
-#: docs/en/tutorial/tutorial-5/android.md:144
-#: docs/en/tutorial/tutorial-5/android.md:204
-#: docs/en/tutorial/tutorial-5/android.md:317
-#: docs/en/tutorial/tutorial-6.md:97
-#: docs/en/tutorial/tutorial-7.md:78
-#: docs/en/tutorial/tutorial-7.md:148
-#: docs/en/tutorial/tutorial-7.md:279
-#: docs/en/tutorial/tutorial-7.md:542
-#: docs/en/tutorial/tutorial-8.md:101
-#: docs/en/tutorial/tutorial-8.md:229
-msgid "/// tab | Windows"
-msgstr "/// tab | Windows"
-
-#: docs/en/how-to/contribute.md:38
-#, fuzzy
-msgid "Create a virtual environment"
-msgstr "Mise en place d'un environnement virtuel"
-
-#: docs/en/how-to/contribute.md:40
-#, fuzzy
-msgid ""
-"The recommended way of setting up your development environment for BeeWare "
-"is to install a virtual environment, install the required dependencies and "
-"start coding. To set up a virtual environment, run:"
-msgstr ""
-"La méthode recommandée pour mettre en place votre environnement de "
-"développement pour BeeWare est d'installer un environnement virtuel, "
-"d'installer les dépendances nécessaires et de commencer à coder. Pour mettre "
-"en place un environnement virtuel, exécutez :"
-
-#: docs/en/how-to/contribute.md:69
-#, fuzzy
-msgid "Your prompt should now have a `(.venv)` prefix in front of it."
-msgstr "Votre prompt devrait maintenant être précédé du préfixe `(.venv)`."
-
-#: docs/en/how-to/contribute.md:71
-#, fuzzy
-msgid "Clone the BeeWare Tutorial repository"
-msgstr "Cloner le dépôt de BeeWare Tutorial"
-
-#: docs/en/how-to/contribute.md:73
-#, fuzzy
-msgid "For updates to BeeWare documentation:"
-msgstr "Pour les mises à jour de la documentation BeeWare :"
-
-#: docs/en/how-to/contribute.md:75
-#, fuzzy
-msgid ""
-"Next, go to [the BeeWare Tutorial page on GitHub]{1}, fork the repository "
-"into your own account, and then clone a copy of that repository onto your "
-"computer by clicking on \"Code\". If you have the GitHub desktop application "
-"installed on your computer, you can select \"Open in Desktop\"; otherwise, "
-"copy the URL provided, and use it to clone using the command line:"
-msgstr ""
-"Ensuite, allez sur [la page du tutoriel BeeWare sur GitHub]{1}, créez un "
-"dépôt sur votre propre compte, puis clonez une copie de ce dépôt sur votre "
-"ordinateur en cliquant sur \"Code\". Si l'application GitHub est installée "
-"sur votre ordinateur, vous pouvez sélectionner \"Open in Desktop\" ; sinon, "
-"copiez l'URL fournie et utilisez-la pour cloner à l'aide de la ligne de "
-"commande :"
-
-#: docs/en/how-to/contribute.md:79
-#: docs/en/how-to/contribute.md:91
-#: docs/en/how-to/contribute.md:103
-#, fuzzy
-msgid "Fork the BeeWare Tutorial repository, and then:"
-msgstr "Ouvrez le dépôt BeeWare Tutorial, puis :"
-
-#: docs/en/how-to/contribute.md:85
-#: docs/en/how-to/contribute.md:97
-#: docs/en/how-to/contribute.md:109
-#, fuzzy
-msgid "(substituting your GitHub username)"
-msgstr "(en remplaçant votre nom d'utilisateur GitHub)"
-
-#: docs/en/how-to/contribute.md:113
-#, fuzzy
-msgid "Install BeeWare tutorial docs dependencies"
-msgstr "Installer les dépendances de la documentation du tutoriel BeeWare"
-
-#: docs/en/how-to/contribute.md:115
-#, fuzzy
-msgid ""
-"Now that you have the source code, you can install BeeWare docs requirements "
-"into your development environment. Since we're installing from source, we "
-"can't rely on pip to resolve the dependencies to source packages, so we have "
-"to manually install each package:"
-msgstr ""
-"Maintenant que vous avez le code source, vous pouvez installer les exigences "
-"de BeeWare docs dans votre environnement de développement. Puisque nous "
-"installons à partir des sources, nous ne pouvons pas compter sur pip pour "
-"résoudre les dépendances vers les paquets sources, nous devons donc "
-"installer manuellement chaque paquet :"
-
-#: docs/en/how-to/contribute.md:144
-#, fuzzy
-msgid "Install pre-commit"
-msgstr "Installer pre-commit"
-
-#: docs/en/how-to/contribute.md:146
-#, fuzzy
-msgid ""
-"BeeWare uses a tool called [Pre-Commit]{1} to identify simple issues and "
-"standardize code formatting. It does this by installing a git hook that "
-"automatically runs a series of code linters prior to finalizing any git "
-"commit. To enable pre-commit, run:"
-msgstr ""
-"BeeWare utilise un outil appelé [Pre-Commit]{1} pour identifier les "
-"problèmes simples et normaliser le formatage du code. Pour ce faire, il "
-"installe un hook git qui exécute automatiquement une série de linters de "
-"code avant de finaliser tout commit git. Pour activer l'outil Pre-Commit, "
-"exécutez :"
-
-#: docs/en/how-to/contribute.md:175
-#, fuzzy
-msgid ""
-"When you commit any change, pre-commit will run automatically. If there are "
-"any issues found with the commit, this will cause your commit to fail. Where "
-"possible, pre-commit will make the changes needed to correct the problems it "
-"has found:"
-msgstr ""
-"Lorsque vous validez une modification, la fonction pre-commit s'exécute "
-"automatiquement. Si des problèmes sont détectés lors de la validation, celle-"
-"ci échouera. Dans la mesure du possible, pre-commit apportera les "
-"modifications nécessaires pour corriger les problèmes détectés :"
-
-#: docs/en/how-to/contribute.md:237
-#, fuzzy
-msgid ""
-"You can then re-add any files that were modified as a result of the pre-"
-"commit checks, and re-commit the change."
-msgstr ""
-"Vous pouvez ensuite ajouter à nouveau tous les fichiers qui ont été modifiés "
-"à la suite des vérifications avant validation et valider à nouveau la "
-"modification."
-
-#: docs/en/how-to/contribute.md:285
-#, fuzzy
-msgid "Now you are ready to start hacking on BeeWare docs!"
-msgstr "Vous êtes maintenant prêt à pirater les documents de BeeWare !"
-
-#: docs/en/how-to/contribute.md:287
-#, fuzzy
-msgid "Building the BeeWare Tutorial"
-msgstr "Construction du didacticiel BeeWare"
-
-#: docs/en/how-to/contribute.md:289
-#, fuzzy
-msgid "Build the Tutorial locally"
-msgstr "Construire le didacticiel localement"
-
-#: docs/en/how-to/contribute.md:291
-#, fuzzy
-msgid "Once your development environment is set up, run:"
-msgstr "Une fois votre environnement de développement mis en place, exécutez :"
-
-#: docs/en/how-to/contribute.md:317
-#, fuzzy
-msgid ""
-"The output of the file should be in the `_build/html` folder. If there are "
-"any markup problems, they'll raise an error."
-msgstr ""
-"La sortie du fichier devrait se trouver dans le dossier `_build/html`. S'il "
-"y a des problèmes de balisage, il y aura une erreur."
-
-#: docs/en/how-to/contribute.md:319
-#, fuzzy
-msgid "Live Tutorial preview"
-msgstr "Aperçu du didacticiel en direct"
-
-#: docs/en/how-to/contribute.md:321
-#, fuzzy
-msgid ""
-"To support rapid editing of documentation, BeeWare also has a \"live "
-"preview\" mode:"
-msgstr ""
-"Pour faciliter l'édition rapide de la documentation, BeeWare dispose "
-"également d'un mode de \"prévisualisation en direct\" :"
-
-#: docs/en/how-to/contribute.md:347
-#, fuzzy
-msgid ""
-"This will build the documentation, start a web server to serve the build "
-"documentation, and watch the file system for any changes to the "
-"documentation source. If a change is detected, the documentation will be "
-"rebuilt, and any browser viewing the modified page will be automatically "
-"refreshed."
-msgstr ""
-"Cette opération permet de créer la documentation, de lancer un serveur web "
-"pour diffuser la documentation créée et de surveiller le système de fichiers "
-"pour détecter toute modification apportée à la source de la documentation. "
-"Si un changement est détecté, la documentation sera reconstruite et tout "
-"navigateur affichant la page modifiée sera automatiquement actualisé."
-
-#: docs/en/how-to/contribute.md:349
-#, fuzzy
-msgid "Tutorial linting"
-msgstr "Tutoriel linting"
-
-#: docs/en/how-to/contribute.md:351
-#, fuzzy
-msgid ""
-"The build process will identify most Markdown problems, but BeeWare performs "
-"some additional \"lint\" checks. To run the lint checks:"
-msgstr ""
-"Le processus de construction identifiera la plupart des problèmes liés au "
-"Markdown, mais BeeWare effectue quelques vérifications supplémentaires. Pour "
-"lancer les vérifications \"lint\" :"
-
-#: docs/en/how-to/contribute.md:377
-#, fuzzy
-msgid "This will validate the documentation does not contain:"
-msgstr ""
-"Cela permettra de vérifier que la documentation ne contient pas de données :"
-
-#: docs/en/how-to/contribute.md:379
-#, fuzzy
-msgid "dead hyperlinks"
-msgstr "hyperliens morts"
-
-#: docs/en/how-to/contribute.md:380
-#, fuzzy
-msgid "misspelled words"
-msgstr "mots mal orthographiés"
-
-#: docs/en/how-to/contribute.md:382
-#, fuzzy
-msgid ""
-"If a valid spelling of a word is identified as misspelled, then add the word "
-"to the list in `docs/spelling_wordlist`. This will add the word to the "
-"spellchecker's dictionary. When adding to this list, remember:"
-msgstr ""
-"Si une orthographe valide d'un mot est identifiée comme incorrecte, ajoutez "
-"le mot à la liste de `docs/spelling_wordlist`. Cela ajoutera le mot au "
-"dictionnaire du correcteur d'orthographe. Lorsque vous ajoutez un mot à "
-"cette liste, n'oubliez pas :"
-
-#: docs/en/how-to/contribute.md:384
-#, fuzzy
-msgid ""
-"We prefer US spelling, with some liberties for programming-specific "
-"colloquialisms (e.g., \"apps\") and verbing of nouns (e.g., \"scrollable\")"
-msgstr ""
-"Nous préférons l'orthographe américaine, avec quelques libertés pour les "
-"expressions familières spécifiques à la programmation (par exemple, "
-"\"apps\") et le verbe des noms (par exemple, \"scrollable\")."
-
-#: docs/en/how-to/contribute.md:385
-#, fuzzy
-msgid ""
-"Any reference to a product name should use the product's preferred "
-"capitalization. (e.g., \"macOS\", \"GTK\", \"pytest\", \"Pygame\", "
-"\"PyScript\")."
-msgstr ""
-"Toute référence à un nom de produit doit utiliser la majuscule préférée du "
-"produit. (par exemple, \"macOS\", \"GTK\", \"pytest\", \"Pygame\", "
-"\"PyScript\")."
-
-#: docs/en/how-to/contribute.md:386
-#, fuzzy
-msgid ""
-"If a term is being used \"as code\", then it should be quoted as inline code "
-"rather than being added to the dictionary."
-msgstr ""
-"Si un terme est utilisé \"en tant que code\", il doit être cité en tant que "
-"code en ligne plutôt que d'être ajouté au dictionnaire."
-
-#: docs/en/how-to/contribute.md:388
-#, fuzzy
-msgid "Translations"
-msgstr "Traductions"
-
-#: docs/en/how-to/contribute.md:390
-#, fuzzy
-msgid ""
-"The BeeWare tutorial is available in multiple languages, which you can build "
-"individually or all at the same time."
-msgstr ""
-"Le didacticiel BeeWare est disponible en plusieurs langues, que vous pouvez "
-"construire individuellement ou toutes en même temps."
-
-#: docs/en/how-to/contribute.md:392
-#, fuzzy
-msgid "Updating translations"
-msgstr "Mise à jour des traductions"
-
-#: docs/en/how-to/contribute.md:394
-#, fuzzy
-msgid ""
-"If you have made changes to the English content, the first step to building "
-"the translations is to update the translation files. To update the "
-"translations:"
-msgstr ""
-"Si vous avez apporté des modifications au contenu anglais, la première étape "
-"de la construction des traductions consiste à mettre à jour les fichiers de "
-"traduction. Pour mettre à jour les traductions :"
-
-#: docs/en/how-to/contribute.md:420
-#, fuzzy
-msgid "This will update the"
-msgstr "Cela permettra de mettre à jour le"
-
-#: docs/en/how-to/contribute.md:422
-#, fuzzy
-msgid "Building translations"
-msgstr "Traductions des bâtiments"
-
-#: docs/en/how-to/contribute.md:424
-#, fuzzy
-msgid ""
-"To build a single translation, you run the `docs` command with the language "
-"code for the translation you wish to build. For example, to build French:"
-msgstr ""
-"Pour construire une seule traduction, vous lancez la commande `docs` avec le "
-"code de la langue de la traduction que vous souhaitez construire. Par "
-"exemple, pour construire le français :"
-
-#: docs/en/how-to/contribute.md:450
-#, fuzzy
-msgid ""
-"The French translation should be built in the `_build/html` folder. If there "
-"are any markup problems, they'll raise an error."
-msgstr ""
-"La traduction française doit être construite dans le dossier `_build/html`. "
-"S'il y a des problèmes de balisage, ils soulèveront une erreur."
-
-#: docs/en/how-to/contribute.md:452
-#, fuzzy
-msgid ""
-"An error is also raised if you enter a language code for an unavailable "
-"language. If this happens, verify that you are using the proper language "
-"code."
-msgstr ""
-"Une erreur se produit également si vous saisissez un code de langue pour une "
-"langue non disponible. Dans ce cas, vérifiez que vous utilisez le bon code "
-"de langue."
-
-#: docs/en/how-to/contribute.md:454
-#, fuzzy
-msgid "To build all the translations at the same time:"
-msgstr "Construire toutes les traductions en même temps :"
-
-#: docs/en/how-to/contribute.md:480
-#, fuzzy
-msgid ""
-"This will build all available translations in the `_build/html` directory, "
-"inside a language-specific subdirectory. For example, the French translation "
-"would be available in `_build/html/fr`."
-msgstr ""
-"Ceci va construire toutes les traductions disponibles dans le répertoire "
-"`_build/html`, à l'intérieur d'un sous-répertoire spécifique à la langue. "
-"Par exemple, la traduction française sera disponible dans `_build/html/fr`."
-
-#: docs/en/how-to/contribute.md:482
-#, fuzzy
-msgid "What to work on?"
-msgstr "Sur quoi travailler ?"
-
-#: docs/en/how-to/contribute.md:484
-#, fuzzy
-msgid ""
-"If you're looking for specific areas to improve, there are [tickets tagged "
-"\"documentation\"]{1} in BeeWare's issue tracker."
-msgstr ""
-"Si vous cherchez des domaines spécifiques à améliorer, il y a des [tickets "
-"étiquetés \"documentation\"]{1} dans le gestionnaire de problèmes de BeeWare."
-
-#: docs/en/how-to/contribute.md:486
-#, fuzzy
-msgid ""
-"However, you don't need to be constrained by these tickets. If you can "
-"identify an error in the tutorial, or an improvement that can be made, start "
-"writing! Anything that improves the experience of the end user is a welcome "
-"change."
-msgstr ""
-"Cependant, vous n'avez pas besoin d'être limité par ces billets. Si vous "
-"pouvez identifier une erreur dans le tutoriel, ou une amélioration qui peut "
-"être apportée, commencez à écrire ! Tout ce qui améliore l'expérience de "
-"l'utilisateur final est un changement bienvenu."
-
-#: docs/en/how-to/contribute.md:488
-#, fuzzy
-msgid "Submitting a pull request"
-msgstr "Soumettre une demande d'extraction"
-
-#: docs/en/how-to/contribute.md:490
-#, fuzzy
-msgid ""
-"Before you submit a pull request, there's a few bits of housekeeping to do."
-msgstr ""
-"Avant de soumettre une demande d'extraction, il y a un peu de ménage à faire."
-
-#: docs/en/how-to/contribute.md:492
-#, fuzzy
-msgid "Submit from a feature branch, not your `main` branch"
-msgstr ""
-"Soumettre à partir d'une branche de fonctionnalités, et non de votre branche "
-"`main`."
-
-#: docs/en/how-to/contribute.md:494
-#, fuzzy
-msgid ""
-"Before you start working on your change, make sure you've created a branch. "
-"By default, when you clone your repository fork, you'll be checked out on "
-"your `main` branch. This is a direct copy of BeeWare's `main` branch. To "
-"contribute to BeeWare itself, not the docs, please review the repo README."
-msgstr ""
-"Avant de commencer à travailler sur votre changement, assurez-vous d'avoir "
-"créé une branche. Par défaut, lorsque vous clonez la fourche de votre dépôt, "
-"vous serez vérifié sur la branche `main`. C'est une copie directe de la "
-"branche `main` de BeeWare. Pour contribuer à BeeWare lui-même, et non à la "
-"documentation, veuillez consulter le README du dépôt."
-
-#: docs/en/how-to/contribute.md:496
-#, fuzzy
-msgid ""
-"While you *can* submit a pull request from your `main` branch, it's "
-"preferable if you *don't* do this. If you submit a pull request that is "
-"*almost* right, the core team member who reviews your pull request may be "
-"able to make the necessary changes, rather than giving feedback asking for a "
-"minor change. However, if you submit your pull request from your `main` "
-"branch, reviewers are prevented from making modifications."
-msgstr ""
-"Bien que vous *puissiez* soumettre une demande d'extraction depuis votre "
-"branche `main`, il est préférable que vous *ne fassiez pas* cela. Si vous "
-"soumettez une demande d'extraction qui est *presque* correcte, le membre de "
-"l'équipe principale qui examine votre demande d'extraction peut être en "
-"mesure de faire les changements nécessaires, plutôt que de donner un "
-"feedback demandant un changement mineur. Cependant, si vous soumettez votre "
-"demande d'extraction depuis votre branche `main`, les réviseurs ne peuvent "
-"pas faire de modifications."
-
-#: docs/en/how-to/contribute.md:498
-#, fuzzy
-msgid ""
-"Instead, you should make your changes on a *feature branch*. A feature "
-"branch has a simple name to identify the change that you've made."
-msgstr ""
-"Au lieu de cela, vous devez effectuer vos modifications sur une *branche de "
-"fonctionnalité*. Une branche de fonctionnalité a un nom simple pour "
-"identifier le changement que vous avez effectué."
-
-#: docs/en/how-to/contribute.md:500
-#, fuzzy
-msgid "To create a feature branch, run:"
-msgstr "Pour créer une branche de fonctionnalités, exécutez :"
-
-#: docs/en/how-to/contribute.md:526
-#, fuzzy
-msgid ""
-"Commit your changes to this branch, then push to GitHub and create a pull "
-"request."
-msgstr ""
-"Livrez vos changements à cette branche, puis poussez sur GitHub et créez une "
-"demande d'extraction."
-
-#: docs/en/how-to/style-guide.md:1
-#, fuzzy
-msgid "-8<- \"style_guide.md\""
-msgstr "-8<- \"style_guide.md\""
-
-#: docs/en/index.md:1
-#, fuzzy
-msgid "Welcome to the BeeWare Tutorial"
-msgstr "Bienvenue dans le didacticiel BeeWare !"
-
-#: docs/en/index.md:3
-msgid "**Write Python. Run Anywhere.**"
-msgstr "**Écrire en Python. Exécutez n'importe où.**"
-
-#: docs/en/index.md:5
-msgid ""
-"Welcome to BeeWare! In this tutorial, we're going to build a graphical user "
-"interface using Python, and deploy it as a desktop application, as a mobile "
-"application, and as a single page web app. We'll also look at how you can "
-"use BeeWare tools to perform some of the common tasks that you'll need to do "
-"as an app developer, such as testing your app."
-msgstr ""
-"Bienvenue à BeeWare ! Dans ce tutoriel, nous allons construire une interface "
-"utilisateur graphique en utilisant Python, et la déployer en tant "
-"qu'application de bureau, application mobile et application web à page "
-"unique. Nous allons également voir comment vous pouvez utiliser les outils "
-"de BeeWare pour effectuer certaines tâches courantes pour les développeur "
-"d'applications, telles que tester votre application."
-
-#: docs/en/index.md:7
-#, fuzzy
-msgid "{% if config.extra.translation_type == \"original\" %}"
-msgstr "{% if config.extra.translation_type == \"original\" %}"
-
-#: docs/en/index.md:9
-#, fuzzy
-msgid "/// admonition | Translations are available"
-msgstr "/// admonition | Des traductions sont disponibles"
-
-#: docs/en/index.md:11
-msgid ""
-"If you're not comfortable with English, translations of this tutorial are "
-"available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, "
-"[Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
-msgstr ""
-"Si vous n'êtes pas à l'aise en français, vous pouvez trouver des traductions "
-"de ce didacticiel en [English]{1}, [Deutsch]{2}, [Español]{3}, [Português]{4}"
-", and [汉语]{5}."
 
 #: docs/en/index.md:15
 #: docs/en/index.md:27
@@ -1393,6 +690,45 @@ msgstr ""
 msgid "We can now generate and run the app:"
 msgstr "Nous pouvons maintenant générer et exécuter l'application :"
 
+#: docs/en/tutorial/topics/camera-access.md:115
+#: docs/en/tutorial/topics/custom-icons.md:29
+#: docs/en/tutorial/topics/custom-icons.md:196
+#: docs/en/tutorial/topics/custom-icons.md:377
+#: docs/en/tutorial/topics/testing.md:19
+#: docs/en/tutorial/topics/testing.md:124
+#: docs/en/tutorial/topics/testing.md:196
+#: docs/en/tutorial/topics/testing.md:315
+#: docs/en/tutorial/topics/testing.md:381
+#: docs/en/tutorial/tutorial-0.md:9
+#: docs/en/tutorial/tutorial-0.md:53
+#: docs/en/tutorial/tutorial-0.md:106
+#: docs/en/tutorial/tutorial-1.md:9
+#: docs/en/tutorial/tutorial-1.md:49
+#: docs/en/tutorial/tutorial-1.md:118
+#: docs/en/tutorial/tutorial-1.md:165
+#: docs/en/tutorial/tutorial-2.md:230
+#: docs/en/tutorial/tutorial-2.md:267
+#: docs/en/tutorial/tutorial-3.md:13
+#: docs/en/tutorial/tutorial-3.md:132
+#: docs/en/tutorial/tutorial-3.md:202
+#: docs/en/tutorial/tutorial-3.md:289
+#: docs/en/tutorial/tutorial-4.md:29
+#: docs/en/tutorial/tutorial-4.md:65
+#: docs/en/tutorial/tutorial-4.md:160
+#: docs/en/tutorial/tutorial-5/android.md:11
+#: docs/en/tutorial/tutorial-5/android.md:104
+#: docs/en/tutorial/tutorial-5/android.md:176
+#: docs/en/tutorial/tutorial-5/android.md:285
+#: docs/en/tutorial/tutorial-6.md:17
+#: docs/en/tutorial/tutorial-7.md:34
+#: docs/en/tutorial/tutorial-7.md:114
+#: docs/en/tutorial/tutorial-7.md:183
+#: docs/en/tutorial/tutorial-7.md:490
+#: docs/en/tutorial/tutorial-8.md:59
+#: docs/en/tutorial/tutorial-8.md:213
+msgid "/// tab | macOS"
+msgstr "/// tab | macOS"
+
 #: docs/en/tutorial/topics/camera-access.md:125
 #: docs/en/tutorial/topics/custom-icons.md:91
 #: docs/en/tutorial/topics/custom-icons.md:281
@@ -1557,6 +893,82 @@ msgstr ""
 "fois, nous passons le drapeau `--update-resources`, indiquant à Briefcase "
 "que nous voulons installer les nouvelles ressources de l'application (c'est-"
 "à-dire les icônes) :"
+
+#: docs/en/tutorial/topics/custom-icons.md:48
+#: docs/en/tutorial/topics/custom-icons.md:222
+#: docs/en/tutorial/topics/custom-icons.md:394
+#: docs/en/tutorial/topics/testing.md:44
+#: docs/en/tutorial/topics/testing.md:143
+#: docs/en/tutorial/topics/testing.md:230
+#: docs/en/tutorial/topics/testing.md:335
+#: docs/en/tutorial/topics/testing.md:425
+#: docs/en/tutorial/tutorial-0.md:27
+#: docs/en/tutorial/tutorial-0.md:61
+#: docs/en/tutorial/tutorial-0.md:117
+#: docs/en/tutorial/tutorial-1.md:17
+#: docs/en/tutorial/tutorial-1.md:57
+#: docs/en/tutorial/tutorial-1.md:133
+#: docs/en/tutorial/tutorial-1.md:175
+#: docs/en/tutorial/tutorial-2.md:241
+#: docs/en/tutorial/tutorial-2.md:277
+#: docs/en/tutorial/tutorial-3.md:42
+#: docs/en/tutorial/tutorial-3.md:149
+#: docs/en/tutorial/tutorial-3.md:227
+#: docs/en/tutorial/tutorial-3.md:328
+#: docs/en/tutorial/tutorial-4.md:39
+#: docs/en/tutorial/tutorial-4.md:81
+#: docs/en/tutorial/tutorial-4.md:183
+#: docs/en/tutorial/tutorial-5/android.md:40
+#: docs/en/tutorial/tutorial-5/android.md:124
+#: docs/en/tutorial/tutorial-5/android.md:190
+#: docs/en/tutorial/tutorial-5/android.md:301
+#: docs/en/tutorial/tutorial-6.md:57
+#: docs/en/tutorial/tutorial-7.md:56
+#: docs/en/tutorial/tutorial-7.md:131
+#: docs/en/tutorial/tutorial-7.md:224
+#: docs/en/tutorial/tutorial-7.md:513
+#: docs/en/tutorial/tutorial-8.md:80
+#: docs/en/tutorial/tutorial-8.md:221
+msgid "/// tab | Linux"
+msgstr "/// tab | Linux"
+
+#: docs/en/tutorial/topics/custom-icons.md:72
+#: docs/en/tutorial/topics/custom-icons.md:254
+#: docs/en/tutorial/topics/custom-icons.md:411
+#: docs/en/tutorial/topics/testing.md:72
+#: docs/en/tutorial/topics/testing.md:162
+#: docs/en/tutorial/topics/testing.md:266
+#: docs/en/tutorial/topics/testing.md:355
+#: docs/en/tutorial/topics/testing.md:459
+#: docs/en/tutorial/tutorial-0.md:39
+#: docs/en/tutorial/tutorial-0.md:92
+#: docs/en/tutorial/tutorial-0.md:128
+#: docs/en/tutorial/tutorial-1.md:31
+#: docs/en/tutorial/tutorial-1.md:65
+#: docs/en/tutorial/tutorial-1.md:148
+#: docs/en/tutorial/tutorial-1.md:185
+#: docs/en/tutorial/tutorial-2.md:252
+#: docs/en/tutorial/tutorial-2.md:287
+#: docs/en/tutorial/tutorial-3.md:88
+#: docs/en/tutorial/tutorial-3.md:179
+#: docs/en/tutorial/tutorial-3.md:255
+#: docs/en/tutorial/tutorial-3.md:425
+#: docs/en/tutorial/tutorial-4.md:49
+#: docs/en/tutorial/tutorial-4.md:104
+#: docs/en/tutorial/tutorial-4.md:212
+#: docs/en/tutorial/tutorial-5/android.md:69
+#: docs/en/tutorial/tutorial-5/android.md:144
+#: docs/en/tutorial/tutorial-5/android.md:204
+#: docs/en/tutorial/tutorial-5/android.md:317
+#: docs/en/tutorial/tutorial-6.md:97
+#: docs/en/tutorial/tutorial-7.md:78
+#: docs/en/tutorial/tutorial-7.md:148
+#: docs/en/tutorial/tutorial-7.md:279
+#: docs/en/tutorial/tutorial-7.md:542
+#: docs/en/tutorial/tutorial-8.md:101
+#: docs/en/tutorial/tutorial-8.md:229
+msgid "/// tab | Windows"
+msgstr "/// tab | Windows"
 
 #: docs/en/tutorial/topics/custom-icons.md:129
 #: docs/en/tutorial/topics/custom-icons.md:327
@@ -6014,6 +5426,444 @@ msgid ""
 msgstr ""
 "Si vous souhaitez en savoir plus sur les capacités de Briefcase, vous pouvez "
 "consulter la [documentation de Briefcase]{1}."
+
+#, fuzzy
+#~ msgid "How-to guides"
+#~ msgstr "Guides pratiques"
+
+#, fuzzy
+#~ msgid "[Contributing to this tutorial]{1}"
+#~ msgstr "[Contribuer à ce tutoriel]{1}"
+
+#, fuzzy
+#~ msgid "[Style guide]{1}"
+#~ msgstr "[Style guide]{1}"
+
+#, fuzzy
+#~ msgid "Contributing to this tutorial"
+#~ msgstr "Contribuer à ce tutoriel"
+
+#, fuzzy
+#~ msgid ""
+#~ "This tutorial is written using [MkDocs and Markdown]{1}. This guide will "
+#~ "help you contribute fixes or new content to this tutorial."
+#~ msgstr ""
+#~ "Ce tutoriel est écrit en utilisant [MkDocs et Markdown]{1}. Ce guide vous "
+#~ "aidera à apporter des corrections ou du nouveau contenu à ce tutoriel."
+
+#, fuzzy
+#~ msgid ""
+#~ "Translations of this tutorial are managed using [Weblate]{1}. If you'd like "
+#~ "to contribute to the translation effort, join the `#translations` channel on "
+#~ "[Discord]{2} and introduce yourself!"
+#~ msgstr ""
+#~ "Les traductions de ce tutoriel sont gérées par [Weblate]{1}. Si vous "
+#~ "souhaitez contribuer à l'effort de traduction, rejoignez le canal "
+#~ "`#translations` sur [Discord]{2} et présentez-vous !"
+
+#, fuzzy
+#~ msgid "Set up your development environment"
+#~ msgstr "Mise en place de l'environnement de développement"
+
+#, fuzzy
+#~ msgid ""
+#~ "To build the BeeWare tutorial you **must** have a Python 3.12 interpreter "
+#~ "installed and available on your path (i.e., `python3` must start a Python "
+#~ "3.12 interpreter)."
+#~ msgstr ""
+#~ "Pour construire le tutoriel BeeWare, vous **devez** avoir un interpréteur "
+#~ "Python 3.12 installé et disponible sur votre chemin (c'est-à-dire que "
+#~ "`python3` doit démarrer un interpréteur Python 3.12)."
+
+#, fuzzy
+#~ msgid "Create a virtual environment"
+#~ msgstr "Mise en place d'un environnement virtuel"
+
+#, fuzzy
+#~ msgid ""
+#~ "The recommended way of setting up your development environment for BeeWare "
+#~ "is to install a virtual environment, install the required dependencies and "
+#~ "start coding. To set up a virtual environment, run:"
+#~ msgstr ""
+#~ "La méthode recommandée pour mettre en place votre environnement de "
+#~ "développement pour BeeWare est d'installer un environnement virtuel, "
+#~ "d'installer les dépendances nécessaires et de commencer à coder. Pour mettre "
+#~ "en place un environnement virtuel, exécutez :"
+
+#, fuzzy
+#~ msgid "Your prompt should now have a `(.venv)` prefix in front of it."
+#~ msgstr "Votre prompt devrait maintenant être précédé du préfixe `(.venv)`."
+
+#, fuzzy
+#~ msgid "Clone the BeeWare Tutorial repository"
+#~ msgstr "Cloner le dépôt de BeeWare Tutorial"
+
+#, fuzzy
+#~ msgid "For updates to BeeWare documentation:"
+#~ msgstr "Pour les mises à jour de la documentation BeeWare :"
+
+#, fuzzy
+#~ msgid ""
+#~ "Next, go to [the BeeWare Tutorial page on GitHub]{1}, fork the repository "
+#~ "into your own account, and then clone a copy of that repository onto your "
+#~ "computer by clicking on \"Code\". If you have the GitHub desktop application "
+#~ "installed on your computer, you can select \"Open in Desktop\"; otherwise, "
+#~ "copy the URL provided, and use it to clone using the command line:"
+#~ msgstr ""
+#~ "Ensuite, allez sur [la page du tutoriel BeeWare sur GitHub]{1}, créez un "
+#~ "dépôt sur votre propre compte, puis clonez une copie de ce dépôt sur votre "
+#~ "ordinateur en cliquant sur \"Code\". Si l'application GitHub est installée "
+#~ "sur votre ordinateur, vous pouvez sélectionner \"Open in Desktop\" ; sinon, "
+#~ "copiez l'URL fournie et utilisez-la pour cloner à l'aide de la ligne de "
+#~ "commande :"
+
+#, fuzzy
+#~ msgid "Fork the BeeWare Tutorial repository, and then:"
+#~ msgstr "Ouvrez le dépôt BeeWare Tutorial, puis :"
+
+#, fuzzy
+#~ msgid "(substituting your GitHub username)"
+#~ msgstr "(en remplaçant votre nom d'utilisateur GitHub)"
+
+#, fuzzy
+#~ msgid "Install BeeWare tutorial docs dependencies"
+#~ msgstr "Installer les dépendances de la documentation du tutoriel BeeWare"
+
+#, fuzzy
+#~ msgid ""
+#~ "Now that you have the source code, you can install BeeWare docs requirements "
+#~ "into your development environment. Since we're installing from source, we "
+#~ "can't rely on pip to resolve the dependencies to source packages, so we have "
+#~ "to manually install each package:"
+#~ msgstr ""
+#~ "Maintenant que vous avez le code source, vous pouvez installer les exigences "
+#~ "de BeeWare docs dans votre environnement de développement. Puisque nous "
+#~ "installons à partir des sources, nous ne pouvons pas compter sur pip pour "
+#~ "résoudre les dépendances vers les paquets sources, nous devons donc "
+#~ "installer manuellement chaque paquet :"
+
+#, fuzzy
+#~ msgid "Install pre-commit"
+#~ msgstr "Installer pre-commit"
+
+#, fuzzy
+#~ msgid ""
+#~ "BeeWare uses a tool called [Pre-Commit]{1} to identify simple issues and "
+#~ "standardize code formatting. It does this by installing a git hook that "
+#~ "automatically runs a series of code linters prior to finalizing any git "
+#~ "commit. To enable pre-commit, run:"
+#~ msgstr ""
+#~ "BeeWare utilise un outil appelé [Pre-Commit]{1} pour identifier les "
+#~ "problèmes simples et normaliser le formatage du code. Pour ce faire, il "
+#~ "installe un hook git qui exécute automatiquement une série de linters de "
+#~ "code avant de finaliser tout commit git. Pour activer l'outil Pre-Commit, "
+#~ "exécutez :"
+
+#, fuzzy
+#~ msgid ""
+#~ "When you commit any change, pre-commit will run automatically. If there are "
+#~ "any issues found with the commit, this will cause your commit to fail. Where "
+#~ "possible, pre-commit will make the changes needed to correct the problems it "
+#~ "has found:"
+#~ msgstr ""
+#~ "Lorsque vous validez une modification, la fonction pre-commit s'exécute "
+#~ "automatiquement. Si des problèmes sont détectés lors de la validation, celle-"
+#~ "ci échouera. Dans la mesure du possible, pre-commit apportera les "
+#~ "modifications nécessaires pour corriger les problèmes détectés :"
+
+#, fuzzy
+#~ msgid ""
+#~ "You can then re-add any files that were modified as a result of the pre-"
+#~ "commit checks, and re-commit the change."
+#~ msgstr ""
+#~ "Vous pouvez ensuite ajouter à nouveau tous les fichiers qui ont été modifiés "
+#~ "à la suite des vérifications avant validation et valider à nouveau la "
+#~ "modification."
+
+#, fuzzy
+#~ msgid "Now you are ready to start hacking on BeeWare docs!"
+#~ msgstr "Vous êtes maintenant prêt à pirater les documents de BeeWare !"
+
+#, fuzzy
+#~ msgid "Building the BeeWare Tutorial"
+#~ msgstr "Construction du didacticiel BeeWare"
+
+#, fuzzy
+#~ msgid "Build the Tutorial locally"
+#~ msgstr "Construire le didacticiel localement"
+
+#, fuzzy
+#~ msgid "Once your development environment is set up, run:"
+#~ msgstr "Une fois votre environnement de développement mis en place, exécutez :"
+
+#, fuzzy
+#~ msgid ""
+#~ "The output of the file should be in the `_build/html` folder. If there are "
+#~ "any markup problems, they'll raise an error."
+#~ msgstr ""
+#~ "La sortie du fichier devrait se trouver dans le dossier `_build/html`. S'il "
+#~ "y a des problèmes de balisage, il y aura une erreur."
+
+#, fuzzy
+#~ msgid "Live Tutorial preview"
+#~ msgstr "Aperçu du didacticiel en direct"
+
+#, fuzzy
+#~ msgid ""
+#~ "To support rapid editing of documentation, BeeWare also has a \"live "
+#~ "preview\" mode:"
+#~ msgstr ""
+#~ "Pour faciliter l'édition rapide de la documentation, BeeWare dispose "
+#~ "également d'un mode de \"prévisualisation en direct\" :"
+
+#, fuzzy
+#~ msgid ""
+#~ "This will build the documentation, start a web server to serve the build "
+#~ "documentation, and watch the file system for any changes to the "
+#~ "documentation source. If a change is detected, the documentation will be "
+#~ "rebuilt, and any browser viewing the modified page will be automatically "
+#~ "refreshed."
+#~ msgstr ""
+#~ "Cette opération permet de créer la documentation, de lancer un serveur web "
+#~ "pour diffuser la documentation créée et de surveiller le système de fichiers "
+#~ "pour détecter toute modification apportée à la source de la documentation. "
+#~ "Si un changement est détecté, la documentation sera reconstruite et tout "
+#~ "navigateur affichant la page modifiée sera automatiquement actualisé."
+
+#, fuzzy
+#~ msgid "Tutorial linting"
+#~ msgstr "Tutoriel linting"
+
+#, fuzzy
+#~ msgid ""
+#~ "The build process will identify most Markdown problems, but BeeWare performs "
+#~ "some additional \"lint\" checks. To run the lint checks:"
+#~ msgstr ""
+#~ "Le processus de construction identifiera la plupart des problèmes liés au "
+#~ "Markdown, mais BeeWare effectue quelques vérifications supplémentaires. Pour "
+#~ "lancer les vérifications \"lint\" :"
+
+#, fuzzy
+#~ msgid "This will validate the documentation does not contain:"
+#~ msgstr ""
+#~ "Cela permettra de vérifier que la documentation ne contient pas de données :"
+
+#, fuzzy
+#~ msgid "dead hyperlinks"
+#~ msgstr "hyperliens morts"
+
+#, fuzzy
+#~ msgid "misspelled words"
+#~ msgstr "mots mal orthographiés"
+
+#, fuzzy
+#~ msgid ""
+#~ "If a valid spelling of a word is identified as misspelled, then add the word "
+#~ "to the list in `docs/spelling_wordlist`. This will add the word to the "
+#~ "spellchecker's dictionary. When adding to this list, remember:"
+#~ msgstr ""
+#~ "Si une orthographe valide d'un mot est identifiée comme incorrecte, ajoutez "
+#~ "le mot à la liste de `docs/spelling_wordlist`. Cela ajoutera le mot au "
+#~ "dictionnaire du correcteur d'orthographe. Lorsque vous ajoutez un mot à "
+#~ "cette liste, n'oubliez pas :"
+
+#, fuzzy
+#~ msgid ""
+#~ "We prefer US spelling, with some liberties for programming-specific "
+#~ "colloquialisms (e.g., \"apps\") and verbing of nouns (e.g., \"scrollable\")"
+#~ msgstr ""
+#~ "Nous préférons l'orthographe américaine, avec quelques libertés pour les "
+#~ "expressions familières spécifiques à la programmation (par exemple, "
+#~ "\"apps\") et le verbe des noms (par exemple, \"scrollable\")."
+
+#, fuzzy
+#~ msgid ""
+#~ "Any reference to a product name should use the product's preferred "
+#~ "capitalization. (e.g., \"macOS\", \"GTK\", \"pytest\", \"Pygame\", "
+#~ "\"PyScript\")."
+#~ msgstr ""
+#~ "Toute référence à un nom de produit doit utiliser la majuscule préférée du "
+#~ "produit. (par exemple, \"macOS\", \"GTK\", \"pytest\", \"Pygame\", "
+#~ "\"PyScript\")."
+
+#, fuzzy
+#~ msgid ""
+#~ "If a term is being used \"as code\", then it should be quoted as inline code "
+#~ "rather than being added to the dictionary."
+#~ msgstr ""
+#~ "Si un terme est utilisé \"en tant que code\", il doit être cité en tant que "
+#~ "code en ligne plutôt que d'être ajouté au dictionnaire."
+
+#, fuzzy
+#~ msgid "Translations"
+#~ msgstr "Traductions"
+
+#, fuzzy
+#~ msgid ""
+#~ "The BeeWare tutorial is available in multiple languages, which you can build "
+#~ "individually or all at the same time."
+#~ msgstr ""
+#~ "Le didacticiel BeeWare est disponible en plusieurs langues, que vous pouvez "
+#~ "construire individuellement ou toutes en même temps."
+
+#, fuzzy
+#~ msgid "Updating translations"
+#~ msgstr "Mise à jour des traductions"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you have made changes to the English content, the first step to building "
+#~ "the translations is to update the translation files. To update the "
+#~ "translations:"
+#~ msgstr ""
+#~ "Si vous avez apporté des modifications au contenu anglais, la première étape "
+#~ "de la construction des traductions consiste à mettre à jour les fichiers de "
+#~ "traduction. Pour mettre à jour les traductions :"
+
+#, fuzzy
+#~ msgid "This will update the"
+#~ msgstr "Cela permettra de mettre à jour le"
+
+#, fuzzy
+#~ msgid "Building translations"
+#~ msgstr "Traductions des bâtiments"
+
+#, fuzzy
+#~ msgid ""
+#~ "To build a single translation, you run the `docs` command with the language "
+#~ "code for the translation you wish to build. For example, to build French:"
+#~ msgstr ""
+#~ "Pour construire une seule traduction, vous lancez la commande `docs` avec le "
+#~ "code de la langue de la traduction que vous souhaitez construire. Par "
+#~ "exemple, pour construire le français :"
+
+#, fuzzy
+#~ msgid ""
+#~ "The French translation should be built in the `_build/html` folder. If there "
+#~ "are any markup problems, they'll raise an error."
+#~ msgstr ""
+#~ "La traduction française doit être construite dans le dossier `_build/html`. "
+#~ "S'il y a des problèmes de balisage, ils soulèveront une erreur."
+
+#, fuzzy
+#~ msgid ""
+#~ "An error is also raised if you enter a language code for an unavailable "
+#~ "language. If this happens, verify that you are using the proper language "
+#~ "code."
+#~ msgstr ""
+#~ "Une erreur se produit également si vous saisissez un code de langue pour une "
+#~ "langue non disponible. Dans ce cas, vérifiez que vous utilisez le bon code "
+#~ "de langue."
+
+#, fuzzy
+#~ msgid "To build all the translations at the same time:"
+#~ msgstr "Construire toutes les traductions en même temps :"
+
+#, fuzzy
+#~ msgid ""
+#~ "This will build all available translations in the `_build/html` directory, "
+#~ "inside a language-specific subdirectory. For example, the French translation "
+#~ "would be available in `_build/html/fr`."
+#~ msgstr ""
+#~ "Ceci va construire toutes les traductions disponibles dans le répertoire "
+#~ "`_build/html`, à l'intérieur d'un sous-répertoire spécifique à la langue. "
+#~ "Par exemple, la traduction française sera disponible dans `_build/html/fr`."
+
+#, fuzzy
+#~ msgid "What to work on?"
+#~ msgstr "Sur quoi travailler ?"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you're looking for specific areas to improve, there are [tickets tagged "
+#~ "\"documentation\"]{1} in BeeWare's issue tracker."
+#~ msgstr ""
+#~ "Si vous cherchez des domaines spécifiques à améliorer, il y a des [tickets "
+#~ "étiquetés \"documentation\"]{1} dans le gestionnaire de problèmes de BeeWare."
+
+#, fuzzy
+#~ msgid ""
+#~ "However, you don't need to be constrained by these tickets. If you can "
+#~ "identify an error in the tutorial, or an improvement that can be made, start "
+#~ "writing! Anything that improves the experience of the end user is a welcome "
+#~ "change."
+#~ msgstr ""
+#~ "Cependant, vous n'avez pas besoin d'être limité par ces billets. Si vous "
+#~ "pouvez identifier une erreur dans le tutoriel, ou une amélioration qui peut "
+#~ "être apportée, commencez à écrire ! Tout ce qui améliore l'expérience de "
+#~ "l'utilisateur final est un changement bienvenu."
+
+#, fuzzy
+#~ msgid "Submitting a pull request"
+#~ msgstr "Soumettre une demande d'extraction"
+
+#, fuzzy
+#~ msgid ""
+#~ "Before you submit a pull request, there's a few bits of housekeeping to do."
+#~ msgstr ""
+#~ "Avant de soumettre une demande d'extraction, il y a un peu de ménage à faire."
+
+#, fuzzy
+#~ msgid "Submit from a feature branch, not your `main` branch"
+#~ msgstr ""
+#~ "Soumettre à partir d'une branche de fonctionnalités, et non de votre branche "
+#~ "`main`."
+
+#, fuzzy
+#~ msgid ""
+#~ "Before you start working on your change, make sure you've created a branch. "
+#~ "By default, when you clone your repository fork, you'll be checked out on "
+#~ "your `main` branch. This is a direct copy of BeeWare's `main` branch. To "
+#~ "contribute to BeeWare itself, not the docs, please review the repo README."
+#~ msgstr ""
+#~ "Avant de commencer à travailler sur votre changement, assurez-vous d'avoir "
+#~ "créé une branche. Par défaut, lorsque vous clonez la fourche de votre dépôt, "
+#~ "vous serez vérifié sur la branche `main`. C'est une copie directe de la "
+#~ "branche `main` de BeeWare. Pour contribuer à BeeWare lui-même, et non à la "
+#~ "documentation, veuillez consulter le README du dépôt."
+
+#, fuzzy
+#~ msgid ""
+#~ "While you *can* submit a pull request from your `main` branch, it's "
+#~ "preferable if you *don't* do this. If you submit a pull request that is "
+#~ "*almost* right, the core team member who reviews your pull request may be "
+#~ "able to make the necessary changes, rather than giving feedback asking for a "
+#~ "minor change. However, if you submit your pull request from your `main` "
+#~ "branch, reviewers are prevented from making modifications."
+#~ msgstr ""
+#~ "Bien que vous *puissiez* soumettre une demande d'extraction depuis votre "
+#~ "branche `main`, il est préférable que vous *ne fassiez pas* cela. Si vous "
+#~ "soumettez une demande d'extraction qui est *presque* correcte, le membre de "
+#~ "l'équipe principale qui examine votre demande d'extraction peut être en "
+#~ "mesure de faire les changements nécessaires, plutôt que de donner un "
+#~ "feedback demandant un changement mineur. Cependant, si vous soumettez votre "
+#~ "demande d'extraction depuis votre branche `main`, les réviseurs ne peuvent "
+#~ "pas faire de modifications."
+
+#, fuzzy
+#~ msgid ""
+#~ "Instead, you should make your changes on a *feature branch*. A feature "
+#~ "branch has a simple name to identify the change that you've made."
+#~ msgstr ""
+#~ "Au lieu de cela, vous devez effectuer vos modifications sur une *branche de "
+#~ "fonctionnalité*. Une branche de fonctionnalité a un nom simple pour "
+#~ "identifier le changement que vous avez effectué."
+
+#, fuzzy
+#~ msgid "To create a feature branch, run:"
+#~ msgstr "Pour créer une branche de fonctionnalités, exécutez :"
+
+#, fuzzy
+#~ msgid ""
+#~ "Commit your changes to this branch, then push to GitHub and create a pull "
+#~ "request."
+#~ msgstr ""
+#~ "Livrez vos changements à cette branche, puis poussez sur GitHub et créez une "
+#~ "demande d'extraction."
+
+#, fuzzy
+#~ msgid "-8<- \"style_guide.md\""
+#~ msgstr "-8<- \"style_guide.md\""
 
 #, fuzzy
 #~ msgid ""

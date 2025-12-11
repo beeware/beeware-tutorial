@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-07 22:55+0000\n"
+"POT-Creation-Date: 2025-12-11 07:23+0000\n"
 "PO-Revision-Date: 2025-10-15 17:07+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -86,147 +86,47 @@ msgstr "[使用相机]{1}"
 msgid "[Testing times]{1}"
 msgstr "[测试时间]{1}"
 
-#: docs/en/SUMMARY.md:22
-msgid "How-to guides"
-msgstr "如何...？"
+#: docs/en/index.md:1
+#, fuzzy
+msgid "Welcome to the BeeWare Tutorial"
+msgstr "欢迎来到 BeeWare 教程!"
 
-#: docs/en/SUMMARY.md:22
-msgid "[Contributing to this tutorial]{1}"
-msgstr "[为本教程做出贡献]{1}"
+#: docs/en/index.md:3
+msgid "**Write Python. Run Anywhere.**"
+msgstr "**用 Python 编写。随处运行。**"
 
-#: docs/en/SUMMARY.md:22
-msgid "[Style guide]{1}"
-msgstr "[风格指南]{1}"
-
-#: docs/en/how-to/contribute.md:1
-msgid "Contributing to this tutorial"
-msgstr "为本教程做出贡献"
-
-#: docs/en/how-to/contribute.md:3
+#: docs/en/index.md:5
 msgid ""
-"This tutorial is written using [MkDocs and Markdown]{1}. This guide will "
-"help you contribute fixes or new content to this tutorial."
+"Welcome to BeeWare! In this tutorial, we're going to build a graphical user "
+"interface using Python, and deploy it as a desktop application, as a mobile "
+"application, and as a single page web app. We'll also look at how you can "
+"use BeeWare tools to perform some of the common tasks that you'll need to do "
+"as an app developer, such as testing your app."
 msgstr ""
-"本教程使用 [MkDocs 和 Markdown]{1} 编写。本指南将帮助您为本教程贡献修复或者新"
-"内容。"
+"欢迎来到 BeeWare！在本教程中，我们将使用 Python 构建一个图形用户界面，并将其"
+"部署为桌面应用程序、移动应用程序和单页网页应用程序。我们还将探讨如何使用 "
+"BeeWare 工具执行应用程序开发者需要做的一些常见任务，例如测试你的应用。"
 
-#: docs/en/how-to/contribute.md:5
+#: docs/en/index.md:7
+msgid "{% if config.extra.translation_type == \"original\" %}"
+msgstr "{% if config.extra.translation_type == \"original\" %}"
+
+#: docs/en/index.md:9
+#, fuzzy
+msgid "/// admonition | Translations are available"
+msgstr "/// admonition |提供翻译"
+
+#: docs/en/index.md:11
 msgid ""
-"Translations of this tutorial are managed using [Weblate]{1}. If you'd like "
-"to contribute to the translation effort, join the `#translations` channel on "
-"[Discord]{2} and introduce yourself!"
+"If you're not comfortable with English, translations of this tutorial are "
+"available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, "
+"[Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
 msgstr ""
-"本教程使用 [Weblate]{1} 进行翻译管理。如果您想参与翻译工作，请加入 [Discord]"
-"{2} 上的 `#translations` 频道并介绍自己！"
+"如果您不熟悉中文，本教程提供了以下语言的翻译：[Deutsch]{1} （德语）"
+"、[Español]{2} （西班牙语）、[Français]{3} （法语）、[Italiano]{4} （意大利语"
+"）、[Português]{5} （葡萄牙语）、[中文(简体)]{6} （中文（简体））和 [中文(繁"
+"體)]{7} （中文（繁体））。"
 
-#: docs/en/how-to/contribute.md:7
-msgid "Set up your development environment"
-msgstr "设置开发环境"
-
-#: docs/en/how-to/contribute.md:9
-msgid ""
-"To build the BeeWare tutorial you **must** have a Python 3.12 interpreter "
-"installed and available on your path (i.e., `python3` must start a Python "
-"3.12 interpreter)."
-msgstr ""
-"要编译 BeeWare 教程，path 上**必须**安装有 Python 3.12 解释器（即 `python3` "
-"必须启动 Python 3.12 解释器）。"
-
-#: docs/en/how-to/contribute.md:11
-#: docs/en/how-to/contribute.md:42
-#: docs/en/how-to/contribute.md:77
-#: docs/en/how-to/contribute.md:117
-#: docs/en/how-to/contribute.md:148
-#: docs/en/how-to/contribute.md:177
-#: docs/en/how-to/contribute.md:239
-#: docs/en/how-to/contribute.md:293
-#: docs/en/how-to/contribute.md:323
-#: docs/en/how-to/contribute.md:353
-#: docs/en/how-to/contribute.md:396
-#: docs/en/how-to/contribute.md:426
-#: docs/en/how-to/contribute.md:456
-#: docs/en/how-to/contribute.md:502
-#: docs/en/tutorial/topics/camera-access.md:115
-#: docs/en/tutorial/topics/custom-icons.md:29
-#: docs/en/tutorial/topics/custom-icons.md:196
-#: docs/en/tutorial/topics/custom-icons.md:377
-#: docs/en/tutorial/topics/testing.md:19
-#: docs/en/tutorial/topics/testing.md:124
-#: docs/en/tutorial/topics/testing.md:196
-#: docs/en/tutorial/topics/testing.md:315
-#: docs/en/tutorial/topics/testing.md:381
-#: docs/en/tutorial/tutorial-0.md:9
-#: docs/en/tutorial/tutorial-0.md:53
-#: docs/en/tutorial/tutorial-0.md:106
-#: docs/en/tutorial/tutorial-1.md:9
-#: docs/en/tutorial/tutorial-1.md:49
-#: docs/en/tutorial/tutorial-1.md:118
-#: docs/en/tutorial/tutorial-1.md:165
-#: docs/en/tutorial/tutorial-2.md:230
-#: docs/en/tutorial/tutorial-2.md:267
-#: docs/en/tutorial/tutorial-3.md:13
-#: docs/en/tutorial/tutorial-3.md:132
-#: docs/en/tutorial/tutorial-3.md:202
-#: docs/en/tutorial/tutorial-3.md:289
-#: docs/en/tutorial/tutorial-4.md:29
-#: docs/en/tutorial/tutorial-4.md:65
-#: docs/en/tutorial/tutorial-4.md:160
-#: docs/en/tutorial/tutorial-5/android.md:11
-#: docs/en/tutorial/tutorial-5/android.md:104
-#: docs/en/tutorial/tutorial-5/android.md:176
-#: docs/en/tutorial/tutorial-5/android.md:285
-#: docs/en/tutorial/tutorial-6.md:17
-#: docs/en/tutorial/tutorial-7.md:34
-#: docs/en/tutorial/tutorial-7.md:114
-#: docs/en/tutorial/tutorial-7.md:183
-#: docs/en/tutorial/tutorial-7.md:490
-#: docs/en/tutorial/tutorial-8.md:59
-#: docs/en/tutorial/tutorial-8.md:213
-msgid "/// tab | macOS"
-msgstr "/// tab | macOS"
-
-#: docs/en/how-to/contribute.md:18
-#: docs/en/how-to/contribute.md:27
-#: docs/en/how-to/contribute.md:36
-#: docs/en/how-to/contribute.md:49
-#: docs/en/how-to/contribute.md:58
-#: docs/en/how-to/contribute.md:67
-#: docs/en/how-to/contribute.md:87
-#: docs/en/how-to/contribute.md:99
-#: docs/en/how-to/contribute.md:111
-#: docs/en/how-to/contribute.md:124
-#: docs/en/how-to/contribute.md:133
-#: docs/en/how-to/contribute.md:142
-#: docs/en/how-to/contribute.md:155
-#: docs/en/how-to/contribute.md:164
-#: docs/en/how-to/contribute.md:173
-#: docs/en/how-to/contribute.md:195
-#: docs/en/how-to/contribute.md:215
-#: docs/en/how-to/contribute.md:235
-#: docs/en/how-to/contribute.md:253
-#: docs/en/how-to/contribute.md:269
-#: docs/en/how-to/contribute.md:283
-#: docs/en/how-to/contribute.md:299
-#: docs/en/how-to/contribute.md:307
-#: docs/en/how-to/contribute.md:315
-#: docs/en/how-to/contribute.md:329
-#: docs/en/how-to/contribute.md:337
-#: docs/en/how-to/contribute.md:345
-#: docs/en/how-to/contribute.md:359
-#: docs/en/how-to/contribute.md:367
-#: docs/en/how-to/contribute.md:375
-#: docs/en/how-to/contribute.md:402
-#: docs/en/how-to/contribute.md:410
-#: docs/en/how-to/contribute.md:418
-#: docs/en/how-to/contribute.md:432
-#: docs/en/how-to/contribute.md:440
-#: docs/en/how-to/contribute.md:448
-#: docs/en/how-to/contribute.md:462
-#: docs/en/how-to/contribute.md:470
-#: docs/en/how-to/contribute.md:478
-#: docs/en/how-to/contribute.md:508
-#: docs/en/how-to/contribute.md:516
-#: docs/en/how-to/contribute.md:524
 #: docs/en/index.md:13
 #: docs/en/index.md:25
 #: docs/en/index.md:37
@@ -401,523 +301,6 @@ msgstr "/// tab | macOS"
 #: docs/en/tutorial/tutorial-8.md:251
 msgid "///"
 msgstr "///"
-
-#: docs/en/how-to/contribute.md:20
-#: docs/en/how-to/contribute.md:51
-#: docs/en/how-to/contribute.md:89
-#: docs/en/how-to/contribute.md:126
-#: docs/en/how-to/contribute.md:157
-#: docs/en/how-to/contribute.md:197
-#: docs/en/how-to/contribute.md:255
-#: docs/en/how-to/contribute.md:301
-#: docs/en/how-to/contribute.md:331
-#: docs/en/how-to/contribute.md:361
-#: docs/en/how-to/contribute.md:404
-#: docs/en/how-to/contribute.md:434
-#: docs/en/how-to/contribute.md:464
-#: docs/en/how-to/contribute.md:510
-#: docs/en/tutorial/topics/custom-icons.md:48
-#: docs/en/tutorial/topics/custom-icons.md:222
-#: docs/en/tutorial/topics/custom-icons.md:394
-#: docs/en/tutorial/topics/testing.md:44
-#: docs/en/tutorial/topics/testing.md:143
-#: docs/en/tutorial/topics/testing.md:230
-#: docs/en/tutorial/topics/testing.md:335
-#: docs/en/tutorial/topics/testing.md:425
-#: docs/en/tutorial/tutorial-0.md:27
-#: docs/en/tutorial/tutorial-0.md:61
-#: docs/en/tutorial/tutorial-0.md:117
-#: docs/en/tutorial/tutorial-1.md:17
-#: docs/en/tutorial/tutorial-1.md:57
-#: docs/en/tutorial/tutorial-1.md:133
-#: docs/en/tutorial/tutorial-1.md:175
-#: docs/en/tutorial/tutorial-2.md:241
-#: docs/en/tutorial/tutorial-2.md:277
-#: docs/en/tutorial/tutorial-3.md:42
-#: docs/en/tutorial/tutorial-3.md:149
-#: docs/en/tutorial/tutorial-3.md:227
-#: docs/en/tutorial/tutorial-3.md:328
-#: docs/en/tutorial/tutorial-4.md:39
-#: docs/en/tutorial/tutorial-4.md:81
-#: docs/en/tutorial/tutorial-4.md:183
-#: docs/en/tutorial/tutorial-5/android.md:40
-#: docs/en/tutorial/tutorial-5/android.md:124
-#: docs/en/tutorial/tutorial-5/android.md:190
-#: docs/en/tutorial/tutorial-5/android.md:301
-#: docs/en/tutorial/tutorial-6.md:57
-#: docs/en/tutorial/tutorial-7.md:56
-#: docs/en/tutorial/tutorial-7.md:131
-#: docs/en/tutorial/tutorial-7.md:224
-#: docs/en/tutorial/tutorial-7.md:513
-#: docs/en/tutorial/tutorial-8.md:80
-#: docs/en/tutorial/tutorial-8.md:221
-msgid "/// tab | Linux"
-msgstr "/// tab | Linux"
-
-#: docs/en/how-to/contribute.md:29
-#: docs/en/how-to/contribute.md:60
-#: docs/en/how-to/contribute.md:101
-#: docs/en/how-to/contribute.md:135
-#: docs/en/how-to/contribute.md:166
-#: docs/en/how-to/contribute.md:217
-#: docs/en/how-to/contribute.md:271
-#: docs/en/how-to/contribute.md:309
-#: docs/en/how-to/contribute.md:339
-#: docs/en/how-to/contribute.md:369
-#: docs/en/how-to/contribute.md:412
-#: docs/en/how-to/contribute.md:442
-#: docs/en/how-to/contribute.md:472
-#: docs/en/how-to/contribute.md:518
-#: docs/en/tutorial/topics/custom-icons.md:72
-#: docs/en/tutorial/topics/custom-icons.md:254
-#: docs/en/tutorial/topics/custom-icons.md:411
-#: docs/en/tutorial/topics/testing.md:72
-#: docs/en/tutorial/topics/testing.md:162
-#: docs/en/tutorial/topics/testing.md:266
-#: docs/en/tutorial/topics/testing.md:355
-#: docs/en/tutorial/topics/testing.md:459
-#: docs/en/tutorial/tutorial-0.md:39
-#: docs/en/tutorial/tutorial-0.md:92
-#: docs/en/tutorial/tutorial-0.md:128
-#: docs/en/tutorial/tutorial-1.md:31
-#: docs/en/tutorial/tutorial-1.md:65
-#: docs/en/tutorial/tutorial-1.md:148
-#: docs/en/tutorial/tutorial-1.md:185
-#: docs/en/tutorial/tutorial-2.md:252
-#: docs/en/tutorial/tutorial-2.md:287
-#: docs/en/tutorial/tutorial-3.md:88
-#: docs/en/tutorial/tutorial-3.md:179
-#: docs/en/tutorial/tutorial-3.md:255
-#: docs/en/tutorial/tutorial-3.md:425
-#: docs/en/tutorial/tutorial-4.md:49
-#: docs/en/tutorial/tutorial-4.md:104
-#: docs/en/tutorial/tutorial-4.md:212
-#: docs/en/tutorial/tutorial-5/android.md:69
-#: docs/en/tutorial/tutorial-5/android.md:144
-#: docs/en/tutorial/tutorial-5/android.md:204
-#: docs/en/tutorial/tutorial-5/android.md:317
-#: docs/en/tutorial/tutorial-6.md:97
-#: docs/en/tutorial/tutorial-7.md:78
-#: docs/en/tutorial/tutorial-7.md:148
-#: docs/en/tutorial/tutorial-7.md:279
-#: docs/en/tutorial/tutorial-7.md:542
-#: docs/en/tutorial/tutorial-8.md:101
-#: docs/en/tutorial/tutorial-8.md:229
-msgid "/// tab | Windows"
-msgstr "/// tab | Windows"
-
-#: docs/en/how-to/contribute.md:38
-msgid "Create a virtual environment"
-msgstr "建立虚拟环境"
-
-#: docs/en/how-to/contribute.md:40
-msgid ""
-"The recommended way of setting up your development environment for BeeWare "
-"is to install a virtual environment, install the required dependencies and "
-"start coding. To set up a virtual environment, run:"
-msgstr ""
-"设置 BeeWare 开发环境的推荐方法是安装虚拟环境、安装所需的依赖项并开始写代码。"
-"要设置虚拟环境，请运行："
-
-#: docs/en/how-to/contribute.md:69
-msgid "Your prompt should now have a `(.venv)` prefix in front of it."
-msgstr "现在，你的提示符前面应该会有 `(.venv)` 前缀。"
-
-#: docs/en/how-to/contribute.md:71
-msgid "Clone the BeeWare Tutorial repository"
-msgstr "克隆 BeeWare 教程仓库"
-
-#: docs/en/how-to/contribute.md:73
-msgid "For updates to BeeWare documentation:"
-msgstr "有关 BeeWare 文档的更新："
-
-#: docs/en/how-to/contribute.md:75
-#, fuzzy
-msgid ""
-"Next, go to [the BeeWare Tutorial page on GitHub]{1}, fork the repository "
-"into your own account, and then clone a copy of that repository onto your "
-"computer by clicking on \"Code\". If you have the GitHub desktop application "
-"installed on your computer, you can select \"Open in Desktop\"; otherwise, "
-"copy the URL provided, and use it to clone using the command line:"
-msgstr ""
-"接下来，请访问[GitHub上的BeeWare教程页面]{1}，将该版本库fork到自己的账户中，"
-"然后点击 \"代码\"（Code），将该版本库的副本克隆到自己的电脑上。如果电脑上安装"
-"了 GitHub 桌面程序，可以选择 \"在桌面打开\"；否则，请复制所提供的 URL，并使用"
-"命令行克隆："
-
-#: docs/en/how-to/contribute.md:79
-#: docs/en/how-to/contribute.md:91
-#: docs/en/how-to/contribute.md:103
-msgid "Fork the BeeWare Tutorial repository, and then:"
-msgstr "Fork BeeWare Tutorial 仓库，然后："
-
-#: docs/en/how-to/contribute.md:85
-#: docs/en/how-to/contribute.md:97
-#: docs/en/how-to/contribute.md:109
-msgid "(substituting your GitHub username)"
-msgstr "(用您的 GitHub 用户名代替）"
-
-#: docs/en/how-to/contribute.md:113
-msgid "Install BeeWare tutorial docs dependencies"
-msgstr "安装 BeeWare 教程文档依赖项"
-
-#: docs/en/how-to/contribute.md:115
-msgid ""
-"Now that you have the source code, you can install BeeWare docs requirements "
-"into your development environment. Since we're installing from source, we "
-"can't rely on pip to resolve the dependencies to source packages, so we have "
-"to manually install each package:"
-msgstr ""
-"有了源代码，就可以在开发环境中安装 BeeWare 文档依赖项了。由于我们是从源代码安"
-"装，因此不能依靠 pip 来解析源代码包的依赖关系，所以我们必须手动安装每个软件包"
-"："
-
-#: docs/en/how-to/contribute.md:144
-msgid "Install pre-commit"
-msgstr "安装 pre-commit"
-
-#: docs/en/how-to/contribute.md:146
-msgid ""
-"BeeWare uses a tool called [Pre-Commit]{1} to identify simple issues and "
-"standardize code formatting. It does this by installing a git hook that "
-"automatically runs a series of code linters prior to finalizing any git "
-"commit. To enable pre-commit, run:"
-msgstr ""
-"BeeWare 使用一个名为 [Pre-Commit]{1} 的工具来识别简单问题并规范代码格式。它通"
-"过安装一个 git 钩子，在完成任何 git commit 之前自动运行一系列 linters。要启"
-"用 pre-commit，请运行："
-
-#: docs/en/how-to/contribute.md:175
-msgid ""
-"When you commit any change, pre-commit will run automatically. If there are "
-"any issues found with the commit, this will cause your commit to fail. Where "
-"possible, pre-commit will make the changes needed to correct the problems it "
-"has found:"
-msgstr ""
-"提交任何更改时，pre-commit 会自动运行。如果在提交过程中发现任何问题，都会导致"
-"提交失败。在可能的情况下，pre-commit 会对发现的问题进行必要的修改："
-
-#: docs/en/how-to/contribute.md:237
-msgid ""
-"You can then re-add any files that were modified as a result of the pre-"
-"commit checks, and re-commit the change."
-msgstr "然后，你可以重新添加任何被 pre-commit 修改的文件，并重新 commit 更改。"
-
-#: docs/en/how-to/contribute.md:285
-msgid "Now you are ready to start hacking on BeeWare docs!"
-msgstr "现在，您已经准备好为 BeeWare 做贡献了！"
-
-#: docs/en/how-to/contribute.md:287
-msgid "Building the BeeWare Tutorial"
-msgstr "编译 BeeWare 教程"
-
-#: docs/en/how-to/contribute.md:289
-msgid "Build the Tutorial locally"
-msgstr "在本地构建教程"
-
-#: docs/en/how-to/contribute.md:291
-msgid "Once your development environment is set up, run:"
-msgstr "设置好开发环境后，运行："
-
-#: docs/en/how-to/contribute.md:317
-msgid ""
-"The output of the file should be in the `_build/html` folder. If there are "
-"any markup problems, they'll raise an error."
-msgstr ""
-"该文件的输出应位于 `_build/html` 文件夹中。如果出现任何标记语法问题，它将会引"
-"发错误。"
-
-#: docs/en/how-to/contribute.md:319
-msgid "Live Tutorial preview"
-msgstr "实时教程预览"
-
-#: docs/en/how-to/contribute.md:321
-msgid ""
-"To support rapid editing of documentation, BeeWare also has a \"live "
-"preview\" mode:"
-msgstr "为了支持文档的快速编辑，BeeWare 还提供了“实时预览”模式："
-
-#: docs/en/how-to/contribute.md:347
-msgid ""
-"This will build the documentation, start a web server to serve the build "
-"documentation, and watch the file system for any changes to the "
-"documentation source. If a change is detected, the documentation will be "
-"rebuilt, and any browser viewing the modified page will be automatically "
-"refreshed."
-msgstr ""
-"这将构建文档，启动网络服务器以提供构建文档，并监视是否对文档源进行了任何更改"
-"。如果检测到了更改，它将重建文档，并自动刷新查看修改过的页面的任何浏览器。"
-
-#: docs/en/how-to/contribute.md:349
-msgid "Tutorial linting"
-msgstr "教程 lint"
-
-#: docs/en/how-to/contribute.md:351
-msgid ""
-"The build process will identify most Markdown problems, but BeeWare performs "
-"some additional \"lint\" checks. To run the lint checks:"
-msgstr ""
-"构建过程会识别出大多数 Markdown 问题，但 BeeWare 还会执行一些额外的 \"lint\" "
-"检查。要运行 \"lint\" 检查："
-
-#: docs/en/how-to/contribute.md:377
-msgid "This will validate the documentation does not contain:"
-msgstr "这将验证文档不包含："
-
-#: docs/en/how-to/contribute.md:379
-msgid "dead hyperlinks"
-msgstr "死超链接"
-
-#: docs/en/how-to/contribute.md:380
-msgid "misspelled words"
-msgstr "错别字"
-
-#: docs/en/how-to/contribute.md:382
-#, fuzzy
-msgid ""
-"If a valid spelling of a word is identified as misspelled, then add the word "
-"to the list in `docs/spelling_wordlist`. This will add the word to the "
-"spellchecker's dictionary. When adding to this list, remember:"
-msgstr ""
-"如果一个单词的有效拼写被识别为拼写错误，则将该单词添加到 `docs/"
-"spelling_wordlist` 中的列表中。这将把该词添加到拼写检查程序的词典中。添加到该"
-"列表时，请记住"
-
-#: docs/en/how-to/contribute.md:384
-msgid ""
-"We prefer US spelling, with some liberties for programming-specific "
-"colloquialisms (e.g., \"apps\") and verbing of nouns (e.g., \"scrollable\")"
-msgstr ""
-"我们倾向于使用美式拼写法，但对程序特定的口语（如 “apps”）和名词的动词化（如 “"
-"scrollable”）有一定的自由度"
-
-#: docs/en/how-to/contribute.md:385
-msgid ""
-"Any reference to a product name should use the product's preferred "
-"capitalization. (e.g., \"macOS\", \"GTK\", \"pytest\", \"Pygame\", "
-"\"PyScript\")."
-msgstr ""
-"任何对产品名称的引用都应使用该产品的首选大小写。(例如，“macOS”、“GTK”、“"
-"pytest”、“Pygame”、“PyScript”）。"
-
-#: docs/en/how-to/contribute.md:386
-msgid ""
-"If a term is being used \"as code\", then it should be quoted as inline code "
-"rather than being added to the dictionary."
-msgstr ""
-"如果一个术语是作为代码使用的，那么它应该作为内嵌代码被引用，而不是被添加到词"
-"典中。"
-
-#: docs/en/how-to/contribute.md:388
-msgid "Translations"
-msgstr "翻译"
-
-#: docs/en/how-to/contribute.md:390
-#, fuzzy
-msgid ""
-"The BeeWare tutorial is available in multiple languages, which you can build "
-"individually or all at the same time."
-msgstr "BeeWare 教程有多种语言版本，您可以单独或同时构建所有语言版本。"
-
-#: docs/en/how-to/contribute.md:392
-msgid "Updating translations"
-msgstr "更新翻译文件"
-
-#: docs/en/how-to/contribute.md:394
-#, fuzzy
-msgid ""
-"If you have made changes to the English content, the first step to building "
-"the translations is to update the translation files. To update the "
-"translations:"
-msgstr ""
-"如果您对英文内容进行了更改，那么构建翻译的第一步就是更新翻译文件。更新翻译文"
-"件"
-
-#: docs/en/how-to/contribute.md:420
-#, fuzzy
-msgid "This will update the"
-msgstr "这将更新"
-
-#: docs/en/how-to/contribute.md:422
-#, fuzzy
-msgid "Building translations"
-msgstr "建筑翻译"
-
-#: docs/en/how-to/contribute.md:424
-#, fuzzy
-msgid ""
-"To build a single translation, you run the `docs` command with the language "
-"code for the translation you wish to build. For example, to build French:"
-msgstr ""
-"要编译单个译文，请运行 `docs` 命令，并输入要编译的译文的语言代码。例如，要编"
-"译法语："
-
-#: docs/en/how-to/contribute.md:450
-#, fuzzy
-msgid ""
-"The French translation should be built in the `_build/html` folder. If there "
-"are any markup problems, they'll raise an error."
-msgstr "法文翻译应建在 `_build/html` 文件夹中。如果出现任何标记问题，都会引发错误。"
-
-#: docs/en/how-to/contribute.md:452
-#, fuzzy
-msgid ""
-"An error is also raised if you enter a language code for an unavailable "
-"language. If this happens, verify that you are using the proper language "
-"code."
-msgstr ""
-"如果输入了不可用语言的语言代码，也会出现错误。如果出现这种情况，请确认您使用"
-"的是正确的语言代码。"
-
-#: docs/en/how-to/contribute.md:454
-#, fuzzy
-msgid "To build all the translations at the same time:"
-msgstr "同时构建所有翻译："
-
-#: docs/en/how-to/contribute.md:480
-#, fuzzy
-msgid ""
-"This will build all available translations in the `_build/html` directory, "
-"inside a language-specific subdirectory. For example, the French translation "
-"would be available in `_build/html/fr`."
-msgstr ""
-"这将在 `_build/html`目录下的特定语言子目录内构建所有可用的翻译。例如，法语翻"
-"译将放在 `_build/html/fr`。"
-
-#: docs/en/how-to/contribute.md:482
-#, fuzzy
-msgid "What to work on?"
-msgstr "要做什么？"
-
-#: docs/en/how-to/contribute.md:484
-#, fuzzy
-msgid ""
-"If you're looking for specific areas to improve, there are [tickets tagged "
-"\"documentation\"]{1} in BeeWare's issue tracker."
-msgstr ""
-"如果您正在寻找需要改进的具体方面，BeeWare 的问题跟踪器中有[标记为 \"文档 \"的"
-"票据]{1}。"
-
-#: docs/en/how-to/contribute.md:486
-#, fuzzy
-msgid ""
-"However, you don't need to be constrained by these tickets. If you can "
-"identify an error in the tutorial, or an improvement that can be made, start "
-"writing! Anything that improves the experience of the end user is a welcome "
-"change."
-msgstr ""
-"不过，您不必拘泥于这些罚单。如果您能发现教程中的错误或可以改进的地方，请开始"
-"撰写！任何能改善最终用户体验的改变都是值得欢迎的。"
-
-#: docs/en/how-to/contribute.md:488
-#, fuzzy
-msgid "Submitting a pull request"
-msgstr "提交拉取请求"
-
-#: docs/en/how-to/contribute.md:490
-#, fuzzy
-msgid ""
-"Before you submit a pull request, there's a few bits of housekeeping to do."
-msgstr "在提交拉取请求之前，您需要做一些内务整理。"
-
-#: docs/en/how-to/contribute.md:492
-#, fuzzy
-msgid "Submit from a feature branch, not your `main` branch"
-msgstr "从特性分支提交，而不是从 \"主 \"分支提交"
-
-#: docs/en/how-to/contribute.md:494
-#, fuzzy
-msgid ""
-"Before you start working on your change, make sure you've created a branch. "
-"By default, when you clone your repository fork, you'll be checked out on "
-"your `main` branch. This is a direct copy of BeeWare's `main` branch. To "
-"contribute to BeeWare itself, not the docs, please review the repo README."
-msgstr ""
-"在你开始修改之前，请确保你已经创建了一个分支。默认情况下，当您克隆您的分叉仓"
-"库时，您将在 \"主 \"分支上签出。这是BeeWare \"主 \"分支的直接拷贝。如需对"
-"BeeWare本身（而非文档）做出贡献，请查看版本库的README。"
-
-#: docs/en/how-to/contribute.md:496
-#, fuzzy
-msgid ""
-"While you *can* submit a pull request from your `main` branch, it's "
-"preferable if you *don't* do this. If you submit a pull request that is "
-"*almost* right, the core team member who reviews your pull request may be "
-"able to make the necessary changes, rather than giving feedback asking for a "
-"minor change. However, if you submit your pull request from your `main` "
-"branch, reviewers are prevented from making modifications."
-msgstr ""
-"虽然您*可以*从您的 \"主 \"分支提交拉取请求，但最好不要*这样做。如果您提交的拉"
-"取请求*几乎*正确，那么审查您的拉取请求的核心团队成员可能会做出必要的修改，而"
-"不是给出反馈，要求您做细微的改动。但是，如果你从你的 \"主 \"分支提交拉取请求"
-"，审查人员就无法进行修改。"
-
-#: docs/en/how-to/contribute.md:498
-#, fuzzy
-msgid ""
-"Instead, you should make your changes on a *feature branch*. A feature "
-"branch has a simple name to identify the change that you've made."
-msgstr ""
-"相反，你应该在*特性分支*上进行修改。特性分支有一个简单的名称，用来标识你所做"
-"的改动。"
-
-#: docs/en/how-to/contribute.md:500
-#, fuzzy
-msgid "To create a feature branch, run:"
-msgstr "要创建功能分支，请运行"
-
-#: docs/en/how-to/contribute.md:526
-#, fuzzy
-msgid ""
-"Commit your changes to this branch, then push to GitHub and create a pull "
-"request."
-msgstr "将更改提交到此分支，然后推送到 GitHub 并创建拉取请求。"
-
-#: docs/en/how-to/style-guide.md:1
-#, fuzzy
-msgid "-8<- \"style_guide.md\""
-msgstr "-8<- \"style_guide.md\""
-
-#: docs/en/index.md:1
-#, fuzzy
-msgid "Welcome to the BeeWare Tutorial"
-msgstr "欢迎来到 BeeWare 教程!"
-
-#: docs/en/index.md:3
-msgid "**Write Python. Run Anywhere.**"
-msgstr "**用 Python 编写。随处运行。**"
-
-#: docs/en/index.md:5
-msgid ""
-"Welcome to BeeWare! In this tutorial, we're going to build a graphical user "
-"interface using Python, and deploy it as a desktop application, as a mobile "
-"application, and as a single page web app. We'll also look at how you can "
-"use BeeWare tools to perform some of the common tasks that you'll need to do "
-"as an app developer, such as testing your app."
-msgstr ""
-"欢迎来到 BeeWare！在本教程中，我们将使用 Python 构建一个图形用户界面，并将其"
-"部署为桌面应用程序、移动应用程序和单页网页应用程序。我们还将探讨如何使用 "
-"BeeWare 工具执行应用程序开发者需要做的一些常见任务，例如测试你的应用。"
-
-#: docs/en/index.md:7
-msgid "{% if config.extra.translation_type == \"original\" %}"
-msgstr "{% if config.extra.translation_type == \"original\" %}"
-
-#: docs/en/index.md:9
-#, fuzzy
-msgid "/// admonition | Translations are available"
-msgstr "/// admonition |提供翻译"
-
-#: docs/en/index.md:11
-msgid ""
-"If you're not comfortable with English, translations of this tutorial are "
-"available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, "
-"[Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
-msgstr ""
-"如果您不熟悉中文，本教程提供了以下语言的翻译：[Deutsch]{1} （德语）"
-"、[Español]{2} （西班牙语）、[Français]{3} （法语）、[Italiano]{4} （意大利语"
-"）、[Português]{5} （葡萄牙语）、[中文(简体)]{6} （中文（简体））和 [中文(繁"
-"體)]{7} （中文（繁体））。"
 
 #: docs/en/index.md:15
 #: docs/en/index.md:27
@@ -1230,6 +613,45 @@ msgstr ""
 msgid "We can now generate and run the app:"
 msgstr "我们现在可以生成并运行应用程序："
 
+#: docs/en/tutorial/topics/camera-access.md:115
+#: docs/en/tutorial/topics/custom-icons.md:29
+#: docs/en/tutorial/topics/custom-icons.md:196
+#: docs/en/tutorial/topics/custom-icons.md:377
+#: docs/en/tutorial/topics/testing.md:19
+#: docs/en/tutorial/topics/testing.md:124
+#: docs/en/tutorial/topics/testing.md:196
+#: docs/en/tutorial/topics/testing.md:315
+#: docs/en/tutorial/topics/testing.md:381
+#: docs/en/tutorial/tutorial-0.md:9
+#: docs/en/tutorial/tutorial-0.md:53
+#: docs/en/tutorial/tutorial-0.md:106
+#: docs/en/tutorial/tutorial-1.md:9
+#: docs/en/tutorial/tutorial-1.md:49
+#: docs/en/tutorial/tutorial-1.md:118
+#: docs/en/tutorial/tutorial-1.md:165
+#: docs/en/tutorial/tutorial-2.md:230
+#: docs/en/tutorial/tutorial-2.md:267
+#: docs/en/tutorial/tutorial-3.md:13
+#: docs/en/tutorial/tutorial-3.md:132
+#: docs/en/tutorial/tutorial-3.md:202
+#: docs/en/tutorial/tutorial-3.md:289
+#: docs/en/tutorial/tutorial-4.md:29
+#: docs/en/tutorial/tutorial-4.md:65
+#: docs/en/tutorial/tutorial-4.md:160
+#: docs/en/tutorial/tutorial-5/android.md:11
+#: docs/en/tutorial/tutorial-5/android.md:104
+#: docs/en/tutorial/tutorial-5/android.md:176
+#: docs/en/tutorial/tutorial-5/android.md:285
+#: docs/en/tutorial/tutorial-6.md:17
+#: docs/en/tutorial/tutorial-7.md:34
+#: docs/en/tutorial/tutorial-7.md:114
+#: docs/en/tutorial/tutorial-7.md:183
+#: docs/en/tutorial/tutorial-7.md:490
+#: docs/en/tutorial/tutorial-8.md:59
+#: docs/en/tutorial/tutorial-8.md:213
+msgid "/// tab | macOS"
+msgstr "/// tab | macOS"
+
 #: docs/en/tutorial/topics/camera-access.md:125
 #: docs/en/tutorial/topics/custom-icons.md:91
 #: docs/en/tutorial/topics/custom-icons.md:281
@@ -1368,6 +790,82 @@ msgid ""
 msgstr ""
 "我们现在可以重新运行 `briefcase update` — 但这次，我们传入 `--update-"
 "resources` 标志，以告诉 Briefcase 我们想要安装新的应用资源（图标）："
+
+#: docs/en/tutorial/topics/custom-icons.md:48
+#: docs/en/tutorial/topics/custom-icons.md:222
+#: docs/en/tutorial/topics/custom-icons.md:394
+#: docs/en/tutorial/topics/testing.md:44
+#: docs/en/tutorial/topics/testing.md:143
+#: docs/en/tutorial/topics/testing.md:230
+#: docs/en/tutorial/topics/testing.md:335
+#: docs/en/tutorial/topics/testing.md:425
+#: docs/en/tutorial/tutorial-0.md:27
+#: docs/en/tutorial/tutorial-0.md:61
+#: docs/en/tutorial/tutorial-0.md:117
+#: docs/en/tutorial/tutorial-1.md:17
+#: docs/en/tutorial/tutorial-1.md:57
+#: docs/en/tutorial/tutorial-1.md:133
+#: docs/en/tutorial/tutorial-1.md:175
+#: docs/en/tutorial/tutorial-2.md:241
+#: docs/en/tutorial/tutorial-2.md:277
+#: docs/en/tutorial/tutorial-3.md:42
+#: docs/en/tutorial/tutorial-3.md:149
+#: docs/en/tutorial/tutorial-3.md:227
+#: docs/en/tutorial/tutorial-3.md:328
+#: docs/en/tutorial/tutorial-4.md:39
+#: docs/en/tutorial/tutorial-4.md:81
+#: docs/en/tutorial/tutorial-4.md:183
+#: docs/en/tutorial/tutorial-5/android.md:40
+#: docs/en/tutorial/tutorial-5/android.md:124
+#: docs/en/tutorial/tutorial-5/android.md:190
+#: docs/en/tutorial/tutorial-5/android.md:301
+#: docs/en/tutorial/tutorial-6.md:57
+#: docs/en/tutorial/tutorial-7.md:56
+#: docs/en/tutorial/tutorial-7.md:131
+#: docs/en/tutorial/tutorial-7.md:224
+#: docs/en/tutorial/tutorial-7.md:513
+#: docs/en/tutorial/tutorial-8.md:80
+#: docs/en/tutorial/tutorial-8.md:221
+msgid "/// tab | Linux"
+msgstr "/// tab | Linux"
+
+#: docs/en/tutorial/topics/custom-icons.md:72
+#: docs/en/tutorial/topics/custom-icons.md:254
+#: docs/en/tutorial/topics/custom-icons.md:411
+#: docs/en/tutorial/topics/testing.md:72
+#: docs/en/tutorial/topics/testing.md:162
+#: docs/en/tutorial/topics/testing.md:266
+#: docs/en/tutorial/topics/testing.md:355
+#: docs/en/tutorial/topics/testing.md:459
+#: docs/en/tutorial/tutorial-0.md:39
+#: docs/en/tutorial/tutorial-0.md:92
+#: docs/en/tutorial/tutorial-0.md:128
+#: docs/en/tutorial/tutorial-1.md:31
+#: docs/en/tutorial/tutorial-1.md:65
+#: docs/en/tutorial/tutorial-1.md:148
+#: docs/en/tutorial/tutorial-1.md:185
+#: docs/en/tutorial/tutorial-2.md:252
+#: docs/en/tutorial/tutorial-2.md:287
+#: docs/en/tutorial/tutorial-3.md:88
+#: docs/en/tutorial/tutorial-3.md:179
+#: docs/en/tutorial/tutorial-3.md:255
+#: docs/en/tutorial/tutorial-3.md:425
+#: docs/en/tutorial/tutorial-4.md:49
+#: docs/en/tutorial/tutorial-4.md:104
+#: docs/en/tutorial/tutorial-4.md:212
+#: docs/en/tutorial/tutorial-5/android.md:69
+#: docs/en/tutorial/tutorial-5/android.md:144
+#: docs/en/tutorial/tutorial-5/android.md:204
+#: docs/en/tutorial/tutorial-5/android.md:317
+#: docs/en/tutorial/tutorial-6.md:97
+#: docs/en/tutorial/tutorial-7.md:78
+#: docs/en/tutorial/tutorial-7.md:148
+#: docs/en/tutorial/tutorial-7.md:279
+#: docs/en/tutorial/tutorial-7.md:542
+#: docs/en/tutorial/tutorial-8.md:101
+#: docs/en/tutorial/tutorial-8.md:229
+msgid "/// tab | Windows"
+msgstr "/// tab | Windows"
 
 #: docs/en/tutorial/topics/custom-icons.md:129
 #: docs/en/tutorial/topics/custom-icons.md:327
@@ -5072,6 +4570,358 @@ msgid ""
 "If you'd like to know more about the capabilities of Briefcase, you can dive "
 "into [Briefcase's documentation]{1}."
 msgstr "如果你想了解更多有关公文包功能的信息，可以查阅[公文包文档]{1}。"
+
+#~ msgid "How-to guides"
+#~ msgstr "如何...？"
+
+#~ msgid "[Contributing to this tutorial]{1}"
+#~ msgstr "[为本教程做出贡献]{1}"
+
+#~ msgid "[Style guide]{1}"
+#~ msgstr "[风格指南]{1}"
+
+#~ msgid "Contributing to this tutorial"
+#~ msgstr "为本教程做出贡献"
+
+#~ msgid ""
+#~ "This tutorial is written using [MkDocs and Markdown]{1}. This guide will "
+#~ "help you contribute fixes or new content to this tutorial."
+#~ msgstr ""
+#~ "本教程使用 [MkDocs 和 Markdown]{1} 编写。本指南将帮助您为本教程贡献修复或者新"
+#~ "内容。"
+
+#~ msgid ""
+#~ "Translations of this tutorial are managed using [Weblate]{1}. If you'd like "
+#~ "to contribute to the translation effort, join the `#translations` channel on "
+#~ "[Discord]{2} and introduce yourself!"
+#~ msgstr ""
+#~ "本教程使用 [Weblate]{1} 进行翻译管理。如果您想参与翻译工作，请加入 [Discord]"
+#~ "{2} 上的 `#translations` 频道并介绍自己！"
+
+#~ msgid "Set up your development environment"
+#~ msgstr "设置开发环境"
+
+#~ msgid ""
+#~ "To build the BeeWare tutorial you **must** have a Python 3.12 interpreter "
+#~ "installed and available on your path (i.e., `python3` must start a Python "
+#~ "3.12 interpreter)."
+#~ msgstr ""
+#~ "要编译 BeeWare 教程，path 上**必须**安装有 Python 3.12 解释器（即 `python3` "
+#~ "必须启动 Python 3.12 解释器）。"
+
+#~ msgid "Create a virtual environment"
+#~ msgstr "建立虚拟环境"
+
+#~ msgid ""
+#~ "The recommended way of setting up your development environment for BeeWare "
+#~ "is to install a virtual environment, install the required dependencies and "
+#~ "start coding. To set up a virtual environment, run:"
+#~ msgstr ""
+#~ "设置 BeeWare 开发环境的推荐方法是安装虚拟环境、安装所需的依赖项并开始写代码。"
+#~ "要设置虚拟环境，请运行："
+
+#~ msgid "Your prompt should now have a `(.venv)` prefix in front of it."
+#~ msgstr "现在，你的提示符前面应该会有 `(.venv)` 前缀。"
+
+#~ msgid "Clone the BeeWare Tutorial repository"
+#~ msgstr "克隆 BeeWare 教程仓库"
+
+#~ msgid "For updates to BeeWare documentation:"
+#~ msgstr "有关 BeeWare 文档的更新："
+
+#, fuzzy
+#~ msgid ""
+#~ "Next, go to [the BeeWare Tutorial page on GitHub]{1}, fork the repository "
+#~ "into your own account, and then clone a copy of that repository onto your "
+#~ "computer by clicking on \"Code\". If you have the GitHub desktop application "
+#~ "installed on your computer, you can select \"Open in Desktop\"; otherwise, "
+#~ "copy the URL provided, and use it to clone using the command line:"
+#~ msgstr ""
+#~ "接下来，请访问[GitHub上的BeeWare教程页面]{1}，将该版本库fork到自己的账户中，"
+#~ "然后点击 \"代码\"（Code），将该版本库的副本克隆到自己的电脑上。如果电脑上安装"
+#~ "了 GitHub 桌面程序，可以选择 \"在桌面打开\"；否则，请复制所提供的 URL，并使用"
+#~ "命令行克隆："
+
+#~ msgid "Fork the BeeWare Tutorial repository, and then:"
+#~ msgstr "Fork BeeWare Tutorial 仓库，然后："
+
+#~ msgid "(substituting your GitHub username)"
+#~ msgstr "(用您的 GitHub 用户名代替）"
+
+#~ msgid "Install BeeWare tutorial docs dependencies"
+#~ msgstr "安装 BeeWare 教程文档依赖项"
+
+#~ msgid ""
+#~ "Now that you have the source code, you can install BeeWare docs requirements "
+#~ "into your development environment. Since we're installing from source, we "
+#~ "can't rely on pip to resolve the dependencies to source packages, so we have "
+#~ "to manually install each package:"
+#~ msgstr ""
+#~ "有了源代码，就可以在开发环境中安装 BeeWare 文档依赖项了。由于我们是从源代码安"
+#~ "装，因此不能依靠 pip 来解析源代码包的依赖关系，所以我们必须手动安装每个软件包"
+#~ "："
+
+#~ msgid "Install pre-commit"
+#~ msgstr "安装 pre-commit"
+
+#~ msgid ""
+#~ "BeeWare uses a tool called [Pre-Commit]{1} to identify simple issues and "
+#~ "standardize code formatting. It does this by installing a git hook that "
+#~ "automatically runs a series of code linters prior to finalizing any git "
+#~ "commit. To enable pre-commit, run:"
+#~ msgstr ""
+#~ "BeeWare 使用一个名为 [Pre-Commit]{1} 的工具来识别简单问题并规范代码格式。它通"
+#~ "过安装一个 git 钩子，在完成任何 git commit 之前自动运行一系列 linters。要启"
+#~ "用 pre-commit，请运行："
+
+#~ msgid ""
+#~ "When you commit any change, pre-commit will run automatically. If there are "
+#~ "any issues found with the commit, this will cause your commit to fail. Where "
+#~ "possible, pre-commit will make the changes needed to correct the problems it "
+#~ "has found:"
+#~ msgstr ""
+#~ "提交任何更改时，pre-commit 会自动运行。如果在提交过程中发现任何问题，都会导致"
+#~ "提交失败。在可能的情况下，pre-commit 会对发现的问题进行必要的修改："
+
+#~ msgid ""
+#~ "You can then re-add any files that were modified as a result of the pre-"
+#~ "commit checks, and re-commit the change."
+#~ msgstr "然后，你可以重新添加任何被 pre-commit 修改的文件，并重新 commit 更改。"
+
+#~ msgid "Now you are ready to start hacking on BeeWare docs!"
+#~ msgstr "现在，您已经准备好为 BeeWare 做贡献了！"
+
+#~ msgid "Building the BeeWare Tutorial"
+#~ msgstr "编译 BeeWare 教程"
+
+#~ msgid "Build the Tutorial locally"
+#~ msgstr "在本地构建教程"
+
+#~ msgid "Once your development environment is set up, run:"
+#~ msgstr "设置好开发环境后，运行："
+
+#~ msgid ""
+#~ "The output of the file should be in the `_build/html` folder. If there are "
+#~ "any markup problems, they'll raise an error."
+#~ msgstr ""
+#~ "该文件的输出应位于 `_build/html` 文件夹中。如果出现任何标记语法问题，它将会引"
+#~ "发错误。"
+
+#~ msgid "Live Tutorial preview"
+#~ msgstr "实时教程预览"
+
+#~ msgid ""
+#~ "To support rapid editing of documentation, BeeWare also has a \"live "
+#~ "preview\" mode:"
+#~ msgstr "为了支持文档的快速编辑，BeeWare 还提供了“实时预览”模式："
+
+#~ msgid ""
+#~ "This will build the documentation, start a web server to serve the build "
+#~ "documentation, and watch the file system for any changes to the "
+#~ "documentation source. If a change is detected, the documentation will be "
+#~ "rebuilt, and any browser viewing the modified page will be automatically "
+#~ "refreshed."
+#~ msgstr ""
+#~ "这将构建文档，启动网络服务器以提供构建文档，并监视是否对文档源进行了任何更改"
+#~ "。如果检测到了更改，它将重建文档，并自动刷新查看修改过的页面的任何浏览器。"
+
+#~ msgid "Tutorial linting"
+#~ msgstr "教程 lint"
+
+#~ msgid ""
+#~ "The build process will identify most Markdown problems, but BeeWare performs "
+#~ "some additional \"lint\" checks. To run the lint checks:"
+#~ msgstr ""
+#~ "构建过程会识别出大多数 Markdown 问题，但 BeeWare 还会执行一些额外的 \"lint\" "
+#~ "检查。要运行 \"lint\" 检查："
+
+#~ msgid "This will validate the documentation does not contain:"
+#~ msgstr "这将验证文档不包含："
+
+#~ msgid "dead hyperlinks"
+#~ msgstr "死超链接"
+
+#~ msgid "misspelled words"
+#~ msgstr "错别字"
+
+#, fuzzy
+#~ msgid ""
+#~ "If a valid spelling of a word is identified as misspelled, then add the word "
+#~ "to the list in `docs/spelling_wordlist`. This will add the word to the "
+#~ "spellchecker's dictionary. When adding to this list, remember:"
+#~ msgstr ""
+#~ "如果一个单词的有效拼写被识别为拼写错误，则将该单词添加到 `docs/"
+#~ "spelling_wordlist` 中的列表中。这将把该词添加到拼写检查程序的词典中。添加到该"
+#~ "列表时，请记住"
+
+#~ msgid ""
+#~ "We prefer US spelling, with some liberties for programming-specific "
+#~ "colloquialisms (e.g., \"apps\") and verbing of nouns (e.g., \"scrollable\")"
+#~ msgstr ""
+#~ "我们倾向于使用美式拼写法，但对程序特定的口语（如 “apps”）和名词的动词化（如 “"
+#~ "scrollable”）有一定的自由度"
+
+#~ msgid ""
+#~ "Any reference to a product name should use the product's preferred "
+#~ "capitalization. (e.g., \"macOS\", \"GTK\", \"pytest\", \"Pygame\", "
+#~ "\"PyScript\")."
+#~ msgstr ""
+#~ "任何对产品名称的引用都应使用该产品的首选大小写。(例如，“macOS”、“GTK”、“"
+#~ "pytest”、“Pygame”、“PyScript”）。"
+
+#~ msgid ""
+#~ "If a term is being used \"as code\", then it should be quoted as inline code "
+#~ "rather than being added to the dictionary."
+#~ msgstr ""
+#~ "如果一个术语是作为代码使用的，那么它应该作为内嵌代码被引用，而不是被添加到词"
+#~ "典中。"
+
+#~ msgid "Translations"
+#~ msgstr "翻译"
+
+#, fuzzy
+#~ msgid ""
+#~ "The BeeWare tutorial is available in multiple languages, which you can build "
+#~ "individually or all at the same time."
+#~ msgstr "BeeWare 教程有多种语言版本，您可以单独或同时构建所有语言版本。"
+
+#~ msgid "Updating translations"
+#~ msgstr "更新翻译文件"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you have made changes to the English content, the first step to building "
+#~ "the translations is to update the translation files. To update the "
+#~ "translations:"
+#~ msgstr ""
+#~ "如果您对英文内容进行了更改，那么构建翻译的第一步就是更新翻译文件。更新翻译文"
+#~ "件"
+
+#, fuzzy
+#~ msgid "This will update the"
+#~ msgstr "这将更新"
+
+#, fuzzy
+#~ msgid "Building translations"
+#~ msgstr "建筑翻译"
+
+#, fuzzy
+#~ msgid ""
+#~ "To build a single translation, you run the `docs` command with the language "
+#~ "code for the translation you wish to build. For example, to build French:"
+#~ msgstr ""
+#~ "要编译单个译文，请运行 `docs` 命令，并输入要编译的译文的语言代码。例如，要编"
+#~ "译法语："
+
+#, fuzzy
+#~ msgid ""
+#~ "The French translation should be built in the `_build/html` folder. If there "
+#~ "are any markup problems, they'll raise an error."
+#~ msgstr "法文翻译应建在 `_build/html` 文件夹中。如果出现任何标记问题，都会引发错误。"
+
+#, fuzzy
+#~ msgid ""
+#~ "An error is also raised if you enter a language code for an unavailable "
+#~ "language. If this happens, verify that you are using the proper language "
+#~ "code."
+#~ msgstr ""
+#~ "如果输入了不可用语言的语言代码，也会出现错误。如果出现这种情况，请确认您使用"
+#~ "的是正确的语言代码。"
+
+#, fuzzy
+#~ msgid "To build all the translations at the same time:"
+#~ msgstr "同时构建所有翻译："
+
+#, fuzzy
+#~ msgid ""
+#~ "This will build all available translations in the `_build/html` directory, "
+#~ "inside a language-specific subdirectory. For example, the French translation "
+#~ "would be available in `_build/html/fr`."
+#~ msgstr ""
+#~ "这将在 `_build/html`目录下的特定语言子目录内构建所有可用的翻译。例如，法语翻"
+#~ "译将放在 `_build/html/fr`。"
+
+#, fuzzy
+#~ msgid "What to work on?"
+#~ msgstr "要做什么？"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you're looking for specific areas to improve, there are [tickets tagged "
+#~ "\"documentation\"]{1} in BeeWare's issue tracker."
+#~ msgstr ""
+#~ "如果您正在寻找需要改进的具体方面，BeeWare 的问题跟踪器中有[标记为 \"文档 \"的"
+#~ "票据]{1}。"
+
+#, fuzzy
+#~ msgid ""
+#~ "However, you don't need to be constrained by these tickets. If you can "
+#~ "identify an error in the tutorial, or an improvement that can be made, start "
+#~ "writing! Anything that improves the experience of the end user is a welcome "
+#~ "change."
+#~ msgstr ""
+#~ "不过，您不必拘泥于这些罚单。如果您能发现教程中的错误或可以改进的地方，请开始"
+#~ "撰写！任何能改善最终用户体验的改变都是值得欢迎的。"
+
+#, fuzzy
+#~ msgid "Submitting a pull request"
+#~ msgstr "提交拉取请求"
+
+#, fuzzy
+#~ msgid ""
+#~ "Before you submit a pull request, there's a few bits of housekeeping to do."
+#~ msgstr "在提交拉取请求之前，您需要做一些内务整理。"
+
+#, fuzzy
+#~ msgid "Submit from a feature branch, not your `main` branch"
+#~ msgstr "从特性分支提交，而不是从 \"主 \"分支提交"
+
+#, fuzzy
+#~ msgid ""
+#~ "Before you start working on your change, make sure you've created a branch. "
+#~ "By default, when you clone your repository fork, you'll be checked out on "
+#~ "your `main` branch. This is a direct copy of BeeWare's `main` branch. To "
+#~ "contribute to BeeWare itself, not the docs, please review the repo README."
+#~ msgstr ""
+#~ "在你开始修改之前，请确保你已经创建了一个分支。默认情况下，当您克隆您的分叉仓"
+#~ "库时，您将在 \"主 \"分支上签出。这是BeeWare \"主 \"分支的直接拷贝。如需对"
+#~ "BeeWare本身（而非文档）做出贡献，请查看版本库的README。"
+
+#, fuzzy
+#~ msgid ""
+#~ "While you *can* submit a pull request from your `main` branch, it's "
+#~ "preferable if you *don't* do this. If you submit a pull request that is "
+#~ "*almost* right, the core team member who reviews your pull request may be "
+#~ "able to make the necessary changes, rather than giving feedback asking for a "
+#~ "minor change. However, if you submit your pull request from your `main` "
+#~ "branch, reviewers are prevented from making modifications."
+#~ msgstr ""
+#~ "虽然您*可以*从您的 \"主 \"分支提交拉取请求，但最好不要*这样做。如果您提交的拉"
+#~ "取请求*几乎*正确，那么审查您的拉取请求的核心团队成员可能会做出必要的修改，而"
+#~ "不是给出反馈，要求您做细微的改动。但是，如果你从你的 \"主 \"分支提交拉取请求"
+#~ "，审查人员就无法进行修改。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Instead, you should make your changes on a *feature branch*. A feature "
+#~ "branch has a simple name to identify the change that you've made."
+#~ msgstr ""
+#~ "相反，你应该在*特性分支*上进行修改。特性分支有一个简单的名称，用来标识你所做"
+#~ "的改动。"
+
+#, fuzzy
+#~ msgid "To create a feature branch, run:"
+#~ msgstr "要创建功能分支，请运行"
+
+#, fuzzy
+#~ msgid ""
+#~ "Commit your changes to this branch, then push to GitHub and create a pull "
+#~ "request."
+#~ msgstr "将更改提交到此分支，然后推送到 GitHub 并创建拉取请求。"
+
+#, fuzzy
+#~ msgid "-8<- \"style_guide.md\""
+#~ msgstr "-8<- \"style_guide.md\""
 
 #, fuzzy
 #~ msgid ""
