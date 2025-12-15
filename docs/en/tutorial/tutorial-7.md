@@ -111,7 +111,7 @@ You can't run an iOS app in developer mode - use the instructions for your chose
 
 What happened? We've added `faker` to our *code*, but we haven't added it to the virtual environment that is used to run the app in development mode.
 
-The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. To ensure this happens, when Briefcase runs an app in development mode, it creates a standalone virtual environment for that application. If your app doesn't declare that it needs a particular library, that library won't be installed in the development virtual environment.
+When Briefcase runs an app in development mode, it creates a standalone virtual environment for that application, independent of the environment in which you run `briefcase`. If your app doesn't declare that it needs a particular library, that library won't be installed in the development virtual environment.
 
 So how do you add a new requirement to your application?
 
@@ -131,7 +131,7 @@ sources = ["src/helloworld"]
 requires = []
 ```
 
-The `requires` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app.
+The `requires` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions of libraries) that you want to be included with your app.
 
 Modify the `requires` setting so that it reads:
 
@@ -522,7 +522,7 @@ ModuleNotFoundError: No module named 'faker'
 
 Once again, the app has failed to start because `faker` has not been installed - but why? Haven't we already installed `faker`?
 
-We have - but only in the development environment. Each built application is *also* a standalone environment. This is what Briefcase is building when you run `briefcase build` - an isolated Python environment. When we ran `briefcase dev -r`, we added `faker` to our *development* environment, but not to the packaged app. We also need to run `briefcase update -r` so that Briefcase knows the requirements of the packaged app have changed:
+We have - but only in the development environment. Each built application also has its own standalone environment, which is one of the things Briefcase produces when you run `briefcase build`. When we ran `briefcase dev -r`, we added `faker` to our *development* environment, but not to the packaged app. We also need to run `briefcase update -r` so that Briefcase knows the requirements of the packaged app have changed:
 
 /// tab | macOS
 
