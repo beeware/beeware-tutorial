@@ -109,13 +109,65 @@ You can't run an iOS app in developer mode - use the instructions for your chose
 
 ///
 
-What happened? We've added `faker` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing `faker` with `pip`, and then re-running `briefcase dev`:
+What happened? We've added `faker` to our *code*, but we haven't added it to the virtual environment that is used to run the app in development mode.
+
+The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. To ensure this happens, when Briefcase runs an app in development mode, it creates a standalone virtual environment for that application. If your app doesn't declare that it needs a particular library, that library won't be installed in the development virtual environment.
+
+So how do you add a new requirement to your application?
+
+## Updating dependencies
+
+In the root directory of your app, there is a file named `pyproject.toml`. This file contains all the app configuration details that you provided when you originally ran `briefcase new`.
+
+`pyproject.toml` is broken up into sections; one of the sections describes the settings for your app:
+
+```toml
+[tool.briefcase.app.helloworld]
+formal_name = "Hello World"
+description = "A Tutorial app"
+long_description = """More details about the app should go here.
+"""
+sources = ["src/helloworld"]
+requires = []
+```
+
+The `requires` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app.
+
+Modify the `requires` setting so that it reads:
+
+```toml
+requires = [
+    "faker",
+]
+```
+
+By adding this setting, we're telling Briefcase "when you build my app, run `pip install faker` into the application bundle". Anything that would be legal input to `pip install` can be used here - so, you could specify:
+
+- A specific library version (e.g., `"faker==37.3.0"`);
+- A range of library versions (e.g., `"faker>=37"`);
+- A path to a git repository (e.g., `"git+https://github.com/joke2k/faker/"`); or
+- A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)
+
+Further down in `pyproject.toml`, you'll notice other sections that are operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and `[tool.briefcase.app.helloworld.windows]`. These sections *also* have a `requires` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific `requires` section, and that setting will only be used for that platform. You will notice that the `toga` libraries are all specified in the platform-specific `requires` section - this is because the libraries needed to display a user interface are platform specific.
+
+In our case, we want `faker` to be installed on all platforms, so we use the app-level `requires` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones.
+
+Once you'e added the new requirement, save `pyproject.toml`, and run `briefcase dev -r`. The `-r` flag tells Briefcase that requirements have changed, and the development virtual environment needs to be updated:
 
 /// tab | macOS
 
 ```console
-(beeware-venv) $ python -m pip install faker
-(beeware-venv) $ briefcase dev
+(beeware-venv) $ briefcase dev -r
+
+[helloworld] Activating dev environment...
+...
+Recreating virtual environment (dev.cpython-313-darwin)... done
+
+[hello-world] Installing requirements...
+...
+
+[helloworld] Starting in dev mode...
+===========================================================================
 ```
 
 When you enter a name and press the button, you should see a dialog that looks something like:
@@ -131,8 +183,17 @@ When you enter a name and press the button, you should see a dialog that looks s
 /// tab | Linux
 
 ```console
-(beeware-venv) $ python -m pip install faker
-(beeware-venv) $ briefcase dev
+(beeware-venv) $ briefcase dev -r
+
+[helloworld] Activating dev environment...
+...
+Recreating virtual environment (dev.cpython-313-x86_64-linux-gnu)... done
+
+[hello-world] Installing requirements...
+...
+
+[helloworld] Starting in dev mode...
+===========================================================================
 ```
 
 When you enter a name and press the button, you should see a dialog that looks something like:
@@ -148,8 +209,17 @@ When you enter a name and press the button, you should see a dialog that looks s
 /// tab | Windows
 
 ```doscon
-(beeware-venv) C:\...>python -m pip install faker
-(beeware-venv) C:\...>briefcase dev
+(beeware-venv) C:\...>briefcase dev -r
+
+[helloworld] Activating dev environment...
+...
+Recreating virtual environment (dev.cp313-win32_amd64)... done
+
+[hello-world] Installing requirements...
+...
+
+[helloworld] Starting in dev mode...
+===========================================================================
 ```
 
 When you enter a name and press the button, you should see a dialog that looks something like:
@@ -174,11 +244,21 @@ You can't run an iOS app in developer mode - use the instructions for your chose
 
 ///
 
-We've now got a working app, using a third party library, running in development mode!
+/// admonition | Possible errors when running `briefcase dev`
+
+If you're still getting an error running briefcase dev, make sure:
+
+1. You've added `faker` to the `requires` list in `pyproject.toml`;
+2. You've saved your changes to `pyproject.toml`; and
+3. You included the `-r` argument when running `briefcase dev -r`.
+
+///
+
+The very first time you run your app using `briefcase dev`, the `-r` argument is automatically added for you - that's why we haven't had to use the `-r` argument until now. The `-r` argument is only needed when you add, remove, or change a requirement, *after* running your application in development mode. If you've only updated code, you can run `briefcase dev` as we have been doing for the rest of this tutorial.
 
 ## Running the updated app
 
-Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in [Tutorial 4](tutorial-4.md):
+We've now got a working app, using a third party library, running in development mode. Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in [Tutorial 4](tutorial-4.md):
 
 /// tab | macOS
 
@@ -442,50 +522,7 @@ ModuleNotFoundError: No module named 'faker'
 
 Once again, the app has failed to start because `faker` has not been installed - but why? Haven't we already installed `faker`?
 
-We have - but only in the development environment. Your development environment is entirely local to your machine - and is only enabled when you explicitly activate it. Although Briefcase has a development mode, the main reason you'd use Briefcase is to package up your code so you can give it to someone else.
-
-The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run `briefcase build` - an isolated Python environment. This also explains why `faker` isn't installed - it has been installed in your *development* environment, but not in the packaged app.
-
-So - we need to tell Briefcase that our app has an external dependency.
-
-## Updating dependencies
-
-In the root directory of your app, there is a file named `pyproject.toml`. This file contains all the app configuration details that you provided when you originally ran `briefcase new`.
-
-`pyproject.toml` is broken up into sections; one of the sections describes the settings for your app:
-
-```toml
-[tool.briefcase.app.helloworld]
-formal_name = "Hello World"
-description = "A Tutorial app"
-long_description = """More details about the app should go here.
-"""
-sources = ["src/helloworld"]
-requires = []
-```
-
-The `requires` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app.
-
-Modify the `requires` setting so that it reads:
-
-```toml
-requires = [
-    "faker",
-]
-```
-
-By adding this setting, we're telling Briefcase "when you build my app, run `pip install faker` into the application bundle". Anything that would be legal input to `pip install` can be used here - so, you could specify:
-
-- A specific library version (e.g., `"faker==37.3.0"`);
-- A range of library versions (e.g., `"faker>=37"`);
-- A path to a git repository (e.g., `"git+https://github.com/joke2k/faker/"`); or
-- A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)
-
-Further down in `pyproject.toml`, you'll notice other sections that are operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and `[tool.briefcase.app.helloworld.windows]`. These sections *also* have a `requires` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific `requires` section, and that setting will only be used for that platform. You will notice that the `toga` libraries are all specified in the platform-specific `requires` section - this is because the libraries needed to display a user interface are platform specific.
-
-In our case, we want `faker` to be installed on all platforms, so we use the app-level `requires` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones.
-
-Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to `pyproject.toml`, and then update your app again - this time, passing in the `-r` flag. This tells Briefcase to update requirements in the packaged app:
+We have - but only in the development environment. Each built application is *also* a standalone environment. This is what Briefcase is building when you run `briefcase build` - an isolated Python environment. When we ran `briefcase dev -r`, we added `faker` to our *development* environment, but not to the packaged app. We also need to run `briefcase update -r` so that Briefcase knows the requirements of the packaged app have changed:
 
 /// tab | macOS
 

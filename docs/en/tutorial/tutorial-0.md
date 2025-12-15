@@ -32,7 +32,7 @@ You should ensure that the system Python is Python 3.10 or newer; if it isn't (e
 
 Support for Raspberry Pi is limited at this time.
 
-**Important:** You *must* use the system Python provided by your operating system. Alternative Python installations (pyenv, Anaconda, manually compiled Python, etc.) will prevent you from successfully packaging your application for distribution in later steps of this tutorial.
+**Important:** You *must* use the system Python provided by your operating system. Python installs from other sources (such as uv, pyenv, Anaconda, manually compiled Python, etc.) will prevent you from successfully packaging your application for distribution in later steps of this tutorial.
 
 ///
 
@@ -69,7 +69,7 @@ $ sudo apt update
 $ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module
 ```
 
-### Fedora
+### Red Hat / Fedora
 
 ```console
 $ sudo dnf install git gcc make pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel gtk3 libcanberra-gtk3
@@ -86,6 +86,12 @@ $ sudo pacman -Syu git base-devel pkgconf python3 gobject-introspection cairo gt
 ```console
 $ sudo zypper install git patterns-devel-base-devel_basis pkgconf-pkg-config python3-devel gobject-introspection-devel cairo-devel gtk3 'typelib(Gtk)=3.0' libcanberra-gtk3-module
 ```
+
+/// admonition | Other Linux distributions
+
+If you're on a Linux distribution that isn't on this list, and isn't derived from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived distributions; AlmaLinux is Fedora-derived), you will probably have difficulty completing this tutorial. If Briefcase warns you that it "Can't verify system packages", you won't be able to complete this tutorial.
+
+///
 
 ///
 
