@@ -152,7 +152,7 @@ Further down in `pyproject.toml`, you'll notice other sections that are operatin
 
 In our case, we want `faker` to be installed on all platforms, so we use the app-level `requires` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones.
 
-Once you'e added the new requirement, save `pyproject.toml`, and run `briefcase dev -r`. The `-r` flag tells Briefcase that requirements have changed, and the development virtual environment needs to be updated:
+Once you've added the new requirement, save `pyproject.toml`, and run `briefcase dev -r`. The `-r` flag tells Briefcase that requirements have changed, and the development virtual environment needs to be updated:
 
 /// tab | macOS
 
@@ -246,7 +246,7 @@ You can't run an iOS app in developer mode - use the instructions for your chose
 
 /// admonition | Possible errors when running `briefcase dev`
 
-If you're still getting an error running briefcase dev, make sure:
+If you're still getting an error running `briefcase dev`, make sure:
 
 1. You've added `faker` to the `requires` list in `pyproject.toml`;
 2. You've saved your changes to `pyproject.toml`; and
