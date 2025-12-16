@@ -13,4 +13,4 @@ repos:
     rev: v0.0.190
     hooks:
       - id: rumdl
-        args: [--fix]
+        args: []
