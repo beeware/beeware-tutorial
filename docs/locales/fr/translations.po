@@ -1,15 +1,5 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-16 01:41+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.17.4\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-12-16 01:41+0000\nPO-Revision-Date: 2025-12-22 01:00+0000\nLast-Translator: kursk140 <yannick.monnier.1@gmail.com>\nLanguage-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.15.1\n"
 
 #: docs/en/SUMMARY.md:5
 #, fuzzy
@@ -1048,17 +1038,12 @@ msgid "/// caption"
 msgstr "/// caption"
 
 #: docs/en/tutorial/topics/custom-icons.md:192
-#, fuzzy
 msgid ""
 "The only exception will be the icons with `-adaptive-` in their name; these "
 "will have a transparent background. This represents all the different icon "
 "sizes and shapes you need to support an app on every platform that Briefcase "
 "supports."
-msgstr ""
-"La seule exception sera les icônes avec `-adaptive-` dans leur nom ; celles-"
-"ci auront un arrière-plan transparent. Cela représente toutes les "
-"différentes tailles et formes d'icônes dont vous avez besoin pour supporter "
-"une application sur toutes les plateformes supportées par Briefcase."
+msgstr "La seule exception sera les icônes avec `-adaptive-` dans leur nom ; celles-ci auront un arrière-plan transparent. Cela représente toutes les différentes tailles et formes d'icônes dont vous avez besoin pour développer une application sur toutes les plateformes supportées par Briefcase."
 
 #: docs/en/tutorial/topics/custom-icons.md:194
 #, fuzzy
@@ -4254,13 +4239,10 @@ msgstr ""
 "construire un faux message, comme si quelqu'un répondait à l'utilisateur."
 
 #: docs/en/tutorial/tutorial-7.md:13
-#, fuzzy
 msgid ""
 "We start by adding `faker` to our app. Add an import to the top of the "
 "`app.py` to import `faker`:"
-msgstr ""
-"Ajoutons un appel API `httpx` à notre application. Ajoutez un import au "
-"début de `app.py` pour importer `httpx`: :"
+msgstr "Commençons par ajouter `faker` à notre application. Ajoutez un import au début de `app.py` pour importer `faker`: :"
 
 #: docs/en/tutorial/tutorial-7.md:19
 #: docs/en/tutorial/tutorial-8.md:32
@@ -4302,16 +4284,11 @@ msgstr ""
 "utilisez les instructions pour la plateforme de bureau que vous avez choisie."
 
 #: docs/en/tutorial/tutorial-7.md:112
-#, fuzzy
 msgid ""
 "What happened? We've added `faker` to our *code*, but we haven't added it to "
 "our development virtual environment. We can fix this by installing `faker` "
 "with `pip`, and then re-running `briefcase dev`:"
-msgstr ""
-"Qu'est-ce qui s'est passé ? Nous avons ajouté `httpx` à notre *code*, mais "
-"nous ne l'avons pas ajouté à notre environnement virtuel de développement. "
-"Nous pouvons corriger cela en installant `httpx` avec `pip`, puis en "
-"relançant `briefcase dev` :"
+msgstr "Qu'est-ce qui s'est passé ? Nous avons ajouté `faker` à notre *code*, mais nous ne l'avons pas ajouté à notre environnement virtuel de développement. Nous pouvons corriger cela en installant `faker` avec `pip`, puis en relançant `briefcase dev` :"
 
 #: docs/en/tutorial/tutorial-7.md:121
 #: docs/en/tutorial/tutorial-7.md:138
@@ -4461,7 +4438,6 @@ msgstr ""
 "d'autre."
 
 #: docs/en/tutorial/tutorial-7.md:447
-#, fuzzy
 msgid ""
 "The only way to guarantee that someone else will have a Python environment "
 "that contains everything it needs is to build a completely isolated Python "
@@ -4470,15 +4446,7 @@ msgid ""
 "when you run `briefcase build` - an isolated Python environment. This also "
 "explains why `faker` isn't installed - it has been installed in your "
 "*development* environment, but not in the packaged app."
-msgstr ""
-"La seule façon de garantir que quelqu'un d'autre disposera d'un "
-"environnement Python contenant tout ce dont il a besoin est de construire un "
-"environnement Python complètement isolé. Cela signifie qu'il y a une "
-"installation Python complètement isolée, et un ensemble de dépendances "
-"complètement isolé. C'est ce que Briefcase construit quand vous lancez "
-"`briefcase build` - un environnement Python isolé. Cela explique aussi "
-"pourquoi `httpx` n'est pas installé - il a été installé dans votre "
-"environnement de *développement*, mais pas dans l'application packagée."
+msgstr "La seule façon de garantir que quelqu'un d'autre disposera d'un environnement Python contenant tout ce dont il a besoin est de construire un environnement Python complètement isolé. Cela signifie qu'il y a une installation Python complètement isolée, et un ensemble de dépendances complètement isolé. C'est ce que Briefcase construit quand vous lancez `briefcase build` - un environnement Python isolé. Cela explique aussi pourquoi `faker` n'est pas installé - il a été installé dans votre environnement de *développement*, mais pas dans l'application packagée."
 
 #: docs/en/tutorial/tutorial-7.md:449
 #, fuzzy
@@ -4530,38 +4498,25 @@ msgid "Modify the `requires` setting so that it reads:"
 msgstr "Modifiez le paramètre `requires` de façon à ce qu'il se lise: :"
 
 #: docs/en/tutorial/tutorial-7.md:477
-#, fuzzy
 msgid ""
 "By adding this setting, we're telling Briefcase \"when you build my app, run "
 "`pip install faker` into the application bundle\". Anything that would be "
 "legal input to `pip install` can be used here - so, you could specify:"
-msgstr ""
-"En ajoutant ce paramètre, nous disons à Briefcase \"lorsque vous compilez "
-"mon application, lancez `pip install httpx` dans le bundle de "
-"l'application\". Tout ce qui serait une entrée légale pour `pip install` "
-"peut être utilisé ici - ainsi, vous pourriez spécifier :"
+msgstr "En ajoutant ce paramètre, nous disons à Briefcase : \"lorsque vous compilez mon application, lancez `pip install faker` dans le bundle de l'application\". Tout ce qui serait une entrée légale pour `pip install` peut être utilisé ici - ainsi, vous pourriez spécifier :"
 
 #: docs/en/tutorial/tutorial-7.md:479
-#, fuzzy
 msgid "A specific library version (e.g., `\"faker==37.3.0\"`);"
-msgstr ""
-"Une version spécifique de la bibliothèque (par exemple, `\"httpx==0.19.0\"`) "
-";"
+msgstr "Une version spécifique de la bibliothèque (par exemple, `\"faker==37.3.0\"`) ;"
 
 #: docs/en/tutorial/tutorial-7.md:480
-#, fuzzy
 msgid "A range of library versions (e.g., `\"faker>=37\"`);"
-msgstr ""
-"Une gamme de versions de la bibliothèque (par exemple, `\"httpx>=0.19\"`) ;"
+msgstr "Une gamme de versions de la bibliothèque (par exemple, `\"faker>=37\"`) ;"
 
 #: docs/en/tutorial/tutorial-7.md:481
-#, fuzzy
 msgid ""
 "A path to a git repository (e.g., `\"git+https://github.com/joke2k/faker/\"`)"
 "; or"
-msgstr ""
-"Un chemin vers un dépôt git (par exemple, `\"git+https://github.com/encode/"
-"httpx\"`) ; ou"
+msgstr "Un chemin vers un dépôt git (par exemple, `\"git+https://github.com/joke2k/faker/\"`) ; ou"
 
 #: docs/en/tutorial/tutorial-7.md:482
 #, fuzzy
@@ -4602,18 +4557,12 @@ msgstr ""
 "pour afficher une interface utilisateur sont spécifiques à la plate-forme."
 
 #: docs/en/tutorial/tutorial-7.md:486
-#, fuzzy
 msgid ""
 "In our case, we want `faker` to be installed on all platforms, so we use the "
 "app-level `requires` setting. The app-level dependencies will always be "
 "installed; the platform-specific dependencies are installed *in addition* to "
 "the app-level ones."
-msgstr ""
-"Dans notre cas, nous voulons que `httpx` soit installé sur toutes les "
-"plateformes, donc nous utilisons le paramètre `requires` au niveau de "
-"l'application. Les dépendances au niveau de l'application seront toujours "
-"installées ; les dépendances spécifiques à la plate-forme sont installées "
-"*en plus* de celles au niveau de l'application."
+msgstr "Dans notre cas, nous voulons que `faker` soit installé sur toutes les plateformes, donc nous utilisons le paramètre `requires` au niveau de l'application. Les dépendances au niveau de l'application seront toujours installées ; les dépendances spécifiques à la plate-forme sont installées *en plus* de celles au niveau de l'application."
 
 #: docs/en/tutorial/tutorial-7.md:488
 #, fuzzy
