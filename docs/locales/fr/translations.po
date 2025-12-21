@@ -4545,14 +4545,14 @@ msgstr ""
 #, fuzzy
 msgid "A specific library version (e.g., `\"faker==37.3.0\"`);"
 msgstr ""
-"Une version spécifique de la bibliothèque (par exemple, `\"httpx==0.19.0\"`) "
+"Une version spécifique de la bibliothèque (par exemple, `\"faker==37.3.0\"`) "
 ";"
 
 #: docs/en/tutorial/tutorial-7.md:480
 #, fuzzy
 msgid "A range of library versions (e.g., `\"faker>=37\"`);"
 msgstr ""
-"Une gamme de versions de la bibliothèque (par exemple, `\"httpx>=0.19\"`) ;"
+"Une gamme de versions de la bibliothèque (par exemple, `\"faker>=37\"`) ;"
 
 #: docs/en/tutorial/tutorial-7.md:481
 #, fuzzy
@@ -4560,8 +4560,7 @@ msgid ""
 "A path to a git repository (e.g., `\"git+https://github.com/joke2k/faker/\"`)"
 "; or"
 msgstr ""
-"Un chemin vers un dépôt git (par exemple, `\"git+https://github.com/encode/"
-"httpx\"`) ; ou"
+"Un chemin vers un dépôt git (par exemple, `\"git+https://github.com/joke2k/faker/\"`) ; ou"
 
 #: docs/en/tutorial/tutorial-7.md:482
 #, fuzzy
