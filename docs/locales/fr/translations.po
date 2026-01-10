@@ -1,18 +1,5 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 23:58+0000\n"
-"PO-Revision-Date: 2025-12-22 01:00+0000\n"
-"Last-Translator: kursk140 <yannick.monnier.1@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
-"fr/>\n"
-"Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.17.5\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-04 23:58+0000\nPO-Revision-Date: 2026-01-11 00:01+0000\nLast-Translator: kursk140 <yannick.monnier.1@gmail.com>\nLanguage-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.15.1\n"
 
 #: docs/en/SUMMARY.md:5
 #, fuzzy
@@ -104,9 +91,8 @@ msgid "[Testing times]{1}"
 msgstr "[Temps d'essai]{1}"
 
 #: docs/en/index.md:1
-#, fuzzy
 msgid "Welcome to the BeeWare Tutorial"
-msgstr "Bienvenue dans le didacticiel BeeWare !"
+msgstr "Bienvenue dans le didacticiel BeeWare"
 
 #: docs/en/index.md:3
 msgid "**Write Python. Run Anywhere.**"
@@ -508,13 +494,10 @@ msgstr ""
 "d'accéder à la caméra sur ces plateformes."
 
 #: docs/en/tutorial/topics/camera-access.md:11
-#, fuzzy
 msgid ""
 "The code presented here will *run* on Windows or Linux; but it will raise an "
 "error when you try to take a photograph."
-msgstr ""
-"Le code présenté ici fonctionnera sous Windows ou Linux, mais il provoquera "
-"une erreur lorsque vous tenterez de prendre une photo."
+msgstr "Le code présenté ici *fonctionnera* sous Windows ou Linux, mais il provoquera une erreur lorsque vous tenterez de prendre une photo."
 
 #: docs/en/tutorial/topics/camera-access.md:13
 #, fuzzy
@@ -792,15 +775,11 @@ msgid "Customizing icons"
 msgstr "Personnalisation des icônes"
 
 #: docs/en/tutorial/topics/custom-icons.md:3
-#, fuzzy
 msgid ""
 "The app we developed in the main tutorial uses a default \"gray bee\" icon "
 "when it is packaged. Let's personalize this application by configuring it to "
 "use our own icon."
-msgstr ""
-"Jusqu'à présent, notre application utilise l'icône par défaut \"abeille "
-"grise\". Comment mettre à jour l'application pour qu'elle utilise notre "
-"propre icône ?"
+msgstr "Jusqu'à présent, notre application utilise l'icône par défaut \"abeille grise\". Configurons l'application pour qu'elle utilise notre propre icône."
 
 #: docs/en/tutorial/topics/custom-icons.md:5
 #: docs/en/tutorial/topics/custom-icons.md:319
@@ -870,20 +849,13 @@ msgstr ""
 "`sources` :"
 
 #: docs/en/tutorial/topics/custom-icons.md:25
-#, fuzzy
 msgid ""
 "This icon definition doesn't specify any file extension. The value will be "
 "used as a prefix; each platform will add additional items to this prefix to "
 "build the files needed for each platform. Some platforms require *multiple* "
 "icon files; this prefix will be combined with file size and variant "
 "modifiers to generate the list of icon files that are used."
-msgstr ""
-"Cette définition d'icône ne spécifie pas d'extension de fichier. La valeur "
-"sera utilisée comme préfixe ; chaque plateforme ajoutera des éléments "
-"supplémentaires à ce préfixe pour créer les fichiers nécessaires à chaque "
-"plateforme. Certaines plateformes nécessitent plusieurs fichiers d'icônes ; "
-"ce préfixe sera combiné avec des modificateurs de taille de fichier et de "
-"variante pour générer la liste des fichiers d'icônes utilisés."
+msgstr "Cette définition d'icône ne spécifie pas d'extension de fichier. La valeur sera utilisée comme préfixe ; chaque plateforme ajoutera des éléments supplémentaires à ce préfixe pour créer les fichiers nécessaires à chaque plateforme. Certaines plateformes nécessitent *plusieurs* fichiers d'icônes ; ce préfixe sera combiné avec des modificateurs de taille de fichier et de variante pour générer la liste des fichiers d'icônes utilisés."
 
 #: docs/en/tutorial/topics/custom-icons.md:27
 #, fuzzy
@@ -1010,13 +982,10 @@ msgstr ""
 "comme :"
 
 #: docs/en/tutorial/topics/custom-icons.md:184
-#, fuzzy
 msgid ""
 "There's a *lot* of icons in this folder, but most of them should look the "
 "same: a green snake on a light blue background:"
-msgstr ""
-"Il y a beaucoup d'icônes dans ce dossier, mais la plupart d'entre elles "
-"devraient avoir la même apparence : un serpent vert sur un fond bleu clair :"
+msgstr "Il y a *beaucoup* d'icônes dans ce dossier, mais la plupart d'entre elles devraient avoir la même apparence : un serpent vert sur un fond bleu clair :"
 
 #: docs/en/tutorial/topics/custom-icons.md:186
 #, fuzzy
@@ -1299,20 +1268,13 @@ msgid "Running the test suite"
 msgstr "Exécution de la suite de tests"
 
 #: docs/en/tutorial/topics/testing.md:7
-#, fuzzy
 msgid ""
 "It turns out the project from the core tutorial already has a test suite! "
 "When we originally generated our project, two top-level directories were "
 "generated: `src` and `tests`. The `src` folder contains the code for our "
 "app; the `tests` folder contains our test suite. Inside the `tests` folder "
 "is a file named `test_app.py` with the following content:"
-msgstr ""
-"Il s'avère que notre projet possède déjà une suite de tests ! Lorsque nous "
-"avons généré notre projet à l'origine, deux répertoires de premier niveau "
-"ont été générés : `src` et `tests`. Le dossier `src` contient le code de "
-"notre application ; le dossier `tests` contient notre suite de tests. Dans "
-"le dossier `tests` se trouve un fichier nommé `test_app.py` avec le contenu "
-"suivant: :"
+msgstr "Il s'avère que notre projet possède déjà une suite de tests ! Lorsque nous avons généré notre projet à l'origine, deux répertoires de premier niveau ont été générés : `src` et `tests`. Le dossier `src` contient le code de notre application ; le dossier `tests` contient notre suite de tests. Dans le dossier `tests` se trouve un fichier nommé `test_app.py` avec le contenu suivant :"
 
 #: docs/en/tutorial/topics/testing.md:15
 #, fuzzy
@@ -1394,18 +1356,12 @@ msgid "Test driven development"
 msgstr "Développement piloté par les tests"
 
 #: docs/en/tutorial/topics/testing.md:185
-#, fuzzy
 msgid ""
 "Now that we have a test suite, we can use it to drive the development of new "
 "features. Let's modify our app to have a special greeting for one particular "
 "user. We can start by adding a test case for the new behavior that we'd like "
 "to see to the bottom of `test_app.py`:"
-msgstr ""
-"Maintenant que nous disposons d'une suite de tests, nous pouvons l'utiliser "
-"pour développer de nouvelles fonctionnalités. Modifions notre application "
-"pour avoir un message d'accueil spécial pour un utilisateur particulier. "
-"Nous pouvons commencer par ajouter un scénario de test pour le nouveau "
-"comportement que nous aimerions voir au bas de `test_app.py`: :"
+msgstr "Maintenant que nous disposons d'une suite de tests, nous pouvons l'utiliser pour développer de nouvelles fonctionnalités. Modifions notre application pour avoir un message d'accueil spécial pour un utilisateur particulier. Nous pouvons commencer par ajouter un scénario de test pour le nouveau comportement que nous aimerions voir au bas de `test_app.py` :"
 
 #: docs/en/tutorial/topics/testing.md:194
 #, fuzzy
@@ -1413,19 +1369,13 @@ msgid "Then, run the test suite with this new test:"
 msgstr "Ensuite, exécutez la suite de tests avec ce nouveau test :"
 
 #: docs/en/tutorial/topics/testing.md:300
-#, fuzzy
 msgid ""
 "This time, we see a test failure - and the output explains the source of the "
 "failure: the test is expecting the output \"BeeWare the IDEs of Python!\", "
 "but our implementation of `greeting()` is returning \"Hello, Brutus\". Let's "
 "modify the implementation of `greeting()` in `src/helloworld/app.py` to have "
 "the new behavior:"
-msgstr ""
-"Cette fois, nous voyons un échec du test - et la sortie explique la source "
-"de l'échec : le test attend la sortie \"BeeWare the IDEs of Python !\", mais "
-"notre implémentation de `greeting()` retourne \"Hello, Brutus\". Modifions "
-"l'implémentation de `greeting()` dans `src/helloworld/app.py` pour avoir le "
-"nouveau comportement: :"
+msgstr "Cette fois, nous voyons un échec du test - et la sortie explique la source de l'échec : le test attend la sortie \"BeeWare the IDEs of Python!\", mais notre implémentation de `greeting()` retourne \"Hello, Brutus\". Modifions l'implémentation de `greeting()` dans `src/helloworld/app.py` pour avoir le nouveau comportement :"
 
 #: docs/en/tutorial/topics/testing.md:313
 #, fuzzy
@@ -1516,46 +1466,28 @@ msgstr ""
 "fonctionnel."
 
 #: docs/en/tutorial/tutorial-0.md:11
-#, fuzzy
 msgid ""
 "If you're on macOS, you can get an official Python installer from [the "
 "Python website]{1}. You can use any version of Python from 3.10 or newer "
 "(although you should avoid alphas, betas and release candidates). We "
 "strongly recommend using Python 3.13 or newer."
-msgstr ""
-"Si vous êtes sous Windows, vous pouvez obtenir l'installateur officiel à "
-"partir du [site web de Python]{1}. Vous pouvez utiliser n'importe quelle "
-"version stable de Python à partir de la 3.8. Nous vous conseillons d'éviter "
-"les versions alpha, beta et release candidates à moins que vous ne sachiez "
-"*vraiment* ce que vous faites."
+msgstr "Si vous êtes sous macOS, vous pouvez obtenir l'installateur officiel à partir du [site web de Python]{1}. Vous pouvez utiliser n'importe quelle version stable de Python à partir de la 3.10 (nous vous conseillons d'éviter les versions alpha, beta et release candidates). Nous recommandons fortement d'utiliser Python 3.13 ou plus récent."
 
 #: docs/en/tutorial/tutorial-0.md:13
-#, fuzzy
 msgid ""
 "You can also install Python through [Homebrew]{1}, use [pyenv]{2} to manage "
 "multiple Python installs, or use [Anaconda]{3} or [Miniconda]{4}. It doesn't "
 "matter *how* you've installed Python - it only matters that you can run "
 "`python3` from your terminal and get a working, supported Python interpreter."
-msgstr ""
-"Il existe de nombreuses façons d'installer Python. Vous pouvez installer "
-"Python via [homebrew]{1}. Vous pouvez utiliser [pyenv]{2} pour gérer "
-"plusieurs installations de Python sur la même machine. Les utilisateurs de "
-"Windows peuvent installer Python à partir du Windows App Store. Les "
-"utilisateurs ayant une formation en science des données pourraient préfèrer "
-"utiliser [Anaconda]{3} ou [Miniconda]{4}."
+msgstr "Vous pouvez aussi installer Python via [homebrew]{1}, utiliser [pyenv]{2} pour gérer plusieurs installations de Python, ou utiliser [Anaconda]{3} ou [Miniconda]{4}. Peu importe *comment* vous avez installé Python - ce qui compte c'est que vous pouvez lancer `python3` dans votre terminal pour obtenir un interpréteur Python supporté opérationnel."
 
 #: docs/en/tutorial/tutorial-0.md:15
-#, fuzzy
 msgid ""
 "Xcode and the Command-line Developer Tools provide a version of Python; "
 "however that Python is version 3.9. Python 3.9 has reached end-of-life, and "
 "is no longer supported by Python or BeeWare. You will *not* be able to use "
 "the Xcode-provided version of Python to run this tutorial."
-msgstr ""
-"Xcode et les outils de développement en ligne de commande fournissent une "
-"version de Python, mais cette version est la version 3.9. Python 3.9 est en "
-"fin de vie et n'est plus supporté par Python ou BeeWare. Vous ne pourrez pas "
-"utiliser la version de Python fournie par Xcode pour exécuter ce tutoriel."
+msgstr "Xcode et les outils de développement en ligne de commande fournissent une version de Python, mais cette version est la version 3.9. Python 3.9 est en fin de vie et n'est plus supporté par Python ou BeeWare. Vous *ne pourrez pas* utiliser la version de Python fournie par Xcode pour exécuter ce tutoriel."
 
 #: docs/en/tutorial/tutorial-0.md:17
 #, fuzzy
@@ -1611,18 +1543,12 @@ msgstr ""
 "de ce tutoriel."
 
 #: docs/en/tutorial/tutorial-0.md:41
-#, fuzzy
 msgid ""
 "If you're on Windows, you can get the official installer from [the Python "
 "website]{1}. You can use any version of Python from 3.10 to 3.13 (although "
 "you should avoid alphas, betas and release candidates). We strongly "
 "recommend using Python 3.13."
-msgstr ""
-"Si vous êtes sous Windows, vous pouvez obtenir l'installateur officiel à "
-"partir du [site web de Python]{1}. Vous pouvez utiliser n'importe quelle "
-"version stable de Python à partir de la 3.8. Nous vous conseillons d'éviter "
-"les versions alpha, beta et release candidates à moins que vous ne sachiez "
-"*vraiment* ce que vous faites."
+msgstr "Si vous êtes sous Windows, vous pouvez obtenir l'installateur officiel à partir du [site web de Python]{1}. Vous pouvez utiliser n'importe quelle version stable de Python de la 3.10 à la 3.13 (mais vous devriez éviter les versions alpha, beta et release candidates). Nous recommandons vivement d'utiliser Python 3.13."
 
 #: docs/en/tutorial/tutorial-0.md:43
 #, fuzzy
@@ -1684,9 +1610,8 @@ msgstr ""
 "distribution :"
 
 #: docs/en/tutorial/tutorial-0.md:65
-#, fuzzy
 msgid "Ubuntu / Debian"
-msgstr "**Ubuntu 20.04+ / Debian 10+**"
+msgstr "Ubuntu  / Debian"
 
 #: docs/en/tutorial/tutorial-0.md:72
 #, fuzzy
@@ -1694,14 +1619,12 @@ msgid "Fedora"
 msgstr "Fedora"
 
 #: docs/en/tutorial/tutorial-0.md:78
-#, fuzzy
 msgid "Arch / Manjaro"
-msgstr "**Arch, Manjaro**"
+msgstr "Arch / Manjaro"
 
 #: docs/en/tutorial/tutorial-0.md:84
-#, fuzzy
 msgid "OpenSUSE Tumbleweed"
-msgstr "**OpenSUSE Tumbleweed**"
+msgstr "OpenSUSE Tumbleweed"
 
 #: docs/en/tutorial/tutorial-0.md:94
 msgid "Building BeeWare apps on Windows requires:"
@@ -1787,7 +1710,7 @@ msgstr "Exécutez `set-executionpolicy RemoteSigned`"
 
 #: docs/en/tutorial/tutorial-0.md:151
 msgid "Select `Y` to change the execution policy."
-msgstr "Sélectionnez \"O\" pour modifier la politique d'exécution."
+msgstr "Sélectionnez `O` pour modifier la politique d'exécution."
 
 #: docs/en/tutorial/tutorial-0.md:153
 msgid ""
@@ -1895,16 +1818,11 @@ msgid "/// admonition | Possible errors during installation"
 msgstr "/// admonition | Erreurs possibles lors de l'installation"
 
 #: docs/en/tutorial/tutorial-1.md:25
-#, fuzzy
 msgid ""
 "If you see errors during installation, it's almost certainly because some of "
 "the system requirements haven't been installed. Make sure you have "
 "[installed all the platform pre-requisites][install-dependencies]."
-msgstr ""
-"Si vous rencontrez des erreurs lors de l'installation, c'est très "
-"certainement parce que certaines des exigences du système n'ont pas été "
-"installées. Assurez-vous d'avoir [installé tous les prérequis de la plate-"
-"forme] [installé les dépendances]."
+msgstr "Si vous rencontrez des erreurs lors de l'installation, c'est très certainement parce que certaines des exigences du système n'ont pas été installées. Assurez-vous d'avoir [installé tous les prérequis de la plate-forme][install-dependencies]."
 
 #: docs/en/tutorial/tutorial-1.md:39
 msgid ""
@@ -3035,13 +2953,10 @@ msgstr ""
 "devrions spécifier de vraies informations d'identification."
 
 #: docs/en/tutorial/tutorial-3.md:324
-#, fuzzy
 msgid ""
 "When you're ready to publish a real application, check out the Briefcase How-"
 "To guide on [Setting up a macOS code signing identity]{1}."
-msgstr ""
-"Lorsque vous êtes prêt à publier une application réelle, consultez le guide "
-"Briefcase How-To sur [Setting up a macOS code signing identity]{1}"
+msgstr "Lorsque vous êtes prêt à publier une application réelle, consultez le guide Briefcase How-To sur [Setting up a macOS code signing identity]{1}."
 
 #: docs/en/tutorial/tutorial-3.md:330
 #, fuzzy
@@ -3181,13 +3096,10 @@ msgstr ""
 "devrions spécifier de vraies informations d'identification."
 
 #: docs/en/tutorial/tutorial-3.md:457
-#, fuzzy
 msgid ""
 "When you're ready to publish a real application, check out the Briefcase How-"
 "To guide on [Setting up a Windows code signing identity]{1}."
-msgstr ""
-"Lorsque vous êtes prêt à publier une application réelle, consultez le guide "
-"Briefcase How-To sur [Setting up a macOS code signing identity]{1}"
+msgstr "Lorsque vous êtes prêt à publier une application réelle, consultez le guide Briefcase How-To sur [Setting up a Windows code signing identity]{1}."
 
 #: docs/en/tutorial/tutorial-3.md:459
 #, fuzzy
@@ -3375,18 +3287,12 @@ msgstr ""
 "reconditionner l'application en vue de sa distribution."
 
 #: docs/en/tutorial/tutorial-4.md:126
-#, fuzzy
 msgid ""
 "macOS users, remember that as noted in [Tutorial 3]{1}, for the tutorial we "
 "recommend running `briefcase package` with the `--adhoc-sign` flag to avoid "
 "the complexity of setting up a code signing identity and keep the tutorial "
 "as simple as possible."
-msgstr ""
-"(Utilisateurs de macOS, rappelez-vous que comme indiqué dans [Tutoriel 3]{1}"
-", pour le tutoriel nous recommandons d'exécuter `briefcase package` avec le "
-"drapeau `--adhoc-sign` pour éviter la complexité de la mise en place d'une "
-"identité de signature de code et garder le tutoriel aussi simple que "
-"possible)"
+msgstr "Utilisateurs de macOS, rappelez-vous que comme indiqué dans [Tutoriel 3]{1}, pour le tutoriel nous recommandons d'exécuter `briefcase package` avec le drapeau `--adhoc-sign` pour éviter la complexité de la mise en place d'une identité de signature de code et garder le tutoriel aussi simple que possible."
 
 #: docs/en/tutorial/tutorial-4.md:130
 #, fuzzy
@@ -4259,9 +4165,7 @@ msgstr ""
 msgid ""
 "We start by adding `faker` to our app. Add an import to the top of the "
 "`app.py` to import `faker`:"
-msgstr ""
-"Commençons par ajouter `faker` à notre application. Ajoutez un import au "
-"début de `app.py` pour importer `faker`: :"
+msgstr "Commençons par ajouter `faker` à notre application. Ajoutez un import au début de `app.py` pour importer `faker` :"
 
 #: docs/en/tutorial/tutorial-7.md:19
 #: docs/en/tutorial/tutorial-8.md:32
