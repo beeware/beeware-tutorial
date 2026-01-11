@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-04 23:58+0000\nPO-Revision-Date: 2026-01-11 00:01+0000\nLast-Translator: kursk140 <yannick.monnier.1@gmail.com>\nLanguage-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.15.1\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-04 23:58+0000\nPO-Revision-Date: 2026-01-11 00:02+0000\nLast-Translator: kursk140 <yannick.monnier.1@gmail.com>\nLanguage-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.15.1\n"
 
 #: docs/en/SUMMARY.md:5
 #, fuzzy
@@ -1743,7 +1743,6 @@ msgid "/// admonition | Alternative virtual environments"
 msgstr "/// admonition | Environnements virtuels alternatifs"
 
 #: docs/en/tutorial/tutorial-0.md:163
-#, fuzzy
 msgid ""
 "If you're using Anaconda or miniconda, you may be more familiar with using "
 "conda environments. You might also have heard of `virtualenv`, a predecessor "
@@ -1751,14 +1750,7 @@ msgid ""
 "macOS or Windows, it doesn't matter *how* you create your virtual "
 "environment, as long as you have one. If you're on Linux, you should stick "
 "to `venv` and the system Python."
-msgstr ""
-"Si vous utilisez Anaconda ou miniconda, vous êtes peut-être plus familier "
-"avec l'utilisation des environnements conda. Vous avez peut-être aussi "
-"entendu parler de `virtualenv`, un prédécesseur du module intégré `venv` de "
-"Python. Comme pour les installations de Python, si vous êtes sous macOS ou "
-"Windows, la manière dont vous créez votre environnement virtuel n'a pas "
-"d'importance, tant que vous en avez un. Si vous êtes sous Linux, vous "
-"devriez vous en tenir à `venv` et au système Python."
+msgstr "Si vous utilisez Anaconda ou miniconda, vous êtes peut-être plus familier avec l'utilisation des environnements conda. Vous avez peut-être aussi entendu parler de `virtualenv`, un prédécesseur du module intégré `venv` de Python. Comme pour les installations de Python, si vous êtes sous macOS ou Windows, *la manière* dont vous créez votre environnement virtuel n'a pas d'importance, tant que vous en avez un. Si vous êtes sous Linux, vous devriez vous en tenir à `venv` et au système Python."
 
 #: docs/en/tutorial/tutorial-0.md:167
 #: docs/en/tutorial/tutorial-1.md:213
