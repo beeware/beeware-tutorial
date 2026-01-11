@@ -1,18 +1,5 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-11 00:02+0000\n"
-"PO-Revision-Date: 2026-01-11 00:02+0000\n"
-"Last-Translator: kursk140 <yannick.monnier.1@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
-"fr/>\n"
-"Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.17.5\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-11 00:02+0000\nPO-Revision-Date: 2026-01-11 03:01+0000\nLast-Translator: kursk140 <yannick.monnier.1@gmail.com>\nLanguage-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.15.1\n"
 
 #: docs/en/SUMMARY.md:5
 #, fuzzy
@@ -2202,16 +2189,10 @@ msgid "It imports the `main` method from the `helloworld` app."
 msgstr "Elle importe la méthode `main` de l'application `helloworld`."
 
 #: docs/en/tutorial/tutorial-2.md:23
-#, fuzzy
 msgid ""
 "Then, it starts the application’s main loop. The main loop is the way a GUI "
 "application listens for user input (like mouse clicks and keyboard presses)."
-msgstr ""
-"Il importe la méthode `main` de l'application `helloworld`, et s'il est "
-"exécuté en tant que point d'entrée, il appelle la méthode main(), et démarre "
-"la boucle principale de l'application. La boucle principale est la façon "
-"dont une application GUI écoute les entrées de l'utilisateur (comme les "
-"clics de souris et les pressions sur le clavier)."
+msgstr "Ensuite, il démarre la boucle principale de l'application. La boucle principale est la façon dont une application GUI écoute les entrées de l'utilisateur (comme les clics de souris et les frappes sur le clavier)."
 
 #: docs/en/tutorial/tutorial-2.md:25
 msgid ""
@@ -2489,15 +2470,11 @@ msgstr ""
 "Ensuite, nous ajoutons la boîte de nom et le bouton à la boîte principale :"
 
 #: docs/en/tutorial/tutorial-2.md:211
-#, fuzzy
 msgid ""
 "This completes our layout; the rest of the startup method is as it was "
 "previously - defining a `MainWindow`, and assigning the main box as the "
 "window's content:"
-msgstr ""
-"Le reste de la méthode de démarrage est identique à la précédente : "
-"définition d'une fenêtre principale et attribution de la boîte principale en "
-"tant que contenu de la fenêtre :"
+msgstr "Cela termine notre mise en page; le reste de la méthode de démarrage est identique à la précédente : définition d'une fenêtre principale `MainWindow`, et attribution de la boîte principale en tant que contenu de la fenêtre :"
 
 #: docs/en/tutorial/tutorial-2.md:219
 #, fuzzy
@@ -2532,20 +2509,13 @@ msgstr ""
 "utiliserons le mode développeur :"
 
 #: docs/en/tutorial/tutorial-2.md:263
-#, fuzzy
 msgid ""
 "You'll notice that this time, it *doesn't* install dependencies. Briefcase "
 "can detect that the application has been run before, and to save time, will "
 "only run the application. If you add new dependencies to your app, you need "
 "to make sure that they're installed by passing in a `-r` option when you run "
 "`briefcase dev`."
-msgstr ""
-"Vous remarquerez que cette fois-ci, briefcase n'installe pas de dépendances. "
-"Briefcase peut détecter que l'application a déjà été exécutée auparavant, et "
-"pour gagner du temps, il n'exécutera que l'application. Si vous ajoutez de "
-"nouvelles dépendances à votre application, vous pouvez vous assurer qu'elles "
-"soient installées en passant une option `-r` lorsque vous lancez `briefcase "
-"dev`."
+msgstr "Vous remarquerez que cette fois-ci, briefcase *n'installe pas* de dépendances. Briefcase peut détecter que l'application a déjà été exécutée auparavant, et pour gagner du temps, il n'exécutera que l'application. Si vous ajoutez de nouvelles dépendances à votre application, vous pouvez vous assurer qu'elles soient installées en passant une option `-r` lorsque vous lancez `briefcase dev`."
 
 #: docs/en/tutorial/tutorial-2.md:269
 #, fuzzy
@@ -3139,7 +3109,6 @@ msgstr ""
 "cible."
 
 #: docs/en/tutorial/tutorial-3.md:455
-#, fuzzy
 msgid ""
 "In this example, we're not signing our app. As a result, when you use the "
 "installer, you'll get a system warning that the application comes from an "
@@ -3150,16 +3119,7 @@ msgid ""
 "real signing identity; when that signed app is installed, the system will "
 "notify the user that the application is from the known identity associated "
 "with the certificate."
-msgstr ""
-"Dans cet exemple, nous avons utilisé l'option `--adhoc-sign` - c'est-à-dire "
-"que nous signons notre application avec des informations d'identification "
-"*ad hoc* - des informations d'identification temporaires qui ne "
-"fonctionneront que sur votre machine. Nous avons fait cela pour que le "
-"tutoriel reste simple. La mise en place d'identités de signature de code est "
-"un peu fastidieuse, et elles ne sont *nécessaires* que si vous avez "
-"l'intention de distribuer votre application à d'autres personnes. Si nous "
-"publiions une application réelle pour que d'autres puissent l'utiliser, nous "
-"devrions spécifier de vraies informations d'identification."
+msgstr "Dans cet exemple, nous ne signons pas notre application.En conséquence, quand vous installez l'application, vous recevez un avertissement système signalant qu'elle provient d'un développeur inconnu. Nous avons fait cela pour que le tutoriel reste simple. La mise en place d'identités de signature de code est un peu fastidieuse, et elles ne sont *nécessaires* que si vous avez l'intention de distribuer votre application à d'autres personnes. Si nous publiions une application réelle pour que d'autres puissent l'utiliser, nous devrions spécifier de vraies informations d'identification; quand une application signée est installée, le système informe l'utilisateur que l'application provient de l'entité connue associée au certificat."
 
 #: docs/en/tutorial/tutorial-3.md:457
 msgid ""
@@ -3320,18 +3280,12 @@ msgstr ""
 "moment, votre application contient toujours l'ancien code."
 
 #: docs/en/tutorial/tutorial-4.md:63
-#, fuzzy
 msgid ""
 "So - we need to tell briefcase to update your app, copying in the new "
 "version of the code. We *could* do this by deleting the old platform "
 "directory and starting from scratch. However, Briefcase provides an easier "
 "way - you can update the code for your existing bundled application:"
-msgstr ""
-"Nous devons donc demander à Briefcase de mettre à jour votre application, en "
-"copiant la nouvelle version du code. Nous pourrions le faire en supprimant "
-"l'ancien répertoire de la plateforme et en repartant de zéro. Cependant, "
-"Briefcase offre un moyen plus simple - vous pouvez mettre à jour le code de "
-"votre application groupée existante :"
+msgstr "Nous devons donc demander à Briefcase de mettre à jour votre application, en copiant la nouvelle version du code. Nous *pourrions* le faire en supprimant l'ancien répertoire de la plateforme et en repartant de zéro. Cependant, Briefcase offre un moyen plus simple - vous pouvez mettre à jour le code de votre application groupée existante :"
 
 #: docs/en/tutorial/tutorial-4.md:120
 #, fuzzy
@@ -4645,16 +4599,12 @@ msgstr ""
 "`pip` dans ce tutoriel, mais il existe d'autres options."
 
 #: docs/en/tutorial/tutorial-7.md:620
-#, fuzzy
 msgid ""
 "On desktop platforms (macOS, Windows, Linux), essentially any package on "
 "PyPI package can be installed into your virtual environment, or added to "
 "your app's requirements. However, when building an app for mobile or web "
 "platforms, [your options are slightly limited]{1}."
-msgstr ""
-"Sur les plateformes de bureau (macOS, Windows, Linux), tout `pip`-"
-"installable peut être ajouté à vos exigences. Sur les plateformes mobiles et "
-"web, [vos options sont légèrement limitées]{1}."
+msgstr "Sur les plateformes de bureau (macOS, Windows, Linux), pratiquement tout package de PyPi peut être installé dans votre environnement virtuel, ou  être ajouté aux exigences de votre application. Sur les plateformes mobiles et web, [vos options sont légèrement limitées]{1}."
 
 #: docs/en/tutorial/tutorial-7.md:622
 #, fuzzy
@@ -4724,17 +4674,11 @@ msgstr ""
 "elles sont disponibles."
 
 #: docs/en/tutorial/tutorial-7.md:628
-#, fuzzy
 msgid ""
 "It's *usually* possible to compile binary packages for mobile platforms, but "
 "it's not easy to set up -- well outside the scope of an introductory "
 "tutorial like this one."
-msgstr ""
-"BeeWare peut fournir des binaires pour certains modules binaires populaires "
-"(y compris `numpy`, `pandas`, et `cryptographie`). Il est *habituellement* "
-"possible de compiler des paquets pour les plateformes mobiles, mais ce n'est "
-"pas facile à mettre en place -- ce qui sort du cadre d'un tutoriel "
-"d'introduction comme celui-ci."
+msgstr "Il est *habituellement* possible de compiler des paquets binaires pour les plateformes mobiles, mais ce n'est pas facile à mettre en place -- ce qui sort du cadre d'un tutoriel d'introduction comme celui-ci."
 
 #: docs/en/tutorial/tutorial-7.md:632
 #, fuzzy
@@ -4802,7 +4746,6 @@ msgstr ""
 "inactive pendant que nous attendons que l'API web renvoie une réponse."
 
 #: docs/en/tutorial/tutorial-8.md:11
-#, fuzzy
 msgid ""
 "This is a toy app, so we don't have a *real* API to work with, so we'll use "
 "the [{JSON} Placeholder API]{1} as a source of data. The {JSON} Placeholder "
@@ -4811,16 +4754,7 @@ msgid ""
 "open `https://jsonplaceholder.typicode.com/posts/42` in your browser, you'll "
 "get a JSON payload describing a single post - some [Lorum ipsum]{2} content "
 "for a blog post with ID 42."
-msgstr ""
-"Il s'agit d'une application jouet, nous n'avons donc pas d'API réelle avec "
-"laquelle travailler, nous utiliserons donc l'[{JSON} Placeholder API]{1} "
-"comme source de données. L'API {JSON} Placeholder API possède un certain "
-"nombre de \"faux\" points d'extrémité d'API que vous pouvez utiliser comme "
-"données de test. L'une de ces API est le point de terminaison `/posts/`, qui "
-"renvoie de faux articles de blog. Si vous ouvrez `https://"
-"jsonplaceholder.typicode.com/posts/42` dans votre navigateur, vous "
-"obtiendrez une charge utile JSON décrivant un seul article - du contenu "
-"[Lorum ipsum]{2} pour un article de blog avec l'ID 42."
+msgstr "Il s'agit d'une application jouet, nous n'avons donc pas d'API *réelle* avec laquelle travailler, nous utiliserons donc l'[{JSON} Placeholder API]{1} comme source de données. L'API {JSON} Placeholder API possède un certain nombre de \"faux\" points d'extrémité d'API que vous pouvez utiliser comme données de test. L'une de ces API est le point de terminaison `/posts/`, qui renvoie de faux articles de blog. Si vous ouvrez `https://jsonplaceholder.typicode.com/posts/42` dans votre navigateur, vous obtiendrez une charge utile JSON décrivant un seul article - du contenu [Lorum ipsum]{2} pour un article de blog avec l'ID 42."
 
 #: docs/en/tutorial/tutorial-8.md:13
 #, fuzzy
@@ -5000,7 +4934,6 @@ msgstr ""
 "code\")."
 
 #: docs/en/tutorial/tutorial-8.md:152
-#, fuzzy
 msgid ""
 "When you click on a button, or drag a scroll bar, or type a key, you are "
 "generating an \"event\". That \"event\" is put onto a queue, and the app "
@@ -5008,14 +4941,7 @@ msgid ""
 "The user code that is triggered in response to the event is called an *event "
 "handler*. These event handlers are invoked as part of the `process_events()` "
 "call."
-msgstr ""
-"Lorsque vous cliquez sur un bouton, faites glisser une barre de défilement "
-"ou tapez une touche, vous générez un \"événement\". Cet \"événement\" est "
-"placé dans une file d'attente, et l'application traitera la file "
-"d'événements lorsqu'elle en aura l'occasion. Le code utilisateur déclenché "
-"en réponse à l'événement est appelé \"gestionnaire d'événement\". Ces "
-"gestionnaires d'événements sont invoqués dans le cadre de l'appel "
-"`process_events()`."
+msgstr "Lorsque vous cliquez sur un bouton, faites glisser une barre de défilement ou tapez une touche, vous générez un \"événement\". Cet \"événement\" est placé dans une file d'attente, et l'application traitera la file d'événements lorsqu'elle en aura l'occasion. Le code utilisateur déclenché en réponse à l'événement est appelé *event handler* (gestionnaire d'événement). Ces gestionnaires d'événements sont invoqués dans le cadre de l'appel `process_events()`."
 
 #: docs/en/tutorial/tutorial-8.md:154
 #, fuzzy
@@ -5246,18 +5172,11 @@ msgstr ""
 "s'assurer que le gestionnaire est invoqué ou attendu selon les besoins."
 
 #: docs/en/tutorial/tutorial-8.md:204
-#, fuzzy
 msgid ""
 "If you save these changes and re-run the app in development mode, there "
 "won't be any obvious changes to the app. However, when you click on the "
 "button to trigger the dialog, you may notice a number of subtle improvements:"
-msgstr ""
-"Si vous sauvegardez ces changements et relancez l'application (soit avec "
-"`briefcase dev` en mode développement, soit en mettant à jour et en "
-"relançant l'application packagée), il n'y aura pas de changements évidents "
-"dans l'application. Cependant, lorsque vous cliquez sur le bouton pour "
-"déclencher le dialogue, vous pouvez remarquer un certain nombre "
-"d'améliorations subtiles :"
+msgstr "Si vous sauvegardez ces changements et relancez l'application en mode développement, il n'y aura pas de changements évidents dans l'application. Cependant, lorsque vous cliquez sur le bouton pour déclencher le dialogue, vous pouvez remarquer un certain nombre d'améliorations subtiles :"
 
 #: docs/en/tutorial/tutorial-8.md:206
 #, fuzzy
