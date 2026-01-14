@@ -1,99 +1,70 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-11 03:02+0000\n"
-"PO-Revision-Date: 2026-01-11 03:01+0000\n"
-"Last-Translator: kursk140 <yannick.monnier.1@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
-"fr/>\n"
-"Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.17.5\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-11 03:02+0000\nPO-Revision-Date: 2026-01-14 23:01+0000\nLast-Translator: kursk140 <yannick.monnier.1@gmail.com>\nLanguage-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.15.2\n"
 
 #: docs/en/SUMMARY.md:5
-#, fuzzy
 msgid "[Tutorial 0 - Let's get set up!]{1}"
 msgstr "[Tutoriel 0 - Préparons-nous !]{1}"
 
 #: docs/en/SUMMARY.md:6
-#, fuzzy
 msgid "[Tutorial 1 - Your first app]{1}"
 msgstr "[Tutoriel 1 - Votre première application]{1}"
 
 #: docs/en/SUMMARY.md:7
-#, fuzzy
 msgid "[Tutorial 2 - Making it interesting]{1}"
 msgstr "[Tutoriel 2 - Rendre les choses intéressantes]{1}"
 
 #: docs/en/SUMMARY.md:8
-#, fuzzy
 msgid "[Tutorial 3 - Packaging for distribution]{1}"
-msgstr "[Tutoriel 3 - Emballage pour la distribution]{1}"
+msgstr "[Tutoriel 3 - Packaging pour la distribution]{1}"
 
 #: docs/en/SUMMARY.md:9
-#, fuzzy
 msgid "[Tutorial 4 - Updating your application]{1}"
 msgstr "[Tutoriel 4 - Mise à jour de votre application]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "Tutorial 5 - Taking it mobile"
 msgstr "Tutoriel 5 - Rendre votre application mobile"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile]{1}"
 msgstr "[Tutoriel 5 - Rendre votre application mobile]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: Android]{1}"
-msgstr "[Tutoriel 5 - Le mobile : Android]{1}"
+msgstr "[Tutoriel 5 - Application mobile : Android]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: iOS]{1}"
-msgstr "[Tutoriel 5 - Le mobile : iOS]{1}"
+msgstr "[Tutoriel 5 - Application mobile : iOS]{1}"
 
 #: docs/en/SUMMARY.md:14
-#, fuzzy
 msgid "[Tutorial 6 - Put it on the web!]{1}"
-msgstr "[Tutoriel 6 - Mettez-le sur le web !]{1}"
+msgstr "[Tutoriel 6 - Mettez-la sur le web !]{1}"
 
 #: docs/en/SUMMARY.md:15
-#, fuzzy
 msgid "[Tutorial 7 - Get this (third-)party started]{1}"
 msgstr "[Tutoriel n° 7 - Démarrer cette (troisième-)partie]{1}"
 
 #: docs/en/SUMMARY.md:16
-#, fuzzy
 msgid "[Tutorial 8 - Making it Smooooth]{1}"
-msgstr "[Tutoriel 8 - Le rendre lisse]{1}"
+msgstr "[Tutoriel 8 - La rendre lisssse]{1}"
 
 #: docs/en/SUMMARY.md:17
 #: docs/en/tutorial/topics/index.md:1
-#, fuzzy
 msgid "Going further"
 msgstr "Aller plus loin"
 
 #: docs/en/SUMMARY.md:17
-#, fuzzy
 msgid "[Going further]{1}"
 msgstr "[Aller plus loin]{1}"
 
 #: docs/en/SUMMARY.md:17
 #: docs/en/tutorial/topics/index.md:5
-#, fuzzy
 msgid "[Customizing icons]{1}"
 msgstr "[Personnaliser les icônes]{1}"
 
 #: docs/en/SUMMARY.md:17
 #: docs/en/tutorial/topics/index.md:9
-#, fuzzy
 msgid "[Using the camera]{1}"
 msgstr "[Utilisation de l'appareil photo]{1}"
 
@@ -127,12 +98,10 @@ msgstr ""
 "d'applications, telles que tester votre application."
 
 #: docs/en/index.md:7
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"original\" %}"
 msgstr "{% if config.extra.translation_type == \"original\" %}"
 
 #: docs/en/index.md:9
-#, fuzzy
 msgid "/// admonition | Translations are available"
 msgstr "/// admonition | Des traductions sont disponibles"
 
@@ -324,19 +293,16 @@ msgstr "///"
 #: docs/en/index.md:15
 #: docs/en/index.md:27
 #: docs/en/index.md:39
-#, fuzzy
 msgid "{% endif %}"
 msgstr "{% endif %}"
 
 #: docs/en/index.md:17
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"machine\" %}"
 msgstr "{% if config.extra.translation_type == \"machine\" %}"
 
 #: docs/en/index.md:19
-#, fuzzy
 msgid "/// admonition | This is a machine translation!"
-msgstr "/// admonition | Il s'agit d'une traduction automatique !"
+msgstr "/// admonition | Il s'agit d'une traduction automatique !"
 
 #: docs/en/index.md:21
 msgid ""
@@ -361,14 +327,12 @@ msgstr ""
 "présentez-vous et nous vous ajouterons à l'équipe de traduction."
 
 #: docs/en/index.md:29
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"human\" %}"
 msgstr "{% if config.extra.translation_type == \"human\" %}"
 
 #: docs/en/index.md:31
-#, fuzzy
 msgid "/// admonition | This is a translation!"
-msgstr "/// admonition | Il s'agit d'une traduction !"
+msgstr "/// admonition | Il s'agit d'une traduction !"
 
 #: docs/en/index.md:33
 msgid ""
@@ -398,25 +362,19 @@ msgstr ""
 #: docs/en/index.md:45
 #, fuzzy
 msgid "[Toga]{1}, a cross-platform widget toolkit;"
-msgstr "[Toga]{1}, une boîte à outils de widgets multiplateforme ;"
+msgstr "[Toga]{1}, une boîte à outils de widgets multiplateforme ;"
 
 #: docs/en/index.md:46
-#, fuzzy
 msgid ""
 "[Briefcase]{1}, a tool for packaging Python projects as distributable "
 "artefacts that can be shipped to end users;"
-msgstr ""
-"[Briefcase]{1}, un outil pour empaqueter les projets Python en tant "
-"qu'artefacts distribuables pouvant être envoyés aux utilisateurs finaux ;"
+msgstr "[Briefcase]{1}, un outil pour empaqueter les projets Python en tant qu'artefacts distribuables pouvant être envoyés aux utilisateurs finaux ;"
 
 #: docs/en/index.md:47
-#, fuzzy
 msgid ""
 "Libraries (such as [Rubicon ObjC]{1}) for accessing platform-native "
 "libraries;"
-msgstr ""
-"Des bibliothèques (telles que [Rubicon ObjC]{1}) pour accéder aux "
-"bibliothèques natives des diverses plates-formes ;"
+msgstr "Des bibliothèques (telles que [Rubicon ObjC]{1}) pour accéder aux bibliothèques natives des diverses plates-formes ;"
 
 #: docs/en/index.md:48
 msgid ""
@@ -448,63 +406,42 @@ msgstr ""
 "des plateformes mobiles telles qu'Android et iOS ; et pour le Web."
 
 #: docs/en/index.md:54
-#, fuzzy
 msgid "Let's go"
 msgstr "C'est parti !"
 
 #: docs/en/index.md:56
-#, fuzzy
 msgid ""
 "Ready to try BeeWare for yourself? [Let's build a cross-platform application "
 "in Python!]{1}"
-msgstr ""
-"Prêt à essayer BeeWare ? [Construisons une application multiplateforme en "
-"Python !]{1}"
+msgstr "Prêt à essayer BeeWare ? [Construisons une application multiplateforme en Python !]{1}"
 
 #: docs/en/tutorial/topics/camera-access.md:1
-#, fuzzy
 msgid "Using the camera"
 msgstr "Utilisation de l'appareil photo"
 
 #: docs/en/tutorial/topics/camera-access.md:3
-#, fuzzy
 msgid ""
 "Almost every modern computing device has a camera of some sort. In this "
 "tutorial, we'll write new application that is able to request access to this "
 "camera, take a photograph, and then display that photograph in the new "
 "application that uses your device's camera."
-msgstr ""
-"Presque tous les appareils informatiques modernes sont dotés d'un appareil "
-"photo. Dans ce tutoriel, nous allons écrire une nouvelle application capable "
-"de demander l'accès à cet appareil photo, de prendre une photo, puis "
-"d'afficher cette photo dans la nouvelle application qui utilise l'appareil "
-"photo de votre appareil."
+msgstr "Presque tous les appareils informatiques modernes sont dotés d'un appareil photo. Dans ce tutoriel, nous allons écrire une nouvelle application capable de demander l'accès à cet appareil photo, de prendre une photo, puis d'afficher cette photo dans la nouvelle application qui utilise l'appareil photo de votre appareil."
 
 #: docs/en/tutorial/topics/camera-access.md:5
-#, fuzzy
 msgid "/// admonition | This tutorial won't work on all platforms!"
-msgstr ""
-"/// admonition | Ce tutoriel ne fonctionne pas sur toutes les plateformes !"
+msgstr "/// admonition | Ce tutoriel ne fonctionne pas sur toutes les plateformes !"
 
 #: docs/en/tutorial/topics/camera-access.md:7
-#, fuzzy
 msgid ""
 "Unfortunately, at present, this tutorial will only work on macOS and Android."
-msgstr ""
-"Malheureusement, pour l'instant, ce tutoriel ne fonctionne que sur macOS et "
-"Android."
+msgstr "Malheureusement, pour l'instant, ce tutoriel ne fonctionne que sur macOS et Android."
 
 #: docs/en/tutorial/topics/camera-access.md:9
-#, fuzzy
 msgid ""
 "Although iPhones all have cameras, the iOS *Simulator* doesn't have a "
 "working camera. Windows and Linux devices also have cameras, but Toga "
 "doesn't currently have the ability to access the camera on these platforms."
-msgstr ""
-"Bien que tous les iPhones soient équipés d'une caméra, le *Simulateur* iOS "
-"ne dispose pas d'une caméra fonctionnelle. Les appareils Windows et Linux "
-"ont également des caméras, mais Toga n'a actuellement pas la possibilité "
-"d'accéder à la caméra sur ces plateformes."
+msgstr "Bien que tous les iPhones soient équipés d'une caméra, le *Simulateur* iOS ne dispose pas d'une caméra fonctionnelle. Les appareils Windows et Linux ont également des caméras, mais Toga n'a actuellement pas la possibilité d'accéder à la caméra sur ces plateformes."
 
 #: docs/en/tutorial/topics/camera-access.md:11
 msgid ""
@@ -515,79 +452,54 @@ msgstr ""
 "provoquera une erreur lorsque vous tenterez de prendre une photo."
 
 #: docs/en/tutorial/topics/camera-access.md:13
-#, fuzzy
 msgid ""
 "The code will work if it is run on an actual iOS device, but will fail to "
 "take a photograph if deployed to the iOS simulator."
-msgstr ""
-"Le code fonctionnera s'il est exécuté sur un appareil iOS réel, mais ne "
-"parviendra pas à prendre une photo s'il est déployé sur le simulateur iOS."
+msgstr "Le code fonctionnera s'il est exécuté sur un appareil iOS réel, mais ne parviendra pas à prendre une photo s'il est déployé sur le simulateur iOS."
 
 #: docs/en/tutorial/topics/camera-access.md:17
-#, fuzzy
 msgid "Start a new project"
 msgstr "Démarrer un nouveau projet"
 
 #: docs/en/tutorial/topics/camera-access.md:19
-#, fuzzy
 msgid ""
 "For this tutorial, we're not going to build onto the application from the "
 "core tutorial - we're going to start a fresh project. You can use the same "
 "virtual environment you used in the first project; but we need to re-run the "
 "`briefcase new` wizard."
-msgstr ""
-"Pour ce tutoriel, nous n'allons pas construire sur l'application du tutoriel "
-"de base - nous allons commencer un nouveau projet. Vous pouvez utiliser le "
-"même environnement virtuel que vous avez utilisé dans le premier projet, "
-"mais nous devons réexécuter l'assistant `briefcase new`."
+msgstr "Pour ce tutoriel, nous n'allons pas construire sur l'application du tutoriel de base - nous allons commencer un nouveau projet. Vous pouvez utiliser le même environnement virtuel que vous avez utilisé dans le premier projet, mais nous devons ré-exécuter l'assistant `briefcase new`."
 
 #: docs/en/tutorial/topics/camera-access.md:21
-#, fuzzy
 msgid ""
 "Change back to the directory that contains the `helloworld` project folder, "
 "and start a new project named \"Hello Camera\":"
-msgstr ""
-"Retournez dans le répertoire qui contient le dossier du projet `helloworld`, "
-"et démarrez un nouveau projet nommé \"Hello Camera\" :"
+msgstr "Retournez dans le répertoire qui contient le dossier du projet `helloworld`, et démarrez un nouveau projet nommé \"Hello Camera\" :"
 
 #: docs/en/tutorial/topics/camera-access.md:37
-#, fuzzy
 msgid "Add code to take a photo"
 msgstr "Ajouter un code pour prendre une photo"
 
 #: docs/en/tutorial/topics/camera-access.md:39
-#, fuzzy
 msgid ""
 "The wizard has generated a new empty Toga project. We can now add the code "
 "to take and display a photograph. Edit the `app.py` for the new application "
 "so that it has the following content:"
-msgstr ""
-"L'assistant a généré un nouveau projet Toga vide. Nous pouvons maintenant "
-"ajouter le code pour prendre et afficher une photo. Modifiez le fichier "
-"`app.py` de la nouvelle application pour qu'il ait le contenu suivant :"
+msgstr "L'assistant a généré un nouveau projet Toga vide. Nous pouvons maintenant ajouter le code pour prendre et afficher une photo. Modifiez le fichier `app.py` de la nouvelle application pour qu'il ait le contenu suivant :"
 
 #: docs/en/tutorial/topics/camera-access.md:92
-#, fuzzy
 msgid ""
 "This code has two changes over the default app that is generated by "
 "Briefcase. These additions are highlighted above:"
-msgstr ""
-"Ce code comporte deux changements par rapport à l'application par défaut "
-"générée par Briefcase. Ces ajouts sont mis en évidence ci-dessus :"
+msgstr "Ce code comporte deux changements par rapport à l'application par défaut générée par Briefcase. Ces ajouts sont mis en évidence ci-dessus :"
 
 #: docs/en/tutorial/topics/camera-access.md:94
-#, fuzzy
 msgid ""
 "The first highlighted code block (in the `startup()` method) adds the two "
 "widgets needed to control the camera: an `ImageView` to display a photo; and "
 "a `Button` to trigger the camera."
-msgstr ""
-"Le premier bloc de code mis en évidence (dans la méthode `startup()`) ajoute "
-"les deux widgets nécessaires pour contrôler la caméra : une `ImageView` pour "
-"afficher une photo et un `Button` pour déclencher la caméra."
+msgstr "Le premier bloc de code mis en évidence (dans la méthode `startup()`) ajoute les deux widgets nécessaires pour contrôler la caméra : une `ImageView` pour afficher une photo et un `Button` pour déclencher la caméra."
 
 #: docs/en/tutorial/topics/camera-access.md:95
-#, fuzzy
 msgid ""
 "The second highlighted code block (the `take_photo()` method) defines the "
 "event handler when the button is pressed. This handler first confirms if the "
@@ -596,19 +508,9 @@ msgid ""
 "request to take a photo are both asynchronous requests, so they require the "
 "use of `await`; while the app is waiting for the user to confirm permissions "
 "or take the photo, the app's event loop can continue in the background."
-msgstr ""
-"Le deuxième bloc de code mis en évidence (la méthode `take_photo()`) définit "
-"le gestionnaire d'événements lorsque le bouton est enfoncé. Ce gestionnaire "
-"confirme d'abord que l'application a l'autorisation de prendre une photo ; "
-"si l'autorisation n'existe pas, elle est demandée. Ensuite, la photo est "
-"prise. La demande d'autorisation et la demande de prise de photo sont toutes "
-"deux des requêtes asynchrones, elles nécessitent donc l'utilisation de "
-"`await` ; pendant que l'application attend que l'utilisateur confirme les "
-"autorisations ou prenne la photo, la boucle événementielle de l'application "
-"peut continuer en arrière-plan."
+msgstr "Le deuxième bloc de code mis en évidence (la méthode `take_photo()`) définit le gestionnaire d'événements lorsque le bouton est enfoncé. Ce gestionnaire confirme d'abord que l'application a l'autorisation de prendre une photo ; si l'autorisation n'existe pas, elle est demandée. Ensuite, une photo est prise. La demande d'autorisation et la demande de prise de photo sont toutes deux des requêtes asynchrones, elles nécessitent donc l'utilisation de `await` ; pendant que l'application attend que l'utilisateur confirme les autorisations ou prenne la photo, la boucle événementielle de l'application peut continuer en arrière-plan."
 
 #: docs/en/tutorial/topics/camera-access.md:97
-#, fuzzy
 msgid ""
 "If the camera successfully takes a photo, it will return an `Image` object "
 "that can be assigned as the content of the `ImageView`. If the photo request "
@@ -616,80 +518,46 @@ msgid ""
 "`None`, and the result can be ignored. If the user doesn't grant permission "
 "to use the camera, or the camera isn't implemented on the current platform, "
 "an error will be raised, and a dialog will be shown to the user."
-msgstr ""
-"Si l'appareil photo réussit à prendre une photo, il retournera un objet "
-"`Image` qui peut être assigné comme contenu du `ImageView`. Si la demande de "
-"photo a été annulée par l'utilisateur, l'appel `self.camera.take_photo()` "
-"retournera `None`, et le résultat peut être ignoré. Si l'utilisateur ne "
-"donne pas la permission d'utiliser la caméra, ou si la caméra n'est pas "
-"implémentée sur la plateforme actuelle, une erreur sera levée, et un "
-"dialogue sera affiché à l'utilisateur."
+msgstr "Si l'appareil photo réussit à prendre une photo, il retournera un objet `Image` qui peut être assigné comme contenu du `ImageView`. Si la demande de photo a été annulée par l'utilisateur, l'appel `self.camera.take_photo()` retournera `None`, et le résultat peut être ignoré. Si l'utilisateur ne donne pas la permission d'utiliser la caméra, ou si la caméra n'est pas implémentée sur la plateforme actuelle, une erreur sera levée, et un dialogue sera affiché à l'utilisateur."
 
 #: docs/en/tutorial/topics/camera-access.md:99
-#, fuzzy
 msgid "Adding device permissions"
 msgstr "Ajout d'autorisations pour les appareils"
 
 #: docs/en/tutorial/topics/camera-access.md:101
-#, fuzzy
 msgid ""
 "Part of this code we've just added asks for permission to use the camera. "
 "This is a common feature of modern app platforms - you can't access hardware "
 "features without explicitly asking the user's permission first."
-msgstr ""
-"Une partie du code que nous venons d'ajouter demande la permission "
-"d'utiliser l'appareil photo. Il s'agit d'une caractéristique commune aux "
-"plateformes d'applications modernes : vous ne pouvez pas accéder aux "
-"fonctions matérielles sans demander explicitement la permission à "
-"l'utilisateur."
+msgstr "Une partie du code que nous venons d'ajouter demande la permission d'utiliser l'appareil photo. Il s'agit d'une caractéristique commune aux plateformes d'applications modernes : vous ne pouvez pas accéder aux fonctions matérielles sans demander explicitement la permission à l'utilisateur."
 
 #: docs/en/tutorial/topics/camera-access.md:103
-#, fuzzy
 msgid ""
 "However, this request comes in two parts. The first is in the code we've "
 "just seen; but before the app can ask for permissions, it needs to declare "
 "the permissions it is going to ask for."
-msgstr ""
-"Cependant, cette demande se fait en deux temps. La première se trouve dans "
-"le code que nous venons de voir ; mais avant que l'application puisse "
-"demander des autorisations, elle doit déclarer les autorisations qu'elle va "
-"demander."
+msgstr "Cependant, cette demande se fait en deux temps. La première se trouve dans le code que nous venons de voir ; mais avant que l'application puisse demander des autorisations, elle doit déclarer les autorisations qu'elle va demander."
 
 #: docs/en/tutorial/topics/camera-access.md:105
-#, fuzzy
 msgid ""
 "The permissions required by each platform are slightly different, but "
 "Briefcase has a cross-platform representation for many common hardware "
 "permissions. In the `[tool.briefcase.app.hellocamera]` configuration section "
 "of your app's `pyproject.toml` file, add the following (just above the "
 "`sources` declaration):"
-msgstr ""
-"Les permissions requises par chaque plateforme sont légèrement différentes, "
-"mais Briefcase a une représentation multiplateforme pour de nombreuses "
-"permissions matérielles communes. Dans la section de configuration "
-"`[tool.briefcase.app.hellocamera]` du fichier `pyproject.toml` de votre "
-"application, ajoutez ce qui suit (juste au-dessus de la déclaration "
-"`sources`) :"
+msgstr "Les permissions requises par chaque plateforme sont légèrement différentes, mais Briefcase a une représentation multiplateforme pour de nombreuses permissions matérielles communes. Dans la section de configuration `[tool.briefcase.app.hellocamera]` du fichier `pyproject.toml` de votre application, ajoutez ce qui suit (juste au-dessus de la déclaration `sources`) :"
 
 #: docs/en/tutorial/topics/camera-access.md:111
-#, fuzzy
 msgid ""
 "This declares that your app needs to access the camera, and provides a short "
 "description why the camera is required. This description is needed on some "
 "platforms (most notably macOS and iOS) and will be displayed to the user as "
 "a additional information when the permission dialog is presented."
-msgstr ""
-"Elle déclare que votre application doit accéder à l'appareil photo et "
-"fournit une brève description de la raison pour laquelle l'appareil photo "
-"est nécessaire. Cette description est nécessaire sur certaines plateformes "
-"(notamment macOS et iOS) et sera affichée à l'utilisateur en tant "
-"qu'information supplémentaire lors de la présentation de la boîte de "
-"dialogue d'autorisation."
+msgstr "Elle déclare que votre application doit accéder à l'appareil photo, et fournit une brève description de la raison pour laquelle l'appareil photo est nécessaire. Cette description est nécessaire sur certaines plateformes (notamment macOS et iOS) et sera affichée à l'utilisateur en tant qu'information supplémentaire lors de la présentation de la boîte de dialogue d'autorisation."
 
 #: docs/en/tutorial/topics/camera-access.md:113
-#, fuzzy
 msgid "We can now generate and run the app:"
-msgstr "Nous pouvons maintenant générer et exécuter l'application :"
+msgstr "Nous pouvons maintenant générer et exécuter l'application :"
 
 #: docs/en/tutorial/topics/camera-access.md:115
 #: docs/en/tutorial/topics/custom-icons.md:29
@@ -744,28 +612,19 @@ msgid "/// tab | Android"
 msgstr "/// tab | Android"
 
 #: docs/en/tutorial/topics/camera-access.md:135
-#, fuzzy
 msgid ""
 "When the app runs, you'll be presented with a button. Press the button, and "
 "the platform's default camera dialog will be displayed. Take a photo; the "
 "camera dialog will disappear, and the photo will be displayed on in the app, "
 "just above the button. You could then take another photo; this will replace "
 "the first photo."
-msgstr ""
-"Lorsque l'application est lancée, un bouton s'affiche. Appuyez sur ce bouton "
-"et la boîte de dialogue de l'appareil photo par défaut de la plateforme "
-"s'affichera. Prenez une photo ; la boîte de dialogue de l'appareil photo "
-"disparaîtra et la photo s'affichera dans l'application, juste au-dessus du "
-"bouton. Vous pouvez ensuite prendre une autre photo, qui remplacera la "
-"première."
+msgstr "Lorsque l'application est lancée, un bouton s'affiche. Appuyez sur ce bouton et la boîte de dialogue par défaut de l'appareil photo de la plateforme s'affichera. Prenez une photo ; la boîte de dialogue de l'appareil photo disparaîtra et la photo s'affichera dans l'application, juste au-dessus du bouton. Vous pouvez ensuite prendre une autre photo ; elle remplacera la première."
 
 #: docs/en/tutorial/topics/camera-access.md:137
-#, fuzzy
 msgid "Adding more permissions"
 msgstr "Ajouter des autorisations supplémentaires"
 
 #: docs/en/tutorial/topics/camera-access.md:139
-#, fuzzy
 msgid ""
 "Permissions are declared in the files that are generated during the original "
 "call to `briefcase create`. Unfortunately, Briefcase can't update these "
@@ -774,18 +633,9 @@ msgid ""
 "create the app. You can do this by re-running `briefcase create`; this will "
 "warn you that the existing app will be overwritten, and then regenerate the "
 "application with the new permissions."
-msgstr ""
-"Les permissions sont déclarées dans les fichiers générés lors de l'appel "
-"initial à `briefcase create`. Malheureusement, Briefcase ne peut pas mettre "
-"à jour ces fichiers une fois qu'ils ont été générés initialement ; donc si "
-"vous voulez ajouter une nouvelle permission à votre application, ou modifier "
-"les permissions existantes, vous devrez recréer l'application. Vous pouvez "
-"le faire en relançant `briefcase create` ; cela vous avertira que "
-"l'application existante sera écrasée, puis régénérera l'application avec les "
-"nouvelles permissions."
+msgstr "Les permissions sont déclarées dans les fichiers générés lors de l'appel initial à `briefcase create`. Malheureusement, Briefcase ne peut pas mettre à jour ces fichiers une fois qu'ils ont été générés initialement ; donc si vous voulez ajouter une nouvelle permission à votre application, ou modifier les permissions existantes, vous devrez recréer l'application. Vous pouvez le faire en relançant `briefcase create` ; cela vous avertira que l'application existante sera écrasée, puis re-générera l'application avec les nouvelles permissions."
 
 #: docs/en/tutorial/topics/custom-icons.md:1
-#, fuzzy
 msgid "Customizing icons"
 msgstr "Personnalisation des icônes"
 
@@ -805,65 +655,44 @@ msgstr ""
 #: docs/en/tutorial/tutorial-2.md:157
 #: docs/en/tutorial/tutorial-4.md:124
 #: docs/en/tutorial/tutorial-7.md:610
-#, fuzzy
 msgid "/// note | Note"
 msgstr "/// note | Note"
 
 #: docs/en/tutorial/topics/custom-icons.md:7
-#, fuzzy
 msgid "In BeeWare, the term *icon* can refer to two different things:"
-msgstr "Dans BeeWare, le terme *icône* peut désigner deux choses différentes :"
+msgstr "Dans BeeWare, le terme *icône* peut désigner deux choses différentes :"
 
 #: docs/en/tutorial/topics/custom-icons.md:9
-#, fuzzy
 msgid ""
 "**Application icon** — The image that represents your app on the desktop, "
 "dock, or home screen."
-msgstr ""
-"**Icône d'application** - Image qui représente votre application sur le "
-"bureau, le dock ou l'écran d'accueil."
+msgstr "**Icône d'application** - Image qui représente votre application sur le bureau, le dock ou l'écran d'accueil."
 
 #: docs/en/tutorial/topics/custom-icons.md:11
-#, fuzzy
 msgid ""
 "**Runtime icons** — Images used inside your app’s interface (for example, in "
 "buttons or tables)."
-msgstr ""
-"**Icônes d'exécution** - Images utilisées dans l'interface de votre "
-"application (par exemple, dans les boutons ou les tableaux)."
+msgstr "**Icônes d'exécution** - Images utilisées dans l'interface de votre application (par exemple, dans les boutons ou les tableaux)."
 
 #: docs/en/tutorial/topics/custom-icons.md:15
-#, fuzzy
 msgid "Adding an icon"
 msgstr "Ajouter une icône"
 
 #: docs/en/tutorial/topics/custom-icons.md:17
-#, fuzzy
 msgid ""
 "Every platform uses a different format for application icons - and some "
 "platforms need *multiple* icons in different sizes and shapes. To account "
 "for this, Briefcase provides a shorthand way to configure an icon once, and "
 "then have that definition expand in to all the different icons needed for "
 "each individual platform."
-msgstr ""
-"Chaque plateforme utilise un format différent pour les icônes "
-"d'application - et certaines plateformes ont besoin de *multiples* icônes de "
-"tailles et de formes différentes. Pour tenir compte de cela, Briefcase "
-"fournit un moyen abrégé de configurer une icône une fois, puis de faire en "
-"sorte que cette définition s'étende à toutes les différentes icônes "
-"nécessaires pour chaque plate-forme individuelle."
+msgstr "Chaque plateforme utilise un format différent pour les icônes d'application - et certaines plateformes ont besoin de *multiples* icônes de tailles et de formes différentes. Pour tenir compte de cela, Briefcase fournit un moyen abrégé de configurer une icône une fois, puis de faire en sorte que cette définition s'étende à toutes les différentes icônes nécessaires pour chaque plate-forme particulière."
 
 #: docs/en/tutorial/topics/custom-icons.md:19
-#, fuzzy
 msgid ""
 "Edit your `pyproject.toml`, adding a new `icon` configuration item in the "
 "`[tool.briefcase.app.helloworld]` configuration section, just above the "
 "`sources` definition:"
-msgstr ""
-"Editez votre `pyproject.toml`, en ajoutant un nouvel élément de "
-"configuration `icon` dans la section de configuration "
-"`[tool.briefcase.app.helloworld]`, juste au-dessus de la définition "
-"`sources` :"
+msgstr "Editez votre `pyproject.toml`, en ajoutant un nouvel élément de configuration `icon` dans la section de configuration `[tool.briefcase.app.helloworld]`, juste au-dessus de la définition `sources` :"
 
 #: docs/en/tutorial/topics/custom-icons.md:25
 msgid ""
@@ -881,16 +710,11 @@ msgstr ""
 "fichier et de variante pour générer la liste des fichiers d'icônes utilisés."
 
 #: docs/en/tutorial/topics/custom-icons.md:27
-#, fuzzy
 msgid ""
 "We can now run `briefcase update` again - but this time, we pass in the `--"
 "update-resources` flag, telling Briefcase that we want to install new "
 "application resources (i.e., the icons):"
-msgstr ""
-"Nous pouvons maintenant exécuter `briefcase update` à nouveau - mais cette "
-"fois, nous passons le drapeau `--update-resources`, indiquant à Briefcase "
-"que nous voulons installer les nouvelles ressources de l'application (c'est-"
-"à-dire les icônes) :"
+msgstr "Nous pouvons maintenant exécuter `briefcase update` à nouveau - mais cette fois, nous passons le drapeau `--update-resources`, indiquant à Briefcase que nous voulons installer les nouvelles ressources de l'application (c'est-à-dire les icônes) :"
 
 #: docs/en/tutorial/topics/custom-icons.md:48
 #: docs/en/tutorial/topics/custom-icons.md:222
@@ -981,28 +805,18 @@ msgid "/// tab | iOS"
 msgstr "/// tab | iOS"
 
 #: docs/en/tutorial/topics/custom-icons.md:163
-#, fuzzy
 msgid ""
 "This reports the specific icon file (or files) that Briefcase is expecting. "
 "However, as we haven't provided the actual icon files, the install fails, "
 "and Briefcase falls back to a default value (the same \"gray bee\" icon)."
-msgstr ""
-"Cela indique le ou les fichiers d'icônes spécifiques que Briefcase attend. "
-"Cependant, comme nous n'avons pas fourni les fichiers d'icônes réels, "
-"l'installation échoue et Briefcase revient à la valeur par défaut (la même "
-"icône \"abeille grise\")."
+msgstr "Cela indique le ou les fichiers d'icônes spécifiques que Briefcase attend. Cependant, comme nous n'avons pas fourni les fichiers d'icônes réels, l'installation échoue et Briefcase revient à la valeur par défaut (la même icône \"abeille grise\")."
 
 #: docs/en/tutorial/topics/custom-icons.md:165
-#, fuzzy
 msgid ""
 "Let's provide some actual icons. Download [this icons.zip bundle]{1}, and "
 "unzip it into the root of your project directory. After unzipping, your "
 "project directory should look something like:"
-msgstr ""
-"Fournissons quelques icônes réelles. Téléchargez [ce paquet icons.zip]{1}, "
-"et décompressez-le à la racine de votre répertoire de projet. Après la "
-"décompression, votre répertoire de projet devrait ressembler à quelque chose "
-"comme :"
+msgstr "Fournissons quelques icônes réelles. Téléchargez [ce paquet icons.zip]{1}, et décompressez-le à la racine de votre répertoire de projet. Après la décompression, votre répertoire de projet devrait ressembler à quelque chose comme :"
 
 #: docs/en/tutorial/topics/custom-icons.md:184
 msgid ""
@@ -1013,9 +827,8 @@ msgstr ""
 "devraient avoir la même apparence : un serpent vert sur un fond bleu clair :"
 
 #: docs/en/tutorial/topics/custom-icons.md:186
-#, fuzzy
 msgid "![Icon of green snake with a light blue background]{1}"
-msgstr "[Icône d'un serpent vert sur fond bleu clair]{1}"
+msgstr "![Icône d'un serpent vert sur fond bleu clair]{1}"
 
 #: docs/en/tutorial/topics/custom-icons.md:188
 #: docs/en/tutorial/topics/custom-icons.md:470
@@ -1057,7 +870,6 @@ msgstr ""
 "une application sur toutes les plateformes supportées par Briefcase."
 
 #: docs/en/tutorial/topics/custom-icons.md:194
-#, fuzzy
 msgid ""
 "Now that we have icons, we can update the application again. However, "
 "`briefcase update` will only copy the updated resources into the build "
@@ -1065,41 +877,22 @@ msgid ""
 "included, then start the app. We can shortcut this process by passing `--"
 "update-resources` to our call to `run` - this will update the app, update "
 "the app's resources, and then start the app:"
-msgstr ""
-"Maintenant que nous avons les icônes, nous pouvons à nouveau mettre à jour "
-"l'application. Cependant, `briefcase update` ne fera que copier les "
-"ressources mises à jour dans le répertoire de construction ; nous voulons "
-"aussi reconstruire l'application pour nous assurer que la nouvelle icône est "
-"incluse, puis démarrer l'application. Nous pouvons raccourcir ce processus "
-"en passant `--update-resources` à notre appel à `run` - cela mettra à jour "
-"l'application, mettra à jour les ressources de l'application, et ensuite "
-"démarrera l'application :"
+msgstr "Maintenant que nous avons les icônes, nous pouvons à nouveau mettre à jour l'application. Cependant, `briefcase update` ne fera que copier les ressources mises à jour dans le répertoire de construction ; nous voulons aussi reconstruire l'application pour nous assurer que la nouvelle icône est incluse, puis démarrer l'application. Nous pouvons raccourcir ce processus en passant `--update-resources` à notre appel à `run` - cela mettra à jour l'application, mettra à jour les ressources de l'application, et ensuite démarrera l'application :"
 
 #: docs/en/tutorial/topics/custom-icons.md:321
-#, fuzzy
 msgid ""
 "If you're using a recent version of Android, you may notice that the app "
 "icon has been changed to a green snake, but the background of the icon is "
 "*white*, rather than light blue. We'll fix this in the next step."
-msgstr ""
-"Si vous utilisez une version récente d'Android, vous remarquerez peut-être "
-"que l'icône de l'application a été remplacée par un serpent vert, mais que "
-"l'arrière-plan de l'icône est *blanc*, et non bleu clair. Nous allons "
-"corriger cela dans l'étape suivante."
+msgstr "Si vous utilisez une version récente d'Android, vous remarquerez peut-être que l'icône de l'application a été remplacée par un serpent vert, mais que l'arrière-plan de l'icône est *blanc*, et non bleu clair. Nous allons corriger cela dans l'étape suivante."
 
 #: docs/en/tutorial/topics/custom-icons.md:365
-#, fuzzy
 msgid ""
 "If you get a stack trace referencing `faker` or `httpx` when you run the "
 "app, it's possible you missed running your app during step 7 or 8 of the "
 "tutorial. Re-run the app, adding the `-r` argument to update the app "
 "requirements."
-msgstr ""
-"Si vous obtenez une trace de pile faisant référence à `faker` ou `httpx` "
-"lorsque vous lancez l'application, il est possible que vous n'ayez pas lancé "
-"votre application pendant l'étape 7 ou 8 du tutoriel. Relancez l'application "
-"en ajoutant l'argument `-r` pour mettre à jour les exigences de "
-"l'application."
+msgstr "Si vous obtenez une trace de pile faisant référence à `faker` ou `httpx` lorsque vous lancez l'application, il est possible que vous n'ayez pas lancé votre application pendant l'étape 7 ou 8 du tutoriel. Relancez l'application en ajoutant l'argument `-r` pour mettre à jour les exigences de l'application."
 
 #: docs/en/tutorial/topics/custom-icons.md:369
 #, fuzzy
@@ -1343,15 +1136,11 @@ msgstr ""
 "."
 
 #: docs/en/tutorial/topics/testing.md:102
-#, fuzzy
 msgid ""
 "Let's replace this placeholder test with a test to verify that our `greeting"
 "()` method behaves the way we'd expect. Replace the contents of "
 "`test_app.py` with the following:"
-msgstr ""
-"Remplaçons ce placeholder test par un test pour vérifier que notre méthode "
-"`greeting()` se comporte comme nous l'attendons. Remplacez le contenu de "
-"`test_app.py` par ce qui suit: :"
+msgstr "Remplaçons ce placeholder test par un test pour vérifier que notre méthode `greeting()` se comporte comme nous l'attendons. Remplacez le contenu de `test_app.py` par ce qui suit :"
 
 #: docs/en/tutorial/topics/testing.md:120
 #, fuzzy
@@ -1672,10 +1461,9 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-0.md:65
 msgid "Ubuntu / Debian"
-msgstr "Ubuntu  / Debian"
+msgstr "Ubuntu / Debian"
 
 #: docs/en/tutorial/tutorial-0.md:72
-#, fuzzy
 msgid "Fedora"
 msgstr "Fedora"
 
@@ -2490,11 +2278,7 @@ msgid ""
 "This completes our layout; the rest of the startup method is as it was "
 "previously - defining a `MainWindow`, and assigning the main box as the "
 "window's content:"
-msgstr ""
-"Cela termine notre mise en page; le reste de la méthode de démarrage est "
-"identique à la précédente : définition d'une fenêtre principale "
-"`MainWindow`, et attribution de la boîte principale en tant que contenu de "
-"la fenêtre :"
+msgstr "Cela termine notre mise en page ; le reste de la méthode de démarrage est identique à la précédente : définition d'une fenêtre principale `MainWindow`, et attribution de la boîte principale en tant que contenu de la fenêtre :"
 
 #: docs/en/tutorial/tutorial-2.md:219
 #, fuzzy
@@ -2544,17 +2328,14 @@ msgstr ""
 "lancez `briefcase dev`."
 
 #: docs/en/tutorial/tutorial-2.md:269
-#, fuzzy
 msgid "![Hello World Tutorial 2 window, on macOS]{1}"
 msgstr "![Fenêtre Hello World Tutorial 2, sur macOS]{1}"
 
 #: docs/en/tutorial/tutorial-2.md:279
-#, fuzzy
 msgid "![Hello World Tutorial 2 window, on Linux]{1}"
 msgstr "![Fenêtre Hello World Tutorial 2, sur Linux]{1}"
 
 #: docs/en/tutorial/tutorial-2.md:289
-#, fuzzy
 msgid "![Hello World Tutorial 2 window, on Windows]{1}"
 msgstr "![Hello World Tutorial 2 window, sur Windows]{1}"
 
@@ -3145,17 +2926,7 @@ msgid ""
 "real signing identity; when that signed app is installed, the system will "
 "notify the user that the application is from the known identity associated "
 "with the certificate."
-msgstr ""
-"Dans cet exemple, nous ne signons pas notre application.En conséquence, "
-"quand vous installez l'application, vous recevez un avertissement système "
-"signalant qu'elle provient d'un développeur inconnu. Nous avons fait cela "
-"pour que le tutoriel reste simple. La mise en place d'identités de signature "
-"de code est un peu fastidieuse, et elles ne sont *nécessaires* que si vous "
-"avez l'intention de distribuer votre application à d'autres personnes. Si "
-"nous publiions une application réelle pour que d'autres puissent l'utiliser, "
-"nous devrions spécifier de vraies informations d'identification; quand une "
-"application signée est installée, le système informe l'utilisateur que "
-"l'application provient de l'entité connue associée au certificat."
+msgstr "Dans cet exemple, nous ne signons pas notre application. En conséquence, quand vous installez l'application, vous recevez un avertissement système signalant qu'elle provient d'un développeur inconnu. Nous avons fait cela pour que le tutoriel reste simple. La mise en place d'identités de signature de code est un peu fastidieuse, et elles ne sont *nécessaires* que si vous avez l'intention de distribuer votre application à d'autres personnes. Si nous publiions une application réelle pour que d'autres puissent l'utiliser, nous devrions spécifier de vraies informations d'identification ; quand une application signée est installée, le système informe l'utilisateur que l'application provient de l'entité connue associée au certificat."
 
 #: docs/en/tutorial/tutorial-3.md:457
 msgid ""
@@ -3239,13 +3010,10 @@ msgstr ""
 "utiliser des boîtes de dialogue pour communiquer avec les utilisateurs."
 
 #: docs/en/tutorial/tutorial-4.md:11
-#, fuzzy
 msgid ""
 "Let's add a dialog box to say hello, instead of writing to the console. "
 "Modify the `say_hello` callback so it looks like this:"
-msgstr ""
-"Ajoutons une boîte de dialogue pour dire bonjour, au lieu d'écrire dans la "
-"console. Modifiez le callback `say_hello` pour qu'il ressemble à ceci: :"
+msgstr "Ajoutons une boîte de dialogue pour dire bonjour, au lieu d'écrire dans la console. Modifiez le callback `say_hello` pour qu'il ressemble à ceci :"
 
 #: docs/en/tutorial/tutorial-4.md:23
 #, fuzzy
@@ -3276,17 +3044,14 @@ msgstr ""
 "verrez la nouvelle boîte de dialogue :"
 
 #: docs/en/tutorial/tutorial-4.md:31
-#, fuzzy
 msgid "![Hello World Tutorial 4 dialog, on macOS]{1}"
 msgstr "![Tutoriel Hello World 4 dialogue, sur macOS]{1}"
 
 #: docs/en/tutorial/tutorial-4.md:41
-#, fuzzy
 msgid "![Hello World Tutorial 4 dialog, on Linux]{1}"
 msgstr "![Tutoriel Hello World 4 dialogue, sur Linux]{1}"
 
 #: docs/en/tutorial/tutorial-4.md:51
-#, fuzzy
 msgid "![Hello World Tutorial 4 dialog, on Windows]{1}"
 msgstr "![Tutoriel Hello World 4 dialogue, sur Windows]{1}"
 
@@ -3405,22 +3170,15 @@ msgstr ""
 "cas particulier."
 
 #: docs/en/tutorial/tutorial-4.md:136
-#, fuzzy
 msgid ""
 "At the top of the file, between the imports and the `class HelloWorld` "
 "definition, add a utility method to generate an appropriate greeting "
 "depending on the value of the name that has been provided:"
-msgstr ""
-"En haut du fichier, entre les imports et la définition de `class "
-"HelloWorld`, ajoutez une méthode utilitaire pour générer un message "
-"d'accueil approprié en fonction de la valeur du nom qui a été fourni: :"
+msgstr "En haut du fichier, entre les imports et la définition de `class HelloWorld`, ajoutez une méthode utilitaire pour générer un message d'accueil approprié en fonction de la valeur du nom qui a été fourni :"
 
 #: docs/en/tutorial/tutorial-4.md:146
-#, fuzzy
 msgid "Then, modify the `say_hello` callback to use this new utility method:"
-msgstr ""
-"Ensuite, modifiez le callback `say_hello` pour utiliser cette nouvelle "
-"méthode utilitaire: :"
+msgstr "Ensuite, modifiez le callback `say_hello` pour utiliser cette nouvelle méthode utilitaire :"
 
 #: docs/en/tutorial/tutorial-4.md:158
 #, fuzzy
@@ -3619,7 +3377,6 @@ msgstr ""
 "l'appareil démarre, vous verrez le logo Android :"
 
 #: docs/en/tutorial/tutorial-5/android.md:222
-#, fuzzy
 msgid "![Android virtual device booting]{1}"
 msgstr "![Démarrage de l'appareil virtuel Android]{1}"
 
@@ -3638,10 +3395,8 @@ msgstr ""
 "application sur l'appareil. Vous verrez brièvement un écran de lancement :"
 
 #: docs/en/tutorial/tutorial-5/android.md:232
-#, fuzzy
 msgid "![Android virtual device fully started, on the launcher screen]{1}"
-msgstr ""
-"![Appareil virtuel Android entièrement démarré, sur l'écran du lanceur]{1}"
+msgstr "![Appareil virtuel Android entièrement démarré, sur l'écran du lanceur]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:236
 #, fuzzy
@@ -3657,7 +3412,6 @@ msgstr ""
 "l'application démarre :"
 
 #: docs/en/tutorial/tutorial-5/android.md:242
-#, fuzzy
 msgid "![App splash screen]{1}"
 msgstr "![Écran de démarrage de l'application]{1}"
 
@@ -3950,7 +3704,6 @@ msgstr ""
 "application iOS :"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:97
-#, fuzzy
 msgid "![Hello World Tutorial 5 window, on iOS]{1}"
 msgstr "![Hello World Tutorial 5 window, sur iOS]{1}"
 
@@ -4112,7 +3865,6 @@ msgid "This will open a web browser, pointing at {1}:"
 msgstr "Cela ouvrira un navigateur web, pointant sur {1} :"
 
 #: docs/en/tutorial/tutorial-6.md:139
-#, fuzzy
 msgid "![Hello World Tutorial 6 dialog, in a browser]{1}"
 msgstr "![Dialogue Hello World Tutorial 6, dans un navigateur]{1}"
 
@@ -4239,11 +3991,8 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-7.md:19
 #: docs/en/tutorial/tutorial-8.md:32
-#, fuzzy
 msgid "Then modify the `say_hello()` callback so it looks like this:"
-msgstr ""
-"Pour rendre notre tutoriel asynchrone, modifiez le gestionnaire d'événement "
-"`say_hello()` pour qu'il ressemble à ceci: :"
+msgstr "Puis modifiez le callback `say_hello()` pour qu'il ressemble à ceci :"
 
 #: docs/en/tutorial/tutorial-7.md:32
 #, fuzzy
@@ -4302,12 +4051,10 @@ msgstr ""
 "dialogue doit s'afficher :"
 
 #: docs/en/tutorial/tutorial-7.md:123
-#, fuzzy
 msgid "![Hello World Tutorial 7 dialog, on macOS]{1}"
 msgstr "![Tutoriel Hello World 7 dialogue, sur macOS]{1}"
 
 #: docs/en/tutorial/tutorial-7.md:140
-#, fuzzy
 msgid "![Hello World Tutorial 7 dialog, on Linux]{1}"
 msgstr "![Tutoriel Hello World 7 dialogue, sur Linux]{1}"
 
@@ -4403,11 +4150,8 @@ msgstr ""
 "êtes invité) :"
 
 #: docs/en/tutorial/tutorial-7.md:428
-#, fuzzy
 msgid "However, when the app runs, you'll see an error in the console"
-msgstr ""
-"Cependant, lorsque l'application s'exécute, une erreur apparaît dans la "
-"console :"
+msgstr "Cependant, lorsque l'application s'exécute, une erreur apparaît dans la console"
 
 #: docs/en/tutorial/tutorial-7.md:443
 #, fuzzy
@@ -4477,13 +4221,10 @@ msgstr ""
 "l'application que vous avez fournis lorsque vous avez lancé `briefcase new`."
 
 #: docs/en/tutorial/tutorial-7.md:455
-#, fuzzy
 msgid ""
 "`pyproject.toml` is broken up into sections; one of the sections describes "
 "the settings for your app:"
-msgstr ""
-"`pyproject.toml` est divisé en sections ; l'une d'entre elles décrit les "
-"paramètres de votre application: :"
+msgstr "`pyproject.toml` est divisé en sections ; l'une d'entre elles décrit les paramètres de votre application :"
 
 #: docs/en/tutorial/tutorial-7.md:467
 #, fuzzy
@@ -4498,9 +4239,8 @@ msgstr ""
 "dans votre application."
 
 #: docs/en/tutorial/tutorial-7.md:469
-#, fuzzy
 msgid "Modify the `requires` setting so that it reads:"
-msgstr "Modifiez le paramètre `requires` de façon à ce qu'il se lise: :"
+msgstr "Modifiez le paramètre `requires` de façon à ce qu'il se lise :"
 
 #: docs/en/tutorial/tutorial-7.md:477
 msgid ""
@@ -4645,11 +4385,7 @@ msgid ""
 "PyPI package can be installed into your virtual environment, or added to "
 "your app's requirements. However, when building an app for mobile or web "
 "platforms, [your options are slightly limited]{1}."
-msgstr ""
-"Sur les plateformes de bureau (macOS, Windows, Linux), pratiquement tout "
-"package de PyPi peut être installé dans votre environnement virtuel, ou  "
-"être ajouté aux exigences de votre application. Sur les plateformes mobiles "
-"et web, [vos options sont légèrement limitées]{1}."
+msgstr "Sur les plateformes de bureau (macOS, Windows, Linux), pratiquement tout package de PyPi peut être installé dans votre environnement virtuel, ou être ajouté aux exigences de votre application. Sur les plateformes mobiles et web, [vos options sont légèrement limitées]{1}."
 
 #: docs/en/tutorial/tutorial-7.md:622
 #, fuzzy
@@ -4910,17 +4646,14 @@ msgstr ""
 "les exigences, en utilisant l'argument `-r` :"
 
 #: docs/en/tutorial/tutorial-8.md:72
-#, fuzzy
 msgid "![Hello World Tutorial 8 dialog, on macOS]{1}"
 msgstr "![Tutoriel Hello World 8 dialogue, sur macOS]{1}"
 
 #: docs/en/tutorial/tutorial-8.md:93
-#, fuzzy
 msgid "![Hello World Tutorial 8 dialog, on Linux]{1}"
 msgstr "![Tutoriel Hello World 8 dialogue, sur Linux]{1}"
 
 #: docs/en/tutorial/tutorial-8.md:114
-#, fuzzy
 msgid "![Hello World Tutorial 8 dialog, on Windows]{1}"
 msgstr "![Tutoriel Hello World 8 dialogue, sur Windows]{1}"
 
@@ -4974,11 +4707,8 @@ msgstr ""
 "vous utilisez."
 
 #: docs/en/tutorial/tutorial-8.md:142
-#, fuzzy
 msgid "A GUI app is, fundamentally, a single loop that looks something like:"
-msgstr ""
-"Une application GUI est, fondamentalement, une boucle unique qui ressemble à "
-"quelque chose comme: :"
+msgstr "Une application GUI est, fondamentalement, une boucle unique qui ressemble à quelque chose comme :"
 
 #: docs/en/tutorial/tutorial-8.md:150
 #, fuzzy
@@ -5151,13 +4881,10 @@ msgid "Making the tutorial asynchronous"
 msgstr "Rendre le didacticiel asynchrone"
 
 #: docs/en/tutorial/tutorial-8.md:176
-#, fuzzy
 msgid ""
 "To make our tutorial asynchronous, modify the `say_hello()` event handler so "
 "it looks like this:"
-msgstr ""
-"Pour rendre notre tutoriel asynchrone, modifiez le gestionnaire d'événement "
-"`say_hello()` pour qu'il ressemble à ceci: :"
+msgstr "Pour rendre notre tutoriel asynchrone, modifiez le gestionnaire d'événement `say_hello()` pour qu'il ressemble à ceci :"
 
 #: docs/en/tutorial/tutorial-8.md:194
 #, fuzzy
