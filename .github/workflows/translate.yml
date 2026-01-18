@@ -36,7 +36,7 @@ jobs:
         run: python -m pip install -U pip
 
       - name: Install tox
-        run: python -m pip install --group 'dev'
+        run: python -m pip install --group 'translate'
 
       - name: Configure git
         run: |
@@ -50,8 +50,10 @@ jobs:
          cat <<EOF > ~/.weblate
          [weblate]
          url = https://hosted.weblate.org/api/
-         key = $WEBLATE_API_TOKEN
          translation = beeware/tutorial
+
+         [keys]
+         https://hosted.weblate.org/api/ = $WEBLATE_API_TOKEN
          EOF
 
       - name: Lock Weblate and Sync

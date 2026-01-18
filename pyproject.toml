@@ -7,10 +7,19 @@ tox-uv = [
     "tox-uv == 1.29.0",
 ]
 
+wlc = [
+    "wlc == 1.17.0",
+]
+
 dev = [
-    "wlc == 1.16.1",
     {include-group = "pre-commit"},
     {include-group = "tox-uv"},
+    {include-group = "wlc"},
+]
+
+translate = [
+    {include-group = "tox-uv"},
+    {include-group = "wlc"},
 ]
 
 docs = [
