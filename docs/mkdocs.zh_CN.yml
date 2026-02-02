@@ -1,6 +1,6 @@
 INHERIT: config.yml
 site_name: BeeWare Tutorial
-site_url: https://tutorial.beeware.org/zh_CN
+site_url: https://tutorial.beeware.org/zh-cn
 docs_dir: zh_CN
 
 theme:
@@ -8,3 +8,11 @@ theme:
 
 extra:
   translation_type: machine
+  language_url: zh-cn/
+  header:
+    About: 关于
+    Documentation: 文档
+    Community: 社区
+    Contributing: 贡献
+    News: 新闻
+    Sponsor: 赞助
