@@ -8,3 +8,11 @@ theme:
 
 extra:
   translation_type: machine
+  language_url: de/
+  header:
+    About: Über
+    Documentation: Dokumentation
+    Community: Verbund
+    Contributing: Mithelfen
+    News: Neuigkeiten
+    Sponsor: Fördern

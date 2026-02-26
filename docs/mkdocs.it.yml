@@ -8,3 +8,11 @@ theme:
 
 extra:
   translation_type: machine
+  language_url: it/
+  header:
+    About: Circa
+    Documentation: Documentazione
+    Community: Comunità
+    Contributing: Contribuire
+    News: Notizie
+    Sponsor: Sponsorizzare
