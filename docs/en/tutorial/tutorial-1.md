@@ -121,6 +121,10 @@ Move into the `helloworld` project directory and tell briefcase to start the pro
 (beeware-venv) $ cd helloworld
 (beeware-venv) $ briefcase dev
 
+[helloworld] Activating dev environment...
+...
+Creating virtual environment (dev.cpython-313-darwin)... done
+
 [hello-world] Installing requirements...
 ...
 
@@ -136,6 +140,10 @@ Move into the `helloworld` project directory and tell briefcase to start the pro
 (beeware-venv) $ cd helloworld
 (beeware-venv) $ briefcase dev
 
+[helloworld] Activating dev environment...
+...
+Creating virtual environment (dev.cpython-313-x86_64-linux-gnu)... done
+
 [hello-world] Installing requirements...
 ...
 
@@ -150,6 +158,10 @@ Move into the `helloworld` project directory and tell briefcase to start the pro
 ```doscon
 (beeware-venv) C:\...>cd helloworld
 (beeware-venv) C:\...>briefcase dev
+
+[helloworld] Activating dev environment...
+...
+Creating virtual environment (dev.cp313-win32_amd64)... done
 
 [hello-world] Installing requirements...
 ...
@@ -177,6 +189,12 @@ This should open a GUI window:
 ![Hello World Tutorial 1 window, on Linux](../images/linux/tutorial-1.png)
 
 /// caption
+
+///
+
+/// admonition | Possible errors when running `briefcase dev`
+
+If you get an error when you run `briefcase dev`, it's almost certainly because some of the system requirements haven't been installed. Make sure you have [installed all the platform pre-requisites][install-dependencies]; the error message you receive should tell you which packages are missing.
 
 ///
 
