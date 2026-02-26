@@ -23,9 +23,7 @@ translate = [
 ]
 
 docs = [
-    # TODO: Restore main branch for final.
-#    "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
-    "beeware-docs-tools @ git+https://github.com/kattni/beeware-docs-tools@tooling/website-mkdocs-migration",
+    "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
 ]
 
 [tool.rumdl]
