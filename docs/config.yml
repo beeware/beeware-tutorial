@@ -32,10 +32,10 @@ extra:
       link: /pt/
       lang: pt
     - name: 中文(简体)
-      link: /zh-cn/
+      link: /zh_CN/
       lang: zh-Hant
     - name: 中文(繁體)
-      link: /zh-tw/
+      link: /zh_TW/
       lang: zh-TW
   social:
     - icon: fontawesome/brands/github
