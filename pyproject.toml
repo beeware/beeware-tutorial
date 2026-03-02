@@ -27,8 +27,8 @@ translate = [
 ]
 
 docs = [
-    # "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
-    "beeware-docs-tools @ file://../beeware-docs-tools",
+    "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
+    # "beeware-docs-tools @ file://../beeware-docs-tools",
     {include-group = "redirects"},
 ]
 
