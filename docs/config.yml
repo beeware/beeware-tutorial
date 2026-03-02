@@ -146,3 +146,15 @@ plugins:
   literate-nav:
     nav_file: SUMMARY.md
   macros: {}
+  redirects:
+    redirect_maps:
+      # Old
+      "en/latest/tutorial/tutorial-1.md": "tutorial/tutorial-1.md"
+      "en/latest.md": "index.md"
+      "de/latest.md": "https://tutorial.beeware.org/de"
+      "es/latest.md": "https://tutorial.beeware.org/es"
+      "fr/latest.md": "https://tutorial.beeware.org/fr"
+      "it/latest.md": "https://tutorial.beeware.org/it"
+      "pt/latest.md": "https://tutorial.beeware.org/pt"
+      "zh_CN/latest.md": "https://tutorial.beeware.org/zh_CN"
+      "zh_TW/latest.md": "https://tutorial.beeware.org/zh_TW"

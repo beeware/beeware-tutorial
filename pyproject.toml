@@ -3,6 +3,10 @@ pre-commit = [
     "pre-commit == 4.5.1",
 ]
 
+redirects = [
+    "mkdocs-redirects == 1.2.2",
+]
+
 tox-uv = [
     "tox-uv == 1.29.0",
 ]
@@ -23,7 +27,9 @@ translate = [
 ]
 
 docs = [
-    "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
+    # "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
+    "beeware-docs-tools @ file://../beeware-docs-tools",
+    {include-group = "redirects"},
 ]
 
 [tool.rumdl]
