@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 03:20+0000\n"
+"POT-Creation-Date: 2026-03-02 04:45+0000\n"
 "PO-Revision-Date: 2025-10-15 17:07+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/zh_Hans/>\n"
@@ -108,7 +108,7 @@ msgstr "/// admonition |提供翻译"
 msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
 msgstr "如果您不熟悉中文，本教程提供了以下语言的翻译：[Deutsch]{1} （德语）、[Español]{2} （西班牙语）、[Français]{3} （法语）、[Italiano]{4} （意大利语）、[Português]{5} （葡萄牙语）、[中文(简体)]{6} （中文（简体））和 [中文(繁體)]{7} （中文（繁体））。"
 
-#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:47 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:90 docs/en/tutorial/tutorial-0.md:100 docs/en/tutorial/tutorial-0.md:115 docs/en/tutorial/tutorial-0.md:126 docs/en/tutorial/tutorial-0.md:155 docs/en/tutorial/tutorial-0.md:157 docs/en/tutorial/tutorial-0.md:165 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:131 docs/en/tutorial/tutorial-1.md:146 docs/en/tutorial/tutorial-1.md:161 docs/en/tutorial/tutorial-1.md:171 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:181 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:191 docs/en/tutorial/tutorial-1.md:207 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:84 docs/en/tutorial/tutorial-3.md:86 docs/en/tutorial/tutorial-3.md:112 docs/en/tutorial/tutorial-3.md:147 docs/en/tutorial/tutorial-3.md:177 docs/en/tutorial/tutorial-3.md:194 docs/en/tutorial/tutorial-3.md:196 docs/en/tutorial/tutorial-3.md:225 docs/en/tutorial/tutorial-3.md:253 docs/en/tutorial/tutorial-3.md:277 docs/en/tutorial/tutorial-3.md:326 docs/en/tutorial/tutorial-3.md:423 docs/en/tutorial/tutorial-3.md:461 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:127 docs/en/tutorial/tutorial-7.md:129 docs/en/tutorial/tutorial-7.md:144 docs/en/tutorial/tutorial-7.md:146 docs/en/tutorial/tutorial-7.md:161 docs/en/tutorial/tutorial-7.md:163 docs/en/tutorial/tutorial-7.md:169 docs/en/tutorial/tutorial-7.md:175 docs/en/tutorial/tutorial-7.md:220 docs/en/tutorial/tutorial-7.md:222 docs/en/tutorial/tutorial-7.md:277 docs/en/tutorial/tutorial-7.md:316 docs/en/tutorial/tutorial-7.md:318 docs/en/tutorial/tutorial-7.md:393 docs/en/tutorial/tutorial-7.md:441 docs/en/tutorial/tutorial-7.md:511 docs/en/tutorial/tutorial-7.md:540 docs/en/tutorial/tutorial-7.md:563 docs/en/tutorial/tutorial-7.md:582 docs/en/tutorial/tutorial-7.md:606 docs/en/tutorial/tutorial-7.md:614 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
+#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:47 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:90 docs/en/tutorial/tutorial-0.md:100 docs/en/tutorial/tutorial-0.md:115 docs/en/tutorial/tutorial-0.md:126 docs/en/tutorial/tutorial-0.md:155 docs/en/tutorial/tutorial-0.md:157 docs/en/tutorial/tutorial-0.md:165 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:131 docs/en/tutorial/tutorial-1.md:146 docs/en/tutorial/tutorial-1.md:161 docs/en/tutorial/tutorial-1.md:171 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:181 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:191 docs/en/tutorial/tutorial-1.md:207 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:146 docs/en/tutorial/tutorial-3.md:176 docs/en/tutorial/tutorial-3.md:193 docs/en/tutorial/tutorial-3.md:195 docs/en/tutorial/tutorial-3.md:224 docs/en/tutorial/tutorial-3.md:252 docs/en/tutorial/tutorial-3.md:276 docs/en/tutorial/tutorial-3.md:325 docs/en/tutorial/tutorial-3.md:422 docs/en/tutorial/tutorial-3.md:460 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:127 docs/en/tutorial/tutorial-7.md:129 docs/en/tutorial/tutorial-7.md:144 docs/en/tutorial/tutorial-7.md:146 docs/en/tutorial/tutorial-7.md:161 docs/en/tutorial/tutorial-7.md:163 docs/en/tutorial/tutorial-7.md:169 docs/en/tutorial/tutorial-7.md:175 docs/en/tutorial/tutorial-7.md:220 docs/en/tutorial/tutorial-7.md:222 docs/en/tutorial/tutorial-7.md:277 docs/en/tutorial/tutorial-7.md:316 docs/en/tutorial/tutorial-7.md:318 docs/en/tutorial/tutorial-7.md:393 docs/en/tutorial/tutorial-7.md:441 docs/en/tutorial/tutorial-7.md:511 docs/en/tutorial/tutorial-7.md:540 docs/en/tutorial/tutorial-7.md:563 docs/en/tutorial/tutorial-7.md:582 docs/en/tutorial/tutorial-7.md:606 docs/en/tutorial/tutorial-7.md:614 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
 msgid "///"
 msgstr "///"
 
@@ -292,7 +292,7 @@ msgstr "这将声明您的应用程序需要访问摄像头，并提供一个简
 msgid "We can now generate and run the app:"
 msgstr "我们现在可以生成并运行应用程序："
 
-#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:53 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:165 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:132 docs/en/tutorial/tutorial-3.md:202 docs/en/tutorial/tutorial-3.md:289 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:114 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:490 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
+#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:53 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:165 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:131 docs/en/tutorial/tutorial-3.md:201 docs/en/tutorial/tutorial-3.md:288 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:114 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:490 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
 msgid "/// tab | macOS"
 msgstr "/// tab | macOS"
 
@@ -364,11 +364,11 @@ msgstr "图标配置时，无需指定任何扩展文件名。这里的值将会
 msgid "We can now run `briefcase update` again - but this time, we pass in the `--update-resources` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
 msgstr "我们现在可以重新运行 `briefcase update` — 但这次，我们传入 `--update-resources` 标志，以告诉 Briefcase 我们想要安装新的应用资源（图标）："
 
-#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:61 docs/en/tutorial/tutorial-0.md:117 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:133 docs/en/tutorial/tutorial-1.md:175 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:149 docs/en/tutorial/tutorial-3.md:227 docs/en/tutorial/tutorial-3.md:328 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:131 docs/en/tutorial/tutorial-7.md:224 docs/en/tutorial/tutorial-7.md:513 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
+#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:61 docs/en/tutorial/tutorial-0.md:117 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:133 docs/en/tutorial/tutorial-1.md:175 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:148 docs/en/tutorial/tutorial-3.md:226 docs/en/tutorial/tutorial-3.md:327 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:131 docs/en/tutorial/tutorial-7.md:224 docs/en/tutorial/tutorial-7.md:513 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
 msgid "/// tab | Linux"
 msgstr "/// tab | Linux"
 
-#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:92 docs/en/tutorial/tutorial-0.md:128 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:148 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:88 docs/en/tutorial/tutorial-3.md:179 docs/en/tutorial/tutorial-3.md:255 docs/en/tutorial/tutorial-3.md:425 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:148 docs/en/tutorial/tutorial-7.md:279 docs/en/tutorial/tutorial-7.md:542 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
+#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:92 docs/en/tutorial/tutorial-0.md:128 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:148 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:178 docs/en/tutorial/tutorial-3.md:254 docs/en/tutorial/tutorial-3.md:424 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:148 docs/en/tutorial/tutorial-7.md:279 docs/en/tutorial/tutorial-7.md:542 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
 msgid "/// tab | Windows"
 msgstr "/// tab | Windows"
 
@@ -756,7 +756,7 @@ msgstr "/// admonition |替代虚拟环境"
 msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of `virtualenv`, a predecessor to Python's built in `venv` module. As with Python installs -if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to `venv` and the system Python."
 msgstr "如果您使用的是 Anaconda 或 miniconda，您可能更熟悉使用 conda 环境。您可能还听说过 `virtualenv`，它是 Python 内置的 `venv` 模块的前身。就像 Python 的安装一样，如果你使用的是 macOS 或 Windows，那么如何创建虚拟环境并不重要，只要有一个就够了。如果您在 Linux 上，则应坚持使用 `venv` 和系统 Python。"
 
-#: docs/en/tutorial/tutorial-0.md:167 docs/en/tutorial/tutorial-1.md:213 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:463 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:149 docs/en/tutorial/tutorial-7.md:630 docs/en/tutorial/tutorial-8.md:255
+#: docs/en/tutorial/tutorial-0.md:167 docs/en/tutorial/tutorial-1.md:213 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:462 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:149 docs/en/tutorial/tutorial-7.md:630 docs/en/tutorial/tutorial-8.md:255
 msgid "Next steps"
 msgstr "下一步"
 
@@ -1172,177 +1172,177 @@ msgstr "如果您收到类似如下的错误信息："
 msgid "The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10)."
 msgstr "用于运行 Briefcase 的 Python 版本 (3.12) 不是系统 python3 (3.10)。"
 
-#: docs/en/tutorial/tutorial-3.md:82
+#: docs/en/tutorial/tutorial-3.md:81
 msgid "You will need to recreate your virtual environment using the system `python3`. Using the system Python is a requirement for packaging your application."
 msgstr "您将需要使用系统的 `python3` 重新创建您的虚拟环境。打包您的应用程序要求使用系统 Python。"
 
-#: docs/en/tutorial/tutorial-3.md:114
+#: docs/en/tutorial/tutorial-3.md:113
 msgid "You've probably just seen pages of content go past in your terminal... so what just happened? Briefcase has done the following:"
 msgstr "您可能刚刚在终端上看到了几页内容滑过......刚刚发生了什么？Briefcase 做了以下工作："
 
-#: docs/en/tutorial/tutorial-3.md:116
+#: docs/en/tutorial/tutorial-3.md:115
 #, fuzzy
 msgid "It **generated an application template**. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on. If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template."
 msgstr "它**生成一个应用程序模板**。除了实际应用程序的代码之外，构建本机安装程序还需要许多文件和配置。这些额外的脚手架对于同一平台上的每个应用程序几乎都是一样的，除了正在构建的实际应用程序的名称--因此，Briefcase 为其支持的每个平台提供了一个应用程序模板。这一步将推出模板，根据需要替换应用程序名称、捆绑 ID 和配置文件的其他属性，以支持正在构建的平台。如果对 Briefcase 提供的模板不满意，可以提供自己的模板。不过，在使用 Briefcase 的默认模板积累更多经验之前，您可能不想这样做。"
 
-#: docs/en/tutorial/tutorial-3.md:118
+#: docs/en/tutorial/tutorial-3.md:117
 #, fuzzy
 msgid "It **downloaded and installed a support package**. The packaging approach taken by Briefcase is best described as \"the simplest thing that could possibly work\" - it ships a complete, isolated Python interpreter as part of every application it builds (except for Linux native system package builds). This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application. Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime. Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds. As noted above, when Briefcase packages an app as a native Linux system package (the default package format for Linux), a support package is not included with the app. Instead, the app will use the Python that is provided by the distribution of Linux being targeted."
 msgstr "它**下载并安装了一个支持包**。Briefcase 所采用的打包方法被描述为 \"最简单可行的方法\"--它将一个完整、独立的 Python 解释器作为其构建的每个应用程序的一部分（Linux 本机系统包构建除外）。这在空间利用上略显不足--如果有 5 个应用程序打包到 Briefcase 中，就会有 5 份 Python 解释器副本。但是，这种方法保证了每个应用程序都是完全独立的，使用的 Python 版本是已知的可与应用程序一起工作的特定版本。同样，Briefcase 为每个平台提供了默认的支持包；如果需要，您可以提供自己的支持包，并将该包作为构建过程的一部分。如果您需要启用 Python 解释器中的特定选项，或者如果您想从标准库中剥离运行时不需要的模块，您可能需要这样做。公文包会维护支持包的本地缓存，因此一旦下载了特定的支持包，该缓存副本将在未来的构建中使用。如上所述，当 Briefcase 将应用程序打包为本地 Linux 系统包（Linux 的默认包格式）时，支持包不会随应用程序一起提供。相反，应用程序将使用目标 Linux 发行版提供的 Python。"
 
-#: docs/en/tutorial/tutorial-3.md:120
+#: docs/en/tutorial/tutorial-3.md:119
 msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using `pip` into your application's installer."
 msgstr "它\\ **安装应用程序的依赖项**。您的应用程序可以指定运行时所需的任何第三方模块。这些模块将会被用 `pip` 安装到应用程序的安装程序中。"
 
-#: docs/en/tutorial/tutorial-3.md:122
+#: docs/en/tutorial/tutorial-3.md:121
 msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
 msgstr "它\\ **安装您的应用程序代码**。您的应用程序将有自己的代码和资源（如运行时需要的图像）；这些文件会被复制到安装程序中。"
 
-#: docs/en/tutorial/tutorial-3.md:124
+#: docs/en/tutorial/tutorial-3.md:123
 msgid "It **installed your resources needed by your application.** Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images."
 msgstr "最后，它还会\\ **添加安装程序本身所需的其他资源**。这包括需要附加到最终应用程序的图标和启动画面等。"
 
-#: docs/en/tutorial/tutorial-3.md:126
+#: docs/en/tutorial/tutorial-3.md:125
 msgid "Once this completes, if you look in the project directory, you should now see a directory corresponding to your platform (`macOS`, `linux`, or `windows`) that contains additional files. This is the platform-specific packaging configuration for your application."
 msgstr "完成上述操作后，如果查看项目目录，就会发现一个与平台（`macOS`, `linux`，或\\ `windows`）相对应的目录，其中包含附加文件。这就是应用程序的平台具体的打包配置。"
 
-#: docs/en/tutorial/tutorial-3.md:128
+#: docs/en/tutorial/tutorial-3.md:127
 msgid "Building your application"
 msgstr "构建您的应用程序"
 
-#: docs/en/tutorial/tutorial-3.md:130
+#: docs/en/tutorial/tutorial-3.md:129
 msgid "You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform."
 msgstr "现在可以编译应用程序了。此步骤将执行任何使应用程序在目标平台上可执行所必须的二进制编译。"
 
-#: docs/en/tutorial/tutorial-3.md:145
+#: docs/en/tutorial/tutorial-3.md:144
 msgid "On macOS, the `build` command doesn't need to *compile* anything, but it does need to sign the contents of binary so that it can be executed. This signature is an *ad hoc* signature - it will only work on *your* machine; if you want to distribute the application to others, you'll need to provide a full signature."
 msgstr "在 macOS 上，` build`\\ 命令不需要\\ *编译*\\ 任何内容，但需要对二进制文件的内容进行（数字）签名，以便执行。这种签名是一种\\ *临时 (ad hoc)*\\ 签名--它只能在\\ *你的*\\ 机器上工作；如果你想将应用程序发布给其他人，就需要提供完整的签名。"
 
-#: docs/en/tutorial/tutorial-3.md:175
+#: docs/en/tutorial/tutorial-3.md:174
 msgid "Once this step completes, the `build` folder will contain a `helloworld-0.0.1` folder that contains a mirror of a Linux `/usr` file system. This file system mirror will contain a `bin` folder with a `helloworld` binary, plus `lib` and `share` folders needed to support the binary."
 msgstr "此步骤完成后，[build`\\ 文件夹将包含一个\\ `helloworld-0.0.1`\\ 文件夹，其中包含一个 Linux `/usr` 文件系统的镜像。这个文件系统镜像将包含一个\\ `bin`\\ 文件夹，里面有一个\\ `helloworld`\\ 二进制文件，以及支持二进制文件所需的\\ `lib`\\ 和\\ `share`\\ 文件夹。"
 
-#: docs/en/tutorial/tutorial-3.md:188
+#: docs/en/tutorial/tutorial-3.md:187
 msgid "On Windows, the `build` command doesn't need to *compile* anything, but it does need to write some metadata so that the application knows its name, version, and so on."
 msgstr "在 Windows 上，`build` 命令不需要\\ *编译*\\ 任何东西，但它确实需要写入一些元数据，以便应用程序知道它的名称、版本等。"
 
-#: docs/en/tutorial/tutorial-3.md:190
+#: docs/en/tutorial/tutorial-3.md:189
 #, fuzzy
 msgid "/// admonition | Triggering antivirus"
 msgstr "/// admonition |触发杀毒软件"
 
-#: docs/en/tutorial/tutorial-3.md:192
+#: docs/en/tutorial/tutorial-3.md:191
 msgid "Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the `create` command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named `rcedit-x64.exe`) to run and re-run the command above."
 msgstr "由于这些元数据是在 `create` 命令中直接写入从模板推出的预编译二进制文件的，因此可能会触发机器上运行的杀毒软件，从而阻止元数据的写入。在这种情况下，请指示杀毒软件允许工具（名为 `rcedit-x64.exe`）运行，并重新运行上述命令。"
 
-#: docs/en/tutorial/tutorial-3.md:198
+#: docs/en/tutorial/tutorial-3.md:197
 msgid "Running your app"
 msgstr "运行应用程序"
 
-#: docs/en/tutorial/tutorial-3.md:200
+#: docs/en/tutorial/tutorial-3.md:199
 msgid "You can now use Briefcase to run your application:"
 msgstr "现在您可以使用 Briefcase 运行应用程序了："
 
-#: docs/en/tutorial/tutorial-3.md:279
+#: docs/en/tutorial/tutorial-3.md:278
 msgid "This will start to run your native application, using the app bundle created by the `build` command."
 msgstr "这将使用 `build` 命令的输出开始运行原生应用程序。"
 
-#: docs/en/tutorial/tutorial-3.md:281
+#: docs/en/tutorial/tutorial-3.md:280
 msgid "You might notice some small differences in the way your application looks when it's running. For example, icons and the name displayed by the operating system may be slightly different to those you saw when running under developer mode. This is also because you're using the packaged application, not just running Python code. From the operating system's perspective, you're now running \"an app\", not \"a Python program\", and this is reflected in how the application appears."
 msgstr "你可能会注意到应用程序运行时的外观有一些细微差别。例如，操作系统显示的图标和名称可能与在开发者模式下运行时略有不同。这也是因为您使用的是打包的应用程序，而不仅仅是运行 Python 代码。从操作系统的角度来看，您现在运行的是“一个应用程序”，而不是“一个 Python 程序\"”，这也反映在应用程序的显示方式上。"
 
-#: docs/en/tutorial/tutorial-3.md:283
+#: docs/en/tutorial/tutorial-3.md:282
 msgid "Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran `briefcase run`."
 msgstr "在继续之前，关闭应用程序。和之前的教程步骤一样，您可以使用应用程序窗口上的关闭按钮、从应用程序的菜单栏选择关闭/退出、或在您运行 `briefcase dev` 的命令行窗口中按 **Ctrl+C** 以关闭应用程序。"
 
-#: docs/en/tutorial/tutorial-3.md:285
+#: docs/en/tutorial/tutorial-3.md:284
 msgid "Building your installer"
 msgstr "创建安装程序"
 
-#: docs/en/tutorial/tutorial-3.md:287
+#: docs/en/tutorial/tutorial-3.md:286
 msgid "You can now package your application for distribution, using the `package` command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks."
 msgstr "现在，您可以使用 `package` 命令打包应用程序，以便发布。打包命令会执行将脚手架项目转换为最终可发布产品所需的编译工作。根据平台的不同，这可能涉及编译安装程序、执行代码签名或执行其他发布前任务。"
 
-#: docs/en/tutorial/tutorial-3.md:320
+#: docs/en/tutorial/tutorial-3.md:319
 #, fuzzy
 msgid "The `dist` folder will contain a file named `Hello World-0.0.1.dmg`. If you locate this file in the Finder, and double-click on its icon, you'll mount the DMG, giving you a copy of the Hello World app, and a link to your Applications folder for easy installation. Drag the app file into Applications, and you've installed your application. Send the DMG file to a friend, and they should be able to do the same."
 msgstr "`dist` 文件夹将包含一个名为 `Hello World-0.0.1.dmg` 的文件。如果在 Finder 中找到该文件，并双击其图标，就会加载 DMG，从而获得 Hello World 应用程序的副本，并链接到 `Applications` 文件夹以方便安装。将应用程序文件拖入 Applications，就安装好了应用程序。将 DMG 文件发送给朋友，他们应该也能完成同样的操作。"
 
-#: docs/en/tutorial/tutorial-3.md:322
+#: docs/en/tutorial/tutorial-3.md:321
 msgid "In this example, we've used the `--adhoc-sign` option - that is, we're signing our application with *ad hoc* credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials."
 msgstr "在本例中，我们使用了 `--adhoc-sign` 选项--也就是说，我们使用 *ad hoc* 凭据（仅在你的机器上有效的临时凭据）来签署我们的应用程序。我们这样做是为了让教程简单明了。设置代码签名身份有点麻烦，而且只有当你打算将应用程序发布给他人时\\ *才*\\ 需要。如果我们要发布一个真正的应用程序供他人使用，我们就需要指定真实的凭据。"
 
-#: docs/en/tutorial/tutorial-3.md:324
+#: docs/en/tutorial/tutorial-3.md:323
 #, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a macOS code signing identity]{1}."
 msgstr "当你准备发布一个真正的应用程序时，请查看公文包操作指南中的 [设置 macOS 代码签名身份]{1}。"
 
-#: docs/en/tutorial/tutorial-3.md:330
+#: docs/en/tutorial/tutorial-3.md:329
 msgid "The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:"
 msgstr "软件包步骤的输出会因 Linux 发行版的不同而略有不同。如果你使用的是 Debian 衍生发行版，你会看到:"
 
-#: docs/en/tutorial/tutorial-3.md:350
+#: docs/en/tutorial/tutorial-3.md:349
 msgid "The `dist` folder will contain the `.deb` file that was generated."
 msgstr "`dist` 文件夹将包含生成的 `.deb` 文件。"
 
-#: docs/en/tutorial/tutorial-3.md:352
+#: docs/en/tutorial/tutorial-3.md:351
 msgid "If you're on a RHEL-based distribution, you'll see:"
 msgstr "如果你使用的是基于 RHEL 的发行版，你就会看到："
 
-#: docs/en/tutorial/tutorial-3.md:379
+#: docs/en/tutorial/tutorial-3.md:378
 msgid "The `dist` folder will contain the `.rpm` file that was generated."
 msgstr "`dist` 文件夹将包含生成的 `.rpm` 文件。"
 
-#: docs/en/tutorial/tutorial-3.md:381
+#: docs/en/tutorial/tutorial-3.md:380
 msgid "If you're on an Arch-based distribution, you'll see:"
 msgstr "如果你使用的是基于 Arch 的发行版，你就会看到："
 
-#: docs/en/tutorial/tutorial-3.md:399
+#: docs/en/tutorial/tutorial-3.md:398
 msgid "The `dist` folder will contain the `.pkg.tar.zst` file that was generated."
 msgstr "`dist` 文件夹将包含生成的 `.pkg.tar.zst` 文件。"
 
-#: docs/en/tutorial/tutorial-3.md:401
+#: docs/en/tutorial/tutorial-3.md:400
 msgid "Other Linux distributions aren't currently supported for packaging."
 msgstr "目前不支持其他 Linux 发行版的打包。"
 
-#: docs/en/tutorial/tutorial-3.md:403
+#: docs/en/tutorial/tutorial-3.md:402
 msgid "If you want to build a package for a Linux distribution other than the one you're using, Briefcase can also help - but you'll need to install Docker."
 msgstr "如果你想为你正在使用的 Linux 发行版之外的其他发行版构建软件包，Briefcase 也能提供帮助，但你需要安装 Docker。"
 
-#: docs/en/tutorial/tutorial-3.md:405
+#: docs/en/tutorial/tutorial-3.md:404
 msgid "Official installers for [Docker Engine]{1} are available for a range of Unix distributions. Follow the instructions for your platform; however, ensure you don't install Docker in \"rootless\" mode."
 msgstr "[Docker Engine]{1} 的官方安装程序适用于一系列 Unix 发行版。请按照您所在平台的说明进行操作；不过，请确保不要在 rootless 模式下安装 Docker。"
 
-#: docs/en/tutorial/tutorial-3.md:407
+#: docs/en/tutorial/tutorial-3.md:406
 msgid "Once you've installed Docker, you should be able to start an Linux container - for example:"
 msgstr "安装好 Docker 后，你就可以启动 Linux 容器了，例如:"
 
-#: docs/en/tutorial/tutorial-3.md:413
+#: docs/en/tutorial/tutorial-3.md:412
 msgid "will show you a Unix prompt (something like `root@84444e31cff9:/#`) inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to your local shell."
 msgstr "将显示 Ubuntu 22.04 Docker 容器中的 Unix 提示符（类似于 `root@84444e31cff9:/#`）。键入 Ctrl-D 退出 Docker 并返回本地 shell。"
 
-#: docs/en/tutorial/tutorial-3.md:415
+#: docs/en/tutorial/tutorial-3.md:414
 msgid "Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:"
 msgstr "一旦安装了 Docker，只要将 Docker 镜像作为参数传递，就可以使用 Briefcase 为 Briefcase 支持的任何 Linux 发行版构建软件包。例如，要为 Ubuntu 22.04 (Jammy) 构建一个 DEB 包，无论你使用的是哪种操作系统，你都可以运行:"
 
-#: docs/en/tutorial/tutorial-3.md:421
+#: docs/en/tutorial/tutorial-3.md:420
 msgid "This will download the Docker image for your selected operating system, create a container that is able to run Briefcase builds, and build the app package inside the image. Once it's completed, the `dist` folder will contain the package for the target Linux distribution."
 msgstr "这将下载所选操作系统的 Docker 镜像，创建一个能够运行 Briefcase 构建的容器，并在镜像中构建应用程序软件包。完成后，`dist` 文件夹将包含目标 Linux 发行版的软件包。"
 
-#: docs/en/tutorial/tutorial-3.md:455
+#: docs/en/tutorial/tutorial-3.md:454
 msgid "In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate."
 msgstr "在本例中，我们没有签署我们的应用程序。因此，当您使用安装程序时，您将收到系统警告，该应用程序来自未知开发人员。我们这样做是为了保持教程的简单性。设置代码签名身份比较复杂，只有当您打算将您的应用程序分发给其他人时，它们才*需要*。如果我们发布一个真实的应用程序供其他人使用，我们需要指定一个真实的签名身份；当该签名的应用程序安装时，系统将通知用户该应用程序来自与证书关联的已知身份。"
 
-#: docs/en/tutorial/tutorial-3.md:457
+#: docs/en/tutorial/tutorial-3.md:456
 #, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a Windows code signing identity]{1}."
 msgstr "当您准备发布实际应用程序时，请查看公文包操作指南中的 [设置 Windows 代码签名身份]{1}。"
 
-#: docs/en/tutorial/tutorial-3.md:459
+#: docs/en/tutorial/tutorial-3.md:458
 msgid "Once this step completes, the `dist` folder will contain a file named `Hello_World-0.0.1.msi`. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
 msgstr "此步骤完成后，`dist` 文件夹中将包含一个名为 `Hello_World-0.0.1.msi`` 的文件。如果双击运行该安装程序，就会进入熟悉的 Windows 安装过程。安装完成后，开始菜单中将出现 \"Hello World \"条目。"
 
-#: docs/en/tutorial/tutorial-3.md:465
+#: docs/en/tutorial/tutorial-3.md:464
 #, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to [Tutorial 4]{1} to find out..."
 msgstr "现在，我们已将应用程序打包发布到桌面平台上。但是，当我们需要更新应用程序中的代码时该怎么办？我们如何将这些更新添加到打包的应用程序中？请参阅 [教程 4]{1} 了解详情..."
