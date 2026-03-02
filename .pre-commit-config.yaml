@@ -10,7 +10,7 @@ repos:
         exclude: "locales"
       - id: trailing-whitespace
   - repo: https://github.com/rvben/rumdl-pre-commit
-    rev: v0.1.9
+    rev: v0.1.33
     hooks:
       - id: rumdl
         args: []
