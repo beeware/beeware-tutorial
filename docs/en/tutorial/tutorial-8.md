@@ -193,9 +193,9 @@ async def say_hello(self, widget):
 
 There are only three changes to this callback from the previous version:
 
-1. The client that is created is an asynchronous `AsyncClient()`,  rather than a synchronous `Client()`. This tells `httpx` that it  should operate in asynchronous mode, rather than synchronous mode.
-2. The context manager used to create the client is marked as `async`.  This tells Python that there is an opportunity to release control as  the context manager is entered and exited.
-3. The `get` call is made with an `await` keyword. This instructs the  app that while we are waiting for the response from the network, the  app can release control to the event loop. We've seen this keyword  before - we also use `await` when displaying the dialog box. The  reason for that usage is the same as it is for the HTTP request - we  need to tell the app that while the dialog is displayed, and we're  waiting for the user to push a button, it's OK to release control  back to the event loop.
+1. The client that is created is an asynchronous `AsyncClient()`, rather than a synchronous `Client()`. This tells `httpx` that it should operate in asynchronous mode, rather than synchronous mode.
+2. The context manager used to create the client is marked as `async`. This tells Python that there is an opportunity to release control as the context manager is entered and exited.
+3. The `get` call is made with an `await` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop. We've seen this keyword before - we also use `await` when displaying the dialog box. The reason for that usage is the same as it is for the HTTP request - we need to tell the app that while the dialog is displayed, and we're waiting for the user to push a button, it's OK to release control back to the event loop.
 
 It's also important to note that the handler itself is defined as `async def`, rather than just `def`. This tells Python that the method is an asynchronous coroutine. We made this change back in Tutorial 3 when we added the dialog box. You can only use `await` statements inside a method that is declared as `async def`.
 
