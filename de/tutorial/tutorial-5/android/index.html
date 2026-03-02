@@ -22,7 +22,7 @@
 
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="de" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -30,13 +30,13 @@
       
       
       
-        <link rel="canonical" href="https://tutorial.beeware.org/tutorial/tutorial-3/">
+        <link rel="canonical" href="https://tutorial.beeware.org/de/tutorial/tutorial-5/android/">
       
       
-        <link rel="prev" href="../tutorial-2/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../tutorial-4/">
+        <link rel="next" href="../iOS/">
       
       
         
@@ -58,26 +58,26 @@
         
       
       
-      <link rel="icon" href="../../assets/images/brutus-256.png">
+      <link rel="icon" href="../../../assets/images/brutus-256.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
-        <title>Tutorial 3 - Packaging for distribution - BeeWare Tutorial</title>
+        <title>Tutorial 5 - Mobiles Arbeiten: Android - BeeWare Tutorial</title>
       
     
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
 
     
-    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/beeware_theme.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/stylesheets/beeware_theme.css">
 
     
       
@@ -95,7 +95,7 @@
     <script src="https://kit.fontawesome.com/9a40a729b9.js" crossorigin="anonymous"></script>
 
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -120,8 +120,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-3-packaging-for-distribution" class="md-skip">
-          Skip to content
+        <a href="#tutorial-5-mobiles-arbeiten-android" class="md-skip">
+          Zum Inhalt
         </a>
       
     </div>
@@ -162,19 +162,19 @@
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
 <nav
 class="md-header__inner md-grid"
-aria-label="Header"
+aria-label="Kopfzeile"
 >
 
     <!-- Link to home -->
     <a
-      href="../.."
+      href="../../.."
       title="BeeWare Tutorial"
       class="md-header__button md-logo"
       aria-label="BeeWare Tutorial"
       data-md-component="logo"
     >
       <!-- include "partials/logo.html" Modified content is included here. -->
-          <img src="../../assets/images/brutus-256.png" alt="Logo" />
+          <img src="../../../assets/images/brutus-256.png" alt="Logo" />
 
     </a>
 
@@ -187,7 +187,7 @@ aria-label="Header"
     <!-- Header title -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
-      <a href="../.."
+      <a href="../../.."
          title="BeeWare Tutorial">
         <div class="md-header__topic">
           <span class="md-ellipsis">
@@ -200,40 +200,40 @@ aria-label="Header"
 
     <nav
       class="md-tabs"
-      aria-label="Tabs"
+      aria-label="Hauptnavigation"
       data-md-component="tabs"
     >
   <div class="md-grid">
     <ul class="md-tabs__list">
     
     <li class="md-tabs__item">
-      <a href="https://beeware.org/about" class="md-tabs__link">
-          About
+      <a href="https://beeware.org/de/about" class="md-tabs__link">
+          Über
       </a>
     </li>
     <li class="md-tabs__item md-tabs__item--active">
-      <a href="https://beeware.org/docs" class="md-tabs__link">
-          Documentation
+      <a href="https://beeware.org/de/docs" class="md-tabs__link">
+          Dokumentation
       </a>
     </li>
     <li class="md-tabs__item">
-      <a href="https://beeware.org/community" class="md-tabs__link">
-          Community
+      <a href="https://beeware.org/de/community" class="md-tabs__link">
+          Verbund
       </a>
     </li>
     <li class="md-tabs__item">
-      <a href="https://beeware.org/contributing" class="md-tabs__link">
-          Contributing
+      <a href="https://beeware.org/de/contributing" class="md-tabs__link">
+          Mithelfen
       </a>
     </li>
     <li class="md-tabs__item">
-      <a href="https://beeware.org/news" class="md-tabs__link">
-          News
+      <a href="https://beeware.org/de/news" class="md-tabs__link">
+          Neuigkeiten
       </a>
     </li>
     <li class="md-tabs__item">
-      <a href="https://beeware.org/membership" class="md-tabs__link">
-          Sponsor
+      <a href="https://beeware.org/de/membership" class="md-tabs__link">
+          Fördern
       </a>
     </li>
     
@@ -293,56 +293,56 @@ aria-label="Header"
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Select language">
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../../tutorial/tutorial-3/" hreflang="en" class="md-select__link">
+            <a href="../../../../tutorial/tutorial-5/android/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../de/tutorial/tutorial-3/" hreflang="de" class="md-select__link">
+            <a href="../../../../de/tutorial/tutorial-5/android/" hreflang="de" class="md-select__link">
               Deutsch
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../es/tutorial/tutorial-3/" hreflang="es" class="md-select__link">
+            <a href="../../../../es/tutorial/tutorial-5/android/" hreflang="es" class="md-select__link">
               Español
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../fr/tutorial/tutorial-3/" hreflang="fr" class="md-select__link">
+            <a href="../../../../fr/tutorial/tutorial-5/android/" hreflang="fr" class="md-select__link">
               Français
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../it/tutorial/tutorial-3/" hreflang="it" class="md-select__link">
+            <a href="../../../../it/tutorial/tutorial-5/android/" hreflang="it" class="md-select__link">
               Italiano
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../pt/tutorial/tutorial-3/" hreflang="pt" class="md-select__link">
+            <a href="../../../../pt/tutorial/tutorial-5/android/" hreflang="pt" class="md-select__link">
               Português
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../zh_CN/tutorial/tutorial-3/" hreflang="zh-Hant" class="md-select__link">
+            <a href="../../../../zh_CN/tutorial/tutorial-5/android/" hreflang="zh-Hant" class="md-select__link">
               中文(简体)
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../zh_TW/tutorial/tutorial-3/" hreflang="zh-TW" class="md-select__link">
+            <a href="../../../../zh_TW/tutorial/tutorial-5/android/" hreflang="zh-TW" class="md-select__link">
               中文(繁體)
             </a>
           </li>
@@ -369,21 +369,21 @@ aria-label="Header"
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Suche">
         
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Teilen" aria-label="Teilen" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
           </a>
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -396,7 +396,7 @@ aria-label="Header"
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Suche wird initialisiert
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -459,7 +459,7 @@ aria-label="Header"
   <!-- Site title -->
   <label class="md-nav__title small" for="__drawer">
     <a
-    href="../.."
+    href="../../.."
     title="BeeWare Tutorial"
     class="md-nav__button md-logo"
     aria-label="BeeWare Tutorial"
@@ -468,7 +468,7 @@ aria-label="Header"
         <div class="sidebar-title-block">
             <div class="sidebar-logo">
             
-  <img src="../../assets/images/brutus-256.png" alt="logo">
+  <img src="../../../assets/images/brutus-256.png" alt="logo">
 
             </div>
             <div class="sidebar-title-block-name">
@@ -514,7 +514,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-0/" class="md-nav__link">
+      <a href="../../tutorial-0/" class="md-nav__link">
         
   
 
@@ -527,7 +527,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 0 - Let's get set up!
+    Tutorial 0 - Erstinstallation!
   
 
 
@@ -559,7 +559,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-1/" class="md-nav__link">
+      <a href="../../tutorial-1/" class="md-nav__link">
         
   
 
@@ -572,7 +572,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 1 - Your first app
+    Tutorial 1 - Ihre erste App
   
 
 
@@ -604,7 +604,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-2/" class="md-nav__link">
+      <a href="../../tutorial-2/" class="md-nav__link">
         
   
 
@@ -617,7 +617,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 2 - Making it interesting
+    Tutorial 2 - Es wird interessant
   
 
 
@@ -638,6 +638,228 @@ aria-label="Header"
     
       
       
+
+  <!-- Determine classes -->
+  
+  
+
+  <!-- Determine active page for paginated views -->
+  
+
+  <!-- Navigation item with nested items -->
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial-3/" class="md-nav__link">
+        
+  
+
+  <!-- Navigation link icon -->
+  
+
+  <!-- Navigation link title -->
+  <span class="md-ellipsis">
+    
+
+  <!-- Typeset title -->
+  
+    Tutorial 3 - Verpackung für den Vertrieb
+  
+
+
+    <!-- Navigation link subtitle -->
+    
+  </span>
+
+  <!-- Navigation link to encrypted content -->
+  
+
+  <!-- Navigation link status -->
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+
+  <!-- Determine classes -->
+  
+  
+
+  <!-- Determine active page for paginated views -->
+  
+
+  <!-- Navigation item with nested items -->
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial-4/" class="md-nav__link">
+        
+  
+
+  <!-- Navigation link icon -->
+  
+
+  <!-- Navigation link title -->
+  <span class="md-ellipsis">
+    
+
+  <!-- Typeset title -->
+  
+    Tutorial 4 - Aktualisieren Ihrer Anwendung
+  
+
+
+    <!-- Navigation link subtitle -->
+    
+  </span>
+
+  <!-- Navigation link to encrypted content -->
+  
+
+  <!-- Navigation link status -->
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+
+  <!-- Determine classes -->
+  
+  
+    
+  
+
+  <!-- Determine active page for paginated views -->
+  
+
+  <!-- Navigation item with nested items -->
+  
+
+    <!-- Determine all nested items that are index pages -->
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+
+
+    <!-- Navigation sections originally interacted with tabs in an undesirable way. -->
+    <!-- sections is only enabled on the website, so this is only necessary there. -->
+    
+
+    <!-- Navigation pruning -->
+    
+
+
+    <!-- Nested navigation item -->
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+
+        <!-- Determine checked and indeterminate state -->
+        
+
+        <!-- Active checkbox expands items contained within nested section -->
+        <input
+          class="md-nav__toggle md-toggle "
+          type="checkbox"
+          id="__nav_6"
+          checked
+        />
+
+        <!-- Toggle to expand nested items -->
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a
+              href="../"
+              class="md-nav__link "
+            >
+              
+  
+
+  <!-- Navigation link icon -->
+  
+
+  <!-- Navigation link title -->
+  <span class="md-ellipsis">
+    
+
+  <!-- Typeset title -->
+  
+    Tutorial 5 - Mobil nutzen
+  
+
+
+    <!-- Navigation link subtitle -->
+    
+  </span>
+
+  <!-- Navigation link to encrypted content -->
+  
+
+  <!-- Navigation link status -->
+  
+
+            </a>
+
+            <!-- Only render toggle if there's at least one more page -->
+            
+              
+              <label
+                class="md-nav__link "
+                for="__nav_6"
+                id="__nav_6_label"
+                tabindex="0"
+              >
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+
+        <!-- Nested navigation -->
+        <nav
+          class="md-nav"
+          data-md-level="1"
+          aria-labelledby="__nav_6_label"
+          aria-expanded="true"
+        >
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+
+  <!-- Typeset title -->
+  
+    Tutorial 5 - Mobil nutzen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+
+            <!-- Nested navigation item -->
+              
+              
+              
+            
+              
+            
+              
+                
 
   <!-- Determine classes -->
   
@@ -681,7 +903,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 3 - Packaging for distribution
+    Tutorial 5 - Mobiles Arbeiten: Android
   
 
 
@@ -714,7 +936,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 3 - Packaging for distribution
+    Tutorial 5 - Mobiles Arbeiten: Android
   
 
 
@@ -784,10 +1006,10 @@ aria-label="Header"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-your-application-scaffold" class="md-nav__link">
+  <a href="#eine-android-app-erstellen-und-kompilieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating your application scaffold
+        Eine Android-App erstellen und kompilieren
       
     </span>
   </a>
@@ -795,10 +1017,10 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-your-application" class="md-nav__link">
+  <a href="#ausfuhren-der-anwendung-auf-einem-virtuellen-gerat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Building your application
+        Ausführen der Anwendung auf einem virtuellen Gerät
       
     </span>
   </a>
@@ -806,10 +1028,10 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-your-app" class="md-nav__link">
+  <a href="#ausfuhren-der-app-auf-einem-physischen-gerat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Running your app
+        Ausführen der App auf einem physischen Gerät
       
     </span>
   </a>
@@ -817,21 +1039,10 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-your-installer" class="md-nav__link">
+  <a href="#nachste-schritte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Building your installer
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next steps
+        Nächste Schritte
       
     </span>
   </a>
@@ -848,180 +1059,6 @@ aria-label="Header"
   <!-- Navigation item -->
   
 
-    
-      
-      
-
-  <!-- Determine classes -->
-  
-  
-
-  <!-- Determine active page for paginated views -->
-  
-
-  <!-- Navigation item with nested items -->
-  
-    <li class="md-nav__item">
-      <a href="../tutorial-4/" class="md-nav__link">
-        
-  
-
-  <!-- Navigation link icon -->
-  
-
-  <!-- Navigation link title -->
-  <span class="md-ellipsis">
-    
-
-  <!-- Typeset title -->
-  
-    Tutorial 4 - Updating your application
-  
-
-
-    <!-- Navigation link subtitle -->
-    
-  </span>
-
-  <!-- Navigation link to encrypted content -->
-  
-
-  <!-- Navigation link status -->
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-
-  <!-- Determine classes -->
-  
-  
-
-  <!-- Determine active page for paginated views -->
-  
-
-  <!-- Navigation item with nested items -->
-  
-
-    <!-- Determine all nested items that are index pages -->
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
-    
-
-
-    <!-- Navigation sections originally interacted with tabs in an undesirable way. -->
-    <!-- sections is only enabled on the website, so this is only necessary there. -->
-    
-
-    <!-- Navigation pruning -->
-    
-
-
-    <!-- Nested navigation item -->
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-
-        <!-- Determine checked and indeterminate state -->
-        
-
-        <!-- Active checkbox expands items contained within nested section -->
-        <input
-          class="md-nav__toggle md-toggle "
-          type="checkbox"
-          id="__nav_6"
-          
-        />
-
-        <!-- Toggle to expand nested items -->
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a
-              href="../tutorial-5/"
-              class="md-nav__link "
-            >
-              
-  
-
-  <!-- Navigation link icon -->
-  
-
-  <!-- Navigation link title -->
-  <span class="md-ellipsis">
-    
-
-  <!-- Typeset title -->
-  
-    Tutorial 5 - Taking it mobile
-  
-
-
-    <!-- Navigation link subtitle -->
-    
-  </span>
-
-  <!-- Navigation link to encrypted content -->
-  
-
-  <!-- Navigation link status -->
-  
-
-            </a>
-
-            <!-- Only render toggle if there's at least one more page -->
-            
-              
-              <label
-                class="md-nav__link "
-                for="__nav_6"
-                id="__nav_6_label"
-                tabindex="0"
-              >
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-
-        <!-- Nested navigation -->
-        <nav
-          class="md-nav"
-          data-md-level="1"
-          aria-labelledby="__nav_6_label"
-          aria-expanded="false"
-        >
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-
-  <!-- Typeset title -->
-  
-    Tutorial 5 - Taking it mobile
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-
-            <!-- Nested navigation item -->
-              
-              
-              
-            
               
             
               
@@ -1037,7 +1074,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-5/android/" class="md-nav__link">
+      <a href="../iOS/" class="md-nav__link">
         
   
 
@@ -1050,53 +1087,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Taking it mobile: Android
-  
-
-
-    <!-- Navigation link subtitle -->
-    
-  </span>
-
-  <!-- Navigation link to encrypted content -->
-  
-
-  <!-- Navigation link status -->
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-
-  <!-- Determine classes -->
-  
-  
-
-  <!-- Determine active page for paginated views -->
-  
-
-  <!-- Navigation item with nested items -->
-  
-    <li class="md-nav__item">
-      <a href="../tutorial-5/iOS/" class="md-nav__link">
-        
-  
-
-  <!-- Navigation link icon -->
-  
-
-  <!-- Navigation link title -->
-  <span class="md-ellipsis">
-    
-
-  <!-- Typeset title -->
-  
-    Tutorial 5 - Taking it mobile: iOS
+    Tutorial 5 – Mobil nutzen: iOS
   
 
 
@@ -1140,7 +1131,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-6/" class="md-nav__link">
+      <a href="../../tutorial-6/" class="md-nav__link">
         
   
 
@@ -1153,7 +1144,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 6 - Put it on the web!
+    Tutorial 6 - Ins Netz stellen!
   
 
 
@@ -1185,7 +1176,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-7/" class="md-nav__link">
+      <a href="../../tutorial-7/" class="md-nav__link">
         
   
 
@@ -1198,7 +1189,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 7 - Get this (third-)party started
+    Tutorial 7 – Starten Sie diese (Dritt-)Anwendung
   
 
 
@@ -1230,7 +1221,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-8/" class="md-nav__link">
+      <a href="../../tutorial-8/" class="md-nav__link">
         
   
 
@@ -1243,7 +1234,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 8 - Making it Smooooth
+    Tutorial 8 – Damit alles glatt läuft
   
 
 
@@ -1322,7 +1313,7 @@ aria-label="Header"
           
           <div class="md-nav__link md-nav__container">
             <a
-              href="../topics/"
+              href="../../topics/"
               class="md-nav__link "
             >
               
@@ -1337,7 +1328,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Going further
+    Weiterführende Informationen
   
 
 
@@ -1381,7 +1372,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Going further
+    Weiterführende Informationen
   
 
           </label>
@@ -1407,7 +1398,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../topics/custom-icons/" class="md-nav__link">
+      <a href="../../topics/custom-icons/" class="md-nav__link">
         
   
 
@@ -1420,7 +1411,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Customizing icons
+    Symbole anpassen
   
 
 
@@ -1453,7 +1444,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../topics/camera-access/" class="md-nav__link">
+      <a href="../../topics/camera-access/" class="md-nav__link">
         
   
 
@@ -1466,7 +1457,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Using the camera
+    Kameranutzung
   
 
 
@@ -1499,7 +1490,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../topics/testing/" class="md-nav__link">
+      <a href="../../topics/testing/" class="md-nav__link">
         
   
 
@@ -1512,7 +1503,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Testing times
+    Prüfzeiten
   
 
 
@@ -1606,10 +1597,10 @@ aria-label="Header"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-your-application-scaffold" class="md-nav__link">
+  <a href="#eine-android-app-erstellen-und-kompilieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating your application scaffold
+        Eine Android-App erstellen und kompilieren
       
     </span>
   </a>
@@ -1617,10 +1608,10 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-your-application" class="md-nav__link">
+  <a href="#ausfuhren-der-anwendung-auf-einem-virtuellen-gerat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Building your application
+        Ausführen der Anwendung auf einem virtuellen Gerät
       
     </span>
   </a>
@@ -1628,10 +1619,10 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-your-app" class="md-nav__link">
+  <a href="#ausfuhren-der-app-auf-einem-physischen-gerat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Running your app
+        Ausführen der App auf einem physischen Gerät
       
     </span>
   </a>
@@ -1639,21 +1630,10 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-your-installer" class="md-nav__link">
+  <a href="#nachste-schritte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Building your installer
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next steps
+        Nächste Schritte
       
     </span>
   </a>
@@ -1678,50 +1658,22 @@ aria-label="Header"
 
 
 
-<h1 id="tutorial-3-packaging-for-distribution">Tutorial 3 - Packaging for distribution<a class="headerlink" href="#tutorial-3-packaging-for-distribution" title="Permanent link">&para;</a></h1>
-<p>So far, we've been running our application in "Developer mode". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others.</p>
-<p>However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work.</p>
-<p>Briefcase can be used to package your application for distribution in this way.</p>
-<h2 id="creating-your-application-scaffold">Creating your application scaffold<a class="headerlink" href="#creating-your-application-scaffold" title="Permanent link">&para;</a></h2>
-<p>Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the <code>helloworld</code> directory, run:</p>
+<h1 id="tutorial-5-mobiles-arbeiten-android">Tutorial 5 - Mobiles Arbeiten: Android<a class="headerlink" href="#tutorial-5-mobiles-arbeiten-android" title="Permanent link">&para;</a></h1>
+<p>Jetzt nehmen wir unsere Anwendung und stellen sie als Android-Anwendung bereit.</p>
+<p>Der Prozess der Bereitstellung einer Anwendung für Android ist dem Prozess der
+Bereitstellung als Desktop-Anwendung sehr ähnlich. Briefcase übernimmt die
+Installation von Abhängigkeiten für Android, einschließlich des Android SDK, des
+Android-Emulators und eines Java-Compilers.</p>
+<h2 id="eine-android-app-erstellen-und-kompilieren">Eine Android-App erstellen und kompilieren<a class="headerlink" href="#eine-android-app-erstellen-und-kompilieren" title="Permanent link">&para;</a></h2>
+<p>Zuerst führen Sie den Befehl <code>create</code> aus. Dies lädt eine Android-App-Vorlage
+herunter und fügt Ihren Python-Code hinzu.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>android
 
 <span class="go">[helloworld] Generating application template...</span>
-<span class="go">Using app template: https://github.com/beeware/briefcase-macOS-app-template.git, branch v0.3.18</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Installing support package...</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Installing application code...</span>
-<span class="go">Installing src/helloworld... done</span>
-
-<span class="go">[helloworld] Installing requirements...</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Installing application resources...</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
-
-<span class="go">[helloworld] Created build/helloworld/macos/app</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
-
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
-
-<span class="go">[helloworld] Generating application template...</span>
-<span class="go">Using app template: https://github.com/beeware/briefcase-linux-AppImage-template.git, branch v0.3.18</span>
+<span class="go">Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.18</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Installing support package...</span>
@@ -1731,7 +1683,7 @@ aria-label="Header"
 <span class="go">Installing src/helloworld... done</span>
 
 <span class="go">[helloworld] Installing requirements...</span>
-<span class="go">...</span>
+<span class="go">Writing requirements file... done</span>
 
 <span class="go">[helloworld] Installing application resources...</span>
 <span class="go">...</span>
@@ -1739,332 +1691,311 @@ aria-label="Header"
 <span class="go">[helloworld] Removing unneeded app content...</span>
 <span class="go">Removing unneeded app bundle content... done</span>
 
-<span class="go">[helloworld] Created build/helloworld/linux/ubuntu/jammy</span>
+<span class="go">[helloworld] Created build/helloworld/android/gradle</span>
 </code></pre></div>
-<div class="admonition">
-<p class="admonition-title">Errors about Python versions</p>
-<p>If you receive an error that reads something like:</p>
-<blockquote>
-<p>The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10).</p>
-</blockquote>
-<p>You will need to recreate your virtual environment using the system <code>python3</code>. Using the system Python is a requirement for packaging your application.</p>
-</div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>android
 
 <span class="go">[helloworld] Generating application template...</span>
-<span class="go">Using app template: https://github.com/beeware/briefcase-windows-app-template.git, branch v0.3.18</span>
+<span class="go">Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.18</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Installing support package...</span>
-<span class="go">...</span>
+<span class="go">No support package required.</span>
 
 <span class="go">[helloworld] Installing application code...</span>
 <span class="go">Installing src/helloworld... done</span>
 
 <span class="go">[helloworld] Installing requirements...</span>
-<span class="go">...</span>
+<span class="go">Writing requirements file... done</span>
 
 <span class="go">[helloworld] Installing application resources...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Created build\helloworld\windows\app</span>
+<span class="go">[helloworld] Removing unneeded app content...</span>
+<span class="go">Removing unneeded app bundle content... done</span>
+
+<span class="go">[helloworld] Created build/helloworld/android/gradle</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create android
+
+<span class="go">[helloworld] Generating application template...</span>
+<span class="go">Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.18</span>
+<span class="go">...</span>
+
+<span class="go">[helloworld] Installing support package...</span>
+<span class="go">No support package required.</span>
+
+<span class="go">[helloworld] Installing application code...</span>
+<span class="go">Installing src/helloworld... done</span>
+
+<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">Writing requirements file... done</span>
+
+<span class="go">[helloworld] Installing application resources...</span>
+<span class="go">...</span>
+
+<span class="go">[helloworld] Removing unneeded app content...</span>
+<span class="go">Removing unneeded app bundle content... done</span>
+
+<span class="go">[helloworld] Created build\helloworld\android\gradle</span>
 </code></pre></div>
 </div>
 </div>
 </div>
-<p>You've probably just seen pages of content go past in your terminal&hellip; so what just happened? Briefcase has done the following:</p>
-<ol>
-<li>
-<p>It <strong>generated an application template</strong>. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on. If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template.</p>
-</li>
-<li>
-<p>It <strong>downloaded and installed a support package</strong>. The packaging approach taken by Briefcase is best described as "the simplest thing that could possibly work" - it ships a complete, isolated Python interpreter as part of every application it builds (except for Linux native system package builds). This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application. Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime. Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds. As noted above, when Briefcase packages an app as a native Linux system package (the default package format for Linux), a support package is not included with the app. Instead, the app will use the Python that is provided by the distribution of Linux being targeted.</p>
-</li>
-<li>
-<p>It <strong>installed application requirements</strong>. Your application can specify any third-party modules that are required at runtime. These will be installed using <code>pip</code> into your application's installer.</p>
-</li>
-<li>
-<p>It <strong>Installed your application code</strong>. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer.</p>
-</li>
-<li>
-<p>It <strong>installed your resources needed by your application.</strong> Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images.</p>
-</li>
-</ol>
-<p>Once this completes, if you look in the project directory, you should now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or <code>windows</code>) that contains additional files. This is the platform-specific packaging configuration for your application.</p>
-<h2 id="building-your-application">Building your application<a class="headerlink" href="#building-your-application" title="Permanent link">&para;</a></h2>
-<p>You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform.</p>
+<p>Wenn Sie <code>briefcase create android</code> zum ersten Mal ausführen, lädt Briefcase ein
+Java JDK und das Android SDK herunter. Die Dateigrößen und Downloadzeiten können
+beträchtlich sein; dies kann eine Weile dauern (10 Minuten oder länger, abhängig
+von der Geschwindigkeit Ihrer Internetverbindung). Wenn der Download
+abgeschlossen ist, werden Sie aufgefordert, die Android-SDK-Lizenz von Google zu
+akzeptieren.</p>
+<p>Sobald dies abgeschlossen ist, haben wir in unserem Projekt ein Verzeichnis
+<code>build\helloworld\android\gradle</code>, das ein Android-Projekt mit einer
+Gradle-Build-Konfiguration enthält. Dieses Projekt enthält Ihren Anwendungscode
+und ein Support-Paket, das den Python-Interpreter enthält.</p>
+<p>Wir können dann den Befehl <code>build</code> von Briefcase verwenden, um diese in eine
+Android APK App-Datei zu kompilieren.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>android
 
-<span class="go">[helloworld] Adhoc signing app...</span>
+<span class="go">[helloworld] Updating app metadata...</span>
+<span class="go">Setting main module... done</span>
+
+<span class="go">[helloworld] Building Android APK...</span>
+<span class="go">Starting a Gradle Daemon</span>
 <span class="go">...</span>
-<span class="go">Signing build/helloworld/macos/app/Hello World.app</span>
-<span class="go">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07</span>
+<span class="go">BUILD SUCCESSFUL in 1m 1s</span>
+<span class="go">28 actionable tasks: 17 executed, 11 up-to-date</span>
+<span class="go">Building... done</span>
 
-<span class="go">[helloworld] Built build/helloworld/macos/app/Hello World.app</span>
+<span class="go">[helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk</span>
 </code></pre></div>
-<p>On macOS, the <code>build</code> command doesn't need to <em>compile</em> anything, but it does need to sign the contents of binary so that it can be executed. This signature is an <em>ad hoc</em> signature - it will only work on <em>your</em> machine; if you want to distribute the application to others, you'll need to provide a full signature.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>android
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">[helloworld] Updating app metadata...</span>
+<span class="go">Setting main module... done</span>
 
-<span class="go">[helloworld] Building application...</span>
-<span class="go">Build bootstrap binary...</span>
-<span class="go">make: Entering directory &#39;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap&#39;</span>
+<span class="go">[helloworld] Building Android APK...</span>
+<span class="go">Starting a Gradle Daemon</span>
 <span class="go">...</span>
-<span class="go">make: Leaving directory &#39;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap&#39;</span>
-<span class="go">Building bootstrap binary... done</span>
-<span class="go">Installing license... done</span>
-<span class="go">Installing changelog... done</span>
-<span class="go">Installing man page... done</span>
-<span class="go">Updating file permissions... done</span>
-<span class="go">Stripping binary... done</span>
+<span class="go">BUILD SUCCESSFUL in 1m 1s</span>
+<span class="go">28 actionable tasks: 17 executed, 11 up-to-date</span>
+<span class="go">Building... done</span>
 
-<span class="go">[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
+<span class="go">[helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk</span>
 </code></pre></div>
-<p>Once this step completes, the <code>build</code> folder will contain a <code>helloworld-0.0.1</code> folder that contains a mirror of a Linux <code>/usr</code> file system. This file system mirror will contain a <code>bin</code> folder with a <code>helloworld</code> binary, plus <code>lib</code> and <code>share</code> folders needed to support the binary.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
-<span class="go">Setting stub app details... done</span>
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build android
 
-<span class="go">[helloworld] Built build\helloworld\windows\app\src\Hello World.exe</span>
+<span class="go">[helloworld] Updating app metadata...</span>
+<span class="go">Setting main module... done</span>
+
+<span class="go">[helloworld] Building Android APK...</span>
+<span class="go">Starting a Gradle Daemon</span>
+<span class="go">...</span>
+<span class="go">BUILD SUCCESSFUL in 1m 1s</span>
+<span class="go">28 actionable tasks: 17 executed, 11 up-to-date</span>
+<span class="go">Building... done</span>
+
+<span class="go">[helloworld] Built build\helloworld\android\gradle\app\build\outputs\apk\debug\app-debug.apk</span>
 </code></pre></div>
-<p>On Windows, the <code>build</code> command doesn't need to <em>compile</em> anything, but it does need to write some metadata so that the application knows its name, version, and so on.</p>
+</div>
+</div>
+</div>
 <div class="admonition">
-<p class="admonition-title">Triggering antivirus</p>
-<p>Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the <code>create</code> command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named <code>rcedit-x64.exe</code>) to run and re-run the command above.</p>
+<p class="admonition-title">Gradle kann stecken bleiben</p>
+<p>Während des Schrittes <code>briefcase build android</code> gibt Gradle (das Werkzeug zur
+Erstellung der Android-Plattform) <code>CONFIGURING: 100%</code> aus und scheint nichts zu
+tun. Keine Sorge, es steckt nicht fest - es lädt weitere Android SDK Komponenten
+herunter. Je nach der Geschwindigkeit Ihrer Internetverbindung kann dies weitere
+10 Minuten (oder länger) dauern. Diese Verzögerung sollte nur beim allerersten
+Mal auftreten, wenn Sie <code>build</code> ausführen; die Tools werden zwischengespeichert
+und beim nächsten Build werden die zwischengespeicherten Versionen verwendet.</p>
 </div>
-</div>
-</div>
-</div>
-<h2 id="running-your-app">Running your app<a class="headerlink" href="#running-your-app" title="Permanent link">&para;</a></h2>
-<p>You can now use Briefcase to run your application:</p>
+<h2 id="ausfuhren-der-anwendung-auf-einem-virtuellen-gerat">Ausführen der Anwendung auf einem virtuellen Gerät<a class="headerlink" href="#ausfuhren-der-anwendung-auf-einem-virtuellen-gerat" title="Permanent link">&para;</a></h2>
+<p>Wir sind nun bereit, unsere Anwendung zu starten. Sie können den Befehl <code>run</code>
+von Briefcase verwenden, um die Anwendung auf einem Android-Gerät auszuführen.
+Beginnen wir mit der Ausführung auf einem Android-Emulator.</p>
+<p>Um Ihre Anwendung auszuführen, starten Sie <code>briefcase run android</code>. Daraufhin
+erhalten Sie eine Liste von Geräten, auf denen Sie die Anwendung ausführen
+können. Der letzte Punkt ist immer eine Option zum Erstellen eines neuen
+Android-Emulators.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>android
 
-<span class="go">[helloworld] Starting app...</span>
-<span class="go">===========================================================================</span>
-<span class="go">Configuring isolated Python...</span>
-<span class="go">Pre-initializing Python runtime...</span>
-<span class="go">PythonHome: /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib</span>
-<span class="go">PYTHONPATH:</span>
-<span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python311.zip</span>
-<span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib</span>
-<span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib/lib-dynload</span>
-<span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app_packages</span>
-<span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app</span>
-<span class="go">Configure argc/argv...</span>
-<span class="go">Initializing Python runtime...</span>
-<span class="go">Installing Python NSLog handler...</span>
-<span class="go">Running app module: helloworld</span>
-<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">Select device:</span>
+
+<span class="go">  1) Create a new Android emulator</span>
+
+<span class="go">&gt;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>android
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">Select device:</span>
 
-<span class="go">[helloworld] Starting app...</span>
-<span class="go">===========================================================================</span>
-<span class="go">Install path: /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr</span>
-<span class="go">Pre-initializing Python runtime...</span>
-<span class="go">PYTHONPATH:</span>
-<span class="go">- /usr/lib/python3.10</span>
-<span class="go">- /usr/lib/python3.10/lib-dynload</span>
-<span class="go">- /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/lib/helloworld/app</span>
-<span class="go">- /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/lib/helloworld/app_packages</span>
-<span class="go">Configure argc/argv...</span>
-<span class="go">Initializing Python runtime...</span>
-<span class="go">Running app module: helloworld</span>
-<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">  1) Create a new Android emulator</span>
+
+<span class="go">&gt;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run android
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">Select device:</span>
 
-<span class="go">===========================================================================</span>
-<span class="go">Log started: 2023-04-23 04:47:45Z</span>
-<span class="go">PreInitializing Python runtime...</span>
-<span class="go">PythonHome: C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
-<span class="go">PYTHONPATH:</span>
-<span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\python39.zip</span>
-<span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
-<span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app_packages</span>
-<span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app</span>
-<span class="go">Configure argc/argv...</span>
-<span class="go">Initializing Python runtime...</span>
-<span class="go">Running app module: helloworld</span>
-<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">  1) Create a new Android emulator</span>
+
+<span class="gp">&gt;</span>
 </code></pre></div>
 </div>
 </div>
 </div>
-<p>This will start to run your native application, using the app bundle created by the <code>build</code> command.</p>
-<p>You might notice some small differences in the way your application looks when it's running. For example, icons and the name displayed by the operating system may be slightly different to those you saw when running under developer mode. This is also because you're using the packaged application, not just running Python code. From the operating system's perspective, you're now running "an app", not "a Python program", and this is reflected in how the application appears.</p>
-<p>Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing <strong>Ctrl+C</strong> in the terminal where you ran <code>briefcase run</code>.</p>
-<h2 id="building-your-installer">Building your installer<a class="headerlink" href="#building-your-installer" title="Permanent link">&para;</a></h2>
-<p>You can now package your application for distribution, using the <code>package</code> command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks.</p>
+<p>Nun können wir unser gewünschtes Gerät auswählen. Wählen Sie die Option "Einen
+neuen Android-Emulator erstellen" und akzeptieren Sie die Standardauswahl für
+den Gerätenamen (<code>beePhone</code>).</p>
+<p>Briefcase <code>run</code> wird das virtuelle Gerät automatisch starten. Wenn das Gerät
+hochfährt, sehen Sie das Android-Logo:</p>
+<figure>
+<p>Booten eines virtuellen Android-Geräts</p>
+<figcaption>
+<p>Booten eines virtuellen Android-Geräts</p>
+</figcaption>
+</figure>
+<p>Sobald das Gerät hochgefahren ist, wird Briefcase Ihre Anwendung auf dem Gerät
+installieren. Sie sehen kurz einen Startbildschirm:</p>
+<figure>
+<p>Virtuelles Android-Gerät vollständig gestartet, auf dem Startbildschirm</p>
+<figcaption>
+<p>Virtuelles Android-Gerät vollständig gestartet, auf dem Startbildschirm</p>
+</figcaption>
+</figure>
+<p>Die Anwendung wird dann gestartet. Während die App startet, wird ein
+Begrüßungsbildschirm angezeigt:</p>
+<figure>
+<p><img alt="App-Startbildschirm" src="../../../images/android/tutorial-5-splash.png" /></p>
+<figcaption>
+<p>App-Startbildschirm</p>
+</figcaption>
+</figure>
+<div class="admonition">
+<p class="admonition-title">Der Emulator ist nicht gestartet!</p>
+<p>Der Android-Emulator ist eine komplexe Software, die auf eine Reihe von
+Hardware- und Betriebssystemfunktionen angewiesen ist - Funktionen, die auf
+älteren Rechnern möglicherweise nicht verfügbar oder aktiviert sind. Wenn Sie
+Schwierigkeiten beim Starten des Android-Emulators haben, lesen Sie den
+Abschnitt <a href="https://developer.android.com/studio/run/emulator#requirements">Anforderungen und
+Empfehlungen</a> in
+der Android-Entwicklerdokumentation.</p>
+</div>
+<p>Wenn die App zum ersten Mal gestartet wird, muss sie sich auf dem Gerät
+entpacken. Das kann ein paar Sekunden dauern. Sobald sie entpackt ist, sehen Sie
+die Android-Version unserer Desktop-App:</p>
+<figure>
+<p>Demo-App vollständig gestartet</p>
+<figcaption>
+<p>Demo-App vollständig gestartet</p>
+</figcaption>
+</figure>
+<p>Wenn Sie nicht sehen, dass Ihre Anwendung startet, sollten Sie Ihr Terminal
+überprüfen, in dem Sie <code>briefcase run</code> ausgeführt haben, und nach
+Fehlermeldungen suchen.</p>
+<p>Während die App ausgeführt wird, werden in der Konsole zahlreiche Meldungen
+angezeigt. Dabei handelt es sich um einen Stream der Anwendungsprotokolle aus
+dem Emulator. Durch Eingabe von Strg+C im Terminal wird die Anzeige der
+Informationen in der Konsole angehalten, der Emulator wird jedoch nicht
+geschlossen. Auf diese Weise können Sie neue Änderungen testen, ohne den
+Emulator neu starten zu müssen.</p>
+<p>Wenn Sie in Zukunft auf diesem Gerät arbeiten wollen, ohne das Menü zu benutzen,
+können Sie Briefcase den Namen des Emulators mitteilen, indem Sie <code>briefcase run
+android -d @beePhone</code> verwenden, um direkt auf dem virtuellen Gerät zu arbeiten.</p>
+<h2 id="ausfuhren-der-app-auf-einem-physischen-gerat">Ausführen der App auf einem physischen Gerät<a class="headerlink" href="#ausfuhren-der-app-auf-einem-physischen-gerat" title="Permanent link">&para;</a></h2>
+<p>Wenn Sie ein physisches Android-Telefon oder -Tablet besitzen, können Sie es mit
+einem USB-Kabel an Ihren Computer anschließen und dann Briefcase verwenden, um
+Ihr physisches Gerät anzusteuern.</p>
+<p>Android erfordert, dass Sie Ihr Gerät vorbereiten, bevor Sie es für die
+Entwicklung verwenden können. Sie müssen 2 Änderungen an den Optionen auf Ihrem
+Gerät vornehmen:</p>
+<ul>
+<li>Entwickleroptionen aktivieren</li>
+<li>USB-Debugging einschalten</li>
+</ul>
+<p>Details zur Durchführung dieser Änderungen können <a href="https://developer.android.com/studio/debug/dev-options#enable">in der
+Android-Entwicklerdokumentation</a>
+nachgelesen werden.</p>
+<p>Sobald diese Schritte abgeschlossen sind, sollte Ihr Gerät in der Liste der
+verfügbaren Geräte erscheinen, wenn Sie <code>briefcase run android</code> ausführen.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--adhoc-sign
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>android
 
-<span class="go">[helloworld] Signing app...</span>
+<span class="go">Select device:</span>
 
-<span class="go">*************************************************************************</span>
-<span class="go">** WARNING: Signing with an ad-hoc identity                            **</span>
-<span class="go">*************************************************************************</span>
+<span class="go">  1) Pixel 3a (94ZZY0LNE8)</span>
+<span class="go">  2) @beePhone (emulator)</span>
+<span class="go">  3) Create a new Android emulator</span>
 
-<span class="go">    This app is being signed with an ad-hoc identity. The resulting</span>
-<span class="go">    app will run on this computer, but will not run on anyone else&#39;s</span>
-<span class="go">    computer.</span>
-
-<span class="go">    To generate an app that can be distributed to others, you must</span>
-<span class="go">    obtain an application distribution certificate from Apple, and</span>
-<span class="go">    select the developer identity associated with that certificate</span>
-<span class="go">    when running &#39;briefcase package&#39;.</span>
-
-<span class="go">*************************************************************************</span>
-
-<span class="go">Signing app with ad-hoc identity...</span>
-<span class="go">     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07</span>
-
-<span class="go">[helloworld] Building DMG...</span>
-<span class="go">Building dist/Hello World-0.0.1.dmg</span>
-
-<span class="go">[helloworld] Packaged dist/Hello World-0.0.1.dmg</span>
+<span class="go">&gt;</span>
 </code></pre></div>
-<p>The <code>dist</code> folder will contain a file named <code>Hello World-0.0.1.dmg</code>. If you locate this file in the Finder, and double-click on its icon, you'll mount the DMG, giving you a copy of the Hello World app, and a link to your Applications folder for easy installation. Drag the app file into Applications, and you've installed your application. Send the DMG file to a friend, and they should be able to do the same.</p>
-<p>In this example, we've used the <code>--adhoc-sign</code> option - that is, we're signing our application with <em>ad hoc</em> credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only <em>required</em> if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials.</p>
-<p>When you're ready to publish a real application, check out the Briefcase How-To guide on <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Setting up a macOS code signing identity</a>.</p>
 </div>
 <div class="tabbed-block">
-<p>The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:</p>
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>android
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">Select device:</span>
 
-<span class="go">[helloworld] Building .deb package...</span>
-<span class="go">Write Debian package control file... done</span>
+<span class="go">  1) Pixel 3a (94ZZY0LNE8)</span>
+<span class="go">  2) @beePhone (emulator)</span>
+<span class="go">  3) Create a new Android emulator</span>
 
-<span class="go">dpkg-deb: building package &#39;helloworld&#39; in &#39;helloworld-0.0.1.deb&#39;.</span>
-<span class="go">Building Debian package... done</span>
-
-<span class="go">[helloworld] Packaged dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb</span>
+<span class="go">&gt;</span>
 </code></pre></div>
-<p>The <code>dist</code> folder will contain the <code>.deb</code> file that was generated.</p>
-<p>If you're on a RHEL-based distribution, you'll see:</p>
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
-
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting fedora:40 (Vendor base rhel)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.39</span>
-<span class="go">Targeting Python3.12</span>
-
-<span class="go">[helloworld] Building .rpm package...</span>
-<span class="go">Generating rpmbuild layout... done</span>
-
-<span class="go">Write RPM spec file... done</span>
-
-<span class="go">Building source archive... done</span>
-
-<span class="go">Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7</span>
-<span class="go">+ umask 022</span>
-<span class="go">...</span>
-<span class="go">+ exit 0</span>
-<span class="go">Building RPM package... done</span>
-
-<span class="go">[helloworld] Packaged dist/helloworld-0.0.1-1.fc40.x86_64.rpm</span>
-</code></pre></div>
-<p>The <code>dist</code> folder will contain the <code>.rpm</code> file that was generated.</p>
-<p>If you're on an Arch-based distribution, you'll see:</p>
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
-
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting arch:20240101 (Vendor base arch)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.38</span>
-<span class="go">Targeting Python3.12</span>
-
-<span class="go">[helloworld] Building .pkg.tar.zst package...</span>
-<span class="go">...</span>
-<span class="go">Building Arch package... done</span>
-
-<span class="go">[helloworld] Packaged dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst</span>
-</code></pre></div>
-<p>The <code>dist</code> folder will contain the <code>.pkg.tar.zst</code> file that was generated.</p>
-<p>Other Linux distributions aren't currently supported for packaging.</p>
-<p>If you want to build a package for a Linux distribution other than the one you're using, Briefcase can also help - but you'll need to install Docker.</p>
-<p>Official installers for <a href="https://docs.docker.com/engine/install">Docker Engine</a> are available for a range of Unix distributions. Follow the instructions for your platform; however, ensure you don't install Docker in "rootless" mode.</p>
-<p>Once you've installed Docker, you should be able to start an Linux container - for example:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>ubuntu:22.04
-</code></pre></div>
-<p>will show you a Unix prompt (something like <code>root@84444e31cff9:/#</code>) inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to your local shell.</p>
-<p>Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--target<span class="w"> </span>ubuntu:jammy
-</code></pre></div>
-<p>This will download the Docker image for your selected operating system, create a container that is able to run Briefcase builds, and build the app package inside the image. Once it's completed, the <code>dist</code> folder will contain the package for the target Linux distribution.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase package
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run android
 
-<span class="go">*************************************************************************</span>
-<span class="go">** WARNING: No signing identity provided                               **</span>
-<span class="go">*************************************************************************</span>
+<span class="go">Select device:</span>
 
-<span class="go">    Briefcase will not sign the app. To provide a signing identity,</span>
-<span class="go">    use the `--identity` option; or, to explicitly disable signing,</span>
-<span class="go">    use `--adhoc-sign`.</span>
+<span class="go">  1) Pixel 3a (94ZZY0LNE8)</span>
+<span class="go">  2) @beePhone (emulator)</span>
+<span class="go">  3) Create a new Android emulator</span>
 
-<span class="go">*************************************************************************</span>
-
-<span class="go">[helloworld] Building MSI...</span>
-<span class="go">Compiling application manifest...</span>
-<span class="go">Compiling... done</span>
-
-<span class="go">Compiling application installer...</span>
-<span class="go">helloworld.wxs</span>
-<span class="go">helloworld-manifest.wxs</span>
-<span class="go">Compiling... done</span>
-
-<span class="go">Linking application installer...</span>
-<span class="go">Linking... done</span>
-
-<span class="go">[helloworld] Packaged dist\Hello_World-0.0.1.msi</span>
+<span class="gp">&gt;</span>
 </code></pre></div>
-<p>In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only <em>required</em> if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate.</p>
-<p>When you're ready to publish a real application, check out the Briefcase How-To guide on <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Setting up a Windows code signing identity</a>.</p>
-<p>Once this step completes, the <code>dist</code> folder will contain a file named <code>Hello_World-0.0.1.msi</code>. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a "Hello World" entry in your start menu.</p>
 </div>
 </div>
 </div>
-<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<p>We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to <a href="../tutorial-4/">Tutorial 4</a> to find out&hellip;</p>
+<p>Hier sehen wir ein neues physisches Gerät mit seiner Seriennummer in der
+Einsatzliste - in diesem Fall ein Pixel 3a. Wenn Sie in Zukunft auf diesem Gerät
+arbeiten möchten, ohne das Menü zu verwenden, können Sie die Seriennummer des
+Telefons an Briefcase übergeben (in diesem Fall <code>briefcase run android -d
+94ZZY0LNE8</code>). Dies wird direkt auf dem Gerät ausgeführt, ohne dass Sie gefragt
+werden.</p>
+<div class="admonition">
+<p class="admonition-title">Mein Gerät wird nicht angezeigt!</p>
+<p>Wenn Ihr Gerät in dieser Liste nicht erscheint, haben Sie entweder das
+USB-Debugging nicht aktiviert (oder das Gerät ist nicht eingesteckt!).</p>
+<p>Wenn Ihr Gerät zwar angezeigt wird, aber als "Unbekanntes Gerät (nicht für die
+Entwicklung autorisiert)" aufgeführt ist, wurde der Entwicklermodus nicht
+korrekt aktiviert. Führen Sie die <a href="https://developer.android.com/studio/debug/dev-options#enable">Schritte zum Aktivieren der
+Entwickleroptionen</a>
+erneut aus, und führen Sie "Briefcase run android" erneut aus.</p>
+</div>
+<h2 id="nachste-schritte">Nächste Schritte<a class="headerlink" href="#nachste-schritte" title="Permanent link">&para;</a></h2>
+<p>Wir haben jetzt eine Anwendung auf unserem Telefon! Gibt es noch einen anderen
+Ort, an dem wir eine BeeWare-Anwendung einsetzen können? Schauen Sie sich <a href="../../tutorial-6/">Übung
+6</a> an, um das herauszufinden&hellip;</p>
 
 
 
@@ -2093,33 +2024,33 @@ aria-label="Header"
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../tutorial-2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tutorial 2 - Making it interesting">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Tutorial 5 - Mobil nutzen">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
-                Previous
+                Zurück
               </span>
               <div class="md-ellipsis">
-                Tutorial 2 - Making it interesting
+                Tutorial 5 - Mobil nutzen
               </div>
             </div>
           </a>
         
         
           
-          <a href="../tutorial-4/" class="md-footer__link md-footer__link--next" aria-label="Next: Tutorial 4 - Updating your application">
+          <a href="../iOS/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Tutorial 5 – Mobil nutzen: iOS">
             <div class="md-footer__title">
               <span class="md-footer__direction">
-                Next
+                Weiter
               </span>
               <div class="md-ellipsis">
-                Tutorial 4 - Updating your application
+                Tutorial 5 – Mobil nutzen: iOS
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2250,14 +2181,14 @@ aria-label="Header"
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "toc.follow", "navigation.indexes", "navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "toc.follow", "navigation.indexes", "navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
     
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
-    <script src="../../assets/javascripts/copy_button.js"></script>
+    <script src="../../../assets/javascripts/copy_button.js"></script>
 
   </body>
 </html>

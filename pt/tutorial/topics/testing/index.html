@@ -22,7 +22,7 @@
 
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="pt" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -30,13 +30,11 @@
       
       
       
-        <link rel="canonical" href="https://tutorial.beeware.org/tutorial/tutorial-3/">
+        <link rel="canonical" href="https://tutorial.beeware.org/pt/tutorial/topics/testing/">
       
       
-        <link rel="prev" href="../tutorial-2/">
+        <link rel="prev" href="../camera-access/">
       
-      
-        <link rel="next" href="../tutorial-4/">
       
       
         
@@ -58,26 +56,26 @@
         
       
       
-      <link rel="icon" href="../../assets/images/brutus-256.png">
+      <link rel="icon" href="../../../assets/images/brutus-256.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
-        <title>Tutorial 3 - Packaging for distribution - BeeWare Tutorial</title>
+        <title>Tempos de teste - BeeWare Tutorial</title>
       
     
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
 
     
-    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/beeware_theme.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/stylesheets/beeware_theme.css">
 
     
       
@@ -95,7 +93,7 @@
     <script src="https://kit.fontawesome.com/9a40a729b9.js" crossorigin="anonymous"></script>
 
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -120,8 +118,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-3-packaging-for-distribution" class="md-skip">
-          Skip to content
+        <a href="#tutorial-9-hora-dos-testes" class="md-skip">
+          Ir para o conteúdo
         </a>
       
     </div>
@@ -162,19 +160,19 @@
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
 <nav
 class="md-header__inner md-grid"
-aria-label="Header"
+aria-label="Cabeçalho"
 >
 
     <!-- Link to home -->
     <a
-      href="../.."
+      href="../../.."
       title="BeeWare Tutorial"
       class="md-header__button md-logo"
       aria-label="BeeWare Tutorial"
       data-md-component="logo"
     >
       <!-- include "partials/logo.html" Modified content is included here. -->
-          <img src="../../assets/images/brutus-256.png" alt="Logo" />
+          <img src="../../../assets/images/brutus-256.png" alt="Logo" />
 
     </a>
 
@@ -187,7 +185,7 @@ aria-label="Header"
     <!-- Header title -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
-      <a href="../.."
+      <a href="../../.."
          title="BeeWare Tutorial">
         <div class="md-header__topic">
           <span class="md-ellipsis">
@@ -200,40 +198,40 @@ aria-label="Header"
 
     <nav
       class="md-tabs"
-      aria-label="Tabs"
+      aria-label="Abas"
       data-md-component="tabs"
     >
   <div class="md-grid">
     <ul class="md-tabs__list">
     
     <li class="md-tabs__item">
-      <a href="https://beeware.org/about" class="md-tabs__link">
-          About
+      <a href="https://beeware.org/pt/about" class="md-tabs__link">
+          Sobre
       </a>
     </li>
     <li class="md-tabs__item md-tabs__item--active">
-      <a href="https://beeware.org/docs" class="md-tabs__link">
-          Documentation
+      <a href="https://beeware.org/pt/docs" class="md-tabs__link">
+          Documentação
       </a>
     </li>
     <li class="md-tabs__item">
-      <a href="https://beeware.org/community" class="md-tabs__link">
-          Community
+      <a href="https://beeware.org/pt/community" class="md-tabs__link">
+          Comunidade
       </a>
     </li>
     <li class="md-tabs__item">
-      <a href="https://beeware.org/contributing" class="md-tabs__link">
-          Contributing
+      <a href="https://beeware.org/pt/contributing" class="md-tabs__link">
+          Contribuir
       </a>
     </li>
     <li class="md-tabs__item">
-      <a href="https://beeware.org/news" class="md-tabs__link">
+      <a href="https://beeware.org/pt/news" class="md-tabs__link">
           News
       </a>
     </li>
     <li class="md-tabs__item">
-      <a href="https://beeware.org/membership" class="md-tabs__link">
-          Sponsor
+      <a href="https://beeware.org/pt/membership" class="md-tabs__link">
+          Patrocinar
       </a>
     </li>
     
@@ -293,56 +291,56 @@ aria-label="Header"
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Select language">
+    <button class="md-header__button md-icon" aria-label="Selecione o idioma">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../../tutorial/tutorial-3/" hreflang="en" class="md-select__link">
+            <a href="../../../../tutorial/topics/testing/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../de/tutorial/tutorial-3/" hreflang="de" class="md-select__link">
+            <a href="../../../../de/tutorial/topics/testing/" hreflang="de" class="md-select__link">
               Deutsch
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../es/tutorial/tutorial-3/" hreflang="es" class="md-select__link">
+            <a href="../../../../es/tutorial/topics/testing/" hreflang="es" class="md-select__link">
               Español
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../fr/tutorial/tutorial-3/" hreflang="fr" class="md-select__link">
+            <a href="../../../../fr/tutorial/topics/testing/" hreflang="fr" class="md-select__link">
               Français
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../it/tutorial/tutorial-3/" hreflang="it" class="md-select__link">
+            <a href="../../../../it/tutorial/topics/testing/" hreflang="it" class="md-select__link">
               Italiano
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../pt/tutorial/tutorial-3/" hreflang="pt" class="md-select__link">
+            <a href="../../../../pt/tutorial/topics/testing/" hreflang="pt" class="md-select__link">
               Português
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../zh_CN/tutorial/tutorial-3/" hreflang="zh-Hant" class="md-select__link">
+            <a href="../../../../zh_CN/tutorial/topics/testing/" hreflang="zh-Hant" class="md-select__link">
               中文(简体)
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../zh_TW/tutorial/tutorial-3/" hreflang="zh-TW" class="md-select__link">
+            <a href="../../../../zh_TW/tutorial/topics/testing/" hreflang="zh-TW" class="md-select__link">
               中文(繁體)
             </a>
           </li>
@@ -369,21 +367,21 @@ aria-label="Header"
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Pesquisar">
         
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
           </a>
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -396,7 +394,7 @@ aria-label="Header"
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Inicializando a pesquisa
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -452,14 +450,14 @@ aria-label="Header"
 <!-- Navigation -->
 <nav
   class="md-nav md-nav--primary"
-  aria-label="Navigation"
+  aria-label="Navegação"
   data-md-level="0"
 >
 
   <!-- Site title -->
   <label class="md-nav__title small" for="__drawer">
     <a
-    href="../.."
+    href="../../.."
     title="BeeWare Tutorial"
     class="md-nav__button md-logo"
     aria-label="BeeWare Tutorial"
@@ -468,7 +466,7 @@ aria-label="Header"
         <div class="sidebar-title-block">
             <div class="sidebar-logo">
             
-  <img src="../../assets/images/brutus-256.png" alt="logo">
+  <img src="../../../assets/images/brutus-256.png" alt="logo">
 
             </div>
             <div class="sidebar-title-block-name">
@@ -514,7 +512,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-0/" class="md-nav__link">
+      <a href="../../tutorial-0/" class="md-nav__link">
         
   
 
@@ -527,7 +525,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 0 - Let's get set up!
+    Tutorial 0 - Vamos nos preparar!
   
 
 
@@ -559,7 +557,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-1/" class="md-nav__link">
+      <a href="../../tutorial-1/" class="md-nav__link">
         
   
 
@@ -572,7 +570,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 1 - Your first app
+    Tutorial 1 - Seu primeiro app
   
 
 
@@ -604,7 +602,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-2/" class="md-nav__link">
+      <a href="../../tutorial-2/" class="md-nav__link">
         
   
 
@@ -617,7 +615,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 2 - Making it interesting
+    Tutorial 2 - Tornando as coisas interessantes
   
 
 
@@ -633,219 +631,6 @@ aria-label="Header"
 
       </a>
     </li>
-  
-
-    
-      
-      
-
-  <!-- Determine classes -->
-  
-  
-    
-  
-
-  <!-- Determine active page for paginated views -->
-  
-
-  <!-- Navigation item with nested items -->
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-
-      <!-- State toggle -->
-      <input
-        class="md-nav__toggle md-toggle"
-        type="checkbox"
-        id="__toc"
-      />
-
-      <!-- Hack: see partials/toc.html for more information -->
-      
-      
-        
-      
-
-      <!-- Navigation link to table of contents -->
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-
-  <!-- Navigation link icon -->
-  
-
-  <!-- Navigation link title -->
-  <span class="md-ellipsis">
-    
-
-  <!-- Typeset title -->
-  
-    Tutorial 3 - Packaging for distribution
-  
-
-
-    <!-- Navigation link subtitle -->
-    
-  </span>
-
-  <!-- Navigation link to encrypted content -->
-  
-
-  <!-- Navigation link status -->
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a
-        href="./"
-        class="md-nav__link md-nav__link--active"
-      >
-        
-  
-
-  <!-- Navigation link icon -->
-  
-
-  <!-- Navigation link title -->
-  <span class="md-ellipsis">
-    
-
-  <!-- Typeset title -->
-  
-    Tutorial 3 - Packaging for distribution
-  
-
-
-    <!-- Navigation link subtitle -->
-    
-  </span>
-
-  <!-- Navigation link to encrypted content -->
-  
-
-  <!-- Navigation link status -->
-  
-
-      </a>
-
-      <!-- Table of contents -->
-      
-        <!--
-  Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
-<!-- Determine title -->
-
-
-  
-
-
-<!-- Table of contents -->
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-
-  <!--
-    Check whether the content starts with a level 1 headline. If it does, the
-    top-level anchor must be skipped, since it would be redundant to the link
-    to the current page that is located just above the anchor. Therefore we
-    directly continue with the children of the anchor.
-  -->
-  
-  
-    
-  
-
-  <!-- Table of contents title and list -->
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creating-your-application-scaffold" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating your application scaffold
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-your-application" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Building your application
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-your-app" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Running your app
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-your-installer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Building your installer
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next steps
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-<div id="ethical-ad-placement"></div>
-</nav>
-      
-    </li>
-
-  <!-- Navigation item -->
   
 
     
@@ -862,7 +647,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-4/" class="md-nav__link">
+      <a href="../../tutorial-3/" class="md-nav__link">
         
   
 
@@ -875,7 +660,52 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 4 - Updating your application
+    Tutorial 3 - Empacotando para Distribuição
+  
+
+
+    <!-- Navigation link subtitle -->
+    
+  </span>
+
+  <!-- Navigation link to encrypted content -->
+  
+
+  <!-- Navigation link status -->
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+
+  <!-- Determine classes -->
+  
+  
+
+  <!-- Determine active page for paginated views -->
+  
+
+  <!-- Navigation item with nested items -->
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial-4/" class="md-nav__link">
+        
+  
+
+  <!-- Navigation link icon -->
+  
+
+  <!-- Navigation link title -->
+  <span class="md-ellipsis">
+    
+
+  <!-- Typeset title -->
+  
+    Tutorial 4 - Atualizando sua aplicação
   
 
 
@@ -952,7 +782,7 @@ aria-label="Header"
           
           <div class="md-nav__link md-nav__container">
             <a
-              href="../tutorial-5/"
+              href="../../tutorial-5/"
               class="md-nav__link "
             >
               
@@ -967,7 +797,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Taking it mobile
+    Tutorial 5 - Levando para o Mobile
   
 
 
@@ -1011,7 +841,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Taking it mobile
+    Tutorial 5 - Levando para o Mobile
   
 
           </label>
@@ -1037,7 +867,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-5/android/" class="md-nav__link">
+      <a href="../../tutorial-5/android/" class="md-nav__link">
         
   
 
@@ -1050,7 +880,8 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Taking it mobile: Android
+    Tutorial 5 - Levando para o Mobile:
+  Android
   
 
 
@@ -1083,7 +914,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-5/iOS/" class="md-nav__link">
+      <a href="../../tutorial-5/iOS/" class="md-nav__link">
         
   
 
@@ -1096,7 +927,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Taking it mobile: iOS
+    Tutorial 5 - Levando para o Mobile: iOS
   
 
 
@@ -1140,7 +971,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-6/" class="md-nav__link">
+      <a href="../../tutorial-6/" class="md-nav__link">
         
   
 
@@ -1153,7 +984,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 6 - Put it on the web!
+    Tutorial 6 - Coloque na web!
   
 
 
@@ -1185,7 +1016,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-7/" class="md-nav__link">
+      <a href="../../tutorial-7/" class="md-nav__link">
         
   
 
@@ -1198,7 +1029,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 7 - Get this (third-)party started
+    Tutorial 7 - Iniciando o uso de bibliotecas externas
   
 
 
@@ -1230,7 +1061,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../tutorial-8/" class="md-nav__link">
+      <a href="../../tutorial-8/" class="md-nav__link">
         
   
 
@@ -1243,7 +1074,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Tutorial 8 - Making it Smooooth
+    Tutorial 8 - Suavizando o Processo
   
 
 
@@ -1267,6 +1098,8 @@ aria-label="Header"
 
   <!-- Determine classes -->
   
+  
+    
   
 
   <!-- Determine active page for paginated views -->
@@ -1302,7 +1135,7 @@ aria-label="Header"
 
 
     <!-- Nested navigation item -->
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
 
@@ -1314,7 +1147,7 @@ aria-label="Header"
           class="md-nav__toggle md-toggle "
           type="checkbox"
           id="__nav_10"
-          
+          checked
         />
 
         <!-- Toggle to expand nested items -->
@@ -1322,7 +1155,7 @@ aria-label="Header"
           
           <div class="md-nav__link md-nav__container">
             <a
-              href="../topics/"
+              href="../"
               class="md-nav__link "
             >
               
@@ -1337,7 +1170,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Going further
+    Indo além
   
 
 
@@ -1373,7 +1206,7 @@ aria-label="Header"
           class="md-nav"
           data-md-level="1"
           aria-labelledby="__nav_10_label"
-          aria-expanded="false"
+          aria-expanded="true"
         >
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
@@ -1381,7 +1214,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Going further
+    Indo além
   
 
           </label>
@@ -1407,7 +1240,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../topics/custom-icons/" class="md-nav__link">
+      <a href="../custom-icons/" class="md-nav__link">
         
   
 
@@ -1420,7 +1253,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Customizing icons
+    Personalizando ícones
   
 
 
@@ -1453,7 +1286,7 @@ aria-label="Header"
   <!-- Navigation item with nested items -->
   
     <li class="md-nav__item">
-      <a href="../topics/camera-access/" class="md-nav__link">
+      <a href="../camera-access/" class="md-nav__link">
         
   
 
@@ -1466,7 +1299,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Using the camera
+    Usando a câmera
   
 
 
@@ -1492,14 +1325,66 @@ aria-label="Header"
   <!-- Determine classes -->
   
   
+    
+  
 
   <!-- Determine active page for paginated views -->
   
 
   <!-- Navigation item with nested items -->
   
-    <li class="md-nav__item">
-      <a href="../topics/testing/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      
+
+      <!-- State toggle -->
+      <input
+        class="md-nav__toggle md-toggle"
+        type="checkbox"
+        id="__toc"
+      />
+
+      <!-- Hack: see partials/toc.html for more information -->
+      
+      
+        
+      
+
+      <!-- Navigation link to table of contents -->
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+
+  <!-- Navigation link icon -->
+  
+
+  <!-- Navigation link title -->
+  <span class="md-ellipsis">
+    
+
+  <!-- Typeset title -->
+  
+    Tempos de teste
+  
+
+
+    <!-- Navigation link subtitle -->
+    
+  </span>
+
+  <!-- Navigation link to encrypted content -->
+  
+
+  <!-- Navigation link status -->
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a
+        href="./"
+        class="md-nav__link md-nav__link--active"
+      >
         
   
 
@@ -1512,7 +1397,7 @@ aria-label="Header"
 
   <!-- Typeset title -->
   
-    Testing times
+    Tempos de teste
   
 
 
@@ -1527,7 +1412,101 @@ aria-label="Header"
   
 
       </a>
+
+      <!-- Table of contents -->
+      
+        <!--
+  Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine title -->
+
+
+  
+
+
+<!-- Table of contents -->
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+
+  <!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+  
+  
+    
+  
+
+  <!-- Table of contents title and list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#executar-o-conjunto-de-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Executar o conjunto de testes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desenvolvimento-orientado-por-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desenvolvimento orientado por testes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-tempo-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testes de tempo de execução
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+<div id="ethical-ad-placement"></div>
+</nav>
+      
     </li>
+
+  <!-- Navigation item -->
   
 
               
@@ -1606,10 +1585,10 @@ aria-label="Header"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-your-application-scaffold" class="md-nav__link">
+  <a href="#executar-o-conjunto-de-testes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating your application scaffold
+        Executar o conjunto de testes
       
     </span>
   </a>
@@ -1617,10 +1596,10 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-your-application" class="md-nav__link">
+  <a href="#desenvolvimento-orientado-por-testes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Building your application
+        Desenvolvimento orientado por testes
       
     </span>
   </a>
@@ -1628,32 +1607,10 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-your-app" class="md-nav__link">
+  <a href="#testes-de-tempo-de-execucao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Running your app
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-your-installer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Building your installer
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next steps
+        Testes de tempo de execução
       
     </span>
   </a>
@@ -1678,184 +1635,377 @@ aria-label="Header"
 
 
 
-<h1 id="tutorial-3-packaging-for-distribution">Tutorial 3 - Packaging for distribution<a class="headerlink" href="#tutorial-3-packaging-for-distribution" title="Permanent link">&para;</a></h1>
-<p>So far, we've been running our application in "Developer mode". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others.</p>
-<p>However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work.</p>
-<p>Briefcase can be used to package your application for distribution in this way.</p>
-<h2 id="creating-your-application-scaffold">Creating your application scaffold<a class="headerlink" href="#creating-your-application-scaffold" title="Permanent link">&para;</a></h2>
-<p>Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the <code>helloworld</code> directory, run:</p>
+<h1 id="tutorial-9-hora-dos-testes">Tutorial 9 - Hora dos Testes<a class="headerlink" href="#tutorial-9-hora-dos-testes" title="Permanent link">&para;</a></h1>
+<p>A maior parte do desenvolvimento de software não envolve a gravação de um novo
+código, mas sim a modificação do código existente. Garantir que o código
+existente continue a funcionar da maneira esperada é uma parte fundamental do
+processo de desenvolvimento de software. Uma maneira de garantir o comportamento
+do nosso aplicativo é com um <em>conjunto de testes</em>.</p>
+<h2 id="executar-o-conjunto-de-testes">Executar o conjunto de testes<a class="headerlink" href="#executar-o-conjunto-de-testes" title="Permanent link">&para;</a></h2>
+<p>Acontece que nosso projeto já tem um conjunto de testes! Quando geramos nosso
+projeto originalmente, foram gerados dois diretórios de nível superior: <code>src</code> e
+<code>tests</code>. A pasta <code>src</code> contém o código do nosso aplicativo; a pasta <code>tests</code>
+contém nosso conjunto de testes. Dentro da pasta <code>tests</code> há um arquivo chamado
+<code>test_app.py</code> com o seguinte conteúdo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;An initial test for the app&quot;&quot;&quot;</span>
+    <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
+</code></pre></div>
+<p>Este é um <a href="https://pytest.org">Pytest</a> <em>caso de teste</em> - um bloco de código que
+pode ser executado para verificar algum comportamento do seu aplicativo. Nesse
+caso, o teste é um espaço reservado e não testa nada sobre nosso aplicativo, mas
+é um teste que podemos executar.</p>
+<p>Podemos executar esse conjunto de testes usando a opção <code>--test</code> do <code>briefcase
+dev</code>. Como esta é a primeira vez que estamos executando testes, também
+precisamos passar a opção <code>-r</code> para garantir que os requisitos de teste também
+sejam instalados:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
-
-<span class="go">[helloworld] Generating application template...</span>
-<span class="go">Using app template: https://github.com/beeware/briefcase-macOS-app-template.git, branch v0.3.18</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Installing support package...</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Installing application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test<span class="w"> </span>-r
 
 <span class="go">[helloworld] Installing requirements...</span>
 <span class="go">...</span>
+<span class="go">Installing dev requirements... done</span>
 
-<span class="go">[helloworld] Installing application resources...</span>
-<span class="go">...</span>
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">platform darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0 -- /Users/brutus/beeware-tutorial/beeware-venv/bin/python3.11</span>
+<span class="go">cachedir: /var/folders/b_/khqk71xd45d049kxc_59ltp80000gn/T/.pytest_cache</span>
+<span class="go">rootdir: /Users/brutus</span>
+<span class="go">plugins: anyio-3.6.2</span>
+<span class="go">collecting ... collected 1 item</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
 
-<span class="go">[helloworld] Created build/helloworld/macos/app</span>
+<span class="go">============================== 1 passed in 0.01s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
-
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
-
-<span class="go">[helloworld] Generating application template...</span>
-<span class="go">Using app template: https://github.com/beeware/briefcase-linux-AppImage-template.git, branch v0.3.18</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Installing support package...</span>
-<span class="go">No support package required.</span>
-
-<span class="go">[helloworld] Installing application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test<span class="w"> </span>-r
 
 <span class="go">[helloworld] Installing requirements...</span>
 <span class="go">...</span>
+<span class="go">Installing dev requirements... done</span>
 
-<span class="go">[helloworld] Installing application resources...</span>
-<span class="go">...</span>
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">platform linux -- Python 3.11.0</span>
+<span class="go">pytest==7.2.0</span>
+<span class="go">py==1.11.0</span>
+<span class="go">pluggy==1.0.0</span>
+<span class="go">cachedir: /tmp/.pytest_cache</span>
+<span class="go">rootdir: /home/brutus</span>
+<span class="go">plugins: anyio-3.6.2</span>
+<span class="go">collecting ... collected 1 item</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
 
-<span class="go">[helloworld] Created build/helloworld/linux/ubuntu/jammy</span>
+<span class="go">============================== 1 passed in 0.01s ===============================</span>
 </code></pre></div>
-<div class="admonition">
-<p class="admonition-title">Errors about Python versions</p>
-<p>If you receive an error that reads something like:</p>
-<blockquote>
-<p>The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10).</p>
-</blockquote>
-<p>You will need to recreate your virtual environment using the system <code>python3</code>. Using the system Python is a requirement for packaging your application.</p>
-</div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create
-
-<span class="go">[helloworld] Generating application template...</span>
-<span class="go">Using app template: https://github.com/beeware/briefcase-windows-app-template.git, branch v0.3.18</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Installing support package...</span>
-<span class="go">...</span>
-
-<span class="go">[helloworld] Installing application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test -r
 
 <span class="go">[helloworld] Installing requirements...</span>
 <span class="go">...</span>
+<span class="go">Installing dev requirements... done</span>
 
-<span class="go">[helloworld] Installing application resources...</span>
-<span class="go">...</span>
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">platform win32 -- Python 3.11.0</span>
+<span class="go">pytest==7.2.0</span>
+<span class="go">py==1.11.0</span>
+<span class="go">pluggy==1.0.0</span>
+<span class="go">cachedir: C:\Users\brutus\AppData\Local\Temp\.pytest_cache</span>
+<span class="go">rootdir: C:\Users\brutus</span>
+<span class="go">plugins: anyio-3.6.2</span>
+<span class="go">collecting ... collected 1 item</span>
 
-<span class="go">[helloworld] Created build\helloworld\windows\app</span>
+<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
+
+<span class="go">============================== 1 passed in 0.01s ===============================</span>
 </code></pre></div>
 </div>
 </div>
 </div>
-<p>You've probably just seen pages of content go past in your terminal&hellip; so what just happened? Briefcase has done the following:</p>
-<ol>
-<li>
-<p>It <strong>generated an application template</strong>. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on. If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template.</p>
-</li>
-<li>
-<p>It <strong>downloaded and installed a support package</strong>. The packaging approach taken by Briefcase is best described as "the simplest thing that could possibly work" - it ships a complete, isolated Python interpreter as part of every application it builds (except for Linux native system package builds). This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application. Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime. Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds. As noted above, when Briefcase packages an app as a native Linux system package (the default package format for Linux), a support package is not included with the app. Instead, the app will use the Python that is provided by the distribution of Linux being targeted.</p>
-</li>
-<li>
-<p>It <strong>installed application requirements</strong>. Your application can specify any third-party modules that are required at runtime. These will be installed using <code>pip</code> into your application's installer.</p>
-</li>
-<li>
-<p>It <strong>Installed your application code</strong>. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer.</p>
-</li>
-<li>
-<p>It <strong>installed your resources needed by your application.</strong> Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images.</p>
-</li>
-</ol>
-<p>Once this completes, if you look in the project directory, you should now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or <code>windows</code>) that contains additional files. This is the platform-specific packaging configuration for your application.</p>
-<h2 id="building-your-application">Building your application<a class="headerlink" href="#building-your-application" title="Permanent link">&para;</a></h2>
-<p>You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform.</p>
+<p>Sucesso! Acabamos de executar um único teste que verifica se a matemática Python
+funciona da maneira esperada (que alívio!).</p>
+<p>Vamos substituir esse teste de espaço reservado por um teste para verificar se o
+nosso método <code>greeting()</code> se comporta da maneira esperada. Substitua o conteúdo
+de <code>test_app.py</code> pelo seguinte:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">greeting</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">test_name</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;If a name is provided, the greeting includes the name&quot;&quot;&quot;</span>
+
+    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, Alice&quot;</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">test_empty</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;If a name is not provided, a generic greeting is provided&quot;&quot;&quot;</span>
+
+    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+</code></pre></div>
+<p>Isso define dois novos testes, verificando os dois comportamentos que esperamos
+ver: a saída quando um nome é fornecido e a saída quando o nome está vazio.</p>
+<p>Agora podemos executar novamente o conjunto de testes. Dessa vez, não precisamos
+fornecer a opção <code>-r</code>, pois os requisitos de teste já foram instalados;
+precisamos apenas usar a opção <code>--test</code>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Adhoc signing app...</span>
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
 <span class="go">...</span>
-<span class="go">Signing build/helloworld/macos/app/Hello World.app</span>
-<span class="go">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07</span>
+<span class="go">collecting ... collected 2 items</span>
 
-<span class="go">[helloworld] Built build/helloworld/macos/app/Hello World.app</span>
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+
+<span class="go">============================== 2 passed in 0.11s ===============================</span>
 </code></pre></div>
-<p>On macOS, the <code>build</code> command doesn't need to <em>compile</em> anything, but it does need to sign the contents of binary so that it can be executed. This signature is an <em>ad hoc</em> signature - it will only work on <em>your</em> machine; if you want to distribute the application to others, you'll need to provide a full signature.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
-
-<span class="go">[helloworld] Building application...</span>
-<span class="go">Build bootstrap binary...</span>
-<span class="go">make: Entering directory &#39;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap&#39;</span>
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
 <span class="go">...</span>
-<span class="go">make: Leaving directory &#39;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap&#39;</span>
-<span class="go">Building bootstrap binary... done</span>
-<span class="go">Installing license... done</span>
-<span class="go">Installing changelog... done</span>
-<span class="go">Installing man page... done</span>
-<span class="go">Updating file permissions... done</span>
-<span class="go">Stripping binary... done</span>
+<span class="go">collecting ... collected 2 items</span>
 
-<span class="go">[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+
+<span class="go">============================== 2 passed in 0.11s ===============================</span>
 </code></pre></div>
-<p>Once this step completes, the <code>build</code> folder will contain a <code>helloworld-0.0.1</code> folder that contains a mirror of a Linux <code>/usr</code> file system. This file system mirror will contain a <code>bin</code> folder with a <code>helloworld</code> binary, plus <code>lib</code> and <code>share</code> folders needed to support the binary.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
-<span class="go">Setting stub app details... done</span>
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Built build\helloworld\windows\app\src\Hello World.exe</span>
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 2 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+
+<span class="go">============================== 2 passed in 0.11s ===============================</span>
 </code></pre></div>
-<p>On Windows, the <code>build</code> command doesn't need to <em>compile</em> anything, but it does need to write some metadata so that the application knows its name, version, and so on.</p>
-<div class="admonition">
-<p class="admonition-title">Triggering antivirus</p>
-<p>Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the <code>create</code> command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named <code>rcedit-x64.exe</code>) to run and re-run the command above.</p>
 </div>
 </div>
 </div>
-</div>
-<h2 id="running-your-app">Running your app<a class="headerlink" href="#running-your-app" title="Permanent link">&para;</a></h2>
-<p>You can now use Briefcase to run your application:</p>
+<p>Excelente! Nosso método utilitário <code>greeting()</code> está funcionando como esperado.</p>
+<h2 id="desenvolvimento-orientado-por-testes">Desenvolvimento orientado por testes<a class="headerlink" href="#desenvolvimento-orientado-por-testes" title="Permanent link">&para;</a></h2>
+<p>Agora que temos um conjunto de testes, podemos usá-lo para impulsionar o
+desenvolvimento de novos recursos. Vamos modificar nosso aplicativo para ter uma
+saudação especial para um determinado usuário. Podemos começar adicionando um
+caso de teste para o novo comportamento que gostaríamos de ver na parte inferior
+do <code>test_app.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
+
+    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+</code></pre></div>
+<p>Em seguida, execute o conjunto de testes com esse novo teste:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 3 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+
+<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">_________________________________ test_brutus __________________________________</span>
+
+<span class="go">    def test_brutus():</span>
+<span class="go">        &quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
+
+<span class="go">&gt;       assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E         - BeeWare the IDEs of Python!</span>
+<span class="go">E         + Hello, Brutus</span>
+
+<span class="go">tests/test_app.py:19: AssertionError</span>
+<span class="go">=========================== short test summary info ============================</span>
+<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
+
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 3 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+
+<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">_________________________________ test_brutus __________________________________</span>
+
+<span class="go">    def test_brutus():</span>
+<span class="go">        &quot;&quot;&quot;If the name is Brutus, provide a special greeting&quot;&quot;&quot;</span>
+
+<span class="go">&gt;       assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E         - BeeWare the IDEs of Python!</span>
+<span class="go">E         + Hello, Brutus</span>
+
+<span class="go">tests/test_app.py:19: AssertionError</span>
+<span class="go">=========================== short test summary info ============================</span>
+<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+
+<span class="go">============================== 2 passed in 0.11s ===============================</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
+
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 3 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+
+<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">_________________________________ test_brutus __________________________________</span>
+
+<span class="go">    def test_brutus():</span>
+<span class="go">        &quot;&quot;&quot;If the name is Brutus, provide a special greeting&quot;&quot;&quot;</span>
+
+<span class="gp">&gt;</span>       assert greeting(<span class="s2">&quot;Brutus&quot;</span>) == <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E         - BeeWare the IDEs of Python!</span>
+<span class="go">E         + Hello, Brutus</span>
+
+<span class="go">tests/test_app.py:19: AssertionError</span>
+<span class="go">=========================== short test summary info ============================</span>
+<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Dessa vez, vemos uma falha no teste - e a saída explica a origem da falha: o
+teste está esperando a saída "BeeWare the IDEs of Python!", mas nossa
+implementação de <code>greeting()</code> está retornando "Hello, Brutus". Vamos modificar a
+implementação de <code>greeting()</code> em <code>src/helloworld/app.py</code> para obter o novo
+comportamento:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+</code></pre></div>
+<p>Se executarmos os testes novamente, veremos que nossos testes foram aprovados:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
+
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 3 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+
+<span class="go">============================== 3 passed in 0.15s ===============================</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
+
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 3 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+
+<span class="go">============================== 3 passed in 0.15s ===============================</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
+
+<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">===========================================================================</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 3 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+
+<span class="go">============================== 3 passed in 0.15s ===============================</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="testes-de-tempo-de-execucao">Testes de tempo de execução<a class="headerlink" href="#testes-de-tempo-de-execucao" title="Permanent link">&para;</a></h2>
+<p>Até o momento, estamos executando os testes no modo de desenvolvimento. Isso é
+especialmente útil quando se está desenvolvendo novos recursos, pois é possível
+iterar rapidamente na adição de testes e na adição de código para que esses
+testes sejam aprovados. No entanto, em algum momento, você desejará verificar se
+o seu código também é executado corretamente no ambiente do aplicativo de
+pacote.</p>
+<p>As opções <code>--test</code> e <code>-r</code> também podem ser passadas para o comando <code>run</code>. Se
+você usar <code>briefcase run --test -r</code>, o mesmo conjunto de testes será executado,
+mas dentro do pacote de aplicativos empacotados, e não no seu ambiente de
+desenvolvimento:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
+
+<span class="go">[helloworld] Updating application code...</span>
+<span class="go">Installing src/helloworld... done</span>
+<span class="go">Installing tests... done</span>
+
+<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">...</span>
+<span class="go">[helloworld] Built build/helloworld/macos/app/Hello World.app (test mode)</span>
+
+<span class="go">[helloworld] Starting test suite...</span>
 <span class="go">===========================================================================</span>
 <span class="go">Configuring isolated Python...</span>
 <span class="go">Pre-initializing Python runtime...</span>
@@ -1869,12 +2019,23 @@ aria-label="Header"
 <span class="go">Configure argc/argv...</span>
 <span class="go">Initializing Python runtime...</span>
 <span class="go">Installing Python NSLog handler...</span>
-<span class="go">Running app module: helloworld</span>
+<span class="go">Running app module: tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 3 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+
+<span class="go">============================== 3 passed in 0.21s ===============================</span>
+
+<span class="go">[helloworld] Test suite passed!</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
 <span class="go">[helloworld] Finalizing application configuration...</span>
 <span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
@@ -1882,189 +2043,71 @@ aria-label="Header"
 <span class="go">Targeting glibc 2.35</span>
 <span class="go">Targeting Python3.10</span>
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Updating application code...</span>
+<span class="go">Installing src/helloworld... done</span>
+<span class="go">Installing tests... done</span>
+
+<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">...</span>
+<span class="go">[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (test mode)</span>
+
+<span class="go">[helloworld] Starting test suite...</span>
 <span class="go">===========================================================================</span>
-<span class="go">Install path: /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr</span>
-<span class="go">Pre-initializing Python runtime...</span>
-<span class="go">PYTHONPATH:</span>
-<span class="go">- /usr/lib/python3.10</span>
-<span class="go">- /usr/lib/python3.10/lib-dynload</span>
-<span class="go">- /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/lib/helloworld/app</span>
-<span class="go">- /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/lib/helloworld/app_packages</span>
-<span class="go">Configure argc/argv...</span>
-<span class="go">Initializing Python runtime...</span>
-<span class="go">Running app module: helloworld</span>
-<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">============================= test session starts ==============================</span>
+<span class="go">...</span>
+<span class="go">collecting ... collected 3 items</span>
+
+<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+
+<span class="go">============================== 3 passed in 0.21s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run --test -r
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Updating application code...</span>
+<span class="go">Installing src/helloworld... done</span>
+<span class="go">Installing tests... done</span>
+
+<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">...</span>
+<span class="go">[helloworld] Built build\helloworld\windows\app\src\Hello World.exe (test mode)</span>
 
 <span class="go">===========================================================================</span>
-<span class="go">Log started: 2023-04-23 04:47:45Z</span>
+<span class="go">Log started: 2022-12-02 10:57:34Z</span>
 <span class="go">PreInitializing Python runtime...</span>
 <span class="go">PythonHome: C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">PYTHONPATH:</span>
-<span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\python39.zip</span>
+<span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\python311.zip</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app_packages</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app</span>
 <span class="go">Configure argc/argv...</span>
 <span class="go">Initializing Python runtime...</span>
-<span class="go">Running app module: helloworld</span>
+<span class="go">Running app module: tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-<p>This will start to run your native application, using the app bundle created by the <code>build</code> command.</p>
-<p>You might notice some small differences in the way your application looks when it's running. For example, icons and the name displayed by the operating system may be slightly different to those you saw when running under developer mode. This is also because you're using the packaged application, not just running Python code. From the operating system's perspective, you're now running "an app", not "a Python program", and this is reflected in how the application appears.</p>
-<p>Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing <strong>Ctrl+C</strong> in the terminal where you ran <code>briefcase run</code>.</p>
-<h2 id="building-your-installer">Building your installer<a class="headerlink" href="#building-your-installer" title="Permanent link">&para;</a></h2>
-<p>You can now package your application for distribution, using the <code>package</code> command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--adhoc-sign
-
-<span class="go">[helloworld] Signing app...</span>
-
-<span class="go">*************************************************************************</span>
-<span class="go">** WARNING: Signing with an ad-hoc identity                            **</span>
-<span class="go">*************************************************************************</span>
-
-<span class="go">    This app is being signed with an ad-hoc identity. The resulting</span>
-<span class="go">    app will run on this computer, but will not run on anyone else&#39;s</span>
-<span class="go">    computer.</span>
-
-<span class="go">    To generate an app that can be distributed to others, you must</span>
-<span class="go">    obtain an application distribution certificate from Apple, and</span>
-<span class="go">    select the developer identity associated with that certificate</span>
-<span class="go">    when running &#39;briefcase package&#39;.</span>
-
-<span class="go">*************************************************************************</span>
-
-<span class="go">Signing app with ad-hoc identity...</span>
-<span class="go">     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07</span>
-
-<span class="go">[helloworld] Building DMG...</span>
-<span class="go">Building dist/Hello World-0.0.1.dmg</span>
-
-<span class="go">[helloworld] Packaged dist/Hello World-0.0.1.dmg</span>
-</code></pre></div>
-<p>The <code>dist</code> folder will contain a file named <code>Hello World-0.0.1.dmg</code>. If you locate this file in the Finder, and double-click on its icon, you'll mount the DMG, giving you a copy of the Hello World app, and a link to your Applications folder for easy installation. Drag the app file into Applications, and you've installed your application. Send the DMG file to a friend, and they should be able to do the same.</p>
-<p>In this example, we've used the <code>--adhoc-sign</code> option - that is, we're signing our application with <em>ad hoc</em> credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only <em>required</em> if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials.</p>
-<p>When you're ready to publish a real application, check out the Briefcase How-To guide on <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Setting up a macOS code signing identity</a>.</p>
-</div>
-<div class="tabbed-block">
-<p>The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:</p>
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
-
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
-
-<span class="go">[helloworld] Building .deb package...</span>
-<span class="go">Write Debian package control file... done</span>
-
-<span class="go">dpkg-deb: building package &#39;helloworld&#39; in &#39;helloworld-0.0.1.deb&#39;.</span>
-<span class="go">Building Debian package... done</span>
-
-<span class="go">[helloworld] Packaged dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb</span>
-</code></pre></div>
-<p>The <code>dist</code> folder will contain the <code>.deb</code> file that was generated.</p>
-<p>If you're on a RHEL-based distribution, you'll see:</p>
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
-
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting fedora:40 (Vendor base rhel)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.39</span>
-<span class="go">Targeting Python3.12</span>
-
-<span class="go">[helloworld] Building .rpm package...</span>
-<span class="go">Generating rpmbuild layout... done</span>
-
-<span class="go">Write RPM spec file... done</span>
-
-<span class="go">Building source archive... done</span>
-
-<span class="go">Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7</span>
-<span class="go">+ umask 022</span>
+<span class="go">============================= test session starts ==============================</span>
 <span class="go">...</span>
-<span class="go">+ exit 0</span>
-<span class="go">Building RPM package... done</span>
+<span class="go">collecting ... collected 3 items</span>
 
-<span class="go">[helloworld] Packaged dist/helloworld-0.0.1-1.fc40.x86_64.rpm</span>
+<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+
+<span class="go">============================== 3 passed in 0.21s ===============================</span>
 </code></pre></div>
-<p>The <code>dist</code> folder will contain the <code>.rpm</code> file that was generated.</p>
-<p>If you're on an Arch-based distribution, you'll see:</p>
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
-
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting arch:20240101 (Vendor base arch)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.38</span>
-<span class="go">Targeting Python3.12</span>
-
-<span class="go">[helloworld] Building .pkg.tar.zst package...</span>
-<span class="go">...</span>
-<span class="go">Building Arch package... done</span>
-
-<span class="go">[helloworld] Packaged dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst</span>
-</code></pre></div>
-<p>The <code>dist</code> folder will contain the <code>.pkg.tar.zst</code> file that was generated.</p>
-<p>Other Linux distributions aren't currently supported for packaging.</p>
-<p>If you want to build a package for a Linux distribution other than the one you're using, Briefcase can also help - but you'll need to install Docker.</p>
-<p>Official installers for <a href="https://docs.docker.com/engine/install">Docker Engine</a> are available for a range of Unix distributions. Follow the instructions for your platform; however, ensure you don't install Docker in "rootless" mode.</p>
-<p>Once you've installed Docker, you should be able to start an Linux container - for example:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>ubuntu:22.04
-</code></pre></div>
-<p>will show you a Unix prompt (something like <code>root@84444e31cff9:/#</code>) inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to your local shell.</p>
-<p>Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--target<span class="w"> </span>ubuntu:jammy
-</code></pre></div>
-<p>This will download the Docker image for your selected operating system, create a container that is able to run Briefcase builds, and build the app package inside the image. Once it's completed, the <code>dist</code> folder will contain the package for the target Linux distribution.</p>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase package
-
-<span class="go">*************************************************************************</span>
-<span class="go">** WARNING: No signing identity provided                               **</span>
-<span class="go">*************************************************************************</span>
-
-<span class="go">    Briefcase will not sign the app. To provide a signing identity,</span>
-<span class="go">    use the `--identity` option; or, to explicitly disable signing,</span>
-<span class="go">    use `--adhoc-sign`.</span>
-
-<span class="go">*************************************************************************</span>
-
-<span class="go">[helloworld] Building MSI...</span>
-<span class="go">Compiling application manifest...</span>
-<span class="go">Compiling... done</span>
-
-<span class="go">Compiling application installer...</span>
-<span class="go">helloworld.wxs</span>
-<span class="go">helloworld-manifest.wxs</span>
-<span class="go">Compiling... done</span>
-
-<span class="go">Linking application installer...</span>
-<span class="go">Linking... done</span>
-
-<span class="go">[helloworld] Packaged dist\Hello_World-0.0.1.msi</span>
-</code></pre></div>
-<p>In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only <em>required</em> if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate.</p>
-<p>When you're ready to publish a real application, check out the Briefcase How-To guide on <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Setting up a Windows code signing identity</a>.</p>
-<p>Once this step completes, the <code>dist</code> folder will contain a file named <code>Hello_World-0.0.1.msi</code>. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a "Hello World" entry in your start menu.</p>
 </div>
 </div>
 </div>
-<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<p>We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to <a href="../tutorial-4/">Tutorial 4</a> to find out&hellip;</p>
+<p>Como no caso do <code>briefcase dev --test</code>, a opção <code>-r</code> só é necessária na primeira
+vez em que você executa o conjunto de testes para garantir que as dependências
+de teste estejam presentes. Nas execuções subsequentes, você pode omitir essa
+opção.</p>
+<p>Você também pode usar a opção <code>--test</code> em back-ends móveis: - assim, <code>briefcase
+run iOS --test</code> e <code>briefcase run android --test</code> funcionarão, executando o
+conjunto de testes no dispositivo móvel que você selecionar.</p>
 
 
 
@@ -2093,40 +2136,24 @@ aria-label="Header"
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../tutorial-2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tutorial 2 - Making it interesting">
+          <a href="../camera-access/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Usando a câmera">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
-                Previous
+                Anterior
               </span>
               <div class="md-ellipsis">
-                Tutorial 2 - Making it interesting
+                Usando a câmera
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../tutorial-4/" class="md-footer__link md-footer__link--next" aria-label="Next: Tutorial 4 - Updating your application">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Tutorial 4 - Updating your application
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -2250,14 +2277,14 @@ aria-label="Header"
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "toc.follow", "navigation.indexes", "navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "toc.follow", "navigation.indexes", "navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
-    <script src="../../assets/javascripts/copy_button.js"></script>
+    <script src="../../../assets/javascripts/copy_button.js"></script>
 
   </body>
 </html>
