@@ -156,5 +156,5 @@ plugins:
       "fr/latest.md": "https://tutorial.beeware.org/fr"
       "it/latest.md": "https://tutorial.beeware.org/it"
       "pt/latest.md": "https://tutorial.beeware.org/pt"
-      "zh_CN/latest.md": "https://tutorial.beeware.org/zh_CN"
-      "zh_TW/latest.md": "https://tutorial.beeware.org/zh_TW"
+      "zh-cn/latest.md": "https://tutorial.beeware.org/zh_CN"
+      "zh-tw/latest.md": "https://tutorial.beeware.org/zh_TW"
