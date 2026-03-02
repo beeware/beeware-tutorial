@@ -32,10 +32,10 @@ extra:
       link: /pt/
       lang: pt
     - name: 中文(简体)
-      link: /zh-cn/
+      link: /zh_CN/
       lang: zh-Hant
     - name: 中文(繁體)
-      link: /zh-tw/
+      link: /zh_TW/
       lang: zh-TW
   social:
     - icon: fontawesome/brands/github
@@ -146,3 +146,15 @@ plugins:
   literate-nav:
     nav_file: SUMMARY.md
   macros: {}
+  redirects:
+    redirect_maps:
+      # Old
+      "en/latest/tutorial/tutorial-1.md": "tutorial/tutorial-1.md"
+      "en/latest.md": "index.md"
+      "de/latest.md": "https://tutorial.beeware.org/de"
+      "es/latest.md": "https://tutorial.beeware.org/es"
+      "fr/latest.md": "https://tutorial.beeware.org/fr"
+      "it/latest.md": "https://tutorial.beeware.org/it"
+      "pt/latest.md": "https://tutorial.beeware.org/pt"
+      "zh-cn/latest.md": "https://tutorial.beeware.org/zh_CN"
+      "zh-tw/latest.md": "https://tutorial.beeware.org/zh_TW"

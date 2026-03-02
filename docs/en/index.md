@@ -8,7 +8,7 @@ Welcome to BeeWare! In this tutorial, we're going to build a graphical user inte
 
 /// admonition | Translations are available
 
-If you're not comfortable with English, translations of this tutorial are available in [Deutsch](https://tutorial.beeware.org/de), [Español](https://tutorial.beeware.org/es), [Français](https://tutorial.beeware.org/fr), [Italiano](https://tutorial.beeware.org/it), [Português](https://tutorial.beeware.org/pt), [中文(简体)](https://tutorial.beeware.org/zh-cn), and [中文(繁體)](https://tutorial.beeware.org/zh-tw).
+If you're not comfortable with English, translations of this tutorial are available in [Deutsch](https://tutorial.beeware.org/de), [Español](https://tutorial.beeware.org/es), [Français](https://tutorial.beeware.org/fr), [Italiano](https://tutorial.beeware.org/it), [Português](https://tutorial.beeware.org/pt), [中文(简体)](https://tutorial.beeware.org/zh_CN), and [中文(繁體)](https://tutorial.beeware.org/zh_TW).
 
 ///
 
