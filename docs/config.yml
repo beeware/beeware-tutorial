@@ -148,13 +148,11 @@ plugins:
   macros: {}
   redirects:
     redirect_maps:
-      # Old
-      "en/latest/tutorial/tutorial-1.md": "tutorial/tutorial-1.md"
+      # Old versioned RTD paths.
+      "latest/tutorial/tutorial-1.md": "tutorial/tutorial-1.md"
+      "latest.md": "index.md"
+      # Old RTD language paths that must continue to exist
       "en/latest.md": "index.md"
-      "de/latest.md": "https://tutorial.beeware.org/de"
-      "es/latest.md": "https://tutorial.beeware.org/es"
-      "fr/latest.md": "https://tutorial.beeware.org/fr"
-      "it/latest.md": "https://tutorial.beeware.org/it"
-      "pt/latest.md": "https://tutorial.beeware.org/pt"
+      "en/latest/tutorial/tutorial-1.md": "tutorial/tutorial-1.md"
       "zh-cn/latest.md": "https://tutorial.beeware.org/zh_CN"
       "zh-tw/latest.md": "https://tutorial.beeware.org/zh_TW"
