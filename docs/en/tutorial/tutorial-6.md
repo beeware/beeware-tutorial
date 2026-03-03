@@ -148,4 +148,10 @@ But when you press the button, you're running Python code... how does that work?
 
 ## Next steps
 
+You can also deploy this web app to the internet using the
+[pythonanywhere-briefcase-plugin](https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin).
+Its [tutorial](https://briefcase.pythonanywhere.com/tutorial/) picks up right where this
+page leaves off and walks you through packaging and publishing to
+[PythonAnywhere](https://www.pythonanywhere.com/).
+
 Although we've now deployed this app on desktop, mobile and the web, the app is fairly simple, and doesn't involve any third-party libraries. Can we include libraries from the Python Package Index (PyPI) in our app? Turn to [Tutorial 7](tutorial-7.md) to find out...
