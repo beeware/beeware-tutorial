@@ -8,7 +8,7 @@ However, in a real world application, we'll need to perform complex tasks or cal
 
 A common time-consuming task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. Web APIs sometimes take a second or two to respond, so if we're calling an API like that, we need to ensure our application doesn't become unresponsive while we wait for the web API to return an answer.
 
-This is a toy app, so we don't have a *real* API to work with, so we'll use the [{JSON} Placeholder API](https://jsonplaceholder.typicode.com) as a source of data. The {JSON} Placeholder API has a number of "fake" API endpoints you can use as test data. One of those APIs is the `/posts/` endpoint, which returns fake blog posts. If you open `https://jsonplaceholder.typicode.com/posts/42` in your browser, you'll get a JSON payload describing a single post - some [Lorum ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) content for a blog post with ID 42.
+This is a toy app, so we don't have a *real* API to work with, so we'll use a sample API endpoint as a source of data. If you open [`https://tutorial.beeware.org/tutorial/message.json`](message.json) in your browser, you'll get a JSON payload with a message.
 
 The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a "normal browser user" you're probably used to taking these details for granted, as a browser manages them for you.
 
@@ -35,7 +35,7 @@ Then modify the `say_hello()` callback so it looks like this:
 async def say_hello(self, widget):
     fake = faker.Faker()
     with httpx.Client() as client:
-        response = client.get("https://jsonplaceholder.typicode.com/posts/42")
+        response = client.get("https://tutorial.beeware.org/tutorial/message.json")
 
     payload = response.json()
 
