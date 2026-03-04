@@ -1697,15 +1697,10 @@ usuário. Às vezes, as APIs da Web levam um ou dois segundos para responder,
 portanto, se estivermos chamando uma API como essa, precisamos garantir que
 nosso aplicativo não deixe de responder enquanto esperamos que a API da Web
 retorne uma resposta.</p>
-<p>Como este é um aplicativo de brinquedo, não temos uma API <em>real</em> para trabalhar,
-portanto, usaremos a <a href="https://jsonplaceholder.typicode.com">{JSON} Placeholder
-API</a> como fonte de dados. A {JSON}
-Placeholder API tem vários endpoints de API "falsos" que você pode usar como
-dados de teste. Uma dessas APIs é o endpoint <code>/posts/</code>, que retorna posts de
-blog falsos. Se você abrir <code>https://jsonplaceholder.typicode.com/posts/42</code> em
-seu navegador, obterá uma carga útil JSON que descreve uma única publicação -
-algum conteúdo <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Lorum ipsum</a> para uma
-publicação de blog com ID 42.</p>
+<p>This is a toy app, so we don't have a <em>real</em> API to work with, so we'll use a
+sample API endpoint as a source of data. If you open
+<a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a>
+in your browser, you'll get a JSON payload with a message.</p>
 <p>A biblioteca padrão do Python contém todas as ferramentas necessárias para
 acessar uma API. Entretanto, as APIs incorporadas são de nível muito baixo. Elas
 são boas implementações do protocolo HTTP, mas exigem que o usuário gerencie
@@ -1735,7 +1730,7 @@ configuração <code>requires</code> em nosso <code>pyproject.toml</code> para i
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/posts/42&quot;</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://tutorial.beeware.org/tutorial/message.json&quot;</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 

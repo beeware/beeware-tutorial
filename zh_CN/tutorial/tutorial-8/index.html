@@ -1684,9 +1684,10 @@ aria-label="页眉"
 <h2 id="api">访问 API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
 <p>应用程序需要进行的一个常见的耗时任务时在一个网络 API 上请求取回数据，并将数据显示给用户。网络 API 有时需要一两秒才能回应，所以如果我们将要访问这种
 API，我们需要确保我们的应用在等待网络 API 返回答案时保持响应。</p>
-<p>这只是个入门级的应用，我们没有<em>真正</em>的API可供调用，所以我们将使用<a href="https://jsonplaceholder.typicode.com">{JSON}占位符API</a>
-作为数据来源。{JSON}占位符API有一系列“虚假”的API端点可以供您作为测试数据调用。其中之一就是<code>/posts/</code>端点，它会返回一些虚假的博客推文。如果您在浏览器中访问<code>https://jsonplaceholder.typicode.com/posts/42</code>，您将会得到一串看起来像是在发推文的JSON数据——不过内容是ID为42的一些`乱数假文
-<a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Lorum ipsum</a>。</p>
+<p>This is a toy app, so we don't have a <em>real</em> API to work with, so we'll use a
+sample API endpoint as a source of data. If you open
+<a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a>
+in your browser, you'll get a JSON payload with a message.</p>
 <p>Python 标准库包含了需要访问一个 API 的所有工具，但这些内置 API 非常低级别。它们良好的实现了 HTTP 协议，但它们要求用户管理 URL
 重定向、会话、身份验证、数据编码等许多低级别细节。作为一个 “普通浏览器用户”，您可能会把这些细节的管理是为理所当然的，因为浏览器帮您管理它们。</p>
 <p>因此，人们开发了第三方库来封装内置 API，并提供更简单的 API，使其更符合日常的浏览器体验。我们将使用其中一个库来访问 {JSON}占位符 API -
@@ -1705,7 +1706,7 @@ API，我们需要确保我们的应用在等待网络 API 返回答案时保持
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/posts/42&quot;</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://tutorial.beeware.org/tutorial/message.json&quot;</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
