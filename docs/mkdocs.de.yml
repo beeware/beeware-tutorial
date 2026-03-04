@@ -1,18 +1,18 @@
 INHERIT: config.yml
 site_name: BeeWare Tutorial
-site_url: https://tutorial.beeware.org/de
+site_url: https://tutorial.beeware.org/de/
 docs_dir: de
 
 theme:
   language: de
 
 extra:
-  translation_type: machine
   language_url: de/
+  translation_type: machine
   header:
     About: Über
     Documentation: Dokumentation
-    Community: Verbund
-    Contributing: Mithelfen
-    News: Neuigkeiten
-    Sponsor: Fördern
+    Community: Gemeinschaft
+    Contributing: Beitrag leisten
+    News: Nachrichten
+    Sponsor: Sponsor
