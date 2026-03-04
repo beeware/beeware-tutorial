@@ -146,12 +146,10 @@ This web app is a static website - a single HTML source page, with some CSS and 
 
 But when you press the button, you're running Python code... how does that work? Toga uses [PyScript](https://pyscript.net) to provide a Python interpreter in the browser. Briefcase packages your app's code as wheels that PyScript can load in the browser. When the page is loaded, the application code runs in the browser, building the UI using the browser DOM. When you click a button, that button runs the event handling code in the browser.
 
-## Next steps
+## Publishing the web app
 
-You can also deploy this web app to the internet using the
-[pythonanywhere-briefcase-plugin](https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin).
-Its [tutorial](https://briefcase.pythonanywhere.com/tutorial/) picks up right where this
-page leaves off and walks you through packaging and publishing to
-[PythonAnywhere](https://www.pythonanywhere.com/).
+If you want, you can also try publishing this web app to the internet using the [PythonAnywhere Briefcase Plugin](https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin). The [tutorial](https://briefcase.pythonanywhere.com/tutorial/) for that plugin picks up where this page leaves off and walks you through packaging and publishing to [PythonAnywhere](https://www.pythonanywhere.com/).
+
+## Next steps
 
 Although we've now deployed this app on desktop, mobile and the web, the app is fairly simple, and doesn't involve any third-party libraries. Can we include libraries from the Python Package Index (PyPI) in our app? Turn to [Tutorial 7](tutorial-7.md) to find out...
