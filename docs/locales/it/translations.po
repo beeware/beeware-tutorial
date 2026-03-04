@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 05:15+0000\n"
+"POT-Creation-Date: 2026-03-04 05:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -839,7 +839,7 @@ msgstr "/// admonition | Ambienti virtuali alternativi"
 msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of `virtualenv`, a predecessor to Python's built in `venv` module. As with Python installs -if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to `venv` and the system Python."
 msgstr "Se si usa Anaconda o miniconda, forse si ha più familiarità con l'uso degli ambienti conda. Potreste anche aver sentito parlare di `virtualenv`, un predecessore del modulo `venv` di Python. Come per le installazioni di Python, se siete su macOS o Windows, non importa *come* create il vostro ambiente virtuale, basta che ne abbiate uno. Se siete su Linux, dovreste limitarvi a `venv` e al Python di sistema."
 
-#: docs/en/tutorial/tutorial-0.md:167 docs/en/tutorial/tutorial-1.md:213 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:462 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:149 docs/en/tutorial/tutorial-7.md:630 docs/en/tutorial/tutorial-8.md:255
+#: docs/en/tutorial/tutorial-0.md:167 docs/en/tutorial/tutorial-1.md:213 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:462 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:153 docs/en/tutorial/tutorial-7.md:630 docs/en/tutorial/tutorial-8.md:255
 msgid "Next steps"
 msgstr "Prossimi passi"
 
@@ -2047,7 +2047,17 @@ msgstr "Questa applicazione web è un sito web statico - una singola pagina sorg
 msgid "But when you press the button, you're running Python code... how does that work? Toga uses [PyScript]{1} to provide a Python interpreter in the browser. Briefcase packages your app's code as wheels that PyScript can load in the browser. When the page is loaded, the application code runs in the browser, building the UI using the browser DOM. When you click a button, that button runs the event handling code in the browser."
 msgstr "Ma quando si preme il pulsante, si esegue codice Python... Come funziona? Toga utilizza [PyScript]{1} per fornire un interprete Python nel browser. Briefcase impacchetta il codice dell'applicazione come ruote che PyScript può caricare nel browser. Quando la pagina viene caricata, il codice dell'applicazione viene eseguito nel browser, costruendo l'interfaccia utente utilizzando il DOM del browser. Quando si fa clic su un pulsante, questo esegue il codice di gestione degli eventi nel browser."
 
+#: docs/en/tutorial/tutorial-6.md:149
+#, fuzzy
+msgid "Publishing the web app"
+msgstr "Pubblicazione dell'applicazione web"
+
 #: docs/en/tutorial/tutorial-6.md:151
+#, fuzzy
+msgid "If you want, you can also try publishing this web app to the internet using the [PythonAnywhere Briefcase Plugin]{1}. The [tutorial]{2} for that plugin picks up where this page leaves off and walks you through packaging and publishing to [PythonAnywhere]{3}."
+msgstr "Se lo desideri, puoi anche provare a pubblicare questa applicazione web su Internet utilizzando il [PythonAnywhere Briefcase Plugin]{1}. Il [tutorial]{2} per quel plugin riprende da dove questa pagina si interrompe e ti guida attraverso il processo di impacchettamento e pubblicazione su [PythonAnywhere]{3}."
+
+#: docs/en/tutorial/tutorial-6.md:155
 #, fuzzy
 msgid "Although we've now deployed this app on desktop, mobile and the web, the app is fairly simple, and doesn't involve any third-party libraries. Can we include libraries from the Python Package Index (PyPI) in our app? Turn to [Tutorial 7]{1} to find out..."
 msgstr "Anche se abbiamo distribuito questa applicazione su desktop, mobile e web, l'applicazione è piuttosto semplice e non coinvolge librerie di terze parti. Possiamo includere nella nostra applicazione le librerie del Python Package Index (PyPI)? Consultate [Tutorial 7]{1} per scoprirlo..."
