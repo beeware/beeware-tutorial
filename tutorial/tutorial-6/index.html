@@ -1129,6 +1129,17 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
+  <a href="#publishing-the-web-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publishing the web app
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1606,6 +1617,17 @@ aria-label="Header"
 </li>
       
         <li class="md-nav__item">
+  <a href="#publishing-the-web-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publishing the web app
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1761,6 +1783,8 @@ aria-label="Header"
 <h2 id="how-does-this-work">How does this work?<a class="headerlink" href="#how-does-this-work" title="Permanent link">&para;</a></h2>
 <p>This web app is a static website - a single HTML source page, with some CSS and other resources. Briefcase has started a local web server to serve this page so your browser can view the page. If you wanted to put this web page into production, you could copy the contents of the <code>www</code> folder onto any web server that can serve static content.</p>
 <p>But when you press the button, you're running Python code&hellip; how does that work? Toga uses <a href="https://pyscript.net">PyScript</a> to provide a Python interpreter in the browser. Briefcase packages your app's code as wheels that PyScript can load in the browser. When the page is loaded, the application code runs in the browser, building the UI using the browser DOM. When you click a button, that button runs the event handling code in the browser.</p>
+<h2 id="publishing-the-web-app">Publishing the web app<a class="headerlink" href="#publishing-the-web-app" title="Permanent link">&para;</a></h2>
+<p>If you want, you can also try publishing this web app to the internet using the <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">PythonAnywhere Briefcase Plugin</a>. The <a href="https://briefcase.pythonanywhere.com/tutorial/">tutorial</a> for that plugin picks up where this page leaves off and walks you through packaging and publishing to <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
 <h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
 <p>Although we've now deployed this app on desktop, mobile and the web, the app is fairly simple, and doesn't involve any third-party libraries. Can we include libraries from the Python Package Index (PyPI) in our app? Turn to <a href="../tutorial-7/">Tutorial 7</a> to find out&hellip;</p>
 
