@@ -1,6 +1,6 @@
 INHERIT: config.yml
 site_name: BeeWare Tutorial
-site_url: https://tutorial.beeware.org/it
+site_url: https://tutorial.beeware.org/it/
 docs_dir: it
 
 theme:
@@ -8,11 +8,10 @@ theme:
 
 extra:
   translation_type: machine
-  language_url: it/
   header:
-    About: Circa
+    About: Informazioni
     Documentation: Documentazione
     Community: Comunità
     Contributing: Contribuire
     News: Notizie
-    Sponsor: Sponsorizzare
+    Sponsor: Sponsor
