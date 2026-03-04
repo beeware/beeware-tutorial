@@ -7,8 +7,8 @@ theme:
   language: de
 
 extra:
+  language_url: de/
   translation_type: machine
-
   header:
     About: Über
     Documentation: Dokumentation

@@ -7,6 +7,7 @@ theme:
   language: zh
 
 extra:
+  language_url: zh_CN/
   translation_type: machine
   header:
     About: 关于

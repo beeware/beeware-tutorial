@@ -7,6 +7,7 @@ theme:
   language: it
 
 extra:
+  language_url: it/
   translation_type: machine
   header:
     About: Informazioni
