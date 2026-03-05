@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 05:29+0000\n"
+"POT-Creation-Date: 2026-03-05 06:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: es <LL@li.org>\n"
@@ -123,7 +123,7 @@ msgstr "/// admonition | Traducciones disponibles"
 msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
 msgstr "Si no se siente cómodo con el inglés, las traducciones de este tutorial están disponibles en [Alemán]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6} y [中文(繁體)]{7}."
 
-#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:47 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:90 docs/en/tutorial/tutorial-0.md:100 docs/en/tutorial/tutorial-0.md:115 docs/en/tutorial/tutorial-0.md:126 docs/en/tutorial/tutorial-0.md:155 docs/en/tutorial/tutorial-0.md:157 docs/en/tutorial/tutorial-0.md:165 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:131 docs/en/tutorial/tutorial-1.md:146 docs/en/tutorial/tutorial-1.md:161 docs/en/tutorial/tutorial-1.md:171 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:181 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:191 docs/en/tutorial/tutorial-1.md:207 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:146 docs/en/tutorial/tutorial-3.md:176 docs/en/tutorial/tutorial-3.md:193 docs/en/tutorial/tutorial-3.md:195 docs/en/tutorial/tutorial-3.md:224 docs/en/tutorial/tutorial-3.md:252 docs/en/tutorial/tutorial-3.md:276 docs/en/tutorial/tutorial-3.md:325 docs/en/tutorial/tutorial-3.md:422 docs/en/tutorial/tutorial-3.md:460 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:127 docs/en/tutorial/tutorial-7.md:129 docs/en/tutorial/tutorial-7.md:144 docs/en/tutorial/tutorial-7.md:146 docs/en/tutorial/tutorial-7.md:161 docs/en/tutorial/tutorial-7.md:163 docs/en/tutorial/tutorial-7.md:169 docs/en/tutorial/tutorial-7.md:175 docs/en/tutorial/tutorial-7.md:220 docs/en/tutorial/tutorial-7.md:222 docs/en/tutorial/tutorial-7.md:277 docs/en/tutorial/tutorial-7.md:316 docs/en/tutorial/tutorial-7.md:318 docs/en/tutorial/tutorial-7.md:393 docs/en/tutorial/tutorial-7.md:441 docs/en/tutorial/tutorial-7.md:511 docs/en/tutorial/tutorial-7.md:540 docs/en/tutorial/tutorial-7.md:563 docs/en/tutorial/tutorial-7.md:582 docs/en/tutorial/tutorial-7.md:606 docs/en/tutorial/tutorial-7.md:614 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
+#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:47 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:94 docs/en/tutorial/tutorial-0.md:96 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-0.md:121 docs/en/tutorial/tutorial-0.md:132 docs/en/tutorial/tutorial-0.md:161 docs/en/tutorial/tutorial-0.md:163 docs/en/tutorial/tutorial-0.md:171 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:135 docs/en/tutorial/tutorial-1.md:154 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-1.md:193 docs/en/tutorial/tutorial-1.md:199 docs/en/tutorial/tutorial-1.md:201 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-1.md:225 docs/en/tutorial/tutorial-1.md:227 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:146 docs/en/tutorial/tutorial-3.md:176 docs/en/tutorial/tutorial-3.md:193 docs/en/tutorial/tutorial-3.md:195 docs/en/tutorial/tutorial-3.md:224 docs/en/tutorial/tutorial-3.md:252 docs/en/tutorial/tutorial-3.md:276 docs/en/tutorial/tutorial-3.md:325 docs/en/tutorial/tutorial-3.md:422 docs/en/tutorial/tutorial-3.md:460 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:179 docs/en/tutorial/tutorial-7.md:181 docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:207 docs/en/tutorial/tutorial-7.md:231 docs/en/tutorial/tutorial-7.md:233 docs/en/tutorial/tutorial-7.md:239 docs/en/tutorial/tutorial-7.md:245 docs/en/tutorial/tutorial-7.md:255 docs/en/tutorial/tutorial-7.md:300 docs/en/tutorial/tutorial-7.md:302 docs/en/tutorial/tutorial-7.md:357 docs/en/tutorial/tutorial-7.md:396 docs/en/tutorial/tutorial-7.md:398 docs/en/tutorial/tutorial-7.md:473 docs/en/tutorial/tutorial-7.md:521 docs/en/tutorial/tutorial-7.md:548 docs/en/tutorial/tutorial-7.md:577 docs/en/tutorial/tutorial-7.md:600 docs/en/tutorial/tutorial-7.md:619 docs/en/tutorial/tutorial-7.md:643 docs/en/tutorial/tutorial-7.md:651 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
 msgid "///"
 msgstr "///"
 
@@ -304,11 +304,11 @@ msgstr "Esto explica que su aplicación necesita acceder a la cámara y proporci
 msgid "We can now generate and run the app:"
 msgstr "Ahora podemos generar y ejecutar la aplicación:"
 
-#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:53 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:165 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:131 docs/en/tutorial/tutorial-3.md:201 docs/en/tutorial/tutorial-3.md:288 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:114 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:490 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
+#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:53 docs/en/tutorial/tutorial-0.md:112 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:177 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:131 docs/en/tutorial/tutorial-3.md:201 docs/en/tutorial/tutorial-3.md:288 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:157 docs/en/tutorial/tutorial-7.md:263 docs/en/tutorial/tutorial-7.md:527 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
 msgid "/// tab | macOS"
 msgstr "/// tab | macOS"
 
-#: docs/en/tutorial/topics/camera-access.md:125 docs/en/tutorial/topics/custom-icons.md:91 docs/en/tutorial/topics/custom-icons.md:281 docs/en/tutorial/topics/custom-icons.md:428 docs/en/tutorial/tutorial-7.md:100 docs/en/tutorial/tutorial-7.md:165 docs/en/tutorial/tutorial-7.md:320 docs/en/tutorial/tutorial-7.md:565 docs/en/tutorial/tutorial-8.md:122 docs/en/tutorial/tutorial-8.md:237
+#: docs/en/tutorial/topics/camera-access.md:125 docs/en/tutorial/topics/custom-icons.md:91 docs/en/tutorial/topics/custom-icons.md:281 docs/en/tutorial/topics/custom-icons.md:428 docs/en/tutorial/tutorial-7.md:100 docs/en/tutorial/tutorial-7.md:235 docs/en/tutorial/tutorial-7.md:400 docs/en/tutorial/tutorial-7.md:602 docs/en/tutorial/tutorial-8.md:122 docs/en/tutorial/tutorial-8.md:237
 msgid "/// tab | Android"
 msgstr "/// tab | Android"
 
@@ -334,7 +334,7 @@ msgstr "Personalizar iconos"
 msgid "The app we developed in the main tutorial uses a default \"gray bee\" icon when it is packaged. Let's personalize this application by configuring it to use our own icon."
 msgstr "Hasta ahora, nuestra aplicación ha utilizado un ícono predeterminado de \"abeja gris\". ¿Cómo actualizamos la aplicación para usar nuestro propio ícono?"
 
-#: docs/en/tutorial/topics/custom-icons.md:5 docs/en/tutorial/topics/custom-icons.md:319 docs/en/tutorial/topics/custom-icons.md:363 docs/en/tutorial/tutorial-2.md:107 docs/en/tutorial/tutorial-2.md:157 docs/en/tutorial/tutorial-4.md:124 docs/en/tutorial/tutorial-7.md:610
+#: docs/en/tutorial/topics/custom-icons.md:5 docs/en/tutorial/topics/custom-icons.md:319 docs/en/tutorial/topics/custom-icons.md:363 docs/en/tutorial/tutorial-2.md:107 docs/en/tutorial/tutorial-2.md:157 docs/en/tutorial/tutorial-4.md:124 docs/en/tutorial/tutorial-7.md:647
 #, fuzzy
 msgid "/// note | Note"
 msgstr "/// note | Nota"
@@ -378,15 +378,15 @@ msgstr "Esta definición de icono no especifica ninguna extensión de archivo. E
 msgid "We can now run `briefcase update` again - but this time, we pass in the `--update-resources` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
 msgstr "Ahora podemos ejecutar `briefcase update` de nuevo - pero esta vez, le pasamos la bandera `--update-resources`, diciéndole a Briefcase que queremos instalar nuevos recursos de la aplicación (es decir, los iconos):"
 
-#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:61 docs/en/tutorial/tutorial-0.md:117 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:133 docs/en/tutorial/tutorial-1.md:175 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:148 docs/en/tutorial/tutorial-3.md:226 docs/en/tutorial/tutorial-3.md:327 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:131 docs/en/tutorial/tutorial-7.md:224 docs/en/tutorial/tutorial-7.md:513 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
+#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:61 docs/en/tutorial/tutorial-0.md:123 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:137 docs/en/tutorial/tutorial-1.md:187 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:148 docs/en/tutorial/tutorial-3.md:226 docs/en/tutorial/tutorial-3.md:327 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:304 docs/en/tutorial/tutorial-7.md:550 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
 msgid "/// tab | Linux"
 msgstr "/// tab | Linux"
 
-#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:92 docs/en/tutorial/tutorial-0.md:128 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:148 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:178 docs/en/tutorial/tutorial-3.md:254 docs/en/tutorial/tutorial-3.md:424 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:148 docs/en/tutorial/tutorial-7.md:279 docs/en/tutorial/tutorial-7.md:542 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
+#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:98 docs/en/tutorial/tutorial-0.md:134 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:156 docs/en/tutorial/tutorial-1.md:203 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:178 docs/en/tutorial/tutorial-3.md:254 docs/en/tutorial/tutorial-3.md:424 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:209 docs/en/tutorial/tutorial-7.md:359 docs/en/tutorial/tutorial-7.md:579 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
 msgid "/// tab | Windows"
 msgstr "/// tab | Windows"
 
-#: docs/en/tutorial/topics/custom-icons.md:129 docs/en/tutorial/topics/custom-icons.md:327 docs/en/tutorial/topics/custom-icons.md:444 docs/en/tutorial/tutorial-7.md:106 docs/en/tutorial/tutorial-7.md:171 docs/en/tutorial/tutorial-7.md:395 docs/en/tutorial/tutorial-7.md:584 docs/en/tutorial/tutorial-8.md:128 docs/en/tutorial/tutorial-8.md:245
+#: docs/en/tutorial/topics/custom-icons.md:129 docs/en/tutorial/topics/custom-icons.md:327 docs/en/tutorial/topics/custom-icons.md:444 docs/en/tutorial/tutorial-7.md:106 docs/en/tutorial/tutorial-7.md:241 docs/en/tutorial/tutorial-7.md:475 docs/en/tutorial/tutorial-7.md:621 docs/en/tutorial/tutorial-8.md:128 docs/en/tutorial/tutorial-8.md:245
 msgid "/// tab | iOS"
 msgstr "/// tab | iOS"
 
@@ -410,7 +410,7 @@ msgstr "Hay *muchos* iconos en esta carpeta, pero la mayoría deberían tener el
 msgid "![Icon of green snake with a light blue background]{1}"
 msgstr "Icono de serpiente verde con fondo azul claro]{1}"
 
-#: docs/en/tutorial/topics/custom-icons.md:188 docs/en/tutorial/topics/custom-icons.md:470 docs/en/tutorial/tutorial-1.md:169 docs/en/tutorial/tutorial-1.md:179 docs/en/tutorial/tutorial-1.md:189 docs/en/tutorial/tutorial-2.md:271 docs/en/tutorial/tutorial-2.md:281 docs/en/tutorial/tutorial-2.md:291 docs/en/tutorial/tutorial-4.md:33 docs/en/tutorial/tutorial-4.md:43 docs/en/tutorial/tutorial-4.md:53 docs/en/tutorial/tutorial-5/android.md:224 docs/en/tutorial/tutorial-5/android.md:234 docs/en/tutorial/tutorial-5/android.md:244 docs/en/tutorial/tutorial-5/android.md:260 docs/en/tutorial/tutorial-5/iOS.md:99 docs/en/tutorial/tutorial-7.md:125 docs/en/tutorial/tutorial-7.md:142 docs/en/tutorial/tutorial-7.md:159 docs/en/tutorial/tutorial-7.md:218 docs/en/tutorial/tutorial-7.md:314 docs/en/tutorial/tutorial-8.md:74 docs/en/tutorial/tutorial-8.md:95 docs/en/tutorial/tutorial-8.md:116
+#: docs/en/tutorial/topics/custom-icons.md:188 docs/en/tutorial/topics/custom-icons.md:470 docs/en/tutorial/tutorial-1.md:181 docs/en/tutorial/tutorial-1.md:191 docs/en/tutorial/tutorial-1.md:207 docs/en/tutorial/tutorial-2.md:271 docs/en/tutorial/tutorial-2.md:281 docs/en/tutorial/tutorial-2.md:291 docs/en/tutorial/tutorial-4.md:33 docs/en/tutorial/tutorial-4.md:43 docs/en/tutorial/tutorial-4.md:53 docs/en/tutorial/tutorial-5/android.md:224 docs/en/tutorial/tutorial-5/android.md:234 docs/en/tutorial/tutorial-5/android.md:244 docs/en/tutorial/tutorial-5/android.md:260 docs/en/tutorial/tutorial-5/iOS.md:99 docs/en/tutorial/tutorial-7.md:177 docs/en/tutorial/tutorial-7.md:203 docs/en/tutorial/tutorial-7.md:229 docs/en/tutorial/tutorial-7.md:298 docs/en/tutorial/tutorial-7.md:394 docs/en/tutorial/tutorial-8.md:74 docs/en/tutorial/tutorial-8.md:95 docs/en/tutorial/tutorial-8.md:116
 msgid "/// caption"
 msgstr "/// caption"
 
@@ -656,8 +656,8 @@ msgstr "La compatibilidad con Raspberry Pi es limitada por el momento."
 
 #: docs/en/tutorial/tutorial-0.md:35
 #, fuzzy
-msgid "**Important:** You *must* use the system Python provided by your operating system. Alternative Python installations (pyenv, Anaconda, manually compiled Python, etc.) will prevent you from successfully packaging your application for distribution in later steps of this tutorial."
-msgstr "**Importante:** Usted *debe* utilizar el sistema Python proporcionado por su sistema operativo. Instalaciones alternativas de Python (pyenv, Anaconda, Python compilado manualmente, etc.) le impedirán empaquetar con éxito su aplicación para su distribución en pasos posteriores de este tutorial."
+msgid "**Important:** You *must* use the system Python provided by your operating system. Python installs from other sources (such as uv, pyenv, Anaconda, manually compiled Python, etc.) will prevent you from successfully packaging your application for distribution in later steps of this tutorial."
+msgstr "**Importante:** *Debe* utilizar el sistema Python proporcionado por su sistema operativo. Las instalaciones de Python procedentes de otras fuentes (como uv, pyenv, Anaconda, Python compilado manualmente, etc.) le impedirán empaquetar correctamente su aplicación para su distribución en los pasos posteriores de este tutorial."
 
 #: docs/en/tutorial/tutorial-0.md:41
 #, fuzzy
@@ -702,8 +702,8 @@ msgstr "**Ubuntu / Debian**"
 
 #: docs/en/tutorial/tutorial-0.md:72
 #, fuzzy
-msgid "Fedora"
-msgstr "Fedora"
+msgid "Red Hat / Fedora"
+msgstr "Red Hat / Fedora"
 
 #: docs/en/tutorial/tutorial-0.md:78
 #, fuzzy
@@ -715,81 +715,91 @@ msgstr "**Arch / Manjaro**"
 msgid "OpenSUSE Tumbleweed"
 msgstr "**OpenSUSE Tumbleweed**"
 
-#: docs/en/tutorial/tutorial-0.md:94
+#: docs/en/tutorial/tutorial-0.md:90
+#, fuzzy
+msgid "/// admonition | Other Linux distributions"
+msgstr "/// admonition | Otras distribuciones de Linux"
+
+#: docs/en/tutorial/tutorial-0.md:92
+#, fuzzy
+msgid "If you're on a Linux distribution that isn't on this list, and isn't derived from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived distributions; AlmaLinux is Fedora-derived), you will probably have difficulty completing this tutorial. If Briefcase warns you that it \"Can't verify system packages\", you won't be able to complete this tutorial."
+msgstr "Si utilizas una distribución de Linux que no aparece en esta lista y que no deriva de ninguna de las que aparecen en ella (por ejemplo, Linux Mint y Pop! OS son distribuciones derivadas de Debian; AlmaLinux deriva de Fedora), probablemente tendrás dificultades para completar este tutorial. Si Briefcase te avisa de que «No se pueden verificar los paquetes del sistema», no podrás completar este tutorial."
+
+#: docs/en/tutorial/tutorial-0.md:100
 msgid "Building BeeWare apps on Windows requires:"
 msgstr "Construir aplicaciones BeeWare en Windows requiere:"
 
-#: docs/en/tutorial/tutorial-0.md:96
+#: docs/en/tutorial/tutorial-0.md:102
 #, fuzzy
 msgid "**Git**, a version control system. You can download Git from from {1}[git-scm.com]{2}."
 msgstr "**Git**, un sistema de control de versiones. Puede descargar Git desde [git-scm.com]{1}."
 
-#: docs/en/tutorial/tutorial-0.md:98
+#: docs/en/tutorial/tutorial-0.md:104
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
 msgstr "Después de instalar estas herramientas, debe asegurarse de reiniciar cualquier sesión de terminal. Windows sólo expondrá las herramientas recién instaladas a los terminales iniciados *después* de que se haya completado la instalación."
 
-#: docs/en/tutorial/tutorial-0.md:102
+#: docs/en/tutorial/tutorial-0.md:108
 msgid "Set up a virtual environment"
 msgstr "Crear un entorno virtual"
 
-#: docs/en/tutorial/tutorial-0.md:104
+#: docs/en/tutorial/tutorial-0.md:110
 msgid "We're now going to create a virtual environment - a \"sandbox\" that we can use to isolate our work on this tutorial from our main Python installation. If we install packages into the virtual environment, our main Python installation (and any other Python projects on our computer) won't be affected. If we make a complete mess of our virtual environment, we'll be able to simply delete it and start again, without affecting any other Python project on our computer, and without the need to re-install Python."
 msgstr "Ahora vamos a crear un entorno virtual - una \"caja de arena\" que podemos utilizar para aislar nuestro trabajo en este tutorial de nuestra instalación principal de Python. Si instalamos paquetes en el entorno virtual, nuestra instalación principal de Python (y cualquier otro proyecto Python en nuestro ordenador) no se verá afectado. Si hacemos un completo desastre de nuestro entorno virtual, podremos simplemente borrarlo y empezar de nuevo, sin afectar a ningún otro proyecto Python en nuestro ordenador, y sin necesidad de reinstalar Python."
 
-#: docs/en/tutorial/tutorial-0.md:137
+#: docs/en/tutorial/tutorial-0.md:143
 #, fuzzy
 msgid "If you're not using Python 3.12, replace the `-3.12` in these instructions with the version number that you are using."
 msgstr "Si no estás usando Python 3.12, sustituye el `-3.12` de estas instrucciones por el número de versión que estés usando."
 
-#: docs/en/tutorial/tutorial-0.md:139
+#: docs/en/tutorial/tutorial-0.md:145
 #, fuzzy
 msgid "/// admonition | Errors running PowerShell Scripts"
 msgstr "/// admonition | Errores al ejecutar scripts PowerShell"
 
-#: docs/en/tutorial/tutorial-0.md:141
+#: docs/en/tutorial/tutorial-0.md:147
 msgid "If you're using PowerShell, and you receive the error:"
 msgstr "Si está utilizando PowerShell y recibe el error:"
 
-#: docs/en/tutorial/tutorial-0.md:147
+#: docs/en/tutorial/tutorial-0.md:153
 #, fuzzy
 msgid "Your Windows account doesn't have permission to run scripts. To fix this:"
 msgstr "Su cuenta de Windows no tiene permiso para ejecutar scripts. Para solucionarlo:"
 
-#: docs/en/tutorial/tutorial-0.md:149
+#: docs/en/tutorial/tutorial-0.md:155
 msgid "Run [Windows PowerShell as Administrator]{1}."
 msgstr "Ejecute [Windows PowerShell como administrador]{1}."
 
-#: docs/en/tutorial/tutorial-0.md:150
+#: docs/en/tutorial/tutorial-0.md:156
 msgid "Run `set-executionpolicy RemoteSigned`"
 msgstr "Ejecuta `set-executionpolicy RemoteSigned`"
 
-#: docs/en/tutorial/tutorial-0.md:151
+#: docs/en/tutorial/tutorial-0.md:157
 msgid "Select `Y` to change the execution policy."
 msgstr "Seleccione `Y` para cambiar la política de ejecución."
 
-#: docs/en/tutorial/tutorial-0.md:153
+#: docs/en/tutorial/tutorial-0.md:159
 msgid "Once you've done this you can rerun `beeware-venv\\Scripts\\activate.ps1` in your original PowerShell session (or a new session in the same directory)."
 msgstr "Una vez hecho esto, puede volver a ejecutar `beeware-venv\\Scripts\\activate.ps1` en su sesión PowerShell original (o en una nueva sesión en el mismo directorio)."
 
-#: docs/en/tutorial/tutorial-0.md:159
+#: docs/en/tutorial/tutorial-0.md:165
 msgid "If this worked, your prompt should now be changed - it should have a `(beeware-venv)` prefix. This lets you know that you're currently in your BeeWare virtual environment. Whenever you're working on this tutorial, you should make sure your virtual environment is activated. If it isn't, re-run the last command (the `activate` command) to re-activate your environment."
 msgstr "Si esto ha funcionado, tu prompt debería haber cambiado - debería tener un prefijo `(beeware-venv)`. Esto te permite saber que estás actualmente en tu entorno virtual BeeWare. Siempre que estés trabajando en este tutorial, debes asegurarte de que tu entorno virtual está activado. Si no lo está, vuelve a ejecutar el último comando (el comando `activate`) para reactivar tu entorno."
 
-#: docs/en/tutorial/tutorial-0.md:161
+#: docs/en/tutorial/tutorial-0.md:167
 #, fuzzy
 msgid "/// admonition | Alternative virtual environments"
 msgstr "/// admonition | Entornos virtuales alternativos"
 
-#: docs/en/tutorial/tutorial-0.md:163
+#: docs/en/tutorial/tutorial-0.md:169
 #, fuzzy
 msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of `virtualenv`, a predecessor to Python's built in `venv` module. As with Python installs -if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to `venv` and the system Python."
 msgstr "Si usas Anaconda o miniconda, puede que estés más familiarizado con el uso de entornos conda. También puede que hayas oído hablar de `virtualenv`, un predecesor del módulo `venv` de Python. Al igual que con las instalaciones de Python -si estás en macOS o Windows, no importa *cómo* creas tu entorno virtual, siempre y cuando tengas uno. Si estás en Linux, deberías usar `venv` y el sistema Python."
 
-#: docs/en/tutorial/tutorial-0.md:167 docs/en/tutorial/tutorial-1.md:213 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:462 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:153 docs/en/tutorial/tutorial-7.md:630 docs/en/tutorial/tutorial-8.md:255
+#: docs/en/tutorial/tutorial-0.md:173 docs/en/tutorial/tutorial-1.md:231 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:462 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:153 docs/en/tutorial/tutorial-7.md:667 docs/en/tutorial/tutorial-8.md:255
 msgid "Next steps"
 msgstr "Siguientes pasos"
 
-#: docs/en/tutorial/tutorial-0.md:169
+#: docs/en/tutorial/tutorial-0.md:175
 #, fuzzy
 msgid "We've now set up our environment. We're ready to [create our first BeeWare application]{1}."
 msgstr "Ya hemos configurado nuestro entorno. Estamos listos para [crear nuestra primera aplicación BeeWare]{1}."
@@ -916,52 +926,62 @@ msgstr "Ejecutar la aplicación en modo desarrollador"
 msgid "Move into the `helloworld` project directory and tell briefcase to start the project in Developer (or `dev`) mode:"
 msgstr "Entra en el directorio del proyecto `helloworld` y dile a briefcase que inicie el proyecto en modo desarrollador (o `dev`):"
 
-#: docs/en/tutorial/tutorial-1.md:163 docs/en/tutorial/tutorial-2.md:265
+#: docs/en/tutorial/tutorial-1.md:175 docs/en/tutorial/tutorial-2.md:265
 #, fuzzy
 msgid "This should open a GUI window:"
 msgstr "Esto debería abrir una ventana GUI:"
 
-#: docs/en/tutorial/tutorial-1.md:167
+#: docs/en/tutorial/tutorial-1.md:179
 #, fuzzy
 msgid "![Hello World Tutorial 1 window, on macOS]{1}"
 msgstr "[Tutorial Hola Mundo 1 ventana, en macOS]{1}"
 
-#: docs/en/tutorial/tutorial-1.md:177
+#: docs/en/tutorial/tutorial-1.md:189
 #, fuzzy
 msgid "![Hello World Tutorial 1 window, on Linux]{1}"
 msgstr "![Tutorial Hola Mundo 1 ventana, en Linux]{1}"
 
-#: docs/en/tutorial/tutorial-1.md:187
+#: docs/en/tutorial/tutorial-1.md:195 docs/en/tutorial/tutorial-7.md:247
+#, fuzzy
+msgid "/// admonition | Possible errors when running `briefcase dev`"
+msgstr "/// admonition | Posibles errores al ejecutar «briefcase dev»"
+
+#: docs/en/tutorial/tutorial-1.md:197
+#, fuzzy
+msgid "If you get an error when you run `briefcase dev`, it's almost certainly because some of the system requirements haven't been installed. Make sure you have [installed all the platform pre-requisites][install-dependencies]; the error message you receive should tell you which packages are missing."
+msgstr "Si obtienes un error al ejecutar `briefcase dev`, es casi seguro que se debe a que algunos de los requisitos del sistema no se han instalado. Asegúrate de haber [instalado todos los requisitos previos de la plataforma][install-dependencies]; el mensaje de error que recibas debería indicarte qué paquetes faltan."
+
+#: docs/en/tutorial/tutorial-1.md:205
 #, fuzzy
 msgid "![Hello World Tutorial 1 window, on Windows]{1}"
 msgstr "![Tutorial Hola Mundo 1 ventana, en Windows]{1}"
 
-#: docs/en/tutorial/tutorial-1.md:193
+#: docs/en/tutorial/tutorial-1.md:211
 #, fuzzy
 msgid "/// admonition | Invalid requirements or pip unable to connect"
 msgstr "/// admonition | Requisitos no válidos o pip incapaz de conectarse"
 
-#: docs/en/tutorial/tutorial-1.md:195
+#: docs/en/tutorial/tutorial-1.md:213
 #, fuzzy
 msgid "If you encounter the error:"
 msgstr "Si se encuentra con el error:"
 
-#: docs/en/tutorial/tutorial-1.md:203
+#: docs/en/tutorial/tutorial-1.md:221
 #, fuzzy
 msgid "Confirm that you are running a [version of python that this tutorial supports][install-python]."
 msgstr "Confirme que está ejecutando una [versión de python compatible con este tutorial][install-python]."
 
-#: docs/en/tutorial/tutorial-1.md:205
+#: docs/en/tutorial/tutorial-1.md:223
 #, fuzzy
 msgid "If your version of python is *not* a supported version, you will have to restart the tutorial."
 msgstr "Si tu versión de python *no* es una versión soportada, tendrás que reiniciar el tutorial."
 
-#: docs/en/tutorial/tutorial-1.md:211
+#: docs/en/tutorial/tutorial-1.md:229
 #, fuzzy
 msgid "Close the application - either by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran `briefcase dev` - and you're done! Congratulations - you've just written a standalone, native application in Python!"
 msgstr "Pulsa el botón de cerrar (o selecciona Salir en el menú de la aplicación), ¡y ya está! Enhorabuena - ¡acabas de escribir una aplicación nativa e independiente en Python!"
 
-#: docs/en/tutorial/tutorial-1.md:215
+#: docs/en/tutorial/tutorial-1.md:233
 #, fuzzy
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In [Tutorial 2]{1}, we'll put a more useful user interface onto our application."
 msgstr "Ahora tenemos una aplicación que funciona, ejecutándose en modo desarrollador. Ahora podemos añadir algo de lógica propia para hacer que nuestra aplicación haga algo un poco más interesante. En [Tutorial 2]{1}, pondremos una interfaz de usuario más útil en nuestra aplicación."
@@ -2009,231 +2029,251 @@ msgstr "Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de
 msgid "Let's run our updated app in Briefcase developer mode to check that our change has worked."
 msgstr "Vamos a ejecutar nuestra aplicación actualizada en el modo de desarrollador de Briefcase para comprobar que nuestro cambio ha funcionado."
 
-#: docs/en/tutorial/tutorial-7.md:102 docs/en/tutorial/tutorial-7.md:167 docs/en/tutorial/tutorial-8.md:124
+#: docs/en/tutorial/tutorial-7.md:102 docs/en/tutorial/tutorial-7.md:237 docs/en/tutorial/tutorial-8.md:124
 #, fuzzy
 msgid "You can't run an Android app in developer mode - use the instructions for your chosen desktop platform."
 msgstr "No puedes ejecutar una aplicación Android en modo desarrollador: utiliza las instrucciones para la plataforma de escritorio que hayas elegido."
 
-#: docs/en/tutorial/tutorial-7.md:108 docs/en/tutorial/tutorial-7.md:173 docs/en/tutorial/tutorial-8.md:130
+#: docs/en/tutorial/tutorial-7.md:108 docs/en/tutorial/tutorial-7.md:243 docs/en/tutorial/tutorial-8.md:130
 #, fuzzy
 msgid "You can't run an iOS app in developer mode - use the instructions for your chosen desktop platform."
 msgstr "No puedes ejecutar una aplicación para iOS en modo desarrollador: sigue las instrucciones de la plataforma de escritorio que hayas elegido."
 
 #: docs/en/tutorial/tutorial-7.md:112
 #, fuzzy
-msgid "What happened? We've added `faker` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing `faker` with `pip`, and then re-running `briefcase dev`:"
-msgstr "¿Qué ha pasado? Hemos añadido `httpx` a nuestro *código*, pero no lo hemos añadido a nuestro entorno virtual de desarrollo. Podemos solucionarlo instalando `httpx` con `pip`, y volviendo a ejecutar `briefcase dev`:"
+msgid "What happened? We've added `faker` to our *code*, but we haven't added it to the virtual environment that is used to run the app in development mode."
+msgstr "¿Qué ha pasado? Hemos añadido `faker` a nuestro *código*, pero no lo hemos añadido al entorno virtual que se utiliza para ejecutar la aplicación en modo de desarrollo."
 
-#: docs/en/tutorial/tutorial-7.md:121 docs/en/tutorial/tutorial-7.md:138 docs/en/tutorial/tutorial-7.md:155 docs/en/tutorial/tutorial-8.md:70 docs/en/tutorial/tutorial-8.md:91 docs/en/tutorial/tutorial-8.md:112
+#: docs/en/tutorial/tutorial-7.md:114
 #, fuzzy
-msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
-msgstr "Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de diálogo parecido a:"
+msgid "When Briefcase runs an app in development mode, it creates a standalone virtual environment for that application, independent of the environment in which you run `briefcase`. If your app doesn't declare that it needs a particular library, that library won't be installed in the development virtual environment."
+msgstr "Cuando Briefcase ejecuta una aplicación en modo de desarrollo, crea un entorno virtual independiente para esa aplicación, independiente del entorno en el que se ejecuta `briefcase`. Si tu aplicación no declara que necesita una biblioteca concreta, dicha biblioteca no se instalará en el entorno virtual de desarrollo."
 
-#: docs/en/tutorial/tutorial-7.md:123
+#: docs/en/tutorial/tutorial-7.md:116
 #, fuzzy
-msgid "![Hello World Tutorial 7 dialog, on macOS]{1}"
-msgstr "Hola Mundo Tutorial 7 diálogo, en macOS]{1}"
+msgid "So how do you add a new requirement to your application?"
+msgstr "Entonces, ¿cómo se añade un nuevo requisito a la solicitud?"
 
-#: docs/en/tutorial/tutorial-7.md:140
-#, fuzzy
-msgid "![Hello World Tutorial 7 dialog, on Linux]{1}"
-msgstr "[Hola Mundo Tutorial 7 diálogo, en Linux]{1}"
-
-#: docs/en/tutorial/tutorial-7.md:157
-#, fuzzy
-msgid "![Hello World Tutorial 7 dialog, on Windows]{1}"
-msgstr "[Hola Mundo Tutorial 7 diálogo, en Windows]{1}"
-
-#: docs/en/tutorial/tutorial-7.md:177
-#, fuzzy
-msgid "We've now got a working app, using a third party library, running in development mode!"
-msgstr "Ya tenemos una aplicación que funciona, que utiliza una biblioteca de terceros y que se ejecuta en modo de desarrollo"
-
-#: docs/en/tutorial/tutorial-7.md:179
-#, fuzzy
-msgid "Running the updated app"
-msgstr "Ejecutar la aplicación actualizada"
-
-#: docs/en/tutorial/tutorial-7.md:181
-#, fuzzy
-msgid "Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in [Tutorial 4]{1}:"
-msgstr "Vamos a empaquetar este código de aplicación actualizado como una aplicación independiente. Como hemos hecho cambios en el código, tenemos que seguir los mismos pasos que en [Tutorial 4]{1}:"
-
-#: docs/en/tutorial/tutorial-7.md:185 docs/en/tutorial/tutorial-7.md:226 docs/en/tutorial/tutorial-7.md:281 docs/en/tutorial/tutorial-7.md:322 docs/en/tutorial/tutorial-7.md:397
-#, fuzzy
-msgid "Update the code in the packaged app:"
-msgstr "Actualice el código en la aplicación empaquetada:"
-
-#: docs/en/tutorial/tutorial-7.md:196 docs/en/tutorial/tutorial-7.md:237 docs/en/tutorial/tutorial-7.md:292 docs/en/tutorial/tutorial-7.md:333 docs/en/tutorial/tutorial-7.md:408
-#, fuzzy
-msgid "Rebuild the app:"
-msgstr "Reconstruye la aplicación:"
-
-#: docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:251 docs/en/tutorial/tutorial-7.md:301
-msgid "And finally, run the app:"
-msgstr "Y, por último, ejecute la aplicación:"
-
-#: docs/en/tutorial/tutorial-7.md:214 docs/en/tutorial/tutorial-7.md:310
-#, fuzzy
-msgid "However, when the app runs, you'll see an error in the console, plus a crash dialog:"
-msgstr "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola y un cuadro de diálogo de bloqueo:"
-
-#: docs/en/tutorial/tutorial-7.md:216
-#, fuzzy
-msgid "![Hello World Tutorial 7 app crash, on macOS]{1}"
-msgstr "[Fallo de la aplicación Hello World Tutorial 7, en macOS]{1}"
-
-#: docs/en/tutorial/tutorial-7.md:260 docs/en/tutorial/tutorial-7.md:352
-#, fuzzy
-msgid "However, when the app runs, you'll see an error in the console:"
-msgstr "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola:"
-
-#: docs/en/tutorial/tutorial-7.md:312
-#, fuzzy
-msgid "![Hello World Tutorial 7 app crash, on Windows]{1}"
-msgstr "[Fallo de la aplicación Hello World Tutorial 7, en Windows]{1}"
-
-#: docs/en/tutorial/tutorial-7.md:343 docs/en/tutorial/tutorial-7.md:418
-#, fuzzy
-msgid "And finally, run the app (selecting a simulator when prompted):"
-msgstr "Por último, ejecute la aplicación (seleccionando un simulador cuando se le solicite):"
-
-#: docs/en/tutorial/tutorial-7.md:428
-#, fuzzy
-msgid "However, when the app runs, you'll see an error in the console"
-msgstr "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola:"
-
-#: docs/en/tutorial/tutorial-7.md:443
-#, fuzzy
-msgid "Once again, the app has failed to start because `faker` has not been installed - but why? Haven't we already installed `faker`?"
-msgstr "Una vez más, la aplicación no se inicia porque no se ha instalado `faker`, pero ¿por qué? ¿No hemos instalado ya `faker`?"
-
-#: docs/en/tutorial/tutorial-7.md:445
-#, fuzzy
-msgid "We have - but only in the development environment. Your development environment is entirely local to your machine - and is only enabled when you explicitly activate it. Although Briefcase has a development mode, the main reason you'd use Briefcase is to package up your code so you can give it to someone else."
-msgstr "Sí, pero sólo en el entorno de desarrollo. Tu entorno de desarrollo es totalmente local a tu máquina - y sólo se activa cuando lo activas explícitamente. Aunque Briefcase tiene un modo de desarrollo, la principal razón por la que utilizarías Briefcase es para empaquetar tu código y poder dárselo a otra persona."
-
-#: docs/en/tutorial/tutorial-7.md:447
-#, fuzzy
-msgid "The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run `briefcase build` - an isolated Python environment. This also explains why `faker` isn't installed - it has been installed in your *development* environment, but not in the packaged app."
-msgstr "La única forma de garantizar que alguien más tenga un entorno Python que contenga todo lo que necesita es construir un entorno Python completamente aislado. Esto significa que hay una instalación de Python completamente aislada, y un conjunto de dependencias completamente aislado. Esto es lo que Briefcase construye cuando ejecutas `briefcase build` - un entorno Python aislado. Esto también explica por qué `httpx` no está instalado - ha sido instalado en tu entorno de *desarrollo*, pero no en la aplicación empaquetada."
-
-#: docs/en/tutorial/tutorial-7.md:449
-#, fuzzy
-msgid "So - we need to tell Briefcase that our app has an external dependency."
-msgstr "Por lo tanto, tenemos que decirle a Briefcase que nuestra aplicación tiene una dependencia externa."
-
-#: docs/en/tutorial/tutorial-7.md:451
+#: docs/en/tutorial/tutorial-7.md:118
 #, fuzzy
 msgid "Updating dependencies"
 msgstr "Actualización de las dependencias"
 
-#: docs/en/tutorial/tutorial-7.md:453
+#: docs/en/tutorial/tutorial-7.md:120
 #, fuzzy
 msgid "In the root directory of your app, there is a file named `pyproject.toml`. This file contains all the app configuration details that you provided when you originally ran `briefcase new`."
 msgstr "En el directorio raíz de tu aplicación, hay un archivo llamado `pyproject.toml`. Este archivo contiene todos los detalles de configuración de la aplicación que proporcionaste cuando ejecutaste `briefcase new`."
 
-#: docs/en/tutorial/tutorial-7.md:455
+#: docs/en/tutorial/tutorial-7.md:122
 #, fuzzy
 msgid "`pyproject.toml` is broken up into sections; one of the sections describes the settings for your app:"
 msgstr "`pyproject.toml` está dividido en secciones; una de las secciones describe la configuración de tu aplicación:"
 
-#: docs/en/tutorial/tutorial-7.md:467
+#: docs/en/tutorial/tutorial-7.md:134
 #, fuzzy
-msgid "The `requires` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app."
-msgstr "La opción `requires` describe las dependencias de nuestra aplicación. Es una lista de cadenas, especificando librerías (y, opcionalmente, versiones) de librerías que quieres que se incluyan con tu app."
+msgid "The `requires` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions of libraries) that you want to be included with your app."
+msgstr "La opción `requires` describe las dependencias de nuestra aplicación. Es una lista de cadenas que especifica las bibliotecas (y, opcionalmente, las versiones de las bibliotecas) que desea incluir en su aplicación."
 
-#: docs/en/tutorial/tutorial-7.md:469
+#: docs/en/tutorial/tutorial-7.md:136
 #, fuzzy
 msgid "Modify the `requires` setting so that it reads:"
 msgstr "Modifique la configuración `requires` para que diga:"
 
-#: docs/en/tutorial/tutorial-7.md:477
+#: docs/en/tutorial/tutorial-7.md:144
 #, fuzzy
 msgid "By adding this setting, we're telling Briefcase \"when you build my app, run `pip install faker` into the application bundle\". Anything that would be legal input to `pip install` can be used here - so, you could specify:"
 msgstr "Al añadir esta opción, le estamos diciendo a Briefcase \"cuando compiles mi aplicación, ejecuta `pip install httpx` en el paquete de la aplicación\". Cualquier cosa que sea una entrada legal para `pip install` se puede utilizar aquí - por lo que podría especificar:"
 
-#: docs/en/tutorial/tutorial-7.md:479
+#: docs/en/tutorial/tutorial-7.md:146
 #, fuzzy
 msgid "A specific library version (e.g., `\"faker==37.3.0\"`);"
 msgstr "Una versión específica de la biblioteca (por ejemplo, `\"httpx==0.19.0\"`);"
 
-#: docs/en/tutorial/tutorial-7.md:480
+#: docs/en/tutorial/tutorial-7.md:147
 #, fuzzy
 msgid "A range of library versions (e.g., `\"faker>=37\"`);"
 msgstr "Un rango de versiones de la biblioteca (por ejemplo, `\"httpx>=0.19\"`);"
 
-#: docs/en/tutorial/tutorial-7.md:481
+#: docs/en/tutorial/tutorial-7.md:148
 #, fuzzy
 msgid "A path to a git repository (e.g., `\"git+https://github.com/joke2k/faker/\"`); or"
 msgstr "Una ruta a un repositorio git (por ejemplo, `\"git+https://github.com/encode/httpx\"`); o bien"
 
-#: docs/en/tutorial/tutorial-7.md:482
+#: docs/en/tutorial/tutorial-7.md:149
 #, fuzzy
 msgid "A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)"
 msgstr "Una ruta de archivo local (No obstante, ten cuidado: si entregas tu código a otra persona, es probable que esta ruta no exista en su máquina)"
 
-#: docs/en/tutorial/tutorial-7.md:484
+#: docs/en/tutorial/tutorial-7.md:151
 #, fuzzy
 msgid "Further down in `pyproject.toml`, you'll notice other sections that are operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and `[tool.briefcase.app.helloworld.windows]`. These sections *also* have a `requires` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific `requires` section, and that setting will only be used for that platform. You will notice that the `toga` libraries are all specified in the platform-specific `requires` section - this is because the libraries needed to display a user interface are platform specific."
 msgstr "Más abajo en `pyproject.toml`, verás otras secciones que dependen del sistema operativo, como `[tool.briefcase.app.helloworld.macOS]` y `[tool.briefcase.app.helloworld.windows]`. Estas secciones también tienen una configuración `requires`. Estas opciones te permiten definir dependencias adicionales específicas de la plataforma; así, por ejemplo, si necesitas una biblioteca específica de la plataforma para manejar algún aspecto de tu aplicación, puedes especificar esa biblioteca en la sección `requires` específica de la plataforma, y esa opción sólo se utilizará para esa plataforma. Notarás que las librerías `toga` están todas especificadas en la sección `requires` específica de la plataforma - esto es porque las librerías necesarias para mostrar una interfaz de usuario son específicas de la plataforma."
 
-#: docs/en/tutorial/tutorial-7.md:486
+#: docs/en/tutorial/tutorial-7.md:153
 #, fuzzy
 msgid "In our case, we want `faker` to be installed on all platforms, so we use the app-level `requires` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones."
 msgstr "En nuestro caso, queremos que `httpx` se instale en todas las plataformas, por lo que utilizamos el parámetro `requires` a nivel de aplicación. Las dependencias a nivel de aplicación siempre se instalarán; las dependencias específicas de la plataforma se instalan *además* de las dependencias a nivel de aplicación."
 
-#: docs/en/tutorial/tutorial-7.md:488
+#: docs/en/tutorial/tutorial-7.md:155
 #, fuzzy
-msgid "Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to `pyproject.toml`, and then update your app again - this time, passing in the `-r` flag. This tells Briefcase to update requirements in the packaged app:"
-msgstr "Ahora que hemos informado a Briefcase sobre nuestros requisitos adicionales, podemos intentar empaquetar nuestra aplicación de nuevo. Asegúrate de que has guardado los cambios en `pyproject.toml`, y luego actualiza tu aplicación de nuevo - esta vez, introduciendo la bandera `-r`. Esto le dice a Briefcase que actualice los requisitos en la aplicación empaquetada:"
+msgid "Once you've added the new requirement, save `pyproject.toml`, and run `briefcase dev -r`. The `-r` flag tells Briefcase that requirements have changed, and the development virtual environment needs to be updated:"
+msgstr "Una vez que hayas añadido el nuevo requisito, guarda `pyproject.toml` y ejecuta `briefcase dev -r`. El indicador `-r` le indica a Briefcase que los requisitos han cambiado y que es necesario actualizar el entorno virtual de desarrollo:"
 
-#: docs/en/tutorial/tutorial-7.md:608
+#: docs/en/tutorial/tutorial-7.md:173 docs/en/tutorial/tutorial-7.md:199 docs/en/tutorial/tutorial-7.md:225 docs/en/tutorial/tutorial-8.md:70 docs/en/tutorial/tutorial-8.md:91 docs/en/tutorial/tutorial-8.md:112
+#, fuzzy
+msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
+msgstr "Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de diálogo parecido a:"
+
+#: docs/en/tutorial/tutorial-7.md:175
+#, fuzzy
+msgid "![Hello World Tutorial 7 dialog, on macOS]{1}"
+msgstr "Hola Mundo Tutorial 7 diálogo, en macOS]{1}"
+
+#: docs/en/tutorial/tutorial-7.md:201
+#, fuzzy
+msgid "![Hello World Tutorial 7 dialog, on Linux]{1}"
+msgstr "[Hola Mundo Tutorial 7 diálogo, en Linux]{1}"
+
+#: docs/en/tutorial/tutorial-7.md:227
+#, fuzzy
+msgid "![Hello World Tutorial 7 dialog, on Windows]{1}"
+msgstr "[Hola Mundo Tutorial 7 diálogo, en Windows]{1}"
+
+#: docs/en/tutorial/tutorial-7.md:249
+#, fuzzy
+msgid "If you're still getting an error running `briefcase dev`, make sure:"
+msgstr "Si sigues obteniendo un error al ejecutar `briefcase dev`, asegúrate de que:"
+
+#: docs/en/tutorial/tutorial-7.md:251
+#, fuzzy
+msgid "You've added `faker` to the `requires` list in `pyproject.toml`;"
+msgstr "Has añadido `faker` a la lista `requires` en `pyproject.toml`;"
+
+#: docs/en/tutorial/tutorial-7.md:252
+#, fuzzy
+msgid "You've saved your changes to `pyproject.toml`; and"
+msgstr "Has guardado los cambios en `pyproject.toml`; y"
+
+#: docs/en/tutorial/tutorial-7.md:253
+#, fuzzy
+msgid "You included the `-r` argument when running `briefcase dev -r`."
+msgstr "Incluiste el argumento `-r` al ejecutar `briefcase dev -r`."
+
+#: docs/en/tutorial/tutorial-7.md:257
+#, fuzzy
+msgid "The very first time you run your app using `briefcase dev`, the `-r` argument is automatically added for you - that's why we haven't had to use the `-r` argument until now. The `-r` argument is only needed when you add, remove, or change a requirement, *after* running your application in development mode. If you've only updated code, you can run `briefcase dev` as we have been doing for the rest of this tutorial."
+msgstr "La primera vez que ejecutas tu aplicación utilizando `briefcase dev`, el argumento `-r` se añade automáticamente, por eso no hemos tenido que utilizar el argumento `-r` hasta ahora. El argumento `-r` solo es necesario cuando añades, eliminas o cambias un requisito, *después* de ejecutar tu aplicación en modo de desarrollo. Si solo has actualizado el código, puedes ejecutar `briefcase dev` como hemos estado haciendo durante el resto de este tutorial."
+
+#: docs/en/tutorial/tutorial-7.md:259
+#, fuzzy
+msgid "Running the updated app"
+msgstr "Ejecutar la aplicación actualizada"
+
+#: docs/en/tutorial/tutorial-7.md:261
+#, fuzzy
+msgid "We've now got a working app, using a third party library, running in development mode. Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in [Tutorial 4]{1}:"
+msgstr "Ahora tenemos una aplicación que funciona, utilizando una biblioteca de terceros, ejecutándose en modo de desarrollo. Vamos a empaquetar este código de aplicación actualizado como una aplicación independiente. Dado que hemos realizado cambios en el código, debemos seguir los mismos pasos que en el [Tutorial 4]{1}:"
+
+#: docs/en/tutorial/tutorial-7.md:265 docs/en/tutorial/tutorial-7.md:306 docs/en/tutorial/tutorial-7.md:361 docs/en/tutorial/tutorial-7.md:402 docs/en/tutorial/tutorial-7.md:477
+#, fuzzy
+msgid "Update the code in the packaged app:"
+msgstr "Actualice el código en la aplicación empaquetada:"
+
+#: docs/en/tutorial/tutorial-7.md:276 docs/en/tutorial/tutorial-7.md:317 docs/en/tutorial/tutorial-7.md:372 docs/en/tutorial/tutorial-7.md:413 docs/en/tutorial/tutorial-7.md:488
+#, fuzzy
+msgid "Rebuild the app:"
+msgstr "Reconstruye la aplicación:"
+
+#: docs/en/tutorial/tutorial-7.md:285 docs/en/tutorial/tutorial-7.md:331 docs/en/tutorial/tutorial-7.md:381
+msgid "And finally, run the app:"
+msgstr "Y, por último, ejecute la aplicación:"
+
+#: docs/en/tutorial/tutorial-7.md:294 docs/en/tutorial/tutorial-7.md:390
+#, fuzzy
+msgid "However, when the app runs, you'll see an error in the console, plus a crash dialog:"
+msgstr "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola y un cuadro de diálogo de bloqueo:"
+
+#: docs/en/tutorial/tutorial-7.md:296
+#, fuzzy
+msgid "![Hello World Tutorial 7 app crash, on macOS]{1}"
+msgstr "[Fallo de la aplicación Hello World Tutorial 7, en macOS]{1}"
+
+#: docs/en/tutorial/tutorial-7.md:340 docs/en/tutorial/tutorial-7.md:432
+#, fuzzy
+msgid "However, when the app runs, you'll see an error in the console:"
+msgstr "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola:"
+
+#: docs/en/tutorial/tutorial-7.md:392
+#, fuzzy
+msgid "![Hello World Tutorial 7 app crash, on Windows]{1}"
+msgstr "[Fallo de la aplicación Hello World Tutorial 7, en Windows]{1}"
+
+#: docs/en/tutorial/tutorial-7.md:423 docs/en/tutorial/tutorial-7.md:498
+#, fuzzy
+msgid "And finally, run the app (selecting a simulator when prompted):"
+msgstr "Por último, ejecute la aplicación (seleccionando un simulador cuando se le solicite):"
+
+#: docs/en/tutorial/tutorial-7.md:508
+#, fuzzy
+msgid "However, when the app runs, you'll see an error in the console"
+msgstr "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola:"
+
+#: docs/en/tutorial/tutorial-7.md:523
+#, fuzzy
+msgid "Once again, the app has failed to start because `faker` has not been installed - but why? Haven't we already installed `faker`?"
+msgstr "Una vez más, la aplicación no se inicia porque no se ha instalado `faker`, pero ¿por qué? ¿No hemos instalado ya `faker`?"
+
+#: docs/en/tutorial/tutorial-7.md:525
+#, fuzzy
+msgid "We have - but only in the development environment. Each built application also has its own standalone environment, which is one of the things Briefcase produces when you run `briefcase build`. When we ran `briefcase dev -r`, we added `faker` to our *development* environment, but not to the packaged app. We also need to run `briefcase update -r` so that Briefcase knows the requirements of the packaged app have changed:"
+msgstr "Sí, pero solo en el entorno de desarrollo. Cada aplicación compilada también tiene su propio entorno independiente, que es uno de los elementos que Briefcase genera al ejecutar `briefcase build`. Cuando ejecutamos `briefcase dev -r`, añadimos `faker` a nuestro entorno de *desarrollo*, pero no a la aplicación empaquetada. También tenemos que ejecutar `briefcase update -r` para que Briefcase sepa que los requisitos de la aplicación empaquetada han cambiado:"
+
+#: docs/en/tutorial/tutorial-7.md:645
 #, fuzzy
 msgid "Once you've updated, you can run `briefcase build` and `briefcase run` - and you should see your packaged app, with the new dialog behavior."
 msgstr "Una vez que haya actualizado, puede ejecutar `briefcase build` y `briefcase run` - y usted debe ver su aplicación empaquetada, con el nuevo comportamiento de diálogo."
 
-#: docs/en/tutorial/tutorial-7.md:612
+#: docs/en/tutorial/tutorial-7.md:649
 #, fuzzy
 msgid "The `-r` option for updating requirements is also honored by the `build` and `run` command, so if you want to update, build, and run in one step, you could use `briefcase run -u -r`."
 msgstr "La opción `-r` para actualizar los requisitos también es respetada por los comandos `build` y `run`, así que si quieres actualizar, construir y ejecutar en un solo paso, puedes usar `briefcase run -u -r`."
 
-#: docs/en/tutorial/tutorial-7.md:616
+#: docs/en/tutorial/tutorial-7.md:653
 #, fuzzy
 msgid "Third-Party Python Packages for Mobile and Web"
 msgstr "Paquetes Python de terceros para móviles y web"
 
-#: docs/en/tutorial/tutorial-7.md:618
+#: docs/en/tutorial/tutorial-7.md:655
 #, fuzzy
 msgid "Faker is just one example of a third-party Python package - a collection of code that isn't part what Python provides out of the box. These third-party packages are most commonly distributed using the [Python Package Index (PyPI)]{1}, and installed into your local virtual environment. We've been using `pip` in this tutorial, but there are other options."
 msgstr "Faker es sólo un ejemplo de un paquete de Python de terceros - una colección de código que no es parte de lo que Python proporciona fuera de la caja. Estos paquetes de terceros se distribuyen normalmente usando el [Python Package Index (PyPI)]{1}, y se instalan en tu entorno virtual local. En este tutorial hemos utilizado `pip`, pero existen otras opciones."
 
-#: docs/en/tutorial/tutorial-7.md:620
+#: docs/en/tutorial/tutorial-7.md:657
 #, fuzzy
 msgid "On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI package can be installed into your virtual environment, or added to your app's requirements. However, when building an app for mobile or web platforms, [your options are slightly limited]{1}."
 msgstr "En plataformas de escritorio (macOS, Windows, Linux), se puede añadir cualquier `pip`-instalable a sus requisitos. En plataformas móviles y web, [las opciones son ligeramente limitadas]{1}."
 
-#: docs/en/tutorial/tutorial-7.md:622
+#: docs/en/tutorial/tutorial-7.md:659
 #, fuzzy
 msgid "In short; any *pure Python* package (i.e. any package created from a project written *only* in Python) can be used without difficulty. Some packages, though, are created from projects that contain both Python and other languages (e.g. C, C++, Rust, etc). Code written in those languages needs to be compiled to platform-specific binary modules before it can be used, and those pre-compiled binary modules are only available on specific platforms. Mobile and web platforms have very different requirements than \"standard\" desktop platforms. At this time, most Python packages don't provide pre-compiled binaries for mobile and web platforms."
 msgstr "En resumen; cualquier paquete *puro Python* (es decir, cualquier paquete creado a partir de un proyecto escrito *sólo* en Python) puede utilizarse sin dificultad. Algunos paquetes, sin embargo, se crean a partir de proyectos que contienen tanto Python como otros lenguajes (por ejemplo, C, C++, Rust, etc). El código escrito en esos lenguajes debe compilarse en módulos binarios específicos de la plataforma antes de poder utilizarse, y esos módulos binarios precompilados sólo están disponibles en plataformas específicas. Las plataformas móviles y web tienen requisitos muy diferentes a los de las plataformas de escritorio \"estándar\". En este momento, la mayoría de los paquetes de Python no proporcionan binarios precompilados para plataformas móviles y web."
 
-#: docs/en/tutorial/tutorial-7.md:624
+#: docs/en/tutorial/tutorial-7.md:661
 #, fuzzy
 msgid "On PyPI, packages are often provided in a pre-built distribution format called *wheels*. To check whether a package is pure Python, look at the PyPI downloads page for the project. If the wheels provided have a `-py3-none-any.whl` suffix (e.g., [Faker]{1}), then they are pure Python wheels. However, if the wheels have version and platform-specific extensions (e.g., [Pillow]{2}, which has wheels with suffixes like `-cp313-cp313-macosx_11_0_arm64.whl` and `-cp39-cp39-win_amd64.whl`), then the wheel *contains a binary component*. That package cannot be installed on mobile or web platforms unless a wheel compatible with those platforms has been provided."
 msgstr "En PyPI, los paquetes se proporcionan a menudo en un formato de distribución pre-construido llamado *wheels*. Para comprobar si un paquete es Python puro, mira en la página de descargas PyPI del proyecto. Si los wheels proporcionados tienen el sufijo `-py3-none-any.whl` (por ejemplo, [Faker]{1}), entonces son wheels de Python puro. Sin embargo, si las ruedas tienen extensiones específicas de versión y plataforma (por ejemplo, [Pillow]{2}, que tiene ruedas con sufijos como `-cp313-cp313-macosx_11_0_arm64.whl` y `-cp39-cp39-win_amd64.whl`), entonces la rueda *contiene un componente binario*. Ese paquete no puede instalarse en plataformas móviles o web a menos que se haya proporcionado una rueda compatible con esas plataformas."
 
-#: docs/en/tutorial/tutorial-7.md:626
+#: docs/en/tutorial/tutorial-7.md:663
 #, fuzzy
 msgid "At this time, *most* binary packages on PyPI don't provide mobile- or web-compatible wheels. To fill this gap, BeeWare provides binaries for some popular binary modules (including `numpy`, `pandas`, and `cryptography`). These wheels are *not* distributed on PyPI, but Briefcase will install those wheels if they're available."
 msgstr "En este momento, *la mayoría* de los paquetes binarios en PyPI no proporcionan ruedas compatibles con móviles o web. Para llenar este vacío, BeeWare proporciona binarios para algunos módulos binarios populares (incluyendo `numpy`, `pandas`, y `cryptography`). Estas ruedas *no* se distribuyen en PyPI, pero Briefcase instalará esas ruedas si están disponibles."
 
-#: docs/en/tutorial/tutorial-7.md:628
+#: docs/en/tutorial/tutorial-7.md:665
 #, fuzzy
 msgid "It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
 msgstr "BeeWare puede proporcionar binarios para algunos módulos binarios populares (incluyendo `numpy`, `pandas`, y `cryptography`). Es *normalmente* posible compilar paquetes para plataformas móviles, pero no es fácil de configurar - fuera del alcance de un tutorial introductorio como éste."
 
-#: docs/en/tutorial/tutorial-7.md:632
+#: docs/en/tutorial/tutorial-7.md:669
 #, fuzzy
 msgid "We've now got an app that uses a third-party library! In [Tutorial 8]{1} we'll learn how to ensure our app remains responsive as we add more complex application logic."
 msgstr "Ya tenemos una aplicación que utiliza una librería de terceros. En el [Tutorial 8]{1} aprenderemos cómo asegurarnos de que nuestra aplicación sigue respondiendo a medida que añadimos lógica de aplicación más compleja."
