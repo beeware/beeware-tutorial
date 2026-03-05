@@ -165,7 +165,7 @@ aria-label="Kopfzeile"
 
     <!-- Link to home -->
     <a
-      href="../.."
+      href="https://beeware.org/de/"
       title="BeeWare Tutorial"
       class="md-header__button md-logo"
       aria-label="BeeWare Tutorial"
@@ -185,7 +185,7 @@ aria-label="Kopfzeile"
     <!-- Header title -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
-      <a href="../.."
+      <a href="https://beeware.org/de/"
          title="BeeWare Tutorial">
         <div class="md-header__topic">
           <span class="md-ellipsis">
@@ -681,10 +681,10 @@ aria-label="Kopfzeile"
 </li>
         
           <li class="md-nav__item">
-  <a href="#fedora" class="md-nav__link">
+  <a href="#red-hat-fedora" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fedora
+        Red Hat / Fedora
       
     </span>
   </a>
@@ -1677,10 +1677,10 @@ aria-label="Kopfzeile"
 </li>
         
           <li class="md-nav__item">
-  <a href="#fedora" class="md-nav__link">
+  <a href="#red-hat-fedora" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fedora
+        Red Hat / Fedora
       
     </span>
   </a>
@@ -1795,11 +1795,10 @@ Version verwendet. Ist dies nicht der Fall (z. B. wird Ubuntu 18.04 mit Python
 3.6 ausgeliefert), müssen Sie Ihre Linux-Distribution auf eine neuere Version
 aktualisieren.</p>
 <p>Raspberry Pi wird derzeit nur begrenzt unterstützt.</p>
-<p><strong>Wichtig:</strong> Sie <em>müssen</em> das von Ihrem Betriebssystem bereitgestellte
-Python-System verwenden. Alternative Python-Installationen (pyenv, Anaconda,
-manuell kompiliertes Python usw.) verhindern, dass Sie Ihre Anwendung in
-späteren Schritten dieses Tutorials erfolgreich für die Verteilung verpacken
-können.</p>
+<p><strong>Important:</strong> You <em>must</em> use the system Python provided by your operating
+system. Python installs from other sources (such as uv, pyenv, Anaconda,
+manually compiled Python, etc.) will prevent you from successfully packaging
+your application for distribution in later steps of this tutorial.</p>
 </div>
 <div class="tabbed-block">
 <p>Wenn Sie unter Windows arbeiten, können Sie das offizielle Installationsprogramm
@@ -1838,7 +1837,7 @@ ab:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 <span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository1.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
-<h3 id="fedora">Fedora<a class="headerlink" href="#fedora" title="Permanent link">&para;</a></h3>
+<h3 id="red-hat-fedora">Red Hat / Fedora<a class="headerlink" href="#red-hat-fedora" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>gcc<span class="w"> </span>make<span class="w"> </span>pkg-config<span class="w"> </span>rpm-build<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-gobject-devel<span class="w"> </span>gtk3<span class="w"> </span>libcanberra-gtk3
 </code></pre></div>
 <h3 id="arch-manjaro"><strong>Arch / Manjaro</strong><a class="headerlink" href="#arch-manjaro" title="Permanent link">&para;</a></h3>
@@ -1847,6 +1846,14 @@ ab:</p>
 <h3 id="opensuse-tumbleweed"><strong>OpenSUSE Tumbleweed</strong><a class="headerlink" href="#opensuse-tumbleweed" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>patterns-devel-base-devel_basis<span class="w"> </span>pkgconf-pkg-config<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-devel<span class="w"> </span>gtk3<span class="w"> </span><span class="s1">&#39;typelib(Gtk)=3.0&#39;</span><span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
+<div class="admonition">
+<p class="admonition-title">Other Linux distributions</p>
+<p>If you're on a Linux distribution that isn't on this list, and isn't derived
+from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived
+distributions; AlmaLinux is Fedora-derived), you will probably have difficulty
+completing this tutorial. If Briefcase warns you that it "Can't verify system
+packages", you won't be able to complete this tutorial.</p>
+</div>
 </div>
 <div class="tabbed-block">
 <p>Die Erstellung von BeeWare-Anwendungen unter Windows erfordert:</p>

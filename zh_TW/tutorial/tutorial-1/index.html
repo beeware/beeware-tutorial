@@ -167,7 +167,7 @@ aria-label="頁首"
 
     <!-- Link to home -->
     <a
-      href="../.."
+      href="https://beeware.org/zh_TW/"
       title="BeeWare Tutorial"
       class="md-header__button md-logo"
       aria-label="BeeWare Tutorial"
@@ -187,7 +187,7 @@ aria-label="頁首"
     <!-- Header title -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
-      <a href="../.."
+      <a href="https://beeware.org/zh_TW/"
          title="BeeWare Tutorial">
         <div class="md-header__topic">
           <span class="md-ellipsis">
@@ -1755,6 +1755,10 @@ aria-label="頁首"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
+<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">...</span>
+<span class="go">Creating virtual environment (dev.cpython-313-darwin)... done</span>
+
 <span class="go">[hello-world] Installing requirements...</span>
 <span class="go">...</span>
 
@@ -1766,6 +1770,10 @@ aria-label="頁首"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
+<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">...</span>
+<span class="go">Creating virtual environment (dev.cpython-313-x86_64-linux-gnu)... done</span>
+
 <span class="go">[hello-world] Installing requirements...</span>
 <span class="go">...</span>
 
@@ -1776,6 +1784,10 @@ aria-label="頁首"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span><span class="k">cd</span> helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
+
+<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">...</span>
+<span class="go">Creating virtual environment (dev.cp313-win_amd64)... done</span>
 
 <span class="go">[hello-world] Installing requirements...</span>
 <span class="go">...</span>
@@ -1800,6 +1812,13 @@ aria-label="頁首"
 <p><img alt="Hello World 教學 1 視窗，在 Linux 上" src="../../images/linux/tutorial-1.png" />。</p>
 <figcaption></figcaption>
 </figure>
+<div class="admonition">
+<p class="admonition-title">Possible errors when running <code>briefcase dev</code></p>
+<p>If you get an error when you run <code>briefcase dev</code>, it's almost certainly because
+some of the system requirements haven't been installed. Make sure you have
+<a class="autorefs autorefs-internal" title="安裝依賴項目" href="../tutorial-0/#install-dependencies">installed all the platform pre-requisites</a>; the error
+message you receive should tell you which packages are missing.</p>
+</div>
 </div>
 <div class="tabbed-block">
 <figure>

@@ -167,7 +167,7 @@ aria-label="Cabecera"
 
     <!-- Link to home -->
     <a
-      href="../.."
+      href="https://beeware.org/es/"
       title="BeeWare Tutorial"
       class="md-header__button md-logo"
       aria-label="BeeWare Tutorial"
@@ -187,7 +187,7 @@ aria-label="Cabecera"
     <!-- Header title -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
-      <a href="../.."
+      <a href="https://beeware.org/es/"
          title="BeeWare Tutorial">
         <div class="md-header__topic">
           <span class="md-ellipsis">
@@ -1163,10 +1163,10 @@ aria-label="Cabecera"
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejecutar-la-aplicacion-actualizada" class="md-nav__link">
+  <a href="#actualizacion-de-las-dependencias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ejecutar la aplicación actualizada
+        Actualización de las dependencias
       
     </span>
   </a>
@@ -1174,10 +1174,10 @@ aria-label="Cabecera"
 </li>
       
         <li class="md-nav__item">
-  <a href="#actualizacion-de-las-dependencias" class="md-nav__link">
+  <a href="#ejecutar-la-aplicacion-actualizada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actualización de las dependencias
+        Ejecutar la aplicación actualizada
       
     </span>
   </a>
@@ -1617,10 +1617,10 @@ aria-label="Cabecera"
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejecutar-la-aplicacion-actualizada" class="md-nav__link">
+  <a href="#actualizacion-de-las-dependencias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ejecutar la aplicación actualizada
+        Actualización de las dependencias
       
     </span>
   </a>
@@ -1628,10 +1628,10 @@ aria-label="Cabecera"
 </li>
       
         <li class="md-nav__item">
-  <a href="#actualizacion-de-las-dependencias" class="md-nav__link">
+  <a href="#ejecutar-la-aplicacion-actualizada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actualización de las dependencias
+        Ejecutar la aplicación actualizada
       
     </span>
   </a>
@@ -1776,14 +1776,80 @@ instrucciones de la plataforma de escritorio que hayas elegido.</p>
 </div>
 </div>
 </div>
-<p>¿Qué ha pasado? Hemos añadido <code>httpx</code> a nuestro <em>código</em>, pero no lo hemos
-añadido a nuestro entorno virtual de desarrollo. Podemos solucionarlo instalando
-<code>httpx</code> con <code>pip</code>, y volviendo a ejecutar <code>briefcase dev</code>:</p>
+<p>What happened? We've added <code>faker</code> to our <em>code</em>, but we haven't added it to the
+virtual environment that is used to run the app in development mode.</p>
+<p>When Briefcase runs an app in development mode, it creates a standalone virtual
+environment for that application, independent of the environment in which you
+run <code>briefcase</code>. If your app doesn't declare that it needs a particular library,
+that library won't be installed in the development virtual environment.</p>
+<p>So how do you add a new requirement to your application?</p>
+<h2 id="actualizacion-de-las-dependencias">Actualización de las dependencias<a class="headerlink" href="#actualizacion-de-las-dependencias" title="Permanent link">&para;</a></h2>
+<p>En el directorio raíz de tu aplicación, hay un archivo llamado <code>pyproject.toml</code>.
+Este archivo contiene todos los detalles de configuración de la aplicación que
+proporcionaste cuando ejecutaste <code>briefcase new</code>.</p>
+<p><code>pyproject.toml</code> está dividido en secciones; una de las secciones describe la
+configuración de tu aplicación:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
+<span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;A Tutorial app&quot;</span>
+<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;More details about the app should go here.</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
+<span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+</code></pre></div>
+<p>The <code>requires</code> option describes the dependencies of our application. It is a
+list of strings, specifying libraries (and, optionally, versions of libraries)
+that you want to be included with your app.</p>
+<p>Modifique la configuración <code>requires</code> para que diga:</p>
+<div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>Al añadir esta opción, le estamos diciendo a Briefcase "cuando compiles mi
+aplicación, ejecuta <code>pip install httpx</code> en el paquete de la aplicación".
+Cualquier cosa que sea una entrada legal para <code>pip install</code> se puede utilizar
+aquí - por lo que podría especificar:</p>
+<ul>
+<li>Una versión específica de la biblioteca (por ejemplo, <code>"httpx==0.19.0"</code>);</li>
+<li>Un rango de versiones de la biblioteca (por ejemplo, <code>"httpx&gt;=0.19"</code>);</li>
+<li>Una ruta a un repositorio git (por ejemplo,
+  <code>"git+https://github.com/encode/httpx"</code>); o bien</li>
+<li>Una ruta de archivo local (No obstante, ten cuidado: si entregas tu código a
+  otra persona, es probable que esta ruta no exista en su máquina)</li>
+</ul>
+<p>Más abajo en <code>pyproject.toml</code>, verás otras secciones que dependen del sistema
+operativo, como <code>[tool.briefcase.app.helloworld.macOS]</code> y
+<code>[tool.briefcase.app.helloworld.windows]</code>. Estas secciones también tienen una
+configuración <code>requires</code>. Estas opciones te permiten definir dependencias
+adicionales específicas de la plataforma; así, por ejemplo, si necesitas una
+biblioteca específica de la plataforma para manejar algún aspecto de tu
+aplicación, puedes especificar esa biblioteca en la sección <code>requires</code>
+específica de la plataforma, y esa opción sólo se utilizará para esa plataforma.
+Notarás que las librerías <code>toga</code> están todas especificadas en la sección
+<code>requires</code> específica de la plataforma - esto es porque las librerías necesarias
+para mostrar una interfaz de usuario son específicas de la plataforma.</p>
+<p>En nuestro caso, queremos que <code>httpx</code> se instale en todas las plataformas, por
+lo que utilizamos el parámetro <code>requires</code> a nivel de aplicación. Las
+dependencias a nivel de aplicación siempre se instalarán; las dependencias
+específicas de la plataforma se instalan <em>además</em> de las dependencias a nivel de
+aplicación.</p>
+<p>Once you've added the new requirement, save <code>pyproject.toml</code>, and run <code>briefcase
+dev -r</code>. The <code>-r</code> flag tells Briefcase that requirements have changed, and the
+development virtual environment needs to be updated:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>faker
-<span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
+
+<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">...</span>
+<span class="go">Recreating virtual environment (dev.cpython-313-darwin)... done</span>
+
+<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">...</span>
+
+<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de
 diálogo parecido a:</p>
@@ -1793,8 +1859,17 @@ diálogo parecido a:</p>
 </figure>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>faker
-<span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
+
+<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">...</span>
+<span class="go">Recreating virtual environment (dev.cpython-313-x86_64-linux-gnu)... done</span>
+
+<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">...</span>
+
+<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de
 diálogo parecido a:</p>
@@ -1804,8 +1879,17 @@ diálogo parecido a:</p>
 </figure>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>python -m pip install faker
-<span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev -r
+
+<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">...</span>
+<span class="go">Recreating virtual environment (dev.cp313-win_amd64)... done</span>
+
+<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">...</span>
+
+<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de
 diálogo parecido a:</p>
@@ -1824,12 +1908,26 @@ instrucciones de la plataforma de escritorio que hayas elegido.</p>
 </div>
 </div>
 </div>
-<p>Ya tenemos una aplicación que funciona, que utiliza una biblioteca de terceros y
-que se ejecuta en modo de desarrollo</p>
+<div class="admonition">
+<p class="admonition-title">Possible errors when running <code>briefcase dev</code></p>
+<p>If you're still getting an error running <code>briefcase dev</code>, make sure:</p>
+<ol>
+<li>You've added <code>faker</code> to the <code>requires</code> list in <code>pyproject.toml</code>;</li>
+<li>You've saved your changes to <code>pyproject.toml</code>; and</li>
+<li>You included the <code>-r</code> argument when running <code>briefcase dev -r</code>.</li>
+</ol>
+</div>
+<p>The very first time you run your app using <code>briefcase dev</code>, the <code>-r</code> argument is
+automatically added for you - that's why we haven't had to use the <code>-r</code> argument
+until now. The <code>-r</code> argument is only needed when you add, remove, or change a
+requirement, <em>after</em> running your application in development mode. If you've
+only updated code, you can run <code>briefcase dev</code> as we have been doing for the
+rest of this tutorial.</p>
 <h2 id="ejecutar-la-aplicacion-actualizada">Ejecutar la aplicación actualizada<a class="headerlink" href="#ejecutar-la-aplicacion-actualizada" title="Permanent link">&para;</a></h2>
-<p>Vamos a empaquetar este código de aplicación actualizado como una aplicación
-independiente. Como hemos hecho cambios en el código, tenemos que seguir los
-mismos pasos que en <a href="../tutorial-4/">Tutorial 4</a>:</p>
+<p>We've now got a working app, using a third party library, running in development
+mode. Let's get this updated application code packaged as a standalone app.
+Since we've made code changes, we need to follow the same steps as in <a href="../tutorial-4/">Tutorial
+4</a>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2032,75 +2130,12 @@ solicite):</p>
 </div>
 <p>Una vez más, la aplicación no se inicia porque no se ha instalado <code>faker</code>, pero
 ¿por qué? ¿No hemos instalado ya <code>faker</code>?</p>
-<p>Sí, pero sólo en el entorno de desarrollo. Tu entorno de desarrollo es
-totalmente local a tu máquina - y sólo se activa cuando lo activas
-explícitamente. Aunque Briefcase tiene un modo de desarrollo, la principal razón
-por la que utilizarías Briefcase es para empaquetar tu código y poder dárselo a
-otra persona.</p>
-<p>La única forma de garantizar que alguien más tenga un entorno Python que
-contenga todo lo que necesita es construir un entorno Python completamente
-aislado. Esto significa que hay una instalación de Python completamente aislada,
-y un conjunto de dependencias completamente aislado. Esto es lo que Briefcase
-construye cuando ejecutas <code>briefcase build</code> - un entorno Python aislado. Esto
-también explica por qué <code>httpx</code> no está instalado - ha sido instalado en tu
-entorno de <em>desarrollo</em>, pero no en la aplicación empaquetada.</p>
-<p>Por lo tanto, tenemos que decirle a Briefcase que nuestra aplicación tiene una
-dependencia externa.</p>
-<h2 id="actualizacion-de-las-dependencias">Actualización de las dependencias<a class="headerlink" href="#actualizacion-de-las-dependencias" title="Permanent link">&para;</a></h2>
-<p>En el directorio raíz de tu aplicación, hay un archivo llamado <code>pyproject.toml</code>.
-Este archivo contiene todos los detalles de configuración de la aplicación que
-proporcionaste cuando ejecutaste <code>briefcase new</code>.</p>
-<p><code>pyproject.toml</code> está dividido en secciones; una de las secciones describe la
-configuración de tu aplicación:</p>
-<div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
-<span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
-<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;A Tutorial app&quot;</span>
-<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;More details about the app should go here.</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
-<span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
-</code></pre></div>
-<p>La opción <code>requires</code> describe las dependencias de nuestra aplicación. Es una
-lista de cadenas, especificando librerías (y, opcionalmente, versiones) de
-librerías que quieres que se incluyan con tu app.</p>
-<p>Modifique la configuración <code>requires</code> para que diga:</p>
-<div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
-<span class="p">]</span>
-</code></pre></div>
-<p>Al añadir esta opción, le estamos diciendo a Briefcase "cuando compiles mi
-aplicación, ejecuta <code>pip install httpx</code> en el paquete de la aplicación".
-Cualquier cosa que sea una entrada legal para <code>pip install</code> se puede utilizar
-aquí - por lo que podría especificar:</p>
-<ul>
-<li>Una versión específica de la biblioteca (por ejemplo, <code>"httpx==0.19.0"</code>);</li>
-<li>Un rango de versiones de la biblioteca (por ejemplo, <code>"httpx&gt;=0.19"</code>);</li>
-<li>Una ruta a un repositorio git (por ejemplo,
-  <code>"git+https://github.com/encode/httpx"</code>); o bien</li>
-<li>Una ruta de archivo local (No obstante, ten cuidado: si entregas tu código a
-  otra persona, es probable que esta ruta no exista en su máquina)</li>
-</ul>
-<p>Más abajo en <code>pyproject.toml</code>, verás otras secciones que dependen del sistema
-operativo, como <code>[tool.briefcase.app.helloworld.macOS]</code> y
-<code>[tool.briefcase.app.helloworld.windows]</code>. Estas secciones también tienen una
-configuración <code>requires</code>. Estas opciones te permiten definir dependencias
-adicionales específicas de la plataforma; así, por ejemplo, si necesitas una
-biblioteca específica de la plataforma para manejar algún aspecto de tu
-aplicación, puedes especificar esa biblioteca en la sección <code>requires</code>
-específica de la plataforma, y esa opción sólo se utilizará para esa plataforma.
-Notarás que las librerías <code>toga</code> están todas especificadas en la sección
-<code>requires</code> específica de la plataforma - esto es porque las librerías necesarias
-para mostrar una interfaz de usuario son específicas de la plataforma.</p>
-<p>En nuestro caso, queremos que <code>httpx</code> se instale en todas las plataformas, por
-lo que utilizamos el parámetro <code>requires</code> a nivel de aplicación. Las
-dependencias a nivel de aplicación siempre se instalarán; las dependencias
-específicas de la plataforma se instalan <em>además</em> de las dependencias a nivel de
-aplicación.</p>
-<p>Ahora que hemos informado a Briefcase sobre nuestros requisitos adicionales,
-podemos intentar empaquetar nuestra aplicación de nuevo. Asegúrate de que has
-guardado los cambios en <code>pyproject.toml</code>, y luego actualiza tu aplicación de
-nuevo - esta vez, introduciendo la bandera <code>-r</code>. Esto le dice a Briefcase que
-actualice los requisitos en la aplicación empaquetada:</p>
+<p>We have - but only in the development environment. Each built application also
+has its own standalone environment, which is one of the things Briefcase
+produces when you run <code>briefcase build</code>. When we ran <code>briefcase dev -r</code>, we
+added <code>faker</code> to our <em>development</em> environment, but not to the packaged app. We
+also need to run <code>briefcase update -r</code> so that Briefcase knows the requirements
+of the packaged app have changed:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label><label for="__tabbed_4_4">Android</label><label for="__tabbed_4_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
