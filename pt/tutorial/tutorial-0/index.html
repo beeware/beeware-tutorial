@@ -1795,10 +1795,11 @@ ou</code>pacman` no Arch).</p>
 não for (por exemplo, o Ubuntu 18.04 é fornecido com o Python 3.6), será
 necessário atualizar a distribuição Linux para uma versão mais recente.</p>
 <p>Para o Raspberry Pi, o suporte está limitado neste momento.</p>
-<p><strong>Important:</strong> You <em>must</em> use the system Python provided by your operating
-system. Python installs from other sources (such as uv, pyenv, Anaconda,
-manually compiled Python, etc.) will prevent you from successfully packaging
-your application for distribution in later steps of this tutorial.</p>
+<p><strong>Importante:</strong> Você <em>deve</em> usar o sistema Python fornecido pelo seu sistema
+operacional. Instalações do Python provenientes de outras fontes (como uv,
+pyenv, Anaconda, Python compilado manualmente, etc.) impedirão que você empacote
+com sucesso seu aplicativo para distribuição nas etapas posteriores deste
+tutorial.</p>
 </div>
 <div class="tabbed-block">
 <p>Se estiver usando o Windows, você pode baixar o instalador oficial <a href="https://www.python.org/downloads">no site do
@@ -1847,12 +1848,13 @@ sua distribuição:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>patterns-devel-base-devel_basis<span class="w"> </span>pkgconf-pkg-config<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-devel<span class="w"> </span>gtk3<span class="w"> </span><span class="s1">&#39;typelib(Gtk)=3.0&#39;</span><span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
 <div class="admonition">
-<p class="admonition-title">Other Linux distributions</p>
-<p>If you're on a Linux distribution that isn't on this list, and isn't derived
-from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived
-distributions; AlmaLinux is Fedora-derived), you will probably have difficulty
-completing this tutorial. If Briefcase warns you that it "Can't verify system
-packages", you won't be able to complete this tutorial.</p>
+<p class="admonition-title">Outras distribuições Linux</p>
+<p>Se você estiver usando uma distribuição Linux que não consta nesta lista e não
+seja derivada de nenhuma das distribuições listadas (por exemplo, Linux Mint e
+Pop! OS são distribuições derivadas do Debian; AlmaLinux é derivada do Fedora),
+provavelmente terá dificuldade para concluir este tutorial. Se o Briefcase
+exibir uma mensagem de aviso informando que “Não é possível verificar os pacotes
+do sistema”, você não poderá concluir este tutorial.</p>
 </div>
 </div>
 <div class="tabbed-block">

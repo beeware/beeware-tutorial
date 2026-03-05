@@ -1795,10 +1795,11 @@ Version verwendet. Ist dies nicht der Fall (z. B. wird Ubuntu 18.04 mit Python
 3.6 ausgeliefert), müssen Sie Ihre Linux-Distribution auf eine neuere Version
 aktualisieren.</p>
 <p>Raspberry Pi wird derzeit nur begrenzt unterstützt.</p>
-<p><strong>Important:</strong> You <em>must</em> use the system Python provided by your operating
-system. Python installs from other sources (such as uv, pyenv, Anaconda,
-manually compiled Python, etc.) will prevent you from successfully packaging
-your application for distribution in later steps of this tutorial.</p>
+<p><strong>Wichtig:</strong> Sie <em>müssen</em> das von Ihrem Betriebssystem bereitgestellte
+Python-System verwenden. Python-Installationen aus anderen Quellen (wie uv,
+pyenv, Anaconda, manuell kompiliertes Python usw.) verhindern, dass Sie Ihre
+Anwendung in späteren Schritten dieses Tutorials erfolgreich für die Verteilung
+verpacken können.</p>
 </div>
 <div class="tabbed-block">
 <p>Wenn Sie unter Windows arbeiten, können Sie das offizielle Installationsprogramm
@@ -1847,12 +1848,14 @@ ab:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>patterns-devel-base-devel_basis<span class="w"> </span>pkgconf-pkg-config<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-devel<span class="w"> </span>gtk3<span class="w"> </span><span class="s1">&#39;typelib(Gtk)=3.0&#39;</span><span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
 <div class="admonition">
-<p class="admonition-title">Other Linux distributions</p>
-<p>If you're on a Linux distribution that isn't on this list, and isn't derived
-from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived
-distributions; AlmaLinux is Fedora-derived), you will probably have difficulty
-completing this tutorial. If Briefcase warns you that it "Can't verify system
-packages", you won't be able to complete this tutorial.</p>
+<p class="admonition-title">Andere Linux-Distributionen</p>
+<p>Wenn Sie eine Linux-Distribution verwenden, die nicht in dieser Liste aufgeführt
+ist und nicht von einer in dieser Liste aufgeführten Distribution abgeleitet ist
+(z. B. sind Linux Mint und Pop! OS beide von Debian abgeleitete Distributionen;
+AlmaLinux ist von Fedora abgeleitet), werden Sie wahrscheinlich Schwierigkeiten
+haben, dieses Tutorial durchzuführen. Wenn Briefcase Sie warnt, dass „die
+Systempakete nicht überprüft werden können”, können Sie dieses Tutorial nicht
+durchführen.</p>
 </div>
 </div>
 <div class="tabbed-block">

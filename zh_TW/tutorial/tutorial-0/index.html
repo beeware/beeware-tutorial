@@ -681,10 +681,10 @@ aria-label="頁首"
 </li>
         
           <li class="md-nav__item">
-  <a href="#red-hat-fedora" class="md-nav__link">
+  <a href="#fedora" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Red Hat / Fedora
+        紅帽 / Fedora
       
     </span>
   </a>
@@ -1677,10 +1677,10 @@ aria-label="頁首"
 </li>
         
           <li class="md-nav__item">
-  <a href="#red-hat-fedora" class="md-nav__link">
+  <a href="#fedora" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Red Hat / Fedora
+        紅帽 / Fedora
       
     </span>
   </a>
@@ -1783,10 +1783,8 @@ Python。有數據科學背景的用戶可能希望使用 <a href="https://docs.
 <p>您應該確保系統Python是Python 3.8或更高版本；如果不是（例如，Ubuntu 18.04 附帶 Python 3.6），則需要將 Linux
 發行版升級到更新的版本。</p>
 <p>目前對 Raspberry Pi 的支援有限。</p>
-<p><strong>Important:</strong> You <em>must</em> use the system Python provided by your operating
-system. Python installs from other sources (such as uv, pyenv, Anaconda,
-manually compiled Python, etc.) will prevent you from successfully packaging
-your application for distribution in later steps of this tutorial.</p>
+<p><strong>重要提示：</strong>您<em>必須</em>使用作業系統提供的系統版 Python。若使用其他來源安裝的 Python（例如 uv、pyenv、Anaconda 或手動編譯的
+Python 等），將導致您無法在本教學後續步驟中成功封裝應用程式以供分發。</p>
 </div>
 <div class="tabbed-block">
 <p>如果您使用的是 Windows，則可以從 <a href="https://www.python.org/downloads">Python 網站</a>
@@ -1815,7 +1813,7 @@ your application for distribution in later steps of this tutorial.</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 <span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository1.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
-<h3 id="red-hat-fedora">Red Hat / Fedora<a class="headerlink" href="#red-hat-fedora" title="Permanent link">&para;</a></h3>
+<h3 id="fedora">紅帽 / Fedora<a class="headerlink" href="#fedora" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>gcc<span class="w"> </span>make<span class="w"> </span>pkg-config<span class="w"> </span>rpm-build<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-gobject-devel<span class="w"> </span>gtk3<span class="w"> </span>libcanberra-gtk3
 </code></pre></div>
 <h3 id="arch-manjaro"><strong>Arch, Manjaro</strong><a class="headerlink" href="#arch-manjaro" title="Permanent link">&para;</a></h3>
@@ -1825,12 +1823,9 @@ your application for distribution in later steps of this tutorial.</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>patterns-devel-base-devel_basis<span class="w"> </span>pkgconf-pkg-config<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-devel<span class="w"> </span>gtk3<span class="w"> </span><span class="s1">&#39;typelib(Gtk)=3.0&#39;</span><span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
 <div class="admonition">
-<p class="admonition-title">Other Linux distributions</p>
-<p>If you're on a Linux distribution that isn't on this list, and isn't derived
-from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived
-distributions; AlmaLinux is Fedora-derived), you will probably have difficulty
-completing this tutorial. If Briefcase warns you that it "Can't verify system
-packages", you won't be able to complete this tutorial.</p>
+<p class="admonition-title">其他 Linux 發行版</p>
+<p>若您使用的 Linux 發行版未列於此清單，且非源自清單中任何發行版（例如：Linux Mint 與 Pop! OS 皆為 Debian
+衍生發行版；AlmaLinux 則源自 Fedora），您可能難以完成本教學。若 Briefcase 警告「無法驗證系統套件」，則無法完成本教學。</p>
 </div>
 </div>
 <div class="tabbed-block">

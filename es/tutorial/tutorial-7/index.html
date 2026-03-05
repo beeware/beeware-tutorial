@@ -1776,13 +1776,14 @@ instrucciones de la plataforma de escritorio que hayas elegido.</p>
 </div>
 </div>
 </div>
-<p>What happened? We've added <code>faker</code> to our <em>code</em>, but we haven't added it to the
-virtual environment that is used to run the app in development mode.</p>
-<p>When Briefcase runs an app in development mode, it creates a standalone virtual
-environment for that application, independent of the environment in which you
-run <code>briefcase</code>. If your app doesn't declare that it needs a particular library,
-that library won't be installed in the development virtual environment.</p>
-<p>So how do you add a new requirement to your application?</p>
+<p>¿Qué ha pasado? Hemos añadido <code>faker</code> a nuestro <em>código</em>, pero no lo hemos
+añadido al entorno virtual que se utiliza para ejecutar la aplicación en modo de
+desarrollo.</p>
+<p>Cuando Briefcase ejecuta una aplicación en modo de desarrollo, crea un entorno
+virtual independiente para esa aplicación, independiente del entorno en el que
+se ejecuta <code>briefcase</code>. Si tu aplicación no declara que necesita una biblioteca
+concreta, dicha biblioteca no se instalará en el entorno virtual de desarrollo.</p>
+<p>Entonces, ¿cómo se añade un nuevo requisito a la solicitud?</p>
 <h2 id="actualizacion-de-las-dependencias">Actualización de las dependencias<a class="headerlink" href="#actualizacion-de-las-dependencias" title="Permanent link">&para;</a></h2>
 <p>En el directorio raíz de tu aplicación, hay un archivo llamado <code>pyproject.toml</code>.
 Este archivo contiene todos los detalles de configuración de la aplicación que
@@ -1797,9 +1798,9 @@ configuración de tu aplicación:</p>
 <span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
 </code></pre></div>
-<p>The <code>requires</code> option describes the dependencies of our application. It is a
-list of strings, specifying libraries (and, optionally, versions of libraries)
-that you want to be included with your app.</p>
+<p>La opción <code>requires</code> describe las dependencias de nuestra aplicación. Es una
+lista de cadenas que especifica las bibliotecas (y, opcionalmente, las versiones
+de las bibliotecas) que desea incluir en su aplicación.</p>
 <p>Modifique la configuración <code>requires</code> para que diga:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
@@ -1833,9 +1834,9 @@ lo que utilizamos el parámetro <code>requires</code> a nivel de aplicación. La
 dependencias a nivel de aplicación siempre se instalarán; las dependencias
 específicas de la plataforma se instalan <em>además</em> de las dependencias a nivel de
 aplicación.</p>
-<p>Once you've added the new requirement, save <code>pyproject.toml</code>, and run <code>briefcase
-dev -r</code>. The <code>-r</code> flag tells Briefcase that requirements have changed, and the
-development virtual environment needs to be updated:</p>
+<p>Una vez que hayas añadido el nuevo requisito, guarda <code>pyproject.toml</code> y ejecuta
+<code>briefcase dev -r</code>. El indicador <code>-r</code> le indica a Briefcase que los requisitos
+han cambiado y que es necesario actualizar el entorno virtual de desarrollo:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1909,25 +1910,26 @@ instrucciones de la plataforma de escritorio que hayas elegido.</p>
 </div>
 </div>
 <div class="admonition">
-<p class="admonition-title">Possible errors when running <code>briefcase dev</code></p>
-<p>If you're still getting an error running <code>briefcase dev</code>, make sure:</p>
+<p class="admonition-title">Posibles errores al ejecutar «briefcase dev»</p>
+<p>Si sigues obteniendo un error al ejecutar <code>briefcase dev</code>, asegúrate de que:</p>
 <ol>
-<li>You've added <code>faker</code> to the <code>requires</code> list in <code>pyproject.toml</code>;</li>
-<li>You've saved your changes to <code>pyproject.toml</code>; and</li>
-<li>You included the <code>-r</code> argument when running <code>briefcase dev -r</code>.</li>
+<li>Has añadido <code>faker</code> a la lista <code>requires</code> en <code>pyproject.toml</code>;</li>
+<li>Has guardado los cambios en <code>pyproject.toml</code>; y</li>
+<li>Incluiste el argumento <code>-r</code> al ejecutar <code>briefcase dev -r</code>.</li>
 </ol>
 </div>
-<p>The very first time you run your app using <code>briefcase dev</code>, the <code>-r</code> argument is
-automatically added for you - that's why we haven't had to use the <code>-r</code> argument
-until now. The <code>-r</code> argument is only needed when you add, remove, or change a
-requirement, <em>after</em> running your application in development mode. If you've
-only updated code, you can run <code>briefcase dev</code> as we have been doing for the
-rest of this tutorial.</p>
+<p>La primera vez que ejecutas tu aplicación utilizando <code>briefcase dev</code>, el
+argumento <code>-r</code> se añade automáticamente, por eso no hemos tenido que utilizar el
+argumento <code>-r</code> hasta ahora. El argumento <code>-r</code> solo es necesario cuando añades,
+eliminas o cambias un requisito, <em>después</em> de ejecutar tu aplicación en modo de
+desarrollo. Si solo has actualizado el código, puedes ejecutar <code>briefcase dev</code>
+como hemos estado haciendo durante el resto de este tutorial.</p>
 <h2 id="ejecutar-la-aplicacion-actualizada">Ejecutar la aplicación actualizada<a class="headerlink" href="#ejecutar-la-aplicacion-actualizada" title="Permanent link">&para;</a></h2>
-<p>We've now got a working app, using a third party library, running in development
-mode. Let's get this updated application code packaged as a standalone app.
-Since we've made code changes, we need to follow the same steps as in <a href="../tutorial-4/">Tutorial
-4</a>:</p>
+<p>Ahora tenemos una aplicación que funciona, utilizando una biblioteca de
+terceros, ejecutándose en modo de desarrollo. Vamos a empaquetar este código de
+aplicación actualizado como una aplicación independiente. Dado que hemos
+realizado cambios en el código, debemos seguir los mismos pasos que en el
+<a href="../tutorial-4/">Tutorial 4</a>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2130,12 +2132,12 @@ solicite):</p>
 </div>
 <p>Una vez más, la aplicación no se inicia porque no se ha instalado <code>faker</code>, pero
 ¿por qué? ¿No hemos instalado ya <code>faker</code>?</p>
-<p>We have - but only in the development environment. Each built application also
-has its own standalone environment, which is one of the things Briefcase
-produces when you run <code>briefcase build</code>. When we ran <code>briefcase dev -r</code>, we
-added <code>faker</code> to our <em>development</em> environment, but not to the packaged app. We
-also need to run <code>briefcase update -r</code> so that Briefcase knows the requirements
-of the packaged app have changed:</p>
+<p>Sí, pero solo en el entorno de desarrollo. Cada aplicación compilada también
+tiene su propio entorno independiente, que es uno de los elementos que Briefcase
+genera al ejecutar <code>briefcase build</code>. Cuando ejecutamos <code>briefcase dev -r</code>,
+añadimos <code>faker</code> a nuestro entorno de <em>desarrollo</em>, pero no a la aplicación
+empaquetada. También tenemos que ejecutar <code>briefcase update -r</code> para que
+Briefcase sepa que los requisitos de la aplicación empaquetada han cambiado:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label><label for="__tabbed_4_4">Android</label><label for="__tabbed_4_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">

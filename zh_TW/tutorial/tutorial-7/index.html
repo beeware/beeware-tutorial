@@ -1765,13 +1765,10 @@ Package Index (PyPI) 下載的第三方程式庫。</p>
 </div>
 </div>
 </div>
-<p>What happened? We've added <code>faker</code> to our <em>code</em>, but we haven't added it to the
-virtual environment that is used to run the app in development mode.</p>
-<p>When Briefcase runs an app in development mode, it creates a standalone virtual
-environment for that application, independent of the environment in which you
-run <code>briefcase</code>. If your app doesn't declare that it needs a particular library,
-that library won't be installed in the development virtual environment.</p>
-<p>So how do you add a new requirement to your application?</p>
+<p>發生什麼事了？我們在<em>程式碼</em>中添加了<code>faker</code>，卻未將其添加至用於開發模式下執行應用程式的虛擬環境中。</p>
+<p>當 Briefcase 以開發模式執行應用程式時，會為該應用程式建立獨立的虛擬環境，此環境與您執行 <code>briefcase</code>
+的環境互不干涉。若您的應用程式未聲明需要特定函式庫，該函式庫將不會安裝在開發虛擬環境中。</p>
+<p>那麼，您該如何為應用程式新增一項新需求？</p>
 <h2 id="_2">更新依賴項<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>在應用程式的根目錄中，有一個名為<code>pyproject.toml</code>的檔案。該檔案包含您最初執行<code>briefcase new</code>時提供的所有應用程式設定詳細資訊。</p>
 <p><code>pyproject.toml</code> 被分成幾個部分；其中一節描述了您的應用程式的設定：：</p>
@@ -1783,9 +1780,7 @@ that library won't be installed in the development virtual environment.</p>
 <span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
 </code></pre></div>
-<p>The <code>requires</code> option describes the dependencies of our application. It is a
-list of strings, specifying libraries (and, optionally, versions of libraries)
-that you want to be included with your app.</p>
+<p><code>requires</code> 選項描述了我們應用的依賴關係。它是一組字串清單，用於指定您希望包含在應用程式中的函式庫（以及可選的函式庫版本）。</p>
 <p>修改<code>requires</code>設置，使其顯示為：</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
@@ -1803,9 +1798,8 @@ install`合法輸入的內容都可以在這裡使用 - 因此，您可以指定
 因此，例如，如果您需要特定於平台的庫來處理應用程式的某些方面，您可以在特定於平台的</code>requires<code>部分中指定該庫，並且該設定將僅用於該平台。您會注意到</code>toga<code>庫都是在特定於平台的</code>requires`部分中指定的
 - 這是因為顯示使用者介面所需的庫是特定於平台的。</p>
 <p>在我們的例子中，我們希望在所有平台上安裝<code>httpx</code>，因此我們使用應用程式層級<code>requires</code>設定。應用程式級相依性將始終被安裝；除了*應用程式層級的依賴項之外，還會安裝特定於平台的依賴項。</p>
-<p>Once you've added the new requirement, save <code>pyproject.toml</code>, and run <code>briefcase
-dev -r</code>. The <code>-r</code> flag tells Briefcase that requirements have changed, and the
-development virtual environment needs to be updated:</p>
+<p>新增需求後，請儲存 <code>pyproject.toml</code> 並執行 <code>briefcase dev -r</code>。<code>-r</code> 標記會告知 Briefcase
+需求已變更，需更新開發虛擬環境：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1874,25 +1868,20 @@ development virtual environment needs to be updated:</p>
 </div>
 </div>
 <div class="admonition">
-<p class="admonition-title">Possible errors when running <code>briefcase dev</code></p>
-<p>If you're still getting an error running <code>briefcase dev</code>, make sure:</p>
+<p class="admonition-title">執行 <code>briefcase dev</code> 時可能發生的錯誤</p>
+<p>若執行 <code>briefcase dev</code> 時仍出現錯誤，請確認：</p>
 <ol>
-<li>You've added <code>faker</code> to the <code>requires</code> list in <code>pyproject.toml</code>;</li>
-<li>You've saved your changes to <code>pyproject.toml</code>; and</li>
-<li>You included the <code>-r</code> argument when running <code>briefcase dev -r</code>.</li>
+<li>您已將 <code>faker</code> 添加至 <code>requires</code>; 中的 <code>pyproject.toml</code> 清單。</li>
+<li>您已將變更儲存至 <code>pyproject.toml</code>; 以及</li>
+<li>您在執行 <code>-r</code> 時包含了 <code>briefcase dev -r</code> 參數。</li>
 </ol>
 </div>
-<p>The very first time you run your app using <code>briefcase dev</code>, the <code>-r</code> argument is
-automatically added for you - that's why we haven't had to use the <code>-r</code> argument
-until now. The <code>-r</code> argument is only needed when you add, remove, or change a
-requirement, <em>after</em> running your application in development mode. If you've
-only updated code, you can run <code>briefcase dev</code> as we have been doing for the
-rest of this tutorial.</p>
+<p>當您首次使用 <code>briefcase dev</code> 執行應用程式時，系統會自動為您添加 <code>-r</code> 參數——這正是我們至今無需使用 <code>-r</code>
+參數的原因。僅當您在開發模式下執行應用程式後，需要新增、移除或修改需求時，才需使用 <code>-r</code> 參數。若您僅更新程式碼，則可如本教學後續步驟所示，直接執行
+<code>briefcase dev</code> 即可。</p>
 <h2 id="_3">運行更新的應用程式<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>We've now got a working app, using a third party library, running in development
-mode. Let's get this updated application code packaged as a standalone app.
-Since we've made code changes, we need to follow the same steps as in <a href="../tutorial-4/">Tutorial
-4</a>:</p>
+<p>我們現在已擁有一個運作中的應用程式，使用第三方函式庫並以開發模式運行。接下來讓我們將此更新後的應用程式程式碼打包成獨立應用程式。由於我們已進行程式碼變更，需遵循與<a href="../tutorial-4/">教學
+4</a>相同的步驟：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2089,12 +2078,9 @@ Since we've made code changes, we need to follow the same steps as in <a href=".
 </div>
 </div>
 <p>又一次，應用程式無法啟動，因為<code>faker</code>尚未安裝 - 但為什麼呢？我們不是已經安裝<code>faker</code>了嗎？</p>
-<p>We have - but only in the development environment. Each built application also
-has its own standalone environment, which is one of the things Briefcase
-produces when you run <code>briefcase build</code>. When we ran <code>briefcase dev -r</code>, we
-added <code>faker</code> to our <em>development</em> environment, but not to the packaged app. We
-also need to run <code>briefcase update -r</code> so that Briefcase knows the requirements
-of the packaged app have changed:</p>
+<p>我們確實有——但僅限於開發環境。每個建置的應用程式皆擁有獨立的環境，這是執行 <code>briefcase build</code> 時 Briefcase
+產生的元件之一。當我們執行 <code>briefcase dev -r</code> 時，僅將 <code>faker</code> 添加至我們的 <em>開發</em> 環境，而非打包後的應用程式。我們還需執行
+<code>briefcase update -r</code> 以告知 Briefcase 打包應用程式的需求已變更：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label><label for="__tabbed_4_4">Android</label><label for="__tabbed_4_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">

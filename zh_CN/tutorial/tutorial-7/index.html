@@ -1765,13 +1765,10 @@ Faker 构建一条虚假信息，就像有人在回复用户一样。</p>
 </div>
 </div>
 </div>
-<p>What happened? We've added <code>faker</code> to our <em>code</em>, but we haven't added it to the
-virtual environment that is used to run the app in development mode.</p>
-<p>When Briefcase runs an app in development mode, it creates a standalone virtual
-environment for that application, independent of the environment in which you
-run <code>briefcase</code>. If your app doesn't declare that it needs a particular library,
-that library won't be installed in the development virtual environment.</p>
-<p>So how do you add a new requirement to your application?</p>
+<p>发生了什么？我们在<em>代码</em>中添加了<code>faker</code>，但尚未将其添加到用于在开发模式下运行应用程序的虚拟环境中。</p>
+<p>当 Briefcase 以开发模式运行应用程序时，它会为该应用创建一个独立的虚拟环境，该环境与您运行 <code>briefcase</code>
+的环境无关。如果您的应用未声明需要特定库，则该库不会安装在开发虚拟环境中。</p>
+<p>那么，如何向应用程序添加新需求呢？</p>
 <h2 id="_2">更新依赖项<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>在应用程序的根目录中，有一个名为 <code>pyproject.toml</code> 的文件。该文件包含您最初运行 <code>briefcase new</code>
 时提供的所有应用程序配置详细信息。</p>
@@ -1784,9 +1781,7 @@ that library won't be installed in the development virtual environment.</p>
 <span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
 </code></pre></div>
-<p>The <code>requires</code> option describes the dependencies of our application. It is a
-list of strings, specifying libraries (and, optionally, versions of libraries)
-that you want to be included with your app.</p>
+<p><code>requires</code>选项描述了应用程序的依赖关系。它是一组字符串列表，用于指定需要包含在应用程序中的库（以及可选的库版本）。</p>
 <p>修改 <code>requires</code> 设置为：：</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
@@ -1808,9 +1803,8 @@ that you want to be included with your app.</p>
 部分中指定的，这是因为显示用户界面所需的库都是特定平台的。</p>
 <p>在我们的例子中，我们希望 <code>httpx</code> 安装在所有平台上，因此使用了应用程序级的 <code>requires</code>
 设置。应用程序级的依赖项始终会被安装；特定平台的依赖项会在应用程序级的依赖项之外*安装。</p>
-<p>Once you've added the new requirement, save <code>pyproject.toml</code>, and run <code>briefcase
-dev -r</code>. The <code>-r</code> flag tells Briefcase that requirements have changed, and the
-development virtual environment needs to be updated:</p>
+<p>添加新依赖项后，请保存 <code>pyproject.toml</code>, 并运行 <code>briefcase dev -r</code>. <code>-r</code> 标志会告知 Briefcase
+依赖项已变更，需要更新开发虚拟环境：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1879,25 +1873,19 @@ development virtual environment needs to be updated:</p>
 </div>
 </div>
 <div class="admonition">
-<p class="admonition-title">Possible errors when running <code>briefcase dev</code></p>
-<p>If you're still getting an error running <code>briefcase dev</code>, make sure:</p>
+<p class="admonition-title">运行 <code>briefcase dev</code> 时可能出现的错误</p>
+<p>如果运行 <code>briefcase dev</code> 时仍出现错误，请确保：</p>
 <ol>
-<li>You've added <code>faker</code> to the <code>requires</code> list in <code>pyproject.toml</code>;</li>
-<li>You've saved your changes to <code>pyproject.toml</code>; and</li>
-<li>You included the <code>-r</code> argument when running <code>briefcase dev -r</code>.</li>
+<li>您已将 <code>faker</code> 添加到 <code>requires</code> 列表中的 <code>pyproject.toml</code>;</li>
+<li>您已将更改保存至 <code>pyproject.toml</code>; 并</li>
+<li>你在运行 <code>-r</code> 时包含了 <code>briefcase dev -r</code> 参数。</li>
 </ol>
 </div>
-<p>The very first time you run your app using <code>briefcase dev</code>, the <code>-r</code> argument is
-automatically added for you - that's why we haven't had to use the <code>-r</code> argument
-until now. The <code>-r</code> argument is only needed when you add, remove, or change a
-requirement, <em>after</em> running your application in development mode. If you've
-only updated code, you can run <code>briefcase dev</code> as we have been doing for the
-rest of this tutorial.</p>
+<p>首次使用 <code>briefcase dev</code> 运行应用程序时，系统会自动添加 <code>-r</code> 参数——这正是我们此前无需使用 <code>-r</code>
+参数的原因。仅当您在开发模式下运行应用程序后，需要添加、移除或修改依赖项时，才需要使用 <code>-r</code> 参数。若您仅更新了代码，则可照常运行 <code>briefcase
+dev</code>，本教程后续部分均采用此方式。</p>
 <h2 id="_3">运行更新后的应用程序<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>We've now got a working app, using a third party library, running in development
-mode. Let's get this updated application code packaged as a standalone app.
-Since we've made code changes, we need to follow the same steps as in <a href="../tutorial-4/">Tutorial
-4</a>:</p>
+<p>我们现已获得一个使用第三方库、在开发模式下运行的可工作应用程序。接下来，让我们将这个更新后的应用程序代码打包为独立应用。由于我们进行了代码修改，需要遵循与<a href="../tutorial-4/">教程4</a>相同的步骤：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2093,12 +2081,10 @@ Since we've made code changes, we need to follow the same steps as in <a href=".
 </div>
 </div>
 <p>又一次，应用程序无法启动，因为<code>faker</code>尚未安装&ndash;但为什么呢？我们不是已经安装了 <code>faker</code>吗？</p>
-<p>We have - but only in the development environment. Each built application also
-has its own standalone environment, which is one of the things Briefcase
-produces when you run <code>briefcase build</code>. When we ran <code>briefcase dev -r</code>, we
-added <code>faker</code> to our <em>development</em> environment, but not to the packaged app. We
-also need to run <code>briefcase update -r</code> so that Briefcase knows the requirements
-of the packaged app have changed:</p>
+<p>我们确实有——但仅限于开发环境。每个构建的应用程序都有其独立的运行环境，这是运行<code>briefcase
+build</code>时Briefcase生成的组件之一。当我们执行<code>briefcase dev
+-r</code>时，仅将<code>faker</code>添加到<em>开发</em>环境中，而未添加到打包应用程序。我们还需运行<code>briefcase update
+-r</code>，以便Briefcase识别打包应用程序的依赖项已发生变更：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label><label for="__tabbed_4_4">Android</label><label for="__tabbed_4_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
