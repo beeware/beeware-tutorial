@@ -122,7 +122,14 @@ You've probably just seen pages of content go past in your terminal... so what j
 
 5. It **installed your resources needed by your application.** Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images.
 
-Once this completes, if you look in the project directory, you should now see a directory corresponding to your platform (`macOS`, `linux`, or `windows`) that contains additional files. This is the platform-specific packaging configuration for your application.
+Once this completes, if you look in the project's `build` directory, you should now see a directory corresponding to your platform (`macOS`, `linux`, or `windows`) that contains additional files. This is the platform-specific packaging configuration for your application. For example, on macOS, your project directory will now include:
+
+```text
+helloworld/
+└── build/
+    └── helloworld/
+        └── macos/
+```
 
 ## Building your application
 
