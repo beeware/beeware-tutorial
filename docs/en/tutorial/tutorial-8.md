@@ -12,7 +12,7 @@ This is a toy app, so we don't have a *real* API to work with, so we'll use a sa
 
 The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a "normal browser user" you're probably used to taking these details for granted, as a browser manages them for you.
 
-As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called [`httpx`](https://www.python-httpx.org). Briefcase uses `httpx` internally, so it's already in your local (`dev`) environment - you don't need to install it separately to use it here.
+As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the tutorial API - a library called [`httpx`](https://www.python-httpx.org). Briefcase uses `httpx` internally, so it's already in your local (`dev`) environment - you don't need to install it separately to use it here.
 
 But to use it in our app, it will still need to be installed in our packaged environment. So let's add a `httpx` API call to our app. Modify the `requires` setting in our `pyproject.toml` to include the new requirement:
 
