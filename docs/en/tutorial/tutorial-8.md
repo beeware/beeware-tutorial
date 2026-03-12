@@ -208,7 +208,7 @@ If you save these changes and re-run the app in development mode, there won't be
 - If you move/resize the app window while waiting for the dialog to appear, the window will redraw.
 - If you try to open an app menu, the menu will appear immediately.
 
-We can now run the full app. However, as we've added an extra requirement (`httpx`) we now need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:
+We can now run the full app. However, as we've added an extra requirement (`httpx`) we also need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:
 
 /// tab | macOS
 
