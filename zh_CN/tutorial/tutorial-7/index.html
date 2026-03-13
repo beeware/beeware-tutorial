@@ -2196,11 +2196,7 @@ build</code>时Briefcase生成的组件之一。当我们执行<code>briefcase d
 <h2 id="python">用于移动和网络的第三方 Python 软件包<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
 <p>Faker 只是第三方 Python 软件包的一个例子，它是 Python 开箱即用之外的代码集合。这些第三方软件包通常使用 <a href="https://pypi.org">Python Package
 Index (PyPI)</a> 发布，并安装到本地虚拟环境中。我们在本教程中使用了 <code>pip</code>，但也有其他选择。</p>
-<p>On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI
-can be installed into your virtual environment, or added to your app's
-requirements. However, when building an app for mobile or web platforms, <a href="https://briefcase.beeware.org/en/latest/about/faq#can-i-use-third-party-python-packages-in-my-app">your
-options are slightly
-limited</a>.</p>
+<p>在桌面平台（macOS、Windows、Linux）上，基本上任何PyPI上的软件包都可以安装到虚拟环境中，或添加到应用程序的要求中。然而，当为移动或网络平台构建应用程序时，<a href="https://briefcase.beeware.org/en/latest/about/faq#can-i-use-third-party-python-packages-in-my-app">您的选择会受到些许限制</a>。</p>
 <p>简而言之，任何<em>纯 Python</em> 包（即从<em>仅</em>用 Python 编写的项目中创建的包）都可以毫无困难地使用。不过，有些软件包是由包含 Python
 和其他语言（如 C、C++、Rust
 等）的项目创建的。使用这些语言编写的代码需要编译成特定平台的二进制模块才能使用，而这些预编译的二进制模块只能在特定平台上使用。移动平台和网络平台的要求与 "标准
