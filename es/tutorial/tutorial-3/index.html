@@ -1844,10 +1844,16 @@ acaba de pasar? Briefcase ha hecho lo siguiente:</p>
    aplicación final e imágenes de pantalla de bienvenida.</p>
 </li>
 </ol>
-<p>Una vez completado esto, si miras en el directorio del proyecto, deberías ver un
-directorio correspondiente a tu plataforma (<code>macOS</code>, <code>linux</code>, o <code>windows</code>) que
-contiene archivos adicionales. Esta es la configuración de empaquetado
-específica de la plataforma para tu aplicación.</p>
+<p>Once this completes, if you look in the project's <code>build</code> directory, you should
+now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or
+<code>windows</code>) that contains additional files. This is the platform-specific
+packaging configuration for your application. For example, on macOS, your
+project directory will now include:</p>
+<div class="highlight"><pre><span></span><code>helloworld/
+└── build/
+    └── helloworld/
+        └── macos/
+</code></pre></div>
 <h2 id="construir-su-aplicacion">Construir su aplicación<a class="headerlink" href="#construir-su-aplicacion" title="Permanent link">&para;</a></h2>
 <p>Ahora puede compilar su aplicación. Este paso realiza cualquier compilación
 binaria que sea necesaria para que su aplicación sea ejecutable en su plataforma

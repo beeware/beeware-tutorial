@@ -1847,11 +1847,16 @@ terminal&hellip; que s'est-il passé ? Briefcase a fait ce qui suit :</p>
    à l'application finale et les images de l'écran d'accueil.</p>
 </li>
 </ol>
-<p>Une fois cette opération terminée, si vous regardez dans le répertoire du
-projet, vous devriez voir un répertoire correspondant à votre plateforme
-(<code>macOS</code>, <code>linux</code>, ou <code>windows</code>) qui contient des fichiers supplémentaires.
-C'est la configuration de l'empaquetage spécifique à la plate-forme pour votre
-application.</p>
+<p>Once this completes, if you look in the project's <code>build</code> directory, you should
+now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or
+<code>windows</code>) that contains additional files. This is the platform-specific
+packaging configuration for your application. For example, on macOS, your
+project directory will now include:</p>
+<div class="highlight"><pre><span></span><code>helloworld/
+└── build/
+    └── helloworld/
+        └── macos/
+</code></pre></div>
 <h2 id="construire-votre-application">Construire votre application<a class="headerlink" href="#construire-votre-application" title="Permanent link">&para;</a></h2>
 <p>Vous pouvez maintenant compiler votre application. Cette étape permet
 d'effectuer toute compilation binaire nécessaire pour que votre application soit

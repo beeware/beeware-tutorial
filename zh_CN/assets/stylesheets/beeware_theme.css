@@ -554,7 +554,7 @@ readthedocs-docdiff {
 }
 
 /* Forces only highlighting the important bits of codeblocks */
-.highlight .gp, .highlight .go, .highlight .w {
+.highlight .gp, .highlight .go {
     user-select: none;
     -webkit-user-select: none;
 }

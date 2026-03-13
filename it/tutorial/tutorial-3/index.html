@@ -1846,11 +1846,16 @@ terminale&hellip; cosa è successo? Briefcase ha fatto quanto segue:</p>
    allegate all'applicazione finale e le immagini della schermata iniziale.</p>
 </li>
 </ol>
-<p>Una volta completata questa operazione, se si guarda nella cartella del
-progetto, si dovrebbe vedere una cartella corrispondente alla propria
-piattaforma (<code>macOS</code>, <code>linux</code> o <code>windows</code>) che contiene file aggiuntivi. Questa
-è la configurazione di pacchettizzazione specifica della piattaforma per
-l'applicazione.</p>
+<p>Once this completes, if you look in the project's <code>build</code> directory, you should
+now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or
+<code>windows</code>) that contains additional files. This is the platform-specific
+packaging configuration for your application. For example, on macOS, your
+project directory will now include:</p>
+<div class="highlight"><pre><span></span><code>helloworld/
+└── build/
+    └── helloworld/
+        └── macos/
+</code></pre></div>
 <h2 id="creazione-dellapplicazione">Creazione dell'applicazione<a class="headerlink" href="#creazione-dellapplicazione" title="Permanent link">&para;</a></h2>
 <p>È ora possibile compilare l'applicazione. Questo passaggio esegue la
 compilazione binaria necessaria affinché l'applicazione sia eseguibile sulla

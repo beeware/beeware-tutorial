@@ -1845,10 +1845,16 @@ getan:</p>
    Anwendung angehängt werden müssen, und Splash-Screen-Bilder.</p>
 </li>
 </ol>
-<p>Sobald dies abgeschlossen ist, sollten Sie im Projektverzeichnis ein Verzeichnis
-sehen, das Ihrer Plattform entspricht (<code>macOS</code>, <code>linux</code> oder <code>windows</code>) und
-zusätzliche Dateien enthält. Dies ist die plattformspezifische
-Paketierungskonfiguration für Ihre Anwendung.</p>
+<p>Once this completes, if you look in the project's <code>build</code> directory, you should
+now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or
+<code>windows</code>) that contains additional files. This is the platform-specific
+packaging configuration for your application. For example, on macOS, your
+project directory will now include:</p>
+<div class="highlight"><pre><span></span><code>helloworld/
+└── build/
+    └── helloworld/
+        └── macos/
+</code></pre></div>
 <h2 id="erstellung-ihrer-anwendung">Erstellung Ihrer Anwendung<a class="headerlink" href="#erstellung-ihrer-anwendung" title="Permanent link">&para;</a></h2>
 <p>Sie können nun Ihre Anwendung kompilieren. In diesem Schritt wird die
 Binärkompilierung durchgeführt, die erforderlich ist, damit Ihre Anwendung auf

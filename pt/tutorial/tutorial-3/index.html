@@ -1842,10 +1842,16 @@ seu terminal&hellip; mas o que exatamente aconteceu? O Briefcase fez o seguinte:
    de tela de abertura.</p>
 </li>
 </ol>
-<p>Assim que concluído, ao verificar o diretório do projeto, você deverá encontrar
-um diretório correspondente à sua plataforma (<code>macOS</code>, <code>linux</code> ou <code>windows</code>)
-contendo arquivos adicionais. Esta é a configuração de empacotamento específica
-para a plataforma da sua aplicação.</p>
+<p>Once this completes, if you look in the project's <code>build</code> directory, you should
+now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or
+<code>windows</code>) that contains additional files. This is the platform-specific
+packaging configuration for your application. For example, on macOS, your
+project directory will now include:</p>
+<div class="highlight"><pre><span></span><code>helloworld/
+└── build/
+    └── helloworld/
+        └── macos/
+</code></pre></div>
 <h2 id="compilando-sua-aplicacao">Compilando sua aplicação<a class="headerlink" href="#compilando-sua-aplicacao" title="Permanent link">&para;</a></h2>
 <p>Agora você pode compilar sua aplicação. Este passo executa qualquer compilação
 binária necessária para que sua aplicação seja executável na plataforma de

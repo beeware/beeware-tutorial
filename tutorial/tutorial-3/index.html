@@ -1792,7 +1792,12 @@ aria-label="Header"
 <p>It <strong>installed your resources needed by your application.</strong> Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images.</p>
 </li>
 </ol>
-<p>Once this completes, if you look in the project directory, you should now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or <code>windows</code>) that contains additional files. This is the platform-specific packaging configuration for your application.</p>
+<p>Once this completes, if you look in the project's <code>build</code> directory, you should now see a directory corresponding to your platform (<code>macOS</code>, <code>linux</code>, or <code>windows</code>) that contains additional files. This is the platform-specific packaging configuration for your application. For example, on macOS, your project directory will now include:</p>
+<div class="highlight"><pre><span></span><code>helloworld/
+└── build/
+    └── helloworld/
+        └── macos/
+</code></pre></div>
 <h2 id="building-your-application">Building your application<a class="headerlink" href="#building-your-application" title="Permanent link">&para;</a></h2>
 <p>You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
