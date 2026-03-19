@@ -1,105 +1,78 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-13 00:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: es <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.19.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-03-13 00:58+0000\nPO-Revision-Date: 2026-03-19 22:11+0000\nLast-Translator: Francisco Serrador <fserrador@gmail.com>\nLanguage-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.17-dev\n"
 
 #: docs/en/SUMMARY.md:5
-#, fuzzy
 msgid "[Tutorial 0 - Let's get set up!]{1}"
 msgstr "[Tutorial 0 - ¡Preparémonos!]{1}"
 
 #: docs/en/SUMMARY.md:6
-#, fuzzy
 msgid "[Tutorial 1 - Your first app]{1}"
 msgstr "[Tutorial 1 - Tu primera aplicación]{1}"
 
 #: docs/en/SUMMARY.md:7
-#, fuzzy
 msgid "[Tutorial 2 - Making it interesting]{1}"
 msgstr "[Tutorial 2 - Hacerlo interesante]{1}"
 
 #: docs/en/SUMMARY.md:8
-#, fuzzy
 msgid "[Tutorial 3 - Packaging for distribution]{1}"
 msgstr "[Tutorial 3 - Empaquetado para distribución]{1}"
 
 #: docs/en/SUMMARY.md:9
-#, fuzzy
 msgid "[Tutorial 4 - Updating your application]{1}"
-msgstr "[Tutorial 4 - Actualización de la aplicación]{1}"
+msgstr "[Tutorial 4 - Actualizar tu aplicación]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "Tutorial 5 - Taking it mobile"
 msgstr "Tutorial 5 - Móviles"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile]{1}"
 msgstr "[Tutorial 5 - Móviles]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: Android]{1}"
 msgstr "[Tutorial 5 - Movilidad: Android]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: iOS]{1}"
-msgstr "[Tutorial 5 - Para móviles: iOS]{1}"
+msgstr "[Tutorial 5 - Movilidad: iOS]{1}"
 
 #: docs/en/SUMMARY.md:14
-#, fuzzy
 msgid "[Tutorial 6 - Put it on the web!]{1}"
 msgstr "[Tutorial 6 - ¡Ponlo en la web!]{1}"
 
 #: docs/en/SUMMARY.md:15
-#, fuzzy
 msgid "[Tutorial 7 - Get this (third-)party started]{1}"
 msgstr "[Tutorial 7 - Poner en marcha esta (tercera-)fiesta]{1}"
 
 #: docs/en/SUMMARY.md:16
-#, fuzzy
 msgid "[Tutorial 8 - Making it Smooooth]{1}"
-msgstr "[Tutorial 8 - Suavizar]{1}"
+msgstr "[Tutorial 8 - Suavizarlo]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:1
 msgid "Going further"
 msgstr "Ir más allá"
 
 #: docs/en/SUMMARY.md:17
-#, fuzzy
 msgid "[Going further]{1}"
 msgstr "[Yendo más lejos]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:5
-#, fuzzy
 msgid "[Customizing icons]{1}"
 msgstr "[Personalizar iconos]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:9
-#, fuzzy
 msgid "[Using the camera]{1}"
 msgstr "[Usando la cámara]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:13
-#, fuzzy
 msgid "[Testing times]{1}"
 msgstr "[Tiempos de prueba]{1}"
 
 #: docs/en/index.md:1
-#, fuzzy
 msgid "Welcome to the BeeWare Tutorial"
-msgstr "¡Bienvenido al tutorial de BeeWare!"
+msgstr "Bienvenido al tutorial de BeeWare"
 
 #: docs/en/index.md:3
 msgid "**Write Python. Run Anywhere.**"
@@ -110,12 +83,10 @@ msgid "Welcome to BeeWare! In this tutorial, we're going to build a graphical us
 msgstr "¡Bienvenido a BeeWare! En este tutorial, vamos a construir una interfaz gráfica de usuario utilizando Python, y desplegarla como una aplicación de escritorio, como una aplicación móvil, y como una aplicación web de una sola página. También vamos a ver cómo se pueden utilizar las herramientas de BeeWare para hacer algunas de las tareas comunes que tendrás que hacer como desarrollador de aplicaciones, tales como la prueba de su aplicación."
 
 #: docs/en/index.md:7
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"original\" %}"
 msgstr "{% if config.extra.translation_type == \"original\" %}"
 
 #: docs/en/index.md:9
-#, fuzzy
 msgid "/// admonition | Translations are available"
 msgstr "/// admonition | Traducciones disponibles"
 
@@ -128,22 +99,18 @@ msgid "///"
 msgstr "///"
 
 #: docs/en/index.md:15 docs/en/index.md:27 docs/en/index.md:39
-#, fuzzy
 msgid "{% endif %}"
 msgstr "{% endif %}"
 
 #: docs/en/index.md:17
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"machine\" %}"
 msgstr "{% if config.extra.translation_type == \"machine\" %}"
 
 #: docs/en/index.md:19
-#, fuzzy
 msgid "/// admonition | This is a machine translation!"
-msgstr "/// admonition | ¡Es una traducción automática!"
+msgstr "/// admonition | ¡Esta es una traducción automática!"
 
 #: docs/en/index.md:21
-#, fuzzy
 msgid "This document is a machine-generated translation of the [English]{1} tutorial. We know that a machine translation isn't ideal, but we felt that a bad translation was better than no translation at all."
 msgstr "Este documento es una traducción automática del tutorial [en inglés]{1}. Sabemos que la traducción automática no es ideal, pero consideramos que una traducción deficiente es mejor que ninguna traducción."
 
@@ -152,17 +119,14 @@ msgid "If you'd like the help improve the translation, get in touch! We have a `
 msgstr "Si quieres ayudarnos a mejorar la traducción, ¡ponte en contacto con nosotros! Tenemos un canal `#translations` en [Discord]{1}; preséntate allí y te añadiremos al equipo de traducción."
 
 #: docs/en/index.md:29
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"human\" %}"
 msgstr "{% if config.extra.translation_type == \"human\" %}"
 
 #: docs/en/index.md:31
-#, fuzzy
 msgid "/// admonition | This is a translation!"
 msgstr "/// admonition | ¡Esto es una traducción!"
 
 #: docs/en/index.md:33
-#, fuzzy
 msgid "This document is a translation of the [English]{1} tutorial. The translation has been reviewed by humans, but newer sections may have been generated by machine translation."
 msgstr "Este documento es una traducción del tutorial [en inglés]{1}. La traducción ha sido revisada por personas, pero es posible que las secciones más recientes hayan sido generadas por traducción automática."
 
@@ -175,17 +139,14 @@ msgid "BeeWare is not a single product, or tool, or library - it's a collection 
 msgstr "BeeWare no es un único producto, o herramienta, o librería - es una colección de herramientas y librerías, cada una de las cuales trabaja conjuntamente para ayudarte a escribir aplicaciones Python multiplataforma con una GUI nativa. Incluye:"
 
 #: docs/en/index.md:45
-#, fuzzy
 msgid "[Toga]{1}, a cross-platform widget toolkit;"
 msgstr "[Toga]{1}, un conjunto de herramientas de widgets multiplataforma;"
 
 #: docs/en/index.md:46
-#, fuzzy
 msgid "[Briefcase]{1}, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
 msgstr "[Briefcase]{1}, una herramienta para empaquetar proyectos de Python como artefactos distribuibles que se pueden enviar a los usuarios finales;"
 
 #: docs/en/index.md:47
-#, fuzzy
 msgid "Libraries (such as [Rubicon ObjC]{1}) for accessing platform-native libraries;"
 msgstr "Bibliotecas (como [Rubicon ObjC]{1}) para acceder a bibliotecas nativas de la plataforma;"
 
@@ -202,27 +163,22 @@ msgid "The BeeWare suite is available on macOS, Windows, Linux (using GTK); on m
 msgstr "La suite BeeWare está disponible en macOS, Windows, Linux (usando GTK); en plataformas móviles como Android e iOS; y para la Web."
 
 #: docs/en/index.md:54
-#, fuzzy
 msgid "Let's go"
 msgstr "¡Vamos!"
 
 #: docs/en/index.md:56
-#, fuzzy
 msgid "Ready to try BeeWare for yourself? [Let's build a cross-platform application in Python!]{1}"
 msgstr "¿Listo para probar BeeWare? [¡Construyamos una aplicación multiplataforma en Python!]{1}"
 
 #: docs/en/tutorial/topics/camera-access.md:1
-#, fuzzy
 msgid "Using the camera"
 msgstr "Usando la cámara"
 
 #: docs/en/tutorial/topics/camera-access.md:3
-#, fuzzy
 msgid "Almost every modern computing device has a camera of some sort. In this tutorial, we'll write new application that is able to request access to this camera, take a photograph, and then display that photograph in the new application that uses your device's camera."
 msgstr "Casi todos los dispositivos informáticos modernos tienen algún tipo de cámara. En este tutorial, mostramos una nueva aplicación que pueda solicitar acceso a esta cámara, tomar una fotografía y luego mostrarla en la aplicación. La nueva aplicación que utiliza la cámara de tu dispositivo."
 
 #: docs/en/tutorial/topics/camera-access.md:5
-#, fuzzy
 msgid "/// admonition | This tutorial won't work on all platforms!"
 msgstr "/// admonition | Este tutorial no funciona en todas las plataformas."
 
@@ -248,11 +204,11 @@ msgstr "Iniciar un nuevo proyecto"
 
 #: docs/en/tutorial/topics/camera-access.md:19
 msgid "For this tutorial, we're not going to build onto the application from the core tutorial - we're going to start a fresh project. You can use the same virtual environment you used in the first project; but we need to re-run the `briefcase new` wizard."
-msgstr "Para este tutorial, no desarrollaremos la aplicación del tutorial principal, sino que comenzaremos un nuevo proyecto. Puede utilizar el mismo entorno virtual que utilizó en el primer proyecto. Sin embargo, debemos ejecutar nuevamente el asistente Nuevo maletín."
+msgstr "Para este tutorial, no desarrollaremos la aplicación del tutorial principal — vamos a comenzar un proyecto nuevo. Puede utilizar el mismo entorno virtual que utilizó en el primer proyecto. Sin embargo, debemos ejecutar nuevamente el asistente `Nuevo maletín`."
 
 #: docs/en/tutorial/topics/camera-access.md:21
 msgid "Change back to the directory that contains the `helloworld` project folder, and start a new project named \"Hello Camera\":"
-msgstr "Regrese al directorio que contiene la carpeta del proyecto `helloworld` e inicie un nuevo proyecto llamado “Hello Camera”:"
+msgstr "Regrese al directorio que contiene la carpeta del proyecto `helloworld` e inicie un proyecto nuevo llamado “Hello Camera”:"
 
 #: docs/en/tutorial/topics/camera-access.md:37
 msgid "Add code to take a photo"
@@ -260,12 +216,11 @@ msgstr "Añade código para tomar una foto"
 
 #: docs/en/tutorial/topics/camera-access.md:39
 msgid "The wizard has generated a new empty Toga project. We can now add the code to take and display a photograph. Edit the `app.py` for the new application so that it has the following content:"
-msgstr "El asistente ha generado un nuevo proyecto Toga vacío. Ahora podemos agregar el código para tomar y mostrar una fotografía. Edite el archivo `app.py` de la nueva aplicación para que tenga el siguiente contenido:"
+msgstr "El asistente ha generado un nuevo proyecto Toga vacío. Ahora podemos agregar el código para tomar y tomar una fotografía. Edite el archivo `app.py` de la nueva aplicación para que tenga el siguiente contenido:"
 
 #: docs/en/tutorial/topics/camera-access.md:92
-#, fuzzy
 msgid "This code has two changes over the default app that is generated by Briefcase. These additions are highlighted above:"
-msgstr "Este código tiene dos cambios con respecto a la aplicación predeterminada que genera Briefcase. Estas novedades están resaltadas en amarillo:"
+msgstr "Este código tiene dos cambios con respecto a la aplicación predeterminada que genera Briefcase. Estas novedades están resaltadas arriba:"
 
 #: docs/en/tutorial/topics/camera-access.md:94
 msgid "The first highlighted code block (in the `startup()` method) adds the two widgets needed to control the camera: an `ImageView` to display a photo; and a `Button` to trigger the camera."
@@ -292,13 +247,12 @@ msgid "However, this request comes in two parts. The first is in the code we've 
 msgstr "Sin embargo, esta solicitud se presenta en dos partes. La primera se encuentra en el código que acabamos de ver, pero antes de que la aplicación pueda solicitar permisos, necesita declarar los permisos que va a solicitar."
 
 #: docs/en/tutorial/topics/camera-access.md:105
-#, fuzzy
 msgid "The permissions required by each platform are slightly different, but Briefcase has a cross-platform representation for many common hardware permissions. In the `[tool.briefcase.app.hellocamera]` configuration section of your app's `pyproject.toml` file, add the following (just above the `sources` declaration):"
 msgstr "Los permisos que requiere cada plataforma son ligeramente diferentes, pero Briefcase tiene una representación multiplataforma para muchos permisos de hardware comunes. En la sección de configuración `[tool.briefcase.app.helloworld]` del archivo `pyproject.toml` de su aplicación, agregue lo siguiente (justo encima de la declaración `sources`):"
 
 #: docs/en/tutorial/topics/camera-access.md:111
 msgid "This declares that your app needs to access the camera, and provides a short description why the camera is required. This description is needed on some platforms (most notably macOS and iOS) and will be displayed to the user as a additional information when the permission dialog is presented."
-msgstr "Esto explica que su aplicación necesita acceder a la cámara y proporciona una breve descripción de por qué se requiere la cámara. Esta descripción es obligatoria en algunas plataformas (en particular, macOS e iOS) y se presenta al usuario como información adicional cuando se muestra el cuadro de diálogo de permisos."
+msgstr "Esto explica que su aplicación necesita acceder a la cámara y proporciona una breve descripción de por qué se requiere la cámara. Esta descripción es obligatoria en algunas plataformas (en particular, macOS e iOS) y será presentada al usuario como información adicional cuando está presente el cuadro de diálogo de permisos."
 
 #: docs/en/tutorial/topics/camera-access.md:113
 msgid "We can now generate and run the app:"
@@ -325,34 +279,28 @@ msgid "Permissions are declared in the files that are generated during the origi
 msgstr "Los permisos se declaran en los archivos que se generan durante la llamada original a `briefcase create`. Lamentablemente, Briefcase no puede actualizar estos archivos una vez que se han generado inicialmente; por lo tanto, si desea agregar un nuevo permiso a su aplicación o modificar los permisos existentes, deberá volver a crear la aplicación. Puede hacerlo volviendo a ejecutar `briefcase create`; esto le advertirá que la aplicación existente se sobrescribirá y luego regenerará la aplicación con los nuevos permisos."
 
 #: docs/en/tutorial/topics/custom-icons.md:1
-#, fuzzy
 msgid "Customizing icons"
 msgstr "Personalizar iconos"
 
 #: docs/en/tutorial/topics/custom-icons.md:3
-#, fuzzy
 msgid "The app we developed in the main tutorial uses a default \"gray bee\" icon when it is packaged. Let's personalize this application by configuring it to use our own icon."
-msgstr "Hasta ahora, nuestra aplicación ha utilizado un ícono predeterminado de \"abeja gris\". ¿Cómo actualizamos la aplicación para usar nuestro propio ícono?"
+msgstr "La aplicación desarrollada en el tutorial principal utiliza un icono de \"abeja gris\" predeterminado cuando esté empaquetado. Personalice esta aplicación para configurarla para utilizar su propio icono."
 
 #: docs/en/tutorial/topics/custom-icons.md:5 docs/en/tutorial/topics/custom-icons.md:319 docs/en/tutorial/topics/custom-icons.md:363 docs/en/tutorial/tutorial-2.md:107 docs/en/tutorial/tutorial-2.md:157 docs/en/tutorial/tutorial-4.md:124 docs/en/tutorial/tutorial-7.md:647
-#, fuzzy
 msgid "/// note | Note"
 msgstr "/// note | Nota"
 
 #: docs/en/tutorial/topics/custom-icons.md:7
-#, fuzzy
 msgid "In BeeWare, the term *icon* can refer to two different things:"
 msgstr "En BeeWare, el término *icono* puede referirse a dos cosas diferentes:"
 
 #: docs/en/tutorial/topics/custom-icons.md:9
-#, fuzzy
 msgid "**Application icon** — The image that represents your app on the desktop, dock, or home screen."
-msgstr "**Icono de aplicación** - La imagen que representa tu aplicación en el escritorio, el dock o la pantalla de inicio."
+msgstr "**Icono de aplicación** — La imagen que representa tu aplicación en el escritorio, el dock o la pantalla de inicio."
 
 #: docs/en/tutorial/topics/custom-icons.md:11
-#, fuzzy
 msgid "**Runtime icons** — Images used inside your app’s interface (for example, in buttons or tables)."
-msgstr "**Iconos de tiempo de ejecución** - Imágenes utilizadas en la interfaz de tu aplicación (por ejemplo, en botones o tablas)."
+msgstr "**Iconos de tiempo de ejecución** — Imágenes utilizadas en la interfaz de tu aplicación (por ejemplo, en botones o tablas)."
 
 #: docs/en/tutorial/topics/custom-icons.md:15
 msgid "Adding an icon"
@@ -374,9 +322,8 @@ msgid "This icon definition doesn't specify any file extension. The value will b
 msgstr "Esta definición de icono no especifica ninguna extensión de archivo. El valor se utilizará como prefijo; cada plataforma añadirá elementos adicionales a este prefijo para construir los archivos necesarios para cada plataforma. Algunas plataformas requieren *múltiples* archivos de iconos; este prefijo se combinará con modificadores de tamaño de archivo y variantes para generar la lista de archivos de iconos que se utilizan."
 
 #: docs/en/tutorial/topics/custom-icons.md:27
-#, fuzzy
 msgid "We can now run `briefcase update` again - but this time, we pass in the `--update-resources` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
-msgstr "Ahora podemos ejecutar `briefcase update` de nuevo - pero esta vez, le pasamos la bandera `--update-resources`, diciéndole a Briefcase que queremos instalar nuevos recursos de la aplicación (es decir, los iconos):"
+msgstr "Ahora podemos ejecutar `briefcase update` de nuevo — pero esta vez, le pasamos el indicador `--update-resources`, diciéndole a Briefcase que queremos instalar recursos nuevos de la aplicación (es decir, los iconos):"
 
 #: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:61 docs/en/tutorial/tutorial-0.md:123 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:137 docs/en/tutorial/tutorial-1.md:187 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:155 docs/en/tutorial/tutorial-3.md:233 docs/en/tutorial/tutorial-3.md:334 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:304 docs/en/tutorial/tutorial-7.md:550 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
 msgid "/// tab | Linux"
@@ -401,21 +348,18 @@ msgid "Let's provide some actual icons. Download [this icons.zip bundle]{1}, and
 msgstr "Vamos a proporcionar algunos iconos reales. Descarga [este paquete icons.zip]{1}, y descomprímelo en la raíz del directorio de tu proyecto. Después de descomprimir, el directorio del proyecto debe ser algo así:"
 
 #: docs/en/tutorial/topics/custom-icons.md:184
-#, fuzzy
 msgid "There's a *lot* of icons in this folder, but most of them should look the same: a green snake on a light blue background:"
 msgstr "Hay *muchos* iconos en esta carpeta, pero la mayoría deberían tener el mismo aspecto: una serpiente verde sobre un fondo azul claro:"
 
 #: docs/en/tutorial/topics/custom-icons.md:186
-#, fuzzy
 msgid "![Icon of green snake with a light blue background]{1}"
-msgstr "Icono de serpiente verde con fondo azul claro]{1}"
+msgstr "![Icono de serpiente verde con fondo azul claro]{1}"
 
 #: docs/en/tutorial/topics/custom-icons.md:188 docs/en/tutorial/topics/custom-icons.md:470 docs/en/tutorial/tutorial-1.md:181 docs/en/tutorial/tutorial-1.md:191 docs/en/tutorial/tutorial-1.md:207 docs/en/tutorial/tutorial-2.md:271 docs/en/tutorial/tutorial-2.md:281 docs/en/tutorial/tutorial-2.md:291 docs/en/tutorial/tutorial-4.md:33 docs/en/tutorial/tutorial-4.md:43 docs/en/tutorial/tutorial-4.md:53 docs/en/tutorial/tutorial-5/android.md:224 docs/en/tutorial/tutorial-5/android.md:234 docs/en/tutorial/tutorial-5/android.md:244 docs/en/tutorial/tutorial-5/android.md:260 docs/en/tutorial/tutorial-5/iOS.md:99 docs/en/tutorial/tutorial-7.md:177 docs/en/tutorial/tutorial-7.md:203 docs/en/tutorial/tutorial-7.md:229 docs/en/tutorial/tutorial-7.md:298 docs/en/tutorial/tutorial-7.md:394 docs/en/tutorial/tutorial-8.md:74 docs/en/tutorial/tutorial-8.md:95 docs/en/tutorial/tutorial-8.md:116
 msgid "/// caption"
 msgstr "/// caption"
 
 #: docs/en/tutorial/topics/custom-icons.md:192
-#, fuzzy
 msgid "The only exception will be the icons with `-adaptive-` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
 msgstr "La única excepción serán los iconos con `-adaptive-` en su nombre; éstos tendrán un fondo transparente. Esto representa todos los diferentes tamaños y formas de iconos que necesitas para soportar una aplicación en todas las plataformas que soporta Briefcase."
 
@@ -445,17 +389,14 @@ msgid "Unfortunately, Briefcase isn't able to apply this change to an already ge
 msgstr "Desafortunadamente, Briefcase no es capaz de aplicar este cambio a un proyecto ya generado, ya que requiere realizar modificaciones en uno de los archivos que se generó durante la llamada original a `briefcase create`. Para aplicar este cambio, tenemos que volver a crear la aplicación ejecutando de nuevo `briefcase create`. Cuando hagamos esto, se nos pedirá que confirmemos que queremos sobrescribir el proyecto existente:"
 
 #: docs/en/tutorial/topics/custom-icons.md:460
-#, fuzzy
 msgid "You can then re-build and re-run the app using `briefcase run`. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background."
-msgstr "A continuación, puede volver a compilar y volver a ejecutar la aplicación utilizando `briefcase run`. No notarás ningún cambio en la aplicación de escritorio, pero las aplicaciones para Android o iOS deberían tener ahora un fondo de pantalla azul claro."
+msgstr "A continuación, puede volver a compilar y volver a ejecutar la aplicación utilizando `briefcase run`. No notarás ningún cambio en la aplicación de escritorio; pero las aplicaciones para Android o iOS ahora tendrían un fondo de pantalla azul claro."
 
 #: docs/en/tutorial/topics/custom-icons.md:462
-#, fuzzy
 msgid "You'll need to re-create the app like this whenever you make a change to your `pyproject.toml` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the `build` folder, and you shouldn't add the `build` folder to your version control system. The `build` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project."
-msgstr "Tendrás que volver a crear la aplicación de esta manera cada vez que realices un cambio en tu `pyproject.toml` que no esté relacionado con el código fuente o las dependencias. Cualquier cambio en las descripciones, números de versión, colores o permisos requerirá un paso de recreación. Debido a esto, mientras estés desarrollando tu proyecto, no deberías hacer ningún cambio manual a los contenidos de la carpeta `build`, y no deberías añadir la carpeta `build` a tu sistema de control de versiones. La carpeta `build` debe ser considerada completamente efímera - una salida del sistema de compilación que puede ser recreada cuando sea necesario para reflejar la configuración actual de tu proyecto."
+msgstr "Tendrás que volver a crear la aplicación de esta manera cada vez que realices un cambio en tu `pyproject.toml` que no esté relacionado con el código fuente o las dependencias. Cualquier cambio en las descripciones, números de versión, colores o permisos requerirá un paso de recreación. Debido a esto, mientras estés desarrollando tu proyecto, no deberías hacer ningún cambio manual a los contenidos de la carpeta `build`, y no deberías añadir la carpeta `build` a tu sistema de control de versiones. La carpeta `build` debe ser considerada completamente efímera — una salida del sistema de compilación que puede ser recreada cuando sea necesario para reflejar la configuración actual de tu proyecto."
 
 #: docs/en/tutorial/topics/custom-icons.md:464
-#, fuzzy
 msgid "Adding a runtime icon"
 msgstr "Añadir un icono de ejecución"
 
@@ -520,7 +461,7 @@ msgstr "Resulta que nuestro proyecto ya tiene un conjunto de pruebas! Cuando ori
 
 #: docs/en/tutorial/topics/testing.md:15
 msgid "This is a [Pytest]{1} *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
-msgstr "Esto es un [Pytest]{1} *caso de prueba* - un bloque de código que puede ser ejecutado para verificar algún comportamiento de tu aplicación. En este caso, la prueba es un marcador de posición, y no verifica nada específico sobre nuestra aplicación, pero es una prueba que podemos realizar."
+msgstr "Esto es un [Pytest]{1} *caso de prueba* — un bloque de código que puede ser ejecutado para verificar algún comportamiento de tu aplicación. En este caso, la prueba es un marcador de posición, y no verifica nada específico sobre nuestra aplicación, pero es una prueba que podemos realizar."
 
 #: docs/en/tutorial/topics/testing.md:17
 msgid "We can run this test suite using the `--test` option to `briefcase dev`. As this is the first time we are running tests, we also need to pass in the `-r` option to ensure that the test requirements are also installed:"
@@ -531,7 +472,6 @@ msgid "Success! We've just executed a single test that verifies Python math work
 msgstr "¡Un éxito! Acabamos de ejecutar una única prueba que verifica que las matemáticas de Python funcionan como esperábamos (¡Qué alivio!)."
 
 #: docs/en/tutorial/topics/testing.md:102
-#, fuzzy
 msgid "Let's replace this placeholder test with a test to verify that our `greeting()` method behaves the way we'd expect. Replace the contents of `test_app.py` with the following:"
 msgstr "Vamos a reemplazar esta prueba de marcador de posición con una prueba para verificar que nuestro método `greeting()` se comporta como esperamos. Sustituye el contenido de `test_app.py` por el siguiente:"
 
