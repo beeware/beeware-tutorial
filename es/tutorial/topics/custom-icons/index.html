@@ -707,7 +707,7 @@ aria-label="Cabecera"
 
   <!-- Typeset title -->
   
-    Tutorial 4 - Actualización de la aplicación
+    Tutorial 4 - Actualizar tu aplicación
   
 
 
@@ -928,7 +928,7 @@ aria-label="Cabecera"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Para móviles: iOS
+    Tutorial 5 - Movilidad: iOS
   
 
 
@@ -1075,7 +1075,7 @@ aria-label="Cabecera"
 
   <!-- Typeset title -->
   
-    Tutorial 8 - Suavizar
+    Tutorial 8 - Suavizarlo
   
 
 
@@ -1615,18 +1615,19 @@ aria-label="Cabecera"
 
 
 <h1 id="personalizar-iconos">Personalizar iconos<a class="headerlink" href="#personalizar-iconos" title="Permanent link">&para;</a></h1>
-<p>Hasta ahora, nuestra aplicación ha utilizado un ícono predeterminado de "abeja
-gris". ¿Cómo actualizamos la aplicación para usar nuestro propio ícono?</p>
+<p>La aplicación desarrollada en el tutorial principal utiliza un icono de "abeja
+gris" predeterminado cuando esté empaquetado. Personalice esta aplicación para
+configurarla para utilizar su propio icono.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>En BeeWare, el término <em>icono</em> puede referirse a dos cosas diferentes:</p>
 <ul>
 <li>
-<p><strong>Icono de aplicación</strong> - La imagen que representa tu aplicación en el
+<p><strong>Icono de aplicación</strong> — La imagen que representa tu aplicación en el
   escritorio, el dock o la pantalla de inicio.</p>
 </li>
 <li>
-<p><strong>Iconos de tiempo de ejecución</strong> - Imágenes utilizadas en la interfaz de tu
+<p><strong>Iconos de tiempo de ejecución</strong> — Imágenes utilizadas en la interfaz de tu
   aplicación (por ejemplo, en botones o tablas).</p>
 </li>
 </ul>
@@ -1649,9 +1650,9 @@ prefijo para construir los archivos necesarios para cada plataforma. Algunas
 plataformas requieren <em>múltiples</em> archivos de iconos; este prefijo se combinará
 con modificadores de tamaño de archivo y variantes para generar la lista de
 archivos de iconos que se utilizan.</p>
-<p>Ahora podemos ejecutar <code>briefcase update</code> de nuevo - pero esta vez, le pasamos
-la bandera <code>--update-resources</code>, diciéndole a Briefcase que queremos instalar
-nuevos recursos de la aplicación (es decir, los iconos):</p>
+<p>Ahora podemos ejecutar <code>briefcase update</code> de nuevo — pero esta vez, le pasamos
+el indicador <code>--update-resources</code>, diciéndole a Briefcase que queremos instalar
+recursos nuevos de la aplicación (es decir, los iconos):</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1796,7 +1797,7 @@ algo así:</p>
 <p>Hay <em>muchos</em> iconos en esta carpeta, pero la mayoría deberían tener el mismo
 aspecto: una serpiente verde sobre un fondo azul claro:</p>
 <figure>
-<p>Icono de serpiente verde con fondo azul claro](../../images/icon.png)</p>
+<p><img alt="Icono de serpiente verde con fondo azul claro" src="../../../images/icon.png" /></p>
 <figcaption></figcaption>
 </figure>
 <p>La única excepción serán los iconos con <code>-adaptive-</code> en su nombre; éstos tendrán
@@ -2051,8 +2052,8 @@ sobrescribir el proyecto existente:</p>
 </div>
 <p>A continuación, puede volver a compilar y volver a ejecutar la aplicación
 utilizando <code>briefcase run</code>. No notarás ningún cambio en la aplicación de
-escritorio, pero las aplicaciones para Android o iOS deberían tener ahora un
-fondo de pantalla azul claro.</p>
+escritorio; pero las aplicaciones para Android o iOS ahora tendrían un fondo de
+pantalla azul claro.</p>
 <p>Tendrás que volver a crear la aplicación de esta manera cada vez que realices un
 cambio en tu <code>pyproject.toml</code> que no esté relacionado con el código fuente o las
 dependencias. Cualquier cambio en las descripciones, números de versión, colores
@@ -2060,7 +2061,7 @@ o permisos requerirá un paso de recreación. Debido a esto, mientras estés
 desarrollando tu proyecto, no deberías hacer ningún cambio manual a los
 contenidos de la carpeta <code>build</code>, y no deberías añadir la carpeta <code>build</code> a tu
 sistema de control de versiones. La carpeta <code>build</code> debe ser considerada
-completamente efímera - una salida del sistema de compilación que puede ser
+completamente efímera — una salida del sistema de compilación que puede ser
 recreada cuando sea necesario para reflejar la configuración actual de tu
 proyecto.</p>
 <h2 id="anadir-un-icono-de-ejecucion">Añadir un icono de ejecución<a class="headerlink" href="#anadir-un-icono-de-ejecucion" title="Permanent link">&para;</a></h2>

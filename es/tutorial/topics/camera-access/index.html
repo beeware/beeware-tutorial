@@ -707,7 +707,7 @@ aria-label="Cabecera"
 
   <!-- Typeset title -->
   
-    Tutorial 4 - Actualización de la aplicación
+    Tutorial 4 - Actualizar tu aplicación
   
 
 
@@ -928,7 +928,7 @@ aria-label="Cabecera"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Para móviles: iOS
+    Tutorial 5 - Movilidad: iOS
   
 
 
@@ -1075,7 +1075,7 @@ aria-label="Cabecera"
 
   <!-- Typeset title -->
   
-    Tutorial 8 - Suavizar
+    Tutorial 8 - Suavizarlo
   
 
 
@@ -1676,12 +1676,12 @@ un error cuando intentes hacer una foto.</p>
 hacer una foto si se implementa en el emulador de iOS.</p>
 </div>
 <h2 id="iniciar-un-nuevo-proyecto">Iniciar un nuevo proyecto<a class="headerlink" href="#iniciar-un-nuevo-proyecto" title="Permanent link">&para;</a></h2>
-<p>Para este tutorial, no desarrollaremos la aplicación del tutorial principal,
-sino que comenzaremos un nuevo proyecto. Puede utilizar el mismo entorno virtual
-que utilizó en el primer proyecto. Sin embargo, debemos ejecutar nuevamente el
-asistente Nuevo maletín.</p>
+<p>Para este tutorial, no desarrollaremos la aplicación del tutorial principal —
+vamos a comenzar un proyecto nuevo. Puede utilizar el mismo entorno virtual que
+utilizó en el primer proyecto. Sin embargo, debemos ejecutar nuevamente el
+asistente <code>Nuevo maletín</code>.</p>
 <p>Regrese al directorio que contiene la carpeta del proyecto <code>helloworld</code> e inicie
-un nuevo proyecto llamado “Hello Camera”:</p>
+un proyecto nuevo llamado “Hello Camera”:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>new
 <span class="go">...</span>
@@ -1696,8 +1696,8 @@ un nuevo proyecto llamado “Hello Camera”:</p>
 </code></pre></div>
 <h2 id="anade-codigo-para-tomar-una-foto">Añade código para tomar una foto<a class="headerlink" href="#anade-codigo-para-tomar-una-foto" title="Permanent link">&para;</a></h2>
 <p>El asistente ha generado un nuevo proyecto Toga vacío. Ahora podemos agregar el
-código para tomar y mostrar una fotografía. Edite el archivo <code>app.py</code> de la
-nueva aplicación para que tenga el siguiente contenido:</p>
+código para tomar y tomar una fotografía. Edite el archivo <code>app.py</code> de la nueva
+aplicación para que tenga el siguiente contenido:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
 
@@ -1748,7 +1748,7 @@ nueva aplicación para que tenga el siguiente contenido:</p>
     <span class="k">return</span> <span class="n">HelloCamera</span><span class="p">()</span>
 </code></pre></div>
 <p>Este código tiene dos cambios con respecto a la aplicación predeterminada que
-genera Briefcase. Estas novedades están resaltadas en amarillo:</p>
+genera Briefcase. Estas novedades están resaltadas arriba:</p>
 <ol>
 <li>El primer bloque de código resaltado (en el método <code>startup()</code>) agrega los
    dos widgets necesarios para controlar la cámara: un <code>ImageView</code> para mostrar
@@ -1785,9 +1785,9 @@ agregue lo siguiente (justo encima de la declaración <code>sources</code>):</p>
 </code></pre></div>
 <p>Esto explica que su aplicación necesita acceder a la cámara y proporciona una
 breve descripción de por qué se requiere la cámara. Esta descripción es
-obligatoria en algunas plataformas (en particular, macOS e iOS) y se presenta al
-usuario como información adicional cuando se muestra el cuadro de diálogo de
-permisos.</p>
+obligatoria en algunas plataformas (en particular, macOS e iOS) y será
+presentada al usuario como información adicional cuando está presente el cuadro
+de diálogo de permisos.</p>
 <p>Ahora podemos generar y ejecutar la aplicación:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Android</label></div>
 <div class="tabbed-content">
