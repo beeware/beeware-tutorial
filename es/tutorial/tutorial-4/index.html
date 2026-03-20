@@ -1664,29 +1664,34 @@ detalle ahora mismo - daremos una explicación más detallada en el <a href="../
 <p>Esto indica a Toga que abra un cuadro de diálogo modal cuando se pulse el botón.</p>
 <p>Si ejecutas <code>briefcase dev</code>, introduces un nombre y pulsas el botón, verás el
 nuevo cuadro de diálogo:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<figure>
 <p>(../images/macOS/tutorial-4.png)<a href="../../images/macOS/tutorial-4.png">Hello World Tutorial 4 dialog, on
 macOS</a></p>
-<figcaption></figcaption>
-</figure>
+<p>/// subtítulo</p>
 </div>
+</div>
+</div>
+<p>///</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Linux</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
-<figure>
 <p><a href="../../images/linux/tutorial-4.png">Hola Mundo Tutorial 4 diálogo, en Linux</a></p>
-<figcaption></figcaption>
-</figure>
+<p>/// subtítulo</p>
 </div>
+</div>
+</div>
+<p>///</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Windows</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
-<figure>
 <p>Diálogo <a href="../../images/windows/tutorial-4.png">Hello World Tutorial 4, en Windows</a></p>
-<figcaption></figcaption>
-</figure>
+<p>/// subtítulo</p>
 </div>
 </div>
 </div>
+<p>///</p>
 <p>Sin embargo, si ejecutas <code>briefcase run</code>, el cuadro de diálogo no aparecerá.</p>
 <p>¿Por qué? Bueno, <code>briefcase dev</code> opera ejecutando tu código en su lugar -
 intenta producir un entorno de ejecución lo más realista posible para tu código,
@@ -1699,7 +1704,7 @@ la nueva versión del código. Podríamos <em>hacerlo</em> borrando el antiguo d
 de la plataforma y empezando desde cero. Sin embargo, Briefcase proporciona una
 manera más fácil - usted puede actualizar el código de su aplicación empaquetada
 existente:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
@@ -1796,7 +1801,7 @@ nuevo método de utilidad:</p>
 <p>Ejecuta tu aplicación en modo desarrollo (con <code>briefcase dev</code>) para confirmar
 que la nueva lógica funciona; después actualiza, compila y ejecuta la aplicación
 con un solo comando:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
