@@ -1633,23 +1633,22 @@ configurarla para utilizar su propio icono.</p>
 </ul>
 </div>
 <h2 id="anadir-un-icono">Añadir un icono<a class="headerlink" href="#anadir-un-icono" title="Permanent link">&para;</a></h2>
-<p>Cada plataforma utiliza un formato diferente para los iconos de las
-aplicaciones, y algunas plataformas necesitan <em>múltiples</em> iconos de diferentes
-tamaños y formas. Para tener esto en cuenta, Briefcase proporciona una forma
-abreviada de configurar un icono una vez, y luego hacer que esa definición se
-expanda en todos los diferentes iconos necesarios para cada plataforma
-individual.</p>
-<p>Edita tu <code>pyproject.toml</code>, añadiendo un nuevo elemento de configuración <code>icon</code>
+<p>Cada plataforma utiliza un formato diferente para los iconos de la aplicación; y
+algunas plataformas necesitan <em>múltiples</em> iconos de tamaños y formas diferentes.
+Para tener esto en cuenta, Briefcase proporciona una forma abreviada para
+configurar un icono una vez, y luego hacer que esa definición se expanda en
+todos los iconos diferentes necesarios para cada plataforma individual.</p>
+<p>Edita tu <code>pyproject.toml</code>, añadiendo un elemento de configuración <code>icon</code> nuevo
 en la sección de configuración <code>[tool.briefcase.app.helloworld]</code>, justo encima
 de la definición <code>sources</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;icons/helloworld&quot;</span>
 </code></pre></div>
-<p>Esta definición de icono no especifica ninguna extensión de archivo. El valor se
-utilizará como prefijo; cada plataforma añadirá elementos adicionales a este
-prefijo para construir los archivos necesarios para cada plataforma. Algunas
-plataformas requieren <em>múltiples</em> archivos de iconos; este prefijo se combinará
-con modificadores de tamaño de archivo y variantes para generar la lista de
-archivos de iconos que se utilizan.</p>
+<p>Esta definición de icono no especifica ninguna extensión de archivo. El valor
+será utilizada como prefijo; cada plataforma añadirá elementos adicionales a
+este prefijo para construir los archivos necesarios para cada plataforma.
+Algunas plataformas requieren <em>múltiples</em> archivos de icono; este prefijo se
+combinará con modificadores de tamaño de archivo y variantes para generar la
+lista de archivos de iconos que son utilizados.</p>
 <p>Ahora podemos ejecutar <code>briefcase update</code> de nuevo — pero esta vez, le pasamos
 el indicador <code>--update-resources</code>, diciéndole a Briefcase que queremos instalar
 recursos nuevos de la aplicación (es decir, los iconos):</p>
@@ -1771,14 +1770,14 @@ recursos nuevos de la aplicación (es decir, los iconos):</p>
 </div>
 </div>
 </div>
-<p>Esto informa del archivo (o archivos) de icono específico que Briefcase está
+<p>Esto presenta el archivo (o archivos) de icono específico que Briefcase está
 esperando. Sin embargo, como no hemos proporcionado los archivos de icono
-reales, la instalación falla y Briefcase vuelve a un valor predeterminado (el
-mismo icono de "abeja gris").</p>
-<p>Vamos a proporcionar algunos iconos reales. Descarga <a href="../../../resources/icons.zip">este paquete
+actuales, la instalación falla y Briefcase retrocede a un valor predeterminado
+(el mismo icono de “abeja gris”).</p>
+<p>Vamos a proporcionar algunos iconos actuales. Descarga <a href="../../../resources/icons.zip">este paquete
 icons.zip</a>, y descomprímelo en la raíz del directorio
-de tu proyecto. Después de descomprimir, el directorio del proyecto debe ser
-algo así:</p>
+de tu proyecto. Después de descomprimir, tu directorio del proyecto debe parecer
+algo como:</p>
 <div class="highlight"><pre><span></span><code>beeware-tutorial/
 ├── beeware-venv/
 │   └── ...
@@ -1803,13 +1802,13 @@ aspecto: una serpiente verde sobre un fondo azul claro:</p>
 un fondo transparente. Esto representa todos los diferentes tamaños y formas de
 iconos que necesitas para soportar una aplicación en todas las plataformas que
 soporta Briefcase.</p>
-<p>Ahora que tenemos los iconos, podemos actualizar la aplicación de nuevo. Sin
-embargo, <code>briefcase update</code> sólo copiará los recursos actualizados en el
-directorio de compilación; también queremos reconstruir la aplicación para
-asegurarnos de que el nuevo icono está incluido, y luego iniciar la aplicación.
-Podemos acortar este proceso pasando <code>--update-resources</code> a nuestra llamada a
-<code>run</code> - esto actualizará la aplicación, actualizará los recursos de la
-aplicación, y luego iniciará la aplicación:</p>
+<p>Ahora que tenemos iconos, de nuevo podemos actualizar la aplicación. Sin
+embargo, <code>briefcase update</code> solo copiará los recursos actualizados en el
+directorio de construcción; queremos además reconstruir la aplicación para
+asegurarnos que el icono nuevo está incluido, luego iniciar la aplicación.
+Podemos acortar este proceso pasando <code>--update-resources</code> a nuestra invocación a
+<code>run</code> - esto actualizará la aplicación y los recursos de la aplicación, y luego
+iniciará la aplicación:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1922,9 +1921,10 @@ aplicación, y luego iniciará la aplicación:</p>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Si utilizas una versión reciente de Android, puede que notes que el icono de la
-aplicación ha cambiado a una serpiente verde, pero el fondo del icono es
-<em>blanco</em>, en lugar de azul claro. Arreglaremos esto en el siguiente paso.</p>
+<p>Si estás utilizando una versión reciente de Android, puedes que observes que el
+icono de la aplicación ha cambiado a una serpiente verde, pero el fondo del
+icono es <em>blanco</em>, en lugar de azul claro. Arreglaremos esto en el siguiente
+paso.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1963,25 +1963,25 @@ aplicación ha cambiado a una serpiente verde, pero el fondo del icono es
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Si obtienes un stack trace haciendo referencia a <code>faker</code> o <code>httpx</code> cuando
-ejecutas la app, es posible que no hayas ejecutado tu app durante el paso 7 u 8
-del tutorial. Vuelve a ejecutar la aplicación, añadiendo el argumento <code>-r</code> para
-actualizar los requisitos de la aplicación.</p>
+<p>Si obtienes una traza de pila en referencia a <code>faker</code> o <code>httpx</code> cuando ejecutas
+la app, es posible que olvidaste ejecutar tu app durante el paso 7 u 8 del
+tutorial. Vuelve a ejecutar la aplicación, añadiendo el argumento <code>-r</code> para
+actualizar los requerimientos de la aplicación.</p>
 </div>
 <p>Cuando ejecutes la aplicación en iOS o Android, además del cambio de icono,
-también deberías notar que la pantalla de inicio incorpora el nuevo icono. Sin
-embargo, el fondo azul claro del icono parece un poco fuera de lugar frente al
-fondo blanco de la pantalla de inicio. Podemos arreglar esto personalizando el
-color de fondo de la pantalla de inicio. Añade la siguiente definición a tu
-<code>pyproject.toml</code>, justo después de la definición <code>icon</code>:</p>
+también deberías tener en cuenta que la pantalla de inicio incorpora el icono
+nuevo. Sin embargo, el fondo azul claro del icono parece un poco fuera de lugar
+frente al fondo blanco de la pantalla de inicio. Podemos arreglar esto
+personalizando el color de fondo de la pantalla de inicio. Añade la definición
+siguiente a tu <code>pyproject.toml</code>, justo tras la definición de <code>icon</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
 </code></pre></div>
 <p>Desafortunadamente, Briefcase no es capaz de aplicar este cambio a un proyecto
 ya generado, ya que requiere realizar modificaciones en uno de los archivos que
-se generó durante la llamada original a <code>briefcase create</code>. Para aplicar este
-cambio, tenemos que volver a crear la aplicación ejecutando de nuevo <code>briefcase
-create</code>. Cuando hagamos esto, se nos pedirá que confirmemos que queremos
-sobrescribir el proyecto existente:</p>
+fue generado durante la invocación original a <code>briefcase create</code>. Para aplicar
+este cambio, tenemos que volver a crear la aplicación ejecutando de nuevo
+<code>briefcase create</code>. Cuando hagamos esto, se nos pedirá que confirmemos que
+queremos sobrescribir el proyecto existente:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2065,15 +2065,14 @@ recreada cuando sea necesario para reflejar la configuración actual de tu
 proyecto.</p>
 <h2 id="anadir-un-icono-de-ejecucion">Añadir un icono de ejecución<a class="headerlink" href="#anadir-un-icono-de-ejecucion" title="Permanent link">&para;</a></h2>
 <p>A la hora de añadir un icono a la interfaz de la aplicación, este tipo de icono
-debe guardarse en un directorio distinto al de los iconos de la aplicación. Haz
-clic con el botón derecho del ratón sobre Tiberio el yak, guarda la imagen como
-un archivo <code>.png</code> y llámalo <code>helloworld</code>. El archivo debe guardarse en la
-carpeta <code>icons/</code> del paquete fuente de tu aplicación.</p>
-<p>(../../images/runtime-icon.png)<a href="../../../images/runtime-icon.png">Icono de Tiberio el
-yak</a></p>
+debe guardarse en un directorio separado desde los iconos de la aplicación.
+Pulsa con el botón secundario del ratón sobre Tiberio el yak, guarda la imagen
+como un archivo <code>.png</code> y nómbralo <code>helloworld</code>. El archivo debería guardarse en
+la carpeta <code>icons/</code> del paquete fuente de tu aplicación.</p>
+<p><img alt="Icono de Tiberio el yak" src="../../../images/runtime-icon.png" /></p>
 <p>/// subtítulo</p>
 <p>///</p>
-<p>Su directorio se parecerá al siguiente:</p>
+<p>Tu directorio se parecerá así:</p>
 <div class="highlight"><pre><span></span><code>beeware-tutorial/
 ├── beeware-venv/
 │   └── ...
@@ -2093,9 +2092,9 @@ yak</a></p>
     └── pyproject.toml
 </code></pre></div>
 <p>Ahora que el icono de tiempo de ejecución está en su lugar, vamos a añadir un
-icono a nuestro botón. El widget del botón Toga sólo admite un icono o texto (no
-ambos), así que vamos a actualizar el código del botón para incluir el icono de
-tiempo de ejecución.</p>
+icono a nuestro botón. El widget del botón Toga sólo admite o bien un icono o
+bien un texto (no ambos), así que vamos a actualizar el código del botón para
+incluir el icono de tiempo de ejecución.</p>
 <div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
 
 <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>

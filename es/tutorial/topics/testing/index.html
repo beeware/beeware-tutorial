@@ -1809,17 +1809,17 @@ instalado; sólo tenemos que utilizar la opción <code>--test</code>:</p>
 <p>Excelente Nuestro método de utilidad <code>greeting()</code> está funcionando como se
 esperaba.</p>
 <h2 id="desarrollo-basado-en-pruebas">Desarrollo basado en pruebas<a class="headerlink" href="#desarrollo-basado-en-pruebas" title="Permanent link">&para;</a></h2>
-<p>Ahora que tenemos un conjunto de pruebas, podemos utilizarlo para impulsar el
-desarrollo de nuevas funciones. Vamos a modificar nuestra aplicación para que
-tenga un saludo especial para un usuario en particular. Podemos empezar por
-añadir un caso de prueba para el nuevo comportamiento que nos gustaría ver en la
+<p>Ahora que tenemos un conjunto de pruebas, podemos utilizarlo para impulsarlo el
+desarrollo de características nuevas. Vamos a modificar nuestra aplicación para
+tener un saludo especial para un usuario en particular. Podemos empezar por
+añadir un caso de prueba para el comportamiento nuevo que nos gustaría ver en la
 parte inferior de <code>test_app.py</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
 
     <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
 </code></pre></div>
-<p>A continuación, ejecute el conjunto de pruebas con esta nueva prueba:</p>
+<p>A continuación, ejecute el conjunto de pruebas con esta prueba nueva:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1916,11 +1916,11 @@ parte inferior de <code>test_app.py</code>:</p>
 </div>
 </div>
 </div>
-<p>Esta vez, vemos un fallo en el test - y la salida explica el origen del fallo:
-el test está esperando la salida "¡BeeWare los IDEs de Python!", pero nuestra
-implementación de <code>greeting()</code> está devolviendo "Hola, Brutus". Modifiquemos la
+<p>Esta vez, vemos un fallo en el test; y la salida explica el origen del fallo: el
+test está esperando la salida “¡BeeWare los IDE de Python!”, pero nuestra
+implementación de <code>greeting()</code> está devolviendo “Hola, Brutus”. Modifiquemos la
 implementación de <code>greeting()</code> en <code>src/helloworld/app.py</code> para que tenga el
-nuevo comportamiento:</p>
+comportamiento nuevo:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
