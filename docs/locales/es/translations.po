@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-19 22:12+0000\n"
-"PO-Revision-Date: 2026-03-19 22:11+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.19.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-03-19 22:12+0000\nPO-Revision-Date: 2026-03-20 17:09+0000\nLast-Translator: Francisco Serrador <fserrador@gmail.com>\nLanguage-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.17-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -369,7 +357,7 @@ msgstr "![Icono de serpiente verde con fondo azul claro]{1}"
 
 #: docs/en/tutorial/topics/custom-icons.md:188 docs/en/tutorial/topics/custom-icons.md:470 docs/en/tutorial/tutorial-1.md:181 docs/en/tutorial/tutorial-1.md:191 docs/en/tutorial/tutorial-1.md:207 docs/en/tutorial/tutorial-2.md:271 docs/en/tutorial/tutorial-2.md:281 docs/en/tutorial/tutorial-2.md:291 docs/en/tutorial/tutorial-4.md:33 docs/en/tutorial/tutorial-4.md:43 docs/en/tutorial/tutorial-4.md:53 docs/en/tutorial/tutorial-5/android.md:224 docs/en/tutorial/tutorial-5/android.md:234 docs/en/tutorial/tutorial-5/android.md:244 docs/en/tutorial/tutorial-5/android.md:260 docs/en/tutorial/tutorial-5/iOS.md:99 docs/en/tutorial/tutorial-7.md:177 docs/en/tutorial/tutorial-7.md:203 docs/en/tutorial/tutorial-7.md:229 docs/en/tutorial/tutorial-7.md:298 docs/en/tutorial/tutorial-7.md:394 docs/en/tutorial/tutorial-8.md:74 docs/en/tutorial/tutorial-8.md:95 docs/en/tutorial/tutorial-8.md:116
 msgid "/// caption"
-msgstr "/// caption"
+msgstr "/// subtítulo"
 
 #: docs/en/tutorial/topics/custom-icons.md:192
 msgid "The only exception will be the icons with `-adaptive-` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
