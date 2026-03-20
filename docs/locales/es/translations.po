@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 17:10+0000\n"
-"PO-Revision-Date: 2026-03-20 17:09+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.19.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-03-20 17:10+0000\nPO-Revision-Date: 2026-03-20 21:09+0000\nLast-Translator: Francisco Serrador <fserrador@gmail.com>\nLanguage-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.17-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -319,19 +307,16 @@ msgid "Adding an icon"
 msgstr "Añadir un icono"
 
 #: docs/en/tutorial/topics/custom-icons.md:17
-#, fuzzy
 msgid "Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform."
-msgstr "Cada plataforma utiliza un formato diferente para los iconos de las aplicaciones, y algunas plataformas necesitan *múltiples* iconos de diferentes tamaños y formas. Para tener esto en cuenta, Briefcase proporciona una forma abreviada de configurar un icono una vez, y luego hacer que esa definición se expanda en todos los diferentes iconos necesarios para cada plataforma individual."
+msgstr "Cada plataforma utiliza un formato diferente para los iconos de la aplicación; y algunas plataformas necesitan *múltiples* iconos de tamaños y formas diferentes. Para tener esto en cuenta, Briefcase proporciona una forma abreviada para configurar un icono una vez, y luego hacer que esa definición se expanda en todos los iconos diferentes necesarios para cada plataforma individual."
 
 #: docs/en/tutorial/topics/custom-icons.md:19
-#, fuzzy
 msgid "Edit your `pyproject.toml`, adding a new `icon` configuration item in the `[tool.briefcase.app.helloworld]` configuration section, just above the `sources` definition:"
-msgstr "Edita tu `pyproject.toml`, añadiendo un nuevo elemento de configuración `icon` en la sección de configuración `[tool.briefcase.app.helloworld]`, justo encima de la definición `sources`:"
+msgstr "Edita tu `pyproject.toml`, añadiendo un elemento de configuración `icon` nuevo en la sección de configuración `[tool.briefcase.app.helloworld]`, justo encima de la definición `sources`:"
 
 #: docs/en/tutorial/topics/custom-icons.md:25
-#, fuzzy
 msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
-msgstr "Esta definición de icono no especifica ninguna extensión de archivo. El valor se utilizará como prefijo; cada plataforma añadirá elementos adicionales a este prefijo para construir los archivos necesarios para cada plataforma. Algunas plataformas requieren *múltiples* archivos de iconos; este prefijo se combinará con modificadores de tamaño de archivo y variantes para generar la lista de archivos de iconos que se utilizan."
+msgstr "Esta definición de icono no especifica ninguna extensión de archivo. El valor será utilizada como prefijo; cada plataforma añadirá elementos adicionales a este prefijo para construir los archivos necesarios para cada plataforma. Algunas plataformas requieren *múltiples* archivos de icono; este prefijo se combinará con modificadores de tamaño de archivo y variantes para generar la lista de archivos de iconos que son utilizados."
 
 #: docs/en/tutorial/topics/custom-icons.md:27
 msgid "We can now run `briefcase update` again - but this time, we pass in the `--update-resources` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
@@ -350,14 +335,12 @@ msgid "/// tab | iOS"
 msgstr "/// tab | iOS"
 
 #: docs/en/tutorial/topics/custom-icons.md:163
-#, fuzzy
 msgid "This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and Briefcase falls back to a default value (the same \"gray bee\" icon)."
-msgstr "Esto informa del archivo (o archivos) de icono específico que Briefcase está esperando. Sin embargo, como no hemos proporcionado los archivos de icono reales, la instalación falla y Briefcase vuelve a un valor predeterminado (el mismo icono de \"abeja gris\")."
+msgstr "Esto presenta el archivo (o archivos) de icono específico que Briefcase está esperando. Sin embargo, como no hemos proporcionado los archivos de icono actuales, la instalación falla y Briefcase retrocede a un valor predeterminado (el mismo icono de “abeja gris”)."
 
 #: docs/en/tutorial/topics/custom-icons.md:165
-#, fuzzy
 msgid "Let's provide some actual icons. Download [this icons.zip bundle]{1}, and unzip it into the root of your project directory. After unzipping, your project directory should look something like:"
-msgstr "Vamos a proporcionar algunos iconos reales. Descarga [este paquete icons.zip]{1}, y descomprímelo en la raíz del directorio de tu proyecto. Después de descomprimir, el directorio del proyecto debe ser algo así:"
+msgstr "Vamos a proporcionar algunos iconos actuales. Descarga [este paquete icons.zip]{1}, y descomprímelo en la raíz del directorio de tu proyecto. Después de descomprimir, tu directorio del proyecto debe parecer algo como:"
 
 #: docs/en/tutorial/topics/custom-icons.md:184
 msgid "There's a *lot* of icons in this folder, but most of them should look the same: a green snake on a light blue background:"
@@ -376,29 +359,24 @@ msgid "The only exception will be the icons with `-adaptive-` in their name; the
 msgstr "La única excepción serán los iconos con `-adaptive-` en su nombre; éstos tendrán un fondo transparente. Esto representa todos los diferentes tamaños y formas de iconos que necesitas para soportar una aplicación en todas las plataformas que soporta Briefcase."
 
 #: docs/en/tutorial/topics/custom-icons.md:194
-#, fuzzy
 msgid "Now that we have icons, we can update the application again. However, `briefcase update` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the new icon is included, then start the app. We can shortcut this process by passing `--update-resources` to our call to `run` - this will update the app, update the app's resources, and then start the app:"
-msgstr "Ahora que tenemos los iconos, podemos actualizar la aplicación de nuevo. Sin embargo, `briefcase update` sólo copiará los recursos actualizados en el directorio de compilación; también queremos reconstruir la aplicación para asegurarnos de que el nuevo icono está incluido, y luego iniciar la aplicación. Podemos acortar este proceso pasando `--update-resources` a nuestra llamada a `run` - esto actualizará la aplicación, actualizará los recursos de la aplicación, y luego iniciará la aplicación:"
+msgstr "Ahora que tenemos iconos, de nuevo podemos actualizar la aplicación. Sin embargo, `briefcase update` solo copiará los recursos actualizados en el directorio de construcción; queremos además reconstruir la aplicación para asegurarnos que el icono nuevo está incluido, luego iniciar la aplicación. Podemos acortar este proceso pasando `--update-resources` a nuestra invocación a `run` - esto actualizará la aplicación y los recursos de la aplicación, y luego iniciará la aplicación:"
 
 #: docs/en/tutorial/topics/custom-icons.md:321
-#, fuzzy
 msgid "If you're using a recent version of Android, you may notice that the app icon has been changed to a green snake, but the background of the icon is *white*, rather than light blue. We'll fix this in the next step."
-msgstr "Si utilizas una versión reciente de Android, puede que notes que el icono de la aplicación ha cambiado a una serpiente verde, pero el fondo del icono es *blanco*, en lugar de azul claro. Arreglaremos esto en el siguiente paso."
+msgstr "Si estás utilizando una versión reciente de Android, puedes que observes que el icono de la aplicación ha cambiado a una serpiente verde, pero el fondo del icono es *blanco*, en lugar de azul claro. Arreglaremos esto en el siguiente paso."
 
 #: docs/en/tutorial/topics/custom-icons.md:365
-#, fuzzy
 msgid "If you get a stack trace referencing `faker` or `httpx` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements."
-msgstr "Si obtienes un stack trace haciendo referencia a `faker` o `httpx` cuando ejecutas la app, es posible que no hayas ejecutado tu app durante el paso 7 u 8 del tutorial. Vuelve a ejecutar la aplicación, añadiendo el argumento `-r` para actualizar los requisitos de la aplicación."
+msgstr "Si obtienes una traza de pila en referencia a `faker` o `httpx` cuando ejecutas la app, es posible que olvidaste ejecutar tu app durante el paso 7 u 8 del tutorial. Vuelve a ejecutar la aplicación, añadiendo el argumento `-r` para actualizar los requerimientos de la aplicación."
 
 #: docs/en/tutorial/topics/custom-icons.md:369
-#, fuzzy
 msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your `pyproject.toml`, just after the `icon` definition:"
-msgstr "Cuando ejecutes la aplicación en iOS o Android, además del cambio de icono, también deberías notar que la pantalla de inicio incorpora el nuevo icono. Sin embargo, el fondo azul claro del icono parece un poco fuera de lugar frente al fondo blanco de la pantalla de inicio. Podemos arreglar esto personalizando el color de fondo de la pantalla de inicio. Añade la siguiente definición a tu `pyproject.toml`, justo después de la definición `icon`:"
+msgstr "Cuando ejecutes la aplicación en iOS o Android, además del cambio de icono, también deberías tener en cuenta que la pantalla de inicio incorpora el icono nuevo. Sin embargo, el fondo azul claro del icono parece un poco fuera de lugar frente al fondo blanco de la pantalla de inicio. Podemos arreglar esto personalizando el color de fondo de la pantalla de inicio. Añade la definición siguiente a tu `pyproject.toml`, justo tras la definición de `icon`:"
 
 #: docs/en/tutorial/topics/custom-icons.md:375
-#, fuzzy
 msgid "Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to `briefcase create`. To apply this change, we have to re-create the app by re-running `briefcase create`. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:"
-msgstr "Desafortunadamente, Briefcase no es capaz de aplicar este cambio a un proyecto ya generado, ya que requiere realizar modificaciones en uno de los archivos que se generó durante la llamada original a `briefcase create`. Para aplicar este cambio, tenemos que volver a crear la aplicación ejecutando de nuevo `briefcase create`. Cuando hagamos esto, se nos pedirá que confirmemos que queremos sobrescribir el proyecto existente:"
+msgstr "Desafortunadamente, Briefcase no es capaz de aplicar este cambio a un proyecto ya generado, ya que requiere realizar modificaciones en uno de los archivos que fue generado durante la invocación original a `briefcase create`. Para aplicar este cambio, tenemos que volver a crear la aplicación ejecutando de nuevo `briefcase create`. Cuando hagamos esto, se nos pedirá que confirmemos que queremos sobrescribir el proyecto existente:"
 
 #: docs/en/tutorial/topics/custom-icons.md:460
 msgid "You can then re-build and re-run the app using `briefcase run`. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background."
@@ -413,27 +391,22 @@ msgid "Adding a runtime icon"
 msgstr "Añadir un icono de ejecución"
 
 #: docs/en/tutorial/topics/custom-icons.md:466
-#, fuzzy
 msgid "When it comes to adding an icon to the app interface, this type of icon must be stored in a separate directory from the application icons. Right click Tiberius the yak, save that image as a `.png` file and name it `helloworld`. The file should then be saved to the `icons/` folder in your application source package."
-msgstr "A la hora de añadir un icono a la interfaz de la aplicación, este tipo de icono debe guardarse en un directorio distinto al de los iconos de la aplicación. Haz clic con el botón derecho del ratón sobre Tiberio el yak, guarda la imagen como un archivo `.png` y llámalo `helloworld`. El archivo debe guardarse en la carpeta `icons/` del paquete fuente de tu aplicación."
+msgstr "A la hora de añadir un icono a la interfaz de la aplicación, este tipo de icono debe guardarse en un directorio separado desde los iconos de la aplicación. Pulsa con el botón secundario del ratón sobre Tiberio el yak, guarda la imagen como un archivo `.png` y nómbralo `helloworld`. El archivo debería guardarse en la carpeta `icons/` del paquete fuente de tu aplicación."
 
 #: docs/en/tutorial/topics/custom-icons.md:468
-#, fuzzy
 msgid "![Icon of Tiberius the yak]{1}"
-msgstr "{1}[Icono de Tiberio el yak]{1}"
+msgstr "![Icono de Tiberio el yak]{1}"
 
 #: docs/en/tutorial/topics/custom-icons.md:474
-#, fuzzy
 msgid "Your directory will resemble the following:"
-msgstr "Su directorio se parecerá al siguiente:"
+msgstr "Tu directorio se parecerá así:"
 
 #: docs/en/tutorial/topics/custom-icons.md:496
-#, fuzzy
 msgid "Now that the runtime icon is in place, let's add an icon to our button. The Toga button widget will only accommodate either an icon or text (not both), so let's update the code for the button to include the runtime icon."
-msgstr "Ahora que el icono de tiempo de ejecución está en su lugar, vamos a añadir un icono a nuestro botón. El widget del botón Toga sólo admite un icono o texto (no ambos), así que vamos a actualizar el código del botón para incluir el icono de tiempo de ejecución."
+msgstr "Ahora que el icono de tiempo de ejecución está en su lugar, vamos a añadir un icono a nuestro botón. El widget del botón Toga sólo admite o bien un icono o bien un texto (no ambos), así que vamos a actualizar el código del botón para incluir el icono de tiempo de ejecución."
 
 #: docs/en/tutorial/topics/custom-icons.md:508
-#, fuzzy
 msgid "Since runtime icons are app resources bundled inside your Python package, no rebuild or resource update is needed. At this point you can run `briefcase dev` (or `briefcase run`) to see the icon added to the button."
 msgstr "Dado que los iconos en tiempo de ejecución son recursos de la aplicación incluidos en el paquete de Python, no es necesario reconstruir o actualizar los recursos. En este punto puedes ejecutar `briefcase dev` (o `briefcase run`) para ver el icono añadido al botón."
 
@@ -501,24 +474,20 @@ msgid "Excellent! Our `greeting()` utility method is working as expected."
 msgstr "Excelente Nuestro método de utilidad `greeting()` está funcionando como se esperaba."
 
 #: docs/en/tutorial/topics/testing.md:183
-#, fuzzy
 msgid "Test driven development"
 msgstr "Desarrollo basado en pruebas"
 
 #: docs/en/tutorial/topics/testing.md:185
-#, fuzzy
 msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of `test_app.py`:"
-msgstr "Ahora que tenemos un conjunto de pruebas, podemos utilizarlo para impulsar el desarrollo de nuevas funciones. Vamos a modificar nuestra aplicación para que tenga un saludo especial para un usuario en particular. Podemos empezar por añadir un caso de prueba para el nuevo comportamiento que nos gustaría ver en la parte inferior de `test_app.py`:"
+msgstr "Ahora que tenemos un conjunto de pruebas, podemos utilizarlo para impulsarlo el desarrollo de características nuevas. Vamos a modificar nuestra aplicación para tener un saludo especial para un usuario en particular. Podemos empezar por añadir un caso de prueba para el comportamiento nuevo que nos gustaría ver en la parte inferior de `test_app.py`:"
 
 #: docs/en/tutorial/topics/testing.md:194
-#, fuzzy
 msgid "Then, run the test suite with this new test:"
-msgstr "A continuación, ejecute el conjunto de pruebas con esta nueva prueba:"
+msgstr "A continuación, ejecute el conjunto de pruebas con esta prueba nueva:"
 
 #: docs/en/tutorial/topics/testing.md:300
-#, fuzzy
 msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of `greeting()` is returning \"Hello, Brutus\". Let's modify the implementation of `greeting()` in `src/helloworld/app.py` to have the new behavior:"
-msgstr "Esta vez, vemos un fallo en el test - y la salida explica el origen del fallo: el test está esperando la salida \"¡BeeWare los IDEs de Python!\", pero nuestra implementación de `greeting()` está devolviendo \"Hola, Brutus\". Modifiquemos la implementación de `greeting()` en `src/helloworld/app.py` para que tenga el nuevo comportamiento:"
+msgstr "Esta vez, vemos un fallo en el test; y la salida explica el origen del fallo: el test está esperando la salida “¡BeeWare los IDE de Python!”, pero nuestra implementación de `greeting()` está devolviendo “Hola, Brutus”. Modifiquemos la implementación de `greeting()` en `src/helloworld/app.py` para que tenga el comportamiento nuevo:"
 
 #: docs/en/tutorial/topics/testing.md:313
 #, fuzzy
