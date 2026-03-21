@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-21 00:05+0000\n"
-"PO-Revision-Date: 2026-03-21 00:04+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.19.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-03-21 00:05+0000\nPO-Revision-Date: 2026-03-21 12:09+0000\nLast-Translator: Francisco Serrador <fserrador@gmail.com>\nLanguage-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.17-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -615,33 +603,28 @@ msgid "Red Hat / Fedora"
 msgstr "Red Hat / Fedora"
 
 #: docs/en/tutorial/tutorial-0.md:78
-#, fuzzy
 msgid "Arch / Manjaro"
-msgstr "**Arch / Manjaro**"
+msgstr "Arch / Manjaro"
 
 #: docs/en/tutorial/tutorial-0.md:84
-#, fuzzy
 msgid "OpenSUSE Tumbleweed"
-msgstr "**OpenSUSE Tumbleweed**"
+msgstr "OpenSUSE Tumbleweed"
 
 #: docs/en/tutorial/tutorial-0.md:90
-#, fuzzy
 msgid "/// admonition | Other Linux distributions"
 msgstr "/// admonition | Otras distribuciones de Linux"
 
 #: docs/en/tutorial/tutorial-0.md:92
-#, fuzzy
 msgid "If you're on a Linux distribution that isn't on this list, and isn't derived from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived distributions; AlmaLinux is Fedora-derived), you will probably have difficulty completing this tutorial. If Briefcase warns you that it \"Can't verify system packages\", you won't be able to complete this tutorial."
-msgstr "Si utilizas una distribución de Linux que no aparece en esta lista y que no deriva de ninguna de las que aparecen en ella (por ejemplo, Linux Mint y Pop! OS son distribuciones derivadas de Debian; AlmaLinux deriva de Fedora), probablemente tendrás dificultades para completar este tutorial. Si Briefcase te avisa de que «No se pueden verificar los paquetes del sistema», no podrás completar este tutorial."
+msgstr "Si utilizas una distribución de Linux que no aparece en este listado y que no deriva de ninguna de las que aparecen en ella (p.ej., Linux Mint y Pop! OS son distribuciones derivadas de Debian; AlmaLinux derivada de Fedora), probablemente tendrás dificultades para completar este tutorial. Si Portafolio te avisa de que «No puede verificar los paquetes del sistema», no podrás completar este tutorial."
 
 #: docs/en/tutorial/tutorial-0.md:100
 msgid "Building BeeWare apps on Windows requires:"
 msgstr "Construir aplicaciones BeeWare en Windows requiere:"
 
 #: docs/en/tutorial/tutorial-0.md:102
-#, fuzzy
 msgid "**Git**, a version control system. You can download Git from from {1}[git-scm.com]{2}."
-msgstr "**Git**, un sistema de control de versiones. Puede descargar Git desde [git-scm.com]{1}."
+msgstr "**Git**, un sistema de control de versiones. Puedes descargar Git desde {1}[git-scm.com]{2}."
 
 #: docs/en/tutorial/tutorial-0.md:104
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
@@ -656,23 +639,20 @@ msgid "We're now going to create a virtual environment - a \"sandbox\" that we c
 msgstr "Ahora vamos a crear un entorno virtual - una \"caja de arena\" que podemos utilizar para aislar nuestro trabajo en este tutorial de nuestra instalación principal de Python. Si instalamos paquetes en el entorno virtual, nuestra instalación principal de Python (y cualquier otro proyecto Python en nuestro ordenador) no se verá afectado. Si hacemos un completo desastre de nuestro entorno virtual, podremos simplemente borrarlo y empezar de nuevo, sin afectar a ningún otro proyecto Python en nuestro ordenador, y sin necesidad de reinstalar Python."
 
 #: docs/en/tutorial/tutorial-0.md:143
-#, fuzzy
 msgid "If you're not using Python 3.12, replace the `-3.12` in these instructions with the version number that you are using."
 msgstr "Si no estás usando Python 3.12, sustituye el `-3.12` de estas instrucciones por el número de versión que estés usando."
 
 #: docs/en/tutorial/tutorial-0.md:145
-#, fuzzy
 msgid "/// admonition | Errors running PowerShell Scripts"
-msgstr "/// admonition | Errores al ejecutar scripts PowerShell"
+msgstr "/// admonition | Errores al ejecutar los script de PowerShell"
 
 #: docs/en/tutorial/tutorial-0.md:147
 msgid "If you're using PowerShell, and you receive the error:"
 msgstr "Si está utilizando PowerShell y recibe el error:"
 
 #: docs/en/tutorial/tutorial-0.md:153
-#, fuzzy
 msgid "Your Windows account doesn't have permission to run scripts. To fix this:"
-msgstr "Su cuenta de Windows no tiene permiso para ejecutar scripts. Para solucionarlo:"
+msgstr "Su cuenta de Windows no tiene permiso para ejecutar los script. Para solucionarlo:"
 
 #: docs/en/tutorial/tutorial-0.md:155
 msgid "Run [Windows PowerShell as Administrator]{1}."
@@ -680,7 +660,7 @@ msgstr "Ejecute [Windows PowerShell como administrador]{1}."
 
 #: docs/en/tutorial/tutorial-0.md:156
 msgid "Run `set-executionpolicy RemoteSigned`"
-msgstr "Ejecuta `set-executionpolicy RemoteSigned`"
+msgstr "Ejecute `set-executionpolicy RemoteSigned`"
 
 #: docs/en/tutorial/tutorial-0.md:157
 msgid "Select `Y` to change the execution policy."
@@ -695,26 +675,22 @@ msgid "If this worked, your prompt should now be changed - it should have a `(be
 msgstr "Si esto ha funcionado, tu prompt debería haber cambiado - debería tener un prefijo `(beeware-venv)`. Esto te permite saber que estás actualmente en tu entorno virtual BeeWare. Siempre que estés trabajando en este tutorial, debes asegurarte de que tu entorno virtual está activado. Si no lo está, vuelve a ejecutar el último comando (el comando `activate`) para reactivar tu entorno."
 
 #: docs/en/tutorial/tutorial-0.md:167
-#, fuzzy
 msgid "/// admonition | Alternative virtual environments"
 msgstr "/// admonition | Entornos virtuales alternativos"
 
 #: docs/en/tutorial/tutorial-0.md:169
-#, fuzzy
 msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of `virtualenv`, a predecessor to Python's built in `venv` module. As with Python installs -if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to `venv` and the system Python."
-msgstr "Si usas Anaconda o miniconda, puede que estés más familiarizado con el uso de entornos conda. También puede que hayas oído hablar de `virtualenv`, un predecesor del módulo `venv` de Python. Al igual que con las instalaciones de Python -si estás en macOS o Windows, no importa *cómo* creas tu entorno virtual, siempre y cuando tengas uno. Si estás en Linux, deberías usar `venv` y el sistema Python."
+msgstr "Si usas Anaconda o miniconda, puede que estés más familiarizado con el uso de entornos conda. También puede que hayas oído hablar de `virtualenv`, un predecesor del módulo `venv` de Python. Al igual que con las instalaciones de Python —si estás en macOS o Windows—, no importa *cómo* creas tu entorno virtual, siempre y cuando tengas uno. Si estás en Linux, deberías usar `venv` y el sistema Python."
 
 #: docs/en/tutorial/tutorial-0.md:173 docs/en/tutorial/tutorial-1.md:231 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:469 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:153 docs/en/tutorial/tutorial-7.md:667 docs/en/tutorial/tutorial-8.md:255
 msgid "Next steps"
 msgstr "Siguientes pasos"
 
 #: docs/en/tutorial/tutorial-0.md:175
-#, fuzzy
 msgid "We've now set up our environment. We're ready to [create our first BeeWare application]{1}."
-msgstr "Ya hemos configurado nuestro entorno. Estamos listos para [crear nuestra primera aplicación BeeWare]{1}."
+msgstr "Ya hemos configurado nuestro entorno. Estamos preparados para [crear nuestra primera aplicación BeeWare]{1}."
 
 #: docs/en/tutorial/tutorial-1.md:1
-#, fuzzy
 msgid "Tutorial 1 - Your first app"
 msgstr "Tutorial 1 - Tu primera aplicación"
 
@@ -727,146 +703,118 @@ msgid "Install the BeeWare tools"
 msgstr "Instalar las herramientas BeeWare"
 
 #: docs/en/tutorial/tutorial-1.md:7
-#, fuzzy
 msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the `beeware-tutorial` directory you created in [Tutorial 0]{1}, with the `beeware-venv` virtual environment activated, and run:"
-msgstr "En primer lugar, tenemos que instalar **Briefcase**. Briefcase es una herramienta de BeeWare que se puede utilizar para empaquetar su aplicación para la distribución a los usuarios finales - pero también se puede utilizar para arrancar un nuevo proyecto. Asegúrate de que estás en el directorio `beeware-tutorial` que creaste en [Tutorial 0]{1}, con el entorno virtual `beeware-venv` activado, y ejecuta:"
+msgstr "En primer lugar, tenemos que instalar **Briefcase**. Briefcase es una herramienta de BeeWare que se puede utilizar para empaquetar su aplicación para la distribución a los usuarios finales — pero también se puede utilizar para arrancar un proyecto nuevo. Asegúrate de que estás en el directorio `beeware-tutorial` que creaste en [Tutorial 0]{1}, con el entorno virtual `beeware-venv` activado, y ejecuta:"
 
 #: docs/en/tutorial/tutorial-1.md:23 docs/en/tutorial/tutorial-1.md:37
-#, fuzzy
 msgid "/// admonition | Possible errors during installation"
 msgstr "/// admonition | Posibles errores durante la instalación"
 
 #: docs/en/tutorial/tutorial-1.md:25
-#, fuzzy
 msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have [installed all the platform pre-requisites][install-dependencies]."
-msgstr "Si aparecen errores durante la instalación, es casi seguro que se deba a que no se han instalado algunos de los requisitos del sistema. Asegúrate de haber [instalado todos los prerrequisitos de la plataforma][install-dependencies]."
+msgstr "Si aparecen errores durante la instalación, es casi seguro que se deba a que no se han instalado algunos de los requisitos del sistema. Asegúrate de tener [instalado todos los prerrequisitos de la plataforma][install-dependencies]."
 
 #: docs/en/tutorial/tutorial-1.md:39
 msgid "It is important that you use `python -m pip`, rather than a bare `pip`. Briefcase needs to ensure that it has an up-to-date version of `pip` and `setuptools`, and a bare invocation of `pip` can't self-update. If you want to know more, [Brett Cannon has a detailed blog post about the issue]{1}."
 msgstr "Es importante que utilices `python -m pip`, en lugar de `pip`. Briefcase necesita asegurarse de que tiene una versión actualizada de `pip` y `setuptools`, y una invocación de `pip` no puede auto-actualizarse. Si quieres saber más, [Brett Cannon tiene una entrada de blog detallada sobre la incidencia]{1}."
 
 #: docs/en/tutorial/tutorial-1.md:45
-#, fuzzy
 msgid "Bootstrap a new project"
-msgstr "Crear un nuevo proyecto"
+msgstr "Arrancar un proyecto nuevo"
 
 #: docs/en/tutorial/tutorial-1.md:47
-#, fuzzy
 msgid "Let's start our first BeeWare project! We're going to use the Briefcase `new` command to create an application called **Hello World**. Run the following from your command prompt:"
-msgstr "¡Empecemos nuestro primer proyecto BeeWare! Vamos a utilizar el comando `new` de Briefcase para crear una aplicación llamada **Hello World**. Ejecute lo siguiente desde su símbolo del sistema:"
+msgstr "¡Empecemos nuestro primer proyecto BeeWare! Vamos a utilizar el comando `new` del Portafolio para crear una aplicación llamada **Hello World**. Ejecuta lo siguiente desde su intérprete del comando:"
 
 #: docs/en/tutorial/tutorial-1.md:73
-#, fuzzy
 msgid "Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:"
-msgstr "Briefcase nos pedirá algunos detalles de nuestra nueva aplicación. Para los propósitos de este tutorial, utilice lo siguiente:"
+msgstr "El portafolio nos pedirá algunos detalles de nuestra aplicación nueva. Para los propósitos de este tutorial, utilice lo siguiente:"
 
 #: docs/en/tutorial/tutorial-1.md:75
-#, fuzzy
 msgid "**Formal Name** - Accept the default value: `Hello World`."
-msgstr "**Nombre Formal** - Acepta el valor por defecto: `Hola Mundo`."
+msgstr "**Nombre Formal** — Acepta el valor por defecto: `Hola Mundo`."
 
 #: docs/en/tutorial/tutorial-1.md:76
-#, fuzzy
 msgid "**App Name** - Accept the default value: `helloworld`."
-msgstr "**Nombre de la aplicación** - Acepta el valor por defecto: `helloworld`."
+msgstr "**Nombre de aplicación** — Acepta el valor por defecto: `helloworld`."
 
 #: docs/en/tutorial/tutorial-1.md:77
-#, fuzzy
 msgid "**Bundle Identifier** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter `com.cupcakes` as the bundle). If you don't own your own domain, accept the default bundle (`com.example`)."
-msgstr "**Paquete** - Si tiene su propio dominio, introdúzcalo en orden inverso. (Por ejemplo, si posee el dominio \"cupcakes.com\", introduzca `com.cupcakes` como paquete). Si no posee su propio dominio, acepte el paquete predeterminado (`com.ejemplo`)."
+msgstr "**Paquete** — Si tiene su propio dominio, introdúzcalo en orden inverso. (Por ejemplo, si posee el dominio \"cupcakes.com\", introduzca `com.cupcakes` como paquete). Si no posee su propio dominio, acepte el paquete predeterminado (`com.ejemplo`)."
 
 #: docs/en/tutorial/tutorial-1.md:78
-#, fuzzy
 msgid "**Project Name** - Accept the default value: `Hello World`."
-msgstr "**Nombre del proyecto** - Acepte el valor por defecto: `Hola Mundo`."
+msgstr "**Nombre del proyecto** — Acepte el valor por defecto: `Hola Mundo`."
 
 #: docs/en/tutorial/tutorial-1.md:79
-#, fuzzy
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
-msgstr "**Descripción** - Acepte el valor por defecto (o, si quiere ser realmente creativo, invente su propia descripción)"
+msgstr "**Descripción** — Acepte el valor por defecto (o, si quiere ser realmente creativo, invente su propia descripción)"
 
 #: docs/en/tutorial/tutorial-1.md:80
-#, fuzzy
 msgid "**Author** - Enter your own name here."
-msgstr "**Autor** - Escriba aquí su propio nombre."
+msgstr "**Autor** — Introduzca aquí su propio nombre."
 
 #: docs/en/tutorial/tutorial-1.md:81
-#, fuzzy
 msgid "**Author's Email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
-msgstr "**Correo electrónico del autor** - Introduzca su propia dirección de correo electrónico. Se utilizará en el archivo de configuración, en el texto de ayuda y en cualquier lugar donde se requiera un correo electrónico al enviar la aplicación a una tienda de aplicaciones."
+msgstr "**Correo electrónico del autor** — Introduzca su propia dirección de correo electrónico. Se utilizará en el archivo de configuración, en el texto de ayuda y en cualquier lugar donde se requiera un correo electrónico al enviar la aplicación a una tienda de aplicaciones."
 
 #: docs/en/tutorial/tutorial-1.md:82
-#, fuzzy
 msgid "**Application URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the `https://`). Otherwise, just accept the default URL (`https://example.com/helloworld`). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
-msgstr "**URL** - La URL de la página de destino de su aplicación. De nuevo, si es dueño de su propio dominio, introduzca una URL en ese dominio (incluyendo el `https://`). Si no, acepta la URL por defecto (`https://example.com/helloworld`). No es necesario que esta URL exista realmente (por ahora); sólo se utilizará si publicas tu aplicación en una tienda de aplicaciones."
+msgstr "**URL de aplicación** — La URL de la página de destino para su aplicación. De nuevo, si es dueño de su propio dominio, introduzca una URL en ese dominio (incluyendo el `https://`). En otro caso, tan solo acepta la URL por defecto (`https://example.com/helloworld`). No es necesario que esta URL exista realmente (por ahora); sólo será utilizada si publicas tu aplicación en una tienda de aplicaciones."
 
 #: docs/en/tutorial/tutorial-1.md:83
-#, fuzzy
 msgid "**Project License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
-msgstr "**Licencia** - Acepta la licencia por defecto (BSD). Sin embargo, esto no afectará en nada al funcionamiento del tutorial, así que si tienes sentimientos particularmente fuertes sobre la elección de la licencia, siéntete libre de elegir otra licencia."
+msgstr "**Licencia de Proyecto** — Acepta la licencia por defecto (BSD). Sin embargo, esto no afectará en nada al funcionamiento del tutorial, así que si tienes sentimientos particularmente fuertes sobre la elección de la licencia, siéntete libre de elegir otra licencia."
 
 #: docs/en/tutorial/tutorial-1.md:84
-#, fuzzy
 msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
-msgstr "**GUI framework** - Acepte la opción por defecto, Toga (el propio conjunto de herramientas GUI de BeeWare)."
+msgstr "**IGU de marco de trabajo** — Acepte la opción por defecto, Toga (el propio conjunto de herramientas IGU de BeeWare)."
 
 #: docs/en/tutorial/tutorial-1.md:86
-#, fuzzy
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like:"
-msgstr "Briefcase generará entonces un esqueleto de proyecto para que lo utilices. Si has seguido este tutorial hasta ahora, y has aceptado los valores por defecto tal y como se describen, tu sistema de archivos debería parecerse a:"
+msgstr "Briefcase entonces generará un esqueleto de proyecto para que lo utilices. Si has seguido este tutorial hasta ahora, y has aceptado los valores por defecto tal y como se describen, tu sistema de archivos debería parecerse a:"
 
 #: docs/en/tutorial/tutorial-1.md:110
-#, fuzzy
 msgid "This skeleton is actually a fully functioning application without adding anything else. The `src` folder contains all the code for the application, the `tests` folder contains an initial test suite, and the `pyproject.toml` file describes how to package the application for distribution. If you open `pyproject.toml` in an editor, you'll see the configuration details you just provided to Briefcase."
-msgstr "Este esqueleto es en realidad una aplicación en pleno funcionamiento sin añadir nada más. La carpeta `src` contiene todo el código de la aplicación, la carpeta `tests` contiene un conjunto de pruebas iniciales, y el archivo `pyproject.toml` describe cómo empaquetar la aplicación para su distribución. Si abres `pyproject.toml` en un editor, verás los detalles de configuración que acabas de proporcionar a Briefcase."
+msgstr "Este esqueleto es en realidad una aplicación completamente funcional sin necesidad de añadir nada más. La carpeta `src` contiene todo el código de la aplicación, la carpeta `tests` contiene un conjunto de pruebas iniciales, y el archivo `pyproject.toml` describe cómo empaquetar la aplicación para su distribución. Si abres `pyproject.toml` en un editor, verás los detalles de configuración que acabas de proporcionar al Portafolio."
 
 #: docs/en/tutorial/tutorial-1.md:112
-#, fuzzy
 msgid "Now that we have a stub application, we can use Briefcase to run the application."
-msgstr "Ahora que tenemos una aplicación stub, podemos utilizar Briefcase para ejecutar la aplicación."
+msgstr "Ahora que tenemos un esbozo de aplicación, podemos utilizar Briefcase para ejecutar la aplicación."
 
 #: docs/en/tutorial/tutorial-1.md:114
-#, fuzzy
 msgid "Run the app in developer mode"
-msgstr "Ejecutar la aplicación en modo desarrollador"
+msgstr "Ejecute la aplicación en modo desarrollador"
 
 #: docs/en/tutorial/tutorial-1.md:116
-#, fuzzy
 msgid "Move into the `helloworld` project directory and tell briefcase to start the project in Developer (or `dev`) mode:"
-msgstr "Entra en el directorio del proyecto `helloworld` y dile a briefcase que inicie el proyecto en modo desarrollador (o `dev`):"
+msgstr "Entra en el directorio del proyecto `helloworld` y dile al portafolio que inicie el proyecto en modo Desarrollador (o `dev`):"
 
 #: docs/en/tutorial/tutorial-1.md:175 docs/en/tutorial/tutorial-2.md:265
-#, fuzzy
 msgid "This should open a GUI window:"
-msgstr "Esto debería abrir una ventana GUI:"
+msgstr "Esto debería abrir una ventana IGU:"
 
 #: docs/en/tutorial/tutorial-1.md:179
-#, fuzzy
 msgid "![Hello World Tutorial 1 window, on macOS]{1}"
 msgstr "[Tutorial Hola Mundo 1 ventana, en macOS]{1}"
 
 #: docs/en/tutorial/tutorial-1.md:189
-#, fuzzy
 msgid "![Hello World Tutorial 1 window, on Linux]{1}"
 msgstr "![Tutorial Hola Mundo 1 ventana, en Linux]{1}"
 
 #: docs/en/tutorial/tutorial-1.md:195 docs/en/tutorial/tutorial-7.md:247
-#, fuzzy
 msgid "/// admonition | Possible errors when running `briefcase dev`"
-msgstr "/// admonition | Posibles errores al ejecutar «briefcase dev»"
+msgstr "/// admonition | Posibles errores al ejecutar `briefcase dev`"
 
 #: docs/en/tutorial/tutorial-1.md:197
-#, fuzzy
 msgid "If you get an error when you run `briefcase dev`, it's almost certainly because some of the system requirements haven't been installed. Make sure you have [installed all the platform pre-requisites][install-dependencies]; the error message you receive should tell you which packages are missing."
-msgstr "Si obtienes un error al ejecutar `briefcase dev`, es casi seguro que se debe a que algunos de los requisitos del sistema no se han instalado. Asegúrate de haber [instalado todos los requisitos previos de la plataforma][install-dependencies]; el mensaje de error que recibas debería indicarte qué paquetes faltan."
+msgstr "Si obtienes un error al ejecutar `briefcase dev`, es casi seguro que se debe a que no se han instalado algunos de los requisitos del sistema. Asegúrate de haber [instalado todos los requisitos previos de la plataforma][install-dependencies]; el mensaje de error que recibas debería indicarte cuáles paquetes faltan."
 
 #: docs/en/tutorial/tutorial-1.md:205
-#, fuzzy
 msgid "![Hello World Tutorial 1 window, on Windows]{1}"
 msgstr "![Tutorial Hola Mundo 1 ventana, en Windows]{1}"
 
 #: docs/en/tutorial/tutorial-1.md:211
-#, fuzzy
 msgid "/// admonition | Invalid requirements or pip unable to connect"
 msgstr "/// admonition | Requisitos no válidos o pip incapaz de conectarse"
 
@@ -886,9 +834,8 @@ msgid "If your version of python is *not* a supported version, you will have to 
 msgstr "Si tu versión de python *no* es una versión soportada, tendrás que reiniciar el tutorial."
 
 #: docs/en/tutorial/tutorial-1.md:229
-#, fuzzy
 msgid "Close the application - either by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran `briefcase dev` - and you're done! Congratulations - you've just written a standalone, native application in Python!"
-msgstr "Pulsa el botón de cerrar (o selecciona Salir en el menú de la aplicación), ¡y ya está! Enhorabuena - ¡acabas de escribir una aplicación nativa e independiente en Python!"
+msgstr "Cierre la aplicación — o bien presionando el botón cerrar en la ventana de aplicación, seleccionando Salir desde el menú de aplicación, o bien tecleando **Ctrl+C** en el terminal donce ejecutó `briefcase dev` — y está hecho! Felicidades — ¡acabas de escribir una aplicación nativa e independiente en Python!"
 
 #: docs/en/tutorial/tutorial-1.md:233
 #, fuzzy
@@ -896,14 +843,12 @@ msgid "We now have a working application, running in developer mode. Now we can 
 msgstr "Ahora tenemos una aplicación que funciona, ejecutándose en modo desarrollador. Ahora podemos añadir algo de lógica propia para hacer que nuestra aplicación haga algo un poco más interesante. En [Tutorial 2]{1}, pondremos una interfaz de usuario más útil en nuestra aplicación."
 
 #: docs/en/tutorial/tutorial-2.md:1
-#, fuzzy
 msgid "Tutorial 2 - Making it interesting"
-msgstr "Tutorial 2 - Hacerlo interesante"
+msgstr "Tutorial 2 — Hacerlo interesante"
 
 #: docs/en/tutorial/tutorial-2.md:3
-#, fuzzy
 msgid "In [Tutorial 1]{1}, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
-msgstr "En [Tutorial 1]{1}, generamos un proyecto stub que era capaz de ejecutarse, pero no escribimos ningún código nosotros mismos. Echemos un vistazo a lo que se generó para nosotros."
+msgstr "En [Tutorial 1]{1}, generamos un esbozo del proyecto que era capaz de ejecutarse, pero no escribimos ningún código nosotros mismos. Echemos un vistazo a lo que se generó para nosotros."
 
 #: docs/en/tutorial/tutorial-2.md:5
 msgid "What was generated"
@@ -933,9 +878,8 @@ msgid "It imports the `main` method from the `helloworld` app."
 msgstr "Importa el método `main` de la aplicación `helloworld`."
 
 #: docs/en/tutorial/tutorial-2.md:23
-#, fuzzy
 msgid "Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
-msgstr "Es decir, importa el método `main` de la aplicación `helloworld`; y si se está ejecutando como punto de entrada, llama al método main(), e inicia el bucle principal de la aplicación. El bucle principal es la forma en que una aplicación GUI escucha la entrada del usuario (como clics de ratón y pulsaciones de teclado)."
+msgstr "A continuación, se inicia el bucle principal de la aplicación. El bucle principal es la forma en que una aplicación con interfaz gráfica de usuario (IGU) detecta la entrada del usuario (como pulsaciones del ratón y del teclado)."
 
 #: docs/en/tutorial/tutorial-2.md:25
 #, fuzzy
@@ -943,17 +887,14 @@ msgid "The more interesting file is `app.py` - this contains the logic that crea
 msgstr "El archivo más interesante es `app.py` - contiene la lógica que crea la ventana de nuestra aplicación:"
 
 #: docs/en/tutorial/tutorial-2.md:43
-#, fuzzy
 msgid "Let's go through this line by line:"
-msgstr "Vamos a ir a través de esta línea por línea:"
+msgstr "Vamos a ir a través de esto línea por línea:"
 
 #: docs/en/tutorial/tutorial-2.md:50
-#, fuzzy
 msgid "First, we import the `toga` widget toolkit, as well as some style-related utility constants. Our code doesn't use these yet - but we'll make use of them shortly."
-msgstr "En primer lugar, importamos el conjunto de herramientas de widgets `toga`, así como algunas clases de utilidades y constantes relacionadas con el estilo. Nuestro código aún no las utiliza, pero lo haremos en breve."
+msgstr "Primero, importamos el conjunto de herramientas de widgets `toga`, así como algunas clases de utilidades y constantes relacionadas con el estilo. Nuestro código aún no las utiliza, pero lo haremos en breve."
 
 #: docs/en/tutorial/tutorial-2.md:52
-#, fuzzy
 msgid "Then, we define a class:"
 msgstr "A continuación, definimos una clase:"
 
@@ -983,12 +924,10 @@ msgid "Next, we define a window into which we can put this empty box:"
 msgstr "A continuación, definimos una ventana en la que podemos poner esta caja vacía:"
 
 #: docs/en/tutorial/tutorial-2.md:77
-#, fuzzy
 msgid "This creates an instance of a `toga.MainWindow`, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)."
-msgstr "Esto crea una instancia de `toga.MainWindow`, que tendrá un título que coincida con el nombre de la aplicación. Una ventana principal es un tipo especial de ventana en Toga - es una ventana que está estrechamente vinculada al ciclo de vida de la aplicación. Cuando la Ventana Principal se cierra, la aplicación sale. La Ventana Principal es también la ventana que tiene el menú de la aplicación (si estás en una plataforma como Windows donde las barras de menú son parte de la ventana)"
+msgstr "Esto crea una instancia de un `toga.MainWindow`, lo cual tendrá un título que coincida con el nombre de la aplicación. Una Ventana Principal es un tipo especial de ventana en Toga —es una ventana que está estrechamente vinculada al ciclo de vida de la aplicación. Cuando se cierra la Ventana Principal, la aplicación sale. La Ventana Principal es también la ventana que tiene el menú de la aplicación (si estás en una plataforma como Windows donde las barras de menú son parte de la ventana)."
 
 #: docs/en/tutorial/tutorial-2.md:79
-#, fuzzy
 msgid "/// admonition | Where is my window?"
 msgstr "/// admonition | ¿Dónde está mi ventana?"
 
