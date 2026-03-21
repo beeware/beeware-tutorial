@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-21 12:10+0000\n"
-"PO-Revision-Date: 2026-03-21 12:09+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.19.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-03-21 12:10+0000\nPO-Revision-Date: 2026-03-21 23:09+0000\nLast-Translator: Francisco Serrador <fserrador@gmail.com>\nLanguage-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.17-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -252,7 +240,7 @@ msgstr "Agregar permisos al dispositivo"
 
 #: docs/en/tutorial/topics/camera-access.md:101
 msgid "Part of this code we've just added asks for permission to use the camera. This is a common feature of modern app platforms - you can't access hardware features without explicitly asking the user's permission first."
-msgstr "Parte de este código que acabamos de agregar solicita permiso para usar la cámara. Esta es una característica común de las plataformas de aplicaciones modernas: no se puede acceder a las funciones de hardware sin pedirle permiso explícitamente al usuario primero."
+msgstr "Parte de este código que acabamos de agregar solicita permiso para usar la cámara. Esta es una prestación común de las plataformas de aplicaciones modernas: no se puede acceder a las funciones de hardware sin pedirle permiso explícitamente al usuario primero."
 
 #: docs/en/tutorial/topics/camera-access.md:103
 msgid "However, this request comes in two parts. The first is in the code we've just seen; but before the app can ask for permissions, it needs to declare the permissions it is going to ask for."
@@ -488,7 +476,7 @@ msgstr "Desarrollo basado en pruebas"
 
 #: docs/en/tutorial/topics/testing.md:185
 msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of `test_app.py`:"
-msgstr "Ahora que tenemos un conjunto de pruebas, podemos utilizarlo para impulsarlo el desarrollo de características nuevas. Vamos a modificar nuestra aplicación para tener un saludo especial para un usuario en particular. Podemos empezar por añadir un caso de prueba para el comportamiento nuevo que nos gustaría ver en la parte inferior de `test_app.py`:"
+msgstr "Ahora que tenemos un conjunto de pruebas, podemos utilizarlo para dirigir el desarrollo de prestaciones nuevas. Vamos a modificar nuestra aplicación para tener un saludo especial para un usuario en particular. Podemos empezar por añadir un caso de prueba para el comportamiento nuevo que nos gustaría ver en la parte inferior de `test_app.py`:"
 
 #: docs/en/tutorial/topics/testing.md:194
 msgid "Then, run the test suite with this new test:"
@@ -508,7 +496,7 @@ msgstr "Pruebas en tiempo de ejecución"
 
 #: docs/en/tutorial/topics/testing.md:377
 msgid "So far, we've been running the tests in development mode. This is especially useful when you're developing new features, as you can rapidly iterate on adding tests, and adding code to make those tests pass. However, at some point, you'll want to verify that your code also runs correctly when inside the bundle app environment."
-msgstr "Hasta ahora, hemos estado ejecutando las pruebas en modo de desarrollo. Esto es especialmente útil cuando estás desarrollando características nuevas, ya que puedes iterar rápidamente en la adición de pruebas, y la adición de código para hacer que esas pruebas pasen. Sin embargo, en algún momento, querrás verificar que su código también se ejecuta correctamente cuando se encuentra dentro del entorno de la aplicación empaquetada."
+msgstr "Hasta ahora, hemos estado ejecutando las pruebas en modo de desarrollo. Esto es especialmente útil cuando estás desarrollando prestaciones nuevas, ya que puedes iterar rápidamente en la adición de pruebas, y la adición de código para hacer que esas pruebas aprueben. Sin embargo, en algún momento, querrás verificar que su código también se ejecuta correctamente cuando se encuentra dentro del entorno de la aplicación empaquetada."
 
 #: docs/en/tutorial/topics/testing.md:379
 msgid "The `--test` and `-r` options can also be passed to the `run` command. If you use `briefcase run --test -r`, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
@@ -831,28 +819,24 @@ msgid "/// admonition | Invalid requirements or pip unable to connect"
 msgstr "/// admonition | Requisitos no válidos o pip incapaz de conectarse"
 
 #: docs/en/tutorial/tutorial-1.md:213
-#, fuzzy
 msgid "If you encounter the error:"
-msgstr "Si se encuentra con el error:"
+msgstr "Si se encuentra el error:"
 
 #: docs/en/tutorial/tutorial-1.md:221
-#, fuzzy
 msgid "Confirm that you are running a [version of python that this tutorial supports][install-python]."
 msgstr "Confirme que está ejecutando una [versión de python compatible con este tutorial][install-python]."
 
 #: docs/en/tutorial/tutorial-1.md:223
-#, fuzzy
 msgid "If your version of python is *not* a supported version, you will have to restart the tutorial."
-msgstr "Si tu versión de python *no* es una versión soportada, tendrás que reiniciar el tutorial."
+msgstr "Si tu versión de python *no* es una versión mantenida, tendrás que reiniciar el tutorial."
 
 #: docs/en/tutorial/tutorial-1.md:229
 msgid "Close the application - either by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran `briefcase dev` - and you're done! Congratulations - you've just written a standalone, native application in Python!"
 msgstr "Cierre la aplicación — o bien presionando el botón cerrar en la ventana de aplicación, seleccionando Salir desde el menú de aplicación, o bien tecleando **Ctrl+C** en el terminal donce ejecutó `briefcase dev` — y está hecho! Felicidades — ¡acabas de escribir una aplicación nativa e independiente en Python!"
 
 #: docs/en/tutorial/tutorial-1.md:233
-#, fuzzy
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In [Tutorial 2]{1}, we'll put a more useful user interface onto our application."
-msgstr "Ahora tenemos una aplicación que funciona, ejecutándose en modo desarrollador. Ahora podemos añadir algo de lógica propia para hacer que nuestra aplicación haga algo un poco más interesante. En [Tutorial 2]{1}, pondremos una interfaz de usuario más útil en nuestra aplicación."
+msgstr "Ahora tenemos una aplicación que funciona, ejecutándose en modo desarrollador. Ahora podemos añadir algo de lógica propia para hacer que nuestra aplicación haga algo un poco más interesante. En el [Tutorial 2]{1}, pondremos una interfaz de usuario más útil en nuestra aplicación."
 
 #: docs/en/tutorial/tutorial-2.md:1
 msgid "Tutorial 2 - Making it interesting"
@@ -875,28 +859,24 @@ msgid "`__init__.py` marks the `helloworld` directory as an importable Python mo
 msgstr "`__init__.py` marca el directorio `helloworld` como un módulo importable de Python. Es un archivo vacío; el mero hecho de que exista le dice al intérprete de Python que el directorio `helloworld` define un módulo."
 
 #: docs/en/tutorial/tutorial-2.md:11
-#, fuzzy
 msgid "`__main__.py` marks the `helloworld` module as a special kind of module -an executable module. If you try to run the `helloworld` module using `python -m helloworld`, the `__main__.py` file is where Python will start executing. The contents of `__main__.py` is relatively simple:"
-msgstr "El archivo `__main__.py` marca el módulo `helloworld` como un tipo especial de módulo -un módulo ejecutable. Si intentas ejecutar el módulo `helloworld` usando `python -m helloworld`, el archivo `__main__.py` es donde Python empezará a ejecutarse. El contenido de `__main__.py` es relativamente simple:"
+msgstr "`__main__.py` marca el módulo `helloworld` como una familia especial del módulo —un módulo ejecutable. Si intentas ejecutar el módulo `helloworld` usando `python -m helloworld`, el archivo `__main__.py` es donde Python empezará a ejecutarse. El contenido de `__main__.py` es relativamente simple:"
 
 #: docs/en/tutorial/tutorial-2.md:20
-#, fuzzy
 msgid "This file does two things:"
 msgstr "Este archivo hace dos cosas:"
 
 #: docs/en/tutorial/tutorial-2.md:22
-#, fuzzy
 msgid "It imports the `main` method from the `helloworld` app."
-msgstr "Importa el método `main` de la aplicación `helloworld`."
+msgstr "Importa el método `main` desde la aplicación `helloworld`."
 
 #: docs/en/tutorial/tutorial-2.md:23
 msgid "Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
 msgstr "A continuación, se inicia el bucle principal de la aplicación. El bucle principal es la forma en que una aplicación con interfaz gráfica de usuario (IGU) detecta la entrada del usuario (como pulsaciones del ratón y del teclado)."
 
 #: docs/en/tutorial/tutorial-2.md:25
-#, fuzzy
 msgid "The more interesting file is `app.py` - this contains the logic that creates our application window:"
-msgstr "El archivo más interesante es `app.py` - contiene la lógica que crea la ventana de nuestra aplicación:"
+msgstr "El archivo más interesante es `app.py` — contiene la lógica que crea la ventana de nuestra aplicación:"
 
 #: docs/en/tutorial/tutorial-2.md:43
 msgid "Let's go through this line by line:"
@@ -911,27 +891,22 @@ msgid "Then, we define a class:"
 msgstr "A continuación, definimos una clase:"
 
 #: docs/en/tutorial/tutorial-2.md:58
-#, fuzzy
 msgid "Each Toga application has a single `toga.App` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
 msgstr "Cada aplicación Toga tiene una única instancia `toga.App`, que representa la entidad en ejecución que es la aplicación. La app puede acabar gestionando múltiples ventanas; pero para aplicaciones sencillas, habrá una única ventana principal."
 
 #: docs/en/tutorial/tutorial-2.md:60
-#, fuzzy
 msgid "Next, we define a `startup()` method:"
 msgstr "A continuación, definimos un método `startup()`:"
 
 #: docs/en/tutorial/tutorial-2.md:67
-#, fuzzy
 msgid "The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space."
-msgstr "Lo primero que hace el método de inicio es definir una caja principal. El esquema de diseño de Toga se comporta de forma similar a HTML. Construyes una aplicación construyendo una colección de cajas, cada una de las cuales contiene otras cajas, o widgets reales. Luego aplicas estilos a estas cajas para definir cómo consumirán el espacio disponible en la ventana."
+msgstr "Lo primero que hace el método de inicio startup() es definir una caja principal. El esquema de diseño de Toga se comporta de forma similar a HTML. Construyes una aplicación construyendo una colección de cajas, cada una de las cuales contiene otras cajas, o los widget actuales. Luego aplicas estilos a estas cajas para definir como consumirán el espacio disponible en la ventana."
 
 #: docs/en/tutorial/tutorial-2.md:69
-#, fuzzy
 msgid "In this application, we define a single box, but we don't put anything into it."
-msgstr "En esta aplicación, definimos una sola caja, pero no ponemos nada en ella."
+msgstr "En esta aplicación, definimos una sola caja, pero no ponemos nada dentro."
 
 #: docs/en/tutorial/tutorial-2.md:71
-#, fuzzy
 msgid "Next, we define a window into which we can put this empty box:"
 msgstr "A continuación, definimos una ventana en la que podemos poner esta caja vacía:"
 
@@ -944,72 +919,58 @@ msgid "/// admonition | Where is my window?"
 msgstr "/// admonition | ¿Dónde está mi ventana?"
 
 #: docs/en/tutorial/tutorial-2.md:81
-#, fuzzy
 msgid "If you have made an error in your code, the main window of the app may not display. If this happens, you can type **Ctrl+C** in the terminal where you started the app. This will stop the app. You can then fix the error and restart the app."
-msgstr "Si has cometido un error en el código, es posible que la ventana principal de la aplicación no se muestre. Si esto ocurre, puedes teclear **Ctrl+C** en el terminal donde iniciaste la aplicación. Esto detendrá la aplicación. Entonces podrás corregir el error y reiniciar la aplicación."
+msgstr "Si has cometido un error en tu código, es posible que la ventana principal de la aplicación no se exhiba. Si esto ocurre, puedes teclear **Ctrl+C** en el terminal donde iniciaste la aplicación. Esto detendrá la aplicación. Entonces puede corregir el error y reiniciar la aplicación."
 
 #: docs/en/tutorial/tutorial-2.md:85
-#, fuzzy
 msgid "We then add our empty box as the content of the main window, and instruct the application to show our window:"
-msgstr "A continuación añadimos nuestra caja vacía como contenido de la ventana principal, e indicamos a la aplicación que muestre nuestra ventana:"
+msgstr "A continuación añadimos nuestra caja vacía como el contenido de la ventana principal, e indicamos a la aplicación que muestre nuestra ventana:"
 
 #: docs/en/tutorial/tutorial-2.md:92
-#, fuzzy
 msgid "Last of all, we define a `main()` function. This is what creates the instance of our application:"
-msgstr "Por último, definimos un método `main()`. Esto es lo que crea la instancia de nuestra aplicación:"
+msgstr "Por último, definimos una función`main()`. Esto es lo que crea la instancia de nuestra aplicación:"
 
 #: docs/en/tutorial/tutorial-2.md:99
-#, fuzzy
 msgid "This `main()` method is the one that is imported and invoked by `__main__.py`. It creates and returns an instance of our `HelloWorld` application."
 msgstr "Este método `main()` es el que es importado e invocado por `__main__.py`. Crea y devuelve una instancia de nuestra aplicación `HelloWorld`."
 
 #: docs/en/tutorial/tutorial-2.md:101
-#, fuzzy
 msgid "That's the simplest possible Toga application. Let's put some of our own content into the application, and make the app do something interesting."
 msgstr "Esa es la aplicación Toga más simple posible. Pongamos algo de nuestro propio contenido en la aplicación, y hagamos que la aplicación haga algo interesante."
 
 #: docs/en/tutorial/tutorial-2.md:103
-#, fuzzy
 msgid "Adding some content of our own"
-msgstr "Añadir contenido propio"
+msgstr "Añadir algún contenido propio"
 
 #: docs/en/tutorial/tutorial-2.md:105
-#, fuzzy
 msgid "Let's do something more interesting with our `HelloWorld` app."
 msgstr "Hagamos algo más interesante con nuestra aplicación `HelloWorld`."
 
 #: docs/en/tutorial/tutorial-2.md:109
-#, fuzzy
 msgid "When you make these changes, make sure you keep the imports at the top of the file, and the `main()` at the bottom of the file. You only need to update the `HelloWorld` class."
-msgstr "No elimine las importaciones en la parte superior del archivo, o el `main()` en la parte inferior. Solo necesitas actualizar la clase `HelloWorld`."
+msgstr "Cuando realiza estos cambios, asegúrese que conserva las importaciones en la parte superior del archivo, y el `main()` en la parte inferior del archivo. Solo necesitas actualizar la clase `HelloWorld`."
 
 #: docs/en/tutorial/tutorial-2.md:113
-#, fuzzy
 msgid "Modify your `HelloWorld` class inside `src/helloworld/app.py` so that it looks like this:"
 msgstr "Modifica tu clase `HelloWorld` dentro de `src/helloworld/app.py` para que tenga este aspecto:"
 
 #: docs/en/tutorial/tutorial-2.md:147
-#, fuzzy
 msgid "Let's look in detail at what has changed."
 msgstr "Veamos en detalle lo que ha cambiado."
 
 #: docs/en/tutorial/tutorial-2.md:149
-#, fuzzy
 msgid "We're still creating a main box; however, we are now applying a style:"
 msgstr "Seguimos creando una caja principal; sin embargo, ahora estamos aplicando un estilo:"
 
 #: docs/en/tutorial/tutorial-2.md:155
-#, fuzzy
 msgid "Toga's built-in layout system is called \"Pack\". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are `<div>`, `<span>`, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a `COLUMN` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible."
-msgstr "El sistema de diseño integrado de Toga se llama \"Pack\". Se comporta de forma muy parecida a CSS. Defines objetos en una jerarquía - en HTML, los objetos son `<div>`, `<span>`, y otros elementos DOM; en Toga, son widgets y cajas. A continuación, puedes asignar estilos a los elementos individuales. En este caso, estamos indicando que se trata de una caja `COLUMN` - es decir, es una caja que consumirá todo el ancho disponible, y ampliará su altura a medida que se añada contenido, pero intentará ser lo más corta posible."
+msgstr "El sistema de diseño integrado de Toga se llama \"Pack\". Se comporta de forma muy parecida a CSS. Defines objetos en una jerarquía —en HTML, los objetos son `<div>`, `<span>`, y otros elementos DOM—; en Toga, son widgets y cajas. A continuación, puedes asignar estilos a los elementos individuales. En este caso, estamos indicando que se trata de una caja `COLUMN` — es decir, es una caja que consumirá todo el ancho disponible—, y ampliará su altura a medida que se añada contenido, pero intentará ser lo más corta posible."
 
 #: docs/en/tutorial/tutorial-2.md:159
-#, fuzzy
 msgid "For more advanced uses, Toga also supports a separate style object, which is used like this:"
-msgstr "Para usos más avanzados, Toga también admite un objeto de estilo independiente, que se utiliza así:"
+msgstr "Para usos más avanzados, Toga también admite un objeto de estilo independiente, el cual se utiliza así:"
 
 #: docs/en/tutorial/tutorial-2.md:168
-#, fuzzy
 msgid "Next, we define a couple of widgets:"
 msgstr "A continuación, definimos un par de widgets:"
 
@@ -1601,7 +1562,7 @@ msgstr "/// admonition | ¡El emulador no arranca!"
 
 #: docs/en/tutorial/tutorial-5/android.md:252
 msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the [Requirements and recommendations]{1} section of the Android developer documentation."
-msgstr "El emulador de Android es un software complejo que depende de una serie de características del hardware y del sistema operativo, características que pueden no estar disponibles o habilitadas en máquinas más antiguas. Si tiene dificultades para iniciar el emulador de Android, consulte la sección [Requerimientos y recomendaciones]{1} de la documentación para desarrolladores de Android."
+msgstr "El emulador de Android es un software complejo que depende de una serie de prestaciones del hardware y del sistema operativo, prestaciones que pueden no estar disponibles o habilitadas en máquinas más antiguas. Si tiene dificultades para iniciar el emulador de Android, consulte la sección [Requerimientos y recomendaciones]{1} de la documentación para desarrollador de Android."
 
 #: docs/en/tutorial/tutorial-5/android.md:256
 msgid "The first time the app starts, it needs to unpack itself onto the device. This may take a few seconds. Once it's unpacked, you'll see the Android version of our desktop app:"
@@ -1782,7 +1743,7 @@ msgstr "/// admonition | Prueba de concepto"
 #: docs/en/tutorial/tutorial-6.md:7
 #, fuzzy
 msgid "The Toga Web backend is the least mature of all the Toga backends. It's mature enough to show off a few features, but it's likely to be buggy, and will be missing many of the widgets that are available on other platforms. At this point in time, Web deployment should be considered a \"Proof of Concept\" - enough to demonstrate what can be done, but not enough to be relied on for serious development."
-msgstr "El backend Toga Web es el menos maduro de todos los backends Toga. Es lo suficientemente maduro como para mostrar algunas características, pero es probable que tenga errores, y le faltarán muchos de los widgets que están disponibles en otras plataformas. En este momento, el despliegue Web debe considerarse una \"Prueba de Concepto\" - suficiente para demostrar lo que se puede hacer, pero no lo suficiente como para confiar en él para un desarrollo serio."
+msgstr "El backend Toga Web es el menos maduro de todos los backend de Toga. Es lo suficientemente maduro como para presumir de algunas prestaciones, pero es probable que tenga fallos, y le faltarán muchos de los widgets que están disponibles en otras plataformas. En este momento, el despliegue de la web sería considerado como una «Prueba de Concepto» —suficiente para demostrar lo que se puede hacer, pero no lo suficiente como para confiar en él para un desarrollo serio—."
 
 #: docs/en/tutorial/tutorial-6.md:9
 #, fuzzy
@@ -2441,7 +2402,7 @@ msgstr "Si quieres ir más allá, hay algunos [tutoriales temáticos]{1} adicion
 #: docs/en/tutorial/tutorial-8.md:271
 #, fuzzy
 msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into [Toga's documentation]{1}. Toga also has its own tutorial [demonstrating how to use various features of the widget toolkit]{2}."
-msgstr "Si quieres saber más sobre cómo construir interfaces de usuario complejas con Toga, puedes sumergirte en [la documentación de Toga]{1}. Toga también tiene su propio tutorial [demostrando cómo usar varias características del widget toolkit]{2}."
+msgstr "Si quieres saber más sobre cómo construir interfaces de usuario complejas con Toga, puedes sumergirte en [la documentación de Toga]{1}. Toga también tiene su propio tutorial [demostrando cómo usar varias prestaciones del widget toolkit]{2}."
 
 #: docs/en/tutorial/tutorial-8.md:273
 #, fuzzy
