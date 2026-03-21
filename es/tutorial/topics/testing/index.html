@@ -118,7 +118,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-9-tiempo-de-ejecucion-del-conjunto-de-pruebas" class="md-skip">
+        <a href="#veces-de-pruebas" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -1488,10 +1488,10 @@ aria-label="Cabecera"
 </li>
       
         <li class="md-nav__item">
-  <a href="#pruebas-en-tiempo-real" class="md-nav__link">
+  <a href="#pruebas-en-tiempo-de-ejecucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pruebas en tiempo real
+        Pruebas en tiempo de ejecución
       
     </span>
   </a>
@@ -1606,10 +1606,10 @@ aria-label="Cabecera"
 </li>
       
         <li class="md-nav__item">
-  <a href="#pruebas-en-tiempo-real" class="md-nav__link">
+  <a href="#pruebas-en-tiempo-de-ejecucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pruebas en tiempo real
+        Pruebas en tiempo de ejecución
       
     </span>
   </a>
@@ -1634,14 +1634,14 @@ aria-label="Cabecera"
 
 
 
-<h1 id="tutorial-9-tiempo-de-ejecucion-del-conjunto-de-pruebas">Tutorial 9 - Tiempo de Ejecución del conjunto de pruebas<a class="headerlink" href="#tutorial-9-tiempo-de-ejecucion-del-conjunto-de-pruebas" title="Permanent link">&para;</a></h1>
+<h1 id="veces-de-pruebas">Veces de pruebas<a class="headerlink" href="#veces-de-pruebas" title="Permanent link">&para;</a></h1>
 <p>La mayor parte del desarrollo de software no consiste en escribir código nuevo,
 sino en modificar el existente. Garantizar que el código existente sigue
 funcionando de la forma que esperamos es una parte clave del proceso de
 desarrollo de software. Una forma de asegurar el comportamiento de nuestra
 aplicación es con un <em>conjunto de pruebas</em>.</p>
 <h2 id="ejecucion-del-conjunto-de-pruebas">Ejecución del conjunto de pruebas<a class="headerlink" href="#ejecucion-del-conjunto-de-pruebas" title="Permanent link">&para;</a></h2>
-<p>Resulta que nuestro proyecto ya tiene un conjunto de pruebas! Cuando
+<p>¡Resulta que nuestro proyecto ya tiene un conjunto de pruebas! Cuando
 originalmente generamos nuestro proyecto, se generaron dos directorios de nivel
 superior: <code>src</code> y <code>tests</code>. La carpeta <code>src</code> contiene el código de nuestra
 aplicación; la carpeta <code>tests</code> contiene nuestro conjunto de pruebas. Dentro de
@@ -1983,13 +1983,13 @@ comportamiento nuevo:</p>
 </div>
 </div>
 </div>
-<h2 id="pruebas-en-tiempo-real">Pruebas en tiempo real<a class="headerlink" href="#pruebas-en-tiempo-real" title="Permanent link">&para;</a></h2>
+<h2 id="pruebas-en-tiempo-de-ejecucion">Pruebas en tiempo de ejecución<a class="headerlink" href="#pruebas-en-tiempo-de-ejecucion" title="Permanent link">&para;</a></h2>
 <p>Hasta ahora, hemos estado ejecutando las pruebas en modo de desarrollo. Esto es
-especialmente útil cuando estás desarrollando nuevas características, ya que
+especialmente útil cuando estás desarrollando características nuevas, ya que
 puedes iterar rápidamente en la adición de pruebas, y la adición de código para
-hacer que esas pruebas pasen. Sin embargo, en algún momento, usted querrá
-verificar que su código también se ejecuta correctamente cuando dentro del
-entorno de aplicación paquete.</p>
+hacer que esas pruebas pasen. Sin embargo, en algún momento, querrás verificar
+que su código también se ejecuta correctamente cuando se encuentra dentro del
+entorno de la aplicación empaquetada.</p>
 <p>Las opciones <code>--test</code> y <code>-r</code> también se pueden pasar al comando <code>run</code>. Si
 utilizas <code>briefcase run --test -r</code>, se ejecutará el mismo conjunto de pruebas,
 pero se ejecutará dentro del paquete de aplicaciones empaquetado en lugar de en
@@ -2104,12 +2104,12 @@ tu entorno de desarrollo:</p>
 </div>
 </div>
 <p>Al igual que con <code>briefcase dev --test</code>, la opción <code>-r</code> sólo es necesaria la
-primera vez que se ejecuta el conjunto de pruebas para asegurarse de que las
-dependencias de prueba están presentes. En las siguientes ejecuciones, puede
-omitir esta opción.</p>
-<p>También puedes utilizar la opción <code>--test</code> en backends móviles: - así <code>briefcase
-run iOS --test</code> y <code>briefcase run android --test</code> funcionarán, ejecutando el
-conjunto de pruebas en el dispositivo móvil que selecciones.</p>
+primera vez que se ejecuta el conjunto de pruebas para asegurarse que las
+dependencias están presentes. En las subsecuentes ejecuciones, puede omitir esta
+opción.</p>
+<p>También puedes utilizar la opción <code>--test</code> en móviles en segundo plano: - así
+<code>briefcase run iOS --test</code> y <code>briefcase run android --test</code> ambos funcionarán ,
+ejecutando el conjunto de pruebas en el dispositivo móvil que selecciones.</p>
 
 
 

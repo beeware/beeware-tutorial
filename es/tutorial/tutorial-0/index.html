@@ -118,7 +118,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-0-preparemonos" class="md-skip">
+        <a href="#tutorial-0-vamos-a-instalarlo" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -1754,7 +1754,7 @@ aria-label="Cabecera"
 
 
 
-<h1 id="tutorial-0-preparemonos">Tutorial 0 - ¡Preparémonos!<a class="headerlink" href="#tutorial-0-preparemonos" title="Permanent link">&para;</a></h1>
+<h1 id="tutorial-0-vamos-a-instalarlo">Tutorial 0 - ¡Vamos a instalarlo!<a class="headerlink" href="#tutorial-0-vamos-a-instalarlo" title="Permanent link">&para;</a></h1>
 <p>Antes de crear nuestra primera aplicación BeeWare, tenemos que asegurarnos de
 que tenemos todos los requisitos previos para ejecutar BeeWare.</p>
 <h2 id="install-python">Instalar Python<a class="headerlink" href="#install-python" title="Permanent link">&para;</a></h2>
@@ -1762,25 +1762,24 @@ que tenemos todos los requisitos previos para ejecutar BeeWare.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Si usas Windows, puedes obtener el instalador oficial desde <a href="https://www.python.org/downloads">La página web de
-Python</a>. Puedes usar cualquier versión estable
-de Python desde la 3.9 a la 3.12 - <a href="https://www.python.org/downloads">Python 3.13 no es compatible por el
-momento</a>. Te aconsejamos que evites las
-versiones alphas, betas y release candidates a menos que <em>realmente</em> sepas lo
-que estás haciendo.</p>
-<p>Hay muchas formas diferentes de instalar Python. Puedes instalar Python a través
-de <a href="https://docs.brew.sh/Homebrew-and-Python">homebrew</a>. Puedes usar
+<p>Si están en los macOS, puedes obtener un instalador oficial de Python desde <a href="https://www.python.org/downloads">el
+sitio web de Python</a>. Puedes usar cualquier
+versión de Python desde la 3.10 o más nueva (aunque evitaría los candidatos
+alfa, beta y candidatos de lanzamiento). Recomendamos fuertemente utilizar
+Python 3.13 o más nuevo.</p>
+<p>Hay muchas formas diferentes de instalar Python por medio de
+<a href="https://docs.brew.sh/Homebrew-and-Python">Homebrew</a>, utiliza
 <a href="https://github.com/pyenv/pyenv#simple-python-version-management-pyenv">pyenv</a>
-para gestionar múltiples instalaciones de Python en la misma máquina. Los
-usuarios de Windows pueden instalar Python desde la Windows App Store. Los
-usuarios con experiencia en ciencia de datos pueden utilizar
+para gestionar múltiples instalaciones de Python, o utiliza
 <a href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> o
-<a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>.</p>
-<p>Xcode y las herramientas de desarrollo de línea de comandos proporcionan una
+<a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>. No importa <em>como</em>
+has instalado Python; solo importa que puedas ejecutar <code>python3</code> desde tu
+terminal y obtener un intérprete de Python mantenido en funcionamiento.</p>
+<p>Xcode y las Herramientas de Desarrollo en Línea de Comandos proporcionan una
 versión de Python; sin embargo, esa Python es la versión 3.9. Python 3.9 ha
-llegado al final de su vida útil, y ya no está soportado por Python o BeeWare.
-Usted <em>no</em> será capaz de utilizar la versión de Python proporcionada por Xcode
-para ejecutar este tutorial.</p>
+llegado al final de su vida útil, y ya no está mantenido por Python o BeeWare.
+<em>No</em> serás capaz de utilizar la versión de Python proporcionada por Xcode para
+ejecutar este tutorial.</p>
 <p>Para comprobar la versión de Python que tiene instalada, ejecute el siguiente
 comando:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>python3<span class="w"> </span>--version
@@ -1790,9 +1789,9 @@ comando:</p>
 <div class="tabbed-block">
 <p>Si estás en Linux, instalarás Python utilizando el gestor de paquetes del
 sistema (<code>apt</code> en Debian/Ubuntu/Mint, <code>dnf</code> en Fedora, o <code>pacman</code> en Arch).</p>
-<p>Debe asegurarse de que el sistema Python es Python 3.9 o más reciente; si no lo
-es (por ejemplo, Ubuntu 20.04 viene con Python 3.8), tendrá que actualizar su
-distribución de Linux a algo más reciente.</p>
+<p>Debe asegurarse de que la versión de Python del sistema sea Python 3.10 o
+posterior; si no lo es (p.ej., Ubuntu 20.04 viene con Python 3.8), necesitarás
+actualizar tu distribución de Linux a una versión más reciente.</p>
 <p>La compatibilidad con Raspberry Pi es limitada por el momento.</p>
 <p><strong>Importante:</strong> <em>Debe</em> utilizar el sistema Python proporcionado por su sistema
 operativo. Las instalaciones de Python procedentes de otras fuentes (como uv,
@@ -1801,16 +1800,16 @@ correctamente su aplicación para su distribución en los pasos posteriores de
 este tutorial.</p>
 </div>
 <div class="tabbed-block">
-<p>Si usas Windows, puedes obtener el instalador oficial desde <a href="https://www.python.org/downloads">La página web de
+<p>Si usas Windows, puedes obtener el instalador oficial desde <a href="https://www.python.org/downloads">la página web de
 Python</a>. Puedes usar cualquier versión estable
-de Python desde la 3.9 a la 3.12 - <a href="https://www.python.org/downloads">Python 3.13 no es compatible por el
-momento</a>. Te aconsejamos que evites las
-versiones alphas, betas y release candidates a menos que <em>realmente</em> sepas lo
-que estás haciendo.</p>
-<p>La compatibilidad con Raspberry Pi es limitada por el momento.</p>
-<p>Si usas macOS o Windows, no importa <em>cómo</em> has instalado Python - sólo importa
-que puedas ejecutar <code>python3</code> desde el símbolo del sistema/terminal de tu
-sistema operativo, y obtener un intérprete de Python que funcione.</p>
+de Python desde la 3.10 a la 3.13 (sin embargo evitaría las alfa, beta y
+candidatos a lanzamiento). Te recomendamos que utilices Python 3.13.</p>
+<p>La asistencia para Windows en ARM64 está limitada en este momento.</p>
+<p>También puedes instalar Python desde al Windows App Store, o utilizar
+<a href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> o
+<a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>. No importa <em>cómo</em>
+has instalado Python: sólo importa que puedas ejecutar <code>python3</code> desde el
+intérprete de comando y obtener un intérprete de Python que funcione.</p>
 </div>
 </div>
 </div>
@@ -1832,7 +1831,7 @@ operativo:</p>
 <div class="tabbed-block">
 <p>Para soportar el desarrollo local, necesitarás instalar algunos paquetes del
 sistema. La lista de paquetes necesarios varía en función de tu distribución:</p>
-<h3 id="ubuntu-debian"><strong>Ubuntu / Debian</strong><a class="headerlink" href="#ubuntu-debian" title="Permanent link">&para;</a></h3>
+<h3 id="ubuntu-debian">Ubuntu / Debian<a class="headerlink" href="#ubuntu-debian" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 <span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository1.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
