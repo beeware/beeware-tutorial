@@ -750,10 +750,10 @@ aria-label="Cabecera"
 </li>
       
         <li class="md-nav__item">
-  <a href="#anadir-contenido-propio" class="md-nav__link">
+  <a href="#anadir-algun-contenido-propio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Añadir contenido propio
+        Añadir algún contenido propio
       
     </span>
   </a>
@@ -1595,10 +1595,10 @@ aria-label="Cabecera"
 </li>
       
         <li class="md-nav__item">
-  <a href="#anadir-contenido-propio" class="md-nav__link">
+  <a href="#anadir-algun-contenido-propio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Añadir contenido propio
+        Añadir algún contenido propio
       
     </span>
   </a>
@@ -1644,8 +1644,8 @@ vistazo a lo que se generó para nosotros.</p>
 <p><code>__init__.py</code> marca el directorio <code>helloworld</code> como un módulo importable de
 Python. Es un archivo vacío; el mero hecho de que exista le dice al intérprete
 de Python que el directorio <code>helloworld</code> define un módulo.</p>
-<p>El archivo <code>__main__.py</code> marca el módulo <code>helloworld</code> como un tipo especial de
-módulo -un módulo ejecutable. Si intentas ejecutar el módulo <code>helloworld</code> usando
+<p><code>__main__.py</code> marca el módulo <code>helloworld</code> como una familia especial del módulo
+—un módulo ejecutable. Si intentas ejecutar el módulo <code>helloworld</code> usando
 <code>python -m helloworld</code>, el archivo <code>__main__.py</code> es donde Python empezará a
 ejecutarse. El contenido de <code>__main__.py</code> es relativamente simple:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">main</span>
@@ -1655,13 +1655,13 @@ ejecutarse. El contenido de <code>__main__.py</code> es relativamente simple:</p
 </code></pre></div>
 <p>Este archivo hace dos cosas:</p>
 <ul>
-<li>Importa el método <code>main</code> de la aplicación <code>helloworld</code>.</li>
+<li>Importa el método <code>main</code> desde la aplicación <code>helloworld</code>.</li>
 <li>A continuación, se inicia el bucle principal de la aplicación. El bucle
   principal es la forma en que una aplicación con interfaz gráfica de usuario
   (IGU) detecta la entrada del usuario (como pulsaciones del ratón y del
   teclado).</li>
 </ul>
-<p>El archivo más interesante es <code>app.py</code> - contiene la lógica que crea la ventana
+<p>El archivo más interesante es <code>app.py</code> — contiene la lógica que crea la ventana
 de nuestra aplicación:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
@@ -1695,12 +1695,12 @@ principal.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">startup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">()</span>
 </code></pre></div>
-<p>Lo primero que hace el método de inicio es definir una caja principal. El
-esquema de diseño de Toga se comporta de forma similar a HTML. Construyes una
+<p>Lo primero que hace el método de inicio startup() es definir una caja principal.
+El esquema de diseño de Toga se comporta de forma similar a HTML. Construyes una
 aplicación construyendo una colección de cajas, cada una de las cuales contiene
-otras cajas, o widgets reales. Luego aplicas estilos a estas cajas para definir
-cómo consumirán el espacio disponible en la ventana.</p>
-<p>En esta aplicación, definimos una sola caja, pero no ponemos nada en ella.</p>
+otras cajas, o los widget actuales. Luego aplicas estilos a estas cajas para
+definir como consumirán el espacio disponible en la ventana.</p>
+<p>En esta aplicación, definimos una sola caja, pero no ponemos nada dentro.</p>
 <p>A continuación, definimos una ventana en la que podemos poner esta caja vacía:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 </code></pre></div>
@@ -1713,17 +1713,17 @@ la aplicación (si estás en una plataforma como Windows donde las barras de men
 son parte de la ventana).</p>
 <div class="admonition">
 <p class="admonition-title">¿Dónde está mi ventana?</p>
-<p>Si has cometido un error en el código, es posible que la ventana principal de la
-aplicación no se muestre. Si esto ocurre, puedes teclear <strong>Ctrl+C</strong> en el
+<p>Si has cometido un error en tu código, es posible que la ventana principal de la
+aplicación no se exhiba. Si esto ocurre, puedes teclear <strong>Ctrl+C</strong> en el
 terminal donde iniciaste la aplicación. Esto detendrá la aplicación. Entonces
-podrás corregir el error y reiniciar la aplicación.</p>
+puede corregir el error y reiniciar la aplicación.</p>
 </div>
-<p>A continuación añadimos nuestra caja vacía como contenido de la ventana
+<p>A continuación añadimos nuestra caja vacía como el contenido de la ventana
 principal, e indicamos a la aplicación que muestre nuestra ventana:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
-<p>Por último, definimos un método <code>main()</code>. Esto es lo que crea la instancia de
+<p>Por último, definimos una función<code>main()</code>. Esto es lo que crea la instancia de
 nuestra aplicación:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloWorld</span><span class="p">()</span>
@@ -1732,12 +1732,13 @@ nuestra aplicación:</p>
 devuelve una instancia de nuestra aplicación <code>HelloWorld</code>.</p>
 <p>Esa es la aplicación Toga más simple posible. Pongamos algo de nuestro propio
 contenido en la aplicación, y hagamos que la aplicación haga algo interesante.</p>
-<h2 id="anadir-contenido-propio">Añadir contenido propio<a class="headerlink" href="#anadir-contenido-propio" title="Permanent link">&para;</a></h2>
+<h2 id="anadir-algun-contenido-propio">Añadir algún contenido propio<a class="headerlink" href="#anadir-algun-contenido-propio" title="Permanent link">&para;</a></h2>
 <p>Hagamos algo más interesante con nuestra aplicación <code>HelloWorld</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>No elimine las importaciones en la parte superior del archivo, o el <code>main()</code> en
-la parte inferior. Solo necesitas actualizar la clase <code>HelloWorld</code>.</p>
+<p>Cuando realiza estos cambios, asegúrese que conserva las importaciones en la
+parte superior del archivo, y el <code>main()</code> en la parte inferior del archivo. Solo
+necesitas actualizar la clase <code>HelloWorld</code>.</p>
 </div>
 <p>Modifica tu clase <code>HelloWorld</code> dentro de <code>src/helloworld/app.py</code> para que tenga
 este aspecto:</p>
@@ -1777,16 +1778,16 @@ estilo:</p>
 <div class="highlight"><pre><span></span><code><span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
 </code></pre></div>
 <p>El sistema de diseño integrado de Toga se llama "Pack". Se comporta de forma muy
-parecida a CSS. Defines objetos en una jerarquía - en HTML, los objetos son
-<code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, y otros elementos DOM; en Toga, son widgets y cajas. A
+parecida a CSS. Defines objetos en una jerarquía —en HTML, los objetos son
+<code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, y otros elementos DOM—; en Toga, son widgets y cajas. A
 continuación, puedes asignar estilos a los elementos individuales. En este caso,
-estamos indicando que se trata de una caja <code>COLUMN</code> - es decir, es una caja que
-consumirá todo el ancho disponible, y ampliará su altura a medida que se añada
+estamos indicando que se trata de una caja <code>COLUMN</code> — es decir, es una caja que
+consumirá todo el ancho disponible—, y ampliará su altura a medida que se añada
 contenido, pero intentará ser lo más corta posible.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Para usos más avanzados, Toga también admite un objeto de estilo independiente,
-que se utiliza así:</p>
+el cual se utiliza así:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">toga.style</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pack</span>
 <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="n">Pack</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">))</span>
 </code></pre></div>
