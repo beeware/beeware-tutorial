@@ -599,7 +599,6 @@ msgid "Ubuntu / Debian"
 msgstr "Ubuntu / Debian"
 
 #: docs/en/tutorial/tutorial-0.md:72
-#, fuzzy
 msgid "Red Hat / Fedora"
 msgstr "Red Hat / Fedora"
 
