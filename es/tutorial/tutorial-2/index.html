@@ -1634,10 +1634,10 @@ aria-label="Cabecera"
 
 
 
-<h1 id="tutorial-2-hacerlo-interesante">Tutorial 2 - Hacerlo interesante<a class="headerlink" href="#tutorial-2-hacerlo-interesante" title="Permanent link">&para;</a></h1>
-<p>En <a href="../tutorial-1/">Tutorial 1</a>, generamos un proyecto stub que era capaz de
-ejecutarse, pero no escribimos ningún código nosotros mismos. Echemos un vistazo
-a lo que se generó para nosotros.</p>
+<h1 id="tutorial-2-hacerlo-interesante">Tutorial 2 — Hacerlo interesante<a class="headerlink" href="#tutorial-2-hacerlo-interesante" title="Permanent link">&para;</a></h1>
+<p>En <a href="../tutorial-1/">Tutorial 1</a>, generamos un esbozo del proyecto que era capaz
+de ejecutarse, pero no escribimos ningún código nosotros mismos. Echemos un
+vistazo a lo que se generó para nosotros.</p>
 <h2 id="que-se-genero">Qué se generó<a class="headerlink" href="#que-se-genero" title="Permanent link">&para;</a></h2>
 <p>En el directorio <code>src/helloworld</code>, deberías ver 3 archivos: <code>__init__.py</code>,
 <code>__main__.py</code> y <code>app.py</code>.</p>
@@ -1656,11 +1656,10 @@ ejecutarse. El contenido de <code>__main__.py</code> es relativamente simple:</p
 <p>Este archivo hace dos cosas:</p>
 <ul>
 <li>Importa el método <code>main</code> de la aplicación <code>helloworld</code>.</li>
-<li>Es decir, importa el método <code>main</code> de la aplicación <code>helloworld</code>; y si se está
-  ejecutando como punto de entrada, llama al método main(), e inicia el bucle
-  principal de la aplicación. El bucle principal es la forma en que una
-  aplicación GUI escucha la entrada del usuario (como clics de ratón y
-  pulsaciones de teclado).</li>
+<li>A continuación, se inicia el bucle principal de la aplicación. El bucle
+  principal es la forma en que una aplicación con interfaz gráfica de usuario
+  (IGU) detecta la entrada del usuario (como pulsaciones del ratón y del
+  teclado).</li>
 </ul>
 <p>El archivo más interesante es <code>app.py</code> - contiene la lógica que crea la ventana
 de nuestra aplicación:</p>
@@ -1678,13 +1677,13 @@ de nuestra aplicación:</p>
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloWorld</span><span class="p">()</span>
 </code></pre></div>
-<p>Vamos a ir a través de esta línea por línea:</p>
+<p>Vamos a ir a través de esto línea por línea:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
 </code></pre></div>
-<p>En primer lugar, importamos el conjunto de herramientas de widgets <code>toga</code>, así
-como algunas clases de utilidades y constantes relacionadas con el estilo.
-Nuestro código aún no las utiliza, pero lo haremos en breve.</p>
+<p>Primero, importamos el conjunto de herramientas de widgets <code>toga</code>, así como
+algunas clases de utilidades y constantes relacionadas con el estilo. Nuestro
+código aún no las utiliza, pero lo haremos en breve.</p>
 <p>A continuación, definimos una clase:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HelloWorld</span><span class="p">(</span><span class="n">toga</span><span class="o">.</span><span class="n">App</span><span class="p">):</span>
 </code></pre></div>
@@ -1705,13 +1704,13 @@ cómo consumirán el espacio disponible en la ventana.</p>
 <p>A continuación, definimos una ventana en la que podemos poner esta caja vacía:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 </code></pre></div>
-<p>Esto crea una instancia de <code>toga.MainWindow</code>, que tendrá un título que coincida
-con el nombre de la aplicación. Una ventana principal es un tipo especial de
-ventana en Toga - es una ventana que está estrechamente vinculada al ciclo de
-vida de la aplicación. Cuando la Ventana Principal se cierra, la aplicación
-sale. La Ventana Principal es también la ventana que tiene el menú de la
-aplicación (si estás en una plataforma como Windows donde las barras de menú son
-parte de la ventana)</p>
+<p>Esto crea una instancia de un <code>toga.MainWindow</code>, lo cual tendrá un título que
+coincida con el nombre de la aplicación. Una Ventana Principal es un tipo
+especial de ventana en Toga —es una ventana que está estrechamente vinculada al
+ciclo de vida de la aplicación. Cuando se cierra la Ventana Principal, la
+aplicación sale. La Ventana Principal es también la ventana que tiene el menú de
+la aplicación (si estás en una plataforma como Windows donde las barras de menú
+son parte de la ventana).</p>
 <div class="admonition">
 <p class="admonition-title">¿Dónde está mi ventana?</p>
 <p>Si has cometido un error en el código, es posible que la ventana principal de la
@@ -1876,7 +1875,7 @@ aplicación ha sido ejecutada anteriormente, y para ahorrar tiempo, sólo
 ejecutará la aplicación. Si añades nuevas dependencias a tu aplicación, puedes
 asegurarte de que se instalan pasando una opción <code>-r</code> cuando ejecutes <code>briefcase
 dev</code>.</p>
-<p>Esto debería abrir una ventana GUI:</p>
+<p>Esto debería abrir una ventana IGU:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">

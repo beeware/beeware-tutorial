@@ -1838,27 +1838,27 @@ sistema. La lista de paquetes necesarios varía en función de tu distribución:
 <h3 id="red-hat-fedora">Red Hat / Fedora<a class="headerlink" href="#red-hat-fedora" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>gcc<span class="w"> </span>make<span class="w"> </span>pkg-config<span class="w"> </span>rpm-build<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-gobject-devel<span class="w"> </span>gtk3<span class="w"> </span>libcanberra-gtk3
 </code></pre></div>
-<h3 id="arch-manjaro"><strong>Arch / Manjaro</strong><a class="headerlink" href="#arch-manjaro" title="Permanent link">&para;</a></h3>
+<h3 id="arch-manjaro">Arch / Manjaro<a class="headerlink" href="#arch-manjaro" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-Syu<span class="w"> </span>git<span class="w"> </span>base-devel<span class="w"> </span>pkgconf<span class="w"> </span>python3<span class="w"> </span>gobject-introspection<span class="w"> </span>cairo<span class="w"> </span>gtk3<span class="w"> </span>libcanberra
 </code></pre></div>
-<h3 id="opensuse-tumbleweed"><strong>OpenSUSE Tumbleweed</strong><a class="headerlink" href="#opensuse-tumbleweed" title="Permanent link">&para;</a></h3>
+<h3 id="opensuse-tumbleweed">OpenSUSE Tumbleweed<a class="headerlink" href="#opensuse-tumbleweed" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>patterns-devel-base-devel_basis<span class="w"> </span>pkgconf-pkg-config<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-devel<span class="w"> </span>gtk3<span class="w"> </span><span class="s1">&#39;typelib(Gtk)=3.0&#39;</span><span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
 <div class="admonition">
 <p class="admonition-title">Otras distribuciones de Linux</p>
-<p>Si utilizas una distribución de Linux que no aparece en esta lista y que no
-deriva de ninguna de las que aparecen en ella (por ejemplo, Linux Mint y Pop! OS
-son distribuciones derivadas de Debian; AlmaLinux deriva de Fedora),
-probablemente tendrás dificultades para completar este tutorial. Si Briefcase te
-avisa de que «No se pueden verificar los paquetes del sistema», no podrás
-completar este tutorial.</p>
+<p>Si utilizas una distribución de Linux que no aparece en este listado y que no
+deriva de ninguna de las que aparecen en ella (p.ej., Linux Mint y Pop! OS son
+distribuciones derivadas de Debian; AlmaLinux derivada de Fedora), probablemente
+tendrás dificultades para completar este tutorial. Si Portafolio te avisa de que
+«No puede verificar los paquetes del sistema», no podrás completar este
+tutorial.</p>
 </div>
 </div>
 <div class="tabbed-block">
 <p>Construir aplicaciones BeeWare en Windows requiere:</p>
 <ul>
-<li><strong>Git</strong>, un sistema de control de versiones. Puede descargar Git desde
-  [git-scm.com]<nospell>.</li>
+<li><strong>Git</strong>, un sistema de control de versiones. Puedes descargar Git desde
+  <nospell><a href="https://git-scm.com/downloads/">git-scm.com</a></nospell>.</li>
 </ul>
 <p>Después de instalar estas herramientas, debe asegurarse de reiniciar cualquier
 sesión de terminal. Windows sólo expondrá las herramientas recién instaladas a
@@ -1900,15 +1900,16 @@ Python.</p>
 <p>Si no estás usando Python 3.12, sustituye el <code>-3.12</code> de estas instrucciones por
 el número de versión que estés usando.</p>
 <div class="admonition">
-<p class="admonition-title">Errores al ejecutar scripts PowerShell</p>
+<p class="admonition-title">Errores al ejecutar los script de PowerShell</p>
 <p>Si está utilizando PowerShell y recibe el error:</p>
 <div class="highlight"><pre><span></span><code><span class="go">File C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system.</span>
 </code></pre></div>
-<p>Su cuenta de Windows no tiene permiso para ejecutar scripts. Para solucionarlo:</p>
+<p>Su cuenta de Windows no tiene permiso para ejecutar los script. Para
+solucionarlo:</p>
 <ol>
 <li>Ejecute <a href="https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4">Windows PowerShell como
    administrador</a>.</li>
-<li>Ejecuta <code>set-executionpolicy RemoteSigned</code></li>
+<li>Ejecute <code>set-executionpolicy RemoteSigned</code></li>
 <li>Seleccione <code>Y</code> para cambiar la política de ejecución.</li>
 </ol>
 <p>Una vez hecho esto, puede volver a ejecutar <code>beeware-venv\Scripts\activate.ps1</code>
@@ -1927,13 +1928,13 @@ ejecutar el último comando (el comando <code>activate</code>) para reactivar tu
 <p>Si usas Anaconda o miniconda, puede que estés más familiarizado con el uso de
 entornos conda. También puede que hayas oído hablar de <code>virtualenv</code>, un
 predecesor del módulo <code>venv</code> de Python. Al igual que con las instalaciones de
-Python -si estás en macOS o Windows, no importa <em>cómo</em> creas tu entorno virtual,
-siempre y cuando tengas uno. Si estás en Linux, deberías usar <code>venv</code> y el
-sistema Python.</p>
+Python —si estás en macOS o Windows—, no importa <em>cómo</em> creas tu entorno
+virtual, siempre y cuando tengas uno. Si estás en Linux, deberías usar <code>venv</code> y
+el sistema Python.</p>
 </div>
 <h2 id="siguientes-pasos">Siguientes pasos<a class="headerlink" href="#siguientes-pasos" title="Permanent link">&para;</a></h2>
-<p>Ya hemos configurado nuestro entorno. Estamos listos para <a href="../tutorial-1/">crear nuestra primera
-aplicación BeeWare</a>.</p>
+<p>Ya hemos configurado nuestro entorno. Estamos preparados para <a href="../tutorial-1/">crear nuestra
+primera aplicación BeeWare</a>.</p>
 
 
 
