@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 21:10+0000\n"
-"PO-Revision-Date: 2026-03-20 21:09+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.19.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-03-20 21:10+0000\nPO-Revision-Date: 2026-03-21 00:04+0000\nLast-Translator: Francisco Serrador <fserrador@gmail.com>\nLanguage-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.17-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -128,7 +116,7 @@ msgstr "Este documento es una traducción automática del tutorial [en inglés]{
 
 #: docs/en/index.md:23 docs/en/index.md:35
 msgid "If you'd like the help improve the translation, get in touch! We have a `#translations` channel in [Discord]{1}. Introduce yourself there and we will add you to the translation team."
-msgstr "Si quieres ayudarnos a mejorar la traducción, ¡ponte en contacto con nosotros! Tenemos un canal `#translations` en [Discord]{1}; preséntate allí y te añadiremos al equipo de traducción."
+msgstr "Si quieres ayudarnos a mejorar la traducción, ¡ponte en contacto con nosotros! Tenemos un canal `#translations` en [Discord]{1}. Preséntate allí y te añadiremos al equipo de traducción."
 
 #: docs/en/index.md:29
 msgid "{% if config.extra.translation_type == \"human\" %}"
@@ -439,9 +427,8 @@ msgid "How do you ensure that your application works, and stays working? By addi
 msgstr "¿Cómo puedo asegurarme de que mi aplicación funciona y sigue funcionando? ¡Añadiendo un conjunto de pruebas al proyecto!"
 
 #: docs/en/tutorial/topics/testing.md:1
-#, fuzzy
 msgid "Testing times"
-msgstr "Tutorial 9 - Tiempo de Ejecución del conjunto de pruebas"
+msgstr "Veces de pruebas"
 
 #: docs/en/tutorial/topics/testing.md:3
 msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
@@ -452,9 +439,8 @@ msgid "Running the test suite"
 msgstr "Ejecución del conjunto de pruebas"
 
 #: docs/en/tutorial/topics/testing.md:7
-#, fuzzy
 msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: `src` and `tests`. The `src` folder contains the code for our app; the `tests` folder contains our test suite. Inside the `tests` folder is a file named `test_app.py` with the following content:"
-msgstr "Resulta que nuestro proyecto ya tiene un conjunto de pruebas! Cuando originalmente generamos nuestro proyecto, se generaron dos directorios de nivel superior: `src` y `tests`. La carpeta `src` contiene el código de nuestra aplicación; la carpeta `tests` contiene nuestro conjunto de pruebas. Dentro de la carpeta `tests` hay un archivo llamado `test_app.py` con el siguiente contenido:"
+msgstr "¡Resulta que nuestro proyecto ya tiene un conjunto de pruebas! Cuando originalmente generamos nuestro proyecto, se generaron dos directorios de nivel superior: `src` y `tests`. La carpeta `src` contiene el código de nuestra aplicación; la carpeta `tests` contiene nuestro conjunto de pruebas. Dentro de la carpeta `tests` hay un archivo llamado `test_app.py` con el siguiente contenido:"
 
 #: docs/en/tutorial/topics/testing.md:15
 msgid "This is a [Pytest]{1} *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
@@ -481,7 +467,6 @@ msgid "We can now re-run the test suite. This time, we don't need to provided th
 msgstr "Ahora podemos volver a ejecutar el conjunto de pruebas. Esta vez, no necesitamos proporcionar la opción `-r`, ya que los requisitos de la prueba ya se han instalado; sólo tenemos que utilizar la opción `--test`:"
 
 #: docs/en/tutorial/topics/testing.md:181
-#, fuzzy
 msgid "Excellent! Our `greeting()` utility method is working as expected."
 msgstr "Excelente Nuestro método de utilidad `greeting()` está funcionando como se esperaba."
 
@@ -502,46 +487,38 @@ msgid "This time, we see a test failure - and the output explains the source of 
 msgstr "Esta vez, vemos un fallo en el test; y la salida explica el origen del fallo: el test está esperando la salida “¡BeeWare los IDE de Python!”, pero nuestra implementación de `greeting()` está devolviendo “Hola, Brutus”. Modifiquemos la implementación de `greeting()` en `src/helloworld/app.py` para que tenga el comportamiento nuevo:"
 
 #: docs/en/tutorial/topics/testing.md:313
-#, fuzzy
 msgid "If we run the tests again, we'll now see our tests pass:"
 msgstr "Si ejecutamos las pruebas de nuevo, ahora veremos que nuestras pruebas pasan:"
 
 #: docs/en/tutorial/topics/testing.md:375
-#, fuzzy
 msgid "Runtime tests"
-msgstr "Pruebas en tiempo real"
+msgstr "Pruebas en tiempo de ejecución"
 
 #: docs/en/tutorial/topics/testing.md:377
-#, fuzzy
 msgid "So far, we've been running the tests in development mode. This is especially useful when you're developing new features, as you can rapidly iterate on adding tests, and adding code to make those tests pass. However, at some point, you'll want to verify that your code also runs correctly when inside the bundle app environment."
-msgstr "Hasta ahora, hemos estado ejecutando las pruebas en modo de desarrollo. Esto es especialmente útil cuando estás desarrollando nuevas características, ya que puedes iterar rápidamente en la adición de pruebas, y la adición de código para hacer que esas pruebas pasen. Sin embargo, en algún momento, usted querrá verificar que su código también se ejecuta correctamente cuando dentro del entorno de aplicación paquete."
+msgstr "Hasta ahora, hemos estado ejecutando las pruebas en modo de desarrollo. Esto es especialmente útil cuando estás desarrollando características nuevas, ya que puedes iterar rápidamente en la adición de pruebas, y la adición de código para hacer que esas pruebas pasen. Sin embargo, en algún momento, querrás verificar que su código también se ejecuta correctamente cuando se encuentra dentro del entorno de la aplicación empaquetada."
 
 #: docs/en/tutorial/topics/testing.md:379
-#, fuzzy
 msgid "The `--test` and `-r` options can also be passed to the `run` command. If you use `briefcase run --test -r`, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
 msgstr "Las opciones `--test` y `-r` también se pueden pasar al comando `run`. Si utilizas `briefcase run --test -r`, se ejecutará el mismo conjunto de pruebas, pero se ejecutará dentro del paquete de aplicaciones empaquetado en lugar de en tu entorno de desarrollo:"
 
 #: docs/en/tutorial/topics/testing.md:498
-#, fuzzy
 msgid "As with `briefcase dev --test`, the `-r` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
-msgstr "Al igual que con `briefcase dev --test`, la opción `-r` sólo es necesaria la primera vez que se ejecuta el conjunto de pruebas para asegurarse de que las dependencias de prueba están presentes. En las siguientes ejecuciones, puede omitir esta opción."
+msgstr "Al igual que con `briefcase dev --test`, la opción `-r` sólo es necesaria la primera vez que se ejecuta el conjunto de pruebas para asegurarse que las dependencias están presentes. En las subsecuentes ejecuciones, puede omitir esta opción."
 
 #: docs/en/tutorial/topics/testing.md:500
-#, fuzzy
 msgid "You can also use the `--test` option on mobile backends: - so `briefcase run iOS --test` and `briefcase run android --test` will both work, running the test suite on the mobile device you select."
-msgstr "También puedes utilizar la opción `--test` en backends móviles: - así `briefcase run iOS --test` y `briefcase run android --test` funcionarán, ejecutando el conjunto de pruebas en el dispositivo móvil que selecciones."
+msgstr "También puedes utilizar la opción `--test` en móviles en segundo plano: - así `briefcase run iOS --test` y `briefcase run android --test` ambos funcionarán , ejecutando el conjunto de pruebas en el dispositivo móvil que selecciones."
 
 #: docs/en/tutorial/tutorial-0.md:1
-#, fuzzy
 msgid "Tutorial 0 - Let's get set up!"
-msgstr "Tutorial 0 - ¡Preparémonos!"
+msgstr "Tutorial 0 - ¡Vamos a instalarlo!"
 
 #: docs/en/tutorial/tutorial-0.md:3
 msgid "Before we build our first BeeWare app, we have to make sure we've got all the prerequisites for running BeeWare."
 msgstr "Antes de crear nuestra primera aplicación BeeWare, tenemos que asegurarnos de que tenemos todos los requisitos previos para ejecutar BeeWare."
 
 #: docs/en/tutorial/tutorial-0.md:5
-#, fuzzy
 msgid "Install Python { id=\"install-python\" }"
 msgstr "Instalar Python { id=\"install-python\" }"
 
@@ -550,27 +527,22 @@ msgid "The first thing we'll need is a working Python interpreter."
 msgstr "Lo primero que necesitaremos es un intérprete de Python que funcione."
 
 #: docs/en/tutorial/tutorial-0.md:11
-#, fuzzy
 msgid "If you're on macOS, you can get an official Python installer from [the Python website]{1}. You can use any version of Python from 3.10 or newer (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
-msgstr "Si usas Windows, puedes obtener el instalador oficial desde [La página web de Python]{1}. Puedes usar cualquier versión estable de Python desde la 3.9 a la 3.12 - [Python 3.13 no es compatible por el momento]{1}. Te aconsejamos que evites las versiones alphas, betas y release candidates a menos que *realmente* sepas lo que estás haciendo."
+msgstr "Si están en los macOS, puedes obtener un instalador oficial de Python desde [el sitio web de Python]{1}. Puedes usar cualquier versión de Python desde la 3.10 o más nueva (aunque evitaría los candidatos alfa, beta y candidatos de lanzamiento). Recomendamos fuertemente utilizar Python 3.13 o más nuevo."
 
 #: docs/en/tutorial/tutorial-0.md:13
-#, fuzzy
 msgid "You can also install Python through [Homebrew]{1}, use [pyenv]{2} to manage multiple Python installs, or use [Anaconda]{3} or [Miniconda]{4}. It doesn't matter *how* you've installed Python - it only matters that you can run `python3` from your terminal and get a working, supported Python interpreter."
-msgstr "Hay muchas formas diferentes de instalar Python. Puedes instalar Python a través de [homebrew]{1}. Puedes usar [pyenv]{2} para gestionar múltiples instalaciones de Python en la misma máquina. Los usuarios de Windows pueden instalar Python desde la Windows App Store. Los usuarios con experiencia en ciencia de datos pueden utilizar [Anaconda]{3} o [Miniconda]{4}."
+msgstr "Hay muchas formas diferentes de instalar Python por medio de [Homebrew]{1}, utiliza [pyenv]{2} para gestionar múltiples instalaciones de Python, o utiliza [Anaconda]{3} o [Miniconda]{4}. No importa *como* has instalado Python; solo importa que puedas ejecutar `python3` desde tu terminal y obtener un intérprete de Python mantenido en funcionamiento."
 
 #: docs/en/tutorial/tutorial-0.md:15
-#, fuzzy
 msgid "Xcode and the Command-line Developer Tools provide a version of Python; however that Python is version 3.9. Python 3.9 has reached end-of-life, and is no longer supported by Python or BeeWare. You will *not* be able to use the Xcode-provided version of Python to run this tutorial."
-msgstr "Xcode y las herramientas de desarrollo de línea de comandos proporcionan una versión de Python; sin embargo, esa Python es la versión 3.9. Python 3.9 ha llegado al final de su vida útil, y ya no está soportado por Python o BeeWare. Usted *no* será capaz de utilizar la versión de Python proporcionada por Xcode para ejecutar este tutorial."
+msgstr "Xcode y las Herramientas de Desarrollo en Línea de Comandos proporcionan una versión de Python; sin embargo, esa Python es la versión 3.9. Python 3.9 ha llegado al final de su vida útil, y ya no está mantenido por Python o BeeWare. *No* serás capaz de utilizar la versión de Python proporcionada por Xcode para ejecutar este tutorial."
 
 #: docs/en/tutorial/tutorial-0.md:17
-#, fuzzy
 msgid "To check the version of Python that you have installed, run the following command:"
 msgstr "Para comprobar la versión de Python que tiene instalada, ejecute el siguiente comando:"
 
 #: docs/en/tutorial/tutorial-0.md:23
-#, fuzzy
 msgid "If Python is installed, you'll see its version number."
 msgstr "Si Python está instalado, verás su número de versión."
 
@@ -579,36 +551,30 @@ msgid "If you're on Linux, you'll install Python using the system package manage
 msgstr "Si estás en Linux, instalarás Python utilizando el gestor de paquetes del sistema (`apt` en Debian/Ubuntu/Mint, `dnf` en Fedora, o `pacman` en Arch)."
 
 #: docs/en/tutorial/tutorial-0.md:31
-#, fuzzy
 msgid "You should ensure that the system Python is Python 3.10 or newer; if it isn't (e.g., Ubuntu 20.04 ships with Python 3.8), you'll need to upgrade your Linux distribution to something more recent."
-msgstr "Debe asegurarse de que el sistema Python es Python 3.9 o más reciente; si no lo es (por ejemplo, Ubuntu 20.04 viene con Python 3.8), tendrá que actualizar su distribución de Linux a algo más reciente."
+msgstr "Debe asegurarse de que la versión de Python del sistema sea Python 3.10 o posterior; si no lo es (p.ej., Ubuntu 20.04 viene con Python 3.8), necesitarás actualizar tu distribución de Linux a una versión más reciente."
 
 #: docs/en/tutorial/tutorial-0.md:33
 msgid "Support for Raspberry Pi is limited at this time."
 msgstr "La compatibilidad con Raspberry Pi es limitada por el momento."
 
 #: docs/en/tutorial/tutorial-0.md:35
-#, fuzzy
 msgid "**Important:** You *must* use the system Python provided by your operating system. Python installs from other sources (such as uv, pyenv, Anaconda, manually compiled Python, etc.) will prevent you from successfully packaging your application for distribution in later steps of this tutorial."
 msgstr "**Importante:** *Debe* utilizar el sistema Python proporcionado por su sistema operativo. Las instalaciones de Python procedentes de otras fuentes (como uv, pyenv, Anaconda, Python compilado manualmente, etc.) le impedirán empaquetar correctamente su aplicación para su distribución en los pasos posteriores de este tutorial."
 
 #: docs/en/tutorial/tutorial-0.md:41
-#, fuzzy
 msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.13 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13."
-msgstr "Si usas Windows, puedes obtener el instalador oficial desde [La página web de Python]{1}. Puedes usar cualquier versión estable de Python desde la 3.9 a la 3.12 - [Python 3.13 no es compatible por el momento]{1}. Te aconsejamos que evites las versiones alphas, betas y release candidates a menos que *realmente* sepas lo que estás haciendo."
+msgstr "Si usas Windows, puedes obtener el instalador oficial desde [la página web de Python]{1}. Puedes usar cualquier versión estable de Python desde la 3.10 a la 3.13 (sin embargo evitaría las alfa, beta y candidatos a lanzamiento). Te recomendamos que utilices Python 3.13."
 
 #: docs/en/tutorial/tutorial-0.md:43
-#, fuzzy
 msgid "Support for Windows on ARM64 is limited at this time."
-msgstr "La compatibilidad con Raspberry Pi es limitada por el momento."
+msgstr "La asistencia para Windows en ARM64 está limitada en este momento."
 
 #: docs/en/tutorial/tutorial-0.md:45
-#, fuzzy
 msgid "You can also install Python from the Windows App Store, or use [Anaconda]{1} or [Miniconda]{2}. It doesn't matter *how* you've installed Python - it only matters that you can run `python3` from your command prompt and get a working, supported Python interpreter."
-msgstr "Si usas macOS o Windows, no importa *cómo* has instalado Python - sólo importa que puedas ejecutar `python3` desde el símbolo del sistema/terminal de tu sistema operativo, y obtener un intérprete de Python que funcione."
+msgstr "También puedes instalar Python desde al Windows App Store, o utilizar [Anaconda]{1} o [Miniconda]{2}. No importa *cómo* has instalado Python: sólo importa que puedas ejecutar `python3` desde el intérprete de comando y obtener un intérprete de Python que funcione."
 
 #: docs/en/tutorial/tutorial-0.md:49
-#, fuzzy
 msgid "Install dependencies { id=\"install-dependencies\" }"
 msgstr "Instalar dependencias { id=\"install-dependencies\" }"
 
@@ -629,9 +595,8 @@ msgid "To support local development, you'll need to install some system packages
 msgstr "Para soportar el desarrollo local, necesitarás instalar algunos paquetes del sistema. La lista de paquetes necesarios varía en función de tu distribución:"
 
 #: docs/en/tutorial/tutorial-0.md:65
-#, fuzzy
 msgid "Ubuntu / Debian"
-msgstr "**Ubuntu / Debian**"
+msgstr "Ubuntu / Debian"
 
 #: docs/en/tutorial/tutorial-0.md:72
 #, fuzzy
@@ -767,7 +732,7 @@ msgstr "Si aparecen errores durante la instalación, es casi seguro que se deba 
 
 #: docs/en/tutorial/tutorial-1.md:39
 msgid "It is important that you use `python -m pip`, rather than a bare `pip`. Briefcase needs to ensure that it has an up-to-date version of `pip` and `setuptools`, and a bare invocation of `pip` can't self-update. If you want to know more, [Brett Cannon has a detailed blog post about the issue]{1}."
-msgstr "Es importante que utilices `python -m pip`, en lugar de `pip`. Briefcase necesita asegurarse de que tiene una versión actualizada de `pip` y `setuptools`, y una invocación de `pip` no puede auto-actualizarse. Si quieres saber más, [Brett Cannon tiene una entrada de blog detallada sobre el problema]{1}."
+msgstr "Es importante que utilices `python -m pip`, en lugar de `pip`. Briefcase necesita asegurarse de que tiene una versión actualizada de `pip` y `setuptools`, y una invocación de `pip` no puede auto-actualizarse. Si quieres saber más, [Brett Cannon tiene una entrada de blog detallada sobre la incidencia]{1}."
 
 #: docs/en/tutorial/tutorial-1.md:45
 #, fuzzy
