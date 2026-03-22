@@ -1800,20 +1800,21 @@ el cual se utiliza así:</p>
 <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 <p>Aquí definimos un Label y un TextInput. Ambos widgets tienen estilos asociados;
-la etiqueta tendrá 5px de relleno a su izquierda y derecha, y ningún relleno en
-la parte superior e inferior. El TextInput está marcado como flexible - es
-decir, absorberá todo el espacio disponible en su eje de diseño.</p>
-<p>El TextInput se asigna como una variable de instancia de la clase. Esto nos da
-fácil acceso a la instancia del widget - algo que usaremos en un momento.</p>
+la etiqueta tendrá 5px de margen a su izquierda y derecha, y ningún margen en la
+parte superior e inferior. El TextInput está marcado como flexible —es decir,
+absorberá todo el espacio disponible en su eje de diseño—.</p>
+<p>El TextInput se asigna como una variable de instancia de la clase. Esto nos
+proporciona acceso fácil a la instancia del widget —algo que usaremos en un
+momento—.</p>
 <p>A continuación, definimos una caja para alojar estos dos widgets:</p>
 <div class="highlight"><pre><span></span><code><span class="n">name_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">ROW</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_label</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="p">)</span>
 </code></pre></div>
-<p>La <code>caja_de_nombre</code> es una caja igual que la caja principal; sin embargo, esta
-vez, es una caja <code>ROW</code>. Eso significa que el contenido se añadirá
-horizontalmente, e intentará que su anchura sea lo más estrecha posible. La caja
-también tiene algo de relleno - 5px en todos los lados.</p>
+<p>La <code>name_box</code> es una caja igual que la caja principal; sin embargo, esta vez, es
+una caja <code>ROW</code>. Eso significa que el contenido se añadirá horizontalmente, e
+intentará que su anchura sea lo más estrecha posible. La caja también tiene algo
+de relleno —5px en todos los lados.</p>
 <p>Ahora definimos un botón:</p>
 <div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
     <span class="s2">&quot;Say Hello!&quot;</span><span class="p">,</span>
@@ -1822,30 +1823,30 @@ también tiene algo de relleno - 5px en todos los lados.</p>
 <span class="p">)</span>
 </code></pre></div>
 <p>El botón también tiene 5px de margen en todos los lados. También definimos un
-<em>handler</em> - un método a invocar cuando se pulsa el botón.</p>
-<p>A continuación, añadimos el cuadro de nombre y el botón al cuadro principal:</p>
+<em>handler</em> —un método a invocar cuando se pulsa el botón.</p>
+<p>A continuación, añadimos la caja de nombre y el botón a la caja principal:</p>
 <div class="highlight"><pre><span></span><code><span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_box</span><span class="p">)</span>
 <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">button</span><span class="p">)</span>
 </code></pre></div>
-<p>Esto completa nuestro diseño; el resto del método de inicio es como antes -
-definiendo una MainWindow, y asignando la caja principal como contenido de la
+<p>Esto completa nuestro diseño; el resto del método de inicio es como antes
+—definiendo una MainWindow, y asignando la caja principal como contenido de la
 ventana:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
-<p>Lo último que tenemos que hacer es definir el manejador del botón. Un manejador
-puede ser cualquier método, generador o co-rutina asíncrona; acepta el widget
-que generó el evento como argumento, y será invocado cada vez que se pulse el
-botón:</p>
+<p>Lo último que tenemos que hacer es definir el manejador para el botón. Un
+manejador puede ser cualquier método, generador o co‐rutina asíncrona; acepta el
+widget que generó el evento como argumento, y será invocado cada vez que se
+pulse el botón:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>El cuerpo del método es una simple sentencia print - sin embargo, interrogará el
+<p>El cuerpo del método es una simple sentencia print —sin embargo, interrogará el
 valor actual de la entrada name, y usará ese contenido como el texto que se
 imprime.</p>
-<p>Ahora que hemos realizado estos cambios podemos ver cómo quedan iniciando de
-nuevo la aplicación. Como antes, usaremos el modo desarrollador:</p>
+<p>Ahora que hemos realizado estos cambios podemos ver que parece como inicia la
+aplicación otra vez. Como antes, usaremos el modo desarrollador:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1871,11 +1872,11 @@ nuevo la aplicación. Como antes, usaremos el modo desarrollador:</p>
 </div>
 </div>
 </div>
-<p>Notarás que esta vez, <em>no</em> instala dependencias. Briefcase puede detectar que la
-aplicación ha sido ejecutada anteriormente, y para ahorrar tiempo, sólo
-ejecutará la aplicación. Si añades nuevas dependencias a tu aplicación, puedes
-asegurarte de que se instalan pasando una opción <code>-r</code> cuando ejecutes <code>briefcase
-dev</code>.</p>
+<p>Notarás que esta vez, <em>no</em> instala dependencias. El portafolio Briefcase puede
+detectar que la aplicación ha sido ejecutada anteriormente, y para ahorrar
+tiempo, sólo ejecutará la aplicación. Si añades dependencias nuevas a tu
+aplicación, puedes asegurarte que se instalan pasando una opción <code>-r</code> cuando
+cunado ejecute <code>briefcase dev</code>.</p>
 <p>Esto debería abrir una ventana IGU:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label></div>
 <div class="tabbed-content">
