@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-22 02:10+0000\n"
-"PO-Revision-Date: 2026-03-22 02:09+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.19.2\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-03-22 02:10+0000\nPO-Revision-Date: 2026-03-25 12:09+0000\nLast-Translator: Francisco Serrador <fserrador@gmail.com>\nLanguage-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.17-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -1016,7 +1004,7 @@ msgstr "A continuación, añadimos la caja de nombre y el botón a la caja princ
 
 #: docs/en/tutorial/tutorial-2.md:211
 msgid "This completes our layout; the rest of the startup method is as it was previously - defining a `MainWindow`, and assigning the main box as the window's content:"
-msgstr "Esto completa nuestro diseño; el resto del método de inicio es como antes —definiendo una MainWindow, y asignando la caja principal como contenido de la ventana:"
+msgstr "Esto completa nuestro diseño; el resto del método de inicio es como antes —definiendo una `MainWindow`, y asignando la caja principal como contenido de la ventana:"
 
 #: docs/en/tutorial/tutorial-2.md:219
 msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed:"
@@ -1047,414 +1035,332 @@ msgid "![Hello World Tutorial 2 window, on Windows]{1}"
 msgstr "Ventana [Hello World Tutorial 2, en Windows]{1}"
 
 #: docs/en/tutorial/tutorial-2.md:297
-#, fuzzy
 msgid "If you enter a name in the text box, and press the GUI button, you should see output appear in the console where you started the application."
-msgstr "Si introduce un nombre en el cuadro de texto y pulsa el botón GUI, debería ver aparecer la salida en la consola donde inició la aplicación."
+msgstr "Si introduce un nombre en el cuadro de texto y pulsa el botón IGU, debería ver aparecer la salida en la consola donde inició la aplicación."
 
 #: docs/en/tutorial/tutorial-2.md:299
-#, fuzzy
 msgid "Before continuing, close the app. As with Tutorial 1, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran `briefcase dev`."
-msgstr "Antes de continuar, cierra la aplicación. Al igual que en el Tutorial 1, puedes hacerlo pulsando el botón de cierre de la ventana de la aplicación, seleccionando Quit/Exit en el menú de la aplicación, o escribiendo **Ctrl+C** en el terminal donde ejecutaste `briefcase dev`."
+msgstr "Antes de continuar, cierra la aplicación. Al igual que en el Tutorial 1, puedes hacerlo pulsando el botón de cierre de la ventana de la aplicación, seleccionando Quitar/Salir en el menú de la aplicación, o escribiendo **Ctrl+C** en el terminal donde ejecutaste `briefcase dev`."
 
 #: docs/en/tutorial/tutorial-2.md:303
-#, fuzzy
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In [Tutorial 3]{1}, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "Ahora tenemos una aplicación que hace algo un poco más interesante. Pero sólo se ejecuta en nuestro propio ordenador. Vamos a empaquetar esta aplicación para su distribución. En [Tutorial 3]{1}, vamos a empaquetar nuestra aplicación como un instalador independiente que podríamos enviar a un amigo, un cliente, o subir a una App Store."
 
 #: docs/en/tutorial/tutorial-3.md:1
-#, fuzzy
 msgid "Tutorial 3 - Packaging for distribution"
 msgstr "Tutorial 3 - Empaquetado para distribución"
 
 #: docs/en/tutorial/tutorial-3.md:3
-#, fuzzy
 msgid "So far, we've been running our application in \"Developer mode\". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others."
-msgstr "Hasta ahora, hemos estado ejecutando nuestra aplicación en \"modo desarrollador\". Esto hace que sea fácil para nosotros para ejecutar nuestra aplicación a nivel local - pero lo que realmente queremos es ser capaz de dar a nuestra aplicación a los demás."
+msgstr "Hasta ahora, hemos estado ejecutando nuestra aplicación en “Modo desarrollador”. Esto hace que sea fácil para nosotros para ejecutar nuestra aplicación a nivel local —pero lo que realmente queremos es ser capaz de dar a nuestra aplicación a los demás."
 
 #: docs/en/tutorial/tutorial-3.md:5
-#, fuzzy
 msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
-msgstr "Sin embargo, no queremos tener que enseñar a nuestros usuarios cómo instalar Python, crear un entorno virtual, clonar un repositorio git y ejecutar Briefcase en modo desarrollador. Preferimos simplemente darles un instalador, y que la aplicación simplemente funcione."
+msgstr "Sin embargo, no queremos tener que enseñar a nuestros usuarios cómo instalar Python, crear un entorno virtual, clonar un repositorio git y ejecutar Portafolio en modo desarrollador. Preferimos simplemente darles un instalador, y que la aplicación simplemente funcione."
 
 #: docs/en/tutorial/tutorial-3.md:7
-#, fuzzy
 msgid "Briefcase can be used to package your application for distribution in this way."
-msgstr "Briefcase puede utilizarse para empaquetar su aplicación y distribuirla de este modo."
+msgstr "Portafolio puede utilizarse para empaquetar su aplicación y distribuirla de este modo."
 
 #: docs/en/tutorial/tutorial-3.md:9
-#, fuzzy
 msgid "Creating your application scaffold"
-msgstr "Creación del andamiaje de aplicaciones"
+msgstr "Creación del andamiaje de la aplicación"
 
 #: docs/en/tutorial/tutorial-3.md:11
-#, fuzzy
 msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the `helloworld` directory, run:"
-msgstr "Dado que esta es la primera vez que empaquetamos nuestra aplicación, necesitamos crear algunos archivos de configuración y otros andamios para apoyar el proceso de empaquetado. Desde el directorio `helloworld`, ejecuta:"
+msgstr "Dado que esta es la primera vez que empaquetamos nuestra aplicación, necesitamos crear algunos archivos de configuración y otros andamios para mantener el proceso de empaquetado. Desde el directorio `helloworld`, ejecuta:"
 
 #: docs/en/tutorial/tutorial-3.md:75
-#, fuzzy
 msgid "/// admonition | Errors about Python versions"
 msgstr "/// admonition | Errores sobre las versiones de Python"
 
 #: docs/en/tutorial/tutorial-3.md:77
-#, fuzzy
 msgid "If you receive an error that reads something like:"
 msgstr "Si recibe un error que dice algo como:"
 
 #: docs/en/tutorial/tutorial-3.md:79
-#, fuzzy
 msgid "The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10)."
-msgstr "La versión de Python que se utiliza para ejecutar Briefcase (3.12) no es la python3 del sistema (3.10)."
+msgstr "La versión de Python que se utiliza para ejecutar Portafolio (3.12) no es la python3 del sistema (3.10)."
 
 #: docs/en/tutorial/tutorial-3.md:81
-#, fuzzy
 msgid "You will need to recreate your virtual environment using the system `python3`. Using the system Python is a requirement for packaging your application."
 msgstr "Necesitarás recrear tu entorno virtual usando el sistema `python3`. Usar el sistema Python es un requisito para empaquetar tu aplicación."
 
 #: docs/en/tutorial/tutorial-3.md:113
-#, fuzzy
 msgid "You've probably just seen pages of content go past in your terminal... so what just happened? Briefcase has done the following:"
-msgstr "Probablemente acabas de ver pasar páginas de contenido en tu terminal... ¿qué acaba de pasar? Briefcase ha hecho lo siguiente:"
+msgstr "Probablemente acabas de ver páginas de contenido devueltas en tu terminal... ¿qué acaba de pasar? Briefcase ha hecho lo siguiente:"
 
 #: docs/en/tutorial/tutorial-3.md:115
-#, fuzzy
 msgid "It **generated an application template**. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on. If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template."
-msgstr "Se **generó una plantilla de aplicación**. Hay un montón de archivos y configuraciones necesarias para construir un instalador nativo, por encima y más allá del código de su aplicación real. Este andamiaje extra es casi el mismo para cada aplicación en la misma plataforma, excepto por el nombre de la aplicación real que se está construyendo - por lo que Briefcase proporciona una plantilla de aplicación para cada plataforma que soporta. Este paso despliega la plantilla, sustituyendo el nombre de tu aplicación, el ID del paquete y otras propiedades de tu archivo de configuración según sea necesario para soportar la plataforma en la que estás construyendo. Si no está satisfecho con la plantilla proporcionada por Briefcase, puede proporcionar la suya propia. Sin embargo, probablemente no quieras hacer esto hasta que tengas un poco más de experiencia usando la plantilla por defecto de Briefcase."
+msgstr "Se **generó una plantilla de aplicación**. Hay un montón de archivos y configuraciones necesarias para construir un instalador nativo, por encima y más allá del código de su aplicación real. Este andamiaje extra es casi el mismo para cada aplicación en la misma plataforma, excepto por el nombre de la aplicación real que se está construyendo —por lo que Briefcase proporciona una plantilla de aplicación para cada plataforma que soporta. Este paso despliega la plantilla, sustituyendo el nombre de tu aplicación, el ID del paquete y otras propiedades de tu archivo de configuración según sea necesario para soportar la plataforma en la que estás construyendo. Si no está satisfecho con la plantilla proporcionada por Briefcase, puede proporcionar la suya propia. Sin embargo, probablemente no quieras hacer esto hasta que tengas un poco más de experiencia usando la plantilla por defecto de Briefcase."
 
 #: docs/en/tutorial/tutorial-3.md:117
-#, fuzzy
 msgid "It **downloaded and installed a support package**. The packaging approach taken by Briefcase is best described as \"the simplest thing that could possibly work\" - it ships a complete, isolated Python interpreter as part of every application it builds (except for Linux native system package builds). This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application. Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime. Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds. As noted above, when Briefcase packages an app as a native Linux system package (the default package format for Linux), a support package is not included with the app. Instead, the app will use the Python that is provided by the distribution of Linux being targeted."
 msgstr "Descargó e instaló un paquete de soporte**. El enfoque de empaquetado adoptado por Briefcase es mejor descrito como \"la cosa más simple que podría funcionar\" - envía un intérprete de Python completo y aislado como parte de cada aplicación que construye (excepto para las construcciones de paquetes de sistemas nativos de Linux). Esto es ligeramente ineficiente en cuanto a espacio - si tiene 5 aplicaciones empaquetadas con Briefcase, tendrá 5 copias del intérprete de Python. Sin embargo, este enfoque garantiza que cada aplicación es completamente independiente, utilizando una versión específica de Python que se sabe que funciona con la aplicación. De nuevo, Briefcase proporciona un paquete de soporte por defecto para cada plataforma; si lo desea, puede proporcionar su propio paquete de soporte, y hacer que ese paquete se incluya como parte del proceso de compilación. Es posible que desee hacer esto si tiene opciones particulares en el intérprete de Python que necesita tener habilitadas, o si desea eliminar módulos de la biblioteca estándar que no necesita en tiempo de ejecución. Briefcase mantiene una caché local de paquetes de soporte, por lo que una vez que haya descargado un paquete de soporte específico, esa copia en caché se utilizará en futuras compilaciones. Como se ha indicado anteriormente, cuando Briefcase empaqueta una aplicación como un paquete nativo del sistema Linux (el formato de paquete predeterminado para Linux), no se incluye un paquete de soporte con la aplicación. En su lugar, la aplicación utilizará el Python proporcionado por la distribución de Linux a la que se dirija."
 
 #: docs/en/tutorial/tutorial-3.md:119
-#, fuzzy
 msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using `pip` into your application's installer."
 msgstr "Se **instalan los requisitos de la aplicación**. Tu aplicación puede especificar cualquier módulo de terceros que se requiera en tiempo de ejecución. Estos serán instalados usando `pip` en el instalador de tu aplicación."
 
 #: docs/en/tutorial/tutorial-3.md:121
-#, fuzzy
 msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
-msgstr "Se **instala el código de tu aplicación**. Tu aplicación tendrá su propio código y recursos (por ejemplo, imágenes que se necesitan en tiempo de ejecución); estos archivos se copian en el instalador."
+msgstr "Se **instala el código de tu aplicación**. Tu aplicación tendrá su propio código y recursos (p.ej. imágenes que se necesitan en tiempo de ejecución); estos archivos son copiados al instalador."
 
 #: docs/en/tutorial/tutorial-3.md:123
-#, fuzzy
 msgid "It **installed your resources needed by your application.** Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images."
-msgstr "Por último, añade cualquier recurso adicional que necesite el propio instalador. Esto incluye cosas como iconos que deben adjuntarse a la aplicación final e imágenes de pantalla de bienvenida."
+msgstr "**Instaló los recursos necesarios para tu aplicación.**. Por último, añade cualquier recurso adicional que necesite el propio instalador. Esto incluye cosas como iconos que deben adjuntarse a la aplicación final e imágenes de pantalla de bienvenida."
 
 #: docs/en/tutorial/tutorial-3.md:125
-#, fuzzy
 msgid "Once this completes, if you look in the project's `build` directory, you should now see a directory corresponding to your platform (`macOS`, `linux`, or `windows`) that contains additional files. This is the platform-specific packaging configuration for your application. For example, on macOS, your project directory will now include:"
 msgstr "Una vez completado este proceso, si miras en el directorio `build` del proyecto, deberías ver un directorio correspondiente a tu plataforma (`macOS`, `linux`, o `windows`) que contiene archivos adicionales. Esta es la configuración de empaquetado específica de la plataforma para tu aplicación. Por ejemplo, en macOS, tu directorio de proyecto ahora incluirá:"
 
 #: docs/en/tutorial/tutorial-3.md:134
-#, fuzzy
 msgid "Building your application"
 msgstr "Construir su aplicación"
 
 #: docs/en/tutorial/tutorial-3.md:136
-#, fuzzy
 msgid "You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform."
 msgstr "Ahora puede compilar su aplicación. Este paso realiza cualquier compilación binaria que sea necesaria para que su aplicación sea ejecutable en su plataforma de destino."
 
 #: docs/en/tutorial/tutorial-3.md:151
-#, fuzzy
 msgid "On macOS, the `build` command doesn't need to *compile* anything, but it does need to sign the contents of binary so that it can be executed. This signature is an *ad hoc* signature - it will only work on *your* machine; if you want to distribute the application to others, you'll need to provide a full signature."
-msgstr "En macOS, el comando `build` no necesita *compilar* nada, pero sí necesita firmar el contenido del binario para que pueda ser ejecutado. Esta firma es una firma *ad hoc* - sólo funcionará en *tu* máquina; si quieres distribuir la aplicación a otros, necesitarás proporcionar una firma completa."
+msgstr "En macOS, el comando `build` no necesita *compilar* nada, pero sí necesita firmar el contenido del binario para que pueda ser ejecutado. Esta firma es una firma *ad hoc* —sólo funcionará en *tu* máquina; si quieres distribuir la aplicación a otros, necesitarás proporcionar una firma completa."
 
 #: docs/en/tutorial/tutorial-3.md:181
-#, fuzzy
 msgid "Once this step completes, the `build` folder will contain a `helloworld-0.0.1` folder that contains a mirror of a Linux `/usr` file system. This file system mirror will contain a `bin` folder with a `helloworld` binary, plus `lib` and `share` folders needed to support the binary."
-msgstr "Una vez completado este paso, la carpeta `build` contendrá una carpeta `helloworld-0.0.1` que contiene una réplica de un sistema de archivos Linux `/usr`. Esta réplica del sistema de archivos contendrá una carpeta `bin` con un binario `helloworld`, además de las carpetas `lib` y `share` necesarias para soportar el binario."
+msgstr "Una vez completado este paso, la carpeta `build` contendrá una carpeta `helloworld-0.0.1` que contiene una réplica de un sistema de archivos Linux `/usr`. Esta réplica del sistema de archivos contendrá una carpeta `bin` con un binario `helloworld`, además de las carpetas `lib` y `share` necesarias para mantener el binario."
 
 #: docs/en/tutorial/tutorial-3.md:194
-#, fuzzy
 msgid "On Windows, the `build` command doesn't need to *compile* anything, but it does need to write some metadata so that the application knows its name, version, and so on."
 msgstr "En Windows, el comando `build` no necesita *compilar* nada, pero sí escribir algunos metadatos para que la aplicación sepa su nombre, versión, etc."
 
 #: docs/en/tutorial/tutorial-3.md:196
-#, fuzzy
 msgid "/// admonition | Triggering antivirus"
 msgstr "/// admonition | Activación del antivirus"
 
 #: docs/en/tutorial/tutorial-3.md:198
-#, fuzzy
 msgid "Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the `create` command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named `rcedit-x64.exe`) to run and re-run the command above."
-msgstr "Dado que estos metadatos se escriben directamente en el binario precompilado que se despliega desde la plantilla durante el comando `create`, esto puede activar el software antivirus que se ejecuta en su máquina e impedir que se escriban los metadatos. En ese caso, indique al antivirus que permita la ejecución de la herramienta (llamada `rcedit-x64.exe`) y vuelva a ejecutar el comando anterior."
+msgstr "Dado que estos metadatos se escriben directamente en el binario pre‐compilado que se despliega desde la plantilla durante el comando `create`, esto puede activar el software antivirus que se ejecuta en su máquina e impedir que se escriban los metadatos. En ese caso, indique al antivirus que permita la ejecución de la herramienta (llamada `rcedit-x64.exe`) y vuelva a ejecutar el comando anterior."
 
 #: docs/en/tutorial/tutorial-3.md:204
-#, fuzzy
 msgid "Running your app"
-msgstr "Ejecutar la aplicación"
+msgstr "Ejecutar tu aplicación"
 
 #: docs/en/tutorial/tutorial-3.md:206
-#, fuzzy
 msgid "You can now use Briefcase to run your application:"
-msgstr "Ahora puede utilizar Briefcase para ejecutar su aplicación:"
+msgstr "Ahora puede utilizar Briefcase para ejecutar tu aplicación:"
 
 #: docs/en/tutorial/tutorial-3.md:285
-#, fuzzy
 msgid "This will start to run your native application, using the app bundle created by the `build` command."
-msgstr "Esto iniciará la ejecución de su aplicación nativa, utilizando la salida del comando `build`."
+msgstr "Esto iniciará la ejecución de tu aplicación nativa, utilizando la salida del comando `build`."
 
 #: docs/en/tutorial/tutorial-3.md:287
-#, fuzzy
 msgid "You might notice some small differences in the way your application looks when it's running. For example, icons and the name displayed by the operating system may be slightly different to those you saw when running under developer mode. This is also because you're using the packaged application, not just running Python code. From the operating system's perspective, you're now running \"an app\", not \"a Python program\", and this is reflected in how the application appears."
-msgstr "Es posible que notes algunas pequeñas diferencias en el aspecto de tu aplicación cuando se está ejecutando. Por ejemplo, los iconos y el nombre mostrados por el sistema operativo pueden ser ligeramente diferentes a los que veías cuando se ejecutaba en modo desarrollador. Esto también se debe a que estás utilizando la aplicación empaquetada, no sólo ejecutando código Python. Desde la perspectiva del sistema operativo, ahora estás ejecutando \"una aplicación\", no \"un programa Python\", y esto se refleja en cómo aparece la aplicación."
+msgstr "Es posible que notes algunas pequeñas diferencias en el aspecto de tu aplicación cuando se está ejecutando. Por ejemplo, los iconos y el nombre mostrados por el sistema operativo pueden ser ligeramente diferentes a los que veías cuando se ejecutaba en modo desarrollador. Esto también se debe a que estás utilizando la aplicación empaquetada, no sólo ejecutando código Python. Desde la perspectiva del sistema operativo, ahora estás ejecutando “una aplicación”, no “un programa Python”, y esto se refleja en cómo aparece la aplicación."
 
 #: docs/en/tutorial/tutorial-3.md:289
-#, fuzzy
 msgid "Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran `briefcase run`."
-msgstr "Antes de continuar, cierra la aplicación. Al igual que con los pasos anteriores del tutorial, puedes hacerlo pulsando el botón de cierre de la ventana de la aplicación, seleccionando Salir/Exit en el menú de la aplicación, o escribiendo **Ctrl+C** en el terminal donde ejecutaste `briefcase run`."
+msgstr "Antes de continuar, cierra la aplicación. Al igual que con los pasos anteriores del tutorial, puedes hacerlo pulsando el botón de cierre de la ventana de la aplicación, seleccionando Quitar/Salir en el menú de la aplicación, o escribiendo **Ctrl+C** en el terminal donde ejecutaste `briefcase run`."
 
 #: docs/en/tutorial/tutorial-3.md:291
-#, fuzzy
 msgid "Building your installer"
 msgstr "Creación del instalador"
 
 #: docs/en/tutorial/tutorial-3.md:293
-#, fuzzy
 msgid "You can now package your application for distribution, using the `package` command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks."
-msgstr "Ahora puedes empaquetar tu aplicación para su distribución, utilizando el comando `package`. El comando `package` realiza cualquier compilación necesaria para convertir el proyecto en un producto final y distribuible. Dependiendo de la plataforma, esto puede implicar compilar un instalador, realizar la firma de código, o hacer otras tareas previas a la distribución."
+msgstr "Ahora puedes empaquetar tu aplicación para su distribución, utilizando el comando `package`. El comando `package` realiza cualquier compilación necesaria para convertir el proyecto en un producto final y distribuíble. Dependiendo de la plataforma, esto puede implicar compilar un instalador, realizar la firma de código, o hacer otras tareas previas a la distribución."
 
 #: docs/en/tutorial/tutorial-3.md:326
-#, fuzzy
 msgid "The `dist` folder will contain a file named `Hello World-0.0.1.dmg`. If you locate this file in the Finder, and double-click on its icon, you'll mount the DMG, giving you a copy of the Hello World app, and a link to your Applications folder for easy installation. Drag the app file into Applications, and you've installed your application. Send the DMG file to a friend, and they should be able to do the same."
-msgstr "La carpeta `dist` contendrá un archivo llamado `Hello World-0.0.1.dmg`. Si localizas este archivo en el Finder y haces doble clic en su icono, montarás el DMG, lo que te proporcionará una copia de la aplicación Hello World y un enlace a tu carpeta Aplicaciones para facilitar la instalación. Arrastra el archivo de la aplicación a Aplicaciones, y habrás instalado tu aplicación. Envía el archivo DMG a un amigo y podrá hacer lo mismo."
+msgstr "La carpeta `dist` contendrá un archivo llamado `Hello World-0.0.1.dmg`. Si localizas este archivo en el Finder y pulsas dos veces en su icono, montarás el DMG, lo que te proporcionará una copia de la aplicación Hello World y un enlace a tu carpeta Aplicaciones para facilitar la instalación. Arrastra el archivo de la aplicación a Aplicaciones, y habrás instalado tu aplicación. Envía el archivo DMG a un amigo y podrá hacer lo mismo."
 
 #: docs/en/tutorial/tutorial-3.md:328
-#, fuzzy
 msgid "In this example, we've used the `--adhoc-sign` option - that is, we're signing our application with *ad hoc* credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials."
-msgstr "En este ejemplo, hemos utilizado la opción `--adhoc-sign` - es decir, estamos firmando nuestra aplicación con credenciales *ad hoc* - credenciales temporales que sólo funcionarán en tu máquina. Hemos hecho esto para mantener el tutorial simple. Configurar identidades de firma de código es un poco complicado, y sólo son *necesarias* si pretendes distribuir tu aplicación a otros. Si estuviéramos publicando una aplicación real para que otros la usaran, necesitaríamos especificar credenciales reales."
+msgstr "En este ejemplo, hemos utilizado la opción `--adhoc-sign` —es decir, estamos firmando nuestra aplicación con credenciales *ad hoc*— credenciales temporales que sólo funcionarán en tu máquina. Hemos hecho esto para mantener el tutorial simple. Configurar identidades de firma de código es un poco complicado, y sólo son *necesarias* si pretendes distribuir tu aplicación a otros. Si estuviéramos publicando una aplicación real para que otros la usaran, necesitaríamos especificar credenciales reales."
 
 #: docs/en/tutorial/tutorial-3.md:330
-#, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a macOS code signing identity]{1}."
-msgstr "Cuando esté listo para publicar una aplicación real, consulte la guía práctica de Briefcase sobre [Cómo configurar una identidad de firma de código de macOS]{1}"
+msgstr "Cuando esté listo para publicar una aplicación real, consulte la guía práctica de Briefcase sobre [Cómo configurar una identidad de firma del código en macOS]{1}."
 
 #: docs/en/tutorial/tutorial-3.md:336
-#, fuzzy
 msgid "The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:"
 msgstr "La salida del paso paquete será ligeramente diferente dependiendo de su distribución de Linux. Si estás en una distribución derivada de Debian, verás:"
 
 #: docs/en/tutorial/tutorial-3.md:356
-#, fuzzy
 msgid "The `dist` folder will contain the `.deb` file that was generated."
-msgstr "La carpeta `dist` contendrá el archivo `.deb` generado."
+msgstr "La carpeta `dist` contendrá el archivo `.deb` que fue generado."
 
 #: docs/en/tutorial/tutorial-3.md:358
-#, fuzzy
 msgid "If you're on a RHEL-based distribution, you'll see:"
 msgstr "Si estás en una distribución basada en RHEL, lo verás:"
 
 #: docs/en/tutorial/tutorial-3.md:385
-#, fuzzy
 msgid "The `dist` folder will contain the `.rpm` file that was generated."
-msgstr "La carpeta `dist` contendrá el archivo `.rpm` generado."
+msgstr "La carpeta `dist` contendrá el archivo `.rpm` que fue generado."
 
 #: docs/en/tutorial/tutorial-3.md:387
-#, fuzzy
 msgid "If you're on an Arch-based distribution, you'll see:"
 msgstr "Si estás en una distribución basada en Arch, lo verás:"
 
 #: docs/en/tutorial/tutorial-3.md:405
-#, fuzzy
 msgid "The `dist` folder will contain the `.pkg.tar.zst` file that was generated."
-msgstr "La carpeta `dist` contendrá el archivo `.pkg.tar.zst` generado."
+msgstr "La carpeta `dist` contendrá el archivo `.pkg.tar.zst` que fue generado."
 
 #: docs/en/tutorial/tutorial-3.md:407
-#, fuzzy
 msgid "Other Linux distributions aren't currently supported for packaging."
-msgstr "Actualmente no es posible empaquetar otras distribuciones de Linux."
+msgstr "Otras distribuciones de Linux actualmente no están mantenidas para empaquetado."
 
 #: docs/en/tutorial/tutorial-3.md:409
-#, fuzzy
 msgid "If you want to build a package for a Linux distribution other than the one you're using, Briefcase can also help - but you'll need to install Docker."
-msgstr "Si desea crear un paquete para una distribución de Linux distinta de la que está utilizando, Briefcase también puede ayudarle, pero tendrá que instalar Docker."
+msgstr "Si desea construir un paquete para una distribución de Linux distinta de la que está utilizando, Briefcase también puede ayudarle, pero tendrá que instalar Docker."
 
 #: docs/en/tutorial/tutorial-3.md:411
-#, fuzzy
 msgid "Official installers for [Docker Engine]{1} are available for a range of Unix distributions. Follow the instructions for your platform; however, ensure you don't install Docker in \"rootless\" mode."
-msgstr "Existen instaladores oficiales de [Docker Engine]{1} para diversas distribuciones de Unix. Siga las instrucciones para su plataforma; sin embargo, asegúrese de no instalar Docker en modo \"sin raíz\"."
+msgstr "Existen instaladores oficiales de [Docker Engine]{1} para diversas distribuciones de Unix. Siga las instrucciones para su plataforma; sin embargo, asegúrese de no instalar Docker en modo “sin raíz”."
 
 #: docs/en/tutorial/tutorial-3.md:413
-#, fuzzy
 msgid "Once you've installed Docker, you should be able to start an Linux container - for example:"
-msgstr "Una vez que hayas instalado Docker, deberías ser capaz de iniciar un contenedor Linux - por ejemplo:"
+msgstr "Una vez que hayas instalado Docker, deberías ser capaz de iniciar un contenedor Linux, por ejemplo:"
 
 #: docs/en/tutorial/tutorial-3.md:419
-#, fuzzy
 msgid "will show you a Unix prompt (something like `root@84444e31cff9:/#`) inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to your local shell."
-msgstr "te mostrará un prompt Unix (algo como `root@84444e31cff9:/#`) dentro de un contenedor Docker Ubuntu 22.04. Escribe Ctrl-D para salir de Docker y volver a tu shell local."
+msgstr "te mostrará un intérprete Unix (algo como `root@84444e31cff9:/#`) dentro de un contenedor Docker Ubuntu 22.04. Teclea Ctrl-D para salir de Docker y volver a tu shell local."
 
 #: docs/en/tutorial/tutorial-3.md:421
-#, fuzzy
 msgid "Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:"
-msgstr "Una vez que tengas Docker instalado, puedes usar Briefcase para construir un paquete para cualquier distribución de Linux que soporte Briefcase pasando una imagen Docker como argumento. Por ejemplo, para construir un paquete DEB para Ubuntu 22.04 (Jammy), independientemente del sistema operativo en el que se encuentre, puede ejecutar:"
+msgstr "Una vez que tengas Docker instalado, puedes usar Briefcase para construir un paquete para cualquier distribución de Linux que admita Briefcase pasando una imagen Docker como argumento. Por ejemplo, para construir un paquete DEB para Ubuntu 22.04 (Jammy), independientemente del sistema operativo en el que se encuentre, puedes ejecutar:"
 
 #: docs/en/tutorial/tutorial-3.md:427
-#, fuzzy
 msgid "This will download the Docker image for your selected operating system, create a container that is able to run Briefcase builds, and build the app package inside the image. Once it's completed, the `dist` folder will contain the package for the target Linux distribution."
 msgstr "Esto descargará la imagen Docker para el sistema operativo seleccionado, creará un contenedor capaz de ejecutar las compilaciones de Briefcase y compilará el paquete de la aplicación dentro de la imagen. Una vez completado, la carpeta `dist` contendrá el paquete para la distribución Linux de destino."
 
 #: docs/en/tutorial/tutorial-3.md:461
-#, fuzzy
 msgid "In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate."
-msgstr "En este ejemplo, hemos utilizado la opción `--adhoc-sign` - es decir, estamos firmando nuestra aplicación con credenciales *ad hoc* - credenciales temporales que sólo funcionarán en tu máquina. Hemos hecho esto para mantener el tutorial simple. Configurar identidades de firma de código es un poco complicado, y sólo son *necesarias* si pretendes distribuir tu aplicación a otros. Si estuviéramos publicando una aplicación real para que otros la usaran, necesitaríamos especificar credenciales reales."
+msgstr "En este ejemplo, no hemos formado nuestra app. Como un resultado, cuando utilizamos el instalador, obtendremos un aviso del sistema que la aplicación viene desde un desarrollados desconocido. Hemos hecho esto para mantener el tutorial simple. Configurar identidades de firma de código es un poco complicado, y sólo son *necesarias* si pretendes distribuir tu aplicación a otros. Si estuviéramos publicando una aplicación real para que otros la usaran, necesitaríamos especificar una identidad de firma real; cuando esta aplicación firmada esté instalada, el sistema notificará al usuario que la aplicación es desde la identidad desconocida asociada con el certificado."
 
 #: docs/en/tutorial/tutorial-3.md:463
-#, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a Windows code signing identity]{1}."
-msgstr "Cuando esté listo para publicar una aplicación real, consulte la guía práctica de Briefcase sobre [Cómo configurar una identidad de firma de código de macOS]{1}"
+msgstr "Cuando esté listo para publicar una aplicación real, consulte la guía práctica de Briefcase en [Configurar una identidad de firma de código de Windows]{1}."
 
 #: docs/en/tutorial/tutorial-3.md:465
-#, fuzzy
 msgid "Once this step completes, the `dist` folder will contain a file named `Hello_World-0.0.1.msi`. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
-msgstr "Una vez completado este paso, la carpeta `dist` contendrá un archivo llamado `Hello_World-0.0.1.msi`. Si haces doble clic en este instalador para ejecutarlo, deberías seguir el proceso de instalación de Windows que ya conoces. Una vez finalizada la instalación, aparecerá una entrada \"Hello World\" en el menú de inicio."
+msgstr "Una vez completado este paso, la carpeta `dist` contendrá un archivo llamado `Hello_World-0.0.1.msi`. Si pulsas dos veces en este instalador para ejecutarlo, iría a través del proceso de instalación de Windows que ya conoces. Una vez finalizada esta instalación, aparecerá una apunte \"Hello World\" en el menú de inicio."
 
 #: docs/en/tutorial/tutorial-3.md:471
-#, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to [Tutorial 4]{1} to find out..."
-msgstr "Ya tenemos nuestra aplicación empaquetada para su distribución en plataformas de escritorio. Pero, ¿qué ocurre cuando necesitamos actualizar el código de nuestra aplicación? ¿Cómo introducimos esas actualizaciones en nuestra aplicación empaquetada? Vaya al [Tutorial 4]{1} para averiguarlo..."
+msgstr "Ya tenemos nuestra aplicación empaquetada para su distribución en plataformas de escritorio. Pero, ¿qué ocurre cuando necesitamos actualizar el código de nuestra aplicación? ¿Cómo introducimos esas actualizaciones en nuestra aplicación empaquetada? Vaya al [Tutorial 4]{1} para averiguarlo…"
 
 #: docs/en/tutorial/tutorial-4.md:1
-#, fuzzy
 msgid "Tutorial 4 - Updating your application"
-msgstr "Tutorial 4 - Actualización de la aplicación"
+msgstr "Tutorial 4 - Actualizar tu aplicación"
 
 #: docs/en/tutorial/tutorial-4.md:3
-#, fuzzy
 msgid "In the last tutorial, we packaged our application as a native application. If you're dealing with a real-world app, that isn't going to be the end of the story - you'll likely do some testing, discover problems, and need to make some changes. Even if your application is perfect, you'll eventually want to publish version 2 of your application with improvements."
-msgstr "En el último tutorial, empaquetamos nuestra aplicación como una aplicación nativa. Si estás tratando con una aplicación del mundo real, eso no va a ser el final de la historia - es probable que hagas algunas pruebas, descubras problemas, y necesites hacer algunos cambios. Incluso si tu aplicación es perfecta, con el tiempo querrás publicar la versión 2 de tu aplicación con mejoras."
+msgstr "En el último tutorial, empaquetamos nuestra aplicación como una aplicación nativa. Si estás tratando con una aplicación del mundo real, eso no va a ser el final de la historia —es probable que hagas algunas pruebas, descubras problemas, y necesites hacer algunos cambios. Incluso si tu aplicación es perfecta, con el tiempo querrás publicar la versión 2 de tu aplicación con mejoras."
 
 #: docs/en/tutorial/tutorial-4.md:5
-#, fuzzy
 msgid "So - how do you update your installed app when you make code changes?"
-msgstr "¿Cómo se actualiza la aplicación instalada cuando se realizan cambios en el código?"
+msgstr "Por tanto, ¿cómo se actualiza la aplicación instalada cuando se realizan cambios en el código?"
 
 #: docs/en/tutorial/tutorial-4.md:7
-#, fuzzy
 msgid "Updating application code"
 msgstr "Actualización del código de la aplicación"
 
 #: docs/en/tutorial/tutorial-4.md:9
-#, fuzzy
 msgid "Our application currently prints to the console when you press the button. However, GUI applications shouldn't really use the console for output. They need to use dialogs to communicate with users."
-msgstr "Actualmente, nuestra aplicación imprime en la consola cuando se pulsa el botón. Sin embargo, las aplicaciones GUI no deberían usar la consola para la salida. Necesitan usar diálogos para comunicarse con los usuarios."
+msgstr "Actualmente, nuestra aplicación declara por la consola cuando se pulsa el botón. Sin embargo, las aplicaciones IGU realmente no utilizarían la consola para la salida. Necesitan usar diálogos para comunicarse con los usuarios."
 
 #: docs/en/tutorial/tutorial-4.md:11
-#, fuzzy
 msgid "Let's add a dialog box to say hello, instead of writing to the console. Modify the `say_hello` callback so it looks like this:"
-msgstr "Vamos a añadir un cuadro de diálogo para decir hola, en lugar de escribir en la consola. Modifica el callback `say_hello` para que se vea así:"
+msgstr "Añadamos un cuadro de diálogo para decir hola, en lugar de escribir en la consola. Modifica el callback `say_hello` tal que aparezca así:"
 
 #: docs/en/tutorial/tutorial-4.md:23
-#, fuzzy
 msgid "We need to make the method `async` so that when we display the dialog, the rest of the application continues to run. Don't worry about this detail too much right now - we'll give a more detailed explanation in [Tutorial 8]{1}."
-msgstr "Necesitamos hacer el método `async` para que cuando mostremos el diálogo, el resto de la aplicación continúe ejecutándose. No te preocupes demasiado por este detalle ahora mismo - daremos una explicación más detallada en el [Tutorial 8]{1}."
+msgstr "Necesitamos hacer el método `async` para que cuando exhibimos el diálogo, el resto de la aplicación continúe ejecutándose. No te preocupes demasiado por este detalle ahora mismo —daremos una explicación más detallada en el [Tutorial 8]{1}."
 
 #: docs/en/tutorial/tutorial-4.md:25
-#, fuzzy
 msgid "This directs Toga to open a modal dialog box when the button is pressed."
 msgstr "Esto indica a Toga que abra un cuadro de diálogo modal cuando se pulse el botón."
 
 #: docs/en/tutorial/tutorial-4.md:27
-#, fuzzy
 msgid "If you run `briefcase dev`, enter a name, and press the button, you'll see the new dialog box:"
-msgstr "Si ejecutas `briefcase dev`, introduces un nombre y pulsas el botón, verás el nuevo cuadro de diálogo:"
+msgstr "Si ejecutas `briefcase dev`, introduces un nombre y pulsas el botón, verás el cuadro de diálogo nuevo:"
 
 #: docs/en/tutorial/tutorial-4.md:31
-#, fuzzy
 msgid "![Hello World Tutorial 4 dialog, on macOS]{1}"
-msgstr "{1}[Hello World Tutorial 4 dialog, on macOS]{1}"
+msgstr "{1}[Diálogo del Tutorial Hello World 4, en macOS]{1}"
 
 #: docs/en/tutorial/tutorial-4.md:41
-#, fuzzy
 msgid "![Hello World Tutorial 4 dialog, on Linux]{1}"
-msgstr "[Hola Mundo Tutorial 4 diálogo, en Linux]{1}"
+msgstr "Diálogo [Tutorial Hola Mundo 4, en Linux]{1}"
 
 #: docs/en/tutorial/tutorial-4.md:51
-#, fuzzy
 msgid "![Hello World Tutorial 4 dialog, on Windows]{1}"
 msgstr "Diálogo [Hello World Tutorial 4, en Windows]{1}"
 
 #: docs/en/tutorial/tutorial-4.md:59
-#, fuzzy
 msgid "However, if you run `briefcase run`, the dialog box won't appear."
 msgstr "Sin embargo, si ejecutas `briefcase run`, el cuadro de diálogo no aparecerá."
 
 #: docs/en/tutorial/tutorial-4.md:61
-#, fuzzy
 msgid "Why is this? Well, `briefcase dev` operates by running your code in place - it tries to produce as realistic runtime environment for your code as possible, but it doesn't provide or use any of the platform infrastructure for wrapping your code as an application. Part of the process of packaging your app involves copying your code *into* the application bundle - and at the moment, your application still has the old code in it."
-msgstr "¿Por qué? Bueno, `briefcase dev` opera ejecutando tu código en su lugar - intenta producir un entorno de ejecución lo más realista posible para tu código, pero no proporciona ni utiliza ninguna de las infraestructuras de la plataforma para empaquetar tu código como una aplicación. Parte del proceso de empaquetar tu aplicación implica copiar tu código *dentro* del paquete de la aplicación - y por el momento, tu aplicación todavía tiene el código antiguo."
+msgstr "¿Por qué? Bueno, `briefcase dev` opera ejecutando tu código en su lugar —intenta producir un entorno de ejecución lo más realista posible para tu código, pero no proporciona ni utiliza ninguna de las infraestructuras de la plataforma para empaquetar tu código como una aplicación. Parte del proceso de empaquetar tu aplicación implica copiar tu código *dentro* del paquete de la aplicación —y por el momento, tu aplicación todavía tiene el código antiguo."
 
 #: docs/en/tutorial/tutorial-4.md:63
-#, fuzzy
 msgid "So - we need to tell briefcase to update your app, copying in the new version of the code. We *could* do this by deleting the old platform directory and starting from scratch. However, Briefcase provides an easier way - you can update the code for your existing bundled application:"
-msgstr "Así que - necesitamos decirle a briefcase que actualice tu aplicación, copiando la nueva versión del código. Podríamos *hacerlo* borrando el antiguo directorio de la plataforma y empezando desde cero. Sin embargo, Briefcase proporciona una manera más fácil - usted puede actualizar el código de su aplicación empaquetada existente:"
+msgstr "Así que —necesitamos decirle a briefcase que actualice tu aplicación, copiando la nueva versión del código. *Podríamos* hacerlo borrando el directorio antiguo de la plataforma y empezando desde cero. Sin embargo, Briefcase proporciona una manera más fácil —puedes actualizar el código de su aplicación empaquetada existente:"
 
 #: docs/en/tutorial/tutorial-4.md:120
-#, fuzzy
 msgid "If Briefcase can't find the scaffolded template, it will automatically invoke `create` to generate a fresh scaffold."
 msgstr "Si Briefcase no puede encontrar la plantilla de andamiaje, invocará automáticamente `create` para generar un andamiaje nuevo."
 
 #: docs/en/tutorial/tutorial-4.md:122
-#, fuzzy
 msgid "Now that we've updated the installer code, we can then run `briefcase build` to re-compile the app, `briefcase run` to run the updated app, and `briefcase package` to repackage the application for distribution."
 msgstr "Ahora que hemos actualizado el código del instalador, podemos ejecutar `briefcase build` para volver a compilar la aplicación, `briefcase run` para ejecutar la aplicación actualizada, y `briefcase package` para volver a empaquetar la aplicación para su distribución."
 
 #: docs/en/tutorial/tutorial-4.md:126
-#, fuzzy
 msgid "macOS users, remember that as noted in [Tutorial 3]{1}, for the tutorial we recommend running `briefcase package` with the `--adhoc-sign` flag to avoid the complexity of setting up a code signing identity and keep the tutorial as simple as possible."
-msgstr "(usuarios de macOS, recordad que como se indica en [Tutorial 3]{1}, para el tutorial recomendamos ejecutar `briefcase package` con la bandera `--adhoc-sign` para evitar la complejidad de configurar una identidad de firma de código y mantener el tutorial lo más simple posible)"
+msgstr "A los usuarios de macOS, recordad que como se indica en [Tutorial 3]{1}, para el tutorial recomendamos ejecutar `briefcase package` con el indicador `--adhoc-sign` para evitar la complejidad de configurar una identidad de firma de código y mantener el tutorial lo más simple posible."
 
 #: docs/en/tutorial/tutorial-4.md:130
-#, fuzzy
 msgid "Update and run in one step"
 msgstr "Actualizar y ejecutar en un solo paso"
 
 #: docs/en/tutorial/tutorial-4.md:132
-#, fuzzy
 msgid "If you're rapidly iterating code changes, you'll likely want to make a code change, update the application, and immediately re-run your application. For most purposes, developer mode (`briefcase dev`) will be the easiest way to do this sort of rapid iteration; however, if you're testing something about how your application runs as a native binary, or hunting a bug that only manifests when your application is in packaged form, you may need to use repeated calls to `briefcase run`. To simplify the process of updating and running the bundled app, Briefcase has a shortcut to support this usage pattern - the `-u` (or `--update`) option on the `run` command."
-msgstr "Si estás iterando rápidamente cambios en el código, es probable que quieras hacer un cambio en el código, actualizar la aplicación, y volver a ejecutar inmediatamente tu aplicación. Para la mayoría de los propósitos, el modo desarrollador (`briefcase dev`) será la forma más fácil de hacer este tipo de iteración rápida; sin embargo, si estás probando algo sobre cómo se ejecuta tu aplicación como un binario nativo, o buscando un error que sólo se manifiesta cuando tu aplicación está empaquetada, puede que necesites usar repetidas llamadas a `briefcase run`. Para simplificar el proceso de actualización y ejecución de la aplicación empaquetada, Briefcase tiene un atajo para soportar este patrón de uso - la opción `-u` (o `--update`) en el comando `run`."
+msgstr "Si estás iterando rápidamente cambios en el código, es probable que quieras hacer un cambio en el código, actualizar la aplicación, y volver a ejecutar inmediatamente tu aplicación. Para la mayoría de los propósitos, el modo desarrollador (`briefcase dev`) será la forma más fácil de hacer este tipo de iteración rápida; sin embargo, si estás probando algo sobre cómo se ejecuta tu aplicación como un binario nativo, o buscando un defecto que sólo se manifiesta cuando tu aplicación está empaquetada, puede que necesites usar repetidas invocaciones a `briefcase run`. Para simplificar el proceso de actualización y ejecución de la aplicación empaquetada, Briefcase tiene un atajo para soportar este patrón de uso —la opción `-u` (o `--update`) en el comando `run`."
 
 #: docs/en/tutorial/tutorial-4.md:134
-#, fuzzy
 msgid "Let's try making another change. You may have noticed that if you don't type a name in the text input box, the dialog will say \"Hello, \". Let's modify the `say_hello` function again to handle this edge case."
-msgstr "Intentemos hacer otro cambio. Usted puede haber notado que si no escribe un nombre en el cuadro de entrada de texto, el cuadro de diálogo dirá \"Hola, \". Vamos a modificar la función `say_hello` de nuevo para manejar este caso extremo."
+msgstr "Intentemos hacer otro cambio. Puedes haber notado que si no escribe un nombre en el cuadro de entrada de texto, el diálogo dirá “Hola, ”. Vamos a modificar la función `say_hello` de nuevo para manejar este caso extremo."
 
 #: docs/en/tutorial/tutorial-4.md:136
-#, fuzzy
 msgid "At the top of the file, between the imports and the `class HelloWorld` definition, add a utility method to generate an appropriate greeting depending on the value of the name that has been provided:"
-msgstr "En la parte superior del fichero, entre las importaciones y la definición de la `clase HelloWorld`, añade un método de utilidad para generar un saludo apropiado dependiendo del valor del nombre que se haya proporcionado:"
+msgstr "En la parte superior del archivo, entre las importaciones y la definición de la clase `class HelloWorld`, añade un método de utilidad para generar un saludo apropiado dependiendo del valor del nombre que se haya proporcionado:"
 
 #: docs/en/tutorial/tutorial-4.md:146
-#, fuzzy
 msgid "Then, modify the `say_hello` callback to use this new utility method:"
-msgstr "A continuación, modifica la llamada de retorno `say_hello` para utilizar este nuevo método de utilidad:"
+msgstr "A continuación, modifica la invocación de retorno `say_hello` para utilizar este método nuevo de utilidad:"
 
 #: docs/en/tutorial/tutorial-4.md:158
-#, fuzzy
 msgid "Run your app in development mode (with `briefcase dev`) to confirm that the new logic works; then update, build and run the app with one command:"
-msgstr "Ejecuta tu aplicación en modo desarrollo (con `briefcase dev`) para confirmar que la nueva lógica funciona; después actualiza, compila y ejecuta la aplicación con un solo comando:"
+msgstr "Ejecuta tu aplicación en modo desarrollo (con `briefcase dev`) para confirmar que funciona la lógica nueva; después actualiza, compila y ejecuta la aplicación con un solo comando:"
 
 #: docs/en/tutorial/tutorial-4.md:230
-#, fuzzy
 msgid "The package command also accepts the `-u` argument, so if you make a change to your application code and want to repackage immediately, you can run `briefcase package -u`."
 msgstr "El comando package también acepta el argumento `-u`, de modo que si realizas un cambio en el código de tu aplicación y quieres volver a empaquetarlo inmediatamente, puedes ejecutar `briefcase package -u`."
 
 #: docs/en/tutorial/tutorial-4.md:234
-#, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms, and we've been able to update the code in our application."
 msgstr "Ahora tenemos nuestra aplicación empaquetada para su distribución en plataformas de escritorio, y hemos podido actualizar el código de nuestra aplicación."
 
 #: docs/en/tutorial/tutorial-4.md:236
-#, fuzzy
 msgid "But what about mobile? In [Tutorial 5]{1}, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
-msgstr "¿Pero qué pasa con los móviles? En [Tutorial 5]{1}, convertiremos nuestra aplicación en una aplicación móvil, y la desplegaremos en un simulador de dispositivo, y en un teléfono."
+msgstr "Pero ¿qué pasa con los móviles? En el [Tutorial 5]{1}, convertiremos nuestra aplicación en una aplicación móvil, y la desplegaremos en un simulador de dispositivo, y en un teléfono."
 
 #: docs/en/tutorial/tutorial-5/android.md:1
-#, fuzzy
 msgid "Tutorial 5 - Taking it mobile: Android"
-msgstr "Tutorial 5 - Movilidad: Android"
+msgstr "Tutorial 5 – Movilidad: Android"
 
 #: docs/en/tutorial/tutorial-5/android.md:3
 msgid "Now, we're going to take our application, and deploy it as an Android application."
@@ -1473,9 +1379,8 @@ msgid "First, run the `create` command. This downloads an Android app template a
 msgstr "Primero, ejecuta el comando `create`. Esto descarga una plantilla de aplicación Android y le añade tu código Python."
 
 #: docs/en/tutorial/tutorial-5/android.md:98
-#, fuzzy
 msgid "When you run `briefcase create android` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license. There's a number of licenses you'll need to agree too - keep entering `y` at the prompt to review and accept each of the necessary the license agreements."
-msgstr "Cuando ejecutas `briefcase create android` por primera vez, Briefcase descarga un JDK de Java, y el SDK de Android. El tamaño de los archivos y el tiempo de descarga pueden ser considerables; esto puede llevar un tiempo (10 minutos o más, dependiendo de la velocidad de tu conexión a Internet). Una vez finalizada la descarga, se le pedirá que acepte la licencia del SDK de Android de Google."
+msgstr "Cuando ejecutas `briefcase create android` por primera vez, Briefcase descarga un JDK de Java, y el SDK de Android. El tamaño de los archivos y el tiempo de descarga pueden ser considerables; esto puede llevar un tiempo (10 minutos o más, dependiendo de la velocidad de tu conexión a Internet). Una vez finalizada la descarga, se le pedirá que acepte la licencia del SDK Android de Google. También hay un número de licencias que necesitará aceptar —mantenga pulsando `y` en la solicitud para revisar y aceptar cada uno de los acuerdos de la licencia necesaria."
 
 #: docs/en/tutorial/tutorial-5/android.md:100
 msgid "Once this completes, we'll have a `build\\helloworld\\android\\gradle` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
@@ -1486,7 +1391,6 @@ msgid "We can then use Briefcase's `build` command to compile this into an Andro
 msgstr "A continuación, podemos utilizar el comando `build` de Briefcase para compilar esto en un archivo de aplicación Android APK."
 
 #: docs/en/tutorial/tutorial-5/android.md:164
-#, fuzzy
 msgid "/// admonition | Gradle may look stuck"
 msgstr "/// admonition | Gradle puede parecer atascado"
 
@@ -1515,12 +1419,10 @@ msgid "Briefcase `run` will automatically boot the virtual device. When the devi
 msgstr "Briefcase `run` arrancará automáticamente el dispositivo virtual. Cuando el dispositivo esté arrancando, verás el logo de Android:"
 
 #: docs/en/tutorial/tutorial-5/android.md:222
-#, fuzzy
 msgid "![Android virtual device booting]{1}"
-msgstr "[Dispositivo virtual Android arrancando]{1}"
+msgstr "![Arranque en dispositivo virtual Android]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:226
-#, fuzzy
 msgid "Android virtual device booting"
 msgstr "Arranque del dispositivo virtual Android"
 
@@ -1529,12 +1431,10 @@ msgid "Once the device has finished booting, Briefcase will install your app on 
 msgstr "Una vez que el dispositivo haya terminado de arrancar, Briefcase instalará tu aplicación en el dispositivo. Verás brevemente una pantalla de inicio:"
 
 #: docs/en/tutorial/tutorial-5/android.md:232
-#, fuzzy
 msgid "![Android virtual device fully started, on the launcher screen]{1}"
-msgstr "![Dispositivo virtual Android totalmente iniciado, en la pantalla del lanzador]{1}"
+msgstr "![Dispositivo virtual Android completamente iniciado, en la pantalla del lanzador]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:236
-#, fuzzy
 msgid "Android virtual device fully started, on the launcher screen"
 msgstr "Dispositivo virtual Android totalmente iniciado, en la pantalla del lanzador"
 
@@ -1543,17 +1443,14 @@ msgid "The app will then start. You'll see a splash screen while the app starts 
 msgstr "La aplicación se iniciará. Verás una pantalla de bienvenida mientras se inicia la aplicación:"
 
 #: docs/en/tutorial/tutorial-5/android.md:242
-#, fuzzy
 msgid "![App splash screen]{1}"
 msgstr "[Pantalla de inicio de la aplicación]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:246
-#, fuzzy
 msgid "App splash screen"
 msgstr "Pantalla de inicio de la aplicación"
 
 #: docs/en/tutorial/tutorial-5/android.md:250
-#, fuzzy
 msgid "/// admonition | The emulator didn't start!"
 msgstr "/// admonition | ¡El emulador no arranca!"
 
@@ -1566,21 +1463,18 @@ msgid "The first time the app starts, it needs to unpack itself onto the device.
 msgstr "La primera vez que se inicia la aplicación, tiene que desempaquetarse en el dispositivo. Esto puede tardar unos segundos. Una vez desempaquetada, verás la versión para Android de nuestra aplicación de escritorio:"
 
 #: docs/en/tutorial/tutorial-5/android.md:258
-#, fuzzy
 msgid "![Demo app fully launched]{1}"
-msgstr "{1}[Demo app fully launched]{1}"
+msgstr "{1}[Demo completo de app lanzado]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:262
-#, fuzzy
 msgid "Demo app fully launched"
-msgstr "Lanzamiento completo de la aplicación de demostración"
+msgstr "Aplicación de demostración completamente lanzada"
 
 #: docs/en/tutorial/tutorial-5/android.md:266
 msgid "If you fail to see your app launching, you may need to check your terminal where you ran `briefcase run` and look for any error messages."
 msgstr "Si no ves que tu aplicación se inicia, es posible que tengas que comprobar el terminal donde ejecutaste `briefcase run` y buscar cualquier mensaje de error."
 
 #: docs/en/tutorial/tutorial-5/android.md:268
-#, fuzzy
 msgid "While the app is running, you'll see a lot of messages being streamed in the console. This is a stream of the application's logs from the emulator. Typing Ctrl+C into the terminal will halt the streamed information in the console, but it will not close the emulator. This is so you can test new changes without restarting the emulator."
 msgstr "Mientras se ejecuta la aplicación, verás un montón de mensajes que se transmiten en la consola. Se trata de un flujo de los registros de la aplicación desde el emulador. Si tecleas Ctrl+C en el terminal, se detendrá el flujo de información en la consola, pero no se cerrará el emulador. Esto es para que puedas probar nuevos cambios sin reiniciar el emulador."
 
@@ -1634,29 +1528,25 @@ msgid "If your device appears, but is listed as \"Unknown device (not authorized
 msgstr "Si su dispositivo aparece, pero aparece como \"Dispositivo desconocido (no autorizado para el desarrollo)\", el modo de desarrollador no se ha habilitado correctamente. Vuelve a ejecutar [los pasos para habilitar las opciones de desarrollador]{1}, y vuelve a ejecutar `briefcase run android`."
 
 #: docs/en/tutorial/tutorial-5/android.md:345 docs/en/tutorial/tutorial-5/iOS.md:125
-#, fuzzy
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to [Tutorial 6]{1} to find out..."
 msgstr "¡Ya tenemos una aplicación en nuestro teléfono! ¿Hay algún otro lugar donde podamos desplegar una aplicación BeeWare? Consulta el [Tutorial 6]{1} para averiguarlo..."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:1
-#, fuzzy
 msgid "Tutorial 5 - Taking it mobile: iOS"
 msgstr "Tutorial 5 - Para móviles: iOS"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:3
 #, fuzzy
 msgid "To compile iOS applications we'll need Xcode, which is available for free from [the macOS App Store]{1}. Once Xcode is installed, launch it from Applications and accept the Xcode License Agreement. Next, Xcode will show which components are built-in, and which components you may download. Select the checkbox next to iOS (followed by the current version number), and then click \"Download and Install\" to install it. Xcode will install the system components, followed by the iOS Simulator."
-msgstr "Para compilar aplicaciones para iOS, necesitamos Xcode, que se encuentra disponible de forma gratuita en la [App Store de macOS]{1}. Una vez que Xcode esté instalado, ábrelo desde la carpeta Aplicaciones y acepta el Acuerdo de Licencia de Xcode. A continuación, Xcode mostrará los entornos de simulador que ya vienen integrados y aquellos que puedes descargar. Marca la casilla junto al entorno del simulador de iOS y luego haz clic en \"Continuar\" para descargarlo e instalarlo."
+msgstr "Para compilar aplicaciones para iOS, necesitamos Xcode, que se encuentra disponible de forma gratuita en la [App Store de macOS]{1}. Una vez que Xcode esté instalado, ábrelo desde la carpeta Aplicaciones y acepta el Acuerdo de Licencia de Xcode. A continuación, Xcode mostrará los entornos de simulador que ya vienen integrados y aquellos que puedes descargar. Marca la casilla junto al entorno del simulador de iOS y luego pulsa en \"Continuar\" para descargarlo e instalarlo."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:5
-#, fuzzy
 msgid "Once we've got Xcode and the iOS simulator installed, we can take our application and deploy it as an iOS app."
-msgstr "Una vez que tengamos Xcode instalado, podemos tomar nuestra aplicación e implementarla como una aplicación de iOS."
+msgstr "Una vez que tengamos Xcode y el simulador de iOS instalados, podemos tomar nuestra aplicación e implementarla como una aplicación de iOS."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:7
-#, fuzzy
 msgid "The process of deploying an application to iOS is very similar to the process for deploying as a desktop application. First, you run the `create` command - but this time, we specify that we want to create an iOS application:"
-msgstr "El proceso de despliegue de una aplicación en iOS es muy similar al proceso de despliegue como aplicación de escritorio. En primer lugar, se ejecuta el comando `create` - pero esta vez, especificamos que queremos crear una aplicación iOS:"
+msgstr "El proceso de despliegue de una aplicación en iOS es muy similar al proceso de despliegue como aplicación de escritorio. En primer lugar, se ejecuta el comando `create`; pero esta vez, especificamos que queremos crear una aplicación iOS:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:34
 msgid "Once this completes, we'll have a `build/helloworld/ios/xcode` directory containing an Xcode project, as well as the support libraries and the application code needed for the application."
@@ -1675,7 +1565,6 @@ msgid "This will start the iOS simulator, install your app, and start it. You sh
 msgstr "Esto iniciará el simulador de iOS, instalará tu aplicación y la iniciará. Vas a observar cómo se inicia el simulador y cómo se abre tu aplicación iOS:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:97
-#, fuzzy
 msgid "![Hello World Tutorial 5 window, on iOS]{1}"
 msgstr "Ventana [Tutorial Hola Mundo 5, en iOS]{1}"
 
@@ -1803,7 +1692,6 @@ msgid "Although we've now deployed this app on desktop, mobile and the web, the 
 msgstr "Aunque ya hemos desplegado esta aplicación en ordenadores de sobremesa, dispositivos móviles y la web, la aplicación es bastante sencilla y no incluye bibliotecas de terceros. ¿Podemos incluir librerías del Python Package Index (PyPI) en nuestra aplicación? Visita [Tutorial 7]{1} para averiguarlo..."
 
 #: docs/en/tutorial/tutorial-7.md:1
-#, fuzzy
 msgid "Tutorial 7 - Get this (third-)party started"
 msgstr "Tutorial 7 - Poner en marcha esta (tercera-)fiesta"
 
@@ -1833,9 +1721,8 @@ msgid "To generate some more interesting text for the dialog, we're going to use
 msgstr "Para generar un texto más interesante para el diálogo, vamos a utilizar una biblioteca llamada [Faker]{1}. Faker es un paquete de Python que genera contenido falso, incluyendo nombres y bloques de texto. Los nombres y las palabras del bloque de texto se generan a partir de una lista arbitraria de palabras proporcionada por Faker. Vamos a utilizar Faker para construir un mensaje falso, como si alguien estuviera respondiendo al usuario."
 
 #: docs/en/tutorial/tutorial-7.md:13
-#, fuzzy
 msgid "We start by adding `faker` to our app. Add an import to the top of the `app.py` to import `faker`:"
-msgstr "Vamos a añadir una llamada a la API `httpx` a nuestra aplicación. Añade un import al principio de `app.py` para importar `httpx`:"
+msgstr "Vamos a comenzar añadiendo una `faker` a nuestra aplicación. Añade una importación al principio de `app.py` para importar a `faker`:"
 
 #: docs/en/tutorial/tutorial-7.md:19 docs/en/tutorial/tutorial-8.md:32
 #, fuzzy
@@ -2111,14 +1998,12 @@ msgid "However, in a real world application, we'll need to perform complex tasks
 msgstr "Sin embargo, en una aplicación del mundo real, necesitaremos realizar tareas complejas o cálculos que pueden tardar un poco en completarse - y mientras se realizan esas tareas, queremos que nuestra aplicación siga respondiendo. Vamos a hacer un cambio en nuestra aplicación que podría tomar un poco de tiempo para completar, y ver los cambios que hay que hacer para dar cabida a ese comportamiento."
 
 #: docs/en/tutorial/tutorial-8.md:7
-#, fuzzy
 msgid "Accessing an API"
-msgstr "Acceso a una API"
+msgstr "Acceso a un API"
 
 #: docs/en/tutorial/tutorial-8.md:9
-#, fuzzy
 msgid "A common time-consuming task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. Web APIs sometimes take a second or two to respond, so if we're calling an API like that, we need to ensure our application doesn't become unresponsive while we wait for the web API to return an answer."
-msgstr "Una tarea que suele llevar mucho tiempo en una aplicación es realizar una solicitud a una API web para recuperar datos y mostrarlos al usuario. Las API web a veces tardan uno o dos segundos en responder, por lo que si llamamos a una API de este tipo, debemos asegurarnos de que nuestra aplicación no deje de responder mientras esperamos a que la API web devuelva una respuesta."
+msgstr "Una tarea que suele llevar mucho tiempo en una aplicación es realizar una solicitud a un API web para recuperar datos y mostrarlos al usuario. Las API web a veces tardan uno o dos segundos en responder, por lo que si invocamos a un API de este tipo, debemos asegurarnos de que nuestra aplicación no deje de responder mientras esperamos a que el API web devuelva una respuesta."
 
 #: docs/en/tutorial/tutorial-8.md:11
 #, fuzzy
