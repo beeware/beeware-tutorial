@@ -1679,12 +1679,12 @@ aria-label="Cabecera"
 
 
 <h1 id="tutorial-8-suavizar">Tutorial 8 - Suavizar<a class="headerlink" href="#tutorial-8-suavizar" title="Permanent link">&para;</a></h1>
-<p>Hasta ahora, nuestra aplicación ha sido relativamente simple - mostrando widgets
-GUI, llamando a una simple librería de terceros, y mostrando la salida en un
-diálogo. Todas estas operaciones ocurren muy rápidamente, y nuestra aplicación
-sigue respondiendo.</p>
+<p>Hasta ahora, nuestra aplicación ha sido relativamente simple: exhibiendo IGU de
+widgets, invocando a una simple biblioteca de terceros, y mostrando la salida en
+un diálogo. Todas estas operaciones ocurren muy rápidamente, y nuestra
+aplicación sigue respondiendo.</p>
 <p>Sin embargo, en una aplicación del mundo real, necesitaremos realizar tareas
-complejas o cálculos que pueden tardar un poco en completarse - y mientras se
+complejas o cálculos que pueden tardar un poco en completarse —y mientras se
 realizan esas tareas, queremos que nuestra aplicación siga respondiendo. Vamos a
 hacer un cambio en nuestra aplicación que podría tomar un poco de tiempo para
 completar, y ver los cambios que hay que hacer para dar cabida a ese
@@ -1695,24 +1695,23 @@ solicitud a un API web para recuperar datos y mostrarlos al usuario. Las API web
 a veces tardan uno o dos segundos en responder, por lo que si invocamos a un API
 de este tipo, debemos asegurarnos de que nuestra aplicación no deje de responder
 mientras esperamos a que el API web devuelva una respuesta.</p>
-<p>Esta es una aplicación de juguete, por lo que no disponemos de una API <em>real</em>
-con la que trabajar, así que utilizaremos un punto final de API de muestra como
+<p>Esta es una aplicación de juguete, por lo que no disponemos de un API <em>real</em> con
+la que trabajar, así que utilizaremos un punto final de API de muestra como
 fuente de datos. Si abre
 <a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a>
 en su navegador, obtendrá una carga JSON con un mensaje.</p>
 <p>La biblioteca estándar de Python contiene todas las herramientas necesarias para
-acceder a una API. Sin embargo, las API incorporadas son de muy bajo nivel. Son
+acceder a un API. Sin embargo, las API incorporadas son de muy bajo nivel. Son
 buenas implementaciones del protocolo HTTP, pero requieren que el usuario
 gestione muchos detalles de bajo nivel, como la redirección de URL, las
-sesiones, la autenticación y la codificación de la carga útil. Como "usuario
-normal de navegador", probablemente estés acostumbrado a dar por sentados estos
+sesiones, la autenticación y la codificación de la carga útil. Como «usuario
+normal de navegador», probablemente estés acostumbrado a dar por sentados estos
 detalles, ya que el navegador los gestiona por ti.</p>
 <p>Como resultado, se han desarrollado bibliotecas de terceros que envuelven las
-API integradas y proporcionan una API más sencilla que se ajusta mejor a la
+API integradas y proporcionan un API más sencilla que se ajusta mejor a la
 experiencia cotidiana del navegador. Vamos a utilizar una de esas bibliotecas,
-llamada <a href="https://www.python-httpx.org"><code>httpx</code></a>, para acceder a una API
-sencilla.</p>
-<p>Añadamos una llamada a la API <code>httpx</code> a nuestra aplicación. En primer lugar, al
+llamada <a href="https://www.python-httpx.org"><code>httpx</code></a> —para acceder a un API sencilla.</p>
+<p>Añadamos una invocación al API <code>httpx</code> a nuestra aplicación. En primer lugar, al
 igual que con <code>faker</code> en el <a href="../tutorial-7/">paso anterior</a>, debemos indicar a
 briefcase que instale <code>httpx</code> cuando compile nuestra aplicación. Modifique la
 configuración <code>requires</code> en nuestro <code>pyproject.toml</code> para incluir el nuevo
@@ -1725,8 +1724,7 @@ requisito:</p>
 <p>Añade un import al principio de <code>app.py</code> para importar <code>httpx</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
 </code></pre></div>
-<p>Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de eventos
-<code>say_hello()</code> para que se vea así:</p>
+<p>Después modifica el manejador de eventos <code>say_hello()</code> tal que se vea como esto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
@@ -1741,10 +1739,10 @@ requisito:</p>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Esto cambiará la llamada de retorno <code>say_hello()</code> para que cuando sea invocada,
-lo haga:</p>
+<p>Esto cambiará la retro‐invocación <code>say_hello()</code> para que cuando sea invocada, lo
+haga:</p>
 <ul>
-<li>Realiza una solicitud GET en la API del tutorial para recuperar un mensaje.</li>
+<li>realiza una solicitud GET en el API del tutorial para recuperar un mensaje;</li>
 <li>decodificar la respuesta como JSON;</li>
 <li>extraer el cuerpo del mensaje; y</li>
 <li>Incluye el cuerpo de ese mensaje como texto del diálogo, en lugar del texto
@@ -1764,8 +1762,8 @@ requisitos, utilizando el argumento <code>-r</code>:</p>
 <span class="go">[helloworld] Starting in dev mode...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de
-diálogo parecido a:</p>
+<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido
+a algo como:</p>
 <p>Hola Mundo Tutorial 8 diálogo, en macOS](../images/macOS/tutorial-8.png)</p>
 <p>/// subtítulo</p>
 </div>
@@ -1782,8 +1780,8 @@ diálogo parecido a:</p>
 <span class="go">[helloworld] Starting in dev mode...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de
-diálogo parecido a:</p>
+<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido
+a algo como:</p>
 <p><a href="../../images/linux/tutorial-8.png">Hola Mundo Tutorial 8 diálogo, en Linux</a></p>
 <p>/// subtítulo</p>
 </div>
@@ -1800,8 +1798,8 @@ diálogo parecido a:</p>
 <span class="go">[helloworld] Starting in dev mode...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de
-diálogo parecido a:</p>
+<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido
+a algo como:</p>
 <p><a href="../../images/windows/tutorial-8.png">Hola Mundo Tutorial 8 diálogo, en Windows</a></p>
 <p>/// subtítulo</p>
 </div>
