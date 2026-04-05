@@ -1674,11 +1674,11 @@ aria-label="页眉"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>new
 <span class="go">...</span>
-<span class="go">[hellocamera] Generated new application &#39;Hello Camera&#39;</span>
+<span class="go">[hellocamera] 已生成新应用程序“Hello Camera”</span>
 
-<span class="go">To run your application, type:</span>
+<span class="go">要运行您的应用程序，请输入：</span>
 
-<span class="gp">    $ </span><span class="nb">cd</span><span class="w"> </span>hellocamera
+<span class="gp"> $ </span><span class="nb">cd</span><span class="w"> </span>hellocamera
 <span class="gp">    $ </span>briefcase<span class="w"> </span>dev
 
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>hellocamera
@@ -1691,44 +1691,44 @@ aria-label="页眉"
 
 <span class="k">class</span><span class="w"> </span><span class="nc">HelloCamera</span><span class="p">(</span><span class="n">toga</span><span class="o">.</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">startup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">()</span>
+    <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">()</span>
 
 <span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">photo</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">ImageView</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-</span><span class="hll">        <span class="n">camera_button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-</span><span class="hll">            <span class="s2">&quot;Take photo&quot;</span><span class="p">,</span>
-</span><span class="hll">            <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_photo</span><span class="p">,</span>
-</span><span class="hll">            <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-</span><span class="hll">        <span class="p">)</span>
+</span><span class="hll"> <span class="n">camera_button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
+</span><span class="hll"> <span class="s2">&quot;拍摄照片&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_photo</span><span class="p">,</span>
+</span><span class="hll"> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+</span><span class="hll"> <span class="p">)</span>
 </span><span class="hll">
-</span><span class="hll">        <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="p">)</span>
-</span><span class="hll">        <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">camera_button</span><span class="p">)</span>
+</span><span class="hll"> <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="p">)</span>
+</span><span class="hll"> <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">camera_button</span><span class="p">)</span>
 </span><span class="hll">
 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+ <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
+ <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="hll">    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">take_photo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-</span><span class="hll">        <span class="k">try</span><span class="p">:</span>
-</span><span class="hll">            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">has_permission</span><span class="p">:</span>
-</span><span class="hll">                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">request_permission</span><span class="p">()</span>
+<span class="hll"> <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">take_photo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span><span class="hll"> <span class="k">try</span><span class="p">:</span>
+</span><span class="hll"> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">has_permission</span><span class="p">:</span>
+</span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">request_permission</span><span class="p">()</span>
 </span><span class="hll">
 </span><span class="hll">            <span class="n">image</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">take_photo</span><span class="p">()</span>
-</span><span class="hll">            <span class="k">if</span> <span class="n">image</span><span class="p">:</span>
-</span><span class="hll">                <span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">image</span>
-</span><span class="hll">        <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
-</span><span class="hll">            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-</span><span class="hll">                <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll">                    <span class="s2">&quot;Oh no!&quot;</span><span class="p">,</span>
-</span><span class="hll">                    <span class="s2">&quot;The Camera API is not implemented on this platform&quot;</span><span class="p">,</span>
-</span><span class="hll">                <span class="p">)</span>
-</span><span class="hll">            <span class="p">)</span>
-</span><span class="hll">        <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
-</span><span class="hll">            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-</span><span class="hll">                <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll">                    <span class="s2">&quot;Oh no!&quot;</span><span class="p">,</span>
-</span><span class="hll">                    <span class="s2">&quot;You have not granted permission to take photos&quot;</span><span class="p">,</span>
-</span><span class="hll">                <span class="p">)</span>
-</span><span class="hll">            <span class="p">)</span>
+</span><span class="hll"> <span class="k">if</span> <span class="n">image</span><span class="p">:</span>
+</span><span class="hll"> <span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">image</span>
+</span><span class="hll"> <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
+</span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+</span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+</span><span class="hll"> <span class="s2">&quot;哎呀！&quot;</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">&quot;此平台未实现相机 API&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="p">)</span>
+</span><span class="hll"> <span class="p">)</span>
+</span><span class="hll"> <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
+</span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+</span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+</span><span class="hll"> <span class="s2">&quot;哎呀！&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">&quot;您尚未授予拍照权限&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="p">)</span>
+</span><span class="hll"> <span class="p">)</span>
 </span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
@@ -1750,7 +1750,7 @@ aria-label="页眉"
 <p>不过，这种请求分为两部分。第一部分在我们刚刚看到的代码中；但在应用程序请求权限之前，它需要声明要请求的权限。</p>
 <p>每个平台所需的权限略有不同，但 Briefcase 为许多常见硬件权限提供了跨平台表示。在应用程序的 <code>pyproject.toml</code> 文件的
 <code>[tool.briefcase.app.hellocamera]</code>配置部分，添加以下内容（就在 <code>sources</code> 声明的上方）：</p>
-<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;App will take mugshots.&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;应用将拍摄面部照片。&quot;</span>
 </code></pre></div>
 <p>这将声明您的应用程序需要访问摄像头，并提供一个简短的说明，说明为什么需要使用摄像头。某些平台（尤其是 macOS 和
 iOS）需要此说明，并将在权限对话框显示时作为附加信息显示给用户。</p>

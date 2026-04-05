@@ -1696,21 +1696,21 @@ API调用。首先，如同在[上一步]<code>faker</code>中处理(tutorial-7.
 <span class="p">]</span>
 </code></pre></div>
 <p>在 <code>app.py</code> 顶部添加导入，以导入 <code>httpx</code>：</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
+<div class="highlight"><pre><span></span><code><span class="n">导入</span> <span class="n">httpx</span>
 </code></pre></div>
 <p>然后修改 <code>say_hello()</code> 回调，使其看起来像这样:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://tutorial.beeware.org/tutorial/message.json&quot;</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://tutorial.beeware.org/tutorial/message.json&quot;</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
-    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">&quot;A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+ <span class="sa">f</span><span class="s2">&quot;来自 </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2"> 的消息：</span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>这将更改<code>say_hello()</code> 回调，使其在被调用时，会</p>
@@ -1727,9 +1727,9 @@ API调用。首先，如同在[上一步]<code>faker</code>中处理(tutorial-7.
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] 正在安装依赖项...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 正在以开发模式启动...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>输入名称并按下按钮后，您会看到一个类似如下的对话框：</p>
@@ -1741,9 +1741,9 @@ API调用。首先，如同在[上一步]<code>faker</code>中处理(tutorial-7.
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] 正在安装依赖项...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 正在以开发模式启动...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>输入名称并按下按钮后，您会看到一个类似如下的对话框：</p>
@@ -1755,9 +1755,9 @@ API调用。首先，如同在[上一步]<code>faker</code>中处理(tutorial-7.
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev -r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] 正在安装依赖项...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 正在以开发模式启动...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>输入名称并按下按钮后，您会看到一个类似如下的对话框：</p>
@@ -1781,7 +1781,7 @@ API调用。首先，如同在[上一步]<code>faker</code>中处理(tutorial-7.
 <h2 id="_1">图形用户界面事件循环<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>要理解为什么会出现这种情况，我们需要深入了解图形用户界面应用程序的工作原理。具体细节因平台而异，但无论使用何种平台或图形用户界面环境，高层概念都是相同的。</p>
 <p>从根本上说，图形用户界面应用程序就是一个单一的循环，看起来就像:</p>
-<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="ow">not</span> <span class="n">app</span><span class="o">.</span><span class="n">quit_requested</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="n">在</span> <span class="n">app</span><span class="o">.</span><span class="n">quit_requested</span><span class="p">()</span> <span class="n">未被调用期间</span><span class="err">：</span>
     <span class="n">app</span><span class="o">.</span><span class="n">process_events</span><span class="p">()</span>
     <span class="n">app</span><span class="o">.</span><span class="n">redraw</span><span class="p">()</span>
 </code></pre></div>
@@ -1811,15 +1811,15 @@ API调用。首先，如同在[上一步]<code>faker</code>中处理(tutorial-7.
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/posts/42&quot;</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/posts/42&quot;</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
-    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">&quot;A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+ <span class="sa">f</span><span class="s2">&quot;来自 </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2"> 的消息：</span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>与上一版本相比，该代码只有 4 处改动：</p>

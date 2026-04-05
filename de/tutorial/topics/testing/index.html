@@ -1648,7 +1648,7 @@ zwei Verzeichnisse auf oberster Ebene generiert: <code>src</code> und <code>test
 Testsuite. Im Ordner <code>tests</code> befindet sich eine Datei namens <code>test_app.py</code> mit
 folgendem Inhalt:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;An initial test for the app&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Ein erster Test für die App&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
 <p>Dies ist ein <a href="https://pytest.org">Pytest</a> <em>Testfall</em> – ein Code-Block, der
@@ -1664,70 +1664,70 @@ installiert werden:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] Anforderungen werden installiert...</span>
 <span class="go">...</span>
-<span class="go">Installing dev requirements... done</span>
+<span class="go">Entwicklungsanforderungen werden installiert... fertig</span>
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite wird in der Entwicklungsumgebung ausgeführt...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
-<span class="go">platform darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0 -- /Users/brutus/beeware-tutorial/beeware-venv/bin/python3.11</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
+<span class="go">Plattform darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0 -- /Users/brutus/beeware-tutorial/beeware-venv/bin/python3.11</span>
 <span class="go">cachedir: /var/folders/b_/khqk71xd45d049kxc_59ltp80000gn/T/.pytest_cache</span>
 <span class="go">rootdir: /Users/brutus</span>
 <span class="go">plugins: anyio-3.6.2</span>
-<span class="go">collecting ... collected 1 item</span>
+<span class="go">Sammeln ... 1 Element gesammelt</span>
 
-<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_first BESTANDEN [100 %]</span>
 
-<span class="go">============================== 1 passed in 0.01s ===============================</span>
+<span class="go">============================== 1 bestanden in 0,01 s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] Anforderungen werden installiert...</span>
 <span class="go">...</span>
-<span class="go">Installing dev requirements... done</span>
+<span class="go">Installiere Entwicklungsvoraussetzungen... fertig</span>
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Führe Testsuite in der Entwicklungsumgebung aus...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
-<span class="go">platform linux -- Python 3.11.0</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
+<span class="go">Plattform Linux -- Python 3.11.0</span>
 <span class="go">pytest==7.2.0</span>
 <span class="go">py==1.11.0</span>
 <span class="go">pluggy==1.0.0</span>
 <span class="go">cachedir: /tmp/.pytest_cache</span>
 <span class="go">rootdir: /home/brutus</span>
 <span class="go">plugins: anyio-3.6.2</span>
-<span class="go">collecting ... collected 1 item</span>
+<span class="go">Sammeln ... 1 Element gesammelt</span>
 
-<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_first BESTANDEN [100%]</span>
 
-<span class="go">============================== 1 passed in 0.01s ===============================</span>
+<span class="go">============================== 1 bestanden in 0,01 s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test -r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] Anforderungen werden installiert...</span>
 <span class="go">...</span>
-<span class="go">Installing dev requirements... done</span>
+<span class="go">Entwicklungsanforderungen werden installiert... fertig</span>
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite wird in der Entwicklungsumgebung ausgeführt...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
-<span class="go">platform win32 -- Python 3.11.0</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
+<span class="go">Plattform win32 -- Python 3.11.0</span>
 <span class="go">pytest==7.2.0</span>
 <span class="go">py==1.11.0</span>
 <span class="go">pluggy==1.0.0</span>
 <span class="go">cachedir: C:\Users\brutus\AppData\Local\Temp\.pytest_cache</span>
 <span class="go">rootdir: C:\Users\brutus</span>
 <span class="go">plugins: anyio-3.6.2</span>
-<span class="go">collecting ... collected 1 item</span>
+<span class="go">Sammeln ... 1 Element gesammelt</span>
 
-<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_first BESTANDEN [100%]</span>
 
-<span class="go">============================== 1 passed in 0.01s ===============================</span>
+<span class="go">============================== 1 bestanden in 0,01 s ===============================</span>
 </code></pre></div>
 </div>
 </div>
@@ -1742,15 +1742,15 @@ den Inhalt von <code>test_app.py</code> durch den folgenden:</p>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_name</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If a name is provided, the greeting includes the name&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Wenn ein Name angegeben wird, enthält die Begrüßung den Namen&quot;&quot;&quot;</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, Alice&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hallo, Alice&quot;</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_empty</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If a name is not provided, a generic greeting is provided&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Wenn kein Name angegeben wird, wird eine allgemeine Begrüßung ausgegeben&quot;&quot;&quot;</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hallo, Fremder&quot;</span>
 </code></pre></div>
 <p>Dies definiert zwei neue Tests, die beiden erwarteten Verhaltensweisen
 überprüfen: die Ausgabe, wenn ein Name angegeben wird, und die Ausgabe, wenn der
@@ -1763,46 +1763,46 @@ die Option <code>--test</code> verwenden:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung wird ausgeführt...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 2 items</span>
+<span class="go">Sammeln ... 2 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [100%]</span>
 
-<span class="go">============================== 2 passed in 0.11s ===============================</span>
+<span class="go">============================== 2 bestanden in 0,11 s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung wird ausgeführt...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 2 items</span>
+<span class="go">Sammeln ... 2 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [100%]</span>
 
-<span class="go">============================== 2 passed in 0.11s ===============================</span>
+<span class="go">============================== 2 bestanden in 0,11 s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung wird ausgeführt...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 2 items</span>
+<span class="go">Sammeln ... 2 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [100%]</span>
 
-<span class="go">============================== 2 passed in 0.11s ===============================</span>
+<span class="go">============================== 2 bestanden in 0,11 s ===============================</span>
 </code></pre></div>
 </div>
 </div>
@@ -1815,9 +1815,9 @@ Begrüßung für einen bestimmten Benutzer zu erhalten. Wir können damit beginn
 indem wir einen Testfall für das neue Verhalten, das wir gerne sehen möchten, am
 Ende von <code>test_app.py</code> hinzufügen:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Wenn der Name Brutus lautet, wird eine spezielle Begrüßung ausgegeben&quot;&quot;&quot;</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hütet euch vor den IDEs von Python!&quot;</span>
 </code></pre></div>
 <p>Führen Sie dann die Testsuite mit diesem neuen Test aus:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
@@ -1825,93 +1825,93 @@ Ende von <code>test_app.py</code> hinzufügen:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung ausführen...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Datensammlung ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus FEHLGESCHLAGEN [100%]</span>
 
-<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">=================================== FEHLER ===================================</span>
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
+<span class="go"> &quot;&quot;&quot;Wenn der Name Brutus lautet, wird eine spezielle Begrüßung ausgegeben&quot;&quot;&quot;</span>
 
-<span class="go">&gt;       assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
-<span class="go">E         - BeeWare the IDEs of Python!</span>
-<span class="go">E         + Hello, Brutus</span>
+<span class="go">&gt; assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E - BeeWare the IDEs of Python!</span>
+<span class="go">E + Hallo, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
-<span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
-<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+<span class="go">=========================== Kurze Testzusammenfassung ============================</span>
+<span class="go">FEHLGESCHLAGEN tests/test_app.py::test_brutus - AssertionError: assert &#39;Hallo, Brutus...</span>
+<span class="go">========================= 1 fehlgeschlagen, 2 bestanden in 0,14 s ==========================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung ausführen...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Sammeln ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus FEHLGESCHLAGEN [100%]</span>
 
-<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">=================================== FEHLER ===================================</span>
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
-<span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, provide a special greeting&quot;&quot;&quot;</span>
+<span class="go"> def test_brutus():</span>
+<span class="go"> &quot;&quot;&quot;Wenn der Name Brutus lautet, gib eine spezielle Begrüßung aus&quot;&quot;&quot;</span>
 
-<span class="go">&gt;       assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
-<span class="go">E         - BeeWare the IDEs of Python!</span>
-<span class="go">E         + Hello, Brutus</span>
+<span class="go">&gt; assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E - BeeWare the IDEs of Python!</span>
+<span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
-<span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
-<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+<span class="go">=========================== Kurze Testzusammenfassung ============================</span>
+<span class="go">FEHLGESCHLAGEN tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">========================= 1 fehlgeschlagen, 2 bestanden in 0,14 s ==========================</span>
 
-<span class="go">============================== 2 passed in 0.11s ===============================</span>
+<span class="go">============================== 2 bestanden in 0,11 s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung ausführen...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Datensammlung ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66 %]</span>
+<span class="go">tests/test_app.py::test_brutus FEHLGESCHLAGEN [100 %]</span>
 
-<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">=================================== FEHLER ===================================</span>
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, provide a special greeting&quot;&quot;&quot;</span>
+<span class="go"> &quot;&quot;&quot;Wenn der Name Brutus ist, gib eine spezielle Begrüßung aus&quot;&quot;&quot;</span>
 
-<span class="gp">&gt;</span>       assert greeting(<span class="s2">&quot;Brutus&quot;</span>) == <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
-<span class="go">E         - BeeWare the IDEs of Python!</span>
-<span class="go">E         + Hello, Brutus</span>
+<span class="gp">&gt;</span> assert greeting(<span class="s2">&quot;Brutus&quot;</span>) == <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E - BeeWare the IDEs of Python!</span>
+<span class="go">E + Hallo, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
-<span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
-<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+<span class="go">=========================== Kurze Testzusammenfassung ============================</span>
+<span class="go">FEHLGESCHLAGEN tests/test_app.py::test_brutus - AssertionError: assert &#39;Hallo, Brutus...</span>
+<span class="go">========================= 1 fehlgeschlagen, 2 bestanden in 0,14 s ==========================</span>
 </code></pre></div>
 </div>
 </div>
@@ -1923,12 +1923,12 @@ Implementierung von <code>Gruß()</code> in <code>src/helloworld/app.py</code>, 
 zu erhalten:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Hütet euch vor den IDEs von Python!&quot;</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hallo, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Hallo, Fremder&quot;</span>
 </code></pre></div>
 <p>Wenn wir die Tests noch einmal durchführen, sehen wir, dass die Tests bestanden
 wurden:</p>
@@ -1937,49 +1937,49 @@ wurden:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung ausführen...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Datensammlung ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66 %]</span>
+<span class="go">tests/test_app.py::test_brutus BESTANDEN [100 %]</span>
 
-<span class="go">============================== 3 passed in 0.15s ===============================</span>
+<span class="go">============================== 3 bestanden in 0,15 s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung ausführen...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Datensammlung ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66 %]</span>
+<span class="go">tests/test_app.py::test_brutus BESTANDEN [100 %]</span>
 
-<span class="go">============================== 3 passed in 0.15s ===============================</span>
+<span class="go">============================== 3 bestanden in 0,15 s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] Testsuite in der Entwicklungsumgebung ausführen...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Datensammlung ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66 %]</span>
+<span class="go">tests/test_app.py::test_brutus BESTANDEN [100 %]</span>
 
-<span class="go">============================== 3 passed in 0.15s ===============================</span>
+<span class="go">============================== 3 bestanden in 0,15 s ===============================</span>
 </code></pre></div>
 </div>
 </div>
@@ -1999,106 +1999,106 @@ Entwicklungsumgebung:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
-<span class="go">Installing tests... done</span>
+<span class="go">[helloworld] Anwendungscode wird aktualisiert...</span>
+<span class="go">Installation von src/helloworld... fertig</span>
+<span class="go">Installation der Tests... fertig</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">[helloworld] Aktualisierung der Anforderungen...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Built build/helloworld/macos/app/Hello World.app (test mode)</span>
+<span class="go">[helloworld] Erstellen von build/helloworld/macos/app/Hello World.app (Testmodus)</span>
 
-<span class="go">[helloworld] Starting test suite...</span>
+<span class="go">[helloworld] Starten der Testsuite...</span>
 <span class="go">===========================================================================</span>
-<span class="go">Configuring isolated Python...</span>
-<span class="go">Pre-initializing Python runtime...</span>
+<span class="go">Konfiguration der isolierten Python-Umgebung...</span>
+<span class="go">Python-Laufzeitumgebung wird vorinitialisiert...</span>
 <span class="go">PythonHome: /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python311.zip</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib/lib-dynload</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app_packages</span>
-<span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app</span>
-<span class="go">Configure argc/argv...</span>
-<span class="go">Initializing Python runtime...</span>
-<span class="go">Installing Python NSLog handler...</span>
-<span class="go">Running app module: tests.helloworld</span>
+<span class="go">- /Benutzer/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app</span>
+<span class="go">argc/argv konfigurieren...</span>
+<span class="go">Python-Laufzeitumgebung initialisieren...</span>
+<span class="go">Python-NSLog-Handler wird installiert...</span>
+<span class="go">App-Modul wird ausgeführt: tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Sammeln ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus BESTANDEN [100%]</span>
 
-<span class="go">============================== 3 passed in 0.21s ===============================</span>
+<span class="go">============================== 3 bestanden in 0,21 s ===============================</span>
 
-<span class="go">[helloworld] Test suite passed!</span>
+<span class="go">[helloworld] Testsuite bestanden!</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">[helloworld] Anwendungskonfiguration wird fertiggestellt...</span>
+<span class="go">Zielplattform: ubuntu:jammy (Vendor-Base-Debian)</span>
+<span class="go">Glibc-Version wird ermittelt... fertig</span>
+<span class="go">Glibc 2.35 wird verwendet</span>
+<span class="go">Python 3.10 wird verwendet</span>
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
-<span class="go">Installing tests... done</span>
+<span class="go">[helloworld] Anwendungscode wird aktualisiert...</span>
+<span class="go">Installiere src/helloworld... fertig</span>
+<span class="go">Installiere Tests... fertig</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">[helloworld] Aktualisiere Anforderungen...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (test mode)</span>
+<span class="go">[helloworld] Erstellte build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (Testmodus)</span>
 
-<span class="go">[helloworld] Starting test suite...</span>
+<span class="go">[helloworld] Testsuite wird gestartet...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Sammeln ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33 %]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66 %]</span>
+<span class="go">tests/test_app.py::test_brutus BESTANDEN [100 %]</span>
 
-<span class="go">============================== 3 passed in 0.21s ===============================</span>
+<span class="go">============================== 3 bestanden in 0,21 s ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run --test -r
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
-<span class="go">Installing tests... done</span>
+<span class="go">[helloworld] Anwendungscode wird aktualisiert...</span>
+<span class="go">Installation von src/helloworld... fertig</span>
+<span class="go">Installation der Tests... fertig</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">[helloworld] Anforderungen werden aktualisiert...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Built build\helloworld\windows\app\src\Hello World.exe (test mode)</span>
+<span class="go">[helloworld] Erstellte build\helloworld\windows\app\src\Hello World.exe (Testmodus)</span>
 
 <span class="go">===========================================================================</span>
-<span class="go">Log started: 2022-12-02 10:57:34Z</span>
-<span class="go">PreInitializing Python runtime...</span>
+<span class="go">Protokoll gestartet: 02.12.2022 10:57:34Z</span>
+<span class="go">Vorinitialisierung der Python-Laufzeitumgebung...</span>
 <span class="go">PythonHome: C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\python311.zip</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app_packages</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app</span>
-<span class="go">Configure argc/argv...</span>
-<span class="go">Initializing Python runtime...</span>
-<span class="go">Running app module: tests.helloworld</span>
+<span class="go">Konfiguriere argc/argv...</span>
+<span class="go">Initialisiere Python-Laufzeitumgebung...</span>
+<span class="go">Führe App-Modul aus: tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= Testsitzung beginnt ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">Sammeln ... 3 Elemente gesammelt</span>
 
-<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+<span class="go">tests/test_app.py::test_name BESTANDEN [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty BESTANDEN [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus BESTANDEN [100%]</span>
 
-<span class="go">============================== 3 passed in 0.21s ===============================</span>
+<span class="go">============================== 3 bestanden in 0,21 s ===============================</span>
 </code></pre></div>
 </div>
 </div>

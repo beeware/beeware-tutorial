@@ -1733,15 +1733,15 @@ aria-label="頁首"
     ├── README.rst
     ├── src/
     │   └── helloworld/
-    │       ├── app.py
-    │       ├── __init__.py
-    │       ├── __main__.py
-    │       └── resources/
-    │           └── README
+    │ ├── app.py
+    │ ├── __init__.py
+    │ ├── __main__.py
+    │ └── resources/
+    │ └── README
     └── tests/
         ├── helloworld.py
-        ├── __init__.py
-        └── test_app.py
+ ├── __init__.py
+ └── test_app.py
 </code></pre></div>
 <p>這個框架實際上是一個功能齊全的應用程式，無需添加任何其他內容。 <code>src</code> 資料夾包含應用程式的所有程式碼， <code>tests</code> 資料夾包含初始測試套件，
 <code>pyproject.toml</code> 檔案描述如何打包應用程式以進行分發。如果您在編輯器中開啟 <code>pyproject.toml</code> ，您將看到剛剛提供給
@@ -1755,14 +1755,14 @@ aria-label="頁首"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] 正在啟動開發環境...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cpython-313-darwin)... done</span>
+<span class="go">建立虛擬環境 (dev.cpython-313-darwin)... 完成</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] 安裝所需套件...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 啟動開發模式...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1770,14 +1770,14 @@ aria-label="頁首"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] 正在啟動 dev 環境...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cpython-313-x86_64-linux-gnu)... done</span>
+<span class="go">建立虛擬環境 (dev.cpython-313-x86_64-linux-gnu)... 完成</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] 安裝所需套件...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 啟動開發模式...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1785,14 +1785,14 @@ aria-label="頁首"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span><span class="k">cd</span> helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] 正在啟用開發環境...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cp313-win_amd64)... done</span>
+<span class="go">建立虛擬環境 (dev.cp313-win_amd64)... 完成</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] 安裝所需套件...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 啟動開發模式...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1826,9 +1826,9 @@ aria-label="頁首"
 <div class="admonition">
 <p class="admonition-title">無效需求或 pip 無法連線</p>
 <p>如果遇到錯誤：</p>
-<div class="highlight"><pre><span></span><code><span class="go">Unable to install requirements. This may be because one of your</span>
-<span class="go">requirements is invalid, or because pip was unable to connect</span>
-<span class="go">to the PyPI server.</span>
+<div class="highlight"><pre><span></span><code><span class="go">無法安裝所需套件。這可能是因為您的</span>
+<span class="go">其中一項需求無效，或是 pip 無法連線</span>
+<span class="go">至 PyPI 伺服器。</span>
 </code></pre></div>
 <p>確認您正在執行 <a class="autorefs autorefs-internal" title="安裝 Python" href="../tutorial-0/#install-python">本教學支援的 python 版本</a>。</p>
 <p>如果您的 python 版本不是**支援的版本，您必須重新啟動教學。</p>

@@ -1723,22 +1723,22 @@ configuração <code>httpx</code> em nosso <code>requires</code> para incluir o 
 <span class="p">]</span>
 </code></pre></div>
 <p>Adicione uma importação na parte superior do <code>app.py</code> para importar o <code>httpx</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
+<div class="highlight"><pre><span></span><code><span class="n">importar</span> <span class="n">httpx</span>
 </code></pre></div>
 <p>Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos
 <code>say_hello()</code> para que ele tenha a seguinte aparência:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://tutorial.beeware.org/tutorial/message.json&quot;</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://tutorial.beeware.org/tutorial/message.json&quot;</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
-    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">&quot;A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+ <span class="sa">f</span><span class="s2">&quot;Uma mensagem de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>Isso alterará a chamada de retorno <code>say_hello()</code> para que, quando for chamada,
@@ -1759,9 +1759,9 @@ usando o argumento <code>-r</code>:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] Instalando os pré-requisitos...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Iniciando no modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Ao inserir um nome e pressionar o botão, você verá uma caixa de diálogo
@@ -1775,9 +1775,9 @@ macOS" src="../../images/macOS/tutorial-8.png" /></p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] Instalando os pré-requisitos...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Iniciando no modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Ao inserir um nome e pressionar o botão, você verá uma caixa de diálogo
@@ -1791,9 +1791,9 @@ Linux" src="../../images/linux/tutorial-8.png" /></p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev -r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] Instalando pré-requisitos...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Iniciando no modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Ao inserir um nome e pressionar o botão, você verá uma caixa de diálogo
@@ -1830,7 +1830,7 @@ como funciona um aplicativo de GUI. Os detalhes variam de acordo com a
 plataforma, mas os conceitos de alto nível são os mesmos, independentemente da
 plataforma ou do ambiente de GUI que você estiver usando.</p>
 <p>Um aplicativo de GUI é, basicamente, um único loop que se parece com:</p>
-<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="ow">not</span> <span class="n">app</span><span class="o">.</span><span class="n">quit_requested</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="n">enquanto</span> <span class="n">não</span> <span class="k">for</span> <span class="n">app</span><span class="o">.</span><span class="n">quit_requested</span><span class="p">():</span>
     <span class="n">app</span><span class="o">.</span><span class="n">process_events</span><span class="p">()</span>
     <span class="n">app</span><span class="o">.</span><span class="n">redraw</span><span class="p">()</span>
 </code></pre></div>
@@ -1896,15 +1896,15 @@ ferramentas e primitivas úteis para codificação assíncrona.</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/posts/42&quot;</span><span class="p">)</span>
+ <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/posts/42&quot;</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
-    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">&quot;A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+ <span class="sa">f</span><span class="s2">&quot;Uma mensagem de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>Há apenas 4 alterações nesse código em relação à versão anterior:</p>

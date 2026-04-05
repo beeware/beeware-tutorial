@@ -1609,26 +1609,26 @@ de implantação como um aplicativo de desktop. Primeiro, você executa o comand
 <code>create</code>, mas, desta vez, especificamos que queremos criar um aplicativo iOS:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Generating application template...</span>
-<span class="go">Using app template: https://github.com/beeware/briefcase-iOS-Xcode-template.git, branch v0.3.18</span>
+<span class="go">[helloworld] Gerando modelo de aplicativo...</span>
+<span class="go">Usando modelo de aplicativo: https://github.com/beeware/briefcase-iOS-Xcode-template.git, ramificação v0.3.18</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Installing support package...</span>
+<span class="go">[helloworld] Instalando pacote de suporte...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Installing application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Instalando código do aplicativo...</span>
+<span class="go">Instalando src/helloworld... concluído</span>
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] Instalando requisitos...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Installing application resources...</span>
+<span class="go">[helloworld] Instalando recursos do aplicativo...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
+<span class="go">[helloworld] Removendo conteúdo desnecessário do aplicativo...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Created build/helloworld/ios/xcode</span>
+<span class="go">[helloworld] Criado build/helloworld/ios/xcode</span>
 </code></pre></div>
 <p>Quando isso for concluído, teremos um diretório <code>build/helloworld/ios/xcode</code>
 contendo um projeto Xcode, bem como as bibliotecas de suporte e o código do
@@ -1637,14 +1637,14 @@ aplicativo necessários para o aplicativo.</p>
 <code>briefcase build iOS</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Updating app metadata...</span>
-<span class="go">Setting main module... done</span>
+<span class="go">[helloworld] Atualizando metadados do aplicativo...</span>
+<span class="go">Definindo o módulo principal... concluído</span>
 
-<span class="go">[helloworld] Building Xcode project...</span>
+<span class="go">[helloworld] Compilando projeto do Xcode...</span>
 <span class="go">...</span>
-<span class="go">Building... done</span>
+<span class="go">Compilando... concluído</span>
 
-<span class="go">[helloworld] Built build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
+<span class="go">[helloworld] Compilado em build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
 </code></pre></div>
 <p>Agora estamos prontos para executar nosso aplicativo, usando o <code>briefcase run
 iOS</code>. Será solicitado que você selecione um dispositivo para o qual compilar; se
@@ -1655,41 +1655,41 @@ mínimo, a lista de dispositivos provavelmente será diferente. Para nossos
 propósitos, não importa qual simulador você escolherá.</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
-<span class="go">Select simulator device:</span>
+<span class="go">Selecione o dispositivo do simulador:</span>
 
-<span class="go">   1) iPad (10th generation)</span>
-<span class="go">   2) iPad Air (5th generation)</span>
-<span class="go">   3) iPad Pro (11-inch) (4th generation)</span>
-<span class="go">   4) iPad Pro (12.9-inch) (6th generation)</span>
-<span class="go">   5) iPad mini (6th generation)</span>
+<span class="go">   1) iPad (10ª geração)</span>
+<span class="go">   2) iPad Air (5ª geração)</span>
+<span class="go">   3) iPad Pro (11 polegadas) (4ª geração)</span>
+<span class="go">   4) iPad Pro (12,9 polegadas) (6ª geração)</span>
+<span class="go">   5) iPad mini (6ª geração)</span>
 <span class="go">   6) iPhone 14</span>
 <span class="go">   7) iPhone 14 Plus</span>
 <span class="go">   8) iPhone 14 Pro</span>
 <span class="go">   9) iPhone 14 Pro Max</span>
-<span class="go">   10) iPhone SE (3rd generation)</span>
+<span class="go">   10) iPhone SE (3ª geração)</span>
 
 <span class="go">&gt;  10</span>
 
-<span class="go">In the future, you could specify this device by running:</span>
+<span class="go">No futuro, você poderá especificar este dispositivo executando:</span>
 
-<span class="gp">    $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3rd generation)::iOS 16.2&quot;</span>
+<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)::iOS 16.2&quot;</span>
 
-<span class="go">or:</span>
+<span class="go">ou:</span>
 
-<span class="gp">    $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
+<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
-<span class="go">[helloworld] Starting app on an iPhone SE (3rd generation) running iOS 16.2 (device UDID 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
-<span class="go">Booting simulator... done</span>
-<span class="go">Opening simulator... done</span>
+<span class="go">[helloworld] Iniciando o aplicativo em um iPhone SE (3ª geração) com iOS 16.2 (UDID do dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
+<span class="go">Inicializando o simulador... concluído</span>
+<span class="go">Abrindo o simulador... concluído</span>
 
-<span class="go">[helloworld] Installing app...</span>
-<span class="go">Uninstalling any existing app version... done</span>
-<span class="go">Installing new app version... done</span>
+<span class="go">[helloworld] Instalando o aplicativo...</span>
+<span class="go">Desinstalando qualquer versão existente do aplicativo... concluído</span>
+<span class="go">Instalando nova versão do aplicativo... concluído</span>
 
-<span class="go">[helloworld] Starting app...</span>
-<span class="go">Launching app... done</span>
+<span class="go">[helloworld] Iniciando o aplicativo...</span>
+<span class="go">Iniciando o aplicativo... concluído</span>
 
-<span class="go">[helloworld] Following simulator log output (type CTRL-C to stop log)...</span>
+<span class="go">[helloworld] Saída do log do simulador a seguir (digite CTRL-C para interromper o log)...</span>
 <span class="go">===========================================================================</span>
 <span class="go">...</span>
 </code></pre></div>
@@ -1706,12 +1706,12 @@ possa testar novas alterações sem reiniciar o simulador.</p>
 <p>Se você souber antecipadamente qual simulador de iOS deseja usar, poderá dizer
 ao Briefcase para usar esse simulador fornecendo uma opção <code>-d</code> (ou <code>--device</code>).
 Usando o nome do dispositivo que você selecionou ao criar o aplicativo, execute:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3rd generation)&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)&quot;</span>
 </code></pre></div>
 <p>Se você tiver várias versões do iOS disponíveis, o Briefcase escolherá a versão
 mais alta do iOS; se você quiser escolher uma versão específica do iOS, diga a
 ele para usar essa versão específica:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3rd generation)::iOS 15.5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)::iOS 15.5&quot;</span>
 </code></pre></div>
 <p>Ou você pode nomear um UDID de dispositivo específico:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E

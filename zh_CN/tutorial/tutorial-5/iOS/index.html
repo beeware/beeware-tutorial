@@ -1601,79 +1601,79 @@ Store</a> 免费下载。当 Xcode
 <p>将应用程序部署到 iOS 的过程与部署桌面应用程序的过程非常相似。首先，运行 <code>create</code> 命令，但这次我们指定要创建一个 iOS 应用程序：</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Generating application template...</span>
-<span class="go">Using app template: https://github.com/beeware/briefcase-iOS-Xcode-template.git, branch v0.3.18</span>
+<span class="go">[helloworld] 生成应用程序模板...</span>
+<span class="go">使用应用模板：https://github.com/beeware/briefcase-iOS-Xcode-template.git，分支 v0.3.18</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Installing support package...</span>
+<span class="go">[helloworld] 安装支持包...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Installing application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] 安装应用程序代码...</span>
+<span class="go">正在安装 src/helloworld... 完成</span>
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] 正在安装依赖项...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Installing application resources...</span>
+<span class="go">[helloworld] 正在安装应用程序资源...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
+<span class="go">[helloworld] 正在移除不需要的应用程序内容...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Created build/helloworld/ios/xcode</span>
+<span class="go">[helloworld] 已创建 build/helloworld/ios/xcode</span>
 </code></pre></div>
 <p>完成此操作后，我们将拥有一个包含 Xcode 项目、支持库和应用程序所需应用程序代码的 <code>build/helloworld/ios/xcode</code> 目录。</p>
 <p>然后，您可以使用 <code>briefcase build iOS</code> 来编译应用程序：</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Updating app metadata...</span>
-<span class="go">Setting main module... done</span>
+<span class="go">[helloworld] 更新应用元数据...</span>
+<span class="go">设置主模块... 完成</span>
 
-<span class="go">[helloworld] Building Xcode project...</span>
+<span class="go">[helloworld] 构建 Xcode 项目...</span>
 <span class="go">...</span>
-<span class="go">Building... done</span>
+<span class="go">构建中... 完成</span>
 
-<span class="go">[helloworld] Built build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
+<span class="go">[helloworld] 已构建 build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
 </code></pre></div>
 <p>现在我们可以使用 <code>briefcase run iOS</code> 运行应用程序了。Briefcase 会提示你选择要编译的设备；如果你安装了多个 iOS SDK
 版本的模拟器，可能还会询问你要针对哪个 iOS 版本。所显示的选项可能与此输出中显示的选项不同，至少设备列表可能不同。就我们而言，选择哪个模拟器并不重要。</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
-<span class="go">Select simulator device:</span>
+<span class="go">选择模拟器设备：</span>
 
-<span class="go">   1) iPad (10th generation)</span>
-<span class="go">   2) iPad Air (5th generation)</span>
-<span class="go">   3) iPad Pro (11-inch) (4th generation)</span>
-<span class="go">   4) iPad Pro (12.9-inch) (6th generation)</span>
-<span class="go">   5) iPad mini (6th generation)</span>
+<span class="go">   1) iPad（第10代）</span>
+<span class="go">   2) iPad Air（第5代）</span>
+<span class="go">   3) iPad Pro（11英寸）（第4代）</span>
+<span class="go">   4) iPad Pro (12.9 英寸) (第 6 代)</span>
+<span class="go">   5) iPad mini (第 6 代)</span>
 <span class="go">   6) iPhone 14</span>
 <span class="go">   7) iPhone 14 Plus</span>
 <span class="go">   8) iPhone 14 Pro</span>
 <span class="go">   9) iPhone 14 Pro Max</span>
-<span class="go">   10) iPhone SE (3rd generation)</span>
+<span class="go">   10) iPhone SE (第 3 代)</span>
 
 <span class="go">&gt;  10</span>
 
-<span class="go">In the future, you could specify this device by running:</span>
+<span class="go">将来，您可以通过以下命令指定该设备：</span>
 
-<span class="gp">    $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3rd generation)::iOS 16.2&quot;</span>
+<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (第 3 代)::iOS 16.2&quot;</span>
 
-<span class="go">or:</span>
+<span class="go">或者：</span>
 
-<span class="gp">    $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
+<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
-<span class="go">[helloworld] Starting app on an iPhone SE (3rd generation) running iOS 16.2 (device UDID 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
-<span class="go">Booting simulator... done</span>
-<span class="go">Opening simulator... done</span>
+<span class="go">[helloworld] 在运行 iOS 16.2 的 iPhone SE（第 3 代）上启动应用（设备 UDID 2614A2DD-574F-4C1F-9F1E-478F32DE282E）</span>
+<span class="go">启动模拟器... 完成</span>
+<span class="go">打开模拟器... 完成</span>
 
-<span class="go">[helloworld] Installing app...</span>
-<span class="go">Uninstalling any existing app version... done</span>
-<span class="go">Installing new app version... done</span>
+<span class="go">[helloworld] 安装应用...</span>
+<span class="go">正在卸载现有应用版本... 完成</span>
+<span class="go">正在安装新应用版本... 完成</span>
 
-<span class="go">[helloworld] Starting app...</span>
-<span class="go">Launching app... done</span>
+<span class="go">[helloworld] 启动应用...</span>
+<span class="go">正在启动应用... 完成</span>
 
-<span class="go">[helloworld] Following simulator log output (type CTRL-C to stop log)...</span>
+<span class="go">[helloworld] 以下是模拟器日志输出（按 CTRL-C 停止日志）...</span>
 <span class="go">===========================================================================</span>
 <span class="go">...</span>
 </code></pre></div>
@@ -1686,10 +1686,10 @@ Store</a> 免费下载。当 Xcode
 会停止控制台中的信息，但不会关闭模拟器。这样，您无需重启模拟器，也能可以继续测试新更改。</p>
 <p>如果事先知道要使用哪个 iOS 模拟器，可以通过提供 <code>-d</code>（或 <code>--device</code>）选项告诉 Briefcase
 使用该模拟器。使用创建应用程序时选择的设备名称，运行:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3rd generation)&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (第3代)&quot;</span>
 </code></pre></div>
 <p>如果你有多个 iOS 版本，Briefcase 会选择最高的 iOS 版本；如果你想选择某个 iOS 版本，你可以告诉它使用该特定版本：</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3rd generation)::iOS 15.5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (第3代)::iOS 15.5&quot;</span>
 </code></pre></div>
 <p>或者，您也可以命名一个特定的设备 UDID：</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E

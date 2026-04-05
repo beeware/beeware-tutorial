@@ -1643,10 +1643,10 @@ aria-label="頁首"
 <p>讓我們新增一個對話框來打招呼，而不是寫入控制台。修改<code>say_hello</code>回調，使其看起來像這樣:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Hi there!&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;Hi there!&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>我們需要讓方法 <code>async</code> 這樣當我們顯示對話框時，應用程式的其他部分會繼續執行。現在不要太在意這個細節 - 我們會在 <a href="../tutorial-8/">Tutorial
@@ -1686,44 +1686,44 @@ aria-label="頁首"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] 正在更新應用程式程式碼...</span>
+<span class="go">正在安裝 src/helloworld... 完成</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] 正在移除不需要的應用程式內容...</span>
+<span class="go">正在移除不需要的應用程式套件內容... 完成</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] 應用程式已更新。</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">[helloworld] 完成應用程式設定...</span>
+<span class="go">目標平台：ubuntu:jammy（基於 Debian 的供應商版本）</span>
+<span class="go">確認 glibc 版本... 完成</span>
+<span class="go">目標 glibc 2.35</span>
+<span class="go">目標 Python 3.10</span>
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] 更新應用程式程式碼...</span>
+<span class="go">安裝 src/helloworld... 完成</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] 移除不需要的應用程式內容...</span>
+<span class="go">移除不需要的應用程式套件內容... 完成</span>
 
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] 應用程式已更新。</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] 正在更新應用程式程式碼...</span>
+<span class="go">安裝 src/helloworld... 完成</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] 移除不需要的應用程式內容...</span>
+<span class="go">移除不需要的應用程式套件內容... 完成</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] 應用程式已更新。</span>
 </code></pre></div>
 </div>
 </div>
@@ -1746,17 +1746,17 @@ run</code>。為了簡化更新和執行捆綁應用程式的過程，Briefcase 
 <p>在檔案頂部的匯入和<code>class HelloWorld</code>定義之間，新增實用程式方法以根據已提供的名稱值產生適當的問候語：</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello, stranger&quot;</span>
 </code></pre></div>
 <p>然後，修改<code>say_hello</code>回調以使用這個新的實用方法：</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="s2">&quot;Hi there!&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+ <span class="s2">&quot;Hi there!&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>在開發模式下運行您的應用程式（使用<code>briefcase dev</code>）以確認新邏輯有效；然後使用一個命令更新、建置和運行應用程式：</p>
@@ -1765,59 +1765,59 @@ run</code>。為了簡化更新和執行捆綁應用程式的過程，Briefcase 
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] 更新應用程式程式碼...</span>
+<span class="go">安裝 src/helloworld... 完成</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] 移除不需要的應用程式內容...</span>
+<span class="go">移除不必要的應用程式封裝內容... 完成</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] 應用程式已更新。</span>
 
-<span class="go">[helloworld] Building application...</span>
+<span class="go">[helloworld] 編譯應用程式...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Built build/helloworld/macos/app/Hello World.app</span>
+<span class="go">[helloworld] 已建立 build/helloworld/macos/app/Hello World.app</span>
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] 啟動應用程式...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">[helloworld] 正在完成應用程式設定...</span>
+<span class="go">目標平台：ubuntu:jammy (Vendor base debian)</span>
+<span class="go">確認 glibc 版本... 完成</span>
+<span class="go">目標 glibc 2.35</span>
+<span class="go">目標 Python 3.10</span>
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] 更新應用程式程式碼...</span>
+<span class="go">安裝 src/helloworld... 完成</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] 移除不需要的應用程式內容...</span>
+<span class="go">移除不需要的應用程式套件內容... 完成</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] 應用程式已更新。</span>
 
-<span class="go">[helloworld] Building application...</span>
+<span class="go">[helloworld] 編譯應用程式...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
+<span class="go">[helloworld] 已編譯 build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] 啟動應用程式...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run -u
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] 更新應用程式程式碼...</span>
+<span class="go">正在安裝 src/helloworld... 完成</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] 移除不需要的應用程式內容...</span>
+<span class="go">移除不需要的應用程式套件內容... 完成</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] 應用程式已更新。</span>
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] 啟動應用程式...</span>
 </code></pre></div>
 </div>
 </div>

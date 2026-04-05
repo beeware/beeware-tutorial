@@ -1641,7 +1641,7 @@ aria-label="页眉"
 <p>原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：[<code>src</code>\ 和\ <code>tests</code>。<code>src</code>\
 文件夹包含应用程序的代码；<code>tests</code>\ 文件夹包含测试套件。在\ <code>tests</code>\ 文件夹中，有一个名为\ <code>test_app.py</code>\ 的文件，内容如下:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;An initial test for the app&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;应用程序的初始测试&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
 <p>这是一个
@@ -1653,70 +1653,70 @@ aria-label="页眉"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] 安装依赖项...</span>
 <span class="go">...</span>
-<span class="go">Installing dev requirements... done</span>
+<span class="go">安装开发环境依赖项... 完成</span>
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
-<span class="go">platform darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0 -- /Users/brutus/beeware-tutorial/beeware-venv/bin/python3.11</span>
-<span class="go">cachedir: /var/folders/b_/khqk71xd45d049kxc_59ltp80000gn/T/.pytest_cache</span>
-<span class="go">rootdir: /Users/brutus</span>
-<span class="go">plugins: anyio-3.6.2</span>
-<span class="go">collecting ... collected 1 item</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
+<span class="go">平台 darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0 -- /Users/brutus/beeware-tutorial/beeware-venv/bin/python3.11</span>
+<span class="go">缓存目录: /var/folders/b_/khqk71xd45d049kxc_59ltp80000gn/T/.pytest_cache</span>
+<span class="go">根目录: /Users/brutus</span>
+<span class="go">插件: anyio-3.6.2</span>
+<span class="go">正在收集... 已收集 1 项</span>
 
-<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_first 通过 [100%]</span>
 
-<span class="go">============================== 1 passed in 0.01s ===============================</span>
+<span class="go">============================== 1 个测试通过，耗时 0.01 秒 ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] 安装依赖项...</span>
 <span class="go">...</span>
-<span class="go">Installing dev requirements... done</span>
+<span class="go">正在安装开发环境所需依赖... 完成</span>
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
-<span class="go">platform linux -- Python 3.11.0</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
+<span class="go">平台 linux -- Python 3.11.0</span>
 <span class="go">pytest==7.2.0</span>
 <span class="go">py==1.11.0</span>
 <span class="go">pluggy==1.0.0</span>
-<span class="go">cachedir: /tmp/.pytest_cache</span>
-<span class="go">rootdir: /home/brutus</span>
-<span class="go">plugins: anyio-3.6.2</span>
-<span class="go">collecting ... collected 1 item</span>
+<span class="go">缓存目录: /tmp/.pytest_cache</span>
+<span class="go">根目录: /home/brutus</span>
+<span class="go">插件: anyio-3.6.2</span>
+<span class="go">正在收集... 已收集 1 个项目</span>
 
-<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_first 通过 [100%]</span>
 
-<span class="go">============================== 1 passed in 0.01s ===============================</span>
+<span class="go">============================== 1 个通过，耗时 0.01 秒 ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test -r
 
-<span class="go">[helloworld] Installing requirements...</span>
+<span class="go">[helloworld] 安装依赖项...</span>
 <span class="go">...</span>
-<span class="go">Installing dev requirements... done</span>
+<span class="go">安装开发依赖项... 完成</span>
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
-<span class="go">platform win32 -- Python 3.11.0</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
+<span class="go">平台 win32 -- Python 3.11.0</span>
 <span class="go">pytest==7.2.0</span>
 <span class="go">py==1.11.0</span>
 <span class="go">pluggy==1.0.0</span>
-<span class="go">cachedir: C:\Users\brutus\AppData\Local\Temp\.pytest_cache</span>
-<span class="go">rootdir: C:\Users\brutus</span>
-<span class="go">plugins: anyio-3.6.2</span>
-<span class="go">collecting ... collected 1 item</span>
+<span class="go">缓存目录: C:\Users\brutus\AppData\Local\Temp\.pytest_cache</span>
+<span class="go">根目录: C:\Users\brutus</span>
+<span class="go">插件: anyio-3.6.2</span>
+<span class="go">正在收集 ... 已收集 1 项</span>
 
-<span class="go">tests/test_app.py::test_first PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_first 通过 [100%]</span>
 
-<span class="go">============================== 1 passed in 0.01s ===============================</span>
+<span class="go">============================== 1 个测试通过，耗时 0.01 秒 ===============================</span>
 </code></pre></div>
 </div>
 </div>
@@ -1728,15 +1728,15 @@ aria-label="页眉"
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_name</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If a name is provided, the greeting includes the name&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;如果提供了名字，问候语中会包含该名字&quot;&quot;&quot;</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, Alice&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, Alice&quot;</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_empty</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If a name is not provided, a generic greeting is provided&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;如果未提供姓名，则返回通用问候语&quot;&quot;&quot;</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, stranger&quot;</span>
 </code></pre></div>
 <p>这将定义两个新测试，验证我们期望看到的两种行为：提供名称时的输出和名称为空时的输出。</p>
 <p>现在我们可以重新运行测试套件。这一次，我们不需要提供 <code>-r</code> 选项，因为测试需求已经安装完毕；我们只需要使用 <code>--test</code> 选项：</p>
@@ -1745,46 +1745,46 @@ aria-label="页眉"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 2 items</span>
+<span class="go">正在收集... 已收集 2 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [100%]</span>
 
-<span class="go">============================== 2 passed in 0.11s ===============================</span>
+<span class="go">============================== 2 个通过，耗时 0.11 秒 ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 2 items</span>
+<span class="go">正在收集... 已收集 2 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [100%]</span>
 
-<span class="go">============================== 2 passed in 0.11s ===============================</span>
+<span class="go">============================== 2 个通过，耗时 0.11 秒 ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 2 items</span>
+<span class="go">正在收集... 已收集 2 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 50%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 50%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [100%]</span>
 
-<span class="go">============================== 2 passed in 0.11s ===============================</span>
+<span class="go">============================== 2 个测试通过，耗时 0.11 秒 ===============================</span>
 </code></pre></div>
 </div>
 </div>
@@ -1794,9 +1794,9 @@ aria-label="页眉"
 <p>现在我们有了测试套件，可以用它来推动新功能的开发。让我们修改应用程序，为某位用户添加特殊的问候语。首先，我们可以在 <code>test_app.py</code>
 的底部为我们希望看到的新行为添加一个测试用例:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;如果名字是 Brutus，则返回一条特殊的问候语&quot;&quot;&quot;</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;当心 Python 的 IDE！&quot;</span>
 </code></pre></div>
 <p>然后，用这个新测试运行测试套件：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
@@ -1804,93 +1804,93 @@ aria-label="页眉"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">正在收集 ... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 失败 [100%]</span>
 
-<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">=================================== 失败项 ===================================</span>
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
+<span class="go"> &quot;&quot;&quot;如果名字是 Brutus，则提供特殊的问候语&quot;&quot;&quot;</span>
 
-<span class="go">&gt;       assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
-<span class="go">E         - BeeWare the IDEs of Python!</span>
-<span class="go">E         + Hello, Brutus</span>
+<span class="go">&gt; assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E - BeeWare the IDEs of Python!</span>
+<span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
-<span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
-<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+<span class="go">=========================== 简短测试摘要信息 ============================</span>
+<span class="go">失败 tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">========================= 1 个失败，2 个通过，耗时 0.14 秒 ==========================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">正在收集... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 失败 [100%]</span>
 
-<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">=================================== 失败项 ===================================</span>
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
-<span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, provide a special greeting&quot;&quot;&quot;</span>
+<span class="go"> def test_brutus():</span>
+<span class="go"> &quot;&quot;&quot;如果名字是 Brutus，则提供一个特殊的问候语&quot;&quot;&quot;</span>
 
-<span class="go">&gt;       assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
-<span class="go">E         - BeeWare the IDEs of Python!</span>
-<span class="go">E         + Hello, Brutus</span>
+<span class="go">&gt; assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E - BeeWare the IDEs of Python!</span>
+<span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
-<span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
-<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+<span class="go">=========================== 简短测试摘要信息 ============================</span>
+<span class="go">测试失败：tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">========================= 1 个失败，2 个通过，耗时 0.14 秒 ==========================</span>
 
-<span class="go">============================== 2 passed in 0.11s ===============================</span>
+<span class="go">============================== 2 个通过，耗时 0.11 秒 ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">正在收集 ... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus FAILED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 失败 [100%]</span>
 
-<span class="go">=================================== FAILURES ===================================</span>
+<span class="go">=================================== 失败项 ===================================</span>
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, provide a special greeting&quot;&quot;&quot;</span>
+<span class="go"> &quot;&quot;&quot;如果名字是 Brutus，则提供一个特殊的问候语&quot;&quot;&quot;</span>
 
-<span class="gp">&gt;</span>       assert greeting(<span class="s2">&quot;Brutus&quot;</span>) == <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
-<span class="go">E         - BeeWare the IDEs of Python!</span>
-<span class="go">E         + Hello, Brutus</span>
+<span class="gp">&gt;</span> assert greeting(<span class="s2">&quot;Brutus&quot;</span>) == <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">E - BeeWare the IDEs of Python!</span>
+<span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
-<span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
-<span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
+<span class="go">=========================== 简短测试摘要信息 ============================</span>
+<span class="go">失败 tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">========================= 1 个失败，2 个通过，耗时 0.14 秒 ==========================</span>
 </code></pre></div>
 </div>
 </div>
@@ -1900,12 +1900,12 @@ aria-label="页眉"
 的实现，使其具有新的行为:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;当心 Python 的 IDE！&quot;</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;你好，</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;你好，陌生人&quot;</span>
 </code></pre></div>
 <p>如果我们再次运行测试，就会发现测试通过了：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
@@ -1913,49 +1913,49 @@ aria-label="页眉"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">正在收集 ... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 通过 [100%]</span>
 
-<span class="go">============================== 3 passed in 0.15s ===============================</span>
+<span class="go">============================== 3 个测试通过，耗时 0.15 秒 ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">正在收集 ... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 通过 [100%]</span>
 
-<span class="go">============================== 3 passed in 0.15s ===============================</span>
+<span class="go">============================== 3 个测试通过，耗时 0.15 秒 ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Running test suite in dev environment...</span>
+<span class="go">[helloworld] 在开发环境中运行测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">正在收集 ... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED                                      [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED                                     [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED                                    [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 通过 [100%]</span>
 
-<span class="go">============================== 3 passed in 0.15s ===============================</span>
+<span class="go">============================== 3 个测试通过，耗时 0.15 秒 ===============================</span>
 </code></pre></div>
 </div>
 </div>
@@ -1969,18 +1969,18 @@ aria-label="页眉"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
-<span class="go">Installing tests... done</span>
+<span class="go">[helloworld] 更新应用程序代码...</span>
+<span class="go">正在安装 src/helloworld... 完成</span>
+<span class="go">正在安装测试... 完成</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">[helloworld] 更新依赖项...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Built build/helloworld/macos/app/Hello World.app (test mode)</span>
+<span class="go">[helloworld] 已构建 build/helloworld/macos/app/Hello World.app (测试模式)</span>
 
-<span class="go">[helloworld] Starting test suite...</span>
+<span class="go">[helloworld] 启动测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">Configuring isolated Python...</span>
-<span class="go">Pre-initializing Python runtime...</span>
+<span class="go">配置隔离的 Python...</span>
+<span class="go">预初始化 Python 运行时...</span>
 <span class="go">PythonHome: /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python311.zip</span>
@@ -1988,87 +1988,87 @@ aria-label="页眉"
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib/lib-dynload</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app_packages</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app</span>
-<span class="go">Configure argc/argv...</span>
-<span class="go">Initializing Python runtime...</span>
-<span class="go">Installing Python NSLog handler...</span>
-<span class="go">Running app module: tests.helloworld</span>
+<span class="go">配置 argc/argv...</span>
+<span class="go">初始化 Python 运行时...</span>
+<span class="go">正在安装 Python NSLog 处理程序...</span>
+<span class="go">正在运行应用程序模块：tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">收集中... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 通过 [100%]</span>
 
-<span class="go">============================== 3 passed in 0.21s ===============================</span>
+<span class="go">============================== 3 个测试通过，耗时 0.21 秒 ===============================</span>
 
-<span class="go">[helloworld] Test suite passed!</span>
+<span class="go">[helloworld] 测试套件通过！</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">[helloworld] 正在完成应用程序配置...</span>
+<span class="go">目标系统：ubuntu:jammy（基于 Debian 的供应商系统）</span>
+<span class="go">正在确定 glibc 版本... 完成</span>
+<span class="go">目标 glibc 版本：2.35</span>
+<span class="go">目标 Python 版本：3.10</span>
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
-<span class="go">Installing tests... done</span>
+<span class="go">[helloworld] 正在更新应用程序代码...</span>
+<span class="go">正在安装 src/helloworld... 完成</span>
+<span class="go">正在安装测试... 完成</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">[helloworld] 正在更新依赖项...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (test mode)</span>
+<span class="go">[helloworld] 已构建 build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld（测试模式）</span>
 
-<span class="go">[helloworld] Starting test suite...</span>
+<span class="go">[helloworld] 启动测试套件...</span>
 <span class="go">===========================================================================</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">收集中... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 通过 [100%]</span>
 
-<span class="go">============================== 3 passed in 0.21s ===============================</span>
+<span class="go">============================== 3 个测试通过，耗时 0.21 秒 ===============================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run --test -r
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
-<span class="go">Installing tests... done</span>
+<span class="go">[helloworld] 更新应用程序代码...</span>
+<span class="go">安装 src/helloworld... 完成</span>
+<span class="go">安装测试... 完成</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
+<span class="go">[helloworld] 更新依赖项...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Built build\helloworld\windows\app\src\Hello World.exe (test mode)</span>
+<span class="go">[helloworld] 已构建 build\helloworld\windows\app\src\Hello World.exe (测试模式)</span>
 
 <span class="go">===========================================================================</span>
-<span class="go">Log started: 2022-12-02 10:57:34Z</span>
-<span class="go">PreInitializing Python runtime...</span>
+<span class="go">日志开始时间：2022-12-02 10:57:34Z</span>
+<span class="go">正在预初始化 Python 运行时...</span>
 <span class="go">PythonHome: C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\python311.zip</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app_packages</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app</span>
-<span class="go">Configure argc/argv...</span>
-<span class="go">Initializing Python runtime...</span>
-<span class="go">Running app module: tests.helloworld</span>
+<span class="go">配置 argc/argv...</span>
+<span class="go">初始化 Python 运行时...</span>
+<span class="go">运行 app 模块：tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
-<span class="go">============================= test session starts ==============================</span>
+<span class="go">============================= 测试会话开始 ==============================</span>
 <span class="go">...</span>
-<span class="go">collecting ... collected 3 items</span>
+<span class="go">收集中... 已收集 3 个项目</span>
 
-<span class="go">tests/test_app.py::test_name PASSED [ 33%]</span>
-<span class="go">tests/test_app.py::test_empty PASSED [ 66%]</span>
-<span class="go">tests/test_app.py::test_brutus PASSED [100%]</span>
+<span class="go">tests/test_app.py::test_name 通过 [ 33%]</span>
+<span class="go">tests/test_app.py::test_empty 通过 [ 66%]</span>
+<span class="go">tests/test_app.py::test_brutus 通过 [100%]</span>
 
-<span class="go">============================== 3 passed in 0.21s ===============================</span>
+<span class="go">============================== 3 个测试通过，耗时 0.21 秒 ===============================</span>
 </code></pre></div>
 </div>
 </div>

@@ -1682,7 +1682,7 @@ alcuni dei requisiti di sistema non sono stati installati. Assicuratevi di aver
 </div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>python -m pip install briefcase
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(attenzione-venv)</span> <span class="gp">C:\...&gt;</span>python -m pip install briefcase
 </code></pre></div>
 <div class="admonition">
 <p class="admonition-title">Possibili errori durante l'installazione</p>
@@ -1757,15 +1757,15 @@ simile a:</p>
     ├── README.rst
     ├── src/
     │   └── helloworld/
-    │       ├── app.py
-    │       ├── __init__.py
-    │       ├── __main__.py
-    │       └── resources/
-    │           └── README
+    │ ├── app.py
+    │ ├── __init__.py
+    │ ├── __main__.py
+    │ └── resources/
+    │ └── README
     └── tests/
         ├── helloworld.py
-        ├── __init__.py
-        └── test_app.py
+ ├── __init__.py
+ └── test_app.py
 </code></pre></div>
 <p>Questo scheletro è in realtà un'applicazione completamente funzionante, senza
 aggiungere altro. La cartella <code>src</code> contiene tutto il codice dell'applicazione,
@@ -1784,14 +1784,14 @@ avviare il progetto in modalità sviluppatore (o <code>dev</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] Attivazione dell&#39;ambiente di sviluppo...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cpython-313-darwin)... done</span>
+<span class="go">Creazione dell&#39;ambiente virtuale (dev.cpython-313-darwin)... fatto</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] Installazione dei requisiti...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1799,14 +1799,14 @@ avviare il progetto in modalità sviluppatore (o <code>dev</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] Attivazione dell&#39;ambiente di sviluppo...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cpython-313-x86_64-linux-gnu)... done</span>
+<span class="go">Creazione dell&#39;ambiente virtuale (dev.cpython-313-x86_64-linux-gnu)... completata</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] Installazione dei requisiti...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1814,14 +1814,14 @@ avviare il progetto in modalità sviluppatore (o <code>dev</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span><span class="k">cd</span> helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] Attivazione dell&#39;ambiente di sviluppo...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cp313-win_amd64)... done</span>
+<span class="go">Creazione dell&#39;ambiente virtuale (dev.cp313-win_amd64)... fatto</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] Installazione dei requisiti...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1858,9 +1858,9 @@ messaggio di errore che ricevi dovrebbe indicarti quali pacchetti mancano.</p>
 <div class="admonition">
 <p class="admonition-title">Requisiti non validi o pip non in grado di connettersi</p>
 <p>Se si verifica l'errore:</p>
-<div class="highlight"><pre><span></span><code><span class="go">Unable to install requirements. This may be because one of your</span>
-<span class="go">requirements is invalid, or because pip was unable to connect</span>
-<span class="go">to the PyPI server.</span>
+<div class="highlight"><pre><span></span><code><span class="go">Impossibile installare i requisiti. Ciò potrebbe essere dovuto al fatto che uno dei tuoi</span>
+<span class="go">requisiti non è valido oppure che pip non è riuscito a connettersi</span>
+<span class="go">al server PyPI.</span>
 </code></pre></div>
 <p>Confermare che si sta eseguendo una <a class="autorefs autorefs-internal" title="Installare Python" href="../tutorial-0/#install-python">versione di python supportata da questo
 tutorial</a>.</p>

@@ -1735,15 +1735,15 @@ aria-label="页眉"
     ├── README.rst
     ├── src/
     │   └── helloworld/
-    │       ├── app.py
-    │       ├── __init__.py
-    │       ├── __main__.py
-    │       └── resources/
-    │           └── README
+    │ ├── app.py
+    │ ├── __init__.py
+    │ ├── __main__.py
+    │ └── resources/
+    │ └── README
     └── tests/
         ├── helloworld.py
-        ├── __init__.py
-        └── test_app.py
+ ├── __init__.py
+ └── test_app.py
 </code></pre></div>
 <p>该骨架实际上是一个功能完备的应用程序，无需添加任何其他内容。<code>src</code> 文件夹包含应用程序的所有代码，<code>tests</code>
 文件夹包含初始测试套件，<code>pyproject.toml</code> 文件描述了如何打包发布应用程序。如果您用编辑器打开
@@ -1757,14 +1757,14 @@ aria-label="页眉"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] 正在激活开发环境...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cpython-313-darwin)... done</span>
+<span class="go">正在创建虚拟环境 (dev.cpython-313-darwin)... 完成</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] 正在安装依赖项...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 正在以开发模式启动...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1772,14 +1772,14 @@ aria-label="页眉"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] 正在激活 dev 环境...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cpython-313-x86_64-linux-gnu)... done</span>
+<span class="go">正在创建虚拟环境 (dev.cpython-313-x86_64-linux-gnu)... 完成</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] 正在安装依赖项...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 正在以开发模式启动...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1787,14 +1787,14 @@ aria-label="页眉"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span><span class="k">cd</span> helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] 正在激活开发环境...</span>
 <span class="go">...</span>
-<span class="go">Creating virtual environment (dev.cp313-win_amd64)... done</span>
+<span class="go">创建虚拟环境 (dev.cp313-win_amd64)... 完成</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] 安装依赖项...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] 进入开发模式...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1828,9 +1828,9 @@ dev</code>时出现错误，几乎可以确定是某些系统要求尚未安装�
 <div class="admonition">
 <p class="admonition-title">无效要求或 pip 无法连接</p>
 <p>如果您遇到错误：</p>
-<div class="highlight"><pre><span></span><code><span class="go">Unable to install requirements. This may be because one of your</span>
-<span class="go">requirements is invalid, or because pip was unable to connect</span>
-<span class="go">to the PyPI server.</span>
+<div class="highlight"><pre><span></span><code><span class="go">无法安装依赖项。这可能是因为您的某个</span>
+<span class="go">依赖项无效，或者因为 pip 无法连接</span>
+<span class="go">到 PyPI 服务器。</span>
 </code></pre></div>
 <p>确认运行的是<a class="autorefs autorefs-internal" title="安装 Python" href="../tutorial-0/#install-python">本教程支持的 python 版本</a>。</p>
 <p>如果您的 Python 版本<em>不</em>被支持，则需重新开始本教程。</p>

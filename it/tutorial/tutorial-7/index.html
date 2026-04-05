@@ -1696,17 +1696,17 @@ parole fornito da Faker. Useremo Faker per costruire un messaggio falso, come se
 qualcuno stesse rispondendo all'utente.</p>
 <p>Aggiungiamo una chiamata API <code>httpx</code> alla nostra applicazione. Aggiungiamo
 un'importazione all'inizio di <code>app.py</code> per importare <code>httpx</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">faker</span>
+<div class="highlight"><pre><span></span><code><span class="n">importa</span> <span class="n">faker</span>
 </code></pre></div>
 <p>Per rendere il nostro tutorial asincrono, modificare il gestore dell'evento
 <code>say_hello()</code> in modo che assomigli a questo:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">&quot;A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+ <span class="sa">f</span><span class="s2">&quot;Un messaggio da </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>Eseguiamo la nostra applicazione aggiornata in modalità sviluppatore di
@@ -1715,56 +1715,56 @@ Briefcase per verificare che la nostra modifica abbia funzionato.</p>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
-<span class="go">Traceback (most recent call last):</span>
-<span class="go">File &quot;.../venv/bin/briefcase&quot;, line 5, in &lt;module&gt;</span>
+<span class="go">Traceback (ultima chiamata più recente):</span>
+<span class="go">File &quot;.../venv/bin/briefcase&quot;, riga 5, in &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, line 3, in &lt;module&gt;</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, riga 3, in &lt;module&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, line 6, in &lt;module&gt;</span>
-<span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, line 1, in &lt;module&gt;</span>
-<span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, line 5, in &lt;module&gt;</span>
-<span class="go">    from .base import BaseCommand, full_options</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, line 14, in &lt;module&gt;</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, riga 6, in &lt;module&gt;</span>
+<span class="go">    da briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, riga 1, in &lt;modulo&gt;</span>
+<span class="go">    da .build import BuildCommand  # noqa</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, riga 5, in &lt;module&gt;</span>
+<span class="go">    da .base import BaseCommand, full_options</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, riga 14, in &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: No module named &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nessun modulo denominato &#39;faker&#39;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
-<span class="go">Traceback (most recent call last):</span>
-<span class="go">File &quot;.../venv/bin/briefcase&quot;, line 5, in &lt;module&gt;</span>
+<span class="go">Traceback (ultima chiamata più recente):</span>
+<span class="go">File &quot;.../venv/bin/briefcase&quot;, riga 5, in &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, line 3, in &lt;module&gt;</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, riga 3, in &lt;module&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, line 6, in &lt;module&gt;</span>
-<span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, line 1, in &lt;module&gt;</span>
-<span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, line 5, in &lt;module&gt;</span>
-<span class="go">    from .base import BaseCommand, full_options</span>
-<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, line 14, in &lt;module&gt;</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, riga 6, in &lt;module&gt;</span>
+<span class="go">    da briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, riga 1, in &lt;modulo&gt;</span>
+<span class="go">    da .build import BuildCommand  # noqa</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, riga 5, in &lt;module&gt;</span>
+<span class="go">    da .base import BaseCommand, full_options</span>
+<span class="go">File &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, riga 14, in &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: No module named &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nessun modulo denominato &#39;faker&#39;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
-<span class="go">Traceback (most recent call last):</span>
-<span class="gp">File &quot;...\venv\bin\briefcase&quot;, line 5, in &lt;module&gt;</span>
+<span class="go">Traceback (ultima chiamata più recente):</span>
+<span class="gp">File &quot;...\venv\bin\briefcase&quot;, riga 5, in &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\__main__.py&quot;, line 3, in &lt;module&gt;</span>
+<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\__main__.py&quot;, riga 3, in &lt;module&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\cmdline.py&quot;, line 6, in &lt;module&gt;</span>
-<span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py&quot;, line 1, in &lt;module&gt;</span>
-<span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\build.py&quot;, line 5, in &lt;module&gt;</span>
-<span class="go">    from .base import BaseCommand, full_options</span>
-<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\base.py&quot;, line 14, in &lt;module&gt;</span>
+<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\cmdline.py&quot;, riga 6, in &lt;module&gt;</span>
+<span class="go">    da briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
+<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py&quot;, riga 1, in &lt;modulo&gt;</span>
+<span class="go">    da .build import BuildCommand  # noqa</span>
+<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\build.py&quot;, riga 5, in &lt;module&gt;</span>
+<span class="go">    da .base import BaseCommand, full_options</span>
+<span class="gp">File &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\base.py&quot;, riga 14, in &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: No module named &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nessun modulo denominato &#39;faker&#39;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1794,8 +1794,8 @@ dell'applicazione forniti al momento dell'esecuzione di <code>briefcase new</cod
 impostazioni per l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
 <span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
-<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;A Tutorial app&quot;</span>
-<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;More details about the app should go here.</span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Un&#39;app tutorial&quot;</span>
+<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;Qui dovrebbero essere inseriti ulteriori dettagli sull&#39;app.</span>
 <span class="s2">&quot;&quot;&quot;</span>
 <span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
@@ -1845,14 +1845,14 @@ cambiati e che l'ambiente virtuale di sviluppo deve essere aggiornato:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] Attivazione dell&#39;ambiente dev...</span>
 <span class="go">...</span>
-<span class="go">Recreating virtual environment (dev.cpython-313-darwin)... done</span>
+<span class="go">Ricreazione dell&#39;ambiente virtuale (dev.cpython-313-darwin)... fatto</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] Installazione dei requisiti...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una
@@ -1865,14 +1865,14 @@ finestra di dialogo simile a questa:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] Attivazione dell&#39;ambiente di sviluppo...</span>
 <span class="go">...</span>
-<span class="go">Recreating virtual environment (dev.cpython-313-x86_64-linux-gnu)... done</span>
+<span class="go">Ricreazione dell&#39;ambiente virtuale (dev.cpython-313-x86_64-linux-gnu)... completata</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] Installazione dei requisiti...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una
@@ -1885,14 +1885,14 @@ finestra di dialogo simile a questa:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev -r
 
-<span class="go">[helloworld] Activating dev environment...</span>
+<span class="go">[helloworld] Attivazione dell&#39;ambiente di sviluppo...</span>
 <span class="go">...</span>
-<span class="go">Recreating virtual environment (dev.cp313-win_amd64)... done</span>
+<span class="go">Ricreazione dell&#39;ambiente virtuale (dev.cp313-win_amd64)... completata</span>
 
-<span class="go">[hello-world] Installing requirements...</span>
+<span class="go">[hello-world] Installazione dei requisiti...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Starting in dev mode...</span>
+<span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una
@@ -1941,21 +1941,21 @@ stessi passaggi indicati nel <a href="../tutorial-4/">Tutorial 4</a>:</p>
 <p>Aggiornare il codice dell'applicazione confezionata:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Updating application code...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 <p>Ricostruire l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
-<span class="go">[helloworld] Adhoc signing app...</span>
-<span class="go">[helloworld] Built build/helloworld/macos/app/Hello World.app</span>
+<span class="go">[helloworld] App di firma ad hoc...</span>
+<span class="go">[helloworld] Creato build/helloworld/macos/app/Hello World.app</span>
 </code></pre></div>
 <p>Infine, eseguire l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Avvio dell&#39;applicazione...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Tuttavia, quando l'applicazione viene eseguita, viene visualizzato un errore
@@ -1970,63 +1970,63 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 <p>Aggiornare il codice dell'applicazione confezionata:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Updating application code...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 <p>Ricostruire l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
+<span class="go">[helloworld] Completamento della configurazione dell&#39;applicazione...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Building application...</span>
+<span class="go">[helloworld] Compilazione dell&#39;applicazione...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
+<span class="go">[helloworld] Compilato build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
 <p>Infine, eseguire l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Avvio dell&#39;applicazione...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Tuttavia, quando l'applicazione viene eseguita, viene visualizzato un errore
 nella console:</p>
-<div class="highlight"><pre><span></span><code><span class="go">Traceback (most recent call last):</span>
-<span class="go">  File &quot;/usr/lib/python3.13/runpy.py&quot;, line 194, in _run_module_as_main</span>
+<div class="highlight"><pre><span></span><code><span class="go">Traceback (ultima chiamata più recente):</span>
+<span class="go">  File &quot;/usr/lib/python3.13/runpy.py&quot;, riga 194, in _run_module_as_main</span>
 <span class="go">    return _run_code(code, main_globals, None,</span>
-<span class="go">  File &quot;/usr/lib/python3.13/runpy.py&quot;, line 87, in _run_code</span>
+<span class="go">  File &quot;/usr/lib/python3.13/runpy.py&quot;, riga 87, in _run_code</span>
 <span class="go">    exec(code, run_globals)</span>
-<span class="go">  File &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py&quot;, line 1, in &lt;module&gt;</span>
+<span class="go">  File &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py&quot;, riga 1, in &lt;module&gt;</span>
 <span class="go">    from helloworld.app import main</span>
-<span class="go">  File &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py&quot;, line 8, in &lt;module&gt;</span>
+<span class="go">  File &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py&quot;, riga 8, in &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: No module named &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nessun modulo denominato &#39;faker&#39;</span>
 
-<span class="go">Unable to start app helloworld.</span>
+<span class="go">Impossibile avviare l&#39;app helloworld.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>Aggiornare il codice dell'applicazione confezionata:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update
 
-<span class="go">[helloworld] Updating application code...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione in corso...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 <p>Ricostruire l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
 <span class="go">...</span>
 
-<span class="go">[helloworld] Built build\helloworld\windows\app\src\Toga Test.exe</span>
+<span class="go">[helloworld] Creato build\helloworld\windows\app\src\Toga Test.exe</span>
 </code></pre></div>
 <p>Infine, eseguire l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Avvio dell&#39;applicazione...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Tuttavia, quando l'applicazione viene eseguita, viene visualizzato un errore
@@ -2041,97 +2041,97 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 <p>Aggiornare il codice dell'applicazione confezionata:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>android
 
-<span class="go">[helloworld] Updating application code...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione in corso...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 <p>Ricostruire l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>android
 
-<span class="go">[helloworld] Updating app metadata...</span>
+<span class="go">[helloworld] Aggiornamento dei metadati dell&#39;app...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk</span>
+<span class="go">[helloworld] Compilazione completata: build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk</span>
 </code></pre></div>
 <p>Infine, eseguire l'applicazione (selezionando un simulatore quando richiesto):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>android
 
-<span class="go">[helloworld] Following device log output (type CTRL-C to stop log)...</span>
+<span class="go">[helloworld] Di seguito l&#39;output del log del dispositivo (premere CTRL-C per interrompere il log)...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Tuttavia, quando l'applicazione viene eseguita, viene visualizzato un errore
 nella console:</p>
-<div class="highlight"><pre><span></span><code><span class="go">--------- beginning of crash</span>
-<span class="go">E/AndroidRuntime: FATAL EXCEPTION: main</span>
-<span class="go">E/AndroidRuntime: Process: com.example.helloworld, PID: 8289</span>
-<span class="go">E/AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity}: com.chaquo.python.PyException: ModuleNotFoundError: No module named &#39;faker&#39;</span>
-<span class="go">E/AndroidRuntime:   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3635)</span>
-<span class="go">E/AndroidRuntime:   at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3792)</span>
-<span class="go">E/AndroidRuntime:   at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)</span>
-<span class="go">E/AndroidRuntime:   at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)</span>
-<span class="go">E/AndroidRuntime:   at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)</span>
-<span class="go">E/AndroidRuntime:   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2210)</span>
-<span class="go">E/AndroidRuntime:   at android.os.Handler.dispatchMessage(Handler.java:106)</span>
-<span class="go">E/AndroidRuntime:   at android.os.Looper.loopOnce(Looper.java:201)</span>
-<span class="go">E/AndroidRuntime:   at android.os.Looper.loop(Looper.java:288)</span>
-<span class="go">E/AndroidRuntime:   at android.app.ActivityThread.main(ActivityThread.java:7839)</span>
-<span class="go">E/AndroidRuntime:   at java.lang.reflect.Method.invoke(Native Method)</span>
-<span class="go">E/AndroidRuntime:   at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)</span>
-<span class="go">E/AndroidRuntime:   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)</span>
-<span class="go">E/AndroidRuntime: Caused by: com.chaquo.python.PyException: ModuleNotFoundError: No module named &#39;faker&#39;</span>
-<span class="go">E/AndroidRuntime:   at &lt;python&gt;.helloworld.app.&lt;module&gt;(app.py:8)</span>
-<span class="go">E/AndroidRuntime:   at &lt;python&gt;.java.chaquopy.import_override(import.pxi:60)</span>
-<span class="go">E/AndroidRuntime:   at &lt;python&gt;.__main__.&lt;module&gt;(__main__.py:1)</span>
-<span class="go">E/AndroidRuntime:   at &lt;python&gt;.runpy._run_code(&lt;frozen runpy&gt;:88)</span>
-<span class="go">E/AndroidRuntime:   at &lt;python&gt;.runpy._run_module_code(&lt;frozen runpy&gt;:98)</span>
-<span class="go">E/AndroidRuntime:   at &lt;python&gt;.runpy.run_module(&lt;frozen runpy&gt;:226)</span>
-<span class="go">E/AndroidRuntime:   at &lt;python&gt;.chaquopy_java.call(chaquopy_java.pyx:352)</span>
-<span class="go">E/AndroidRuntime:   at &lt;python&gt;.chaquopy_java.Java_com_chaquo_python_PyObject_callAttrThrowsNative(chaquopy_java.pyx:324)</span>
-<span class="go">E/AndroidRuntime:   at com.chaquo.python.PyObject.callAttrThrowsNative(Native Method)</span>
-<span class="go">E/AndroidRuntime:   at com.chaquo.python.PyObject.callAttrThrows(PyObject.java:232)</span>
-<span class="go">E/AndroidRuntime:   at com.chaquo.python.PyObject.callAttr(PyObject.java:221)</span>
-<span class="go">E/AndroidRuntime:   at org.beeware.android.MainActivity.onCreate(MainActivity.java:85)</span>
-<span class="go">E/AndroidRuntime:   at android.app.Activity.performCreate(Activity.java:8051)</span>
-<span class="go">E/AndroidRuntime:   at android.app.Activity.performCreate(Activity.java:8031)</span>
-<span class="go">E/AndroidRuntime:   at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1329)</span>
-<span class="go">E/AndroidRuntime:   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3608)</span>
-<span class="go">E/AndroidRuntime:   ... 12 more</span>
-<span class="go">I/Process : Sending signal. PID: 8289 SIG: 9</span>
+<div class="highlight"><pre><span></span><code><span class="go">--------- inizio dell&#39;errore</span>
+<span class="go">E/AndroidRuntime: ECCEZIONE FATALE: main</span>
+<span class="go">E/AndroidRuntime: Processo: com.example.helloworld, PID: 8289</span>
+<span class="go">E/AndroidRuntime: java.lang.RuntimeException: Impossibile avviare l&#39;attività ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity}: com.chaquo.python.PyException: ModuleNotFoundError: Nessun modulo denominato &#39;faker&#39;</span>
+<span class="go">E/AndroidRuntime:   in android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3635)</span>
+<span class="go">E/AndroidRuntime:   in android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3792)</span>
+<span class="go">E/AndroidRuntime:   in android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)</span>
+<span class="go">E/AndroidRuntime:   in android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)</span>
+<span class="go">E/AndroidRuntime:   in android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)</span>
+<span class="go">E/AndroidRuntime:   in android.app.ActivityThread$H.handleMessage(ActivityThread.java:2210)</span>
+<span class="go">E/AndroidRuntime:   in android.os.Handler.dispatchMessage(Handler.java:106)</span>
+<span class="go">E/AndroidRuntime:   in android.os.Looper.loopOnce(Looper.java:201)</span>
+<span class="go">E/AndroidRuntime:   in android.os.Looper.loop(Looper.java:288)</span>
+<span class="go">E/AndroidRuntime:   in android.app.ActivityThread.main(ActivityThread.java:7839)</span>
+<span class="go">E/AndroidRuntime:   in java.lang.reflect.Method.invoke(Metodo nativo)</span>
+<span class="go">E/AndroidRuntime:   in com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)</span>
+<span class="go">E/AndroidRuntime:   in com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)</span>
+<span class="go">E/AndroidRuntime: Causato da: com.chaquo.python.PyException: ModuleNotFoundError: Nessun modulo denominato &#39;faker&#39;</span>
+<span class="go">E/AndroidRuntime:   in &lt;python&gt;.helloworld.app.&lt;module&gt;(app.py:8)</span>
+<span class="go">E/AndroidRuntime:   in &lt;python&gt;.java.chaquopy.import_override(import.pxi:60)</span>
+<span class="go">E/AndroidRuntime:   in &lt;python&gt;.__main__.&lt;module&gt;(__main__.py:1)</span>
+<span class="go">E/AndroidRuntime:   in &lt;python&gt;.runpy._run_code(&lt;frozen runpy&gt;:88)</span>
+<span class="go">E/AndroidRuntime:   in &lt;python&gt;.runpy._run_module_code(&lt;frozen runpy&gt;:98)</span>
+<span class="go">E/AndroidRuntime:   in &lt;python&gt;.runpy.run_module(&lt;frozen runpy&gt;:226)</span>
+<span class="go">E/AndroidRuntime:   in &lt;python&gt;.chaquopy_java.call(chaquopy_java.pyx:352)</span>
+<span class="go">E/AndroidRuntime:   in &lt;python&gt;.chaquopy_java.Java_com_chaquo_python_PyObject_callAttrThrowsNative(chaquopy_java.pyx:324)</span>
+<span class="go">E/AndroidRuntime:   in com.chaquo.python.PyObject.callAttrThrowsNative(Metodo nativo)</span>
+<span class="go">E/AndroidRuntime:   in com.chaquo.python.PyObject.callAttrThrows(PyObject.java:232)</span>
+<span class="go">E/AndroidRuntime:   in com.chaquo.python.PyObject.callAttr(PyObject.java:221)</span>
+<span class="go">E/AndroidRuntime:   in org.beeware.android.MainActivity.onCreate(MainActivity.java:85)</span>
+<span class="go">E/AndroidRuntime:   in android.app.Activity.performCreate(Activity.java:8051)</span>
+<span class="go">E/AndroidRuntime:   in android.app.Activity.performCreate(Activity.java:8031)</span>
+<span class="go">E/AndroidRuntime:   in android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1329)</span>
+<span class="go">E/AndroidRuntime:   in android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3608)</span>
+<span class="go">E/AndroidRuntime:   ... altri 12</span>
+<span class="go">I/Process : Invio del segnale. PID: 8289 SIG: 9</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>Aggiornare il codice dell'applicazione confezionata:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Updating application code...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione in corso...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 <p>Ricostruire l'applicazione:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Updating app metadata...</span>
+<span class="go">[helloworld] Aggiornamento dei metadati dell&#39;app...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Built build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
+<span class="go">[helloworld] Creata build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
 </code></pre></div>
 <p>Infine, eseguire l'applicazione (selezionando un simulatore quando richiesto):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
 <span class="go">...</span>
-<span class="go">[helloworld] Following simulator log output (type CTRL-C to stop log)...</span>
+<span class="go">[helloworld] Di seguito il log del simulatore (premere CTRL-C per interrompere il log)...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Tuttavia, quando l'applicazione viene eseguita, viene visualizzato un errore
 nella console:</p>
-<div class="highlight"><pre><span></span><code><span class="go">Application has crashed!</span>
+<div class="highlight"><pre><span></span><code><span class="go">L&#39;applicazione si è bloccata!</span>
 <span class="go">========================</span>
-<span class="go">Traceback (most recent call last):</span>
-<span class="go">  File &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py&quot;, line 1, in &lt;module&gt;</span>
-<span class="go">    from helloworld.app import main</span>
-<span class="go">  File &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py&quot;, line 8, in &lt;module&gt;</span>
+<span class="go">Traceback (ultima chiamata più recente):</span>
+<span class="go">  File &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py&quot;, riga 1, in &lt;modulo&gt;</span>
+<span class="go">    da helloworld.app import main</span>
+<span class="go">  File &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py&quot;, riga 8, in &lt;modulo&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: No module named &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nessun modulo denominato &#39;faker&#39;</span>
 </code></pre></div>
 </div>
 </div>
@@ -2149,99 +2149,99 @@ riconosca che i requisiti dell'app pacchettizzata sono cambiati:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>-r
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/hello_world...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">Installazione di src/hello_world...</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
-<span class="go">Collecting faker</span>
-<span class="go">  Using cached faker-37.3.0-py3-none-any.whl.metadata (15 kB)</span>
+<span class="go">[helloworld] Aggiornamento dei requisiti...</span>
+<span class="go">Raccolta di faker</span>
+<span class="go">  Utilizzo di faker-37.3.0-py3-none-any.whl.metadata (15 kB) memorizzato nella cache</span>
 <span class="go">...</span>
-<span class="go">Installing collected packages: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
-<span class="go">Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2</span>
+<span class="go">Installazione dei pacchetti raccolti: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
+<span class="go">Installazione completata con successo di faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>-r
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.13</span>
+<span class="go">[helloworld] Completamento della configurazione dell&#39;applicazione...</span>
+<span class="go">Destinazione ubuntu:jammy (base Debian del fornitore)</span>
+<span class="go">Determinazione della versione glibc... fatto</span>
+<span class="go">Destinazione glibc 2.35</span>
+<span class="go">Destinazione Python3.13</span>
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/hello_world...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">Installazione di src/hello_world...</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
-<span class="go">Collecting faker</span>
-<span class="go">  Using cached faker-37.3.0-py3-none-any.whl.metadata (15 kB)</span>
+<span class="go">[helloworld] Aggiornamento dei requisiti...</span>
+<span class="go">Raccolta di faker</span>
+<span class="go">  Utilizzo di faker-37.3.0-py3-none-any.whl.metadata (15 kB) memorizzato nella cache</span>
 <span class="go">...</span>
-<span class="go">Installing collected packages: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
-<span class="go">Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2</span>
+<span class="go">Installazione dei pacchetti raccolti: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
+<span class="go">Installazione completata con successo di faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update -r
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">Installazione di src/helloworld...</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
-<span class="go">Collecting faker</span>
-<span class="go">  Using cached faker-37.3.0-py3-none-any.whl.metadata (15 kB)</span>
+<span class="go">[helloworld] Aggiornamento dei requisiti...</span>
+<span class="go">Raccolta di faker</span>
+<span class="go">  Utilizzo di faker-37.3.0-py3-none-any.whl.metadata (15 kB) memorizzato nella cache</span>
 <span class="go">...</span>
-<span class="go">Installing collected packages: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
-<span class="go">Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2</span>
+<span class="go">Installazione dei pacchetti raccolti: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
+<span class="go">Installazione completata con successo di faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>android<span class="w"> </span>-r
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
-<span class="go">Writing requirements file... done</span>
+<span class="go">[helloworld] Aggiornamento dei requisiti...</span>
+<span class="go">Scrittura del file dei requisiti... fatto</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>iOS<span class="w"> </span>-r
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Updating requirements...</span>
-<span class="go">Looking in indexes: https://pypi.org/simple, https://pypi.anaconda.org/beeware/simple</span>
-<span class="go">Collecting faker</span>
-<span class="go">  Using cached faker-37.4.0-py3-none-any.whl.metadata (15 kB)</span>
+<span class="go">[helloworld] Aggiornamento dei requisiti...</span>
+<span class="go">Ricerca negli indici: https://pypi.org/simple, https://pypi.anaconda.org/beeware/simple</span>
+<span class="go">Raccolta di faker</span>
+<span class="go">  Utilizzo di faker-37.4.0-py3-none-any.whl.metadata (15 kB) memorizzato nella cache</span>
 <span class="go">...</span>
 
-<span class="go">Installing app requirements for iPhone simulator... done</span>
+<span class="go">Installazione dei requisiti dell&#39;app per il simulatore iPhone... fatto</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
 </div>
 </div>

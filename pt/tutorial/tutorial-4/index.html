@@ -1650,12 +1650,12 @@ Eles precisam usar caixas de diálogo para se comunicar com os usuários.</p>
 <p>Vamos adicionar uma caixa de diálogo para dizer olá, em vez de escrever no
 console. Modifique o retorno de chamada <code>say_hello</code> para que ele tenha a
 seguinte aparência:</p>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">dizer_olá</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Hi there!&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;E aí!&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>Precisamos criar o método <code>async</code> para que, quando exibirmos a caixa de diálogo,
@@ -1709,44 +1709,44 @@ existente:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">Instalando src/helloworld... concluído</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] Removendo conteúdo desnecessário do aplicativo...</span>
+<span class="go">Removendo conteúdo desnecessário do pacote do aplicativo... concluído</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Aplicativo atualizado.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">[helloworld] Finalizando a configuração do aplicativo...</span>
+<span class="go">Direcionando para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">Determinando a versão da glibc... concluído</span>
+<span class="go">Direcionando para glibc 2.35</span>
+<span class="go">Direcionando para Python 3.10</span>
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">Instalando src/helloworld... concluído</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] Removendo conteúdo desnecessário do aplicativo...</span>
+<span class="go">Removendo conteúdo desnecessário do pacote do aplicativo... concluído</span>
 
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Aplicativo atualizado.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">Instalando src/helloworld... concluído</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] Removendo conteúdo desnecessário do aplicativo...</span>
+<span class="go">Removendo conteúdo desnecessário do pacote do aplicativo... concluído</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Aplicativo atualizado.</span>
 </code></pre></div>
 </div>
 </div>
@@ -1784,18 +1784,18 @@ HelloWorld</code>, adicione um método utilitário para gerar uma saudação apr
 dependendo do valor do nome que foi fornecido:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;Olá, desconhecido&quot;</span>
 </code></pre></div>
 <p>Em seguida, modifique a chamada de retorno <code>say_hello</code> para usar esse novo
 método utilitário:</p>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">dizer_olá</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="s2">&quot;Hi there!&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+ <span class="s2">&quot;Olá!&quot;</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>Execute seu aplicativo no modo de desenvolvimento (com <code>briefcase dev</code>) para
@@ -1806,59 +1806,59 @@ aplicativo com um único comando:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">Instalando src/helloworld... concluído</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] Removendo conteúdo desnecessário do aplicativo...</span>
+<span class="go">Removendo conteúdo desnecessário do pacote do aplicativo... concluído</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Aplicativo atualizado.</span>
 
-<span class="go">[helloworld] Building application...</span>
+<span class="go">[helloworld] Compilando o aplicativo...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Built build/helloworld/macos/app/Hello World.app</span>
+<span class="go">[helloworld] Compilado build/helloworld/macos/app/Hello World.app</span>
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Iniciando o aplicativo...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
 
-<span class="go">[helloworld] Finalizing application configuration...</span>
-<span class="go">Targeting ubuntu:jammy (Vendor base debian)</span>
-<span class="go">Determining glibc version... done</span>
-<span class="go">Targeting glibc 2.35</span>
-<span class="go">Targeting Python3.10</span>
+<span class="go">[helloworld] Finalizando a configuração do aplicativo...</span>
+<span class="go">Direcionando para ubuntu:jammy (base do fornecedor: Debian)</span>
+<span class="go">Determinando a versão do glibc... concluído</span>
+<span class="go">Direcionando para glibc 2.35</span>
+<span class="go">Direcionando para Python 3.10</span>
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">Instalando src/helloworld... concluído</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] Removendo conteúdo desnecessário do aplicativo...</span>
+<span class="go">Removendo conteúdo desnecessário do pacote do aplicativo... concluído</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Aplicativo atualizado.</span>
 
-<span class="go">[helloworld] Building application...</span>
+<span class="go">[helloworld] Compilando o aplicativo...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
+<span class="go">[helloworld] Compilado build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Iniciando o aplicativo...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run -u
 
-<span class="go">[helloworld] Updating application code...</span>
-<span class="go">Installing src/helloworld... done</span>
+<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">Instalando src/helloworld... concluído</span>
 
-<span class="go">[helloworld] Removing unneeded app content...</span>
-<span class="go">Removing unneeded app bundle content... done</span>
+<span class="go">[helloworld] Removendo conteúdo desnecessário do aplicativo...</span>
+<span class="go">Removendo conteúdo desnecessário do pacote do aplicativo... concluído</span>
 
-<span class="go">[helloworld] Application updated.</span>
+<span class="go">[helloworld] Aplicativo atualizado.</span>
 
-<span class="go">[helloworld] Starting app...</span>
+<span class="go">[helloworld] Iniciando o aplicativo...</span>
 </code></pre></div>
 </div>
 </div>
