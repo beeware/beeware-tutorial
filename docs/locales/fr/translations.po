@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-05 21:23+0000\n"
-"PO-Revision-Date: 2026-01-14 23:01+0000\n"
-"Last-Translator: kursk140 <yannick.monnier.1@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\n"
-"Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.3\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-04-05 21:23+0000\nPO-Revision-Date: 2026-04-06 20:09+0000\nLast-Translator: kursk140 <yannick.monnier.1@gmail.com>\nLanguage-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.17-dev\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -180,7 +168,7 @@ msgstr "La suite BeeWare est disponible pour macOS, Windows, Linux (avec GTK) 
 
 #: docs/en/index.md:54
 msgid "Let's go"
-msgstr "C'est parti !"
+msgstr "C'est parti"
 
 #: docs/en/index.md:56
 msgid "Ready to try BeeWare for yourself? [Let's build a cross-platform application in Python!]{1}"
@@ -2189,9 +2177,8 @@ msgid "To check the version of Python that you have installed, run the following
 msgstr "Pour vérifier la version de Python que vous avez installée, exécutez la commande suivante :"
 
 #: docs/en/tutorial/tutorial-0.md:19
-#, fuzzy
 msgid "$ python3 --version"
-msgstr "Python 3.8.10 (version par défaut, 20 juillet 2020, 16 h 16)"
+msgstr "$ python3 --version"
 
 #: docs/en/tutorial/tutorial-0.md:23
 #, fuzzy
@@ -2226,9 +2213,8 @@ msgid "Support for Windows on ARM64 is limited at this time."
 msgstr "La prise en charge du Raspberry Pi est limitée pour le moment."
 
 #: docs/en/tutorial/tutorial-0.md:45
-#, fuzzy
 msgid "You can also install Python from the Windows App Store, or use [Anaconda]{1} or [Miniconda]{2}. It doesn't matter *how* you've installed Python - it only matters that you can run `python3` from your command prompt and get a working, supported Python interpreter."
-msgstr "Si vous êtes sous macOS ou Windows, peu importe *comment* vous avez installé Python – ce qui compte c'est que vous puissiez lancer `python3` à partir de l'invite de commande/terminal de votre système d'exploitation, et obtenir un interpréteur Python fonctionnel."
+msgstr "Vous pouvez aussi installer Python à partir du Windows App Store, ou utiliser [Anaconda]{1} ou [Miniconda]{2}. Peu importe *comment* vous avez installé Python – ce qui compte c'est que vous puissiez lancer `python3` à partir de l'invite de commande, et obtenir un interpréteur Python supporté fonctionnel."
 
 #: docs/en/tutorial/tutorial-0.md:49
 #, fuzzy
@@ -2299,9 +2285,8 @@ msgid "/// admonition | Other Linux distributions"
 msgstr "/// admonition | Autres distributions Linux"
 
 #: docs/en/tutorial/tutorial-0.md:92
-#, fuzzy
 msgid "If you're on a Linux distribution that isn't on this list, and isn't derived from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived distributions; AlmaLinux is Fedora-derived), you will probably have difficulty completing this tutorial. If Briefcase warns you that it \"Can't verify system packages\", you won't be able to complete this tutorial."
-msgstr "Si vous utilisez une distribution Linux qui ne figure pas dans cette liste et qui n'est pas dérivée d'une distribution figurant dans cette liste (par exemple, Linux Mint et Pop! OS sont toutes deux des distributions dérivées de Debian ; AlmaLinux est dérivée de Fedora), vous aurez probablement des difficultés à suivre ce tutoriel. Si Briefcase vous avertit qu'il « ne peut pas vérifier les paquets système », vous ne pourrez pas suivre ce tutoriel."
+msgstr "Si vous utilisez une distribution Linux qui ne figure pas dans cette liste et qui n'est pas dérivée d'une distribution figurant dans cette liste (par exemple, Linux Mint et Pop ! OS sont toutes deux des distributions dérivées de Debian ; AlmaLinux est dérivée de Fedora), vous aurez probablement des difficultés à suivre ce tutoriel. Si Briefcase vous avertit qu'il « ne peut pas vérifier les paquets système », vous ne pourrez pas suivre ce tutoriel."
 
 #: docs/en/tutorial/tutorial-0.md:100
 msgid "Building BeeWare apps on Windows requires:"
@@ -2687,7 +2672,6 @@ msgid "![Hello World Tutorial 1 window, on Linux]{1}"
 msgstr "![Hello World Tutorial 1 fenêtre, sur Linux]{1}"
 
 #: docs/en/tutorial/tutorial-1.md:195 docs/en/tutorial/tutorial-7.md:247
-#, fuzzy
 msgid "/// admonition | Possible errors when running `briefcase dev`"
 msgstr "/// admonition | Erreurs possibles lors de l'exécution de « briefcase dev »"
 
@@ -5768,14 +5752,12 @@ msgid "If you're still getting an error running `briefcase dev`, make sure:"
 msgstr "Si vous obtenez toujours une erreur lors de l'exécution de `briefcase dev`, assurez-vous que :"
 
 #: docs/en/tutorial/tutorial-7.md:251
-#, fuzzy
 msgid "You've added `faker` to the `requires` list in `pyproject.toml`;"
-msgstr "Vous avez ajouté `faker` à la liste `requires` dans `pyproject.toml`;"
+msgstr "Vous avez ajouté `faker` à la liste `requires` dans `pyproject.toml` ;"
 
 #: docs/en/tutorial/tutorial-7.md:252
-#, fuzzy
 msgid "You've saved your changes to `pyproject.toml`; and"
-msgstr "Vous avez enregistré vos modifications dans `pyproject.toml`; et"
+msgstr "Vous avez enregistré vos modifications dans `pyproject.toml` ; et"
 
 #: docs/en/tutorial/tutorial-7.md:253
 #, fuzzy
