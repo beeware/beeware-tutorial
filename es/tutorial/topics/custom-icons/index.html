@@ -1645,10 +1645,10 @@ de la definición <code>sources</code>:</p>
 </code></pre></div>
 <p>Esta definición de icono no especifica ninguna extensión de archivo. El valor
 será utilizada como prefijo; cada plataforma añadirá elementos adicionales a
-este prefijo para construir los archivos necesarios para cada plataforma.
-Algunas plataformas requieren <em>múltiples</em> archivos de icono; este prefijo se
-combinará con modificadores de tamaño de archivo y variantes para generar la
-lista de archivos de iconos que son utilizados.</p>
+este prefijo para crear los archivos necesarios para cada plataforma. Algunas
+plataformas requieren <em>múltiples</em> archivos de icono; este prefijo se combinará
+con modificadores de tamaño de archivo y variantes para generar la lista de
+archivos de iconos que son utilizados.</p>
 <p>Ahora podemos ejecutar <code>briefcase update</code> de nuevo — pero esta vez, le pasamos
 el indicador <code>--update-resources</code>, diciéndole a Briefcase que queremos instalar
 recursos nuevos de la aplicación (es decir, los iconos):</p>
@@ -1804,7 +1804,7 @@ iconos que necesitas para soportar una aplicación en todas las plataformas que
 soporta Briefcase.</p>
 <p>Ahora que tenemos iconos, de nuevo podemos actualizar la aplicación. Sin
 embargo, <code>briefcase update</code> solo copiará los recursos actualizados en el
-directorio de construcción; queremos además reconstruir la aplicación para
+directorio de construcción; queremos además recrear la aplicación para
 asegurarnos que el icono nuevo está incluido, luego iniciar la aplicación.
 Podemos acortar este proceso pasando <code>--update-resources</code> a nuestra invocación a
 <code>run</code> - esto actualizará la aplicación y los recursos de la aplicación, y luego
@@ -1852,11 +1852,11 @@ iniciará la aplicación:</p>
 
 <span class="go">[helloworld] Aplicación actualizada.</span>
 
-<span class="go">[helloworld] Compilando la aplicación...</span>
-<span class="go">Compilando el binario de arranque...</span>
+<span class="go">[helloworld] Creando la aplicación...</span>
+<span class="go">Creando el binario de arranque...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Compilado build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
+<span class="go">[helloworld] Creando build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 
 <span class="go">[helloworld] Iniciando la aplicación...</span>
 </code></pre></div>
@@ -1987,7 +1987,7 @@ queremos sobrescribir el proyecto existente:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [s/N]? s</span>
+<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [y/N]? s</span>
 
 <span class="go">[helloworld] Eliminando el paquete de la aplicación anterior...</span>
 
@@ -2000,7 +2000,7 @@ queremos sobrescribir el proyecto existente:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [s/N]? s</span>
+<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [y/N]? s</span>
 
 <span class="go">[helloworld] Eliminando el paquete de la aplicación anterior...</span>
 
@@ -2013,7 +2013,7 @@ queremos sobrescribir el proyecto existente:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create
 
-<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [S/N]? S</span>
+<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [y/N]? S</span>
 
 <span class="go">[helloworld] Eliminando el paquete de la aplicación anterior...</span>
 
@@ -2026,7 +2026,7 @@ queremos sobrescribir el proyecto existente:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>android
 
-<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [s/N]? s</span>
+<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [y/N]? s</span>
 
 <span class="go">[helloworld] Eliminando el paquete de la aplicación anterior...</span>
 
@@ -2038,7 +2038,7 @@ queremos sobrescribir el proyecto existente:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
 
-<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [s/N]? s</span>
+<span class="go">La aplicación «helloworld» ya existe; ¿desea sobrescribirla [y/N]? s</span>
 
 <span class="go">[helloworld] Eliminando el paquete de la aplicación anterior...</span>
 
@@ -2049,7 +2049,7 @@ queremos sobrescribir el proyecto existente:</p>
 </div>
 </div>
 </div>
-<p>A continuación, puede volver a compilar y volver a ejecutar la aplicación
+<p>A continuación, puede volver a re-crear y volver a ejecutar la aplicación
 utilizando <code>briefcase run</code>. No notarás ningún cambio en la aplicación de
 escritorio; pero las aplicaciones para Android o iOS ahora tendrían un fondo de
 pantalla azul claro.</p>

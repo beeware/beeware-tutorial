@@ -2143,7 +2143,7 @@ paquete para cualquier distribución de Linux que admita Briefcase pasando una
 imagen Docker como argumento. Por ejemplo, para construir un paquete DEB para
 Ubuntu 22.04 (Jammy), independientemente del sistema operativo en el que se
 encuentre, puedes ejecutar:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>paquete<span class="w"> </span>briefcase<span class="w"> </span>--destino<span class="w"> </span>ubuntu:jammy
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--target<span class="w"> </span>ubuntu:jammy
 </code></pre></div>
 <p>Esto descargará la imagen Docker para el sistema operativo seleccionado, creará
 un contenedor capaz de ejecutar las compilaciones de Briefcase y compilará el
@@ -2153,9 +2153,9 @@ paquete de la aplicación dentro de la imagen. Una vez completado, la carpeta
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase package
 
-<span class="go">*************************************************************************</span>
+<span class="go">************************************************************************</span>
 <span class="go">** ADVERTENCIA: No se ha proporcionado ninguna identidad de firma **</span>
-<span class="go">*************************************************************************</span>
+<span class="go">************************************************************************</span>
 
 <span class="go">    Briefcase no firmará la aplicación. Para proporcionar una identidad de firma,</span>
 <span class="go">    utilice la opción `--identity`; o, para desactivar explícitamente la firma,</span>

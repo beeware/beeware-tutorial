@@ -1699,12 +1699,12 @@ importación al principio de <code>app.py</code> para importar a <code>faker</co
 </code></pre></div>
 <p>Después modifica el manejador de eventos <code>say_hello()</code> tal que se vea como esto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
-    <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
-    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
- <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
- <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
- <span class="sa">f</span><span class="s2">&quot;Un mensaje de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
- <span class="p">)</span>
+      <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
+      <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+            <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+                 <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+                  <span class="sa">f</span><span class="s2">&quot;Un mensaje de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+             <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>Vamos a ejecutar nuestra aplicación actualizada en el modo de desarrollador de
@@ -1713,56 +1713,56 @@ Portafolio para comprobar que nuestro cambio ha funcionado.</p>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
-<span class="go">Traceback (última llamada más reciente):</span>
-<span class="go">Archivo «.../venv/bin/briefcase», línea 5, en &lt;module&gt;</span>
+<span class="go">Traceback (última invocación más reciente):</span>
+<span class="go">Archivo &quot;.../venv/bin/briefcase&quot;, línea 5, en &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/__main__.py», línea 3, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, línea 3, en &lt;module&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/cmdline.py», línea 6, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, línea 6, en &lt;module&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py», línea 1, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, línea 1, en &lt;module&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/commands/build.py», línea 5, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, línea 5, en &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/commands/base.py», línea 14, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, línea 14, en &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: No existe ningún módulo llamado «faker»</span>
+<span class="go">ModuleNotFoundError: No existe ningún módulo llamado &#39;faker&#39;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
-<span class="go">Traceback (última llamada más reciente):</span>
-<span class="go">Archivo «.../venv/bin/briefcase», línea 5, en &lt;module&gt;</span>
+<span class="go">Traceback (última invocación más reciente):</span>
+<span class="go">Archivo &quot;.../venv/bin/briefcase&quot;, línea 5, en &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/__main__.py», línea 3, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, línea 3, en &lt;module&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/cmdline.py», línea 6, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, línea 6, en &lt;module&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py», línea 1, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, línea 1, en &lt;module&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/commands/build.py», línea 5, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, línea 5, en &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="go">Archivo «.../venv/lib/python3.13/site-packages/briefcase/commands/base.py», línea 14, en &lt;módulo&gt;</span>
+<span class="go">Archivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, línea 14, en &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: No existe ningún módulo llamado «faker»</span>
+<span class="go">ModuleNotFoundError: No existe ningún módulo llamado &#39;faker&#39;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
-<span class="go">Traceback (última llamada más reciente):</span>
-<span class="gp">Archivo «...\venv\bin\briefcase», línea 5, en &lt;module&gt;</span>
+<span class="go">Traceback (última invocación más reciente):</span>
+<span class="gp">Archivo &quot;...\venv\bin\briefcase&quot;, línea 5, en &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="gp">Archivo «...\venv\lib\python3.13\site-packages\briefcase\__main__.py», línea 3, en &lt;módulo&gt;</span>
+<span class="gp">Archivo &quot;...\venv\lib\python3.13\site-packages\briefcase\__main__.py&quot;, línea 3, en &lt;module&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="gp">Archivo «...\venv\lib\python3.13\site-packages\briefcase\cmdline.py», línea 6, en &lt;módulo&gt;</span>
+<span class="gp">Archivo &quot;...\venv\lib\python3.13\site-packages\briefcase\cmdline.py&quot;, línea 6, en &lt;module&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="gp">Archivo &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py&quot;, línea 1, en &lt;módulo&gt;</span>
+<span class="gp">Archivo &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py&quot;, línea 1, en &lt;module&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="gp">Archivo «...\venv\lib\python3.13\site-packages\briefcase\commands\build.py», línea 5, en &lt;módulo&gt;</span>
+<span class="gp">Archivo &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\build.py&quot;, línea 5, en &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="gp">Archivo «...\venv\lib\python3.13\site-packages\briefcase\commands\base.py», línea 14, en &lt;módulo&gt;</span>
+<span class="gp">Archivo &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\base.py&quot;, línea 14, en &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: No existe ningún módulo llamado «faker»</span>
+<span class="go">ModuleNotFoundError: No existe ningún módulo llamado &#39;faker&#39;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1791,7 +1791,7 @@ proporcionaste cuando ejecutaste <code>briefcase new</code>originalmente.</p>
 <p><code>pyproject.toml</code> está separada en secciones; una de las secciones describe los
 ajustes para tu aplicación:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
-<span class="n">form_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
+<span class="n">form_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola Mundo&quot;</span>
 <span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Una aplicación tutorial&quot;</span>
 <span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;Aquí se deben incluir más detalles sobre la aplicación.</span>
 <span class="s2">&quot;&quot;&quot;</span>
@@ -1988,10 +1988,10 @@ macOS</a></p>
 <span class="go">[helloworld] Finalizando la configuración de la aplicación...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Compilando la aplicación...</span>
+<span class="go">[helloworld] Generando la aplicación...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Compilado en build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
+<span class="go">[helloworld] Generando en build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
 <p>Y, por último, ejecute la aplicación:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
