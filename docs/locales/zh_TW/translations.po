@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-03 23:02+0000\n"
+"POT-Creation-Date: 2026-05-06 03:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_TW <LL@li.org>\n"
@@ -2541,48 +2541,48 @@ msgid "Briefcase will ask us for some details of our new application. For the pu
 msgstr "Briefcase 將詢問我們新應用程式的一些詳細資訊。出於本教學的目的，請使用以下內容："
 
 #: docs/en/tutorial/tutorial-1.md:75
+msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
+msgstr "**GUI 框架** - 接受預設選項 Toga（BeeWare 自己的 GUI 工具）。"
+
+#: docs/en/tutorial/tutorial-1.md:76
 msgid "**Formal Name** - Accept the default value: `Hello World`."
 msgstr "**正式名稱** - 接受預設值： `Hello World` 。"
 
-#: docs/en/tutorial/tutorial-1.md:76
+#: docs/en/tutorial/tutorial-1.md:77
 msgid "**App Name** - Accept the default value: `helloworld`."
 msgstr "**應用程式名稱** - 接受預設值： `helloworld` 。"
 
-#: docs/en/tutorial/tutorial-1.md:77
+#: docs/en/tutorial/tutorial-1.md:78
 #, fuzzy
 msgid "**Bundle Identifier** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter `com.cupcakes` as the bundle). If you don't own your own domain, accept the default bundle (`com.example`)."
 msgstr "**封裝名稱** - 如果您擁有自己的網域，請以相反的順序輸入該網域。 （例如，如果您擁有網域名稱 `cupcakes.com` ，請輸入 `com.cupcakes` 作為捆綁包）。如果您不擁有自己的網域，請接受預設捆綁包（ `com.example` ）。"
 
-#: docs/en/tutorial/tutorial-1.md:78
+#: docs/en/tutorial/tutorial-1.md:79
 msgid "**Project Name** - Accept the default value: `Hello World`."
 msgstr "**項目名稱** - 接受預設值： `Hello World` 。"
 
-#: docs/en/tutorial/tutorial-1.md:79
+#: docs/en/tutorial/tutorial-1.md:80
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
 msgstr "**描述** - 接受預設值（或者，如果您想真正發揮創意，請提出您自己的描述！）"
 
-#: docs/en/tutorial/tutorial-1.md:80
+#: docs/en/tutorial/tutorial-1.md:81
 msgid "**Author** - Enter your own name here."
 msgstr "**作者** - 在此輸入您自己的姓名。"
 
-#: docs/en/tutorial/tutorial-1.md:81
+#: docs/en/tutorial/tutorial-1.md:82
 #, fuzzy
 msgid "**Author's Email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
 msgstr "**作者的電子郵件** - 輸入您自己的電子郵件地址。這將用在設定檔、說明文字以及將應用程式提交到應用程式商店時需要電子郵件的任何地方。"
 
-#: docs/en/tutorial/tutorial-1.md:82
+#: docs/en/tutorial/tutorial-1.md:83
 #, fuzzy
 msgid "**Application URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the `https://`). Otherwise, just accept the default URL (`https://example.com/helloworld`). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
 msgstr "**URL** - 您的應用程式的登入頁面的 URL。同樣，如果您擁有自己的網域，請輸入該網域的 URL（包括 `https://` ）。否則，只需接受預設 URL (`https://example.com/helloworld`)。該 URL 不需要實際存在（目前）；只有當您將應用程式發佈到應用程式商店時才會使用它。"
 
-#: docs/en/tutorial/tutorial-1.md:83
+#: docs/en/tutorial/tutorial-1.md:84
 #, fuzzy
 msgid "**Project License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
 msgstr "**許可證** - 接受預設許可證 (BSD)。不過，這不會影響本教學的操作 - 因此，如果您對許可證選擇有特別強烈的感覺，請隨意選擇其他許可證。"
-
-#: docs/en/tutorial/tutorial-1.md:84
-msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
-msgstr "**GUI 框架** - 接受預設選項 Toga（BeeWare 自己的 GUI 工具）。"
 
 #: docs/en/tutorial/tutorial-1.md:86
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like:"

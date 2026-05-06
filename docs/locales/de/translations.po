@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-03 23:02+0000\n"
+"POT-Creation-Date: 2026-05-06 03:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de <LL@li.org>\n"
@@ -2505,48 +2505,48 @@ msgid "Briefcase will ask us for some details of our new application. For the pu
 msgstr "Briefcase wird uns nach einigen Details zu unserer neuen Anwendung fragen. Verwenden Sie für dieses Tutorial die folgenden Angaben:"
 
 #: docs/en/tutorial/tutorial-1.md:75
+msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
+msgstr "**GUI-Framework** - Akzeptieren Sie die Standardoption Toga (BeeWare's eigenes GUI-Toolkit)."
+
+#: docs/en/tutorial/tutorial-1.md:76
 msgid "**Formal Name** - Accept the default value: `Hello World`."
 msgstr "**Formaler Name** - Akzeptieren Sie den Standardwert: `Hello World`."
 
-#: docs/en/tutorial/tutorial-1.md:76
+#: docs/en/tutorial/tutorial-1.md:77
 msgid "**App Name** - Accept the default value: `helloworld`."
 msgstr "**App Name** - Akzeptieren Sie den Standardwert: `helloworld`."
 
-#: docs/en/tutorial/tutorial-1.md:77
+#: docs/en/tutorial/tutorial-1.md:78
 #, fuzzy
 msgid "**Bundle Identifier** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter `com.cupcakes` as the bundle). If you don't own your own domain, accept the default bundle (`com.example`)."
 msgstr "**Bundle** - Wenn Sie eine eigene Domain besitzen, geben Sie diese in umgekehrter Reihenfolge an. (Wenn Sie zum Beispiel die Domain \"cupcakes.com\" besitzen, geben Sie `com.cupcakes` als Bundle ein). Wenn Sie keine eigene Domain besitzen, akzeptieren Sie das Standard-Bundle (`com.example`)."
 
-#: docs/en/tutorial/tutorial-1.md:78
+#: docs/en/tutorial/tutorial-1.md:79
 msgid "**Project Name** - Accept the default value: `Hello World`."
 msgstr "**Projektname** - Übernehmen Sie den Standardwert: `Hello World`."
 
-#: docs/en/tutorial/tutorial-1.md:79
+#: docs/en/tutorial/tutorial-1.md:80
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
 msgstr "**Description** - Übernehmen Sie den Standardwert (wenn Sie wirklich kreativ sein wollen, denken Sie sich Ihre eigene Beschreibung aus!)"
 
-#: docs/en/tutorial/tutorial-1.md:80
+#: docs/en/tutorial/tutorial-1.md:81
 msgid "**Author** - Enter your own name here."
 msgstr "**Author** - Geben Sie hier Ihren eigenen Namen ein."
 
-#: docs/en/tutorial/tutorial-1.md:81
+#: docs/en/tutorial/tutorial-1.md:82
 #, fuzzy
 msgid "**Author's Email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
 msgstr "**Author's email** - Geben Sie Ihre eigene E-Mail-Adresse ein. Diese wird in der Konfigurationsdatei, im Hilfetext und überall dort verwendet, wo bei der Einreichung der App bei einem App-Store eine E-Mail erforderlich ist."
 
-#: docs/en/tutorial/tutorial-1.md:82
+#: docs/en/tutorial/tutorial-1.md:83
 #, fuzzy
 msgid "**Application URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the `https://`). Otherwise, just accept the default URL (`https://example.com/helloworld`). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
 msgstr "**URL** - Die URL der Landing Page für Ihre Anwendung. Auch hier gilt: Wenn Sie Ihre eigene Domain besitzen, geben Sie eine URL auf dieser Domain ein (einschließlich `https://`). Ansonsten akzeptieren Sie einfach die Standard-URL (`https://example.com/helloworld`). Diese URL muss (vorerst) nicht tatsächlich existieren; sie wird nur verwendet, wenn Sie Ihre Anwendung in einem App Store veröffentlichen."
 
-#: docs/en/tutorial/tutorial-1.md:83
+#: docs/en/tutorial/tutorial-1.md:84
 #, fuzzy
 msgid "**Project License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
 msgstr "**Lizenz** - Akzeptieren Sie die Standardlizenz (BSD). Dies hat jedoch keinen Einfluss auf die Funktionsweise des Tutorials - wenn Sie also besonders starke Gefühle bezüglich der Lizenzwahl haben, können Sie gerne eine andere Lizenz wählen."
-
-#: docs/en/tutorial/tutorial-1.md:84
-msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
-msgstr "**GUI-Framework** - Akzeptieren Sie die Standardoption Toga (BeeWare's eigenes GUI-Toolkit)."
 
 #: docs/en/tutorial/tutorial-1.md:86
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like:"
