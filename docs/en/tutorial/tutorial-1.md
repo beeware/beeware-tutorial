@@ -72,6 +72,7 @@ Let's start our first BeeWare project! We're going to use the Briefcase `new` co
 
 Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:
 
+- **GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit).
 - **Formal Name** - Accept the default value: `Hello World`.
 - **App Name** - Accept the default value: `helloworld`.
 - **Bundle Identifier** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain "cupcakes.com", enter `com.cupcakes` as the bundle). If you don't own your own domain, accept the default bundle (`com.example`).
@@ -81,7 +82,6 @@ Briefcase will ask us for some details of our new application. For the purposes 
 - **Author's Email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store.
 - **Application URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the `https://`). Otherwise, just accept the default URL (`https://example.com/helloworld`). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store.
 - **Project License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license.
-- **GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit).
 
 Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like:
 
