@@ -38,7 +38,7 @@ Support for Raspberry Pi is limited at this time.
 
 /// tab | Windows
 
-If you're on Windows, you can get the official installer from [the Python website](https://www.python.org/downloads). You can use any version of Python from 3.10 to 3.13 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13.
+If you're on Windows, you can get the official installer from [the Python website](https://www.python.org/downloads). You can use any version of Python from 3.10 to 3.14 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer.
 
 Support for Windows on ARM64 is limited at this time.
 
