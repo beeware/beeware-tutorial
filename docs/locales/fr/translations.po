@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 18:29+0000\n"
+"POT-Creation-Date: 2026-05-24 22:19+0000\n"
 "PO-Revision-Date: 2026-04-06 20:09+0000\n"
 "Last-Translator: kursk140 <yannick.monnier.1@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\n"
@@ -2216,8 +2216,9 @@ msgid "**Important:** You *must* use the system Python provided by your operatin
 msgstr "**Important :** Vous *devez* utiliser le système Python fourni par votre système d'exploitation. Les installations Python provenant d'autres sources (telles que uv, pyenv, Anaconda, Python compilé manuellement, etc.) vous empêcheront de réussir à empaqueter votre application pour la distribution dans les étapes ultérieures de ce tutoriel."
 
 #: docs/en/tutorial/tutorial-0.md:41
-msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.13 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13."
-msgstr "Si vous êtes sous Windows, vous pouvez obtenir l'installateur officiel à partir du [site web de Python]{1}. Vous pouvez utiliser n'importe quelle version stable de Python de la 3.10 à la 3.13 (mais vous devriez éviter les versions alpha, beta et release candidates). Nous recommandons vivement d'utiliser Python 3.13."
+#, fuzzy
+msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.14 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
+msgstr "Si vous utilisez Windows, vous pouvez télécharger le programme d'installation officiel depuis [le site web de Python]{1}. Vous pouvez utiliser n'importe quelle version de Python comprise entre la 3.10 et la 3.14 (mais évitez les versions alpha, bêta et les versions candidates). Nous vous recommandons vivement d'utiliser Python 3.13 ou une version plus récente."
 
 #: docs/en/tutorial/tutorial-0.md:43
 #, fuzzy

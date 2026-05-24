@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 18:29+0000\n"
+"POT-Creation-Date: 2026-05-24 22:19+0000\n"
 "PO-Revision-Date: 2026-04-10 19:09+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
@@ -2133,8 +2133,9 @@ msgid "**Important:** You *must* use the system Python provided by your operatin
 msgstr "**Importante:** *Debe* utilizar el sistema Python proporcionado por su sistema operativo. Las instalaciones de Python procedentes de otras fuentes (como uv, pyenv, Anaconda, Python compilado manualmente, etc.) le impedirán empaquetar correctamente su aplicación para su distribución en los pasos posteriores de este tutorial."
 
 #: docs/en/tutorial/tutorial-0.md:41
-msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.13 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13."
-msgstr "Si usas Windows, puedes obtener el instalador oficial desde [la página web de Python]{1}. Puedes usar cualquier versión estable de Python desde la 3.10 a la 3.13 (sin embargo evitaría las alfa, beta y candidatos a lanzamiento). Te recomendamos que utilices Python 3.13."
+#, fuzzy
+msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.14 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
+msgstr "Si utilizas Windows, puedes descargar el instalador oficial desde [la página web de Python]{1}. Puedes utilizar cualquier versión de Python desde la 3.10 hasta la 3.14 (aunque es mejor evitar las versiones alfa, beta y candidatas a lanzamiento). Recomendamos encarecidamente utilizar Python 3.13 o una versión posterior."
 
 #: docs/en/tutorial/tutorial-0.md:43
 msgid "Support for Windows on ARM64 is limited at this time."

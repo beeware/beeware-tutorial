@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 18:29+0000\n"
+"POT-Creation-Date: 2026-05-24 22:19+0000\n"
 "PO-Revision-Date: 2026-05-18 18:26+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
@@ -2298,8 +2298,8 @@ msgstr "**Importante:** Você *deve* usar o sistema Python fornecido pelo seu si
 
 #: docs/en/tutorial/tutorial-0.md:41
 #, fuzzy
-msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.13 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13."
-msgstr "Se estiver usando o Windows, você pode baixar o instalador oficial [no site do Python]{1}. Recomendamos usar qualquer versão estável do Python a partir da 3.8. Evite versões alpha, beta e candidatas a lançamento, a menos que você esteja realmente familiarizado com essas versões de desenvolvimento."
+msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.14 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
+msgstr "Se você estiver no Windows, pode baixar o instalador oficial no [site do Python]{1}. Você pode usar qualquer versão do Python entre a 3.10 e a 3.14 (embora seja recomendável evitar versões alfa, beta e candidatas a lançamento). Recomendamos fortemente o uso do Python 3.13 ou mais recente."
 
 #: docs/en/tutorial/tutorial-0.md:43
 #, fuzzy

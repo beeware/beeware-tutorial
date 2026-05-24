@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 18:29+0000\n"
+"POT-Creation-Date: 2026-05-24 22:19+0000\n"
 "PO-Revision-Date: 2025-10-15 17:07+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/zh_Hans/>\n"
@@ -2236,8 +2236,8 @@ msgstr "**重要提示：**您*必须*使用操作系统自带的系统版Python
 
 #: docs/en/tutorial/tutorial-0.md:41
 #, fuzzy
-msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.13 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13."
-msgstr "如果您使用的是 Windows，您可以从 [Python 网站]{1}\\ 获取官方安装程序。您可以使用 Python 3.9 到 3.13 的任何稳定版本。我们还建议避免使用 Alpha、Beta 和候选版本，除非你\\ *真的*\\ 知道自己在做什么。"
+msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.14 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
+msgstr "如果您使用的是 Windows 系统，可以从 [Python 官网]{1} 下载官方安装程序。您可以使用 Python 3.10 至 3.14 之间的任意版本（但应避免使用 alpha、beta 和候选版本）。我们强烈建议使用 Python 3.13 或更高版本。"
 
 #: docs/en/tutorial/tutorial-0.md:43
 #, fuzzy
