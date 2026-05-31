@@ -1,68 +1,46 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-30 03:02+0000\n"
-"PO-Revision-Date: 2026-05-18 18:26+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.10\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-05-30 03:02+0000\nPO-Revision-Date: 2026-06-01 00:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6.dev0\n"
 
 #: docs/en/SUMMARY.md:5
-#, fuzzy
 msgid "[Tutorial 0 - Let's get set up!]{1}"
 msgstr "[Tutorial 0 - Vamos nos preparar!]{1}"
 
 #: docs/en/SUMMARY.md:6
-#, fuzzy
 msgid "[Tutorial 1 - Your first app]{1}"
-msgstr "[Tutorial 1 - Seu primeiro app]{1}"
+msgstr "[Tutorial 1 - A sua primeira aplicação]{1}"
 
 #: docs/en/SUMMARY.md:7
-#, fuzzy
 msgid "[Tutorial 2 - Making it interesting]{1}"
-msgstr "[Tutorial 2 - Tornando as coisas interessantes]{1}"
+msgstr "[Tutorial 2 - Torna-la interessante]{1}"
 
 #: docs/en/SUMMARY.md:8
-#, fuzzy
 msgid "[Tutorial 3 - Packaging for distribution]{1}"
-msgstr "[Tutorial 3 - Empacotando para Distribuição]{1}"
+msgstr "[Tutorial 3 - Empacotar para distribuição]{1}"
 
 #: docs/en/SUMMARY.md:9
-#, fuzzy
 msgid "[Tutorial 4 - Updating your application]{1}"
-msgstr "[Tutorial 4 - Atualizando sua aplicação]{1}"
+msgstr "[Tutorial 4 - Atualizar a sua aplicação]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "Tutorial 5 - Taking it mobile"
-msgstr "Tutorial 5 - Levando para o Mobile"
+msgstr "Tutorial 5 - Tornando-a móvel"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile]{1}"
-msgstr "[Tutorial 5 - Levando para o Mobile]{1}"
+msgstr "[Tutorial 5 - Tornando-a móvel]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: Android]{1}"
-msgstr "[Tutorial 5 - Levando para o Mobile: Android]{1}"
+msgstr "[Tutorial 5 - Tornando-a móvel: Android]{1}"
 
 #: docs/en/SUMMARY.md:10
-#, fuzzy
 msgid "[Tutorial 5 - Taking it mobile: iOS]{1}"
-msgstr "[Tutorial 5 - Levando para o Mobile: iOS]{1}"
+msgstr "[Tutorial 5 - Tornando-a móvel: iOS]{1}"
 
 #: docs/en/SUMMARY.md:14
-#, fuzzy
 msgid "[Tutorial 6 - Put it on the web!]{1}"
-msgstr "[Tutorial 6 - Coloque na web!]{1}"
+msgstr "[Tutorial 6 - Colocar na web!]{1}"
 
 #: docs/en/SUMMARY.md:15
 #, fuzzy
@@ -70,39 +48,32 @@ msgid "[Tutorial 7 - Get this (third-)party started]{1}"
 msgstr "[Tutorial 7 - Iniciando o uso de bibliotecas externas]{1}"
 
 #: docs/en/SUMMARY.md:16
-#, fuzzy
 msgid "[Tutorial 8 - Making it Smooooth]{1}"
-msgstr "[Tutorial 8 - Suavizando o Processo]{1}"
+msgstr "[Tutorial 8 - Torna-la Suaaaaaave]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:1
-#, fuzzy
 msgid "Going further"
-msgstr "Indo além"
+msgstr "Ir mais além"
 
 #: docs/en/SUMMARY.md:17
-#, fuzzy
 msgid "[Going further]{1}"
-msgstr "[Indo além]{1}"
+msgstr "[Ir mais além]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:5
-#, fuzzy
 msgid "[Customizing icons]{1}"
-msgstr "[Personalizando ícones]{1}"
+msgstr "[Personalizar os ícones]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:9
-#, fuzzy
 msgid "[Using the camera]{1}"
-msgstr "[Usando a câmera]{1}"
+msgstr "[Usar a câmera]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:13
-#, fuzzy
 msgid "[Testing times]{1}"
-msgstr "[Tempos de teste]{1}"
+msgstr "[Hora dos testes]{1}"
 
 #: docs/en/index.md:1
-#, fuzzy
 msgid "Welcome to the BeeWare Tutorial"
-msgstr "Bem-vindo ao Tutorial da BeeWare!"
+msgstr "Bem-vindo ao Tutorial da BeeWare"
 
 #: docs/en/index.md:3
 msgid "**Write Python. Run Anywhere.**"
@@ -110,65 +81,55 @@ msgstr "**Escreva em Python. Execute em qualquer lugar.**"
 
 #: docs/en/index.md:5
 msgid "Welcome to BeeWare! In this tutorial, we're going to build a graphical user interface using Python, and deploy it as a desktop application, as a mobile application, and as a single page web app. We'll also look at how you can use BeeWare tools to perform some of the common tasks that you'll need to do as an app developer, such as testing your app."
-msgstr "Bem-vindo ao BeeWare! Neste tutorial, vamos construir uma interface gráfica usando Python e implantá-la como um aplicativo para desktop, como um aplicativo móvel e como um aplicativo web de página única (SPA). Também veremos como você pode usar as ferramentas da BeeWare para realizar algumas das tarefas comuns que você precisará fazer como desenvolvedor de apps, por exemplo, testar seu aplicativo."
+msgstr "Bem-vindo ao BeeWare! Neste tutorial, vamos construir uma interface gráfica usando Python e implementá-la como uma aplicação para ambiente de trabalho, como uma aplicação móvel e como uma aplicação web de página única. Também veremos como pode usar as ferramentas da BeeWare para realizar algumas das tarefas comuns que precisará fazer como desenvolvedor de aplicações, por exemplo, testar a sua aplicação."
 
 #: docs/en/index.md:7
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"original\" %}"
 msgstr "{% if config.extra.translation_type == \"original\" %}"
 
 #: docs/en/index.md:9
-#, fuzzy
 msgid "/// admonition | Translations are available"
 msgstr "/// admonition | As traduções estão disponíveis"
 
 #: docs/en/index.md:11
-#, fuzzy
 msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
-msgstr "Se você não se sente confortável com o Português, as traduções deste tutorial estão disponíveis em [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [English]{5}, e [汉语]{6}."
+msgstr "Se não se sente confortável com Inglês, as traduções deste tutorial estão disponíveis em [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, e [中文(繁體)]{7}."
 
 #: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:47 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:94 docs/en/tutorial/tutorial-0.md:96 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-0.md:121 docs/en/tutorial/tutorial-0.md:132 docs/en/tutorial/tutorial-0.md:161 docs/en/tutorial/tutorial-0.md:163 docs/en/tutorial/tutorial-0.md:171 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:135 docs/en/tutorial/tutorial-1.md:154 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-1.md:193 docs/en/tutorial/tutorial-1.md:199 docs/en/tutorial/tutorial-1.md:201 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-1.md:225 docs/en/tutorial/tutorial-1.md:227 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:153 docs/en/tutorial/tutorial-3.md:183 docs/en/tutorial/tutorial-3.md:200 docs/en/tutorial/tutorial-3.md:202 docs/en/tutorial/tutorial-3.md:231 docs/en/tutorial/tutorial-3.md:259 docs/en/tutorial/tutorial-3.md:283 docs/en/tutorial/tutorial-3.md:332 docs/en/tutorial/tutorial-3.md:429 docs/en/tutorial/tutorial-3.md:467 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:179 docs/en/tutorial/tutorial-7.md:181 docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:207 docs/en/tutorial/tutorial-7.md:231 docs/en/tutorial/tutorial-7.md:233 docs/en/tutorial/tutorial-7.md:239 docs/en/tutorial/tutorial-7.md:245 docs/en/tutorial/tutorial-7.md:255 docs/en/tutorial/tutorial-7.md:300 docs/en/tutorial/tutorial-7.md:302 docs/en/tutorial/tutorial-7.md:357 docs/en/tutorial/tutorial-7.md:396 docs/en/tutorial/tutorial-7.md:398 docs/en/tutorial/tutorial-7.md:473 docs/en/tutorial/tutorial-7.md:521 docs/en/tutorial/tutorial-7.md:548 docs/en/tutorial/tutorial-7.md:577 docs/en/tutorial/tutorial-7.md:600 docs/en/tutorial/tutorial-7.md:619 docs/en/tutorial/tutorial-7.md:643 docs/en/tutorial/tutorial-7.md:651 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
 msgid "///"
 msgstr "///"
 
 #: docs/en/index.md:15 docs/en/index.md:27 docs/en/index.md:39
-#, fuzzy
 msgid "{% endif %}"
 msgstr "{% endif %}"
 
 #: docs/en/index.md:17
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"machine\" %}"
 msgstr "{% if config.extra.translation_type == \"machine\" %}"
 
 #: docs/en/index.md:19
-#, fuzzy
 msgid "/// admonition | This is a machine translation!"
-msgstr "/// admonition | Esta é uma tradução automática!"
+msgstr "/// admonition | Esta é uma tradução de máquina!"
 
 #: docs/en/index.md:21
-#, fuzzy
 msgid "This document is a machine-generated translation of the [English]{1} tutorial. We know that a machine translation isn't ideal, but we felt that a bad translation was better than no translation at all."
-msgstr "Este documento é uma tradução automática do tutorial em inglês. Sabemos que uma tradução automática não é ideal, mas consideramos que uma tradução ruim é melhor do que nenhuma tradução."
+msgstr "Este documento é uma tradução feita por máquina do tutorial em [English]{1}. Sabemos que uma tradução automática não é o ideal, mas sentimos que uma tradução má era melhor do que nenhuma tradução."
 
 #: docs/en/index.md:23 docs/en/index.md:35
 msgid "If you'd like the help improve the translation, get in touch! We have a `#translations` channel in [Discord]{1}. Introduce yourself there and we will add you to the translation team."
 msgstr "Se você quiser ajudar a melhorar a tradução, entre em contato! Temos um canal `#translations` no [Discord]{1}. Apresente-se lá e nós o adicionaremos à equipe de tradução."
 
 #: docs/en/index.md:29
-#, fuzzy
 msgid "{% if config.extra.translation_type == \"human\" %}"
 msgstr "{% if config.extra.translation_type == \"human\" %}"
 
 #: docs/en/index.md:31
-#, fuzzy
 msgid "/// admonition | This is a translation!"
 msgstr "/// admonition | Esta é uma tradução!"
 
 #: docs/en/index.md:33
-#, fuzzy
 msgid "This document is a translation of the [English]{1} tutorial. The translation has been reviewed by humans, but newer sections may have been generated by machine translation."
-msgstr "Este documento é uma tradução do tutorial em inglês. A tradução foi revisada por humanos, mas as seções mais recentes podem ter sido geradas por tradução automática."
+msgstr "Este documento é uma tradução do tutorial em [Inglês]{1}. A tradução foi revista por humanos, mas as secções mais recentes podem ter sido geradas por tradução computorizada."
 
 #: docs/en/index.md:41
 msgid "What is BeeWare?"
@@ -179,19 +140,16 @@ msgid "BeeWare is not a single product, or tool, or library - it's a collection 
 msgstr "O BeeWare não é um único produto, ferramenta ou biblioteca - é uma coleção de ferramentas e bibliotecas, cada uma das quais trabalha em conjunto para ajudar você a escrever aplicativos Python multiplataforma com uma interface gráfica nativa. Isso inclui:"
 
 #: docs/en/index.md:45
-#, fuzzy
 msgid "[Toga]{1}, a cross-platform widget toolkit;"
 msgstr "[Toga]{1}, um kit de ferramentas de widgets para várias plataformas;"
 
 #: docs/en/index.md:46
-#, fuzzy
 msgid "[Briefcase]{1}, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr "[Briefcase]{1}, uma ferramenta para empacotar projetos Python como pacotes distribuíveis que podem ser enviados aos usuários finais;"
+msgstr "[Briefcase]{1}, uma ferramenta para empacotar projectos Python em pacotes distribuíveis que podem ser enviados aos utilizadores finais;"
 
 #: docs/en/index.md:47
-#, fuzzy
 msgid "Libraries (such as [Rubicon ObjC]{1}) for accessing platform-native libraries;"
-msgstr "Bibliotecas (como [Rubicon ObjC]{1}) para acessar bibliotecas nativas da plataforma;"
+msgstr "Bibliotecas (como [Rubicon ObjC]{1}) para aceder a bibliotecas nativas da plataforma;"
 
 #: docs/en/index.md:48
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
@@ -206,67 +164,54 @@ msgid "The BeeWare suite is available on macOS, Windows, Linux (using GTK); on m
 msgstr "A suíte BeeWare está disponível no macOS, Windows, Linux (usando GTK); em plataformas móveis como Android e iOS; e para a Web."
 
 #: docs/en/index.md:54
-#, fuzzy
 msgid "Let's go"
-msgstr "Vamos lá!"
+msgstr "Vamos lá"
 
 #: docs/en/index.md:56
-#, fuzzy
 msgid "Ready to try BeeWare for yourself? [Let's build a cross-platform application in Python!]{1}"
-msgstr "Pronto para experimentar o BeeWare por conta própria? [Vamos criar um aplicativo multiplataforma em Python!]{1}"
+msgstr "Pronto para experimentar o BeeWare por si? [Vamos criar um aplicativo multiplataforma em Python!]{1}"
 
 #: docs/en/tutorial/topics/camera-access.md:1
-#, fuzzy
 msgid "Using the camera"
-msgstr "Usando a câmera"
+msgstr "Usar a câmera"
 
 #: docs/en/tutorial/topics/camera-access.md:3
-#, fuzzy
 msgid "Almost every modern computing device has a camera of some sort. In this tutorial, we'll write new application that is able to request access to this camera, take a photograph, and then display that photograph in the new application that uses your device's camera."
-msgstr "Quase todos os dispositivos de computação modernos têm algum tipo de câmera. Neste tutorial, escreveremos um novo aplicativo capaz de solicitar acesso a essa câmera, tirar uma fotografia e, em seguida, exibir essa fotografia no novo aplicativo que usa a câmera do dispositivo."
+msgstr "Quase todos os dispositivos de computação modernos têm algum tipo de câmera. Neste tutorial, vamos escrever uma nova aplicação capaz de solicitar acesso a essa câmera, tirar uma fotografia, e depois mostrar essa fotografia na nova aplicação que usa a câmera do dispositivo."
 
 #: docs/en/tutorial/topics/camera-access.md:5
-#, fuzzy
 msgid "/// admonition | This tutorial won't work on all platforms!"
-msgstr "/// admonition | Este tutorial não funcionará em todas as plataformas!"
+msgstr "/// admonition | Este tutorial não vai funcionar em todas as plataformas!"
 
 #: docs/en/tutorial/topics/camera-access.md:7
-#, fuzzy
 msgid "Unfortunately, at present, this tutorial will only work on macOS and Android."
-msgstr "Infelizmente, no momento, este tutorial só funcionará no macOS e no Android."
+msgstr "Infelizmente, no momento, este tutorial só funciona no macOS e no Android."
 
 #: docs/en/tutorial/topics/camera-access.md:9
-#, fuzzy
 msgid "Although iPhones all have cameras, the iOS *Simulator* doesn't have a working camera. Windows and Linux devices also have cameras, but Toga doesn't currently have the ability to access the camera on these platforms."
-msgstr "Embora todos os iPhones tenham câmeras, o iOS *Simulator* não tem uma câmera funcional. Os dispositivos Windows e Linux também têm câmeras, mas o Toga não tem a capacidade de acessar a câmera nessas plataformas no momento."
+msgstr "Embora todos os iPhones tenham câmeras, o *Simulador* de iOS não tem uma câmera funcional. Os dispositivos Windows e Linux também têm câmeras, mas atualmente o Toga não tem a capacidade de aceder à câmera nessas plataformas."
 
 #: docs/en/tutorial/topics/camera-access.md:11
-#, fuzzy
 msgid "The code presented here will *run* on Windows or Linux; but it will raise an error when you try to take a photograph."
-msgstr "O código apresentado aqui será *executado* no Windows ou no Linux, mas apresentará um erro quando você tentar tirar uma foto."
+msgstr "O código apresentado aqui vai *correr* no Windows ou no Linux, mas vai apresentar um erro quando tentar tirar uma foto."
 
 #: docs/en/tutorial/topics/camera-access.md:13
-#, fuzzy
 msgid "The code will work if it is run on an actual iOS device, but will fail to take a photograph if deployed to the iOS simulator."
-msgstr "O código funcionará se for executado em um dispositivo iOS real, mas não conseguirá tirar uma foto se for implantado no simulador do iOS."
+msgstr "O código vai funcionar se for executado num dispositivo iOS real, mas não conseguirá tirar uma foto se for implementado no simulador do iOS."
 
 #: docs/en/tutorial/topics/camera-access.md:17
-#, fuzzy
 msgid "Start a new project"
 msgstr "Iniciar um novo projeto"
 
 #: docs/en/tutorial/topics/camera-access.md:19
-#, fuzzy
 msgid "For this tutorial, we're not going to build onto the application from the core tutorial - we're going to start a fresh project. You can use the same virtual environment you used in the first project; but we need to re-run the `briefcase new` wizard."
-msgstr "Para este tutorial, não vamos desenvolver o aplicativo a partir do tutorial principal - vamos iniciar um novo projeto. Você pode usar o mesmo ambiente virtual que usou no primeiro projeto, mas precisamos executar novamente o assistente `briefcase new`."
+msgstr "Para este tutorial, não vamos desenvolver a aplicação a partir do tutorial principal - vamos iniciar um novo projeto. Pode usar o mesmo ambiente virtual que usou no primeiro projeto, mas precisamos executar novamente o assistente `briefcase new`."
 
 #: docs/en/tutorial/topics/camera-access.md:21
-#, fuzzy
 msgid "Change back to the directory that contains the `helloworld` project folder, and start a new project named \"Hello Camera\":"
-msgstr "Volte para o diretório que contém a pasta do projeto `helloworld` e inicie um novo projeto chamado \"Hello Camera\":"
+msgstr "Volte para o diretório que contém a pasta do projeto `helloworld`, e inicie um novo projeto chamado \"Hello Camera\":"
 
 #: docs/en/tutorial/topics/camera-access.md:23
-#, fuzzy
 msgid ""
 "(beeware-venv) $ cd ..\n"
 "(beeware-venv) $ briefcase new\n"
@@ -279,28 +224,15 @@ msgid ""
 "    $ briefcase dev\n"
 "\n"
 "(beeware-venv) $ cd hellocamera"
-msgstr ""
-"(beeware-venv) $ cd ..\n"
-"(beeware-venv) $ briefcase new\n"
-"...\n"
-"[hellocamera] Nova aplicação 'Hello Camera' gerada\n"
-"\n"
-"Para executar sua aplicação, digite:\n"
-"\n"
-" $ cd hellocamera\n"
-"    $ briefcase dev\n"
-"\n"
-"(beeware-venv) $ cd hellocamera"
+msgstr "(beeware-venv) $ cd ..\n(beeware-venv) $ briefcase new\n...\n[hellocamera] Nova aplicação 'Hello Camera' gerada\n\nPara executar sua aplicação, escreva:\n\n $ cd hellocamera\n    $ briefcase dev\n\n(beeware-venv) $ cd hellocamera"
 
 #: docs/en/tutorial/topics/camera-access.md:37
-#, fuzzy
 msgid "Add code to take a photo"
 msgstr "Adicionar código para tirar uma foto"
 
 #: docs/en/tutorial/topics/camera-access.md:39
-#, fuzzy
 msgid "The wizard has generated a new empty Toga project. We can now add the code to take and display a photograph. Edit the `app.py` for the new application so that it has the following content:"
-msgstr "O assistente gerou um novo projeto Toga vazio. Agora podemos adicionar o código para tirar e exibir uma fotografia. Edite o `app.py` do novo aplicativo para que ele tenha o seguinte conteúdo:"
+msgstr "O assistente gerou um novo projeto Toga vazio. Agora podemos adicionar o código para tirar e exibir uma fotografia. Edite o `app.py` da nova aplicação para que tenha o seguinte conteúdo:"
 
 #: docs/en/tutorial/topics/camera-access.md:41
 #, fuzzy
@@ -404,14 +336,12 @@ msgstr ""
 "    return HelloCamera()"
 
 #: docs/en/tutorial/topics/camera-access.md:92
-#, fuzzy
 msgid "This code has two changes over the default app that is generated by Briefcase. These additions are highlighted above:"
-msgstr "Esse código tem duas alterações em relação ao aplicativo padrão que é gerado pelo Briefcase. Essas adições estão destacadas acima:"
+msgstr "Esse código tem duas alterações em relação á aplicação predefinida que é gerada pelo Briefcase. Essas adições estão destacadas em cima:"
 
 #: docs/en/tutorial/topics/camera-access.md:94
-#, fuzzy
 msgid "The first highlighted code block (in the `startup()` method) adds the two widgets needed to control the camera: an `ImageView` to display a photo; and a `Button` to trigger the camera."
-msgstr "O primeiro bloco de código destacado (no método `startup()`) adiciona os dois widgets necessários para controlar a câmera: um `ImageView` para exibir uma foto e um `Button` para acionar a câmera."
+msgstr "O primeiro bloco de código destacado (no método `startup()`) adiciona os dois widgets necessários para controlar a câmera: uma `Vista e Imagem` para mostrar uma foto e um `Botão` para acionar a câmera."
 
 #: docs/en/tutorial/topics/camera-access.md:95
 #, fuzzy
@@ -463,30 +393,22 @@ msgid "/// tab | macOS"
 msgstr "/// tab | macOS"
 
 #: docs/en/tutorial/topics/camera-access.md:117
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase create\n"
 "(beeware-venv) $ briefcase build\n"
 "(beeware-venv) $ briefcase run"
-msgstr ""
-"(beeware-venv) $ briefcase create\n"
-"(beeware-venv) $ briefcase build\n"
-"(beeware-venv) $ briefcase run"
+msgstr "(beeware-venv) $ briefcase create\n(beeware-venv) $ briefcase build\n(beeware-venv) $ briefcase run"
 
 #: docs/en/tutorial/topics/camera-access.md:125 docs/en/tutorial/topics/custom-icons.md:91 docs/en/tutorial/topics/custom-icons.md:281 docs/en/tutorial/topics/custom-icons.md:428 docs/en/tutorial/tutorial-7.md:100 docs/en/tutorial/tutorial-7.md:235 docs/en/tutorial/tutorial-7.md:400 docs/en/tutorial/tutorial-7.md:602 docs/en/tutorial/tutorial-8.md:122 docs/en/tutorial/tutorial-8.md:237
 msgid "/// tab | Android"
 msgstr "/// tab | Android"
 
 #: docs/en/tutorial/topics/camera-access.md:127
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase create android\n"
 "(beeware-venv) $ briefcase build android\n"
 "(beeware-venv) $ briefcase run android"
-msgstr ""
-"(beeware-venv) $ briefcase create android\n"
-"(beeware-venv) $ briefcase build android\n"
-"(beeware-venv) $ briefcase run android"
+msgstr "(beeware-venv) $ briefcase create android\n(beeware-venv) $ briefcase build android\n(beeware-venv) $ briefcase run android"
 
 #: docs/en/tutorial/topics/camera-access.md:135
 #, fuzzy
@@ -509,9 +431,8 @@ msgid "Customizing icons"
 msgstr "Personalização de ícones"
 
 #: docs/en/tutorial/topics/custom-icons.md:3
-#, fuzzy
 msgid "The app we developed in the main tutorial uses a default \"gray bee\" icon when it is packaged. Let's personalize this application by configuring it to use our own icon."
-msgstr "Até agora, nosso aplicativo tem usado um ícone padrão de \"abelha cinza\". Como podemos atualizar o aplicativo para usar nosso próprio ícone?"
+msgstr "A aplicação que desenvolvemos no tutorial principal tem usado um ícone predefinido da \"abelha cinzenta\". Vamos personalizar esta aplicação ao configura-lo para usar o seu próprio ícone."
 
 #: docs/en/tutorial/topics/custom-icons.md:5 docs/en/tutorial/topics/custom-icons.md:319 docs/en/tutorial/topics/custom-icons.md:363 docs/en/tutorial/tutorial-2.md:107 docs/en/tutorial/tutorial-2.md:157 docs/en/tutorial/tutorial-4.md:124 docs/en/tutorial/tutorial-7.md:647
 #, fuzzy
