@@ -716,10 +716,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#inicie-o-app-no-modo-de-desenvolvedor" class="md-nav__link">
+  <a href="#inicie-a-aplicacao-no-modo-de-desenvolvedor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inicie o app no modo de desenvolvedor
+        Inicie a aplicação no modo de desenvolvedor
       
     </span>
   </a>
@@ -1617,10 +1617,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#inicie-o-app-no-modo-de-desenvolvedor" class="md-nav__link">
+  <a href="#inicie-a-aplicacao-no-modo-de-desenvolvedor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inicie o app no modo de desenvolvedor
+        Inicie a aplicação no modo de desenvolvedor
       
     </span>
   </a>
@@ -1721,15 +1721,15 @@ objetivos deste tutorial, utilize o seguinte:</p>
 <li><strong>GUI framework</strong> - Aceitar a opção predefinida, Toga (o kit de ferramentas
   GUI próprio do BeeWare).</li>
 <li><strong>Formal Name</strong> - Aceitar o valor predefinido: <code>Hello World</code>.</li>
-<li><strong>App Name</strong> - Aceite o valor padrão: <code>helloworld</code>.</li>
+<li><strong>App Name</strong> - Aceitar o valor predefinido: <code>helloworld</code>.</li>
 <li><strong>Bundle</strong> - Se você possui seu próprio domínio, insira esse domínio
   invertido. (Por exemplo, se você possui o domínio "cupcakes.com", insira
   <code>com.cupcakes</code> como nome do bundle). Se você não possui seu próprio domínio,
   aceite o padrão (<code>com.example</code>).</li>
-<li><strong>Project Name</strong> - Aceite o valor padrão: <code>Hello World</code>.</li>
-<li><strong>Description</strong> - Aceite o valor padrão (ou, se quiser ser realmente criativo,
-  crie sua própria descrição!)</li>
-<li><strong>Author</strong> - Insira seu próprio nome.</li>
+<li><strong>Project Name</strong> - Aceitar o valor predefinido: <code>Hello World</code>.</li>
+<li><strong>Description</strong> - Aceitar o valor redefinido (ou, se quiser ser realmente
+  criativo, crie a sua própria descrição!)</li>
+<li><strong>Author</strong> - Insira aqui seu nome próprio.</li>
 <li><strong>Author's email</strong> - Insira seu próprio endereço de e-mail. Ele será usado no
   arquivo de configuração, em textos de ajuda e em qualquer lugar onde um e-mail
   seja necessário ao enviar o aplicativo para uma loja de aplicativos.</li>
@@ -1742,9 +1742,9 @@ objetivos deste tutorial, utilize o seguinte:</p>
   funcionamento do tutorial. Se você tem preferências particulares em relação à
   escolha de licença, sinta-se à vontade para escolher outra licença.</li>
 </ul>
-<p>O Briefcase então gerará uma estrutura básica de projeto para você usar. Se você
-seguiu este tutorial até agora e aceitou as configurações padrão como descrito,
-seu sistema de arquivos deve se parecer com algo assim:</p>
+<p>O Briefcase vai então gerar uma estrutura básica de projeto para você usar. Se
+você seguiu este tutorial até agora, e aceitou as configurações predefinidas
+como descrito, o seu sistema de ficheiros deve parecer-se com algo assim:</p>
 <div class="highlight"><pre><span></span><code>beeware-tutorial/
 ├── beeware-venv/
 │   └── ...
@@ -1765,17 +1765,16 @@ seu sistema de arquivos deve se parecer com algo assim:</p>
  ├── __init__.py
  └── test_app.py
 </code></pre></div>
-<p>Essa estrutura atual já é um aplicativo totalmente funcional sem adicionar mais
-nada. A pasta <code>src</code> contém todo o código do aplicativo, a pasta <code>tests</code> contém
-uma suíte de testes inicial, e o arquivo <code>pyproject.toml</code> descreve como
-empacotar o aplicativo para distribuição. Se você abrir o <code>pyproject.toml</code> em um
-editor, verá os detalhes de configuração que você acabou de fornecer ao
-Briefcase.</p>
-<p>Agora que temos um aplicativo inicial, podemos usar o Briefcase para executar a
+<p>Este esqueleto já é mesmo uma aplicação totalmente funcional sem adicionar mais
+nada. A pasta <code>src</code> contém todo o código da aplicação, a pasta <code>tests</code> contém
+uma suite de testes inicial, e o ficheiro <code>pyproject.toml</code> descreve como
+empacotar a aplicação para ser distribuída. Se você abrir o <code>pyproject.toml</code> num
+editor, verá os detalhes de configuração que você forneceu ao Briefcase.</p>
+<p>Agora que temos um esboço de aplicação, podemos usar o Briefcase para executar a
 aplicação.</p>
-<h2 id="inicie-o-app-no-modo-de-desenvolvedor">Inicie o app no modo de desenvolvedor<a class="headerlink" href="#inicie-o-app-no-modo-de-desenvolvedor" title="Permanent link">&para;</a></h2>
-<p>Vá para o diretório do projeto <code>helloworld</code> e peça ao Briefcase para iniciar o
-projeto no modo de Desenvolvedor (ou <code>dev</code>):</p>
+<h2 id="inicie-a-aplicacao-no-modo-de-desenvolvedor">Inicie a aplicação no modo de desenvolvedor<a class="headerlink" href="#inicie-a-aplicacao-no-modo-de-desenvolvedor" title="Permanent link">&para;</a></h2>
+<p>Vá para o diretório do projeto <code>helloworld</code> e diga ao briefcase para iniciar o
+projeto em modo de Desenvolvedor (ou <code>dev</code>):</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1825,7 +1824,7 @@ projeto no modo de Desenvolvedor (ou <code>dev</code>):</p>
 </div>
 </div>
 </div>
-<p>Isso deve abrir uma janela GUI:</p>
+<p>Isto deve abrir uma janela GUI:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">

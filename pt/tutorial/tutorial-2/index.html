@@ -1639,11 +1639,11 @@ aria-label="Cabeçalho"
 não escrevemos nenhum código por conta própria. Vamos dar uma olhada no que foi
 criado para nós.</p>
 <h2 id="o-que-foi-gerado">O que foi gerado<a class="headerlink" href="#o-que-foi-gerado" title="Permanent link">&para;</a></h2>
-<p>No diretório <code>src/helloworld</code>, você deverá ver 3 arquivos: <code>__init__.py</code>,
+<p>No diretório <code>src/helloworld</code>, deverá ver 3 ficheiros: <code>__init__.py</code>,
 <code>__main__.py</code> e <code>app.py</code>.</p>
-<p><code>__init__.py</code> torna o diretório <code>helloworld</code> um módulo Python importável.
-Trata-se de um arquivo vazio; sua simples existência indica ao interpretador
-Python que há um módulo definido pelo diretório <code>helloworld</code>.</p>
+<p><code>__init__.py</code> marca o diretório <code>helloworld</code> como um módulo Python importável.
+Trata-se de um ficheiro vazio; o facto de existir indica ao interpretador Python
+que o diretório <code>helloworld</code> define um módulo.</p>
 <p>O arquivo <code>__main__.py</code> marca o módulo <code>helloworld</code> como um tipo especial de
 módulo - um módulo executável. Se você tentar executar o módulo <code>helloworld</code>
 usando <code>python -m helloworld</code>, o arquivo <code>__main__.py</code> é onde o Python iniciará
@@ -1662,7 +1662,7 @@ a execução. O conteúdo do <code>__main__.py</code> é relativamente simples:<
   (GUI) espera pelas interações do usuário (como cliques do mouse e
   pressionamentos de teclas).</li>
 </ul>
-<p>O arquivo mais interessante é o <code>app.py</code> - nele está contido a lógica que cria a
+<p>O ficheiro mais interessante é o <code>app.py</code> - este contém a lógica que cria a
 janela da nossa aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
@@ -1678,7 +1678,7 @@ janela da nossa aplicação:</p>
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloWorld</span><span class="p">()</span>
 </code></pre></div>
-<p>Vamos analisar isso linha por linha:</p>
+<p>Vamos ver isto linha por linha:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
 </code></pre></div>
@@ -1689,22 +1689,20 @@ ainda não faz uso delas, mas em breve começaremos a utilizá-las.</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HelloWorld</span><span class="p">(</span><span class="n">toga</span><span class="o">.</span><span class="n">App</span><span class="p">):</span>
 </code></pre></div>
 <p>Cada aplicação Toga possui uma única instância chamada <code>toga.App</code>, que
-representa o aplicativo em si sendo executado. A aplicação pode acabar
-gerenciando várias janelas; mas para aplicativos simples, haverá uma única
-janela principal.</p>
+representa a entidade em execução que é a aplicação. A aplicação pode acabar
+gerindo várias janelas; mas para aplicações simples, haverá uma janela principal
+única.</p>
 <p>Depois, definimos um método chamado <code>startup()</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">startup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">()</span>
 </code></pre></div>
-<p>A primeira coisa que o método startup() faz é definir um container principal. O
-esquema de layout do Toga se comporta de maneira semelhante ao HTML. A
-construção de uma aplicação se dá por meio da criação de uma coleção de
-containers, cada um contendo outros containers ou os widgets propriamente dito.
-Depois, você aplica estilos a esses containers para definir como vão usar o
-espaço na janela.</p>
-<p>Neste aplicativo, definimos um único container, mas não colocamos nada dentro
-dele.</p>
-<p>Em seguida, definimos uma janela na qual podemos colocar o container vazio:</p>
+<p>A primeira coisa que o método startup() faz é definir uma caixa principal. O
+esquema de disposição do Toga comporta-se de maneira semelhante ao HTML. A
+construção de uma aplicação faz-se criando uma coleção de caixas, cada um
+contendo outras caixas ou as widgets propriamente dito. Depois, aplica-se
+estilos a essas caixas para definir como vão usar o espaço disponível na janela.</p>
+<p>Nesta aplicação, definimos uma única caixa, mas não colocamos nada dentro dela.</p>
+<p>Em seguida, definimos uma janela na qual podemos colocar esta caixa vazia:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 </code></pre></div>
 <p>Isso cria uma instância de <code>toga.MainWindow</code>, que terá um título correspondente
@@ -1720,8 +1718,8 @@ poderá não ser exibida. Se isso acontecer, você pode digitar <strong>Ctrl+C</
 terminal em que iniciou o aplicativo. Isso interromperá o aplicativo. Em
 seguida, você poderá corrigir o erro e reiniciar o aplicativo.</p>
 </div>
-<p>Então, adicionamos nosso container vazio como conteúdo da janela principal e
-instruímos o aplicativo a mostrar nossa janela:</p>
+<p>Então, adicionamos a nossa caixa vazia como o conteúdo da janela principal, e
+instruímos a aplicação a mostrar a nossa janela:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
@@ -1730,10 +1728,10 @@ de nossa aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloWorld</span><span class="p">()</span>
 </code></pre></div>
-<p>O método <code>main()</code> é aquele que é importado e chamado pelo arquivo <code>__main__.py</code>.
-Ele cria e retorna uma instância da nossa aplicação <code>HelloWorld</code>.</p>
-<p>Essa é a aplicação Toga mais básica possível. Vamos agora integrar conteúdo
-personalizado à aplicação e torná-la mais interessante.</p>
+<p>O método <code>main()</code> é aquele que é importado e invocado pelo ficheiro
+<code>__main__.py</code>. Ele cria e retorna uma instância da nossa aplicação <code>HelloWorld</code>.</p>
+<p>Essa é a aplicação Toga mais básica possível. Vamos agora integrar o nosso
+conteúdo na aplicação, e pô-la a fazer algo mais interessante.</p>
 <h2 id="adicionando-conteudo-personalizado">Adicionando conteúdo personalizado<a class="headerlink" href="#adicionando-conteudo-personalizado" title="Permanent link">&para;</a></h2>
 <p>Vamos fazer algo mais interessante com nosso aplicativo <code>HelloWorld</code>.</p>
 <div class="admonition note">
@@ -1877,7 +1875,7 @@ Briefcase consegue identificar se o app já foi aberto antes e, pra economizar
 tempo, só executa ele. Se você adicionar novas dependências, pode garantir que
 elas sejam instaladas usando a opção <code>-r</code> quando executar o comando <code>briefcase
 dev</code>.</p>
-<p>Isso deve abrir uma janela GUI:</p>
+<p>Isto deve abrir uma janela GUI:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
