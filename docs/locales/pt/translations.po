@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 03:01+0000\n"
-"PO-Revision-Date: 2026-06-01 03:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-01 03:01+0000\nPO-Revision-Date: 2026-06-01 10:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -2426,7 +2414,7 @@ msgstr "Depois de fazer isso, pode executar novamente o comando `beeware-venv\\S
 
 #: docs/en/tutorial/tutorial-0.md:165
 msgid "If this worked, your prompt should now be changed - it should have a `(beeware-venv)` prefix. This lets you know that you're currently in your BeeWare virtual environment. Whenever you're working on this tutorial, you should make sure your virtual environment is activated. If it isn't, re-run the last command (the `activate` command) to re-activate your environment."
-msgstr "Se isso funcionou, seu prompt deve estar diferente agora - ele deve ter um prefixo `(beeware-venv)`. Isso indica que você está atualmente no seu ambiente virtual BeeWare. Sempre que estiver trabalhando neste tutorial, certifique-se de que seu ambiente virtual esteja ativado. Se não estiver, execute novamente o último comando (o comando `activate`) para reativar seu ambiente."
+msgstr "Se isso funcionou, o seu aviso de comando deve estar diferente agora - deve ter um prefixo `(beeware-venv)`. Isso indica que está atualmente no seu ambiente virtual BeeWare. Sempre que estiver a trabalhar neste tutorial, certifique-se que o seu ambiente virtual esteja ativado. Se não estiver, execute novamente o último comando (o comando `activate`) para reativar o seu ambiente."
 
 #: docs/en/tutorial/tutorial-0.md:167
 #, fuzzy
@@ -2454,7 +2442,7 @@ msgstr "Tutorial 1 - Seu primeiro app"
 
 #: docs/en/tutorial/tutorial-1.md:3
 msgid "We're ready to create our first application."
-msgstr "Estamos prontos para criar nossa primeira aplicação."
+msgstr "Estamos prontos para criar a nossa primeira aplicação."
 
 #: docs/en/tutorial/tutorial-1.md:5
 msgid "Install the BeeWare tools"
@@ -2487,11 +2475,11 @@ msgstr "(beeware-venv) C:\\...>python -m pip install briefcase"
 
 #: docs/en/tutorial/tutorial-1.md:39
 msgid "It is important that you use `python -m pip`, rather than a bare `pip`. Briefcase needs to ensure that it has an up-to-date version of `pip` and `setuptools`, and a bare invocation of `pip` can't self-update. If you want to know more, [Brett Cannon has a detailed blog post about the issue]{1}."
-msgstr "É importante usar o comando `python -m pip`, em vez de apenas `pip`. Isso porque o Briefcase precisa garantir que as versões do `pip` e `setuptools` estejam atualizadas, pois o `pip` usado sozinho não consegue se atualizar. Se quiser entender melhor o motivo, o [Brett Cannon escreveu um post detalhado no blog dele]{1}."
+msgstr "É importante usar o comando `python -m pip`, em vez de apenas `pip`. Isso porque o Briefcase precisa garantir que tem versões do `pip` e `setuptools` atualizadas, e uma invocação simples do `pip` não faz auto-atualização. Se quiser saber mais sobre isto, o [Brett Cannon escreveu um post detalhado no sobre o problema]{1}."
 
 #: docs/en/tutorial/tutorial-1.md:45
 msgid "Bootstrap a new project"
-msgstr "Iniciar um novo projeto"
+msgstr "Arrancar um novo projeto"
 
 #: docs/en/tutorial/tutorial-1.md:47
 #, fuzzy
@@ -2510,15 +2498,15 @@ msgstr "(beeware-venv) C:\\...>briefcase new"
 
 #: docs/en/tutorial/tutorial-1.md:73
 msgid "Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:"
-msgstr "O Briefcase solicitará alguns detalhes sobre nosso novo aplicativo. Para os propósitos deste tutorial, utilize o seguinte:"
+msgstr "O Briefcase vai pedir-nos alguns detalhes sobre a nossa nova aplicação. Para os objetivos deste tutorial, utilize o seguinte:"
 
 #: docs/en/tutorial/tutorial-1.md:75
 msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
-msgstr "**GUI framework** - Aceite a opção padrão, Toga (a própria biblioteca de interface gráfica da BeeWare)."
+msgstr "**GUI framework** - Aceitar a opção predefinida, Toga (o kit de ferramentas GUI próprio do BeeWare)."
 
 #: docs/en/tutorial/tutorial-1.md:76
 msgid "**Formal Name** - Accept the default value: `Hello World`."
-msgstr "**Formal Name** - Aceite o valor padrão: `Hello World`."
+msgstr "**Formal Name** - Aceitar o valor predefinido: `Hello World`."
 
 #: docs/en/tutorial/tutorial-1.md:77
 msgid "**App Name** - Accept the default value: `helloworld`."
