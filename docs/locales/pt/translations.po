@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 21:01+0000\n"
-"PO-Revision-Date: 2026-06-01 21:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-01 21:01+0000\nPO-Revision-Date: 2026-06-02 00:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -2978,7 +2966,7 @@ msgstr "Essa é a aplicação Toga mais básica possível. Vamos agora integrar 
 
 #: docs/en/tutorial/tutorial-2.md:103
 msgid "Adding some content of our own"
-msgstr "Adicionando conteúdo personalizado"
+msgstr "Adicionar algum conteúdo de si próprio"
 
 #: docs/en/tutorial/tutorial-2.md:105
 #, fuzzy
@@ -2992,7 +2980,7 @@ msgstr "Não remova as importações já feitas no topo do arquivo ou o `main()`
 
 #: docs/en/tutorial/tutorial-2.md:113
 msgid "Modify your `HelloWorld` class inside `src/helloworld/app.py` so that it looks like this:"
-msgstr "Modifique sua classe `HelloWorld` dentro de `src/helloworld/app.py` para que fique assim:"
+msgstr "Modifique a sua classe `HelloWorld` dentro de `src/helloworld/app.py` para que fique como isto:"
 
 #: docs/en/tutorial/tutorial-2.md:115
 #, fuzzy
@@ -3059,11 +3047,11 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:147
 msgid "Let's look in detail at what has changed."
-msgstr "Vamos ver em detalhes o que mudou."
+msgstr "Vamos ver em detalhe o que foi mudado."
 
 #: docs/en/tutorial/tutorial-2.md:149
 msgid "We're still creating a main box; however, we are now applying a style:"
-msgstr "Ainda estamos fazendo o container principal; porém, agora estamos aplicando um estilo:"
+msgstr "Ainda estamos a criar a caixa principal; porém, agora estamos a aplicar um estilo:"
 
 #: docs/en/tutorial/tutorial-2.md:151
 #, fuzzy
@@ -3091,7 +3079,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:168
 msgid "Next, we define a couple of widgets:"
-msgstr "A seguir, vamos definir dois widgets:"
+msgstr "A seguir, definimos um par de widgets:"
 
 #: docs/en/tutorial/tutorial-2.md:170
 #, fuzzy
@@ -3115,11 +3103,11 @@ msgstr "Nesta etapa, definimos um Label e um TextInput. Ambos os widgets possuem
 
 #: docs/en/tutorial/tutorial-2.md:180
 msgid "The TextInput is assigned as an instance variable of the class. This gives us easy access to the widget instance - something that we'll use in a moment."
-msgstr "O TextInput é atribuído como uma variável de instância da classe. Isso nos permite acessar facilmente a instância do widget, o que será utilizado em breve."
+msgstr "O TextInput é atribuído como uma variável de instância da classe. Isso da-nos acesso fácil à instância do widget - algo que vamos utilizar em breve."
 
 #: docs/en/tutorial/tutorial-2.md:182
 msgid "Next, we define a box to hold these two widgets:"
-msgstr "Após isso, definimos um container para colocar esses dois widgets:"
+msgstr "Após isso, definimos uma caixa para conter esses dois widgets:"
 
 #: docs/en/tutorial/tutorial-2.md:184
 #, fuzzy
@@ -3163,7 +3151,7 @@ msgstr "O botão também tem 5px de margem em todos os lados. Também definimos 
 
 #: docs/en/tutorial/tutorial-2.md:204
 msgid "Then, we add the name box and the button to the main box:"
-msgstr "Então, adicionamos o container name_box e o botão ao container principal:"
+msgstr "Então, adicionamos o nome da caixa e do botão à caixa principal:"
 
 #: docs/en/tutorial/tutorial-2.md:206
 #, fuzzy
@@ -3206,11 +3194,11 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:226
 msgid "The body of the method is a simple print statement - however, it will interrogate the current value of the name input, and use that content as the text that is printed."
-msgstr "O corpo do método é uma simples instrução de impressão. No entanto, ele consultará o valor atual do campo de entrada de nome e usará esse conteúdo como o texto a ser impresso."
+msgstr "O corpo do método é uma simples instrução de escrita - no entanto, ele vai interrogar o valor atual da entrada de nome, e vai usar esse conteúdo como o texto a ser escrito."
 
 #: docs/en/tutorial/tutorial-2.md:228
 msgid "Now that we've made these changes we can see what they look like by starting the application again. As before, we'll use developer mode:"
-msgstr "Ao concluirmos essas alterações, podemos visualizar o resultado reiniciando a aplicação. Seguindo o procedimento anterior, utilizaremos o modo de desenvolvedor:"
+msgstr "Agora que fizemos estas alterações, podemos visualizar o resultado iniciando outra vez a aplicação. Como antes, vamos utilizar o modo de desenvolvedor:"
 
 #: docs/en/tutorial/tutorial-2.md:232 docs/en/tutorial/tutorial-2.md:243
 #, fuzzy
@@ -3260,7 +3248,7 @@ msgstr "Janela Hello World Tutorial 2, no Windows]{1}"
 
 #: docs/en/tutorial/tutorial-2.md:297
 msgid "If you enter a name in the text box, and press the GUI button, you should see output appear in the console where you started the application."
-msgstr "Se você escrever um nome na caixa de texto e clicar no botão da interface, vai ver uma mensagem aparecer no console onde você abriu a aplicação."
+msgstr "Se escrever um nome na caixa de texto e clicar no botão da GUI, vai ver uma mensagem aparecer na consola onde abriu a aplicação."
 
 #: docs/en/tutorial/tutorial-2.md:299
 #, fuzzy
@@ -3279,23 +3267,23 @@ msgstr "Tutorial 3 - Empacotando para Distribuição"
 
 #: docs/en/tutorial/tutorial-3.md:3
 msgid "So far, we've been running our application in \"Developer mode\". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others."
-msgstr "Até o momento, executamos nossa aplicação no \"modo de desenvolvedor\". Isso facilita a execução da nossa aplicação localmente - mas o que realmente queremos é poder fornecer nossa aplicação para outras pessoas."
+msgstr "Até o momento, executamos a nossa aplicação em \"modo de desenvolvedor\". Isso facilita-nos executar a nossa aplicação localmente - mas o que realmente queremos é poder fornecer a nossa aplicação a outras pessoas."
 
 #: docs/en/tutorial/tutorial-3.md:5
 msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
-msgstr "Entretanto, não queremos ter que ensinar aos nossos usuários como instalar o Python, criar um ambiente virtual, clonar um repositório git e executar o Briefcase no modo de desenvolvedor. Queremos é fornecer um instalador, garantindo a execução imediata da aplicação."
+msgstr "Entretanto, não queremos ter que ensinar aos nossos utilizadores a como instalar Python, criar um ambiente virtual, clonar um repositório git e executar o Briefcase no modo de desenvolvedor. Preferimos dar-lhes um instalador, e ter a aplicação A Trabalhar."
 
 #: docs/en/tutorial/tutorial-3.md:7
 msgid "Briefcase can be used to package your application for distribution in this way."
-msgstr "O Briefcase pode ser usado para empacotar sua aplicação para distribuição dessa maneira."
+msgstr "O Briefcase pode ser usado para empacotar a sua aplicação para distribuir dessa maneira."
 
 #: docs/en/tutorial/tutorial-3.md:9
 msgid "Creating your application scaffold"
-msgstr "Criando a estrutura da sua aplicação"
+msgstr "Criar o alicerce da sua aplicação"
 
 #: docs/en/tutorial/tutorial-3.md:11
 msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the `helloworld` directory, run:"
-msgstr "Como esta é a primeira vez que estamos empacotando nossa aplicação, precisamos criar alguns arquivos de configuração e outras estruturas de suporte ao processo de empacotamento. No diretório `helloworld`, execute:"
+msgstr "Como esta é a primeira vez que estamos a empacotar a nossa aplicação, precisamos criar alguns ficheiros de configuração e outras estruturas para suportar o processo de empacotamento. No diretório `helloworld`, execute:"
 
 #: docs/en/tutorial/tutorial-3.md:15
 #, fuzzy
@@ -3472,7 +3460,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-3.md:113
 msgid "You've probably just seen pages of content go past in your terminal... so what just happened? Briefcase has done the following:"
-msgstr "É provável que você tenha observado uma grande quantidade de texto passando pelo seu terminal... mas o que exatamente aconteceu? O Briefcase fez o seguinte:"
+msgstr "É provável que você tenha observado uma grande quantidade de texto a passar no seu terminal... então o que aconteceu? O Briefcase fez o seguinte:"
 
 #: docs/en/tutorial/tutorial-3.md:115
 #, fuzzy
@@ -3486,15 +3474,15 @@ msgstr "Ele **baixou e instalou um pacote de suporte**. A abordagem de empacotam
 
 #: docs/en/tutorial/tutorial-3.md:119
 msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using `pip` into your application's installer."
-msgstr "Ele **instalou os requisitos da aplicação**. Seu aplicativo pode especificar quaisquer módulos de terceiros necessários em tempo de execução. Estes serão instalados utilizando o `pip` no instalador da sua aplicação."
+msgstr "Ele **instalou os requisitos da aplicação**. A sua aplicação pode especificar quaisquer módulos de terceiros necessários em tempo de execução. Estes serão instalados utilizando o `pip` no instalador da sua aplicação."
 
 #: docs/en/tutorial/tutorial-3.md:121
 msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
-msgstr "Ele **instalou o código da sua aplicação**. Sua aplicação terá seu próprio código e recursos (por exemplo, imagens necessárias em tempo de execução); estes arquivos são copiados para o instalador."
+msgstr "Ele **instalou o código da sua aplicação**. A sua aplicação terá o seu próprio código e recursos (ex., imagens que vão ser necessárias em tempo de execução); estes ficheiros são copiados para o instalador."
 
 #: docs/en/tutorial/tutorial-3.md:123
 msgid "It **installed your resources needed by your application.** Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images."
-msgstr "Ele **instalou os recursos requeridos pela sua aplicação.** Por fim, são adicionados recursos adicionais requeridos pelo próprio instalador. Isso inclui elementos como ícones que serão anexados à aplicação final e imagens de tela de abertura."
+msgstr "Ele **instalou os recursos necessários pela sua aplicação.** Por fim, adiciona recursos adicionais que são necessários pelo próprio instalador. Isto inclui coisas como ícones que precisam ser anexados à aplicação final e imagens de ecrã de abertura."
 
 #: docs/en/tutorial/tutorial-3.md:125
 #, fuzzy
@@ -3516,11 +3504,11 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-3.md:134
 msgid "Building your application"
-msgstr "Compilando sua aplicação"
+msgstr "Compilando a sua aplicação"
 
 #: docs/en/tutorial/tutorial-3.md:136
 msgid "You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform."
-msgstr "Agora você pode compilar sua aplicação. Este passo executa qualquer compilação binária necessária para que sua aplicação seja executável na plataforma de destino."
+msgstr "Agora você pode compilar a sua aplicação. Este passo efetua qualquer compilação binária necessária para que sua aplicação seja executável na plataforma de destino."
 
 #: docs/en/tutorial/tutorial-3.md:140
 #, fuzzy
@@ -3545,7 +3533,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-3.md:151
 msgid "On macOS, the `build` command doesn't need to *compile* anything, but it does need to sign the contents of binary so that it can be executed. This signature is an *ad hoc* signature - it will only work on *your* machine; if you want to distribute the application to others, you'll need to provide a full signature."
-msgstr "No macOS, o comando `build` não necessita *compilar* nada, mas precisa assinar o conteúdo do binário para que ele possa ser executado. Essa assinatura é do tipo *ad hoc* - só funcionará no *seu* computador. Se você deseja distribuir a aplicação para outras pessoas, será necessário fornecer uma assinatura completa."
+msgstr "No macOS, o comando `build` não necessita *compilar* nada, mas precisa assinar o conteúdo do binário para que ele possa ser executado. Essa assinatura é do tipo *ad hoc* - só funcionará no *seu* computador; se você deseja distribuir a aplicação para outras pessoas, será necessário fornecer uma assinatura completa."
 
 #: docs/en/tutorial/tutorial-3.md:157
 #, fuzzy
@@ -3596,7 +3584,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-3.md:181
 msgid "Once this step completes, the `build` folder will contain a `helloworld-0.0.1` folder that contains a mirror of a Linux `/usr` file system. This file system mirror will contain a `bin` folder with a `helloworld` binary, plus `lib` and `share` folders needed to support the binary."
-msgstr "Após a conclusão dessa etapa, a pasta `build` conterá uma pasta `helloworld-0.0.1` com uma estrutura semelhante ao sistema de arquivos `/usr` do Linux. Ela conterá uma pasta `bin` com um binário `helloworld`, além das pastas `lib` e `share` necessárias para dar suporte ao binário."
+msgstr "Após a conclusão dessa etapa, a pasta `build` vai conter uma pasta `helloworld-0.0.1` com um espelho do sistema de ficheiros `/usr` do Linux. Este espelho de sistema de ficheiros vai conter uma pasta `bin` com um binário `helloworld`, mais as pastas `lib` e `share` necessárias para dar suporte ao binário."
 
 #: docs/en/tutorial/tutorial-3.md:187
 #, fuzzy
