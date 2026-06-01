@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 00:02+0000\n"
-"PO-Revision-Date: 2026-06-01 00:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-01 00:02+0000\nPO-Revision-Date: 2026-06-01 03:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6.dev0\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -129,7 +117,7 @@ msgstr "Este documento é uma tradução feita por máquina do tutorial em [Engl
 
 #: docs/en/index.md:23 docs/en/index.md:35
 msgid "If you'd like the help improve the translation, get in touch! We have a `#translations` channel in [Discord]{1}. Introduce yourself there and we will add you to the translation team."
-msgstr "Se você quiser ajudar a melhorar a tradução, entre em contato! Temos um canal `#translations` no [Discord]{1}. Apresente-se lá e nós o adicionaremos à equipe de tradução."
+msgstr "Se quiser ajudar a melhorar a tradução, entre em contacto! Temos um canal `#translations` no [Discord]{1}. Apresente-se lá e nós o adicionaremos à equipa de tradução."
 
 #: docs/en/index.md:29
 msgid "{% if config.extra.translation_type == \"human\" %}"
@@ -149,7 +137,7 @@ msgstr "O que é o BeeWare?"
 
 #: docs/en/index.md:43
 msgid "BeeWare is not a single product, or tool, or library - it's a collection of tools and libraries, each of which works together to help you write cross platform Python applications with a native GUI. It includes:"
-msgstr "O BeeWare não é um único produto, ferramenta ou biblioteca - é uma coleção de ferramentas e bibliotecas, cada uma das quais trabalha em conjunto para ajudar você a escrever aplicativos Python multiplataforma com uma interface gráfica nativa. Isso inclui:"
+msgstr "O BeeWare não é um único produto, ferramenta ou biblioteca - é uma coleção de ferramentas e bibliotecas, cada uma das quais trabalha em conjunto para o ajudar a escrever aplicações Python multiplataforma com uma interface gráfica nativa. Isso inclui:"
 
 #: docs/en/index.md:45
 msgid "[Toga]{1}, a cross-platform widget toolkit;"
@@ -165,15 +153,15 @@ msgstr "Bibliotecas (como [Rubicon ObjC]{1}) para aceder a bibliotecas nativas d
 
 #: docs/en/index.md:48
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
-msgstr "Versões pré-compiladas do Python estão disponíveis para plataformas onde instaladores oficiais do Python não estão disponíveis."
+msgstr "Construções pré-compiladas do Python podem ser usadas em plataformas onde instaladores oficiais do Python não estão disponíveis."
 
 #: docs/en/index.md:50
 msgid "In this tutorial, we'll be using all these tools, but as a user, you'll only need to interact with the first two (Toga and Briefcase). However, each of the tools can also be used individually - for example, you can use Briefcase to deploy an app without using Toga as a GUI toolkit."
-msgstr "Neste tutorial, estaremos utilizando todas essas ferramentas, mas como usuário, você só precisará interagir com as duas primeiras (Toga e Briefcase). No entanto, cada uma das ferramentas também pode ser usada individualmente - por exemplo, você pode usar o Briefcase para implantar um aplicativo sem usar o Toga como um kit de ferramentas de interface gráfica (GUI)."
+msgstr "Neste tutorial, vamos utilizar todas essas ferramentas, mas como utilizador, só vai precisar de interagir com as duas primeiras (Toga e Briefcase). No entanto, cada uma das ferramentas também pode ser usada individualmente - por exemplo, pode usar o Briefcase para implementar uma aplicação sem usar o Toga como um kit de ferramentas de interface gráfica (GUI)."
 
 #: docs/en/index.md:52
 msgid "The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile platforms such as Android and iOS; and for the Web."
-msgstr "A suíte BeeWare está disponível no macOS, Windows, Linux (usando GTK); em plataformas móveis como Android e iOS; e para a Web."
+msgstr "A suite do BeeWare está disponível em macOS, Windows, Linux (usando GTK); em plataformas móveis como Android e iOS; e para a Web."
 
 #: docs/en/index.md:54
 msgid "Let's go"
@@ -2186,7 +2174,7 @@ msgstr "Tutorial 0 - Vamos nos preparar!"
 
 #: docs/en/tutorial/tutorial-0.md:3
 msgid "Before we build our first BeeWare app, we have to make sure we've got all the prerequisites for running BeeWare."
-msgstr "Antes de criarmos nosso primeiro aplicativo BeeWare, precisamos garantir que tenhamos todos os pré-requisitos para executar o BeeWare."
+msgstr "Antes de criarmos a nossa primeira aplicação BeeWare, precisamos garantir que temos todos os pré-requisitos para executar o BeeWare."
 
 #: docs/en/tutorial/tutorial-0.md:5
 #, fuzzy
@@ -2195,7 +2183,7 @@ msgstr "Instalar o Python { id=\"install-python\" }"
 
 #: docs/en/tutorial/tutorial-0.md:7
 msgid "The first thing we'll need is a working Python interpreter."
-msgstr "A primeira coisa que precisaremos é de um interpretador Python instalado e funcionando."
+msgstr "A primeira coisa que vamos precisar é dum interpretador Python a funcionar."
 
 #: docs/en/tutorial/tutorial-0.md:11
 #, fuzzy
@@ -2229,7 +2217,7 @@ msgstr "Se o Python estiver instalado, você verá o número da versão."
 
 #: docs/en/tutorial/tutorial-0.md:29
 msgid "If you're on Linux, you'll install Python using the system package manager (`apt` on Debian/Ubuntu/Mint, `dnf` on Fedora, or `pacman` on Arch)."
-msgstr "Se você estiver usando Linux, será necessário instalar o Python por meio do gerenciador de pacotes do sistema ([apt` no Debian/Ubuntu/Mint, `dnf` no Fedora, ou `pacman` no Arch)."
+msgstr "Se estiver a usar Linux, vai instalar o Python usando o gestor de pacotes do sistema ([apt` em Debian/Ubuntu/Mint, `dnf` em Fedora, ou `pacman` em Arch)."
 
 #: docs/en/tutorial/tutorial-0.md:31
 #, fuzzy
@@ -2238,7 +2226,7 @@ msgstr "Certifique-se de que a versão do Python do sistema seja 3.8 ou mais rec
 
 #: docs/en/tutorial/tutorial-0.md:33
 msgid "Support for Raspberry Pi is limited at this time."
-msgstr "Para o Raspberry Pi, o suporte está limitado neste momento."
+msgstr "O suporte para Raspberry Pi está limitado neste momento."
 
 #: docs/en/tutorial/tutorial-0.md:35
 #, fuzzy
@@ -2267,11 +2255,11 @@ msgstr "Instalar dependências { id=\"install-dependencies\" }"
 
 #: docs/en/tutorial/tutorial-0.md:51
 msgid "Next, install the additional dependencies needed for your operating system:"
-msgstr "Em seguida, instale as dependências adicionais necessárias para o seu sistema operacional:"
+msgstr "Em seguida, instale as dependências adicionais necessárias para o seu sistema operativo:"
 
 #: docs/en/tutorial/tutorial-0.md:55
 msgid "Building BeeWare apps on macOS requires:"
-msgstr "Para criar aplicativos BeeWare no macOS, é necessário:"
+msgstr "Para criar aplicações BeeWare em macOS, é necessário:"
 
 #: docs/en/tutorial/tutorial-0.md:57
 #, fuzzy
@@ -2280,7 +2268,7 @@ msgstr "**Git**, um sistema de controle de versão. Ele está incluído no Xcode
 
 #: docs/en/tutorial/tutorial-0.md:63
 msgid "To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:"
-msgstr "Para dar suporte ao desenvolvimento local, será necessário instalar alguns pacotes do sistema. A lista de pacotes necessários pode variar de acordo com a sua distribuição:"
+msgstr "Para suportar o desenvolvimento local, será necessário instalar alguns pacotes do sistema. A lista de pacotes necessários varia de acordo com a sua distribuição:"
 
 #: docs/en/tutorial/tutorial-0.md:65
 #, fuzzy
@@ -2338,7 +2326,7 @@ msgstr "Se você estiver usando uma distribuição Linux que não consta nesta l
 
 #: docs/en/tutorial/tutorial-0.md:100
 msgid "Building BeeWare apps on Windows requires:"
-msgstr "Para criar aplicativos BeeWare no Windows, é necessário:"
+msgstr "Para criar aplicações BeeWare em Windows, é necessário:"
 
 #: docs/en/tutorial/tutorial-0.md:102
 #, fuzzy
@@ -2347,7 +2335,7 @@ msgstr "**Git**, um sistema de controle de versão. Você pode baixar o Git em [
 
 #: docs/en/tutorial/tutorial-0.md:104
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
-msgstr "Após instalar essas ferramentas, é importante reiniciar qualquer sessão de terminal. No Windows, apenas os terminais iniciados *após* a conclusão da instalação mostrarão as ferramentas recém-instaladas."
+msgstr "Após instalar essas ferramentas, deve reiniciar qualquer sessão de terminal. O Windows apenas vai expôr os novos terminais de ferramentas instaladas iniciados *após* a conclusão da instalação."
 
 #: docs/en/tutorial/tutorial-0.md:108
 msgid "Set up a virtual environment"
@@ -2355,7 +2343,7 @@ msgstr "Configurar um ambiente virtual"
 
 #: docs/en/tutorial/tutorial-0.md:110
 msgid "We're now going to create a virtual environment - a \"sandbox\" that we can use to isolate our work on this tutorial from our main Python installation. If we install packages into the virtual environment, our main Python installation (and any other Python projects on our computer) won't be affected. If we make a complete mess of our virtual environment, we'll be able to simply delete it and start again, without affecting any other Python project on our computer, and without the need to re-install Python."
-msgstr "Agora vamos criar um ambiente virtual - uma \"sandbox\" que podemos usar para isolar nosso trabalho neste tutorial de nossa instalação principal do Python. Se instalarmos pacotes no ambiente virtual, nossa instalação principal do Python (e qualquer outro projeto Python em nosso computador) não será afetada. Se bagunçarmos completamente nosso ambiente virtual, podemos simplesmente excluí-lo e começar novamente, sem afetar nenhum outro projeto Python em nosso computador e sem a necessidade de reinstalar o Python."
+msgstr "Agora vamos criar um ambiente virtual - uma \"caixa de areia\" que podemos usar para isolar nosso trabalho neste tutorial de nossa instalação principal do Python. Se instalarmos pacotes no ambiente virtual, a nossa instalação principal do Python (e qualquer outro projeto Python no nosso computador) não será afetada. Se estragarmos completamente o nosso ambiente virtual, podemos simplesmente apaga-lo e começar de novo, sem afetar nenhum outro projeto Python no nosso computador e sem a necessidade de reinstalar o Python."
 
 #: docs/en/tutorial/tutorial-0.md:114 docs/en/tutorial/tutorial-0.md:125
 #, fuzzy
@@ -2395,7 +2383,7 @@ msgstr "/// admonition | Erros na execução de scripts do PowerShell"
 
 #: docs/en/tutorial/tutorial-0.md:147
 msgid "If you're using PowerShell, and you receive the error:"
-msgstr "Se você estiver usando o PowerShell e receber o erro:"
+msgstr "Se estiver usando o PowerShell, e receber o erro:"
 
 #: docs/en/tutorial/tutorial-0.md:149
 #, fuzzy
@@ -2422,7 +2410,7 @@ msgstr "Selecione `Y` para alterar a política de execução."
 
 #: docs/en/tutorial/tutorial-0.md:159
 msgid "Once you've done this you can rerun `beeware-venv\\Scripts\\activate.ps1` in your original PowerShell session (or a new session in the same directory)."
-msgstr "Depois de fazer isso, você pode executar novamente o comando `beeware-venv\\Scripts\\activate.ps1` na mesma janela do PowerShell em que você fez as alterações nas permissões (a janela original) ou em uma nova janela do PowerShell no mesmo diretório."
+msgstr "Depois de fazer isso, pode executar novamente o comando `beeware-venv\\Scripts\\activate.ps1` na sua sessão original do PowerShell (ou numa nova sessão no mesmo diretório)."
 
 #: docs/en/tutorial/tutorial-0.md:165
 msgid "If this worked, your prompt should now be changed - it should have a `(beeware-venv)` prefix. This lets you know that you're currently in your BeeWare virtual environment. Whenever you're working on this tutorial, you should make sure your virtual environment is activated. If it isn't, re-run the last command (the `activate` command) to re-activate your environment."
