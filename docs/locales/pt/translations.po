@@ -460,9 +460,8 @@ msgid "Adding an icon"
 msgstr "Adição de um ícone"
 
 #: docs/en/tutorial/topics/custom-icons.md:17
-#, fuzzy
 msgid "Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform."
-msgstr "Cada plataforma usa um formato diferente para os ícones de aplicativos, e algumas plataformas precisam de vários ícones em diferentes tamanhos e formas. Para levar isso em conta, o Briefcase oferece uma maneira abreviada de configurar um ícone uma vez e, em seguida, expandir essa definição para todos os diferentes ícones necessários para cada plataforma individual."
+msgstr "Cada plataforma usa um formato diferente para os ícones das aplicações - e algumas plataformas precisam de *vários* ícones em diferentes tamanhos e formas. Para ter isso em conta, o Briefcase oferece uma maneira abreviada de configurar um ícone uma vez e, depois expandir essa definição para todos os diferentes ícones necessários para cada plataforma individual."
 
 #: docs/en/tutorial/topics/custom-icons.md:19
 #, fuzzy
