@@ -63,7 +63,7 @@
     
     
       
-        <title>Usando a câmera - BeeWare Tutorial</title>
+        <title>Usar a câmera - BeeWare Tutorial</title>
       
     
     
@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#usando-a-camera" class="md-skip">
+        <a href="#usar-a-camera" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -572,7 +572,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 1 - Seu primeiro app
+    Tutorial 1 - A sua primeira aplicação
   
 
 
@@ -617,7 +617,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 2 - Tornando as coisas interessantes
+    Tutorial 2 - Torna-la interessante
   
 
 
@@ -662,7 +662,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 3 - Empacotando para Distribuição
+    Tutorial 3 - Empacotar para distribuição
   
 
 
@@ -707,7 +707,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 4 - Atualizando sua aplicação
+    Tutorial 4 - Atualizar a sua aplicação
   
 
 
@@ -799,7 +799,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Levando para o Mobile
+    Tutorial 5 - Tornando-a móvel
   
 
 
@@ -843,7 +843,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Levando para o Mobile
+    Tutorial 5 - Tornando-a móvel
   
 
           </label>
@@ -882,8 +882,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Levando para o Mobile:
-  Android
+    Tutorial 5 - Tornando-a móvel: Android
   
 
 
@@ -929,7 +928,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 5 - Levando para o Mobile: iOS
+    Tutorial 5 - Tornando-a móvel: iOS
   
 
 
@@ -986,7 +985,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 6 - Coloque na web!
+    Tutorial 6 - Colocar na web!
   
 
 
@@ -1076,7 +1075,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 8 - Suavizando o Processo
+    Tutorial 8 - Torna-la Suaaaaaave
   
 
 
@@ -1172,7 +1171,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Indo além
+    Ir mais além
   
 
 
@@ -1216,7 +1215,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Indo além
+    Ir mais além
   
 
           </label>
@@ -1255,7 +1254,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Personalizando ícones
+    Personalizar os ícones
   
 
 
@@ -1320,7 +1319,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Usando a câmera
+    Usar a câmera
   
 
 
@@ -1353,7 +1352,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Usando a câmera
+    Usar a câmera
   
 
 
@@ -1504,7 +1503,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tempos de teste
+    Hora dos testes
   
 
 
@@ -1659,35 +1658,35 @@ aria-label="Cabeçalho"
 
 
 
-<h1 id="usando-a-camera">Usando a câmera<a class="headerlink" href="#usando-a-camera" title="Permanent link">&para;</a></h1>
+<h1 id="usar-a-camera">Usar a câmera<a class="headerlink" href="#usar-a-camera" title="Permanent link">&para;</a></h1>
 <p>Quase todos os dispositivos de computação modernos têm algum tipo de câmera.
-Neste tutorial, escreveremos um novo aplicativo capaz de solicitar acesso a essa
-câmera, tirar uma fotografia e, em seguida, exibir essa fotografia no novo
-aplicativo que usa a câmera do dispositivo.</p>
+Neste tutorial, vamos escrever uma nova aplicação capaz de solicitar acesso a
+essa câmera, tirar uma fotografia, e depois mostrar essa fotografia na nova
+aplicação que usa a câmera do dispositivo.</p>
 <div class="admonition">
-<p class="admonition-title">Este tutorial não funcionará em todas as plataformas!</p>
-<p>Infelizmente, no momento, este tutorial só funcionará no macOS e no Android.</p>
-<p>Embora todos os iPhones tenham câmeras, o iOS <em>Simulator</em> não tem uma câmera
-funcional. Os dispositivos Windows e Linux também têm câmeras, mas o Toga não
-tem a capacidade de acessar a câmera nessas plataformas no momento.</p>
-<p>O código apresentado aqui será <em>executado</em> no Windows ou no Linux, mas
-apresentará um erro quando você tentar tirar uma foto.</p>
-<p>O código funcionará se for executado em um dispositivo iOS real, mas não
-conseguirá tirar uma foto se for implantado no simulador do iOS.</p>
+<p class="admonition-title">Este tutorial não vai funcionar em todas as plataformas!</p>
+<p>Infelizmente, no momento, este tutorial só funciona no macOS e no Android.</p>
+<p>Embora todos os iPhones tenham câmeras, o <em>Simulador</em> de iOS não tem uma câmera
+funcional. Os dispositivos Windows e Linux também têm câmeras, mas atualmente o
+Toga não tem a capacidade de aceder à câmera nessas plataformas.</p>
+<p>O código apresentado aqui vai <em>correr</em> no Windows ou no Linux, mas vai
+apresentar um erro quando tentar tirar uma foto.</p>
+<p>O código vai funcionar se for executado num dispositivo iOS real, mas não
+conseguirá tirar uma foto se for implementado no simulador do iOS.</p>
 </div>
 <h2 id="iniciar-um-novo-projeto">Iniciar um novo projeto<a class="headerlink" href="#iniciar-um-novo-projeto" title="Permanent link">&para;</a></h2>
-<p>Para este tutorial, não vamos desenvolver o aplicativo a partir do tutorial
-principal - vamos iniciar um novo projeto. Você pode usar o mesmo ambiente
-virtual que usou no primeiro projeto, mas precisamos executar novamente o
-assistente <code>briefcase new</code>.</p>
-<p>Volte para o diretório que contém a pasta do projeto <code>helloworld</code> e inicie um
+<p>Para este tutorial, não vamos desenvolver a aplicação a partir do tutorial
+principal - vamos iniciar um novo projeto. Pode usar o mesmo ambiente virtual
+que usou no primeiro projeto, mas precisamos executar novamente o assistente
+<code>briefcase new</code>.</p>
+<p>Volte para o diretório que contém a pasta do projeto <code>helloworld</code>, e inicie um
 novo projeto chamado "Hello Camera":</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>new
 <span class="go">...</span>
 <span class="go">[hellocamera] Nova aplicação &#39;Hello Camera&#39; gerada</span>
 
-<span class="go">Para executar sua aplicação, digite:</span>
+<span class="go">Para executar sua aplicação, escreva:</span>
 
 <span class="gp"> $ </span><span class="nb">cd</span><span class="w"> </span>hellocamera
 <span class="gp">    $ </span>briefcase<span class="w"> </span>dev
@@ -1696,8 +1695,8 @@ novo projeto chamado "Hello Camera":</p>
 </code></pre></div>
 <h2 id="adicionar-codigo-para-tirar-uma-foto">Adicionar código para tirar uma foto<a class="headerlink" href="#adicionar-codigo-para-tirar-uma-foto" title="Permanent link">&para;</a></h2>
 <p>O assistente gerou um novo projeto Toga vazio. Agora podemos adicionar o código
-para tirar e exibir uma fotografia. Edite o <code>app.py</code> do novo aplicativo para que
-ele tenha o seguinte conteúdo:</p>
+para tirar e exibir uma fotografia. Edite o <code>app.py</code> da nova aplicação para que
+tenha o seguinte conteúdo:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
 
@@ -1747,12 +1746,12 @@ ele tenha o seguinte conteúdo:</p>
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloCamera</span><span class="p">()</span>
 </code></pre></div>
-<p>Esse código tem duas alterações em relação ao aplicativo padrão que é gerado
-pelo Briefcase. Essas adições estão destacadas acima:</p>
+<p>Esse código tem duas alterações em relação á aplicação predefinida que é gerada
+pelo Briefcase. Essas adições estão destacadas em cima:</p>
 <ol>
 <li>O primeiro bloco de código destacado (no método <code>startup()</code>) adiciona os dois
-   widgets necessários para controlar a câmera: um <code>ImageView</code> para exibir uma
-   foto e um <code>Button</code> para acionar a câmera.</li>
+   widgets necessários para controlar a câmera: uma <code>Vista e Imagem</code> para
+   mostrar uma foto e um <code>Botão</code> para acionar a câmera.</li>
 <li>O segundo bloco de código destacado (o método <code>take_photo()</code>) define o
    manipulador de eventos quando o botão é pressionado. Esse manipulador
    primeiro confirma se o aplicativo tem permissão para tirar uma foto; se não
@@ -1850,7 +1849,7 @@ novas permissões.</p>
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../custom-icons/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Personalizando ícones">
+          <a href="../custom-icons/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Personalizar os ícones">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1860,20 +1859,20 @@ novas permissões.</p>
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Personalizando ícones
+                Personalizar os ícones
               </div>
             </div>
           </a>
         
         
           
-          <a href="../testing/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Tempos de teste">
+          <a href="../testing/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Hora dos testes">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Tempos de teste
+                Hora dos testes
               </div>
             </div>
             <div class="md-footer__button md-icon">
