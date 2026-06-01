@@ -1755,11 +1755,10 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-0-vamos-nos-preparar">Tutorial 0 - Vamos nos preparar!<a class="headerlink" href="#tutorial-0-vamos-nos-preparar" title="Permanent link">&para;</a></h1>
-<p>Antes de criarmos nosso primeiro aplicativo BeeWare, precisamos garantir que
-tenhamos todos os pré-requisitos para executar o BeeWare.</p>
+<p>Antes de criarmos a nossa primeira aplicação BeeWare, precisamos garantir que
+temos todos os pré-requisitos para executar o BeeWare.</p>
 <h2 id="install-python">Instalar o Python<a class="headerlink" href="#install-python" title="Permanent link">&para;</a></h2>
-<p>A primeira coisa que precisaremos é de um interpretador Python instalado e
-funcionando.</p>
+<p>A primeira coisa que vamos precisar é dum interpretador Python a funcionar.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1787,13 +1786,12 @@ poderá usar a versão do Python fornecida pelo Xcode para executar este tutoria
 <p>Se o Python estiver instalado, você verá o número da versão.</p>
 </div>
 <div class="tabbed-block">
-<p>Se você estiver usando Linux, será necessário instalar o Python por meio do
-gerenciador de pacotes do sistema ([apt<code>no Debian/Ubuntu/Mint,</code>dnf<code>no Fedora,
-ou</code>pacman` no Arch).</p>
+<p>Se estiver a usar Linux, vai instalar o Python usando o gestor de pacotes do
+sistema ([apt<code>em Debian/Ubuntu/Mint,</code>dnf<code>em Fedora, ou</code>pacman` em Arch).</p>
 <p>Certifique-se de que a versão do Python do sistema seja 3.8 ou mais recente. Se
 não for (por exemplo, o Ubuntu 18.04 é fornecido com o Python 3.6), será
 necessário atualizar a distribuição Linux para uma versão mais recente.</p>
-<p>Para o Raspberry Pi, o suporte está limitado neste momento.</p>
+<p>O suporte para Raspberry Pi está limitado neste momento.</p>
 <p><strong>Importante:</strong> Você <em>deve</em> usar o sistema Python fornecido pelo seu sistema
 operacional. Instalações do Python provenientes de outras fontes (como uv,
 pyenv, Anaconda, Python compilado manualmente, etc.) impedirão que você empacote
@@ -1816,11 +1814,11 @@ operacional.</p>
 </div>
 <h2 id="install-dependencies">Instalar dependências<a class="headerlink" href="#install-dependencies" title="Permanent link">&para;</a></h2>
 <p>Em seguida, instale as dependências adicionais necessárias para o seu sistema
-operacional:</p>
+operativo:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Para criar aplicativos BeeWare no macOS, é necessário:</p>
+<p>Para criar aplicações BeeWare em macOS, é necessário:</p>
 <ul>
 <li><strong>Git</strong>, um sistema de controle de versão. Ele está incluído no Xcode ou nas
   ferramentas de linha de comando para desenvolvedores, que você instalou acima.
@@ -1830,9 +1828,9 @@ operacional:</p>
 </ul>
 </div>
 <div class="tabbed-block">
-<p>Para dar suporte ao desenvolvimento local, será necessário instalar alguns
-pacotes do sistema. A lista de pacotes necessários pode variar de acordo com a
-sua distribuição:</p>
+<p>Para suportar o desenvolvimento local, será necessário instalar alguns pacotes
+do sistema. A lista de pacotes necessários varia de acordo com a sua
+distribuição:</p>
 <h3 id="ubuntu-2004-debian-10"><strong>Ubuntu 20.04+ / Debian 10+</strong><a class="headerlink" href="#ubuntu-2004-debian-10" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 <span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository1.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
@@ -1857,25 +1855,25 @@ do sistema”, você não poderá concluir este tutorial.</p>
 </div>
 </div>
 <div class="tabbed-block">
-<p>Para criar aplicativos BeeWare no Windows, é necessário:</p>
+<p>Para criar aplicações BeeWare em Windows, é necessário:</p>
 <ul>
 <li><strong>Git</strong>, um sistema de controle de versão. Você pode baixar o Git em
   [git-scm.com]<nospell>.</li>
 </ul>
-<p>Após instalar essas ferramentas, é importante reiniciar qualquer sessão de
-terminal. No Windows, apenas os terminais iniciados <em>após</em> a conclusão da
-instalação mostrarão as ferramentas recém-instaladas.</p>
+<p>Após instalar essas ferramentas, deve reiniciar qualquer sessão de terminal. O
+Windows apenas vai expôr os novos terminais de ferramentas instaladas iniciados
+<em>após</em> a conclusão da instalação.</p>
 </div>
 </div>
 </div>
 <h2 id="configurar-um-ambiente-virtual">Configurar um ambiente virtual<a class="headerlink" href="#configurar-um-ambiente-virtual" title="Permanent link">&para;</a></h2>
-<p>Agora vamos criar um ambiente virtual - uma "sandbox" que podemos usar para
-isolar nosso trabalho neste tutorial de nossa instalação principal do Python. Se
-instalarmos pacotes no ambiente virtual, nossa instalação principal do Python (e
-qualquer outro projeto Python em nosso computador) não será afetada. Se
-bagunçarmos completamente nosso ambiente virtual, podemos simplesmente excluí-lo
-e começar novamente, sem afetar nenhum outro projeto Python em nosso computador
-e sem a necessidade de reinstalar o Python.</p>
+<p>Agora vamos criar um ambiente virtual - uma "caixa de areia" que podemos usar
+para isolar nosso trabalho neste tutorial de nossa instalação principal do
+Python. Se instalarmos pacotes no ambiente virtual, a nossa instalação principal
+do Python (e qualquer outro projeto Python no nosso computador) não será
+afetada. Se estragarmos completamente o nosso ambiente virtual, podemos
+simplesmente apaga-lo e começar de novo, sem afetar nenhum outro projeto Python
+no nosso computador e sem a necessidade de reinstalar o Python.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1902,7 +1900,7 @@ e sem a necessidade de reinstalar o Python.</p>
 pelo número da versão que você está usando.</p>
 <div class="admonition">
 <p class="admonition-title">Erros na execução de scripts do PowerShell</p>
-<p>Se você estiver usando o PowerShell e receber o erro:</p>
+<p>Se estiver usando o PowerShell, e receber o erro:</p>
 <div class="highlight"><pre><span></span><code><span class="go">Não é possível carregar o arquivo C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 porque a execução de scripts está desativada neste sistema.</span>
 </code></pre></div>
 <p>Sua conta do Windows não tem permissão para executar scripts. Para corrigir
@@ -1913,10 +1911,9 @@ isso:</p>
 <li>Execute <code>set-executionpolicy RemoteSigned</code></li>
 <li>Selecione <code>Y</code> para alterar a política de execução.</li>
 </ol>
-<p>Depois de fazer isso, você pode executar novamente o comando
-<code>beeware-venv\Scripts\activate.ps1</code> na mesma janela do PowerShell em que você
-fez as alterações nas permissões (a janela original) ou em uma nova janela do
-PowerShell no mesmo diretório.</p>
+<p>Depois de fazer isso, pode executar novamente o comando
+<code>beeware-venv\Scripts\activate.ps1</code> na sua sessão original do PowerShell (ou
+numa nova sessão no mesmo diretório).</p>
 </div>
 </div>
 </div>
