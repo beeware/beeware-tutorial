@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 10:01+0000\n"
-"PO-Revision-Date: 2026-06-01 10:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-01 10:01+0000\nPO-Revision-Date: 2026-06-01 21:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -2522,7 +2510,7 @@ msgstr "**Formal Name** - Aceitar o valor predefinido: `Hello World`."
 
 #: docs/en/tutorial/tutorial-1.md:77
 msgid "**App Name** - Accept the default value: `helloworld`."
-msgstr "**App Name** - Aceite o valor padrão: `helloworld`."
+msgstr "**App Name** - Aceitar o valor predefinido: `helloworld`."
 
 #: docs/en/tutorial/tutorial-1.md:78
 #, fuzzy
@@ -2531,15 +2519,15 @@ msgstr "**Bundle** - Se você possui seu próprio domínio, insira esse domínio
 
 #: docs/en/tutorial/tutorial-1.md:79
 msgid "**Project Name** - Accept the default value: `Hello World`."
-msgstr "**Project Name** - Aceite o valor padrão: `Hello World`."
+msgstr "**Project Name** - Aceitar o valor predefinido: `Hello World`."
 
 #: docs/en/tutorial/tutorial-1.md:80
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
-msgstr "**Description** - Aceite o valor padrão (ou, se quiser ser realmente criativo, crie sua própria descrição!)"
+msgstr "**Description** - Aceitar o valor redefinido (ou, se quiser ser realmente criativo, crie a sua própria descrição!)"
 
 #: docs/en/tutorial/tutorial-1.md:81
 msgid "**Author** - Enter your own name here."
-msgstr "**Author** - Insira seu próprio nome."
+msgstr "**Author** - Insira aqui seu nome próprio."
 
 #: docs/en/tutorial/tutorial-1.md:82
 #, fuzzy
@@ -2558,7 +2546,7 @@ msgstr "**License** - Aceite o valor padrão (BSD). Isso não afetará nada sobr
 
 #: docs/en/tutorial/tutorial-1.md:86
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like:"
-msgstr "O Briefcase então gerará uma estrutura básica de projeto para você usar. Se você seguiu este tutorial até agora e aceitou as configurações padrão como descrito, seu sistema de arquivos deve se parecer com algo assim:"
+msgstr "O Briefcase vai então gerar uma estrutura básica de projeto para você usar. Se você seguiu este tutorial até agora, e aceitou as configurações predefinidas como descrito, o seu sistema de ficheiros deve parecer-se com algo assim:"
 
 #: docs/en/tutorial/tutorial-1.md:88
 #, fuzzy
@@ -2605,19 +2593,19 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:110
 msgid "This skeleton is actually a fully functioning application without adding anything else. The `src` folder contains all the code for the application, the `tests` folder contains an initial test suite, and the `pyproject.toml` file describes how to package the application for distribution. If you open `pyproject.toml` in an editor, you'll see the configuration details you just provided to Briefcase."
-msgstr "Essa estrutura atual já é um aplicativo totalmente funcional sem adicionar mais nada. A pasta `src` contém todo o código do aplicativo, a pasta `tests` contém uma suíte de testes inicial, e o arquivo `pyproject.toml` descreve como empacotar o aplicativo para distribuição. Se você abrir o `pyproject.toml` em um editor, verá os detalhes de configuração que você acabou de fornecer ao Briefcase."
+msgstr "Este esqueleto já é mesmo uma aplicação totalmente funcional sem adicionar mais nada. A pasta `src` contém todo o código da aplicação, a pasta `tests` contém uma suite de testes inicial, e o ficheiro `pyproject.toml` descreve como empacotar a aplicação para ser distribuída. Se você abrir o `pyproject.toml` num editor, verá os detalhes de configuração que você forneceu ao Briefcase."
 
 #: docs/en/tutorial/tutorial-1.md:112
 msgid "Now that we have a stub application, we can use Briefcase to run the application."
-msgstr "Agora que temos um aplicativo inicial, podemos usar o Briefcase para executar a aplicação."
+msgstr "Agora que temos um esboço de aplicação, podemos usar o Briefcase para executar a aplicação."
 
 #: docs/en/tutorial/tutorial-1.md:114
 msgid "Run the app in developer mode"
-msgstr "Inicie o app no modo de desenvolvedor"
+msgstr "Inicie a aplicação no modo de desenvolvedor"
 
 #: docs/en/tutorial/tutorial-1.md:116
 msgid "Move into the `helloworld` project directory and tell briefcase to start the project in Developer (or `dev`) mode:"
-msgstr "Vá para o diretório do projeto `helloworld` e peça ao Briefcase para iniciar o projeto no modo de Desenvolvedor (ou `dev`):"
+msgstr "Vá para o diretório do projeto `helloworld` e diga ao briefcase para iniciar o projeto em modo de Desenvolvedor (ou `dev`):"
 
 #: docs/en/tutorial/tutorial-1.md:120
 #, fuzzy
@@ -2708,7 +2696,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-1.md:175 docs/en/tutorial/tutorial-2.md:265
 msgid "This should open a GUI window:"
-msgstr "Isso deve abrir uma janela GUI:"
+msgstr "Isto deve abrir uma janela GUI:"
 
 #: docs/en/tutorial/tutorial-1.md:179
 #, fuzzy
@@ -2792,11 +2780,11 @@ msgstr "O que foi gerado"
 
 #: docs/en/tutorial/tutorial-2.md:7
 msgid "In the `src/helloworld` directory, you should see 3 files: `__init__.py`, `__main__.py` and `app.py`."
-msgstr "No diretório `src/helloworld`, você deverá ver 3 arquivos: `__init__.py`, `__main__.py` e `app.py`."
+msgstr "No diretório `src/helloworld`, deverá ver 3 ficheiros: `__init__.py`, `__main__.py` e `app.py`."
 
 #: docs/en/tutorial/tutorial-2.md:9
 msgid "`__init__.py` marks the `helloworld` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the `helloworld` directory defines a module."
-msgstr "`__init__.py` torna o diretório `helloworld` um módulo Python importável. Trata-se de um arquivo vazio; sua simples existência indica ao interpretador Python que há um módulo definido pelo diretório `helloworld`."
+msgstr "`__init__.py` marca o diretório `helloworld` como um módulo Python importável. Trata-se de um ficheiro vazio; o facto de existir indica ao interpretador Python que o diretório `helloworld` define um módulo."
 
 #: docs/en/tutorial/tutorial-2.md:11
 #, fuzzy
@@ -2833,7 +2821,7 @@ msgstr "Isto é - ele importa o método `main` do aplicativo `helloworld`; quand
 
 #: docs/en/tutorial/tutorial-2.md:25
 msgid "The more interesting file is `app.py` - this contains the logic that creates our application window:"
-msgstr "O arquivo mais interessante é o `app.py` - nele está contido a lógica que cria a janela da nossa aplicação:"
+msgstr "O ficheiro mais interessante é o `app.py` - este contém a lógica que cria a janela da nossa aplicação:"
 
 #: docs/en/tutorial/tutorial-2.md:27
 #, fuzzy
@@ -2868,7 +2856,7 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:43
 msgid "Let's go through this line by line:"
-msgstr "Vamos analisar isso linha por linha:"
+msgstr "Vamos ver isto linha por linha:"
 
 #: docs/en/tutorial/tutorial-2.md:45
 msgid ""
@@ -2894,7 +2882,7 @@ msgstr "class HelloWorld(toga.App):"
 
 #: docs/en/tutorial/tutorial-2.md:58
 msgid "Each Toga application has a single `toga.App` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
-msgstr "Cada aplicação Toga possui uma única instância chamada `toga.App`, que representa o aplicativo em si sendo executado. A aplicação pode acabar gerenciando várias janelas; mas para aplicativos simples, haverá uma única janela principal."
+msgstr "Cada aplicação Toga possui uma única instância chamada `toga.App`, que representa a entidade em execução que é a aplicação. A aplicação pode acabar gerindo várias janelas; mas para aplicações simples, haverá uma janela principal única."
 
 #: docs/en/tutorial/tutorial-2.md:60
 msgid "Next, we define a `startup()` method:"
@@ -2911,15 +2899,15 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:67
 msgid "The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space."
-msgstr "A primeira coisa que o método startup() faz é definir um container principal. O esquema de layout do Toga se comporta de maneira semelhante ao HTML. A construção de uma aplicação se dá por meio da criação de uma coleção de containers, cada um contendo outros containers ou os widgets propriamente dito. Depois, você aplica estilos a esses containers para definir como vão usar o espaço na janela."
+msgstr "A primeira coisa que o método startup() faz é definir uma caixa principal. O esquema de disposição do Toga comporta-se de maneira semelhante ao HTML. A construção de uma aplicação faz-se criando uma coleção de caixas, cada um contendo outras caixas ou as widgets propriamente dito. Depois, aplica-se estilos a essas caixas para definir como vão usar o espaço disponível na janela."
 
 #: docs/en/tutorial/tutorial-2.md:69
 msgid "In this application, we define a single box, but we don't put anything into it."
-msgstr "Neste aplicativo, definimos um único container, mas não colocamos nada dentro dele."
+msgstr "Nesta aplicação, definimos uma única caixa, mas não colocamos nada dentro dela."
 
 #: docs/en/tutorial/tutorial-2.md:71
 msgid "Next, we define a window into which we can put this empty box:"
-msgstr "Em seguida, definimos uma janela na qual podemos colocar o container vazio:"
+msgstr "Em seguida, definimos uma janela na qual podemos colocar esta caixa vazia:"
 
 #: docs/en/tutorial/tutorial-2.md:73
 #, fuzzy
@@ -2943,7 +2931,7 @@ msgstr "Se você tiver cometido um erro em seu código, a janela principal do ap
 
 #: docs/en/tutorial/tutorial-2.md:85
 msgid "We then add our empty box as the content of the main window, and instruct the application to show our window:"
-msgstr "Então, adicionamos nosso container vazio como conteúdo da janela principal e instruímos o aplicativo a mostrar nossa janela:"
+msgstr "Então, adicionamos a nossa caixa vazia como o conteúdo da janela principal, e instruímos a aplicação a mostrar a nossa janela:"
 
 #: docs/en/tutorial/tutorial-2.md:87
 #, fuzzy
@@ -2970,11 +2958,11 @@ msgstr ""
 
 #: docs/en/tutorial/tutorial-2.md:99
 msgid "This `main()` method is the one that is imported and invoked by `__main__.py`. It creates and returns an instance of our `HelloWorld` application."
-msgstr "O método `main()` é aquele que é importado e chamado pelo arquivo `__main__.py`. Ele cria e retorna uma instância da nossa aplicação `HelloWorld`."
+msgstr "O método `main()` é aquele que é importado e invocado pelo ficheiro `__main__.py`. Ele cria e retorna uma instância da nossa aplicação `HelloWorld`."
 
 #: docs/en/tutorial/tutorial-2.md:101
 msgid "That's the simplest possible Toga application. Let's put some of our own content into the application, and make the app do something interesting."
-msgstr "Essa é a aplicação Toga mais básica possível. Vamos agora integrar conteúdo personalizado à aplicação e torná-la mais interessante."
+msgstr "Essa é a aplicação Toga mais básica possível. Vamos agora integrar o nosso conteúdo na aplicação, e pô-la a fazer algo mais interessante."
 
 #: docs/en/tutorial/tutorial-2.md:103
 msgid "Adding some content of our own"
