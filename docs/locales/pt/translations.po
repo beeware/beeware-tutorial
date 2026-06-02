@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-02 22:04+0000\n"
-"PO-Revision-Date: 2026-06-02 22:04+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-02 22:04+0000\nPO-Revision-Date: 2026-06-03 02:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -370,44 +358,36 @@ msgid "The second highlighted code block (the `take_photo()` method) defines the
 msgstr "O segundo bloco de código destacado (o método `take_photo()`) define o manipulador de eventos quando o botão é pressionado. Esse manipulador primeiro confirma se a aplicação tem permissão para tirar uma foto; se não houver permissão, ela será solicitada. Em seguida, a foto é tirada. A solicitação de permissão e a solicitação para tirar uma foto são solicitações assíncronas e, portanto, exigem o uso de `await`; enquanto a aplicação está à espera que o utiliador confirme as permissões ou tire a foto, o ciclo de eventos da aplicação pode continuar em segundo plano."
 
 #: docs/en/tutorial/topics/camera-access.md:97
-#, fuzzy
 msgid "If the camera successfully takes a photo, it will return an `Image` object that can be assigned as the content of the `ImageView`. If the photo request was canceled by the user, the `self.camera.take_photo()` call will return `None`, and the result can be ignored. If the user doesn't grant permission to use the camera, or the camera isn't implemented on the current platform, an error will be raised, and a dialog will be shown to the user."
-msgstr "Se a câmera tirar uma foto com êxito, ela retornará um objeto `Image` que pode ser atribuído como conteúdo do `ImageView`. Se a solicitação de foto tiver sido cancelada pelo usuário, a chamada `self.camera.take_photo()` retornará `None` e o resultado poderá ser ignorado. Se o usuário não conceder permissão para usar a câmera ou se a câmera não estiver implementada na plataforma atual, será gerado um erro e uma caixa de diálogo será exibida para o usuário."
+msgstr "Se a câmera tirar uma foto com sucesso, ela vai retornar um objeto `Image` que pode ser atribuído como conteúdo do `ImageView`. Se o pedido de foto tiver sido cancelado pelo utilizador, a chamada `self.camera.take_photo()` vai retornar `None` e o resultado pode ser ignorado. Se o utilizador não conceder permissão para usar a câmera ou se a câmera não estiver implementada na plataforma atual, será gerado um erro e será mostrada uma caixa de diálogo ao utilizador."
 
 #: docs/en/tutorial/topics/camera-access.md:99
-#, fuzzy
 msgid "Adding device permissions"
-msgstr "Adição de permissões de dispositivo"
+msgstr "Adicionar permissões de dispositivo"
 
 #: docs/en/tutorial/topics/camera-access.md:101
-#, fuzzy
 msgid "Part of this code we've just added asks for permission to use the camera. This is a common feature of modern app platforms - you can't access hardware features without explicitly asking the user's permission first."
-msgstr "Parte do código que acabamos de adicionar pede permissão para usar a câmera. Esse é um recurso comum das plataformas de aplicativos modernas: não é possível acessar recursos de hardware sem antes solicitar explicitamente a permissão do usuário."
+msgstr "Parte deste código que acabamos de adicionar pede permissão para usar a câmera. Esta é uma funcionalidade comum das plataformas de aplicações modernas - não pode aceder a recursos de hardware sem antes solicitar explicitamente a permissão do utilizador."
 
 #: docs/en/tutorial/topics/camera-access.md:103
-#, fuzzy
 msgid "However, this request comes in two parts. The first is in the code we've just seen; but before the app can ask for permissions, it needs to declare the permissions it is going to ask for."
-msgstr "No entanto, essa solicitação vem em duas partes. A primeira está no código que acabamos de ver; mas antes que o aplicativo possa solicitar permissões, ele precisa declarar as permissões que vai solicitar."
+msgstr "No entanto, essa solicitação vem em duas partes. A primeira está no código que acabamos de ver; mas antes que a aplicação possa solicitar permissões, ela precisa declarar as permissões que vai solicitar."
 
 #: docs/en/tutorial/topics/camera-access.md:105
-#, fuzzy
 msgid "The permissions required by each platform are slightly different, but Briefcase has a cross-platform representation for many common hardware permissions. In the `[tool.briefcase.app.hellocamera]` configuration section of your app's `pyproject.toml` file, add the following (just above the `sources` declaration):"
-msgstr "As permissões exigidas por cada plataforma são ligeiramente diferentes, mas o Briefcase tem uma representação entre plataformas para muitas permissões comuns de hardware. Na seção de configuração `[tool.briefcase.app.hellocamera]` do arquivo `pyproject.toml` do seu aplicativo, adicione o seguinte (logo acima da declaração `sources`):"
+msgstr "As permissões exigidas por cada plataforma são ligeiramente diferentes, mas o Briefcase tem uma representação entre plataformas para muitas permissões comuns de hardware. Na secção de configuração `[tool.briefcase.app.hellocamera]` do ficheiro `pyproject.toml` da sua aplicação, adicione o seguinte (logo por cima da declaração `sources`):"
 
 #: docs/en/tutorial/topics/camera-access.md:107
-#, fuzzy
 msgid "permission.camera = \"App will take mugshots.\""
-msgstr "permission.camera = \"O aplicativo tirará fotos do rosto.\""
+msgstr "permission.camera = \"A aplicação vai tirar fotos de rostos.\""
 
 #: docs/en/tutorial/topics/camera-access.md:111
-#, fuzzy
 msgid "This declares that your app needs to access the camera, and provides a short description why the camera is required. This description is needed on some platforms (most notably macOS and iOS) and will be displayed to the user as a additional information when the permission dialog is presented."
-msgstr "Isso declara que o seu aplicativo precisa acessar a câmera e fornece uma breve descrição do motivo pelo qual a câmera é necessária. Essa descrição é necessária em algumas plataformas (principalmente macOS e iOS) e será exibida para o usuário como uma informação adicional quando a caixa de diálogo de permissão for apresentada."
+msgstr "Isso declara que a sua aplicação precisa aceder à câmera, e fornece uma breve descrição do motivo pelo qual a câmera é necessária. Essa descrição é necessária em algumas plataformas (principalmente macOS e iOS) e será mostrada ao utilizador como informação adicional quando o diálogo de permissão for apresentado."
 
 #: docs/en/tutorial/topics/camera-access.md:113
-#, fuzzy
 msgid "We can now generate and run the app:"
-msgstr "Agora podemos gerar e executar o aplicativo:"
+msgstr "Agora podemos gerar e executar a aplicação:"
 
 #: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:53 docs/en/tutorial/tutorial-0.md:112 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:177 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:138 docs/en/tutorial/tutorial-3.md:208 docs/en/tutorial/tutorial-3.md:295 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:157 docs/en/tutorial/tutorial-7.md:263 docs/en/tutorial/tutorial-7.md:527 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
 msgid "/// tab | macOS"
@@ -438,14 +418,12 @@ msgstr ""
 "(beeware-venv) $ briefcase run android"
 
 #: docs/en/tutorial/topics/camera-access.md:135
-#, fuzzy
 msgid "When the app runs, you'll be presented with a button. Press the button, and the platform's default camera dialog will be displayed. Take a photo; the camera dialog will disappear, and the photo will be displayed on in the app, just above the button. You could then take another photo; this will replace the first photo."
-msgstr "Quando o aplicativo for executado, você verá um botão. Pressione o botão, e a caixa de diálogo da câmera padrão da plataforma será exibida. Tire uma foto; a caixa de diálogo da câmera desaparecerá e a foto será exibida no aplicativo, logo acima do botão. Em seguida, você poderá tirar outra foto, que substituirá a primeira."
+msgstr "Quando a aplicação for executada, vai ver um botão. Pressione o botão, e a caixa de diálogo da câmera predefinida da plataforma será exibida. Tire uma foto; o diálogo da câmera vai desaparecer e a foto será exibida na aplicação, logo por cima do botão. Poderá depois tirar outra foto, que vai substituir a primeira."
 
 #: docs/en/tutorial/topics/camera-access.md:137
-#, fuzzy
 msgid "Adding more permissions"
-msgstr "Adição de mais permissões"
+msgstr "Adicionar mais permissões"
 
 #: docs/en/tutorial/topics/camera-access.md:139
 #, fuzzy
