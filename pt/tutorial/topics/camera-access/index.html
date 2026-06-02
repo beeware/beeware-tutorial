@@ -1754,12 +1754,12 @@ pelo Briefcase. Essas adições estão destacadas em cima:</p>
    mostrar uma foto e um <code>Botão</code> para acionar a câmera.</li>
 <li>O segundo bloco de código destacado (o método <code>take_photo()</code>) define o
    manipulador de eventos quando o botão é pressionado. Esse manipulador
-   primeiro confirma se o aplicativo tem permissão para tirar uma foto; se não
+   primeiro confirma se a aplicação tem permissão para tirar uma foto; se não
    houver permissão, ela será solicitada. Em seguida, a foto é tirada. A
    solicitação de permissão e a solicitação para tirar uma foto são solicitações
-   assíncronas e, portanto, exigem o uso de <code>await</code>; enquanto o aplicativo
-   estiver aguardando que o usuário confirme as permissões ou tire a foto, o
-   loop de eventos do aplicativo poderá continuar em segundo plano.</li>
+   assíncronas e, portanto, exigem o uso de <code>await</code>; enquanto a aplicação está à
+   espera que o utiliador confirme as permissões ou tire a foto, o ciclo de
+   eventos da aplicação pode continuar em segundo plano.</li>
 </ol>
 <p>Se a câmera tirar uma foto com êxito, ela retornará um objeto <code>Image</code> que pode
 ser atribuído como conteúdo do <code>ImageView</code>. Se a solicitação de foto tiver sido
