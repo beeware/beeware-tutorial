@@ -1703,44 +1703,44 @@ tenha o seguinte conteúdo:</p>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">HelloCamera</span><span class="p">(</span><span class="n">toga</span><span class="o">.</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">startup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">()</span>
+        <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">()</span>
 
 <span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">photo</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">ImageView</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-</span><span class="hll"> <span class="n">camera_button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Tirar foto&quot;</span><span class="p">,</span>
-</span><span class="hll"> <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_photo</span><span class="p">,</span>
-</span><span class="hll"> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-</span><span class="hll"> <span class="p">)</span>
+</span><span class="hll">        <span class="n">camera_button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
+</span><span class="hll">            <span class="s2">&quot;Tirar foto&quot;</span><span class="p">,</span>
+</span><span class="hll">            <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_photo</span><span class="p">,</span>
+</span><span class="hll">            <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+</span><span class="hll">        <span class="p">)</span>
 </span><span class="hll">
-</span><span class="hll"> <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="p">)</span>
-</span><span class="hll"> <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">camera_button</span><span class="p">)</span>
+</span><span class="hll">        <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="p">)</span>
+</span><span class="hll">        <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">camera_button</span><span class="p">)</span>
 </span><span class="hll">
 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
- <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
- <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="hll"> <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">take_photo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-</span><span class="hll"> <span class="k">try</span><span class="p">:</span>
-</span><span class="hll"> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">has_permission</span><span class="p">:</span>
-</span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">request_permission</span><span class="p">()</span>
+<span class="hll">    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">take_photo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span><span class="hll">        <span class="k">try</span><span class="p">:</span>
+</span><span class="hll">            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">has_permission</span><span class="p">:</span>
+</span><span class="hll">                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">request_permission</span><span class="p">()</span>
 </span><span class="hll">
 </span><span class="hll">            <span class="n">image</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">take_photo</span><span class="p">()</span>
-</span><span class="hll"> <span class="k">if</span> <span class="n">image</span><span class="p">:</span>
-</span><span class="hll"> <span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">image</span>
-</span><span class="hll"> <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
-</span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Oh não!&quot;</span><span class="p">,</span>
-</span><span class="hll">                    <span class="s2">&quot;A API da câmera não está implementada nesta plataforma&quot;</span><span class="p">,</span>
-</span><span class="hll"> <span class="p">)</span>
-</span><span class="hll"> <span class="p">)</span>
-</span><span class="hll"> <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
-</span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Oh não!&quot;</span><span class="p">,</span>
-</span><span class="hll"> <span class="s2">&quot;Você não concedeu permissão para tirar fotos&quot;</span><span class="p">,</span>
-</span><span class="hll"> <span class="p">)</span>
-</span><span class="hll"> <span class="p">)</span>
+</span><span class="hll">            <span class="k">if</span> <span class="n">image</span><span class="p">:</span>
+</span><span class="hll">                <span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">image</span>
+</span><span class="hll">        <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
+</span><span class="hll">            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+</span><span class="hll">                <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+</span><span class="hll">                    <span class="s2">&quot;Oh não!&quot;</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">&quot;A API de Camera não está implementada nesta plataforma&quot;</span><span class="p">,</span>
+</span><span class="hll">                <span class="p">)</span>
+</span><span class="hll">            <span class="p">)</span>
+</span><span class="hll">        <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
+</span><span class="hll">            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
+</span><span class="hll">                <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+</span><span class="hll">                    <span class="s2">&quot;Oh não!&quot;</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">&quot;Não tem permissão de tirar fotos&quot;</span><span class="p">,</span>
+</span><span class="hll">                <span class="p">)</span>
+</span><span class="hll">            <span class="p">)</span>
 </span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
