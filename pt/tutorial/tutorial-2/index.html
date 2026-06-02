@@ -750,10 +750,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#adicionando-conteudo-personalizado" class="md-nav__link">
+  <a href="#adicionar-algum-conteudo-de-si-proprio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adicionando conteúdo personalizado
+        Adicionar algum conteúdo de si próprio
       
     </span>
   </a>
@@ -1595,10 +1595,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#adicionando-conteudo-personalizado" class="md-nav__link">
+  <a href="#adicionar-algum-conteudo-de-si-proprio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adicionando conteúdo personalizado
+        Adicionar algum conteúdo de si próprio
       
     </span>
   </a>
@@ -1732,15 +1732,15 @@ de nossa aplicação:</p>
 <code>__main__.py</code>. Ele cria e retorna uma instância da nossa aplicação <code>HelloWorld</code>.</p>
 <p>Essa é a aplicação Toga mais básica possível. Vamos agora integrar o nosso
 conteúdo na aplicação, e pô-la a fazer algo mais interessante.</p>
-<h2 id="adicionando-conteudo-personalizado">Adicionando conteúdo personalizado<a class="headerlink" href="#adicionando-conteudo-personalizado" title="Permanent link">&para;</a></h2>
+<h2 id="adicionar-algum-conteudo-de-si-proprio">Adicionar algum conteúdo de si próprio<a class="headerlink" href="#adicionar-algum-conteudo-de-si-proprio" title="Permanent link">&para;</a></h2>
 <p>Vamos fazer algo mais interessante com nosso aplicativo <code>HelloWorld</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Observação</p>
 <p>Não remova as importações já feitas no topo do arquivo ou o <code>main()</code> ao final.
 Você só precisa atualizar a classe <code>HelloWorld</code>.</p>
 </div>
-<p>Modifique sua classe <code>HelloWorld</code> dentro de <code>src/helloworld/app.py</code> para que
-fique assim:</p>
+<p>Modifique a sua classe <code>HelloWorld</code> dentro de <code>src/helloworld/app.py</code> para que
+fique como isto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HelloWorld</span><span class="p">(</span><span class="n">toga</span><span class="o">.</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">startup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
@@ -1771,8 +1771,8 @@ fique assim:</p>
  <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>Vamos ver em detalhes o que mudou.</p>
-<p>Ainda estamos fazendo o container principal; porém, agora estamos aplicando um
+<p>Vamos ver em detalhe o que foi mudado.</p>
+<p>Ainda estamos a criar a caixa principal; porém, agora estamos a aplicar um
 estilo:</p>
 <div class="highlight"><pre><span></span><code><span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
 </code></pre></div>
@@ -1791,7 +1791,7 @@ separado, que é usado desta forma:</p>
 <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="n">Pack</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">))</span>
 </code></pre></div>
 </div>
-<p>A seguir, vamos definir dois widgets:</p>
+<p>A seguir, definimos um par de widgets:</p>
 <div class="highlight"><pre><span></span><code><span class="n">name_label</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
     <span class="s2">&quot;Seu nome: &quot;</span><span class="p">,</span>
     <span class="n">margin</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
@@ -1802,9 +1802,9 @@ separado, que é usado desta forma:</p>
 associados; o Label terá 5px de preenchimento à esquerda e à direita, e nenhum
 preenchimento na parte superior e inferior. O TextInput é marcado como flexível,
 ou seja, ele absorverá todo o espaço disponível em seu eixo de layout.</p>
-<p>O TextInput é atribuído como uma variável de instância da classe. Isso nos
-permite acessar facilmente a instância do widget, o que será utilizado em breve.</p>
-<p>Após isso, definimos um container para colocar esses dois widgets:</p>
+<p>O TextInput é atribuído como uma variável de instância da classe. Isso da-nos
+acesso fácil à instância do widget - algo que vamos utilizar em breve.</p>
+<p>Após isso, definimos uma caixa para conter esses dois widgets:</p>
 <div class="highlight"><pre><span></span><code><span class="n">name_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">ROW</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_label</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="p">)</span>
@@ -1822,7 +1822,7 @@ preenchimento - 5px em todos os lados.</p>
 </code></pre></div>
 <p>O botão também tem 5px de margem em todos os lados. Também definimos um
 <em>handler</em> - um método a ser invocado quando o botão for pressionado.</p>
-<p>Então, adicionamos o container name_box e o botão ao container principal:</p>
+<p>Então, adicionamos o nome da caixa e do botão à caixa principal:</p>
 <div class="highlight"><pre><span></span><code><span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_box</span><span class="p">)</span>
 <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">button</span><span class="p">)</span>
 </code></pre></div>
@@ -1839,12 +1839,11 @@ widget que gerou o evento e será invocado sempre que o botão for pressionado:<
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>O corpo do método é uma simples instrução de impressão. No entanto, ele
-consultará o valor atual do campo de entrada de nome e usará esse conteúdo como
-o texto a ser impresso.</p>
-<p>Ao concluirmos essas alterações, podemos visualizar o resultado reiniciando a
-aplicação. Seguindo o procedimento anterior, utilizaremos o modo de
-desenvolvedor:</p>
+<p>O corpo do método é uma simples instrução de escrita - no entanto, ele vai
+interrogar o valor atual da entrada de nome, e vai usar esse conteúdo como o
+texto a ser escrito.</p>
+<p>Agora que fizemos estas alterações, podemos visualizar o resultado iniciando
+outra vez a aplicação. Como antes, vamos utilizar o modo de desenvolvedor:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1898,8 +1897,8 @@ dev</code>.</p>
 </div>
 </div>
 </div>
-<p>Se você escrever um nome na caixa de texto e clicar no botão da interface, vai
-ver uma mensagem aparecer no console onde você abriu a aplicação.</p>
+<p>Se escrever um nome na caixa de texto e clicar no botão da GUI, vai ver uma
+mensagem aparecer na consola onde abriu a aplicação.</p>
 <p>Antes de continuar, feche o aplicativo. Assim como no Tutorial 1, você pode
 fazer isso pressionando o botão Fechar na janela do aplicativo, selecionando
 Quit/Exit no menu do aplicativo ou digitando <strong>Ctrl+C</strong> no terminal em que

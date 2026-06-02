@@ -784,10 +784,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#criando-a-estrutura-da-sua-aplicacao" class="md-nav__link">
+  <a href="#criar-o-alicerce-da-sua-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Criando a estrutura da sua aplicação
+        Criar o alicerce da sua aplicação
       
     </span>
   </a>
@@ -795,10 +795,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#compilando-sua-aplicacao" class="md-nav__link">
+  <a href="#compilando-a-sua-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Compilando sua aplicação
+        Compilando a sua aplicação
       
     </span>
   </a>
@@ -1606,10 +1606,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#criando-a-estrutura-da-sua-aplicacao" class="md-nav__link">
+  <a href="#criar-o-alicerce-da-sua-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Criando a estrutura da sua aplicação
+        Criar o alicerce da sua aplicação
       
     </span>
   </a>
@@ -1617,10 +1617,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#compilando-sua-aplicacao" class="md-nav__link">
+  <a href="#compilando-a-sua-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Compilando sua aplicação
+        Compilando a sua aplicação
       
     </span>
   </a>
@@ -1679,19 +1679,19 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-3-empacotando-para-distribuicao">Tutorial 3 - Empacotando para Distribuição<a class="headerlink" href="#tutorial-3-empacotando-para-distribuicao" title="Permanent link">&para;</a></h1>
-<p>Até o momento, executamos nossa aplicação no "modo de desenvolvedor". Isso
-facilita a execução da nossa aplicação localmente - mas o que realmente queremos
-é poder fornecer nossa aplicação para outras pessoas.</p>
-<p>Entretanto, não queremos ter que ensinar aos nossos usuários como instalar o
+<p>Até o momento, executamos a nossa aplicação em "modo de desenvolvedor". Isso
+facilita-nos executar a nossa aplicação localmente - mas o que realmente
+queremos é poder fornecer a nossa aplicação a outras pessoas.</p>
+<p>Entretanto, não queremos ter que ensinar aos nossos utilizadores a como instalar
 Python, criar um ambiente virtual, clonar um repositório git e executar o
-Briefcase no modo de desenvolvedor. Queremos é fornecer um instalador,
-garantindo a execução imediata da aplicação.</p>
-<p>O Briefcase pode ser usado para empacotar sua aplicação para distribuição dessa
+Briefcase no modo de desenvolvedor. Preferimos dar-lhes um instalador, e ter a
+aplicação A Trabalhar.</p>
+<p>O Briefcase pode ser usado para empacotar a sua aplicação para distribuir dessa
 maneira.</p>
-<h2 id="criando-a-estrutura-da-sua-aplicacao">Criando a estrutura da sua aplicação<a class="headerlink" href="#criando-a-estrutura-da-sua-aplicacao" title="Permanent link">&para;</a></h2>
-<p>Como esta é a primeira vez que estamos empacotando nossa aplicação, precisamos
-criar alguns arquivos de configuração e outras estruturas de suporte ao processo
-de empacotamento. No diretório <code>helloworld</code>, execute:</p>
+<h2 id="criar-o-alicerce-da-sua-aplicacao">Criar o alicerce da sua aplicação<a class="headerlink" href="#criar-o-alicerce-da-sua-aplicacao" title="Permanent link">&para;</a></h2>
+<p>Como esta é a primeira vez que estamos a empacotar a nossa aplicação, precisamos
+criar alguns ficheiros de configuração e outras estruturas para suportar o
+processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1784,8 +1784,8 @@ sistema Python é um requisito para empacotar seu aplicativo.</p>
 </div>
 </div>
 </div>
-<p>É provável que você tenha observado uma grande quantidade de texto passando pelo
-seu terminal&hellip; mas o que exatamente aconteceu? O Briefcase fez o seguinte:</p>
+<p>É provável que você tenha observado uma grande quantidade de texto a passar no
+seu terminal&hellip; então o que aconteceu? O Briefcase fez o seguinte:</p>
 <ol>
 <li>
 <p>Ele <strong>gerou um modelo de aplicativo</strong>. Há muitos arquivos e configurações
@@ -1825,20 +1825,20 @@ seu terminal&hellip; mas o que exatamente aconteceu? O Briefcase fez o seguinte:
    distribuição do Linux que está sendo visada.</p>
 </li>
 <li>
-<p>Ele <strong>instalou os requisitos da aplicação</strong>. Seu aplicativo pode especificar
+<p>Ele <strong>instalou os requisitos da aplicação</strong>. A sua aplicação pode especificar
    quaisquer módulos de terceiros necessários em tempo de execução. Estes serão
    instalados utilizando o <code>pip</code> no instalador da sua aplicação.</p>
 </li>
 <li>
-<p>Ele <strong>instalou o código da sua aplicação</strong>. Sua aplicação terá seu próprio
-   código e recursos (por exemplo, imagens necessárias em tempo de execução);
-   estes arquivos são copiados para o instalador.</p>
+<p>Ele <strong>instalou o código da sua aplicação</strong>. A sua aplicação terá o seu
+   próprio código e recursos (ex., imagens que vão ser necessárias em tempo de
+   execução); estes ficheiros são copiados para o instalador.</p>
 </li>
 <li>
-<p>Ele <strong>instalou os recursos requeridos pela sua aplicação.</strong> Por fim, são
-   adicionados recursos adicionais requeridos pelo próprio instalador. Isso
-   inclui elementos como ícones que serão anexados à aplicação final e imagens
-   de tela de abertura.</p>
+<p>Ele <strong>instalou os recursos necessários pela sua aplicação.</strong> Por fim,
+   adiciona recursos adicionais que são necessários pelo próprio instalador.
+   Isto inclui coisas como ícones que precisam ser anexados à aplicação final e
+   imagens de ecrã de abertura.</p>
 </li>
 </ol>
 <p>Quando isso for concluído, se você olhar no diretório <code>build</code> do projeto, deverá
@@ -1851,8 +1851,8 @@ diretório do seu projeto agora incluirá:</p>
     └── helloworld/
  └── macos/
 </code></pre></div>
-<h2 id="compilando-sua-aplicacao">Compilando sua aplicação<a class="headerlink" href="#compilando-sua-aplicacao" title="Permanent link">&para;</a></h2>
-<p>Agora você pode compilar sua aplicação. Este passo executa qualquer compilação
+<h2 id="compilando-a-sua-aplicacao">Compilando a sua aplicação<a class="headerlink" href="#compilando-a-sua-aplicacao" title="Permanent link">&para;</a></h2>
+<p>Agora você pode compilar a sua aplicação. Este passo efetua qualquer compilação
 binária necessária para que sua aplicação seja executável na plataforma de
 destino.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
@@ -1869,7 +1869,7 @@ destino.</p>
 </code></pre></div>
 <p>No macOS, o comando <code>build</code> não necessita <em>compilar</em> nada, mas precisa assinar o
 conteúdo do binário para que ele possa ser executado. Essa assinatura é do tipo
-<em>ad hoc</em> - só funcionará no <em>seu</em> computador. Se você deseja distribuir a
+<em>ad hoc</em> - só funcionará no <em>seu</em> computador; se você deseja distribuir a
 aplicação para outras pessoas, será necessário fornecer uma assinatura completa.</p>
 </div>
 <div class="tabbed-block">
@@ -1895,10 +1895,11 @@ aplicação para outras pessoas, será necessário fornecer uma assinatura compl
 
 <span class="go">[helloworld] Compilado build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
-<p>Após a conclusão dessa etapa, a pasta <code>build</code> conterá uma pasta
-<code>helloworld-0.0.1</code> com uma estrutura semelhante ao sistema de arquivos <code>/usr</code> do
-Linux. Ela conterá uma pasta <code>bin</code> com um binário <code>helloworld</code>, além das pastas
-<code>lib</code> e <code>share</code> necessárias para dar suporte ao binário.</p>
+<p>Após a conclusão dessa etapa, a pasta <code>build</code> vai conter uma pasta
+<code>helloworld-0.0.1</code> com um espelho do sistema de ficheiros <code>/usr</code> do Linux. Este
+espelho de sistema de ficheiros vai conter uma pasta <code>bin</code> com um binário
+<code>helloworld</code>, mais as pastas <code>lib</code> e <code>share</code> necessárias para dar suporte ao
+binário.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
