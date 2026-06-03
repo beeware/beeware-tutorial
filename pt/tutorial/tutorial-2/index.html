@@ -1644,22 +1644,22 @@ criado para nós.</p>
 <p><code>__init__.py</code> marca o diretório <code>helloworld</code> como um módulo Python importável.
 Trata-se de um ficheiro vazio; o facto de existir indica ao interpretador Python
 que o diretório <code>helloworld</code> define um módulo.</p>
-<p>O arquivo <code>__main__.py</code> marca o módulo <code>helloworld</code> como um tipo especial de
+<p>O ficheiro <code>__main__.py</code> marca o módulo <code>helloworld</code> como um tipo especial de
 módulo - um módulo executável. Se você tentar executar o módulo <code>helloworld</code>
-usando <code>python -m helloworld</code>, o arquivo <code>__main__.py</code> é onde o Python iniciará
+usando <code>python -m helloworld</code>, o ficheiro <code>__main__.py</code> é onde o Python iniciará
 a execução. O conteúdo do <code>__main__.py</code> é relativamente simples:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">main</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span><span class="o">.</span><span class="n">main_loop</span><span class="p">()</span>
 </code></pre></div>
-<p>Esse arquivo tem duas funções:</p>
+<p>Esse ficheiro tem duas funções:</p>
 <ul>
-<li>Ele importa o método <code>main</code> do aplicativo <code>helloworld</code>.</li>
-<li>Isto é - ele importa o método <code>main</code> do aplicativo <code>helloworld</code>; quando
+<li>Ele importa o método <code>main</code> do aplicação <code>helloworld</code>.</li>
+<li>Isto é - ele importa o método <code>main</code> do aplicação <code>helloworld</code>; quando
   executado como ponto de entrada, esse método main() é chamado, dando início ao
   loop principal da aplicação. Nesse loop, a aplicação de interface gráfica
-  (GUI) espera pelas interações do usuário (como cliques do mouse e
+  (GUI) espera pelas interações do utilizador (como cliques do mouse e
   pressionamentos de teclas).</li>
 </ul>
 <p>O ficheiro mais interessante é o <code>app.py</code> - este contém a lógica que cria a
@@ -1706,17 +1706,17 @@ estilos a essas caixas para definir como vão usar o espaço disponível na jane
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 </code></pre></div>
 <p>Isso cria uma instância de <code>toga.MainWindow</code>, que terá um título correspondente
-ao nome do aplicativo. A MainWindow (Janela Principal) é um tipo especial de
+ao nome do aplicação. A MainWindow (Janela Principal) é um tipo especial de
 janela no Toga, pois está intimamente ligada ao ciclo de vida da aplicação.
 Quando a MainWindow é fechada, a aplicação também se encerra. Além disso, a
-MainWindow também é a janela que contém o menu do aplicativo (se você estiver em
+MainWindow também é a janela que contém o menu do aplicação (se você estiver em
 uma plataforma como o Windows, onde as barras de menu fazem parte da janela)</p>
 <div class="admonition">
 <p class="admonition-title">Onde está minha janela?</p>
-<p>Se você tiver cometido um erro em seu código, a janela principal do aplicativo
+<p>Se você tiver cometido um erro em seu código, a janela principal do aplicação
 poderá não ser exibida. Se isso acontecer, você pode digitar <strong>Ctrl+C</strong> no
-terminal em que iniciou o aplicativo. Isso interromperá o aplicativo. Em
-seguida, você poderá corrigir o erro e reiniciar o aplicativo.</p>
+terminal em que iniciou o aplicação. Isso interromperá o aplicação. Em seguida,
+você poderá corrigir o erro e reiniciar o aplicação.</p>
 </div>
 <p>Então, adicionamos a nossa caixa vazia como o conteúdo da janela principal, e
 instruímos a aplicação a mostrar a nossa janela:</p>
@@ -1733,10 +1733,10 @@ de nossa aplicação:</p>
 <p>Essa é a aplicação Toga mais básica possível. Vamos agora integrar o nosso
 conteúdo na aplicação, e pô-la a fazer algo mais interessante.</p>
 <h2 id="adicionar-algum-conteudo-de-si-proprio">Adicionar algum conteúdo de si próprio<a class="headerlink" href="#adicionar-algum-conteudo-de-si-proprio" title="Permanent link">&para;</a></h2>
-<p>Vamos fazer algo mais interessante com nosso aplicativo <code>HelloWorld</code>.</p>
+<p>Vamos fazer algo mais interessante com nosso aplicação <code>HelloWorld</code>.</p>
 <div class="admonition note">
-<p class="admonition-title">Observação</p>
-<p>Não remova as importações já feitas no topo do arquivo ou o <code>main()</code> ao final.
+<p class="admonition-title">Nota</p>
+<p>Não remova as importações já feitas no topo do ficheiro ou o <code>main()</code> ao final.
 Você só precisa atualizar a classe <code>HelloWorld</code>.</p>
 </div>
 <p>Modifique a sua classe <code>HelloWorld</code> dentro de <code>src/helloworld/app.py</code> para que
@@ -1784,7 +1784,7 @@ Neste caso específico, estamos indicando que o container é um <code>'COLUMN'</
 é, ele ocupará toda a largura disponível e aumentará sua altura à medida que
 conteúdo for adicionado, porém buscando sempre ser o mais compacto possível.</p>
 <div class="admonition note">
-<p class="admonition-title">Observação</p>
+<p class="admonition-title">Nota</p>
 <p>Para usos mais avançados, a Toga também oferece suporte a um objeto de estilo
 separado, que é usado desta forma:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">toga.style</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pack</span>
@@ -1899,10 +1899,10 @@ dev</code>.</p>
 </div>
 <p>Se escrever um nome na caixa de texto e clicar no botão da GUI, vai ver uma
 mensagem aparecer na consola onde abriu a aplicação.</p>
-<p>Antes de continuar, feche o aplicativo. Assim como no Tutorial 1, você pode
-fazer isso pressionando o botão Fechar na janela do aplicativo, selecionando
-Quit/Exit no menu do aplicativo ou digitando <strong>Ctrl+C</strong> no terminal em que
-executou <code>briefcase dev</code>.</p>
+<p>Antes de continuar, feche o aplicação. Assim como no Tutorial 1, você pode fazer
+isso pressionando o botão Fechar na janela do aplicação, selecionando Quit/Exit
+no menu do aplicação ou digitando <strong>Ctrl+C</strong> no terminal em que executou
+<code>briefcase dev</code>.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
 <p>Criamos uma aplicação com recursos mais interessantes. Porém, ela somente
 funciona em nosso computador. Vamos empacotar esta aplicação para distribuição.

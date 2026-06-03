@@ -1639,20 +1639,20 @@ aria-label="Cabeçalho"
 código, mas sim a modificação do código existente. Garantir que o código
 existente continue a funcionar da maneira esperada é uma parte fundamental do
 processo de desenvolvimento de software. Uma maneira de garantir o comportamento
-do nosso aplicativo é com um <em>conjunto de testes</em>.</p>
+do nosso aplicação é com um <em>conjunto de testes</em>.</p>
 <h2 id="executar-o-conjunto-de-testes">Executar o conjunto de testes<a class="headerlink" href="#executar-o-conjunto-de-testes" title="Permanent link">&para;</a></h2>
 <p>Acontece que nosso projeto já tem um conjunto de testes! Quando geramos nosso
 projeto originalmente, foram gerados dois diretórios de nível superior: <code>src</code> e
-<code>tests</code>. A pasta <code>src</code> contém o código do nosso aplicativo; a pasta <code>tests</code>
-contém nosso conjunto de testes. Dentro da pasta <code>tests</code> há um arquivo chamado
+<code>tests</code>. A pasta <code>src</code> contém o código do nosso aplicação; a pasta <code>tests</code>
+contém nosso conjunto de testes. Dentro da pasta <code>tests</code> há um ficheiro chamado
 <code>test_app.py</code> com o seguinte conteúdo:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Um teste inicial para o aplicativo&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Um teste inicial para o aplicação&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
 <p>Este é um <a href="https://pytest.org">Pytest</a> <em>caso de teste</em> - um bloco de código que
-pode ser executado para verificar algum comportamento do seu aplicativo. Nesse
-caso, o teste é um espaço reservado e não testa nada sobre nosso aplicativo, mas
+pode ser executado para verificar algum comportamento do seu aplicação. Nesse
+caso, o teste é um espaço reservado e não testa nada sobre nosso aplicação, mas
 é um teste que podemos executar.</p>
 <p>Podemos executar esse conjunto de testes usando a opção <code>--test</code> do <code>briefcase
 dev</code>. Como esta é a primeira vez que estamos executando testes, também
@@ -1807,8 +1807,8 @@ precisamos apenas usar a opção <code>--test</code>:</p>
 <p>Excelente! Nosso método utilitário <code>greeting()</code> está funcionando como esperado.</p>
 <h2 id="desenvolvimento-orientado-por-testes">Desenvolvimento orientado por testes<a class="headerlink" href="#desenvolvimento-orientado-por-testes" title="Permanent link">&para;</a></h2>
 <p>Agora que temos um conjunto de testes, podemos usá-lo para impulsionar o
-desenvolvimento de novos recursos. Vamos modificar nosso aplicativo para ter uma
-saudação especial para um determinado usuário. Podemos começar adicionando um
+desenvolvimento de novos recursos. Vamos modificar nosso aplicação para ter uma
+saudação especial para um determinado utilizador. Podemos começar adicionando um
 caso de teste para o novo comportamento que gostaríamos de ver na parte inferior
 do <code>test_app.py</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
@@ -1985,18 +1985,17 @@ comportamento:</p>
 especialmente útil quando se está desenvolvendo novos recursos, pois é possível
 iterar rapidamente na adição de testes e na adição de código para que esses
 testes sejam aprovados. No entanto, em algum momento, você desejará verificar se
-o seu código também é executado corretamente no ambiente do aplicativo de
-pacote.</p>
+o seu código também é executado corretamente no ambiente do aplicação de pacote.</p>
 <p>As opções <code>--test</code> e <code>-r</code> também podem ser passadas para o comando <code>run</code>. Se
 você usar <code>briefcase run --test -r</code>, o mesmo conjunto de testes será executado,
-mas dentro do pacote de aplicativos empacotados, e não no seu ambiente de
+mas dentro do pacote de aplicações empacotados, e não no seu ambiente de
 desenvolvimento:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">[helloworld] Atualizando o código do aplicação...</span>
 <span class="go">Instalando src/helloworld... concluído</span>
 <span class="go">Instalando testes... concluído</span>
 
@@ -2018,7 +2017,7 @@ desenvolvimento:</p>
 <span class="go">Configurando argc/argv...</span>
 <span class="go">Inicializando o tempo de execução do Python...</span>
 <span class="go">Instalando o manipulador NSLog do Python...</span>
-<span class="go">Executando o módulo do aplicativo: tests.helloworld</span>
+<span class="go">Executando o módulo do aplicação: tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">============================= início da sessão de teste ==============================</span>
 <span class="go">...</span>
@@ -2036,13 +2035,13 @@ desenvolvimento:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Finalizando a configuração do aplicativo...</span>
+<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
 <span class="go">Selecionando o alvo ubuntu:jammy (base Debian do fornecedor)</span>
 <span class="go">Determinando a versão da glibc... concluído</span>
 <span class="go">Selecionando a glibc 2.35</span>
 <span class="go">Selecionando o Python 3.10</span>
 
-<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">[helloworld] Atualizando o código do aplicação...</span>
 <span class="go">Instalando src/helloworld... concluído</span>
 <span class="go">Instalando testes... concluído</span>
 
@@ -2066,7 +2065,7 @@ desenvolvimento:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run --test -r
 
-<span class="go">[helloworld] Atualizando o código do aplicativo...</span>
+<span class="go">[helloworld] Atualizando o código do aplicação...</span>
 <span class="go">Instalando src/helloworld... concluído</span>
 <span class="go">Instalando testes... concluído</span>
 
