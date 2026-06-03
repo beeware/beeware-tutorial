@@ -1444,10 +1444,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#adicao-de-permissoes-de-dispositivo" class="md-nav__link">
+  <a href="#adicionar-permissoes-de-dispositivo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adição de permissões de dispositivo
+        Adicionar permissões de dispositivo
       
     </span>
   </a>
@@ -1455,10 +1455,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#adicao-de-mais-permissoes" class="md-nav__link">
+  <a href="#adicionar-mais-permissoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adição de mais permissões
+        Adicionar mais permissões
       
     </span>
   </a>
@@ -1619,10 +1619,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#adicao-de-permissoes-de-dispositivo" class="md-nav__link">
+  <a href="#adicionar-permissoes-de-dispositivo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adição de permissões de dispositivo
+        Adicionar permissões de dispositivo
       
     </span>
   </a>
@@ -1630,10 +1630,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#adicao-de-mais-permissoes" class="md-nav__link">
+  <a href="#adicionar-mais-permissoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adição de mais permissões
+        Adicionar mais permissões
       
     </span>
   </a>
@@ -1761,33 +1761,33 @@ pelo Briefcase. Essas adições estão destacadas em cima:</p>
    espera que o utiliador confirme as permissões ou tire a foto, o ciclo de
    eventos da aplicação pode continuar em segundo plano.</li>
 </ol>
-<p>Se a câmera tirar uma foto com êxito, ela retornará um objeto <code>Image</code> que pode
-ser atribuído como conteúdo do <code>ImageView</code>. Se a solicitação de foto tiver sido
-cancelada pelo usuário, a chamada <code>self.camera.take_photo()</code> retornará <code>None</code> e
-o resultado poderá ser ignorado. Se o usuário não conceder permissão para usar a
-câmera ou se a câmera não estiver implementada na plataforma atual, será gerado
-um erro e uma caixa de diálogo será exibida para o usuário.</p>
-<h2 id="adicao-de-permissoes-de-dispositivo">Adição de permissões de dispositivo<a class="headerlink" href="#adicao-de-permissoes-de-dispositivo" title="Permanent link">&para;</a></h2>
-<p>Parte do código que acabamos de adicionar pede permissão para usar a câmera.
-Esse é um recurso comum das plataformas de aplicativos modernas: não é possível
-acessar recursos de hardware sem antes solicitar explicitamente a permissão do
-usuário.</p>
+<p>Se a câmera tirar uma foto com sucesso, ela vai retornar um objeto <code>Image</code> que
+pode ser atribuído como conteúdo do <code>ImageView</code>. Se o pedido de foto tiver sido
+cancelado pelo utilizador, a chamada <code>self.camera.take_photo()</code> vai retornar
+<code>None</code> e o resultado pode ser ignorado. Se o utilizador não conceder permissão
+para usar a câmera ou se a câmera não estiver implementada na plataforma atual,
+será gerado um erro e será mostrada uma caixa de diálogo ao utilizador.</p>
+<h2 id="adicionar-permissoes-de-dispositivo">Adicionar permissões de dispositivo<a class="headerlink" href="#adicionar-permissoes-de-dispositivo" title="Permanent link">&para;</a></h2>
+<p>Parte deste código que acabamos de adicionar pede permissão para usar a câmera.
+Esta é uma funcionalidade comum das plataformas de aplicações modernas - não
+pode aceder a recursos de hardware sem antes solicitar explicitamente a
+permissão do utilizador.</p>
 <p>No entanto, essa solicitação vem em duas partes. A primeira está no código que
-acabamos de ver; mas antes que o aplicativo possa solicitar permissões, ele
+acabamos de ver; mas antes que a aplicação possa solicitar permissões, ela
 precisa declarar as permissões que vai solicitar.</p>
 <p>As permissões exigidas por cada plataforma são ligeiramente diferentes, mas o
 Briefcase tem uma representação entre plataformas para muitas permissões comuns
-de hardware. Na seção de configuração <code>[tool.briefcase.app.hellocamera]</code> do
-arquivo <code>pyproject.toml</code> do seu aplicativo, adicione o seguinte (logo acima da
-declaração <code>sources</code>):</p>
-<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;O aplicativo tirará fotos do rosto.&quot;</span>
+de hardware. Na secção de configuração <code>[tool.briefcase.app.hellocamera]</code> do
+ficheiro <code>pyproject.toml</code> da sua aplicação, adicione o seguinte (logo por cima
+da declaração <code>sources</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;A aplicação vai tirar fotos de rostos.&quot;</span>
 </code></pre></div>
-<p>Isso declara que o seu aplicativo precisa acessar a câmera e fornece uma breve
+<p>Isso declara que a sua aplicação precisa aceder à câmera, e fornece uma breve
 descrição do motivo pelo qual a câmera é necessária. Essa descrição é necessária
-em algumas plataformas (principalmente macOS e iOS) e será exibida para o
-usuário como uma informação adicional quando a caixa de diálogo de permissão for
-apresentada.</p>
-<p>Agora podemos gerar e executar o aplicativo:</p>
+em algumas plataformas (principalmente macOS e iOS) e será mostrada ao
+utilizador como informação adicional quando o diálogo de permissão for
+apresentado.</p>
+<p>Agora podemos gerar e executar a aplicação:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Android</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1804,12 +1804,11 @@ apresentada.</p>
 </div>
 </div>
 </div>
-<p>Quando o aplicativo for executado, você verá um botão. Pressione o botão, e a
-caixa de diálogo da câmera padrão da plataforma será exibida. Tire uma foto; a
-caixa de diálogo da câmera desaparecerá e a foto será exibida no aplicativo,
-logo acima do botão. Em seguida, você poderá tirar outra foto, que substituirá a
-primeira.</p>
-<h2 id="adicao-de-mais-permissoes">Adição de mais permissões<a class="headerlink" href="#adicao-de-mais-permissoes" title="Permanent link">&para;</a></h2>
+<p>Quando a aplicação for executada, vai ver um botão. Pressione o botão, e a caixa
+de diálogo da câmera predefinida da plataforma será exibida. Tire uma foto; o
+diálogo da câmera vai desaparecer e a foto será exibida na aplicação, logo por
+cima do botão. Poderá depois tirar outra foto, que vai substituir a primeira.</p>
+<h2 id="adicionar-mais-permissoes">Adicionar mais permissões<a class="headerlink" href="#adicionar-mais-permissoes" title="Permanent link">&para;</a></h2>
 <p>As permissões são declaradas nos arquivos que são gerados durante a chamada
 original para <code>briefcase create</code>. Infelizmente, o Briefcase não pode atualizar
 esses arquivos uma vez que eles tenham sido gerados inicialmente; portanto, se
