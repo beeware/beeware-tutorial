@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-04 08:01+0000\n"
-"PO-Revision-Date: 2026-06-04 08:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-04 08:01+0000\nPO-Revision-Date: 2026-06-04 11:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -1276,14 +1264,12 @@ msgid "Since runtime icons are app resources bundled inside your Python package,
 msgstr "Como os ícones de tempo de execução são recursos de aplicação incluídos no pacote Python, não é necessário reconstruir ou atualizar o recurso. Neste ponto pode executar o `briefcase dev` (ou `briefcase run`) para ver o ícone adicionado ao botão."
 
 #: docs/en/tutorial/topics/index.md:3
-#, fuzzy
 msgid "Want to go deeper on specific topics? Here are some additional tutorials that explore common aspects of application development. Each tutorial is standalone, and can be completed in any order; but they all assume you've completed the core tutorial."
-msgstr "Deseja se aprofundar em tópicos específicos? Aqui estão alguns tutoriais adicionais que exploram aspectos comuns do desenvolvimento de aplicações. Cada tutorial é autônomo e pode ser concluído em qualquer ordem, mas todos eles pressupõem que você tenha concluído o tutorial principal."
+msgstr "Deseja aprofundar-se em tópicos específicos? Aqui estão alguns tutoriais adicionais que exploram aspectos comuns do desenvolvimento de aplicações. Cada tutorial é autônomo e pode ser concluído em qualquer ordem, mas todos eles pressupõem que tenha concluído o tutorial principal."
 
 #: docs/en/tutorial/topics/index.md:7
-#, fuzzy
 msgid "Customize your application's appearance by replacing the default \"gray bee\" icon."
-msgstr "Personalize a aparência do seu aplicação substituindo o ícone padrão de \"abelha cinza\"."
+msgstr "Personalize a aparência da sua aplicação substituindo o ícone predefinido da \"abelha cinzenta\"."
 
 #: docs/en/tutorial/topics/index.md:11
 #, fuzzy
