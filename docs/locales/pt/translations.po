@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-05 09:01+0000\n"
-"PO-Revision-Date: 2026-06-05 09:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-05 09:01+0000\nPO-Revision-Date: 2026-06-05 20:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -2074,12 +2062,10 @@ msgid "As with `briefcase dev --test`, the `-r` option is only needed the first 
 msgstr "Como no caso de `briefcase dev --test`, a opção `-r` só é necessária na primeira vez em que executa o conjunto de testes para garantir que as dependências de teste estejam presentes. Nas execuções subsequentes, pode omitir esta opção."
 
 #: docs/en/tutorial/topics/testing.md:500
-#, fuzzy
 msgid "You can also use the `--test` option on mobile backends: - so `briefcase run iOS --test` and `briefcase run android --test` will both work, running the test suite on the mobile device you select."
-msgstr "Você também pode usar a opção `--test` em back-ends móveis: - assim, `briefcase run iOS --test` e `briefcase run android --test` funcionarão, executando o conjunto de testes no dispositivo móvel que você selecionar."
+msgstr "Também pode usar a opção `--test` em backends móveis: - para que`briefcase run iOS --test` e `briefcase run android --test` funcionem ambos, correndo a suite de testes no dispositivo móvel que selecionar."
 
 #: docs/en/tutorial/tutorial-0.md:1
-#, fuzzy
 msgid "Tutorial 0 - Let's get set up!"
 msgstr "Tutorial 0 - Vamos nos preparar!"
 
@@ -2088,7 +2074,6 @@ msgid "Before we build our first BeeWare app, we have to make sure we've got all
 msgstr "Antes de criarmos a nossa primeira aplicação BeeWare, precisamos garantir que temos todos os pré-requisitos para executar o BeeWare."
 
 #: docs/en/tutorial/tutorial-0.md:5
-#, fuzzy
 msgid "Install Python { id=\"install-python\" }"
 msgstr "Instalar o Python { id=\"install-python\" }"
 
@@ -2097,70 +2082,58 @@ msgid "The first thing we'll need is a working Python interpreter."
 msgstr "A primeira coisa que vamos precisar é dum interpretador Python a funcionar."
 
 #: docs/en/tutorial/tutorial-0.md:11
-#, fuzzy
 msgid "If you're on macOS, you can get an official Python installer from [the Python website]{1}. You can use any version of Python from 3.10 or newer (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
-msgstr "Se estiver usando o Windows, você pode baixar o instalador oficial [no site do Python]{1}. Recomendamos usar qualquer versão estável do Python a partir da 3.8. Evite versões alpha, beta e candidatas a lançamento, a menos que você esteja realmente familiarizado com essas versões de desenvolvimento."
+msgstr "Se estiver a usar Windows, pode descarregar o instalador oficial [no site do Python]{1}. Pode usar qualquer versão estável do Python desde a 3.10 ou mais recente (apesar de dever evitar versões alfa, beta e candidatas a lançamento). Recomendamos fortemente o Python 3.13 ou mais recente."
 
 #: docs/en/tutorial/tutorial-0.md:13
-#, fuzzy
 msgid "You can also install Python through [Homebrew]{1}, use [pyenv]{2} to manage multiple Python installs, or use [Anaconda]{3} or [Miniconda]{4}. It doesn't matter *how* you've installed Python - it only matters that you can run `python3` from your terminal and get a working, supported Python interpreter."
-msgstr "Existem várias maneiras diferentes de instalar o Python. Você pode instalar o Python através do [homebrew]{1}. Pode usar o [pyenv]{2} para gerenciar várias instalações do Python na mesma máquina. Usuários do Windows podem instalar o Python pela Windows App Store. Usuários com foco em ciência de dados podem preferir utilizar o [Anaconda]{3} ou o [Miniconda]{4}."
+msgstr "Pode também instalar o Python através do [homebrew]{1}, usar [pyenv]{2} para gerir múltiplas instalações de Python, ou usar [Anaconda]{3} ou [Miniconda]{4}. Não importa *como* instalou o Python - só importa que possa correr `python3` a partir do terminal e obter um interpretador de Python suportado e a funcionar."
 
 #: docs/en/tutorial/tutorial-0.md:15
-#, fuzzy
 msgid "Xcode and the Command-line Developer Tools provide a version of Python; however that Python is version 3.9. Python 3.9 has reached end-of-life, and is no longer supported by Python or BeeWare. You will *not* be able to use the Xcode-provided version of Python to run this tutorial."
-msgstr "O Xcode e as ferramentas de desenvolvimento de linha de comando fornecem uma versão do Python; no entanto, esse Python é a versão 3.9. O Python 3.9 chegou ao fim da vida útil e não é mais suportado pelo Python ou pelo BeeWare. Você *não* poderá usar a versão do Python fornecida pelo Xcode para executar este tutorial."
+msgstr "O Xcode e as Ferramentas de Desenvolvimento de Linha de Comandos fornecem uma versão do Python; no entanto, esse Python é a versão 3.9. O Python 3.9 chegou ao fim da vida, e não é mais suportado pelo Python ou pelo BeeWare. *Não* vai poder usar a versão do Python fornecida pelo Xcode para executar este tutorial."
 
 #: docs/en/tutorial/tutorial-0.md:17
-#, fuzzy
 msgid "To check the version of Python that you have installed, run the following command:"
-msgstr "Para verificar a versão do Python que você instalou, execute o seguinte comando:"
+msgstr "Para verificar a versão do Python que instalou, execute o seguinte comando:"
 
 #: docs/en/tutorial/tutorial-0.md:19
-#, fuzzy
 msgid "$ python3 --version"
-msgstr "Python 3.8.10 (padrão, 20 de julho de 2020, 16:16:00)"
+msgstr "$ python3 --version"
 
 #: docs/en/tutorial/tutorial-0.md:23
-#, fuzzy
 msgid "If Python is installed, you'll see its version number."
-msgstr "Se o Python estiver instalado, você verá o número da versão."
+msgstr "Se o Python estiver instalado, vai ver o seu número de versão."
 
 #: docs/en/tutorial/tutorial-0.md:29
 msgid "If you're on Linux, you'll install Python using the system package manager (`apt` on Debian/Ubuntu/Mint, `dnf` on Fedora, or `pacman` on Arch)."
 msgstr "Se estiver a usar Linux, vai instalar o Python usando o gestor de pacotes do sistema ([apt` em Debian/Ubuntu/Mint, `dnf` em Fedora, ou `pacman` em Arch)."
 
 #: docs/en/tutorial/tutorial-0.md:31
-#, fuzzy
 msgid "You should ensure that the system Python is Python 3.10 or newer; if it isn't (e.g., Ubuntu 20.04 ships with Python 3.8), you'll need to upgrade your Linux distribution to something more recent."
-msgstr "Certifique-se de que a versão do Python do sistema seja 3.8 ou mais recente. Se não for (por exemplo, o Ubuntu 18.04 é fornecido com o Python 3.6), será necessário atualizar a distribuição Linux para uma versão mais recente."
+msgstr "Deve certificar que a versão do Python do sistema é 3.10 ou mais recente; se não for (ex., o Ubuntu 20.04 vem com Python 3.8), vai precisar de atualizar a sua distribuição Linux para algo mais recente."
 
 #: docs/en/tutorial/tutorial-0.md:33
 msgid "Support for Raspberry Pi is limited at this time."
 msgstr "O suporte para Raspberry Pi está limitado neste momento."
 
 #: docs/en/tutorial/tutorial-0.md:35
-#, fuzzy
 msgid "**Important:** You *must* use the system Python provided by your operating system. Python installs from other sources (such as uv, pyenv, Anaconda, manually compiled Python, etc.) will prevent you from successfully packaging your application for distribution in later steps of this tutorial."
-msgstr "**Importante:** Você *deve* usar o sistema Python fornecido pelo seu sistema operacional. Instalações do Python provenientes de outras fontes (como uv, pyenv, Anaconda, Python compilado manualmente, etc.) impedirão que você empacote com sucesso seu aplicação para distribuição nas etapas posteriores deste tutorial."
+msgstr "**Importante:** Você *tem de* usar o sistema Python fornecido pelo seu sistema operativo. Instalações do Python provenientes de outras fontes (como uv, pyenv, Anaconda, Python compilado manualmente, etc.) vão impedi-lo de empacotar com sucesso a sua aplicação para distribuição nas etapas posteriores deste tutorial."
 
 #: docs/en/tutorial/tutorial-0.md:41
-#, fuzzy
 msgid "If you're on Windows, you can get the official installer from [the Python website]{1}. You can use any version of Python from 3.10 to 3.14 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
-msgstr "Se você estiver no Windows, pode baixar o instalador oficial no [site do Python]{1}. Você pode usar qualquer versão do Python entre a 3.10 e a 3.14 (embora seja recomendável evitar versões alfa, beta e candidatas a lançamento). Recomendamos fortemente o uso do Python 3.13 ou mais recente."
+msgstr "Se estiver no Windows, pode obter o instalador oficial no [sitio web do Python]{1}. Pode usar qualquer versão do Python desde 3.10 a 3.14 (embora deva evitar versões alfa, beta e candidatas a lançamento). Recomendamos fortemente o uso do Python 3.13 ou mais recente."
 
 #: docs/en/tutorial/tutorial-0.md:43
-#, fuzzy
 msgid "Support for Windows on ARM64 is limited at this time."
-msgstr "Para o Raspberry Pi, o suporte está limitado neste momento."
+msgstr "O suporte para Windows em ARM64 está limitado neste momento."
 
 #: docs/en/tutorial/tutorial-0.md:45
-#, fuzzy
 msgid "You can also install Python from the Windows App Store, or use [Anaconda]{1} or [Miniconda]{2}. It doesn't matter *how* you've installed Python - it only matters that you can run `python3` from your command prompt and get a working, supported Python interpreter."
-msgstr "Se você estiver usando macOS ou Windows, não importa a *forma* que usou ao instalar o Python. o importante é ter um interpretador Python operando ao executar o comando `python3` no prompt de comando/terminal do seu sistema operacional."
+msgstr "Também pode instalar Python a partir da Windows App Store, ou usar [Anaconda]{1} ou [Miniconda]{2}. Não importa *como* instalou o Python - só importa que possa correr `python3` a partir da linha de comandos e obter um interpretador de Python suportado e a funcionar."
 
 #: docs/en/tutorial/tutorial-0.md:49
-#, fuzzy
 msgid "Install dependencies { id=\"install-dependencies\" }"
 msgstr "Instalar dependências { id=\"install-dependencies\" }"
 
@@ -2173,9 +2146,8 @@ msgid "Building BeeWare apps on macOS requires:"
 msgstr "Para criar aplicações BeeWare em macOS, é necessário:"
 
 #: docs/en/tutorial/tutorial-0.md:57
-#, fuzzy
 msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above. You may need to open Xcode for the first time in order for Git to work in your terminal session. If it still doesn't register that Git is installed, you may need to restart your terminal session."
-msgstr "**Git**, um sistema de controle de versão. Ele está incluído no Xcode ou nas ferramentas de linha de comando para desenvolvedores, que você instalou acima. Talvez seja necessário abrir o Xcode pela primeira vez para que o Git funcione em sua sessão de terminal. Se ainda assim não for registrado que o Git está instalado, talvez seja necessário reiniciar a sessão do terminal."
+msgstr "**Git**, um sistema de controle de versão. Ele está incluído no Xcode ou nas ferramentas de linha de comando para desenvolvedores, que você instalou acima. Talvez precise de abrir o Xcode pela primeira vez para que o Git funcione na sua sessão de terminal. Se ainda não registrar que o Git está instalado, pode precisar de reiniciar a sua sessão no terminal."
 
 #: docs/en/tutorial/tutorial-0.md:63
 msgid "To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:"
