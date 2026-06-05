@@ -1991,25 +1991,25 @@ testes sejam aprovados. No entanto, em algum momento, vai querer verificar se o
 seu código também é executado corretamente dentro do ambiente do pacote da
 aplicação.</p>
 <p>As opções <code>--test</code> e <code>-r</code> também podem ser passadas para o comando <code>run</code>. Se
-você usar <code>briefcase run --test -r</code>, o mesmo conjunto de testes será executado,
-mas dentro do pacote de aplicações empacotados, e não no seu ambiente de
+usar <code>briefcase run --test -r</code>, o mesmo conjunto de testes será executado, mas
+vai correr dentro do bolo da aplicação empacotada, e não no seu ambiente de
 desenvolvimento:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 <span class="go">A instalar testes... concluído</span>
 
 <span class="go">[helloworld] A atualizar requisitos...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Compilado build/helloworld/macos/app/Hello World.app (modo de teste)</span>
+<span class="go">[helloworld] A compilar build/helloworld/macos/app/Hello World.app (modo de teste)</span>
 
 <span class="go">[helloworld] A iniciar conjunto de testes...</span>
 <span class="go">===========================================================================</span>
-<span class="go">Configurando Python isolado...</span>
+<span class="go">A configurar Python isolado...</span>
 <span class="go">Pré-inicializando o runtime do Python...</span>
 <span class="go">PythonHome: /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib</span>
 <span class="go">PYTHONPATH:</span>
@@ -2018,14 +2018,14 @@ desenvolvimento:</p>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib/lib-dynload</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app_packages</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app</span>
-<span class="go">Configurando argc/argv...</span>
-<span class="go">Inicializando o tempo de execução do Python...</span>
+<span class="go">A configurar argc/argv...</span>
+<span class="go">A inicializar o tempo de execução do Python...</span>
 <span class="go">A instalar o manipulador NSLog do Python...</span>
-<span class="go">A executar o módulo do aplicação: tests.helloworld</span>
+<span class="go">A executar o módulo da aplicação: tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">============================= início da sessão de teste ==============================</span>
 <span class="go">...</span>
-<span class="go">coletando... 3 itens recolhidos</span>
+<span class="go">a recolher ... 3 itens recolhidos</span>
 
 <span class="go">tests/test_app.py::test_name APROVADO [ 33%]</span>
 <span class="go">tests/test_app.py::test_empty APROVADO [ 66%]</span>
@@ -2039,25 +2039,25 @@ desenvolvimento:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">Selecionando o alvo ubuntu:jammy (base Debian do fornecedor)</span>
-<span class="go">Determinando a versão da glibc... concluído</span>
-<span class="go">Selecionando a glibc 2.35</span>
-<span class="go">Selecionando o Python 3.10</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A selecionar o alvo ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">A determinar a versão da glibc... concluído</span>
+<span class="go">A selecionar a glibc 2.35</span>
+<span class="go">A selecionar o Python 3.10</span>
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 <span class="go">A instalar testes... concluído</span>
 
 <span class="go">[helloworld] A atualizar requisitos...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Compilado build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (modo de teste)</span>
+<span class="go">[helloworld] A compilar build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (modo de teste)</span>
 
 <span class="go">[helloworld] A iniciar conjunto de testes...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= início da sessão de testes ==============================</span>
 <span class="go">...</span>
-<span class="go">coletando... 3 itens recolhidos</span>
+<span class="go">a recolher ... 3 itens recolhidos</span>
 
 <span class="go">tests/test_app.py::test_name APROVADO [ 33%]</span>
 <span class="go">tests/test_app.py::test_empty APROVADO [ 66%]</span>
@@ -2069,13 +2069,13 @@ desenvolvimento:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run --test -r
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 <span class="go">A instalar testes... concluído</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
 <span class="go">...</span>
-<span class="go">[helloworld] Compilado build\helloworld\windows\app\src\Hello World.exe (modo de teste)</span>
+<span class="go">[helloworld] A compilar build\helloworld\windows\app\src\Hello World.exe (modo de teste)</span>
 
 <span class="go">===========================================================================</span>
 <span class="go">Registro iniciado: 02/12/2022 10:57:34Z</span>
@@ -2086,8 +2086,8 @@ desenvolvimento:</p>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app_packages</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app</span>
-<span class="go">Configurando argc/argv...</span>
-<span class="go">Inicializando o tempo de execução do Python...</span>
+<span class="go">A configurar argc/argv...</span>
+<span class="go">A inicializar o tempo de execução do Python...</span>
 <span class="go">A executar o módulo da aplicação: tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">============================= início da sessão de teste ==============================</span>
@@ -2103,10 +2103,9 @@ desenvolvimento:</p>
 </div>
 </div>
 </div>
-<p>Como no caso do <code>briefcase dev --test</code>, a opção <code>-r</code> só é necessária na primeira
-vez em que você executa o conjunto de testes para garantir que as dependências
-de teste estejam presentes. Nas execuções subsequentes, você pode omitir essa
-opção.</p>
+<p>Como no caso de <code>briefcase dev --test</code>, a opção <code>-r</code> só é necessária na primeira
+vez em que executa o conjunto de testes para garantir que as dependências de
+teste estejam presentes. Nas execuções subsequentes, pode omitir esta opção.</p>
 <p>Você também pode usar a opção <code>--test</code> em back-ends móveis: - assim, <code>briefcase
 run iOS --test</code> e <code>briefcase run android --test</code> funcionarão, executando o
 conjunto de testes no dispositivo móvel que você selecionar.</p>
