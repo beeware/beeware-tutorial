@@ -1762,53 +1762,50 @@ temos todos os pré-requisitos para executar o BeeWare.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Se estiver usando o Windows, você pode baixar o instalador oficial <a href="https://www.python.org/downloads">no site do
-Python</a>. Recomendamos usar qualquer versão
-estável do Python a partir da 3.8. Evite versões alpha, beta e candidatas a
-lançamento, a menos que você esteja realmente familiarizado com essas versões de
-desenvolvimento.</p>
-<p>Existem várias maneiras diferentes de instalar o Python. Você pode instalar o
-Python através do <a href="https://docs.brew.sh/Homebrew-and-Python">homebrew</a>. Pode
-usar o
+<p>Se estiver a usar Windows, pode descarregar o instalador oficial <a href="https://www.python.org/downloads">no site do
+Python</a>. Pode usar qualquer versão estável do
+Python desde a 3.10 ou mais recente (apesar de dever evitar versões alfa, beta e
+candidatas a lançamento). Recomendamos fortemente o Python 3.13 ou mais recente.</p>
+<p>Pode também instalar o Python através do
+<a href="https://docs.brew.sh/Homebrew-and-Python">homebrew</a>, usar
 <a href="https://github.com/pyenv/pyenv#simple-python-version-management-pyenv">pyenv</a>
-para gerenciar várias instalações do Python na mesma máquina. Usuários do
-Windows podem instalar o Python pela Windows App Store. Usuários com foco em
-ciência de dados podem preferir utilizar o
-<a href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> ou o
-<a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>.</p>
-<p>O Xcode e as ferramentas de desenvolvimento de linha de comando fornecem uma
+para gerir múltiplas instalações de Python, ou usar
+<a href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> ou
+<a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>. Não importa <em>como</em>
+instalou o Python - só importa que possa correr <code>python3</code> a partir do terminal e
+obter um interpretador de Python suportado e a funcionar.</p>
+<p>O Xcode e as Ferramentas de Desenvolvimento de Linha de Comandos fornecem uma
 versão do Python; no entanto, esse Python é a versão 3.9. O Python 3.9 chegou ao
-fim da vida útil e não é mais suportado pelo Python ou pelo BeeWare. Você <em>não</em>
-poderá usar a versão do Python fornecida pelo Xcode para executar este tutorial.</p>
-<p>Para verificar a versão do Python que você instalou, execute o seguinte comando:</p>
-<div class="highlight"><pre><span></span><code><span class="go">Python 3.8.10 (padrão, 20 de julho de 2020, 16:16:00)</span>
+fim da vida, e não é mais suportado pelo Python ou pelo BeeWare. <em>Não</em> vai poder
+usar a versão do Python fornecida pelo Xcode para executar este tutorial.</p>
+<p>Para verificar a versão do Python que instalou, execute o seguinte comando:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>python3<span class="w"> </span>--version
 </code></pre></div>
-<p>Se o Python estiver instalado, você verá o número da versão.</p>
+<p>Se o Python estiver instalado, vai ver o seu número de versão.</p>
 </div>
 <div class="tabbed-block">
 <p>Se estiver a usar Linux, vai instalar o Python usando o gestor de pacotes do
 sistema ([apt<code>em Debian/Ubuntu/Mint,</code>dnf<code>em Fedora, ou</code>pacman` em Arch).</p>
-<p>Certifique-se de que a versão do Python do sistema seja 3.8 ou mais recente. Se
-não for (por exemplo, o Ubuntu 18.04 é fornecido com o Python 3.6), será
-necessário atualizar a distribuição Linux para uma versão mais recente.</p>
+<p>Deve certificar que a versão do Python do sistema é 3.10 ou mais recente; se não
+for (ex., o Ubuntu 20.04 vem com Python 3.8), vai precisar de atualizar a sua
+distribuição Linux para algo mais recente.</p>
 <p>O suporte para Raspberry Pi está limitado neste momento.</p>
-<p><strong>Importante:</strong> Você <em>deve</em> usar o sistema Python fornecido pelo seu sistema
-operacional. Instalações do Python provenientes de outras fontes (como uv,
-pyenv, Anaconda, Python compilado manualmente, etc.) impedirão que você empacote
-com sucesso seu aplicação para distribuição nas etapas posteriores deste
-tutorial.</p>
+<p><strong>Importante:</strong> Você <em>tem de</em> usar o sistema Python fornecido pelo seu sistema
+operativo. Instalações do Python provenientes de outras fontes (como uv, pyenv,
+Anaconda, Python compilado manualmente, etc.) vão impedi-lo de empacotar com
+sucesso a sua aplicação para distribuição nas etapas posteriores deste tutorial.</p>
 </div>
 <div class="tabbed-block">
-<p>Se você estiver no Windows, pode baixar o instalador oficial no <a href="https://www.python.org/downloads">site do
-Python</a>. Você pode usar qualquer versão do
-Python entre a 3.10 e a 3.14 (embora seja recomendável evitar versões alfa, beta
-e candidatas a lançamento). Recomendamos fortemente o uso do Python 3.13 ou mais
-recente.</p>
-<p>Para o Raspberry Pi, o suporte está limitado neste momento.</p>
-<p>Se você estiver usando macOS ou Windows, não importa a <em>forma</em> que usou ao
-instalar o Python. o importante é ter um interpretador Python operando ao
-executar o comando <code>python3</code> no prompt de comando/terminal do seu sistema
-operacional.</p>
+<p>Se estiver no Windows, pode obter o instalador oficial no <a href="https://www.python.org/downloads">sitio web do
+Python</a>. Pode usar qualquer versão do Python
+desde 3.10 a 3.14 (embora deva evitar versões alfa, beta e candidatas a
+lançamento). Recomendamos fortemente o uso do Python 3.13 ou mais recente.</p>
+<p>O suporte para Windows em ARM64 está limitado neste momento.</p>
+<p>Também pode instalar Python a partir da Windows App Store, ou usar
+<a href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> ou
+<a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>. Não importa <em>como</em>
+instalou o Python - só importa que possa correr <code>python3</code> a partir da linha de
+comandos e obter um interpretador de Python suportado e a funcionar.</p>
 </div>
 </div>
 </div>
@@ -1822,9 +1819,9 @@ operativo:</p>
 <ul>
 <li><strong>Git</strong>, um sistema de controle de versão. Ele está incluído no Xcode ou nas
   ferramentas de linha de comando para desenvolvedores, que você instalou acima.
-  Talvez seja necessário abrir o Xcode pela primeira vez para que o Git funcione
-  em sua sessão de terminal. Se ainda assim não for registrado que o Git está
-  instalado, talvez seja necessário reiniciar a sessão do terminal.</li>
+  Talvez precise de abrir o Xcode pela primeira vez para que o Git funcione na
+  sua sessão de terminal. Se ainda não registrar que o Git está instalado, pode
+  precisar de reiniciar a sua sessão no terminal.</li>
 </ul>
 </div>
 <div class="tabbed-block">
