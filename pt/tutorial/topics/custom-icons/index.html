@@ -1387,10 +1387,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#adicao-de-um-icone-de-tempo-de-execucao" class="md-nav__link">
+  <a href="#adicionar-um-icone-de-tempo-de-execucao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adição de um ícone de tempo de execução
+        Adicionar um ícone de tempo de execução
       
     </span>
   </a>
@@ -1586,10 +1586,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#adicao-de-um-icone-de-tempo-de-execucao" class="md-nav__link">
+  <a href="#adicionar-um-icone-de-tempo-de-execucao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adição de um ícone de tempo de execução
+        Adicionar um ícone de tempo de execução
       
     </span>
   </a>
@@ -1968,20 +1968,19 @@ aplicação, é possível que não tenha executado a aplicação durante as etap
 8 do tutorial. Execute a aplicação novamente, adicionando o argumento <code>-r</code> para
 atualizar os requisitos da aplicação.</p>
 </div>
-<p>Ao executar o aplicação no iOS ou Android, além da alteração do ícone, você
-também deve notar que a tela inicial incorpora o novo ícone. No entanto, o fundo
-azul claro do ícone parece um pouco deslocado em relação ao fundo branco da tela
-inicial. Podemos corrigir isso personalizando a cor de fundo da tela inicial.
+<p>Ao executar a aplicação no iOS ou Android, além da alteração do ícone, também
+deve notar que o ecrã inicial incorpora o novo ícone. No entanto, o fundo azul
+claro do ícone parece um pouco deslocado em relação ao fundo branco do ecrã
+inicial. Podemos corrigir isso personalizando a cor de fundo do ecrã inicial.
 Adicione a seguinte definição ao seu <code>pyproject.toml</code>, logo após a definição
 <code>icon</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
 </code></pre></div>
 <p>Infelizmente, o Briefcase não é capaz de aplicar essa alteração a um projeto já
-gerado, pois isso requer modificações em um dos ficheiros que foi gerado durante
-a chamada original do <code>briefcase create</code>. Para aplicar essa alteração, temos que
-recriar o aplicação executando novamente o <code>briefcase create</code>. Quando fizermos
-isso, seremos solicitados a confirmar que queremos substituir o projeto
-existente:</p>
+gerado, pois isso requer modificações num dos ficheiros que foi gerado durante a
+chamada original do <code>briefcase create</code>. Para aplicar essa alteração, temos que
+recriar a aplicação executando novamente o <code>briefcase create</code>. Quando fazemos
+isso, somos solicitados a confirmar que queremos substituir o projeto existente:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1991,7 +1990,7 @@ existente:</p>
 
 <span class="go">[helloworld] A remover o pacote da aplicação antiga...</span>
 
-<span class="go">[helloworld] Gerando o modelo da aplicação...</span>
+<span class="go">[helloworld] A gerar o modelo da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Criado build/helloworld/macos/app</span>
@@ -2004,7 +2003,7 @@ existente:</p>
 
 <span class="go">[helloworld] A remover o pacote da aplicação antiga...</span>
 
-<span class="go">[helloworld] Gerando o modelo da aplicação...</span>
+<span class="go">[helloworld] A gerar o modelo da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Criado build/helloworld/linux/ubuntu/jammy</span>
@@ -2017,7 +2016,7 @@ existente:</p>
 
 <span class="go">[helloworld] A remover o pacote da aplicação antiga...</span>
 
-<span class="go">[helloworld] Gerando modelo de aplicação...</span>
+<span class="go">[helloworld] A gerar modelo de aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Criado build\helloworld\windows\app</span>
@@ -2030,7 +2029,7 @@ existente:</p>
 
 <span class="go">[helloworld] A remover o pacote da aplicação antiga...</span>
 
-<span class="go">[helloworld] Gerando modelo de aplicação...</span>
+<span class="go">[helloworld] A gerar modelo de aplicação...</span>
 <span class="go">...</span>
 <span class="go">[helloworld] Criado build/helloworld/android/gradle</span>
 </code></pre></div>
@@ -2042,37 +2041,37 @@ existente:</p>
 
 <span class="go">[helloworld] A remover o pacote da aplicação antiga...</span>
 
-<span class="go">[helloworld] Gerando o modelo da aplicação...</span>
+<span class="go">[helloworld] A gerar o modelo da aplicação...</span>
 <span class="go">...</span>
 <span class="go">[helloworld] Criado build/helloworld/ios/xcode</span>
 </code></pre></div>
 </div>
 </div>
 </div>
-<p>Em seguida, você pode recompilar e executar novamente o aplicação usando o
-<code>briefcase run</code>. Você não notará nenhuma alteração no aplicação para desktop,
-mas os aplicações para Android ou iOS agora devem ter um fundo de tela inicial
+<p>Depois pode recompilar e executar novamente a aplicação usando o <code>briefcase
+run</code>. Não vai notar nenhuma alteração na aplicação para ambiente de trabalho,
+mas as aplicações para Android ou iOS agora devem ter um fundo de ecrã inicial
 azul claro.</p>
-<p>Você precisará recriar o aplicação dessa forma sempre que fizer uma alteração em
-seu <code>pyproject.toml</code> que não esteja relacionada ao código-fonte ou às
+<p>Vai precisar de recriar a aplicação dessa forma sempre que fizer uma alteração
+no seu <code>pyproject.toml</code> que não esteja relacionada ao código-fonte ou às
 dependências. Qualquer alteração em descrições, números de versão, cores ou
-permissões exigirá uma etapa de recriação. Por esse motivo, enquanto estiver
-desenvolvendo o projeto, você não deve fazer nenhuma alteração manual no
-conteúdo da pasta <code>build</code> e não deve adicionar a pasta <code>build</code> ao seu sistema de
-controle de versão. A pasta <code>build</code> deve ser considerada totalmente efêmera, uma
-saída do sistema de compilação que pode ser recriada conforme necessário para
-refletir a configuração atual do seu projeto.</p>
-<h2 id="adicao-de-um-icone-de-tempo-de-execucao">Adição de um ícone de tempo de execução<a class="headerlink" href="#adicao-de-um-icone-de-tempo-de-execucao" title="Permanent link">&para;</a></h2>
-<p>Quando se trata de adicionar um ícone à interface do aplicação, esse tipo de
-ícone deve ser armazenado em um diretório separado dos ícones do aplicação.
-Clique com o botão direito do mouse em Tiberius the yak, salve a imagem como um
-ficheiro <code>.png</code> e nomeie-a <code>helloworld</code>. O ficheiro deve ser salvo na pasta
-<code>icons/</code> do pacote de código-fonte do aplicação.</p>
+permissões vai exigir um passo de recriação. Por este motivo, enquanto estiver
+desenvolvendo o projeto, não deve fazer nenhuma alteração manual no conteúdo da
+pasta <code>build</code> e não deve adicionar a pasta <code>build</code> ao seu sistema de controle de
+versão. A pasta <code>build</code> deve ser considerada totalmente efêmera - um resultado
+do sistema de compilação que pode ser recriada quando necessário para refletir a
+configuração atual do seu projeto.</p>
+<h2 id="adicionar-um-icone-de-tempo-de-execucao">Adicionar um ícone de tempo de execução<a class="headerlink" href="#adicionar-um-icone-de-tempo-de-execucao" title="Permanent link">&para;</a></h2>
+<p>Quando se trata de adicionar um ícone à interface da aplicação, esse tipo de
+ícone deve ser armazenado num diretório separado dos ícones da aplicação. Clique
+com o botão direito do mouse em 'Tibério o iaque', salve a imagem num ficheiro
+<code>.png</code> e nomeie-a <code>helloworld</code>. O ficheiro deve ser salvo na pasta <code>icons/</code> do
+pacote de código-fonte da aplicação.</p>
 <figure>
 <p><img alt="Ícone de Tibério, o iaque" src="../../../images/runtime-icon.png" /></p>
 <figcaption></figcaption>
 </figure>
-<p>Seu diretório se parecerá com o seguinte:</p>
+<p>O seu diretório vai ficar parecido com o seguinte:</p>
 <div class="highlight"><pre><span></span><code>beeware-tutorial/
 ├── beeware-venv/
 │   └── ...
@@ -2093,7 +2092,7 @@ ficheiro <code>.png</code> e nomeie-a <code>helloworld</code>. O ficheiro deve s
 </code></pre></div>
 <p>Agora que o ícone de tempo de execução está no lugar, vamos adicionar um ícone
 ao nosso botão. O widget do botão Toga só acomoda um ícone ou texto (não ambos),
-portanto, vamos atualizar o código do botão para incluir o ícone de tempo de
+portanto vamos atualizar o código do botão para incluir o ícone de tempo de
 execução.</p>
 <div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
 
@@ -2103,10 +2102,10 @@ execução.</p>
     <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
-<p>Como os ícones de tempo de execução são recursos do aplicação incluídos no
-pacote Python, não é necessário reconstruir ou atualizar o recurso. Nesse ponto,
-você pode executar o <code>briefcase dev</code> (ou <code>briefcase run</code>) para ver o ícone
-adicionado ao botão.</p>
+<p>Como os ícones de tempo de execução são recursos de aplicação incluídos no
+pacote Python, não é necessário reconstruir ou atualizar o recurso. Neste ponto
+pode executar o <code>briefcase dev</code> (ou <code>briefcase run</code>) para ver o ícone adicionado
+ao botão.</p>
 
 
 
