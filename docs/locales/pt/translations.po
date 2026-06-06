@@ -1,6 +1,18 @@
 #
 msgid ""
-msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-05 20:01+0000\nPO-Revision-Date: 2026-06-06 00:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
+msgstr ""
+"Project-Id-Version: BeeWare 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 00:01+0000\n"
+"PO-Revision-Date: 2026-06-06 00:01+0000\n"
+"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Translate Toolkit 3.19.11\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -2161,7 +2173,9 @@ msgstr "Ubuntu / Debian"
 msgid ""
 "$ sudo apt update\n"
 "$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module"
-msgstr "$ sudo apt update\n$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module"
+msgstr ""
+"$ sudo apt update\n"
+"$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module"
 
 #: docs/en/tutorial/tutorial-0.md:72
 msgid "Red Hat / Fedora"
@@ -2221,7 +2235,11 @@ msgid ""
 "$ cd beeware-tutorial\n"
 "$ python3 -m venv beeware-venv\n"
 "$ source beeware-venv/bin/activate"
-msgstr "$ mkdir beeware-tutorial\n$ cd beeware-tutorial\n$ python3 -m venv beeware-venv\n$ source beeware-venv/bin/activate"
+msgstr ""
+"$ mkdir beeware-tutorial\n"
+"$ cd beeware-tutorial\n"
+"$ python3 -m venv beeware-venv\n"
+"$ source beeware-venv/bin/activate"
 
 #: docs/en/tutorial/tutorial-0.md:136
 msgid ""
@@ -2229,7 +2247,11 @@ msgid ""
 "C:\\...>cd beeware-tutorial\n"
 "C:\\...>py -3.12 -m venv beeware-venv\n"
 "C:\\...>beeware-venv\\Scripts\\activate"
-msgstr "C:\\...>md beeware-tutorial\nC:\\...>cd beeware-tutorial\nC:\\...>py -3.12 -m venv beeware-venv\nC:\\...>beeware-venv\\Scripts\\activate"
+msgstr ""
+"C:\\...>md beeware-tutorial\n"
+"C:\\...>cd beeware-tutorial\n"
+"C:\\...>py -3.12 -m venv beeware-venv\n"
+"C:\\...>beeware-venv\\Scripts\\activate"
 
 #: docs/en/tutorial/tutorial-0.md:143
 msgid "If you're not using Python 3.12, replace the `-3.12` in these instructions with the version number that you are using."
@@ -2639,7 +2661,11 @@ msgid ""
 "\n"
 "if __name__ == \"__main__\":\n"
 "    main().main_loop()"
-msgstr "from helloworld.app import main\n\nif __name__ == \"__main__\":\n    main().main_loop()"
+msgstr ""
+"from helloworld.app import main\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    main().main_loop()"
 
 #: docs/en/tutorial/tutorial-2.md:20
 #, fuzzy
@@ -2727,7 +2753,9 @@ msgstr "Depois, definimos um método chamado `startup()`:"
 msgid ""
 "def startup(self):\n"
 "    main_box = toga.Box()"
-msgstr "def startup(self):\n    main_box = toga.Box()"
+msgstr ""
+"def startup(self):\n"
+"    main_box = toga.Box()"
 
 #: docs/en/tutorial/tutorial-2.md:67
 msgid "The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space."
@@ -2768,7 +2796,9 @@ msgstr "Então, adicionamos a nossa caixa vazia como o conteúdo da janela princ
 msgid ""
 "self.main_window.content = main_box\n"
 "self.main_window.show()"
-msgstr "self.main_window.content = main_box\nself.main_window.show()"
+msgstr ""
+"self.main_window.content = main_box\n"
+"self.main_window.show()"
 
 #: docs/en/tutorial/tutorial-2.md:92
 #, fuzzy
@@ -2779,7 +2809,9 @@ msgstr "Por último, definimos um método chamado `main()`. Isso é o que cria a
 msgid ""
 "def main():\n"
 "    return HelloWorld()"
-msgstr "def main():\n    return HelloWorld()"
+msgstr ""
+"def main():\n"
+"    return HelloWorld()"
 
 #: docs/en/tutorial/tutorial-2.md:99
 msgid "This `main()` method is the one that is imported and invoked by `__main__.py`. It creates and returns an instance of our `HelloWorld` application."
@@ -2896,7 +2928,9 @@ msgstr "Para usos mais avançados, a Toga também oferece suporte a um objeto de
 msgid ""
 "from toga.style import Pack\n"
 "main_box = toga.Box(style=Pack(direction=COLUMN))"
-msgstr "from toga.style import Pack\nmain_box = toga.Box(style=Pack(direction=COLUMN))"
+msgstr ""
+"from toga.style import Pack\n"
+"main_box = toga.Box(style=Pack(direction=COLUMN))"
 
 #: docs/en/tutorial/tutorial-2.md:168
 msgid "Next, we define a couple of widgets:"
@@ -2935,7 +2969,10 @@ msgid ""
 "name_box = toga.Box(direction=ROW, margin=5)\n"
 "name_box.add(name_label)\n"
 "name_box.add(self.name_input)"
-msgstr "name_box = toga.Box(direction=ROW, margin=5)\nname_box.add(name_label)\nname_box.add(self.name_input)"
+msgstr ""
+"name_box = toga.Box(direction=ROW, margin=5)\n"
+"name_box.add(name_label)\n"
+"name_box.add(self.name_input)"
 
 #: docs/en/tutorial/tutorial-2.md:190
 #, fuzzy
@@ -2974,7 +3011,9 @@ msgstr "Então, adicionamos o nome da caixa e do botão à caixa principal:"
 msgid ""
 "main_box.add(name_box)\n"
 "main_box.add(button)"
-msgstr "main_box.add(name_box)\nmain_box.add(button)"
+msgstr ""
+"main_box.add(name_box)\n"
+"main_box.add(button)"
 
 #: docs/en/tutorial/tutorial-2.md:211
 #, fuzzy
@@ -2986,7 +3025,10 @@ msgid ""
 "self.main_window = toga.MainWindow(title=self.formal_name)\n"
 "self.main_window.content = main_box\n"
 "self.main_window.show()"
-msgstr "self.main_window = toga.MainWindow(title=self.formal_name)\nself.main_window.content = main_box\nself.main_window.show()"
+msgstr ""
+"self.main_window = toga.MainWindow(title=self.formal_name)\n"
+"self.main_window.content = main_box\n"
+"self.main_window.show()"
 
 #: docs/en/tutorial/tutorial-2.md:219
 #, fuzzy
