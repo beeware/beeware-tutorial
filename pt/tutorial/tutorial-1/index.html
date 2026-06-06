@@ -1734,14 +1734,15 @@ objetivos deste tutorial, utilize o seguinte:</p>
   usado no ficheiro de configuração, em textos de ajuda, e em qualquer lugar
   onde um e-mail seja necessário ao enviar a aplicação para uma loja de
   aplicações.</li>
-<li><strong>URL</strong> - A URL da página inicial do seu aplicação. Novamente, se você possui
-  seu próprio domínio, insira uma URL nesse domínio (incluindo o <code>https://</code>).
-  Caso contrário, apenas aceite a URL padrão (<code>https://example.com/helloworld</code>).
-  Esta URL não precisa realmente existir (por enquanto); ela será usada apenas
-  se você publicar sua aplicação em uma loja de aplicações.</li>
-<li><strong>License</strong> - Aceite o valor padrão (BSD). Isso não afetará nada sobre o
-  funcionamento do tutorial. Se você tem preferências particulares em relação à
-  escolha de licença, sinta-se à vontade para escolher outra licença.</li>
+<li><strong>URL da Aplicação</strong> - A URL da página inicial do seu aplicação. Novamente, se
+  possui o seu próprio domínio, insira o URL desse domínio (incluindo o
+  <code>https://</code>). Caso contrário, apenas aceite o URL predefinido
+  (<code>https://example.com/helloworld</code>). Este URL não precisa realmente existir
+  (por enquanto); só será usado se publicar a sua aplicação numa loja de
+  aplicações.</li>
+<li><strong>License do Projeto</strong> - Aceite o valor predefinido (BSD). Isto não afetará
+  nada sobre o funcionamento do tutorial - se tem preferências particulares em
+  relação à escolha de licença, sinta-se à vontade de escolher outra licença.</li>
 </ul>
 <p>O Briefcase vai então gerar uma estrutura básica de projeto para você usar. Se
 você seguiu este tutorial até agora, e aceitou as configurações predefinidas
@@ -1756,15 +1757,15 @@ como descrito, o seu sistema de ficheiros deve parecer-se com algo assim:</p>
     ├── README.rst
     ├── src/
     │   └── helloworld/
-    │ ├── app.py
-    │ ├── __init__.py
-    │ ├── __main__.py
-    │ └── resources/
-    │ └── README
+    │       ├── app.py
+    │       ├── __init__.py
+    │       ├── __main__.py
+    │       └── resources/
+    │           └── README
     └── tests/
         ├── helloworld.py
- ├── __init__.py
- └── test_app.py
+        ├── __init__.py
+        └── test_app.py
 </code></pre></div>
 <p>Este esqueleto já é mesmo uma aplicação totalmente funcional sem adicionar mais
 nada. A pasta <code>src</code> contém todo o código da aplicação, a pasta <code>tests</code> contém
@@ -1782,14 +1783,14 @@ projeto em modo de Desenvolvedor (ou <code>dev</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
-<span class="go">[helloworld] Ativando o ambiente de desenvolvimento...</span>
+<span class="go">[helloworld] A ativar o ambiente de desenvolvimento...</span>
 <span class="go">...</span>
-<span class="go">Criando ambiente virtual (dev.cpython-313-darwin)... concluído</span>
+<span class="go">A criar ambiente virtual (dev.cpython-313-darwin)... concluído</span>
 
 <span class="go">[hello-world] A instalar pré-requisitos...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A iniciar no modo dev...</span>
+<span class="go">[helloworld] A iniciar em modo dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1797,14 +1798,14 @@ projeto em modo de Desenvolvedor (ou <code>dev</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 
-<span class="go">[helloworld] Ativando o ambiente de desenvolvimento...</span>
+<span class="go">[helloworld] A ativar o ambiente de desenvolvimento...</span>
 <span class="go">...</span>
-<span class="go">Criando ambiente virtual (dev.cpython-313-x86_64-linux-gnu)... concluído</span>
+<span class="go">A criar ambiente virtual (dev.cpython-313-x86_64-linux-gnu)... concluído</span>
 
 <span class="go">[hello-world] A instalar pré-requisitos...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A iniciar no modo dev...</span>
+<span class="go">[helloworld] A iniciar em modo dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1812,14 +1813,14 @@ projeto em modo de Desenvolvedor (ou <code>dev</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span><span class="k">cd</span> helloworld
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
 
-<span class="go">[helloworld] Ativando o ambiente de desenvolvimento...</span>
+<span class="go">[helloworld] A ativar ambiente de desenvolvimento...</span>
 <span class="go">...</span>
-<span class="go">Criando ambiente virtual (dev.cp313-win_amd64)... concluído</span>
+<span class="go">A criar ambiente virtual (dev.cp313-win_amd64)... concluído</span>
 
 <span class="go">[hello-world] A instalar pré-requisitos...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A iniciar no modo dev...</span>
+<span class="go">[helloworld] A iniciar em modo dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 </div>
@@ -1830,39 +1831,38 @@ projeto em modo de Desenvolvedor (ou <code>dev</code>):</p>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <figure>
-<p><img alt="Janela Hello World Tutorial 1, no macOS" src="../../images/macOS/tutorial-1.png" /></p>
+<p><img alt="Janela Tutorial 1 Hello World, em macOS" src="../../images/macOS/tutorial-1.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
 <figure>
-<p><img alt="Janela Hello World Tutorial 1, no Linux" src="../../images/linux/tutorial-1.png" /></p>
+<p><img alt="Janela Tutorial 1 Hello World, em Linux" src="../../images/linux/tutorial-1.png" /></p>
 <figcaption></figcaption>
 </figure>
 <div class="admonition">
 <p class="admonition-title">Possíveis erros ao executar <code>briefcase dev</code></p>
-<p>Se você receber uma mensagem de erro ao executar <code>briefcase dev</code>, é quase certo
-que alguns dos requisitos do sistema não foram instalados. Certifique-se de ter
-[instalado todos os pré-requisitos da plataforma]; a mensagem de erro que você
-receberá deve indicar quais pacotes estão faltando.</p>
+<p>Se receber uma mensagem de erro ao executar <code>briefcase dev</code>, é quase certo que
+alguns dos requisitos do sistema não foram instalados. Certifique-se de que
+<a class="autorefs autorefs-internal" title="Instalar dependências" href="../tutorial-0/#install-dependencies">instalou todos os pré-requisitos da plataforma</a>; a
+mensagem de erro que recebe deve indicar quais pacotes estão em falta.</p>
 </div>
 </div>
 <div class="tabbed-block">
 <figure>
-<p><img alt="Janela Hello World Tutorial 1, no Windows" src="../../images/windows/tutorial-1.png" /></p>
+<p><img alt="Janela Tutorial 1 Hello World, no Windows" src="../../images/windows/tutorial-1.png" /></p>
 <figcaption></figcaption>
 </figure>
 <div class="admonition">
-<p class="admonition-title">Requisitos inválidos ou o pip não consegue se conectar</p>
-<p>Se você encontrar o erro:</p>
-<div class="highlight"><pre><span></span><code><span class="go">Não foi possível instalar os pré-requisitos. Isso pode ter ocorrido porque um dos seus</span>
-<span class="go">pré-requisitos está inválido ou porque o pip não conseguiu se conectar</span>
+<p class="admonition-title">Requisitos inválidos ou o pip incapaz de ligar</p>
+<p>Se encontrar o erro:</p>
+<div class="highlight"><pre><span></span><code><span class="go">Incapaz de instalar os requerimentos. Isto pode ter ocorrido porque um dos seus</span>
+<span class="go">requerimentosos é inválido, ou porque o pip não conseguiu se ligar</span>
 <span class="go">ao servidor PyPI.</span>
 </code></pre></div>
-<p>Confirme que você está executando uma <a class="autorefs autorefs-internal" title="Instalar o Python" href="../tutorial-0/#install-python">versão do python compatível com este
-tutorial</a>.</p>
-<p>Se a sua versão do python não for <em>suportada</em>, você terá que reiniciar o
-tutorial.</p>
+<p>Confirme que está a correr uma <a class="autorefs autorefs-internal" title="Instalar o Python" href="../tutorial-0/#install-python">versão do python que este tutorial
+suporte</a>.</p>
+<p>Se a sua versão do python <em>não</em> for suportada, terá que reiniciar o tutorial.</p>
 </div>
 </div>
 </div>
@@ -1872,10 +1872,10 @@ ao selecionar Sair/Terminar no menu da aplicação, ou por teclas <strong>Ctrl+C
 terminal onde correu <code>briefcase dev</code> - e está feito! Parabéns - acabou de
 escrever uma aplicação nativa e autônoma em Python!</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos um aplicação funcional, em execução no modo de desenvolvedor.
-Podemos adicionar alguma lógica própria para tornar nosso aplicação um pouco
+<p>Agora temos um aplicação funcional, a correr em modo de desenvolvedor. Agora
+podemos adicionar alguma lógica própria para pôr a nossa aplicação a fazer algo
 mais interessante. No <a href="../tutorial-2/">Tutorial 2</a>, vamos colocar uma interface
-de utilizador mais útil em nossa aplicação.</p>
+de utilizador mais útil na nossa aplicação.</p>
 
 
 
