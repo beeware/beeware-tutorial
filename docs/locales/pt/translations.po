@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-06 04:01+0000\n"
-"PO-Revision-Date: 2026-06-06 04:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-06 04:01+0000\nPO-Revision-Date: 2026-06-06 10:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -2398,21 +2386,18 @@ msgid "**Author's Email** - Enter your own email address. This will be used in t
 msgstr "**Email do Autor** - Insira o seu próprio endereço de e-mail. Isto vai ser usado no ficheiro de configuração, em textos de ajuda, e em qualquer lugar onde um e-mail seja necessário ao enviar a aplicação para uma loja de aplicações."
 
 #: docs/en/tutorial/tutorial-1.md:83
-#, fuzzy
 msgid "**Application URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the `https://`). Otherwise, just accept the default URL (`https://example.com/helloworld`). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
-msgstr "**URL** - A URL da página inicial do seu aplicação. Novamente, se você possui seu próprio domínio, insira uma URL nesse domínio (incluindo o `https://`). Caso contrário, apenas aceite a URL padrão (`https://example.com/helloworld`). Esta URL não precisa realmente existir (por enquanto); ela será usada apenas se você publicar sua aplicação em uma loja de aplicações."
+msgstr "**URL da Aplicação** - A URL da página inicial do seu aplicação. Novamente, se possui o seu próprio domínio, insira o URL desse domínio (incluindo o `https://`). Caso contrário, apenas aceite o URL predefinido (`https://example.com/helloworld`). Este URL não precisa realmente existir (por enquanto); só será usado se publicar a sua aplicação numa loja de aplicações."
 
 #: docs/en/tutorial/tutorial-1.md:84
-#, fuzzy
 msgid "**Project License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
-msgstr "**License** - Aceite o valor padrão (BSD). Isso não afetará nada sobre o funcionamento do tutorial. Se você tem preferências particulares em relação à escolha de licença, sinta-se à vontade para escolher outra licença."
+msgstr "**License do Projeto** - Aceite o valor predefinido (BSD). Isto não afetará nada sobre o funcionamento do tutorial - se tem preferências particulares em relação à escolha de licença, sinta-se à vontade de escolher outra licença."
 
 #: docs/en/tutorial/tutorial-1.md:86
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like:"
 msgstr "O Briefcase vai então gerar uma estrutura básica de projeto para você usar. Se você seguiu este tutorial até agora, e aceitou as configurações predefinidas como descrito, o seu sistema de ficheiros deve parecer-se com algo assim:"
 
 #: docs/en/tutorial/tutorial-1.md:88
-#, fuzzy
 msgid ""
 "beeware-tutorial/\n"
 "├── beeware-venv/\n"
@@ -2433,26 +2418,7 @@ msgid ""
 "        ├── helloworld.py\n"
 "        ├── __init__.py\n"
 "        └── test_app.py"
-msgstr ""
-"beeware-tutorial/\n"
-"├── beeware-venv/\n"
-"│   └── ...\n"
-"└── helloworld/\n"
-"    ├── CHANGELOG\n"
-"    ├── LICENSE\n"
-"    ├── pyproject.toml\n"
-"    ├── README.rst\n"
-"    ├── src/\n"
-"    │   └── helloworld/\n"
-"    │ ├── app.py\n"
-"    │ ├── __init__.py\n"
-"    │ ├── __main__.py\n"
-"    │ └── resources/\n"
-"    │ └── README\n"
-"    └── tests/\n"
-"        ├── helloworld.py\n"
-" ├── __init__.py\n"
-" └── test_app.py"
+msgstr "beeware-tutorial/\n├── beeware-venv/\n│   └── ...\n└── helloworld/\n    ├── CHANGELOG\n    ├── LICENSE\n    ├── pyproject.toml\n    ├── README.rst\n    ├── src/\n    │   └── helloworld/\n    │       ├── app.py\n    │       ├── __init__.py\n    │       ├── __main__.py\n    │       └── resources/\n    │           └── README\n    └── tests/\n        ├── helloworld.py\n        ├── __init__.py\n        └── test_app.py"
 
 #: docs/en/tutorial/tutorial-1.md:110
 msgid "This skeleton is actually a fully functioning application without adding anything else. The `src` folder contains all the code for the application, the `tests` folder contains an initial test suite, and the `pyproject.toml` file describes how to package the application for distribution. If you open `pyproject.toml` in an editor, you'll see the configuration details you just provided to Briefcase."
@@ -2471,7 +2437,6 @@ msgid "Move into the `helloworld` project directory and tell briefcase to start 
 msgstr "Vá para o diretório do projeto `helloworld` e diga ao briefcase para iniciar o projeto em modo de Desenvolvedor (ou `dev`):"
 
 #: docs/en/tutorial/tutorial-1.md:120
-#, fuzzy
 msgid ""
 "(beeware-venv) $ cd helloworld\n"
 "(beeware-venv) $ briefcase dev\n"
@@ -2485,22 +2450,9 @@ msgid ""
 "\n"
 "[helloworld] Starting in dev mode...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) $ cd helloworld\n"
-"(beeware-venv) $ briefcase dev\n"
-"\n"
-"[helloworld] Ativando o ambiente de desenvolvimento...\n"
-"...\n"
-"Criando ambiente virtual (dev.cpython-313-darwin)... concluído\n"
-"\n"
-"[hello-world] A instalar pré-requisitos...\n"
-"...\n"
-"\n"
-"[helloworld] A iniciar no modo dev...\n"
-"==========================================================================="
+msgstr "(beeware-venv) $ cd helloworld\n(beeware-venv) $ briefcase dev\n\n[helloworld] A ativar o ambiente de desenvolvimento...\n...\nA criar ambiente virtual (dev.cpython-313-darwin)... concluído\n\n[hello-world] A instalar pré-requisitos...\n...\n\n[helloworld] A iniciar em modo dev...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-1.md:139
-#, fuzzy
 msgid ""
 "(beeware-venv) $ cd helloworld\n"
 "(beeware-venv) $ briefcase dev\n"
@@ -2514,22 +2466,9 @@ msgid ""
 "\n"
 "[helloworld] Starting in dev mode...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) $ cd helloworld\n"
-"(beeware-venv) $ briefcase dev\n"
-"\n"
-"[helloworld] Ativando o ambiente de desenvolvimento...\n"
-"...\n"
-"Criando ambiente virtual (dev.cpython-313-x86_64-linux-gnu)... concluído\n"
-"\n"
-"[hello-world] A instalar pré-requisitos...\n"
-"...\n"
-"\n"
-"[helloworld] A iniciar no modo dev...\n"
-"==========================================================================="
+msgstr "(beeware-venv) $ cd helloworld\n(beeware-venv) $ briefcase dev\n\n[helloworld] A ativar o ambiente de desenvolvimento...\n...\nA criar ambiente virtual (dev.cpython-313-x86_64-linux-gnu)... concluído\n\n[hello-world] A instalar pré-requisitos...\n...\n\n[helloworld] A iniciar em modo dev...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-1.md:158
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>cd helloworld\n"
 "(beeware-venv) C:\\...>briefcase dev\n"
@@ -2543,88 +2482,62 @@ msgid ""
 "\n"
 "[helloworld] Starting in dev mode...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) C:\\...>cd helloworld\n"
-"(beeware-venv) C:\\...>briefcase dev\n"
-"\n"
-"[helloworld] Ativando o ambiente de desenvolvimento...\n"
-"...\n"
-"Criando ambiente virtual (dev.cp313-win_amd64)... concluído\n"
-"\n"
-"[hello-world] A instalar pré-requisitos...\n"
-"...\n"
-"\n"
-"[helloworld] A iniciar no modo dev...\n"
-"==========================================================================="
+msgstr "(beeware-venv) C:\\...>cd helloworld\n(beeware-venv) C:\\...>briefcase dev\n\n[helloworld] A ativar ambiente de desenvolvimento...\n...\nA criar ambiente virtual (dev.cp313-win_amd64)... concluído\n\n[hello-world] A instalar pré-requisitos...\n...\n\n[helloworld] A iniciar em modo dev...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-1.md:175 docs/en/tutorial/tutorial-2.md:265
 msgid "This should open a GUI window:"
 msgstr "Isto deve abrir uma janela GUI:"
 
 #: docs/en/tutorial/tutorial-1.md:179
-#, fuzzy
 msgid "![Hello World Tutorial 1 window, on macOS]{1}"
-msgstr "![Janela Hello World Tutorial 1, no macOS]{1}"
+msgstr "![Janela Tutorial 1 Hello World, em macOS]{1}"
 
 #: docs/en/tutorial/tutorial-1.md:189
-#, fuzzy
 msgid "![Hello World Tutorial 1 window, on Linux]{1}"
-msgstr "![Janela Hello World Tutorial 1, no Linux]{1}"
+msgstr "![Janela Tutorial 1 Hello World, em Linux]{1}"
 
 #: docs/en/tutorial/tutorial-1.md:195 docs/en/tutorial/tutorial-7.md:247
-#, fuzzy
 msgid "/// admonition | Possible errors when running `briefcase dev`"
 msgstr "/// admonition | Possíveis erros ao executar `briefcase dev`"
 
 #: docs/en/tutorial/tutorial-1.md:197
-#, fuzzy
 msgid "If you get an error when you run `briefcase dev`, it's almost certainly because some of the system requirements haven't been installed. Make sure you have [installed all the platform pre-requisites][install-dependencies]; the error message you receive should tell you which packages are missing."
-msgstr "Se você receber uma mensagem de erro ao executar `briefcase dev`, é quase certo que alguns dos requisitos do sistema não foram instalados. Certifique-se de ter [instalado todos os pré-requisitos da plataforma]; a mensagem de erro que você receberá deve indicar quais pacotes estão faltando."
+msgstr "Se receber uma mensagem de erro ao executar `briefcase dev`, é quase certo que alguns dos requisitos do sistema não foram instalados. Certifique-se de que [instalou todos os pré-requisitos da plataforma][install-dependencies]; a mensagem de erro que recebe deve indicar quais pacotes estão em falta."
 
 #: docs/en/tutorial/tutorial-1.md:205
-#, fuzzy
 msgid "![Hello World Tutorial 1 window, on Windows]{1}"
-msgstr "![Janela Hello World Tutorial 1, no Windows]{1}"
+msgstr "![Janela Tutorial 1 Hello World, no Windows]{1}"
 
 #: docs/en/tutorial/tutorial-1.md:211
-#, fuzzy
 msgid "/// admonition | Invalid requirements or pip unable to connect"
-msgstr "/// admonition | Requisitos inválidos ou o pip não consegue se conectar"
+msgstr "/// admonition | Requisitos inválidos ou o pip incapaz de ligar"
 
 #: docs/en/tutorial/tutorial-1.md:213
-#, fuzzy
 msgid "If you encounter the error:"
-msgstr "Se você encontrar o erro:"
+msgstr "Se encontrar o erro:"
 
 #: docs/en/tutorial/tutorial-1.md:215
-#, fuzzy
 msgid ""
 "Unable to install requirements. This may be because one of your\n"
 "requirements is invalid, or because pip was unable to connect\n"
 "to the PyPI server."
-msgstr ""
-"Não foi possível instalar os pré-requisitos. Isso pode ter ocorrido porque um dos seus\n"
-"pré-requisitos está inválido ou porque o pip não conseguiu se conectar\n"
-"ao servidor PyPI."
+msgstr "Incapaz de instalar os requerimentos. Isto pode ter ocorrido porque um dos seus\nrequerimentosos é inválido, ou porque o pip não conseguiu se ligar\nao servidor PyPI."
 
 #: docs/en/tutorial/tutorial-1.md:221
-#, fuzzy
 msgid "Confirm that you are running a [version of python that this tutorial supports][install-python]."
-msgstr "Confirme que você está executando uma [versão do python compatível com este tutorial][install-python]."
+msgstr "Confirme que está a correr uma [versão do python que este tutorial suporte][install-python]."
 
 #: docs/en/tutorial/tutorial-1.md:223
-#, fuzzy
 msgid "If your version of python is *not* a supported version, you will have to restart the tutorial."
-msgstr "Se a sua versão do python não for *suportada*, você terá que reiniciar o tutorial."
+msgstr "Se a sua versão do python *não* for suportada, terá que reiniciar o tutorial."
 
 #: docs/en/tutorial/tutorial-1.md:229
 msgid "Close the application - either by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran `briefcase dev` - and you're done! Congratulations - you've just written a standalone, native application in Python!"
 msgstr "Feche a aplicação - seja ao carregar no botão de fechar a janela da aplicação, ao selecionar Sair/Terminar no menu da aplicação, ou por teclas **Ctrl+C** no terminal onde correu `briefcase dev` - e está feito! Parabéns - acabou de escrever uma aplicação nativa e autônoma em Python!"
 
 #: docs/en/tutorial/tutorial-1.md:233
-#, fuzzy
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In [Tutorial 2]{1}, we'll put a more useful user interface onto our application."
-msgstr "Agora temos um aplicação funcional, em execução no modo de desenvolvedor. Podemos adicionar alguma lógica própria para tornar nosso aplicação um pouco mais interessante. No [Tutorial 2]{1}, vamos colocar uma interface de utilizador mais útil em nossa aplicação."
+msgstr "Agora temos um aplicação funcional, a correr em modo de desenvolvedor. Agora podemos adicionar alguma lógica própria para pôr a nossa aplicação a fazer algo mais interessante. No [Tutorial 2]{1}, vamos colocar uma interface de utilizador mais útil na nossa aplicação."
 
 #: docs/en/tutorial/tutorial-2.md:1
 #, fuzzy
@@ -3858,7 +3771,6 @@ msgid "Once you've installed Docker, you should be able to start an Linux contai
 msgstr "Depois de instalar o Docker, você deve ser capaz de iniciar um contêiner Linux - por exemplo:"
 
 #: docs/en/tutorial/tutorial-3.md:415
-#, fuzzy
 msgid "$ docker run --rm -it ubuntu:22.04"
 msgstr "$ docker run --rm -it ubuntu:22.04"
 
@@ -5033,7 +4945,6 @@ msgid "Or, you can name a specific device UDID:"
 msgstr "Ou você pode nomear um UDID de dispositivo específico:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:119
-#, fuzzy
 msgid "$ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E"
 msgstr "$ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E"
 
@@ -5495,15 +5406,11 @@ msgid "Modify the `requires` setting so that it reads:"
 msgstr "Modifique a configuração `requires` para que fique assim:"
 
 #: docs/en/tutorial/tutorial-7.md:138
-#, fuzzy
 msgid ""
 "requires = [\n"
 "    \"faker\",\n"
 "]"
-msgstr ""
-"requires = [\n"
-"    \"faker\",\n"
-"]"
+msgstr "requires = [\n    \"faker\",\n]"
 
 #: docs/en/tutorial/tutorial-7.md:144
 #, fuzzy
@@ -6351,17 +6258,12 @@ msgid "Let's add an `httpx` API call to our app. First, as with `faker` in the [
 msgstr "Vamos adicionar uma chamada de API `httpx` ao nosso aplicação. Primeiro, assim como fizemos com `faker` na etapa anterior, precisamos informar ao briefcase para instalar {1} quando ele compilar nosso aplicação. Modifique a configuração `httpx` em nosso `requires` para incluir o novo requisito:"
 
 #: docs/en/tutorial/tutorial-8.md:19
-#, fuzzy
 msgid ""
 "requires = [\n"
 "    \"faker\",\n"
 "    \"httpx\",\n"
 "]"
-msgstr ""
-"requires = [\n"
-"    \"faker\",\n"
-"    \"httpx\",\n"
-"]"
+msgstr "requires = [\n    \"faker\",\n    \"httpx\",\n]"
 
 #: docs/en/tutorial/tutorial-8.md:26
 #, fuzzy
@@ -6681,22 +6583,18 @@ msgid "We can now run the full app. However, as we've added an extra requirement
 msgstr "Agora podemos executar o aplicação completo. No entanto, como adicionamos um requisito extra (`httpx`), também precisamos atualizar os requisitos do nosso aplicação; podemos fazer isso passando `-r` para `briefcase run`. Isso atualizará os requisitos do nosso aplicação, reconstruirá o aplicação e, em seguida, o iniciará:"
 
 #: docs/en/tutorial/tutorial-8.md:215 docs/en/tutorial/tutorial-8.md:223
-#, fuzzy
 msgid "(beeware-venv) $ briefcase run -r"
 msgstr "(beeware-venv) $ briefcase run -r"
 
 #: docs/en/tutorial/tutorial-8.md:231
-#, fuzzy
 msgid "(beeware-venv) C:\\...>briefcase run -r"
 msgstr "(beeware-venv) C:\\...>briefcase run -r"
 
 #: docs/en/tutorial/tutorial-8.md:239
-#, fuzzy
 msgid "(beeware-venv) $ briefcase run android -r"
 msgstr "(beeware-venv) $ briefcase run android -r"
 
 #: docs/en/tutorial/tutorial-8.md:247
-#, fuzzy
 msgid "(beeware-venv) $ briefcase run iOS -r"
 msgstr "(beeware-venv) $ briefcase run iOS -r"
 
@@ -6716,9 +6614,8 @@ msgid "Created a new GUI app project;"
 msgstr "Criou um novo projeto de aplicação GUI;"
 
 #: docs/en/tutorial/tutorial-8.md:260
-#, fuzzy
 msgid "Run that app in development mode;"
-msgstr "Inicie o app no modo de desenvolvedor"
+msgstr "Correr essa aplicação em modo de desenvolvedor;"
 
 #: docs/en/tutorial/tutorial-8.md:261
 #, fuzzy
