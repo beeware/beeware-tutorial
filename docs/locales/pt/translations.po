@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-06 10:01+0000\n"
-"PO-Revision-Date: 2026-06-06 10:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-06 10:01+0000\nPO-Revision-Date: 2026-06-06 20:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -2610,14 +2598,12 @@ msgid "We now have a working application, running in developer mode. Now we can 
 msgstr "Agora temos um aplicação funcional, a correr em modo de desenvolvedor. Agora podemos adicionar alguma lógica própria para pôr a nossa aplicação a fazer algo mais interessante. No [Tutorial 2]{1}, vamos colocar uma interface de utilizador mais útil na nossa aplicação."
 
 #: docs/en/tutorial/tutorial-2.md:1
-#, fuzzy
 msgid "Tutorial 2 - Making it interesting"
-msgstr "Tutorial 2 - Tornando as coisas interessantes"
+msgstr "Tutorial 2 - Tornar a coisa interessante"
 
 #: docs/en/tutorial/tutorial-2.md:3
-#, fuzzy
 msgid "In [Tutorial 1]{1}, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
-msgstr "No [Tutorial 1]{1}, geramos um projeto inicial que executava, mas não escrevemos nenhum código por conta própria. Vamos dar uma olhada no que foi criado para nós."
+msgstr "No [Tutorial 1]{1}, geramos um projeto inicial que era capaz de executar, mas não escrevemos nenhum código por conta própria. Vamos observar o que foi criado para nós."
 
 #: docs/en/tutorial/tutorial-2.md:5
 msgid "What was generated"
@@ -2632,9 +2618,8 @@ msgid "`__init__.py` marks the `helloworld` directory as an importable Python mo
 msgstr "`__init__.py` marca o diretório `helloworld` como um módulo Python importável. Trata-se de um ficheiro vazio; o facto de existir indica ao interpretador Python que o diretório `helloworld` define um módulo."
 
 #: docs/en/tutorial/tutorial-2.md:11
-#, fuzzy
 msgid "`__main__.py` marks the `helloworld` module as a special kind of module -an executable module. If you try to run the `helloworld` module using `python -m helloworld`, the `__main__.py` file is where Python will start executing. The contents of `__main__.py` is relatively simple:"
-msgstr "O ficheiro `__main__.py` marca o módulo `helloworld` como um tipo especial de módulo - um módulo executável. Se você tentar executar o módulo `helloworld` usando `python -m helloworld`, o ficheiro `__main__.py` é onde o Python iniciará a execução. O conteúdo do `__main__.py` é relativamente simples:"
+msgstr "O ficheiro `__main__.py` marca o módulo `helloworld` como um tipo especial de módulo - um módulo executável. Se você tentar executar o módulo `helloworld` usando `python -m helloworld`, o ficheiro `__main__.py` é onde o Python vai iniciar a execução. O conteúdo do `__main__.py` é relativamente simples:"
 
 #: docs/en/tutorial/tutorial-2.md:13
 msgid ""
@@ -2649,14 +2634,12 @@ msgstr ""
 "    main().main_loop()"
 
 #: docs/en/tutorial/tutorial-2.md:20
-#, fuzzy
 msgid "This file does two things:"
-msgstr "Esse ficheiro tem duas funções:"
+msgstr "Este ficheiro faz duas coisas:"
 
 #: docs/en/tutorial/tutorial-2.md:22
-#, fuzzy
 msgid "It imports the `main` method from the `helloworld` app."
-msgstr "Ele importa o método `main` do aplicação `helloworld`."
+msgstr "Importa o método `main` da aplicação `helloworld`."
 
 #: docs/en/tutorial/tutorial-2.md:23
 msgid "Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
@@ -2667,7 +2650,6 @@ msgid "The more interesting file is `app.py` - this contains the logic that crea
 msgstr "O ficheiro mais interessante é o `app.py` - este contém a lógica que cria a janela da nossa aplicação:"
 
 #: docs/en/tutorial/tutorial-2.md:27
-#, fuzzy
 msgid ""
 "import toga\n"
 "from toga.style.pack import COLUMN, ROW\n"
@@ -2682,20 +2664,7 @@ msgid ""
 "\n"
 "def main():\n"
 "    return HelloWorld()"
-msgstr ""
-"import toga\n"
-"from toga.style.pack import COLUMN, ROW\n"
-"\n"
-"class HelloWorld(toga.App):\n"
-"    def startup(self):\n"
-"    main_box = toga.Box()\n"
-"\n"
-"        self.main_window = toga.MainWindow(title=self.formal_name)\n"
-" self.main_window.content = main_box\n"
-" self.main_window.show()\n"
-"\n"
-"def main():\n"
-"    return HelloWorld()"
+msgstr "import toga\nfrom toga.style.pack import COLUMN, ROW\n\nclass HelloWorld(toga.App):\n    def startup(self):\n        main_box = toga.Box()\n\n        self.main_window = toga.MainWindow(title=self.formal_name)\n        self.main_window.content = main_box\n        self.main_window.show()\n\ndef main():\n    return HelloWorld()"
 
 #: docs/en/tutorial/tutorial-2.md:43
 msgid "Let's go through this line by line:"
@@ -2710,9 +2679,8 @@ msgstr ""
 "from toga.style.pack import COLUMN, ROW"
 
 #: docs/en/tutorial/tutorial-2.md:50
-#, fuzzy
 msgid "First, we import the `toga` widget toolkit, as well as some style-related utility constants. Our code doesn't use these yet - but we'll make use of them shortly."
-msgstr "Primeiro, importamos a biblioteca de widgets `toga`, juntamente com algumas classes e constantes que são úteis para o estilo. Por enquanto, nosso código ainda não faz uso delas, mas em breve começaremos a utilizá-las."
+msgstr "Primeiro, importamos a kit de ferramentas de widgets `toga`, juntamente com constantes de utilidade relacionada com estilo. O nosso código ainda não uso estas - mas em breve vamos utilizá-las."
 
 #: docs/en/tutorial/tutorial-2.md:52
 msgid "Then, we define a class:"
@@ -2755,19 +2723,16 @@ msgid "self.main_window = toga.MainWindow(title=self.formal_name)"
 msgstr "self.main_window = toga.MainWindow(title=self.formal_name)"
 
 #: docs/en/tutorial/tutorial-2.md:77
-#, fuzzy
 msgid "This creates an instance of a `toga.MainWindow`, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)."
-msgstr "Isso cria uma instância de `toga.MainWindow`, que terá um título correspondente ao nome do aplicação. A MainWindow (Janela Principal) é um tipo especial de janela no Toga, pois está intimamente ligada ao ciclo de vida da aplicação. Quando a MainWindow é fechada, a aplicação também se encerra. Além disso, a MainWindow também é a janela que contém o menu do aplicação (se você estiver em uma plataforma como o Windows, onde as barras de menu fazem parte da janela)"
+msgstr "Isto cria uma instância de `toga.MainWindow`, que terá um título correspondente ao nome da aplicação. A Main Window (Janela Principal) é um tipo especial de janela no Toga - é uma janela que está intimamente vinculada ao ciclo de vida da aplicação. Quando a Janela Principal é fechada, a aplicação termina. A Janela Principal é também a janela que contém o menu do aplicação (se você estiver numa plataforma como o Windows, onde as barras de menu fazem parte da janela)."
 
 #: docs/en/tutorial/tutorial-2.md:79
-#, fuzzy
 msgid "/// admonition | Where is my window?"
-msgstr "/// admonition | Onde está minha janela?"
+msgstr "/// admonition | Onde está a minha janela?"
 
 #: docs/en/tutorial/tutorial-2.md:81
-#, fuzzy
 msgid "If you have made an error in your code, the main window of the app may not display. If this happens, you can type **Ctrl+C** in the terminal where you started the app. This will stop the app. You can then fix the error and restart the app."
-msgstr "Se você tiver cometido um erro em seu código, a janela principal do aplicação poderá não ser exibida. Se isso acontecer, você pode digitar **Ctrl+C** no terminal em que iniciou o aplicação. Isso interromperá o aplicação. Em seguida, você poderá corrigir o erro e reiniciar o aplicação."
+msgstr "Se tiver cometido um erro no seu código, a janela principal da aplicação poderá não ser mostrada. Se isso acontecer, pode teclar **Ctrl+C** no terminal onde iniciou a aplicação. Isto vai interromper a aplicação. Pode depois corrigir o erro e reiniciar a aplicação."
 
 #: docs/en/tutorial/tutorial-2.md:85
 msgid "We then add our empty box as the content of the main window, and instruct the application to show our window:"
@@ -2782,9 +2747,8 @@ msgstr ""
 "self.main_window.show()"
 
 #: docs/en/tutorial/tutorial-2.md:92
-#, fuzzy
 msgid "Last of all, we define a `main()` function. This is what creates the instance of our application:"
-msgstr "Por último, definimos um método chamado `main()`. Isso é o que cria a instância de nossa aplicação:"
+msgstr "Por último, definimos uma função `main()`. Isto é o que cria a instância da nossa aplicação:"
 
 #: docs/en/tutorial/tutorial-2.md:94
 msgid ""
@@ -2807,14 +2771,12 @@ msgid "Adding some content of our own"
 msgstr "Adicionar algum conteúdo de si próprio"
 
 #: docs/en/tutorial/tutorial-2.md:105
-#, fuzzy
 msgid "Let's do something more interesting with our `HelloWorld` app."
-msgstr "Vamos fazer algo mais interessante com nosso aplicação `HelloWorld`."
+msgstr "Vamos fazer algo mais interessante com a nossa aplicação `HelloWorld`."
 
 #: docs/en/tutorial/tutorial-2.md:109
-#, fuzzy
 msgid "When you make these changes, make sure you keep the imports at the top of the file, and the `main()` at the bottom of the file. You only need to update the `HelloWorld` class."
-msgstr "Não remova as importações já feitas no topo do ficheiro ou o `main()` ao final. Você só precisa atualizar a classe `HelloWorld`."
+msgstr "Quando fizer estas alterações, certifique que mantém as importações no topo do ficheiro, e o `main()` no fundo do ficheiro. Só precisa de atualizar a classe `HelloWorld`."
 
 #: docs/en/tutorial/tutorial-2.md:113
 msgid "Modify your `HelloWorld` class inside `src/helloworld/app.py` so that it looks like this:"
