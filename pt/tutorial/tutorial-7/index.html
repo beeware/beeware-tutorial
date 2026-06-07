@@ -1780,16 +1780,16 @@ instruções para a plataforma de desktop escolhida.</p>
 ambiente virtual usado para executar a aplicação no modo de desenvolvimento.</p>
 <p>Quando o Briefcase executa um aplicação no modo de desenvolvimento, ele cria um
 ambiente virtual independente para esse aplicação, independente do ambiente em
-que você executa <code>briefcase</code>. Se o seu aplicação não declarar que precisa de uma
+que você executa <code>briefcase</code>. Se o sua aplicação não declarar que precisa de uma
 biblioteca específica, essa biblioteca não será instalada no ambiente virtual de
 desenvolvimento.</p>
-<p>Então, como você adiciona um novo requisito ao seu aplicação?</p>
+<p>Então, como você adiciona um novo requisito ao sua aplicação?</p>
 <h2 id="atualizacao-de-dependencias">Atualização de dependências<a class="headerlink" href="#atualizacao-de-dependencias" title="Permanent link">&para;</a></h2>
-<p>No diretório raiz do seu aplicação, há um ficheiro chamado <code>pyproject.toml</code>.
+<p>No diretório raiz do sua aplicação, há um ficheiro chamado <code>pyproject.toml</code>.
 Esse ficheiro contém todos os detalhes de configuração da aplicação que você
 forneceu quando executou originalmente o <code>briefcase new</code>.</p>
 <p>o <code>pyproject.toml</code> é dividido em seções; uma das seções descreve as
-configurações do seu aplicação:</p>
+configurações do sua aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
 <span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
 <span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Um aplicação tutorial&quot;</span>
@@ -1820,11 +1820,11 @@ Qualquer coisa que seja uma entrada legal para <code>pip install</code> pode ser
   dela!)</li>
 </ul>
 <p>Mais abaixo no <code>pyproject.toml</code>, você notará outras seções que dependem do
-sistema operacional, como <code>[tool.briefcase.app.helloworld.macOS]</code> e
+sistema operativo, como <code>[tool.briefcase.app.helloworld.macOS]</code> e
 <code>[tool.briefcase.app.helloworld.windows]</code>. Essas seções <em>também</em> têm uma
 configuração <code>requires</code>. Essas configurações permitem definir dependências
 adicionais específicas da plataforma. Assim, por exemplo, se você precisar de
-uma biblioteca específica da plataforma para lidar com algum aspecto do seu
+uma biblioteca específica da plataforma para lidar com algum aspecto do sua
 aplicação, poderá especificar essa biblioteca na secção <code>requires</code> específica da
 plataforma, e essa configuração será usada somente para essa plataforma. Você
 notará que as bibliotecas <code>toga</code> são todas especificadas na secção <code>requires</code>
@@ -1924,10 +1924,10 @@ certifique-se de que:</p>
 <li>Você incluiu o argumento <code>-r</code> ao executar <code>briefcase dev -r</code>.</li>
 </ol>
 </div>
-<p>Na primeira vez que você executa seu aplicação usando <code>briefcase dev</code>, o
+<p>Na primeira vez que você executa sua aplicação usando <code>briefcase dev</code>, o
 argumento <code>-r</code> é adicionado automaticamente para você — é por isso que não
 precisamos usar o argumento <code>-r</code> até agora. O argumento <code>-r</code> só é necessário
-quando você adiciona, remove ou altera um requisito <em>depois</em> de executar seu
+quando você adiciona, remove ou altera um requisito <em>depois</em> de executar sua
 aplicação no modo de desenvolvimento. Se você apenas atualizou o código, pode
 executar <code>briefcase dev</code> como temos feito no restante deste tutorial.</p>
 <h2 id="a-executar-a-aplicacao-atualizado">A executar a aplicação atualizado<a class="headerlink" href="#a-executar-a-aplicacao-atualizado" title="Permanent link">&para;</a></h2>
@@ -2259,7 +2259,7 @@ terceiros são mais comumente distribuídos usando o <a href="https://pypi.org">
 tutorial, usamos o <code>pip</code>, mas há outras opções.</p>
 <p>Em plataformas desktop (macOS, Windows, Linux), basicamente qualquer pacote no
 PyPI pode ser instalado em seu ambiente virtual ou adicionado aos requisitos do
-seu aplicação. No entanto, ao criar um aplicação para plataformas móveis ou web,
+sua aplicação. No entanto, ao criar um aplicação para plataformas móveis ou web,
 suas opções são um pouco limitadas.</p>
 <p>Em resumo, qualquer pacote <em>puro Python</em> (ou seja, qualquer pacote criado a
 partir de um projeto escrito <em>somente</em> em Python) pode ser usado sem

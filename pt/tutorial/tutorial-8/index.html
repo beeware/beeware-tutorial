@@ -1814,11 +1814,11 @@ instruções para a plataforma de desktop escolhida.</p>
 </div>
 </div>
 <p>A menos que você tenha uma conexão de Internet <em>muito</em> rápida, poderá perceber
-que, ao pressionar o botão, a GUI do seu aplicação trava um pouco. O sistema
-operacional pode até manifestar isso com um cursor "beachball" ou "spinner" para
+que, ao pressionar o botão, a GUI do sua aplicação trava um pouco. O sistema
+operativo pode até manifestar isso com um cursor "beachball" ou "spinner" para
 indicar que a aplicação não está respondendo.</p>
 <p>A menos que você tenha uma conexão de Internet <em>muito</em> rápida, poderá perceber
-que, ao pressionar o botão, a GUI do seu aplicação trava um pouco. Isso ocorre
+que, ao pressionar o botão, a GUI do sua aplicação trava um pouco. Isso ocorre
 porque a solicitação da Web que fizemos é <em>síncrona</em>. Quando nossa aplicação faz
 a solicitação da Web, ele espera que a API retorne uma resposta antes de
 continuar. Enquanto espera, ele não permite que a aplicação seja redesenhado e,
@@ -1844,7 +1844,7 @@ eventos</em>. Esses manipuladores de eventos são invocados como parte da chamad
 <p>Depois que um aplicação tiver processado todos os eventos disponíveis, ele
 <code>redraw()</code> a GUI. Isso leva em conta todas as alterações que os eventos causaram
 na exibição da aplicação, bem como qualquer outra coisa que esteja acontecendo
-no sistema operacional - por exemplo, as janelas de outra aplicação podem
+no sistema operativo - por exemplo, as janelas de outra aplicação podem
 obscurecer ou revelar parte da janela do nossa aplicação, e o redesenho do nossa
 aplicação precisará refletir a parte da janela que está visível no momento.</p>
 <p>O detalhe importante a ser observado: enquanto um aplicação estiver processando
@@ -1853,9 +1853,9 @@ um evento, <em>ele não pode redesenhar</em> e <em>não pode processar outros ev
 eventos precisa ser concluída rapidamente. Qualquer atraso na conclusão do
 manipulador de eventos será observado pelo utilizador como uma desaceleração (ou
 parada) nas atualizações da GUI. Se esse atraso for longo o suficiente, seu
-sistema operacional poderá informar isso como um problema - os ícones "bola de
-praia" do macOS e "botão giratório" do Windows são o sistema operacional
-informando que seu aplicação está demorando demais em um manipulador de eventos.</p>
+sistema operativo poderá informar isso como um problema - os ícones "bola de
+praia" do macOS e "botão giratório" do Windows são o sistema operativo
+informando que sua aplicação está demorando demais em um manipulador de eventos.</p>
 <p>Operações simples como "atualizar um rótulo" ou "recomputar o total das
 entradas" são fáceis de concluir rapidamente. Entretanto, há muitas operações
 que não podem ser concluídas rapidamente. Se estiver realizando um cálculo
@@ -1970,7 +1970,7 @@ seguida, o iniciará:</p>
 </div>
 </div>
 </div>
-<p>Você deverá ver seu aplicação em execução e permanecer responsivo quando
+<p>Você deverá ver sua aplicação em execução e permanecer responsivo quando
 pressionar o botão e o conteúdo da rede for recuperado.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
 <p>Esta foi uma amostra do que você pode fazer com as ferramentas fornecidas pelo
@@ -1978,12 +1978,12 @@ projeto BeeWare. No decorrer deste tutorial, você terá:</p>
 <ul>
 <li>Criou um novo projeto de aplicação GUI;</li>
 <li>Correr essa aplicação em modo de desenvolvedor;</li>
-<li>Criou a aplicação como um binário autônomo para um sistema operacional de
+<li>Criou a aplicação como um binário autônomo para um sistema operativo de
   desktop;</li>
 <li>Empacotou esse projeto para distribuição a outras pessoas;</li>
 <li>Execute a aplicação em um simulador e/ou dispositivo móvel;</li>
 <li>Execute a aplicação como um aplicação da Web;</li>
-<li>Adicionou uma dependência de terceiros ao seu aplicação; e</li>
+<li>Adicionou uma dependência de terceiros ao sua aplicação; e</li>
 <li>Modificou a aplicação para que ele permaneça responsivo.</li>
 </ul>
 <p>Então, o que fazer a partir daqui?</p>

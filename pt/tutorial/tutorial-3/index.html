@@ -1931,7 +1931,7 @@ executada e execute novamente o comando acima.</p>
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 <span class="go">A configurar o Python isolado...</span>
-<span class="go">A pré-inicializaro ambiente de execução do Python...</span>
+<span class="go">A pré-inicializar o ambiente de execução do Python...</span>
 <span class="go">PythonHome: /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python311.zip</span>
@@ -1958,7 +1958,7 @@ executada e execute novamente o comando acima.</p>
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 <span class="go">Caminho de instalação: /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr</span>
-<span class="go">A pré-inicializaro runtime do Python...</span>
+<span class="go">A pré-inicializar o tempo de execução do Python...</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- /usr/lib/python3.10</span>
 <span class="go">- /usr/lib/python3.10/lib-dynload</span>
@@ -1977,7 +1977,7 @@ executada e execute novamente o comando acima.</p>
 
 <span class="go">===========================================================================</span>
 <span class="go">Registro iniciado: 2023-04-23 04:47:45Z</span>
-<span class="go">A pré-inicializaro ambiente de execução do Python...</span>
+<span class="go">A pré-inicializar o tempo de execução do Python...</span>
 <span class="go">PythonHome: C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\python39.zip</span>
@@ -1992,76 +1992,76 @@ executada e execute novamente o comando acima.</p>
 </div>
 </div>
 </div>
-<p>Isso iniciará a execução de seu aplicação nativo, usando a saída do comando
-<code>build</code>.</p>
-<p>Você pode notar algumas pequenas diferenças na aparência do seu aplicação quando
-ele estiver em execução. Por exemplo, os ícones e o nome exibidos pelo sistema
-operacional podem ser ligeiramente diferentes daqueles vistos durante a execução
-no modo de desenvolvedor. Isso também ocorre porque você está usando a aplicação
-empacotado, e não apenas executando o código Python. Do ponto de vista do
-sistema operacional, agora você está executando "um aplicação", não "um programa
-Python", e isso se reflete na aparência da aplicação.</p>
+<p>Isso vai iniciar a execução da sua aplicação nativa, usando a aplicação criada
+com o comando <code>build</code>.</p>
+<p>Pode notar algumas pequenas diferenças na aparência da sua aplicação quando ela
+está em execução. Por exemplo, os ícones e o nome exibidos pelo sistema
+operativo podem ser ligeiramente diferentes daqueles vistos durante a execução
+em modo de desenvolvedor. Isto também acontece porque está a usar a aplicação
+empacotada, e não apenas a executar o código Python. Do ponto de vista do
+sistema operativo, agora está a correr "uma aplicação", não "um programa de
+Python", e isso reflete-se na aparência da aplicação.</p>
 <p>Antes de continuar, feche a aplicação. Como nas etapas anteriores do tutorial,
-você pode fazer isso pressionando o botão Fechar na janela da aplicação,
-selecionando Quit/Exit no menu da aplicação ou digitando <strong>Ctrl+C</strong> no terminal
+você pode fazer isso ao pressionar o botão fechar na janela da aplicação,
+selecionar Sair/Terminar no menu da aplicação ou teclando <strong>Ctrl+C</strong> no terminal
 em que executou <code>briefcase run</code>.</p>
 <h2 id="criar-o-seu-instalador">Criar o seu instalador<a class="headerlink" href="#criar-o-seu-instalador" title="Permanent link">&para;</a></h2>
-<p>Agora você pode empacotar seu aplicação para distribuição, usando o comando
+<p>Agora pode empacotar a sua aplicação para distribuição, usando o comando
 <code>package</code>. O comando package faz qualquer compilação necessária para converter o
-projeto de andaime em um produto final e distribuível. Dependendo da plataforma,
-isso pode envolver a compilação de um instalador, a execução de assinatura de
+projeto de andaime num produto final e distribuível. Dependendo da plataforma,
+isso pode envolver a compilação dum instalador, a execução de assinatura de
 código ou outras tarefas de pré-distribuição.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--adhoc-sign
 
-<span class="go">[helloworld] Assinando a aplicação...</span>
+<span class="go">[helloworld] A assinar a aplicação...</span>
 
 <span class="go">*************************************************************************</span>
 <span class="go">** AVISO: Assinatura com uma identidade ad-hoc **</span>
 <span class="go">*************************************************************************</span>
 
-<span class="go">Este aplicação está sendo assinado com uma identidade ad-hoc. O aplicação</span>
-<span class="go">    resultante será executado neste computador, mas não será executado no computador</span>
-<span class="go">    de ninguém mais.</span>
+<span class="go">Esta aplicação está sendo assinada com uma identidade ad-hoc. A aplicação</span>
+<span class="go">    resultante será executada neste computador, mas não será executada no computador</span>
+<span class="go">    de mais ninguém.</span>
 
-<span class="go">Para gerar um aplicação que possa ser distribuído a outras pessoas, você deve</span>
+<span class="go">Para gerar uma aplicação que possa ser distribuída a outras pessoas, deve</span>
 <span class="go">    obter um certificado de distribuição de aplicações da Apple e</span>
 <span class="go">    selecionar a identidade de desenvolvedor associada a esse certificado</span>
 <span class="go">    ao executar o &#39;briefcase package&#39;.</span>
 
 <span class="go">*************************************************************************</span>
 
-<span class="go">Assinando a aplicação com identidade ad-hoc...</span>
+<span class="go">A assinar a aplicação com identidade ad-hoc...</span>
 <span class="go"> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100,0% • 00:07</span>
 
-<span class="go">[helloworld] Criando DMG...</span>
-<span class="go">Criando dist/Hello World-0.0.1.dmg</span>
+<span class="go">[helloworld] A criar DMG...</span>
+<span class="go">A criar dist/Hello World-0.0.1.dmg</span>
 
-<span class="go">[helloworld] Empacotado dist/Hello World-0.0.1.dmg</span>
+<span class="go">[helloworld] A empacotar dist/Hello World-0.0.1.dmg</span>
 </code></pre></div>
-<p>A pasta <code>dist</code> conterá um ficheiro chamado <code>Hello World-0.0.1.dmg</code>. Se você
-localizar esse ficheiro no Finder e clicar duas vezes em seu ícone, montará o
+<p>A pasta <code>dist</code> vai conter um ficheiro chamado <code>Hello World-0.0.1.dmg</code>. Se
+localizar esse ficheiro no Finder e clicar duas vezes em seu ícone, vai montar o
 DMG, fornecendo uma cópia da aplicação Hello World e um link para a pasta
 Applications para facilitar a instalação. Arraste o ficheiro da aplicação para
-Applications e você terá instalado a aplicação. Envie o ficheiro DMG para um
-amigo e ele poderá fazer o mesmo.</p>
-<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code>, ou seja, estamos assinando nossa
-aplicação com credenciais <em>ad hoc</em>, credenciais temporárias que só funcionarão
-em seu computador. Fizemos isso para manter a simplicidade do tutorial. A
-configuração de identidades de assinatura de código é um pouco complicada, e
-elas só são <em>necessárias</em> se você pretende distribuir a aplicação para outras
-pessoas. Se estivéssemos publicando um aplicação real para ser usado por outras
-pessoas, precisaríamos especificar credenciais reais.</p>
+Aplicações e terá instalado a aplicação. Envie o ficheiro DMG para um amigo e
+ele vai poder fazer o mesmo.</p>
+<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code> - ou seja, estamos a assinar a
+nossa aplicação com credenciais <em>ad hoc</em>, credenciais temporárias que só vão
+funcionar no seu computador. Fizemos isso para manter a simplicidade do
+tutorial. A configuração de identidades de assinatura de código é um pouco
+complicada, e elas só são <em>necessárias</em> se pretender distribuir a aplicação para
+outras pessoas. Se estivéssemos a publicar uma aplicação real para ser usada por
+outras pessoas, íamos precisar de especificar credenciais reais.</p>
 <p>Quando estiver pronto para publicar uma aplicação real, consulte o guia de
 instruções da Briefcase sobre <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Configurar uma identidade de assinatura de código
 do macOS</a>.</p>
 </div>
 <div class="tabbed-block">
-<p>A saída da etapa do pacote será ligeiramente diferente, dependendo de sua
-distribuição Linux. Se estiver em uma distribuição derivada do Debian, você
-verá:</p>
+<p>O resultado do passo de empacotamento vai ser ligeiramente diferente, dependendo
+de sua distribuição Linux. Se estiver numa distribuição derivada do Debian, vai
+ver:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
@@ -2071,15 +2071,15 @@ verá:</p>
 <span class="go">A direcionar para Python 3.10</span>
 
 <span class="go">[helloworld] A compilar o pacote .deb...</span>
-<span class="go">Escrevendo ficheiro de controle do pacote Debian... concluído</span>
+<span class="go">A escrever ficheiro de controle do pacote Debian... concluído</span>
 
-<span class="go">dpkg-deb: criando o pacote &#39;helloworld&#39; em &#39;helloworld-0.0.1.deb&#39;.</span>
-<span class="go">Criando pacote Debian... concluído</span>
+<span class="go">dpkg-deb: a criar o pacote &#39;helloworld&#39; em &#39;helloworld-0.0.1.deb&#39;.</span>
+<span class="go">A criar pacote Debian... concluído</span>
 
 <span class="go">[helloworld] Empacotado dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb</span>
 </code></pre></div>
-<p>A pasta <code>dist</code> conterá o ficheiro <code>.deb</code> que foi gerado.</p>
-<p>Se estiver em uma distribuição baseada em RHEL, você verá:</p>
+<p>A pasta <code>dist</code> vai conter o ficheiro <code>.deb</code> que foi gerado.</p>
+<p>Se estiver numa distribuição baseada em RHEL, vai ver:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
@@ -2089,13 +2089,13 @@ verá:</p>
 <span class="go">A direcionar para Python 3.12</span>
 
 <span class="go">[helloworld] A compilar pacote .rpm...</span>
-<span class="go">A gerar layout do rpmbuild... concluído</span>
+<span class="go">A gerar disposição do rpmbuild... concluído</span>
 
-<span class="go">Escrevendo ficheiro de especificação RPM... concluído</span>
+<span class="go">A escrever ficheiro de especificação RPM... concluído</span>
 
 <span class="go">A compilar ficheiro de código-fonte... concluído</span>
 
-<span class="go">Executando(%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7</span>
+<span class="go">A executar (%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7</span>
 <span class="go">+ umask 022</span>
 <span class="go">...</span>
 <span class="go">+ exit 0</span>
@@ -2103,8 +2103,8 @@ verá:</p>
 
 <span class="go">[helloworld] Empacotado dist/helloworld-0.0.1-1.fc40.x86_64.rpm</span>
 </code></pre></div>
-<p>A pasta <code>dist</code> conterá o ficheiro <code>.rpm</code> que foi gerado.</p>
-<p>Se estiver em uma distribuição baseada no Arch, você verá:</p>
+<p>A pasta <code>dist</code> vai conter o ficheiro <code>.rpm</code> que foi gerado.</p>
+<p>Se estiver numa distribuição baseada no Arch, vai ver:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
@@ -2119,30 +2119,30 @@ verá:</p>
 
 <span class="go">[helloworld] Empacotado dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst</span>
 </code></pre></div>
-<p>A pasta <code>dist</code> conterá o ficheiro <code>.pkg.tar.zst</code> que foi gerado.</p>
-<p>No momento, não há suporte para o empacotamento de outras distribuições do
+<p>A pasta <code>dist</code> vai conter o ficheiro <code>.pkg.tar.zst</code> que foi gerado.</p>
+<p>No momento, não há suporte para o empacotamento em outras distribuições do
 Linux.</p>
 <p>Se quiser criar um pacote para uma distribuição Linux diferente da que você está
-usando, o Briefcase também pode ajudar, mas você precisará instalar o Docker.</p>
-<p>Os instaladores oficiais do <a href="https://docs.docker.com/engine/install">Docker
-Engine</a> estão disponíveis para uma série
+a usar, o Briefcase também pode ajudar - mas vai precisar de instalar o Docker.</p>
+<p>Os instaladores oficiais do <a href="https://docs.docker.com/engine/install">Motor
+Docker</a> estão disponíveis para uma série
 de distribuições Unix. Siga as instruções para sua plataforma; no entanto,
-certifique-se de não instalar o Docker no modo "sem raiz".</p>
-<p>Depois de instalar o Docker, você deve ser capaz de iniciar um contêiner Linux -
-por exemplo:</p>
+certifique-se de não instalar o Docker no modo "sem direitos de root".</p>
+<p>Depois de instalar o Docker, deve ser capaz de iniciar um contentor Linux - por
+exemplo:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>ubuntu:22.04
 </code></pre></div>
-<p>mostrará um prompt do Unix (algo como <code>root@84444e31cff9:/#</code>) dentro de um
-contêiner do Docker do Ubuntu 22.04. Digite Ctrl-D para sair do Docker e
-retornar ao seu shell local.</p>
+<p>vai mostrar um aviso de comando do Unix (algo como <code>root@84444e31cff9:/#</code>)
+dentro de um contentor de Docker do Ubuntu 22.04. Tecle Ctrl-D para sair do
+Docker e retornar à sua shell local.</p>
 <p>Depois de instalar o Docker, você pode usar o Briefcase para criar um pacote
 para qualquer distribuição Linux compatível com o Briefcase, passando uma imagem
 do Docker como argumento. Por exemplo, para criar um pacote DEB para o Ubuntu
-22.04 (Jammy), independentemente do sistema operacional em que você estiver,
+22.04 (Jammy), independentemente do sistema operativo em que você estiver,
 execute:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacote<span class="w"> </span>briefcase<span class="w"> </span>--destino<span class="w"> </span>ubuntu:jammy
 </code></pre></div>
-<p>Isso fará o download da imagem do Docker para o sistema operacional selecionado,
+<p>Isso fará o download da imagem do Docker para o sistema operativo selecionado,
 criará um contêiner capaz de executar as compilações do Briefcase e compilará o
 pacote da aplicação dentro da imagem. Após a conclusão, a pasta <code>dist</code> conterá o
 pacote para a distribuição Linux de destino.</p>
