@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-3-empacotando-para-distribuicao" class="md-skip">
+        <a href="#tutorial-3-empacotar-para-distribuicao" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -1678,7 +1678,7 @@ aria-label="Cabeçalho"
 
 
 
-<h1 id="tutorial-3-empacotando-para-distribuicao">Tutorial 3 - Empacotando para Distribuição<a class="headerlink" href="#tutorial-3-empacotando-para-distribuicao" title="Permanent link">&para;</a></h1>
+<h1 id="tutorial-3-empacotar-para-distribuicao">Tutorial 3 - Empacotar para distribuição<a class="headerlink" href="#tutorial-3-empacotar-para-distribuicao" title="Permanent link">&para;</a></h1>
 <p>Até o momento, executamos a nossa aplicação em "modo de desenvolvedor". Isso
 facilita-nos executar a nossa aplicação localmente - mas o que realmente
 queremos é poder fornecer a nossa aplicação a outras pessoas.</p>
@@ -1698,13 +1698,13 @@ processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
 <span class="go">[helloworld] A gerar modelo de aplicação...</span>
-<span class="go">Usando modelo de aplicação: https://github.com/beeware/briefcase-macOS-app-template.git, ramificação v0.3.18</span>
+<span class="go">A usar modelo de aplicação: https://github.com/beeware/briefcase-macOS-app-template.git, ramo v0.3.18</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] A instalar pacote de suporte...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A instalar código do aplicação...</span>
+<span class="go">[helloworld] A instalar código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
 <span class="go">[helloworld] A instalar requisitos...</span>
@@ -1722,14 +1722,14 @@ processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">Direcionando para ubuntu:jammy (base Debian do fornecedor)</span>
-<span class="go">Determinando a versão da glibc... concluído</span>
-<span class="go">Direcionando para glibc 2.35</span>
-<span class="go">Direcionando para Python 3.10</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">A determinar a versão da glibc... concluído</span>
+<span class="go">A direcionar para glibc 2.35</span>
+<span class="go">A direcionar para Python 3.10</span>
 
 <span class="go">[helloworld] A gerar modelo de aplicação...</span>
-<span class="go">Usando modelo de aplicação: https://github.com/beeware/briefcase-linux-AppImage-template.git, ramificação v0.3.18</span>
+<span class="go">A usar modelo de aplicação: https://github.com/beeware/briefcase-linux-AppImage-template.git, ramo v0.3.18</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] A instalar pacote de suporte...</span>
@@ -1751,20 +1751,20 @@ processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
 </code></pre></div>
 <div class="admonition">
 <p class="admonition-title">Erros sobre versões do Python</p>
-<p>Se você receber um erro do tipo:</p>
+<p>Se receber um erro que se parece algo como:</p>
 <blockquote>
-<p>A versão do Python que está sendo usada para executar o Briefcase (3.12) não é
-o python3 do sistema (3.10).</p>
+<p>A versão do Python que está a ser usada para correr o Briefcase (3.12) não é o
+python3 do sistema (3.10).</p>
 </blockquote>
-<p>Você precisará recriar seu ambiente virtual usando o sistema <code>python3</code>. O uso do
-sistema Python é um requisito para empacotar seu aplicação.</p>
+<p>Precisa recriar seu ambiente virtual usando o <code>python3</code> do sistema. O uso do
+Python do sistema é um requisito para empacotar a sua aplicação.</p>
 </div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create
 
 <span class="go">[helloworld] A gerar modelo de aplicação...</span>
-<span class="go">Usando modelo de aplicação: https://github.com/beeware/briefcase-windows-app-template.git, ramificação v0.3.18</span>
+<span class="go">A usar modelo de aplicação: https://github.com/beeware/briefcase-windows-app-template.git, ramificação v0.3.18</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] A instalar pacote de suporte...</span>
@@ -1878,10 +1878,10 @@ aplicação para outras pessoas, será necessário fornecer uma assinatura compl
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
 <span class="go">[helloworld] Finalizando a configuração da aplicação...</span>
-<span class="go">Direcionando para ubuntu:jammy (base Debian do fornecedor)</span>
-<span class="go">Determinando a versão da glibc... concluído</span>
-<span class="go">Direcionando para glibc 2.35</span>
-<span class="go">Direcionando para Python 3.10</span>
+<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">A determinar a versão da glibc... concluído</span>
+<span class="go">A direcionar para glibc 2.35</span>
+<span class="go">A direcionar para Python 3.10</span>
 
 <span class="go">[helloworld] A compilar a aplicação...</span>
 <span class="go">A compilar binário bootstrap...</span>
@@ -1952,10 +1952,10 @@ executada e execute novamente o comando acima.</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
 <span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">Direcionando para ubuntu:jammy (base Debian do fornecedor)</span>
-<span class="go">Determinando a versão da glibc... concluído</span>
-<span class="go">Direcionando para glibc 2.35</span>
-<span class="go">Direcionando para Python 3.10</span>
+<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">A determinar a versão da glibc... concluído</span>
+<span class="go">A direcionar para glibc 2.35</span>
+<span class="go">A direcionar para Python 3.10</span>
 
 <span class="go">[helloworld] A iniciar o aplicação...</span>
 <span class="go">===========================================================================</span>
@@ -2067,10 +2067,10 @@ verá:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">Direcionando para ubuntu:jammy (base Debian do fornecedor)</span>
-<span class="go">Determinando a versão da glibc... concluído</span>
-<span class="go">Direcionando para glibc 2.35</span>
-<span class="go">Direcionando para Python 3.10</span>
+<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">A determinar a versão da glibc... concluído</span>
+<span class="go">A direcionar para glibc 2.35</span>
+<span class="go">A direcionar para Python 3.10</span>
 
 <span class="go">[helloworld] A compilar o pacote .deb...</span>
 <span class="go">Escrevendo ficheiro de controle do pacote Debian... concluído</span>
@@ -2085,10 +2085,10 @@ verá:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">Direcionando para fedora:40 (base do fornecedor rhel)</span>
-<span class="go">Determinando a versão do glibc... concluído</span>
-<span class="go">Direcionando para glibc 2.39</span>
-<span class="go">Direcionando para Python 3.12</span>
+<span class="go">A direcionar para fedora:40 (base do fornecedor rhel)</span>
+<span class="go">A determinar a versão do glibc... concluído</span>
+<span class="go">A direcionar para glibc 2.39</span>
+<span class="go">A direcionar para Python 3.12</span>
 
 <span class="go">[helloworld] A compilar pacote .rpm...</span>
 <span class="go">A gerar layout do rpmbuild... concluído</span>
@@ -2110,10 +2110,10 @@ verá:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">Direcionando para arch:20240101 (arquitetura base do fornecedor)</span>
-<span class="go">Determinando a versão da glibc... concluído</span>
-<span class="go">Direcionando para glibc 2.38</span>
-<span class="go">Direcionando para Python 3.12</span>
+<span class="go">A direcionar para arch:20240101 (arquitetura base do fornecedor)</span>
+<span class="go">A determinar a versão da glibc... concluído</span>
+<span class="go">A direcionar para glibc 2.38</span>
+<span class="go">A direcionar para Python 3.12</span>
 
 <span class="go">[helloworld] A compilar o pacote .pkg.tar.zst...</span>
 <span class="go">...</span>

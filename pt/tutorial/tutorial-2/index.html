@@ -1808,33 +1808,34 @@ acesso fácil à instância do widget - algo que vamos utilizar em breve.</p>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_label</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="p">)</span>
 </code></pre></div>
-<p>A container <code>name_box</code> é parecido com o container principal, só que agora ele é
-do tipo <code>ROW</code>. Isso significa que o conteúdo será adicionado horizontalmente e
-tentará ficar o mais estreito possível. Esse container também possui
-preenchimento - 5px em todos os lados.</p>
+<p>A <code>name_box</code> é uma caixa como a caixa principal; no entanto, agora é uma caixa
+<code>ROW</code>. Isto significa que o conteúdo será adicionado na horizontal e vai tentar
+tornar a sua largura o mais estreita possível. A caixa também tem alguma margem
+- 5px em todos os lados.</p>
 <p>Agora definimos um botão:</p>
 <div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-    <span class="s2">&quot;Diga olá!&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Diz Olá!&quot;</span><span class="p">,</span>
     <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">say_hello</span><span class="p">,</span>
     <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <p>O botão também tem 5px de margem em todos os lados. Também definimos um
-<em>handler</em> - um método a ser invocado quando o botão for pressionado.</p>
+<em>handler</em> - um método a invocar quando o botão é pressionado.</p>
 <p>Então, adicionamos o nome da caixa e do botão à caixa principal:</p>
 <div class="highlight"><pre><span></span><code><span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_box</span><span class="p">)</span>
 <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">button</span><span class="p">)</span>
 </code></pre></div>
-<p>Com isso, finalizamos o layout; o restante do código do método startup()
-permanece como antes - definindo uma MainWindow (Janela principal) e a
-atribuição do container principal como conteúdo dessa janela:</p>
+<p>Isto completa a nossa disposição; o resto do código do método de arranque
+permanece como antes - definindo uma <code>MainWindow</code> (Janela principal), e
+atribuindo a caixa principal como o conteúdo da janela:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
-<p>A última etapa consiste na definição do gatilho do botão. Um gatilho pode ser
-qualquer método, gerador ou corrotina assíncrona; ele aceita como argumento o
-widget que gerou o evento e será invocado sempre que o botão for pressionado:</p>
+<p>A última coisa que precisamos fazer é definir o manuseador para o botão. Um
+manuseador pode ser qualquer método, gerador ou co-rotina assíncrona; ele aceita
+o widget que gerou o evento como um argumento, e vai ser invocado sempre que o
+botão for pressionado:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -1868,29 +1869,29 @@ outra vez a aplicação. Como antes, vamos utilizar o modo de desenvolvedor:</p>
 </div>
 </div>
 </div>
-<p>Dessa vez, você vai reparar que as dependências <em>não são</em> instaladas. O
-Briefcase consegue identificar se o app já foi aberto antes e, pra economizar
-tempo, só executa ele. Se você adicionar novas dependências, pode garantir que
-elas sejam instaladas usando a opção <code>-r</code> quando executar o comando <code>briefcase
-dev</code>.</p>
+<p>Vai repara que desta vez, <em>não são</em> instaladas dependências. O Briefcase
+consegue detetar que a aplicação já foi aberta antes e, para poupar tempo,
+apenas corre a aplicação. Se adicionar novas dependências à sua aplicação,
+precisa garantir que elas são instaladas passando uma opção <code>-r</code> quando correr
+<code>briefcase dev</code>.</p>
 <p>Isto deve abrir uma janela GUI:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <figure>
-<p>Janela Hello World Tutorial 2, no macOS](../images/macOS/tutorial-2.png)</p>
+<p>Janela Hello World Tutorial 2, em macOS](../images/macOS/tutorial-2.png)</p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
 <figure>
-<p>Janela Hello World Tutorial 2, no Linux](../images/linux/tutorial-2.png)</p>
+<p>Janela Hello World Tutorial 2, em Linux](../images/linux/tutorial-2.png)</p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
 <figure>
-<p>Janela Hello World Tutorial 2, no Windows](../images/windows/tutorial-2.png)</p>
+<p>Janela Hello World Tutorial 2, em Windows](../images/windows/tutorial-2.png)</p>
 <figcaption></figcaption>
 </figure>
 </div>
@@ -1898,16 +1899,16 @@ dev</code>.</p>
 </div>
 <p>Se escrever um nome na caixa de texto e clicar no botão da GUI, vai ver uma
 mensagem aparecer na consola onde abriu a aplicação.</p>
-<p>Antes de continuar, feche o aplicação. Assim como no Tutorial 1, você pode fazer
-isso pressionando o botão Fechar na janela do aplicação, selecionando Quit/Exit
-no menu do aplicação ou digitando <strong>Ctrl+C</strong> no terminal em que executou
-<code>briefcase dev</code>.</p>
+<p>Antes de continuar, feche a aplicação. Assim como no Tutorial 1, pode fazer isso
+ao pressionar o botão de fechar na janela do aplicação, ao selecionar
+Sair/Terminar no menu da aplicação ou teclando <strong>Ctrl+C</strong> no terminal em que
+executou <code>briefcase dev</code>.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Criamos uma aplicação com recursos mais interessantes. Porém, ela somente
-funciona em nosso computador. Vamos empacotar esta aplicação para distribuição.
-No <a href="../tutorial-3/">Tutorial 3</a>, encapsularemos nossa aplicação em um instalador
-independente, que poderemos enviar a amigos, clientes ou publicar em uma App
-Store.</p>
+<p>Agora temos uma aplicação que faz coisas um pouco mais interessantes. Mas apenas
+corre no nosso computador. Vamos empacotar esta aplicação para distribuição. No
+<a href="../tutorial-3/">Tutorial 3</a>, vamos envolver a nossa aplicação num instalador
+independente, que poderemos enviar a amigos, clientes ou enviar para uma Loja de
+Aplicações.</p>
 
 
 
