@@ -1174,10 +1174,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-executar-o-aplicacao-atualizado" class="md-nav__link">
+  <a href="#a-executar-a-aplicacao-atualizado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A executar o aplicação atualizado
+        A executar a aplicação atualizado
       
     </span>
   </a>
@@ -1628,10 +1628,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-executar-o-aplicacao-atualizado" class="md-nav__link">
+  <a href="#a-executar-a-aplicacao-atualizado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A executar o aplicação atualizado
+        A executar a aplicação atualizado
       
     </span>
   </a>
@@ -1679,13 +1679,13 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-7-a-iniciar-o-uso-de-bibliotecas-externas">Tutorial 7 - A iniciar o uso de bibliotecas externas<a class="headerlink" href="#tutorial-7-a-iniciar-o-uso-de-bibliotecas-externas" title="Permanent link">&para;</a></h1>
-<p>Até o momento, o aplicação que criamos usou apenas o nosso próprio código, além
+<p>Até o momento, a aplicação que criamos usou apenas o nosso próprio código, além
 do código fornecido pelo BeeWare. Entretanto, em um aplicação do mundo real,
 você provavelmente desejará usar uma biblioteca de terceiros, baixada do Python
 Package Index (PyPI).</p>
-<p>Vamos modificar nosso aplicação para incluir uma biblioteca de terceiros.</p>
+<p>Vamos modificar nossa aplicação para incluir uma biblioteca de terceiros.</p>
 <h2 id="adicao-de-um-pacote">Adição de um pacote<a class="headerlink" href="#adicao-de-um-pacote" title="Permanent link">&para;</a></h2>
-<p>Vamos modificar nosso aplicação para dizer um pouco mais do que apenas "Hi,
+<p>Vamos modificar nossa aplicação para dizer um pouco mais do que apenas "Hi,
 there!".</p>
 <p>Para gerar um texto mais interessante para a caixa de diálogo, usaremos uma
 biblioteca chamada <a href="https://faker.readthedocs.io/en/stable/">Faker</a>. Faker é um
@@ -1693,7 +1693,7 @@ pacote Python que gera conteúdo falso, incluindo nomes e blocos de texto. Os
 nomes e as palavras no bloco de texto são gerados a partir de uma lista
 arbitrária de palavras fornecidas pelo Faker. Vamos usar o Faker para construir
 uma mensagem falsa, como se alguém estivesse respondendo ao utilizador.</p>
-<p>Vamos adicionar uma chamada de API <code>httpx</code> ao nosso aplicação. Adicione uma
+<p>Vamos adicionar uma chamada de API <code>httpx</code> ao nossa aplicação. Adicione uma
 importação na parte superior do <code>app.py</code> para importar <code>httpx</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">importar</span> <span class="n">faker</span>
 </code></pre></div>
@@ -1708,7 +1708,7 @@ importação na parte superior do <code>app.py</code> para importar <code>httpx<
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Vamos executar nosso aplicação atualizado no modo de desenvolvedor do Briefcase
+<p>Vamos executar nossa aplicação atualizado no modo de desenvolvedor do Briefcase
 para verificar se nossa alteração funcionou.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">iOS</label></div>
 <div class="tabbed-content">
@@ -1777,7 +1777,7 @@ instruções para a plataforma de desktop escolhida.</p>
 </div>
 </div>
 <p>O que aconteceu? Adicionamos <code>faker</code> ao nosso <em>código</em>, mas não o adicionamos ao
-ambiente virtual usado para executar o aplicação no modo de desenvolvimento.</p>
+ambiente virtual usado para executar a aplicação no modo de desenvolvimento.</p>
 <p>Quando o Briefcase executa um aplicação no modo de desenvolvimento, ele cria um
 ambiente virtual independente para esse aplicação, independente do ambiente em
 que você executa <code>briefcase</code>. Se o seu aplicação não declarar que precisa de uma
@@ -1786,14 +1786,14 @@ desenvolvimento.</p>
 <p>Então, como você adiciona um novo requisito ao seu aplicação?</p>
 <h2 id="atualizacao-de-dependencias">Atualização de dependências<a class="headerlink" href="#atualizacao-de-dependencias" title="Permanent link">&para;</a></h2>
 <p>No diretório raiz do seu aplicação, há um ficheiro chamado <code>pyproject.toml</code>.
-Esse ficheiro contém todos os detalhes de configuração do aplicação que você
+Esse ficheiro contém todos os detalhes de configuração da aplicação que você
 forneceu quando executou originalmente o <code>briefcase new</code>.</p>
 <p>o <code>pyproject.toml</code> é dividido em seções; uma das seções descreve as
 configurações do seu aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
 <span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
 <span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Um aplicação tutorial&quot;</span>
-<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;Mais detalhes sobre o aplicação devem ser inseridos aqui.</span>
+<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;Mais detalhes sobre a aplicação devem ser inseridos aqui.</span>
 <span class="s2">&quot;&quot;&quot;</span>
 <span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
@@ -1832,8 +1832,8 @@ específica da plataforma - isso ocorre porque as bibliotecas necessárias para
 exibir uma interface de utilizador são específicas da plataforma.</p>
 <p>No nosso caso, queremos que o <code>httpx</code> seja instalado em todas as plataformas,
 portanto, usamos a configuração <code>requires</code> em nível de aplicação. As
-dependências no nível do aplicação sempre serão instaladas; as dependências
-específicas da plataforma são instaladas <em>além</em> das dependências no nível do
+dependências no nível da aplicação sempre serão instaladas; as dependências
+específicas da plataforma são instaladas <em>além</em> das dependências no nível da
 aplicação.</p>
 <p>Depois de adicionar o novo requisito, salve <code>pyproject.toml</code> e execute
 <code>briefcase dev -r</code>. O sinalizador <code>-r</code> informa ao Briefcase que os requisitos
@@ -1930,7 +1930,7 @@ precisamos usar o argumento <code>-r</code> até agora. O argumento <code>-r</co
 quando você adiciona, remove ou altera um requisito <em>depois</em> de executar seu
 aplicação no modo de desenvolvimento. Se você apenas atualizou o código, pode
 executar <code>briefcase dev</code> como temos feito no restante deste tutorial.</p>
-<h2 id="a-executar-o-aplicacao-atualizado">A executar o aplicação atualizado<a class="headerlink" href="#a-executar-o-aplicacao-atualizado" title="Permanent link">&para;</a></h2>
+<h2 id="a-executar-a-aplicacao-atualizado">A executar a aplicação atualizado<a class="headerlink" href="#a-executar-a-aplicacao-atualizado" title="Permanent link">&para;</a></h2>
 <p>Agora temos um aplicação funcional, usando uma biblioteca de terceiros, rodando
 em modo de desenvolvimento. Vamos empacotar esse código de aplicação atualizado
 como um aplicação independente. Como fizemos alterações no código, precisamos
@@ -1938,47 +1938,47 @@ seguir as mesmas etapas do <a href="../tutorial-4/">Tutorial 4</a>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Atualize o código no aplicação empacotado:</p>
+<p>Atualize o código na aplicação empacotado:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
-<p>Reconstrua o aplicação:</p>
+<p>Reconstrua a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
 <span class="go">[helloworld] Aplicação de assinatura ad hoc...</span>
 <span class="go">[helloworld] Compilado: build/helloworld/macos/app/Hello World.app</span>
 </code></pre></div>
-<p>E, por fim, execute o aplicação:</p>
+<p>E, por fim, execute a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando o aplicação for executado, você verá um erro no console, além
+<p>No entanto, quando a aplicação for executado, você verá um erro no console, além
 de uma caixa de diálogo de falha:</p>
 <figure>
-<p><img alt="Falha do aplicação Hello World Tutorial 7, no
+<p><img alt="Falha da aplicação Hello World Tutorial 7, no
 macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Atualize o código no aplicação empacotado:</p>
+<p>Atualize o código na aplicação empacotado:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
-<p>Reconstrua o aplicação:</p>
+<p>Reconstrua a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
-<span class="go">[helloworld] Finalizando a configuração da aplicação...</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] A compilar a aplicação...</span>
@@ -1986,13 +1986,13 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 
 <span class="go">[helloworld] Compilado em build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
-<p>E, por fim, execute o aplicação:</p>
+<p>E, por fim, execute a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando o aplicação for executado, você verá um erro no console:</p>
+<p>No entanto, quando a aplicação for executado, você verá um erro no console:</p>
 <div class="highlight"><pre><span></span><code><span class="go">Traceback (última chamada mais recente):</span>
 <span class="go">  Arquivo &quot;/usr/lib/python3.13/runpy.py&quot;, linha 194, em _run_module_as_main</span>
 <span class="go">    return _run_code(code, main_globals, None,</span>
@@ -2004,61 +2004,61 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
 
-<span class="go">Não foi possível iniciar o aplicação helloworld.</span>
+<span class="go">Não foi possível iniciar a aplicação helloworld.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Atualize o código no aplicação empacotado:</p>
+<p>Atualize o código na aplicação empacotado:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
-<p>Reconstrua o aplicação:</p>
+<p>Reconstrua a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
 <span class="go">...</span>
 
 <span class="go">[helloworld] Compilado em build\helloworld\windows\app\src\Toga Test.exe</span>
 </code></pre></div>
-<p>E, por fim, execute o aplicação:</p>
+<p>E, por fim, execute a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando o aplicação for executado, você verá um erro no console, além
+<p>No entanto, quando a aplicação for executado, você verá um erro no console, além
 de uma caixa de diálogo de falha:</p>
 <figure>
-<p><img alt="Falha no aplicação Hello World Tutorial 7, no
+<p><img alt="Falha na aplicação Hello World Tutorial 7, no
 Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Atualize o código no aplicação empacotado:</p>
+<p>Atualize o código na aplicação empacotado:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>android
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
-<p>Reconstrua o aplicação:</p>
+<p>Reconstrua a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>android
 
-<span class="go">[helloworld] A atualizar metadados do aplicação...</span>
+<span class="go">[helloworld] A atualizar metadados da aplicação...</span>
 <span class="go">...</span>
 <span class="go">[helloworld] Compilado em build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk</span>
 </code></pre></div>
-<p>E, por fim, execute o aplicação (selecionando um simulador quando solicitado):</p>
+<p>E, por fim, execute a aplicação (selecionando um simulador quando solicitado):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>android
 
 <span class="go">[helloworld] A seguir, a saída do log do dispositivo (digite CTRL-C para interromper o log)...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando o aplicação for executado, você verá um erro no console:</p>
+<p>No entanto, quando a aplicação for executado, você verá um erro no console:</p>
 <div class="highlight"><pre><span></span><code><span class="go">--------- início da falha</span>
 <span class="go">E/AndroidRuntime: EXCEÇÃO FATAL: main</span>
 <span class="go">E/AndroidRuntime: Processo: com.example.helloworld, PID: 8289</span>
@@ -2098,29 +2098,29 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Atualize o código no aplicação empacotado:</p>
+<p>Atualize o código na aplicação empacotado:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>iOS
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
-<p>Reconstrua o aplicação:</p>
+<p>Reconstrua a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
-<span class="go">[helloworld] A atualizar os metadados do aplicação...</span>
+<span class="go">[helloworld] A atualizar os metadados da aplicação...</span>
 <span class="go">...</span>
 <span class="go">[helloworld] Compilado: build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
 </code></pre></div>
-<p>E, por fim, execute o aplicação (selecionando um simulador quando solicitado):</p>
+<p>E, por fim, execute a aplicação (selecionando um simulador quando solicitado):</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
 <span class="go">...</span>
 <span class="go">[helloworld] A seguir, a saída do log do simulador (digite CTRL-C para interromper o log)...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando o aplicação for executado, você verá um erro no console:</p>
+<p>No entanto, quando a aplicação for executado, você verá um erro no console:</p>
 <div class="highlight"><pre><span></span><code><span class="go">O aplicação travou!</span>
 <span class="go">========================</span>
 <span class="go">Traceback (última chamada mais recente):</span>
@@ -2133,20 +2133,20 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 </div>
 </div>
 </div>
-<p>Mais uma vez, o aplicação não foi iniciado porque o <code>faker</code> não foi instalado -
+<p>Mais uma vez, a aplicação não foi iniciado porque o <code>faker</code> não foi instalado -
 mas por quê? Já não instalamos o <code>faker</code>?</p>
 <p>Temos, mas apenas no ambiente de desenvolvimento. Cada aplicação criado também
 tem seu próprio ambiente independente, que é uma das coisas que o Briefcase
 produz quando você executa <code>briefcase build</code>. Quando executamos <code>briefcase dev
--r</code>, adicionamos <code>faker</code> ao nosso ambiente de <em>desenvolvimento</em>, mas não ao
+-r</code>, adicionamos <code>faker</code> ao nosso ambiente de <em>desenvolvimento</em>, mas não aa
 aplicação empacotado. Também precisamos executar <code>briefcase update -r</code> para que
-o Briefcase saiba que os requisitos do aplicação empacotado foram alterados:</p>
+o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label><label for="__tabbed_4_4">Android</label><label for="__tabbed_4_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>-r
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/hello_world...</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
@@ -2156,7 +2156,7 @@ o Briefcase saiba que os requisitos do aplicação empacotado foram alterados:</
 <span class="go">A instalar pacotes recolhidos: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
 <span class="go">Instalado com sucesso: faker-37.3.0, fonttools-4.58.1, rubicon-objc-0.5.1, std-nslog-1.0.3, toga-cocoa-0.5.1, toga-core-0.5.1, travertino-0.5.1, tzdata-2025.2</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
@@ -2165,32 +2165,32 @@ o Briefcase saiba que os requisitos do aplicação empacotado foram alterados:</
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>-r
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
 <span class="go">A direcionar para ubuntu:jammy (base do fornecedor: debian)</span>
 <span class="go">A determinar a versão do glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.35</span>
 <span class="go">A direcionar para Python 3.13</span>
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/hello_world...</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
-<span class="go">Coletando faker</span>
+<span class="go">A recolher faker</span>
 <span class="go">  A usar faker-37.3.0-py3-none-any.whl.metadata em cache (15 kB)</span>
 <span class="go">...</span>
 <span class="go">A instalar pacotes recolhidos: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
 <span class="go">Instalado com sucesso: faker-37.3.0, fonttools-4.58.1, rubicon-objc-0.5.1, std-nslog-1.0.3, toga-cocoa-0.5.1, toga-core-0.5.1, travertino-0.5.1, tzdata-2025.2</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update -r
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld...</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
@@ -2200,7 +2200,7 @@ o Briefcase saiba que os requisitos do aplicação empacotado foram alterados:</
 <span class="go">A instalar pacotes recolhidos: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
 <span class="go">Instalado com sucesso: faker-37.3.0, fonttools-4.58.1, rubicon-objc-0.5.1, std-nslog-1.0.3, toga-cocoa-0.5.1, toga-core-0.5.1, travertino-0.5.1, tzdata-2025.2</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
@@ -2209,14 +2209,14 @@ o Briefcase saiba que os requisitos do aplicação empacotado foram alterados:</
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>android<span class="w"> </span>-r
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
 <span class="go">Gravando ficheiro de requisitos... concluído</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
-<span class="go">A remover conteúdo desnecessário do pacote do aplicação... concluído</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
+<span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
@@ -2224,7 +2224,7 @@ o Briefcase saiba que os requisitos do aplicação empacotado foram alterados:</
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>iOS<span class="w"> </span>-r
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
@@ -2233,10 +2233,10 @@ o Briefcase saiba que os requisitos do aplicação empacotado foram alterados:</
 <span class="go">  A usar o faker-37.4.0-py3-none-any.whl.metadata em cache (15 kB)</span>
 <span class="go">...</span>
 
-<span class="go">A instalar os requisitos do aplicação para o simulador do iPhone... concluído</span>
+<span class="go">A instalar os requisitos da aplicação para o simulador do iPhone... concluído</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
-<span class="go">A remover conteúdo desnecessário do pacote do aplicação... concluído</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
+<span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
@@ -2244,7 +2244,7 @@ o Briefcase saiba que os requisitos do aplicação empacotado foram alterados:</
 </div>
 </div>
 <p>Depois de atualizar, você pode executar <code>briefcase build</code> e <code>briefcase run</code> e
-verá o aplicação empacotado com o novo comportamento de diálogo.</p>
+verá a aplicação empacotado com o novo comportamento de diálogo.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>A opção <code>-r</code> para atualizar os requisitos também é aceita pelos comandos <code>build</code>
@@ -2294,7 +2294,7 @@ pacotes para plataformas móveis, mas isso não é fácil de configurar, o que e
 fora do escopo de um tutorial introdutório como este.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
 <p>Agora temos um aplicação que usa uma biblioteca de terceiros! No <a href="../tutorial-8/">Tutorial
-8</a>, aprenderemos como garantir que nosso aplicação permaneça
+8</a>, aprenderemos como garantir que nossa aplicação permaneça
 responsivo à medida que adicionarmos uma lógica de aplicação mais complexa.</p>
 
 

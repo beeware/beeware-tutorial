@@ -1601,7 +1601,7 @@ Xcode. Em seguida, o Xcode mostrará quais componentes estão incorporados e qua
 componentes você pode baixar. Marque a caixa de seleção ao lado do iOS (seguido
 do número da versão atual) e clique em "Download and Install" para instalá-lo. O
 Xcode instalará os componentes do sistema, seguidos pelo Simulador do iOS.</p>
-<p>Depois de instalar o Xcode, podemos pegar nosso aplicação e implantá-lo como um
+<p>Depois de instalar o Xcode, podemos pegar nossa aplicação e implantá-lo como um
 aplicação iOS.</p>
 <p>O processo de implantação de um aplicação no iOS é muito semelhante ao processo
 de implantação como um aplicação de desktop. Primeiro, você executa o comando
@@ -1615,28 +1615,28 @@ de implantação como um aplicação de desktop. Primeiro, você executa o coman
 <span class="go">[helloworld] A instalar pacote de suporte...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A instalar código do aplicação...</span>
+<span class="go">[helloworld] A instalar código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
 <span class="go">[helloworld] A instalar requisitos...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A instalar recursos do aplicação...</span>
+<span class="go">[helloworld] A instalar recursos da aplicação...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Criado build/helloworld/ios/xcode</span>
 </code></pre></div>
 <p>Quando isso for concluído, teremos um diretório <code>build/helloworld/ios/xcode</code>
-contendo um projeto Xcode, bem como as bibliotecas de suporte e o código do
-aplicação necessários para o aplicação.</p>
-<p>Em seguida, você pode usar o Briefcase para compilar o aplicação usando
+contendo um projeto Xcode, bem como as bibliotecas de suporte e o código da
+aplicação necessários para a aplicação.</p>
+<p>Em seguida, você pode usar o Briefcase para compilar a aplicação usando
 <code>briefcase build iOS</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
-<span class="go">[helloworld] A atualizar metadados do aplicação...</span>
+<span class="go">[helloworld] A atualizar metadados da aplicação...</span>
 <span class="go">Definindo o módulo principal... concluído</span>
 
 <span class="go">[helloworld] A compilar projeto do Xcode...</span>
@@ -1645,7 +1645,7 @@ aplicação necessários para o aplicação.</p>
 
 <span class="go">[helloworld] Compilado em build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
 </code></pre></div>
-<p>Agora estamos prontos para executar nosso aplicação, usando o <code>briefcase run
+<p>Agora estamos prontos para executar nossa aplicação, usando o <code>briefcase run
 iOS</code>. Será solicitado que você selecione um dispositivo para o qual compilar; se
 você tiver simuladores para várias versões do SDK do iOS instalados, também
 poderá ser perguntado qual versão do iOS deseja usar como alvo. As opções
@@ -1677,16 +1677,16 @@ propósitos, não importa qual simulador você escolherá.</p>
 
 <span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
-<span class="go">[helloworld] A iniciar o aplicação em um iPhone SE (3ª geração) com iOS 16.2 (UDID do dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
-<span class="go">Inicializando o simulador... concluído</span>
+<span class="go">[helloworld] A iniciar a aplicação em um iPhone SE (3ª geração) com iOS 16.2 (UDID do dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
+<span class="go">A inicializar o simulador... concluído</span>
 <span class="go">Abrindo o simulador... concluído</span>
 
-<span class="go">[helloworld] A instalar o aplicação...</span>
-<span class="go">Desinstalando qualquer versão existente do aplicação... concluído</span>
-<span class="go">A instalar nova versão do aplicação... concluído</span>
+<span class="go">[helloworld] A instalar a aplicação...</span>
+<span class="go">Desinstalando qualquer versão existente da aplicação... concluído</span>
+<span class="go">A instalar nova versão da aplicação... concluído</span>
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
-<span class="go">A iniciar o aplicação... concluído</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
+<span class="go">A iniciar a aplicação... concluído</span>
 
 <span class="go">[helloworld] Saída do log do simulador a seguir (digite CTRL-C para interromper o log)...</span>
 <span class="go">===========================================================================</span>
@@ -1698,13 +1698,13 @@ deverá ver o simulador iniciar e, por fim, abrir seu aplicação iOS:</p>
 <p><img alt="Janela do tutorial 5 do Hello World, no iOS" src="../../../images/iOS/tutorial-5.png" /></p>
 <figcaption></figcaption>
 </figure>
-<p>Enquanto o aplicação estiver em execução, você verá uma série de mensagens de
+<p>Enquanto a aplicação estiver em execução, você verá uma série de mensagens de
 saída de log do Simulador no console. Digitar Ctrl+C no terminal interromperá as
 mensagens no console, mas não fechará o simulador. Isso serve para que você
 possa testar novas alterações sem reiniciar o simulador.</p>
 <p>Se você souber antecipadamente qual simulador de iOS deseja usar, poderá dizer
 ao Briefcase para usar esse simulador fornecendo uma opção <code>-d</code> (ou <code>--device</code>).
-A usar o nome do dispositivo que você selecionou ao criar o aplicação, execute:</p>
+A usar o nome do dispositivo que você selecionou ao criar a aplicação, execute:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)&quot;</span>
 </code></pre></div>
 <p>Se você tiver várias versões do iOS disponíveis, o Briefcase escolherá a versão

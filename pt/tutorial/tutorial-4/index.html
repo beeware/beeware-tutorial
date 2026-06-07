@@ -829,10 +829,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#atualizacao-do-codigo-do-aplicacao" class="md-nav__link">
+  <a href="#atualizacao-do-codigo-da-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Atualização do código do aplicação
+        Atualização do código da aplicação
       
     </span>
   </a>
@@ -1584,10 +1584,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#atualizacao-do-codigo-do-aplicacao" class="md-nav__link">
+  <a href="#atualizacao-do-codigo-da-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Atualização do código do aplicação
+        Atualização do código da aplicação
       
     </span>
   </a>
@@ -1635,14 +1635,14 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-4-atualizando-sua-aplicacao">Tutorial 4 - Atualizando sua aplicação<a class="headerlink" href="#tutorial-4-atualizando-sua-aplicacao" title="Permanent link">&para;</a></h1>
-<p>No último tutorial, empacotamos nosso aplicação como um aplicação nativo. Se
+<p>No último tutorial, empacotamos nossa aplicação como um aplicação nativo. Se
 estiver lidando com um aplicação do mundo real, esse não será o fim da história
 - você provavelmente fará alguns testes, descobrirá problemas e precisará fazer
 algumas alterações. Mesmo que o seu aplicação seja perfeito, você eventualmente
 desejará publicar a versão 2 do seu aplicação com melhorias.</p>
-<p>Então, como você atualiza o aplicação instalado quando faz alterações no código?</p>
-<h2 id="atualizacao-do-codigo-do-aplicacao">Atualização do código do aplicação<a class="headerlink" href="#atualizacao-do-codigo-do-aplicacao" title="Permanent link">&para;</a></h2>
-<p>Atualmente, nosso aplicação imprime no console quando você pressiona o botão. No
+<p>Então, como você atualiza a aplicação instalado quando faz alterações no código?</p>
+<h2 id="atualizacao-do-codigo-da-aplicacao">Atualização do código da aplicação<a class="headerlink" href="#atualizacao-do-codigo-da-aplicacao" title="Permanent link">&para;</a></h2>
+<p>Atualmente, nossa aplicação imprime no console quando você pressiona o botão. No
 entanto, os aplicações de GUI não devem realmente usar o console para saída.
 Eles precisam usar caixas de diálogo para se comunicar com os utilizadors.</p>
 <p>Vamos adicionar uma caixa de diálogo para dizer olá, em vez de escrever no
@@ -1657,7 +1657,7 @@ seguinte aparência:</p>
     <span class="p">)</span>
 </code></pre></div>
 <p>Precisamos criar o método <code>async</code> para que, quando exibirmos a caixa de diálogo,
-o restante do aplicação continue a ser executado. Não se preocupe muito com esse
+o restante da aplicação continue a ser executado. Não se preocupe muito com esse
 detalhe neste momento - daremos uma explicação mais detalhada no <a href="../tutorial-8/">Tutorial
 8</a>.</p>
 <p>Isso instrui o Toga a abrir uma caixa de diálogo modal quando o botão é
@@ -1695,8 +1695,8 @@ exibida.</p>
 local - ele tenta produzir o ambiente de tempo de execução mais realista
 possível para seu código, mas não fornece nem usa nenhuma infraestrutura da
 plataforma para empacotar seu código como um aplicação. Parte do processo de
-empacotamento do aplicação envolve a cópia do código <em>para</em> o pacote de
-aplicações e, no momento, o aplicação ainda contém o código antigo.</p>
+empacotamento da aplicação envolve a cópia do código <em>para</em> o pacote de
+aplicações e, no momento, a aplicação ainda contém o código antigo.</p>
 <p>Portanto, precisamos dizer ao briefcase para atualizar seu aplicação, copiando a
 nova versão do código. Poderíamos fazer isso excluindo o diretório da plataforma
 antiga e começando do zero. No entanto, o Briefcase oferece uma maneira mais
@@ -1706,11 +1706,11 @@ fácil: você pode atualizar o código do seu aplicação empacotado existente:<
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
-<span class="go">A remover conteúdo desnecessário do pacote do aplicação... concluído</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
+<span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
@@ -1718,17 +1718,17 @@ fácil: você pode atualizar o código do seu aplicação empacotado existente:<
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A direcionar para ubuntu:jammy (base de fornecedor Debian)</span>
 <span class="go">A determinar a versão da glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.35</span>
 <span class="go">A direcionar para Python 3.10</span>
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
-<span class="go">A remover conteúdo desnecessário do pacote do aplicação... concluído</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
+<span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
@@ -1737,11 +1737,11 @@ fácil: você pode atualizar o código do seu aplicação empacotado existente:<
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
-<span class="go">A remover conteúdo desnecessário do pacote do aplicação... concluído</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
+<span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
@@ -1751,8 +1751,8 @@ fácil: você pode atualizar o código do seu aplicação empacotado existente:<
 <p>Se o Briefcase não conseguir encontrar o modelo de andaime, ele invocará
 automaticamente o <code>create</code> para gerar um novo andaime.</p>
 <p>Agora que atualizamos o código do instalador, podemos executar o <code>briefcase
-build</code> para recompilar o aplicação, o <code>briefcase run</code> para executar o aplicação
-atualizado e o <code>briefcase package</code> para reembalar o aplicação para distribuição.</p>
+build</code> para recompilar a aplicação, o <code>briefcase run</code> para executar a aplicação
+atualizado e o <code>briefcase package</code> para reembalar a aplicação para distribuição.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>(Usuários do macOS, lembrem-se de que, conforme observado em <a href="../tutorial-3/">Tutorial
@@ -1763,13 +1763,13 @@ possível)</p>
 </div>
 <h2 id="atualize-e-execute-em-uma-unica-etapa">Atualize e execute em uma única etapa<a class="headerlink" href="#atualize-e-execute-em-uma-unica-etapa" title="Permanent link">&para;</a></h2>
 <p>Se estiver iterando rapidamente as alterações no código, provavelmente desejará
-fazer uma alteração no código, atualizar o aplicação e executá-lo novamente de
+fazer uma alteração no código, atualizar a aplicação e executá-lo novamente de
 imediato. Para a maioria das finalidades, o modo de desenvolvedor (<code>briefcase
 dev</code>) será a maneira mais fácil de fazer esse tipo de iteração rápida; no
-entanto, se estiver testando algo sobre como o aplicação é executado como um
-binário nativo ou procurando um bug que só se manifesta quando o aplicação está
+entanto, se estiver testando algo sobre como a aplicação é executado como um
+binário nativo ou procurando um bug que só se manifesta quando a aplicação está
 no formato empacotado, talvez seja necessário usar chamadas repetidas para
-<code>briefcase run</code>. Para simplificar o processo de atualização e execução do
+<code>briefcase run</code>. Para simplificar o processo de atualização e execução da
 aplicação empacotado, o Briefcase tem um atalho para suportar esse padrão de uso
 - a opção <code>-u</code> (ou <code>--update</code>) no comando <code>run</code>.</p>
 <p>Vamos tentar fazer outra alteração. Você deve ter notado que, se não digitar um
@@ -1795,78 +1795,78 @@ método utilitário:</p>
     <span class="p">)</span>
 </code></pre></div>
 <p>Execute seu aplicação no modo de desenvolvimento (com <code>briefcase dev</code>) para
-confirmar que a nova lógica funciona; em seguida, atualize, crie e execute o
+confirmar que a nova lógica funciona; em seguida, atualize, crie e execute a
 aplicação com um único comando:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
-<span class="go">A remover conteúdo desnecessário do pacote do aplicação... concluído</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
+<span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 
-<span class="go">[helloworld] A compilar o aplicação...</span>
+<span class="go">[helloworld] A compilar a aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Compilado build/helloworld/macos/app/Hello World.app</span>
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">A direcionar para ubuntu:jammy (base do fornecedor: Debian)</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A direcionar para ubuntu:jammy (base de fornecedor: Debian)</span>
 <span class="go">A determinar a versão do glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.35</span>
 <span class="go">A direcionar para Python 3.10</span>
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
-<span class="go">A remover conteúdo desnecessário do pacote do aplicação... concluído</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
+<span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 
-<span class="go">[helloworld] A compilar o aplicação...</span>
+<span class="go">[helloworld] A compilar a aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Compilado build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run -u
 
-<span class="go">[helloworld] A atualizar o código do aplicação...</span>
+<span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
-<span class="go">[helloworld] A remover conteúdo desnecessário do aplicação...</span>
-<span class="go">A remover conteúdo desnecessário do pacote do aplicação... concluído</span>
+<span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
+<span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 </code></pre></div>
 </div>
 </div>
 </div>
 <p>O comando package também aceita o argumento <code>-u</code>, portanto, se você fizer uma
-alteração no código do aplicação e quiser reempacotar imediatamente, poderá
+alteração no código da aplicação e quiser reempacotar imediatamente, poderá
 executar <code>briefcase package -u</code>.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos nosso aplicação empacotado para distribuição em plataformas de
-desktop e conseguimos atualizar o código em nosso aplicação.</p>
+<p>Agora temos nossa aplicação empacotado para distribuição em plataformas de
+desktop e conseguimos atualizar o código em nossa aplicação.</p>
 <p>Mas e quanto ao celular? No <a href="../tutorial-5/">Tutorial 5</a>, converteremos
-nosso aplicação em um aplicação móvel e o implantaremos em um simulador de
+nossa aplicação em um aplicação móvel e o implantaremos em um simulador de
 dispositivo e em um telefone.</p>
 
 

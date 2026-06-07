@@ -1723,7 +1723,7 @@ processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
 <span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
-<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">A direcionar para ubuntu:jammy (base de fornecedor Debian)</span>
 <span class="go">A determinar a versão da glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.35</span>
 <span class="go">A direcionar para Python 3.10</span>
@@ -1735,7 +1735,7 @@ processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
 <span class="go">[helloworld] A instalar pacote de suporte...</span>
 <span class="go">Nenhum pacote de suporte necessário.</span>
 
-<span class="go">[helloworld] A instalar código do aplicação...</span>
+<span class="go">[helloworld] A instalar código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
 <span class="go">[helloworld] A instalar requisitos...</span>
@@ -1764,19 +1764,19 @@ Python do sistema é um requisito para empacotar a sua aplicação.</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create
 
 <span class="go">[helloworld] A gerar modelo de aplicação...</span>
-<span class="go">A usar modelo de aplicação: https://github.com/beeware/briefcase-windows-app-template.git, ramificação v0.3.18</span>
+<span class="go">A usar modelo de aplicação: https://github.com/beeware/briefcase-windows-app-template.git, ramo v0.3.18</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] A instalar pacote de suporte...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A instalar o código do aplicação...</span>
+<span class="go">[helloworld] A instalar o código da aplicação...</span>
 <span class="go">A instalar src/helloworld... concluído</span>
 
 <span class="go">[helloworld] A instalar os pré-requisitos...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A instalar os recursos do aplicação...</span>
+<span class="go">[helloworld] A instalar os recursos da aplicação...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Criado build\helloworld\windows\app</span>
@@ -1789,42 +1789,40 @@ seu terminal&hellip; então o que aconteceu? O Briefcase fez o seguinte:</p>
 <ol>
 <li>
 <p>Ele <strong>gerou um modelo de aplicação</strong>. Há muitos ficheiros e configurações
-   necessários para construir um instalador nativo, acima e além do código do
-   seu aplicação real. Esse andaime extra é quase o mesmo para todos os
-   aplicações na mesma plataforma, exceto pelo nome do aplicação real que está
-   sendo construído - portanto, o Briefcase fornece um modelo de aplicação para
-   cada plataforma que ele suporta. Esta etapa implementa o modelo, substituindo
-   o nome do seu aplicação, o ID do pacote e outras propriedades do seu ficheiro
-   de configuração, conforme necessário para dar suporte à plataforma em que
-   você está construindo. Se não estiver satisfeito com o modelo fornecido pelo
-   Briefcase, você pode criar o seu próprio modelo. No entanto, é provável que
-   você não queira fazer isso até que tenha um pouco mais de experiência no uso
-   do modelo padrão do Briefcase.</p>
+   necessárias para construir um instalador nativo, por cima e além do código da
+   sua aplicação real. Esse andaime extra é quase sempre o mesmo para todas as
+   aplicações na mesma plataforma, exceto pelo nome da aplicação real que está a
+   ser construída - assim, o Briefcase fornece um modelo de aplicação para cada
+   plataforma que suporta. Este passo implementa o modelo, substituindo o nome
+   da sua aplicação, o ID do pacote e outras propriedades do seu ficheiro de
+   configuração, conforme necessário para dar suporte à plataforma para que está
+   a construir. Se não estiver satisfeito com o modelo fornecido pelo Briefcase,
+   pode fornecer o seu próprio modelo. No entanto, é provável que não queira
+   fazer isso até que tenha um pouco mais de experiência a usar o modelo
+   predefinido do Briefcase.</p>
 </li>
 <li>
-<p>Ele <strong>baixou e instalou um pacote de suporte</strong>. A abordagem de empacotamento
-   adotada pelo Briefcase é melhor descrita como "a coisa mais simples que
-   poderia funcionar" - ele envia um interpretador Python completo e isolado
-   como parte de cada aplicação que constrói (exceto para compilações de pacotes
-   do sistema nativo do Linux). Isso é um pouco ineficiente em termos de espaço</p>
-</li>
-<li>
-<p>se você tiver 5 aplicações empacotados com o Briefcase, terá 5 cópias do
+<p>Ele <strong>descarregou e instalou um pacote de suporte</strong>. A abordagem de
+   empacotamento adotada pelo Briefcase é melhor descrita como "a coisa mais
+   simples que poderia funcionar" - ele envia um interpretador Python completo e
+   isolado como parte de cada aplicação que constrói (exceto para compilações de
+   pacotes do sistema nativo do Linux). Isso é um pouco ineficiente em termos de
+   espaço - se tiver 5 aplicações empacotadas com o Briefcase, terá 5 cópias do
    interpretador Python. No entanto, essa abordagem garante que cada aplicação
    seja completamente independente, usando uma versão específica do Python que é
-   conhecida por funcionar com o aplicação. Novamente, o Briefcase fornece um
-   pacote de suporte padrão para cada plataforma; se quiser, você pode fornecer
+   conhecida por funcionar com a aplicação. Novamente, o Briefcase fornece um
+   pacote de suporte predefinido para cada plataforma; se quiser, pode fornecer
    seu próprio pacote de suporte e incluí-lo como parte do processo de
-   compilação. Talvez você queira fazer isso se tiver opções específicas no
+   compilação. Talvez queira fazer isso se tiver opções específicas no
    interpretador Python que precisam ser ativadas ou se quiser remover módulos
-   da biblioteca padrão que não são necessários em tempo de execução. O
+   da biblioteca predefinida que não são necessários em tempo de execução. O
    Briefcase mantém um cache local de pacotes de suporte, portanto, uma vez que
-   você tenha baixado um pacote de suporte específico, essa cópia em cache será
+   tenha descarregado um pacote de suporte específico, essa cópia em cache será
    usada em compilações futuras. Conforme observado acima, quando o Briefcase
-   empacota um aplicação como um pacote de sistema Linux nativo (o formato de
-   pacote padrão para Linux), um pacote de suporte não é incluído com o
-   aplicação. Em vez disso, o aplicação usará o Python que é fornecido pela
-   distribuição do Linux que está sendo visada.</p>
+   empacota uma aplicação como um pacote de sistema Linux nativo (o formato de
+   pacote predefinido para Linux), um pacote de suporte não é incluído com a
+   aplicação. Em vez disso, a aplicação usará o Python fornecido pela
+   distribuição do Linux a que é destinada.</p>
 </li>
 <li>
 <p>Ele <strong>instalou os requisitos da aplicação</strong>. A sua aplicação pode especificar
@@ -1843,15 +1841,15 @@ seu terminal&hellip; então o que aconteceu? O Briefcase fez o seguinte:</p>
    imagens de ecrã de abertura.</p>
 </li>
 </ol>
-<p>Quando isso for concluído, se você olhar no diretório <code>build</code> do projeto, deverá
+<p>Quando isso está concluído, se olhar para o diretório <code>build</code> do projeto, deverá
 ver um diretório correspondente à sua plataforma (<code>macOS</code>, <code>linux</code> ou <code>windows</code>)
 que contém ficheiros adicionais. Essa é a configuração de empacotamento
-específica da plataforma para o seu aplicação. Por exemplo, no macOS, o
-diretório do seu projeto agora incluirá:</p>
+específica da plataforma para a sua aplicação. Por exemplo, no macOS, o
+diretório do seu projeto agora vai incluir:</p>
 <div class="highlight"><pre><span></span><code>helloworld/
 └── build/
     └── helloworld/
- └── macos/
+        └── macos/
 </code></pre></div>
 <h2 id="compilando-a-sua-aplicacao">Compilando a sua aplicação<a class="headerlink" href="#compilando-a-sua-aplicacao" title="Permanent link">&para;</a></h2>
 <p>Agora você pode compilar a sua aplicação. Este passo efetua qualquer compilação
@@ -1864,7 +1862,7 @@ destino.</p>
 
 <span class="go">[helloworld] Aplicação de assinatura ad hoc...</span>
 <span class="go">...</span>
-<span class="go">Assinando build/helloworld/macos/app/Hello World.app</span>
+<span class="go">A assinar build/helloworld/macos/app/Hello World.app</span>
 <span class="go">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100,0% • 00:07</span>
 
 <span class="go">[helloworld] Compilado build/helloworld/macos/app/Hello World.app</span>
@@ -1877,23 +1875,23 @@ aplicação para outras pessoas, será necessário fornecer uma assinatura compl
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
-<span class="go">[helloworld] Finalizando a configuração da aplicação...</span>
-<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A direcionar para ubuntu:jammy (base de fornecedor Debian)</span>
 <span class="go">A determinar a versão da glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.35</span>
 <span class="go">A direcionar para Python 3.10</span>
 
 <span class="go">[helloworld] A compilar a aplicação...</span>
 <span class="go">A compilar binário bootstrap...</span>
-<span class="go">make: Entrando no diretório &#39;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap&#39;</span>
+<span class="go">make: A entrar no diretório &#39;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap&#39;</span>
 <span class="go">...</span>
-<span class="go">make: Saindo do diretório &#39;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap&#39;</span>
+<span class="go">make: A sair do diretório &#39;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap&#39;</span>
 <span class="go">A compilar binário bootstrap... concluído</span>
 <span class="go">A instalar licença... concluído</span>
 <span class="go">A instalar changelog... concluído</span>
 <span class="go">A instalar página man... concluído</span>
 <span class="go">A atualizar permissões de ficheiro... concluído</span>
-<span class="go">A remover informações de binário... concluído</span>
+<span class="go">A remover binário... concluído</span>
 
 <span class="go">[helloworld] Compilado build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
@@ -1905,7 +1903,7 @@ binário.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
-<span class="go">Configurando detalhes do aplicação de teste... concluído</span>
+<span class="go">A configurar detalhes de esboço de aplicação... concluído</span>
 
 <span class="go">[helloworld] Gerado build\helloworld\windows\app\src\Hello World.exe</span>
 </code></pre></div>
@@ -1913,7 +1911,7 @@ binário.</p>
 alguns metadados para que a aplicação reconheça seu nome, versão e outras coisas
 assim.</p>
 <div class="admonition">
-<p class="admonition-title">Acionamento do antivírus</p>
+<p class="admonition-title">Despoletar do antivírus</p>
 <p>Como estes metadados são gravados diretamente no binário pré-compilado que sai
 do modelo durante o comando <code>create</code>, isso pode acionar o software antivírus em
 execução no computador e impedir que os metadados sejam gravados. Nesse caso,
@@ -1930,10 +1928,10 @@ executada e execute novamente o comando acima.</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
-<span class="go">Configurando o Python isolado...</span>
-<span class="go">Pré-inicializando o ambiente de execução do Python...</span>
+<span class="go">A configurar o Python isolado...</span>
+<span class="go">A pré-inicializaro ambiente de execução do Python...</span>
 <span class="go">PythonHome: /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python311.zip</span>
@@ -1941,53 +1939,53 @@ executada e execute novamente o comando acima.</p>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib/lib-dynload</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app_packages</span>
 <span class="go">- /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app</span>
-<span class="go">Configurando argc/argv...</span>
-<span class="go">Inicializando o tempo de execução do Python...</span>
+<span class="go">A configurar argc/argv...</span>
+<span class="go">A inicializar o tempo de execução do Python...</span>
 <span class="go">A instalar o manipulador NSLog do Python...</span>
-<span class="go">A executar o módulo do aplicação: helloworld</span>
+<span class="go">A executar o módulo da aplicação: helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A direcionar para ubuntu:jammy (base de fornecedor Debian)</span>
 <span class="go">A determinar a versão da glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.35</span>
 <span class="go">A direcionar para Python 3.10</span>
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 <span class="go">Caminho de instalação: /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr</span>
-<span class="go">Pré-inicializando o runtime do Python...</span>
+<span class="go">A pré-inicializaro runtime do Python...</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- /usr/lib/python3.10</span>
 <span class="go">- /usr/lib/python3.10/lib-dynload</span>
 <span class="go">- /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/lib/helloworld/app</span>
 <span class="go">- /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/lib/helloworld/app_packages</span>
-<span class="go">Configurando argc/argv...</span>
-<span class="go">Inicializando o tempo de execução do Python...</span>
-<span class="go">A executar o módulo do aplicação: helloworld</span>
+<span class="go">A configurar argc/argv...</span>
+<span class="go">A inicializar o tempo de execução do Python...</span>
+<span class="go">A executar o módulo da aplicação: helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run
 
-<span class="go">[helloworld] A iniciar o aplicação...</span>
+<span class="go">[helloworld] A iniciar a aplicação...</span>
 
 <span class="go">===========================================================================</span>
 <span class="go">Registro iniciado: 2023-04-23 04:47:45Z</span>
-<span class="go">Pré-inicializando o ambiente de execução do Python...</span>
+<span class="go">A pré-inicializaro ambiente de execução do Python...</span>
 <span class="go">PythonHome: C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">PYTHONPATH:</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\python39.zip</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app_packages</span>
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app</span>
-<span class="go">Configurando argc/argv...</span>
-<span class="go">Inicializando o runtime do Python...</span>
+<span class="go">A configurar argc/argv...</span>
+<span class="go">A inicializar o runtime do Python...</span>
 <span class="go">A executar o módulo da aplicação: helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
 </code></pre></div>
@@ -1999,13 +1997,13 @@ executada e execute novamente o comando acima.</p>
 <p>Você pode notar algumas pequenas diferenças na aparência do seu aplicação quando
 ele estiver em execução. Por exemplo, os ícones e o nome exibidos pelo sistema
 operacional podem ser ligeiramente diferentes daqueles vistos durante a execução
-no modo de desenvolvedor. Isso também ocorre porque você está usando o aplicação
+no modo de desenvolvedor. Isso também ocorre porque você está usando a aplicação
 empacotado, e não apenas executando o código Python. Do ponto de vista do
 sistema operacional, agora você está executando "um aplicação", não "um programa
-Python", e isso se reflete na aparência do aplicação.</p>
-<p>Antes de continuar, feche o aplicação. Como nas etapas anteriores do tutorial,
-você pode fazer isso pressionando o botão Fechar na janela do aplicação,
-selecionando Quit/Exit no menu do aplicação ou digitando <strong>Ctrl+C</strong> no terminal
+Python", e isso se reflete na aparência da aplicação.</p>
+<p>Antes de continuar, feche a aplicação. Como nas etapas anteriores do tutorial,
+você pode fazer isso pressionando o botão Fechar na janela da aplicação,
+selecionando Quit/Exit no menu da aplicação ou digitando <strong>Ctrl+C</strong> no terminal
 em que executou <code>briefcase run</code>.</p>
 <h2 id="criar-o-seu-instalador">Criar o seu instalador<a class="headerlink" href="#criar-o-seu-instalador" title="Permanent link">&para;</a></h2>
 <p>Agora você pode empacotar seu aplicação para distribuição, usando o comando
@@ -2018,7 +2016,7 @@ código ou outras tarefas de pré-distribuição.</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--adhoc-sign
 
-<span class="go">[helloworld] Assinando o aplicação...</span>
+<span class="go">[helloworld] Assinando a aplicação...</span>
 
 <span class="go">*************************************************************************</span>
 <span class="go">** AVISO: Assinatura com uma identidade ad-hoc **</span>
@@ -2035,7 +2033,7 @@ código ou outras tarefas de pré-distribuição.</p>
 
 <span class="go">*************************************************************************</span>
 
-<span class="go">Assinando o aplicação com identidade ad-hoc...</span>
+<span class="go">Assinando a aplicação com identidade ad-hoc...</span>
 <span class="go"> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100,0% • 00:07</span>
 
 <span class="go">[helloworld] Criando DMG...</span>
@@ -2045,15 +2043,15 @@ código ou outras tarefas de pré-distribuição.</p>
 </code></pre></div>
 <p>A pasta <code>dist</code> conterá um ficheiro chamado <code>Hello World-0.0.1.dmg</code>. Se você
 localizar esse ficheiro no Finder e clicar duas vezes em seu ícone, montará o
-DMG, fornecendo uma cópia do aplicação Hello World e um link para a pasta
-Applications para facilitar a instalação. Arraste o ficheiro do aplicação para
-Applications e você terá instalado o aplicação. Envie o ficheiro DMG para um
+DMG, fornecendo uma cópia da aplicação Hello World e um link para a pasta
+Applications para facilitar a instalação. Arraste o ficheiro da aplicação para
+Applications e você terá instalado a aplicação. Envie o ficheiro DMG para um
 amigo e ele poderá fazer o mesmo.</p>
-<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code>, ou seja, estamos assinando nosso
+<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code>, ou seja, estamos assinando nossa
 aplicação com credenciais <em>ad hoc</em>, credenciais temporárias que só funcionarão
 em seu computador. Fizemos isso para manter a simplicidade do tutorial. A
 configuração de identidades de assinatura de código é um pouco complicada, e
-elas só são <em>necessárias</em> se você pretende distribuir o aplicação para outras
+elas só são <em>necessárias</em> se você pretende distribuir a aplicação para outras
 pessoas. Se estivéssemos publicando um aplicação real para ser usado por outras
 pessoas, precisaríamos especificar credenciais reais.</p>
 <p>Quando estiver pronto para publicar uma aplicação real, consulte o guia de
@@ -2066,8 +2064,8 @@ distribuição Linux. Se estiver em uma distribuição derivada do Debian, você
 verá:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">A direcionar para ubuntu:jammy (base Debian do fornecedor)</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A direcionar para ubuntu:jammy (base de fornecedor Debian)</span>
 <span class="go">A determinar a versão da glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.35</span>
 <span class="go">A direcionar para Python 3.10</span>
@@ -2084,8 +2082,8 @@ verá:</p>
 <p>Se estiver em uma distribuição baseada em RHEL, você verá:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">A direcionar para fedora:40 (base do fornecedor rhel)</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A direcionar para fedora:40 (base de fornecedor rhel)</span>
 <span class="go">A determinar a versão do glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.39</span>
 <span class="go">A direcionar para Python 3.12</span>
@@ -2109,8 +2107,8 @@ verá:</p>
 <p>Se estiver em uma distribuição baseada no Arch, você verá:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
-<span class="go">[helloworld] Finalizando a configuração do aplicação...</span>
-<span class="go">A direcionar para arch:20240101 (arquitetura base do fornecedor)</span>
+<span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
+<span class="go">A direcionar para arch:20240101 (base de fornecedor arch)</span>
 <span class="go">A determinar a versão da glibc... concluído</span>
 <span class="go">A direcionar para glibc 2.38</span>
 <span class="go">A direcionar para Python 3.12</span>
@@ -2146,7 +2144,7 @@ execute:</p>
 </code></pre></div>
 <p>Isso fará o download da imagem do Docker para o sistema operacional selecionado,
 criará um contêiner capaz de executar as compilações do Briefcase e compilará o
-pacote do aplicação dentro da imagem. Após a conclusão, a pasta <code>dist</code> conterá o
+pacote da aplicação dentro da imagem. Após a conclusão, a pasta <code>dist</code> conterá o
 pacote para a distribuição Linux de destino.</p>
 </div>
 <div class="tabbed-block">
@@ -2156,31 +2154,31 @@ pacote para a distribuição Linux de destino.</p>
 <span class="go">** AVISO: Nenhuma identidade de assinatura fornecida **</span>
 <span class="go">*************************************************************************</span>
 
-<span class="go">    O Briefcase não assinará o aplicação. Para fornecer uma identidade de assinatura,</span>
+<span class="go">    O Briefcase não assinará a aplicação. Para fornecer uma identidade de assinatura,</span>
 <span class="go">    use a opção `--identity`; ou, para desativar explicitamente a assinatura,</span>
 <span class="go">    use `--adhoc-sign`.</span>
 
 <span class="go">*************************************************************************</span>
 
 <span class="go">[helloworld] A compilar MSI...</span>
-<span class="go">A compilar manifesto do aplicação...</span>
+<span class="go">A compilar manifesto da aplicação...</span>
 <span class="go">Compilando... concluído</span>
 
-<span class="go">A compilar instalador do aplicação...</span>
+<span class="go">A compilar instalador da aplicação...</span>
 <span class="go">helloworld.wxs</span>
 <span class="go">helloworld-manifest.wxs</span>
 <span class="go">Compilando... concluído</span>
 
-<span class="go">Vinculando instalador do aplicação...</span>
+<span class="go">Vinculando instalador da aplicação...</span>
 <span class="go">Vinculando... concluído</span>
 
 <span class="go">[helloworld] Empacotado em dist\Hello_World-0.0.1.msi</span>
 </code></pre></div>
-<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code>, ou seja, estamos assinando nosso
+<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code>, ou seja, estamos assinando nossa
 aplicação com credenciais <em>ad hoc</em>, credenciais temporárias que só funcionarão
 em seu computador. Fizemos isso para manter a simplicidade do tutorial. A
 configuração de identidades de assinatura de código é um pouco complicada, e
-elas só são <em>necessárias</em> se você pretende distribuir o aplicação para outras
+elas só são <em>necessárias</em> se você pretende distribuir a aplicação para outras
 pessoas. Se estivéssemos publicando um aplicação real para ser usado por outras
 pessoas, precisaríamos especificar credenciais reais.</p>
 <p>Quando estiver pronto para publicar um aplicação real, consulte o guia de
@@ -2196,9 +2194,9 @@ Iniciar.</p>
 </div>
 </div>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos nosso aplicação empacotado para distribuição em plataformas de
-desktop. Mas o que acontece quando precisamos atualizar o código em nosso
-aplicação? Como podemos colocar essas atualizações em nosso aplicação
+<p>Agora temos nossa aplicação empacotado para distribuição em plataformas de
+desktop. Mas o que acontece quando precisamos atualizar o código em nossa
+aplicação? Como podemos colocar essas atualizações em nossa aplicação
 empacotado? Consulte o <a href="../tutorial-4/">Tutorial 4</a> para descobrir&hellip;</p>
 
 

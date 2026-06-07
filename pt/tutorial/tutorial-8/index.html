@@ -1679,14 +1679,14 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-8-suavizando-o-processo">Tutorial 8 - Suavizando o Processo<a class="headerlink" href="#tutorial-8-suavizando-o-processo" title="Permanent link">&para;</a></h1>
-<p>Até agora, nosso aplicação tem sido relativamente simples: exibir widgets da
+<p>Até agora, nossa aplicação tem sido relativamente simples: exibir widgets da
 GUI, chamar uma biblioteca simples de terceiros e exibir a saída em uma caixa de
-diálogo. Todas essas operações ocorrem muito rapidamente e nosso aplicação
+diálogo. Todas essas operações ocorrem muito rapidamente e nossa aplicação
 permanece responsivo.</p>
 <p>Entretanto, em um aplicação do mundo real, precisaremos executar tarefas ou
 cálculos complexos que podem levar algum tempo para serem concluídos e, à medida
-que essas tarefas forem executadas, queremos que o aplicação permaneça
-responsivo. Vamos fazer uma alteração em nosso aplicação que pode levar um pouco
+que essas tarefas forem executadas, queremos que a aplicação permaneça
+responsivo. Vamos fazer uma alteração em nossa aplicação que pode levar um pouco
 de tempo para ser concluída e ver as alterações que precisam ser feitas para
 acomodar esse comportamento.</p>
 <h2 id="acesso-a-uma-api">Acesso a uma API<a class="headerlink" href="#acesso-a-uma-api" title="Permanent link">&para;</a></h2>
@@ -1694,7 +1694,7 @@ acomodar esse comportamento.</p>
 solicitação em uma API da Web para recuperar dados e exibir esses dados ao
 utilizador. Às vezes, as APIs da Web levam um ou dois segundos para responder,
 portanto, se estivermos chamando uma API como essa, precisamos garantir que
-nosso aplicação não deixe de responder enquanto esperamos que a API da Web
+nossa aplicação não deixe de responder enquanto esperamos que a API da Web
 retorne uma resposta.</p>
 <p>Este é um aplicação de brinquedo, portanto não temos uma API <em>real</em> com a qual
 trabalhar, então usaremos um endpoint de API de amostra como fonte de dados. Se
@@ -1712,9 +1712,9 @@ garantidos, pois o navegador os gerencia para você.</p>
 APIs integradas e fornecem uma API mais simples, mais próxima da experiência
 diária do navegador. Vamos usar uma dessas bibliotecas — uma biblioteca chamada
 <a href="https://www.python-httpx.org"><code>httpx</code></a> — para acessar uma API simples.</p>
-<p>Vamos adicionar uma chamada de API <code>httpx</code> ao nosso aplicação. Primeiro, assim
+<p>Vamos adicionar uma chamada de API <code>httpx</code> ao nossa aplicação. Primeiro, assim
 como fizemos com <code>faker</code> na etapa anterior, precisamos informar ao briefcase
-para instalar (tutorial-7.md) quando ele compilar nosso aplicação. Modifique a
+para instalar (tutorial-7.md) quando ele compilar nossa aplicação. Modifique a
 configuração <code>httpx</code> em nosso <code>requires</code> para incluir o novo requisito:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;faker&quot;</span><span class="p">,</span>
@@ -1749,7 +1749,7 @@ ela o faça:</p>
 <li>inclua o corpo dessa mensagem como o texto da caixa de diálogo, no lugar do
   texto gerado pelo Faker.</li>
 </ul>
-<p>Vamos executar nosso aplicação atualizado no modo de desenvolvedor do Briefcase
+<p>Vamos executar nossa aplicação atualizado no modo de desenvolvedor do Briefcase
 para verificar se a alteração funcionou. Como adicionamos um novo requisito,
 precisamos informar ao modo de desenvolvedor para reinstalar os requisitos,
 usando o argumento <code>-r</code>:</p>
@@ -1816,13 +1816,13 @@ instruções para a plataforma de desktop escolhida.</p>
 <p>A menos que você tenha uma conexão de Internet <em>muito</em> rápida, poderá perceber
 que, ao pressionar o botão, a GUI do seu aplicação trava um pouco. O sistema
 operacional pode até manifestar isso com um cursor "beachball" ou "spinner" para
-indicar que o aplicação não está respondendo.</p>
+indicar que a aplicação não está respondendo.</p>
 <p>A menos que você tenha uma conexão de Internet <em>muito</em> rápida, poderá perceber
 que, ao pressionar o botão, a GUI do seu aplicação trava um pouco. Isso ocorre
-porque a solicitação da Web que fizemos é <em>síncrona</em>. Quando nosso aplicação faz
+porque a solicitação da Web que fizemos é <em>síncrona</em>. Quando nossa aplicação faz
 a solicitação da Web, ele espera que a API retorne uma resposta antes de
-continuar. Enquanto espera, ele não permite que o aplicação seja redesenhado e,
-como resultado, o aplicação trava.</p>
+continuar. Enquanto espera, ele não permite que a aplicação seja redesenhado e,
+como resultado, a aplicação trava.</p>
 <h2 id="loops-de-eventos-da-gui">Loops de eventos da GUI<a class="headerlink" href="#loops-de-eventos-da-gui" title="Permanent link">&para;</a></h2>
 <p>Para entender por que isso acontece, precisamos nos aprofundar nos detalhes de
 como funciona um aplicação de GUI. Os detalhes variam de acordo com a
@@ -1836,16 +1836,16 @@ plataforma ou do ambiente de GUI que você estiver usando.</p>
 <p>Esse loop é chamado de <em>Event Loop</em>. (Esses não são nomes de métodos reais - é
 uma ilustração do que está acontecendo no "pseudocódigo").</p>
 <p>Quando você clica em um botão, arrasta uma barra de rolagem ou digita uma tecla,
-está gerando um "evento". Esse "evento" é colocado em uma fila, e o aplicação
+está gerando um "evento". Esse "evento" é colocado em uma fila, e a aplicação
 processará a fila de eventos quando tiver a oportunidade de fazê-lo. O código do
 utilizador que é acionado em resposta ao evento é chamado de <em>manipulador de
 eventos</em>. Esses manipuladores de eventos são invocados como parte da chamada
 <code>process_events()</code>.</p>
 <p>Depois que um aplicação tiver processado todos os eventos disponíveis, ele
 <code>redraw()</code> a GUI. Isso leva em conta todas as alterações que os eventos causaram
-na exibição do aplicação, bem como qualquer outra coisa que esteja acontecendo
-no sistema operacional - por exemplo, as janelas de outro aplicação podem
-obscurecer ou revelar parte da janela do nosso aplicação, e o redesenho do nosso
+na exibição da aplicação, bem como qualquer outra coisa que esteja acontecendo
+no sistema operacional - por exemplo, as janelas de outra aplicação podem
+obscurecer ou revelar parte da janela do nossa aplicação, e o redesenho do nossa
 aplicação precisará refletir a parte da janela que está visível no momento.</p>
 <p>O detalhe importante a ser observado: enquanto um aplicação estiver processando
 um evento, <em>ele não pode redesenhar</em> e <em>não pode processar outros eventos</em>.</p>
@@ -1867,8 +1867,8 @@ isso rapidamente" - as operações são inerentemente lentas.</p>
 <p>O que precisamos é de uma maneira de informar a um aplicação no meio de um
 manipulador de eventos de longa duração que não há problema em liberar
 temporariamente o controle de volta para o loop de eventos, desde que possamos
-retomar de onde paramos. Cabe ao aplicação determinar quando essa liberação pode
-ocorrer; mas se o aplicação liberar o controle para o loop de eventos
+retomar de onde paramos. Cabe aa aplicação determinar quando essa liberação pode
+ocorrer; mas se a aplicação liberar o controle para o loop de eventos
 regularmente, poderemos ter um manipulador de eventos de longa duração <em>e</em>
 manter uma interface de utilizador responsiva.</p>
 <p>Podemos fazer isso usando a <em>programação assíncrona</em>. A programação assíncrona é
@@ -1912,11 +1912,11 @@ ferramentas e primitivas úteis para codificação assíncrona.</p>
 <li>O gerenciador de contexto usado para criar o cliente é marcado como <code>async</code>.
    Isso informa ao Python que há uma oportunidade de liberar o controle à medida
    que o gerenciador de contexto entra e sai.</li>
-<li>A chamada <code>get</code> é feita com uma palavra-chave <code>await</code>. Isso instrui o
+<li>A chamada <code>get</code> é feita com uma palavra-chave <code>await</code>. Isso instrui a
    aplicação que, enquanto aguardamos a resposta da rede, ele pode liberar o
    controle para o loop de eventos. Já vimos essa palavra-chave antes - também
    usamos <code>await</code> ao exibir a caixa de diálogo. O motivo desse uso é o mesmo da
-   solicitação HTTP - precisamos informar ao aplicação que, enquanto a caixa de
+   solicitação HTTP - precisamos informar aa aplicação que, enquanto a caixa de
    diálogo é exibida e estamos aguardando que o utilizador pressione um botão,
    não há problema em liberar o controle de volta para o loop de eventos.</li>
 </ol>
@@ -1928,23 +1928,23 @@ declarado como <code>async def</code>.</p>
 <p>A Toga permite que você use métodos regulares ou co-rotinas assíncronas como
 manipuladores; a Toga gerencia tudo nos bastidores para garantir que o
 manipulador seja chamado ou aguardado conforme necessário.</p>
-<p>Se você salvar essas alterações e executar novamente o aplicação (com o
+<p>Se você salvar essas alterações e executar novamente a aplicação (com o
 <code>briefcase dev</code> no modo de desenvolvimento ou atualizando e executando novamente
-o aplicação empacotado), não haverá nenhuma alteração óbvia no aplicação. No
+a aplicação empacotado), não haverá nenhuma alteração óbvia na aplicação. No
 entanto, ao clicar no botão para acionar a caixa de diálogo, você poderá notar
 uma série de melhorias sutis:</p>
 <ul>
 <li>O botão retorna a um estado "não clicado", em vez de ficar preso em um estado
   "clicado".</li>
 <li>O ícone "bola de praia"/"botão giratório" não será exibido.</li>
-<li>Se você mover/redimensionar a janela do aplicação enquanto aguarda a exibição
+<li>Se você mover/redimensionar a janela da aplicação enquanto aguarda a exibição
   da caixa de diálogo, a janela será redesenhada.</li>
 <li>Se você tentar abrir um menu de aplicação, o menu será exibido imediatamente.</li>
 </ul>
-<p>Agora podemos executar o aplicação completo. No entanto, como adicionamos um
-requisito extra (<code>httpx</code>), também precisamos atualizar os requisitos do nosso
+<p>Agora podemos executar a aplicação completo. No entanto, como adicionamos um
+requisito extra (<code>httpx</code>), também precisamos atualizar os requisitos do nossa
 aplicação; podemos fazer isso passando <code>-r</code> para <code>briefcase run</code>. Isso
-atualizará os requisitos do nosso aplicação, reconstruirá o aplicação e, em
+atualizará os requisitos do nossa aplicação, reconstruirá a aplicação e, em
 seguida, o iniciará:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
@@ -1978,13 +1978,13 @@ projeto BeeWare. No decorrer deste tutorial, você terá:</p>
 <ul>
 <li>Criou um novo projeto de aplicação GUI;</li>
 <li>Correr essa aplicação em modo de desenvolvedor;</li>
-<li>Criou o aplicação como um binário autônomo para um sistema operacional de
+<li>Criou a aplicação como um binário autônomo para um sistema operacional de
   desktop;</li>
 <li>Empacotou esse projeto para distribuição a outras pessoas;</li>
-<li>Execute o aplicação em um simulador e/ou dispositivo móvel;</li>
-<li>Execute o aplicação como um aplicação da Web;</li>
+<li>Execute a aplicação em um simulador e/ou dispositivo móvel;</li>
+<li>Execute a aplicação como um aplicação da Web;</li>
 <li>Adicionou uma dependência de terceiros ao seu aplicação; e</li>
-<li>Modificou o aplicação para que ele permaneça responsivo.</li>
+<li>Modificou a aplicação para que ele permaneça responsivo.</li>
 </ul>
 <p>Então, o que fazer a partir daqui?</p>
 <ul>
