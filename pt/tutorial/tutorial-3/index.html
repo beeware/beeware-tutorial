@@ -2135,17 +2135,16 @@ exemplo:</p>
 <p>vai mostrar um aviso de comando do Unix (algo como <code>root@84444e31cff9:/#</code>)
 dentro de um contentor de Docker do Ubuntu 22.04. Tecle Ctrl-D para sair do
 Docker e retornar à sua shell local.</p>
-<p>Depois de instalar o Docker, você pode usar o Briefcase para criar um pacote
-para qualquer distribuição Linux compatível com o Briefcase, passando uma imagem
-do Docker como argumento. Por exemplo, para criar um pacote DEB para o Ubuntu
-22.04 (Jammy), independentemente do sistema operativo em que você estiver,
-execute:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacote<span class="w"> </span>briefcase<span class="w"> </span>--destino<span class="w"> </span>ubuntu:jammy
+<p>Depois de instalar o Docker, pode usar o Briefcase para compilar um pacote para
+qualquer distribuição Linux que o Briefcase suporte, passando uma imagem do
+Docker como argumento. Por exemplo, para compilar um pacote DEB para o Ubuntu
+22.04 (Jammy), independentemente do sistema operativo em que está, execute:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--target<span class="w"> </span>ubuntu:jammy
 </code></pre></div>
-<p>Isso fará o download da imagem do Docker para o sistema operativo selecionado,
-criará um contêiner capaz de executar as compilações do Briefcase e compilará o
-pacote da aplicação dentro da imagem. Após a conclusão, a pasta <code>dist</code> conterá o
-pacote para a distribuição Linux de destino.</p>
+<p>Isto vai descarregar a imagem do Docker para o sistema operativo selecionado,
+vai criar um contentor capaz de executar as compilações do Briefcase, e vai
+compilar o pacote da aplicação dentro da imagem. Após a conclusão, a pasta
+<code>dist</code> vai conter o pacote para a distribuição Linux de destino.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase package
