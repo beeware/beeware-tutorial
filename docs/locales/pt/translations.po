@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-07 22:59+0000\n"
-"PO-Revision-Date: 2026-06-07 22:58+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-07 22:59+0000\nPO-Revision-Date: 2026-06-08 02:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -3790,7 +3778,6 @@ msgid "This will download the Docker image for your selected operating system, c
 msgstr "Isto vai descarregar a imagem do Docker para o sistema operativo selecionado, vai criar um contentor capaz de executar as compilações do Briefcase, e vai compilar o pacote da aplicação dentro da imagem. Após a conclusão, a pasta `dist` vai conter o pacote para a distribuição Linux de destino."
 
 #: docs/en/tutorial/tutorial-3.md:433
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase package\n"
 "\n"
@@ -3817,67 +3804,35 @@ msgid ""
 "Linking... done\n"
 "\n"
 "[helloworld] Packaged dist\\Hello_World-0.0.1.msi"
-msgstr ""
-"(beeware-venv) C:\\...>briefcase package\n"
-"\n"
-"*************************************************************************\n"
-"** AVISO: Nenhuma identidade de assinatura fornecida **\n"
-"*************************************************************************\n"
-"\n"
-"    O Briefcase não assinará a aplicação. Para fornecer uma identidade de assinatura,\n"
-"    use a opção `--identity`; ou, para desativar explicitamente a assinatura,\n"
-"    use `--adhoc-sign`.\n"
-"\n"
-"*************************************************************************\n"
-"\n"
-"[helloworld] A compilar MSI...\n"
-"A compilar manifesto da aplicação...\n"
-"Compilando... concluído\n"
-"\n"
-"A compilar instalador da aplicação...\n"
-"helloworld.wxs\n"
-"helloworld-manifest.wxs\n"
-"Compilando... concluído\n"
-"\n"
-"Vinculando instalador da aplicação...\n"
-"Vinculando... concluído\n"
-"\n"
-"[helloworld] Empacotado em dist\\Hello_World-0.0.1.msi"
+msgstr "(beeware-venv) C:\\...>briefcase package\n\n*************************************************************************\n** AVISO: Nenhuma identidade de assinatura fornecida **\n*************************************************************************\n\n    O Briefcase não vai assinar a aplicação. Para fornecer uma identidade de assinatura,\n    use a opção `--identity`; ou, para desativar explicitamente a assinatura,\n    use `--adhoc-sign`.\n\n*************************************************************************\n\n[helloworld] A compilar MSI...\nA compilar manifesto da aplicação...\nA compilar... concluído\n\nA compilar instalador da aplicação...\nhelloworld.wxs\nhelloworld-manifest.wxs\nA compilar... concluído\n\nA vincular instalador da aplicação...\nA vincular... concluído\n\n[helloworld] Empacotado em dist\\Hello_World-0.0.1.msi"
 
 #: docs/en/tutorial/tutorial-3.md:461
-#, fuzzy
 msgid "In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate."
-msgstr "Neste exemplo, usamos a opção `--adhoc-sign`, ou seja, estamos assinando nossa aplicação com credenciais *ad hoc*, credenciais temporárias que só funcionarão em seu computador. Fizemos isso para manter a simplicidade do tutorial. A configuração de identidades de assinatura de código é um pouco complicada, e elas só são *necessárias* se você pretende distribuir a aplicação para outras pessoas. Se estivéssemos publicando um aplicação real para ser usado por outras pessoas, precisaríamos especificar credenciais reais."
+msgstr "Neste exemplo, não estamos a assinar a sua aplicação. Como resultado, quando usa o instalador, vai obter um aviso do sistema de que a aplicação vem de um desenvolvedor desconhecido. Nós fazemos isto para manter o tutorial simples. Definir identidades de assinatura de código é um pouco complexo, e só são *requeridas* quando tem a intenção de distribuir a sua aplicação a outros. Se estivéssemos a publicar uma aplicação real para outros usarem, íamos precisar de especificar uma identidade de assinatura real; quando essa aplicação assinada está instalada, o sistema vai notificar o utilizador de que a aplicação é da identidade conhecida associada com o certificado."
 
 #: docs/en/tutorial/tutorial-3.md:463
-#, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on [Setting up a Windows code signing identity]{1}."
-msgstr "Quando estiver pronto para publicar um aplicação real, consulte o guia de instruções da Briefcase sobre [Configuração de uma identidade de assinatura de código do macOS]{1}"
+msgstr "Quando estiver pronto para publicar uma aplicação real, consulte o guia de instruções do Briefcase sobre [Configurar uma identidade de assinatura de código do Windows]{1}"
 
 #: docs/en/tutorial/tutorial-3.md:465
-#, fuzzy
 msgid "Once this step completes, the `dist` folder will contain a file named `Hello_World-0.0.1.msi`. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
-msgstr "Quando essa etapa for concluída, a pasta `dist` conterá um ficheiro chamado `Hello_World-0.0.1.msi`. Se você clicar duas vezes nesse instalador para executá-lo, deverá passar por um processo familiar de instalação do Windows. Após a conclusão da instalação, haverá uma entrada \"Hello World\" em seu menu Iniciar."
+msgstr "Quando este passo estiver concluído, a pasta `dist` vai conter um ficheiro chamado `Hello_World-0.0.1.msi`. Se clicar duas vezes nesse instalador para executá-lo, deverá passar por um processo familiar de instalação do Windows. Após a conclusão da instalação, vai existir uma entrada \"Hello World\" no seu menu Iniciar."
 
 #: docs/en/tutorial/tutorial-3.md:471
-#, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to [Tutorial 4]{1} to find out..."
-msgstr "Agora temos nossa aplicação empacotado para distribuição em plataformas de desktop. Mas o que acontece quando precisamos atualizar o código em nossa aplicação? Como podemos colocar essas atualizações em nossa aplicação empacotado? Consulte o [Tutorial 4]{1} para descobrir..."
+msgstr "Agora temos a nossa aplicação empacotada para distribuição em plataformas de ambiente de trabalho. Mas o que acontece quando precisamos atualizar o código da nossa aplicação? Como colocamos essas atualizações na nossa aplicação empacotada? Consulte o [Tutorial 4]{1} para descobrir..."
 
 #: docs/en/tutorial/tutorial-4.md:1
-#, fuzzy
 msgid "Tutorial 4 - Updating your application"
-msgstr "Tutorial 4 - Atualizando sua aplicação"
+msgstr "Tutorial 4 - Atualizar a sua aplicação"
 
 #: docs/en/tutorial/tutorial-4.md:3
-#, fuzzy
 msgid "In the last tutorial, we packaged our application as a native application. If you're dealing with a real-world app, that isn't going to be the end of the story - you'll likely do some testing, discover problems, and need to make some changes. Even if your application is perfect, you'll eventually want to publish version 2 of your application with improvements."
-msgstr "No último tutorial, empacotamos nossa aplicação como um aplicação nativo. Se estiver lidando com um aplicação do mundo real, esse não será o fim da história - você provavelmente fará alguns testes, descobrirá problemas e precisará fazer algumas alterações. Mesmo que o sua aplicação seja perfeito, você eventualmente desejará publicar a versão 2 do sua aplicação com melhorias."
+msgstr "No último tutorial, empacotamos a nossa aplicação como uma aplicação nativa. Se estiver a lidar com uma aplicação do mundo real, este não vai ser o fim da história - provavelmente fará alguns testes, descobrirá problemas e vai precisar de fazer algumas alterações. Mesmo que a sua aplicação seja perfeita, eventualmente desejará publicar a versão 2 da sua aplicação com melhorias."
 
 #: docs/en/tutorial/tutorial-4.md:5
-#, fuzzy
 msgid "So - how do you update your installed app when you make code changes?"
-msgstr "Então, como você atualiza a aplicação instalado quando faz alterações no código?"
+msgstr "Então - como é que se atualiza a aplicação instalada quando faz alterações no código?"
 
 #: docs/en/tutorial/tutorial-4.md:7
 #, fuzzy
