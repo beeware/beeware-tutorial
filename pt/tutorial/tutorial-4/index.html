@@ -840,10 +840,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#atualize-e-execute-em-uma-unica-etapa" class="md-nav__link">
+  <a href="#atualizar-e-executar-num-unico-passo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Atualize e execute em uma única etapa
+        Atualizar e executar num único passo
       
     </span>
   </a>
@@ -1595,10 +1595,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#atualize-e-execute-em-uma-unica-etapa" class="md-nav__link">
+  <a href="#atualizar-e-executar-num-unico-passo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Atualize e execute em uma única etapa
+        Atualizar e executar num único passo
       
     </span>
   </a>
@@ -1731,7 +1731,7 @@ maneira mais fácil - pode atualizar o código do seu bolo de aplicação existe
 <span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1743,25 +1743,25 @@ maneira mais fácil - pode atualizar o código do seu bolo de aplicação existe
 <span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 </div>
 </div>
 </div>
-<p>Se o Briefcase não conseguir encontrar o modelo de andaime, ele invocará
+<p>Se o Briefcase não conseguir encontrar o modelo de andaime, ele vai invocar
 automaticamente o <code>create</code> para gerar um novo andaime.</p>
 <p>Agora que atualizamos o código do instalador, podemos executar o <code>briefcase
 build</code> para recompilar a aplicação, o <code>briefcase run</code> para executar a aplicação
-atualizado e o <code>briefcase package</code> para reembalar a aplicação para distribuição.</p>
+atualizada e o <code>briefcase package</code> para reempacotar a aplicação para
+distribuição.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>(Usuários do macOS, lembrem-se de que, conforme observado em <a href="../tutorial-3/">Tutorial
-3</a>, para o tutorial, recomendamos executar o <code>briefcase package</code>
-com o sinalizador <code>--adhoc-sign</code> para evitar a complexidade da configuração de
-uma identidade de assinatura de código e manter o tutorial o mais simples
-possível)</p>
+<p>Utilizadores do macOS, lembrem-se de que, conforme observado no <a href="../tutorial-3/">Tutorial
+3</a>, para o tutorial recomendamos executar o <code>briefcase package</code>
+com a bandeira <code>--adhoc-sign</code> para evitar a complexidade da configurar uma
+identidade de assinatura de código e manter o tutorial o mais simples possível.</p>
 </div>
-<h2 id="atualize-e-execute-em-uma-unica-etapa">Atualize e execute em uma única etapa<a class="headerlink" href="#atualize-e-execute-em-uma-unica-etapa" title="Permanent link">&para;</a></h2>
+<h2 id="atualizar-e-executar-num-unico-passo">Atualizar e executar num único passo<a class="headerlink" href="#atualizar-e-executar-num-unico-passo" title="Permanent link">&para;</a></h2>
 <p>Se estiver iterando rapidamente as alterações no código, provavelmente desejará
 fazer uma alteração no código, atualizar a aplicação e executá-lo novamente de
 imediato. Para a maioria das finalidades, o modo de desenvolvedor (<code>briefcase
@@ -1780,18 +1780,18 @@ HelloWorld</code>, adicione um método utilitário para gerar uma saudação apr
 dependendo do valor do nome que foi fornecido:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="k">else</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;Olá, desconhecido&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;Olá, desconhecido&quot;</span>
 </code></pre></div>
 <p>Em seguida, modifique a chamada de retorno <code>say_hello</code> para usar esse novo
 método utilitário:</p>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">dizer_olá</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
- <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
- <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
- <span class="s2">&quot;Olá!&quot;</span><span class="p">,</span>
- <span class="p">)</span>
+        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+            <span class="s2">&quot;Olá!&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>Execute sua aplicação no modo de desenvolvimento (com <code>briefcase dev</code>) para
@@ -1808,7 +1808,7 @@ aplicação com um único comando:</p>
 <span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 
 <span class="go">[helloworld] A compilar a aplicação...</span>
 <span class="go">...</span>
@@ -1852,7 +1852,7 @@ aplicação com um único comando:</p>
 <span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 </code></pre></div>
