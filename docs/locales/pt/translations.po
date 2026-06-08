@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 10:01+0000\n"
-"PO-Revision-Date: 2026-06-08 10:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-08 10:01+0000\nPO-Revision-Date: 2026-06-08 20:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -3960,7 +3948,6 @@ msgstr ""
 "[helloworld] Aplicação atualizada."
 
 #: docs/en/tutorial/tutorial-4.md:83
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase update\n"
 "\n"
@@ -3978,26 +3965,9 @@ msgid ""
 "\n"
 "\n"
 "[helloworld] Application updated."
-msgstr ""
-"(beeware-venv) $ briefcase update\n"
-"\n"
-"[helloworld] A finalizar a configuração da aplicação...\n"
-"A direcionar para ubuntu:jammy (base de fornecedor Debian)\n"
-"A determinar a versão da glibc... concluído\n"
-"A direcionar para glibc 2.35\n"
-"A direcionar para Python 3.10\n"
-"\n"
-"[helloworld] A atualizar o código da aplicação...\n"
-"A instalar src/helloworld... concluído\n"
-"\n"
-"[helloworld] A remover conteúdo desnecessário da aplicação...\n"
-"A remover conteúdo desnecessário do pacote da aplicação... concluído\n"
-"\n"
-"\n"
-"[helloworld] Aplicação atualizado."
+msgstr "(beeware-venv) $ briefcase update\n\n[helloworld] A finalizar a configuração da aplicação...\nA direcionar para ubuntu:jammy (base de fornecedor Debian)\nA determinar a versão da glibc... concluído\nA direcionar para glibc 2.35\nA direcionar para Python 3.10\n\n[helloworld] A atualizar o código da aplicação...\nA instalar src/helloworld... concluído\n\n[helloworld] A remover conteúdo desnecessário da aplicação...\nA remover conteúdo desnecessário do pacote da aplicação... concluído\n\n\n[helloworld] Aplicação atualizada."
 
 #: docs/en/tutorial/tutorial-4.md:106
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase update\n"
 "\n"
@@ -4008,36 +3978,23 @@ msgid ""
 "Removing unneeded app bundle content... done\n"
 "\n"
 "[helloworld] Application updated."
-msgstr ""
-"(beeware-venv) C:\\...>briefcase update\n"
-"\n"
-"[helloworld] A atualizar o código da aplicação...\n"
-"A instalar src/helloworld... concluído\n"
-"\n"
-"[helloworld] A remover conteúdo desnecessário da aplicação...\n"
-"A remover conteúdo desnecessário do pacote da aplicação... concluído\n"
-"\n"
-"[helloworld] Aplicação atualizado."
+msgstr "(beeware-venv) C:\\...>briefcase update\n\n[helloworld] A atualizar o código da aplicação...\nA instalar src/helloworld... concluído\n\n[helloworld] A remover conteúdo desnecessário da aplicação...\nA remover conteúdo desnecessário do pacote da aplicação... concluído\n\n[helloworld] Aplicação atualizada."
 
 #: docs/en/tutorial/tutorial-4.md:120
-#, fuzzy
 msgid "If Briefcase can't find the scaffolded template, it will automatically invoke `create` to generate a fresh scaffold."
-msgstr "Se o Briefcase não conseguir encontrar o modelo de andaime, ele invocará automaticamente o `create` para gerar um novo andaime."
+msgstr "Se o Briefcase não conseguir encontrar o modelo de andaime, ele vai invocar automaticamente o `create` para gerar um novo andaime."
 
 #: docs/en/tutorial/tutorial-4.md:122
-#, fuzzy
 msgid "Now that we've updated the installer code, we can then run `briefcase build` to re-compile the app, `briefcase run` to run the updated app, and `briefcase package` to repackage the application for distribution."
-msgstr "Agora que atualizamos o código do instalador, podemos executar o `briefcase build` para recompilar a aplicação, o `briefcase run` para executar a aplicação atualizado e o `briefcase package` para reembalar a aplicação para distribuição."
+msgstr "Agora que atualizamos o código do instalador, podemos executar o `briefcase build` para recompilar a aplicação, o `briefcase run` para executar a aplicação atualizada e o `briefcase package` para reempacotar a aplicação para distribuição."
 
 #: docs/en/tutorial/tutorial-4.md:126
-#, fuzzy
 msgid "macOS users, remember that as noted in [Tutorial 3]{1}, for the tutorial we recommend running `briefcase package` with the `--adhoc-sign` flag to avoid the complexity of setting up a code signing identity and keep the tutorial as simple as possible."
-msgstr "(Usuários do macOS, lembrem-se de que, conforme observado em [Tutorial 3]{1}, para o tutorial, recomendamos executar o `briefcase package` com o sinalizador `--adhoc-sign` para evitar a complexidade da configuração de uma identidade de assinatura de código e manter o tutorial o mais simples possível)"
+msgstr "Utilizadores do macOS, lembrem-se de que, conforme observado no [Tutorial 3]{1}, para o tutorial recomendamos executar o `briefcase package` com a bandeira `--adhoc-sign` para evitar a complexidade da configurar uma identidade de assinatura de código e manter o tutorial o mais simples possível."
 
 #: docs/en/tutorial/tutorial-4.md:130
-#, fuzzy
 msgid "Update and run in one step"
-msgstr "Atualize e execute em uma única etapa"
+msgstr "Atualizar e executar num único passo"
 
 #: docs/en/tutorial/tutorial-4.md:132
 #, fuzzy
@@ -4055,19 +4012,13 @@ msgid "At the top of the file, between the imports and the `class HelloWorld` de
 msgstr "Na parte superior do ficheiro, entre as importações e a definição da `classe HelloWorld`, adicione um método utilitário para gerar uma saudação apropriada, dependendo do valor do nome que foi fornecido:"
 
 #: docs/en/tutorial/tutorial-4.md:138
-#, fuzzy
 msgid ""
 "def greeting(name):\n"
 "    if name:\n"
 "        return f\"Hello, {name}\"\n"
 "    else:\n"
 "        return \"Hello, stranger\""
-msgstr ""
-"def greeting(name):\n"
-"    if name:\n"
-"    return f\"Olá, {name}\"\n"
-"    else:\n"
-"    return \"Olá, desconhecido\""
+msgstr "def greeting(name):\n    if name:\n        return f\"Olá, {name}\"\n    else:\n        return \"Olá, desconhecido\""
 
 #: docs/en/tutorial/tutorial-4.md:146
 #, fuzzy
@@ -4075,7 +4026,6 @@ msgid "Then, modify the `say_hello` callback to use this new utility method:"
 msgstr "Em seguida, modifique a chamada de retorno `say_hello` para usar esse novo método utilitário:"
 
 #: docs/en/tutorial/tutorial-4.md:148
-#, fuzzy
 msgid ""
 "async def say_hello(self, widget):\n"
 "    await self.main_window.dialog(\n"
@@ -4084,14 +4034,7 @@ msgid ""
 "            \"Hi there!\",\n"
 "        )\n"
 "    )"
-msgstr ""
-"async def dizer_olá(self, widget):\n"
-"    await self.main_window.dialog(\n"
-" toga.InfoDialog(\n"
-" greeting(self.name_input.value),\n"
-" \"Olá!\",\n"
-" )\n"
-"    )"
+msgstr "async def say_hello(self, widget):\n    await self.main_window.dialog(\n        toga.InfoDialog(\n            greeting(self.name_input.value),\n            \"Olá!\",\n        )\n    )"
 
 #: docs/en/tutorial/tutorial-4.md:158
 #, fuzzy
@@ -4099,7 +4042,6 @@ msgid "Run your app in development mode (with `briefcase dev`) to confirm that t
 msgstr "Execute sua aplicação no modo de desenvolvimento (com `briefcase dev`) para confirmar que a nova lógica funciona; em seguida, atualize, crie e execute a aplicação com um único comando:"
 
 #: docs/en/tutorial/tutorial-4.md:162
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase run -u\n"
 "\n"
@@ -4117,23 +4059,7 @@ msgid ""
 "[helloworld] Built build/helloworld/macos/app/Hello World.app\n"
 "\n"
 "[helloworld] Starting app..."
-msgstr ""
-"(beeware-venv) $ briefcase run -u\n"
-"\n"
-"[helloworld] A atualizar o código da aplicação...\n"
-"A instalar src/helloworld... concluído\n"
-"\n"
-"[helloworld] A remover conteúdo desnecessário da aplicação...\n"
-"A remover conteúdo desnecessário do pacote da aplicação... concluído\n"
-"\n"
-"[helloworld] Aplicação atualizado.\n"
-"\n"
-"[helloworld] A compilar a aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] Compilado build/helloworld/macos/app/Hello World.app\n"
-"\n"
-"[helloworld] A iniciar a aplicação..."
+msgstr "(beeware-venv) $ briefcase run -u\n\n[helloworld] A atualizar o código da aplicação...\nA instalar src/helloworld... concluído\n\n[helloworld] A remover conteúdo desnecessário da aplicação...\nA remover conteúdo desnecessário do pacote da aplicação... concluído\n\n[helloworld] Aplicação atualizada.\n\n[helloworld] A compilar a aplicação...\n...\n\n[helloworld] Compilado build/helloworld/macos/app/Hello World.app\n\n[helloworld] A iniciar a aplicação..."
 
 #: docs/en/tutorial/tutorial-4.md:185
 msgid ""
@@ -4184,7 +4110,6 @@ msgstr ""
 "[helloworld] A iniciar a aplicação..."
 
 #: docs/en/tutorial/tutorial-4.md:214
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase run -u\n"
 "\n"
@@ -4197,18 +4122,7 @@ msgid ""
 "[helloworld] Application updated.\n"
 "\n"
 "[helloworld] Starting app..."
-msgstr ""
-"(beeware-venv) C:\\...>briefcase run -u\n"
-"\n"
-"[helloworld] A atualizar o código da aplicação...\n"
-"A instalar src/helloworld... concluído\n"
-"\n"
-"[helloworld] A remover conteúdo desnecessário da aplicação...\n"
-"A remover conteúdo desnecessário do pacote da aplicação... concluído\n"
-"\n"
-"[helloworld] Aplicação atualizado.\n"
-"\n"
-"[helloworld] A iniciar a aplicação..."
+msgstr "(beeware-venv) C:\\...>briefcase run -u\n\n[helloworld] A atualizar o código da aplicação...\nA instalar src/helloworld... concluído\n\n[helloworld] A remover conteúdo desnecessário da aplicação...\nA remover conteúdo desnecessário do pacote da aplicação... concluído\n\n[helloworld] Aplicação atualizada.\n\n[helloworld] A iniciar a aplicação..."
 
 #: docs/en/tutorial/tutorial-4.md:230
 #, fuzzy
