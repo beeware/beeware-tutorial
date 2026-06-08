@@ -2153,7 +2153,7 @@ compilar o pacote da aplicação dentro da imagem. Após a conclusão, a pasta
 <span class="go">** AVISO: Nenhuma identidade de assinatura fornecida **</span>
 <span class="go">*************************************************************************</span>
 
-<span class="go">    O Briefcase não assinará a aplicação. Para fornecer uma identidade de assinatura,</span>
+<span class="go">    O Briefcase não vai assinar a aplicação. Para fornecer uma identidade de assinatura,</span>
 <span class="go">    use a opção `--identity`; ou, para desativar explicitamente a assinatura,</span>
 <span class="go">    use `--adhoc-sign`.</span>
 
@@ -2161,42 +2161,43 @@ compilar o pacote da aplicação dentro da imagem. Após a conclusão, a pasta
 
 <span class="go">[helloworld] A compilar MSI...</span>
 <span class="go">A compilar manifesto da aplicação...</span>
-<span class="go">Compilando... concluído</span>
+<span class="go">A compilar... concluído</span>
 
 <span class="go">A compilar instalador da aplicação...</span>
 <span class="go">helloworld.wxs</span>
 <span class="go">helloworld-manifest.wxs</span>
-<span class="go">Compilando... concluído</span>
+<span class="go">A compilar... concluído</span>
 
-<span class="go">Vinculando instalador da aplicação...</span>
-<span class="go">Vinculando... concluído</span>
+<span class="go">A vincular instalador da aplicação...</span>
+<span class="go">A vincular... concluído</span>
 
 <span class="go">[helloworld] Empacotado em dist\Hello_World-0.0.1.msi</span>
 </code></pre></div>
-<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code>, ou seja, estamos assinando nossa
-aplicação com credenciais <em>ad hoc</em>, credenciais temporárias que só funcionarão
-em seu computador. Fizemos isso para manter a simplicidade do tutorial. A
-configuração de identidades de assinatura de código é um pouco complicada, e
-elas só são <em>necessárias</em> se você pretende distribuir a aplicação para outras
-pessoas. Se estivéssemos publicando um aplicação real para ser usado por outras
-pessoas, precisaríamos especificar credenciais reais.</p>
-<p>Quando estiver pronto para publicar um aplicação real, consulte o guia de
-instruções da Briefcase sobre <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Configuração de uma identidade de assinatura de
-código do
-macOS</a></p>
-<p>Quando essa etapa for concluída, a pasta <code>dist</code> conterá um ficheiro chamado
-<code>Hello_World-0.0.1.msi</code>. Se você clicar duas vezes nesse instalador para
+<p>Neste exemplo, não estamos a assinar a sua aplicação. Como resultado, quando usa
+o instalador, vai obter um aviso do sistema de que a aplicação vem de um
+desenvolvedor desconhecido. Nós fazemos isto para manter o tutorial simples.
+Definir identidades de assinatura de código é um pouco complexo, e só são
+<em>requeridas</em> quando tem a intenção de distribuir a sua aplicação a outros. Se
+estivéssemos a publicar uma aplicação real para outros usarem, íamos precisar de
+especificar uma identidade de assinatura real; quando essa aplicação assinada
+está instalada, o sistema vai notificar o utilizador de que a aplicação é da
+identidade conhecida associada com o certificado.</p>
+<p>Quando estiver pronto para publicar uma aplicação real, consulte o guia de
+instruções do Briefcase sobre <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Configurar uma identidade de assinatura de código
+do Windows</a></p>
+<p>Quando este passo estiver concluído, a pasta <code>dist</code> vai conter um ficheiro
+chamado <code>Hello_World-0.0.1.msi</code>. Se clicar duas vezes nesse instalador para
 executá-lo, deverá passar por um processo familiar de instalação do Windows.
-Após a conclusão da instalação, haverá uma entrada "Hello World" em seu menu
-Iniciar.</p>
+Após a conclusão da instalação, vai existir uma entrada "Hello World" no seu
+menu Iniciar.</p>
 </div>
 </div>
 </div>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos nossa aplicação empacotado para distribuição em plataformas de
-desktop. Mas o que acontece quando precisamos atualizar o código em nossa
-aplicação? Como podemos colocar essas atualizações em nossa aplicação
-empacotado? Consulte o <a href="../tutorial-4/">Tutorial 4</a> para descobrir&hellip;</p>
+<p>Agora temos a nossa aplicação empacotada para distribuição em plataformas de
+ambiente de trabalho. Mas o que acontece quando precisamos atualizar o código da
+nossa aplicação? Como colocamos essas atualizações na nossa aplicação
+empacotada? Consulte o <a href="../tutorial-4/">Tutorial 4</a> para descobrir&hellip;</p>
 
 
 
