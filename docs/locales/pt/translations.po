@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 20:01+0000\n"
-"PO-Revision-Date: 2026-06-08 20:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-08 20:01+0000\nPO-Revision-Date: 2026-06-09 01:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -4034,19 +4022,16 @@ msgid "Update and run in one step"
 msgstr "Atualizar e executar num único passo"
 
 #: docs/en/tutorial/tutorial-4.md:132
-#, fuzzy
 msgid "If you're rapidly iterating code changes, you'll likely want to make a code change, update the application, and immediately re-run your application. For most purposes, developer mode (`briefcase dev`) will be the easiest way to do this sort of rapid iteration; however, if you're testing something about how your application runs as a native binary, or hunting a bug that only manifests when your application is in packaged form, you may need to use repeated calls to `briefcase run`. To simplify the process of updating and running the bundled app, Briefcase has a shortcut to support this usage pattern - the `-u` (or `--update`) option on the `run` command."
-msgstr "Se estiver iterando rapidamente as alterações no código, provavelmente desejará fazer uma alteração no código, atualizar a aplicação e executá-lo novamente de imediato. Para a maioria das finalidades, o modo de desenvolvedor (`briefcase dev`) será a maneira mais fácil de fazer esse tipo de iteração rápida; no entanto, se estiver testando algo sobre como a aplicação é executado como um binário nativo ou procurando um bug que só se manifesta quando a aplicação está no formato empacotado, talvez seja necessário usar chamadas repetidas para `briefcase run`. Para simplificar o processo de atualização e execução da aplicação empacotado, o Briefcase tem um atalho para suportar esse padrão de uso - a opção `-u` (ou `--update`) no comando `run`."
+msgstr "Se está a iterar rapidamente alterações de código, provavelmente vai querer fazer uma mudança de código, atualizar a aplicação e imediatamente re-correr a sua aplicação. Para a maioria dos propósitos, o modo de desenvolvedor (`briefcase dev`) será a maneira mais fácil de fazer esse tipo de iteração rápida; no entanto, se estiver a testar algo sobre como sua aplicação corre como um binário nativo, ou caçando um bug que só se manifesta quando sua aplicação está em formato empacotado, pode precisar de usar chamadas repetidas para `briefcase run`. Para simplificar o processo de atualização e execução do bolo dq aplicação, o Briefcase tem um atalho para suportar este padrão de uso - a opção `-u` (ou `-update`) no comando `run`."
 
 #: docs/en/tutorial/tutorial-4.md:134
-#, fuzzy
 msgid "Let's try making another change. You may have noticed that if you don't type a name in the text input box, the dialog will say \"Hello, \". Let's modify the `say_hello` function again to handle this edge case."
-msgstr "Vamos tentar fazer outra alteração. Você deve ter notado que, se não digitar um nome na caixa de entrada de texto, a caixa de diálogo dirá \"Hello, \". Vamos modificar a função `say_hello` novamente para lidar com esse caso extremo."
+msgstr "Vamos tentar fazer outra alteração. Deve ter notado que, se não escrever um nome na caixa de entrada de texto, a caixa de diálogo vai dizer \"Olá, \". Vamos modificar a função `say_hello` novamente para lidar com esse caso extremo."
 
 #: docs/en/tutorial/tutorial-4.md:136
-#, fuzzy
 msgid "At the top of the file, between the imports and the `class HelloWorld` definition, add a utility method to generate an appropriate greeting depending on the value of the name that has been provided:"
-msgstr "Na parte superior do ficheiro, entre as importações e a definição da `classe HelloWorld`, adicione um método utilitário para gerar uma saudação apropriada, dependendo do valor do nome que foi fornecido:"
+msgstr "No topo do ficheiro, entre as importações e a definição da `classe HelloWorld`, adicione um método utilitário para gerar uma saudação apropriada, dependendo do valor do nome que foi fornecido:"
 
 #: docs/en/tutorial/tutorial-4.md:138
 msgid ""
@@ -4063,9 +4048,8 @@ msgstr ""
 "        return \"Olá, desconhecido\""
 
 #: docs/en/tutorial/tutorial-4.md:146
-#, fuzzy
 msgid "Then, modify the `say_hello` callback to use this new utility method:"
-msgstr "Em seguida, modifique a chamada de retorno `say_hello` para usar esse novo método utilitário:"
+msgstr "Depois, modifique a chamada de retorno `say_hello` para usar esse novo método utilitário:"
 
 #: docs/en/tutorial/tutorial-4.md:148
 msgid ""
@@ -4086,9 +4070,8 @@ msgstr ""
 "    )"
 
 #: docs/en/tutorial/tutorial-4.md:158
-#, fuzzy
 msgid "Run your app in development mode (with `briefcase dev`) to confirm that the new logic works; then update, build and run the app with one command:"
-msgstr "Execute sua aplicação no modo de desenvolvimento (com `briefcase dev`) para confirmar que a nova lógica funciona; em seguida, atualize, crie e execute a aplicação com um único comando:"
+msgstr "Execute a sua aplicação no modo de desenvolvimento (com `briefcase dev`) para confirmar que a nova lógica funciona; em seguida, atualize, crie e execute a aplicação com um único comando:"
 
 #: docs/en/tutorial/tutorial-4.md:162
 msgid ""
@@ -4201,29 +4184,24 @@ msgstr ""
 "[helloworld] A iniciar a aplicação..."
 
 #: docs/en/tutorial/tutorial-4.md:230
-#, fuzzy
 msgid "The package command also accepts the `-u` argument, so if you make a change to your application code and want to repackage immediately, you can run `briefcase package -u`."
-msgstr "O comando package também aceita o argumento `-u`, portanto, se você fizer uma alteração no código da aplicação e quiser reempacotar imediatamente, poderá executar `briefcase package -u`."
+msgstr "O comando package também aceita o argumento `-u`, assim se fizer uma alteração no código da sua aplicação e quiser reempacotar imediatamente, poderá executar `briefcase package -u`."
 
 #: docs/en/tutorial/tutorial-4.md:234
-#, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms, and we've been able to update the code in our application."
-msgstr "Agora temos nossa aplicação empacotado para distribuição em plataformas de desktop e conseguimos atualizar o código em nossa aplicação."
+msgstr "Agora temos a nossa aplicação empacotada para distribuição em plataformas de ambiente de trabalho e conseguimos atualizar o código na nossa aplicação."
 
 #: docs/en/tutorial/tutorial-4.md:236
-#, fuzzy
 msgid "But what about mobile? In [Tutorial 5]{1}, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
-msgstr "Mas e quanto ao celular? No [Tutorial 5]{1}, converteremos nossa aplicação em um aplicação móvel e o implantaremos em um simulador de dispositivo e em um telefone."
+msgstr "Mas e quanto aos dispositivos móveis? No [Tutorial 5]{1}, vamos converter a nossa aplicação num aplicação móvel e vamos implantá-la num simulador de dispositivo, e num telemóvel."
 
 #: docs/en/tutorial/tutorial-5/android.md:1
-#, fuzzy
 msgid "Tutorial 5 - Taking it mobile: Android"
-msgstr "Tutorial 5 - Levando para o Mobile: Android"
+msgstr "Tutorial 5 - Adaptar para móvel: Android"
 
 #: docs/en/tutorial/tutorial-5/android.md:3
-#, fuzzy
 msgid "Now, we're going to take our application, and deploy it as an Android application."
-msgstr "Agora, vamos pegar nossa aplicação e implantá-lo como um aplicação Android."
+msgstr "Agora, vamos pegar na nossa aplicação e implantá-la como uma aplicação Android."
 
 #: docs/en/tutorial/tutorial-5/android.md:5
 #, fuzzy
