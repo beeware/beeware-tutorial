@@ -829,10 +829,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#atualizacao-do-codigo-da-aplicacao" class="md-nav__link">
+  <a href="#atualizar-o-codigo-da-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Atualização do código da aplicação
+        Atualizar o código da aplicação
       
     </span>
   </a>
@@ -1584,10 +1584,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#atualizacao-do-codigo-da-aplicacao" class="md-nav__link">
+  <a href="#atualizar-o-codigo-da-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Atualização do código da aplicação
+        Atualizar o código da aplicação
       
     </span>
   </a>
@@ -1642,66 +1642,65 @@ de fazer algumas alterações. Mesmo que a sua aplicação seja perfeita,
 eventualmente desejará publicar a versão 2 da sua aplicação com melhorias.</p>
 <p>Então - como é que se atualiza a aplicação instalada quando faz alterações no
 código?</p>
-<h2 id="atualizacao-do-codigo-da-aplicacao">Atualização do código da aplicação<a class="headerlink" href="#atualizacao-do-codigo-da-aplicacao" title="Permanent link">&para;</a></h2>
-<p>Atualmente, nossa aplicação imprime no console quando você pressiona o botão. No
-entanto, os aplicações de GUI não devem realmente usar o console para saída.
-Eles precisam usar caixas de diálogo para se comunicar com os utilizadors.</p>
-<p>Vamos adicionar uma caixa de diálogo para dizer olá, em vez de escrever no
-console. Modifique o retorno de chamada <code>say_hello</code> para que ele tenha a
-seguinte aparência:</p>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">dizer_olá</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+<h2 id="atualizar-o-codigo-da-aplicacao">Atualizar o código da aplicação<a class="headerlink" href="#atualizar-o-codigo-da-aplicacao" title="Permanent link">&para;</a></h2>
+<p>Atualmente, a nossa aplicação escreve na consola quando se pressiona o botão. No
+entanto, as aplicações de GUI não devem realmente usar a consola para os
+resultados. Elas precisam usar caixas de diálogo para comunicar com os
+utilizadores.</p>
+<p>Vamos adicionar uma caixa de diálogo para dizer olá, em vez de escrever na
+consola. Modifique chamada de retorno <code>say_hello</code> para que se pareça com isto:</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
- <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
- <span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
- <span class="s2">&quot;E aí!&quot;</span><span class="p">,</span>
- <span class="p">)</span>
+        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Olá!&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Precisamos criar o método <code>async</code> para que, quando exibirmos a caixa de diálogo,
-o restante da aplicação continue a ser executado. Não se preocupe muito com esse
-detalhe neste momento - daremos uma explicação mais detalhada no <a href="../tutorial-8/">Tutorial
+<p>Precisamos criar o método <code>async</code> para que quando mostrarmos a caixa de diálogo,
+o resto da aplicação continue a ser executada. Não se preocupe muito com esse
+detalhe neste momento - vamos dar uma explicação mais detalhada no <a href="../tutorial-8/">Tutorial
 8</a>.</p>
-<p>Isso instrui o Toga a abrir uma caixa de diálogo modal quando o botão é
+<p>Isto dirige o Toga a abrir uma caixa de diálogo modal quando o botão é
 pressionado.</p>
-<p>Se você executar <code>briefcase dev</code>, digitar um nome e pressionar o botão, verá a
+<p>Se executar <code>briefcase dev</code>, digitar um nome e pressionar o botão, vai ver a
 nova caixa de diálogo:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <figure>
-<p><img alt="Caixa de diálogo Hello World Tutorial 4, no
+<p><img alt="Caixa de diálogo Hello World Tutorial 4, em
 macOS" src="../../images/macOS/tutorial-4.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
 <figure>
-<p><img alt="Caixa de diálogo do Tutorial 4 do Hello World, no
+<p><img alt="Caixa de diálogo Hello World Tutorial 4, em
 Linux" src="../../images/linux/tutorial-4.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
 <figure>
-<p><img alt="Diálogo do Tutorial 4 do Hello World, no
+<p><img alt="Caixa de diálogo Hello World Tutorial 4, em
 Windows" src="../../images/windows/tutorial-4.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>No entanto, se você executar o <code>briefcase run</code>, a caixa de diálogo não será
-exibida.</p>
-<p>Por que isso acontece? Bem, o <code>briefcase dev</code> opera executando seu código no
-local - ele tenta produzir o ambiente de tempo de execução mais realista
-possível para seu código, mas não fornece nem usa nenhuma infraestrutura da
-plataforma para empacotar seu código como um aplicação. Parte do processo de
-empacotamento da aplicação envolve a cópia do código <em>para</em> o pacote de
-aplicações e, no momento, a aplicação ainda contém o código antigo.</p>
-<p>Portanto, precisamos dizer ao briefcase para atualizar sua aplicação, copiando a
-nova versão do código. Poderíamos fazer isso excluindo o diretório da plataforma
-antiga e começando do zero. No entanto, o Briefcase oferece uma maneira mais
-fácil: você pode atualizar o código do sua aplicação empacotado existente:</p>
+<p>No entanto, se correr <code>briefcase run</code>, a caixa de diálogo não vai aparecer.</p>
+<p>Porquêe isto? Bem, o <code>briefcase dev</code> opera executando o seu código no local -
+ele tenta produzir um ambiente de tempo de execução o mais realista possível
+para seu código, mas não fornece nem usa nada da infraestrutura da plataforma
+para envolver o seu código como uma aplicação. Parte do processo de
+empacotamento da aplicação envolve copiar o código <em>para</em> o bolo da aplicação -
+e no momento, a sua aplicação ainda contém o código antigo.</p>
+<p>Assim - precisamos dizer ao briefcase para atualizar a sua aplicação, copiando a
+nova versão do código. Nós <em>podíamos</em> fazer isso apagando o diretório da
+plataforma antiga e começando do zero. No entanto, o Briefcase oferece uma
+maneira mais fácil - pode atualizar o código do seu bolo de aplicação existente:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1713,7 +1712,7 @@ fácil: você pode atualizar o código do sua aplicação empacotado existente:<
 <span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
