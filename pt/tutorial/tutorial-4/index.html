@@ -1762,30 +1762,30 @@ com a bandeira <code>--adhoc-sign</code> para evitar a complexidade da configura
 identidade de assinatura de código e manter o tutorial o mais simples possível.</p>
 </div>
 <h2 id="atualizar-e-executar-num-unico-passo">Atualizar e executar num único passo<a class="headerlink" href="#atualizar-e-executar-num-unico-passo" title="Permanent link">&para;</a></h2>
-<p>Se estiver iterando rapidamente as alterações no código, provavelmente desejará
-fazer uma alteração no código, atualizar a aplicação e executá-lo novamente de
-imediato. Para a maioria das finalidades, o modo de desenvolvedor (<code>briefcase
-dev</code>) será a maneira mais fácil de fazer esse tipo de iteração rápida; no
-entanto, se estiver testando algo sobre como a aplicação é executado como um
-binário nativo ou procurando um bug que só se manifesta quando a aplicação está
-no formato empacotado, talvez seja necessário usar chamadas repetidas para
-<code>briefcase run</code>. Para simplificar o processo de atualização e execução da
-aplicação empacotado, o Briefcase tem um atalho para suportar esse padrão de uso
-- a opção <code>-u</code> (ou <code>--update</code>) no comando <code>run</code>.</p>
-<p>Vamos tentar fazer outra alteração. Você deve ter notado que, se não digitar um
-nome na caixa de entrada de texto, a caixa de diálogo dirá "Hello, ". Vamos
+<p>Se está a iterar rapidamente alterações de código, provavelmente vai querer
+fazer uma mudança de código, atualizar a aplicação e imediatamente re-correr a
+sua aplicação. Para a maioria dos propósitos, o modo de desenvolvedor
+(<code>briefcase dev</code>) será a maneira mais fácil de fazer esse tipo de iteração
+rápida; no entanto, se estiver a testar algo sobre como sua aplicação corre como
+um binário nativo, ou caçando um bug que só se manifesta quando sua aplicação
+está em formato empacotado, pode precisar de usar chamadas repetidas para
+<code>briefcase run</code>. Para simplificar o processo de atualização e execução do bolo
+dq aplicação, o Briefcase tem um atalho para suportar este padrão de uso - a
+opção <code>-u</code> (ou <code>-update</code>) no comando <code>run</code>.</p>
+<p>Vamos tentar fazer outra alteração. Deve ter notado que, se não escrever um nome
+na caixa de entrada de texto, a caixa de diálogo vai dizer "Olá, ". Vamos
 modificar a função <code>say_hello</code> novamente para lidar com esse caso extremo.</p>
-<p>Na parte superior do ficheiro, entre as importações e a definição da <code>classe
-HelloWorld</code>, adicione um método utilitário para gerar uma saudação apropriada,
-dependendo do valor do nome que foi fornecido:</p>
+<p>No topo do ficheiro, entre as importações e a definição da <code>classe HelloWorld</code>,
+adicione um método utilitário para gerar uma saudação apropriada, dependendo do
+valor do nome que foi fornecido:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;Olá, desconhecido&quot;</span>
 </code></pre></div>
-<p>Em seguida, modifique a chamada de retorno <code>say_hello</code> para usar esse novo
-método utilitário:</p>
+<p>Depois, modifique a chamada de retorno <code>say_hello</code> para usar esse novo método
+utilitário:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
         <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
@@ -1794,7 +1794,7 @@ método utilitário:</p>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Execute sua aplicação no modo de desenvolvimento (com <code>briefcase dev</code>) para
+<p>Execute a sua aplicação no modo de desenvolvimento (com <code>briefcase dev</code>) para
 confirmar que a nova lógica funciona; em seguida, atualize, crie e execute a
 aplicação com um único comando:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
@@ -1859,15 +1859,15 @@ aplicação com um único comando:</p>
 </div>
 </div>
 </div>
-<p>O comando package também aceita o argumento <code>-u</code>, portanto, se você fizer uma
-alteração no código da aplicação e quiser reempacotar imediatamente, poderá
-executar <code>briefcase package -u</code>.</p>
+<p>O comando package também aceita o argumento <code>-u</code>, assim se fizer uma alteração
+no código da sua aplicação e quiser reempacotar imediatamente, poderá executar
+<code>briefcase package -u</code>.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos nossa aplicação empacotado para distribuição em plataformas de
-desktop e conseguimos atualizar o código em nossa aplicação.</p>
-<p>Mas e quanto ao celular? No <a href="../tutorial-5/">Tutorial 5</a>, converteremos
-nossa aplicação em um aplicação móvel e o implantaremos em um simulador de
-dispositivo e em um telefone.</p>
+<p>Agora temos a nossa aplicação empacotada para distribuição em plataformas de
+ambiente de trabalho e conseguimos atualizar o código na nossa aplicação.</p>
+<p>Mas e quanto aos dispositivos móveis? No <a href="../tutorial-5/">Tutorial 5</a>,
+vamos converter a nossa aplicação num aplicação móvel e vamos implantá-la num
+simulador de dispositivo, e num telemóvel.</p>
 
 
 
