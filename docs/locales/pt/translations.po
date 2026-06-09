@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 22:01+0000\n"
-"PO-Revision-Date: 2026-06-09 22:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-09 22:01+0000\nPO-Revision-Date: 2026-06-10 01:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -4456,84 +4444,68 @@ msgid "We can now choose our desired device. Select the \"Create a new Android e
 msgstr "Agora podemos escolher o nosso dispositivo desejado. Selecione a opção \"Criar um nono emulado de Android\" e aceite a opção predefinida para o nome do dispositivo (`beePhone`)."
 
 #: docs/en/tutorial/tutorial-5/android.md:220
-#, fuzzy
 msgid "Briefcase `run` will automatically boot the virtual device. When the device is booting, you will see the Android logo:"
-msgstr "O `run` do Briefcase inicializará automaticamente o dispositivo virtual. Quando o dispositivo estiver sendo inicializado, você verá o logotipo do Android:"
+msgstr "O `run` do Briefcase vai inicializar automaticamente o dispositivo virtual. Quando o dispositivo está a arrancar, verá o logotipo do Android:"
 
 #: docs/en/tutorial/tutorial-5/android.md:222
-#, fuzzy
 msgid "![Android virtual device booting]{1}"
-msgstr "![Inicialização do dispositivo virtual Android]{1}"
+msgstr "![Android virtual device booting]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:226
-#, fuzzy
 msgid "Android virtual device booting"
-msgstr "Inicialização do dispositivo virtual Android"
+msgstr "Arranque do dispositivo virtual Android"
 
 #: docs/en/tutorial/tutorial-5/android.md:230
-#, fuzzy
 msgid "Once the device has finished booting, Briefcase will install your app on the device. You will briefly see a launcher screen:"
-msgstr "Quando o dispositivo terminar a inicialização, o Briefcase instalará sua aplicação no dispositivo. Você verá brevemente uma ecrã de inicialização:"
+msgstr "Quando o dispositivo terminar a inicialização, o Briefcase vai instalar a sua aplicação no dispositivo. Verá brevemente um ecrã de lançamento:"
 
 #: docs/en/tutorial/tutorial-5/android.md:232
-#, fuzzy
 msgid "![Android virtual device fully started, on the launcher screen]{1}"
-msgstr "![Dispositivo virtual Android totalmente iniciado, na ecrã do iniciador]{1}"
+msgstr "![Android virtual device fully started, on the launcher screen]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:236
-#, fuzzy
 msgid "Android virtual device fully started, on the launcher screen"
-msgstr "Dispositivo virtual Android totalmente iniciado, na ecrã do iniciador"
+msgstr "Dispositivo virtual Android totalmente iniciado, no ecrã do lançador"
 
 #: docs/en/tutorial/tutorial-5/android.md:240
-#, fuzzy
 msgid "The app will then start. You'll see a splash screen while the app starts up:"
-msgstr "Em seguida, a aplicação será iniciado. Você verá uma ecrã inicial enquanto a aplicação é iniciado:"
+msgstr "A aplicação será então iniciada. Vai ver um ecrã inicial enquanto a aplicação arranca:"
 
 #: docs/en/tutorial/tutorial-5/android.md:242
-#, fuzzy
 msgid "![App splash screen]{1}"
-msgstr "![Tela inicial da aplicação]{1}"
+msgstr "![App splash screen]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:246
-#, fuzzy
 msgid "App splash screen"
-msgstr "Tela inicial da aplicação"
+msgstr "Ecrã inicial da aplicação"
 
 #: docs/en/tutorial/tutorial-5/android.md:250
-#, fuzzy
 msgid "/// admonition | The emulator didn't start!"
-msgstr "/// admonition | O emulador não foi iniciado!"
+msgstr "/// admonition | O emulador não arrancou!"
 
 #: docs/en/tutorial/tutorial-5/android.md:252
-#, fuzzy
 msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the [Requirements and recommendations]{1} section of the Android developer documentation."
-msgstr "O emulador do Android é um software complexo que depende de vários recursos de hardware e do sistema operativo - recursos que podem não estar disponíveis ou habilitados em máquinas mais antigas. Se tiver alguma dificuldade para iniciar o emulador do Android, consulte a secção \"Requisitos e recomendações\" da documentação do desenvolvedor do Android."
+msgstr "O emulador de Android é um software complexo que depende de várias funcionalidades de hardware e do sistema operativo - funcionalidades que podem não estar disponíveis ou habilitadas em máquinas mais antigas. Se tiver alguma dificuldade em iniciar o emulador de Android, consulte a secção [Requisitos e recomendações]{1} da documentação de desenvolvedor de Android."
 
 #: docs/en/tutorial/tutorial-5/android.md:256
-#, fuzzy
 msgid "The first time the app starts, it needs to unpack itself onto the device. This may take a few seconds. Once it's unpacked, you'll see the Android version of our desktop app:"
-msgstr "Na primeira vez que a aplicação é iniciado, ele precisa ser descompactado no dispositivo. Isso pode levar alguns segundos. Depois de descompactado, você verá a versão para Android do nossa aplicação para desktop:"
+msgstr "Na primeira vez que a aplicação é iniciada, ela precisa de descompactar-se no dispositivo. Isso pode levar alguns segundos. Depois de descompactada, verá a versão para Android da nossa aplicação para ambiente de trabalho:"
 
 #: docs/en/tutorial/tutorial-5/android.md:258
-#, fuzzy
 msgid "![Demo app fully launched]{1}"
-msgstr "![Aplicação de demonstração totalmente lançado]{1}"
+msgstr "![Demo app fully launched]{1}"
 
 #: docs/en/tutorial/tutorial-5/android.md:262
-#, fuzzy
 msgid "Demo app fully launched"
-msgstr "Aplicação de demonstração totalmente lançado"
+msgstr "Aplicação de demonstração totalmente lançada"
 
 #: docs/en/tutorial/tutorial-5/android.md:266
-#, fuzzy
 msgid "If you fail to see your app launching, you may need to check your terminal where you ran `briefcase run` and look for any error messages."
-msgstr "Se não conseguir ver a aplicação sendo iniciado, talvez seja necessário verificar o terminal em que você executou o `briefcase run` e procurar mensagens de erro."
+msgstr "Se não conseguir ver a sua aplicação a ser lançada, talvez precise de verificar o seu terminal onde executou o `briefcase run` e procurar mensagens de erro."
 
 #: docs/en/tutorial/tutorial-5/android.md:268
-#, fuzzy
 msgid "While the app is running, you'll see a lot of messages being streamed in the console. This is a stream of the application's logs from the emulator. Typing Ctrl+C into the terminal will halt the streamed information in the console, but it will not close the emulator. This is so you can test new changes without restarting the emulator."
-msgstr "Enquanto a aplicação estiver em execução, você verá muitas mensagens sendo transmitidas no console. Esse é um fluxo de logs da aplicação do emulador. Digitar Ctrl+C no terminal interromperá as informações transmitidas no console, mas não fechará o emulador. Isso serve para que você possa testar novas alterações sem reiniciar o emulador."
+msgstr "Enquanto a aplicação estiver em execução, vai ver muitas mensagens sendo transmitidas na consola. Esse é um fluxo de relatórios da aplicação a partir do emulador. Teclar Ctrl+C no terminal vai interromper as informações transmitidas na consola, mas não vai fechar o emulador. Isso serve para que possa testar novas alterações sem reiniciar o emulador."
 
 #: docs/en/tutorial/tutorial-5/android.md:270
 #, fuzzy
