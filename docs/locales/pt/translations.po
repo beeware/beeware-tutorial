@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 17:01+0000\n"
-"PO-Revision-Date: 2026-06-10 17:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-10 17:01+0000\nPO-Revision-Date: 2026-06-10 21:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -4552,7 +4540,6 @@ msgid "Once these steps have been completed, your device should appear in the li
 msgstr "Depois destes passos estarem concluídos, o seu dispositivo deverá aparecer na lista de dispositivos disponíveis quando correr `briefcase run android`."
 
 #: docs/en/tutorial/tutorial-5/android.md:287 docs/en/tutorial/tutorial-5/android.md:303
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase run android\n"
 "\n"
@@ -4563,19 +4550,9 @@ msgid ""
 "  3) Create a new Android emulator\n"
 "\n"
 ">"
-msgstr ""
-"(beeware-venv) $ briefcase run android\n"
-"\n"
-"Selecione o dispositivo:\n"
-"\n"
-"  1) Pixel 3a (94ZZY0LNE8)\n"
-"  2) @beePhone (emulador)\n"
-"  3) Criar um novo emulador Android\n"
-"\n"
-">"
+msgstr "(beeware-venv) $ briefcase run android\n\nSelecione o dispositivo:\n\n  1) Pixel 3a (94ZZY0LNE8)\n  2) @beePhone (emulador)\n  3) Criar um novo emulador de Android\n\n>"
 
 #: docs/en/tutorial/tutorial-5/android.md:319
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase run android\n"
 "\n"
@@ -4586,64 +4563,45 @@ msgid ""
 "  3) Create a new Android emulator\n"
 "\n"
 ">"
-msgstr ""
-"(beeware-venv) C:\\...>briefcase run android\n"
-"\n"
-"Selecione o dispositivo:\n"
-"\n"
-"  1) Pixel 3a (94ZZY0LNE8)\n"
-"  2) @beePhone (emulador)\n"
-"  3) Criar um novo emulador Android\n"
-"\n"
-">"
+msgstr "(beeware-venv) C:\\...>briefcase run android\n\nSelecione o dispositivo:\n\n  1) Pixel 3a (94ZZY0LNE8)\n  2) @beePhone (emulador)\n  3) Criar um novo emulador de Android\n\n>"
 
 #: docs/en/tutorial/tutorial-5/android.md:333
-#, fuzzy
 msgid "Here we can see a new physical device with it's serial number on the deployment list - in this case, a Pixel 3a. In the future, if you want to run on this device without using the menu, you can provide the phone's serial number to Briefcase (in this case, `briefcase run android -d 94ZZY0LNE8`). This will run on the device directly, without prompting."
-msgstr "Aqui podemos ver um novo dispositivo físico com seu número de série na lista de implantação - neste caso, um Pixel 3a. No futuro, se quiser executar nesse dispositivo sem usar o menu, você poderá fornecer o número de série do telefone ao Briefcase (nesse caso, `briefcase run android -d 94ZZY0LNE8`). Isso será executado diretamente no dispositivo, sem avisos."
+msgstr "Aqui podemos ver um novo dispositivo físico com o seu número de série na lista de implementação - neste caso, um Pixel 3a. No futuro, se quiser executar nesse dispositivo sem usar o menu, poderá fornecer o número de série do telefone ao Briefcase (nesse caso, `briefcase run android -d 94ZZY0LNE8`). Isto será executado diretamente no dispositivo, sem mais comandos."
 
 #: docs/en/tutorial/tutorial-5/android.md:335
-#, fuzzy
 msgid "/// admonition | My device doesn't appear!"
-msgstr "/// admonition | Meu dispositivo não aparece!"
+msgstr "/// admonition | O meu dispositivo não aparece!"
 
 #: docs/en/tutorial/tutorial-5/android.md:337
-#, fuzzy
 msgid "If your device doesn't appear on this list at all, either you haven't enabled USB debugging, (or the device isn't plugged in!)."
-msgstr "Se o seu dispositivo não aparecer nessa lista, você não ativou a depuração USB (ou o dispositivo não está conectado!)."
+msgstr "Se o seu dispositivo não aparecer nesta lista, ou não ativou a depuração USB, ou o dispositivo não está ligado!."
 
 #: docs/en/tutorial/tutorial-5/android.md:339
-#, fuzzy
 msgid "If your device appears, but is listed as \"Unknown device (not authorized for development)\", developer mode hasn't been correctly enabled. Re-run [the steps to enable developer options]{1}, and re-run `briefcase run android`."
-msgstr "Se o seu dispositivo aparecer, mas estiver listado como \"Dispositivo desconhecido (não autorizado para desenvolvimento)\", o modo de desenvolvedor não foi ativado corretamente. Execute novamente [as etapas para ativar as opções de desenvolvedor]{1} e execute novamente `briefcase run android`."
+msgstr "Se o seu dispositivo aparecer, mas estiver listado como \"Dispositivo desconhecido (não autorizado para desenvolvimento)\", o modo de desenvolvedor não foi ativado corretamente. Execute novamente [os passos para ativar as opções de desenvolvedor]{1} e execute novamente `briefcase run android`."
 
 #: docs/en/tutorial/tutorial-5/android.md:345 docs/en/tutorial/tutorial-5/iOS.md:125
-#, fuzzy
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to [Tutorial 6]{1} to find out..."
-msgstr "Agora temos um aplicação em nosso telefone! Existe algum outro lugar onde possamos implantar um aplicação BeeWare? Consulte o [Tutorial 6]{1} para descobrir..."
+msgstr "Agora temos uma aplicação no nosso telefone! Existe mais algum lugar onde possamos implementar uma aplicação BeeWare? Consulte o [Tutorial 6]{1} para descobrir..."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:1
-#, fuzzy
 msgid "Tutorial 5 - Taking it mobile: iOS"
-msgstr "Tutorial 5 - Levando para o Mobile: iOS"
+msgstr "Tutorial 5 - Adaptando para móvel: iOS"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:3
-#, fuzzy
 msgid "To compile iOS applications we'll need Xcode, which is available for free from [the macOS App Store]{1}. Once Xcode is installed, launch it from Applications and accept the Xcode License Agreement. Next, Xcode will show which components are built-in, and which components you may download. Select the checkbox next to iOS (followed by the current version number), and then click \"Download and Install\" to install it. Xcode will install the system components, followed by the iOS Simulator."
-msgstr "Para compilar aplicações iOS, precisaremos do Xcode, que está disponível gratuitamente na [macOS App Store]{1}. Quando o Xcode estiver instalado, inicie-o em Aplicativos e aceite o Contrato de Licença do Xcode. Em seguida, o Xcode mostrará quais componentes estão incorporados e quais componentes você pode baixar. Marque a caixa de seleção ao lado do iOS (seguido do número da versão atual) e clique em \"Download and Install\" para instalá-lo. O Xcode instalará os componentes do sistema, seguidos pelo Simulador do iOS."
+msgstr "Para compilar aplicações iOS vamos precisar do Xcode, que está disponível gratuitamente na [macOS App Store]{1}. Quando o Xcode estiver instalado, inicie-o em Aplicações e aceite o Contrato de Licença do Xcode. Em seguida, o Xcode vai mostrar quais componentes estão incorporados e quais componentes pode descaregar. Marque a caixa de seleção ao lado do iOS (seguido do número da versão atual) e clique em \"Descarregar e instalar\" para instalá-lo. O Xcode vai instalar os componentes do sistema, seguidos pelo Simulador do iOS."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:5
-#, fuzzy
 msgid "Once we've got Xcode and the iOS simulator installed, we can take our application and deploy it as an iOS app."
-msgstr "Depois de instalar o Xcode, podemos pegar nossa aplicação e implantá-lo como um aplicação iOS."
+msgstr "Assim que tiver o Xcode e o simulador de iOS, podemos pegar na nossa aplicação e implementá-la como uma aplicação iOS."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:7
-#, fuzzy
 msgid "The process of deploying an application to iOS is very similar to the process for deploying as a desktop application. First, you run the `create` command - but this time, we specify that we want to create an iOS application:"
-msgstr "O processo de implantação de um aplicação no iOS é muito semelhante ao processo de implantação como um aplicação de desktop. Primeiro, você executa o comando `create`, mas, desta vez, especificamos que queremos criar um aplicação iOS:"
+msgstr "O processo de implementação duma aplicação no iOS é muito semelhante ao processo de implementação como uma aplicação de ambiente de trabalho. Primeiro, você executa o comando `create` - mas, desta vez, especificamos que queremos criar uma aplicação de iOS:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:9
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase create iOS\n"
 "\n"
@@ -4667,42 +4625,17 @@ msgid ""
 "...\n"
 "\n"
 "[helloworld] Created build/helloworld/ios/xcode"
-msgstr ""
-"(beeware-venv) $ briefcase create iOS\n"
-"\n"
-"[helloworld] A gerar modelo de aplicação...\n"
-"A usar modelo de aplicação: https://github.com/beeware/briefcase-iOS-Xcode-template.git, ramificação v0.3.18\n"
-"...\n"
-"\n"
-"[helloworld] A instalar pacote de suporte...\n"
-"...\n"
-"\n"
-"[helloworld] A instalar código da aplicação...\n"
-"A instalar src/helloworld... concluído\n"
-"\n"
-"[helloworld] A instalar requisitos...\n"
-"...\n"
-"\n"
-"[helloworld] A instalar recursos da aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] A remover conteúdo desnecessário da aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] Criado build/helloworld/ios/xcode"
+msgstr "(beeware-venv) $ briefcase create iOS\n\n[helloworld] A gerar modelo de aplicação...\nA usar modelo de aplicação: https://github.com/beeware/briefcase-iOS-Xcode-template.git, ramificação v0.3.18\n...\n\n[helloworld] A instalar pacote de suporte...\n...\n\n[helloworld] A instalar código da aplicação...\nA instalar src/helloworld... concluído\n\n[helloworld] A instalar requisitos...\n...\n\n[helloworld] A instalar recursos da aplicação...\n...\n\n[helloworld] A remover conteúdo desnecessário da aplicação...\n...\n\n[helloworld] Criado build/helloworld/ios/xcode"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:34
-#, fuzzy
 msgid "Once this completes, we'll have a `build/helloworld/ios/xcode` directory containing an Xcode project, as well as the support libraries and the application code needed for the application."
-msgstr "Quando isso for concluído, teremos um diretório `build/helloworld/ios/xcode` contendo um projeto Xcode, bem como as bibliotecas de suporte e o código da aplicação necessários para a aplicação."
+msgstr "Assim que isto estiver concluído, vamos ter um diretório `build/helloworld/ios/xcode` contendo um projeto Xcode, bem como as bibliotecas de suporte e o código da aplicação necessários para a aplicação."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:36
-#, fuzzy
 msgid "You can then use Briefcase to compile your app using `briefcase build iOS`:"
-msgstr "Em seguida, você pode usar o Briefcase para compilar a aplicação usando `briefcase build iOS`:"
+msgstr "Pode depois usar o Briefcase para compilar a aplicação usando `briefcase build iOS`:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:38
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase build iOS\n"
 "\n"
@@ -4714,22 +4647,11 @@ msgid ""
 "Building... done\n"
 "\n"
 "[helloworld] Built build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app"
-msgstr ""
-"(beeware-venv) $ briefcase build iOS\n"
-"\n"
-"[helloworld] A atualizar metadados da aplicação...\n"
-"Definindo o módulo principal... concluído\n"
-"\n"
-"[helloworld] A compilar projeto do Xcode...\n"
-"...\n"
-"Compilando... concluído\n"
-"\n"
-"[helloworld] Compilado em build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app"
+msgstr "(beeware-venv) $ briefcase build iOS\n\n[helloworld] A atualizar metadados da aplicação...\nA definir o módulo principal... concluído\n\n[helloworld] A compilar projeto do Xcode...\n...\nA compilar... concluído\n\n[helloworld] Compilado em build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:51
-#, fuzzy
 msgid "We're now ready to run our application, using `briefcase run iOS`. You'll be prompted to select a device to compile for; if you've got simulators for multiple iOS SDK versions installed, you may also be asked which iOS version you want to target. The options you are shown may differ from the options show in this output - at the very least, the list of devices will likely be different. For our purposes, it doesn't matter which simulator you pick."
-msgstr "Agora estamos prontos para executar nossa aplicação, usando o `briefcase run iOS`. Será solicitado que você selecione um dispositivo para o qual compilar; se você tiver simuladores para várias versões do SDK do iOS instalados, também poderá ser perguntado qual versão do iOS deseja usar como alvo. As opções mostradas a você podem ser diferentes das opções mostradas nesta saída - no mínimo, a lista de dispositivos provavelmente será diferente. Para nossos propósitos, não importa qual simulador você escolherá."
+msgstr "Agora estamos prontos para executar a nossa aplicação, usando o `briefcase run iOS`. Vai ser solicitado a selecionar um dispositivo para o qual compilar; se tiver simuladores para várias versões do SDK do iOS instalados, pode também ser-lhe perguntado qual versão do iOS deseja usar como alvo. As opções mostradas a si podem ser diferentes das opções mostradas nesta saída - no mínimo, a lista de dispositivos será provavelmente diferente. Para o nosso objetivo, não importa qual o simulador que escolhe."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:53
 #, fuzzy
