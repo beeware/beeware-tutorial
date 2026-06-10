@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 01:01+0000\n"
-"PO-Revision-Date: 2026-06-10 01:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-10 01:01+0000\nPO-Revision-Date: 2026-06-10 10:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -4520,32 +4508,26 @@ msgid "While the app is running, you'll see a lot of messages being streamed in 
 msgstr "Enquanto a aplicação estiver em execução, vai ver muitas mensagens sendo transmitidas na consola. Esse é um fluxo de relatórios da aplicação a partir do emulador. Teclar Ctrl+C no terminal vai interromper as informações transmitidas na consola, mas não vai fechar o emulador. Isso serve para que possa testar novas alterações sem reiniciar o emulador."
 
 #: docs/en/tutorial/tutorial-5/android.md:270
-#, fuzzy
 msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using `briefcase run android -d \"@beePhone\"` to run on the virtual device directly."
-msgstr "No futuro, se você quiser executar nesse dispositivo sem usar o menu, poderá fornecer o nome do emulador ao Briefcase, usando `briefcase run android -d @beePhone` para executar diretamente no dispositivo virtual."
+msgstr "No futuro, se quiser executar nesse dispositivo sem usar o menu, pode fornecer o nome do emulador ao Briefcase, usando `briefcase run android -d @beePhone` para executar diretamente no dispositivo virtual."
 
 #: docs/en/tutorial/tutorial-5/android.md:272
-#, fuzzy
 msgid "Run the app on a physical device"
-msgstr "Execute a aplicação em um dispositivo físico"
+msgstr "Executar a aplicação num dispositivo físico"
 
 #: docs/en/tutorial/tutorial-5/android.md:274
-#, fuzzy
 msgid "If you have a physical Android phone or tablet, you can connect it to your computer with a USB cable, and then use the Briefcase to target your physical device."
-msgstr "Se você tiver um telefone ou tablet Android físico, poderá conectá-lo ao seu computador com um cabo USB e, em seguida, usar o Briefcase para direcionar seu dispositivo físico."
+msgstr "Se tiver um telefone ou tablet Android físico, poderá liga-lo ao seu computador com um cabo USB, e depois usar o Briefcase para apontar ao seu dispositivo físico."
 
 #: docs/en/tutorial/tutorial-5/android.md:276
-#, fuzzy
 msgid "Android requires that you prepare your device before it can be used for development. You will need to make 2 changes to the options on your device:"
-msgstr "O Android exige que você prepare seu dispositivo antes que ele possa ser usado para desenvolvimento. Você precisará fazer duas alterações nas opções do seu dispositivo:"
+msgstr "O Android exige que prepare o seu dispositivo antes que possa ser usado para desenvolvimento. Vai precisar fazer duas alterações nas opções do seu dispositivo:"
 
 #: docs/en/tutorial/tutorial-5/android.md:278
-#, fuzzy
 msgid "Enable developer options"
 msgstr "Ativar opções de desenvolvedor"
 
 #: docs/en/tutorial/tutorial-5/android.md:279
-#, fuzzy
 msgid "Enable USB debugging"
 msgstr "Ativar a depuração USB"
 
