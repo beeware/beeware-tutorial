@@ -1867,58 +1867,56 @@ Android.</p>
 <p>Agora podemos escolher o nosso dispositivo desejado. Selecione a opção "Criar um
 nono emulado de Android" e aceite a opção predefinida para o nome do dispositivo
 (<code>beePhone</code>).</p>
-<p>O <code>run</code> do Briefcase inicializará automaticamente o dispositivo virtual. Quando
-o dispositivo estiver sendo inicializado, você verá o logotipo do Android:</p>
+<p>O <code>run</code> do Briefcase vai inicializar automaticamente o dispositivo virtual.
+Quando o dispositivo está a arrancar, verá o logotipo do Android:</p>
 <figure>
-<p><img alt="Inicialização do dispositivo virtual
-Android" src="../../../images/android/tutorial-5-booting.png" /></p>
+<p><img alt="Android virtual device booting" src="../../../images/android/tutorial-5-booting.png" /></p>
 <figcaption>
-<p>Inicialização do dispositivo virtual Android</p>
+<p>Arranque do dispositivo virtual Android</p>
 </figcaption>
 </figure>
-<p>Quando o dispositivo terminar a inicialização, o Briefcase instalará sua
-aplicação no dispositivo. Você verá brevemente uma ecrã de inicialização:</p>
+<p>Quando o dispositivo terminar a inicialização, o Briefcase vai instalar a sua
+aplicação no dispositivo. Verá brevemente um ecrã de lançamento:</p>
 <figure>
-<p><img alt="Dispositivo virtual Android totalmente iniciado, na ecrã do
-iniciador" src="../../../images/android/tutorial-5-running.png" /></p>
+<p><img alt="Android virtual device fully started, on the launcher
+screen" src="../../../images/android/tutorial-5-running.png" /></p>
 <figcaption>
-<p>Dispositivo virtual Android totalmente iniciado, na ecrã do iniciador</p>
+<p>Dispositivo virtual Android totalmente iniciado, no ecrã do lançador</p>
 </figcaption>
 </figure>
-<p>Em seguida, a aplicação será iniciado. Você verá uma ecrã inicial enquanto a
-aplicação é iniciado:</p>
+<p>A aplicação será então iniciada. Vai ver um ecrã inicial enquanto a aplicação
+arranca:</p>
 <figure>
-<p><img alt="Tela inicial da aplicação" src="../../../images/android/tutorial-5-splash.png" /></p>
+<p><img alt="App splash screen" src="../../../images/android/tutorial-5-splash.png" /></p>
 <figcaption>
-<p>Tela inicial da aplicação</p>
+<p>Ecrã inicial da aplicação</p>
 </figcaption>
 </figure>
 <div class="admonition">
-<p class="admonition-title">O emulador não foi iniciado!</p>
-<p>O emulador do Android é um software complexo que depende de vários recursos de
-hardware e do sistema operativo - recursos que podem não estar disponíveis ou
-habilitados em máquinas mais antigas. Se tiver alguma dificuldade para iniciar o
-emulador do Android, consulte a secção "Requisitos e recomendações" da
-documentação do desenvolvedor do Android.</p>
+<p class="admonition-title">O emulador não arrancou!</p>
+<p>O emulador de Android é um software complexo que depende de várias
+funcionalidades de hardware e do sistema operativo - funcionalidades que podem
+não estar disponíveis ou habilitadas em máquinas mais antigas. Se tiver alguma
+dificuldade em iniciar o emulador de Android, consulte a secção <a href="https://developer.android.com/studio/run/emulator#requirements">Requisitos e
+recomendações</a>
+da documentação de desenvolvedor de Android.</p>
 </div>
-<p>Na primeira vez que a aplicação é iniciado, ele precisa ser descompactado no
-dispositivo. Isso pode levar alguns segundos. Depois de descompactado, você verá
-a versão para Android do nossa aplicação para desktop:</p>
+<p>Na primeira vez que a aplicação é iniciada, ela precisa de descompactar-se no
+dispositivo. Isso pode levar alguns segundos. Depois de descompactada, verá a
+versão para Android da nossa aplicação para ambiente de trabalho:</p>
 <figure>
-<p><img alt="Aplicação de demonstração totalmente
-lançado" src="../../../images/android/tutorial-5-launched.png" /></p>
+<p><img alt="Demo app fully launched" src="../../../images/android/tutorial-5-launched.png" /></p>
 <figcaption>
-<p>Aplicação de demonstração totalmente lançado</p>
+<p>Aplicação de demonstração totalmente lançada</p>
 </figcaption>
 </figure>
-<p>Se não conseguir ver a aplicação sendo iniciado, talvez seja necessário
-verificar o terminal em que você executou o <code>briefcase run</code> e procurar mensagens
-de erro.</p>
-<p>Enquanto a aplicação estiver em execução, você verá muitas mensagens sendo
-transmitidas no console. Esse é um fluxo de logs da aplicação do emulador.
-Digitar Ctrl+C no terminal interromperá as informações transmitidas no console,
-mas não fechará o emulador. Isso serve para que você possa testar novas
-alterações sem reiniciar o emulador.</p>
+<p>Se não conseguir ver a sua aplicação a ser lançada, talvez precise de verificar
+o seu terminal onde executou o <code>briefcase run</code> e procurar mensagens de erro.</p>
+<p>Enquanto a aplicação estiver em execução, vai ver muitas mensagens sendo
+transmitidas na consola. Esse é um fluxo de relatórios da aplicação a partir do
+emulador. Teclar Ctrl+C no terminal vai interromper as informações transmitidas
+na consola, mas não vai fechar o emulador. Isso serve para que possa testar
+novas alterações sem reiniciar o emulador.</p>
 <p>No futuro, se você quiser executar nesse dispositivo sem usar o menu, poderá
 fornecer o nome do emulador ao Briefcase, usando <code>briefcase run android -d
 @beePhone</code> para executar diretamente no dispositivo virtual.</p>
