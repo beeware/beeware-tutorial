@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-5-levando-para-o-mobile-ios" class="md-skip">
+        <a href="#tutorial-5-adaptando-para-movel-ios" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -1592,20 +1592,22 @@ aria-label="Cabeçalho"
 
 
 
-<h1 id="tutorial-5-levando-para-o-mobile-ios">Tutorial 5 - Levando para o Mobile: iOS<a class="headerlink" href="#tutorial-5-levando-para-o-mobile-ios" title="Permanent link">&para;</a></h1>
-<p>Para compilar aplicações iOS, precisaremos do Xcode, que está disponível
+<h1 id="tutorial-5-adaptando-para-movel-ios">Tutorial 5 - Adaptando para móvel: iOS<a class="headerlink" href="#tutorial-5-adaptando-para-movel-ios" title="Permanent link">&para;</a></h1>
+<p>Para compilar aplicações iOS vamos precisar do Xcode, que está disponível
 gratuitamente na <a href="https://apps.apple.com/au/app/xcode/id497799835?mt=12">macOS App
 Store</a>. Quando o Xcode
-estiver instalado, inicie-o em Aplicativos e aceite o Contrato de Licença do
-Xcode. Em seguida, o Xcode mostrará quais componentes estão incorporados e quais
-componentes você pode baixar. Marque a caixa de seleção ao lado do iOS (seguido
-do número da versão atual) e clique em "Download and Install" para instalá-lo. O
-Xcode instalará os componentes do sistema, seguidos pelo Simulador do iOS.</p>
-<p>Depois de instalar o Xcode, podemos pegar nossa aplicação e implantá-lo como um
-aplicação iOS.</p>
-<p>O processo de implantação de um aplicação no iOS é muito semelhante ao processo
-de implantação como um aplicação de desktop. Primeiro, você executa o comando
-<code>create</code>, mas, desta vez, especificamos que queremos criar um aplicação iOS:</p>
+estiver instalado, inicie-o em Aplicações e aceite o Contrato de Licença do
+Xcode. Em seguida, o Xcode vai mostrar quais componentes estão incorporados e
+quais componentes pode descaregar. Marque a caixa de seleção ao lado do iOS
+(seguido do número da versão atual) e clique em "Descarregar e instalar" para
+instalá-lo. O Xcode vai instalar os componentes do sistema, seguidos pelo
+Simulador do iOS.</p>
+<p>Assim que tiver o Xcode e o simulador de iOS, podemos pegar na nossa aplicação e
+implementá-la como uma aplicação iOS.</p>
+<p>O processo de implementação duma aplicação no iOS é muito semelhante ao processo
+de implementação como uma aplicação de ambiente de trabalho. Primeiro, você
+executa o comando <code>create</code> - mas, desta vez, especificamos que queremos criar
+uma aplicação de iOS:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
 
 <span class="go">[helloworld] A gerar modelo de aplicação...</span>
@@ -1629,29 +1631,29 @@ de implantação como um aplicação de desktop. Primeiro, você executa o coman
 
 <span class="go">[helloworld] Criado build/helloworld/ios/xcode</span>
 </code></pre></div>
-<p>Quando isso for concluído, teremos um diretório <code>build/helloworld/ios/xcode</code>
-contendo um projeto Xcode, bem como as bibliotecas de suporte e o código da
-aplicação necessários para a aplicação.</p>
-<p>Em seguida, você pode usar o Briefcase para compilar a aplicação usando
-<code>briefcase build iOS</code>:</p>
+<p>Assim que isto estiver concluído, vamos ter um diretório
+<code>build/helloworld/ios/xcode</code> contendo um projeto Xcode, bem como as bibliotecas
+de suporte e o código da aplicação necessários para a aplicação.</p>
+<p>Pode depois usar o Briefcase para compilar a aplicação usando <code>briefcase build
+iOS</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
 <span class="go">[helloworld] A atualizar metadados da aplicação...</span>
-<span class="go">Definindo o módulo principal... concluído</span>
+<span class="go">A definir o módulo principal... concluído</span>
 
 <span class="go">[helloworld] A compilar projeto do Xcode...</span>
 <span class="go">...</span>
-<span class="go">Compilando... concluído</span>
+<span class="go">A compilar... concluído</span>
 
 <span class="go">[helloworld] Compilado em build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
 </code></pre></div>
-<p>Agora estamos prontos para executar nossa aplicação, usando o <code>briefcase run
-iOS</code>. Será solicitado que você selecione um dispositivo para o qual compilar; se
-você tiver simuladores para várias versões do SDK do iOS instalados, também
-poderá ser perguntado qual versão do iOS deseja usar como alvo. As opções
-mostradas a você podem ser diferentes das opções mostradas nesta saída - no
-mínimo, a lista de dispositivos provavelmente será diferente. Para nossos
-propósitos, não importa qual simulador você escolherá.</p>
+<p>Agora estamos prontos para executar a nossa aplicação, usando o <code>briefcase run
+iOS</code>. Vai ser solicitado a selecionar um dispositivo para o qual compilar; se
+tiver simuladores para várias versões do SDK do iOS instalados, pode também
+ser-lhe perguntado qual versão do iOS deseja usar como alvo. As opções mostradas
+a si podem ser diferentes das opções mostradas nesta saída - no mínimo, a lista
+de dispositivos será provavelmente diferente. Para o nosso objetivo, não importa
+qual o simulador que escolhe.</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
 <span class="go">Selecione o dispositivo do simulador:</span>
@@ -1716,8 +1718,8 @@ ele para usar essa versão específica:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
 </code></pre></div>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos um aplicação em nosso telefone! Existe algum outro lugar onde
-possamos implantar um aplicação BeeWare? Consulte o <a href="../../tutorial-6/">Tutorial
+<p>Agora temos uma aplicação no nosso telefone! Existe mais algum lugar onde
+possamos implementar uma aplicação BeeWare? Consulte o <a href="../../tutorial-6/">Tutorial
 6</a> para descobrir&hellip;</p>
 
 
