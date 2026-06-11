@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 21:01+0000\n"
-"PO-Revision-Date: 2026-06-10 21:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-10 21:01+0000\nPO-Revision-Date: 2026-06-11 01:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.6\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -4716,7 +4704,6 @@ msgid "We're now ready to run our application, using `briefcase run iOS`. You'll
 msgstr "Agora estamos prontos para executar a nossa aplicação, usando o `briefcase run iOS`. Vai ser solicitado a selecionar um dispositivo para o qual compilar; se tiver simuladores para várias versões do SDK do iOS instalados, pode também ser-lhe perguntado qual versão do iOS deseja usar como alvo. As opções mostradas a si podem ser diferentes das opções mostradas nesta saída - no mínimo, a lista de dispositivos será provavelmente diferente. Para o nosso objetivo, não importa qual o simulador que escolhe."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:53
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase run iOS\n"
 "\n"
@@ -4757,86 +4744,39 @@ msgid ""
 "[helloworld] Following simulator log output (type CTRL-C to stop log)...\n"
 "===========================================================================\n"
 "..."
-msgstr ""
-"(beeware-venv) $ briefcase run iOS\n"
-"\n"
-"Selecione o dispositivo do simulador:\n"
-"\n"
-"   1) iPad (10ª geração)\n"
-"   2) iPad Air (5ª geração)\n"
-"   3) iPad Pro (11 polegadas) (4ª geração)\n"
-"   4) iPad Pro (12,9 polegadas) (6ª geração)\n"
-"   5) iPad mini (6ª geração)\n"
-"   6) iPhone 14\n"
-"   7) iPhone 14 Plus\n"
-"   8) iPhone 14 Pro\n"
-"   9) iPhone 14 Pro Max\n"
-"   10) iPhone SE (3ª geração)\n"
-"\n"
-">  10\n"
-"\n"
-"No futuro, você poderá especificar este dispositivo executando:\n"
-"\n"
-" $ briefcase run iOS -d \"iPhone SE (3ª geração)::iOS 16.2\"\n"
-"\n"
-"ou:\n"
-"\n"
-" $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E\n"
-"\n"
-"[helloworld] A iniciar a aplicação em um iPhone SE (3ª geração) com iOS 16.2 (UDID do dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)\n"
-"A inicializar o simulador... concluído\n"
-"Abrindo o simulador... concluído\n"
-"\n"
-"[helloworld] A instalar a aplicação...\n"
-"Desinstalando qualquer versão existente da aplicação... concluído\n"
-"A instalar nova versão da aplicação... concluído\n"
-"\n"
-"[helloworld] A iniciar a aplicação...\n"
-"A iniciar a aplicação... concluído\n"
-"\n"
-"[helloworld] Saída do log do simulador a seguir (digite CTRL-C para interromper o log)...\n"
-"===========================================================================\n"
-"..."
+msgstr "(beeware-venv) $ briefcase run iOS\n\nSelecione o dispositivo do simulador:\n\n   1) iPad (10ª geração)\n   2) iPad Air (5ª geração)\n   3) iPad Pro (11 polegadas) (4ª geração)\n   4) iPad Pro (12,9 polegadas) (6ª geração)\n   5) iPad mini (6ª geração)\n   6) iPhone 14\n   7) iPhone 14 Plus\n   8) iPhone 14 Pro\n   9) iPhone 14 Pro Max\n   10) iPhone SE (3ª geração)\n\n>  10\n\nNo futuro, pode especificar este dispositivo executando:\n\n $ briefcase run iOS -d \"iPhone SE (3ª geração)::iOS 16.2\"\n\nou:\n\n $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E\n\n[helloworld] A iniciar a aplicação num iPhone SE (3ª geração) com iOS 16.2 (UDID do dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)\nA inicializar o simulador... concluído\nA abrir o simulador... concluído\n\n[helloworld] A instalar a aplicação...\nA desinstalar qualquer versão existente da aplicação... concluído\nA instalar nova versão da aplicação... concluído\n\n[helloworld] A iniciar a aplicação...\nA iniciar a aplicação... concluído\n\n[helloworld] Segue-se resultado de relatório do simulador (tecle CTRL-C para interromper o relatório)...\n===========================================================================\n..."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:95
-#, fuzzy
 msgid "This will start the iOS simulator, install your app, and start it. You should see the simulator start, and eventually open your iOS application:"
-msgstr "Isso vai iniciar o simulador do iOS, instalará sua aplicação e o iniciará. Você deverá ver o simulador iniciar e, por fim, abrir sua aplicação iOS:"
+msgstr "Isto vai iniciar o simulador do iOS, vai instalar a sua aplicação e o inicia-la. Deverá ver o simulador a iniciar e, eventualmente a abrir a sua aplicação iOS:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:97
-#, fuzzy
 msgid "![Hello World Tutorial 5 window, on iOS]{1}"
 msgstr "![Janela do tutorial 5 do Hello World, no iOS]{1}"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:103
-#, fuzzy
 msgid "While the app is running, you'll see a series of Simulator log output messages in the console. Typing Ctrl+C into the terminal will halt the messages in the console, but it will not close the simulator. This is so you can test new changes without restarting the simulator."
-msgstr "Enquanto a aplicação estiver em execução, você verá uma série de mensagens de saída de log do Simulador no console. Digitar Ctrl+C no terminal interromperá as mensagens no console, mas não fechará o simulador. Isso serve para que você possa testar novas alterações sem reiniciar o simulador."
+msgstr "Enquanto a aplicação estiver a correr, vai ver uma série de mensagens de saída do relatório do Simulador na consola. Teclar Ctrl+C no terminal vai interromper as mensagens na consola, mas não fecha o simulador. Isto serve para que possa testar novas alterações sem reiniciar o simulador."
 
 #: docs/en/tutorial/tutorial-5/iOS.md:105
-#, fuzzy
 msgid "If you know ahead of time which iOS simulator you want to target, you can tell Briefcase to use that simulator by providing a `-d` (or `--device`) option. Using the name of the device you selected when you built your application, run:"
-msgstr "Se você souber antecipadamente qual simulador de iOS deseja usar, poderá dizer ao Briefcase para usar esse simulador fornecendo uma opção `-d` (ou `--device`). A usar o nome do dispositivo que você selecionou ao criar a aplicação, execute:"
+msgstr "Se souber antecipadamente qual simulador de iOS deseja usar, poderá dizer ao Briefcase para usar esse simulador fornecendo uma opção `-d` (ou `--device`). Usando o nome do dispositivo que selecionou quando compilou a aplicação, execute:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:107
-#, fuzzy
 msgid "$ briefcase run iOS -d \"iPhone SE (3rd generation)\""
 msgstr "$ briefcase run iOS -d \"iPhone SE (3ª geração)\""
 
 #: docs/en/tutorial/tutorial-5/iOS.md:111
-#, fuzzy
 msgid "If you have multiple iOS versions available, Briefcase will pick the highest iOS version; if you want to pick a particular iOS version, you tell it to use that specific version:"
-msgstr "Se você tiver várias versões do iOS disponíveis, o Briefcase escolherá a versão mais alta do iOS; se você quiser escolher uma versão específica do iOS, diga a ele para usar essa versão específica:"
+msgstr "Se tiver várias versões do iOS disponíveis, o Briefcase vai escolher a versão mais alta do iOS; se quiser escolher uma versão específica do iOS, diga a ele para usar essa versão específica:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:113
-#, fuzzy
 msgid "$ briefcase run iOS -d \"iPhone SE (3rd generation)::iOS 15.5\""
 msgstr "$ briefcase run iOS -d \"iPhone SE (3ª geração)::iOS 15.5\""
 
 #: docs/en/tutorial/tutorial-5/iOS.md:117
-#, fuzzy
 msgid "Or, you can name a specific device UDID:"
-msgstr "Ou você pode nomear um UDID de dispositivo específico:"
+msgstr "Ou, pode nomear um UDID de dispositivo específico:"
 
 #: docs/en/tutorial/tutorial-5/iOS.md:119
 msgid "$ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E"
@@ -4851,7 +4791,6 @@ msgid "So far, we've been running and testing our application on the desktop. Ho
 msgstr "Até agora, executamos e testamos nossa aplicação no ambiente de trabalho. No entanto, o BeeWare também suporta plataformas móveis - e a aplicação que escrevemos também pode ser implementada no seu dispositivo móvel!"
 
 #: docs/en/tutorial/tutorial-5/index.md:5
-#, fuzzy
 msgid "[Android]{1}"
 msgstr "[Android]{1}"
 
@@ -4860,7 +4799,6 @@ msgid "Android applications can be compiled on macOS, Windows or Linux."
 msgstr "As aplicaçẽs Android podem ser compiladas no macOS, Windows ou Linux."
 
 #: docs/en/tutorial/tutorial-5/index.md:9
-#, fuzzy
 msgid "[iOS]{1}"
 msgstr "[iOS]{1}"
 
@@ -4869,17 +4807,14 @@ msgid "iOS applications can only be compiled on macOS."
 msgstr "As aplicações iOS só podem ser compiladas no macOS."
 
 #: docs/en/tutorial/tutorial-6.md:1
-#, fuzzy
 msgid "Tutorial 6 - Put it on the web!"
-msgstr "Tutorial 6 - Coloque-o na Web!"
+msgstr "Tutorial 6 - Colocar na web!"
 
 #: docs/en/tutorial/tutorial-6.md:3
-#, fuzzy
 msgid "In addition to supporting mobile platforms, the Toga widget toolkit also supports the web! Using the same API that you used to deploy your desktop and mobile applications, you can deploy your application as a single-page web app."
-msgstr "Além de oferecer suporte a plataformas móveis, o kit de ferramentas de widget Toga também oferece suporte à Web! A usar a mesma API que você usou para implantar seus aplicações de desktop e móveis, você pode implantar sua aplicação como um aplicação da Web de página única."
+msgstr "Para além de oferecer suporte a plataformas móveis, o kit de ferramentas de widget Toga também oferece suporte a web! Usando a mesma API que usou para implementar as suas aplicações de ambiente de trabalho e móvel, pode implementar a sua aplicação como uma aplicação web de página única."
 
 #: docs/en/tutorial/tutorial-6.md:5
-#, fuzzy
 msgid "/// admonition | Proof of Concept"
 msgstr "/// admonition | Prova de conceito"
 
@@ -4889,14 +4824,12 @@ msgid "The Toga Web backend is the least mature of all the Toga backends. It's m
 msgstr "O backend do Toga Web é o menos maduro de todos os backends do Toga. Ele está maduro o suficiente para exibir alguns recursos, mas é provável que apresente bugs e não tenha muitos dos widgets disponíveis em outras plataformas. Neste momento, a implementação na Web deve ser considerada uma \"Prova de Conceito\" - o suficiente para demonstrar o que pode ser feito, mas não o suficiente para ser usado em um desenvolvimento sério."
 
 #: docs/en/tutorial/tutorial-6.md:9
-#, fuzzy
 msgid "If you have problems with this step of the tutorial, you can skip to the next page."
-msgstr "Se você tiver problemas com esta etapa do tutorial, pule para a próxima página."
+msgstr "Se tiver problemas com este passo do tutorial, pode saltar para a próxima página."
 
 #: docs/en/tutorial/tutorial-6.md:13
-#, fuzzy
 msgid "Deploying as a web app"
-msgstr "Implementação como um aplicação Web"
+msgstr "Implementação como uma aplicação Web"
 
 #: docs/en/tutorial/tutorial-6.md:15
 #, fuzzy
@@ -4904,7 +4837,6 @@ msgid "The process of deploying as a single-page web app follows the same famili
 msgstr "O processo de implementação como um aplicação da Web de página única segue o mesmo padrão familiar - você cria a aplicação, constrói a aplicação e, em seguida, o executa. No entanto, o Briefcase pode ser um pouco inteligente; se você tentar executar um aplicação e o Briefcase determinar que ele não foi criado ou compilado para a plataforma que está sendo visada, ele executará as etapas de criação e compilação para você. Como esta é a primeira vez que executamos a aplicação para a Web, podemos executar todas as três etapas com um único comando:"
 
 #: docs/en/tutorial/tutorial-6.md:19 docs/en/tutorial/tutorial-6.md:59
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase run web\n"
 "\n"
@@ -4939,43 +4871,9 @@ msgid ""
 "\n"
 "[helloworld] Web server log output (type CTRL-C to stop log)...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) $ briefcase run web\n"
-"\n"
-"[helloworld] A gerar modelo de aplicação...\n"
-"A usar modelo de aplicação: https://github.com/beeware/briefcase-web-static-template.git, ramificação v0.3.18\n"
-"...\n"
-"\n"
-"[helloworld] A instalar pacote de suporte...\n"
-"Nenhum pacote de suporte necessário.\n"
-"\n"
-"[helloworld] A instalar o código da aplicação...\n"
-"A instalar src/helloworld... concluído\n"
-"\n"
-"[helloworld] A instalar os requisitos...\n"
-"Gravando ficheiro de requisitos... concluído\n"
-"\n"
-"[helloworld] A instalar recursos da aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] A remover conteúdo desnecessário da aplicação...\n"
-"A remover conteúdo desnecessário do pacote da aplicação... concluído\n"
-"\n"
-"[helloworld] Criado build/helloworld/web/static\n"
-"\n"
-"[helloworld] A compilar projeto web...\n"
-"...\n"
-"\n"
-"[helloworld] Compilado build/helloworld/web/static/www/index.html\n"
-"\n"
-"[helloworld] A iniciar servidor web...\n"
-"Servidor web aberto em http://127.0.0.1:8080\n"
-"\n"
-"[helloworld] Saída do log do servidor web (digite CTRL-C para interromper o log)...\n"
-"==========================================================================="
+msgstr "(beeware-venv) $ briefcase run web\n\n[helloworld] A gerar modelo de aplicação...\nA usar modelo de aplicação: https://github.com/beeware/briefcase-web-static-template.git, ramificação v0.3.18\n...\n\n[helloworld] A instalar pacote de suporte...\nNenhum pacote de suporte necessário.\n\n[helloworld] A instalar o código da aplicação...\nA instalar src/helloworld... concluído\n\n[helloworld] A instalar os requisitos...\nA gravar ficheiro de requisitos... concluído\n\n[helloworld] A instalar recursos da aplicação...\n...\n\n[helloworld] A remover conteúdo desnecessário da aplicação...\nA remover conteúdo desnecessário do pacote da aplicação... concluído\n\n[helloworld] Criado build/helloworld/web/static\n\n[helloworld] A compilar projeto web...\n...\n\n[helloworld] Compilado build/helloworld/web/static/www/index.html\n\n[helloworld] A iniciar servidor web...\nServidor web aberto em http://127.0.0.1:8080\n\n[helloworld] Saída do relatório do servidor web (digite CTRL-C para parar o relatório)...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-6.md:99
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase run web\n"
 "\n"
@@ -5010,55 +4908,19 @@ msgid ""
 "\n"
 "[helloworld] Web server log output (type CTRL-C to stop log)...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) C:\\...>briefcase run web\n"
-"\n"
-"[helloworld] A gerar modelo de aplicação...\n"
-"A usar modelo de aplicação: https://github.com/beeware/briefcase-web-static-template.git, ramificação v0.3.18\n"
-"...\n"
-"\n"
-"[helloworld] A instalar pacote de suporte...\n"
-"Nenhum pacote de suporte necessário.\n"
-"\n"
-"[helloworld] A instalar o código da aplicação...\n"
-"A instalar src/helloworld... concluído\n"
-"\n"
-"[helloworld] A instalar os requisitos...\n"
-"Gravando ficheiro de requisitos... concluído\n"
-"\n"
-"[helloworld] A instalar recursos da aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] A remover conteúdo desnecessário da aplicação...\n"
-"A remover conteúdo desnecessário do pacote da aplicação... concluído\n"
-"\n"
-"[helloworld] Criado build\\helloworld\\web\\static\n"
-"\n"
-"[helloworld] A compilar projeto web...\n"
-"...\n"
-"\n"
-"[helloworld] Compilado build\\helloworld\\web\\static\\www\\index.html\n"
-"\n"
-"[helloworld] A iniciar servidor web...\n"
-"Servidor web aberto em http://127.0.0.1:8080\n"
-"\n"
-"[helloworld] Saída do log do servidor web (digite CTRL-C para interromper o log)...\n"
-"==========================================================================="
+msgstr "(beeware-venv) C:\\...>briefcase run web\n\n[helloworld] A gerar modelo de aplicação...\nA usar modelo de aplicação: https://github.com/beeware/briefcase-web-static-template.git, ramificação v0.3.18\n...\n\n[helloworld] A instalar pacote de suporte...\nNenhum pacote de suporte necessário.\n\n[helloworld] A instalar o código da aplicação...\nA instalar src/helloworld... concluído\n\n[helloworld] A instalar os requisitos...\nA gravar ficheiro de requisitos... concluído\n\n[helloworld] A instalar recursos da aplicação...\n...\n\n[helloworld] A remover conteúdo desnecessário da aplicação...\nA remover conteúdo desnecessário do pacote da aplicação... concluído\n\n[helloworld] Criado build\\helloworld\\web\\static\n\n[helloworld] A compilar projeto web...\n...\n\n[helloworld] Compilado build\\helloworld\\web\\static\\www\\index.html\n\n[helloworld] A iniciar servidor web...\nServidor web aberto em http://127.0.0.1:8080\n\n[helloworld] Saída do relatório do servidor web (digite CTRL-C para interromper o relatório)...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-6.md:137
-#, fuzzy
 msgid "This will open a web browser, pointing at {1}:"
-msgstr "Isso abrirá um navegador da Web, apontando para {1}:"
+msgstr "Isto vai abrir um navegador de Web, apontado para {1}:"
 
 #: docs/en/tutorial/tutorial-6.md:139
-#, fuzzy
 msgid "![Hello World Tutorial 6 dialog, in a browser]{1}"
-msgstr "![Caixa de diálogo do Tutorial 6 do Hello World, em um navegador]{1}"
+msgstr "![Diálogo do Tutorial 6 do Hello World, num navegador]{1}"
 
 #: docs/en/tutorial/tutorial-6.md:141
-#, fuzzy
 msgid "If you enter your name and click the button, a dialog will appear."
-msgstr "Se você digitar seu nome e clicar no botão, será exibida uma caixa de diálogo."
+msgstr "Se inserir o seu nome e clicar no botão, será mostrado um diálogo."
 
 #: docs/en/tutorial/tutorial-6.md:143
 msgid "How does this work?"
@@ -5075,9 +4937,8 @@ msgid "But when you press the button, you're running Python code... how does tha
 msgstr "Mas quando você pressiona o botão, está executando código Python... como isso funciona? O Toga usa o [PyScript]{1} para fornecer um interpretador Python no navegador. O Briefcase empacota o código do sua aplicação como rodas que o PyScript pode carregar no navegador. Quando a página é carregada, o código da aplicação é executado no navegador, criando a interface do utilizador usando o DOM do navegador. Quando você clica em um botão, esse botão executa o código de manipulação de eventos no navegador."
 
 #: docs/en/tutorial/tutorial-6.md:149
-#, fuzzy
 msgid "Publishing the web app"
-msgstr "Publicando a aplicação web"
+msgstr "Publicar a aplicação web"
 
 #: docs/en/tutorial/tutorial-6.md:151
 #, fuzzy
@@ -5702,11 +5563,7 @@ msgid ""
 "\n"
 "[helloworld] Following device log output (type CTRL-C to stop log)...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) $ briefcase run android\n"
-"\n"
-"[helloworld] A seguir, a saída do log do dispositivo (digite CTRL-C para interromper o log)...\n"
-"==========================================================================="
+msgstr "(beeware-venv) $ briefcase run android\n\n[helloworld] A seguir, a saída do relatório do dispositivo (digite CTRL-C para interromper o relatório)...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-7.md:434
 #, fuzzy
@@ -5825,12 +5682,7 @@ msgid ""
 "...\n"
 "[helloworld] Following simulator log output (type CTRL-C to stop log)...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) $ briefcase run iOS\n"
-"\n"
-"...\n"
-"[helloworld] A seguir, a saída do log do simulador (digite CTRL-C para interromper o log)...\n"
-"==========================================================================="
+msgstr "(beeware-venv) $ briefcase run iOS\n\n...\n[helloworld] A seguir, a saída do relatório do simulador (digite CTRL-C para interromper o relatório)...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-7.md:508
 #, fuzzy
@@ -6005,19 +5857,7 @@ msgid ""
 "Removing unneeded app bundle content... done\n"
 "\n"
 "[helloworld] Application updated."
-msgstr ""
-"(beeware-venv) $ briefcase update android -r\n"
-"\n"
-"[helloworld] A atualizar o código da aplicação...\n"
-"A instalar src/helloworld... concluído\n"
-"\n"
-"[helloworld] A atualizar os requisitos...\n"
-"Gravando ficheiro de requisitos... concluído\n"
-"\n"
-"[helloworld] A remover conteúdo desnecessário da aplicação...\n"
-"A remover conteúdo desnecessário do pacote da aplicação... concluído\n"
-"\n"
-"[helloworld] Aplicação atualizado."
+msgstr "(beeware-venv) $ briefcase update android -r\n\n[helloworld] A atualizar o código da aplicação...\nA instalar src/helloworld... concluído\n\n[helloworld] A atualizar os requisitos...\nA gravar ficheiro de requisitos... concluído\n\n[helloworld] A remover conteúdo desnecessário da aplicação...\nA remover conteúdo desnecessário do pacote da aplicação... concluído\n\n[helloworld] Aplicação atualizado."
 
 #: docs/en/tutorial/tutorial-7.md:623
 #, fuzzy
