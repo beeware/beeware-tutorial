@@ -1671,7 +1671,7 @@ qual o simulador que escolhe.</p>
 
 <span class="go">&gt;  10</span>
 
-<span class="go">No futuro, você poderá especificar este dispositivo executando:</span>
+<span class="go">No futuro, pode especificar este dispositivo executando:</span>
 
 <span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)::iOS 16.2&quot;</span>
 
@@ -1679,42 +1679,43 @@ qual o simulador que escolhe.</p>
 
 <span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
-<span class="go">[helloworld] A iniciar a aplicação em um iPhone SE (3ª geração) com iOS 16.2 (UDID do dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
+<span class="go">[helloworld] A iniciar a aplicação num iPhone SE (3ª geração) com iOS 16.2 (UDID do dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
 <span class="go">A inicializar o simulador... concluído</span>
-<span class="go">Abrindo o simulador... concluído</span>
+<span class="go">A abrir o simulador... concluído</span>
 
 <span class="go">[helloworld] A instalar a aplicação...</span>
-<span class="go">Desinstalando qualquer versão existente da aplicação... concluído</span>
+<span class="go">A desinstalar qualquer versão existente da aplicação... concluído</span>
 <span class="go">A instalar nova versão da aplicação... concluído</span>
 
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">A iniciar a aplicação... concluído</span>
 
-<span class="go">[helloworld] Saída do log do simulador a seguir (digite CTRL-C para interromper o log)...</span>
+<span class="go">[helloworld] Segue-se resultado de relatório do simulador (tecle CTRL-C para interromper o relatório)...</span>
 <span class="go">===========================================================================</span>
 <span class="go">...</span>
 </code></pre></div>
-<p>Isso vai iniciar o simulador do iOS, instalará sua aplicação e o iniciará. Você
-deverá ver o simulador iniciar e, por fim, abrir sua aplicação iOS:</p>
+<p>Isto vai iniciar o simulador do iOS, vai instalar a sua aplicação e o inicia-la.
+Deverá ver o simulador a iniciar e, eventualmente a abrir a sua aplicação iOS:</p>
 <figure>
 <p><img alt="Janela do tutorial 5 do Hello World, no iOS" src="../../../images/iOS/tutorial-5.png" /></p>
 <figcaption></figcaption>
 </figure>
-<p>Enquanto a aplicação estiver em execução, você verá uma série de mensagens de
-saída de log do Simulador no console. Digitar Ctrl+C no terminal interromperá as
-mensagens no console, mas não fechará o simulador. Isso serve para que você
-possa testar novas alterações sem reiniciar o simulador.</p>
-<p>Se você souber antecipadamente qual simulador de iOS deseja usar, poderá dizer
-ao Briefcase para usar esse simulador fornecendo uma opção <code>-d</code> (ou <code>--device</code>).
-A usar o nome do dispositivo que você selecionou ao criar a aplicação, execute:</p>
+<p>Enquanto a aplicação estiver a correr, vai ver uma série de mensagens de saída
+do relatório do Simulador na consola. Teclar Ctrl+C no terminal vai interromper
+as mensagens na consola, mas não fecha o simulador. Isto serve para que possa
+testar novas alterações sem reiniciar o simulador.</p>
+<p>Se souber antecipadamente qual simulador de iOS deseja usar, poderá dizer ao
+Briefcase para usar esse simulador fornecendo uma opção <code>-d</code> (ou <code>--device</code>).
+Usando o nome do dispositivo que selecionou quando compilou a aplicação,
+execute:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)&quot;</span>
 </code></pre></div>
-<p>Se você tiver várias versões do iOS disponíveis, o Briefcase escolherá a versão
-mais alta do iOS; se você quiser escolher uma versão específica do iOS, diga a
-ele para usar essa versão específica:</p>
+<p>Se tiver várias versões do iOS disponíveis, o Briefcase vai escolher a versão
+mais alta do iOS; se quiser escolher uma versão específica do iOS, diga a ele
+para usar essa versão específica:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)::iOS 15.5&quot;</span>
 </code></pre></div>
-<p>Ou você pode nomear um UDID de dispositivo específico:</p>
+<p>Ou, pode nomear um UDID de dispositivo específico:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
 </code></pre></div>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
