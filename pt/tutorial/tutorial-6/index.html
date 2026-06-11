@@ -1664,23 +1664,23 @@ a sua aplicação como uma aplicação web de página única.</p>
 <div class="admonition">
 <p class="admonition-title">Prova de conceito</p>
 <p>O backend do Toga Web é o menos maduro de todos os backends do Toga. Ele está
-maduro o suficiente para exibir alguns recursos, mas é provável que apresente
-bugs e não tenha muitos dos widgets disponíveis em outras plataformas. Neste
+maduro o suficiente para mostrar alguns recursos, mas é provável que apresente
+bugs e não tenha muitos dos widgets disponíveis nas outras plataformas. Neste
 momento, a implementação na Web deve ser considerada uma "Prova de Conceito" - o
 suficiente para demonstrar o que pode ser feito, mas não o suficiente para ser
-usado em um desenvolvimento sério.</p>
+usado num desenvolvimento a sério.</p>
 <p>Se tiver problemas com este passo do tutorial, pode saltar para a próxima
 página.</p>
 </div>
 <h2 id="implementacao-como-uma-aplicacao-web">Implementação como uma aplicação Web<a class="headerlink" href="#implementacao-como-uma-aplicacao-web" title="Permanent link">&para;</a></h2>
-<p>O processo de implementação como um aplicação da Web de página única segue o
-mesmo padrão familiar - você cria a aplicação, constrói a aplicação e, em
-seguida, o executa. No entanto, o Briefcase pode ser um pouco inteligente; se
-você tentar executar um aplicação e o Briefcase determinar que ele não foi
-criado ou compilado para a plataforma que está sendo visada, ele executará as
-etapas de criação e compilação para você. Como esta é a primeira vez que
-executamos a aplicação para a Web, podemos executar todas as três etapas com um
-único comando:</p>
+<p>O processo de implementação como uma aplicação da Web de página única segue o
+mesmo padrão familiar - você cria a aplicação, depois compila a aplicação, e
+depois corre-a. No entanto, o Briefcase pode ser um pouco inteligente; se tentar
+executar uma aplicação e o Briefcase determinar que ela não foi criada ou
+compilada para a plataforma que está sendo visada, ele vai executar as etapas de
+criação e compilação para si. Como esta é a primeira vez que executamos a
+aplicação para a Web, podemos executar todas as três etapas com um único
+comando:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1798,28 +1798,30 @@ executamos a aplicação para a Web, podemos executar todas as três etapas com 
 <p><img alt="Diálogo do Tutorial 6 do Hello World, num navegador" src="../../images/tutorial-6.png" /></p>
 <p>Se inserir o seu nome e clicar no botão, será mostrado um diálogo.</p>
 <h2 id="como-isto-funciona">Como isto funciona?<a class="headerlink" href="#como-isto-funciona" title="Permanent link">&para;</a></h2>
-<p>Este aplicação da Web é um site estático - uma única página de origem HTML, com
-alguns recursos CSS e outros. O Briefcase iniciou um servidor da Web local para
-servir essa página para que o seu navegador possa visualizá-la. Se você quiser
-colocar essa página da Web em produção, poderá copiar o conteúdo da pasta <code>www</code>
-em qualquer servidor da Web que possa servir conteúdo estático.</p>
-<p>Mas quando você pressiona o botão, está executando código Python&hellip; como isso
+<p>Esta aplicação Web é um site estático - uma única página de origem HTML, com
+alguns recursos CSS e outros. O Briefcase iniciou um servidor Web local para
+servir essa página para que o seu navegador possa visualizá-la. Se quiser
+colocar essa página Web em produção, pode copiar o conteúdo da pasta <code>www</code> para
+qualquer servidor Web que possa servir conteúdo estático.</p>
+<p>Mas quando pressiona o botão, está a executar código Python&hellip; como isso
 funciona? O Toga usa o <a href="https://pyscript.net">PyScript</a> para fornecer um
-interpretador Python no navegador. O Briefcase empacota o código do sua
+interpretador Python no navegador. O Briefcase empacota o código da sua
 aplicação como rodas que o PyScript pode carregar no navegador. Quando a página
 é carregada, o código da aplicação é executado no navegador, criando a interface
-do utilizador usando o DOM do navegador. Quando você clica em um botão, esse
-botão executa o código de manipulação de eventos no navegador.</p>
+de utilizador usando o DOM do navegador. Quando clica num botão, esse botão
+executa o código de manuseamento de eventos no navegador.</p>
 <h2 id="publicar-a-aplicacao-web">Publicar a aplicação web<a class="headerlink" href="#publicar-a-aplicacao-web" title="Permanent link">&para;</a></h2>
-<p>Se desejar, você também pode tentar publicar este aplicação web na internet
-usando o [PythonAnywhere Briefcase Plugin]. O [tutorial] para esse plugin
-continua a partir deste ponto e orienta você sobre como empacotar e publicar no
-[PythonAnywhere].</p>
+<p>Se desejar, também pode tentar publicar esta aplicação web na internet usando o
+<a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">Plugin PythonAnywhere
+Briefcase</a>. O
+<a href="https://briefcase.pythonanywhere.com/tutorial/">tutorial</a> para esse plugin
+continua a partir deste ponto e orienta-o sobre como empacotar e publicar no
+<a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Embora já tenhamos implantado esse aplicação no desktop, em dispositivos móveis
-e na Web, ele é bastante simples e não envolve bibliotecas de terceiros. Podemos
-incluir bibliotecas do Python Package Index (PyPI) em nossa aplicação? Consulte
-o <a href="../tutorial-7/">Tutorial 7</a> para descobrir&hellip;</p>
+<p>Embora já tenhamos implementado essa aplicação no ambiente de trabalho, em
+dispositivos móveis e na Web, ela é bastante simples e não envolve bibliotecas
+de terceiros. Podemos incluir bibliotecas do Python Package Index (PyPI) na
+nossa aplicação? Consulte o <a href="../tutorial-7/">Tutorial 7</a> para descobrir&hellip;</p>
 
 
 
