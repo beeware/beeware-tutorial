@@ -1790,32 +1790,32 @@ quando executou originalmente o <code>briefcase new</code>.</p>
 configurações da sua aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
 <span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
-<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Um aplicação tutorial&quot;</span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Uma aplicação de tutorial&quot;</span>
 <span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;Mais detalhes sobre a aplicação devem ser inseridos aqui.</span>
 <span class="s2">&quot;&quot;&quot;</span>
 <span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
 </code></pre></div>
 <p>A opção <code>requires</code> descreve as dependências da nossa aplicação. É uma lista de
-strings que especifica as bibliotecas (e, opcionalmente, as versões das
-bibliotecas) que você deseja incluir na sua aplicação.</p>
-<p>Modifique a configuração <code>requires</code> para que fique assim:</p>
+strings que especifica as bibliotecas (e opcionalmente, as versões das
+bibliotecas) que deseja incluir na sua aplicação.</p>
+<p>Modifique a definição <code>requires</code> para que fique assim:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>Ao adicionar essa configuração, estamos dizendo ao Briefcase "quando você
-compilar meu aplicação, execute <code>pip install httpx</code> no pacote de aplicações".
-Qualquer coisa que seja uma entrada legal para <code>pip install</code> pode ser usada aqui
-- portanto, você poderia especificar:</p>
+<p>Ao adicionar essa configuração, estamos a dizer ao Briefcase "quando compilar a
+minha aplicação, corra <code>pip install httpx</code> no bolo da aplicação". Qualquer coisa
+que seja uma entrada legal para <code>pip install</code> pode ser usada aqui - por isso,
+pode especificar:</p>
 <ul>
-<li>Uma versão específica da biblioteca (por exemplo, <code>"httpx==0.19.0"</code>);</li>
-<li>Um intervalo de versões de biblioteca (por exemplo, <code>"httpx&gt;=0.19"</code>);</li>
-<li>Um caminho para um repositório git (por exemplo,
-  <code>"git+https://github.com/encode/httpx"</code>); ou</li>
-<li>Um caminho de ficheiro local (no entanto, esteja avisado: se você fornecer seu
-  código a outra pessoa, esse caminho provavelmente não existirá no computador
-  dela!)</li>
+<li>Uma versão específica da biblioteca (ex., <code>"faker==37.3.0"</code>);</li>
+<li>Uma gama de versões de biblioteca (ex., <code>"faker&gt;=37"</code>);</li>
+<li>Um caminho para um repositório git (ex.,
+  <code>"git+https://github.com/joke2k/faker/"</code>); ou</li>
+<li>Um caminho de ficheiro local (No entanto - esteja avisado: se der o seu código
+  a outra pessoa, esse caminho provavelmente não vai existir no computador dessa
+  pessoa!)</li>
 </ul>
 <p>Mais abaixo no <code>pyproject.toml</code>, você notará outras secções que dependem do
 sistema operativo, como <code>[tool.briefcase.app.helloworld.macOS]</code> e
@@ -1828,11 +1828,10 @@ plataforma, e essa configuração será usada somente para essa plataforma. Voc�
 notará que as bibliotecas <code>toga</code> são todas especificadas na secção <code>requires</code>
 específica da plataforma - isso ocorre porque as bibliotecas necessárias para
 exibir uma interface de utilizador são específicas da plataforma.</p>
-<p>No nosso caso, queremos que o <code>httpx</code> seja instalado em todas as plataformas,
-portanto, usamos a configuração <code>requires</code> em nível de aplicação. As
-dependências no nível da aplicação sempre serão instaladas; as dependências
-específicas da plataforma são instaladas <em>além</em> das dependências no nível da
-aplicação.</p>
+<p>No nosso caso, queremos que o <code>faker</code> seja instalado em todas as plataformas,
+assim usamos a configuração <code>requires</code> em nível de aplicação. As dependências no
+nível da aplicação são sempre instaladas; as dependências específicas da
+plataforma são instaladas <em>em adição</em> das dependências no nível da aplicação.</p>
 <p>Depois de adicionar o novo requisito, salve <code>pyproject.toml</code> e execute
 <code>briefcase dev -r</code>. O sinalizador <code>-r</code> informa ao Briefcase que os requisitos
 foram alterados e que o ambiente virtual de desenvolvimento precisa ser
@@ -1842,9 +1841,9 @@ atualizado:</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Ativando o ambiente de desenvolvimento...</span>
+<span class="go">[helloworld] A ativar o ambiente de desenvolvimento...</span>
 <span class="go">...</span>
-<span class="go">Recriando o ambiente virtual (dev.cpython-313-darwin)... concluído</span>
+<span class="go">A recriar o ambiente virtual (dev.cpython-313-darwin)... concluído</span>
 
 <span class="go">[hello-world] A instalar os pré-requisitos...</span>
 <span class="go">...</span>
@@ -1852,8 +1851,8 @@ atualizado:</p>
 <span class="go">[helloworld] A iniciar no modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, você verá uma caixa de diálogo
-semelhante:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
+isto:</p>
 <figure>
 <p><img alt="Caixa de diálogo do Tutorial 7 do Hello World, no
 macOS" src="../../images/macOS/tutorial-7.png" /></p>
@@ -1863,9 +1862,9 @@ macOS" src="../../images/macOS/tutorial-7.png" /></p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Ativando o ambiente de desenvolvimento...</span>
+<span class="go">[helloworld] A ativar o ambiente de desenvolvimento...</span>
 <span class="go">...</span>
-<span class="go">Recriando ambiente virtual (dev.cpython-313-x86_64-linux-gnu)... concluído</span>
+<span class="go">A recriar ambiente virtual (dev.cpython-313-x86_64-linux-gnu)... concluído</span>
 
 <span class="go">[hello-world] A instalar pré-requisitos...</span>
 <span class="go">...</span>
@@ -1873,8 +1872,8 @@ macOS" src="../../images/macOS/tutorial-7.png" /></p>
 <span class="go">[helloworld] A iniciar no modo dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, você verá uma caixa de diálogo
-semelhante:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
+isto:</p>
 <figure>
 <p><img alt="Caixa de diálogo do Tutorial 7 do Hello World, no
 Linux" src="../../images/linux/tutorial-7.png" /></p>
@@ -1884,9 +1883,9 @@ Linux" src="../../images/linux/tutorial-7.png" /></p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev -r
 
-<span class="go">[helloworld] Ativando o ambiente de desenvolvimento...</span>
+<span class="go">[helloworld] A ativar o ambiente de desenvolvimento...</span>
 <span class="go">...</span>
-<span class="go">Recriando ambiente virtual (dev.cp313-win_amd64)... concluído</span>
+<span class="go">A recriar ambiente virtual (dev.cp313-win_amd64)... concluído</span>
 
 <span class="go">[hello-world] A instalar pré-requisitos...</span>
 <span class="go">...</span>
@@ -1894,8 +1893,8 @@ Linux" src="../../images/linux/tutorial-7.png" /></p>
 <span class="go">[helloworld] A iniciar no modo dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, você verá uma caixa de diálogo
-semelhante:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
+isto:</p>
 <figure>
 <p><img alt="Caixa de diálogo Hello World Tutorial 7, no
 Windows" src="../../images/windows/tutorial-7.png" /></p>
