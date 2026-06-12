@@ -1030,7 +1030,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 7 - A iniciar o uso de bibliotecas externas
+    Tutorial 7 - Usar bibliotecas de terceiros
   
 
 
@@ -1724,8 +1724,7 @@ configuração <code>httpx</code> em nosso <code>requires</code> para incluir o 
 <p>Adicione uma importação na parte superior do <code>app.py</code> para importar o <code>httpx</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">importar</span> <span class="n">httpx</span>
 </code></pre></div>
-<p>Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos
-<code>say_hello()</code> para que ele tenha a seguinte aparência:</p>
+<p>Depois modifique a chamada de retorno <code>say_hello()</code> para ficar como isto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
@@ -1804,21 +1803,21 @@ Windows" src="../../images/windows/tutorial-8.png" /></p>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Não é possível executar um aplicação Android no modo de desenvolvedor - use as
-instruções para a plataforma de desktop escolhida.</p>
+<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as
+instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
 </div>
 <div class="tabbed-block">
-<p>Não é possível executar um aplicação iOS no modo de desenvolvedor - use as
-instruções para a plataforma de desktop escolhida.</p>
+<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções
+para a plataforma de ambiente de trabalho escolhida.</p>
 </div>
 </div>
 </div>
 <p>A menos que você tenha uma conexão de Internet <em>muito</em> rápida, poderá perceber
-que, ao pressionar o botão, a GUI do sua aplicação trava um pouco. O sistema
+que, ao pressionar o botão, a GUI da sua aplicação trava um pouco. O sistema
 operativo pode até manifestar isso com um cursor "beachball" ou "spinner" para
 indicar que a aplicação não está respondendo.</p>
 <p>A menos que você tenha uma conexão de Internet <em>muito</em> rápida, poderá perceber
-que, ao pressionar o botão, a GUI do sua aplicação trava um pouco. Isso ocorre
+que, ao pressionar o botão, a GUI da sua aplicação trava um pouco. Isso ocorre
 porque a solicitação da Web que fizemos é <em>síncrona</em>. Quando nossa aplicação faz
 a solicitação da Web, ele espera que a API retorne uma resposta antes de
 continuar. Enquanto espera, ele não permite que a aplicação seja redesenhado e,
@@ -2028,7 +2027,7 @@ projeto BeeWare. No decorrer deste tutorial, você terá:</p>
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../tutorial-7/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Tutorial 7 - A iniciar o uso de bibliotecas externas">
+          <a href="../tutorial-7/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Tutorial 7 - Usar bibliotecas de terceiros">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2038,7 +2037,7 @@ projeto BeeWare. No decorrer deste tutorial, você terá:</p>
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Tutorial 7 - A iniciar o uso de bibliotecas externas
+                Tutorial 7 - Usar bibliotecas de terceiros
               </div>
             </div>
           </a>

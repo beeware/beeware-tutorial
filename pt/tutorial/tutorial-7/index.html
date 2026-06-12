@@ -63,7 +63,7 @@
     
     
       
-        <title>Tutorial 7 - A iniciar o uso de bibliotecas externas - BeeWare Tutorial</title>
+        <title>Tutorial 7 - Usar bibliotecas de terceiros - BeeWare Tutorial</title>
       
     
     
@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-7-a-iniciar-o-uso-de-bibliotecas-externas" class="md-skip">
+        <a href="#tutorial-7-usar-bibliotecas-de-terceiros" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -1049,7 +1049,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 7 - A iniciar o uso de bibliotecas externas
+    Tutorial 7 - Usar bibliotecas de terceiros
   
 
 
@@ -1082,7 +1082,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Tutorial 7 - A iniciar o uso de bibliotecas externas
+    Tutorial 7 - Usar bibliotecas de terceiros
   
 
 
@@ -1152,10 +1152,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adicao-de-um-pacote" class="md-nav__link">
+  <a href="#adicionar-um-pacote" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adição de um pacote
+        Adicionar um pacote
       
     </span>
   </a>
@@ -1163,10 +1163,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#atualizacao-de-dependencias" class="md-nav__link">
+  <a href="#atualizar-dependencias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Atualização de dependências
+        Atualizar dependências
       
     </span>
   </a>
@@ -1606,10 +1606,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adicao-de-um-pacote" class="md-nav__link">
+  <a href="#adicionar-um-pacote" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adição de um pacote
+        Adicionar um pacote
       
     </span>
   </a>
@@ -1617,10 +1617,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#atualizacao-de-dependencias" class="md-nav__link">
+  <a href="#atualizar-dependencias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Atualização de dependências
+        Atualizar dependências
       
     </span>
   </a>
@@ -1678,54 +1678,52 @@ aria-label="Cabeçalho"
 
 
 
-<h1 id="tutorial-7-a-iniciar-o-uso-de-bibliotecas-externas">Tutorial 7 - A iniciar o uso de bibliotecas externas<a class="headerlink" href="#tutorial-7-a-iniciar-o-uso-de-bibliotecas-externas" title="Permanent link">&para;</a></h1>
+<h1 id="tutorial-7-usar-bibliotecas-de-terceiros">Tutorial 7 - Usar bibliotecas de terceiros<a class="headerlink" href="#tutorial-7-usar-bibliotecas-de-terceiros" title="Permanent link">&para;</a></h1>
 <p>Até o momento, a aplicação que criamos usou apenas o nosso próprio código, além
-do código fornecido pelo BeeWare. Entretanto, em um aplicação do mundo real,
-você provavelmente desejará usar uma biblioteca de terceiros, baixada do Python
-Package Index (PyPI).</p>
-<p>Vamos modificar nossa aplicação para incluir uma biblioteca de terceiros.</p>
-<h2 id="adicao-de-um-pacote">Adição de um pacote<a class="headerlink" href="#adicao-de-um-pacote" title="Permanent link">&para;</a></h2>
-<p>Vamos modificar nossa aplicação para dizer um pouco mais do que apenas "Hi,
-there!".</p>
-<p>Para gerar um texto mais interessante para a caixa de diálogo, usaremos uma
+do código fornecido pelo BeeWare. No entanto, numa aplicação do mundo real,
+provavelmente vai desejar usar uma biblioteca de terceiros, descarregada do
+Índice e Pacotes Python (PyPI).</p>
+<p>Vamos modificar a nossa aplicação para incluir uma biblioteca de terceiros.</p>
+<h2 id="adicionar-um-pacote">Adicionar um pacote<a class="headerlink" href="#adicionar-um-pacote" title="Permanent link">&para;</a></h2>
+<p>Vamos modificar a nossa aplicação para dizer um pouco mais do que apenas "Olá!".</p>
+<p>Para gerar um texto mais interessante para a caixa de diálogo, vamos usar uma
 biblioteca chamada <a href="https://faker.readthedocs.io/en/stable/">Faker</a>. Faker é um
 pacote Python que gera conteúdo falso, incluindo nomes e blocos de texto. Os
 nomes e as palavras no bloco de texto são gerados a partir de uma lista
 arbitrária de palavras fornecidas pelo Faker. Vamos usar o Faker para construir
-uma mensagem falsa, como se alguém estivesse respondendo ao utilizador.</p>
-<p>Vamos adicionar uma chamada de API <code>httpx</code> ao nossa aplicação. Adicione uma
-importação na parte superior do <code>app.py</code> para importar <code>httpx</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">importar</span> <span class="n">faker</span>
+uma mensagem falsa, como se alguém estivesse a responder ao utilizador.</p>
+<p>Começamos por adicionar <code>faker</code> à nossa aplicação. Adicione uma importação no
+topo do <code>app.py</code> para importar <code>faker</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">faker</span>
 </code></pre></div>
-<p>Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos
-<code>say_hello()</code> para que ele tenha a seguinte aparência:</p>
+<p>Depois modifique a chamada de retorno <code>say_hello()</code> para ficar como isto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
- <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
- <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
- <span class="sa">f</span><span class="s2">&quot;Uma mensagem de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
- <span class="p">)</span>
+        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+            <span class="sa">f</span><span class="s2">&quot;Uma mensagem de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Vamos executar nossa aplicação atualizado no modo de desenvolvedor do Briefcase
-para verificar se nossa alteração funcionou.</p>
+<p>Vamos correr a nossa aplicação atualizada no modo de desenvolvedor do Briefcase
+para verificar se a nossa alteração funcionou.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 <span class="go">Traceback (última chamada mais recente):</span>
-<span class="go">Arquivo &quot;.../venv/bin/briefcase&quot;, linha 5, em &lt;module&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/bin/briefcase&quot;, linha 5, em &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, linha 5, em &lt;module&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, linha 5, em &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, linha 14, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, linha 14, em &lt;módulo&gt;</span>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
 </code></pre></div>
@@ -1733,17 +1731,17 @@ para verificar se nossa alteração funcionou.</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 <span class="go">Traceback (última chamada mais recente):</span>
-<span class="go">Arquivo &quot;.../venv/bin/briefcase&quot;, linha 5, em &lt;module&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/bin/briefcase&quot;, linha 5, em &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, linha 5, em &lt;module&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, linha 5, em &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="go">Arquivo &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, linha 14, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, linha 14, em &lt;módulo&gt;</span>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
 </code></pre></div>
@@ -1751,45 +1749,45 @@ para verificar se nossa alteração funcionou.</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
 <span class="go">Traceback (última chamada mais recente):</span>
-<span class="gp">Arquivo &quot;...\venv\bin\briefcase&quot;, linha 5, em &lt;module&gt;</span>
+<span class="gp">Ficheiro &quot;...\venv\bin\briefcase&quot;, linha 5, em &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="gp">Arquivo &quot;...\venv\lib\python3.13\site-packages\briefcase\__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
+<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="gp">Arquivo &quot;...\venv\lib\python3.13\site-packages\briefcase\cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
+<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="gp">Arquivo &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
+<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="gp">Arquivo &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\build.py&quot;, linha 5, em &lt;module&gt;</span>
+<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\build.py&quot;, linha 5, em &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="gp">Arquivo &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\base.py&quot;, linha 14, em &lt;módulo&gt;</span>
+<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\base.py&quot;, linha 14, em &lt;módulo&gt;</span>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Não é possível executar um aplicação Android no modo de desenvolvedor - use as
-instruções para a plataforma de desktop escolhida.</p>
+<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as
+instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
 </div>
 <div class="tabbed-block">
-<p>Não é possível executar um aplicação iOS no modo de desenvolvedor - use as
-instruções para a plataforma de desktop escolhida.</p>
+<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções
+para a plataforma de ambiente de trabalho escolhida.</p>
 </div>
 </div>
 </div>
 <p>O que aconteceu? Adicionamos <code>faker</code> ao nosso <em>código</em>, mas não o adicionamos ao
-ambiente virtual usado para executar a aplicação no modo de desenvolvimento.</p>
-<p>Quando o Briefcase executa um aplicação no modo de desenvolvimento, ele cria um
-ambiente virtual independente para esse aplicação, independente do ambiente em
-que você executa <code>briefcase</code>. Se o sua aplicação não declarar que precisa de uma
+ambiente virtual usado para executar a aplicação em modo de desenvolvimento.</p>
+<p>Quando o Briefcase executa uma aplicação em modo de desenvolvimento, ele cria um
+ambiente virtual independente para essa aplicação, independente do ambiente em
+que executa <code>briefcase</code>. Se a sua aplicação não declarar que precisa de uma
 biblioteca específica, essa biblioteca não será instalada no ambiente virtual de
 desenvolvimento.</p>
-<p>Então, como você adiciona um novo requisito ao sua aplicação?</p>
-<h2 id="atualizacao-de-dependencias">Atualização de dependências<a class="headerlink" href="#atualizacao-de-dependencias" title="Permanent link">&para;</a></h2>
-<p>No diretório raiz do sua aplicação, há um ficheiro chamado <code>pyproject.toml</code>.
-Esse ficheiro contém todos os detalhes de configuração da aplicação que você
-forneceu quando executou originalmente o <code>briefcase new</code>.</p>
-<p>o <code>pyproject.toml</code> é dividido em seções; uma das seções descreve as
-configurações do sua aplicação:</p>
+<p>Então, como adicionar um novo requisito à sua aplicação?</p>
+<h2 id="atualizar-dependencias">Atualizar dependências<a class="headerlink" href="#atualizar-dependencias" title="Permanent link">&para;</a></h2>
+<p>No diretório raiz da sua aplicação, há um ficheiro chamado <code>pyproject.toml</code>.
+Esse ficheiro contém todos os detalhes de configuração da aplicação que forneceu
+quando executou originalmente o <code>briefcase new</code>.</p>
+<p>o <code>pyproject.toml</code> é dividido em secções; uma das secções descreve as
+configurações da sua aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
 <span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
 <span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Um aplicação tutorial&quot;</span>
@@ -1819,12 +1817,12 @@ Qualquer coisa que seja uma entrada legal para <code>pip install</code> pode ser
   código a outra pessoa, esse caminho provavelmente não existirá no computador
   dela!)</li>
 </ul>
-<p>Mais abaixo no <code>pyproject.toml</code>, você notará outras seções que dependem do
+<p>Mais abaixo no <code>pyproject.toml</code>, você notará outras secções que dependem do
 sistema operativo, como <code>[tool.briefcase.app.helloworld.macOS]</code> e
-<code>[tool.briefcase.app.helloworld.windows]</code>. Essas seções <em>também</em> têm uma
+<code>[tool.briefcase.app.helloworld.windows]</code>. Essas secções <em>também</em> têm uma
 configuração <code>requires</code>. Essas configurações permitem definir dependências
 adicionais específicas da plataforma. Assim, por exemplo, se você precisar de
-uma biblioteca específica da plataforma para lidar com algum aspecto do sua
+uma biblioteca específica da plataforma para lidar com algum aspecto da sua
 aplicação, poderá especificar essa biblioteca na secção <code>requires</code> específica da
 plataforma, e essa configuração será usada somente para essa plataforma. Você
 notará que as bibliotecas <code>toga</code> são todas especificadas na secção <code>requires</code>
@@ -1905,12 +1903,12 @@ Windows" src="../../images/windows/tutorial-7.png" /></p>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Não é possível executar um aplicação Android no modo de desenvolvedor - use as
-instruções para a plataforma de desktop escolhida.</p>
+<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as
+instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
 </div>
 <div class="tabbed-block">
-<p>Não é possível executar um aplicação iOS no modo de desenvolvedor - use as
-instruções para a plataforma de desktop escolhida.</p>
+<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções
+para a plataforma de ambiente de trabalho escolhida.</p>
 </div>
 </div>
 </div>
@@ -1994,13 +1992,13 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 </code></pre></div>
 <p>No entanto, quando a aplicação for executado, você verá um erro no console:</p>
 <div class="highlight"><pre><span></span><code><span class="go">Traceback (última chamada mais recente):</span>
-<span class="go">  Arquivo &quot;/usr/lib/python3.13/runpy.py&quot;, linha 194, em _run_module_as_main</span>
+<span class="go">  Ficheiro &quot;/usr/lib/python3.13/runpy.py&quot;, linha 194, em _run_module_as_main</span>
 <span class="go">    return _run_code(code, main_globals, None,</span>
-<span class="go">  Arquivo &quot;/usr/lib/python3.13/runpy.py&quot;, linha 87, em _run_code</span>
+<span class="go">  Ficheiro &quot;/usr/lib/python3.13/runpy.py&quot;, linha 87, em _run_code</span>
 <span class="go">    exec(code, run_globals)</span>
-<span class="go">  Arquivo &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py&quot;, linha 1, em &lt;module&gt;</span>
+<span class="go">  Ficheiro &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py&quot;, linha 1, em &lt;module&gt;</span>
 <span class="go">    from helloworld.app import main</span>
-<span class="go">  Arquivo &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py&quot;, linha 8, em &lt;module&gt;</span>
+<span class="go">  Ficheiro &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py&quot;, linha 8, em &lt;module&gt;</span>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
 
@@ -2124,9 +2122,9 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="go">O aplicação travou!</span>
 <span class="go">========================</span>
 <span class="go">Traceback (última chamada mais recente):</span>
-<span class="go">  Arquivo &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py&quot;, linha 1, em &lt;módulo&gt;</span>
+<span class="go">  Ficheiro &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py&quot;, linha 1, em &lt;módulo&gt;</span>
 <span class="go">    from helloworld.app import main</span>
-<span class="go">  Arquivo &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py&quot;, linha 8, no &lt;módulo&gt;</span>
+<span class="go">  Ficheiro &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py&quot;, linha 8, no &lt;módulo&gt;</span>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
 </code></pre></div>
@@ -2258,7 +2256,7 @@ terceiros são mais comumente distribuídos usando o <a href="https://pypi.org">
 (PyPI)</a> e instalados em seu ambiente virtual local. Neste
 tutorial, usamos o <code>pip</code>, mas há outras opções.</p>
 <p>Em plataformas desktop (macOS, Windows, Linux), basicamente qualquer pacote no
-PyPI pode ser instalado em seu ambiente virtual ou adicionado aos requisitos do
+PyPI pode ser instalado em seu ambiente virtual ou adicionado aos requisitos da
 sua aplicação. No entanto, ao criar um aplicação para plataformas móveis ou web,
 suas opções são um pouco limitadas.</p>
 <p>Em resumo, qualquer pacote <em>puro Python</em> (ou seja, qualquer pacote criado a
