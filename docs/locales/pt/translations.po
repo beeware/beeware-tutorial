@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-11 10:02+0000\n"
-"PO-Revision-Date: 2026-06-11 10:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-11 10:02+0000\nPO-Revision-Date: 2026-06-12 09:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.7.dev0\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -55,9 +43,8 @@ msgid "[Tutorial 6 - Put it on the web!]{1}"
 msgstr "[Tutorial 6 - Colocar na web!]{1}"
 
 #: docs/en/SUMMARY.md:15
-#, fuzzy
 msgid "[Tutorial 7 - Get this (third-)party started]{1}"
-msgstr "[Tutorial 7 - A iniciar o uso de bibliotecas externas]{1}"
+msgstr "[Tutorial 7 - Usar bibliotecas de terceiros]{1}"
 
 #: docs/en/SUMMARY.md:16
 msgid "[Tutorial 8 - Making it Smooooth]{1}"
@@ -2399,7 +2386,7 @@ msgstr "**Email do Autor** - Insira o seu próprio endereço de e-mail. Isto vai
 
 #: docs/en/tutorial/tutorial-1.md:83
 msgid "**Application URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the `https://`). Otherwise, just accept the default URL (`https://example.com/helloworld`). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
-msgstr "**URL da Aplicação** - A URL da página inicial do sua aplicação. Novamente, se possui o seu próprio domínio, insira o URL desse domínio (incluindo o `https://`). Caso contrário, apenas aceite o URL predefinido (`https://example.com/helloworld`). Este URL não precisa realmente existir (por enquanto); só será usado se publicar a sua aplicação numa loja de aplicações."
+msgstr "**URL da Aplicação** - A URL da página inicial da sua aplicação. Novamente, se possui o seu próprio domínio, insira o URL desse domínio (incluindo o `https://`). Caso contrário, apenas aceite o URL predefinido (`https://example.com/helloworld`). Este URL não precisa realmente existir (por enquanto); só será usado se publicar a sua aplicação numa loja de aplicações."
 
 #: docs/en/tutorial/tutorial-1.md:84
 msgid "**Project License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
@@ -4035,7 +4022,7 @@ msgstr "Atualizar e executar num único passo"
 
 #: docs/en/tutorial/tutorial-4.md:132
 msgid "If you're rapidly iterating code changes, you'll likely want to make a code change, update the application, and immediately re-run your application. For most purposes, developer mode (`briefcase dev`) will be the easiest way to do this sort of rapid iteration; however, if you're testing something about how your application runs as a native binary, or hunting a bug that only manifests when your application is in packaged form, you may need to use repeated calls to `briefcase run`. To simplify the process of updating and running the bundled app, Briefcase has a shortcut to support this usage pattern - the `-u` (or `--update`) option on the `run` command."
-msgstr "Se está a iterar rapidamente alterações de código, provavelmente vai querer fazer uma mudança de código, atualizar a aplicação e imediatamente re-correr a sua aplicação. Para a maioria dos propósitos, o modo de desenvolvedor (`briefcase dev`) será a maneira mais fácil de fazer esse tipo de iteração rápida; no entanto, se estiver a testar algo sobre como sua aplicação corre como um binário nativo, ou caçando um bug que só se manifesta quando sua aplicação está em formato empacotado, pode precisar de usar chamadas repetidas para `briefcase run`. Para simplificar o processo de atualização e execução do bolo dq aplicação, o Briefcase tem um atalho para suportar este padrão de uso - a opção `-u` (ou `-update`) no comando `run`."
+msgstr "Se está a iterar rapidamente alterações de código, provavelmente vai querer fazer uma mudança de código, atualizar a aplicação e imediatamente re-correr a sua aplicação. Para a maioria dos propósitos, o modo de desenvolvedor (`briefcase dev`) será a maneira mais fácil de fazer esse tipo de iteração rápida; no entanto, se estiver a testar algo sobre como sua aplicação corre como um binário nativo, ou caçando um bug que só se manifesta quanda sua aplicação está em formato empacotado, pode precisar de usar chamadas repetidas para `briefcase run`. Para simplificar o processo de atualização e execução do bolo dq aplicação, o Briefcase tem um atalho para suportar este padrão de uso - a opção `-u` (ou `-update`) no comando `run`."
 
 #: docs/en/tutorial/tutorial-4.md:134
 msgid "Let's try making another change. You may have noticed that if you don't type a name in the text input box, the dialog will say \"Hello, \". Let's modify the `say_hello` function again to handle this edge case."
@@ -5062,52 +5049,42 @@ msgid "Although we've now deployed this app on desktop, mobile and the web, the 
 msgstr "Embora já tenhamos implementado essa aplicação no ambiente de trabalho, em dispositivos móveis e na Web, ela é bastante simples e não envolve bibliotecas de terceiros. Podemos incluir bibliotecas do Python Package Index (PyPI) na nossa aplicação? Consulte o [Tutorial 7]{1} para descobrir..."
 
 #: docs/en/tutorial/tutorial-7.md:1
-#, fuzzy
 msgid "Tutorial 7 - Get this (third-)party started"
-msgstr "Tutorial 7 - A iniciar o uso de bibliotecas externas"
+msgstr "Tutorial 7 - Usar bibliotecas de terceiros"
 
 #: docs/en/tutorial/tutorial-7.md:3
-#, fuzzy
 msgid "So far, the app we've built has only used our own code, plus the code provided by BeeWare. However, in a real-world app, you'll likely want to use a third-party library, downloaded from the Python Package Index (PyPI)."
-msgstr "Até o momento, a aplicação que criamos usou apenas o nosso próprio código, além do código fornecido pelo BeeWare. Entretanto, em um aplicação do mundo real, você provavelmente desejará usar uma biblioteca de terceiros, baixada do Python Package Index (PyPI)."
+msgstr "Até o momento, a aplicação que criamos usou apenas o nosso próprio código, além do código fornecido pelo BeeWare. No entanto, numa aplicação do mundo real, provavelmente vai desejar usar uma biblioteca de terceiros, descarregada do Índice e Pacotes Python (PyPI)."
 
 #: docs/en/tutorial/tutorial-7.md:5
-#, fuzzy
 msgid "Let's modify our app to include a third-party library."
-msgstr "Vamos modificar nossa aplicação para incluir uma biblioteca de terceiros."
+msgstr "Vamos modificar a nossa aplicação para incluir uma biblioteca de terceiros."
 
 #: docs/en/tutorial/tutorial-7.md:7
-#, fuzzy
 msgid "Adding a package"
-msgstr "Adição de um pacote"
+msgstr "Adicionar um pacote"
 
 #: docs/en/tutorial/tutorial-7.md:9
-#, fuzzy
 msgid "Let's modify our application to say a little bit more than just \"Hi, there!\"."
-msgstr "Vamos modificar nossa aplicação para dizer um pouco mais do que apenas \"Hi, there!\"."
+msgstr "Vamos modificar a nossa aplicação para dizer um pouco mais do que apenas \"Olá!\"."
 
 #: docs/en/tutorial/tutorial-7.md:11
-#, fuzzy
 msgid "To generate some more interesting text for the dialog, we're going to use a library called [Faker]{1}. Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user."
-msgstr "Para gerar um texto mais interessante para a caixa de diálogo, usaremos uma biblioteca chamada [Faker]{1}. Faker é um pacote Python que gera conteúdo falso, incluindo nomes e blocos de texto. Os nomes e as palavras no bloco de texto são gerados a partir de uma lista arbitrária de palavras fornecidas pelo Faker. Vamos usar o Faker para construir uma mensagem falsa, como se alguém estivesse respondendo ao utilizador."
+msgstr "Para gerar um texto mais interessante para a caixa de diálogo, vamos usar uma biblioteca chamada [Faker]{1}. Faker é um pacote Python que gera conteúdo falso, incluindo nomes e blocos de texto. Os nomes e as palavras no bloco de texto são gerados a partir de uma lista arbitrária de palavras fornecidas pelo Faker. Vamos usar o Faker para construir uma mensagem falsa, como se alguém estivesse a responder ao utilizador."
 
 #: docs/en/tutorial/tutorial-7.md:13
-#, fuzzy
 msgid "We start by adding `faker` to our app. Add an import to the top of the `app.py` to import `faker`:"
-msgstr "Vamos adicionar uma chamada de API `httpx` ao nossa aplicação. Adicione uma importação na parte superior do `app.py` para importar `httpx`:"
+msgstr "Começamos por adicionar `faker` à nossa aplicação. Adicione uma importação no topo do `app.py` para importar `faker`:"
 
 #: docs/en/tutorial/tutorial-7.md:15
-#, fuzzy
 msgid "import faker"
-msgstr "importar faker"
+msgstr "import faker"
 
 #: docs/en/tutorial/tutorial-7.md:19 docs/en/tutorial/tutorial-8.md:32
-#, fuzzy
 msgid "Then modify the `say_hello()` callback so it looks like this:"
-msgstr "Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos `say_hello()` para que ele tenha a seguinte aparência:"
+msgstr "Depois modifique a chamada de retorno `say_hello()` para ficar como isto:"
 
 #: docs/en/tutorial/tutorial-7.md:21
-#, fuzzy
 msgid ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
@@ -5117,23 +5094,13 @@ msgid ""
 "            f\"A message from {fake.name()}: {fake.text()}\",\n"
 "        )\n"
 "    )"
-msgstr ""
-"async def say_hello(self, widget):\n"
-"    fake = faker.Faker()\n"
-"    await self.main_window.dialog(\n"
-" toga.InfoDialog(\n"
-" greeting(self.name_input.value),\n"
-" f\"Uma mensagem de {fake.name()}: {fake.text()}\",\n"
-" )\n"
-"    )"
+msgstr "async def say_hello(self, widget):\n    fake = faker.Faker()\n    await self.main_window.dialog(\n        toga.InfoDialog(\n            greeting(self.name_input.value),\n            f\"Uma mensagem de {fake.name()}: {fake.text()}\",\n        )\n    )"
 
 #: docs/en/tutorial/tutorial-7.md:32
-#, fuzzy
 msgid "Let's run our updated app in Briefcase developer mode to check that our change has worked."
-msgstr "Vamos executar nossa aplicação atualizado no modo de desenvolvedor do Briefcase para verificar se nossa alteração funcionou."
+msgstr "Vamos correr a nossa aplicação atualizada no modo de desenvolvedor do Briefcase para verificar se a nossa alteração funcionou."
 
 #: docs/en/tutorial/tutorial-7.md:36 docs/en/tutorial/tutorial-7.md:58
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase dev\n"
 "Traceback (most recent call last):\n"
@@ -5150,25 +5117,9 @@ msgid ""
 "File \".../venv/lib/python3.13/site-packages/briefcase/commands/base.py\", line 14, in <module>\n"
 "    import faker\n"
 "ModuleNotFoundError: No module named 'faker'"
-msgstr ""
-"(beeware-venv) $ briefcase dev\n"
-"Traceback (última chamada mais recente):\n"
-"Arquivo \".../venv/bin/briefcase\", linha 5, em <module>\n"
-"    from briefcase.__main__ import main\n"
-"Arquivo \".../venv/lib/python3.13/site-packages/briefcase/__main__.py\", linha 3, em <módulo>\n"
-"    from .cmdline import parse_cmdline\n"
-"Arquivo \".../venv/lib/python3.13/site-packages/briefcase/cmdline.py\", linha 6, em <módulo>\n"
-"    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand\n"
-"Arquivo \".../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py\", linha 1, em <módulo>\n"
-"    from .build import BuildCommand  # noqa\n"
-"Arquivo \".../venv/lib/python3.13/site-packages/briefcase/commands/build.py\", linha 5, em <module>\n"
-"    from .base import BaseCommand, full_options\n"
-"Arquivo \".../venv/lib/python3.13/site-packages/briefcase/commands/base.py\", linha 14, em <módulo>\n"
-"    import faker\n"
-"ModuleNotFoundError: Nenhum módulo chamado 'faker'"
+msgstr "(beeware-venv) $ briefcase dev\nTraceback (última chamada mais recente):\nFicheiro \".../venv/bin/briefcase\", linha 5, em <module>\n    from briefcase.__main__ import main\nFicheiro \".../venv/lib/python3.13/site-packages/briefcase/__main__.py\", linha 3, em <módulo>\n    from .cmdline import parse_cmdline\nFicheiro \".../venv/lib/python3.13/site-packages/briefcase/cmdline.py\", linha 6, em <módulo>\n    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand\nFicheiro \".../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py\", linha 1, em <módulo>\n    from .build import BuildCommand  # noqa\nFicheiro \".../venv/lib/python3.13/site-packages/briefcase/commands/build.py\", linha 5, em <module>\n    from .base import BaseCommand, full_options\nFicheiro \".../venv/lib/python3.13/site-packages/briefcase/commands/base.py\", linha 14, em <módulo>\n    import faker\nModuleNotFoundError: Nenhum módulo chamado 'faker'"
 
 #: docs/en/tutorial/tutorial-7.md:80
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase dev\n"
 "Traceback (most recent call last):\n"
@@ -5185,62 +5136,39 @@ msgid ""
 "File \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\commands\\base.py\", line 14, in <module>\n"
 "    import faker\n"
 "ModuleNotFoundError: No module named 'faker'"
-msgstr ""
-"(beeware-venv) C:\\...>briefcase dev\n"
-"Traceback (última chamada mais recente):\n"
-"Arquivo \"...\\venv\\bin\\briefcase\", linha 5, em <module>\n"
-"    from briefcase.__main__ import main\n"
-"Arquivo \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\__main__.py\", linha 3, em <módulo>\n"
-"    from .cmdline import parse_cmdline\n"
-"Arquivo \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\cmdline.py\", linha 6, em <módulo>\n"
-"    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand\n"
-"Arquivo \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\commands\\__init__.py\", linha 1, em <módulo>\n"
-"    from .build import BuildCommand  # noqa\n"
-"Arquivo \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\commands\\build.py\", linha 5, em <module>\n"
-"    from .base import BaseCommand, full_options\n"
-"Arquivo \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\commands\\base.py\", linha 14, em <módulo>\n"
-"    import faker\n"
-"ModuleNotFoundError: Nenhum módulo chamado 'faker'"
+msgstr "(beeware-venv) C:\\...>briefcase dev\nTraceback (última chamada mais recente):\nFicheiro \"...\\venv\\bin\\briefcase\", linha 5, em <module>\n    from briefcase.__main__ import main\nFicheiro \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\__main__.py\", linha 3, em <módulo>\n    from .cmdline import parse_cmdline\nFicheiro \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\cmdline.py\", linha 6, em <módulo>\n    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand\nFicheiro \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\commands\\__init__.py\", linha 1, em <módulo>\n    from .build import BuildCommand  # noqa\nFicheiro \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\commands\\build.py\", linha 5, em <module>\n    from .base import BaseCommand, full_options\nFicheiro \"...\\venv\\lib\\python3.13\\site-packages\\briefcase\\commands\\base.py\", linha 14, em <módulo>\n    import faker\nModuleNotFoundError: Nenhum módulo chamado 'faker'"
 
 #: docs/en/tutorial/tutorial-7.md:102 docs/en/tutorial/tutorial-7.md:237 docs/en/tutorial/tutorial-8.md:124
-#, fuzzy
 msgid "You can't run an Android app in developer mode - use the instructions for your chosen desktop platform."
-msgstr "Não é possível executar um aplicação Android no modo de desenvolvedor - use as instruções para a plataforma de desktop escolhida."
+msgstr "Não pode executar uma aplicação Android no modo de desenvolvedor - use as instruções para a sua plataforma de ambiente de trabalho escolhida."
 
 #: docs/en/tutorial/tutorial-7.md:108 docs/en/tutorial/tutorial-7.md:243 docs/en/tutorial/tutorial-8.md:130
-#, fuzzy
 msgid "You can't run an iOS app in developer mode - use the instructions for your chosen desktop platform."
-msgstr "Não é possível executar um aplicação iOS no modo de desenvolvedor - use as instruções para a plataforma de desktop escolhida."
+msgstr "Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções para a plataforma de ambiente de trabalho escolhida."
 
 #: docs/en/tutorial/tutorial-7.md:112
-#, fuzzy
 msgid "What happened? We've added `faker` to our *code*, but we haven't added it to the virtual environment that is used to run the app in development mode."
-msgstr "O que aconteceu? Adicionamos `faker` ao nosso *código*, mas não o adicionamos ao ambiente virtual usado para executar a aplicação no modo de desenvolvimento."
+msgstr "O que aconteceu? Adicionamos `faker` ao nosso *código*, mas não o adicionamos ao ambiente virtual usado para executar a aplicação em modo de desenvolvimento."
 
 #: docs/en/tutorial/tutorial-7.md:114
-#, fuzzy
 msgid "When Briefcase runs an app in development mode, it creates a standalone virtual environment for that application, independent of the environment in which you run `briefcase`. If your app doesn't declare that it needs a particular library, that library won't be installed in the development virtual environment."
-msgstr "Quando o Briefcase executa um aplicação no modo de desenvolvimento, ele cria um ambiente virtual independente para esse aplicação, independente do ambiente em que você executa `briefcase`. Se o sua aplicação não declarar que precisa de uma biblioteca específica, essa biblioteca não será instalada no ambiente virtual de desenvolvimento."
+msgstr "Quando o Briefcase executa uma aplicação em modo de desenvolvimento, ele cria um ambiente virtual independente para essa aplicação, independente do ambiente em que executa `briefcase`. Se a sua aplicação não declarar que precisa de uma biblioteca específica, essa biblioteca não será instalada no ambiente virtual de desenvolvimento."
 
 #: docs/en/tutorial/tutorial-7.md:116
-#, fuzzy
 msgid "So how do you add a new requirement to your application?"
-msgstr "Então, como você adiciona um novo requisito ao sua aplicação?"
+msgstr "Então, como adicionar um novo requisito à sua aplicação?"
 
 #: docs/en/tutorial/tutorial-7.md:118
-#, fuzzy
 msgid "Updating dependencies"
-msgstr "Atualização de dependências"
+msgstr "Atualizar dependências"
 
 #: docs/en/tutorial/tutorial-7.md:120
-#, fuzzy
 msgid "In the root directory of your app, there is a file named `pyproject.toml`. This file contains all the app configuration details that you provided when you originally ran `briefcase new`."
-msgstr "No diretório raiz do sua aplicação, há um ficheiro chamado `pyproject.toml`. Esse ficheiro contém todos os detalhes de configuração da aplicação que você forneceu quando executou originalmente o `briefcase new`."
+msgstr "No diretório raiz da sua aplicação, há um ficheiro chamado `pyproject.toml`. Esse ficheiro contém todos os detalhes de configuração da aplicação que forneceu quando executou originalmente o `briefcase new`."
 
 #: docs/en/tutorial/tutorial-7.md:122
-#, fuzzy
 msgid "`pyproject.toml` is broken up into sections; one of the sections describes the settings for your app:"
-msgstr "o `pyproject.toml` é dividido em seções; uma das seções descreve as configurações do sua aplicação:"
+msgstr "o `pyproject.toml` é dividido em secções; uma das secções descreve as configurações da sua aplicação:"
 
 #: docs/en/tutorial/tutorial-7.md:124
 #, fuzzy
@@ -5309,7 +5237,7 @@ msgstr "Um caminho de ficheiro local (no entanto, esteja avisado: se você forne
 #: docs/en/tutorial/tutorial-7.md:151
 #, fuzzy
 msgid "Further down in `pyproject.toml`, you'll notice other sections that are operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and `[tool.briefcase.app.helloworld.windows]`. These sections *also* have a `requires` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific `requires` section, and that setting will only be used for that platform. You will notice that the `toga` libraries are all specified in the platform-specific `requires` section - this is because the libraries needed to display a user interface are platform specific."
-msgstr "Mais abaixo no `pyproject.toml`, você notará outras seções que dependem do sistema operativo, como `[tool.briefcase.app.helloworld.macOS]` e `[tool.briefcase.app.helloworld.windows]`. Essas seções *também* têm uma configuração `requires`. Essas configurações permitem definir dependências adicionais específicas da plataforma. Assim, por exemplo, se você precisar de uma biblioteca específica da plataforma para lidar com algum aspecto do sua aplicação, poderá especificar essa biblioteca na secção `requires` específica da plataforma, e essa configuração será usada somente para essa plataforma. Você notará que as bibliotecas `toga` são todas especificadas na secção `requires` específica da plataforma - isso ocorre porque as bibliotecas necessárias para exibir uma interface de utilizador são específicas da plataforma."
+msgstr "Mais abaixo no `pyproject.toml`, você notará outras secções que dependem do sistema operativo, como `[tool.briefcase.app.helloworld.macOS]` e `[tool.briefcase.app.helloworld.windows]`. Essas secções *também* têm uma configuração `requires`. Essas configurações permitem definir dependências adicionais específicas da plataforma. Assim, por exemplo, se você precisar de uma biblioteca específica da plataforma para lidar com algum aspecto da sua aplicação, poderá especificar essa biblioteca na secção `requires` específica da plataforma, e essa configuração será usada somente para essa plataforma. Você notará que as bibliotecas `toga` são todas especificadas na secção `requires` específica da plataforma - isso ocorre porque as bibliotecas necessárias para exibir uma interface de utilizador são específicas da plataforma."
 
 #: docs/en/tutorial/tutorial-7.md:153
 #, fuzzy
@@ -5568,19 +5496,7 @@ msgid ""
 "ModuleNotFoundError: No module named 'faker'\n"
 "\n"
 "Unable to start app helloworld."
-msgstr ""
-"Traceback (última chamada mais recente):\n"
-"  Arquivo \"/usr/lib/python3.13/runpy.py\", linha 194, em _run_module_as_main\n"
-"    return _run_code(code, main_globals, None,\n"
-"  Arquivo \"/usr/lib/python3.13/runpy.py\", linha 87, em _run_code\n"
-"    exec(code, run_globals)\n"
-"  Arquivo \"/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py\", linha 1, em <module>\n"
-"    from helloworld.app import main\n"
-"  Arquivo \"/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py\", linha 8, em <module>\n"
-"    import faker\n"
-"ModuleNotFoundError: Nenhum módulo chamado 'faker'\n"
-"\n"
-"Não foi possível iniciar a aplicação helloworld."
+msgstr "Traceback (última chamada mais recente):\n  Ficheiro \"/usr/lib/python3.13/runpy.py\", linha 194, em _run_module_as_main\n    return _run_code(code, main_globals, None,\n  Ficheiro \"/usr/lib/python3.13/runpy.py\", linha 87, em _run_code\n    exec(code, run_globals)\n  Ficheiro \"/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py\", linha 1, em <module>\n    from helloworld.app import main\n  Ficheiro \"/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py\", linha 8, em <module>\n    import faker\nModuleNotFoundError: Nenhum módulo chamado 'faker'\n\nNão foi possível iniciar a aplicação helloworld."
 
 #: docs/en/tutorial/tutorial-7.md:363
 #, fuzzy
@@ -5820,15 +5736,7 @@ msgid ""
 "  File \"/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py\", line 8, in <module>\n"
 "    import faker\n"
 "ModuleNotFoundError: No module named 'faker'"
-msgstr ""
-"O aplicação travou!\n"
-"========================\n"
-"Traceback (última chamada mais recente):\n"
-"  Arquivo \"/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py\", linha 1, em <módulo>\n"
-"    from helloworld.app import main\n"
-"  Arquivo \"/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py\", linha 8, no <módulo>\n"
-"    import faker\n"
-"ModuleNotFoundError: Nenhum módulo chamado 'faker'"
+msgstr "O aplicação travou!\n========================\nTraceback (última chamada mais recente):\n  Ficheiro \"/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py\", linha 1, em <módulo>\n    from helloworld.app import main\n  Ficheiro \"/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py\", linha 8, no <módulo>\n    import faker\nModuleNotFoundError: Nenhum módulo chamado 'faker'"
 
 #: docs/en/tutorial/tutorial-7.md:523
 #, fuzzy
@@ -6053,7 +5961,7 @@ msgstr "O Faker é apenas um exemplo de um pacote Python de terceiros - uma cole
 #: docs/en/tutorial/tutorial-7.md:657
 #, fuzzy
 msgid "On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI can be installed into your virtual environment, or added to your app's requirements. However, when building an app for mobile or web platforms, [your options are slightly limited]{1}."
-msgstr "Em plataformas desktop (macOS, Windows, Linux), basicamente qualquer pacote no PyPI pode ser instalado em seu ambiente virtual ou adicionado aos requisitos do sua aplicação. No entanto, ao criar um aplicação para plataformas móveis ou web, suas opções são um pouco limitadas."
+msgstr "Em plataformas desktop (macOS, Windows, Linux), basicamente qualquer pacote no PyPI pode ser instalado em seu ambiente virtual ou adicionado aos requisitos da sua aplicação. No entanto, ao criar um aplicação para plataformas móveis ou web, suas opções são um pouco limitadas."
 
 #: docs/en/tutorial/tutorial-7.md:659
 #, fuzzy
@@ -6260,12 +6168,12 @@ msgstr "![Caixa de diálogo do Tutorial 8 do Hello World, no Windows]{1}"
 #: docs/en/tutorial/tutorial-8.md:134
 #, fuzzy
 msgid "Unless you've got a *really* fast internet connection, you may notice that when you press the button, the GUI for your app locks up for a little bit. The operating system may even manifest this with a \"beachball\" or \"spinner\" cursor to indicate that the app is being unresponsive."
-msgstr "A menos que você tenha uma conexão de Internet *muito* rápida, poderá perceber que, ao pressionar o botão, a GUI do sua aplicação trava um pouco. O sistema operativo pode até manifestar isso com um cursor \"beachball\" ou \"spinner\" para indicar que a aplicação não está respondendo."
+msgstr "A menos que você tenha uma conexão de Internet *muito* rápida, poderá perceber que, ao pressionar o botão, a GUI da sua aplicação trava um pouco. O sistema operativo pode até manifestar isso com um cursor \"beachball\" ou \"spinner\" para indicar que a aplicação não está respondendo."
 
 #: docs/en/tutorial/tutorial-8.md:136
 #, fuzzy
 msgid "This is because the web request we have made is *synchronous*. When our application makes the web request, it waits for the API to return a response before continuing. While it's waiting, it *isn't* allowing the application to redraw - and as a result, the application locks up."
-msgstr "A menos que você tenha uma conexão de Internet *muito* rápida, poderá perceber que, ao pressionar o botão, a GUI do sua aplicação trava um pouco. Isso ocorre porque a solicitação da Web que fizemos é *síncrona*. Quando nossa aplicação faz a solicitação da Web, ele espera que a API retorne uma resposta antes de continuar. Enquanto espera, ele não permite que a aplicação seja redesenhado e, como resultado, a aplicação trava."
+msgstr "A menos que você tenha uma conexão de Internet *muito* rápida, poderá perceber que, ao pressionar o botão, a GUI da sua aplicação trava um pouco. Isso ocorre porque a solicitação da Web que fizemos é *síncrona*. Quando nossa aplicação faz a solicitação da Web, ele espera que a API retorne uma resposta antes de continuar. Enquanto espera, ele não permite que a aplicação seja redesenhado e, como resultado, a aplicação trava."
 
 #: docs/en/tutorial/tutorial-8.md:138
 #, fuzzy
