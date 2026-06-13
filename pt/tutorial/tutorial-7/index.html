@@ -1174,10 +1174,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-executar-a-aplicacao-atualizado" class="md-nav__link">
+  <a href="#executa-a-aplicacao-atualizada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A executar a aplicação atualizado
+        Executa a aplicação atualizada
       
     </span>
   </a>
@@ -1628,10 +1628,10 @@ aria-label="Cabeçalho"
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-executar-a-aplicacao-atualizado" class="md-nav__link">
+  <a href="#executa-a-aplicacao-atualizada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A executar a aplicação atualizado
+        Executa a aplicação atualizada
       
     </span>
   </a>
@@ -1817,25 +1817,24 @@ pode especificar:</p>
   a outra pessoa, esse caminho provavelmente não vai existir no computador dessa
   pessoa!)</li>
 </ul>
-<p>Mais abaixo no <code>pyproject.toml</code>, você notará outras secções que dependem do
+<p>Mais abaixo no <code>pyproject.toml</code>, vai notar outras secções que dependem do
 sistema operativo, como <code>[tool.briefcase.app.helloworld.macOS]</code> e
 <code>[tool.briefcase.app.helloworld.windows]</code>. Essas secções <em>também</em> têm uma
-configuração <code>requires</code>. Essas configurações permitem definir dependências
-adicionais específicas da plataforma. Assim, por exemplo, se você precisar de
-uma biblioteca específica da plataforma para lidar com algum aspecto da sua
-aplicação, poderá especificar essa biblioteca na secção <code>requires</code> específica da
-plataforma, e essa configuração será usada somente para essa plataforma. Você
-notará que as bibliotecas <code>toga</code> são todas especificadas na secção <code>requires</code>
-específica da plataforma - isso ocorre porque as bibliotecas necessárias para
-exibir uma interface de utilizador são específicas da plataforma.</p>
+configuração <code>requires</code>. Estas configurações permitem definir dependências
+adicionais específicas da plataforma - assim, por exemplo, se precisar de uma
+biblioteca específica da plataforma para lidar com algum aspecto da sua
+aplicação, pode especificar essa biblioteca na secção <code>requires</code> específica da
+plataforma, e essa configuração será usada somente para essa plataforma. Vai
+reparar que as bibliotecas <code>toga</code> são todas especificadas na secção <code>requires</code>
+específica da plataforma - isso porque as bibliotecas necessárias para mostrar
+uma interface de utilizador são específicas da plataforma.</p>
 <p>No nosso caso, queremos que o <code>faker</code> seja instalado em todas as plataformas,
 assim usamos a configuração <code>requires</code> em nível de aplicação. As dependências no
 nível da aplicação são sempre instaladas; as dependências específicas da
 plataforma são instaladas <em>em adição</em> das dependências no nível da aplicação.</p>
-<p>Depois de adicionar o novo requisito, salve <code>pyproject.toml</code> e execute
-<code>briefcase dev -r</code>. O sinalizador <code>-r</code> informa ao Briefcase que os requisitos
-foram alterados e que o ambiente virtual de desenvolvimento precisa ser
-atualizado:</p>
+<p>Após adicionar o novo requisito, salve <code>pyproject.toml</code> e execute <code>briefcase dev
+-r</code>. A bandeira <code>-r</code> informa o Briefcase que os requisitos foram alterados, e o
+ambiente virtual de desenvolvimento precisa de ser atualizado:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1869,7 +1868,7 @@ macOS" src="../../images/macOS/tutorial-7.png" /></p>
 <span class="go">[hello-world] A instalar pré-requisitos...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A iniciar no modo dev...</span>
+<span class="go">[helloworld] A iniciar em modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
@@ -1890,7 +1889,7 @@ Linux" src="../../images/linux/tutorial-7.png" /></p>
 <span class="go">[hello-world] A instalar pré-requisitos...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] A iniciar no modo dev...</span>
+<span class="go">[helloworld] A iniciar em modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
@@ -1913,25 +1912,25 @@ para a plataforma de ambiente de trabalho escolhida.</p>
 </div>
 <div class="admonition">
 <p class="admonition-title">Possíveis erros ao executar <code>briefcase dev</code></p>
-<p>Se você ainda estiver recebendo um erro ao executar <code>briefcase dev</code>,
-certifique-se de que:</p>
+<p>Se ainda estiver a receber um erro ao executar <code>briefcase dev</code>, certifique-se de
+que:</p>
 <ol>
-<li>Você adicionou <code>faker</code> à lista <code>requires</code> em <code>pyproject.toml</code>;</li>
-<li>Você salvou suas alterações em <code>pyproject.toml</code>; e</li>
-<li>Você incluiu o argumento <code>-r</code> ao executar <code>briefcase dev -r</code>.</li>
+<li>Adicionou <code>faker</code> à lista <code>requires</code> em <code>pyproject.toml</code>;</li>
+<li>Salvou as suas alterações em <code>pyproject.toml</code>; e</li>
+<li>Incluiu o argumento <code>-r</code> ao executar <code>briefcase dev -r</code>.</li>
 </ol>
 </div>
-<p>Na primeira vez que você executa sua aplicação usando <code>briefcase dev</code>, o
-argumento <code>-r</code> é adicionado automaticamente para você — é por isso que não
-precisamos usar o argumento <code>-r</code> até agora. O argumento <code>-r</code> só é necessário
-quando você adiciona, remove ou altera um requisito <em>depois</em> de executar sua
-aplicação no modo de desenvolvimento. Se você apenas atualizou o código, pode
-executar <code>briefcase dev</code> como temos feito no restante deste tutorial.</p>
-<h2 id="a-executar-a-aplicacao-atualizado">A executar a aplicação atualizado<a class="headerlink" href="#a-executar-a-aplicacao-atualizado" title="Permanent link">&para;</a></h2>
-<p>Agora temos um aplicação funcional, usando uma biblioteca de terceiros, rodando
-em modo de desenvolvimento. Vamos empacotar esse código de aplicação atualizado
-como um aplicação independente. Como fizemos alterações no código, precisamos
-seguir as mesmas etapas do <a href="../tutorial-4/">Tutorial 4</a>:</p>
+<p>Na primeira vez que executa a sua aplicação usando <code>briefcase dev</code>, o argumento
+<code>-r</code> é adicionado automaticamente por si — é por isso que até agora não
+precisamos usar o argumento <code>-r</code>. O argumento <code>-r</code> só é necessário quando se
+adiciona, remove ou altera um requisito <em>depois</em> de executar a sua aplicação no
+modo de desenvolvimento. Se apenas atualizou o código, pode executar <code>briefcase
+dev</code> como temos feito no resto deste tutorial.</p>
+<h2 id="executa-a-aplicacao-atualizada">Executa a aplicação atualizada<a class="headerlink" href="#executa-a-aplicacao-atualizada" title="Permanent link">&para;</a></h2>
+<p>Agora temos uma aplicação funcional, usando uma biblioteca de terceiros, a
+correr em modo de desenvolvimento. Vamos empacotar este código atualizado da
+aplicação como uma aplicação independente. Como fizemos alterações no código,
+precisamos seguir os mesmos passos do <a href="../tutorial-4/">Tutorial 4</a>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
