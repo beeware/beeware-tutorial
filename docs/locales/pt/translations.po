@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-13 19:01+0000\n"
-"PO-Revision-Date: 2026-06-13 19:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-13 19:01+0000\nPO-Revision-Date: 2026-06-13 23:20+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.7.dev0\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -5525,7 +5513,6 @@ msgstr ""
 "Incapaz de iniciar a aplicação helloworld."
 
 #: docs/en/tutorial/tutorial-7.md:363
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase update\n"
 "\n"
@@ -5533,47 +5520,29 @@ msgid ""
 "...\n"
 "\n"
 "[helloworld] Application updated."
-msgstr ""
-"(beeware-venv) C:\\...>briefcase update\n"
-"\n"
-"[helloworld] A atualizar o código da aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] Aplicação atualizado."
+msgstr "(beeware-venv) C:\\...>briefcase update\n\n[helloworld] A atualizar o código da aplicação...\n...\n\n[helloworld] Aplicação atualizada."
 
 #: docs/en/tutorial/tutorial-7.md:374
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase build\n"
 "...\n"
 "\n"
 "[helloworld] Built build\\helloworld\\windows\\app\\src\\Toga Test.exe"
-msgstr ""
-"(beeware-venv) C:\\...>briefcase build\n"
-"...\n"
-"\n"
-"[helloworld] Compilado em build\\helloworld\\windows\\app\\src\\Toga Test.exe"
+msgstr "(beeware-venv) C:\\...>briefcase build\n...\n\n[helloworld] Compilado em build\\helloworld\\windows\\app\\src\\Toga Test.exe"
 
 #: docs/en/tutorial/tutorial-7.md:383
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase run\n"
 "\n"
 "[helloworld] Starting app...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) C:\\...>briefcase run\n"
-"\n"
-"[helloworld] A iniciar a aplicação...\n"
-"==========================================================================="
+msgstr "(beeware-venv) C:\\...>briefcase run\n\n[helloworld] A iniciar a aplicação...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-7.md:392
-#, fuzzy
 msgid "![Hello World Tutorial 7 app crash, on Windows]{1}"
 msgstr "![Falha na aplicação Hello World Tutorial 7, no Windows]{1}"
 
 #: docs/en/tutorial/tutorial-7.md:404
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase update android\n"
 "\n"
@@ -5581,46 +5550,28 @@ msgid ""
 "...\n"
 "\n"
 "[helloworld] Application updated."
-msgstr ""
-"(beeware-venv) $ briefcase update android\n"
-"\n"
-"[helloworld] A atualizar o código da aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] Aplicação atualizado."
+msgstr "(beeware-venv) $ briefcase update android\n\n[helloworld] A atualizar o código da aplicação...\n...\n\n[helloworld] Aplicação atualizada."
 
 #: docs/en/tutorial/tutorial-7.md:415
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase build android\n"
 "\n"
 "[helloworld] Updating app metadata...\n"
 "...\n"
 "[helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk"
-msgstr ""
-"(beeware-venv) $ briefcase build android\n"
-"\n"
-"[helloworld] A atualizar metadados da aplicação...\n"
-"...\n"
-"[helloworld] Compilado em build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk"
+msgstr "(beeware-venv) $ briefcase build android\n\n[helloworld] A atualizar metadados da aplicação...\n...\n[helloworld] Compilado em build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk"
 
 #: docs/en/tutorial/tutorial-7.md:423 docs/en/tutorial/tutorial-7.md:498
-#, fuzzy
 msgid "And finally, run the app (selecting a simulator when prompted):"
-msgstr "E, por fim, execute a aplicação (selecionando um simulador quando solicitado):"
+msgstr "E finalmente, correr a aplicação (selecionando um simulador quando solicitado):"
 
 #: docs/en/tutorial/tutorial-7.md:425
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase run android\n"
 "\n"
 "[helloworld] Following device log output (type CTRL-C to stop log)...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) $ briefcase run android\n"
-"\n"
-"[helloworld] A seguir, a saída do relatório do dispositivo (digite CTRL-C para interromper o relatório)...\n"
-"==========================================================================="
+msgstr "(beeware-venv) $ briefcase run android\n\n[helloworld] Seguindo saída de relatório do dispositivo (tecle CTRL-C para interromper o relatório)...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-7.md:434
 #, fuzzy
