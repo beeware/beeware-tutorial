@@ -1934,28 +1934,28 @@ precisamos seguir os mesmos passos do <a href="../tutorial-4/">Tutorial 4</a>:</
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Atualize o código na aplicação empacotado:</p>
+<p>Atualizar o código na aplicação empacotada:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
 <span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
-<p>Reconstrua a aplicação:</p>
+<p>Recompilar a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
-<span class="go">[helloworld] Aplicação de assinatura ad hoc...</span>
+<span class="go">[helloworld] A assinar adhoc a aplicação...</span>
 <span class="go">[helloworld] Compilado: build/helloworld/macos/app/Hello World.app</span>
 </code></pre></div>
-<p>E, por fim, execute a aplicação:</p>
+<p>E finalmente, correr a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando a aplicação for executado, você verá um erro no console, além
-de uma caixa de diálogo de falha:</p>
+<p>No entanto, quando a aplicação for executada, verá um erro na consola, além de
+um diálogo de falha:</p>
 <figure>
 <p><img alt="Falha da aplicação Hello World Tutorial 7, no
 macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
@@ -1963,15 +1963,15 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Atualize o código na aplicação empacotado:</p>
+<p>Atualizar o código na aplicação empacotada:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
 <span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
-<p>Reconstrua a aplicação:</p>
+<p>Recompilar a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
 <span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
@@ -1982,13 +1982,13 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 
 <span class="go">[helloworld] Compilado em build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
-<p>E, por fim, execute a aplicação:</p>
+<p>E finalmente, correr a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando a aplicação for executado, você verá um erro no console:</p>
+<p>No entanto, quando a aplicação é executada, vai ver um erro na consola:</p>
 <div class="highlight"><pre><span></span><code><span class="go">Traceback (última chamada mais recente):</span>
 <span class="go">  Ficheiro &quot;/usr/lib/python3.13/runpy.py&quot;, linha 194, em _run_module_as_main</span>
 <span class="go">    return _run_code(code, main_globals, None,</span>
@@ -2000,11 +2000,11 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
 
-<span class="go">Não foi possível iniciar a aplicação helloworld.</span>
+<span class="go">Incapaz de iniciar a aplicação helloworld.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Atualize o código na aplicação empacotado:</p>
+<p>Atualizar o código na aplicação empacotada:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update
 
 <span class="go">[helloworld] A atualizar o código da aplicação...</span>
@@ -2012,20 +2012,20 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
-<p>Reconstrua a aplicação:</p>
+<p>Recompilar a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
 <span class="go">...</span>
 
 <span class="go">[helloworld] Compilado em build\helloworld\windows\app\src\Toga Test.exe</span>
 </code></pre></div>
-<p>E, por fim, execute a aplicação:</p>
+<p>E finalmente, correr a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run
 
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando a aplicação for executado, você verá um erro no console, além
-de uma caixa de diálogo de falha:</p>
+<p>No entanto, quando a aplicação for executada, verá um erro na consola, além de
+um diálogo de falha:</p>
 <figure>
 <p><img alt="Falha na aplicação Hello World Tutorial 7, no
 Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
@@ -2033,7 +2033,7 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Atualize o código na aplicação empacotado:</p>
+<p>Atualizar o código na aplicação empacotada:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>android
 
 <span class="go">[helloworld] A atualizar o código da aplicação...</span>
@@ -2041,7 +2041,7 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
-<p>Reconstrua a aplicação:</p>
+<p>Recompilar a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>android
 
 <span class="go">[helloworld] A atualizar metadados da aplicação...</span>
@@ -2054,7 +2054,7 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 <span class="go">[helloworld] A seguir, a saída do relatório do dispositivo (digite CTRL-C para interromper o relatório)...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando a aplicação for executado, você verá um erro no console:</p>
+<p>No entanto, quando a aplicação é executada, vai ver um erro na consola:</p>
 <div class="highlight"><pre><span></span><code><span class="go">--------- início da falha</span>
 <span class="go">E/AndroidRuntime: EXCEÇÃO FATAL: main</span>
 <span class="go">E/AndroidRuntime: Processo: com.example.helloworld, PID: 8289</span>
@@ -2094,7 +2094,7 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Atualize o código na aplicação empacotado:</p>
+<p>Atualizar o código na aplicação empacotada:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>iOS
 
 <span class="go">[helloworld] A atualizar o código da aplicação...</span>
@@ -2102,7 +2102,7 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 
 <span class="go">[helloworld] Aplicação atualizado.</span>
 </code></pre></div>
-<p>Reconstrua a aplicação:</p>
+<p>Recompilar a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
 <span class="go">[helloworld] A atualizar os metadados da aplicação...</span>
