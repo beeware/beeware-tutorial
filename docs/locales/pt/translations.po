@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-13 10:02+0000\n"
-"PO-Revision-Date: 2026-06-13 10:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-13 10:02+0000\nPO-Revision-Date: 2026-06-13 19:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.7.dev0\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -5411,12 +5399,10 @@ msgid "We've now got a working app, using a third party library, running in deve
 msgstr "Agora temos uma aplicação funcional, usando uma biblioteca de terceiros, a correr em modo de desenvolvimento. Vamos empacotar este código atualizado da aplicação como uma aplicação independente. Como fizemos alterações no código, precisamos seguir os mesmos passos do [Tutorial 4]{1}:"
 
 #: docs/en/tutorial/tutorial-7.md:265 docs/en/tutorial/tutorial-7.md:306 docs/en/tutorial/tutorial-7.md:361 docs/en/tutorial/tutorial-7.md:402 docs/en/tutorial/tutorial-7.md:477
-#, fuzzy
 msgid "Update the code in the packaged app:"
-msgstr "Atualize o código na aplicação empacotado:"
+msgstr "Atualizar o código na aplicação empacotada:"
 
 #: docs/en/tutorial/tutorial-7.md:267 docs/en/tutorial/tutorial-7.md:308
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase update\n"
 "\n"
@@ -5424,62 +5410,41 @@ msgid ""
 "...\n"
 "\n"
 "[helloworld] Application updated."
-msgstr ""
-"(beeware-venv) $ briefcase update\n"
-"\n"
-"[helloworld] A atualizar o código da aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] Aplicação atualizado."
+msgstr "(beeware-venv) $ briefcase update\n\n[helloworld] A atualizar o código da aplicação...\n...\n\n[helloworld] Aplicação atualizada."
 
 #: docs/en/tutorial/tutorial-7.md:276 docs/en/tutorial/tutorial-7.md:317 docs/en/tutorial/tutorial-7.md:372 docs/en/tutorial/tutorial-7.md:413 docs/en/tutorial/tutorial-7.md:488
-#, fuzzy
 msgid "Rebuild the app:"
-msgstr "Reconstrua a aplicação:"
+msgstr "Recompilar a aplicação:"
 
 #: docs/en/tutorial/tutorial-7.md:278
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase build\n"
 "\n"
 "[helloworld] Adhoc signing app...\n"
 "[helloworld] Built build/helloworld/macos/app/Hello World.app"
-msgstr ""
-"(beeware-venv) $ briefcase build\n"
-"\n"
-"[helloworld] Aplicação de assinatura ad hoc...\n"
-"[helloworld] Compilado: build/helloworld/macos/app/Hello World.app"
+msgstr "(beeware-venv) $ briefcase build\n\n[helloworld] A assinar adhoc a aplicação...\n[helloworld] Compilado: build/helloworld/macos/app/Hello World.app"
 
 #: docs/en/tutorial/tutorial-7.md:285 docs/en/tutorial/tutorial-7.md:331 docs/en/tutorial/tutorial-7.md:381
-#, fuzzy
 msgid "And finally, run the app:"
-msgstr "E, por fim, execute a aplicação:"
+msgstr "E finalmente, correr a aplicação:"
 
 #: docs/en/tutorial/tutorial-7.md:287 docs/en/tutorial/tutorial-7.md:333
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase run\n"
 "\n"
 "[helloworld] Starting app...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) $ briefcase run\n"
-"\n"
-"[helloworld] A iniciar a aplicação...\n"
-"==========================================================================="
+msgstr "(beeware-venv) $ briefcase run\n\n[helloworld] A iniciar a aplicação...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-7.md:294 docs/en/tutorial/tutorial-7.md:390
-#, fuzzy
 msgid "However, when the app runs, you'll see an error in the console, plus a crash dialog:"
-msgstr "No entanto, quando a aplicação for executado, você verá um erro no console, além de uma caixa de diálogo de falha:"
+msgstr "No entanto, quando a aplicação for executada, verá um erro na consola, além de um diálogo de falha:"
 
 #: docs/en/tutorial/tutorial-7.md:296
-#, fuzzy
 msgid "![Hello World Tutorial 7 app crash, on macOS]{1}"
 msgstr "![Falha da aplicação Hello World Tutorial 7, no macOS]{1}"
 
 #: docs/en/tutorial/tutorial-7.md:319
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase build\n"
 "\n"
@@ -5490,24 +5455,13 @@ msgid ""
 "...\n"
 "\n"
 "[helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld"
-msgstr ""
-"(beeware-venv) $ briefcase build\n"
-"\n"
-"[helloworld] A finalizar a configuração da aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] A compilar a aplicação...\n"
-"...\n"
-"\n"
-"[helloworld] Compilado em build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld"
+msgstr "(beeware-venv) $ briefcase build\n\n[helloworld] A finalizar a configuração da aplicação...\n...\n\n[helloworld] A compilar a aplicação...\n...\n\n[helloworld] Compilado em build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld"
 
 #: docs/en/tutorial/tutorial-7.md:340 docs/en/tutorial/tutorial-7.md:432
-#, fuzzy
 msgid "However, when the app runs, you'll see an error in the console:"
-msgstr "No entanto, quando a aplicação for executado, você verá um erro no console:"
+msgstr "No entanto, quando a aplicação é executada, vai ver um erro na consola:"
 
 #: docs/en/tutorial/tutorial-7.md:342
-#, fuzzy
 msgid ""
 "Traceback (most recent call last):\n"
 "  File \"/usr/lib/python3.13/runpy.py\", line 194, in _run_module_as_main\n"
@@ -5521,19 +5475,7 @@ msgid ""
 "ModuleNotFoundError: No module named 'faker'\n"
 "\n"
 "Unable to start app helloworld."
-msgstr ""
-"Traceback (última chamada mais recente):\n"
-"  Ficheiro \"/usr/lib/python3.13/runpy.py\", linha 194, em _run_module_as_main\n"
-"    return _run_code(code, main_globals, None,\n"
-"  Ficheiro \"/usr/lib/python3.13/runpy.py\", linha 87, em _run_code\n"
-"    exec(code, run_globals)\n"
-"  Ficheiro \"/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py\", linha 1, em <module>\n"
-"    from helloworld.app import main\n"
-"  Ficheiro \"/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py\", linha 8, em <module>\n"
-"    import faker\n"
-"ModuleNotFoundError: Nenhum módulo chamado 'faker'\n"
-"\n"
-"Não foi possível iniciar a aplicação helloworld."
+msgstr "Traceback (última chamada mais recente):\n  Ficheiro \"/usr/lib/python3.13/runpy.py\", linha 194, em _run_module_as_main\n    return _run_code(code, main_globals, None,\n  Ficheiro \"/usr/lib/python3.13/runpy.py\", linha 87, em _run_code\n    exec(code, run_globals)\n  Ficheiro \"/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py\", linha 1, em <module>\n    from helloworld.app import main\n  Ficheiro \"/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py\", linha 8, em <module>\n    import faker\nModuleNotFoundError: Nenhum módulo chamado 'faker'\n\nIncapaz de iniciar a aplicação helloworld."
 
 #: docs/en/tutorial/tutorial-7.md:363
 #, fuzzy
