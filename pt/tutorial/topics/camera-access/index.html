@@ -1671,8 +1671,8 @@ funcional. Os dispositivos Windows e Linux também têm câmeras, mas atualmente
 Toga não tem a capacidade de aceder à câmera nessas plataformas.</p>
 <p>O código apresentado aqui vai <em>correr</em> no Windows ou no Linux, mas vai
 apresentar um erro quando tentar tirar uma foto.</p>
-<p>O código vai funcionar se for executado num dispositivo iOS real, mas não
-conseguirá tirar uma foto se for implementado no simulador do iOS.</p>
+<p>O código vai funcionar se for executado num dispositivo iOS real, mas não vai
+conseguir tirar uma foto se for implementado no simulador do iOS.</p>
 </div>
 <h2 id="iniciar-um-novo-projeto">Iniciar um novo projeto<a class="headerlink" href="#iniciar-um-novo-projeto" title="Permanent link">&para;</a></h2>
 <p>Para este tutorial, não vamos desenvolver a aplicação a partir do tutorial
@@ -1746,7 +1746,7 @@ tenha o seguinte conteúdo:</p>
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloCamera</span><span class="p">()</span>
 </code></pre></div>
-<p>Esse código tem duas alterações em relação á aplicação predefinida que é gerada
+<p>Esse código tem duas alterações em relação à aplicação predefinida que é gerada
 pelo Briefcase. Essas adições estão destacadas em cima:</p>
 <ol>
 <li>O primeiro bloco de código destacado (no método <code>startup()</code>) adiciona os dois
@@ -1758,7 +1758,7 @@ pelo Briefcase. Essas adições estão destacadas em cima:</p>
    houver permissão, ela será solicitada. Em seguida, a foto é tirada. A
    solicitação de permissão e a solicitação para tirar uma foto são solicitações
    assíncronas e, portanto, exigem o uso de <code>await</code>; enquanto a aplicação está à
-   espera que o utiliador confirme as permissões ou tire a foto, o ciclo de
+   espera que o utilizador confirme as permissões ou tire a foto, o ciclo de
    eventos da aplicação pode continuar em segundo plano.</li>
 </ol>
 <p>Se a câmera tirar uma foto com sucesso, ela vai retornar um objeto <code>Image</code> que
@@ -1811,10 +1811,10 @@ cima do botão. Poderá depois tirar outra foto, que vai substituir a primeira.<
 <h2 id="adicionar-mais-permissoes">Adicionar mais permissões<a class="headerlink" href="#adicionar-mais-permissoes" title="Permanent link">&para;</a></h2>
 <p>As permissões são declaradas nos ficheiros que são gerados durante a chamada
 original para <code>briefcase create</code>. Infelizmente, o Briefcase não pode atualizar
-esses ficheiros se eles já tiverem sido gerados inicialmente; portanto, se você
+esses ficheiros se eles já tiverem sido gerados inicialmente; portanto, se
 quiser adicionar uma nova permissão à sua aplicação ou modificar as permissões
 existentes, será necessário recriar a aplicação. Pode fazer isso executando
-novamente o <code>briefcase create</code>; isto vai avisa-lo se a aplicação existente var
+novamente o <code>briefcase create</code>; isto vai avisa-lo que a aplicação existente vai
 ser sobrescrita e, em seguida, gerar novamente a aplicação com as novas
 permissões.</p>
 

@@ -1691,12 +1691,12 @@ Windows" src="../../images/windows/tutorial-4.png" /></p>
 </div>
 </div>
 <p>No entanto, se correr <code>briefcase run</code>, a caixa de diálogo não vai aparecer.</p>
-<p>Porquêe isto? Bem, o <code>briefcase dev</code> opera executando o seu código no local -
-ele tenta produzir um ambiente de tempo de execução o mais realista possível
-para seu código, mas não fornece nem usa nada da infraestrutura da plataforma
-para envolver o seu código como uma aplicação. Parte do processo de
-empacotamento da aplicação envolve copiar o código <em>para</em> o bolo da aplicação -
-e no momento, a sua aplicação ainda contém o código antigo.</p>
+<p>Porquê isto? Bem, o <code>briefcase dev</code> opera executando o seu código no local - ele
+tenta produzir um ambiente de tempo de execução o mais realista possível para
+seu código, mas não fornece nem usa nada da infraestrutura da plataforma para
+envolver o seu código como uma aplicação. Parte do processo de empacotamento da
+aplicação envolve copiar o código <em>para</em> o bolo da aplicação - e no momento, a
+sua aplicação ainda contém o código antigo.</p>
 <p>Assim - precisamos dizer ao briefcase para atualizar a sua aplicação, copiando a
 nova versão do código. Nós <em>podíamos</em> fazer isso apagando o diretório da
 plataforma antiga e começando do zero. No entanto, o Briefcase oferece uma
@@ -1766,12 +1766,12 @@ identidade de assinatura de código e manter o tutorial o mais simples possível
 fazer uma mudança de código, atualizar a aplicação e imediatamente re-correr a
 sua aplicação. Para a maioria dos propósitos, o modo de desenvolvedor
 (<code>briefcase dev</code>) será a maneira mais fácil de fazer esse tipo de iteração
-rápida; no entanto, se estiver a testar algo sobre como sua aplicação corre como
-um binário nativo, ou caçando um bug que só se manifesta quanda sua aplicação
-está em formato empacotado, pode precisar de usar chamadas repetidas para
-<code>briefcase run</code>. Para simplificar o processo de atualização e execução do bolo
-dq aplicação, o Briefcase tem um atalho para suportar este padrão de uso - a
-opção <code>-u</code> (ou <code>-update</code>) no comando <code>run</code>.</p>
+rápida; no entanto, se estiver a testar algo sobre como a sua aplicação corre
+como um binário nativo, ou caçando um bug que só se manifesta quando a sua
+aplicação está em formato empacotado, pode precisar de usar chamadas repetidas
+para <code>briefcase run</code>. Para simplificar o processo de atualização e execução do
+bolo da aplicação, o Briefcase tem um atalho para suportar este padrão de uso -
+a opção <code>-u</code> (ou <code>-update</code>) no comando <code>run</code>.</p>
 <p>Vamos tentar fazer outra alteração. Deve ter notado que, se não escrever um nome
 na caixa de entrada de texto, a caixa de diálogo vai dizer "Olá, ". Vamos
 modificar a função <code>say_hello</code> novamente para lidar com esse caso extremo.</p>
@@ -1860,7 +1860,7 @@ aplicação com um único comando:</p>
 </div>
 </div>
 <p>O comando package também aceita o argumento <code>-u</code>, assim se fizer uma alteração
-no código da sua aplicação e quiser reempacotar imediatamente, poderá executar
+no código da sua aplicação e quiser re-empacotar imediatamente, poderá executar
 <code>briefcase package -u</code>.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
 <p>Agora temos a nossa aplicação empacotada para distribuição em plataformas de
