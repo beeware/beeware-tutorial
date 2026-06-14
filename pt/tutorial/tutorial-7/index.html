@@ -2056,7 +2056,7 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 </code></pre></div>
 <p>No entanto, quando a aplicação é executada, vai ver um erro na consola:</p>
 <div class="highlight"><pre><span></span><code><span class="go">--------- início da falha</span>
-<span class="go">E/AndroidRuntime: EXCEÇÃO FATAL: main</span>
+<span class="go">E/AndroidRuntime: EXCEPÇÃO FATAL: main</span>
 <span class="go">E/AndroidRuntime: Processo: com.example.helloworld, PID: 8289</span>
 <span class="go">E/AndroidRuntime: java.lang.RuntimeException: Não foi possível iniciar a atividade ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity}: com.chaquo.python.PyException: ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
 <span class="go">E/AndroidRuntime:   em android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3635)</span>
@@ -2090,7 +2090,7 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 <span class="go">E/AndroidRuntime:   em android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1329)</span>
 <span class="go">E/AndroidRuntime:   em android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3608)</span>
 <span class="go">E/AndroidRuntime:   ... mais 12</span>
-<span class="go">I/Process : Enviando sinal. PID: 8289 SIG: 9</span>
+<span class="go">I/Process : A enviar sinal. PID: 8289 SIG: 9</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2100,7 +2100,7 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 <span class="go">[helloworld] A atualizar o código da aplicação...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 <p>Recompilar a aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
@@ -2113,11 +2113,11 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
 <span class="go">...</span>
-<span class="go">[helloworld] A seguir, a saída do relatório do simulador (digite CTRL-C para interromper o relatório)...</span>
+<span class="go">[helloworld] Seguindo a saída do relatório do simulador (tecle CTRL-C para interromper o relatório)...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando a aplicação for executado, você verá um erro no console:</p>
-<div class="highlight"><pre><span></span><code><span class="go">O aplicação travou!</span>
+<p>No entanto, quando a aplicação correr, vai ver um erro na consola</p>
+<div class="highlight"><pre><span></span><code><span class="go">A aplicação estoirou!</span>
 <span class="go">========================</span>
 <span class="go">Traceback (última chamada mais recente):</span>
 <span class="go">  Ficheiro &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py&quot;, linha 1, em &lt;módulo&gt;</span>
