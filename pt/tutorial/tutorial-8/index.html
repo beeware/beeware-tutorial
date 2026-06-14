@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-8-suavizando-o-processo" class="md-skip">
+        <a href="#tutorial-8-tornar-suuuuaaave" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -1197,10 +1197,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#acesso-a-uma-api" class="md-nav__link">
+  <a href="#aceder-a-uma-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Acesso a uma API
+        Aceder a uma API
       
     </span>
   </a>
@@ -1606,10 +1606,10 @@ aria-label="Cabeçalho"
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#acesso-a-uma-api" class="md-nav__link">
+  <a href="#aceder-a-uma-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Acesso a uma API
+        Aceder a uma API
       
     </span>
   </a>
@@ -1678,7 +1678,7 @@ aria-label="Cabeçalho"
 
 
 
-<h1 id="tutorial-8-suavizando-o-processo">Tutorial 8 - Suavizando o Processo<a class="headerlink" href="#tutorial-8-suavizando-o-processo" title="Permanent link">&para;</a></h1>
+<h1 id="tutorial-8-tornar-suuuuaaave">Tutorial 8 - Tornar Suuuuaaave<a class="headerlink" href="#tutorial-8-tornar-suuuuaaave" title="Permanent link">&para;</a></h1>
 <p>Até agora, nossa aplicação tem sido relativamente simples: exibir widgets da
 GUI, chamar uma biblioteca simples de terceiros e exibir a saída em uma caixa de
 diálogo. Todas essas operações ocorrem muito rapidamente e nossa aplicação
@@ -1689,7 +1689,7 @@ que essas tarefas forem executadas, queremos que a aplicação permaneça
 responsivo. Vamos fazer uma alteração em nossa aplicação que pode levar um pouco
 de tempo para ser concluída e ver as alterações que precisam ser feitas para
 acomodar esse comportamento.</p>
-<h2 id="acesso-a-uma-api">Acesso a uma API<a class="headerlink" href="#acesso-a-uma-api" title="Permanent link">&para;</a></h2>
+<h2 id="aceder-a-uma-api">Aceder a uma API<a class="headerlink" href="#aceder-a-uma-api" title="Permanent link">&para;</a></h2>
 <p>Uma tarefa comum e demorada que um aplicação precisa executar é fazer uma
 solicitação em uma API da Web para recuperar dados e exibir esses dados ao
 utilizador. Às vezes, as APIs da Web levam um ou dois segundos para responder,
@@ -1721,7 +1721,7 @@ configuração <code>httpx</code> em nosso <code>requires</code> para incluir o 
     <span class="s2">&quot;httpx&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>Adicione uma importação na parte superior do <code>app.py</code> para importar o <code>httpx</code>:</p>
+<p>Adicione uma importação no topo do <code>app.py</code> para importar o <code>httpx</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">importar</span> <span class="n">httpx</span>
 </code></pre></div>
 <p>Depois modifique a chamada de retorno <code>say_hello()</code> para ficar como isto:</p>
@@ -1743,10 +1743,10 @@ configuração <code>httpx</code> em nosso <code>requires</code> para incluir o 
 ela o faça:</p>
 <ul>
 <li>faça uma solicitação GET na API do tutorial para recuperar uma mensagem;</li>
-<li>decodificar a resposta como JSON;</li>
+<li>descodificar a resposta como JSON;</li>
 <li>extrair o corpo da mensagem; e</li>
-<li>inclua o corpo dessa mensagem como o texto da caixa de diálogo, no lugar do
-  texto gerado pelo Faker.</li>
+<li>incluir o corpo dessa mensagem como o texto do diálogo, no lugar do texto
+  gerado pelo Faker.</li>
 </ul>
 <p>Vamos executar nossa aplicação atualizado no modo de desenvolvedor do Briefcase
 para verificar se a alteração funcionou. Como adicionamos um novo requisito,
