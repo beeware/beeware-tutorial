@@ -1466,7 +1466,7 @@ aria-label="Cabeçalho"
 
   <!-- Typeset title -->
   
-    Usar a câmera
+    Usar a camera
   
 
 
@@ -1679,28 +1679,27 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-8-tornar-suuuuaaave">Tutorial 8 - Tornar Suuuuaaave<a class="headerlink" href="#tutorial-8-tornar-suuuuaaave" title="Permanent link">&para;</a></h1>
-<p>Até agora, nossa aplicação tem sido relativamente simples: exibir widgets da
-GUI, chamar uma biblioteca simples de terceiros e exibir a saída em uma caixa de
-diálogo. Todas essas operações ocorrem muito rapidamente e nossa aplicação
-permanece responsivo.</p>
-<p>Entretanto, em um aplicação do mundo real, precisaremos executar tarefas ou
-cálculos complexos que podem levar algum tempo para serem concluídos e, à medida
-que essas tarefas forem executadas, queremos que a aplicação permaneça
-responsivo. Vamos fazer uma alteração em nossa aplicação que pode levar um pouco
-de tempo para ser concluída e ver as alterações que precisam ser feitas para
+<p>Até agora, a nossa aplicação tem sido relativamente simples - mostrar widgets de
+GUI, chamar uma biblioteca simples de terceiros, e mostrar o resultado num
+diálogo. Todas essas operações ocorrem muito rapidamente, e a nossa aplicação
+permanece funcional.</p>
+<p>Entretanto, numa aplicação do mundo real, vamos precisar de executar tarefas ou
+cálculos complexos que podem levar algum tempo para serem concluídos - e
+conforme essas tarefas forem executadas, queremos que a nossa aplicação
+permaneça funcional. Vamos fazer uma alteração na nossa aplicação que pode levar
+algum tempo a ser concluída, e ver as alterações que precisam ser feitas para
 acomodar esse comportamento.</p>
 <h2 id="aceder-a-uma-api">Aceder a uma API<a class="headerlink" href="#aceder-a-uma-api" title="Permanent link">&para;</a></h2>
-<p>Uma tarefa comum e demorada que um aplicação precisa executar é fazer uma
-solicitação em uma API da Web para recuperar dados e exibir esses dados ao
-utilizador. Às vezes, as APIs da Web levam um ou dois segundos para responder,
-portanto, se estivermos chamando uma API como essa, precisamos garantir que
-nossa aplicação não deixe de responder enquanto esperamos que a API da Web
-retorne uma resposta.</p>
-<p>Este é um aplicação de brinquedo, portanto não temos uma API <em>real</em> com a qual
-trabalhar, então usaremos um endpoint de API de amostra como fonte de dados. Se
-você abrir
+<p>Uma tarefa comum e demorada que uma aplicação precisa executar é fazer uma
+solicitação a uma API Web para recuperar dados, e mostrar esses dados ao
+utilizador. Por vezes, as APIs Web levam um ou dois segundos a responder, assim
+se estivermos a chamar uma API dessas, precisamos garantir que nossa aplicação
+não deixe de responder enquanto esperamos que a API Web devolva uma resposta.</p>
+<p>Esta é uma aplicação de brincar, portanto não temos uma API <em>real</em> com a qual
+trabalhar, então vamos usar um ponto final de API de exemplo como fonte de
+dados. Se abrir
 <a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a>
-no seu navegador, receberá uma carga JSON com uma mensagem.</p>
+no seu navegador, receberá uma resposta JSON com uma mensagem.</p>
 <p>A biblioteca padrão do Python contém todas as ferramentas necessárias para
 acessar uma API. Entretanto, as APIs incorporadas são de nível muito baixo. Elas
 são boas implementações do protocolo HTTP, mas exigem que o utilizador gerencie
