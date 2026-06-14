@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-14 13:41+0000\n"
-"PO-Revision-Date: 2026-06-14 13:40+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-14 13:41+0000\nPO-Revision-Date: 2026-06-14 13:52+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.7.dev0\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -5981,9 +5969,8 @@ msgid "On PyPI, packages are often provided in a pre-built distribution format c
 msgstr "No PyPI, os pacotes geralmente são fornecidos num formato de distribuição pré-construído chamado *wheels*. Para verificar se um pacote é Python puro, veja a página de descargas do projeto no PyPI. Se os wheels fornecidos tiverem um sufixo `-py3-none-any.whl` (ex., [Faker]{1}), então são wheels Python puros. No entanto, se os wheels tiverem extensões específicas de versão e da plataforma (ex., [Pillow]{2}, que tem wheels com sufixos como `-cp313-cp313-macosx_11_0_arm64.whl` e `-cp39-cp39-win_amd64.whl`), então a wheel *contém um componente binário*. Esse pacote não pode ser instalado em plataformas móveis ou Web, a menos que seja fornecido um wheel compatível com essas plataformas."
 
 #: docs/en/tutorial/tutorial-7.md:663
-#, fuzzy
 msgid "At this time, *most* binary packages on PyPI don't provide mobile- or web-compatible wheels. To fill this gap, BeeWare provides binaries for some popular binary modules (including `numpy`, `pandas`, and `cryptography`). These wheels are *not* distributed on PyPI, but Briefcase will install those wheels if they're available."
-msgstr "No momento, a maioria dos pacotes binários no PyPI não fornece rodas compatíveis com dispositivos móveis ou com a Web. Para preencher essa lacuna, o BeeWare fornece binários para alguns módulos binários populares (incluindo `numpy`, `pandas` e `cryptography`). Essas rodas *não* são distribuídas no PyPI, mas o Briefcase instalará essas rodas se elas estiverem disponíveis."
+msgstr "No momento, *a maioria* dos pacotes binários no PyPI não fornecem wheels compatíveis com dispositivos móveis ou Web. Para preencher essa lacuna, o BeeWare fornece binários para alguns módulos binários populares (incluindo `numpy`, `pandas` e `cryptography`). Estes wheels *não* são distribuídos no PyPI, mas o Briefcase vai instalar estes wheels se estiverem disponíveis."
 
 #: docs/en/tutorial/tutorial-7.md:665
 #, fuzzy
