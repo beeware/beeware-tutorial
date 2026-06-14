@@ -2129,14 +2129,14 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 </div>
 </div>
 </div>
-<p>Mais uma vez, a aplicação não foi iniciado porque o <code>faker</code> não foi instalado -
-mas por quê? Já não instalamos o <code>faker</code>?</p>
-<p>Temos, mas apenas no ambiente de desenvolvimento. Cada aplicação criado também
-tem seu próprio ambiente independente, que é uma das coisas que o Briefcase
-produz quando você executa <code>briefcase build</code>. Quando executamos <code>briefcase dev
--r</code>, adicionamos <code>faker</code> ao nosso ambiente de <em>desenvolvimento</em>, mas não aa
-aplicação empacotado. Também precisamos executar <code>briefcase update -r</code> para que
-o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</p>
+<p>Mais uma vez, a aplicação não foi iniciada porque o <code>faker</code> não foi instalado -
+mas por quê? Não instalamos já o <code>faker</code>?</p>
+<p>Sim, mas apenas no ambiente de desenvolvimento. Cada aplicação criada também tem
+o seu próprio ambiente independente, que é uma das coisas que o Briefcase produz
+quando executa <code>briefcase build</code>. Quando executamos <code>briefcase dev -r</code>,
+adicionamos <code>faker</code> ao nosso ambiente de <em>desenvolvimento</em>, mas não ao pacote da
+aplicação. Também precisamos correr <code>briefcase update -r</code> para que o Briefcase
+saiba que os requisitos do pacote da aplicação foram alterados:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label><label for="__tabbed_4_4">Android</label><label for="__tabbed_4_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2146,7 +2146,7 @@ o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</
 <span class="go">A instalar src/hello_world...</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
-<span class="go">Coletando faker</span>
+<span class="go">A recolher faker</span>
 <span class="go">  A usar faker-37.3.0-py3-none-any.whl.metadata em cache (15 kB)</span>
 <span class="go">...</span>
 <span class="go">A instalar pacotes recolhidos: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
@@ -2155,7 +2155,7 @@ o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</
 <span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2190,7 +2190,7 @@ o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</
 <span class="go">A instalar src/helloworld...</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
-<span class="go">Coletando faker</span>
+<span class="go">A recolher faker</span>
 <span class="go">  A usar faker-37.3.0-py3-none-any.whl.metadata em cache (15 kB)</span>
 <span class="go">...</span>
 <span class="go">A instalar pacotes recolhidos: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
@@ -2199,7 +2199,7 @@ o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</
 <span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2214,7 +2214,7 @@ o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</
 <span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2224,8 +2224,8 @@ o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</
 <span class="go">A instalar src/helloworld... concluído</span>
 
 <span class="go">[helloworld] A atualizar os requisitos...</span>
-<span class="go">Pesquisando nos índices: https://pypi.org/simple, https://pypi.anaconda.org/beeware/simple</span>
-<span class="go">Recolhendo o faker</span>
+<span class="go">A pesquisar nos índices: https://pypi.org/simple, https://pypi.anaconda.org/beeware/simple</span>
+<span class="go">A recolher o faker</span>
 <span class="go">  A usar o faker-37.4.0-py3-none-any.whl.metadata em cache (15 kB)</span>
 <span class="go">...</span>
 
@@ -2234,18 +2234,18 @@ o Briefcase saiba que os requisitos da aplicação empacotado foram alterados:</
 <span class="go">[helloworld] A remover conteúdo desnecessário da aplicação...</span>
 <span class="go">A remover conteúdo desnecessário do pacote da aplicação... concluído</span>
 
-<span class="go">[helloworld] Aplicação atualizado.</span>
+<span class="go">[helloworld] Aplicação atualizada.</span>
 </code></pre></div>
 </div>
 </div>
 </div>
-<p>Depois de atualizar, você pode executar <code>briefcase build</code> e <code>briefcase run</code> e
-verá a aplicação empacotado com o novo comportamento de diálogo.</p>
+<p>Agora que atualizou, pode executar <code>briefcase build</code> e <code>briefcase run</code> - e deve
+ver a aplicação empacotada com o novo comportamento de diálogo.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>A opção <code>-r</code> para atualizar os requisitos também é aceita pelos comandos <code>build</code>
-e <code>run</code>, portanto, se quiser atualizar, compilar e executar em uma única etapa,
-você pode usar <code>briefcase run -u -r</code>.</p>
+<p>A opção <code>-r</code> para atualizar os requisitos também é aceite pelos comandos <code>build</code>
+e <code>run</code>, assim se quiser atualizar, compilar e executar num único passo, pode
+usar <code>briefcase run -u -r</code>.</p>
 </div>
 <h2 id="pacotes-python-de-terceiros-para-dispositivos-moveis-e-web">Pacotes Python de terceiros para dispositivos móveis e Web<a class="headerlink" href="#pacotes-python-de-terceiros-para-dispositivos-moveis-e-web" title="Permanent link">&para;</a></h2>
 <p>O Faker é apenas um exemplo de um pacote Python de terceiros - uma coleção de
