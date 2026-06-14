@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-14 13:53+0000\n"
-"PO-Revision-Date: 2026-06-14 13:52+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.11\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-06-14 13:53+0000\nPO-Revision-Date: 2026-06-14 21:01+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.7.dev0\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -76,7 +64,7 @@ msgstr "[Personalizar os ícones]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:9
 msgid "[Using the camera]{1}"
-msgstr "[Usar a câmera]{1}"
+msgstr "[Usar a camera]{1}"
 
 #: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:13
 msgid "[Testing times]{1}"
@@ -92,7 +80,7 @@ msgstr "**Escreva em Python. Execute em qualquer lugar.**"
 
 #: docs/en/index.md:5
 msgid "Welcome to BeeWare! In this tutorial, we're going to build a graphical user interface using Python, and deploy it as a desktop application, as a mobile application, and as a single page web app. We'll also look at how you can use BeeWare tools to perform some of the common tasks that you'll need to do as an app developer, such as testing your app."
-msgstr "Bem-vindo ao BeeWare! Neste tutorial, vamos construir uma interface gráfica usando Python e implementá-la como uma aplicação para ambiente de trabalho, como uma aplicação móvel e como uma aplicação web de página única. Também veremos como pode usar as ferramentas da BeeWare para realizar algumas das tarefas comuns que precisará fazer como desenvolvedor de aplicações, por exemplo, testar a sua aplicação."
+msgstr "Bem-vindo ao BeeWare! Neste tutorial, vamos construir uma interface gráfica usando Python e implementa-la como uma aplicação para ambiente de trabalho, como uma aplicação móvel e como uma aplicação web de página única. Também veremos como pode usar as ferramentas da BeeWare para realizar algumas das tarefas comuns que precisará fazer como desenvolvedor de aplicações, por exemplo, testar a sua aplicação."
 
 #: docs/en/index.md:7
 msgid "{% if config.extra.translation_type == \"original\" %}"
@@ -124,7 +112,7 @@ msgstr "/// admonition | Esta é uma tradução de máquina!"
 
 #: docs/en/index.md:21
 msgid "This document is a machine-generated translation of the [English]{1} tutorial. We know that a machine translation isn't ideal, but we felt that a bad translation was better than no translation at all."
-msgstr "Este documento é uma tradução feita por máquina do tutorial em [English]{1}. Sabemos que uma tradução automática não é o ideal, mas sentimos que uma tradução má era melhor do que nenhuma tradução."
+msgstr "Este documento é uma tradução feita por máquina do tutorial em [English]{1}. Sabemos que uma tradução automática não é o ideal, mas sentimos que uma tradução má é melhor do que nenhuma tradução."
 
 #: docs/en/index.md:23 docs/en/index.md:35
 msgid "If you'd like the help improve the translation, get in touch! We have a `#translations` channel in [Discord]{1}. Introduce yourself there and we will add you to the translation team."
@@ -156,7 +144,7 @@ msgstr "[Toga]{1}, um kit de ferramentas de widgets para várias plataformas;"
 
 #: docs/en/index.md:46
 msgid "[Briefcase]{1}, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr "[Briefcase]{1}, uma ferramenta para empacotar projectos Python em pacotes distribuíveis que podem ser enviados aos utilizadores finais;"
+msgstr "[Briefcase]{1}, uma ferramenta para empacotar projetos Python em pacotes distribuíveis que podem ser enviados aos utilizadores finais;"
 
 #: docs/en/index.md:47
 msgid "Libraries (such as [Rubicon ObjC]{1}) for accessing platform-native libraries;"
@@ -5985,55 +5973,46 @@ msgid "At this time, *most* binary packages on PyPI don't provide mobile- or web
 msgstr "No momento, *a maioria* dos pacotes binários no PyPI não fornecem wheels compatíveis com dispositivos móveis ou Web. Para preencher essa lacuna, o BeeWare fornece binários para alguns módulos binários populares (incluindo `numpy`, `pandas` e `cryptography`). Estes wheels *não* são distribuídos no PyPI, mas o Briefcase vai instalar estes wheels se estiverem disponíveis."
 
 #: docs/en/tutorial/tutorial-7.md:665
-#, fuzzy
 msgid "It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
-msgstr "O BeeWare pode fornecer binários para alguns módulos binários populares (incluindo `numpy`, `pandas` e `cryptography`). Normalmente, é possível compilar pacotes para plataformas móveis, mas isso não é fácil de configurar, o que está fora do escopo de um tutorial introdutório como este."
+msgstr "É *geralmente* possível compilar pacotes binário para plataformas móveis, mas isso não é fácil de configurar -- e fica bem fora do escopo de um tutorial de introdução como este."
 
 #: docs/en/tutorial/tutorial-7.md:669
-#, fuzzy
 msgid "We've now got an app that uses a third-party library! In [Tutorial 8]{1} we'll learn how to ensure our app remains responsive as we add more complex application logic."
-msgstr "Agora temos um aplicação que usa uma biblioteca de terceiros! No [Tutorial 8]{1}, aprenderemos como garantir que nossa aplicação permaneça responsivo à medida que adicionarmos uma lógica de aplicação mais complexa."
+msgstr "Agora temos uma aplicação que usa uma biblioteca de terceiros! No [Tutorial 8]{1}, aprenderemos a como garantir que a nossa aplicação permaneça funcional à medida que adicionamos lógica de aplicação mais complexa."
 
 #: docs/en/tutorial/tutorial-8.md:1
 msgid "Tutorial 8 - Making it Smooooth"
 msgstr "Tutorial 8 - Tornar Suuuuaaave"
 
 #: docs/en/tutorial/tutorial-8.md:3
-#, fuzzy
 msgid "So far, our application has been relatively simple - displaying GUI widgets, calling a simple third-party library, and displaying output in a dialog. All these operations happen very quickly, and our application remains responsive."
-msgstr "Até agora, nossa aplicação tem sido relativamente simples: exibir widgets da GUI, chamar uma biblioteca simples de terceiros e exibir a saída em uma caixa de diálogo. Todas essas operações ocorrem muito rapidamente e nossa aplicação permanece responsivo."
+msgstr "Até agora, a nossa aplicação tem sido relativamente simples - mostrar widgets de GUI, chamar uma biblioteca simples de terceiros, e mostrar o resultado num diálogo. Todas essas operações ocorrem muito rapidamente, e a nossa aplicação permanece funcional."
 
 #: docs/en/tutorial/tutorial-8.md:5
-#, fuzzy
 msgid "However, in a real world application, we'll need to perform complex tasks or calculations that may take a while to complete - and as those tasks are performed, we want our application to remain responsive. Let's make a change to our application that might take a little time to complete, and see the changes that need to be made to accommodate that behavior."
-msgstr "Entretanto, em um aplicação do mundo real, precisaremos executar tarefas ou cálculos complexos que podem levar algum tempo para serem concluídos e, à medida que essas tarefas forem executadas, queremos que a aplicação permaneça responsivo. Vamos fazer uma alteração em nossa aplicação que pode levar um pouco de tempo para ser concluída e ver as alterações que precisam ser feitas para acomodar esse comportamento."
+msgstr "Entretanto, numa aplicação do mundo real, vamos precisar de executar tarefas ou cálculos complexos que podem levar algum tempo para serem concluídos - e conforme essas tarefas forem executadas, queremos que a nossa aplicação permaneça funcional. Vamos fazer uma alteração na nossa aplicação que pode levar algum tempo a ser concluída, e ver as alterações que precisam ser feitas para acomodar esse comportamento."
 
 #: docs/en/tutorial/tutorial-8.md:7
 msgid "Accessing an API"
 msgstr "Aceder a uma API"
 
 #: docs/en/tutorial/tutorial-8.md:9
-#, fuzzy
 msgid "A common time-consuming task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. Web APIs sometimes take a second or two to respond, so if we're calling an API like that, we need to ensure our application doesn't become unresponsive while we wait for the web API to return an answer."
-msgstr "Uma tarefa comum e demorada que um aplicação precisa executar é fazer uma solicitação em uma API da Web para recuperar dados e exibir esses dados ao utilizador. Às vezes, as APIs da Web levam um ou dois segundos para responder, portanto, se estivermos chamando uma API como essa, precisamos garantir que nossa aplicação não deixe de responder enquanto esperamos que a API da Web retorne uma resposta."
+msgstr "Uma tarefa comum e demorada que uma aplicação precisa executar é fazer uma solicitação a uma API Web para recuperar dados, e mostrar esses dados ao utilizador. Por vezes, as APIs Web levam um ou dois segundos a responder, assim se estivermos a chamar uma API dessas, precisamos garantir que nossa aplicação não deixe de responder enquanto esperamos que a API Web devolva uma resposta."
 
 #: docs/en/tutorial/tutorial-8.md:11
-#, fuzzy
 msgid "This is a toy app, so we don't have a *real* API to work with, so we'll use a sample API endpoint as a source of data. If you open [`https://tutorial.beeware.org/tutorial/message.json`]{1} in your browser, you'll get a JSON payload with a message."
-msgstr "Este é um aplicação de brinquedo, portanto não temos uma API *real* com a qual trabalhar, então usaremos um endpoint de API de amostra como fonte de dados. Se você abrir [`https://tutorial.beeware.org/tutorial/message.json`]{1} no seu navegador, receberá uma carga JSON com uma mensagem."
+msgstr "Esta é uma aplicação de brincar, portanto não temos uma API *real* com a qual trabalhar, então vamos usar um ponto final de API de exemplo como fonte de dados. Se abrir [`https://tutorial.beeware.org/tutorial/message.json`]{1} no seu navegador, receberá uma resposta JSON com uma mensagem."
 
 #: docs/en/tutorial/tutorial-8.md:13
-#, fuzzy
 msgid "The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a \"normal browser user\" you're probably used to taking these details for granted, as a browser manages them for you."
 msgstr "A biblioteca padrão do Python contém todas as ferramentas necessárias para acessar uma API. Entretanto, as APIs incorporadas são de nível muito baixo. Elas são boas implementações do protocolo HTTP, mas exigem que o utilizador gerencie muitos detalhes de baixo nível, como redirecionamento de URL, sessões, autenticação e codificação de carga útil. Como um \"utilizador normal de navegador\", você provavelmente está acostumado a considerar esses detalhes como garantidos, pois o navegador os gerencia para você."
 
 #: docs/en/tutorial/tutorial-8.md:15
-#, fuzzy
 msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called [`httpx`]{1} - to access a simple API."
 msgstr "Como resultado, foram desenvolvidas bibliotecas de terceiros que envolvem as APIs integradas e fornecem uma API mais simples, mais próxima da experiência diária do navegador. Vamos usar uma dessas bibliotecas — uma biblioteca chamada [`httpx`]{1} — para acessar uma API simples."
 
 #: docs/en/tutorial/tutorial-8.md:17
-#, fuzzy
 msgid "Let's add an `httpx` API call to our app. First, as with `faker` in the [previous step]{1}, we need to tell briefcase to install `httpx` when it builds our app. Modify the `requires` setting in our `pyproject.toml` to include the new requirement:"
 msgstr "Vamos adicionar uma chamada de API `httpx` ao nossa aplicação. Primeiro, assim como fizemos com `faker` na passo anterior, precisamos informar ao briefcase para instalar {1} quando ele compilar nossa aplicação. Modifique a configuração `httpx` em nosso `requires` para incluir o novo requisito:"
 
@@ -6054,12 +6033,10 @@ msgid "Add an import to the top of the `app.py` to import `httpx`:"
 msgstr "Adicione uma importação no topo do `app.py` para importar o `httpx`:"
 
 #: docs/en/tutorial/tutorial-8.md:28
-#, fuzzy
 msgid "import httpx"
 msgstr "importar httpx"
 
 #: docs/en/tutorial/tutorial-8.md:34
-#, fuzzy
 msgid ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
@@ -6074,28 +6051,13 @@ msgid ""
 "            f\"A message from {fake.name()}: {payload['body']}\",\n"
 "        )\n"
 "    )"
-msgstr ""
-"async def say_hello(self, widget):\n"
-"    fake = faker.Faker()\n"
-"    with httpx.Client() as client:\n"
-"    response = client.get(\"https://tutorial.beeware.org/tutorial/message.json\")\n"
-"\n"
-"    payload = response.json()\n"
-"\n"
-" await self.main_window.dialog(\n"
-" toga.InfoDialog(\n"
-" greeting(self.name_input.value),\n"
-" f\"Uma mensagem de {fake.name()}: {payload['body']}\",\n"
-" )\n"
-"    )"
+msgstr "async def say_hello(self, widget):\n    fake = faker.Faker()\n    with httpx.Client() as client:\n    response = client.get(\"https://tutorial.beeware.org/tutorial/message.json\")\n\n    payload = response.json()\n\n await self.main_window.dialog(\n toga.InfoDialog(\n greeting(self.name_input.value),\n f\"Uma mensagem de {fake.name()}: {payload['body']}\",\n )\n    )"
 
 #: docs/en/tutorial/tutorial-8.md:50
-#, fuzzy
 msgid "This will change the `say_hello()` callback so that when it is invoked, it will:"
 msgstr "Isso alterará a chamada de retorno `say_hello()` para que, quando for chamada, ela o faça:"
 
 #: docs/en/tutorial/tutorial-8.md:52
-#, fuzzy
 msgid "make a GET request on the tutorial API to retrieve a message;"
 msgstr "faça uma solicitação GET na API do tutorial para recuperar uma mensagem;"
 
@@ -6112,12 +6074,10 @@ msgid "include the body of that message as the text of the dialog, in place of t
 msgstr "incluir o corpo dessa mensagem como o texto do diálogo, no lugar do texto gerado pelo Faker."
 
 #: docs/en/tutorial/tutorial-8.md:57
-#, fuzzy
 msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked. As we've added a new requirement, we need to tell developer mode to reinstall requirements, by using the `-r` argument:"
 msgstr "Vamos executar nossa aplicação atualizado no modo de desenvolvedor do Briefcase para verificar se a alteração funcionou. Como adicionamos um novo requisito, precisamos informar ao modo de desenvolvedor para reinstalar os requisitos, usando o argumento `-r`:"
 
 #: docs/en/tutorial/tutorial-8.md:61 docs/en/tutorial/tutorial-8.md:82
-#, fuzzy
 msgid ""
 "(beeware-venv) $ briefcase dev -r\n"
 "\n"
@@ -6125,26 +6085,17 @@ msgid ""
 "...\n"
 "[helloworld] Starting in dev mode...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) $ briefcase dev -r\n"
-"\n"
-"[helloworld] A instalar os pré-requisitos...\n"
-"...\n"
-"[helloworld] A iniciar no modo de desenvolvimento...\n"
-"==========================================================================="
+msgstr "(beeware-venv) $ briefcase dev -r\n\n[helloworld] A instalar os pré-requisitos...\n...\n[helloworld] A iniciar no modo de desenvolvimento...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-8.md:72
-#, fuzzy
 msgid "![Hello World Tutorial 8 dialog, on macOS]{1}"
 msgstr "![Caixa de diálogo do tutorial 8 do Hello World, no macOS]{1}"
 
 #: docs/en/tutorial/tutorial-8.md:93
-#, fuzzy
 msgid "![Hello World Tutorial 8 dialog, on Linux]{1}"
 msgstr "![Caixa de diálogo do tutorial 8 do Hello World, no Linux]{1}"
 
 #: docs/en/tutorial/tutorial-8.md:103
-#, fuzzy
 msgid ""
 "(beeware-venv) C:\\...>briefcase dev -r\n"
 "\n"
@@ -6152,127 +6103,96 @@ msgid ""
 "...\n"
 "[helloworld] Starting in dev mode...\n"
 "==========================================================================="
-msgstr ""
-"(beeware-venv) C:\\...>briefcase dev -r\n"
-"\n"
-"[helloworld] A instalar pré-requisitos...\n"
-"...\n"
-"[helloworld] A iniciar no modo de desenvolvimento...\n"
-"==========================================================================="
+msgstr "(beeware-venv) C:\\...>briefcase dev -r\n\n[helloworld] A instalar pré-requisitos...\n...\n[helloworld] A iniciar no modo de desenvolvimento...\n==========================================================================="
 
 #: docs/en/tutorial/tutorial-8.md:114
-#, fuzzy
 msgid "![Hello World Tutorial 8 dialog, on Windows]{1}"
 msgstr "![Caixa de diálogo do Tutorial 8 do Hello World, no Windows]{1}"
 
 #: docs/en/tutorial/tutorial-8.md:134
-#, fuzzy
 msgid "Unless you've got a *really* fast internet connection, you may notice that when you press the button, the GUI for your app locks up for a little bit. The operating system may even manifest this with a \"beachball\" or \"spinner\" cursor to indicate that the app is being unresponsive."
 msgstr "A menos que você tenha uma conexão de Internet *muito* rápida, poderá perceber que, ao pressionar o botão, a GUI da sua aplicação trava um pouco. O sistema operativo pode até manifestar isso com um cursor \"beachball\" ou \"spinner\" para indicar que a aplicação não está respondendo."
 
 #: docs/en/tutorial/tutorial-8.md:136
-#, fuzzy
 msgid "This is because the web request we have made is *synchronous*. When our application makes the web request, it waits for the API to return a response before continuing. While it's waiting, it *isn't* allowing the application to redraw - and as a result, the application locks up."
 msgstr "A menos que você tenha uma conexão de Internet *muito* rápida, poderá perceber que, ao pressionar o botão, a GUI da sua aplicação trava um pouco. Isso ocorre porque a solicitação da Web que fizemos é *síncrona*. Quando nossa aplicação faz a solicitação da Web, ele espera que a API retorne uma resposta antes de continuar. Enquanto espera, ele não permite que a aplicação seja redesenhado e, como resultado, a aplicação trava."
 
 #: docs/en/tutorial/tutorial-8.md:138
-#, fuzzy
 msgid "GUI Event Loops"
 msgstr "Loops de eventos da GUI"
 
 #: docs/en/tutorial/tutorial-8.md:140
-#, fuzzy
 msgid "To understand why this happens, we need to dig into the details of how a GUI application works. The specifics vary depending on the platform; but the high level concepts are the same, no matter the platform or GUI environment you're using."
 msgstr "Para entender por que isso acontece, precisamos nos aprofundar nos detalhes de como funciona um aplicação de GUI. Os detalhes variam de acordo com a plataforma, mas os conceitos de alto nível são os mesmos, independentemente da plataforma ou do ambiente de GUI que você estiver usando."
 
 #: docs/en/tutorial/tutorial-8.md:142
-#, fuzzy
 msgid "A GUI app is, fundamentally, a single loop that looks something like:"
 msgstr "Um aplicação de GUI é, basicamente, um único loop que se parece com:"
 
 #: docs/en/tutorial/tutorial-8.md:144
-#, fuzzy
 msgid ""
 "while not app.quit_requested():\n"
 "    app.process_events()\n"
 "    app.redraw()"
-msgstr ""
-"enquanto não for app.quit_requested():\n"
-"    app.process_events()\n"
-"    app.redraw()"
+msgstr "enquanto não for app.quit_requested():\n    app.process_events()\n    app.redraw()"
 
 #: docs/en/tutorial/tutorial-8.md:150
-#, fuzzy
 msgid "This loop is called the *Event Loop*. (These aren't actual method names - it's an illustration of what is going on using \"pseudo-code\")."
 msgstr "Esse loop é chamado de *Event Loop*. (Esses não são nomes de métodos reais - é uma ilustração do que está acontecendo no \"pseudocódigo\")."
 
 #: docs/en/tutorial/tutorial-8.md:152
-#, fuzzy
 msgid "When you click on a button, or drag a scroll bar, or type a key, you are generating an \"event\". That \"event\" is put onto a queue, and the app will process the queue of events when it next has the opportunity to do so. The user code that is triggered in response to the event is called an *event handler*. These event handlers are invoked as part of the `process_events()` call."
 msgstr "Quando você clica em um botão, arrasta uma barra de rolagem ou digita uma tecla, está gerando um \"evento\". Esse \"evento\" é colocado em uma fila, e a aplicação processará a fila de eventos quando tiver a oportunidade de fazê-lo. O código do utilizador que é acionado em resposta ao evento é chamado de *manipulador de eventos*. Esses manipuladores de eventos são invocados como parte da chamada `process_events()`."
 
 #: docs/en/tutorial/tutorial-8.md:154
-#, fuzzy
 msgid "Once an app has processed all the available events, it will `redraw()` the GUI. This takes into account any changes that the events have caused to the display of the app, as well as anything else that is going on in the operating system - for example, the windows of another app may obscure or reveal part of our app's window, and our app's redraw will need to reflect the portion of the window that is currently visible."
 msgstr "Depois que um aplicação tiver processado todos os eventos disponíveis, ele `redraw()` a GUI. Isso leva em conta todas as alterações que os eventos causaram na exibição da aplicação, bem como qualquer outra coisa que esteja acontecendo no sistema operativo - por exemplo, as janelas de outra aplicação podem obscurecer ou revelar parte da janela do nossa aplicação, e o redesenho do nossa aplicação precisará refletir a parte da janela que está visível no momento."
 
 #: docs/en/tutorial/tutorial-8.md:156
-#, fuzzy
 msgid "The important detail to notice: while an application is processing an event, *it can't redraw*, and *it can't process other events*."
 msgstr "O detalhe importante a ser observado: enquanto um aplicação estiver processando um evento, *ele não pode redesenhar* e *não pode processar outros eventos*."
 
 #: docs/en/tutorial/tutorial-8.md:158
-#, fuzzy
 msgid "This means any user logic contained in an event handler needs to complete quickly. Any delay in completing the event handler will be observed by the user as a slowdown (or stop) in GUI updates. If this delay is long enough, your operating system may report this as a problem - the macOS \"beachball\" and Windows \"spinner\" icons are the operating system telling you that your app is taking too long in an event handler."
 msgstr "Isso significa que qualquer lógica de utilizador contida em um manipulador de eventos precisa ser concluída rapidamente. Qualquer atraso na conclusão do manipulador de eventos será observado pelo utilizador como uma desaceleração (ou parada) nas atualizações da GUI. Se esse atraso for longo o suficiente, seu sistema operativo poderá informar isso como um problema - os ícones \"bola de praia\" do macOS e \"botão giratório\" do Windows são o sistema operativo informando que sua aplicação está demorando demais em um manipulador de eventos."
 
 #: docs/en/tutorial/tutorial-8.md:160
-#, fuzzy
 msgid "Simple operations like \"update a label\", or \"recompute the total of the inputs\" are easy to complete quickly. However, there are a lot of operations that can't be completed quickly. If you're performing a complex mathematical calculation, or indexing all the files on a file system, or performing a large network request, you can't \"just do it quickly\" - the operations are inherently slow."
 msgstr "Operações simples como \"atualizar um rótulo\" ou \"recomputar o total das entradas\" são fáceis de concluir rapidamente. Entretanto, há muitas operações que não podem ser concluídas rapidamente. Se estiver realizando um cálculo matemático complexo, ou indexando todos os ficheiros em um sistema de ficheiros, ou realizando uma grande solicitação de rede, não é possível \"simplesmente fazer isso rapidamente\" - as operações são inerentemente lentas."
 
 #: docs/en/tutorial/tutorial-8.md:162
-#, fuzzy
 msgid "So - how do we perform long-lived operations in a GUI application?"
 msgstr "Então, como realizamos operações de longa duração em um aplicação de GUI?"
 
 #: docs/en/tutorial/tutorial-8.md:164
-#, fuzzy
 msgid "Asynchronous programming"
 msgstr "Programação assíncrona"
 
 #: docs/en/tutorial/tutorial-8.md:166
-#, fuzzy
 msgid "What we need is a way to tell an app in the middle of a long-lived event handler that it is OK to temporarily release control back to the event loop, as long as we can resume where we left off. It's up to the app to determine when this release can occur; but if the app releases control to the event loop regularly, we can have a long-running event handler *and* maintain a responsive UI."
 msgstr "O que precisamos é de uma maneira de informar a um aplicação no meio de um manipulador de eventos de longa duração que não há problema em liberar temporariamente o controle de volta para o loop de eventos, desde que possamos retomar de onde paramos. Cabe aa aplicação determinar quando essa liberação pode ocorrer; mas se a aplicação liberar o controle para o loop de eventos regularmente, poderemos ter um manipulador de eventos de longa duração *e* manter uma interface de utilizador responsiva."
 
 #: docs/en/tutorial/tutorial-8.md:168
-#, fuzzy
 msgid "We can do this by using *asynchronous programming*. Asynchronous programming is a way to describe a program that allows the interpreter to run multiple functions at the same time, sharing resources between all the concurrently running functions."
 msgstr "Podemos fazer isso usando a *programação assíncrona*. A programação assíncrona é uma maneira de descrever um programa que permite que o intérprete execute várias funções ao mesmo tempo, compartilhando recursos entre todas as funções executadas simultaneamente."
 
 #: docs/en/tutorial/tutorial-8.md:170
-#, fuzzy
 msgid "Asynchronous functions (known as *coroutines*) need to be explicitly declared as being asynchronous. They also need to internally declare when an opportunity exists to change context to another coroutine."
 msgstr "As funções assíncronas (conhecidas como *co-rotinas*) precisam ser explicitamente declaradas como assíncronas. Elas também precisam declarar internamente quando existe uma oportunidade de mudar o contexto para outra co-rotina."
 
 #: docs/en/tutorial/tutorial-8.md:172
-#, fuzzy
 msgid "In Python, asynchronous programming is implemented using the `async` and `await` keywords, and the [asyncio]{1} module in the standard library. The `async` keyword allows us to declare that a function is an asynchronous coroutine. The `await` keyword provides a way to declare when an opportunity exists to change context to another coroutine. The [asyncio]{2} module provides some other useful tools and primitives for asynchronous coding."
 msgstr "Em Python, a programação assíncrona é implementada usando as palavras-chave `async` e `await` e o módulo [asyncio]{1} na biblioteca padrão. A palavra-chave `async` nos permite declarar que uma função é uma co-rotina assíncrona. A palavra-chave `await` fornece uma maneira de declarar quando existe uma oportunidade de mudar o contexto para outra co-rotina. O módulo [asyncio]{2} fornece algumas outras ferramentas e primitivas úteis para codificação assíncrona."
 
 #: docs/en/tutorial/tutorial-8.md:174
-#, fuzzy
 msgid "Making the tutorial asynchronous"
 msgstr "Tornando o tutorial assíncrono"
 
 #: docs/en/tutorial/tutorial-8.md:176
-#, fuzzy
 msgid "To make our tutorial asynchronous, modify the `say_hello()` event handler so it looks like this:"
 msgstr "Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos `say_hello()` para que ele tenha a seguinte aparência:"
 
 #: docs/en/tutorial/tutorial-8.md:178
-#, fuzzy
 msgid ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
@@ -6287,48 +6207,29 @@ msgid ""
 "            f\"A message from {fake.name()}: {payload['body']}\",\n"
 "        )\n"
 "    )"
-msgstr ""
-"async def say_hello(self, widget):\n"
-"    fake = faker.Faker()\n"
-"    async with httpx.AsyncClient() as client:\n"
-" response = await client.get(\"https://jsonplaceholder.typicode.com/posts/42\")\n"
-"\n"
-"    payload = response.json()\n"
-"\n"
-" await self.main_window.dialog(\n"
-" toga.InfoDialog(\n"
-" greeting(self.name_input.value),\n"
-" f\"Uma mensagem de {fake.name()}: {payload['body']}\",\n"
-" )\n"
-"    )"
+msgstr "async def say_hello(self, widget):\n    fake = faker.Faker()\n    async with httpx.AsyncClient() as client:\n response = await client.get(\"https://jsonplaceholder.typicode.com/posts/42\")\n\n    payload = response.json()\n\n await self.main_window.dialog(\n toga.InfoDialog(\n greeting(self.name_input.value),\n f\"Uma mensagem de {fake.name()}: {payload['body']}\",\n )\n    )"
 
 #: docs/en/tutorial/tutorial-8.md:194
-#, fuzzy
 msgid "There are only three changes to this callback from the previous version:"
 msgstr "Há apenas 4 alterações nesse código em relação à versão anterior:"
 
 #: docs/en/tutorial/tutorial-8.md:196
-#, fuzzy
 msgid "The client that is created is an asynchronous `AsyncClient()`, rather than a synchronous `Client()`. This tells `httpx` that it should operate in asynchronous mode, rather than synchronous mode."
 msgstr "O cliente criado é um `AsyncClient()` assíncrono, em vez de um `Client()` síncrono. Isso informa ao `httpx` que ele deve operar no modo assíncrono, e não no modo síncrono."
 
 #: docs/en/tutorial/tutorial-8.md:197
-#, fuzzy
 msgid "The context manager used to create the client is marked as `async`. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
 msgstr "O gerenciador de contexto usado para criar o cliente é marcado como `async`. Isso informa ao Python que há uma oportunidade de liberar o controle à medida que o gerenciador de contexto entra e sai."
 
 #: docs/en/tutorial/tutorial-8.md:198
-#, fuzzy
 msgid "The `get` call is made with an `await` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop. We've seen this keyword before - we also use `await` when displaying the dialog box. The reason for that usage is the same as it is for the HTTP request - we need to tell the app that while the dialog is displayed, and we're waiting for the user to push a button, it's OK to release control back to the event loop."
 msgstr "A chamada `get` é feita com uma palavra-chave `await`. Isso instrui a aplicação que, enquanto aguardamos a resposta da rede, ele pode liberar o controle para o loop de eventos. Já vimos essa palavra-chave antes - também usamos `await` ao exibir a caixa de diálogo. O motivo desse uso é o mesmo da solicitação HTTP - precisamos informar aa aplicação que, enquanto a caixa de diálogo é exibida e estamos aguardando que o utilizador pressione um botão, não há problema em liberar o controle de volta para o loop de eventos."
 
 #: docs/en/tutorial/tutorial-8.md:200
-#, fuzzy
 msgid "It's also important to note that the handler itself is defined as `async def`, rather than just `def`. This tells Python that the method is an asynchronous coroutine. We made this change back in Tutorial 3 when we added the dialog box. You can only use `await` statements inside a method that is declared as `async def`."
 msgstr "Também é importante observar que o próprio manipulador é definido como `async def`, em vez de apenas `def`. Isso informa ao Python que o método é uma corrotina assíncrona. Fizemos essa alteração no Tutorial 3, quando adicionamos a caixa de diálogo. Você só pode usar instruções `await` dentro de um método declarado como `async def`."
 
 #: docs/en/tutorial/tutorial-8.md:202
-#, fuzzy
 msgid "Toga allows you to use regular methods or asynchronous coroutines as handlers; Toga manages everything behind the scenes to make sure the handler is invoked or awaited as required."
 msgstr "A Toga permite que você use métodos regulares ou co-rotinas assíncronas como manipuladores; a Toga gerencia tudo nos bastidores para garantir que o manipulador seja chamado ou aguardado conforme necessário."
 
@@ -6338,27 +6239,22 @@ msgid "If you save these changes and re-run the app in development mode, there w
 msgstr "Se você salvar essas alterações e executar novamente a aplicação (com o `briefcase dev` no modo de desenvolvimento ou atualizando e executando novamente a aplicação empacotado), não haverá nenhuma alteração óbvia na aplicação. No entanto, ao clicar no botão para acionar a caixa de diálogo, você poderá notar uma série de melhorias sutis:"
 
 #: docs/en/tutorial/tutorial-8.md:206
-#, fuzzy
 msgid "The button returns to an \"unclicked\" state, rather than being stuck in a \"clicked\" state."
 msgstr "O botão retorna a um estado \"não clicado\", em vez de ficar preso em um estado \"clicado\"."
 
 #: docs/en/tutorial/tutorial-8.md:207
-#, fuzzy
 msgid "The \"beachball\"/\"spinner\" icon won't appear."
 msgstr "O ícone \"bola de praia\"/\"botão giratório\" não será exibido."
 
 #: docs/en/tutorial/tutorial-8.md:208
-#, fuzzy
 msgid "If you move/resize the app window while waiting for the dialog to appear, the window will redraw."
 msgstr "Se você mover/redimensionar a janela da aplicação enquanto aguarda a exibição da caixa de diálogo, a janela será redesenhada."
 
 #: docs/en/tutorial/tutorial-8.md:209
-#, fuzzy
 msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr "Se você tentar abrir um menu de aplicação, o menu será exibido imediatamente."
 
 #: docs/en/tutorial/tutorial-8.md:211
-#, fuzzy
 msgid "We can now run the full app. However, as we've added an extra requirement (`httpx`) we also need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:"
 msgstr "Agora podemos executar a aplicação completo. No entanto, como adicionamos um requisito extra (`httpx`), também precisamos atualizar os requisitos do nossa aplicação; podemos fazer isso passando `-r` para `briefcase run`. Isso atualizará os requisitos do nossa aplicação, reconstruirá a aplicação e, em seguida, o iniciará:"
 
@@ -6379,17 +6275,14 @@ msgid "(beeware-venv) $ briefcase run iOS -r"
 msgstr "(beeware-venv) $ briefcase run iOS -r"
 
 #: docs/en/tutorial/tutorial-8.md:253
-#, fuzzy
 msgid "You should see you app running, and remaining responsive when you press the button and network content is retrieved."
 msgstr "Você deverá ver sua aplicação em execução e permanecer responsivo quando pressionar o botão e o conteúdo da rede for recuperado."
 
 #: docs/en/tutorial/tutorial-8.md:257
-#, fuzzy
 msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. Over the course of this tutorial, you have:"
 msgstr "Esta foi uma amostra do que você pode fazer com as ferramentas fornecidas pelo projeto BeeWare. No decorrer deste tutorial, você terá:"
 
 #: docs/en/tutorial/tutorial-8.md:259
-#, fuzzy
 msgid "Created a new GUI app project;"
 msgstr "Criou um novo projeto de aplicação GUI;"
 
@@ -6398,51 +6291,41 @@ msgid "Run that app in development mode;"
 msgstr "Correr essa aplicação em modo de desenvolvedor;"
 
 #: docs/en/tutorial/tutorial-8.md:261
-#, fuzzy
 msgid "Built the app as a standalone binary for a desktop operating system;"
 msgstr "Criou a aplicação como um binário autônomo para um sistema operativo de desktop;"
 
 #: docs/en/tutorial/tutorial-8.md:262
-#, fuzzy
 msgid "Packaged that project for distribution to others;"
 msgstr "Empacotou esse projeto para distribuição a outras pessoas;"
 
 #: docs/en/tutorial/tutorial-8.md:263
-#, fuzzy
 msgid "Run the app on a mobile simulator and/or device;"
 msgstr "Execute a aplicação em um simulador e/ou dispositivo móvel;"
 
 #: docs/en/tutorial/tutorial-8.md:264
-#, fuzzy
 msgid "Run the app as a web app;"
 msgstr "Execute a aplicação como um aplicação da Web;"
 
 #: docs/en/tutorial/tutorial-8.md:265
-#, fuzzy
 msgid "Added a third-party dependency to your app; and"
 msgstr "Adicionou uma dependência de terceiros ao sua aplicação; e"
 
 #: docs/en/tutorial/tutorial-8.md:266
-#, fuzzy
 msgid "Modified the app so that it remains responsive."
 msgstr "Modificou a aplicação para que ele permaneça responsivo."
 
 #: docs/en/tutorial/tutorial-8.md:268
-#, fuzzy
 msgid "So - where to from here?"
 msgstr "Então, o que fazer a partir daqui?"
 
 #: docs/en/tutorial/tutorial-8.md:270
-#, fuzzy
 msgid "If you'd like to go further, there are some additional [topic tutorials]{1} that go into detail on specific aspects of application development."
 msgstr "Se quiser ir além, há alguns [tutoriais de tópicos]{1} adicionais que detalham aspectos específicos do desenvolvimento de aplicações."
 
 #: docs/en/tutorial/tutorial-8.md:271
-#, fuzzy
 msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into [Toga's documentation]{1}. Toga also has its own tutorial [demonstrating how to use various features of the widget toolkit]{2}."
 msgstr "Se quiser saber mais sobre como criar interfaces de utilizador complexas com o Toga, consulte a [documentação do Toga]{1}. A Toga também tem seu próprio tutorial [demonstrando como usar vários recursos do kit de ferramentas de widget]{2}."
 
 #: docs/en/tutorial/tutorial-8.md:273
-#, fuzzy
 msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into [Briefcase's documentation]{1}."
 msgstr "Se quiser saber mais sobre os recursos do Briefcase, você pode se aprofundar na [documentação do Briefcase]{1}."
