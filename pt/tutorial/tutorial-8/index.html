@@ -1679,43 +1679,14 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-8-tornar-suuuuaaave">Tutorial 8 - Tornar Suuuuaaave<a class="headerlink" href="#tutorial-8-tornar-suuuuaaave" title="Permanent link">&para;</a></h1>
-<p>Até agora, a nossa aplicação tem sido relativamente simples - mostrar widgets de
-GUI, chamar uma biblioteca simples de terceiros, e mostrar o resultado num
-diálogo. Todas essas operações ocorrem muito rapidamente, e a nossa aplicação
-permanece funcional.</p>
-<p>Entretanto, numa aplicação do mundo real, vamos precisar de executar tarefas ou
-cálculos complexos que podem levar algum tempo para serem concluídos - e
-conforme essas tarefas forem executadas, queremos que a nossa aplicação
-permaneça funcional. Vamos fazer uma alteração na nossa aplicação que pode levar
-algum tempo a ser concluída, e ver as alterações que precisam ser feitas para
-acomodar esse comportamento.</p>
+<p>Até agora, a nossa aplicação tem sido relativamente simples - mostrar widgets de GUI, chamar uma biblioteca simples de terceiros, e mostrar o resultado num diálogo. Todas essas operações ocorrem muito rapidamente, e a nossa aplicação permanece funcional.</p>
+<p>Entretanto, numa aplicação do mundo real, vamos precisar de executar tarefas ou cálculos complexos que podem levar algum tempo para serem concluídos - e conforme essas tarefas forem executadas, queremos que a nossa aplicação permaneça funcional. Vamos fazer uma alteração na nossa aplicação que pode levar algum tempo a ser concluída, e ver as alterações que precisam ser feitas para acomodar esse comportamento.</p>
 <h2 id="aceder-a-uma-api">Aceder a uma API<a class="headerlink" href="#aceder-a-uma-api" title="Permanent link">&para;</a></h2>
-<p>Uma tarefa comum e demorada que uma aplicação precisa executar é fazer uma
-solicitação a uma API Web para recuperar dados, e mostrar esses dados ao
-utilizador. Por vezes, as APIs Web levam um ou dois segundos a responder, assim
-se estivermos a chamar uma API dessas, precisamos garantir que nossa aplicação
-não deixe de responder enquanto esperamos que a API Web devolva uma resposta.</p>
-<p>Esta é uma aplicação de brincar, portanto não temos uma API <em>real</em> com a qual
-trabalhar, então vamos usar um ponto final de API de exemplo como fonte de
-dados. Se abrir
-<a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a>
-no seu navegador, receberá uma resposta JSON com uma mensagem.</p>
-<p>A biblioteca standard do Python contém todas as ferramentas que vai precisar
-para aceder a uma API. No entanto, as APIs incorporadas são de nível muito
-baixo. Elas são boas implementações do protocolo HTTP - mas exigem que o
-utilizador faça gestão de muitos detalhes de baixo nível, como redirecionar de
-URL, sessões, autenticação e codificação de carga útil. Como um "utilizador
-normal de navegador", está provavelmente acostumado a considerar esses detalhes
-como garantidos, pois o navegador gere-os por si.</p>
-<p>Como resultado, pessoas desenvolveram bibliotecas de terceiros que envolvem as
-APIs integradas e fornecem uma API mais simples mais próxima da experiência
-diária dum navegador. Vamos usar uma dessas bibliotecas — uma biblioteca chamada
-<a href="https://www.python-httpx.org"><code>httpx</code></a> — para aceder a uma API simples.</p>
-<p>Vamos adicionar uma chamada API <code>httpx</code> à nossa aplicação. Primeiro, tal como
-fizemos com o <code>faker</code> <a href="../tutorial-7/">em passo anterior</a>, precisamos informar o
-briefcase para instalar o <code>httpx</code> quando ele compilar a nossa aplicação.
-Modifique a configuração <code>requires</code> no nosso <code>pyproject.toml</code> para incluir o
-novo requisito:</p>
+<p>Uma tarefa comum e demorada que uma aplicação precisa executar é fazer uma solicitação a uma API Web para recuperar dados, e mostrar esses dados ao utilizador. Por vezes, as APIs Web levam um ou dois segundos a responder, assim se estivermos a chamar uma API dessas, precisamos garantir que nossa aplicação não deixe de responder enquanto esperamos que a API Web devolva uma resposta.</p>
+<p>Esta é uma aplicação de brincar, portanto não temos uma API <em>real</em> com a qual trabalhar, então vamos usar um ponto final de API de exemplo como fonte de dados. Se abrir <a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a> no seu navegador, receberá uma resposta JSON com uma mensagem.</p>
+<p>A biblioteca standard do Python contém todas as ferramentas que vai precisar para aceder a uma API. No entanto, as APIs incorporadas são de nível muito baixo. Elas são boas implementações do protocolo HTTP - mas exigem que o utilizador faça gestão de muitos detalhes de baixo nível, como redirecionar de URL, sessões, autenticação e codificação de carga útil. Como um "utilizador normal de navegador", está provavelmente acostumado a considerar esses detalhes como garantidos, pois o navegador gere-os por si.</p>
+<p>Como resultado, pessoas desenvolveram bibliotecas de terceiros que envolvem as APIs integradas e fornecem uma API mais simples mais próxima da experiência diária dum navegador. Vamos usar uma dessas bibliotecas — uma biblioteca chamada <a href="https://www.python-httpx.org"><code>httpx</code></a> — para aceder a uma API simples.</p>
+<p>Vamos adicionar uma chamada API <code>httpx</code> à nossa aplicação. Primeiro, tal como fizemos com o <code>faker</code> <a href="../tutorial-7/">em passo anterior</a>, precisamos informar o briefcase para instalar o <code>httpx</code> quando ele compilar a nossa aplicação. Modifique a configuração <code>requires</code> no nosso <code>pyproject.toml</code> para incluir o novo requisito:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;faker&quot;</span><span class="p">,</span>
     <span class="s2">&quot;httpx&quot;</span><span class="p">,</span>
@@ -1739,19 +1710,14 @@ novo requisito:</p>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Isso vai alterar a chamada de retorno <code>say_hello()</code> para que, quando é invocada,
-vai fazer:</p>
+<p>Isso vai alterar a chamada de retorno <code>say_hello()</code> para que, quando é invocada, vai fazer:</p>
 <ul>
 <li>faça um pedido GET na API do tutorial para recuperar uma mensagem;</li>
 <li>descodificar a resposta como JSON;</li>
 <li>extrair o corpo da mensagem; e</li>
-<li>incluir o corpo dessa mensagem como o texto do diálogo, no lugar do texto
-  gerado pelo Faker.</li>
+<li>incluir o corpo dessa mensagem como o texto do diálogo, no lugar do texto gerado pelo Faker.</li>
 </ul>
-<p>Vamos correr a nossa aplicação atualizada no modo de desenvolvedor do Briefcase
-para verificar se a alteração funcionou. Como adicionamos um novo requisito,
-precisamos informar ao modo de desenvolvedor para reinstalar os requisitos,
-usando o argumento <code>-r</code>:</p>
+<p>Vamos correr a nossa aplicação atualizada no modo de desenvolvedor do Briefcase para verificar se a alteração funcionou. Como adicionamos um novo requisito, precisamos informar ao modo de desenvolvedor para reinstalar os requisitos, usando o argumento <code>-r</code>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1762,11 +1728,9 @@ usando o argumento <code>-r</code>:</p>
 <span class="go">[helloworld] A iniciar no modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
-isto:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a isto:</p>
 <figure>
-<p><img alt="Caixa de diálogo do tutorial 8 do Hello World, no
-macOS" src="../../images/macOS/tutorial-8.png" /></p>
+<p><img alt="Caixa de diálogo do tutorial 8 do Hello World, no macOS" src="../../images/macOS/tutorial-8.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
@@ -1778,11 +1742,9 @@ macOS" src="../../images/macOS/tutorial-8.png" /></p>
 <span class="go">[helloworld] A iniciar no modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
-isto:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a isto:</p>
 <figure>
-<p><img alt="Caixa de diálogo do tutorial 8 do Hello World, no
-Linux" src="../../images/linux/tutorial-8.png" /></p>
+<p><img alt="Caixa de diálogo do tutorial 8 do Hello World, no Linux" src="../../images/linux/tutorial-8.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
@@ -1794,100 +1756,43 @@ Linux" src="../../images/linux/tutorial-8.png" /></p>
 <span class="go">[helloworld] A iniciar no modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
-isto:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a isto:</p>
 <figure>
-<p><img alt="Caixa de diálogo do Tutorial 8 do Hello World, no
-Windows" src="../../images/windows/tutorial-8.png" /></p>
+<p><img alt="Caixa de diálogo do Tutorial 8 do Hello World, no Windows" src="../../images/windows/tutorial-8.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as
-instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
+<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
 </div>
 <div class="tabbed-block">
-<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções
-para a plataforma de ambiente de trabalho escolhida.</p>
+<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções para a plataforma de ambiente de trabalho escolhida.</p>
 </div>
 </div>
 </div>
-<p>A menos que tenha uma ligação de Internet <em>realmente</em> rápida, poderá perceber
-que ao pressionar o botão, a GUI da sua aplicação trava um pouco. O sistema
-operativo pode até manifestar isso com um cursor "ampulheta" ou "rotativo" para
-indicar que a aplicação não está a responder.</p>
-<p>Isso acontece porque o pedido Web que fizemos é <em>síncrono</em>. Quando a nossa
-aplicação faz um pedido Web, ele espera que a API retorne uma resposta antes de
-continuar. Enquanto espera, não <em>dá</em> permissão à aplicação para redesenhar - e
-como resultado, a aplicação trava.</p>
+<p>A menos que tenha uma ligação de Internet <em>realmente</em> rápida, poderá perceber que ao pressionar o botão, a GUI da sua aplicação trava um pouco. O sistema operativo pode até manifestar isso com um cursor "ampulheta" ou "rotativo" para indicar que a aplicação não está a responder.</p>
+<p>Isso acontece porque o pedido Web que fizemos é <em>síncrono</em>. Quando a nossa aplicação faz um pedido Web, ele espera que a API retorne uma resposta antes de continuar. Enquanto espera, não <em>dá</em> permissão à aplicação para redesenhar - e como resultado, a aplicação trava.</p>
 <h2 id="ciclos-de-eventos-da-gui">Ciclos de Eventos da GUI<a class="headerlink" href="#ciclos-de-eventos-da-gui" title="Permanent link">&para;</a></h2>
-<p>Para entender porque isto acontece, precisamos aprofundar os detalhes de como
-funciona um aplicação GUI. Os detalhes variam de acordo com a plataforma, mas os
-conceitos de alto nível são os mesmos, independentemente da plataforma ou do
-ambiente de GUI que estiver a usar.</p>
+<p>Para entender porque isto acontece, precisamos aprofundar os detalhes de como funciona um aplicação GUI. Os detalhes variam de acordo com a plataforma, mas os conceitos de alto nível são os mesmos, independentemente da plataforma ou do ambiente de GUI que estiver a usar.</p>
 <p>Um aplicação de GUI é, fundamentalmente, um único ciclo que se parece com:</p>
 <div class="highlight"><pre><span></span><code><span class="n">enquanto</span> <span class="n">não</span> <span class="n">app</span><span class="o">.</span><span class="n">pedido_de_terminar</span><span class="p">():</span>
     <span class="n">app</span><span class="o">.</span><span class="n">processa_eventos</span><span class="p">()</span>
     <span class="n">app</span><span class="o">.</span><span class="n">redesenha</span><span class="p">()</span>
 </code></pre></div>
-<p>Esse ciclo é chamado de <em>Event Loop</em>. (Esses não são nomes de métodos reais - é
-uma ilustração do que está a acontecer usando "pseudo-código").</p>
-<p>Quando você clica num botão, arrasta uma barra de deslocamento, ou carrega numa
-tecla, está a gerar um "evento". Esse "evento" é colocado numa fila, e a
-aplicação vai processar a fila de eventos na próxima oportunidade de o fazer. O
-código do utilizador que é acionado em resposta ao evento é chamado de
-<em>manipulador de eventos</em>. Esses manipuladores de eventos são invocados como
-parte da chamada <code>process_events()</code>.</p>
-<p>Assim que a aplicação tiver processado todos os eventos disponíveis, ela vai
-redesenhar (<code>redraw()</code>) a GUI. Isso leva em conta todas as alterações que os
-eventos causaram na exibição da aplicação, bem como qualquer outra coisa que
-esteja a acontecer no sistema operativo - por exemplo, as janelas de outra
-aplicação podem obscurecer ou revelar parte da janela da nossa aplicação, e o
-redesenhar da nossa aplicação vai precisar de refletir a parte da janela que
-está visível no momento.</p>
-<p>O detalhe importante a ser observado: enquanto uma aplicação estiver a processar
-um evento, <em>ela não pode redesenhar</em> e <em>não pode processar outros eventos</em>.</p>
-<p>Isso significa que qualquer lógica de utilizador contida num manipulador de
-eventos precisa ser concluída rapidamente. Qualquer atraso na conclusão do
-manipulador de eventos será observado pelo utilizador como uma desaceleração (ou
-paragem) nas atualizações da GUI. Se esse atraso for longo o suficiente, o seu
-sistema operativo poderá informar isso como um problema - os ícones "bola de
-praia" do macOS e "botão giratório" do Windows são o sistema operativo a
-informar que a sua aplicação está a demorar demais num manipulador de eventos.</p>
-<p>Operações simples como "atualizar uma etiqueta" ou "recalcular o total das
-entradas" são fáceis de concluir rapidamente. No entanto, há muitas operações
-que não podem ser concluídas rapidamente. Se estiver a realizar um cálculo
-matemático complexo, ou a indexar todos os ficheiros num sistema de ficheiros,
-ou a realizar uma grande solicitação de trabalho em rede, não pode "simplesmente
-fazer isso rapidamente" - estas operações são por natureza lentas.</p>
+<p>Esse ciclo é chamado de <em>Event Loop</em>. (Esses não são nomes de métodos reais - é uma ilustração do que está a acontecer usando "pseudo-código").</p>
+<p>Quando você clica num botão, arrasta uma barra de deslocamento, ou carrega numa tecla, está a gerar um "evento". Esse "evento" é colocado numa fila, e a aplicação vai processar a fila de eventos na próxima oportunidade de o fazer. O código do utilizador que é acionado em resposta ao evento é chamado de <em>manipulador de eventos</em>. Esses manipuladores de eventos são invocados como parte da chamada <code>process_events()</code>.</p>
+<p>Assim que a aplicação tiver processado todos os eventos disponíveis, ela vai redesenhar (<code>redraw()</code>) a GUI. Isso leva em conta todas as alterações que os eventos causaram na exibição da aplicação, bem como qualquer outra coisa que esteja a acontecer no sistema operativo - por exemplo, as janelas de outra aplicação podem obscurecer ou revelar parte da janela da nossa aplicação, e o redesenhar da nossa aplicação vai precisar de refletir a parte da janela que está visível no momento.</p>
+<p>O detalhe importante a ser observado: enquanto uma aplicação estiver a processar um evento, <em>ela não pode redesenhar</em> e <em>não pode processar outros eventos</em>.</p>
+<p>Isso significa que qualquer lógica de utilizador contida num manipulador de eventos precisa ser concluída rapidamente. Qualquer atraso na conclusão do manipulador de eventos será observado pelo utilizador como uma desaceleração (ou paragem) nas atualizações da GUI. Se esse atraso for longo o suficiente, o seu sistema operativo poderá informar isso como um problema - os ícones "bola de praia" do macOS e "botão giratório" do Windows são o sistema operativo a informar que a sua aplicação está a demorar demais num manipulador de eventos.</p>
+<p>Operações simples como "atualizar uma etiqueta" ou "recalcular o total das entradas" são fáceis de concluir rapidamente. No entanto, há muitas operações que não podem ser concluídas rapidamente. Se estiver a realizar um cálculo matemático complexo, ou a indexar todos os ficheiros num sistema de ficheiros, ou a realizar uma grande solicitação de trabalho em rede, não pode "simplesmente fazer isso rapidamente" - estas operações são por natureza lentas.</p>
 <p>Assim - como realizamos operações de longa duração numa aplicação de GUI?</p>
 <h2 id="programacao-assincrona">Programação assíncrona<a class="headerlink" href="#programacao-assincrona" title="Permanent link">&para;</a></h2>
-<p>O que precisamos é de uma maneira de informar a aplicação no meio de um
-manipulador de eventos de longa duração que não há problema em libertar
-temporariamente o controle de volta para o ciclo de eventos, desde que se possa
-retomar de onde paramos. Cabe à aplicação determinar quando essa libertação pode
-ocorrer; mas se a aplicação libertar o controle para o ciclo de eventos
-regularmente, poderemos ter um manipulador de eventos de longa duração <em>e</em>
-manter uma UI a responder.</p>
-<p>Podemos fazer isso usando a <em>programação assíncrona</em>. A programação assíncrona é
-uma maneira de descrever um programa que permite que o intérprete execute várias
-funções ao mesmo tempo, compartilhando recursos entre todas as funções
-executadas em simultâneo.</p>
-<p>As funções assíncronas (conhecidas como <em>co-rotinas</em>) precisam ser
-explicitamente declaradas como assíncronas. Elas também precisam declarar
-internamente quando existe uma oportunidade de mudar o contexto para outra
-co-rotina.</p>
-<p>Em Python, a programação assíncrona é implementada usando as palavras-chave
-<code>async</code> e <code>await</code> e o módulo
-<a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> na biblioteca
-standard. A palavra-chave <code>async</code> permite-nos declarar que uma função é uma
-co-rotina assíncrona. A palavra-chave <code>await</code> fornece uma maneira de declarar
-quando existe uma oportunidade de mudar o contexto para outra co-rotina. O
-módulo <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> fornece algumas
-outras ferramentas úteis e primitivas para codificação assíncrona.</p>
+<p>O que precisamos é de uma maneira de informar a aplicação no meio de um manipulador de eventos de longa duração que não há problema em libertar temporariamente o controle de volta para o ciclo de eventos, desde que se possa retomar de onde paramos. Cabe à aplicação determinar quando essa libertação pode ocorrer; mas se a aplicação libertar o controle para o ciclo de eventos regularmente, poderemos ter um manipulador de eventos de longa duração <em>e</em> manter uma UI a responder.</p>
+<p>Podemos fazer isso usando a <em>programação assíncrona</em>. A programação assíncrona é uma maneira de descrever um programa que permite que o intérprete execute várias funções ao mesmo tempo, compartilhando recursos entre todas as funções executadas em simultâneo.</p>
+<p>As funções assíncronas (conhecidas como <em>co-rotinas</em>) precisam ser explicitamente declaradas como assíncronas. Elas também precisam declarar internamente quando existe uma oportunidade de mudar o contexto para outra co-rotina.</p>
+<p>Em Python, a programação assíncrona é implementada usando as palavras-chave <code>async</code> e <code>await</code> e o módulo <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> na biblioteca standard. A palavra-chave <code>async</code> permite-nos declarar que uma função é uma co-rotina assíncrona. A palavra-chave <code>await</code> fornece uma maneira de declarar quando existe uma oportunidade de mudar o contexto para outra co-rotina. O módulo <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> fornece algumas outras ferramentas úteis e primitivas para codificação assíncrona.</p>
 <h2 id="tornar-o-tutorial-assincrono">Tornar o tutorial assíncrono<a class="headerlink" href="#tornar-o-tutorial-assincrono" title="Permanent link">&para;</a></h2>
-<p>Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos
-<code>say_hello()</code> para que tenha a seguinte aparência:</p>
+<p>Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos <code>say_hello()</code> para que tenha a seguinte aparência:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
@@ -1904,45 +1809,20 @@ outras ferramentas úteis e primitivas para codificação assíncrona.</p>
 </code></pre></div>
 <p>Há apenas três alterações nesta chamada de retorno a partir da versão anterior:</p>
 <ol>
-<li>O cliente criado é um <code>AsyncClient()</code> assíncrono, em vez de um <code>Client()</code>
-   síncrono. Isso informa ao <code>httpx</code> que ele deve operar no modo assíncrono, e
-   não no modo síncrono.</li>
-<li>O gestor de contexto usado para criar o cliente é marcado como <code>async</code>. Isso
-   informa o Python que há uma oportunidade de libertar o controle à medida que
-   se entra e sai do gestor de contexto.</li>
-<li>A chamada <code>get</code> é feita com uma palavra-chave <code>await</code>. Isso instruí a
-   aplicação que, enquanto aguardamos a resposta da rede, ela pode libertar o
-   controle para o ciclo de eventos. Já vimos essa palavra-chave antes - também
-   usamos <code>await</code> ao mostrar a caixa de diálogo. O motivo desse uso é o mesmo da
-   solicitação HTTP - precisamos informar a aplicação que, enquanto o diálogo é
-   mostrado e estamos a aguardar que o utilizador pressione um botão, não há
-   problema em libertar o controle de volta para o ciclo de eventos.</li>
+<li>O cliente criado é um <code>AsyncClient()</code> assíncrono, em vez de um <code>Client()</code> síncrono. Isso informa ao <code>httpx</code> que ele deve operar no modo assíncrono, e não no modo síncrono.</li>
+<li>O gestor de contexto usado para criar o cliente é marcado como <code>async</code>. Isso informa o Python que há uma oportunidade de libertar o controle à medida que se entra e sai do gestor de contexto.</li>
+<li>A chamada <code>get</code> é feita com uma palavra-chave <code>await</code>. Isso instruí a aplicação que, enquanto aguardamos a resposta da rede, ela pode libertar o controle para o ciclo de eventos. Já vimos essa palavra-chave antes - também usamos <code>await</code> ao mostrar a caixa de diálogo. O motivo desse uso é o mesmo da solicitação HTTP - precisamos informar a aplicação que, enquanto o diálogo é mostrado e estamos a aguardar que o utilizador pressione um botão, não há problema em libertar o controle de volta para o ciclo de eventos.</li>
 </ol>
-<p>Também é importante observar que o próprio manipulador é definido como <code>async
-def</code>, em vez de apenas <code>def</code>. Isso diz ao Python que o método é uma co-rotina
-assíncrona. Fizemos essa alteração atrás no Tutorial 3, quando adicionamos a
-caixa de diálogo. Só pode usar declarações <code>await</code> dentro de um método declarado
-como <code>async def</code>.</p>
-<p>A Toga permite que use métodos regulares ou co-rotinas assíncronas como
-manipuladores; Toga gere tudo nos bastidores para garantir que o manipulador é
-invocado ou aguarda conforme necessário.</p>
-<p>Se salvar estas alterações e executar novamente a aplicação em modo de
-desenvolvimento, não vai haver nenhuma alteração óbvia na aplicação. No entanto,
-ao clicar no botão para acionar o diálogo, vai poder notar uma série de
-melhorias subtis:</p>
+<p>Também é importante observar que o próprio manipulador é definido como <code>async def</code>, em vez de apenas <code>def</code>. Isso diz ao Python que o método é uma co-rotina assíncrona. Fizemos essa alteração atrás no Tutorial 3, quando adicionamos a caixa de diálogo. Só pode usar declarações <code>await</code> dentro de um método declarado como <code>async def</code>.</p>
+<p>A Toga permite que use métodos regulares ou co-rotinas assíncronas como manipuladores; Toga gere tudo nos bastidores para garantir que o manipulador é invocado ou aguarda conforme necessário.</p>
+<p>Se salvar estas alterações e executar novamente a aplicação em modo de desenvolvimento, não vai haver nenhuma alteração óbvia na aplicação. No entanto, ao clicar no botão para acionar o diálogo, vai poder notar uma série de melhorias subtis:</p>
 <ul>
-<li>O botão retorna a um estado "não clicado", em vez de ficar preso num estado
-  "clicado".</li>
+<li>O botão retorna a um estado "não clicado", em vez de ficar preso num estado "clicado".</li>
 <li>O ícone "bola de praia"/"botão giratório" não vai aparecer.</li>
-<li>Se mover/redimensionar a janela da aplicação enquanto aguarda o aparecer do
-  diálogo, a janela é redesenhada.</li>
+<li>Se mover/redimensionar a janela da aplicação enquanto aguarda o aparecer do diálogo, a janela é redesenhada.</li>
 <li>Se tentar abrir um menu de aplicação, o menu é mostrado imediatamente.</li>
 </ul>
-<p>Agora podemos executar a aplicação completa. No entanto, como adicionamos um
-requisito extra (<code>httpx</code>), também temos de atualizar os requisitos da nossa
-aplicação; podemos fazer isso ao passar <code>-r</code> ao <code>briefcase run</code>. Isto vai
-atualizar os requisitos da nossa aplicação, recompilar a aplicação, e depois
-inicia-la:</p>
+<p>Agora podemos executar a aplicação completa. No entanto, como adicionamos um requisito extra (<code>httpx</code>), também temos de atualizar os requisitos da nossa aplicação; podemos fazer isso ao passar <code>-r</code> ao <code>briefcase run</code>. Isto vai atualizar os requisitos da nossa aplicação, recompilar a aplicação, e depois inicia-la:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1967,16 +1847,13 @@ inicia-la:</p>
 </div>
 </div>
 </div>
-<p>Deverá ver a sua aplicação a correr e a permanecer responsiva quando pressionar
-o botão e o conteúdo da rede for recuperado.</p>
+<p>Deverá ver a sua aplicação a correr e a permanecer responsiva quando pressionar o botão e o conteúdo da rede for recuperado.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Esta foi uma amostra do que pode fazer com as ferramentas fornecidas pelo
-projeto BeeWare. No decorrer deste tutorial, você fez:</p>
+<p>Esta foi uma amostra do que pode fazer com as ferramentas fornecidas pelo projeto BeeWare. No decorrer deste tutorial, você fez:</p>
 <ul>
 <li>Criou um novo projeto de aplicação GUI;</li>
 <li>Correr essa aplicação em modo de desenvolvedor;</li>
-<li>Criou a aplicação como um binário autónomo para um sistema operativo de
-  ambiente de trabalho;</li>
+<li>Criou a aplicação como um binário autónomo para um sistema operativo de ambiente de trabalho;</li>
 <li>Empacotou esse projeto para distribuir a outras pessoas;</li>
 <li>Correu a aplicação num simulador e/ou dispositivo móvel;</li>
 <li>Correu a aplicação como uma aplicação Web;</li>
@@ -1985,14 +1862,9 @@ projeto BeeWare. No decorrer deste tutorial, você fez:</p>
 </ul>
 <p>Então - o que fazer a partir daqui?</p>
 <ul>
-<li>Se desejar ir além, há alguns <a href="../topics/">tutoriais de tópicos</a>
-  adicionais que detalham aspetos específicos do desenvolvimento de aplicações.</li>
-<li>Se quiser saber mais sobre como criar interfaces de utilizador complexas com o
-  Toga, pode mergulhar na <a href="https://toga.beeware.org">documentação do Toga</a>. Toga
-  também tem seu próprio tutorial <a href="https://toga.beeware.org/en/latest/tutorial">que demonstra como usar vários recursos do
-  kit de ferramentas de widget</a>.</li>
-<li>Se quiser saber mais sobre as capacidades do Briefcase, pode mergulhar na
-  <a href="https://briefcase.beeware.org">documentação do Briefcase</a>.</li>
+<li>Se desejar ir além, há alguns <a href="../topics/">tutoriais de tópicos</a> adicionais que detalham aspetos específicos do desenvolvimento de aplicações.</li>
+<li>Se quiser saber mais sobre como criar interfaces de utilizador complexas com o Toga, pode mergulhar na <a href="https://toga.beeware.org">documentação do Toga</a>. Toga também tem seu próprio tutorial <a href="https://toga.beeware.org/en/latest/tutorial">que demonstra como usar vários recursos do kit de ferramentas de widget</a>.</li>
+<li>Se quiser saber mais sobre as capacidades do Briefcase, pode mergulhar na <a href="https://briefcase.beeware.org">documentação do Briefcase</a>.</li>
 </ul>
 
 

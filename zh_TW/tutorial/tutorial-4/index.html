@@ -1635,8 +1635,7 @@ aria-label="頁首"
 
 
 <h1 id="4-">教程 4 - 更新您的應用程式<a class="headerlink" href="#4-" title="Permanent link">&para;</a></h1>
-<p>在上一個教程中，我們將應用程式打包為本機應用程式。如果您正在處理現實世界的應用程序，這不會是故事的結局 -
-您可能會進行一些測試，發現問題，並需要進行一些更改。即使您的應用程式非常完美，您最終也會希望發布經過改進的應用程式的第 2 版。</p>
+<p>在上一個教程中，我們將應用程式打包為本機應用程式。如果您正在處理現實世界的應用程序，這不會是故事的結局 - 您可能會進行一些測試，發現問題，並需要進行一些更改。即使您的應用程式非常完美，您最終也會希望發布經過改進的應用程式的第 2 版。</p>
 <p>那麼 - 當您更改程式碼時如何更新已安裝的應用程式？</p>
 <h2 id="_1">更新應用程式程式碼<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>目前，當您按下按鈕時，我們的應用程式會列印到控制台。然而，GUI 應用程式不應該真正使用控制台進行輸出。他們需要使用對話框與使用者進行交流。</p>
@@ -1649,8 +1648,7 @@ aria-label="頁首"
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>我們需要讓方法 <code>async</code> 這樣當我們顯示對話框時，應用程式的其他部分會繼續執行。現在不要太在意這個細節 - 我們會在 <a href="../tutorial-8/">Tutorial
-8</a> 中做更詳細的說明。</p>
+<p>我們需要讓方法 <code>async</code> 這樣當我們顯示對話框時，應用程式的其他部分會繼續執行。現在不要太在意這個細節 - 我們會在 <a href="../tutorial-8/">Tutorial 8</a> 中做更詳細的說明。</p>
 <p>這會指示 Toga 在按下按鈕時開啟模式對話方塊。</p>
 <p>如果執行<code>briefcase dev</code>，輸入名稱，然後按按鈕，您將看到新的對話方塊：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
@@ -1676,11 +1674,8 @@ aria-label="頁首"
 </div>
 </div>
 <p>但是，如果執行<code>briefcase run</code>，則不會出現該對話方塊。</p>
-<p>為什麼會這樣？那麼，"briefcase dev "的運作方式是在原地執行您的程式碼 -
-它嘗試為您的程式碼製作盡可能逼真的執行環境，但它不提供或使用任何平台基礎架構來將您的程式碼包裝成應用程式。打包應用程式的部分過程包括將您的程式碼複製到應用程式包中
-- 目前，您的應用程式中仍有舊程式碼。</p>
-<p>因此 - 我們需要告訴公文包更新您的應用程序，複製新版本的代碼。我們<em>可以</em>透過刪除舊平台目錄並從頭開始來做到這一點。但是，Briefcase
-提供了一種更簡單的方法 - 您可以更新現有捆綁應用程式的程式碼：</p>
+<p>為什麼會這樣？那麼，"briefcase dev "的運作方式是在原地執行您的程式碼 - 它嘗試為您的程式碼製作盡可能逼真的執行環境，但它不提供或使用任何平台基礎架構來將您的程式碼包裝成應用程式。打包應用程式的部分過程包括將您的程式碼複製到應用程式包中 - 目前，您的應用程式中仍有舊程式碼。</p>
+<p>因此 - 我們需要告訴公文包更新您的應用程序，複製新版本的代碼。我們<em>可以</em>透過刪除舊平台目錄並從頭開始來做到這一點。但是，Briefcase 提供了一種更簡單的方法 - 您可以更新現有捆綁應用程式的程式碼：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1729,20 +1724,14 @@ aria-label="頁首"
 </div>
 </div>
 <p>如果Briefcase找不到鷹架模板，它會自動呼叫<code>create</code>來產生一個新的鷹架。</p>
-<p>現在我們已經更新了安裝程式碼，然後我們可以運行<code>briefcase build</code>來重新編譯應用程序，運行<code>briefcase
-run</code>來運行更新後的應用程序，以及運行<code>briefcase package</code>來重新打包應用程式用於分發。</p>
+<p>現在我們已經更新了安裝程式碼，然後我們可以運行<code>briefcase build</code>來重新編譯應用程序，運行<code>briefcase run</code>來運行更新後的應用程序，以及運行<code>briefcase package</code>來重新打包應用程式用於分發。</p>
 <div class="admonition note">
 <p class="admonition-title">注意事項</p>
-<p>（macOS 用戶，請記住，如 [教學 3 所述<tutorial-3><code>，對於本教程，我們建議使用</code>&ndash;adhoc-sign<code>標誌運行</code>briefcase
-package`，以避免設置代碼簽名身份的複雜性，並使教程盡可能簡單。）</p>
+<p>（macOS 用戶，請記住，如 [教學 3 所述<tutorial-3><code>，對於本教程，我們建議使用</code>&ndash;adhoc-sign<code>標誌運行</code>briefcase package`，以避免設置代碼簽名身份的複雜性，並使教程盡可能簡單。）</p>
 </div>
 <h2 id="_2">一步更新並運行<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>如果您快速迭代程式碼更改，您可能需要更改程式碼、更新應用程序，然後立即重新執行您的應用程式。對於大多數目的，開發人員模式（<code>briefcase
-dev</code>）將是進行這種快速迭代的最簡單方法；但是，如果您正在測試應用程式如何作為本機二進位檔案運行，或者尋找僅在應用程式處於打包形式時才會出現的錯誤，則可能需要重複調用<code>briefcase
-run</code>。為了簡化更新和執行捆綁應用程式的過程，Briefcase 有一個快捷方式來支援這種使用模式 - <code>run</code>
-命令上的<code>-u</code>（或<code>--update</code>）選項。</p>
-<p>讓我們嘗試進行另一個更改。您可能已經注意到，如果您不在文字輸入方塊中鍵入姓名，則對話方塊將顯示 "Hello，"。讓我們再次修改 <code>say_hello</code>
-函數來處理這種邊緣情況。</p>
+<p>如果您快速迭代程式碼更改，您可能需要更改程式碼、更新應用程序，然後立即重新執行您的應用程式。對於大多數目的，開發人員模式（<code>briefcase dev</code>）將是進行這種快速迭代的最簡單方法；但是，如果您正在測試應用程式如何作為本機二進位檔案運行，或者尋找僅在應用程式處於打包形式時才會出現的錯誤，則可能需要重複調用<code>briefcase run</code>。為了簡化更新和執行捆綁應用程式的過程，Briefcase 有一個快捷方式來支援這種使用模式 - <code>run</code> 命令上的<code>-u</code>（或<code>--update</code>）選項。</p>
+<p>讓我們嘗試進行另一個更改。您可能已經注意到，如果您不在文字輸入方塊中鍵入姓名，則對話方塊將顯示 "Hello，"。讓我們再次修改 <code>say_hello</code> 函數來處理這種邊緣情況。</p>
 <p>在檔案頂部的匯入和<code>class HelloWorld</code>定義之間，新增實用程式方法以根據已提供的名稱值產生適當的問候語：</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>

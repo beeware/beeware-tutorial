@@ -1635,19 +1635,15 @@ aria-label="頁首"
 
 
 <h1 id="_1">測試時間<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>大多數軟體開發並不涉及編寫新程式碼，而是修改現有程式碼。確保現有程式碼繼續按照我們期望的方式運作是軟體開發過程的關鍵部分。確保我們的應用程式行為的一種方法是使用
-<em>測試套件</em> 。</p>
+<p>大多數軟體開發並不涉及編寫新程式碼，而是修改現有程式碼。確保現有程式碼繼續按照我們期望的方式運作是軟體開發過程的關鍵部分。確保我們的應用程式行為的一種方法是使用 <em>測試套件</em> 。</p>
 <h2 id="_2">運行測試套件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>事實上，我們的專案已經有測試套件了！當我們最初產生專案時，產生了兩個資料夾： <code>src</code> 和 <code>tests</code> 。 <code>src</code> 資料夾包含我們應用程式的程式碼；
-<code>tests</code> 資料夾包含我們的測試套件。在 <code>tests</code> 資料夾內有一個名為 <code>test_app.py</code> 的文件，其中包含以下內容：</p>
+<p>事實上，我們的專案已經有測試套件了！當我們最初產生專案時，產生了兩個資料夾： <code>src</code> 和 <code>tests</code> 。 <code>src</code> 資料夾包含我們應用程式的程式碼； <code>tests</code> 資料夾包含我們的測試套件。在 <code>tests</code> 資料夾內有一個名為 <code>test_app.py</code> 的文件，其中包含以下內容：</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;應用程式的初步測試&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
-<p>這是一個 <a href="https://pytest.org">Pytest</a> 的 <em>測試範例</em> -
-可以執行以驗證應用程式的某些行為的程式碼區塊。在本例中，測試僅是一個範例，不會測試有關我們應用程式的任何內容 - 但它是我們可以執行的測試。</p>
-<p>我們可以使用 <code>briefcase dev</code> 的 <code>--test</code> 選項來執行這個測試套件。由於這是我們第一次執行測試，我們還需要傳入 <code>-r</code>
-選項以確保測試要求也已安裝：</p>
+<p>這是一個 <a href="https://pytest.org">Pytest</a> 的 <em>測試範例</em> - 可以執行以驗證應用程式的某些行為的程式碼區塊。在本例中，測試僅是一個範例，不會測試有關我們應用程式的任何內容 - 但它是我們可以執行的測試。</p>
+<p>我們可以使用 <code>briefcase dev</code> 的 <code>--test</code> 選項來執行這個測試套件。由於這是我們第一次執行測試，我們還需要傳入 <code>-r</code> 選項以確保測試要求也已安裝：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1790,8 +1786,7 @@ aria-label="頁首"
 </div>
 <p>非常好！我們的 <code>greeting()</code> 實用方法按預期工作。</p>
 <h2 id="_3">用測試來驅動開發<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>現在我們有了測試套件，我們可以用它來驅動新功能的開發。讓我們修改我們的應用程序，為某個特定用戶提供特殊的問候語。我們可以先為我們希望在
-<code>test_app.py</code> 底部看到的新行為新增一個測試案例:</p>
+<p>現在我們有了測試套件，我們可以用它來驅動新功能的開發。讓我們修改我們的應用程序，為某個特定用戶提供特殊的問候語。我們可以先為我們希望在 <code>test_app.py</code> 底部看到的新行為新增一個測試案例:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;若名字是 Brutus，則會顯示特別的問候語&quot;&quot;&quot;</span>
 
@@ -1894,8 +1889,7 @@ aria-label="頁首"
 </div>
 </div>
 </div>
-<p>這次，我們看到測試失敗 - 輸出解釋了失敗的根源：測試期望輸出 <code>BeeWare the IDEs of Python!</code> ，但我們的 <code>greeting()</code>
-實現返回 <code>Hello, Brutus</code> 。讓我們修改 src/helloworld/app.py 中的 greeting() 實作以獲得新的行為：</p>
+<p>這次，我們看到測試失敗 - 輸出解釋了失敗的根源：測試期望輸出 <code>BeeWare the IDEs of Python!</code> ，但我們的 <code>greeting()</code> 實現返回 <code>Hello, Brutus</code> 。讓我們修改 src/helloworld/app.py 中的 greeting() 實作以獲得新的行為：</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
@@ -1960,8 +1954,7 @@ aria-label="頁首"
 </div>
 <h2 id="_4">運行時測試<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>到目前為止，我們一直在開發模式下執行測試。當您開發新功能時，這特別有用，因為您可以快速迭代添加測試，並添加程式碼以使這些測試通過。但是，在某些時候，您需要驗證您的程式碼在部署的環境中是否也可以正確運行。</p>
-<p><code>--test</code> 和 <code>-r</code> 選項也可以傳遞給 <code>run</code> 指令。如果您使用 <code>briefcase run --test -r</code>
-，將運行相同的測試套件，但它將在部署的環境中運行，而不是在您的開發環境中運行：</p>
+<p><code>--test</code> 和 <code>-r</code> 選項也可以傳遞給 <code>run</code> 指令。如果您使用 <code>briefcase run --test -r</code> ，將運行相同的測試套件，但它將在部署的環境中運行，而不是在您的開發環境中運行：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2072,8 +2065,7 @@ aria-label="頁首"
 </div>
 </div>
 <p>與 <code>briefcase dev --test</code> 一樣，僅在第一次執行測試套件時才需要 <code>-r</code> 選項，以確保測試依賴項存在。在後續運行中，您可以忽略此選項。</p>
-<p>您還可以在移動環境下使用 <code>--test</code> 選項： - 因此 <code>briefcase run iOS --test</code> 和 <code>briefcase run
-android --test</code> 都可以工作，在您選擇的移動設備上運行測試套件。</p>
+<p>您還可以在移動環境下使用 <code>--test</code> 選項： - 因此 <code>briefcase run iOS --test</code> 和 <code>briefcase run android --test</code> 都可以工作，在您選擇的移動設備上運行測試套件。</p>
 
 
 

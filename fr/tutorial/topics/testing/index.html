@@ -525,7 +525,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 0 - Préparons-nous !
+    Tutoriel 0 - Préparons-nous !
   
 
 
@@ -880,8 +880,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 5 - Application mobile :
-  Android
+    Tutoriel 5 - Application mobile : Android
   
 
 
@@ -927,7 +926,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 5 - Application mobile : iOS
+    Tutoriel 5 - Application mobile : iOS
   
 
 
@@ -984,7 +983,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 6 - Mettez-la sur le web !
+    Tutoriel 6 - Mettez-la sur le web !
   
 
 
@@ -1636,29 +1635,15 @@ aria-label="En-tête"
 
 
 <h1 id="tutoriel-9-temps-de-test">Tutoriel 9 - Temps de test<a class="headerlink" href="#tutoriel-9-temps-de-test" title="Permanent link">&para;</a></h1>
-<p>La plupart des développements de logiciels n'impliquent pas l'écriture d'un
-nouveau code, mais la modification d'un code existant. S'assurer que le code
-existant continue à fonctionner comme nous l'attendons est une partie
-essentielle du processus de développement logiciel. Une façon de s'assurer du
-comportement de notre application est d'utiliser une <em>suite de tests</em>.</p>
+<p>La plupart des développements de logiciels n'impliquent pas l'écriture d'un nouveau code, mais la modification d'un code existant. S'assurer que le code existant continue à fonctionner comme nous l'attendons est une partie essentielle du processus de développement logiciel. Une façon de s'assurer du comportement de notre application est d'utiliser une <em>suite de tests</em>.</p>
 <h2 id="execution-de-la-suite-de-tests">Exécution de la suite de tests<a class="headerlink" href="#execution-de-la-suite-de-tests" title="Permanent link">&para;</a></h2>
-<p>Il s'avère que notre projet possède déjà une suite de tests ! Lorsque nous avons
-généré notre projet à l'origine, deux répertoires de premier niveau ont été
-générés : <code>src</code> et <code>tests</code>. Le dossier <code>src</code> contient le code de notre
-application ; le dossier <code>tests</code> contient notre suite de tests. Dans le dossier
-<code>tests</code> se trouve un fichier nommé <code>test_app.py</code> avec le contenu suivant :</p>
+<p>Il s'avère que notre projet possède déjà une suite de tests ! Lorsque nous avons généré notre projet à l'origine, deux répertoires de premier niveau ont été générés : <code>src</code> et <code>tests</code>. Le dossier <code>src</code> contient le code de notre application ; le dossier <code>tests</code> contient notre suite de tests. Dans le dossier <code>tests</code> se trouve un fichier nommé <code>test_app.py</code> avec le contenu suivant :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Un premier test pour l&#39;application&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
-<p>Ceci est un <a href="https://pytest.org">Pytest</a> <em>test case</em> - un bloc de code qui peut
-être exécuté pour vérifier un certain comportement de votre application. Dans ce
-cas, le test est un placeholder, et ne teste rien de notre application - mais
-c'est un test que nous pouvons effectuer.</p>
-<p>Nous pouvons lancer cette suite de tests en utilisant l'option <code>--test</code> de
-<code>briefcase dev</code>. Comme c'est la première fois que nous lançons des tests, nous
-devons également passer l'option <code>-r</code> pour nous assurer que les exigences de
-test sont également installées :</p>
+<p>Ceci est un <a href="https://pytest.org">Pytest</a> <em>test case</em> - un bloc de code qui peut être exécuté pour vérifier un certain comportement de votre application. Dans ce cas, le test est un placeholder, et ne teste rien de notre application - mais c'est un test que nous pouvons effectuer.</p>
+<p>Nous pouvons lancer cette suite de tests en utilisant l'option <code>--test</code> de <code>briefcase dev</code>. Comme c'est la première fois que nous lançons des tests, nous devons également passer l'option <code>-r</code> pour nous assurer que les exigences de test sont également installées :</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1732,11 +1717,8 @@ test sont également installées :</p>
 </div>
 </div>
 </div>
-<p>Succès ! Nous venons d'exécuter un seul test qui vérifie que les mathématiques
-Python fonctionnent de la manière attendue (Quel soulagement !).</p>
-<p>Remplaçons ce placeholder test par un test pour vérifier que notre méthode
-<code>greeting()</code> se comporte comme nous l'attendons. Remplacez le contenu de
-<code>test_app.py</code> par ce qui suit :</p>
+<p>Succès ! Nous venons d'exécuter un seul test qui vérifie que les mathématiques Python fonctionnent de la manière attendue (Quel soulagement !).</p>
+<p>Remplaçons ce placeholder test par un test pour vérifier que notre méthode <code>greeting()</code> se comporte comme nous l'attendons. Remplacez le contenu de <code>test_app.py</code> par ce qui suit :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">greeting</span>
 
 
@@ -1751,12 +1733,8 @@ Python fonctionnent de la manière attendue (Quel soulagement !).</p>
 
  <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Bonjour, inconnu&quot;</span>
 </code></pre></div>
-<p>Ceci définit deux nouveaux tests, vérifiant les deux comportements que nous
-attendons : la sortie lorsqu'un nom est fourni, et la sortie lorsque le nom est
-vide.</p>
-<p>Nous pouvons maintenant réexécuter la suite de tests. Cette fois, nous n'avons
-pas besoin de fournir l'option <code>-r</code>, puisque les pré-requis pour les tests ont
-déjà été installés ; nous avons seulement besoin d'utiliser l'option <code>--test</code> :</p>
+<p>Ceci définit deux nouveaux tests, vérifiant les deux comportements que nous attendons : la sortie lorsqu'un nom est fourni, et la sortie lorsque le nom est vide.</p>
+<p>Nous pouvons maintenant réexécuter la suite de tests. Cette fois, nous n'avons pas besoin de fournir l'option <code>-r</code>, puisque les pré-requis pour les tests ont déjà été installés ; nous avons seulement besoin d'utiliser l'option <code>--test</code> :</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1808,11 +1786,7 @@ déjà été installés ; nous avons seulement besoin d'utiliser l'option <code>
 </div>
 <p>Excellent ! Notre méthode utilitaire <code>greeting()</code> fonctionne comme prévu.</p>
 <h2 id="developpement-pilote-par-les-tests">Développement piloté par les tests<a class="headerlink" href="#developpement-pilote-par-les-tests" title="Permanent link">&para;</a></h2>
-<p>Maintenant que nous disposons d'une suite de tests, nous pouvons l'utiliser pour
-développer de nouvelles fonctionnalités. Modifions notre application pour avoir
-un message d'accueil spécial pour un utilisateur particulier. Nous pouvons
-commencer par ajouter un scénario de test pour le nouveau comportement que nous
-aimerions voir au bas de <code>test_app.py</code> :</p>
+<p>Maintenant que nous disposons d'une suite de tests, nous pouvons l'utiliser pour développer de nouvelles fonctionnalités. Modifions notre application pour avoir un message d'accueil spécial pour un utilisateur particulier. Nous pouvons commencer par ajouter un scénario de test pour le nouveau comportement que nous aimerions voir au bas de <code>test_app.py</code> :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Si le nom est Brutus, un message d&#39;accueil spécial s&#39;affiche&quot;&quot;&quot;</span>
 
@@ -1915,11 +1889,7 @@ aimerions voir au bas de <code>test_app.py</code> :</p>
 </div>
 </div>
 </div>
-<p>Cette fois, nous voyons un échec du test - et la sortie explique la source de
-l'échec : le test attend la sortie "BeeWare the IDEs of Python!", mais notre
-implémentation de <code>greeting()</code> retourne "Hello, Brutus". Modifions
-l'implémentation de <code>greeting()</code> dans <code>src/helloworld/app.py</code> pour avoir le
-nouveau comportement :</p>
+<p>Cette fois, nous voyons un échec du test - et la sortie explique la source de l'échec : le test attend la sortie "BeeWare the IDEs of Python!", mais notre implémentation de <code>greeting()</code> retourne "Hello, Brutus". Modifions l'implémentation de <code>greeting()</code> dans <code>src/helloworld/app.py</code> pour avoir le nouveau comportement :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
@@ -1983,15 +1953,8 @@ nouveau comportement :</p>
 </div>
 </div>
 <h2 id="tests-dexecution">Tests d'exécution<a class="headerlink" href="#tests-dexecution" title="Permanent link">&para;</a></h2>
-<p>Jusqu'à présent, nous avons exécuté les tests en mode développement. C'est
-particulièrement utile lorsque vous développez de nouvelles fonctionnalités, car
-vous pouvez rapidement itérer sur l'ajout de tests et l'ajout de code pour faire
-passer ces tests. Cependant, à un moment donné, vous voudrez vérifier que votre
-code s'exécute correctement dans l'environnement de l'application groupée.</p>
-<p>Les options <code>--test</code> et <code>-r</code> peuvent également être passées à la commande <code>run</code>.
-Si vous utilisez <code>briefcase run --test -r</code>, la même suite de tests s'exécutera,
-mais elle s'exécutera dans le paquetage de l'application plutôt que dans votre
-environnement de développement :</p>
+<p>Jusqu'à présent, nous avons exécuté les tests en mode développement. C'est particulièrement utile lorsque vous développez de nouvelles fonctionnalités, car vous pouvez rapidement itérer sur l'ajout de tests et l'ajout de code pour faire passer ces tests. Cependant, à un moment donné, vous voudrez vérifier que votre code s'exécute correctement dans l'environnement de l'application groupée.</p>
+<p>Les options <code>--test</code> et <code>-r</code> peuvent également être passées à la commande <code>run</code>. Si vous utilisez <code>briefcase run --test -r</code>, la même suite de tests s'exécutera, mais elle s'exécutera dans le paquetage de l'application plutôt que dans votre environnement de développement :</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2101,14 +2064,8 @@ environnement de développement :</p>
 </div>
 </div>
 </div>
-<p>Comme pour <code>briefcase dev --test</code>, l'option <code>-r</code> n'est nécessaire que la
-première fois que vous exécutez la suite de tests pour vous assurer que les
-dépendances des tests sont présentes. Lors des exécutions suivantes, vous pouvez
-omettre cette option.</p>
-<p>Vous pouvez également utiliser l'option <code>--test</code> sur les backends mobiles : -
-ainsi <code>briefcase run iOS --test</code> et <code>briefcase run android --test</code>
-fonctionneront tous les deux, lançant la suite de tests sur l'appareil mobile
-que vous avez sélectionné.</p>
+<p>Comme pour <code>briefcase dev --test</code>, l'option <code>-r</code> n'est nécessaire que la première fois que vous exécutez la suite de tests pour vous assurer que les dépendances des tests sont présentes. Lors des exécutions suivantes, vous pouvez omettre cette option.</p>
+<p>Vous pouvez également utiliser l'option <code>--test</code> sur les backends mobiles : - ainsi <code>briefcase run iOS --test</code> et <code>briefcase run android --test</code> fonctionneront tous les deux, lançant la suite de tests sur l'appareil mobile que vous avez sélectionné.</p>
 
 
 

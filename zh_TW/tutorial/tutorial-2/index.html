@@ -1638,11 +1638,8 @@ aria-label="頁首"
 <p>在 [教程 1 中<tutorial-1>`，我們產生了一個能夠運行的存根項目，但我們自己沒有寫任何程式碼。讓我們看看為我們產生了什麼。</p>
 <h2 id="_1">生成了什麼<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>在 src/helloworld 目錄中，您應該會看到 3 個檔案：<strong>init</strong>.py、<strong>main</strong>.py 和 app.py。</p>
-<p><code>__init__.py</code> 將<code>helloworld</code> 目錄標記為可匯入的Python 模組。這是一個空文件；它的存在告訴 Python
-解釋器<code>helloworld</code>目錄定義了一個模組。</p>
-<p><code>__main__.py</code> 將 <code>helloworld</code> 模組標示為一種特殊的模組 - 一個可執行的模組。如果您嘗試使用 <code>python -m
-helloworld</code> 來執行 <code>helloworld</code> 模組，<code>__main__.py</code>檔就是 Python 開始執行的地方。<code>__main__.py</code>
-的內容相對簡單：</p>
+<p><code>__init__.py</code> 將<code>helloworld</code> 目錄標記為可匯入的Python 模組。這是一個空文件；它的存在告訴 Python 解釋器<code>helloworld</code>目錄定義了一個模組。</p>
+<p><code>__main__.py</code> 將 <code>helloworld</code> 模組標示為一種特殊的模組 - 一個可執行的模組。如果您嘗試使用 <code>python -m helloworld</code> 來執行 <code>helloworld</code> 模組，<code>__main__.py</code>檔就是 Python 開始執行的地方。<code>__main__.py</code> 的內容相對簡單：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">main</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
@@ -1651,8 +1648,7 @@ helloworld</code> 來執行 <code>helloworld</code> 模組，<code>__main__.py</
 <p>此檔案有兩項功能：</p>
 <ul>
 <li>它從 <code>helloworld</code> 應用程式導入 <code>main</code> 方法。</li>
-<li>也就是說 - 它從<code>helloworld</code>應用程式導入<code>main</code>方法；如果它是作為入口點執行，則呼叫 main() 方法，並啟動應用程式的主循環。主循環是
-  GUI 應用程式偵聽使用者輸入（如滑鼠點擊和鍵盤按下）的方式。</li>
+<li>也就是說 - 它從<code>helloworld</code>應用程式導入<code>main</code>方法；如果它是作為入口點執行，則呼叫 main() 方法，並啟動應用程式的主循環。主循環是 GUI 應用程式偵聽使用者輸入（如滑鼠點擊和鍵盤按下）的方式。</li>
 </ul>
 <p>更有趣的檔案是<code>app.py</code>——它包含創建我們的應用程式視窗的邏輯:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
@@ -1682,19 +1678,15 @@ helloworld</code> 來執行 <code>helloworld</code> 模組，<code>__main__.py</
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">startup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">()</span>
 </code></pre></div>
-<p>啟動方法所做的第一件事是定義一個主框。 Toga 的佈局方案的行為與 HTML
-類似。您可以透過建立一組框來建立應用程序，每個框都包含其他框或實際的小部件。然後，您可以將樣式套用到這些方塊來定義它們將如何使用可用的視窗空間。</p>
+<p>啟動方法所做的第一件事是定義一個主框。 Toga 的佈局方案的行為與 HTML 類似。您可以透過建立一組框來建立應用程序，每個框都包含其他框或實際的小部件。然後，您可以將樣式套用到這些方塊來定義它們將如何使用可用的視窗空間。</p>
 <p>在此應用程式中，我們定義了一個框，但沒有在其中放入任何內容。</p>
 <p>接下來，我們定義一個窗口，可以將這個空框放入其中：</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 </code></pre></div>
-<p>這將建立一個<code>toga.MainWindow</code>實例，它將具有與應用程式名稱相符的標題。主視窗是 Toga 中的一種特殊視窗 -
-它是與應用程式的生命週期密切相關的視窗。當主視窗關閉時，應用程式退出。主視窗也是具有應用程式選單的視窗（如果您使用的是 Windows
-等平台，其中功能表列是視窗的一部分）</p>
+<p>這將建立一個<code>toga.MainWindow</code>實例，它將具有與應用程式名稱相符的標題。主視窗是 Toga 中的一種特殊視窗 - 它是與應用程式的生命週期密切相關的視窗。當主視窗關閉時，應用程式退出。主視窗也是具有應用程式選單的視窗（如果您使用的是 Windows 等平台，其中功能表列是視窗的一部分）</p>
 <div class="admonition">
 <p class="admonition-title">我的窗戶在哪裡？</p>
-<p>如果您的程式碼出錯，應用程式的主視窗可能無法顯示。如果發生這種情況，您可以在啟動應用程式的終端輸入
-<strong>Ctrl+C</strong>。這將會停止應用程式。然後您可以修正錯誤並重啟程式。</p>
+<p>如果您的程式碼出錯，應用程式的主視窗可能無法顯示。如果發生這種情況，您可以在啟動應用程式的終端輸入 <strong>Ctrl+C</strong>。這將會停止應用程式。然後您可以修正錯誤並重啟程式。</p>
 </div>
 <p>然後，我們添加空框作為主視窗的內容，並指示應用程式顯示我們的視窗:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
@@ -1747,9 +1739,7 @@ helloworld</code> 來執行 <code>helloworld</code> 模組，<code>__main__.py</
 <p>我們仍在創建一個主盒子；然而，我們現在正在應用一種風格:</p>
 <div class="highlight"><pre><span></span><code><span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
 </code></pre></div>
-<p>Toga 的內建佈局系統稱為<code>Pack</code>。它的行為很像 CSS。您可以在層次結構中定義物件 - 在 HTML 中，物件是<code>&lt;div&gt;</code>、<code>][span]</code>
-和其他 DOM 元素；在 Toga 中，它們是小部件和盒子。然後，您可以為各個元素指定樣式。在這種情況下，我們表明這是一個<code>COLUMN</code>框 -
-也就是說，它是一個將消耗所有可用寬度的框，並且會在添加內容時擴展其高度，但它會嘗試盡可能短。</span></p>
+<p>Toga 的內建佈局系統稱為<code>Pack</code>。它的行為很像 CSS。您可以在層次結構中定義物件 - 在 HTML 中，物件是<code>&lt;div&gt;</code>、<code>][span]</code> 和其他 DOM 元素；在 Toga 中，它們是小部件和盒子。然後，您可以為各個元素指定樣式。在這種情況下，我們表明這是一個<code>COLUMN</code>框 - 也就是說，它是一個將消耗所有可用寬度的框，並且會在添加內容時擴展其高度，但它會嘗試盡可能短。</span></p>
 <div class="admonition note">
 <p class="admonition-title">注意事項</p>
 <p>對於更進階的用途，Toga 也支援獨立的樣式物件，使用方式如下：</p>
@@ -1764,16 +1754,14 @@ helloworld</code> 來執行 <code>helloworld</code> 模組，<code>__main__.py</
 <span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
-<p>在這裡，我們定義了一個 Label 和一個 TextInput。這兩個小部件都有與之相關的樣式；標籤的左側和右側將有 5
-個像素的內邊距，頂部和底部將沒有內邊距。 TextInput 被標記為靈活的 - 也就是說，它將吸收其佈局軸中的所有可用空間。</p>
+<p>在這裡，我們定義了一個 Label 和一個 TextInput。這兩個小部件都有與之相關的樣式；標籤的左側和右側將有 5 個像素的內邊距，頂部和底部將沒有內邊距。 TextInput 被標記為靈活的 - 也就是說，它將吸收其佈局軸中的所有可用空間。</p>
 <p>TextInput 被指定為該類別的實例變數。這使我們可以輕鬆存取小部件實例 - 我們稍後將使用它。</p>
 <p>接下來，我們定義一個盒子來容納這兩個小工具：</p>
 <div class="highlight"><pre><span></span><code><span class="n">name_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">ROW</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_label</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="p">)</span>
 </code></pre></div>
-<p><code>name_box</code> 是一個像主盒子一樣的盒子；然而，這一次，它是一個<code>ROW</code>盒子。這意味著內容將水平添加，並且它將嘗試使其寬度盡可能窄。盒子還有一些內邊距
-- 所有邊都是 5px。</p>
+<p><code>name_box</code> 是一個像主盒子一樣的盒子；然而，這一次，它是一個<code>ROW</code>盒子。這意味著內容將水平添加，並且它將嘗試使其寬度盡可能窄。盒子還有一些內邊距 - 所有邊都是 5px。</p>
 <p>現在我們定義一個按鈕:</p>
 <div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
     <span class="s2">&quot;Say Hello!&quot;</span><span class="p">,</span>
@@ -1822,8 +1810,7 @@ helloworld</code> 來執行 <code>helloworld</code> 模組，<code>__main__.py</
 </div>
 </div>
 </div>
-<p>您會注意到，這一次，它<code>不</code>安裝依賴項。公文包可以檢測到該應用程式之前已經運行過，為了節省時間，只會運行該應用程式。如果您為應用程式新增的依賴項，則可以在執行<code>briefcase
-dev</code>時傳入<code>-r</code>選項來確保它們已安裝。</p>
+<p>您會注意到，這一次，它<code>不</code>安裝依賴項。公文包可以檢測到該應用程式之前已經運行過，為了節省時間，只會運行該應用程式。如果您為應用程式新增的依賴項，則可以在執行<code>briefcase dev</code>時傳入<code>-r</code>選項來確保它們已安裝。</p>
 <p>這應該打開一個 GUI 視窗：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
@@ -1848,11 +1835,9 @@ dev</code>時傳入<code>-r</code>選項來確保它們已安裝。</p>
 </div>
 </div>
 <p>如果您在文字方塊中輸入名稱，然後按 GUI 按鈕，您應該會看到啟動應用程式的控制台中出現輸出。</p>
-<p>繼續之前，請關閉應用程式。與教學 1 一樣，您可以按下應用程式視窗的關閉按鈕、從應用程式的功能表中選擇 Quit/Exit，或在執行 <code>briefcase
-dev</code> 的終端機中輸入 <strong>Ctrl+C</strong>。</p>
+<p>繼續之前，請關閉應用程式。與教學 1 一樣，您可以按下應用程式視窗的關閉按鈕、從應用程式的功能表中選擇 Quit/Exit，或在執行 <code>briefcase dev</code> 的終端機中輸入 <strong>Ctrl+C</strong>。</p>
 <h2 id="_3">下一步<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>我們現在有了一個可以做一些更有趣的事情的應用程式。但它只能在我們自己的計算機上運行。讓我們打包這個應用程式以進行分發。在 :doc:<code>教程 3
-中&lt;tutorial-3&gt;</code>，我們將把我們的應用程式打包為一個獨立的安裝程序，我們可以將其發送給朋友、客戶，或上傳到應用程式商店。</p>
+<p>我們現在有了一個可以做一些更有趣的事情的應用程式。但它只能在我們自己的計算機上運行。讓我們打包這個應用程式以進行分發。在 :doc:<code>教程 3 中&lt;tutorial-3&gt;</code>，我們將把我們的應用程式打包為一個獨立的安裝程序，我們可以將其發送給朋友、客戶，或上傳到應用程式商店。</p>
 
 
 

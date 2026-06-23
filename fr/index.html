@@ -523,7 +523,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 0 - Préparons-nous !
+    Tutoriel 0 - Préparons-nous !
   
 
 
@@ -878,8 +878,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 5 - Application mobile :
-  Android
+    Tutoriel 5 - Application mobile : Android
   
 
 
@@ -925,7 +924,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 5 - Application mobile : iOS
+    Tutoriel 5 - Application mobile : iOS
   
 
 
@@ -982,7 +981,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 6 - Mettez-la sur le web !
+    Tutoriel 6 - Mettez-la sur le web !
   
 
 
@@ -1476,50 +1475,24 @@ aria-label="En-tête"
 
 <h1 id="bienvenue-dans-le-didacticiel-beeware">Bienvenue dans le didacticiel BeeWare<a class="headerlink" href="#bienvenue-dans-le-didacticiel-beeware" title="Permanent link">&para;</a></h1>
 <p><strong>Écrire en Python. Exécutez n'importe où.</strong></p>
-<p>Bienvenue à BeeWare ! Dans ce tutoriel, nous allons construire une interface
-utilisateur graphique en utilisant Python, et la déployer en tant qu'application
-de bureau, application mobile et application web à page unique. Nous allons
-également voir comment vous pouvez utiliser les outils de BeeWare pour effectuer
-certaines tâches courantes pour les développeur d'applications, telles que
-tester votre application.</p>
+<p>Bienvenue à BeeWare ! Dans ce tutoriel, nous allons construire une interface utilisateur graphique en utilisant Python, et la déployer en tant qu'application de bureau, application mobile et application web à page unique. Nous allons également voir comment vous pouvez utiliser les outils de BeeWare pour effectuer certaines tâches courantes pour les développeur d'applications, telles que tester votre application.</p>
 <div class="admonition">
-<p class="admonition-title">Il s'agit d'une traduction automatique !</p>
-<p>Ce document est une traduction automatique du tutoriel
-<a href="https://tutorial.beeware.org/">anglais</a>. Nous savons qu'une traduction
-automatique n'est pas idéale, mais nous avons estimé qu'une mauvaise traduction
-valait mieux que pas de traduction du tout.</p>
-<p>Si vous souhaitez nous aider à améliorer la traduction, n'hésitez pas à nous
-contacter ! Nous avons un canal <code>#translations</code> dans
-<a href="https://beeware.org/bee/chat/">Discord</a> ; présentez-vous et nous vous
-ajouterons à l'équipe de traduction.</p>
+<p class="admonition-title">Il s'agit d'une traduction automatique !</p>
+<p>Ce document est une traduction automatique du tutoriel <a href="https://tutorial.beeware.org/">anglais</a>. Nous savons qu'une traduction automatique n'est pas idéale, mais nous avons estimé qu'une mauvaise traduction valait mieux que pas de traduction du tout.</p>
+<p>Si vous souhaitez nous aider à améliorer la traduction, n'hésitez pas à nous contacter ! Nous avons un canal <code>#translations</code> dans <a href="https://beeware.org/bee/chat/">Discord</a> ; présentez-vous et nous vous ajouterons à l'équipe de traduction.</p>
 </div>
 <h2 id="quest-ce-que-beeware">Qu'est-ce que BeeWare ?<a class="headerlink" href="#quest-ce-que-beeware" title="Permanent link">&para;</a></h2>
-<p>BeeWare n'est pas un produit, un outil ou une bibliothèque unique - c'est une
-collection d'outils et de bibliothèques, chacun d'entre eux fonctionnant
-ensemble pour vous aider à écrire des applications Python multiplateformes avec
-une interface graphique native. Il comprend :</p>
+<p>BeeWare n'est pas un produit, un outil ou une bibliothèque unique - c'est une collection d'outils et de bibliothèques, chacun d'entre eux fonctionnant ensemble pour vous aider à écrire des applications Python multiplateformes avec une interface graphique native. Il comprend :</p>
 <ul>
-<li><a href="https://toga.beeware.org">Toga</a>, une boîte à outils de widgets
-  multiplateforme ;</li>
-<li><a href="https://briefcase.beeware.org">Briefcase</a>, un outil pour empaqueter les
-  projets Python en tant qu'artefacts distribuables pouvant être envoyés aux
-  utilisateurs finaux ;</li>
-<li>Des bibliothèques (telles que <a href="https://rubicon-objc.beeware.org">Rubicon
-  ObjC</a>) pour accéder aux bibliothèques
-  natives des diverses plates-formes ;</li>
-<li>Des versions pré-compilées de Python pour les plateformes où les programmes
-  d'installation officiels de Python ne sont pas disponibles.</li>
+<li><a href="https://toga.beeware.org">Toga</a>, une boîte à outils de widgets multiplateforme ;</li>
+<li><a href="https://briefcase.beeware.org">Briefcase</a>, un outil pour empaqueter les projets Python en tant qu'artefacts distribuables pouvant être envoyés aux utilisateurs finaux ;</li>
+<li>Des bibliothèques (telles que <a href="https://rubicon-objc.beeware.org">Rubicon ObjC</a>) pour accéder aux bibliothèques natives des diverses plates-formes ;</li>
+<li>Des versions pré-compilées de Python pour les plateformes où les programmes d'installation officiels de Python ne sont pas disponibles.</li>
 </ul>
-<p>Dans ce tutoriel, nous utiliserons tous ces outils, mais en tant qu'utilisateur,
-vous n'aurez besoin d'interagir qu'avec les deux premiers (Toga et Briefcase).
-Cependant, chacun de ces outils peut également être utilisé séparément. Par
-exemple, vous pouvez utiliser Briefcase pour déployer une application sans
-utiliser Toga comme boîte à outils GUI.</p>
-<p>La suite BeeWare est disponible pour macOS, Windows, Linux (avec GTK) ; pour des
-plateformes mobiles telles qu'Android et iOS ; et pour le Web.</p>
+<p>Dans ce tutoriel, nous utiliserons tous ces outils, mais en tant qu'utilisateur, vous n'aurez besoin d'interagir qu'avec les deux premiers (Toga et Briefcase). Cependant, chacun de ces outils peut également être utilisé séparément. Par exemple, vous pouvez utiliser Briefcase pour déployer une application sans utiliser Toga comme boîte à outils GUI.</p>
+<p>La suite BeeWare est disponible pour macOS, Windows, Linux (avec GTK) ; pour des plateformes mobiles telles qu'Android et iOS ; et pour le Web.</p>
 <h2 id="cest-parti">C'est parti<a class="headerlink" href="#cest-parti" title="Permanent link">&para;</a></h2>
-<p>Prêt à essayer BeeWare ? <a href="tutorial/tutorial-0/">Construisons une application multiplateforme en Python
-!</a></p>
+<p>Prêt à essayer BeeWare ? <a href="tutorial/tutorial-0/">Construisons une application multiplateforme en Python !</a></p>
 
 
 

@@ -819,8 +819,7 @@ aria-label="Intestazione"
 
   <!-- Typeset title -->
   
-    Esercitazione 3 - Confezionamento per la
-  distribuzione
+    Esercitazione 3 - Confezionamento per la distribuzione
   
 
 
@@ -1660,11 +1659,7 @@ aria-label="Intestazione"
 <h1 id="esercitazione-1-la-vostra-prima-applicazione">Esercitazione 1 - La vostra prima applicazione<a class="headerlink" href="#esercitazione-1-la-vostra-prima-applicazione" title="Permanent link">&para;</a></h1>
 <p>Siamo pronti a creare la nostra prima applicazione.</p>
 <h2 id="installare-gli-strumenti-beeware">Installare gli strumenti BeeWare<a class="headerlink" href="#installare-gli-strumenti-beeware" title="Permanent link">&para;</a></h2>
-<p>Per prima cosa, è necessario installare <strong>Briefcase</strong>. Briefcase è uno strumento
-di BeeWare che può essere usato per confezionare l'applicazione da distribuire
-agli utenti finali, ma può anche essere usato per avviare un nuovo progetto.
-Assicuratevi di essere nella cartella <code>beeware-tutorial</code> creata in <a href="../tutorial-0/">Tutorial
-0</a>, con l'ambiente virtuale <code>beeware-venv</code> attivato ed eseguite:</p>
+<p>Per prima cosa, è necessario installare <strong>Briefcase</strong>. Briefcase è uno strumento di BeeWare che può essere usato per confezionare l'applicazione da distribuire agli utenti finali, ma può anche essere usato per avviare un nuovo progetto. Assicuratevi di essere nella cartella <code>beeware-tutorial</code> creata in <a href="../tutorial-0/">Tutorial 0</a>, con l'ambiente virtuale <code>beeware-venv</code> attivato ed eseguite:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1676,9 +1671,7 @@ Assicuratevi di essere nella cartella <code>beeware-tutorial</code> creata in <a
 </code></pre></div>
 <div class="admonition">
 <p class="admonition-title">Possibili errori durante l'installazione</p>
-<p>Se si riscontrano errori durante l'installazione, è quasi certamente perché
-alcuni dei requisiti di sistema non sono stati installati. Assicuratevi di aver
-<a class="autorefs autorefs-internal" title="Installare le dipendenze" href="../tutorial-0/#install-dependencies">installato tutti i pre-requisiti della piattaforma</a>.</p>
+<p>Se si riscontrano errori durante l'installazione, è quasi certamente perché alcuni dei requisiti di sistema non sono stati installati. Assicuratevi di aver <a class="autorefs autorefs-internal" title="Installare le dipendenze" href="../tutorial-0/#install-dependencies">installato tutti i pre-requisiti della piattaforma</a>.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1686,19 +1679,13 @@ alcuni dei requisiti di sistema non sono stati installati. Assicuratevi di aver
 </code></pre></div>
 <div class="admonition">
 <p class="admonition-title">Possibili errori durante l'installazione</p>
-<p>È importante utilizzare <code>python -m pip</code>, piuttosto che un semplice <code>pip</code>.
-Briefcase deve assicurarsi di avere una versione aggiornata di <code>pip</code> e
-<code>setuptools</code>, e un'invocazione nuda di <code>pip</code> non può autoaggiornarsi. Se volete
-saperne di più, <a href="https://snarky.ca/why-you-should-use-python-m-pip/">Brett Cannon ha un post dettagliato sul blog sul
-problema</a>.</p>
+<p>È importante utilizzare <code>python -m pip</code>, piuttosto che un semplice <code>pip</code>. Briefcase deve assicurarsi di avere una versione aggiornata di <code>pip</code> e <code>setuptools</code>, e un'invocazione nuda di <code>pip</code> non può autoaggiornarsi. Se volete saperne di più, <a href="https://snarky.ca/why-you-should-use-python-m-pip/">Brett Cannon ha un post dettagliato sul blog sul problema</a>.</p>
 </div>
 </div>
 </div>
 </div>
 <h2 id="bootstrap-di-un-nuovo-progetto">Bootstrap di un nuovo progetto<a class="headerlink" href="#bootstrap-di-un-nuovo-progetto" title="Permanent link">&para;</a></h2>
-<p>Avviamo il nostro primo progetto BeeWare! Useremo il comando <code>new</code> di Briefcase
-per creare un'applicazione chiamata <strong>Hello World</strong>. Eseguite il seguente
-comando dal prompt dei comandi:</p>
+<p>Avviamo il nostro primo progetto BeeWare! Useremo il comando <code>new</code> di Briefcase per creare un'applicazione chiamata <strong>Hello World</strong>. Eseguite il seguente comando dal prompt dei comandi:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1715,38 +1702,20 @@ comando dal prompt dei comandi:</p>
 </div>
 </div>
 </div>
-<p>Briefcase ci chiederà alcuni dettagli della nostra nuova applicazione. Ai fini
-di questa esercitazione, utilizzate quanto segue:</p>
+<p>Briefcase ci chiederà alcuni dettagli della nostra nuova applicazione. Ai fini di questa esercitazione, utilizzate quanto segue:</p>
 <ul>
-<li><strong>Quadro GUI</strong> - Accettare l'opzione predefinita, Toga (il toolkit GUI di
-  BeeWare).</li>
+<li><strong>Quadro GUI</strong> - Accettare l'opzione predefinita, Toga (il toolkit GUI di BeeWare).</li>
 <li><strong>Nome formale</strong> - Accettare il valore predefinito: <code>Hello World</code>.</li>
 <li><strong>Nome applicazione</strong> - Accettare il valore predefinito: <code>helloworld</code>.</li>
-<li><strong>Bundle</strong> - Se si possiede un proprio dominio, inserirlo in ordine inverso.
-  (Ad esempio, se si possiede il dominio "cupcakes.com", inserire <code>com.cupcakes</code>
-  come bundle). Se non si possiede un dominio proprio, accettare il bundle
-  predefinito (<code>com.example</code>).</li>
+<li><strong>Bundle</strong> - Se si possiede un proprio dominio, inserirlo in ordine inverso. (Ad esempio, se si possiede il dominio "cupcakes.com", inserire <code>com.cupcakes</code> come bundle). Se non si possiede un dominio proprio, accettare il bundle predefinito (<code>com.example</code>).</li>
 <li><strong>Nome del progetto</strong> - Accettare il valore predefinito: <code>Hello World</code>.</li>
-<li><strong>Descrizione</strong> - Accettare il valore predefinito (o, se si vuole essere molto
-  creativi, creare una descrizione personalizzata)</li>
+<li><strong>Descrizione</strong> - Accettare il valore predefinito (o, se si vuole essere molto creativi, creare una descrizione personalizzata)</li>
 <li><strong>Autore</strong> - Inserire qui il proprio nome.</li>
-<li><strong>Email dell'autore</strong> - Inserire il proprio indirizzo e-mail. Verrà utilizzato
-  nel file di configurazione, nel testo della guida e ovunque sia richiesto un
-  indirizzo e-mail quando si invia l'applicazione a un app store.</li>
-<li><strong>URL</strong> - L'URL della pagina di destinazione dell'applicazione. Anche in
-  questo caso, se si possiede un dominio proprio, inserire un URL di quel
-  dominio (compreso <code>https://</code>). Altrimenti, accettare l'URL predefinito
-  (<code>https://example.com/helloworld</code>). Questo URL non deve esistere (per ora);
-  sarà usato solo se si pubblica l'applicazione su un app store.</li>
-<li><strong>Licenza</strong> - Accettare la licenza predefinita (BSD). Questo non influisce in
-  alcun modo sul funzionamento del tutorial, quindi se si hanno sentimenti
-  particolarmente forti riguardo alla scelta della licenza, si può scegliere
-  liberamente un'altra licenza.</li>
+<li><strong>Email dell'autore</strong> - Inserire il proprio indirizzo e-mail. Verrà utilizzato nel file di configurazione, nel testo della guida e ovunque sia richiesto un indirizzo e-mail quando si invia l'applicazione a un app store.</li>
+<li><strong>URL</strong> - L'URL della pagina di destinazione dell'applicazione. Anche in questo caso, se si possiede un dominio proprio, inserire un URL di quel dominio (compreso <code>https://</code>). Altrimenti, accettare l'URL predefinito (<code>https://example.com/helloworld</code>). Questo URL non deve esistere (per ora); sarà usato solo se si pubblica l'applicazione su un app store.</li>
+<li><strong>Licenza</strong> - Accettare la licenza predefinita (BSD). Questo non influisce in alcun modo sul funzionamento del tutorial, quindi se si hanno sentimenti particolarmente forti riguardo alla scelta della licenza, si può scegliere liberamente un'altra licenza.</li>
 </ul>
-<p>Briefcase genererà quindi uno scheletro di progetto da utilizzare. Se avete
-seguito questo tutorial fino a questo punto e avete accettato le impostazioni
-predefinite come descritto, il vostro file system dovrebbe avere un aspetto
-simile a:</p>
+<p>Briefcase genererà quindi uno scheletro di progetto da utilizzare. Se avete seguito questo tutorial fino a questo punto e avete accettato le impostazioni predefinite come descritto, il vostro file system dovrebbe avere un aspetto simile a:</p>
 <div class="highlight"><pre><span></span><code>beeware-tutorial/
 ├── beeware-venv/
 │   └── ...
@@ -1767,17 +1736,10 @@ simile a:</p>
  ├── __init__.py
  └── test_app.py
 </code></pre></div>
-<p>Questo scheletro è in realtà un'applicazione completamente funzionante, senza
-aggiungere altro. La cartella <code>src</code> contiene tutto il codice dell'applicazione,
-la cartella <code>tests</code> contiene una suite di test iniziale e il file
-<code>pyproject.toml</code> descrive come confezionare l'applicazione per la distribuzione.
-Se si apre <code>pyproject.toml</code> in un editor, si vedranno i dettagli di
-configurazione appena forniti a Briefcase.</p>
-<p>Ora che abbiamo un'applicazione stub, possiamo usare Briefcase per eseguire
-l'applicazione.</p>
+<p>Questo scheletro è in realtà un'applicazione completamente funzionante, senza aggiungere altro. La cartella <code>src</code> contiene tutto il codice dell'applicazione, la cartella <code>tests</code> contiene una suite di test iniziale e il file <code>pyproject.toml</code> descrive come confezionare l'applicazione per la distribuzione. Se si apre <code>pyproject.toml</code> in un editor, si vedranno i dettagli di configurazione appena forniti a Briefcase.</p>
+<p>Ora che abbiamo un'applicazione stub, possiamo usare Briefcase per eseguire l'applicazione.</p>
 <h2 id="eseguire-lapplicazione-in-modalita-sviluppatore">Eseguire l'applicazione in modalità sviluppatore<a class="headerlink" href="#eseguire-lapplicazione-in-modalita-sviluppatore" title="Permanent link">&para;</a></h2>
-<p>Spostatevi nella cartella del progetto <code>helloworld</code> e dite a briefcase di
-avviare il progetto in modalità sviluppatore (o <code>dev</code>):</p>
+<p>Spostatevi nella cartella del progetto <code>helloworld</code> e dite a briefcase di avviare il progetto in modalità sviluppatore (o <code>dev</code>):</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1832,8 +1794,7 @@ avviare il progetto in modalità sviluppatore (o <code>dev</code>):</p>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <figure>
-<p><img alt="Esercitazione Hello World 1 finestra, su
-macOS" src="../../images/macOS/tutorial-1.png" /></p>
+<p><img alt="Esercitazione Hello World 1 finestra, su macOS" src="../../images/macOS/tutorial-1.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
@@ -1844,10 +1805,7 @@ macOS" src="../../images/macOS/tutorial-1.png" /></p>
 </figure>
 <div class="admonition">
 <p class="admonition-title">Possibili errori durante l'esecuzione di <code>briefcase dev</code></p>
-<p>Se ricevi un errore quando esegui <code>briefcase dev</code>, è quasi certamente perché
-alcuni dei requisiti di sistema non sono stati installati. Assicurati di aver
-<a class="autorefs autorefs-internal" title="Installare le dipendenze" href="../tutorial-0/#install-dependencies">installato tutti i prerequisiti della piattaforma</a>; il
-messaggio di errore che ricevi dovrebbe indicarti quali pacchetti mancano.</p>
+<p>Se ricevi un errore quando esegui <code>briefcase dev</code>, è quasi certamente perché alcuni dei requisiti di sistema non sono stati installati. Assicurati di aver <a class="autorefs autorefs-internal" title="Installare le dipendenze" href="../tutorial-0/#install-dependencies">installato tutti i prerequisiti della piattaforma</a>; il messaggio di errore che ricevi dovrebbe indicarti quali pacchetti mancano.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1862,22 +1820,15 @@ messaggio di errore che ricevi dovrebbe indicarti quali pacchetti mancano.</p>
 <span class="go">requisiti non è valido oppure che pip non è riuscito a connettersi</span>
 <span class="go">al server PyPI.</span>
 </code></pre></div>
-<p>Confermare che si sta eseguendo una <a class="autorefs autorefs-internal" title="Installare Python" href="../tutorial-0/#install-python">versione di python supportata da questo
-tutorial</a>.</p>
-<p>Se la vostra versione di python non è supportata, dovrete riavviare
-l'esercitazione.</p>
+<p>Confermare che si sta eseguendo una <a class="autorefs autorefs-internal" title="Installare Python" href="../tutorial-0/#install-python">versione di python supportata da questo tutorial</a>.</p>
+<p>Se la vostra versione di python non è supportata, dovrete riavviare l'esercitazione.</p>
 </div>
 </div>
 </div>
 </div>
-<p>Premete il pulsante di chiusura (o selezionate Quit dal menu dell'applicazione)
-e il gioco è fatto! Congratulazioni: avete appena scritto un'applicazione nativa
-standalone in Python!</p>
+<p>Premete il pulsante di chiusura (o selezionate Quit dal menu dell'applicazione) e il gioco è fatto! Congratulazioni: avete appena scritto un'applicazione nativa standalone in Python!</p>
 <h2 id="prossimi-passi">Prossimi passi<a class="headerlink" href="#prossimi-passi" title="Permanent link">&para;</a></h2>
-<p>Ora abbiamo un'applicazione funzionante, eseguita in modalità sviluppatore. Ora
-possiamo aggiungere un po' di logica per far fare alla nostra applicazione
-qualcosa di più interessante. In <a href="../tutorial-2/">Tutorial 2</a>, realizzeremo
-un'interfaccia utente più utile per la nostra applicazione.</p>
+<p>Ora abbiamo un'applicazione funzionante, eseguita in modalità sviluppatore. Ora possiamo aggiungere un po' di logica per far fare alla nostra applicazione qualcosa di più interessante. In <a href="../tutorial-2/">Tutorial 2</a>, realizzeremo un'interfaccia utente più utile per la nostra applicazione.</p>
 
 
 

@@ -1679,19 +1679,11 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-3-empacotar-para-distribuicao">Tutorial 3 - Empacotar para distribuição<a class="headerlink" href="#tutorial-3-empacotar-para-distribuicao" title="Permanent link">&para;</a></h1>
-<p>Até o momento, executamos a nossa aplicação em "modo de desenvolvedor". Isso
-facilita-nos executar a nossa aplicação localmente - mas o que realmente
-queremos é poder fornecer a nossa aplicação a outras pessoas.</p>
-<p>Entretanto, não queremos ter que ensinar aos nossos utilizadores a como instalar
-Python, criar um ambiente virtual, clonar um repositório git e executar o
-Briefcase no modo de desenvolvedor. Preferimos dar-lhes um instalador, e ter a
-aplicação A Trabalhar.</p>
-<p>O Briefcase pode ser usado para empacotar a sua aplicação para distribuir dessa
-maneira.</p>
+<p>Até o momento, executamos a nossa aplicação em "modo de desenvolvedor". Isso facilita-nos executar a nossa aplicação localmente - mas o que realmente queremos é poder fornecer a nossa aplicação a outras pessoas.</p>
+<p>Entretanto, não queremos ter que ensinar aos nossos utilizadores a como instalar Python, criar um ambiente virtual, clonar um repositório git e executar o Briefcase no modo de desenvolvedor. Preferimos dar-lhes um instalador, e ter a aplicação A Trabalhar.</p>
+<p>O Briefcase pode ser usado para empacotar a sua aplicação para distribuir dessa maneira.</p>
 <h2 id="criar-o-alicerce-da-sua-aplicacao">Criar o alicerce da sua aplicação<a class="headerlink" href="#criar-o-alicerce-da-sua-aplicacao" title="Permanent link">&para;</a></h2>
-<p>Como esta é a primeira vez que estamos a empacotar a nossa aplicação, precisamos
-criar alguns ficheiros de configuração e outras estruturas para suportar o
-processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
+<p>Como esta é a primeira vez que estamos a empacotar a nossa aplicação, precisamos criar alguns ficheiros de configuração e outras estruturas para suportar o processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1753,11 +1745,9 @@ processo de empacotamento. No diretório <code>helloworld</code>, execute:</p>
 <p class="admonition-title">Erros sobre versões do Python</p>
 <p>Se receber um erro que se parece algo como:</p>
 <blockquote>
-<p>A versão do Python que está a ser usada para correr o Briefcase (3.12) não é o
-python3 do sistema (3.10).</p>
+<p>A versão do Python que está a ser usada para correr o Briefcase (3.12) não é o python3 do sistema (3.10).</p>
 </blockquote>
-<p>Precisa recriar seu ambiente virtual usando o <code>python3</code> do sistema. O uso do
-Python do sistema é um requisito para empacotar a sua aplicação.</p>
+<p>Precisa recriar seu ambiente virtual usando o <code>python3</code> do sistema. O uso do Python do sistema é um requisito para empacotar a sua aplicação.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1784,77 +1774,32 @@ Python do sistema é um requisito para empacotar a sua aplicação.</p>
 </div>
 </div>
 </div>
-<p>É provável que você tenha observado uma grande quantidade de texto a passar no
-seu terminal&hellip; então o que aconteceu? O Briefcase fez o seguinte:</p>
+<p>É provável que você tenha observado uma grande quantidade de texto a passar no seu terminal&hellip; então o que aconteceu? O Briefcase fez o seguinte:</p>
 <ol>
 <li>
-<p>Ele <strong>gerou um modelo de aplicação</strong>. Há muitos ficheiros e configurações
-   necessárias para construir um instalador nativo, por cima e além do código da
-   sua aplicação real. Esse andaime extra é quase sempre o mesmo para todas as
-   aplicações na mesma plataforma, exceto pelo nome da aplicação real que está a
-   ser construída - assim, o Briefcase fornece um modelo de aplicação para cada
-   plataforma que suporta. Este passo implementa o modelo, substituindo o nome
-   da sua aplicação, o ID do pacote e outras propriedades do seu ficheiro de
-   configuração, conforme necessário para dar suporte à plataforma para que está
-   a construir. Se não estiver satisfeito com o modelo fornecido pelo Briefcase,
-   pode fornecer o seu próprio modelo. No entanto, é provável que não queira
-   fazer isso até que tenha um pouco mais de experiência a usar o modelo
-   predefinido do Briefcase.</p>
+<p>Ele <strong>gerou um modelo de aplicação</strong>. Há muitos ficheiros e configurações necessárias para construir um instalador nativo, por cima e além do código da sua aplicação real. Esse andaime extra é quase sempre o mesmo para todas as aplicações na mesma plataforma, exceto pelo nome da aplicação real que está a ser construída - assim, o Briefcase fornece um modelo de aplicação para cada plataforma que suporta. Este passo implementa o modelo, substituindo o nome da sua aplicação, o ID do pacote e outras propriedades do seu ficheiro de configuração, conforme necessário para dar suporte à plataforma para que está a construir. Se não estiver satisfeito com o modelo fornecido pelo Briefcase, pode fornecer o seu próprio modelo. No entanto, é provável que não queira fazer isso até que tenha um pouco mais de experiência a usar o modelo predefinido do Briefcase.</p>
 </li>
 <li>
-<p>Ele <strong>descarregou e instalou um pacote de suporte</strong>. A abordagem de
-   empacotamento adotada pelo Briefcase é melhor descrita como "a coisa mais
-   simples que poderia funcionar" - ele envia um interpretador Python completo e
-   isolado como parte de cada aplicação que constrói (exceto para compilações de
-   pacotes do sistema nativo do Linux). Isso é um pouco ineficiente em termos de
-   espaço - se tiver 5 aplicações empacotadas com o Briefcase, terá 5 cópias do
-   interpretador Python. No entanto, essa abordagem garante que cada aplicação
-   seja completamente independente, usando uma versão específica do Python que é
-   conhecida por funcionar com a aplicação. Novamente, o Briefcase fornece um
-   pacote de suporte predefinido para cada plataforma; se quiser, pode fornecer
-   seu próprio pacote de suporte e incluí-lo como parte do processo de
-   compilação. Talvez queira fazer isso se tiver opções específicas no
-   interpretador Python que precisam ser ativadas ou se quiser remover módulos
-   da biblioteca predefinida que não são necessários em tempo de execução. O
-   Briefcase mantém um cache local de pacotes de suporte, portanto, uma vez que
-   tenha descarregado um pacote de suporte específico, essa cópia em cache será
-   usada em compilações futuras. Conforme observado acima, quando o Briefcase
-   empacota uma aplicação como um pacote de sistema Linux nativo (o formato de
-   pacote predefinido para Linux), um pacote de suporte não é incluído com a
-   aplicação. Em vez disso, a aplicação usará o Python fornecido pela
-   distribuição do Linux a que é destinada.</p>
+<p>Ele <strong>descarregou e instalou um pacote de suporte</strong>. A abordagem de empacotamento adotada pelo Briefcase é melhor descrita como "a coisa mais simples que poderia funcionar" - ele envia um interpretador Python completo e isolado como parte de cada aplicação que constrói (exceto para compilações de pacotes do sistema nativo do Linux). Isso é um pouco ineficiente em termos de espaço - se tiver 5 aplicações empacotadas com o Briefcase, terá 5 cópias do interpretador Python. No entanto, essa abordagem garante que cada aplicação seja completamente independente, usando uma versão específica do Python que é conhecida por funcionar com a aplicação. Novamente, o Briefcase fornece um pacote de suporte predefinido para cada plataforma; se quiser, pode fornecer seu próprio pacote de suporte e incluí-lo como parte do processo de compilação. Talvez queira fazer isso se tiver opções específicas no interpretador Python que precisam ser ativadas ou se quiser remover módulos da biblioteca predefinida que não são necessários em tempo de execução. O Briefcase mantém um cache local de pacotes de suporte, portanto, uma vez que tenha descarregado um pacote de suporte específico, essa cópia em cache será usada em compilações futuras. Conforme observado acima, quando o Briefcase empacota uma aplicação como um pacote de sistema Linux nativo (o formato de pacote predefinido para Linux), um pacote de suporte não é incluído com a aplicação. Em vez disso, a aplicação usará o Python fornecido pela distribuição do Linux a que é destinada.</p>
 </li>
 <li>
-<p>Ele <strong>instalou os requisitos da aplicação</strong>. A sua aplicação pode especificar
-   quaisquer módulos de terceiros necessários em tempo de execução. Estes serão
-   instalados utilizando o <code>pip</code> no instalador da sua aplicação.</p>
+<p>Ele <strong>instalou os requisitos da aplicação</strong>. A sua aplicação pode especificar quaisquer módulos de terceiros necessários em tempo de execução. Estes serão instalados utilizando o <code>pip</code> no instalador da sua aplicação.</p>
 </li>
 <li>
-<p>Ele <strong>instalou o código da sua aplicação</strong>. A sua aplicação terá o seu
-   próprio código e recursos (ex., imagens que vão ser necessárias em tempo de
-   execução); estes ficheiros são copiados para o instalador.</p>
+<p>Ele <strong>instalou o código da sua aplicação</strong>. A sua aplicação terá o seu próprio código e recursos (ex., imagens que vão ser necessárias em tempo de execução); estes ficheiros são copiados para o instalador.</p>
 </li>
 <li>
-<p>Ele <strong>instalou os recursos necessários pela sua aplicação.</strong> Por fim,
-   adiciona recursos adicionais que são necessários pelo próprio instalador.
-   Isto inclui coisas como ícones que precisam ser anexados à aplicação final e
-   imagens de ecrã de abertura.</p>
+<p>Ele <strong>instalou os recursos necessários pela sua aplicação.</strong> Por fim, adiciona recursos adicionais que são necessários pelo próprio instalador. Isto inclui coisas como ícones que precisam ser anexados à aplicação final e imagens de ecrã de abertura.</p>
 </li>
 </ol>
-<p>Quando isso está concluído, se olhar para o diretório <code>build</code> do projeto, deverá
-ver um diretório correspondente à sua plataforma (<code>macOS</code>, <code>linux</code> ou <code>windows</code>)
-que contém ficheiros adicionais. Essa é a configuração de empacotamento
-específica da plataforma para a sua aplicação. Por exemplo, no macOS, o
-diretório do seu projeto agora vai incluir:</p>
+<p>Quando isso está concluído, se olhar para o diretório <code>build</code> do projeto, deverá ver um diretório correspondente à sua plataforma (<code>macOS</code>, <code>linux</code> ou <code>windows</code>) que contém ficheiros adicionais. Essa é a configuração de empacotamento específica da plataforma para a sua aplicação. Por exemplo, no macOS, o diretório do seu projeto agora vai incluir:</p>
 <div class="highlight"><pre><span></span><code>helloworld/
 └── build/
     └── helloworld/
         └── macos/
 </code></pre></div>
 <h2 id="compilando-a-sua-aplicacao">Compilando a sua aplicação<a class="headerlink" href="#compilando-a-sua-aplicacao" title="Permanent link">&para;</a></h2>
-<p>Agora você pode compilar a sua aplicação. Este passo efetua qualquer compilação
-binária necessária para que sua aplicação seja executável na plataforma de
-destino.</p>
+<p>Agora você pode compilar a sua aplicação. Este passo efetua qualquer compilação binária necessária para que sua aplicação seja executável na plataforma de destino.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1867,10 +1812,7 @@ destino.</p>
 
 <span class="go">[helloworld] Compilado build/helloworld/macos/app/Hello World.app</span>
 </code></pre></div>
-<p>No macOS, o comando <code>build</code> não necessita <em>compilar</em> nada, mas precisa assinar o
-conteúdo do binário para que ele possa ser executado. Essa assinatura é do tipo
-<em>ad hoc</em> - só funcionará no <em>seu</em> computador; se você deseja distribuir a
-aplicação para outras pessoas, será necessário fornecer uma assinatura completa.</p>
+<p>No macOS, o comando <code>build</code> não necessita <em>compilar</em> nada, mas precisa assinar o conteúdo do binário para que ele possa ser executado. Essa assinatura é do tipo <em>ad hoc</em> - só funcionará no <em>seu</em> computador; se você deseja distribuir a aplicação para outras pessoas, será necessário fornecer uma assinatura completa.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
@@ -1895,11 +1837,7 @@ aplicação para outras pessoas, será necessário fornecer uma assinatura compl
 
 <span class="go">[helloworld] Compilado build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
-<p>Após a conclusão dessa etapa, a pasta <code>build</code> vai conter uma pasta
-<code>helloworld-0.0.1</code> com um espelho do sistema de ficheiros <code>/usr</code> do Linux. Este
-espelho de sistema de ficheiros vai conter uma pasta <code>bin</code> com um binário
-<code>helloworld</code>, mais as pastas <code>lib</code> e <code>share</code> necessárias para dar suporte ao
-binário.</p>
+<p>Após a conclusão dessa etapa, a pasta <code>build</code> vai conter uma pasta <code>helloworld-0.0.1</code> com um espelho do sistema de ficheiros <code>/usr</code> do Linux. Este espelho de sistema de ficheiros vai conter uma pasta <code>bin</code> com um binário <code>helloworld</code>, mais as pastas <code>lib</code> e <code>share</code> necessárias para dar suporte ao binário.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
@@ -1907,16 +1845,10 @@ binário.</p>
 
 <span class="go">[helloworld] Gerado build\helloworld\windows\app\src\Hello World.exe</span>
 </code></pre></div>
-<p>No Windows, o comando <code>build</code> não precisa <em>compilar</em> nada, mas precisa registrar
-alguns metadados para que a aplicação reconheça seu nome, versão e outras coisas
-assim.</p>
+<p>No Windows, o comando <code>build</code> não precisa <em>compilar</em> nada, mas precisa registrar alguns metadados para que a aplicação reconheça seu nome, versão e outras coisas assim.</p>
 <div class="admonition">
 <p class="admonition-title">Despoletar do antivírus</p>
-<p>Como estes metadados são gravados diretamente no binário pré-compilado que sai
-do modelo durante o comando <code>create</code>, isso pode acionar o software antivírus em
-execução no computador e impedir que os metadados sejam gravados. Nesse caso,
-instrua o antivírus a permitir que a ferramenta (chamada <code>rcedit-x64.exe</code>) seja
-executada e execute novamente o comando acima.</p>
+<p>Como estes metadados são gravados diretamente no binário pré-compilado que sai do modelo durante o comando <code>create</code>, isso pode acionar o software antivírus em execução no computador e impedir que os metadados sejam gravados. Nesse caso, instrua o antivírus a permitir que a ferramenta (chamada <code>rcedit-x64.exe</code>) seja executada e execute novamente o comando acima.</p>
 </div>
 </div>
 </div>
@@ -1992,25 +1924,11 @@ executada e execute novamente o comando acima.</p>
 </div>
 </div>
 </div>
-<p>Isso vai iniciar a execução da sua aplicação nativa, usando a aplicação criada
-com o comando <code>build</code>.</p>
-<p>Pode notar algumas pequenas diferenças na aparência da sua aplicação quando ela
-está em execução. Por exemplo, os ícones e o nome exibidos pelo sistema
-operativo podem ser ligeiramente diferentes daqueles vistos durante a execução
-em modo de desenvolvedor. Isto também acontece porque está a usar a aplicação
-empacotada, e não apenas a executar o código Python. Do ponto de vista do
-sistema operativo, agora está a correr "uma aplicação", não "um programa de
-Python", e isso reflete-se na aparência da aplicação.</p>
-<p>Antes de continuar, feche a aplicação. Como nas etapas anteriores do tutorial,
-você pode fazer isso ao pressionar o botão fechar na janela da aplicação,
-selecionar Sair/Terminar no menu da aplicação ou teclando <strong>Ctrl+C</strong> no terminal
-em que executou <code>briefcase run</code>.</p>
+<p>Isso vai iniciar a execução da sua aplicação nativa, usando a aplicação criada com o comando <code>build</code>.</p>
+<p>Pode notar algumas pequenas diferenças na aparência da sua aplicação quando ela está em execução. Por exemplo, os ícones e o nome exibidos pelo sistema operativo podem ser ligeiramente diferentes daqueles vistos durante a execução em modo de desenvolvedor. Isto também acontece porque está a usar a aplicação empacotada, e não apenas a executar o código Python. Do ponto de vista do sistema operativo, agora está a correr "uma aplicação", não "um programa de Python", e isso reflete-se na aparência da aplicação.</p>
+<p>Antes de continuar, feche a aplicação. Como nas etapas anteriores do tutorial, você pode fazer isso ao pressionar o botão fechar na janela da aplicação, selecionar Sair/Terminar no menu da aplicação ou teclando <strong>Ctrl+C</strong> no terminal em que executou <code>briefcase run</code>.</p>
 <h2 id="criar-o-seu-instalador">Criar o seu instalador<a class="headerlink" href="#criar-o-seu-instalador" title="Permanent link">&para;</a></h2>
-<p>Agora pode empacotar a sua aplicação para distribuição, usando o comando
-<code>package</code>. O comando package faz qualquer compilação necessária para converter o
-projeto de andaime num produto final e distribuível. Dependendo da plataforma,
-isso pode envolver a compilação dum instalador, a execução de assinatura de
-código ou outras tarefas de pré-distribuição.</p>
+<p>Agora pode empacotar a sua aplicação para distribuição, usando o comando <code>package</code>. O comando package faz qualquer compilação necessária para converter o projeto de andaime num produto final e distribuível. Dependendo da plataforma, isso pode envolver a compilação dum instalador, a execução de assinatura de código ou outras tarefas de pré-distribuição.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2041,27 +1959,12 @@ código ou outras tarefas de pré-distribuição.</p>
 
 <span class="go">[helloworld] A empacotar dist/Hello World-0.0.1.dmg</span>
 </code></pre></div>
-<p>A pasta <code>dist</code> vai conter um ficheiro chamado <code>Hello World-0.0.1.dmg</code>. Se
-localizar esse ficheiro no Finder e clicar duas vezes em seu ícone, vai montar o
-DMG, fornecendo uma cópia da aplicação Hello World e um link para a pasta
-Applications para facilitar a instalação. Arraste o ficheiro da aplicação para
-Aplicações e terá instalado a aplicação. Envie o ficheiro DMG para um amigo e
-ele vai poder fazer o mesmo.</p>
-<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code> - ou seja, estamos a assinar a
-nossa aplicação com credenciais <em>ad hoc</em>, credenciais temporárias que só vão
-funcionar no seu computador. Fizemos isso para manter a simplicidade do
-tutorial. A configuração de identidades de assinatura de código é um pouco
-complicada, e elas só são <em>necessárias</em> se pretender distribuir a aplicação para
-outras pessoas. Se estivéssemos a publicar uma aplicação real para ser usada por
-outras pessoas, íamos precisar de especificar credenciais reais.</p>
-<p>Quando estiver pronto para publicar uma aplicação real, consulte o guia de
-instruções da Briefcase sobre <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Configurar uma identidade de assinatura de código
-do macOS</a>.</p>
+<p>A pasta <code>dist</code> vai conter um ficheiro chamado <code>Hello World-0.0.1.dmg</code>. Se localizar esse ficheiro no Finder e clicar duas vezes em seu ícone, vai montar o DMG, fornecendo uma cópia da aplicação Hello World e um link para a pasta Applications para facilitar a instalação. Arraste o ficheiro da aplicação para Aplicações e terá instalado a aplicação. Envie o ficheiro DMG para um amigo e ele vai poder fazer o mesmo.</p>
+<p>Neste exemplo, usamos a opção <code>--adhoc-sign</code> - ou seja, estamos a assinar a nossa aplicação com credenciais <em>ad hoc</em>, credenciais temporárias que só vão funcionar no seu computador. Fizemos isso para manter a simplicidade do tutorial. A configuração de identidades de assinatura de código é um pouco complicada, e elas só são <em>necessárias</em> se pretender distribuir a aplicação para outras pessoas. Se estivéssemos a publicar uma aplicação real para ser usada por outras pessoas, íamos precisar de especificar credenciais reais.</p>
+<p>Quando estiver pronto para publicar uma aplicação real, consulte o guia de instruções da Briefcase sobre <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Configurar uma identidade de assinatura de código do macOS</a>.</p>
 </div>
 <div class="tabbed-block">
-<p>O resultado do passo de empacotamento vai ser ligeiramente diferente, dependendo
-de sua distribuição Linux. Se estiver numa distribuição derivada do Debian, vai
-ver:</p>
+<p>O resultado do passo de empacotamento vai ser ligeiramente diferente, dependendo de sua distribuição Linux. Se estiver numa distribuição derivada do Debian, vai ver:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] A finalizar a configuração da aplicação...</span>
@@ -2120,31 +2023,17 @@ ver:</p>
 <span class="go">[helloworld] Empacotado dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst</span>
 </code></pre></div>
 <p>A pasta <code>dist</code> vai conter o ficheiro <code>.pkg.tar.zst</code> que foi gerado.</p>
-<p>No momento, não há suporte para o empacotamento em outras distribuições do
-Linux.</p>
-<p>Se quiser criar um pacote para uma distribuição Linux diferente da que você está
-a usar, o Briefcase também pode ajudar - mas vai precisar de instalar o Docker.</p>
-<p>Os instaladores oficiais do <a href="https://docs.docker.com/engine/install">Motor
-Docker</a> estão disponíveis para uma série
-de distribuições Unix. Siga as instruções para sua plataforma; no entanto,
-certifique-se de não instalar o Docker no modo "sem direitos de root".</p>
-<p>Depois de instalar o Docker, deve ser capaz de iniciar um contentor Linux - por
-exemplo:</p>
+<p>No momento, não há suporte para o empacotamento em outras distribuições do Linux.</p>
+<p>Se quiser criar um pacote para uma distribuição Linux diferente da que você está a usar, o Briefcase também pode ajudar - mas vai precisar de instalar o Docker.</p>
+<p>Os instaladores oficiais do <a href="https://docs.docker.com/engine/install">Motor Docker</a> estão disponíveis para uma série de distribuições Unix. Siga as instruções para sua plataforma; no entanto, certifique-se de não instalar o Docker no modo "sem direitos de root".</p>
+<p>Depois de instalar o Docker, deve ser capaz de iniciar um contentor Linux - por exemplo:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>ubuntu:22.04
 </code></pre></div>
-<p>vai mostrar um aviso de comando do Unix (algo como <code>root@84444e31cff9:/#</code>)
-dentro de um contentor de Docker do Ubuntu 22.04. Tecle Ctrl-D para sair do
-Docker e retornar à sua shell local.</p>
-<p>Depois de instalar o Docker, pode usar o Briefcase para compilar um pacote para
-qualquer distribuição Linux que o Briefcase suporte, passando uma imagem do
-Docker como argumento. Por exemplo, para compilar um pacote DEB para o Ubuntu
-22.04 (Jammy), independentemente do sistema operativo em que está, execute:</p>
+<p>vai mostrar um aviso de comando do Unix (algo como <code>root@84444e31cff9:/#</code>) dentro de um contentor de Docker do Ubuntu 22.04. Tecle Ctrl-D para sair do Docker e retornar à sua shell local.</p>
+<p>Depois de instalar o Docker, pode usar o Briefcase para compilar um pacote para qualquer distribuição Linux que o Briefcase suporte, passando uma imagem do Docker como argumento. Por exemplo, para compilar um pacote DEB para o Ubuntu 22.04 (Jammy), independentemente do sistema operativo em que está, execute:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--target<span class="w"> </span>ubuntu:jammy
 </code></pre></div>
-<p>Isto vai descarregar a imagem do Docker para o sistema operativo selecionado,
-vai criar um contentor capaz de executar as compilações do Briefcase, e vai
-compilar o pacote da aplicação dentro da imagem. Após a conclusão, a pasta
-<code>dist</code> vai conter o pacote para a distribuição Linux de destino.</p>
+<p>Isto vai descarregar a imagem do Docker para o sistema operativo selecionado, vai criar um contentor capaz de executar as compilações do Briefcase, e vai compilar o pacote da aplicação dentro da imagem. Após a conclusão, a pasta <code>dist</code> vai conter o pacote para a distribuição Linux de destino.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase package
@@ -2173,32 +2062,14 @@ compilar o pacote da aplicação dentro da imagem. Após a conclusão, a pasta
 
 <span class="go">[helloworld] Empacotado em dist\Hello_World-0.0.1.msi</span>
 </code></pre></div>
-<p>Neste exemplo, não estamos a assinar a sua aplicação. Como resultado, quando usa
-o instalador, vai obter um aviso do sistema de que a aplicação vem de um
-desenvolvedor desconhecido. Nós fazemos isto para manter o tutorial simples.
-Definir identidades de assinatura de código é um pouco complexo, e só são
-<em>requeridas</em> quando tem a intenção de distribuir a sua aplicação a outros. Se
-estivéssemos a publicar uma aplicação real para outros usarem, íamos precisar de
-especificar uma identidade de assinatura real; quando essa aplicação assinada
-está instalada, o sistema vai notificar o utilizador de que a aplicação é da
-identidade conhecida associada com o certificado.</p>
-<p>Quando estiver pronto para publicar uma aplicação real, consulte o guia de
-instruções do Briefcase sobre <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Configurar uma identidade de assinatura de código
-do
-Windows</a>.</p>
-<p>Quando este passo estiver concluído, a pasta <code>dist</code> vai conter um ficheiro
-chamado <code>Hello_World-0.0.1.msi</code>. Se clicar duas vezes nesse instalador para
-executá-lo, deverá passar por um processo familiar de instalação do Windows.
-Após a conclusão da instalação, vai existir uma entrada "Hello World" no seu
-menu Iniciar.</p>
+<p>Neste exemplo, não estamos a assinar a sua aplicação. Como resultado, quando usa o instalador, vai obter um aviso do sistema de que a aplicação vem de um desenvolvedor desconhecido. Nós fazemos isto para manter o tutorial simples. Definir identidades de assinatura de código é um pouco complexo, e só são <em>requeridas</em> quando tem a intenção de distribuir a sua aplicação a outros. Se estivéssemos a publicar uma aplicação real para outros usarem, íamos precisar de especificar uma identidade de assinatura real; quando essa aplicação assinada está instalada, o sistema vai notificar o utilizador de que a aplicação é da identidade conhecida associada com o certificado.</p>
+<p>Quando estiver pronto para publicar uma aplicação real, consulte o guia de instruções do Briefcase sobre <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Configurar uma identidade de assinatura de código do Windows</a>.</p>
+<p>Quando este passo estiver concluído, a pasta <code>dist</code> vai conter um ficheiro chamado <code>Hello_World-0.0.1.msi</code>. Se clicar duas vezes nesse instalador para executá-lo, deverá passar por um processo familiar de instalação do Windows. Após a conclusão da instalação, vai existir uma entrada "Hello World" no seu menu Iniciar.</p>
 </div>
 </div>
 </div>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos a nossa aplicação empacotada para distribuição em plataformas de
-ambiente de trabalho. Mas o que acontece quando precisamos atualizar o código da
-nossa aplicação? Como colocamos essas atualizações na nossa aplicação
-empacotada? Consulte o <a href="../tutorial-4/">Tutorial 4</a> para descobrir&hellip;</p>
+<p>Agora temos a nossa aplicação empacotada para distribuição em plataformas de ambiente de trabalho. Mas o que acontece quando precisamos atualizar o código da nossa aplicação? Como colocamos essas atualizações na nossa aplicação empacotada? Consulte o <a href="../tutorial-4/">Tutorial 4</a> para descobrir&hellip;</p>
 
 
 

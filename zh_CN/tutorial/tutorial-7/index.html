@@ -1679,14 +1679,11 @@ aria-label="页眉"
 
 
 <h1 id="7-">教程 7 - 使用第三方库<a class="headerlink" href="#7-" title="Permanent link">&para;</a></h1>
-<p>到目前为止，我们构建的应用程序只使用了我们自己的代码和 BeeWare 提供的代码。不过，在实际应用中，您很可能需要使用从 Python
-软件包索引（PyPI）下载的第三方库。</p>
+<p>到目前为止，我们构建的应用程序只使用了我们自己的代码和 BeeWare 提供的代码。不过，在实际应用中，您很可能需要使用从 Python 软件包索引（PyPI）下载的第三方库。</p>
 <p>让我们修改应用程序，加入第三方库。</p>
 <h2 id="_1">添加软件包<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>让我们修改我们的应用程序，使其能够显示比“你好！”更丰富的内容。</p>
-<p>为了给对话框生成一些更有趣的文本，我们将使用一个名为 <a href="https://faker.readthedocs.io/en/stable/">Faker</a>
-的库。Faker 是一个 Python 软件包，用于生成虚假内容，包括名称和文本块。文本块中的名称和单词由 Faker 提供的任意单词列表生成。我们将使用
-Faker 构建一条虚假信息，就像有人在回复用户一样。</p>
+<p>为了给对话框生成一些更有趣的文本，我们将使用一个名为 <a href="https://faker.readthedocs.io/en/stable/">Faker</a> 的库。Faker 是一个 Python 软件包，用于生成虚假内容，包括名称和文本块。文本块中的名称和单词由 Faker 提供的任意单词列表生成。我们将使用 Faker 构建一条虚假信息，就像有人在回复用户一样。</p>
 <p>我们开始吧 <code>faker</code> 添加到我们的应用程序中。在 <code>app.py</code> 的最上方加入一个导入，用于导入 <code>faker</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">faker</span>
 </code></pre></div>
@@ -1766,12 +1763,10 @@ Faker 构建一条虚假信息，就像有人在回复用户一样。</p>
 </div>
 </div>
 <p>发生了什么？我们在<em>代码</em>中添加了<code>faker</code>，但尚未将其添加到用于在开发模式下运行应用程序的虚拟环境中。</p>
-<p>当 Briefcase 以开发模式运行应用程序时，它会为该应用创建一个独立的虚拟环境，该环境与您运行 <code>briefcase</code>
-的环境无关。如果您的应用未声明需要特定库，则该库不会安装在开发虚拟环境中。</p>
+<p>当 Briefcase 以开发模式运行应用程序时，它会为该应用创建一个独立的虚拟环境，该环境与您运行 <code>briefcase</code> 的环境无关。如果您的应用未声明需要特定库，则该库不会安装在开发虚拟环境中。</p>
 <p>那么，如何向应用程序添加新需求呢？</p>
 <h2 id="_2">更新依赖项<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>在应用程序的根目录中，有一个名为 <code>pyproject.toml</code> 的文件。该文件包含您最初运行 <code>briefcase new</code>
-时提供的所有应用程序配置详细信息。</p>
+<p>在应用程序的根目录中，有一个名为 <code>pyproject.toml</code> 的文件。该文件包含您最初运行 <code>briefcase new</code> 时提供的所有应用程序配置详细信息。</p>
 <p>pyproject.toml "分为多个部分，其中一部分描述了应用程序的设置：：</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
 <span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
@@ -1787,24 +1782,16 @@ Faker 构建一条虚假信息，就像有人在回复用户一样。</p>
 <span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>通过添加此设置，我们告诉 Briefcase "当你构建我的应用程序时，运行 <code>pip install httpx</code> 到应用程序捆绑包中"。任何可以合法输入到
-<code>pip install</code> 的内容都可以在这里使用&ndash;因此，你可以指定：</p>
+<p>通过添加此设置，我们告诉 Briefcase "当你构建我的应用程序时，运行 <code>pip install httpx</code> 到应用程序捆绑包中"。任何可以合法输入到 <code>pip install</code> 的内容都可以在这里使用&ndash;因此，你可以指定：</p>
 <ul>
 <li>特定的库版本（例如， <code>"httpx===0.19.0"</code> ）;</li>
 <li>一系列库版本（例如， <code>"httpx&gt;=0.19"</code> ）;</li>
 <li>指向 git 仓库的路径（例如，<code>"git+https://github.com/encode/httpx"</code>）；或</li>
 <li>本地文件路径（不过需要注意的是：如果你把代码交给别人，这个路径很可能不存在于他们的机器上！）</li>
 </ul>
-<p>在 <code>pyproject.toml</code> 中的更下面部分，你会注意到与操作系统相关的其他部分，如
-<code>[tool.briefcase.app.helloworld.macOS]</code> 和
-<code>[tool.briefcase.app.helloworld.windows]</code>。这些部分**也有一个 <code>requires</code>
-设置。这些设置允许你定义额外的特定平台依赖关系，例如，如果你需要一个特定平台的库来处理应用程序的某些方面，你可以在特定平台的 <code>requires</code>
-部分中指定该库，而该设置将仅用于该平台。你会注意到，所有的 <code>toga</code> 库都是在特定平台的 <code>requires</code>
-部分中指定的，这是因为显示用户界面所需的库都是特定平台的。</p>
-<p>在我们的例子中，我们希望 <code>httpx</code> 安装在所有平台上，因此使用了应用程序级的 <code>requires</code>
-设置。应用程序级的依赖项始终会被安装；特定平台的依赖项会在应用程序级的依赖项之外*安装。</p>
-<p>添加新依赖项后，请保存 <code>pyproject.toml</code>, 并运行 <code>briefcase dev -r</code>. <code>-r</code> 标志会告知 Briefcase
-依赖项已变更，需要更新开发虚拟环境：</p>
+<p>在 <code>pyproject.toml</code> 中的更下面部分，你会注意到与操作系统相关的其他部分，如 <code>[tool.briefcase.app.helloworld.macOS]</code> 和 <code>[tool.briefcase.app.helloworld.windows]</code>。这些部分**也有一个 <code>requires</code> 设置。这些设置允许你定义额外的特定平台依赖关系，例如，如果你需要一个特定平台的库来处理应用程序的某些方面，你可以在特定平台的 <code>requires</code> 部分中指定该库，而该设置将仅用于该平台。你会注意到，所有的 <code>toga</code> 库都是在特定平台的 <code>requires</code> 部分中指定的，这是因为显示用户界面所需的库都是特定平台的。</p>
+<p>在我们的例子中，我们希望 <code>httpx</code> 安装在所有平台上，因此使用了应用程序级的 <code>requires</code> 设置。应用程序级的依赖项始终会被安装；特定平台的依赖项会在应用程序级的依赖项之外*安装。</p>
+<p>添加新依赖项后，请保存 <code>pyproject.toml</code>, 并运行 <code>briefcase dev -r</code>. <code>-r</code> 标志会告知 Briefcase 依赖项已变更，需要更新开发虚拟环境：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1881,9 +1868,7 @@ Faker 构建一条虚假信息，就像有人在回复用户一样。</p>
 <li>你在运行 <code>-r</code> 时包含了 <code>briefcase dev -r</code> 参数。</li>
 </ol>
 </div>
-<p>首次使用 <code>briefcase dev</code> 运行应用程序时，系统会自动添加 <code>-r</code> 参数——这正是我们此前无需使用 <code>-r</code>
-参数的原因。仅当您在开发模式下运行应用程序后，需要添加、移除或修改依赖项时，才需要使用 <code>-r</code> 参数。若您仅更新了代码，则可照常运行 <code>briefcase
-dev</code>，本教程后续部分均采用此方式。</p>
+<p>首次使用 <code>briefcase dev</code> 运行应用程序时，系统会自动添加 <code>-r</code> 参数——这正是我们此前无需使用 <code>-r</code> 参数的原因。仅当您在开发模式下运行应用程序后，需要添加、移除或修改依赖项时，才需要使用 <code>-r</code> 参数。若您仅更新了代码，则可照常运行 <code>briefcase dev</code>，本教程后续部分均采用此方式。</p>
 <h2 id="_3">运行更新后的应用程序<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>我们现已获得一个使用第三方库、在开发模式下运行的可工作应用程序。接下来，让我们将这个更新后的应用程序代码打包为独立应用。由于我们进行了代码修改，需要遵循与<a href="../tutorial-4/">教程4</a>相同的步骤：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
@@ -2081,10 +2066,7 @@ dev</code>，本教程后续部分均采用此方式。</p>
 </div>
 </div>
 <p>又一次，应用程序无法启动，因为<code>faker</code>尚未安装&ndash;但为什么呢？我们不是已经安装了 <code>faker</code>吗？</p>
-<p>我们确实有——但仅限于开发环境。每个构建的应用程序都有其独立的运行环境，这是运行<code>briefcase
-build</code>时Briefcase生成的组件之一。当我们执行<code>briefcase dev
--r</code>时，仅将<code>faker</code>添加到<em>开发</em>环境中，而未添加到打包应用程序。我们还需运行<code>briefcase update
--r</code>，以便Briefcase识别打包应用程序的依赖项已发生变更：</p>
+<p>我们确实有——但仅限于开发环境。每个构建的应用程序都有其独立的运行环境，这是运行<code>briefcase build</code>时Briefcase生成的组件之一。当我们执行<code>briefcase dev -r</code>时，仅将<code>faker</code>添加到<em>开发</em>环境中，而未添加到打包应用程序。我们还需运行<code>briefcase update -r</code>，以便Briefcase识别打包应用程序的依赖项已发生变更：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label><label for="__tabbed_4_4">Android</label><label for="__tabbed_4_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2190,26 +2172,14 @@ build</code>时Briefcase生成的组件之一。当我们执行<code>briefcase d
 <p>更新完成后，您可以运行 <code>briefcase build</code> 和 <code>briefcase run</code> - 您应该会看到打包后的应用程序，并带有新的对话框行为。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>用于更新需求的 <code>-r</code> 选项也会被 <code>build</code> 和 <code>run</code> 命令接受，因此如果你想一步完成更新、编译和运行，可以使用 <code>briefcase run
--u -r</code>。</p>
+<p>用于更新需求的 <code>-r</code> 选项也会被 <code>build</code> 和 <code>run</code> 命令接受，因此如果你想一步完成更新、编译和运行，可以使用 <code>briefcase run -u -r</code>。</p>
 </div>
 <h2 id="python">用于移动和网络的第三方 Python 软件包<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
-<p>Faker 只是第三方 Python 软件包的一个例子，它是 Python 开箱即用之外的代码集合。这些第三方软件包通常使用 <a href="https://pypi.org">Python Package
-Index (PyPI)</a> 发布，并安装到本地虚拟环境中。我们在本教程中使用了 <code>pip</code>，但也有其他选择。</p>
+<p>Faker 只是第三方 Python 软件包的一个例子，它是 Python 开箱即用之外的代码集合。这些第三方软件包通常使用 <a href="https://pypi.org">Python Package Index (PyPI)</a> 发布，并安装到本地虚拟环境中。我们在本教程中使用了 <code>pip</code>，但也有其他选择。</p>
 <p>在桌面平台（macOS、Windows、Linux）上，基本上任何PyPI上的软件包都可以安装到虚拟环境中，或添加到应用程序的要求中。然而，当为移动或网络平台构建应用程序时，<a href="https://briefcase.beeware.org/en/latest/about/faq#can-i-use-third-party-python-packages-in-my-app">您的选择会受到些许限制</a>。</p>
-<p>简而言之，任何<em>纯 Python</em> 包（即从<em>仅</em>用 Python 编写的项目中创建的包）都可以毫无困难地使用。不过，有些软件包是由包含 Python
-和其他语言（如 C、C++、Rust
-等）的项目创建的。使用这些语言编写的代码需要编译成特定平台的二进制模块才能使用，而这些预编译的二进制模块只能在特定平台上使用。移动平台和网络平台的要求与 "标准
-"桌面平台截然不同。目前，大多数 Python 软件包都没有为移动平台和网络平台提供预编译二进制文件。</p>
-<p>在 PyPI 上，软件包通常以一种名为 <em>wheels</em> 的预构建发布格式提供。要检查某个软件包是否是纯 Python，请查看该项目的 PyPI
-下载页面。如果提供的轮子后缀是 <code>-py3-none-any.whl</code>（例如
-<a href="https://pypi.org/project/Faker/37.3.0/#files">Faker</a>），那么它们就是纯 Python
-轮子。但是，如果这些轮子有特定版本和平台的扩展（例如
-<a href="https://pypi.org/project/pillow/11.2.1/#files">Pillow</a>，它的轮子后缀是
-<code>-cp313-cp313-macosx_11_0_arm64.whl</code> 和
-<code>cp39-cp39-win_amd64.whl</code>），那么这个轮子<em>包含一个二进制组件</em>。除非提供了与移动或网络平台兼容的滚轮，否则该软件包无法安装在这些平台上。</p>
-<p>目前，PyPI上<strong>多的二进制包都没有提供移动或网络兼容的轮子。为了填补这一空白，BeeWare 为一些流行的二进制模块（包括 <code>numpy</code>、<code>pandas</code>
-和 <code>cryptography</code>）提供了二进制文件。这些轮子</strong>没有发布在 PyPI 上，但如果这些轮子可用，Briefcase 会安装它们。</p>
+<p>简而言之，任何<em>纯 Python</em> 包（即从<em>仅</em>用 Python 编写的项目中创建的包）都可以毫无困难地使用。不过，有些软件包是由包含 Python 和其他语言（如 C、C++、Rust 等）的项目创建的。使用这些语言编写的代码需要编译成特定平台的二进制模块才能使用，而这些预编译的二进制模块只能在特定平台上使用。移动平台和网络平台的要求与 "标准 "桌面平台截然不同。目前，大多数 Python 软件包都没有为移动平台和网络平台提供预编译二进制文件。</p>
+<p>在 PyPI 上，软件包通常以一种名为 <em>wheels</em> 的预构建发布格式提供。要检查某个软件包是否是纯 Python，请查看该项目的 PyPI 下载页面。如果提供的轮子后缀是 <code>-py3-none-any.whl</code>（例如 <a href="https://pypi.org/project/Faker/37.3.0/#files">Faker</a>），那么它们就是纯 Python 轮子。但是，如果这些轮子有特定版本和平台的扩展（例如 <a href="https://pypi.org/project/pillow/11.2.1/#files">Pillow</a>，它的轮子后缀是 <code>-cp313-cp313-macosx_11_0_arm64.whl</code> 和 <code>cp39-cp39-win_amd64.whl</code>），那么这个轮子<em>包含一个二进制组件</em>。除非提供了与移动或网络平台兼容的滚轮，否则该软件包无法安装在这些平台上。</p>
+<p>目前，PyPI上<strong>多的二进制包都没有提供移动或网络兼容的轮子。为了填补这一空白，BeeWare 为一些流行的二进制模块（包括 <code>numpy</code>、<code>pandas</code> 和 <code>cryptography</code>）提供了二进制文件。这些轮子</strong>没有发布在 PyPI 上，但如果这些轮子可用，Briefcase 会安装它们。</p>
 <p><em>通常</em>\ 可以为移动平台编译二进制软件包，但是不容易设置，且远超出了本教程这样的入门教程涵盖的范围。</p>
 <h2 id="_4">下一步<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>我们现在有了一个使用第三方库的应用程序！在 <a href="../tutorial-8/">教程 8</a> 中，我们将学习如何在添加更复杂的应用程序逻辑时确保应用程序保持响应。</p>

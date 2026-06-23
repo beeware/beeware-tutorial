@@ -1593,10 +1593,7 @@ aria-label="页眉"
 
 
 <h1 id="5-ios">教程 5 - 在移动设备上：iOS<a class="headerlink" href="#5-ios" title="Permanent link">&para;</a></h1>
-<p>编译 iOS 应用程序需要 Xcode，可从 <a href="https://apps.apple.com/au/app/xcode/id497799835?mt=12">macOS App
-Store</a> 免费下载。当 Xcode
-完成安装时，从“应用程序”打开它并接受 Xcode 许可协议。接下来，Xcode 会展示哪些模拟器运行时已内置，哪些可以下载。选择 iOS
-模拟器运行时旁边的复选框，并点击“继续”来下载和安装它。</p>
+<p>编译 iOS 应用程序需要 Xcode，可从 <a href="https://apps.apple.com/au/app/xcode/id497799835?mt=12">macOS App Store</a> 免费下载。当 Xcode 完成安装时，从“应用程序”打开它并接受 Xcode 许可协议。接下来，Xcode 会展示哪些模拟器运行时已内置，哪些可以下载。选择 iOS 模拟器运行时旁边的复选框，并点击“继续”来下载和安装它。</p>
 <p>安装好 Xcode 与 iOS 模拟器后，我们就可以将应用程序作为 iOS 应用程序进行部署。</p>
 <p>将应用程序部署到 iOS 的过程与部署桌面应用程序的过程非常相似。首先，运行 <code>create</code> 命令，但这次我们指定要创建一个 iOS 应用程序：</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
@@ -1635,8 +1632,7 @@ Store</a> 免费下载。当 Xcode
 
 <span class="go">[helloworld] 已构建 build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
 </code></pre></div>
-<p>现在我们可以使用 <code>briefcase run iOS</code> 运行应用程序了。Briefcase 会提示你选择要编译的设备；如果你安装了多个 iOS SDK
-版本的模拟器，可能还会询问你要针对哪个 iOS 版本。所显示的选项可能与此输出中显示的选项不同，至少设备列表可能不同。就我们而言，选择哪个模拟器并不重要。</p>
+<p>现在我们可以使用 <code>briefcase run iOS</code> 运行应用程序了。Briefcase 会提示你选择要编译的设备；如果你安装了多个 iOS SDK 版本的模拟器，可能还会询问你要针对哪个 iOS 版本。所显示的选项可能与此输出中显示的选项不同，至少设备列表可能不同。就我们而言，选择哪个模拟器并不重要。</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
 <span class="go">选择模拟器设备：</span>
@@ -1682,10 +1678,8 @@ Store</a> 免费下载。当 Xcode
 <p><img alt="Hello World 教程 5 窗口，在 iOS 上" src="../../../images/iOS/tutorial-5.png" />。</p>
 <figcaption></figcaption>
 </figure>
-<p>当应用程序运行时，您会在控制台中看到一系列模拟器输出信息。向命令行中按 Ctrl + C
-会停止控制台中的信息，但不会关闭模拟器。这样，您无需重启模拟器，也能可以继续测试新更改。</p>
-<p>如果事先知道要使用哪个 iOS 模拟器，可以通过提供 <code>-d</code>（或 <code>--device</code>）选项告诉 Briefcase
-使用该模拟器。使用创建应用程序时选择的设备名称，运行:</p>
+<p>当应用程序运行时，您会在控制台中看到一系列模拟器输出信息。向命令行中按 Ctrl + C 会停止控制台中的信息，但不会关闭模拟器。这样，您无需重启模拟器，也能可以继续测试新更改。</p>
+<p>如果事先知道要使用哪个 iOS 模拟器，可以通过提供 <code>-d</code>（或 <code>--device</code>）选项告诉 Briefcase 使用该模拟器。使用创建应用程序时选择的设备名称，运行:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (第3代)&quot;</span>
 </code></pre></div>
 <p>如果你有多个 iOS 版本，Briefcase 会选择最高的 iOS 版本；如果你想选择某个 iOS 版本，你可以告诉它使用该特定版本：</p>

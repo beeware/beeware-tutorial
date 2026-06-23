@@ -1660,8 +1660,7 @@ aria-label="頁首"
 
 <h1 id="5-android">教學 5 - 行動裝置：Android<a class="headerlink" href="#5-android" title="Permanent link">&para;</a></h1>
 <p>現在，我們將獲取我們的應用程序，並將其部署為 Android 應用程式。</p>
-<p>將應用程式部署到 Android 的過程與部署為桌面應用程式的過程非常相似。 Briefcase 負責安裝 Android 依賴項，包括 Android
-SDK、Android 模擬器和 Java 編譯器。</p>
+<p>將應用程式部署到 Android 的過程與部署為桌面應用程式的過程非常相似。 Briefcase 負責安裝 Android 依賴項，包括 Android SDK、Android 模擬器和 Java 編譯器。</p>
 <h2 id="android">創建一個 Android 應用程式並編譯它<a class="headerlink" href="#android" title="Permanent link">&para;</a></h2>
 <p>首先，執行<code>create</code>命令。這將下載 Android 應用程式模板並向其中添加您的 Python 程式碼。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
@@ -1743,11 +1742,8 @@ SDK、Android 模擬器和 Java 編譯器。</p>
 </div>
 </div>
 </div>
-<p>當您第一次執行<code>briefcase create android</code>時，Briefcase 會下載 Java JDK 和 Android
-SDK。文件大小和下載時間可能相當大；這可能需要一段時間（10 分鐘或更長時間，具體取決於您的 Internet 連線速度）。下載完成後，系統會提示您接受
-Google 的 Android SDK 授權。</p>
-<p>完成後，我們的專案中將有一個 <code>build\helloworld\android\gradle</code> 目錄，其中包含具有 Gradle 建置配置的 Android
-專案。該專案將包含您的應用程式程式碼以及包含 Python 解釋器的支援套件。</p>
+<p>當您第一次執行<code>briefcase create android</code>時，Briefcase 會下載 Java JDK 和 Android SDK。文件大小和下載時間可能相當大；這可能需要一段時間（10 分鐘或更長時間，具體取決於您的 Internet 連線速度）。下載完成後，系統會提示您接受 Google 的 Android SDK 授權。</p>
+<p>完成後，我們的專案中將有一個 <code>build\helloworld\android\gradle</code> 目錄，其中包含具有 Gradle 建置配置的 Android 專案。該專案將包含您的應用程式程式碼以及包含 Python 解釋器的支援套件。</p>
 <p>然後我們可以使用 Briefcase 的 <code>build</code> 命令將其編譯成 Android APK 應用程式檔案。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
@@ -1803,15 +1799,11 @@ Google 的 Android SDK 授權。</p>
 </div>
 <div class="admonition">
 <p class="admonition-title">Gradle 可能看起來卡住了</p>
-<p>在<code>briefcase build android</code>步驟中，Gradle（Android 平台建置工具）將列印<code>CONFIGURING:
-100%</code>，似乎什麼也沒做。別擔心，它並沒有卡住 - 它正在下載更多 Android SDK 組件。根據您的網路連線速度，這可能還需要 10
-分鐘（或更長）。這種滯後應該只在你第一次執行<code>build</code>時發生；這些工具會被緩存，並且在您的下一個建置中，將使用快取的版本。</p>
+<p>在<code>briefcase build android</code>步驟中，Gradle（Android 平台建置工具）將列印<code>CONFIGURING: 100%</code>，似乎什麼也沒做。別擔心，它並沒有卡住 - 它正在下載更多 Android SDK 組件。根據您的網路連線速度，這可能還需要 10 分鐘（或更長）。這種滯後應該只在你第一次執行<code>build</code>時發生；這些工具會被緩存，並且在您的下一個建置中，將使用快取的版本。</p>
 </div>
 <h2 id="_1">在虛擬設備上運行應用程式<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>現在我們已經準備好運行我們的應用程式了。您可以使用 Briefcase 的<code>run</code>命令在 Android 裝置上執行該應用程式。讓我們從在 Android
-模擬器上運行開始。</p>
-<p>要運行您的應用程序，請運行<code>briefcase run android</code>。當您執行此操作時，系統會提示您提供可以執行該應用程式的裝置清單。最後一項始終是建立新
-Android 模擬器的選項。</p>
+<p>現在我們已經準備好運行我們的應用程式了。您可以使用 Briefcase 的<code>run</code>命令在 Android 裝置上執行該應用程式。讓我們從在 Android 模擬器上運行開始。</p>
+<p>要運行您的應用程序，請運行<code>briefcase run android</code>。當您執行此操作時，系統會提示您提供可以執行該應用程式的裝置清單。最後一項始終是建立新 Android 模擬器的選項。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1870,9 +1862,7 @@ Android 模擬器的選項。</p>
 </figure>
 <div class="admonition">
 <p class="admonition-title">模擬器沒有啟動！</p>
-<p>Android 模擬器是一款複雜的軟體，依賴許多硬體和作業系統功能 - 這些功能在舊機器上可能無法使用或啟用。如果您在啟動 Android
-模擬器時遇到任何困難，請參閱 Android 開發人員文件的
-<a href="https://developer.android.com/studio/run/emulator#requirements">要求與建議</a> 部分。</p>
+<p>Android 模擬器是一款複雜的軟體，依賴許多硬體和作業系統功能 - 這些功能在舊機器上可能無法使用或啟用。如果您在啟動 Android 模擬器時遇到任何困難，請參閱 Android 開發人員文件的 <a href="https://developer.android.com/studio/run/emulator#requirements">要求與建議</a> 部分。</p>
 </div>
 <p>應用程式第一次啟動時，需要將自身解壓縮到裝置上。這可能需要幾秒鐘。解壓縮後，您將看到我們桌面應用程式的 Android 版本：</p>
 <figure>
@@ -1882,10 +1872,8 @@ Android 模擬器的選項。</p>
 </figcaption>
 </figure>
 <p>如果您無法看到應用程式啟動，您可能需要檢查執行<code>briefcase run</code>的終端並查找任何錯誤訊息。</p>
-<p>當應用程式執行時，您會在控制台中看到大量的訊息流。這是來自模擬器的應用程式日誌串流。在終端機中輸入 Ctrl+C
-將停止控制台中的串流資訊，但不會關閉模擬器。這樣您就可以測試新的變更，而無需重新啟動模擬器。</p>
-<p>將來，如果您想在該裝置上運行而不使用選單，您可以將模擬器的名稱提供給Briefcase，使用<code>briefcase run android -d
-@beePhone</code>直接在虛擬裝置上執行。</p>
+<p>當應用程式執行時，您會在控制台中看到大量的訊息流。這是來自模擬器的應用程式日誌串流。在終端機中輸入 Ctrl+C 將停止控制台中的串流資訊，但不會關閉模擬器。這樣您就可以測試新的變更，而無需重新啟動模擬器。</p>
+<p>將來，如果您想在該裝置上運行而不使用選單，您可以將模擬器的名稱提供給Briefcase，使用<code>briefcase run android -d @beePhone</code>直接在虛擬裝置上執行。</p>
 <h2 id="_2">在物理設備上運行應用程式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>如果您有實體 Android 手機或平板電腦，則可以使用 USB 電纜將其連接到計算機，然後使用公文包定位您的實體設備。</p>
 <p>Android 要求您先準備好設備，然後才能用於開發。您需要對裝置上的選項進行 2 項變更：</p>
@@ -1893,8 +1881,7 @@ Android 模擬器的選項。</p>
 <li>啟用開發者選項</li>
 <li>啟用USB調試</li>
 </ul>
-<p>有關如何進行這些更改的詳細信息，請參閱 <a href="https://developer.android.com/studio/debug/dev-options#enable">Android
-開發人員文件</a>。</p>
+<p>有關如何進行這些更改的詳細信息，請參閱 <a href="https://developer.android.com/studio/debug/dev-options#enable">Android 開發人員文件</a>。</p>
 <p>完成這些步驟後，當您執行<code>briefcase run android</code>時，您的裝置應該會出現在可用裝置清單中。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
@@ -1936,15 +1923,11 @@ Android 模擬器的選項。</p>
 </div>
 </div>
 </div>
-<p>在這裡，我們可以在部署清單中看到一個新的實體設備及其序號 - 在本例中為 Pixel
-3a。將來，如果您想在該裝置上運行而不使用選單，您可以向Briefcase提供手機的序號（在本例中為<code>briefcase run android -d
-94ZZY0LNE8</code>）。這將直接在設備上運行，無需提示。</p>
+<p>在這裡，我們可以在部署清單中看到一個新的實體設備及其序號 - 在本例中為 Pixel 3a。將來，如果您想在該裝置上運行而不使用選單，您可以向Briefcase提供手機的序號（在本例中為<code>briefcase run android -d 94ZZY0LNE8</code>）。這將直接在設備上運行，無需提示。</p>
 <div class="admonition">
 <p class="admonition-title">我的裝置沒有出現！</p>
 <p>如果您的裝置完全沒有出現在此清單中，則可能是您尚未啟用 USB 偵錯（或裝置未插入！）。</p>
-<p>如果您的裝置出現，但被列為<code>未知裝置（未授權開發）</code>，則表示開發者模式尚未正確啟用。重新執行
-<a href="https://developer.android.com/studio/debug/dev-options#enable">啟用開發人員選項的步驟</a>，並重新執行`briefcase
-run android``。</p>
+<p>如果您的裝置出現，但被列為<code>未知裝置（未授權開發）</code>，則表示開發者模式尚未正確啟用。重新執行 <a href="https://developer.android.com/studio/debug/dev-options#enable">啟用開發人員選項的步驟</a>，並重新執行`briefcase run android``。</p>
 </div>
 <h2 id="_3">下一步<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>我們現在已經在手機上安裝了應用程式！還有其他地方可以部署BeeWare應用程式嗎？請參考 <a href="../../tutorial-6/">教學 6</a> 來找出答案&hellip;</p>

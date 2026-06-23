@@ -662,8 +662,7 @@ aria-label="Intestazione"
 
   <!-- Typeset title -->
   
-    Esercitazione 3 - Confezionamento per la
-  distribuzione
+    Esercitazione 3 - Confezionamento per la distribuzione
   
 
 
@@ -1680,43 +1679,14 @@ aria-label="Intestazione"
 
 
 <h1 id="esercitazione-8-renderlo-liscio">Esercitazione 8 - Renderlo liscio<a class="headerlink" href="#esercitazione-8-renderlo-liscio" title="Permanent link">&para;</a></h1>
-<p>Finora, la nostra applicazione è stata relativamente semplice: visualizzare i
-widget dell'interfaccia grafica, richiamare una semplice libreria di terze parti
-e visualizzare l'output in una finestra di dialogo. Tutte queste operazioni
-avvengono molto rapidamente e l'applicazione rimane reattiva.</p>
-<p>Tuttavia, in un'applicazione del mondo reale, avremo bisogno di eseguire compiti
-complessi o calcoli che potrebbero richiedere un po' di tempo per essere
-completati e, mentre questi compiti vengono eseguiti, vogliamo che la nostra
-applicazione rimanga reattiva. Facciamo una modifica alla nostra applicazione
-che potrebbe richiedere un po' di tempo per essere completata e vediamo le
-modifiche da apportare per adattarla a questo comportamento.</p>
+<p>Finora, la nostra applicazione è stata relativamente semplice: visualizzare i widget dell'interfaccia grafica, richiamare una semplice libreria di terze parti e visualizzare l'output in una finestra di dialogo. Tutte queste operazioni avvengono molto rapidamente e l'applicazione rimane reattiva.</p>
+<p>Tuttavia, in un'applicazione del mondo reale, avremo bisogno di eseguire compiti complessi o calcoli che potrebbero richiedere un po' di tempo per essere completati e, mentre questi compiti vengono eseguiti, vogliamo che la nostra applicazione rimanga reattiva. Facciamo una modifica alla nostra applicazione che potrebbe richiedere un po' di tempo per essere completata e vediamo le modifiche da apportare per adattarla a questo comportamento.</p>
 <h2 id="accesso-a-unapi">Accesso a un'API<a class="headerlink" href="#accesso-a-unapi" title="Permanent link">&para;</a></h2>
-<p>Un'attività comune che richiede molto tempo per un'applicazione è quella di
-effettuare una richiesta a un'API Web per recuperare dati e visualizzarli
-all'utente. Le API Web a volte impiegano uno o due secondi per rispondere,
-quindi se stiamo chiamando un'API di questo tipo, dobbiamo assicurarci che la
-nostra applicazione non diventi non reattiva mentre aspettiamo che l'API Web
-restituisca una risposta.</p>
-<p>Si tratta di un'app giocattolo, quindi non abbiamo una API <em>reale</em> con cui
-lavorare, quindi useremo un endpoint API di esempio come fonte di dati. Se apri
-<a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a>
-nel tuo browser, otterrai un payload JSON con un messaggio.</p>
-<p>La libreria standard di Python contiene tutti gli strumenti necessari per
-accedere a un'API. Tuttavia, le API integrate sono di livello molto basso. Sono
-buone implementazioni del protocollo HTTP, ma richiedono all'utente di gestire
-molti dettagli di basso livello, come il reindirizzamento degli URL, le
-sessioni, l'autenticazione e la codifica del payload. Come "normale utente di
-browser", probabilmente siete abituati a dare per scontati questi dettagli,
-poiché il browser li gestisce per voi.</p>
-<p>Di conseguenza, sono state sviluppate librerie di terze parti che racchiudono le
-API integrate e forniscono un'API più semplice, più vicina all'esperienza
-quotidiana di navigazione. Useremo una di queste librerie, chiamata
-<a href="https://www.python-httpx.org"><code>httpx</code></a>, per accedere a una semplice API.</p>
-<p>Aggiungiamo una chiamata API <code>httpx</code> alla nostra app. Innanzitutto, come con
-<code>faker</code> nel <a href="../tutorial-7/">passaggio precedente</a>, dobbiamo indicare a briefcase
-di installare <code>httpx</code> durante la compilazione della nostra app. Modifica
-l'impostazione <code>requires</code> nel nostro <code>pyproject.toml</code> per includere il nuovo
-requisito:</p>
+<p>Un'attività comune che richiede molto tempo per un'applicazione è quella di effettuare una richiesta a un'API Web per recuperare dati e visualizzarli all'utente. Le API Web a volte impiegano uno o due secondi per rispondere, quindi se stiamo chiamando un'API di questo tipo, dobbiamo assicurarci che la nostra applicazione non diventi non reattiva mentre aspettiamo che l'API Web restituisca una risposta.</p>
+<p>Si tratta di un'app giocattolo, quindi non abbiamo una API <em>reale</em> con cui lavorare, quindi useremo un endpoint API di esempio come fonte di dati. Se apri <a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a> nel tuo browser, otterrai un payload JSON con un messaggio.</p>
+<p>La libreria standard di Python contiene tutti gli strumenti necessari per accedere a un'API. Tuttavia, le API integrate sono di livello molto basso. Sono buone implementazioni del protocollo HTTP, ma richiedono all'utente di gestire molti dettagli di basso livello, come il reindirizzamento degli URL, le sessioni, l'autenticazione e la codifica del payload. Come "normale utente di browser", probabilmente siete abituati a dare per scontati questi dettagli, poiché il browser li gestisce per voi.</p>
+<p>Di conseguenza, sono state sviluppate librerie di terze parti che racchiudono le API integrate e forniscono un'API più semplice, più vicina all'esperienza quotidiana di navigazione. Useremo una di queste librerie, chiamata <a href="https://www.python-httpx.org"><code>httpx</code></a>, per accedere a una semplice API.</p>
+<p>Aggiungiamo una chiamata API <code>httpx</code> alla nostra app. Innanzitutto, come con <code>faker</code> nel <a href="../tutorial-7/">passaggio precedente</a>, dobbiamo indicare a briefcase di installare <code>httpx</code> durante la compilazione della nostra app. Modifica l'impostazione <code>requires</code> nel nostro <code>pyproject.toml</code> per includere il nuovo requisito:</p>
 <div class="highlight"><pre><span></span><code><span class="n">richiede</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;faker&quot;</span><span class="p">,</span>
     <span class="s2">&quot;httpx&quot;</span><span class="p">,</span>
@@ -1725,8 +1695,7 @@ requisito:</p>
 <p>Aggiungere un'importazione all'inizio di <code>app.py</code> per importare <code>httpx</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
 </code></pre></div>
-<p>Per rendere il nostro tutorial asincrono, modificare il gestore dell'evento
-<code>say_hello()</code> in modo che assomigli a questo:</p>
+<p>Per rendere il nostro tutorial asincrono, modificare il gestore dell'evento <code>say_hello()</code> in modo che assomigli a questo:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
@@ -1741,20 +1710,14 @@ requisito:</p>
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Questo modificherà il callback <code>say_hello()</code> in modo che, quando viene invocato,
-lo faccia:</p>
+<p>Questo modificherà il callback <code>say_hello()</code> in modo che, quando viene invocato, lo faccia:</p>
 <ul>
-<li>effettuare una richiesta GET sull'API del tutorial per recuperare un
-  messaggio;</li>
+<li>effettuare una richiesta GET sull'API del tutorial per recuperare un messaggio;</li>
 <li>decodificare la risposta come JSON;</li>
 <li>estrarre il corpo del messaggio; e</li>
-<li>includere il corpo di quel messaggio come testo della finestra di dialogo, al
-  posto del testo generato da Faker.</li>
+<li>includere il corpo di quel messaggio come testo della finestra di dialogo, al posto del testo generato da Faker.</li>
 </ul>
-<p>Eseguiamo la nostra applicazione aggiornata in modalità sviluppatore di
-Briefcase per verificare che la nostra modifica abbia funzionato. Poiché abbiamo
-aggiunto un nuovo requisito, dobbiamo dire alla modalità sviluppatore di
-reinstallare i requisiti, usando l'argomento <code>-r</code>:</p>
+<p>Eseguiamo la nostra applicazione aggiornata in modalità sviluppatore di Briefcase per verificare che la nostra modifica abbia funzionato. Poiché abbiamo aggiunto un nuovo requisito, dobbiamo dire alla modalità sviluppatore di reinstallare i requisiti, usando l'argomento <code>-r</code>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1765,8 +1728,7 @@ reinstallare i requisiti, usando l'argomento <code>-r</code>:</p>
 <span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una
-finestra di dialogo simile a questa:</p>
+<p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una finestra di dialogo simile a questa:</p>
 <figure>
 <p><img alt="Esercitazione Hello World 8, su macOS" src="../../images/macOS/tutorial-8.png" /></p>
 <figcaption></figcaption>
@@ -1780,8 +1742,7 @@ finestra di dialogo simile a questa:</p>
 <span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una
-finestra di dialogo simile a questa:</p>
+<p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una finestra di dialogo simile a questa:</p>
 <figure>
 <p><img alt="Esercitazione Hello World 8, su Linux" src="../../images/linux/tutorial-8.png" /></p>
 <figcaption></figcaption>
@@ -1795,102 +1756,43 @@ finestra di dialogo simile a questa:</p>
 <span class="go">[helloworld] Avvio in modalità dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una
-finestra di dialogo simile a questa:</p>
+<p>Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una finestra di dialogo simile a questa:</p>
 <figure>
-<p><img alt="Finestra di dialogo Hello World Tutorial 8, su
-Windows" src="../../images/windows/tutorial-8.png" /></p>
+<p><img alt="Finestra di dialogo Hello World Tutorial 8, su Windows" src="../../images/windows/tutorial-8.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Non è possibile eseguire un'applicazione Android in modalità sviluppatore:
-utilizzare le istruzioni per la piattaforma desktop scelta.</p>
+<p>Non è possibile eseguire un'applicazione Android in modalità sviluppatore: utilizzare le istruzioni per la piattaforma desktop scelta.</p>
 </div>
 <div class="tabbed-block">
-<p>Non è possibile eseguire un'app per iOS in modalità sviluppatore: utilizzare le
-istruzioni per la piattaforma desktop scelta.</p>
+<p>Non è possibile eseguire un'app per iOS in modalità sviluppatore: utilizzare le istruzioni per la piattaforma desktop scelta.</p>
 </div>
 </div>
 </div>
-<p>A meno che non abbiate una connessione a Internet <em>molto</em> veloce, potreste
-notare che quando premete il pulsante, l'interfaccia grafica dell'applicazione
-si blocca per un po'. Il sistema operativo può anche manifestarlo con un cursore
-"beachball" o "spinner" per indicare che l'applicazione non risponde.</p>
-<p>A meno che non si disponga di una connessione Internet <em>molto</em> veloce, si
-potrebbe notare che quando si preme il pulsante, l'interfaccia grafica
-dell'applicazione si blocca per un po'. Questo perché la richiesta web che
-abbiamo fatto è <em>sincrona</em>. Quando l'applicazione effettua la richiesta web,
-attende che l'API restituisca una risposta prima di continuare. Mentre aspetta,
-non permette all'applicazione di ridisegnare e di conseguenza l'applicazione si
-blocca.</p>
+<p>A meno che non abbiate una connessione a Internet <em>molto</em> veloce, potreste notare che quando premete il pulsante, l'interfaccia grafica dell'applicazione si blocca per un po'. Il sistema operativo può anche manifestarlo con un cursore "beachball" o "spinner" per indicare che l'applicazione non risponde.</p>
+<p>A meno che non si disponga di una connessione Internet <em>molto</em> veloce, si potrebbe notare che quando si preme il pulsante, l'interfaccia grafica dell'applicazione si blocca per un po'. Questo perché la richiesta web che abbiamo fatto è <em>sincrona</em>. Quando l'applicazione effettua la richiesta web, attende che l'API restituisca una risposta prima di continuare. Mentre aspetta, non permette all'applicazione di ridisegnare e di conseguenza l'applicazione si blocca.</p>
 <h2 id="loop-di-eventi-della-gui">Loop di eventi della GUI<a class="headerlink" href="#loop-di-eventi-della-gui" title="Permanent link">&para;</a></h2>
-<p>Per capire perché questo accade, dobbiamo entrare nei dettagli del funzionamento
-di un'applicazione GUI. Le specifiche variano a seconda della piattaforma, ma i
-concetti di alto livello sono gli stessi, indipendentemente dalla piattaforma o
-dall'ambiente GUI utilizzato.</p>
+<p>Per capire perché questo accade, dobbiamo entrare nei dettagli del funzionamento di un'applicazione GUI. Le specifiche variano a seconda della piattaforma, ma i concetti di alto livello sono gli stessi, indipendentemente dalla piattaforma o dall'ambiente GUI utilizzato.</p>
 <p>Un'applicazione GUI è, fondamentalmente, un singolo ciclo che assomiglia a:</p>
 <div class="highlight"><pre><span></span><code><span class="n">finché</span> <span class="n">non</span> <span class="n">viene</span> <span class="n">chiamato</span> <span class="n">app</span><span class="o">.</span><span class="n">quit_requested</span><span class="p">():</span>
     <span class="n">app</span><span class="o">.</span><span class="n">process_events</span><span class="p">()</span>
     <span class="n">app</span><span class="o">.</span><span class="n">redraw</span><span class="p">()</span>
 </code></pre></div>
-<p>Questo ciclo è chiamato <em>Event Loop</em>. (Non si tratta di nomi di metodi reali, ma
-di un'illustrazione di ciò che avviene in "pseudo-codice").</p>
-<p>Quando si fa clic su un pulsante, si trascina una barra di scorrimento o si
-digita un tasto, si genera un "evento". Questo "evento" viene inserito in una
-coda e l'applicazione elaborerà la coda di eventi quando ne avrà l'opportunità.
-Il codice utente che viene attivato in risposta all'evento è chiamato <em>gestore
-di eventi</em>. Questi gestori di eventi vengono invocati come parte della chiamata
-<code>process_events()</code>.</p>
-<p>Una volta che un'applicazione ha elaborato tutti gli eventi disponibili, essa
-<code>ridisegna()</code> la GUI. Questa operazione tiene conto di tutti i cambiamenti che
-gli eventi hanno causato alla visualizzazione dell'applicazione, nonché di
-qualsiasi altra cosa stia accadendo nel sistema operativo: ad esempio, le
-finestre di un'altra applicazione possono oscurare o rivelare parte della
-finestra della nostra applicazione, e il ridisegno della nostra applicazione
-dovrà riflettere la porzione di finestra attualmente visibile.</p>
-<p>Il dettaglio importante da notare: mentre un'applicazione sta elaborando un
-evento, <em>non può ridisegnare</em> e <em>non può elaborare altri eventi</em>.</p>
-<p>Ciò significa che qualsiasi logica utente contenuta in un gestore di eventi deve
-essere completata rapidamente. Qualsiasi ritardo nel completamento del gestore
-di eventi sarà osservato dall'utente come un rallentamento (o un arresto) degli
-aggiornamenti della GUI. Se il ritardo è sufficientemente lungo, il sistema
-operativo può segnalarlo come un problema: le icone "beachball" di macOS e
-"spinner" di Windows indicano che l'applicazione sta impiegando troppo tempo in
-un gestore di eventi.</p>
-<p>Operazioni semplici come "aggiornare un'etichetta" o "ricalcolare il totale
-degli input" sono facili da completare rapidamente. Tuttavia, ci sono molte
-operazioni che non possono essere completate rapidamente. Se si sta eseguendo un
-calcolo matematico complesso, o l'indicizzazione di tutti i file di un file
-system, o l'esecuzione di una richiesta di rete di grandi dimensioni, non è
-possibile "farlo rapidamente": le operazioni sono intrinsecamente lente.</p>
+<p>Questo ciclo è chiamato <em>Event Loop</em>. (Non si tratta di nomi di metodi reali, ma di un'illustrazione di ciò che avviene in "pseudo-codice").</p>
+<p>Quando si fa clic su un pulsante, si trascina una barra di scorrimento o si digita un tasto, si genera un "evento". Questo "evento" viene inserito in una coda e l'applicazione elaborerà la coda di eventi quando ne avrà l'opportunità. Il codice utente che viene attivato in risposta all'evento è chiamato <em>gestore di eventi</em>. Questi gestori di eventi vengono invocati come parte della chiamata <code>process_events()</code>.</p>
+<p>Una volta che un'applicazione ha elaborato tutti gli eventi disponibili, essa <code>ridisegna()</code> la GUI. Questa operazione tiene conto di tutti i cambiamenti che gli eventi hanno causato alla visualizzazione dell'applicazione, nonché di qualsiasi altra cosa stia accadendo nel sistema operativo: ad esempio, le finestre di un'altra applicazione possono oscurare o rivelare parte della finestra della nostra applicazione, e il ridisegno della nostra applicazione dovrà riflettere la porzione di finestra attualmente visibile.</p>
+<p>Il dettaglio importante da notare: mentre un'applicazione sta elaborando un evento, <em>non può ridisegnare</em> e <em>non può elaborare altri eventi</em>.</p>
+<p>Ciò significa che qualsiasi logica utente contenuta in un gestore di eventi deve essere completata rapidamente. Qualsiasi ritardo nel completamento del gestore di eventi sarà osservato dall'utente come un rallentamento (o un arresto) degli aggiornamenti della GUI. Se il ritardo è sufficientemente lungo, il sistema operativo può segnalarlo come un problema: le icone "beachball" di macOS e "spinner" di Windows indicano che l'applicazione sta impiegando troppo tempo in un gestore di eventi.</p>
+<p>Operazioni semplici come "aggiornare un'etichetta" o "ricalcolare il totale degli input" sono facili da completare rapidamente. Tuttavia, ci sono molte operazioni che non possono essere completate rapidamente. Se si sta eseguendo un calcolo matematico complesso, o l'indicizzazione di tutti i file di un file system, o l'esecuzione di una richiesta di rete di grandi dimensioni, non è possibile "farlo rapidamente": le operazioni sono intrinsecamente lente.</p>
 <p>Quindi, come si eseguono operazioni di lunga durata in un'applicazione GUI?</p>
 <h2 id="programmazione-asincrona">Programmazione asincrona<a class="headerlink" href="#programmazione-asincrona" title="Permanent link">&para;</a></h2>
-<p>Abbiamo bisogno di un modo per dire a un'applicazione, nel mezzo di un gestore
-di eventi di lunga durata, che va bene rilasciare temporaneamente il controllo
-al ciclo di eventi, a patto che si possa riprendere da dove si era interrotto.
-Spetta all'applicazione determinare quando questo rilascio può avvenire; ma se
-l'applicazione rilascia regolarmente il controllo al ciclo di eventi, possiamo
-avere un gestore di eventi di lunga durata <em>e</em> mantenere un'interfaccia utente
-reattiva.</p>
-<p>È possibile farlo utilizzando la <em>programmazione asincrona</em>. La programmazione
-asincrona è un modo per descrivere un programma che consente all'interprete di
-eseguire più funzioni contemporaneamente, condividendo le risorse tra tutte le
-funzioni in esecuzione simultanea.</p>
-<p>Le funzioni asincrone (note come <em>co-routine</em>) devono essere dichiarate
-esplicitamente come asincrone. Inoltre, devono dichiarare internamente quando
-esiste la possibilità di cambiare contesto a un'altra co-routine.</p>
-<p>In Python, la programmazione asincrona è implementata utilizzando le parole
-chiave <code>async</code> e <code>await</code> e il modulo
-<a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> della libreria
-standard. La parola chiave <code>async</code> ci permette di dichiarare che una funzione è
-una co-routine asincrona. La parola chiave <code>await</code> fornisce un modo per
-dichiarare quando esiste l'opportunità di cambiare contesto a un'altra
-co-routine. Il modulo <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a>
-fornisce altri strumenti e primitive utili per la codifica asincrona.</p>
+<p>Abbiamo bisogno di un modo per dire a un'applicazione, nel mezzo di un gestore di eventi di lunga durata, che va bene rilasciare temporaneamente il controllo al ciclo di eventi, a patto che si possa riprendere da dove si era interrotto. Spetta all'applicazione determinare quando questo rilascio può avvenire; ma se l'applicazione rilascia regolarmente il controllo al ciclo di eventi, possiamo avere un gestore di eventi di lunga durata <em>e</em> mantenere un'interfaccia utente reattiva.</p>
+<p>È possibile farlo utilizzando la <em>programmazione asincrona</em>. La programmazione asincrona è un modo per descrivere un programma che consente all'interprete di eseguire più funzioni contemporaneamente, condividendo le risorse tra tutte le funzioni in esecuzione simultanea.</p>
+<p>Le funzioni asincrone (note come <em>co-routine</em>) devono essere dichiarate esplicitamente come asincrone. Inoltre, devono dichiarare internamente quando esiste la possibilità di cambiare contesto a un'altra co-routine.</p>
+<p>In Python, la programmazione asincrona è implementata utilizzando le parole chiave <code>async</code> e <code>await</code> e il modulo <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> della libreria standard. La parola chiave <code>async</code> ci permette di dichiarare che una funzione è una co-routine asincrona. La parola chiave <code>await</code> fornisce un modo per dichiarare quando esiste l'opportunità di cambiare contesto a un'altra co-routine. Il modulo <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> fornisce altri strumenti e primitive utili per la codifica asincrona.</p>
 <h2 id="rendere-lesercitazione-asincrona">Rendere l'esercitazione asincrona<a class="headerlink" href="#rendere-lesercitazione-asincrona" title="Permanent link">&para;</a></h2>
-<p>Per rendere il nostro tutorial asincrono, modificare il gestore dell'evento
-<code>say_hello()</code> in modo che assomigli a questo:</p>
+<p>Per rendere il nostro tutorial asincrono, modificare il gestore dell'evento <code>say_hello()</code> in modo che assomigli a questo:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
     <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
@@ -1907,48 +1809,20 @@ fornisce altri strumenti e primitive utili per la codifica asincrona.</p>
 </code></pre></div>
 <p>In questo codice ci sono solo 4 modifiche rispetto alla versione precedente:</p>
 <ol>
-<li>Il client creato è un asincrono <code>AsyncClient()</code>, invece di un sincrono
-   <code>Client()</code>. Questo indica a <code>httpx</code> che deve operare in modalità asincrona,
-   anziché sincrona.</li>
-<li>Il gestore di contesto usato per creare il client è contrassegnato come
-   <code>async</code>. Questo indica a Python che c'è l'opportunità di rilasciare il
-   controllo quando il gestore di contesto viene inserito e abbandonato.</li>
-<li>La chiamata <code>get</code> viene effettuata con la parola chiave <code>await</code>. Questa
-   parola indica all'applicazione che, mentre si attende la risposta dalla rete,
-   l'applicazione può rilasciare il controllo al ciclo degli eventi. Abbiamo già
-   visto questa parola chiave in passato: usiamo <code>await</code> anche quando
-   visualizziamo la finestra di dialogo. Il motivo di questo utilizzo è lo
-   stesso della richiesta HTTP: dobbiamo dire all'applicazione che mentre la
-   finestra di dialogo è visualizzata e stiamo aspettando che l'utente prema un
-   pulsante, è possibile rilasciare il controllo al ciclo degli eventi.</li>
+<li>Il client creato è un asincrono <code>AsyncClient()</code>, invece di un sincrono <code>Client()</code>. Questo indica a <code>httpx</code> che deve operare in modalità asincrona, anziché sincrona.</li>
+<li>Il gestore di contesto usato per creare il client è contrassegnato come <code>async</code>. Questo indica a Python che c'è l'opportunità di rilasciare il controllo quando il gestore di contesto viene inserito e abbandonato.</li>
+<li>La chiamata <code>get</code> viene effettuata con la parola chiave <code>await</code>. Questa parola indica all'applicazione che, mentre si attende la risposta dalla rete, l'applicazione può rilasciare il controllo al ciclo degli eventi. Abbiamo già visto questa parola chiave in passato: usiamo <code>await</code> anche quando visualizziamo la finestra di dialogo. Il motivo di questo utilizzo è lo stesso della richiesta HTTP: dobbiamo dire all'applicazione che mentre la finestra di dialogo è visualizzata e stiamo aspettando che l'utente prema un pulsante, è possibile rilasciare il controllo al ciclo degli eventi.</li>
 </ol>
-<p>È anche importante notare che il gestore stesso è definito come <code>async def</code>,
-anziché semplicemente <code>def</code>. Questo indica a Python che il metodo è una
-coroutine asincrona. Abbiamo apportato questa modifica nell'esercitazione 3,
-quando abbiamo aggiunto la finestra di dialogo. È possibile utilizzare le
-istruzioni <code>await</code> solo all'interno di un metodo dichiarato come <code>async def</code>.</p>
-<p>Toga consente di utilizzare metodi regolari o co-routine asincrone come gestori;
-Toga gestisce tutto dietro le quinte per assicurarsi che il gestore sia invocato
-o atteso come richiesto.</p>
-<p>Se si salvano queste modifiche e si esegue nuovamente l'applicazione (con
-<code>briefcase dev</code> in modalità di sviluppo, oppure aggiornando ed eseguendo
-nuovamente l'applicazione confezionata), non ci saranno cambiamenti evidenti
-nell'applicazione. Tuttavia, quando si fa clic sul pulsante per attivare la
-finestra di dialogo, si possono notare alcuni sottili miglioramenti:</p>
+<p>È anche importante notare che il gestore stesso è definito come <code>async def</code>, anziché semplicemente <code>def</code>. Questo indica a Python che il metodo è una coroutine asincrona. Abbiamo apportato questa modifica nell'esercitazione 3, quando abbiamo aggiunto la finestra di dialogo. È possibile utilizzare le istruzioni <code>await</code> solo all'interno di un metodo dichiarato come <code>async def</code>.</p>
+<p>Toga consente di utilizzare metodi regolari o co-routine asincrone come gestori; Toga gestisce tutto dietro le quinte per assicurarsi che il gestore sia invocato o atteso come richiesto.</p>
+<p>Se si salvano queste modifiche e si esegue nuovamente l'applicazione (con <code>briefcase dev</code> in modalità di sviluppo, oppure aggiornando ed eseguendo nuovamente l'applicazione confezionata), non ci saranno cambiamenti evidenti nell'applicazione. Tuttavia, quando si fa clic sul pulsante per attivare la finestra di dialogo, si possono notare alcuni sottili miglioramenti:</p>
 <ul>
-<li>Il pulsante torna a uno stato "non cliccato", anziché essere bloccato in uno
-  stato "cliccato".</li>
+<li>Il pulsante torna a uno stato "non cliccato", anziché essere bloccato in uno stato "cliccato".</li>
 <li>L'icona "beachball"/"spinner" non appare.</li>
-<li>Se si sposta/ridimensiona la finestra dell'applicazione mentre si attende la
-  visualizzazione della finestra di dialogo, la finestra verrà ridisegnata.</li>
-<li>Se si tenta di aprire il menu di un'applicazione, il menu viene visualizzato
-  immediatamente.</li>
+<li>Se si sposta/ridimensiona la finestra dell'applicazione mentre si attende la visualizzazione della finestra di dialogo, la finestra verrà ridisegnata.</li>
+<li>Se si tenta di aprire il menu di un'applicazione, il menu viene visualizzato immediatamente.</li>
 </ul>
-<p>Ora possiamo eseguire l'applicazione completa. Tuttavia, poiché abbiamo aggiunto
-un requisito in più (<code>httpx</code>), dobbiamo anche aggiornare i requisiti della
-nostra applicazione; possiamo farlo passando <code>-r</code> a <code>briefcase run</code>. Questo
-aggiornerà i requisiti dell'applicazione, quindi ricostruirà l'applicazione e la
-lancerà:</p>
+<p>Ora possiamo eseguire l'applicazione completa. Tuttavia, poiché abbiamo aggiunto un requisito in più (<code>httpx</code>), dobbiamo anche aggiornare i requisiti della nostra applicazione; possiamo farlo passando <code>-r</code> a <code>briefcase run</code>. Questo aggiornerà i requisiti dell'applicazione, quindi ricostruirà l'applicazione e la lancerà:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1973,16 +1847,13 @@ lancerà:</p>
 </div>
 </div>
 </div>
-<p>L'applicazione dovrebbe essere in esecuzione e rimanere reattiva quando si preme
-il pulsante e viene recuperato il contenuto della rete.</p>
+<p>L'applicazione dovrebbe essere in esecuzione e rimanere reattiva quando si preme il pulsante e viene recuperato il contenuto della rete.</p>
 <h2 id="prossimi-passi">Prossimi passi<a class="headerlink" href="#prossimi-passi" title="Permanent link">&para;</a></h2>
-<p>Questo è stato un assaggio di ciò che si può fare con gli strumenti forniti dal
-progetto BeeWare. Nel corso di questa esercitazione, avete:</p>
+<p>Questo è stato un assaggio di ciò che si può fare con gli strumenti forniti dal progetto BeeWare. Nel corso di questa esercitazione, avete:</p>
 <ul>
 <li>Creato un nuovo progetto di applicazione GUI;</li>
 <li>Eseguire l'applicazione in modalità sviluppatore</li>
-<li>L'applicazione è stata realizzata come binario autonomo per un sistema
-  operativo desktop;</li>
+<li>L'applicazione è stata realizzata come binario autonomo per un sistema operativo desktop;</li>
 <li>Ha confezionato il progetto per distribuirlo ad altri;</li>
 <li>Eseguire l'applicazione su un simulatore e/o dispositivo mobile;</li>
 <li>Eseguire l'applicazione come web app;</li>
@@ -1991,15 +1862,9 @@ progetto BeeWare. Nel corso di questa esercitazione, avete:</p>
 </ul>
 <p>Quindi - dove andare da qui?</p>
 <ul>
-<li>Se volete approfondire, ci sono altri <a href="../topics/">tutorial sugli
-  argomenti</a> che approfondiscono aspetti specifici dello
-  sviluppo di applicazioni.</li>
-<li>Per saperne di più su come costruire interfacce utente complesse con Toga, è
-  possibile consultare la <a href="https://toga.beeware.org">documentazione di Toga</a>.
-  Toga ha anche un proprio tutorial <a href="https://toga.beeware.org/en/latest/tutorial">che illustra l'uso di varie funzionalità
-  del toolkit di widget</a>.</li>
-<li>Per saperne di più sulle funzionalità di Briefcase, è possibile consultare la
-  <a href="https://briefcase.beeware.org">documentazione di Briefcase</a>.</li>
+<li>Se volete approfondire, ci sono altri <a href="../topics/">tutorial sugli argomenti</a> che approfondiscono aspetti specifici dello sviluppo di applicazioni.</li>
+<li>Per saperne di più su come costruire interfacce utente complesse con Toga, è possibile consultare la <a href="https://toga.beeware.org">documentazione di Toga</a>. Toga ha anche un proprio tutorial <a href="https://toga.beeware.org/en/latest/tutorial">che illustra l'uso di varie funzionalità del toolkit di widget</a>.</li>
+<li>Per saperne di più sulle funzionalità di Briefcase, è possibile consultare la <a href="https://briefcase.beeware.org">documentazione di Briefcase</a>.</li>
 </ul>
 
 

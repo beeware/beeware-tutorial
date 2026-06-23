@@ -1615,43 +1615,26 @@ aria-label="Cabeçalho"
 
 
 <h1 id="personalizar-icones">Personalizar ícones<a class="headerlink" href="#personalizar-icones" title="Permanent link">&para;</a></h1>
-<p>A aplicação que desenvolvemos no tutorial principal tem usado um ícone
-predefinido da "abelha cinzenta". Vamos personalizar esta aplicação ao
-configura-lo para usar o seu próprio ícone.</p>
+<p>A aplicação que desenvolvemos no tutorial principal tem usado um ícone predefinido da "abelha cinzenta". Vamos personalizar esta aplicação ao configura-lo para usar o seu próprio ícone.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>No BeeWare, o termo <em>ícone</em> pode referir duas coisas diferentes:</p>
 <ul>
 <li>
-<p><strong>Ícone da aplicação</strong> - A imagem que representa a sua aplicação na área de
-  trabalho, na barra, ou ecrã inicial.</p>
+<p><strong>Ícone da aplicação</strong> - A imagem que representa a sua aplicação na área de trabalho, na barra, ou ecrã inicial.</p>
 </li>
 <li>
-<p><strong>Ícones de tempo de execução</strong> - Imagens usadas na interface da sua aplicação
-  (por exemplo, em botões ou tabelas).</p>
+<p><strong>Ícones de tempo de execução</strong> - Imagens usadas na interface da sua aplicação (por exemplo, em botões ou tabelas).</p>
 </li>
 </ul>
 </div>
 <h2 id="adicionar-um-icone">Adicionar um ícone<a class="headerlink" href="#adicionar-um-icone" title="Permanent link">&para;</a></h2>
-<p>Cada plataforma usa um formato diferente para os ícones das aplicações - e
-algumas plataformas precisam de <em>vários</em> ícones em diferentes tamanhos e formas.
-Para ter isso em conta, o Briefcase oferece uma maneira abreviada de configurar
-um ícone uma vez e, depois expandir essa definição para todos os diferentes
-ícones necessários para cada plataforma individual.</p>
-<p>Edite o seu <code>pyproject.toml</code>, adicionando um novo item de configuração <code>icon</code> na
-secção de configuração <code>[tool.briefcase.app.helloworld]</code>, logo acima da
-definição <code>sources</code>:</p>
+<p>Cada plataforma usa um formato diferente para os ícones das aplicações - e algumas plataformas precisam de <em>vários</em> ícones em diferentes tamanhos e formas. Para ter isso em conta, o Briefcase oferece uma maneira abreviada de configurar um ícone uma vez e, depois expandir essa definição para todos os diferentes ícones necessários para cada plataforma individual.</p>
+<p>Edite o seu <code>pyproject.toml</code>, adicionando um novo item de configuração <code>icon</code> na secção de configuração <code>[tool.briefcase.app.helloworld]</code>, logo acima da definição <code>sources</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;icons/helloworld&quot;</span>
 </code></pre></div>
-<p>Esta definição de ícone não especifica nenhuma extensão de ficheiro. O valor
-será usado como um prefixo; cada plataforma acrescentará itens adicionais a esse
-prefixo para criar os ficheiros necessários para cada plataforma. Algumas
-plataformas exigem <em>múltiplos</em> ficheiros de ícones; esse prefixo será combinado
-com o tamanho do ficheiro e modificadores de variantes para gerar a lista de
-ficheiros de ícones que são usados.</p>
-<p>Agora podemos executar o <code>briefcase update</code> novamente - mas desta vez, passamos
-a bandeira <code>--update-resources</code>, que informa o Briefcase que queremos instalar
-novos recursos da aplicação (ou seja, os ícones):</p>
+<p>Esta definição de ícone não especifica nenhuma extensão de ficheiro. O valor será usado como um prefixo; cada plataforma acrescentará itens adicionais a esse prefixo para criar os ficheiros necessários para cada plataforma. Algumas plataformas exigem <em>múltiplos</em> ficheiros de ícones; esse prefixo será combinado com o tamanho do ficheiro e modificadores de variantes para gerar a lista de ficheiros de ícones que são usados.</p>
+<p>Agora podemos executar o <code>briefcase update</code> novamente - mas desta vez, passamos a bandeira <code>--update-resources</code>, que informa o Briefcase que queremos instalar novos recursos da aplicação (ou seja, os ícones):</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1770,14 +1753,8 @@ novos recursos da aplicação (ou seja, os ícones):</p>
 </div>
 </div>
 </div>
-<p>Isto reporta o ficheiro (ou ficheiros) de ícone específico que o Briefcase está
-a esperar. No entanto, como não fornecemos os ficheiros de ícone reais, a
-instalação falha e o Briefcase retorna ao valor predefinido (o mesmo ícone de
-"abelha cinzenta").</p>
-<p>Vamos fornecer alguns ícones reais. Descarregue <a href="../../../resources/icons.zip">este arquivo
-icons.zip</a> e descompacte-o no diretório raiz do seu
-projeto. Após a descompactação, o seu diretório de projeto deverá ficar algo
-como isto:</p>
+<p>Isto reporta o ficheiro (ou ficheiros) de ícone específico que o Briefcase está a esperar. No entanto, como não fornecemos os ficheiros de ícone reais, a instalação falha e o Briefcase retorna ao valor predefinido (o mesmo ícone de "abelha cinzenta").</p>
+<p>Vamos fornecer alguns ícones reais. Descarregue <a href="../../../resources/icons.zip">este arquivo icons.zip</a> e descompacte-o no diretório raiz do seu projeto. Após a descompactação, o seu diretório de projeto deverá ficar algo como isto:</p>
 <div class="highlight"><pre><span></span><code>beeware-tutorial/
 ├── beeware-venv/
 │   └── ...
@@ -1793,23 +1770,13 @@ como isto:</p>
     │   └── ...
     └── pyproject.toml
 </code></pre></div>
-<p>Há <em>muitos</em> ícones nesta pasta, mas a maioria deles deve ter a mesma aparência:
-uma cobra verde num fundo azul claro:</p>
+<p>Há <em>muitos</em> ícones nesta pasta, mas a maioria deles deve ter a mesma aparência: uma cobra verde num fundo azul claro:</p>
 <figure>
 <p><img alt="Ícone de uma cobra verde com um fundo azul claro" src="../../../images/icon.png" /></p>
 <figcaption></figcaption>
 </figure>
-<p>A única exceção serão os ícones com <code>-adaptive-</code> no seu nome; estes têm um fundo
-transparente. Isto representa todos os diferentes tamanhos e formas de ícones
-necessários que precisa para suportar uma aplicação em todas as plataformas
-suportadas pelo Briefcase.</p>
-<p>Agora que temos os ícones, podemos atualizar a aplicação novamente. No entanto,
-o <code>briefcase update</code> apenas vai copiar os recursos atualizados para o diretório
-de compilação; também queremos reconstruir a aplicação para garantir que o novo
-ícone seja incluído, e depois iniciar a aplicação. Podemos encurtar esse
-processo passando <code>--update-resources</code> na nossa chamada para <code>run</code> - isto vai
-atualizar a aplicação, atualizar os recursos da aplicação, e depois iniciar a
-aplicação:</p>
+<p>A única exceção serão os ícones com <code>-adaptive-</code> no seu nome; estes têm um fundo transparente. Isto representa todos os diferentes tamanhos e formas de ícones necessários que precisa para suportar uma aplicação em todas as plataformas suportadas pelo Briefcase.</p>
+<p>Agora que temos os ícones, podemos atualizar a aplicação novamente. No entanto, o <code>briefcase update</code> apenas vai copiar os recursos atualizados para o diretório de compilação; também queremos reconstruir a aplicação para garantir que o novo ícone seja incluído, e depois iniciar a aplicação. Podemos encurtar esse processo passando <code>--update-resources</code> na nossa chamada para <code>run</code> - isto vai atualizar a aplicação, atualizar os recursos da aplicação, e depois iniciar a aplicação:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1922,9 +1889,7 @@ aplicação:</p>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Se estiver a usar uma versão recente do Android, pode notar que o ícone da
-aplicação foi alterado para uma cobra verde, mas o fundo do ícone é <em>branco</em>, em
-vez de azul claro. Vamos corrigir isso no próximo passo.</p>
+<p>Se estiver a usar uma versão recente do Android, pode notar que o ícone da aplicação foi alterado para uma cobra verde, mas o fundo do ícone é <em>branco</em>, em vez de azul claro. Vamos corrigir isso no próximo passo.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1963,24 +1928,12 @@ vez de azul claro. Vamos corrigir isso no próximo passo.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Se obter um rastreio de pilha referenciando <code>faker</code> ou <code>httpx</code> ao executar a
-aplicação, é possível que não tenha executado a aplicação durante as etapas 7 ou
-8 do tutorial. Execute a aplicação novamente, adicionando o argumento <code>-r</code> para
-atualizar os requisitos da aplicação.</p>
+<p>Se obter um rastreio de pilha referenciando <code>faker</code> ou <code>httpx</code> ao executar a aplicação, é possível que não tenha executado a aplicação durante as etapas 7 ou 8 do tutorial. Execute a aplicação novamente, adicionando o argumento <code>-r</code> para atualizar os requisitos da aplicação.</p>
 </div>
-<p>Ao executar a aplicação no iOS ou Android, além da alteração do ícone, também
-deve notar que o ecrã inicial incorpora o novo ícone. No entanto, o fundo azul
-claro do ícone parece um pouco deslocado em relação ao fundo branco do ecrã
-inicial. Podemos corrigir isso personalizando a cor de fundo do ecrã inicial.
-Adicione a seguinte definição ao seu <code>pyproject.toml</code>, logo após a definição
-<code>icon</code>:</p>
+<p>Ao executar a aplicação no iOS ou Android, além da alteração do ícone, também deve notar que o ecrã inicial incorpora o novo ícone. No entanto, o fundo azul claro do ícone parece um pouco deslocado em relação ao fundo branco do ecrã inicial. Podemos corrigir isso personalizando a cor de fundo do ecrã inicial. Adicione a seguinte definição ao seu <code>pyproject.toml</code>, logo após a definição <code>icon</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
 </code></pre></div>
-<p>Infelizmente, o Briefcase não é capaz de aplicar essa alteração a um projeto já
-gerado, pois isso requer modificações num dos ficheiros que foi gerado durante a
-chamada original do <code>briefcase create</code>. Para aplicar essa alteração, temos que
-recriar a aplicação executando novamente o <code>briefcase create</code>. Quando fazemos
-isso, somos solicitados a confirmar que queremos substituir o projeto existente:</p>
+<p>Infelizmente, o Briefcase não é capaz de aplicar essa alteração a um projeto já gerado, pois isso requer modificações num dos ficheiros que foi gerado durante a chamada original do <code>briefcase create</code>. Para aplicar essa alteração, temos que recriar a aplicação executando novamente o <code>briefcase create</code>. Quando fazemos isso, somos solicitados a confirmar que queremos substituir o projeto existente:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2048,25 +2001,10 @@ isso, somos solicitados a confirmar que queremos substituir o projeto existente:
 </div>
 </div>
 </div>
-<p>Depois pode recompilar e executar novamente a aplicação usando o <code>briefcase
-run</code>. Não vai notar nenhuma alteração na aplicação para ambiente de trabalho,
-mas as aplicações para Android ou iOS agora devem ter um fundo de ecrã inicial
-azul claro.</p>
-<p>Vai precisar de recriar a aplicação dessa forma sempre que fizer uma alteração
-no seu <code>pyproject.toml</code> que não esteja relacionada ao código-fonte ou às
-dependências. Qualquer alteração em descrições, números de versão, cores ou
-permissões vai exigir um passo de recriação. Por este motivo, enquanto estiver a
-desenvolver o projeto, não deve fazer nenhuma alteração manual no conteúdo da
-pasta <code>build</code> e não deve adicionar a pasta <code>build</code> ao seu sistema de controle de
-versão. A pasta <code>build</code> deve ser considerada totalmente efémera - um resultado
-do sistema de compilação que pode ser recriada quando necessário para refletir a
-configuração atual do seu projeto.</p>
+<p>Depois pode recompilar e executar novamente a aplicação usando o <code>briefcase run</code>. Não vai notar nenhuma alteração na aplicação para ambiente de trabalho, mas as aplicações para Android ou iOS agora devem ter um fundo de ecrã inicial azul claro.</p>
+<p>Vai precisar de recriar a aplicação dessa forma sempre que fizer uma alteração no seu <code>pyproject.toml</code> que não esteja relacionada ao código-fonte ou às dependências. Qualquer alteração em descrições, números de versão, cores ou permissões vai exigir um passo de recriação. Por este motivo, enquanto estiver a desenvolver o projeto, não deve fazer nenhuma alteração manual no conteúdo da pasta <code>build</code> e não deve adicionar a pasta <code>build</code> ao seu sistema de controle de versão. A pasta <code>build</code> deve ser considerada totalmente efémera - um resultado do sistema de compilação que pode ser recriada quando necessário para refletir a configuração atual do seu projeto.</p>
 <h2 id="adicionar-um-icone-de-tempo-de-execucao">Adicionar um ícone de tempo de execução<a class="headerlink" href="#adicionar-um-icone-de-tempo-de-execucao" title="Permanent link">&para;</a></h2>
-<p>Quando se trata de adicionar um ícone à interface da aplicação, esse tipo de
-ícone deve ser armazenado num diretório separado dos ícones da aplicação. Clique
-com o botão direito do rato em 'Tibério o iaque', salve a imagem num ficheiro
-<code>.png</code> e nomeie-a <code>helloworld</code>. O ficheiro deve ser salvo na pasta <code>icons/</code> do
-pacote de código-fonte da aplicação.</p>
+<p>Quando se trata de adicionar um ícone à interface da aplicação, esse tipo de ícone deve ser armazenado num diretório separado dos ícones da aplicação. Clique com o botão direito do rato em 'Tibério o iaque', salve a imagem num ficheiro <code>.png</code> e nomeie-a <code>helloworld</code>. O ficheiro deve ser salvo na pasta <code>icons/</code> do pacote de código-fonte da aplicação.</p>
 <figure>
 <p><img alt="Ícone de Tibério, o iaque" src="../../../images/runtime-icon.png" /></p>
 <figcaption></figcaption>
@@ -2090,10 +2028,7 @@ pacote de código-fonte da aplicação.</p>
     │   └──...
     └── pyproject.toml
 </code></pre></div>
-<p>Agora que o ícone de tempo de execução está no lugar, vamos adicionar um ícone
-ao nosso botão. O widget do botão Toga só acomoda um ícone ou texto (não ambos),
-portanto vamos atualizar o código do botão para incluir o ícone de tempo de
-execução.</p>
+<p>Agora que o ícone de tempo de execução está no lugar, vamos adicionar um ícone ao nosso botão. O widget do botão Toga só acomoda um ícone ou texto (não ambos), portanto vamos atualizar o código do botão para incluir o ícone de tempo de execução.</p>
 <div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
 
 <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
@@ -2102,10 +2037,7 @@ execução.</p>
     <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
-<p>Como os ícones de tempo de execução são recursos de aplicação incluídos no
-pacote Python, não é necessário reconstruir ou atualizar o recurso. Neste ponto
-pode executar o <code>briefcase dev</code> (ou <code>briefcase run</code>) para ver o ícone adicionado
-ao botão.</p>
+<p>Como os ícones de tempo de execução são recursos de aplicação incluídos no pacote Python, não é necessário reconstruir ou atualizar o recurso. Neste ponto pode executar o <code>briefcase dev</code> (ou <code>briefcase run</code>) para ver o ícone adicionado ao botão.</p>
 
 
 

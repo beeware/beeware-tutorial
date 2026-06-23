@@ -1755,85 +1755,45 @@ aria-label="Kopfzeile"
 
 
 <h1 id="tutorial-0-richten-wir-uns-ein">Tutorial 0 - Richten wir uns ein!<a class="headerlink" href="#tutorial-0-richten-wir-uns-ein" title="Permanent link">&para;</a></h1>
-<p>Bevor wir unsere erste BeeWare-App erstellen, müssen wir sicherstellen, dass wir
-alle Voraussetzungen für den Betrieb von BeeWare erfüllen.</p>
+<p>Bevor wir unsere erste BeeWare-App erstellen, müssen wir sicherstellen, dass wir alle Voraussetzungen für den Betrieb von BeeWare erfüllen.</p>
 <h2 id="install-python">Install Python<a class="headerlink" href="#install-python" title="Permanent link">&para;</a></h2>
 <p>Als erstes brauchen wir einen funktionierenden Python-Interpreter.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Wenn Sie macOS verwenden, können Sie einen offiziellen Python-Installer von <a href="https://www.python.org/downloads">der
-Python-Website</a> herunterladen. Sie können jede
-Version von Python ab 3.10 verwenden (allerdings sollten Sie Alpha-, Beta- und
-Release-Candidate-Versionen vermeiden). Wir empfehlen dringend die Verwendung
-von Python 3.13 oder neuer.</p>
-<p>Sie können Python auch über <a href="https://docs.brew.sh/Homebrew-and-Python">homebrew</a>
-installieren,
-<a href="https://github.com/pyenv/pyenv#simple-python-version-management-pyenv">pyenv</a>
-zur Verwaltung mehrerer Python-Installationen verwenden oder
-<a href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> oder
-<a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> verwenden. Es spielt
-keine Rolle, <em>wie</em> Sie Python installiert haben – wichtig ist nur, dass Sie
-<code>python3</code> von Ihrem Terminal aus ausführen können und einen funktionierenden,
-unterstützten Python-Interpreter erhalten.</p>
-<p>Xcode und die Befehlszeilen-Entwicklerwerkzeuge stellen eine Version von Python
-zur Verfügung; diese ist jedoch Version 3.9. Python 3.9 hat das Ende seiner
-Lebensdauer erreicht und wird nicht mehr von Python oder BeeWare unterstützt.
-Sie werden <em>nicht</em> in der Lage sein, die von Xcode bereitgestellte Version von
-Python zu verwenden, um dieses Lernprogramm auszuführen.</p>
-<p>Um die Version von Python zu überprüfen, die Sie installiert haben, führen Sie
-den folgenden Befehl aus:</p>
+<p>Wenn Sie macOS verwenden, können Sie einen offiziellen Python-Installer von <a href="https://www.python.org/downloads">der Python-Website</a> herunterladen. Sie können jede Version von Python ab 3.10 verwenden (allerdings sollten Sie Alpha-, Beta- und Release-Candidate-Versionen vermeiden). Wir empfehlen dringend die Verwendung von Python 3.13 oder neuer.</p>
+<p>Sie können Python auch über <a href="https://docs.brew.sh/Homebrew-and-Python">homebrew</a> installieren, <a href="https://github.com/pyenv/pyenv#simple-python-version-management-pyenv">pyenv</a> zur Verwaltung mehrerer Python-Installationen verwenden oder <a href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> oder <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> verwenden. Es spielt keine Rolle, <em>wie</em> Sie Python installiert haben – wichtig ist nur, dass Sie <code>python3</code> von Ihrem Terminal aus ausführen können und einen funktionierenden, unterstützten Python-Interpreter erhalten.</p>
+<p>Xcode und die Befehlszeilen-Entwicklerwerkzeuge stellen eine Version von Python zur Verfügung; diese ist jedoch Version 3.9. Python 3.9 hat das Ende seiner Lebensdauer erreicht und wird nicht mehr von Python oder BeeWare unterstützt. Sie werden <em>nicht</em> in der Lage sein, die von Xcode bereitgestellte Version von Python zu verwenden, um dieses Lernprogramm auszuführen.</p>
+<p>Um die Version von Python zu überprüfen, die Sie installiert haben, führen Sie den folgenden Befehl aus:</p>
 <div class="highlight"><pre><span></span><code><span class="go">Python 3.8.10 (Standardversion, 20. Juli 2020, 16:16:00)</span>
 </code></pre></div>
 <p>Wenn Python installiert ist, wird die Versionsnummer angezeigt.</p>
 </div>
 <div class="tabbed-block">
-<p>Unter Linux installieren Sie Python mit dem Paketmanager des Systems (<code>apt</code>
-unter Debian/Ubuntu/Mint, <code>dnf</code> unter Fedora, oder <code>pacman</code> unter Arch).</p>
-<p>Sie sollten sich vergewissern, dass das System Python 3.8 oder eine neuere
-Version verwendet. Ist dies nicht der Fall (z. B. wird Ubuntu 18.04 mit Python
-3.6 ausgeliefert), müssen Sie Ihre Linux-Distribution auf eine neuere Version
-aktualisieren.</p>
+<p>Unter Linux installieren Sie Python mit dem Paketmanager des Systems (<code>apt</code> unter Debian/Ubuntu/Mint, <code>dnf</code> unter Fedora, oder <code>pacman</code> unter Arch).</p>
+<p>Sie sollten sich vergewissern, dass das System Python 3.8 oder eine neuere Version verwendet. Ist dies nicht der Fall (z. B. wird Ubuntu 18.04 mit Python 3.6 ausgeliefert), müssen Sie Ihre Linux-Distribution auf eine neuere Version aktualisieren.</p>
 <p>Raspberry Pi wird derzeit nur begrenzt unterstützt.</p>
-<p><strong>Wichtig:</strong> Sie <em>müssen</em> das von Ihrem Betriebssystem bereitgestellte
-Python-System verwenden. Python-Installationen aus anderen Quellen (wie uv,
-pyenv, Anaconda, manuell kompiliertes Python usw.) verhindern, dass Sie Ihre
-Anwendung in späteren Schritten dieses Tutorials erfolgreich für die Verteilung
-verpacken können.</p>
+<p><strong>Wichtig:</strong> Sie <em>müssen</em> das von Ihrem Betriebssystem bereitgestellte Python-System verwenden. Python-Installationen aus anderen Quellen (wie uv, pyenv, Anaconda, manuell kompiliertes Python usw.) verhindern, dass Sie Ihre Anwendung in späteren Schritten dieses Tutorials erfolgreich für die Verteilung verpacken können.</p>
 </div>
 <div class="tabbed-block">
-<p>Wenn Sie Windows verwenden, können Sie das offizielle Installationsprogramm von
-<a href="https://www.python.org/downloads">der Python-Website</a> herunterladen. Sie können
-jede Python-Version von 3.10 bis 3.14 verwenden (Sie sollten jedoch Alpha-,
-Beta- und Release-Candidate-Versionen vermeiden). Wir empfehlen dringend, Python
-3.13 oder neuer zu verwenden.</p>
+<p>Wenn Sie Windows verwenden, können Sie das offizielle Installationsprogramm von <a href="https://www.python.org/downloads">der Python-Website</a> herunterladen. Sie können jede Python-Version von 3.10 bis 3.14 verwenden (Sie sollten jedoch Alpha-, Beta- und Release-Candidate-Versionen vermeiden). Wir empfehlen dringend, Python 3.13 oder neuer zu verwenden.</p>
 <p>Raspberry Pi wird derzeit nur begrenzt unterstützt.</p>
-<p>Unter macOS oder Windows ist es egal, <em>wie</em> Sie Python installiert haben -
-wichtig ist nur, dass Sie <code>python3</code> über die
-Eingabeaufforderung/Terminalanwendung Ihres Betriebssystems ausführen können und
-einen funktionierenden Python-Interpreter erhalten.</p>
+<p>Unter macOS oder Windows ist es egal, <em>wie</em> Sie Python installiert haben - wichtig ist nur, dass Sie <code>python3</code> über die Eingabeaufforderung/Terminalanwendung Ihres Betriebssystems ausführen können und einen funktionierenden Python-Interpreter erhalten.</p>
 </div>
 </div>
 </div>
 <h2 id="install-dependencies">Abhängigkeiten installieren<a class="headerlink" href="#install-dependencies" title="Permanent link">&para;</a></h2>
-<p>Als Nächstes installieren Sie die zusätzlichen Abhängigkeiten, die für Ihr
-Betriebssystem erforderlich sind:</p>
+<p>Als Nächstes installieren Sie die zusätzlichen Abhängigkeiten, die für Ihr Betriebssystem erforderlich sind:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Die Erstellung von BeeWare-Anwendungen unter macOS erfordert:</p>
 <ul>
-<li><strong>Git</strong>, ein Versionskontrollsystem. Dies ist in Xcode oder den
-  Befehlszeilen-Entwicklertools enthalten, die Sie oben installiert haben.
-  Möglicherweise müssen Sie Xcode zum ersten Mal öffnen, damit Git in Ihrer
-  Terminalsitzung funktioniert. Wenn immer noch nicht registriert wird, dass Git
-  installiert ist, müssen Sie möglicherweise Ihre Terminalsitzung neu starten.</li>
+<li><strong>Git</strong>, ein Versionskontrollsystem. Dies ist in Xcode oder den Befehlszeilen-Entwicklertools enthalten, die Sie oben installiert haben. Möglicherweise müssen Sie Xcode zum ersten Mal öffnen, damit Git in Ihrer Terminalsitzung funktioniert. Wenn immer noch nicht registriert wird, dass Git installiert ist, müssen Sie möglicherweise Ihre Terminalsitzung neu starten.</li>
 </ul>
 </div>
 <div class="tabbed-block">
-<p>Um die lokale Entwicklung zu unterstützen, müssen Sie einige Systempakete
-installieren. Die Liste der erforderlichen Pakete hängt von Ihrer Distribution
-ab:</p>
+<p>Um die lokale Entwicklung zu unterstützen, müssen Sie einige Systempakete installieren. Die Liste der erforderlichen Pakete hängt von Ihrer Distribution ab:</p>
 <h3 id="ubuntu-debian"><strong>Ubuntu / Debian</strong><a class="headerlink" href="#ubuntu-debian" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 <span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository1.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
@@ -1849,36 +1809,20 @@ ab:</p>
 </code></pre></div>
 <div class="admonition">
 <p class="admonition-title">Andere Linux-Distributionen</p>
-<p>Wenn Sie eine Linux-Distribution verwenden, die nicht in dieser Liste aufgeführt
-ist und nicht von einer in dieser Liste aufgeführten Distribution abgeleitet ist
-(z. B. sind Linux Mint und Pop! OS beide von Debian abgeleitete Distributionen;
-AlmaLinux ist von Fedora abgeleitet), werden Sie wahrscheinlich Schwierigkeiten
-haben, dieses Tutorial durchzuführen. Wenn Briefcase Sie warnt, dass „die
-Systempakete nicht überprüft werden können”, können Sie dieses Tutorial nicht
-durchführen.</p>
+<p>Wenn Sie eine Linux-Distribution verwenden, die nicht in dieser Liste aufgeführt ist und nicht von einer in dieser Liste aufgeführten Distribution abgeleitet ist (z. B. sind Linux Mint und Pop! OS beide von Debian abgeleitete Distributionen; AlmaLinux ist von Fedora abgeleitet), werden Sie wahrscheinlich Schwierigkeiten haben, dieses Tutorial durchzuführen. Wenn Briefcase Sie warnt, dass „die Systempakete nicht überprüft werden können”, können Sie dieses Tutorial nicht durchführen.</p>
 </div>
 </div>
 <div class="tabbed-block">
 <p>Die Erstellung von BeeWare-Anwendungen unter Windows erfordert:</p>
 <ul>
-<li><strong>Git</strong>, ein Versionskontrollsystem. Sie können Git von [git-scm.com]<nospell>
-  herunterladen.</li>
+<li><strong>Git</strong>, ein Versionskontrollsystem. Sie können Git von [git-scm.com]<nospell> herunterladen.</li>
 </ul>
-<p>Nach der Installation dieser Tools sollten Sie sicherstellen, dass Sie alle
-Terminalsitzungen neu starten. Windows zeigt neu installierte Tools nur auf
-Terminals an, die <em>nach</em> Abschluss der Installation gestartet wurden.</p>
+<p>Nach der Installation dieser Tools sollten Sie sicherstellen, dass Sie alle Terminalsitzungen neu starten. Windows zeigt neu installierte Tools nur auf Terminals an, die <em>nach</em> Abschluss der Installation gestartet wurden.</p>
 </div>
 </div>
 </div>
 <h2 id="einrichten-einer-virtuellen-umgebung">Einrichten einer virtuellen Umgebung<a class="headerlink" href="#einrichten-einer-virtuellen-umgebung" title="Permanent link">&para;</a></h2>
-<p>Wir werden nun eine virtuelle Umgebung erstellen - eine "Sandbox", die wir
-verwenden können, um unsere Arbeit an diesem Tutorial von unserer
-Haupt-Python-Installation zu isolieren. Wenn wir Pakete in die virtuelle
-Umgebung installieren, wird unsere Haupt-Python-Installation (und alle anderen
-Python-Projekte auf unserem Computer) davon nicht betroffen sein. Wenn wir
-unsere virtuelle Umgebung komplett durcheinander bringen, können wir sie einfach
-löschen und neu beginnen, ohne dass andere Python-Projekte auf unserem Computer
-betroffen sind und ohne dass wir Python neu installieren müssen.</p>
+<p>Wir werden nun eine virtuelle Umgebung erstellen - eine "Sandbox", die wir verwenden können, um unsere Arbeit an diesem Tutorial von unserer Haupt-Python-Installation zu isolieren. Wenn wir Pakete in die virtuelle Umgebung installieren, wird unsere Haupt-Python-Installation (und alle anderen Python-Projekte auf unserem Computer) davon nicht betroffen sein. Wenn wir unsere virtuelle Umgebung komplett durcheinander bringen, können wir sie einfach löschen und neu beginnen, ohne dass andere Python-Projekte auf unserem Computer betroffen sind und ohne dass wir Python neu installieren müssen.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1901,46 +1845,30 @@ betroffen sind und ohne dass wir Python neu installieren müssen.</p>
 <span class="gp">C:\...&gt;</span>py -3.12 -m venv beeware-venv
 <span class="gp">C:\...&gt;</span>beeware-venv\Scripts\activate
 </code></pre></div>
-<p>Wenn Sie nicht Python 3.12 verwenden, ersetzen Sie das <code>-3.12</code> in dieser
-Anleitung durch die Versionsnummer, die Sie verwenden.</p>
+<p>Wenn Sie nicht Python 3.12 verwenden, ersetzen Sie das <code>-3.12</code> in dieser Anleitung durch die Versionsnummer, die Sie verwenden.</p>
 <div class="admonition">
 <p class="admonition-title">Fehler bei der Ausführung von PowerShell-Skripten</p>
 <p>Wenn Sie PowerShell verwenden und die folgende Fehlermeldung erhalten:</p>
 <div class="highlight"><pre><span></span><code><span class="go">Die Datei „C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1“ kann nicht geladen werden, da die Ausführung von Skripten auf diesem System deaktiviert ist.</span>
 </code></pre></div>
-<p>Ihr Windows-Konto hat keine Berechtigung zum Ausführen von Skripts. So beheben
-Sie dies:</p>
+<p>Ihr Windows-Konto hat keine Berechtigung zum Ausführen von Skripts. So beheben Sie dies:</p>
 <ol>
-<li>Führen Sie <a href="https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4">Windows Powershell als Administrator
-   aus</a>.</li>
+<li>Führen Sie <a href="https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4">Windows Powershell als Administrator aus</a>.</li>
 <li>Führen Sie <code>set-executionpolicy RemoteSigned</code> aus</li>
 <li>Wählen Sie <code>Y</code>, um die Ausführungspolitik zu ändern.</li>
 </ol>
-<p>Danach können Sie <code>beeware-venv\Scripts\activate.ps1</code> in Ihrer ursprünglichen
-PowerShell-Sitzung (oder in einer neuen Sitzung im selben Verzeichnis) erneut
-ausführen.</p>
+<p>Danach können Sie <code>beeware-venv\Scripts\activate.ps1</code> in Ihrer ursprünglichen PowerShell-Sitzung (oder in einer neuen Sitzung im selben Verzeichnis) erneut ausführen.</p>
 </div>
 </div>
 </div>
 </div>
-<p>Wenn dies geklappt hat, sollte Ihre Eingabeaufforderung nun geändert sein - sie
-sollte ein <code>(beeware-venv)</code>-Präfix haben. Dies zeigt Ihnen, dass Sie sich gerade
-in Ihrer virtuellen BeeWare-Umgebung befinden. Wann immer Sie an diesem Tutorial
-arbeiten, sollten Sie sicherstellen, dass Ihre virtuelle Umgebung aktiviert ist.
-Ist dies nicht der Fall, führen Sie den letzten Befehl (den Befehl <code>activate</code>)
-erneut aus, um Ihre Umgebung wieder zu aktivieren.</p>
+<p>Wenn dies geklappt hat, sollte Ihre Eingabeaufforderung nun geändert sein - sie sollte ein <code>(beeware-venv)</code>-Präfix haben. Dies zeigt Ihnen, dass Sie sich gerade in Ihrer virtuellen BeeWare-Umgebung befinden. Wann immer Sie an diesem Tutorial arbeiten, sollten Sie sicherstellen, dass Ihre virtuelle Umgebung aktiviert ist. Ist dies nicht der Fall, führen Sie den letzten Befehl (den Befehl <code>activate</code>) erneut aus, um Ihre Umgebung wieder zu aktivieren.</p>
 <div class="admonition">
 <p class="admonition-title">Alternative virtuelle Umgebungen</p>
-<p>Wenn Sie Anaconda oder miniconda verwenden, sind Sie vielleicht mit der
-Verwendung von conda-Umgebungen besser vertraut. Vielleicht haben Sie auch schon
-von <code>virtualenv</code> gehört, einem Vorgänger von Pythons eingebautem <code>venv</code> Modul.
-Wie bei Python-Installationen ist es unter macOS oder Windows egal, <em>wie</em> Sie
-Ihre virtuelle Umgebung erstellen, solange Sie eine haben. Wenn Sie unter Linux
-arbeiten, sollten Sie sich an <code>venv</code> und das System-Python halten.</p>
+<p>Wenn Sie Anaconda oder miniconda verwenden, sind Sie vielleicht mit der Verwendung von conda-Umgebungen besser vertraut. Vielleicht haben Sie auch schon von <code>virtualenv</code> gehört, einem Vorgänger von Pythons eingebautem <code>venv</code> Modul. Wie bei Python-Installationen ist es unter macOS oder Windows egal, <em>wie</em> Sie Ihre virtuelle Umgebung erstellen, solange Sie eine haben. Wenn Sie unter Linux arbeiten, sollten Sie sich an <code>venv</code> und das System-Python halten.</p>
 </div>
 <h2 id="nachste-schritte">Nächste Schritte<a class="headerlink" href="#nachste-schritte" title="Permanent link">&para;</a></h2>
-<p>Wir haben jetzt unsere Umgebung eingerichtet. Wir sind bereit, <a href="../tutorial-1/">unsere erste
-BeeWare-Anwendung zu erstellen</a>.</p>
+<p>Wir haben jetzt unsere Umgebung eingerichtet. Wir sind bereit, <a href="../tutorial-1/">unsere erste BeeWare-Anwendung zu erstellen</a>.</p>
 
 
 

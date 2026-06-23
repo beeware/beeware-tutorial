@@ -1593,21 +1593,9 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-5-adaptando-para-movel-ios">Tutorial 5 - Adaptando para móvel: iOS<a class="headerlink" href="#tutorial-5-adaptando-para-movel-ios" title="Permanent link">&para;</a></h1>
-<p>Para compilar aplicações iOS vamos precisar do Xcode, que está disponível
-gratuitamente na <a href="https://apps.apple.com/au/app/xcode/id497799835?mt=12">macOS App
-Store</a>. Quando o Xcode
-estiver instalado, inicie-o em Aplicações e aceite o Contrato de Licença do
-Xcode. Em seguida, o Xcode vai mostrar quais componentes estão incorporados e
-quais componentes pode descaregar. Marque a caixa de seleção ao lado do iOS
-(seguido do número da versão atual) e clique em "Descarregar e instalar" para
-instalá-lo. O Xcode vai instalar os componentes do sistema, seguidos pelo
-Simulador do iOS.</p>
-<p>Assim que tiver o Xcode e o simulador de iOS, podemos pegar na nossa aplicação e
-implementá-la como uma aplicação iOS.</p>
-<p>O processo de implementação duma aplicação no iOS é muito semelhante ao processo
-de implementação como uma aplicação de ambiente de trabalho. Primeiro, você
-executa o comando <code>create</code> - mas, desta vez, especificamos que queremos criar
-uma aplicação de iOS:</p>
+<p>Para compilar aplicações iOS vamos precisar do Xcode, que está disponível gratuitamente na <a href="https://apps.apple.com/au/app/xcode/id497799835?mt=12">macOS App Store</a>. Quando o Xcode estiver instalado, inicie-o em Aplicações e aceite o Contrato de Licença do Xcode. Em seguida, o Xcode vai mostrar quais componentes estão incorporados e quais componentes pode descaregar. Marque a caixa de seleção ao lado do iOS (seguido do número da versão atual) e clique em "Descarregar e instalar" para instalá-lo. O Xcode vai instalar os componentes do sistema, seguidos pelo Simulador do iOS.</p>
+<p>Assim que tiver o Xcode e o simulador de iOS, podemos pegar na nossa aplicação e implementá-la como uma aplicação iOS.</p>
+<p>O processo de implementação duma aplicação no iOS é muito semelhante ao processo de implementação como uma aplicação de ambiente de trabalho. Primeiro, você executa o comando <code>create</code> - mas, desta vez, especificamos que queremos criar uma aplicação de iOS:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
 
 <span class="go">[helloworld] A gerar modelo de aplicação...</span>
@@ -1631,11 +1619,8 @@ uma aplicação de iOS:</p>
 
 <span class="go">[helloworld] Criado build/helloworld/ios/xcode</span>
 </code></pre></div>
-<p>Assim que isto estiver concluído, vamos ter um diretório
-<code>build/helloworld/ios/xcode</code> contendo um projeto Xcode, bem como as bibliotecas
-de suporte e o código da aplicação necessários para a aplicação.</p>
-<p>Pode depois usar o Briefcase para compilar a aplicação usando <code>briefcase build
-iOS</code>:</p>
+<p>Assim que isto estiver concluído, vamos ter um diretório <code>build/helloworld/ios/xcode</code> contendo um projeto Xcode, bem como as bibliotecas de suporte e o código da aplicação necessários para a aplicação.</p>
+<p>Pode depois usar o Briefcase para compilar a aplicação usando <code>briefcase build iOS</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
 <span class="go">[helloworld] A atualizar metadados da aplicação...</span>
@@ -1647,13 +1632,7 @@ iOS</code>:</p>
 
 <span class="go">[helloworld] Compilado em build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app</span>
 </code></pre></div>
-<p>Agora estamos prontos para executar a nossa aplicação, usando o <code>briefcase run
-iOS</code>. Vai ser solicitado a selecionar um dispositivo para o qual compilar; se
-tiver simuladores para várias versões do SDK do iOS instalados, pode também
-ser-lhe perguntado qual versão do iOS deseja usar como alvo. As opções mostradas
-a si podem ser diferentes das opções mostradas nesta saída - no mínimo, a lista
-de dispositivos será provavelmente diferente. Para o nosso objetivo, não importa
-qual o simulador que escolhe.</p>
+<p>Agora estamos prontos para executar a nossa aplicação, usando o <code>briefcase run iOS</code>. Vai ser solicitado a selecionar um dispositivo para o qual compilar; se tiver simuladores para várias versões do SDK do iOS instalados, pode também ser-lhe perguntado qual versão do iOS deseja usar como alvo. As opções mostradas a si podem ser diferentes das opções mostradas nesta saída - no mínimo, a lista de dispositivos será provavelmente diferente. Para o nosso objetivo, não importa qual o simulador que escolhe.</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
 <span class="go">Selecione o dispositivo do simulador:</span>
@@ -1694,34 +1673,23 @@ qual o simulador que escolhe.</p>
 <span class="go">===========================================================================</span>
 <span class="go">...</span>
 </code></pre></div>
-<p>Isto vai iniciar o simulador do iOS, vai instalar a sua aplicação e o inicia-la.
-Deverá ver o simulador a iniciar e, eventualmente a abrir a sua aplicação iOS:</p>
+<p>Isto vai iniciar o simulador do iOS, vai instalar a sua aplicação e o inicia-la. Deverá ver o simulador a iniciar e, eventualmente a abrir a sua aplicação iOS:</p>
 <figure>
 <p><img alt="Janela do tutorial 5 do Hello World, no iOS" src="../../../images/iOS/tutorial-5.png" /></p>
 <figcaption></figcaption>
 </figure>
-<p>Enquanto a aplicação estiver a correr, vai ver uma série de mensagens de saída
-do relatório do Simulador na consola. Teclar Ctrl+C no terminal vai interromper
-as mensagens na consola, mas não fecha o simulador. Isto serve para que possa
-testar novas alterações sem reiniciar o simulador.</p>
-<p>Se souber antecipadamente qual simulador de iOS deseja usar, poderá dizer ao
-Briefcase para usar esse simulador fornecendo uma opção <code>-d</code> (ou <code>--device</code>).
-Usando o nome do dispositivo que selecionou quando compilou a aplicação,
-execute:</p>
+<p>Enquanto a aplicação estiver a correr, vai ver uma série de mensagens de saída do relatório do Simulador na consola. Teclar Ctrl+C no terminal vai interromper as mensagens na consola, mas não fecha o simulador. Isto serve para que possa testar novas alterações sem reiniciar o simulador.</p>
+<p>Se souber antecipadamente qual simulador de iOS deseja usar, poderá dizer ao Briefcase para usar esse simulador fornecendo uma opção <code>-d</code> (ou <code>--device</code>). Usando o nome do dispositivo que selecionou quando compilou a aplicação, execute:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)&quot;</span>
 </code></pre></div>
-<p>Se tiver várias versões do iOS disponíveis, o Briefcase vai escolher a versão
-mais alta do iOS; se quiser escolher uma versão específica do iOS, diga a ele
-para usar essa versão específica:</p>
+<p>Se tiver várias versões do iOS disponíveis, o Briefcase vai escolher a versão mais alta do iOS; se quiser escolher uma versão específica do iOS, diga a ele para usar essa versão específica:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)::iOS 15.5&quot;</span>
 </code></pre></div>
 <p>Ou, pode nomear um UDID de dispositivo específico:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
 </code></pre></div>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos uma aplicação no nosso telefone! Existe mais algum lugar onde
-possamos implementar uma aplicação BeeWare? Consulte o <a href="../../tutorial-6/">Tutorial
-6</a> para descobrir&hellip;</p>
+<p>Agora temos uma aplicação no nosso telefone! Existe mais algum lugar onde possamos implementar uma aplicação BeeWare? Consulte o <a href="../../tutorial-6/">Tutorial 6</a> para descobrir&hellip;</p>
 
 
 

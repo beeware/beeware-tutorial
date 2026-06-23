@@ -662,8 +662,7 @@ aria-label="Intestazione"
 
   <!-- Typeset title -->
   
-    Esercitazione 3 - Confezionamento per la
-  distribuzione
+    Esercitazione 3 - Confezionamento per la distribuzione
   
 
 
@@ -1660,15 +1659,10 @@ aria-label="Intestazione"
 
 
 <h1 id="esercitazione-5-il-mobile-android">Esercitazione 5 - Il mobile: Android<a class="headerlink" href="#esercitazione-5-il-mobile-android" title="Permanent link">&para;</a></h1>
-<p>Ora prenderemo la nostra applicazione e la distribuiremo come applicazione
-Android.</p>
-<p>Il processo di distribuzione di un'applicazione su Android è molto simile a
-quello di un'applicazione desktop. Briefcase gestisce l'installazione delle
-dipendenze per Android, tra cui l'SDK Android, l'emulatore Android e un
-compilatore Java.</p>
+<p>Ora prenderemo la nostra applicazione e la distribuiremo come applicazione Android.</p>
+<p>Il processo di distribuzione di un'applicazione su Android è molto simile a quello di un'applicazione desktop. Briefcase gestisce l'installazione delle dipendenze per Android, tra cui l'SDK Android, l'emulatore Android e un compilatore Java.</p>
 <h2 id="creare-unapplicazione-android-e-compilarla">Creare un'applicazione Android e compilarla<a class="headerlink" href="#creare-unapplicazione-android-e-compilarla" title="Permanent link">&para;</a></h2>
-<p>Per prima cosa, eseguire il comando <code>create</code>. Questo scarica un modello di
-applicazione Android e vi aggiunge il codice Python.</p>
+<p>Per prima cosa, eseguire il comando <code>create</code>. Questo scarica un modello di applicazione Android e vi aggiunge il codice Python.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1748,18 +1742,9 @@ applicazione Android e vi aggiunge il codice Python.</p>
 </div>
 </div>
 </div>
-<p>Quando si esegue <code>briefcase create android</code> per la prima volta, Briefcase
-scarica un JDK Java e l'SDK Android. Le dimensioni dei file e i tempi di
-download possono essere considerevoli; il download può richiedere un po' di
-tempo (10 minuti o più, a seconda della velocità della connessione a Internet).
-Al termine del download, verrà richiesto di accettare la licenza Android SDK di
-Google.</p>
-<p>Una volta completata questa operazione, nel nostro progetto avremo una cartella
-<code>buildhelloworld\android\gradle</code>, che conterrà un progetto Android con una
-configurazione di compilazione Gradle. Questo progetto conterrà il codice
-dell'applicazione e un pacchetto di supporto contenente l'interprete Python.</p>
-<p>Possiamo quindi usare il comando <code>build</code> di Briefcase per compilare questo file
-in un'applicazione Android APK.</p>
+<p>Quando si esegue <code>briefcase create android</code> per la prima volta, Briefcase scarica un JDK Java e l'SDK Android. Le dimensioni dei file e i tempi di download possono essere considerevoli; il download può richiedere un po' di tempo (10 minuti o più, a seconda della velocità della connessione a Internet). Al termine del download, verrà richiesto di accettare la licenza Android SDK di Google.</p>
+<p>Una volta completata questa operazione, nel nostro progetto avremo una cartella <code>buildhelloworld\android\gradle</code>, che conterrà un progetto Android con una configurazione di compilazione Gradle. Questo progetto conterrà il codice dell'applicazione e un pacchetto di supporto contenente l'interprete Python.</p>
+<p>Possiamo quindi usare il comando <code>build</code> di Briefcase per compilare questo file in un'applicazione Android APK.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1814,23 +1799,11 @@ in un'applicazione Android APK.</p>
 </div>
 <div class="admonition">
 <p class="admonition-title">Gradle può sembrare bloccato</p>
-<p>Durante il passaggio <code>briefcase build android</code>, Gradle (lo strumento di
-creazione della piattaforma Android) stampa <code>CONFIGURING: 100%</code> e sembra non
-fare nulla. Non preoccupatevi, non è bloccato: sta scaricando altri componenti
-dell'SDK Android. A seconda della velocità della connessione a Internet,
-potrebbero essere necessari altri 10 minuti (o più). Questo ritardo dovrebbe
-verificarsi solo la prima volta che si esegue <code>build</code>; gli strumenti vengono
-memorizzati nella cache e nella compilazione successiva verranno utilizzate le
-versioni memorizzate nella cache.</p>
+<p>Durante il passaggio <code>briefcase build android</code>, Gradle (lo strumento di creazione della piattaforma Android) stampa <code>CONFIGURING: 100%</code> e sembra non fare nulla. Non preoccupatevi, non è bloccato: sta scaricando altri componenti dell'SDK Android. A seconda della velocità della connessione a Internet, potrebbero essere necessari altri 10 minuti (o più). Questo ritardo dovrebbe verificarsi solo la prima volta che si esegue <code>build</code>; gli strumenti vengono memorizzati nella cache e nella compilazione successiva verranno utilizzate le versioni memorizzate nella cache.</p>
 </div>
 <h2 id="eseguire-lapplicazione-su-un-dispositivo-virtuale">Eseguire l'applicazione su un dispositivo virtuale<a class="headerlink" href="#eseguire-lapplicazione-su-un-dispositivo-virtuale" title="Permanent link">&para;</a></h2>
-<p>Ora siamo pronti a eseguire la nostra applicazione. È possibile utilizzare il
-comando <code>run</code> di Briefcase per eseguire l'applicazione su un dispositivo
-Android. Cominciamo con l'esecuzione su un emulatore Android.</p>
-<p>Per eseguire la vostra applicazione, eseguite <code>briefcase run android</code>. In questo
-modo, verrà richiesto un elenco di dispositivi su cui è possibile eseguire
-l'applicazione. L'ultima voce sarà sempre un'opzione per creare un nuovo
-emulatore Android.</p>
+<p>Ora siamo pronti a eseguire la nostra applicazione. È possibile utilizzare il comando <code>run</code> di Briefcase per eseguire l'applicazione su un dispositivo Android. Cominciamo con l'esecuzione su un emulatore Android.</p>
+<p>Per eseguire la vostra applicazione, eseguite <code>briefcase run android</code>. In questo modo, verrà richiesto un elenco di dispositivi su cui è possibile eseguire l'applicazione. L'ultima voce sarà sempre un'opzione per creare un nuovo emulatore Android.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1865,83 +1838,51 @@ emulatore Android.</p>
 </div>
 </div>
 </div>
-<p>Ora possiamo scegliere il dispositivo desiderato. Selezionate l'opzione "Crea un
-nuovo emulatore Android" e accettate la scelta predefinita per il nome del
-dispositivo (<code>beePhone</code>).</p>
-<p>Briefcase <code>run</code> avvierà automaticamente il dispositivo virtuale. Quando il
-dispositivo si avvia, si vedrà il logo di Android:</p>
+<p>Ora possiamo scegliere il dispositivo desiderato. Selezionate l'opzione "Crea un nuovo emulatore Android" e accettate la scelta predefinita per il nome del dispositivo (<code>beePhone</code>).</p>
+<p>Briefcase <code>run</code> avvierà automaticamente il dispositivo virtuale. Quando il dispositivo si avvia, si vedrà il logo di Android:</p>
 <figure>
-<p><img alt="Avvio dispositivo virtuale
-Android" src="../../../images/android/tutorial-5-booting.png" /></p>
+<p><img alt="Avvio dispositivo virtuale Android" src="../../../images/android/tutorial-5-booting.png" /></p>
 <figcaption>
 <p>Avvio del dispositivo virtuale Android</p>
 </figcaption>
 </figure>
-<p>Una volta terminato l'avvio del dispositivo, Briefcase installerà l'applicazione
-sul dispositivo. Verrà visualizzata brevemente una schermata di avvio:</p>
+<p>Una volta terminato l'avvio del dispositivo, Briefcase installerà l'applicazione sul dispositivo. Verrà visualizzata brevemente una schermata di avvio:</p>
 <figure>
-<p><img alt="Dispositivo virtuale Android completamente avviato, sulla schermata di
-avvio" src="../../../images/android/tutorial-5-running.png" /></p>
+<p><img alt="Dispositivo virtuale Android completamente avviato, sulla schermata di avvio" src="../../../images/android/tutorial-5-running.png" /></p>
 <figcaption>
 <p>Dispositivo virtuale Android completamente avviato, sulla schermata del launcher</p>
 </figcaption>
 </figure>
-<p>L'applicazione si avvia. Durante l'avvio dell'applicazione verrà visualizzata
-una schermata iniziale:</p>
+<p>L'applicazione si avvia. Durante l'avvio dell'applicazione verrà visualizzata una schermata iniziale:</p>
 <figure>
-<p><img alt="Schermata iniziale
-dell'applicazione" src="../../../images/android/tutorial-5-splash.png" /></p>
+<p><img alt="Schermata iniziale dell'applicazione" src="../../../images/android/tutorial-5-splash.png" /></p>
 <figcaption>
 <p>Schermata iniziale dell'app</p>
 </figcaption>
 </figure>
 <div class="admonition">
 <p class="admonition-title">L'emulatore non si è avviato!</p>
-<p>L'emulatore Android è un software complesso che si basa su una serie di
-caratteristiche dell'hardware e del sistema operativo, caratteristiche che
-potrebbero non essere disponibili o abilitate su macchine più vecchie. In caso
-di difficoltà nell'avvio dell'emulatore Android, consultare la sezione
-<a href="https://developer.android.com/studio/run/emulator#requirements">Requisiti e
-raccomandazioni</a>
-della documentazione per sviluppatori Android.</p>
+<p>L'emulatore Android è un software complesso che si basa su una serie di caratteristiche dell'hardware e del sistema operativo, caratteristiche che potrebbero non essere disponibili o abilitate su macchine più vecchie. In caso di difficoltà nell'avvio dell'emulatore Android, consultare la sezione <a href="https://developer.android.com/studio/run/emulator#requirements">Requisiti e raccomandazioni</a> della documentazione per sviluppatori Android.</p>
 </div>
-<p>Al primo avvio, l'applicazione deve scompattarsi sul dispositivo. Questa
-operazione può richiedere alcuni secondi. Una volta scompattata, verrà
-visualizzata la versione Android dell'applicazione desktop:</p>
+<p>Al primo avvio, l'applicazione deve scompattarsi sul dispositivo. Questa operazione può richiedere alcuni secondi. Una volta scompattata, verrà visualizzata la versione Android dell'applicazione desktop:</p>
 <figure>
-<p><img alt="Applicazione demo completamente
-avviata" src="../../../images/android/tutorial-5-launched.png" /></p>
+<p><img alt="Applicazione demo completamente avviata" src="../../../images/android/tutorial-5-launched.png" /></p>
 <figcaption>
 <p>Applicazione demo completamente lanciata</p>
 </figcaption>
 </figure>
-<p>Se non si riesce a vedere l'avvio dell'applicazione, potrebbe essere necessario
-controllare il terminale in cui è stato eseguito <code>briefcase run</code> e cercare
-eventuali messaggi di errore.</p>
-<p>Mentre l'applicazione è in esecuzione, si vedranno molti messaggi nella console.
-Si tratta di un flusso di log dell'applicazione dall'emulatore. Digitando Ctrl+C
-nel terminale, si interromperà il flusso di informazioni nella console, ma non
-si chiuderà l'emulatore. In questo modo è possibile testare le nuove modifiche
-senza riavviare l'emulatore.</p>
-<p>In futuro, se si vuole eseguire su questo dispositivo senza usare il menu, si
-può fornire il nome dell'emulatore a Briefcase, usando <code>briefcase run android -d
-@beePhone</code> per eseguire direttamente sul dispositivo virtuale.</p>
+<p>Se non si riesce a vedere l'avvio dell'applicazione, potrebbe essere necessario controllare il terminale in cui è stato eseguito <code>briefcase run</code> e cercare eventuali messaggi di errore.</p>
+<p>Mentre l'applicazione è in esecuzione, si vedranno molti messaggi nella console. Si tratta di un flusso di log dell'applicazione dall'emulatore. Digitando Ctrl+C nel terminale, si interromperà il flusso di informazioni nella console, ma non si chiuderà l'emulatore. In questo modo è possibile testare le nuove modifiche senza riavviare l'emulatore.</p>
+<p>In futuro, se si vuole eseguire su questo dispositivo senza usare il menu, si può fornire il nome dell'emulatore a Briefcase, usando <code>briefcase run android -d @beePhone</code> per eseguire direttamente sul dispositivo virtuale.</p>
 <h2 id="eseguire-lapplicazione-su-un-dispositivo-fisico">Eseguire l'applicazione su un dispositivo fisico<a class="headerlink" href="#eseguire-lapplicazione-su-un-dispositivo-fisico" title="Permanent link">&para;</a></h2>
-<p>Se si dispone di un telefono o di un tablet Android fisico, è possibile
-collegarlo al computer con un cavo USB e quindi utilizzare la valigetta per
-puntare al dispositivo fisico.</p>
-<p>Android richiede la preparazione del dispositivo prima di poterlo utilizzare per
-lo sviluppo. È necessario apportare due modifiche alle opzioni del dispositivo:</p>
+<p>Se si dispone di un telefono o di un tablet Android fisico, è possibile collegarlo al computer con un cavo USB e quindi utilizzare la valigetta per puntare al dispositivo fisico.</p>
+<p>Android richiede la preparazione del dispositivo prima di poterlo utilizzare per lo sviluppo. È necessario apportare due modifiche alle opzioni del dispositivo:</p>
 <ul>
 <li>Abilitare le opzioni per gli sviluppatori</li>
 <li>Abilitare il debug USB</li>
 </ul>
-<p>I dettagli su come apportare queste modifiche sono disponibili <a href="https://developer.android.com/studio/debug/dev-options#enable">nella
-documentazione per sviluppatori
-Android</a>.</p>
-<p>Una volta completati questi passaggi, il dispositivo dovrebbe apparire
-nell'elenco dei dispositivi disponibili quando si esegue <code>briefcase run
-android</code>.</p>
+<p>I dettagli su come apportare queste modifiche sono disponibili <a href="https://developer.android.com/studio/debug/dev-options#enable">nella documentazione per sviluppatori Android</a>.</p>
+<p>Una volta completati questi passaggi, il dispositivo dovrebbe apparire nell'elenco dei dispositivi disponibili quando si esegue <code>briefcase run android</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1982,26 +1923,14 @@ android</code>.</p>
 </div>
 </div>
 </div>
-<p>Qui possiamo vedere un nuovo dispositivo fisico con il suo numero di serie
-nell'elenco di distribuzione - in questo caso, un Pixel 3a. In futuro, se si
-vuole eseguire su questo dispositivo senza usare il menu, si può fornire il
-numero di serie del telefono a Briefcase (in questo caso, <code>briefcase run android
--d 94ZZY0LNE8</code>). In questo modo si eseguirà direttamente sul dispositivo, senza
-richiedere nulla.</p>
+<p>Qui possiamo vedere un nuovo dispositivo fisico con il suo numero di serie nell'elenco di distribuzione - in questo caso, un Pixel 3a. In futuro, se si vuole eseguire su questo dispositivo senza usare il menu, si può fornire il numero di serie del telefono a Briefcase (in questo caso, <code>briefcase run android -d 94ZZY0LNE8</code>). In questo modo si eseguirà direttamente sul dispositivo, senza richiedere nulla.</p>
 <div class="admonition">
 <p class="admonition-title">Il mio dispositivo non appare!</p>
-<p>Se il dispositivo non compare in questo elenco, significa che non è stato
-attivato il debug USB (oppure che il dispositivo non è collegato!).</p>
-<p>Se il dispositivo appare, ma è elencato come "Dispositivo sconosciuto (non
-autorizzato per lo sviluppo)", la modalità sviluppatore non è stata abilitata
-correttamente. Eseguire nuovamente <a href="https://developer.android.com/studio/debug/dev-options#enable">i passaggi per abilitare le opzioni per gli
-sviluppatori</a> e
-rieseguire <code>briefcase run android</code>.</p>
+<p>Se il dispositivo non compare in questo elenco, significa che non è stato attivato il debug USB (oppure che il dispositivo non è collegato!).</p>
+<p>Se il dispositivo appare, ma è elencato come "Dispositivo sconosciuto (non autorizzato per lo sviluppo)", la modalità sviluppatore non è stata abilitata correttamente. Eseguire nuovamente <a href="https://developer.android.com/studio/debug/dev-options#enable">i passaggi per abilitare le opzioni per gli sviluppatori</a> e rieseguire <code>briefcase run android</code>.</p>
 </div>
 <h2 id="prossimi-passi">Prossimi passi<a class="headerlink" href="#prossimi-passi" title="Permanent link">&para;</a></h2>
-<p>Ora abbiamo un'applicazione sul nostro telefono! C'è un altro posto dove
-possiamo distribuire un'applicazione BeeWare? Vai a <a href="../../tutorial-6/">Tutorial
-6</a> per scoprirlo&hellip;</p>
+<p>Ora abbiamo un'applicazione sul nostro telefono! C'è un altro posto dove possiamo distribuire un'applicazione BeeWare? Vai a <a href="../../tutorial-6/">Tutorial 6</a> per scoprirlo&hellip;</p>
 
 
 

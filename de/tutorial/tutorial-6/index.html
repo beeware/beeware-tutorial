@@ -1657,30 +1657,14 @@ aria-label="Kopfzeile"
 
 
 <h1 id="tutorial-6-ins-netz-stellen">Tutorial 6 - Ins Netz stellen!<a class="headerlink" href="#tutorial-6-ins-netz-stellen" title="Permanent link">&para;</a></h1>
-<p>Neben mobilen Plattformen unterstützt das Toga-Widget-Toolkit auch das Web! Mit
-derselben API, die Sie für die Bereitstellung Ihrer Desktop- und
-Mobilanwendungen verwendet haben, können Sie Ihre Anwendung als
-Single-Page-Web-App bereitstellen.</p>
+<p>Neben mobilen Plattformen unterstützt das Toga-Widget-Toolkit auch das Web! Mit derselben API, die Sie für die Bereitstellung Ihrer Desktop- und Mobilanwendungen verwendet haben, können Sie Ihre Anwendung als Single-Page-Web-App bereitstellen.</p>
 <div class="admonition">
 <p class="admonition-title">Proof of Concept</p>
-<p>Das Toga-Web-Backend ist das am wenigsten ausgereifte aller Toga-Backends. Es
-ist zwar ausgereift genug, um einige Funktionen zu demonstrieren, aber es ist
-wahrscheinlich fehlerhaft und es fehlen viele der Widgets, die auf anderen
-Plattformen verfügbar sind. Zum jetzigen Zeitpunkt sollte die Web-Bereitstellung
-als „Proof of Concept“ betrachtet werden – ausreichend, um zu zeigen, was
-möglich ist, aber nicht ausreichend, um sich bei ernsthaften
-Entwicklungsprojekten darauf zu verlassen.</p>
-<p>Wenn Sie Probleme mit diesem Schritt des Tutorials haben, können Sie zur
-nächsten Seite springen.</p>
+<p>Das Toga-Web-Backend ist das am wenigsten ausgereifte aller Toga-Backends. Es ist zwar ausgereift genug, um einige Funktionen zu demonstrieren, aber es ist wahrscheinlich fehlerhaft und es fehlen viele der Widgets, die auf anderen Plattformen verfügbar sind. Zum jetzigen Zeitpunkt sollte die Web-Bereitstellung als „Proof of Concept“ betrachtet werden – ausreichend, um zu zeigen, was möglich ist, aber nicht ausreichend, um sich bei ernsthaften Entwicklungsprojekten darauf zu verlassen.</p>
+<p>Wenn Sie Probleme mit diesem Schritt des Tutorials haben, können Sie zur nächsten Seite springen.</p>
 </div>
 <h2 id="als-webanwendung-bereitstellen">Als Webanwendung bereitstellen<a class="headerlink" href="#als-webanwendung-bereitstellen" title="Permanent link">&para;</a></h2>
-<p>Der Prozess der Bereitstellung als Single-Page-Web-App folgt dem gleichen
-bekannten Muster: Sie erstellen die Anwendung, bauen sie dann und führen sie
-anschließend aus. Briefcase kann jedoch etwas intelligenter sein: Wenn Sie
-versuchen, eine Anwendung auszuführen, und Briefcase feststellt, dass sie nicht
-für die Zielplattform erstellt oder gebaut wurde, führt es die Schritte zum
-Erstellen und Bauen für Sie aus. Da wir die App zum ersten Mal für das Web
-ausführen, können wir alle drei Schritte mit einem einzigen Befehl ausführen:</p>
+<p>Der Prozess der Bereitstellung als Single-Page-Web-App folgt dem gleichen bekannten Muster: Sie erstellen die Anwendung, bauen sie dann und führen sie anschließend aus. Briefcase kann jedoch etwas intelligenter sein: Wenn Sie versuchen, eine Anwendung auszuführen, und Briefcase feststellt, dass sie nicht für die Zielplattform erstellt oder gebaut wurde, führt es die Schritte zum Erstellen und Bauen für Sie aus. Da wir die App zum ersten Mal für das Web ausführen, können wir alle drei Schritte mit einem einzigen Befehl ausführen:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1793,40 +1777,16 @@ ausführen, können wir alle drei Schritte mit einem einzigen Befehl ausführen:
 </div>
 </div>
 </div>
-<p>Dadurch wird ein Webbrowser geöffnet, der auf
-<nospell><a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></nospell> zeigt:</p>
+<p>Dadurch wird ein Webbrowser geöffnet, der auf <nospell><a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></nospell> zeigt:</p>
 <p><img alt="Hello World Tutorial 6 Dialog, in einem Browser" src="../../images/tutorial-6.png" /></p>
-<p>Wenn Sie Ihren Namen eingeben und auf die Schaltfläche klicken, wird ein
-Dialogfeld angezeigt.</p>
+<p>Wenn Sie Ihren Namen eingeben und auf die Schaltfläche klicken, wird ein Dialogfeld angezeigt.</p>
 <h2 id="wie-funktioniert-das">Wie funktioniert das?<a class="headerlink" href="#wie-funktioniert-das" title="Permanent link">&para;</a></h2>
-<p>Diese Webanwendung ist eine statische Website - eine einzelne HTML-Quellseite
-mit einigen CSS- und anderen Ressourcen. Briefcase hat einen lokalen Webserver
-gestartet, um diese Seite bereitzustellen, damit Ihr Browser die Seite anzeigen
-kann. Wenn Sie diese Webseite in Produktion geben möchten, können Sie den Inhalt
-des Ordners <code>www</code> auf einen beliebigen Webserver kopieren, der statische Inhalte
-bereitstellen kann.</p>
-<p>Aber wenn Sie die Taste drücken, führen Sie Python-Code aus&hellip; wie funktioniert
-das? Toga verwendet <a href="https://pyscript.net">PyScript</a>, um einen
-Python-Interpreter im Browser bereitzustellen. Briefcase verpackt den Code Ihrer
-Anwendung als Rädchen, die PyScript im Browser laden kann. Wenn die Seite
-geladen wird, läuft der Anwendungscode im Browser und baut die
-Benutzeroberfläche mit Hilfe des Browser-DOMs auf. Wenn Sie auf eine
-Schaltfläche klicken, führt diese Schaltfläche den Code zur Ereignisbehandlung
-im Browser aus.</p>
+<p>Diese Webanwendung ist eine statische Website - eine einzelne HTML-Quellseite mit einigen CSS- und anderen Ressourcen. Briefcase hat einen lokalen Webserver gestartet, um diese Seite bereitzustellen, damit Ihr Browser die Seite anzeigen kann. Wenn Sie diese Webseite in Produktion geben möchten, können Sie den Inhalt des Ordners <code>www</code> auf einen beliebigen Webserver kopieren, der statische Inhalte bereitstellen kann.</p>
+<p>Aber wenn Sie die Taste drücken, führen Sie Python-Code aus&hellip; wie funktioniert das? Toga verwendet <a href="https://pyscript.net">PyScript</a>, um einen Python-Interpreter im Browser bereitzustellen. Briefcase verpackt den Code Ihrer Anwendung als Rädchen, die PyScript im Browser laden kann. Wenn die Seite geladen wird, läuft der Anwendungscode im Browser und baut die Benutzeroberfläche mit Hilfe des Browser-DOMs auf. Wenn Sie auf eine Schaltfläche klicken, führt diese Schaltfläche den Code zur Ereignisbehandlung im Browser aus.</p>
 <h2 id="veroffentlichung-der-web-app">Veröffentlichung der Web-App<a class="headerlink" href="#veroffentlichung-der-web-app" title="Permanent link">&para;</a></h2>
-<p>Wenn Sie möchten, können Sie diese Web-App auch mit dem <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">PythonAnywhere
-Briefcase
-Plugin</a> im
-Internet veröffentlichen. Das
-<a href="https://briefcase.pythonanywhere.com/tutorial/">Tutorial</a> für dieses Plugin
-knüpft an diese Seite an und führt Sie durch die Paketierung und
-Veröffentlichung auf <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
+<p>Wenn Sie möchten, können Sie diese Web-App auch mit dem <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">PythonAnywhere Briefcase Plugin</a> im Internet veröffentlichen. Das <a href="https://briefcase.pythonanywhere.com/tutorial/">Tutorial</a> für dieses Plugin knüpft an diese Seite an und führt Sie durch die Paketierung und Veröffentlichung auf <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
 <h2 id="nachste-schritte">Nächste Schritte<a class="headerlink" href="#nachste-schritte" title="Permanent link">&para;</a></h2>
-<p>Obwohl wir diese App jetzt auf dem Desktop, auf dem Handy und im Web
-bereitgestellt haben, ist die App recht einfach und enthält keine Bibliotheken
-von Drittanbietern. Können wir Bibliotheken aus dem Python Package Index (PyPI)
-in unsere App einbinden? Schauen Sie sich <a href="../tutorial-7/">Tutorial 7</a> an, um das
-herauszufinden&hellip;</p>
+<p>Obwohl wir diese App jetzt auf dem Desktop, auf dem Handy und im Web bereitgestellt haben, ist die App recht einfach und enthält keine Bibliotheken von Drittanbietern. Können wir Bibliotheken aus dem Python Package Index (PyPI) in unsere App einbinden? Schauen Sie sich <a href="../tutorial-7/">Tutorial 7</a> an, um das herauszufinden&hellip;</p>
 
 
 

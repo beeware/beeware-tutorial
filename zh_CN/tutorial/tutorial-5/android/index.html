@@ -1660,8 +1660,7 @@ aria-label="页眉"
 
 <h1 id="5-">教程 5 - 在移动设备上：安卓<a class="headerlink" href="#5-" title="Permanent link">&para;</a></h1>
 <p>现在，我们要将应用程序部署为 Android 应用程序。</p>
-<p>将应用程序部署到 Android 的过程与部署为桌面应用程序的过程非常相似。Briefcase 会处理 Android 上的依赖项的安装，包括 Android
-SDK、Android 模拟器，和一个 Java 编译器。</p>
+<p>将应用程序部署到 Android 的过程与部署为桌面应用程序的过程非常相似。Briefcase 会处理 Android 上的依赖项的安装，包括 Android SDK、Android 模拟器，和一个 Java 编译器。</p>
 <h2 id="android">创建并编译 Android 应用程序<a class="headerlink" href="#android" title="Permanent link">&para;</a></h2>
 <p>首先，运行 <code>create</code> 命令。这会下载一个 Android 应用程序模板，并在其中添加您的 Python 代码。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
@@ -1743,11 +1742,8 @@ SDK、Android 模拟器，和一个 Java 编译器。</p>
 </div>
 </div>
 </div>
-<p>首次运行 <code>briefcase create android</code> 时，Briefcase 会下载 Java JDK 和 Android
-SDK。文件大小较大，且下载时间可能会较长（10 分钟或更长，取决于您的互联网连接速度）。下载完成后，您将会被提示接受 Google 的 Android SDK
-许可证。还有一些需要同意的许可证 &ndash; 在提示符不停的按 <code>y</code> 以查看与接受所有所需的许可证协议。</p>
-<p>完成后，我们的项目中就会有一个\ <code>build/helloworld/android/gradle</code>\ 目录，其中包含一个带有 Gradle 构建配置的
-Android 项目。这个项目将包含您的应用代码，以及一个包含 Python 解释器的支持包。</p>
+<p>首次运行 <code>briefcase create android</code> 时，Briefcase 会下载 Java JDK 和 Android SDK。文件大小较大，且下载时间可能会较长（10 分钟或更长，取决于您的互联网连接速度）。下载完成后，您将会被提示接受 Google 的 Android SDK 许可证。还有一些需要同意的许可证 &ndash; 在提示符不停的按 <code>y</code> 以查看与接受所有所需的许可证协议。</p>
+<p>完成后，我们的项目中就会有一个\ <code>build/helloworld/android/gradle</code>\ 目录，其中包含一个带有 Gradle 构建配置的 Android 项目。这个项目将包含您的应用代码，以及一个包含 Python 解释器的支持包。</p>
 <p>然后我们可以使用 Briefcase 的 <code>build</code> 命令将其编译为 Android APK 应用程序文件。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
@@ -1803,13 +1799,10 @@ Android 项目。这个项目将包含您的应用代码，以及一个包含 Py
 </div>
 <div class="admonition">
 <p class="admonition-title">Gradle 可能看起来卡住了</p>
-<p>在 <code>briefcase build android</code> 步骤中，Gradle（Android 平台构建工具）会打印 \ <code>CONFIGURING:
-100%</code>，似乎什么也没做。别担心，这不是卡住了，而是在下载更多的 Android SDK 组件。根据您的网络连接速度，这可能还需要 10
-分钟（或更长时间）。只有在第一次运行 <code>build</code> 时才会出现这种滞后现象；这些工具将会被缓存，下次构建时将使用缓存版本。</p>
+<p>在 <code>briefcase build android</code> 步骤中，Gradle（Android 平台构建工具）会打印 \ <code>CONFIGURING: 100%</code>，似乎什么也没做。别担心，这不是卡住了，而是在下载更多的 Android SDK 组件。根据您的网络连接速度，这可能还需要 10 分钟（或更长时间）。只有在第一次运行 <code>build</code> 时才会出现这种滞后现象；这些工具将会被缓存，下次构建时将使用缓存版本。</p>
 </div>
 <h2 id="_1">在虚拟设备上运行应用程序<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>现在我们可以运行应用程序了。您可以使用 Briefcase 的 <code>run</code> 命令在 Android 设备上运行应用程序。让我们从在 Android
-模拟器上运行开始。</p>
+<p>现在我们可以运行应用程序了。您可以使用 Briefcase 的 <code>run</code> 命令在 Android 设备上运行应用程序。让我们从在 Android 模拟器上运行开始。</p>
 <p>要运行应用程序，请运行 <code>briefcase run android</code>。运行时，系统会提示你可以在哪些设备上运行应用程序。最后一项总会是创建新安卓模拟器的选项。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
@@ -1869,9 +1862,7 @@ Android 项目。这个项目将包含您的应用代码，以及一个包含 Py
 </figure>
 <div class="admonition">
 <p class="admonition-title">模拟器没有启动！</p>
-<p>安卓模拟器是一个复杂的软件，依赖于许多硬件和操作系统功能，这些功能在旧机器上可能无法使用或启用。如果在启动 Android 模拟器时遇到任何困难，请查阅
-Android 开发人员文档中的\
-<a href="https://developer.android.com/studio/run/emulator#requirements">要求和建议</a> 部分。</p>
+<p>安卓模拟器是一个复杂的软件，依赖于许多硬件和操作系统功能，这些功能在旧机器上可能无法使用或启用。如果在启动 Android 模拟器时遇到任何困难，请查阅 Android 开发人员文档中的\ <a href="https://developer.android.com/studio/run/emulator#requirements">要求和建议</a> 部分。</p>
 </div>
 <p>首次启动应用程序时，它需要将自己解压缩到设备上。这可能需要几秒钟。解压完成后，您将看到桌面应用程序的 Android 版本：</p>
 <figure>
@@ -1881,10 +1872,8 @@ Android 开发人员文档中的\
 </figcaption>
 </figure>
 <p>如果看不到应用程序启动，可能需要检查运行 <code>briefcase run</code> 的终端，查看是否有错误信息。</p>
-<p>程序运行时，你会在控制台中看到大量信息流。这是来自模拟器的应用程序日志流。在终端输入 Ctrl+C
-将停止控制台中的信息流，但不会关闭模拟器。这样你就可以在不重启模拟器的情况下测试新的更改。</p>
-<p>今后，如果想在该设备上运行而不使用菜单，可以向 Briefcase 提供模拟器名称，使用 <code>briefcase run android -d
-@beePhone</code> 直接在虚拟设备上运行。</p>
+<p>程序运行时，你会在控制台中看到大量信息流。这是来自模拟器的应用程序日志流。在终端输入 Ctrl+C 将停止控制台中的信息流，但不会关闭模拟器。这样你就可以在不重启模拟器的情况下测试新的更改。</p>
+<p>今后，如果想在该设备上运行而不使用菜单，可以向 Briefcase 提供模拟器名称，使用 <code>briefcase run android -d @beePhone</code> 直接在虚拟设备上运行。</p>
 <h2 id="_2">在实体设备上运行应用程序<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>如果您有实体安卓手机或平板电脑，可以用 USB 线缆将其连接到电脑，然后使用公文包来定位您的实体设备。</p>
 <p>Android 要求您在设备用于开发前做好准备。您需要对设备上的选项进行两项更改：</p>
@@ -1892,8 +1881,7 @@ Android 开发人员文档中的\
 <li>启用开发人员选项</li>
 <li>启用 USB 调试</li>
 </ul>
-<p>有关如何进行这些更改的详细信息，请参阅 Android
-开发人员文档](<a href="https://developer.android.com/studio/debug/dev-options#enable">https://developer.android.com/studio/debug/dev-options#enable</a>)。</p>
+<p>有关如何进行这些更改的详细信息，请参阅 Android 开发人员文档](<a href="https://developer.android.com/studio/debug/dev-options#enable">https://developer.android.com/studio/debug/dev-options#enable</a>)。</p>
 <p>完成这些步骤后，在运行 <code>briefcase run android</code> 时，您的设备应出现在可用设备列表中。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
@@ -1935,14 +1923,11 @@ Android 开发人员文档中的\
 </div>
 </div>
 </div>
-<p>在这里，我们可以在部署列表中看到一个带有序列号的新物理设备&ndash;在本例中是 Pixel 3a。将来，如果你想不使用菜单而在该设备上运行，可以向 Briefcase
-提供手机序列号（本例中为 <code>briefcase run android -d 94ZZY0LNE8</code>）。这将直接在设备上运行，无需提示。</p>
+<p>在这里，我们可以在部署列表中看到一个带有序列号的新物理设备&ndash;在本例中是 Pixel 3a。将来，如果你想不使用菜单而在该设备上运行，可以向 Briefcase 提供手机序列号（本例中为 <code>briefcase run android -d 94ZZY0LNE8</code>）。这将直接在设备上运行，无需提示。</p>
 <div class="admonition">
 <p class="admonition-title">我的设备没有出现！</p>
 <p>如果你的设备根本没有出现在这个列表中，要么是你没有启用 USB 调试（要么是设备没有插上电源！）。</p>
-<p>如果你的设备出现了，但却被列为 "未知设备（未授权开发）"，那么开发者模式尚未正确启用。重新运行
-<a href="https://developer.android.com/studio/debug/dev-options#enable">启用开发者选项的步骤</a>，并重新运行
-"briefcase run android"。</p>
+<p>如果你的设备出现了，但却被列为 "未知设备（未授权开发）"，那么开发者模式尚未正确启用。重新运行 <a href="https://developer.android.com/studio/debug/dev-options#enable">启用开发者选项的步骤</a>，并重新运行 "briefcase run android"。</p>
 </div>
 <h2 id="_3">下一步<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>我们现在已经在手机上安装了应用程序！还有其他地方可以部署 BeeWare 应用程序吗？转到<a href="../../tutorial-6/">教程6</a>就知道了&hellip;</p>

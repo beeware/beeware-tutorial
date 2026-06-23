@@ -527,7 +527,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 0 - Préparons-nous !
+    Tutoriel 0 - Préparons-nous !
   
 
 
@@ -882,8 +882,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 5 - Application mobile :
-  Android
+    Tutoriel 5 - Application mobile : Android
   
 
 
@@ -929,7 +928,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 5 - Application mobile : iOS
+    Tutoriel 5 - Application mobile : iOS
   
 
 
@@ -1005,7 +1004,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 6 - Mettez-la sur le web !
+    Tutoriel 6 - Mettez-la sur le web !
   
 
 
@@ -1038,7 +1037,7 @@ aria-label="En-tête"
 
   <!-- Typeset title -->
   
-    Tutoriel 6 - Mettez-la sur le web !
+    Tutoriel 6 - Mettez-la sur le web !
   
 
 
@@ -1658,30 +1657,14 @@ aria-label="En-tête"
 
 
 <h1 id="tutoriel-6-mettez-le-sur-le-web">Tutoriel 6 - Mettez-le sur le web !<a class="headerlink" href="#tutoriel-6-mettez-le-sur-le-web" title="Permanent link">&para;</a></h1>
-<p>En plus de prendre en charge les plateformes mobiles, la boîte à outils Toga
-widget prend également en charge le web ! En utilisant la même API que celle
-utilisée pour déployer vos applications de bureau et mobiles, vous pouvez
-déployer votre application en tant qu'application web à page unique.</p>
+<p>En plus de prendre en charge les plateformes mobiles, la boîte à outils Toga widget prend également en charge le web ! En utilisant la même API que celle utilisée pour déployer vos applications de bureau et mobiles, vous pouvez déployer votre application en tant qu'application web à page unique.</p>
 <div class="admonition">
 <p class="admonition-title">Preuve de concept</p>
-<p>Le backend de Toga Web est le moins mature de tous les backends de Toga. Il est
-suffisamment mature pour présenter quelques fonctionnalités, mais il est
-probable qu'il soit bogué et qu'il manque de nombreux widgets disponibles sur
-d'autres plates-formes. À ce stade, le déploiement sur le Web doit être
-considéré comme une "preuve de concept" - suffisante pour démontrer ce qui peut
-être fait, mais pas assez pour être utilisée pour un développement sérieux.</p>
-<p>Si vous avez des problèmes avec cette étape du tutoriel, vous pouvez passer à la
-page suivante.</p>
+<p>Le backend de Toga Web est le moins mature de tous les backends de Toga. Il est suffisamment mature pour présenter quelques fonctionnalités, mais il est probable qu'il soit bogué et qu'il manque de nombreux widgets disponibles sur d'autres plates-formes. À ce stade, le déploiement sur le Web doit être considéré comme une "preuve de concept" - suffisante pour démontrer ce qui peut être fait, mais pas assez pour être utilisée pour un développement sérieux.</p>
+<p>Si vous avez des problèmes avec cette étape du tutoriel, vous pouvez passer à la page suivante.</p>
 </div>
 <h2 id="deploiement-en-tant-quapplication-web">Déploiement en tant qu'application web<a class="headerlink" href="#deploiement-en-tant-quapplication-web" title="Permanent link">&para;</a></h2>
-<p>Le processus de déploiement en tant qu'application web à page unique suit le
-même schéma familier - vous créez l'application, vous la construisez, puis vous
-l'exécutez. Cependant, Briefcase peut être un peu plus intelligent ; si vous
-essayez d'exécuter une application et que Briefcase détermine qu'elle n'a pas
-été créée ou construite pour la plateforme ciblée, il effectuera les étapes de
-création et de construction pour vous. Puisque c'est la première fois que nous
-lançons l'application pour le web, nous pouvons exécuter les trois étapes en une
-seule commande :</p>
+<p>Le processus de déploiement en tant qu'application web à page unique suit le même schéma familier - vous créez l'application, vous la construisez, puis vous l'exécutez. Cependant, Briefcase peut être un peu plus intelligent ; si vous essayez d'exécuter une application et que Briefcase détermine qu'elle n'a pas été créée ou construite pour la plateforme ciblée, il effectuera les étapes de création et de construction pour vous. Puisque c'est la première fois que nous lançons l'application pour le web, nous pouvons exécuter les trois étapes en une seule commande :</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1794,40 +1777,16 @@ seule commande :</p>
 </div>
 </div>
 </div>
-<p>Cela ouvrira un navigateur web, pointant sur
-<nospell><a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></nospell> :</p>
+<p>Cela ouvrira un navigateur web, pointant sur <nospell><a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></nospell> :</p>
 <p><img alt="Dialogue Hello World Tutorial 6, dans un navigateur" src="../../images/tutorial-6.png" /></p>
-<p>Si vous entrez votre nom et cliquez sur le bouton, une boîte de dialogue
-apparaît.</p>
+<p>Si vous entrez votre nom et cliquez sur le bouton, une boîte de dialogue apparaît.</p>
 <h2 id="comment-ca-marche">Comment ça marche ?<a class="headerlink" href="#comment-ca-marche" title="Permanent link">&para;</a></h2>
-<p>Cette application web est un site web statique - une seule page source HTML,
-avec quelques feuilles de style CSS et d'autres ressources. Briefcase a démarré
-un serveur web local pour servir cette page afin que votre navigateur puisse la
-voir. Si vous voulez mettre cette page web en production, vous pouvez copier le
-contenu du dossier <code>www</code> sur n'importe quel serveur web qui peut servir du
-contenu statique.</p>
-<p>Mais lorsque vous appuyez sur le bouton, vous exécutez du code Python&hellip; Comment
-cela fonctionne-t-il ? Toga utilise <a href="https://pyscript.net">PyScript</a> pour
-fournir un interprète Python dans le navigateur. Briefcase présente le code de
-votre application sous forme de roues que PyScript peut charger dans le
-navigateur. Lorsque la page est chargée, le code de l'application s'exécute dans
-le navigateur, construisant l'interface utilisateur en utilisant le DOM du
-navigateur. Lorsque vous cliquez sur un bouton, ce bouton exécute le code de
-gestion des événements dans le navigateur.</p>
+<p>Cette application web est un site web statique - une seule page source HTML, avec quelques feuilles de style CSS et d'autres ressources. Briefcase a démarré un serveur web local pour servir cette page afin que votre navigateur puisse la voir. Si vous voulez mettre cette page web en production, vous pouvez copier le contenu du dossier <code>www</code> sur n'importe quel serveur web qui peut servir du contenu statique.</p>
+<p>Mais lorsque vous appuyez sur le bouton, vous exécutez du code Python&hellip; Comment cela fonctionne-t-il ? Toga utilise <a href="https://pyscript.net">PyScript</a> pour fournir un interprète Python dans le navigateur. Briefcase présente le code de votre application sous forme de roues que PyScript peut charger dans le navigateur. Lorsque la page est chargée, le code de l'application s'exécute dans le navigateur, construisant l'interface utilisateur en utilisant le DOM du navigateur. Lorsque vous cliquez sur un bouton, ce bouton exécute le code de gestion des événements dans le navigateur.</p>
 <h2 id="publication-de-lapplication-web">Publication de l'application web<a class="headerlink" href="#publication-de-lapplication-web" title="Permanent link">&para;</a></h2>
-<p>Si vous le souhaitez, vous pouvez également essayer de publier cette application
-web sur Internet à l'aide du <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">plugin PythonAnywhere
-Briefcase</a>.
-Le <a href="https://briefcase.pythonanywhere.com/tutorial/">tutoriel</a> consacré à ce
-plugin reprend là où cette page s'arrête et vous guide tout au long du processus
-de packaging et de publication sur
-<a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
+<p>Si vous le souhaitez, vous pouvez également essayer de publier cette application web sur Internet à l'aide du <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">plugin PythonAnywhere Briefcase</a>. Le <a href="https://briefcase.pythonanywhere.com/tutorial/">tutoriel</a> consacré à ce plugin reprend là où cette page s'arrête et vous guide tout au long du processus de packaging et de publication sur <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
 <h2 id="etapes-suivantes">Étapes suivantes<a class="headerlink" href="#etapes-suivantes" title="Permanent link">&para;</a></h2>
-<p>Bien que nous ayons maintenant déployé cette application sur les ordinateurs de
-bureau, les téléphones portables et le web, l'application est assez simple et
-n'implique pas de bibliothèques tierces. Pouvons-nous inclure des bibliothèques
-du Python Package Index (PyPI) dans notre application ? Consultez <a href="../tutorial-7/">Tutoriel
-7</a> pour le savoir&hellip;</p>
+<p>Bien que nous ayons maintenant déployé cette application sur les ordinateurs de bureau, les téléphones portables et le web, l'application est assez simple et n'implique pas de bibliothèques tierces. Pouvons-nous inclure des bibliothèques du Python Package Index (PyPI) dans notre application ? Consultez <a href="../tutorial-7/">Tutoriel 7</a> pour le savoir&hellip;</p>
 
 
 
@@ -1859,7 +1818,7 @@ du Python Package Index (PyPI) dans notre application ? Consultez <a href="../tu
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../tutorial-5/iOS/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Tutoriel 5 - Application mobile : iOS">
+          <a href="../tutorial-5/iOS/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Tutoriel 5 - Application mobile : iOS">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1869,7 +1828,7 @@ du Python Package Index (PyPI) dans notre application ? Consultez <a href="../tu
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Tutoriel 5 - Application mobile : iOS
+                Tutoriel 5 - Application mobile : iOS
               </div>
             </div>
           </a>

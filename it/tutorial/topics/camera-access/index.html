@@ -662,8 +662,7 @@ aria-label="Intestazione"
 
   <!-- Typeset title -->
   
-    Esercitazione 3 - Confezionamento per la
-  distribuzione
+    Esercitazione 3 - Confezionamento per la distribuzione
   
 
 
@@ -1660,30 +1659,17 @@ aria-label="Intestazione"
 
 
 <h1 id="utilizzo-della-fotocamera">Utilizzo della fotocamera<a class="headerlink" href="#utilizzo-della-fotocamera" title="Permanent link">&para;</a></h1>
-<p>Quasi tutti i dispositivi informatici moderni dispongono di una fotocamera di
-qualche tipo. In questa esercitazione, scriveremo una nuova applicazione in
-grado di richiedere l'accesso alla fotocamera, di scattare una fotografia e di
-visualizzarla nella nuova applicazione che utilizza la fotocamera del
-dispositivo.</p>
+<p>Quasi tutti i dispositivi informatici moderni dispongono di una fotocamera di qualche tipo. In questa esercitazione, scriveremo una nuova applicazione in grado di richiedere l'accesso alla fotocamera, di scattare una fotografia e di visualizzarla nella nuova applicazione che utilizza la fotocamera del dispositivo.</p>
 <div class="admonition">
 <p class="admonition-title">Questo tutorial non funziona su tutte le piattaforme!</p>
 <p>Purtroppo, al momento, questa esercitazione funziona solo su macOS e Android.</p>
-<p>Sebbene gli iPhone siano tutti dotati di fotocamera, il <em>Simulatore iOS</em> non
-dispone di una fotocamera funzionante. Anche i dispositivi Windows e Linux hanno
-una fotocamera, ma attualmente Toga non è in grado di accedere alla fotocamera
-su queste piattaforme.</p>
-<p>Il codice presentato qui viene <em>eseguito</em> su Windows o Linux, ma genera un
-errore quando si tenta di scattare una fotografia.</p>
-<p>Il codice funziona se viene eseguito su un dispositivo iOS reale, ma non riesce
-a scattare una fotografia se viene distribuito sul simulatore iOS.</p>
+<p>Sebbene gli iPhone siano tutti dotati di fotocamera, il <em>Simulatore iOS</em> non dispone di una fotocamera funzionante. Anche i dispositivi Windows e Linux hanno una fotocamera, ma attualmente Toga non è in grado di accedere alla fotocamera su queste piattaforme.</p>
+<p>Il codice presentato qui viene <em>eseguito</em> su Windows o Linux, ma genera un errore quando si tenta di scattare una fotografia.</p>
+<p>Il codice funziona se viene eseguito su un dispositivo iOS reale, ma non riesce a scattare una fotografia se viene distribuito sul simulatore iOS.</p>
 </div>
 <h2 id="avviare-un-nuovo-progetto">Avviare un nuovo progetto<a class="headerlink" href="#avviare-un-nuovo-progetto" title="Permanent link">&para;</a></h2>
-<p>Per questa esercitazione non ci baseremo sull'applicazione del tutorial
-principale, ma inizieremo un nuovo progetto. È possibile utilizzare lo stesso
-ambiente virtuale usato nel primo progetto, ma è necessario eseguire nuovamente
-la procedura guidata <code>briefcase new</code>.</p>
-<p>Tornate alla directory che contiene la cartella del progetto <code>helloworld</code> e
-avviate un nuovo progetto chiamato "Hello Camera":</p>
+<p>Per questa esercitazione non ci baseremo sull'applicazione del tutorial principale, ma inizieremo un nuovo progetto. È possibile utilizzare lo stesso ambiente virtuale usato nel primo progetto, ma è necessario eseguire nuovamente la procedura guidata <code>briefcase new</code>.</p>
+<p>Tornate alla directory che contiene la cartella del progetto <code>helloworld</code> e avviate un nuovo progetto chiamato "Hello Camera":</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>new
 <span class="go">...</span>
@@ -1697,9 +1683,7 @@ avviate un nuovo progetto chiamato "Hello Camera":</p>
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>hellocamera
 </code></pre></div>
 <h2 id="aggiungere-il-codice-per-scattare-una-foto">Aggiungere il codice per scattare una foto<a class="headerlink" href="#aggiungere-il-codice-per-scattare-una-foto" title="Permanent link">&para;</a></h2>
-<p>La procedura guidata ha generato un nuovo progetto Toga vuoto. Ora possiamo
-aggiungere il codice per scattare e visualizzare una fotografia. Modificare il
-file <code>app.py</code> della nuova applicazione in modo che abbia il seguente contenuto:</p>
+<p>La procedura guidata ha generato un nuovo progetto Toga vuoto. Ora possiamo aggiungere il codice per scattare e visualizzare una fotografia. Modificare il file <code>app.py</code> della nuova applicazione in modo che abbia il seguente contenuto:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
 
@@ -1749,48 +1733,19 @@ file <code>app.py</code> della nuova applicazione in modo che abbia il seguente 
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloCamera</span><span class="p">()</span>
 </code></pre></div>
-<p>Questo codice presenta due modifiche rispetto all'applicazione predefinita
-generata da Briefcase. Queste aggiunte sono evidenziate sopra:</p>
+<p>Questo codice presenta due modifiche rispetto all'applicazione predefinita generata da Briefcase. Queste aggiunte sono evidenziate sopra:</p>
 <ol>
-<li>Il primo blocco di codice evidenziato (nel metodo <code>startup()</code>) aggiunge i due
-   widget necessari per controllare la fotocamera: una <code>ImageView</code> per
-   visualizzare una foto e un <code>Button</code> per attivare la fotocamera.</li>
-<li>Il secondo blocco di codice evidenziato (il metodo <code>take_photo()</code>) definisce
-   il gestore dell'evento quando viene premuto il pulsante. Questo gestore
-   conferma innanzitutto se l'applicazione ha il permesso di scattare una foto;
-   se il permesso non esiste, viene richiesto. Quindi, viene scattata la foto.
-   La richiesta di autorizzazione e la richiesta di scattare una foto sono
-   entrambe richieste asincrone, quindi richiedono l'uso di <code>await</code>; mentre
-   l'applicazione attende che l'utente confermi l'autorizzazione o scatti la
-   foto, il ciclo di eventi dell'applicazione può continuare in background.</li>
+<li>Il primo blocco di codice evidenziato (nel metodo <code>startup()</code>) aggiunge i due widget necessari per controllare la fotocamera: una <code>ImageView</code> per visualizzare una foto e un <code>Button</code> per attivare la fotocamera.</li>
+<li>Il secondo blocco di codice evidenziato (il metodo <code>take_photo()</code>) definisce il gestore dell'evento quando viene premuto il pulsante. Questo gestore conferma innanzitutto se l'applicazione ha il permesso di scattare una foto; se il permesso non esiste, viene richiesto. Quindi, viene scattata la foto. La richiesta di autorizzazione e la richiesta di scattare una foto sono entrambe richieste asincrone, quindi richiedono l'uso di <code>await</code>; mentre l'applicazione attende che l'utente confermi l'autorizzazione o scatti la foto, il ciclo di eventi dell'applicazione può continuare in background.</li>
 </ol>
-<p>Se la fotocamera scatta una foto con successo, restituisce un oggetto <code>Image</code>
-che può essere assegnato come contenuto della <code>ImageView</code>. Se la richiesta di
-foto è stata annullata dall'utente, la chiamata <code>self.camera.take_photo()</code>
-restituirà <code>None</code> e il risultato potrà essere ignorato. Se l'utente non concede
-il permesso di usare la fotocamera, o se la fotocamera non è implementata sulla
-piattaforma corrente, verrà sollevato un errore e verrà mostrata una finestra di
-dialogo all'utente.</p>
+<p>Se la fotocamera scatta una foto con successo, restituisce un oggetto <code>Image</code> che può essere assegnato come contenuto della <code>ImageView</code>. Se la richiesta di foto è stata annullata dall'utente, la chiamata <code>self.camera.take_photo()</code> restituirà <code>None</code> e il risultato potrà essere ignorato. Se l'utente non concede il permesso di usare la fotocamera, o se la fotocamera non è implementata sulla piattaforma corrente, verrà sollevato un errore e verrà mostrata una finestra di dialogo all'utente.</p>
 <h2 id="aggiunta-di-autorizzazioni-al-dispositivo">Aggiunta di autorizzazioni al dispositivo<a class="headerlink" href="#aggiunta-di-autorizzazioni-al-dispositivo" title="Permanent link">&para;</a></h2>
-<p>Una parte del codice che abbiamo appena aggiunto chiede il permesso di
-utilizzare la fotocamera. Si tratta di una caratteristica comune alle moderne
-piattaforme di app: non è possibile accedere alle funzioni hardware senza
-chiedere esplicitamente il permesso all'utente.</p>
-<p>Tuttavia, questa richiesta avviene in due parti. La prima è nel codice che
-abbiamo appena visto; ma prima che l'applicazione possa chiedere i permessi,
-deve dichiarare i permessi che sta per chiedere.</p>
-<p>I permessi richiesti da ogni piattaforma sono leggermente diversi, ma Briefcase
-ha una rappresentazione multipiattaforma per molti permessi hardware comuni.
-Nella sezione di configurazione <code>[tool.briefcase.app.hellocamera]</code> del file
-<code>pyproject.toml</code> della propria applicazione, aggiungere quanto segue (appena
-sopra la dichiarazione <code>sources</code>):</p>
+<p>Una parte del codice che abbiamo appena aggiunto chiede il permesso di utilizzare la fotocamera. Si tratta di una caratteristica comune alle moderne piattaforme di app: non è possibile accedere alle funzioni hardware senza chiedere esplicitamente il permesso all'utente.</p>
+<p>Tuttavia, questa richiesta avviene in due parti. La prima è nel codice che abbiamo appena visto; ma prima che l'applicazione possa chiedere i permessi, deve dichiarare i permessi che sta per chiedere.</p>
+<p>I permessi richiesti da ogni piattaforma sono leggermente diversi, ma Briefcase ha una rappresentazione multipiattaforma per molti permessi hardware comuni. Nella sezione di configurazione <code>[tool.briefcase.app.hellocamera]</code> del file <code>pyproject.toml</code> della propria applicazione, aggiungere quanto segue (appena sopra la dichiarazione <code>sources</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;L&#39;app scatterà foto del viso.&quot;</span>
 </code></pre></div>
-<p>Dichiara che l'applicazione deve accedere alla fotocamera e fornisce una breve
-descrizione del motivo per cui la fotocamera è necessaria. Questa descrizione è
-necessaria su alcune piattaforme (in particolare macOS e iOS) e verrà mostrata
-all'utente come informazione aggiuntiva quando viene presentata la finestra di
-dialogo dei permessi.</p>
+<p>Dichiara che l'applicazione deve accedere alla fotocamera e fornisce una breve descrizione del motivo per cui la fotocamera è necessaria. Questa descrizione è necessaria su alcune piattaforme (in particolare macOS e iOS) e verrà mostrata all'utente come informazione aggiuntiva quando viene presentata la finestra di dialogo dei permessi.</p>
 <p>Ora possiamo generare ed eseguire l'applicazione:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Android</label></div>
 <div class="tabbed-content">
@@ -1808,19 +1763,9 @@ dialogo dei permessi.</p>
 </div>
 </div>
 </div>
-<p>Quando l'applicazione viene eseguita, viene visualizzato un pulsante. Premendo
-il pulsante, verrà visualizzata la finestra di dialogo della fotocamera
-predefinita della piattaforma. Scattare una foto; la finestra di dialogo della
-fotocamera scomparirà e la foto verrà visualizzata nell'app, proprio sopra il
-pulsante. È quindi possibile scattare un'altra foto, che sostituirà la prima.</p>
+<p>Quando l'applicazione viene eseguita, viene visualizzato un pulsante. Premendo il pulsante, verrà visualizzata la finestra di dialogo della fotocamera predefinita della piattaforma. Scattare una foto; la finestra di dialogo della fotocamera scomparirà e la foto verrà visualizzata nell'app, proprio sopra il pulsante. È quindi possibile scattare un'altra foto, che sostituirà la prima.</p>
 <h2 id="aggiunta-di-ulteriori-autorizzazioni">Aggiunta di ulteriori autorizzazioni<a class="headerlink" href="#aggiunta-di-ulteriori-autorizzazioni" title="Permanent link">&para;</a></h2>
-<p>I permessi sono dichiarati nei file generati durante la chiamata originale a
-<code>briefcase create</code>. Sfortunatamente, Briefcase non può aggiornare questi file
-dopo che sono stati generati inizialmente; quindi, se si vuole aggiungere un
-nuovo permesso alla propria applicazione o modificare quelli esistenti, è
-necessario ricreare l'applicazione. È possibile farlo eseguendo nuovamente
-<code>briefcase create</code>; questo avvertirà che l'applicazione esistente sarà
-sovrascritta e quindi rigenererà l'applicazione con i nuovi permessi.</p>
+<p>I permessi sono dichiarati nei file generati durante la chiamata originale a <code>briefcase create</code>. Sfortunatamente, Briefcase non può aggiornare questi file dopo che sono stati generati inizialmente; quindi, se si vuole aggiungere un nuovo permesso alla propria applicazione o modificare quelli esistenti, è necessario ricreare l'applicazione. È possibile farlo eseguendo nuovamente <code>briefcase create</code>; questo avvertirà che l'applicazione esistente sarà sovrascritta e quindi rigenererà l'applicazione con i nuovi permessi.</p>
 
 
 

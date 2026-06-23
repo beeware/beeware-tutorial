@@ -1635,19 +1635,11 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-2-tornar-a-coisa-interessante">Tutorial 2 - Tornar a coisa interessante<a class="headerlink" href="#tutorial-2-tornar-a-coisa-interessante" title="Permanent link">&para;</a></h1>
-<p>No <a href="../tutorial-1/">Tutorial 1</a>, geramos um projeto inicial que era capaz de
-executar, mas não escrevemos nenhum código por conta própria. Vamos observar o
-que foi criado para nós.</p>
+<p>No <a href="../tutorial-1/">Tutorial 1</a>, geramos um projeto inicial que era capaz de executar, mas não escrevemos nenhum código por conta própria. Vamos observar o que foi criado para nós.</p>
 <h2 id="o-que-foi-gerado">O que foi gerado<a class="headerlink" href="#o-que-foi-gerado" title="Permanent link">&para;</a></h2>
-<p>No diretório <code>src/helloworld</code>, deverá ver 3 ficheiros: <code>__init__.py</code>,
-<code>__main__.py</code> e <code>app.py</code>.</p>
-<p><code>__init__.py</code> marca o diretório <code>helloworld</code> como um módulo Python importável.
-Trata-se de um ficheiro vazio; o facto de existir indica ao interpretador Python
-que o diretório <code>helloworld</code> define um módulo.</p>
-<p>O ficheiro <code>__main__.py</code> marca o módulo <code>helloworld</code> como um tipo especial de
-módulo - um módulo executável. Se você tentar executar o módulo <code>helloworld</code>
-usando <code>python -m helloworld</code>, o ficheiro <code>__main__.py</code> é onde o Python vai
-iniciar a execução. O conteúdo do <code>__main__.py</code> é relativamente simples:</p>
+<p>No diretório <code>src/helloworld</code>, deverá ver 3 ficheiros: <code>__init__.py</code>, <code>__main__.py</code> e <code>app.py</code>.</p>
+<p><code>__init__.py</code> marca o diretório <code>helloworld</code> como um módulo Python importável. Trata-se de um ficheiro vazio; o facto de existir indica ao interpretador Python que o diretório <code>helloworld</code> define um módulo.</p>
+<p>O ficheiro <code>__main__.py</code> marca o módulo <code>helloworld</code> como um tipo especial de módulo - um módulo executável. Se você tentar executar o módulo <code>helloworld</code> usando <code>python -m helloworld</code>, o ficheiro <code>__main__.py</code> é onde o Python vai iniciar a execução. O conteúdo do <code>__main__.py</code> é relativamente simples:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">main</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
@@ -1656,12 +1648,9 @@ iniciar a execução. O conteúdo do <code>__main__.py</code> é relativamente s
 <p>Este ficheiro faz duas coisas:</p>
 <ul>
 <li>Importa o método <code>main</code> da aplicação <code>helloworld</code>.</li>
-<li>Depois arranca o ciclo principal da aplicação. O ciclo principal é a maneira
-  que uma aplicação GUI espera por entradas do utilizador (tais como cliques do
-  rato e atividades no teclado).</li>
+<li>Depois arranca o ciclo principal da aplicação. O ciclo principal é a maneira que uma aplicação GUI espera por entradas do utilizador (tais como cliques do rato e atividades no teclado).</li>
 </ul>
-<p>O ficheiro mais interessante é o <code>app.py</code> - este contém a lógica que cria a
-janela da nossa aplicação:</p>
+<p>O ficheiro mais interessante é o <code>app.py</code> - este contém a lógica que cria a janela da nossa aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
 
@@ -1680,66 +1669,42 @@ janela da nossa aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
 </code></pre></div>
-<p>Primeiro, importamos a kit de ferramentas de widgets <code>toga</code>, juntamente com
-constantes de utilidade relacionada com estilo. O nosso código ainda não uso
-estas - mas em breve vamos utilizá-las.</p>
+<p>Primeiro, importamos a kit de ferramentas de widgets <code>toga</code>, juntamente com constantes de utilidade relacionada com estilo. O nosso código ainda não uso estas - mas em breve vamos utilizá-las.</p>
 <p>Em seguida, definimos uma classe:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HelloWorld</span><span class="p">(</span><span class="n">toga</span><span class="o">.</span><span class="n">App</span><span class="p">):</span>
 </code></pre></div>
-<p>Cada aplicação Toga possui uma única instância chamada <code>toga.App</code>, que
-representa a entidade em execução que é a aplicação. A aplicação pode acabar
-gerindo várias janelas; mas para aplicações simples, haverá uma janela principal
-única.</p>
+<p>Cada aplicação Toga possui uma única instância chamada <code>toga.App</code>, que representa a entidade em execução que é a aplicação. A aplicação pode acabar gerindo várias janelas; mas para aplicações simples, haverá uma janela principal única.</p>
 <p>Depois, definimos um método chamado <code>startup()</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">startup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">()</span>
 </code></pre></div>
-<p>A primeira coisa que o método startup() faz é definir uma caixa principal. O
-esquema de disposição do Toga comporta-se de maneira semelhante ao HTML. A
-construção de uma aplicação faz-se criando uma coleção de caixas, cada um
-contendo outras caixas ou as widgets propriamente dito. Depois, aplica-se
-estilos a essas caixas para definir como vão usar o espaço disponível na janela.</p>
+<p>A primeira coisa que o método startup() faz é definir uma caixa principal. O esquema de disposição do Toga comporta-se de maneira semelhante ao HTML. A construção de uma aplicação faz-se criando uma coleção de caixas, cada um contendo outras caixas ou as widgets propriamente dito. Depois, aplica-se estilos a essas caixas para definir como vão usar o espaço disponível na janela.</p>
 <p>Nesta aplicação, definimos uma única caixa, mas não colocamos nada dentro dela.</p>
 <p>Em seguida, definimos uma janela na qual podemos colocar esta caixa vazia:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 </code></pre></div>
-<p>Isto cria uma instância de <code>toga.MainWindow</code>, que terá um título correspondente
-ao nome da aplicação. A Main Window (Janela Principal) é um tipo especial de
-janela no Toga - é uma janela que está intimamente vinculada ao ciclo de vida da
-aplicação. Quando a Janela Principal é fechada, a aplicação termina. A Janela
-Principal é também a janela que contém o menu da aplicação (se você estiver numa
-plataforma como o Windows, onde as barras de menu fazem parte da janela).</p>
+<p>Isto cria uma instância de <code>toga.MainWindow</code>, que terá um título correspondente ao nome da aplicação. A Main Window (Janela Principal) é um tipo especial de janela no Toga - é uma janela que está intimamente vinculada ao ciclo de vida da aplicação. Quando a Janela Principal é fechada, a aplicação termina. A Janela Principal é também a janela que contém o menu da aplicação (se você estiver numa plataforma como o Windows, onde as barras de menu fazem parte da janela).</p>
 <div class="admonition">
 <p class="admonition-title">Onde está a minha janela?</p>
-<p>Se tiver cometido um erro no seu código, a janela principal da aplicação poderá
-não ser mostrada. Se isso acontecer, pode teclar <strong>Ctrl+C</strong> no terminal onde
-iniciou a aplicação. Isto vai interromper a aplicação. Pode depois corrigir o
-erro e reiniciar a aplicação.</p>
+<p>Se tiver cometido um erro no seu código, a janela principal da aplicação poderá não ser mostrada. Se isso acontecer, pode teclar <strong>Ctrl+C</strong> no terminal onde iniciou a aplicação. Isto vai interromper a aplicação. Pode depois corrigir o erro e reiniciar a aplicação.</p>
 </div>
-<p>Então, adicionamos a nossa caixa vazia como o conteúdo da janela principal, e
-instruímos a aplicação a mostrar a nossa janela:</p>
+<p>Então, adicionamos a nossa caixa vazia como o conteúdo da janela principal, e instruímos a aplicação a mostrar a nossa janela:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
-<p>Por último, definimos uma função <code>main()</code>. Isto é o que cria a instância da
-nossa aplicação:</p>
+<p>Por último, definimos uma função <code>main()</code>. Isto é o que cria a instância da nossa aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloWorld</span><span class="p">()</span>
 </code></pre></div>
-<p>O método <code>main()</code> é aquele que é importado e invocado pelo ficheiro
-<code>__main__.py</code>. Ele cria e retorna uma instância da nossa aplicação <code>HelloWorld</code>.</p>
-<p>Essa é a aplicação Toga mais básica possível. Vamos agora integrar o nosso
-conteúdo na aplicação, e pô-la a fazer algo mais interessante.</p>
+<p>O método <code>main()</code> é aquele que é importado e invocado pelo ficheiro <code>__main__.py</code>. Ele cria e retorna uma instância da nossa aplicação <code>HelloWorld</code>.</p>
+<p>Essa é a aplicação Toga mais básica possível. Vamos agora integrar o nosso conteúdo na aplicação, e pô-la a fazer algo mais interessante.</p>
 <h2 id="adicionar-algum-conteudo-de-si-proprio">Adicionar algum conteúdo de si próprio<a class="headerlink" href="#adicionar-algum-conteudo-de-si-proprio" title="Permanent link">&para;</a></h2>
 <p>Vamos fazer algo mais interessante com a nossa aplicação <code>HelloWorld</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Quando fizer estas alterações, certifique que mantém as importações no topo do
-ficheiro, e o <code>main()</code> no fundo do ficheiro. Só precisa de atualizar a classe
-<code>HelloWorld</code>.</p>
+<p>Quando fizer estas alterações, certifique que mantém as importações no topo do ficheiro, e o <code>main()</code> no fundo do ficheiro. Só precisa de atualizar a classe <code>HelloWorld</code>.</p>
 </div>
-<p>Modifique a sua classe <code>HelloWorld</code> dentro de <code>src/helloworld/app.py</code> para que
-fique como isto:</p>
+<p>Modifique a sua classe <code>HelloWorld</code> dentro de <code>src/helloworld/app.py</code> para que fique como isto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HelloWorld</span><span class="p">(</span><span class="n">toga</span><span class="o">.</span><span class="n">App</span><span class="p">):</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">startup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
@@ -1771,21 +1736,13 @@ fique como isto:</p>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Vamos ver em detalhe o que foi mudado.</p>
-<p>Ainda estamos a criar a caixa principal; porém, agora estamos a aplicar um
-estilo:</p>
+<p>Ainda estamos a criar a caixa principal; porém, agora estamos a aplicar um estilo:</p>
 <div class="highlight"><pre><span></span><code><span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
 </code></pre></div>
-<p>O sistema de disposição embutido do Toga é chamado "Pack". Comporta-se muito
-como o CSS. Você define objetos numa hierarquia - em HTML, os objetos são
-<code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, e outros elementos de DOM; em Toga, são widgets e caixas.
-Pode atribuir estilos aos elementos individualmente. Neste caso, estamos a
-indicar que isto é uma caixa <code>'COLUMN'</code> - isto é, é uma caixa que vai consumir
-toda a largura disponível, e vai expandir a sua altura à medida que conteúdo é
-adicionado, mas vai tentar ser o mais curto possível.</p>
+<p>O sistema de disposição embutido do Toga é chamado "Pack". Comporta-se muito como o CSS. Você define objetos numa hierarquia - em HTML, os objetos são <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, e outros elementos de DOM; em Toga, são widgets e caixas. Pode atribuir estilos aos elementos individualmente. Neste caso, estamos a indicar que isto é uma caixa <code>'COLUMN'</code> - isto é, é uma caixa que vai consumir toda a largura disponível, e vai expandir a sua altura à medida que conteúdo é adicionado, mas vai tentar ser o mais curto possível.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Para utilizações mais avançadas, o Toga também suporta um objeto de estilo
-separado, que é usado desta forma:</p>
+<p>Para utilizações mais avançadas, o Toga também suporta um objeto de estilo separado, que é usado desta forma:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">toga.style</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pack</span>
 <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="n">Pack</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">))</span>
 </code></pre></div>
@@ -1797,21 +1754,14 @@ separado, que é usado desta forma:</p>
 <span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
-<p>Aqui, definimos uma Etiqueta e uma Entrada-de-texto. Ambos os widgets possuem
-estilos associados; a Etiqueta terá 5px de preenchimento à esquerda e à direita,
-e nenhuma margem no topo nem fundo. A Entrada-de-texto é marcada como flexível -
-isto é, vai absorver todo o espaço disponível no seu eixo de disposição.</p>
-<p>O TextInput é atribuído como uma variável de instância da classe. Isso da-nos
-acesso fácil à instância do widget - algo que vamos utilizar em breve.</p>
+<p>Aqui, definimos uma Etiqueta e uma Entrada-de-texto. Ambos os widgets possuem estilos associados; a Etiqueta terá 5px de preenchimento à esquerda e à direita, e nenhuma margem no topo nem fundo. A Entrada-de-texto é marcada como flexível - isto é, vai absorver todo o espaço disponível no seu eixo de disposição.</p>
+<p>O TextInput é atribuído como uma variável de instância da classe. Isso da-nos acesso fácil à instância do widget - algo que vamos utilizar em breve.</p>
 <p>Após isso, definimos uma caixa para conter esses dois widgets:</p>
 <div class="highlight"><pre><span></span><code><span class="n">name_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">ROW</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_label</span><span class="p">)</span>
 <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="p">)</span>
 </code></pre></div>
-<p>A <code>name_box</code> é uma caixa como a caixa principal; no entanto, agora é uma caixa
-<code>ROW</code>. Isto significa que o conteúdo será adicionado na horizontal e vai tentar
-tornar a sua largura o mais estreita possível. A caixa também tem alguma margem
-- 5px em todos os lados.</p>
+<p>A <code>name_box</code> é uma caixa como a caixa principal; no entanto, agora é uma caixa <code>ROW</code>. Isto significa que o conteúdo será adicionado na horizontal e vai tentar tornar a sua largura o mais estreita possível. A caixa também tem alguma margem - 5px em todos os lados.</p>
 <p>Agora definimos um botão:</p>
 <div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
     <span class="s2">&quot;Diz Olá!&quot;</span><span class="p">,</span>
@@ -1819,31 +1769,22 @@ tornar a sua largura o mais estreita possível. A caixa também tem alguma marge
     <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
-<p>O botão também tem 5px de margem em todos os lados. Também definimos um
-<em>handler</em> - um método a invocar quando o botão é pressionado.</p>
+<p>O botão também tem 5px de margem em todos os lados. Também definimos um <em>handler</em> - um método a invocar quando o botão é pressionado.</p>
 <p>Então, adicionamos o nome da caixa e do botão à caixa principal:</p>
 <div class="highlight"><pre><span></span><code><span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name_box</span><span class="p">)</span>
 <span class="n">main_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">button</span><span class="p">)</span>
 </code></pre></div>
-<p>Isto completa a nossa disposição; o resto do código do método de arranque
-permanece como antes - definindo uma <code>MainWindow</code> (Janela principal), e
-atribuindo a caixa principal como o conteúdo da janela:</p>
+<p>Isto completa a nossa disposição; o resto do código do método de arranque permanece como antes - definindo uma <code>MainWindow</code> (Janela principal), e atribuindo a caixa principal como o conteúdo da janela:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">main_window</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">MainWindow</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">formal_name</span><span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">main_box</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
-<p>A última coisa que precisamos fazer é definir o manuseador para o botão. Um
-manuseador pode ser qualquer método, gerador ou co-rotina assíncrona; ele aceita
-o widget que gerou o evento como um argumento, e vai ser invocado sempre que o
-botão for pressionado:</p>
+<p>A última coisa que precisamos fazer é definir o manuseador para o botão. Um manuseador pode ser qualquer método, gerador ou co-rotina assíncrona; ele aceita o widget que gerou o evento como um argumento, e vai ser invocado sempre que o botão for pressionado:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>O corpo do método é uma simples instrução de escrita - no entanto, ele vai
-interrogar o valor atual da entrada de nome, e vai usar esse conteúdo como o
-texto a ser escrito.</p>
-<p>Agora que fizemos estas alterações, podemos visualizar o resultado iniciando
-outra vez a aplicação. Como antes, vamos utilizar o modo de desenvolvedor:</p>
+<p>O corpo do método é uma simples instrução de escrita - no entanto, ele vai interrogar o valor atual da entrada de nome, e vai usar esse conteúdo como o texto a ser escrito.</p>
+<p>Agora que fizemos estas alterações, podemos visualizar o resultado iniciando outra vez a aplicação. Como antes, vamos utilizar o modo de desenvolvedor:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1869,11 +1810,7 @@ outra vez a aplicação. Como antes, vamos utilizar o modo de desenvolvedor:</p>
 </div>
 </div>
 </div>
-<p>Vai repara que desta vez, <em>não são</em> instaladas dependências. O Briefcase
-consegue detetar que a aplicação já foi aberta antes e, para poupar tempo,
-apenas corre a aplicação. Se adicionar novas dependências à sua aplicação,
-precisa garantir que elas são instaladas passando uma opção <code>-r</code> quando correr
-<code>briefcase dev</code>.</p>
+<p>Vai repara que desta vez, <em>não são</em> instaladas dependências. O Briefcase consegue detetar que a aplicação já foi aberta antes e, para poupar tempo, apenas corre a aplicação. Se adicionar novas dependências à sua aplicação, precisa garantir que elas são instaladas passando uma opção <code>-r</code> quando correr <code>briefcase dev</code>.</p>
 <p>Isto deve abrir uma janela GUI:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
@@ -1897,18 +1834,10 @@ precisa garantir que elas são instaladas passando uma opção <code>-r</code> q
 </div>
 </div>
 </div>
-<p>Se escrever um nome na caixa de texto e clicar no botão da GUI, vai ver uma
-mensagem aparecer na consola onde abriu a aplicação.</p>
-<p>Antes de continuar, feche a aplicação. Assim como no Tutorial 1, pode fazer isso
-ao pressionar o botão de fechar na janela da aplicação, ao selecionar
-Sair/Terminar no menu da aplicação ou teclando <strong>Ctrl+C</strong> no terminal em que
-executou <code>briefcase dev</code>.</p>
+<p>Se escrever um nome na caixa de texto e clicar no botão da GUI, vai ver uma mensagem aparecer na consola onde abriu a aplicação.</p>
+<p>Antes de continuar, feche a aplicação. Assim como no Tutorial 1, pode fazer isso ao pressionar o botão de fechar na janela da aplicação, ao selecionar Sair/Terminar no menu da aplicação ou teclando <strong>Ctrl+C</strong> no terminal em que executou <code>briefcase dev</code>.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos uma aplicação que faz coisas um pouco mais interessantes. Mas apenas
-corre no nosso computador. Vamos empacotar esta aplicação para distribuição. No
-<a href="../tutorial-3/">Tutorial 3</a>, vamos envolver a nossa aplicação num instalador
-independente, que poderemos enviar a amigos, clientes ou enviar para uma Loja de
-Aplicações.</p>
+<p>Agora temos uma aplicação que faz coisas um pouco mais interessantes. Mas apenas corre no nosso computador. Vamos empacotar esta aplicação para distribuição. No <a href="../tutorial-3/">Tutorial 3</a>, vamos envolver a nossa aplicação num instalador independente, que poderemos enviar a amigos, clientes ou enviar para uma Loja de Aplicações.</p>
 
 
 

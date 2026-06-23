@@ -681,8 +681,7 @@ aria-label="Intestazione"
 
   <!-- Typeset title -->
   
-    Esercitazione 3 - Confezionamento per la
-  distribuzione
+    Esercitazione 3 - Confezionamento per la distribuzione
   
 
 
@@ -715,8 +714,7 @@ aria-label="Intestazione"
 
   <!-- Typeset title -->
   
-    Esercitazione 3 - Confezionamento per la
-  distribuzione
+    Esercitazione 3 - Confezionamento per la distribuzione
   
 
 
@@ -1681,19 +1679,11 @@ aria-label="Intestazione"
 
 
 <h1 id="esercitazione-3-confezionamento-per-la-distribuzione">Esercitazione 3 - Confezionamento per la distribuzione<a class="headerlink" href="#esercitazione-3-confezionamento-per-la-distribuzione" title="Permanent link">&para;</a></h1>
-<p>Finora abbiamo eseguito la nostra applicazione in "modalità sviluppatore".
-Questo ci consente di eseguire facilmente la nostra applicazione a livello
-locale, ma ciò che vogliamo veramente è poterla fornire ad altri.</p>
-<p>Tuttavia, non vogliamo insegnare ai nostri utenti come installare Python, creare
-un ambiente virtuale, clonare un repository git ed eseguire Briefcase in
-modalità sviluppatore. Preferiamo dare loro un programma di installazione e far
-sì che l'applicazione funzioni e basta.</p>
-<p>Briefcase può essere utilizzato per impacchettare l'applicazione per la
-distribuzione in questo modo.</p>
+<p>Finora abbiamo eseguito la nostra applicazione in "modalità sviluppatore". Questo ci consente di eseguire facilmente la nostra applicazione a livello locale, ma ciò che vogliamo veramente è poterla fornire ad altri.</p>
+<p>Tuttavia, non vogliamo insegnare ai nostri utenti come installare Python, creare un ambiente virtuale, clonare un repository git ed eseguire Briefcase in modalità sviluppatore. Preferiamo dare loro un programma di installazione e far sì che l'applicazione funzioni e basta.</p>
+<p>Briefcase può essere utilizzato per impacchettare l'applicazione per la distribuzione in questo modo.</p>
 <h2 id="creare-lo-scaffold-dellapplicazione">Creare lo scaffold dell'applicazione<a class="headerlink" href="#creare-lo-scaffold-dellapplicazione" title="Permanent link">&para;</a></h2>
-<p>Poiché è la prima volta che impacchettiamo la nostra applicazione, dobbiamo
-creare alcuni file di configurazione e altre impalcature per supportare il
-processo di impacchettamento. Dalla cartella <code>helloworld</code>, eseguire:</p>
+<p>Poiché è la prima volta che impacchettiamo la nostra applicazione, dobbiamo creare alcuni file di configurazione e altre impalcature per supportare il processo di impacchettamento. Dalla cartella <code>helloworld</code>, eseguire:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1755,12 +1745,9 @@ processo di impacchettamento. Dalla cartella <code>helloworld</code>, eseguire:<
 <p class="admonition-title">Errori sulle versioni di Python</p>
 <p>Se si riceve un errore del tipo:</p>
 <blockquote>
-<p>La versione di Python utilizzata per eseguire Briefcase (3.12) non è la
-versione di sistema python3 (3.10).</p>
+<p>La versione di Python utilizzata per eseguire Briefcase (3.12) non è la versione di sistema python3 (3.10).</p>
 </blockquote>
-<p>È necessario ricreare l'ambiente virtuale utilizzando il sistema <code>python3</code>.
-L'uso del sistema Python è un requisito per il confezionamento
-dell'applicazione.</p>
+<p>È necessario ricreare l'ambiente virtuale utilizzando il sistema <code>python3</code>. L'uso del sistema Python è un requisito per il confezionamento dell'applicazione.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1787,79 +1774,32 @@ dell'applicazione.</p>
 </div>
 </div>
 </div>
-<p>Probabilmente avete appena visto passare delle pagine di contenuto nel vostro
-terminale&hellip; cosa è successo? Briefcase ha fatto quanto segue:</p>
+<p>Probabilmente avete appena visto passare delle pagine di contenuto nel vostro terminale&hellip; cosa è successo? Briefcase ha fatto quanto segue:</p>
 <ol>
 <li>
-<p>Ha <strong>generato un modello di applicazione</strong>. Per costruire un programma di
-   installazione nativo sono necessari molti file e configurazioni, oltre al
-   codice dell'applicazione vera e propria. Questa impalcatura aggiuntiva è
-   quasi la stessa per ogni applicazione sulla stessa piattaforma, tranne che
-   per il nome dell'applicazione vera e propria che si sta costruendo, quindi
-   Briefcase fornisce un modello di applicazione per ogni piattaforma che
-   supporta. Questo passo esegue il modello, sostituendo il nome
-   dell'applicazione, l'ID del bundle e altre proprietà del file di
-   configurazione, come richiesto per supportare la piattaforma su cui si sta
-   costruendo. Se non si è soddisfatti del modello fornito da Briefcase, si può
-   fornire il proprio. Tuttavia, probabilmente non si vuole fare questo finché
-   non si ha un po' più di esperienza nell'uso del modello predefinito di
-   Briefcase.</p>
+<p>Ha <strong>generato un modello di applicazione</strong>. Per costruire un programma di installazione nativo sono necessari molti file e configurazioni, oltre al codice dell'applicazione vera e propria. Questa impalcatura aggiuntiva è quasi la stessa per ogni applicazione sulla stessa piattaforma, tranne che per il nome dell'applicazione vera e propria che si sta costruendo, quindi Briefcase fornisce un modello di applicazione per ogni piattaforma che supporta. Questo passo esegue il modello, sostituendo il nome dell'applicazione, l'ID del bundle e altre proprietà del file di configurazione, come richiesto per supportare la piattaforma su cui si sta costruendo. Se non si è soddisfatti del modello fornito da Briefcase, si può fornire il proprio. Tuttavia, probabilmente non si vuole fare questo finché non si ha un po' più di esperienza nell'uso del modello predefinito di Briefcase.</p>
 </li>
 <li>
-<p>Ha <strong>scaricato e installato un pacchetto di supporto</strong>. L'approccio alla
-   pacchettizzazione adottato da Briefcase è meglio descritto come "la cosa più
-   semplice che possa funzionare": fornisce un interprete Python completo e
-   isolato come parte di ogni applicazione che costruisce (ad eccezione dei
-   pacchetti del sistema nativo Linux). Questo è leggermente inefficiente dal
-   punto di vista dello spazio: se avete 5 applicazioni pacchettizzate con
-   Briefcase, avrete 5 copie dell'interprete Python. Tuttavia, questo approccio
-   garantisce che ogni applicazione sia completamente indipendente, utilizzando
-   una versione specifica di Python che è nota per funzionare con
-   l'applicazione. Anche in questo caso, Briefcase fornisce un pacchetto di
-   supporto predefinito per ogni piattaforma; se volete, potete fornire il
-   vostro pacchetto di supporto e farlo includere nel processo di compilazione.
-   Questo può essere utile se si hanno particolari opzioni nell'interprete
-   Python che devono essere abilitate, oppure se si vogliono togliere dalla
-   libreria standard i moduli che non servono in fase di esecuzione. Briefcase
-   mantiene una cache locale dei pacchetti di supporto, per cui una volta
-   scaricato uno specifico pacchetto di supporto, quella copia in cache sarà
-   usata nelle build future. Come già detto, quando Briefcase confeziona
-   un'applicazione come pacchetto di sistema nativo per Linux (il formato di
-   pacchetto predefinito per Linux), un pacchetto di supporto non viene incluso
-   nell'applicazione. Invece, l'applicazione utilizzerà il Python fornito dalla
-   distribuzione di Linux a cui si rivolge.</p>
+<p>Ha <strong>scaricato e installato un pacchetto di supporto</strong>. L'approccio alla pacchettizzazione adottato da Briefcase è meglio descritto come "la cosa più semplice che possa funzionare": fornisce un interprete Python completo e isolato come parte di ogni applicazione che costruisce (ad eccezione dei pacchetti del sistema nativo Linux). Questo è leggermente inefficiente dal punto di vista dello spazio: se avete 5 applicazioni pacchettizzate con Briefcase, avrete 5 copie dell'interprete Python. Tuttavia, questo approccio garantisce che ogni applicazione sia completamente indipendente, utilizzando una versione specifica di Python che è nota per funzionare con l'applicazione. Anche in questo caso, Briefcase fornisce un pacchetto di supporto predefinito per ogni piattaforma; se volete, potete fornire il vostro pacchetto di supporto e farlo includere nel processo di compilazione. Questo può essere utile se si hanno particolari opzioni nell'interprete Python che devono essere abilitate, oppure se si vogliono togliere dalla libreria standard i moduli che non servono in fase di esecuzione. Briefcase mantiene una cache locale dei pacchetti di supporto, per cui una volta scaricato uno specifico pacchetto di supporto, quella copia in cache sarà usata nelle build future. Come già detto, quando Briefcase confeziona un'applicazione come pacchetto di sistema nativo per Linux (il formato di pacchetto predefinito per Linux), un pacchetto di supporto non viene incluso nell'applicazione. Invece, l'applicazione utilizzerà il Python fornito dalla distribuzione di Linux a cui si rivolge.</p>
 </li>
 <li>
-<p>Si tratta di <strong>requisiti dell'applicazione installata</strong>. L'applicazione può
-   specificare qualsiasi modulo di terze parti richiesto in fase di esecuzione.
-   Questi saranno installati usando <code>pip</code> nel programma di installazione
-   dell'applicazione.</p>
+<p>Si tratta di <strong>requisiti dell'applicazione installata</strong>. L'applicazione può specificare qualsiasi modulo di terze parti richiesto in fase di esecuzione. Questi saranno installati usando <code>pip</code> nel programma di installazione dell'applicazione.</p>
 </li>
 <li>
-<p>Ha <strong>installato il codice dell'applicazione</strong>. L'applicazione avrà il suo
-   codice e le sue risorse (ad esempio, le immagini necessarie per
-   l'esecuzione); questi file vengono copiati nel programma di installazione.</p>
+<p>Ha <strong>installato il codice dell'applicazione</strong>. L'applicazione avrà il suo codice e le sue risorse (ad esempio, le immagini necessarie per l'esecuzione); questi file vengono copiati nel programma di installazione.</p>
 </li>
 <li>
-<p>Infine, aggiunge qualsiasi risorsa aggiuntiva necessaria al programma di
-   installazione stesso. Questo include cose come le icone che devono essere
-   allegate all'applicazione finale e le immagini della schermata iniziale.</p>
+<p>Infine, aggiunge qualsiasi risorsa aggiuntiva necessaria al programma di installazione stesso. Questo include cose come le icone che devono essere allegate all'applicazione finale e le immagini della schermata iniziale.</p>
 </li>
 </ol>
-<p>Una volta completata l'operazione, se guardi nella directory <code>build</code> del
-progetto, dovresti ora vedere una directory corrispondente alla tua piattaforma
-(<code>macOS</code>, <code>linux</code>, o <code>windows</code>) che contiene file aggiuntivi. Si tratta della
-configurazione di pacchettizzazione specifica per la piattaforma della tua
-applicazione. Ad esempio, su macOS, la directory del tuo progetto ora includerà:</p>
+<p>Una volta completata l'operazione, se guardi nella directory <code>build</code> del progetto, dovresti ora vedere una directory corrispondente alla tua piattaforma (<code>macOS</code>, <code>linux</code>, o <code>windows</code>) che contiene file aggiuntivi. Si tratta della configurazione di pacchettizzazione specifica per la piattaforma della tua applicazione. Ad esempio, su macOS, la directory del tuo progetto ora includerà:</p>
 <div class="highlight"><pre><span></span><code>helloworld/
 └── build/
     └── helloworld/
  └── macos/
 </code></pre></div>
 <h2 id="creazione-dellapplicazione">Creazione dell'applicazione<a class="headerlink" href="#creazione-dellapplicazione" title="Permanent link">&para;</a></h2>
-<p>È ora possibile compilare l'applicazione. Questo passaggio esegue la
-compilazione binaria necessaria affinché l'applicazione sia eseguibile sulla
-piattaforma di destinazione.</p>
+<p>È ora possibile compilare l'applicazione. Questo passaggio esegue la compilazione binaria necessaria affinché l'applicazione sia eseguibile sulla piattaforma di destinazione.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1872,10 +1812,7 @@ piattaforma di destinazione.</p>
 
 <span class="go">[helloworld] Compilazione completata build/helloworld/macos/app/Hello World.app</span>
 </code></pre></div>
-<p>Su macOS, il comando <code>build</code> non ha bisogno di <em>compilare</em> nulla, ma deve
-firmare il contenuto del binario in modo che possa essere eseguito. Questa firma
-è una firma <em>ad hoc</em>: funzionerà solo sulla <em>vostra</em> macchina; se volete
-distribuire l'applicazione ad altri, dovrete fornire una firma completa.</p>
+<p>Su macOS, il comando <code>build</code> non ha bisogno di <em>compilare</em> nulla, ma deve firmare il contenuto del binario in modo che possa essere eseguito. Questa firma è una firma <em>ad hoc</em>: funzionerà solo sulla <em>vostra</em> macchina; se volete distribuire l'applicazione ad altri, dovrete fornire una firma completa.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
@@ -1900,10 +1837,7 @@ distribuire l'applicazione ad altri, dovrete fornire una firma completa.</p>
 
 <span class="go">[helloworld] Compilato build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
-<p>Una volta completato questo passaggio, la cartella <code>build</code> conterrà una cartella
-<code>helloworld-0.0.1</code> che contiene un mirror di un file system Linux <code>/usr</code>. Questo
-file system mirror conterrà una cartella <code>bin</code> con un binario di <code>helloworld</code>,
-oltre alle cartelle <code>lib</code> e <code>share</code> necessarie per supportare il binario.</p>
+<p>Una volta completato questo passaggio, la cartella <code>build</code> conterrà una cartella <code>helloworld-0.0.1</code> che contiene un mirror di un file system Linux <code>/usr</code>. Questo file system mirror conterrà una cartella <code>bin</code> con un binario di <code>helloworld</code>, oltre alle cartelle <code>lib</code> e <code>share</code> necessarie per supportare il binario.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
@@ -1911,16 +1845,10 @@ oltre alle cartelle <code>lib</code> e <code>share</code> necessarie per support
 
 <span class="go">[helloworld] Creato build\helloworld\windows\app\src\Hello World.exe</span>
 </code></pre></div>
-<p>Su Windows, il comando <code>build</code> non ha bisogno di <em>compilare</em> nulla, ma deve
-scrivere alcuni metadati in modo che l'applicazione conosca il suo nome, la sua
-versione e così via.</p>
+<p>Su Windows, il comando <code>build</code> non ha bisogno di <em>compilare</em> nulla, ma deve scrivere alcuni metadati in modo che l'applicazione conosca il suo nome, la sua versione e così via.</p>
 <div class="admonition">
 <p class="admonition-title">Attivazione dell'antivirus</p>
-<p>Poiché questi metadati vengono scritti direttamente nel binario precompilato che
-viene lanciato dal modello durante il comando <code>create</code>, è possibile che il
-software antivirus in esecuzione sul computer impedisca la scrittura dei
-metadati. In questo caso, istruire l'antivirus per consentire l'esecuzione dello
-strumento (chiamato <code>rcedit-x64.exe</code>) e rieseguire il comando precedente.</p>
+<p>Poiché questi metadati vengono scritti direttamente nel binario precompilato che viene lanciato dal modello durante il comando <code>create</code>, è possibile che il software antivirus in esecuzione sul computer impedisca la scrittura dei metadati. In questo caso, istruire l'antivirus per consentire l'esecuzione dello strumento (chiamato <code>rcedit-x64.exe</code>) e rieseguire il comando precedente.</p>
 </div>
 </div>
 </div>
@@ -1996,27 +1924,11 @@ strumento (chiamato <code>rcedit-x64.exe</code>) e rieseguire il comando precede
 </div>
 </div>
 </div>
-<p>In questo modo si avvia l'esecuzione dell'applicazione nativa, utilizzando
-l'output del comando <code>build</code>.</p>
-<p>È possibile notare alcune piccole differenze nell'aspetto dell'applicazione
-quando è in esecuzione. Ad esempio, le icone e il nome visualizzati dal sistema
-operativo potrebbero essere leggermente diversi da quelli visualizzati durante
-l'esecuzione in modalità sviluppatore. Ciò è dovuto anche al fatto che si sta
-utilizzando l'applicazione pacchettizzata e non solo il codice Python in
-esecuzione. Dal punto di vista del sistema operativo, ora si sta eseguendo
-"un'applicazione", non "un programma Python", e questo si riflette sull'aspetto
-dell'applicazione.</p>
-<p>Prima di continuare, chiudere l'applicazione. Come per le precedenti
-esercitazioni, è possibile farlo premendo il pulsante di chiusura della finestra
-dell'applicazione, selezionando Quit/Exit dal menu dell'applicazione o digitando
-<strong>Ctrl+C</strong> nel terminale in cui è stato eseguito <code>briefcase run</code>.</p>
+<p>In questo modo si avvia l'esecuzione dell'applicazione nativa, utilizzando l'output del comando <code>build</code>.</p>
+<p>È possibile notare alcune piccole differenze nell'aspetto dell'applicazione quando è in esecuzione. Ad esempio, le icone e il nome visualizzati dal sistema operativo potrebbero essere leggermente diversi da quelli visualizzati durante l'esecuzione in modalità sviluppatore. Ciò è dovuto anche al fatto che si sta utilizzando l'applicazione pacchettizzata e non solo il codice Python in esecuzione. Dal punto di vista del sistema operativo, ora si sta eseguendo "un'applicazione", non "un programma Python", e questo si riflette sull'aspetto dell'applicazione.</p>
+<p>Prima di continuare, chiudere l'applicazione. Come per le precedenti esercitazioni, è possibile farlo premendo il pulsante di chiusura della finestra dell'applicazione, selezionando Quit/Exit dal menu dell'applicazione o digitando <strong>Ctrl+C</strong> nel terminale in cui è stato eseguito <code>briefcase run</code>.</p>
 <h2 id="creazione-del-programma-di-installazione">Creazione del programma di installazione<a class="headerlink" href="#creazione-del-programma-di-installazione" title="Permanent link">&para;</a></h2>
-<p>È ora possibile pacchettizzare l'applicazione per la distribuzione, utilizzando
-il comando <code>package</code>. Il comando package esegue qualsiasi compilazione
-necessaria per convertire il progetto scaffolded in un prodotto finale
-distribuibile. A seconda della piattaforma, ciò può comportare la compilazione
-di un programma di installazione, l'esecuzione della firma del codice o altre
-operazioni preliminari alla distribuzione.</p>
+<p>È ora possibile pacchettizzare l'applicazione per la distribuzione, utilizzando il comando <code>package</code>. Il comando package esegue qualsiasi compilazione necessaria per convertire il progetto scaffolded in un prodotto finale distribuibile. A seconda della piattaforma, ciò può comportare la compilazione di un programma di installazione, l'esecuzione della firma del codice o altre operazioni preliminari alla distribuzione.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2047,27 +1959,12 @@ operazioni preliminari alla distribuzione.</p>
 
 <span class="go">[helloworld] Pacchetto dist/Hello World-0.0.1.dmg</span>
 </code></pre></div>
-<p>La cartella <code>dist</code> conterrà un file chiamato <code>Hello World-0.0.1.dmg</code>. Se
-individuate questo file nel Finder e fate doppio clic sulla sua icona, monterete
-il DMG, ottenendo una copia dell'applicazione Hello World e un collegamento alla
-cartella Applicazioni per facilitare l'installazione. Trascinate il file
-dell'app in Applicazioni e avrete installato la vostra applicazione. Inviate il
-file DMG a un amico, che dovrebbe essere in grado di fare lo stesso.</p>
-<p>In questo esempio, abbiamo usato l'opzione <code>--adhoc-sign</code>, cioè stiamo firmando
-la nostra applicazione con credenziali <em>ad hoc</em>, credenziali temporanee che
-funzioneranno solo sul vostro computer. Abbiamo fatto questo per mantenere il
-tutorial semplice. L'impostazione delle identità di firma del codice è un po'
-complicata e sono <em>richieste</em> solo se si intende distribuire la propria
-applicazione ad altri. Se stessimo pubblicando un'applicazione reale da
-utilizzare, dovremmo specificare delle credenziali reali.</p>
-<p>Quando si è pronti a pubblicare un'applicazione reale, consultare la guida
-Briefcase How-To su <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Impostazione di un'identità di firma del codice
-macOS</a></p>
+<p>La cartella <code>dist</code> conterrà un file chiamato <code>Hello World-0.0.1.dmg</code>. Se individuate questo file nel Finder e fate doppio clic sulla sua icona, monterete il DMG, ottenendo una copia dell'applicazione Hello World e un collegamento alla cartella Applicazioni per facilitare l'installazione. Trascinate il file dell'app in Applicazioni e avrete installato la vostra applicazione. Inviate il file DMG a un amico, che dovrebbe essere in grado di fare lo stesso.</p>
+<p>In questo esempio, abbiamo usato l'opzione <code>--adhoc-sign</code>, cioè stiamo firmando la nostra applicazione con credenziali <em>ad hoc</em>, credenziali temporanee che funzioneranno solo sul vostro computer. Abbiamo fatto questo per mantenere il tutorial semplice. L'impostazione delle identità di firma del codice è un po' complicata e sono <em>richieste</em> solo se si intende distribuire la propria applicazione ad altri. Se stessimo pubblicando un'applicazione reale da utilizzare, dovremmo specificare delle credenziali reali.</p>
+<p>Quando si è pronti a pubblicare un'applicazione reale, consultare la guida Briefcase How-To su <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Impostazione di un'identità di firma del codice macOS</a></p>
 </div>
 <div class="tabbed-block">
-<p>L'output del passaggio del pacchetto sarà leggermente diverso a seconda della
-vostra distribuzione Linux. Se si utilizza una distribuzione derivata da Debian,
-si vedrà:</p>
+<p>L'output del passaggio del pacchetto sarà leggermente diverso a seconda della vostra distribuzione Linux. Se si utilizza una distribuzione derivata da Debian, si vedrà:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] Completamento della configurazione dell&#39;applicazione...</span>
@@ -2127,30 +2024,16 @@ si vedrà:</p>
 </code></pre></div>
 <p>La cartella <code>dist</code> conterrà il file <code>.pkg.tar.zst</code> che è stato generato.</p>
 <p>Altre distribuzioni Linux non sono attualmente supportate per il packaging.</p>
-<p>Se volete creare un pacchetto per una distribuzione Linux diversa da quella che
-state usando, Briefcase può aiutarvi, ma dovrete installare Docker.</p>
-<p>Gli installatori ufficiali di <a href="https://docs.docker.com/engine/install">Docker
-Engine</a> sono disponibili per diverse
-distribuzioni Unix. Seguite le istruzioni per la vostra piattaforma; tuttavia,
-assicuratevi di non installare Docker in modalità "rootless".</p>
-<p>Una volta installato Docker, dovreste essere in grado di avviare un contenitore
-Linux, ad esempio:</p>
+<p>Se volete creare un pacchetto per una distribuzione Linux diversa da quella che state usando, Briefcase può aiutarvi, ma dovrete installare Docker.</p>
+<p>Gli installatori ufficiali di <a href="https://docs.docker.com/engine/install">Docker Engine</a> sono disponibili per diverse distribuzioni Unix. Seguite le istruzioni per la vostra piattaforma; tuttavia, assicuratevi di non installare Docker in modalità "rootless".</p>
+<p>Una volta installato Docker, dovreste essere in grado di avviare un contenitore Linux, ad esempio:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>ubuntu:22.04
 </code></pre></div>
-<p>mostrerà un prompt Unix (qualcosa come <code>root@84444e31cff9:/#</code>) all'interno di un
-contenitore Docker Ubuntu 22.04. Digitare Ctrl-D per uscire da Docker e tornare
-alla shell locale.</p>
-<p>Una volta installato Docker, si può usare Briefcase per creare un pacchetto per
-qualsiasi distribuzione Linux supportata da Briefcase, passando un'immagine
-Docker come argomento. Per esempio, per creare un pacchetto DEB per Ubuntu 22.04
-(Jammy), indipendentemente dal sistema operativo in uso, si può eseguire:</p>
+<p>mostrerà un prompt Unix (qualcosa come <code>root@84444e31cff9:/#</code>) all'interno di un contenitore Docker Ubuntu 22.04. Digitare Ctrl-D per uscire da Docker e tornare alla shell locale.</p>
+<p>Una volta installato Docker, si può usare Briefcase per creare un pacchetto per qualsiasi distribuzione Linux supportata da Briefcase, passando un'immagine Docker come argomento. Per esempio, per creare un pacchetto DEB per Ubuntu 22.04 (Jammy), indipendentemente dal sistema operativo in uso, si può eseguire:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>pacchetto<span class="w"> </span>briefcase<span class="w"> </span>--target<span class="w"> </span>ubuntu:jammy
 </code></pre></div>
-<p>Questo scaricherà l'immagine Docker per il sistema operativo selezionato, creerà
-un contenitore in grado di eseguire le build di Briefcase e costruirà il
-pacchetto dell'applicazione all'interno dell'immagine. Una volta completato, la
-cartella <code>dist</code> conterrà il pacchetto per la distribuzione Linux di
-destinazione.</p>
+<p>Questo scaricherà l'immagine Docker per il sistema operativo selezionato, creerà un contenitore in grado di eseguire le build di Briefcase e costruirà il pacchetto dell'applicazione all'interno dell'immagine. Una volta completato, la cartella <code>dist</code> conterrà il pacchetto per la distribuzione Linux di destinazione.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase package
@@ -2179,30 +2062,14 @@ destinazione.</p>
 
 <span class="go">[helloworld] Pacchetto creato in dist\Hello_World-0.0.1.msi</span>
 </code></pre></div>
-<p>In questo esempio, abbiamo usato l'opzione <code>--adhoc-sign</code>, cioè stiamo firmando
-la nostra applicazione con credenziali <em>ad hoc</em>, credenziali temporanee che
-funzioneranno solo sul vostro computer. Abbiamo fatto questo per mantenere il
-tutorial semplice. L'impostazione delle identità di firma del codice è un po'
-complicata e sono <em>richieste</em> solo se si intende distribuire la propria
-applicazione ad altri. Se stessimo pubblicando un'applicazione reale da
-utilizzare, dovremmo specificare delle credenziali reali.</p>
-<p>Quando si è pronti a pubblicare un'applicazione reale, consultare la guida
-Briefcase How-To su <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Impostazione di un'identità di firma del codice
-macOS</a></p>
-<p>Una volta completato questo passaggio, la cartella <code>dist</code> conterrà un file
-chiamato <code>Hello_World-0.0.1.msi</code>. Se si fa doppio clic su questo programma di
-installazione per eseguirlo, si dovrebbe seguire il consueto processo di
-installazione di Windows. Una volta completata l'installazione, nel menu di
-avvio sarà presente una voce "Hello World".</p>
+<p>In questo esempio, abbiamo usato l'opzione <code>--adhoc-sign</code>, cioè stiamo firmando la nostra applicazione con credenziali <em>ad hoc</em>, credenziali temporanee che funzioneranno solo sul vostro computer. Abbiamo fatto questo per mantenere il tutorial semplice. L'impostazione delle identità di firma del codice è un po' complicata e sono <em>richieste</em> solo se si intende distribuire la propria applicazione ad altri. Se stessimo pubblicando un'applicazione reale da utilizzare, dovremmo specificare delle credenziali reali.</p>
+<p>Quando si è pronti a pubblicare un'applicazione reale, consultare la guida Briefcase How-To su <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Impostazione di un'identità di firma del codice macOS</a></p>
+<p>Una volta completato questo passaggio, la cartella <code>dist</code> conterrà un file chiamato <code>Hello_World-0.0.1.msi</code>. Se si fa doppio clic su questo programma di installazione per eseguirlo, si dovrebbe seguire il consueto processo di installazione di Windows. Una volta completata l'installazione, nel menu di avvio sarà presente una voce "Hello World".</p>
 </div>
 </div>
 </div>
 <h2 id="prossimi-passi">Prossimi passi<a class="headerlink" href="#prossimi-passi" title="Permanent link">&para;</a></h2>
-<p>Ora la nostra applicazione è stata confezionata per essere distribuita su
-piattaforme desktop. Ma cosa succede quando dobbiamo aggiornare il codice della
-nostra applicazione? Come facciamo a inserire gli aggiornamenti nella nostra
-applicazione pacchettizzata? Consultate <a href="../tutorial-4/">Tutorial 4</a> per
-scoprirlo&hellip;</p>
+<p>Ora la nostra applicazione è stata confezionata per essere distribuita su piattaforme desktop. Ma cosa succede quando dobbiamo aggiornare il codice della nostra applicazione? Come facciamo a inserire gli aggiornamenti nella nostra applicazione pacchettizzata? Consultate <a href="../tutorial-4/">Tutorial 4</a> per scoprirlo&hellip;</p>
 
 
 

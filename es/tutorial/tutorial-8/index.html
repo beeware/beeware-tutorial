@@ -1679,43 +1679,14 @@ aria-label="Cabecera"
 
 
 <h1 id="tutorial-8-suavizar">Tutorial 8 - Suavizar<a class="headerlink" href="#tutorial-8-suavizar" title="Permanent link">&para;</a></h1>
-<p>Hasta ahora, nuestra aplicación ha sido relativamente simple: exhibiendo IGU de
-widgets, invocando a una simple biblioteca de terceros, y mostrando la salida en
-un diálogo. Todas estas operaciones ocurren muy rápidamente, y nuestra
-aplicación sigue respondiendo.</p>
-<p>Sin embargo, en una aplicación del mundo real, necesitaremos realizar tareas
-complejas o cálculos que pueden tardar un poco en completarse —y mientras se
-realizan esas tareas, queremos que nuestra aplicación siga respondiendo. Vamos a
-hacer un cambio en nuestra aplicación que podría tomar un poco de tiempo para
-completar, y ver los cambios que hay que hacer para dar cabida a ese
-comportamiento.</p>
+<p>Hasta ahora, nuestra aplicación ha sido relativamente simple: exhibiendo IGU de widgets, invocando a una simple biblioteca de terceros, y mostrando la salida en un diálogo. Todas estas operaciones ocurren muy rápidamente, y nuestra aplicación sigue respondiendo.</p>
+<p>Sin embargo, en una aplicación del mundo real, necesitaremos realizar tareas complejas o cálculos que pueden tardar un poco en completarse —y mientras se realizan esas tareas, queremos que nuestra aplicación siga respondiendo. Vamos a hacer un cambio en nuestra aplicación que podría tomar un poco de tiempo para completar, y ver los cambios que hay que hacer para dar cabida a ese comportamiento.</p>
 <h2 id="acceso-a-un-api">Acceso a un API<a class="headerlink" href="#acceso-a-un-api" title="Permanent link">&para;</a></h2>
-<p>Una tarea que suele llevar mucho tiempo en una aplicación es realizar una
-solicitud a un API web para recuperar datos y mostrarlos al usuario. Las API web
-a veces tardan uno o dos segundos en responder, por lo que si invocamos a un API
-de este tipo, debemos asegurarnos de que nuestra aplicación no deje de responder
-mientras esperamos a que el API web devuelva una respuesta.</p>
-<p>Esta es una aplicación de juguete, por lo que no disponemos de un API <em>real</em> con
-la que trabajar, así que utilizaremos un punto final de API de muestra como
-fuente de datos. Si abre
-<a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a>
-en su navegador, obtendrá una carga JSON con un mensaje.</p>
-<p>La biblioteca estándar de Python contiene todas las herramientas necesarias para
-acceder a un API. Sin embargo, las API incorporadas son de muy bajo nivel. Son
-buenas implementaciones del protocolo HTTP, pero requieren que el usuario
-gestione muchos detalles de bajo nivel, como la redirección de URL, las
-sesiones, la autenticación y la codificación de la carga útil. Como «usuario
-normal de navegador», probablemente estés acostumbrado a dar por sentados estos
-detalles, ya que el navegador los gestiona por ti.</p>
-<p>Como resultado, se han desarrollado bibliotecas de terceros que envuelven las
-API integradas y proporcionan un API más sencilla que se ajusta mejor a la
-experiencia cotidiana del navegador. Vamos a utilizar una de esas bibliotecas,
-llamada <a href="https://www.python-httpx.org"><code>httpx</code></a> —para acceder a un API sencilla.</p>
-<p>Añadamos una invocación al API <code>httpx</code> a nuestra aplicación. En primer lugar, al
-igual que con <code>faker</code> en el <a href="../tutorial-7/">paso anterior</a>, debemos indicar a
-briefcase que instale <code>httpx</code> cuando compile nuestra aplicación. Modifique la
-configuración <code>requires</code> en nuestro <code>pyproject.toml</code> para incluir el nuevo
-requisito:</p>
+<p>Una tarea que suele llevar mucho tiempo en una aplicación es realizar una solicitud a un API web para recuperar datos y mostrarlos al usuario. Las API web a veces tardan uno o dos segundos en responder, por lo que si invocamos a un API de este tipo, debemos asegurarnos de que nuestra aplicación no deje de responder mientras esperamos a que el API web devuelva una respuesta.</p>
+<p>Esta es una aplicación de juguete, por lo que no disponemos de un API <em>real</em> con la que trabajar, así que utilizaremos un punto final de API de muestra como fuente de datos. Si abre <a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a> en su navegador, obtendrá una carga JSON con un mensaje.</p>
+<p>La biblioteca estándar de Python contiene todas las herramientas necesarias para acceder a un API. Sin embargo, las API incorporadas son de muy bajo nivel. Son buenas implementaciones del protocolo HTTP, pero requieren que el usuario gestione muchos detalles de bajo nivel, como la redirección de URL, las sesiones, la autenticación y la codificación de la carga útil. Como «usuario normal de navegador», probablemente estés acostumbrado a dar por sentados estos detalles, ya que el navegador los gestiona por ti.</p>
+<p>Como resultado, se han desarrollado bibliotecas de terceros que envuelven las API integradas y proporcionan un API más sencilla que se ajusta mejor a la experiencia cotidiana del navegador. Vamos a utilizar una de esas bibliotecas, llamada <a href="https://www.python-httpx.org"><code>httpx</code></a> —para acceder a un API sencilla.</p>
+<p>Añadamos una invocación al API <code>httpx</code> a nuestra aplicación. En primer lugar, al igual que con <code>faker</code> en el <a href="../tutorial-7/">paso anterior</a>, debemos indicar a briefcase que instale <code>httpx</code> cuando compile nuestra aplicación. Modifique la configuración <code>requires</code> en nuestro <code>pyproject.toml</code> para incluir el nuevo requisito:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requiere</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;faker&quot;</span><span class="p">,</span>
     <span class="s2">&quot;httpx&quot;</span><span class="p">,</span>
@@ -1739,19 +1710,14 @@ requisito:</p>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Esto cambiará la retro‐invocación <code>say_hello()</code> para que cuando sea invocada, lo
-haga:</p>
+<p>Esto cambiará la retro‐invocación <code>say_hello()</code> para que cuando sea invocada, lo haga:</p>
 <ul>
 <li>realiza una solicitud GET en el API del tutorial para recuperar un mensaje;</li>
 <li>decodificar la respuesta como JSON;</li>
 <li>extraer el cuerpo del mensaje; y</li>
-<li>Incluye el cuerpo de ese mensaje como texto del diálogo, en lugar del texto
-  generado por Faker.</li>
+<li>Incluye el cuerpo de ese mensaje como texto del diálogo, en lugar del texto generado por Faker.</li>
 </ul>
-<p>Vamos a ejecutar nuestra aplicación actualizada en el modo desarrollador de
-Briefcase para comprobar que nuestro cambio ha funcionado. Como hemos añadido un
-nuevo requisito, tenemos que decirle al modo desarrollador que reinstale los
-requisitos, utilizando el argumento <code>-r</code>:</p>
+<p>Vamos a ejecutar nuestra aplicación actualizada en el modo desarrollador de Briefcase para comprobar que nuestro cambio ha funcionado. Como hemos añadido un nuevo requisito, tenemos que decirle al modo desarrollador que reinstale los requisitos, utilizando el argumento <code>-r</code>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1762,8 +1728,7 @@ requisitos, utilizando el argumento <code>-r</code>:</p>
 <span class="go">[helloworld] Iniciando en modo dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido
-a algo como:</p>
+<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido a algo como:</p>
 <p><img alt="Diálogo Hola Mundo Tutorial 8, en macOS" src="../../images/macOS/tutorial-8.png" /></p>
 <p>/// subtítulo</p>
 </div>
@@ -1780,8 +1745,7 @@ a algo como:</p>
 <span class="go">[helloworld] Iniciando en modo dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido
-a algo como:</p>
+<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido a algo como:</p>
 <p><img alt="Diálogo Hola Mundo Tutorial 8, en Linux" src="../../images/linux/tutorial-8.png" /></p>
 <p>/// subtítulo</p>
 </div>
@@ -1798,8 +1762,7 @@ a algo como:</p>
 <span class="go">[helloworld] Iniciando en modo dev...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido
-a algo como:</p>
+<p>Cuando introduzcas un nombre y pulses el botón, deberías ver un diálogo parecido a algo como:</p>
 <p><a href="../../images/windows/tutorial-8.png">Diálogo Hola Mundo Tutorial 8, en Windows</a></p>
 <p>/// subtítulo</p>
 </div>
@@ -1809,92 +1772,36 @@ a algo como:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Android</label><label for="__tabbed_4_2">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>No puedes ejecutar una aplicación Android en modo desarrollador: utiliza las
-instrucciones para la plataforma de escritorio que hayas elegido.</p>
+<p>No puedes ejecutar una aplicación Android en modo desarrollador: utiliza las instrucciones para la plataforma de escritorio que hayas elegido.</p>
 </div>
 <div class="tabbed-block">
-<p>No puedes ejecutar una aplicación para iOS en modo desarrollador: sigue las
-instrucciones de la plataforma de escritorio que hayas elegido.</p>
+<p>No puedes ejecutar una aplicación para iOS en modo desarrollador: sigue las instrucciones de la plataforma de escritorio que hayas elegido.</p>
 </div>
 </div>
 </div>
-<p>A menos que tengas una conexión a Internet <em>realmente</em> rápida, puede que notes
-que cuando pulsas el botón, la IGU de tu aplicación se bloquea un poco. El
-sistema operativo puede incluso manifestarlo con un cursor «bola de playa» o
-«spinner» para indicar que la aplicación no responde.</p>
-<p>A menos que tengas una conexión a Internet <em>realmente</em> rápida, puede que notes
-que cuando pulsas el botón, la IGU de tu aplicación se bloquea un poco. Esto se
-debe a que la petición web que hemos realizado es <em>síncrona</em>. Cuando nuestra
-aplicación realiza la petición web, espera a que el API devuelva una respuesta
-antes de continuar. Mientras espera, <em>no</em> permite a la aplicación re‐dibujar —y
-como resultado, la aplicación se bloquea.</p>
+<p>A menos que tengas una conexión a Internet <em>realmente</em> rápida, puede que notes que cuando pulsas el botón, la IGU de tu aplicación se bloquea un poco. El sistema operativo puede incluso manifestarlo con un cursor «bola de playa» o «spinner» para indicar que la aplicación no responde.</p>
+<p>A menos que tengas una conexión a Internet <em>realmente</em> rápida, puede que notes que cuando pulsas el botón, la IGU de tu aplicación se bloquea un poco. Esto se debe a que la petición web que hemos realizado es <em>síncrona</em>. Cuando nuestra aplicación realiza la petición web, espera a que el API devuelva una respuesta antes de continuar. Mientras espera, <em>no</em> permite a la aplicación re‐dibujar —y como resultado, la aplicación se bloquea.</p>
 <h2 id="bucles-de-eventos-igu">Bucles de eventos IGU<a class="headerlink" href="#bucles-de-eventos-igu" title="Permanent link">&para;</a></h2>
-<p>Para entender por qué ocurre esto, tenemos que profundizar en los detalles del
-funcionamiento de una aplicación IGU. Los detalles varían en función de la
-plataforma, pero los conceptos de alto nivel son los mismos, independientemente
-de la plataforma o el entorno IGU que utilices.</p>
+<p>Para entender por qué ocurre esto, tenemos que profundizar en los detalles del funcionamiento de una aplicación IGU. Los detalles varían en función de la plataforma, pero los conceptos de alto nivel son los mismos, independientemente de la plataforma o el entorno IGU que utilices.</p>
 <p>Una aplicación IGU es, fundamentalmente, un único bucle parecido a:</p>
 <div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="ow">not</span> <span class="n">app</span><span class="o">.</span><span class="n">quit_requested</span><span class="p">():</span>
     <span class="n">app</span><span class="o">.</span><span class="n">process_events</span><span class="p">()</span>
     <span class="n">app</span><span class="o">.</span><span class="n">redraw</span><span class="p">()</span>
 </code></pre></div>
-<p>Este bucle se llama el <em>Bucle de Evento</em>. (Estos no son nombres de métodos
-reales —es una ilustración de lo que está pasando en "pseudo-código").</p>
-<p>Cuando haces clic en un botón, arrastras una barra de desplazamiento o tecleas
-una tecla, estás generando un "evento". Ese "evento" se coloca en una cola, y la
-aplicación procesará la cola de eventos la próxima vez que tenga la oportunidad
-de hacerlo. El código de usuario que se activa en respuesta al evento se
-denomina <em>manejador de eventos</em>. Estos manejadores de eventos son invocados como
-parte de la invocación <code>process_events()</code>.</p>
-<p>Una vez que una aplicación ha procesado todos los eventos disponibles,
-<code>redraw()</code> la IGU. Esto tiene en cuenta cualquier cambio que los eventos hayan
-causado en la pantalla de la aplicación, así como cualquier otra cosa que esté
-ocurriendo en el sistema operativo —por ejemplo, las ventanas de otra aplicación
-pueden oscurecer o revelar parte de la ventana de nuestra aplicación, y el
-re‐dibujado de nuestra aplicación tendrá que reflejar la parte de la ventana que
-es visible en ese momento.</p>
-<p>El detalle importante a tener en cuenta: mientras una aplicación está procesando
-un evento, <em>no puede re‐dibujar</em>, y <em>no puede procesar otros eventos</em>.</p>
-<p>Esto significa que cualquier lógica de usuario contenida en un manejador de
-eventos necesita completarse rápidamente. Cualquier retraso en la finalización
-del manejador de eventos será observado por el usuario como una ralentización (o
-detención) en las actualizaciones de la IGU. Si este retraso es lo
-suficientemente largo, tu sistema operativo puede reportarlo como un problema
-—los iconos "beachball" de macOS y "spinner" de Windows son el sistema operativo
-diciéndote que tu aplicación está tardando demasiado en un manejador de eventos.</p>
-<p>Las operaciones sencillas como “actualizar una etiqueta” o “volver a calcular el
-total de las entradas” son fáciles de completar rápidamente. Sin embargo, hay
-muchas operaciones que no pueden completarse rápidamente. Si realizas un cálculo
-matemático complejo, o indexas todos los archivos de un sistema de ficheros, o
-realizas una petición de red de gran tamaño, no puedes “hacerlo rápido”: las
-operaciones son intrínsecamente lentas.</p>
+<p>Este bucle se llama el <em>Bucle de Evento</em>. (Estos no son nombres de métodos reales —es una ilustración de lo que está pasando en "pseudo-código").</p>
+<p>Cuando haces clic en un botón, arrastras una barra de desplazamiento o tecleas una tecla, estás generando un "evento". Ese "evento" se coloca en una cola, y la aplicación procesará la cola de eventos la próxima vez que tenga la oportunidad de hacerlo. El código de usuario que se activa en respuesta al evento se denomina <em>manejador de eventos</em>. Estos manejadores de eventos son invocados como parte de la invocación <code>process_events()</code>.</p>
+<p>Una vez que una aplicación ha procesado todos los eventos disponibles, <code>redraw()</code> la IGU. Esto tiene en cuenta cualquier cambio que los eventos hayan causado en la pantalla de la aplicación, así como cualquier otra cosa que esté ocurriendo en el sistema operativo —por ejemplo, las ventanas de otra aplicación pueden oscurecer o revelar parte de la ventana de nuestra aplicación, y el re‐dibujado de nuestra aplicación tendrá que reflejar la parte de la ventana que es visible en ese momento.</p>
+<p>El detalle importante a tener en cuenta: mientras una aplicación está procesando un evento, <em>no puede re‐dibujar</em>, y <em>no puede procesar otros eventos</em>.</p>
+<p>Esto significa que cualquier lógica de usuario contenida en un manejador de eventos necesita completarse rápidamente. Cualquier retraso en la finalización del manejador de eventos será observado por el usuario como una ralentización (o detención) en las actualizaciones de la IGU. Si este retraso es lo suficientemente largo, tu sistema operativo puede reportarlo como un problema —los iconos "beachball" de macOS y "spinner" de Windows son el sistema operativo diciéndote que tu aplicación está tardando demasiado en un manejador de eventos.</p>
+<p>Las operaciones sencillas como “actualizar una etiqueta” o “volver a calcular el total de las entradas” son fáciles de completar rápidamente. Sin embargo, hay muchas operaciones que no pueden completarse rápidamente. Si realizas un cálculo matemático complejo, o indexas todos los archivos de un sistema de ficheros, o realizas una petición de red de gran tamaño, no puedes “hacerlo rápido”: las operaciones son intrínsecamente lentas.</p>
 <p>Entonces, ¿cómo realizar operaciones de larga duración en una aplicación IGU?</p>
 <h2 id="programacion-asincrona">Programación asíncrona<a class="headerlink" href="#programacion-asincrona" title="Permanent link">&para;</a></h2>
-<p>Lo que necesitamos es una manera de decirle a una aplicación en medio de un
-manejador de eventos de larga duración que está bien liberar temporalmente el
-control de nuevo al bucle de eventos, siempre y cuando podamos reanudar donde lo
-dejamos. Depende de la aplicación determinar cuándo puede ocurrir esta
-liberación; pero si la aplicación libera el control al bucle de eventos
-regularmente, podemos tener un manejador de eventos de larga duración <em>y</em>
-mantener una interfaz de usuario responsiva.</p>
-<p>Podemos hacerlo utilizando <em>programación asíncrona</em>. La programación asíncrona
-es una forma de describir un programa que permite al intérprete ejecutar varias
-funciones al mismo tiempo, compartiendo recursos entre todas las funciones que
-se ejecutan simultáneamente.</p>
-<p>Las funciones asíncronas (conocidas como <em>co‐rutinas</em>) deben declararse
-explícitamente como asíncronas. También necesitan declarar internamente cuándo
-existe la oportunidad de cambiar el contexto a otra co‐rutina.</p>
-<p>En Python, la programación asíncrona se implementa utilizando las palabras clave
-<code>async</code> y <code>await</code>, y el módulo
-<a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> de la biblioteca
-estándar. La palabra clave <code>async</code> nos permite declarar que una función es una
-co‐rutina asíncrona. La palabra clave <code>await</code> proporciona una forma de declarar
-cuando existe la oportunidad de cambiar el contexto a otra co‐rutina. El módulo
-<a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> proporciona algunas
-otras herramientas útiles y primitivas para la codificación asíncrona.</p>
+<p>Lo que necesitamos es una manera de decirle a una aplicación en medio de un manejador de eventos de larga duración que está bien liberar temporalmente el control de nuevo al bucle de eventos, siempre y cuando podamos reanudar donde lo dejamos. Depende de la aplicación determinar cuándo puede ocurrir esta liberación; pero si la aplicación libera el control al bucle de eventos regularmente, podemos tener un manejador de eventos de larga duración <em>y</em> mantener una interfaz de usuario responsiva.</p>
+<p>Podemos hacerlo utilizando <em>programación asíncrona</em>. La programación asíncrona es una forma de describir un programa que permite al intérprete ejecutar varias funciones al mismo tiempo, compartiendo recursos entre todas las funciones que se ejecutan simultáneamente.</p>
+<p>Las funciones asíncronas (conocidas como <em>co‐rutinas</em>) deben declararse explícitamente como asíncronas. También necesitan declarar internamente cuándo existe la oportunidad de cambiar el contexto a otra co‐rutina.</p>
+<p>En Python, la programación asíncrona se implementa utilizando las palabras clave <code>async</code> y <code>await</code>, y el módulo <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> de la biblioteca estándar. La palabra clave <code>async</code> nos permite declarar que una función es una co‐rutina asíncrona. La palabra clave <code>await</code> proporciona una forma de declarar cuando existe la oportunidad de cambiar el contexto a otra co‐rutina. El módulo <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> proporciona algunas otras herramientas útiles y primitivas para la codificación asíncrona.</p>
 <h2 id="hacer-que-el-tutorial-sea-asincrono">Hacer que el tutorial sea asíncrono<a class="headerlink" href="#hacer-que-el-tutorial-sea-asincrono" title="Permanent link">&para;</a></h2>
-<p>Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de eventos
-<code>say_hello()</code> para que se vea así:</p>
+<p>Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de eventos <code>say_hello()</code> para que se vea así:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
    <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
@@ -1911,45 +1818,20 @@ otras herramientas útiles y primitivas para la codificación asíncrona.</p>
 </code></pre></div>
 <p>Sólo hay tres cambios en esta retro‐invocación desde la versión anterior:</p>
 <ol>
-<li>El cliente que se crea es un <code>AsyncClient()</code> asíncrono, en lugar de un
-   <code>Client()</code> síncrono. Esto indica a <code>httpx</code> que operaría en modo asíncrono, en
-   lugar del modo síncrono.</li>
-<li>El gestor de contexto utilizado para crear el cliente está marcado como
-   <code>async</code>. Esto le indica a Python que existe una oportunidad de liberar el
-   control a medida que se entra y se sale del gestor de contexto.</li>
-<li>La invocación a <code>get</code> se hace con una palabra clave <code>await</code>. Esto indica a la
-   aplicación que mientras esperamos la respuesta de la red, la aplicación puede
-   liberar el control al bucle de eventos. Hemos visto esta palabra clave antes
-   —también usamos <code>await</code> cuando exhibimos el cuadro de diálogo. La razón para
-   su uso es la misma que para la petición HTTP —necesitamos decirle a la
-   aplicación que mientras se muestra el cuadro de diálogo, y estamos esperando
-   a que el usuario pulse un botón, está bien liberar el control de nuevo al
-   bucle de evento.</li>
+<li>El cliente que se crea es un <code>AsyncClient()</code> asíncrono, en lugar de un <code>Client()</code> síncrono. Esto indica a <code>httpx</code> que operaría en modo asíncrono, en lugar del modo síncrono.</li>
+<li>El gestor de contexto utilizado para crear el cliente está marcado como <code>async</code>. Esto le indica a Python que existe una oportunidad de liberar el control a medida que se entra y se sale del gestor de contexto.</li>
+<li>La invocación a <code>get</code> se hace con una palabra clave <code>await</code>. Esto indica a la aplicación que mientras esperamos la respuesta de la red, la aplicación puede liberar el control al bucle de eventos. Hemos visto esta palabra clave antes —también usamos <code>await</code> cuando exhibimos el cuadro de diálogo. La razón para su uso es la misma que para la petición HTTP —necesitamos decirle a la aplicación que mientras se muestra el cuadro de diálogo, y estamos esperando a que el usuario pulse un botón, está bien liberar el control de nuevo al bucle de evento.</li>
 </ol>
-<p>También es importante tener en cuenta que el propio manejador se define como
-<code>async def</code>, en lugar de sólo <code>def</code>. Esto indica a Python que el método es una
-co‐rutina asíncrona. Hicimos este cambio en el Tutorial 3 cuando añadimos el
-cuadro de diálogo. Sólo puedes usar sentencias <code>await</code> dentro de un método
-declarado como <code>async def</code>.</p>
-<p>Toga te permite utilizar métodos regulares o co‐rutinas asíncronas como
-manejadores; Toga gestiona todo entre bastidores para asegurarse de que el
-manejador es invocado o esperado según sea necesario.</p>
-<p>Si guardas estos cambios y vuelves a ejecutar la aplicación en modo desarrollo,
-no habría ningún cambio obvio para la aplicación. Sin embargo, al pulsar en el
-botón para disparar el cuadro de diálogo, puede notar una serie de mejoras
-sutiles:</p>
+<p>También es importante tener en cuenta que el propio manejador se define como <code>async def</code>, en lugar de sólo <code>def</code>. Esto indica a Python que el método es una co‐rutina asíncrona. Hicimos este cambio en el Tutorial 3 cuando añadimos el cuadro de diálogo. Sólo puedes usar sentencias <code>await</code> dentro de un método declarado como <code>async def</code>.</p>
+<p>Toga te permite utilizar métodos regulares o co‐rutinas asíncronas como manejadores; Toga gestiona todo entre bastidores para asegurarse de que el manejador es invocado o esperado según sea necesario.</p>
+<p>Si guardas estos cambios y vuelves a ejecutar la aplicación en modo desarrollo, no habría ningún cambio obvio para la aplicación. Sin embargo, al pulsar en el botón para disparar el cuadro de diálogo, puede notar una serie de mejoras sutiles:</p>
 <ul>
-<li>El botón vuelve a un estado “no pulsado”, en lugar de quedar atrapado en un
-  estado “pulsado”.</li>
+<li>El botón vuelve a un estado “no pulsado”, en lugar de quedar atrapado en un estado “pulsado”.</li>
 <li>El icono de la “bola de playa”/“ruleta” no aparecería.</li>
-<li>Si mueves o cambias el tamaño de la ventana de la aplicación mientras esperas
-  a que aparezca el cuadro de diálogo, la ventana se volverá a dibujar.</li>
+<li>Si mueves o cambias el tamaño de la ventana de la aplicación mientras esperas a que aparezca el cuadro de diálogo, la ventana se volverá a dibujar.</li>
 <li>Si intentas abrir un menú de aplicación, el menú aparecerá inmediatamente.</li>
 </ul>
-<p>Ya podemos ejecutar la aplicación completa. Sin embargo, como hemos añadido un
-requisito adicional (<code>httpx</code>) también necesitamos actualizar los requisitos de
-nuestra aplicación; podemos hacerlo pasando <code>-r</code> a <code>briefcase run</code>. Esto
-actualizará los requisitos de nuestra aplicación, la reconstruirá y la lanzará:</p>
+<p>Ya podemos ejecutar la aplicación completa. Sin embargo, como hemos añadido un requisito adicional (<code>httpx</code>) también necesitamos actualizar los requisitos de nuestra aplicación; podemos hacerlo pasando <code>-r</code> a <code>briefcase run</code>. Esto actualizará los requisitos de nuestra aplicación, la reconstruirá y la lanzará:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:5"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><input id="__tabbed_5_5" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label><label for="__tabbed_5_4">Android</label><label for="__tabbed_5_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1974,17 +1856,13 @@ actualizará los requisitos de nuestra aplicación, la reconstruirá y la lanzar
 </div>
 </div>
 </div>
-<p>Deberías ver que tu aplicación se ejecuta y sigue respondiendo cuando pulsas el
-botón y se recupera el contenido de la red.</p>
+<p>Deberías ver que tu aplicación se ejecuta y sigue respondiendo cuando pulsas el botón y se recupera el contenido de la red.</p>
 <h2 id="siguientes-pasos">Siguientes pasos<a class="headerlink" href="#siguientes-pasos" title="Permanent link">&para;</a></h2>
-<p>Esto ha sido una muestra de lo que puedes hacer con las herramientas
-proporcionadas por el proyecto BeeWare. En el transcurso de este tutorial, usted
-tiene:</p>
+<p>Esto ha sido una muestra de lo que puedes hacer con las herramientas proporcionadas por el proyecto BeeWare. En el transcurso de este tutorial, usted tiene:</p>
 <ul>
 <li>Creado un nuevo proyecto de aplicación GUI;</li>
 <li>Ejecuta esa aplicación en modo desarrollo;</li>
-<li>Creé la aplicación como un binario independiente para un sistema operativo de
-  escritorio;</li>
+<li>Creé la aplicación como un binario independiente para un sistema operativo de escritorio;</li>
 <li>Empaquetado de ese proyecto para su distribución a otros;</li>
 <li>Ejecuta la aplicación en un simulador y/o dispositivo móvil;</li>
 <li>Ejecute la aplicación como una aplicación web;</li>
@@ -1993,16 +1871,9 @@ tiene:</p>
 </ul>
 <p>Entonces - ¿ahora qué?</p>
 <ul>
-<li>Si quisieras ir más allá, hay algunos <a href="../topics/">tutoriales temáticos</a>
-  adicionales que profundizan en aspectos concretos del desarrollo de
-  aplicaciones.</li>
-<li>Si quieres saber más sobre cómo construir interfaces de usuario complejas con
-  Toga, puedes sumergirte en la <a href="https://toga.beeware.org">documentación de
-  Toga</a>. Toga también tiene su propio tutorial
-  <a href="https://toga.beeware.org/en/latest/tutorial">demostrando cómo usar varias prestaciones del widget
-  toolkit</a>.</li>
-<li>Si desease saber más sobre las capacidades de Briefcase, puede sumergirse en
-  la <a href="https://briefcase.beeware.org">documentación de Briefcase</a>.</li>
+<li>Si quisieras ir más allá, hay algunos <a href="../topics/">tutoriales temáticos</a> adicionales que profundizan en aspectos concretos del desarrollo de aplicaciones.</li>
+<li>Si quieres saber más sobre cómo construir interfaces de usuario complejas con Toga, puedes sumergirte en la <a href="https://toga.beeware.org">documentación de Toga</a>. Toga también tiene su propio tutorial <a href="https://toga.beeware.org/en/latest/tutorial">demostrando cómo usar varias prestaciones del widget toolkit</a>.</li>
+<li>Si desease saber más sobre las capacidades de Briefcase, puede sumergirse en la <a href="https://briefcase.beeware.org">documentación de Briefcase</a>.</li>
 </ul>
 
 

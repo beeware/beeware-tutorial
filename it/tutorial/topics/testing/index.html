@@ -660,8 +660,7 @@ aria-label="Intestazione"
 
   <!-- Typeset title -->
   
-    Esercitazione 3 - Confezionamento per la
-  distribuzione
+    Esercitazione 3 - Confezionamento per la distribuzione
   
 
 
@@ -1636,29 +1635,15 @@ aria-label="Intestazione"
 
 
 <h1 id="tempi-di-prova">Tempi di prova<a class="headerlink" href="#tempi-di-prova" title="Permanent link">&para;</a></h1>
-<p>La maggior parte dello sviluppo del software non comporta la scrittura di nuovo
-codice, ma la modifica di quello esistente. Assicurarsi che il codice esistente
-continui a funzionare nel modo in cui ci aspettiamo è una parte fondamentale del
-processo di sviluppo del software. Un modo per garantire il comportamento della
-nostra applicazione è una <em>serie di test</em>.</p>
+<p>La maggior parte dello sviluppo del software non comporta la scrittura di nuovo codice, ma la modifica di quello esistente. Assicurarsi che il codice esistente continui a funzionare nel modo in cui ci aspettiamo è una parte fondamentale del processo di sviluppo del software. Un modo per garantire il comportamento della nostra applicazione è una <em>serie di test</em>.</p>
 <h2 id="esecuzione-della-suite-di-test">Esecuzione della suite di test<a class="headerlink" href="#esecuzione-della-suite-di-test" title="Permanent link">&para;</a></h2>
-<p>Si scopre che il nostro progetto ha già una suite di test! Quando abbiamo
-generato il nostro progetto, sono state generate due directory di primo livello:
-<code>src</code> e <code>tests</code>. La cartella <code>src</code> contiene il codice della nostra applicazione;
-la cartella <code>tests</code> contiene la nostra suite di test. All'interno della cartella
-<code>tests</code> c'è un file chiamato <code>test_app.py</code> con il seguente contenuto:</p>
+<p>Si scopre che il nostro progetto ha già una suite di test! Quando abbiamo generato il nostro progetto, sono state generate due directory di primo livello: <code>src</code> e <code>tests</code>. La cartella <code>src</code> contiene il codice della nostra applicazione; la cartella <code>tests</code> contiene la nostra suite di test. All'interno della cartella <code>tests</code> c'è un file chiamato <code>test_app.py</code> con il seguente contenuto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Un primo test per l&#39;app&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
-<p>Questo è un <a href="https://pytest.org">Pytest</a> <em>caso di test</em> - un blocco di codice
-che può essere eseguito per verificare un comportamento dell'applicazione. In
-questo caso, il test è un segnaposto e non verifica nulla della nostra
-applicazione, ma è un test che possiamo eseguire.</p>
-<p>Possiamo eseguire questa suite di test usando l'opzione <code>--test</code> di <code>briefcase
-dev</code>. Poiché è la prima volta che si eseguono dei test, è necessario inserire
-anche l'opzione <code>-r</code> per assicurarsi che anche i requisiti dei test siano
-installati:</p>
+<p>Questo è un <a href="https://pytest.org">Pytest</a> <em>caso di test</em> - un blocco di codice che può essere eseguito per verificare un comportamento dell'applicazione. In questo caso, il test è un segnaposto e non verifica nulla della nostra applicazione, ma è un test che possiamo eseguire.</p>
+<p>Possiamo eseguire questa suite di test usando l'opzione <code>--test</code> di <code>briefcase dev</code>. Poiché è la prima volta che si eseguono dei test, è necessario inserire anche l'opzione <code>-r</code> per assicurarsi che anche i requisiti dei test siano installati:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1732,11 +1717,8 @@ installati:</p>
 </div>
 </div>
 </div>
-<p>Successo! Abbiamo appena eseguito un singolo test che verifica che la matematica
-di Python funziona nel modo previsto (che sollievo!).</p>
-<p>Sostituiamo questo test segnaposto con un test per verificare che il nostro
-metodo <code>greeting()</code> si comporti come ci aspettiamo. Sostituire il contenuto di
-<code>test_app.py</code> con il seguente:</p>
+<p>Successo! Abbiamo appena eseguito un singolo test che verifica che la matematica di Python funziona nel modo previsto (che sollievo!).</p>
+<p>Sostituiamo questo test segnaposto con un test per verificare che il nostro metodo <code>greeting()</code> si comporti come ci aspettiamo. Sostituire il contenuto di <code>test_app.py</code> con il seguente:</p>
 <div class="highlight"><pre><span></span><code><span class="n">da</span> <span class="n">helloworld</span><span class="o">.</span><span class="n">app</span> <span class="kn">import</span><span class="w"> </span><span class="nn">greeting</span>
 
 
@@ -1751,12 +1733,8 @@ metodo <code>greeting()</code> si comporti come ci aspettiamo. Sostituire il con
 
  <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Ciao, sconosciuto&quot;</span>
 </code></pre></div>
-<p>Questo definisce due nuovi test, che verificano i due comportamenti che ci
-aspettiamo di vedere: l'output quando viene fornito un nome e l'output quando il
-nome è vuoto.</p>
-<p>Ora possiamo eseguire nuovamente la suite di test. Questa volta non è necessario
-fornire l'opzione <code>-r</code>, poiché i requisiti per i test sono già stati installati;
-è sufficiente usare l'opzione <code>--test</code>:</p>
+<p>Questo definisce due nuovi test, che verificano i due comportamenti che ci aspettiamo di vedere: l'output quando viene fornito un nome e l'output quando il nome è vuoto.</p>
+<p>Ora possiamo eseguire nuovamente la suite di test. Questa volta non è necessario fornire l'opzione <code>-r</code>, poiché i requisiti per i test sono già stati installati; è sufficiente usare l'opzione <code>--test</code>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1808,10 +1786,7 @@ fornire l'opzione <code>-r</code>, poiché i requisiti per i test sono già stat
 </div>
 <p>Eccellente! Il nostro metodo di utilità <code>greeting()</code> funziona come previsto.</p>
 <h2 id="sviluppo-guidato-dai-test">Sviluppo guidato dai test<a class="headerlink" href="#sviluppo-guidato-dai-test" title="Permanent link">&para;</a></h2>
-<p>Ora che abbiamo una suite di test, possiamo usarla per guidare lo sviluppo di
-nuove funzionalità. Modifichiamo la nostra applicazione per avere un saluto
-speciale per un utente in particolare. Possiamo iniziare aggiungendo un caso di
-test per il nuovo comportamento che vorremmo vedere in fondo a <code>test_app.py</code>:</p>
+<p>Ora che abbiamo una suite di test, possiamo usarla per guidare lo sviluppo di nuove funzionalità. Modifichiamo la nostra applicazione per avere un saluto speciale per un utente in particolare. Possiamo iniziare aggiungendo un caso di test per il nuovo comportamento che vorremmo vedere in fondo a <code>test_app.py</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Se il nome è Brutus, viene visualizzato un saluto speciale&quot;&quot;&quot;</span>
 
@@ -1914,11 +1889,7 @@ test per il nuovo comportamento che vorremmo vedere in fondo a <code>test_app.py
 </div>
 </div>
 </div>
-<p>Questa volta, vediamo un fallimento del test e l'output spiega la fonte del
-fallimento: il test si aspetta l'output "BeeWare the IDEs of Python!", ma la
-nostra implementazione di <code>greeting()</code> restituisce "Hello, Brutus". Modifichiamo
-l'implementazione di <code>greeting()</code> in <code>src/helloworld/app.py</code> per avere il nuovo
-comportamento:</p>
+<p>Questa volta, vediamo un fallimento del test e l'output spiega la fonte del fallimento: il test si aspetta l'output "BeeWare the IDEs of Python!", ma la nostra implementazione di <code>greeting()</code> restituisce "Hello, Brutus". Modifichiamo l'implementazione di <code>greeting()</code> in <code>src/helloworld/app.py</code> per avere il nuovo comportamento:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
@@ -1982,15 +1953,8 @@ comportamento:</p>
 </div>
 </div>
 <h2 id="test-di-runtime">Test di runtime<a class="headerlink" href="#test-di-runtime" title="Permanent link">&para;</a></h2>
-<p>Finora abbiamo eseguito i test in modalità di sviluppo. Questo è particolarmente
-utile quando si sviluppano nuove funzionalità, in quanto si può iterare
-rapidamente sull'aggiunta di test e sull'aggiunta di codice per far sì che tali
-test passino. Tuttavia, a un certo punto, si vorrà verificare che il codice
-venga eseguito correttamente anche nell'ambiente dell'applicazione bundle.</p>
-<p>Le opzioni <code>--test</code> e <code>-r</code> possono essere passate anche al comando <code>run</code>. Se si
-usa <code>briefcase run --test -r</code>, verrà eseguita la stessa suite di test, ma
-all'interno del bundle dell'applicazione confezionata e non nell'ambiente di
-sviluppo:</p>
+<p>Finora abbiamo eseguito i test in modalità di sviluppo. Questo è particolarmente utile quando si sviluppano nuove funzionalità, in quanto si può iterare rapidamente sull'aggiunta di test e sull'aggiunta di codice per far sì che tali test passino. Tuttavia, a un certo punto, si vorrà verificare che il codice venga eseguito correttamente anche nell'ambiente dell'applicazione bundle.</p>
+<p>Le opzioni <code>--test</code> e <code>-r</code> possono essere passate anche al comando <code>run</code>. Se si usa <code>briefcase run --test -r</code>, verrà eseguita la stessa suite di test, ma all'interno del bundle dell'applicazione confezionata e non nell'ambiente di sviluppo:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2100,12 +2064,8 @@ sviluppo:</p>
 </div>
 </div>
 </div>
-<p>Come per <code>briefcase dev --test</code>, l'opzione <code>-r</code> è necessaria solo la prima volta
-che si esegue la suite di test, per assicurarsi che le dipendenze del test siano
-presenti. Nelle esecuzioni successive, si può omettere questa opzione.</p>
-<p>Si può anche usare l'opzione <code>--test</code> sui backend mobili: - quindi <code>briefcase
-run iOS --test</code> e <code>briefcase run android --test</code> funzioneranno entrambi,
-eseguendo la suite di test sul dispositivo mobile selezionato.</p>
+<p>Come per <code>briefcase dev --test</code>, l'opzione <code>-r</code> è necessaria solo la prima volta che si esegue la suite di test, per assicurarsi che le dipendenze del test siano presenti. Nelle esecuzioni successive, si può omettere questa opzione.</p>
+<p>Si può anche usare l'opzione <code>--test</code> sui backend mobili: - quindi <code>briefcase run iOS --test</code> e <code>briefcase run android --test</code> funzioneranno entrambi, eseguendo la suite di test sul dispositivo mobile selezionato.</p>
 
 
 

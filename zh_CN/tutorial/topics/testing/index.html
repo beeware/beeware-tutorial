@@ -1635,19 +1635,15 @@ aria-label="页眉"
 
 
 <h1 id="_1">测试时间<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>大多数软件开发并不涉及编写新代码，而是修改现有代码。确保现有代码以我们期望的方式继续正常工作是软件开发过程的关键部分。确保应用程序行为的方法之一是使用一个\
-<em>测试套件</em>。</p>
+<p>大多数软件开发并不涉及编写新代码，而是修改现有代码。确保现有代码以我们期望的方式继续正常工作是软件开发过程的关键部分。确保应用程序行为的方法之一是使用一个\ <em>测试套件</em>。</p>
 <h2 id="_2">运行测试套件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：[<code>src</code>\ 和\ <code>tests</code>。<code>src</code>\
-文件夹包含应用程序的代码；<code>tests</code>\ 文件夹包含测试套件。在\ <code>tests</code>\ 文件夹中，有一个名为\ <code>test_app.py</code>\ 的文件，内容如下:</p>
+<p>原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：[<code>src</code>\ 和\ <code>tests</code>。<code>src</code>\ 文件夹包含应用程序的代码；<code>tests</code>\ 文件夹包含测试套件。在\ <code>tests</code>\ 文件夹中，有一个名为\ <code>test_app.py</code>\ 的文件，内容如下:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;应用程序的初始测试&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
-<p>这是一个
-<a href="https://pytest.org">Pytest</a><em>测试用例</em>&ndash;可用于验证应用程序某些行为的代码块。在本例中，该测试是一个占位符，并不测试我们应用程序的任何内容，但我们可以执行该测试。</p>
-<p>我们可以使用 <code>briefcase dev</code> 的 <code>--test</code> 选项来运行这个测试套件。由于这是第一次运行测试，我们还需要传递 <code>-r</code>
-选项，以确保测试以来想也已安装：</p>
+<p>这是一个 <a href="https://pytest.org">Pytest</a><em>测试用例</em>&ndash;可用于验证应用程序某些行为的代码块。在本例中，该测试是一个占位符，并不测试我们应用程序的任何内容，但我们可以执行该测试。</p>
+<p>我们可以使用 <code>briefcase dev</code> 的 <code>--test</code> 选项来运行这个测试套件。由于这是第一次运行测试，我们还需要传递 <code>-r</code> 选项，以确保测试以来想也已安装：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1722,8 +1718,7 @@ aria-label="页眉"
 </div>
 </div>
 <p>成功了！我们刚刚执行了一个测试，验证了 Python 数学以我们预期的方式运行（真是松了一口气！）。</p>
-<p>让我们用一个测试来替换这个占位符测试，以验证我们的 <code>greeting()</code> 方法是否按照我们预期的方式运行。用以下内容替换 <code>test_app.py</code>
-中的内容:</p>
+<p>让我们用一个测试来替换这个占位符测试，以验证我们的 <code>greeting()</code> 方法是否按照我们预期的方式运行。用以下内容替换 <code>test_app.py</code> 中的内容:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">greeting</span>
 
 
@@ -1791,8 +1786,7 @@ aria-label="页眉"
 </div>
 <p>非常好！我们的 <code>greeting()</code> 实用程序方法如期工作了。</p>
 <h2 id="_3">测试驱动开发<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>现在我们有了测试套件，可以用它来推动新功能的开发。让我们修改应用程序，为某位用户添加特殊的问候语。首先，我们可以在 <code>test_app.py</code>
-的底部为我们希望看到的新行为添加一个测试用例:</p>
+<p>现在我们有了测试套件，可以用它来推动新功能的开发。让我们修改应用程序，为某位用户添加特殊的问候语。首先，我们可以在 <code>test_app.py</code> 的底部为我们希望看到的新行为添加一个测试用例:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;如果名字是 Brutus，则返回一条特殊的问候语&quot;&quot;&quot;</span>
 
@@ -1895,9 +1889,7 @@ aria-label="页眉"
 </div>
 </div>
 </div>
-<p>这一次，我们看到了测试失败&ndash;输出结果解释了失败的原因：测试期望输出 "BeeWare the IDEs of Python!"，但我们的
-<code>greeting()</code> 实现却返回 "Hello, Brutus"。让我们修改 <code>src/helloworld/app.py</code> 中 <code>greeting()</code>
-的实现，使其具有新的行为:</p>
+<p>这一次，我们看到了测试失败&ndash;输出结果解释了失败的原因：测试期望输出 "BeeWare the IDEs of Python!"，但我们的 <code>greeting()</code> 实现却返回 "Hello, Brutus"。让我们修改 <code>src/helloworld/app.py</code> 中 <code>greeting()</code> 的实现，使其具有新的行为:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
@@ -1962,8 +1954,7 @@ aria-label="页眉"
 </div>
 <h2 id="_4">运行时测试<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>到目前为止，我们一直在开发模式下运行测试。这在开发新功能时尤其有用，因为您可以快速迭代添加测试，并添加代码使测试通过。不过，在某些情况下，您会希望验证您的代码在捆绑应用程序环境下是否也能正确运行。</p>
-<p><code>-test</code> 和 <code>-r</code> 选项也可以传递给 <code>run</code> 命令。如果使用 <code>briefcase run --test
--r</code>，将运行相同的测试套件，但它将在打包的应用程序捆绑包内运行，而不是在开发环境中运行：</p>
+<p><code>-test</code> 和 <code>-r</code> 选项也可以传递给 <code>run</code> 命令。如果使用 <code>briefcase run --test -r</code>，将运行相同的测试套件，但它将在打包的应用程序捆绑包内运行，而不是在开发环境中运行：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2073,10 +2064,8 @@ aria-label="页眉"
 </div>
 </div>
 </div>
-<p>与 <code>briefcase dev --test</code> 一样，只有在第一次运行测试套件时才需要使用 <code>-r</code>
-选项，以确保测试依赖项的存在。以后运行时，可以省略该选项。</p>
-<p>你也可以在移动后端使用 <code>--test</code> 选项：<code>briefcase run iOS --test</code> 和 `briefcase run android
-&ndash;test`` 都可以在你选择的移动设备上运行测试套件。</p>
+<p>与 <code>briefcase dev --test</code> 一样，只有在第一次运行测试套件时才需要使用 <code>-r</code> 选项，以确保测试依赖项的存在。以后运行时，可以省略该选项。</p>
+<p>你也可以在移动后端使用 <code>--test</code> 选项：<code>briefcase run iOS --test</code> 和 `briefcase run android &ndash;test`` 都可以在你选择的移动设备上运行测试套件。</p>
 
 
 

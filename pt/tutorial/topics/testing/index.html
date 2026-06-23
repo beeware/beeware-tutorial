@@ -1635,29 +1635,15 @@ aria-label="Cabeçalho"
 
 
 <h1 id="hora-de-testes">Hora de testes<a class="headerlink" href="#hora-de-testes" title="Permanent link">&para;</a></h1>
-<p>A maior parte do desenvolvimento de software não envolve a gravação de novo
-código - é a modificação do código existente. Garantir que o código existente
-continua a funcionar da maneira esperada é uma parte fundamental do processo de
-desenvolvimento de software. Uma maneira de garantir o comportamento da nossa
-aplicação é com um <em>conjunto de testes</em>.</p>
+<p>A maior parte do desenvolvimento de software não envolve a gravação de novo código - é a modificação do código existente. Garantir que o código existente continua a funcionar da maneira esperada é uma parte fundamental do processo de desenvolvimento de software. Uma maneira de garantir o comportamento da nossa aplicação é com um <em>conjunto de testes</em>.</p>
 <h2 id="executar-a-suite-de-testes">Executar a suite de testes<a class="headerlink" href="#executar-a-suite-de-testes" title="Permanent link">&para;</a></h2>
-<p>Acontece que nosso projeto já tem um conjunto de testes! Quando geramos nosso
-projeto originalmente, foram gerados dois diretórios de nível superior: <code>src</code> e
-<code>tests</code>. A pasta <code>src</code> contém o código da nossa aplicação; a pasta <code>tests</code>
-contém nosso conjunto de testes. Dentro da pasta <code>tests</code> há um ficheiro chamado
-<code>test_app.py</code> com o seguinte conteúdo:</p>
+<p>Acontece que nosso projeto já tem um conjunto de testes! Quando geramos nosso projeto originalmente, foram gerados dois diretórios de nível superior: <code>src</code> e <code>tests</code>. A pasta <code>src</code> contém o código da nossa aplicação; a pasta <code>tests</code> contém nosso conjunto de testes. Dentro da pasta <code>tests</code> há um ficheiro chamado <code>test_app.py</code> com o seguinte conteúdo:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Um teste inicial para a aplicação&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
-<p>Este é um <a href="https://pytest.org">Pytest</a> <em>caso de teste</em> - um bloco de código que
-pode ser executado para verificar algum comportamento da sua aplicação. Nesse
-caso, o teste é um espaço reservado e não testa nada sobre a nossa aplicação,
-mas é um teste que podemos executar.</p>
-<p>Podemos executar esse conjunto de testes usando a opção <code>--test</code> do <code>briefcase
-dev</code>. Como esta é a primeira vez que estamos executando testes, também
-precisamos passar a opção <code>-r</code> para garantir que os requisitos de teste também
-sejam instalados:</p>
+<p>Este é um <a href="https://pytest.org">Pytest</a> <em>caso de teste</em> - um bloco de código que pode ser executado para verificar algum comportamento da sua aplicação. Nesse caso, o teste é um espaço reservado e não testa nada sobre a nossa aplicação, mas é um teste que podemos executar.</p>
+<p>Podemos executar esse conjunto de testes usando a opção <code>--test</code> do <code>briefcase dev</code>. Como esta é a primeira vez que estamos executando testes, também precisamos passar a opção <code>-r</code> para garantir que os requisitos de teste também sejam instalados:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1731,11 +1717,8 @@ sejam instalados:</p>
 </div>
 </div>
 </div>
-<p>Sucesso! Acabamos de executar um único teste que verifica se a matemática Python
-funciona da maneira esperada (Que alívio!).</p>
-<p>Vamos substituir esse teste de espaço reservado por um teste que verifica se o
-nosso método <code>greeting()</code> se comporta da maneira esperada. Substitua o conteúdo
-de <code>test_app.py</code> pelo seguinte:</p>
+<p>Sucesso! Acabamos de executar um único teste que verifica se a matemática Python funciona da maneira esperada (Que alívio!).</p>
+<p>Vamos substituir esse teste de espaço reservado por um teste que verifica se o nosso método <code>greeting()</code> se comporta da maneira esperada. Substitua o conteúdo de <code>test_app.py</code> pelo seguinte:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">greeting</span>
 
 
@@ -1750,12 +1733,8 @@ de <code>test_app.py</code> pelo seguinte:</p>
 
  <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Olá, desconhecido&quot;</span>
 </code></pre></div>
-<p>Isso define dois novos testes, verificar os dois comportamentos que esperamos
-ver: o resultado quando um nome é fornecido e o resultado quando o nome está
-vazio.</p>
-<p>Agora podemos executar novamente o conjunto de testes. Dessa vez, não precisamos
-de fornecer a opção <code>-r</code>, pois os requisitos de teste já foram instalados;
-precisamos apenas de usar a opção <code>--test</code>:</p>
+<p>Isso define dois novos testes, verificar os dois comportamentos que esperamos ver: o resultado quando um nome é fornecido e o resultado quando o nome está vazio.</p>
+<p>Agora podemos executar novamente o conjunto de testes. Dessa vez, não precisamos de fornecer a opção <code>-r</code>, pois os requisitos de teste já foram instalados; precisamos apenas de usar a opção <code>--test</code>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1805,14 +1784,9 @@ precisamos apenas de usar a opção <code>--test</code>:</p>
 </div>
 </div>
 </div>
-<p>Excelente! O nosso método utilitário <code>greeting()</code> está a funcionar como
-esperado.</p>
+<p>Excelente! O nosso método utilitário <code>greeting()</code> está a funcionar como esperado.</p>
 <h2 id="desenvolvimento-orientado-por-testes">Desenvolvimento orientado por testes<a class="headerlink" href="#desenvolvimento-orientado-por-testes" title="Permanent link">&para;</a></h2>
-<p>Agora que temos uma suite de testes, podemos usá-la para impulsionar o
-desenvolvimento de novos recursos. Vamos modificar a nossa aplicação para ter
-uma saudação especial para um determinado utilizador. Podemos começar por
-adicionar um caso de teste para o novo comportamento que gostaríamos de ver na
-parte inferior do <code>test_app.py</code>:</p>
+<p>Agora que temos uma suite de testes, podemos usá-la para impulsionar o desenvolvimento de novos recursos. Vamos modificar a nossa aplicação para ter uma saudação especial para um determinado utilizador. Podemos começar por adicionar um caso de teste para o novo comportamento que gostaríamos de ver na parte inferior do <code>test_app.py</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Se o nome for Brutus, é mostrada uma saudação especial&quot;&quot;&quot;</span>
 
@@ -1915,11 +1889,7 @@ parte inferior do <code>test_app.py</code>:</p>
 </div>
 </div>
 </div>
-<p>Desta vez, vemos uma falha no teste - e o resultado explica a origem da falha: o
-teste está esperando a saída "BeeWare os IDEs do Python!", mas a nossa
-implementação de <code>greeting()</code> está a retornar "Olá, Brutus". Vamos modificar a
-implementação de <code>greeting()</code> em <code>src/helloworld/app.py</code> para obter o novo
-comportamento:</p>
+<p>Desta vez, vemos uma falha no teste - e o resultado explica a origem da falha: o teste está esperando a saída "BeeWare os IDEs do Python!", mas a nossa implementação de <code>greeting()</code> está a retornar "Olá, Brutus". Vamos modificar a implementação de <code>greeting()</code> em <code>src/helloworld/app.py</code> para obter o novo comportamento:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
@@ -1929,8 +1899,7 @@ comportamento:</p>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;Olá, desconhecido&quot;</span>
 </code></pre></div>
-<p>Se executarmos os testes novamente, vamos ver que os nossos testes foram
-aprovados:</p>
+<p>Se executarmos os testes novamente, vamos ver que os nossos testes foram aprovados:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1984,16 +1953,8 @@ aprovados:</p>
 </div>
 </div>
 <h2 id="testes-em-tempo-de-execucao">Testes em tempo de execução<a class="headerlink" href="#testes-em-tempo-de-execucao" title="Permanent link">&para;</a></h2>
-<p>Até o momento, estivemos a executar os testes no modo de desenvolvimento. Isso é
-especialmente útil quando se está a desenvolver novos recursos, pois é possível
-iterar rapidamente na adição de testes e na adição de código para que esses
-testes sejam aprovados. No entanto, em algum momento, vai querer verificar se o
-seu código também é executado corretamente dentro do ambiente do pacote da
-aplicação.</p>
-<p>As opções <code>--test</code> e <code>-r</code> também podem ser passadas para o comando <code>run</code>. Se
-usar <code>briefcase run --test -r</code>, o mesmo conjunto de testes será executado, mas
-vai correr dentro do bolo da aplicação empacotada, e não no seu ambiente de
-desenvolvimento:</p>
+<p>Até o momento, estivemos a executar os testes no modo de desenvolvimento. Isso é especialmente útil quando se está a desenvolver novos recursos, pois é possível iterar rapidamente na adição de testes e na adição de código para que esses testes sejam aprovados. No entanto, em algum momento, vai querer verificar se o seu código também é executado corretamente dentro do ambiente do pacote da aplicação.</p>
+<p>As opções <code>--test</code> e <code>-r</code> também podem ser passadas para o comando <code>run</code>. Se usar <code>briefcase run --test -r</code>, o mesmo conjunto de testes será executado, mas vai correr dentro do bolo da aplicação empacotada, e não no seu ambiente de desenvolvimento:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">macOS</label><label for="__tabbed_5_2">Linux</label><label for="__tabbed_5_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2103,12 +2064,8 @@ desenvolvimento:</p>
 </div>
 </div>
 </div>
-<p>Como no caso de <code>briefcase dev --test</code>, a opção <code>-r</code> só é necessária na primeira
-vez em que executa o conjunto de testes para garantir que as dependências de
-teste estejam presentes. Nas execuções subsequentes, pode omitir esta opção.</p>
-<p>Também pode usar a opção <code>--test</code> em backends móveis: - para que<code>briefcase run
-iOS --test</code> e <code>briefcase run android --test</code> funcionem ambos, correndo a suite
-de testes no dispositivo móvel que selecionar.</p>
+<p>Como no caso de <code>briefcase dev --test</code>, a opção <code>-r</code> só é necessária na primeira vez em que executa o conjunto de testes para garantir que as dependências de teste estejam presentes. Nas execuções subsequentes, pode omitir esta opção.</p>
+<p>Também pode usar a opção <code>--test</code> em backends móveis: - para que<code>briefcase run iOS --test</code> e <code>briefcase run android --test</code> funcionem ambos, correndo a suite de testes no dispositivo móvel que selecionar.</p>
 
 
 

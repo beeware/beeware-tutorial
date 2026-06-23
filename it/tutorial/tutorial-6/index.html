@@ -662,8 +662,7 @@ aria-label="Intestazione"
 
   <!-- Typeset title -->
   
-    Esercitazione 3 - Confezionamento per la
-  distribuzione
+    Esercitazione 3 - Confezionamento per la distribuzione
   
 
 
@@ -1658,29 +1657,14 @@ aria-label="Intestazione"
 
 
 <h1 id="esercitazione-6-mettetelo-sul-web">Esercitazione 6 - Mettetelo sul web!<a class="headerlink" href="#esercitazione-6-mettetelo-sul-web" title="Permanent link">&para;</a></h1>
-<p>Oltre a supportare le piattaforme mobili, il toolkit di widget Toga supporta
-anche il Web! Utilizzando la stessa API usata per distribuire le applicazioni
-desktop e mobili, è possibile distribuire l'applicazione come applicazione web a
-pagina singola.</p>
+<p>Oltre a supportare le piattaforme mobili, il toolkit di widget Toga supporta anche il Web! Utilizzando la stessa API usata per distribuire le applicazioni desktop e mobili, è possibile distribuire l'applicazione come applicazione web a pagina singola.</p>
 <div class="admonition">
 <p class="admonition-title">Prova di concetto</p>
-<p>Il backend di Toga Web è il meno maturo di tutti i backend di Toga. È abbastanza
-maturo per mostrare alcune funzionalità, ma è probabile che sia pieno di bug e
-che manchino molti dei widget disponibili su altre piattaforme. In questo
-momento, l'implementazione del Web dovrebbe essere considerata una "prova di
-concetto": sufficiente per dimostrare ciò che si può fare, ma non abbastanza per
-fare affidamento su uno sviluppo serio.</p>
-<p>Se avete problemi con questa fase del tutorial, potete passare alla pagina
-successiva.</p>
+<p>Il backend di Toga Web è il meno maturo di tutti i backend di Toga. È abbastanza maturo per mostrare alcune funzionalità, ma è probabile che sia pieno di bug e che manchino molti dei widget disponibili su altre piattaforme. In questo momento, l'implementazione del Web dovrebbe essere considerata una "prova di concetto": sufficiente per dimostrare ciò che si può fare, ma non abbastanza per fare affidamento su uno sviluppo serio.</p>
+<p>Se avete problemi con questa fase del tutorial, potete passare alla pagina successiva.</p>
 </div>
 <h2 id="distribuzione-come-applicazione-web">Distribuzione come applicazione web<a class="headerlink" href="#distribuzione-come-applicazione-web" title="Permanent link">&para;</a></h2>
-<p>Il processo di distribuzione come applicazione web a pagina singola segue lo
-stesso schema familiare: si crea l'applicazione, la si costruisce e la si
-esegue. Tuttavia, Briefcase può essere un po' intelligente; se si tenta di
-eseguire un'applicazione e Briefcase determina che non è stata creata o
-costruita per la piattaforma a cui è destinata, eseguirà le fasi di creazione e
-costruzione per voi. Poiché questa è la prima volta che eseguiamo l'applicazione
-per il Web, possiamo eseguire tutti e tre i passaggi con un solo comando:</p>
+<p>Il processo di distribuzione come applicazione web a pagina singola segue lo stesso schema familiare: si crea l'applicazione, la si costruisce e la si esegue. Tuttavia, Briefcase può essere un po' intelligente; se si tenta di eseguire un'applicazione e Briefcase determina che non è stata creata o costruita per la piattaforma a cui è destinata, eseguirà le fasi di creazione e costruzione per voi. Poiché questa è la prima volta che eseguiamo l'applicazione per il Web, possiamo eseguire tutti e tre i passaggi con un solo comando:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1794,37 +1778,15 @@ per il Web, possiamo eseguire tutti e tre i passaggi con un solo comando:</p>
 </div>
 </div>
 <p>Si aprirà un browser web che punta a <nospell><a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></nospell>:</p>
-<p><img alt="Finestra di dialogo Hello World Tutorial 6, in un
-browser" src="../../images/tutorial-6.png" /></p>
-<p>Se si inserisce il proprio nome e si fa clic sul pulsante, viene visualizzata
-una finestra di dialogo.</p>
+<p><img alt="Finestra di dialogo Hello World Tutorial 6, in un browser" src="../../images/tutorial-6.png" /></p>
+<p>Se si inserisce il proprio nome e si fa clic sul pulsante, viene visualizzata una finestra di dialogo.</p>
 <h2 id="come-funziona">Come funziona?<a class="headerlink" href="#come-funziona" title="Permanent link">&para;</a></h2>
-<p>Questa applicazione web è un sito web statico - una singola pagina sorgente
-HTML, con alcuni CSS e altre risorse. Briefcase ha avviato un server web locale
-per servire questa pagina, in modo che il browser possa visualizzarla. Se si
-volesse mettere in produzione questa pagina web, si potrebbe copiare il
-contenuto della cartella <code>www</code> su qualsiasi server web in grado di servire
-contenuti statici.</p>
-<p>Ma quando si preme il pulsante, si esegue codice Python&hellip; Come funziona? Toga
-utilizza <a href="https://pyscript.net">PyScript</a> per fornire un interprete Python nel
-browser. Briefcase impacchetta il codice dell'applicazione come ruote che
-PyScript può caricare nel browser. Quando la pagina viene caricata, il codice
-dell'applicazione viene eseguito nel browser, costruendo l'interfaccia utente
-utilizzando il DOM del browser. Quando si fa clic su un pulsante, questo esegue
-il codice di gestione degli eventi nel browser.</p>
+<p>Questa applicazione web è un sito web statico - una singola pagina sorgente HTML, con alcuni CSS e altre risorse. Briefcase ha avviato un server web locale per servire questa pagina, in modo che il browser possa visualizzarla. Se si volesse mettere in produzione questa pagina web, si potrebbe copiare il contenuto della cartella <code>www</code> su qualsiasi server web in grado di servire contenuti statici.</p>
+<p>Ma quando si preme il pulsante, si esegue codice Python&hellip; Come funziona? Toga utilizza <a href="https://pyscript.net">PyScript</a> per fornire un interprete Python nel browser. Briefcase impacchetta il codice dell'applicazione come ruote che PyScript può caricare nel browser. Quando la pagina viene caricata, il codice dell'applicazione viene eseguito nel browser, costruendo l'interfaccia utente utilizzando il DOM del browser. Quando si fa clic su un pulsante, questo esegue il codice di gestione degli eventi nel browser.</p>
 <h2 id="pubblicazione-dellapplicazione-web">Pubblicazione dell'applicazione web<a class="headerlink" href="#pubblicazione-dellapplicazione-web" title="Permanent link">&para;</a></h2>
-<p>Se lo desideri, puoi anche provare a pubblicare questa applicazione web su
-Internet utilizzando il <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">PythonAnywhere Briefcase
-Plugin</a>. Il
-<a href="https://briefcase.pythonanywhere.com/tutorial/">tutorial</a> per quel plugin
-riprende da dove questa pagina si interrompe e ti guida attraverso il processo
-di impacchettamento e pubblicazione su
-<a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
+<p>Se lo desideri, puoi anche provare a pubblicare questa applicazione web su Internet utilizzando il <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">PythonAnywhere Briefcase Plugin</a>. Il <a href="https://briefcase.pythonanywhere.com/tutorial/">tutorial</a> per quel plugin riprende da dove questa pagina si interrompe e ti guida attraverso il processo di impacchettamento e pubblicazione su <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
 <h2 id="prossimi-passi">Prossimi passi<a class="headerlink" href="#prossimi-passi" title="Permanent link">&para;</a></h2>
-<p>Anche se abbiamo distribuito questa applicazione su desktop, mobile e web,
-l'applicazione è piuttosto semplice e non coinvolge librerie di terze parti.
-Possiamo includere nella nostra applicazione le librerie del Python Package
-Index (PyPI)? Consultate <a href="../tutorial-7/">Tutorial 7</a> per scoprirlo&hellip;</p>
+<p>Anche se abbiamo distribuito questa applicazione su desktop, mobile e web, l'applicazione è piuttosto semplice e non coinvolge librerie di terze parti. Possiamo includere nella nostra applicazione le librerie del Python Package Index (PyPI)? Consultate <a href="../tutorial-7/">Tutorial 7</a> per scoprirlo&hellip;</p>
 
 
 

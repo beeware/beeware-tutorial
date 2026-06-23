@@ -1635,20 +1635,11 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-4-atualizar-a-sua-aplicacao">Tutorial 4 - Atualizar a sua aplicação<a class="headerlink" href="#tutorial-4-atualizar-a-sua-aplicacao" title="Permanent link">&para;</a></h1>
-<p>No último tutorial, empacotamos a nossa aplicação como uma aplicação nativa. Se
-estiver a lidar com uma aplicação do mundo real, este não vai ser o fim da
-história - provavelmente fará alguns testes, descobrirá problemas e vai precisar
-de fazer algumas alterações. Mesmo que a sua aplicação seja perfeita,
-eventualmente desejará publicar a versão 2 da sua aplicação com melhorias.</p>
-<p>Então - como é que se atualiza a aplicação instalada quando faz alterações no
-código?</p>
+<p>No último tutorial, empacotamos a nossa aplicação como uma aplicação nativa. Se estiver a lidar com uma aplicação do mundo real, este não vai ser o fim da história - provavelmente fará alguns testes, descobrirá problemas e vai precisar de fazer algumas alterações. Mesmo que a sua aplicação seja perfeita, eventualmente desejará publicar a versão 2 da sua aplicação com melhorias.</p>
+<p>Então - como é que se atualiza a aplicação instalada quando faz alterações no código?</p>
 <h2 id="atualizar-o-codigo-da-aplicacao">Atualizar o código da aplicação<a class="headerlink" href="#atualizar-o-codigo-da-aplicacao" title="Permanent link">&para;</a></h2>
-<p>Atualmente, a nossa aplicação escreve na consola quando se pressiona o botão. No
-entanto, as aplicações de GUI não devem realmente usar a consola para os
-resultados. Elas precisam usar caixas de diálogo para comunicar com os
-utilizadores.</p>
-<p>Vamos adicionar uma caixa de diálogo para dizer olá, em vez de escrever na
-consola. Modifique chamada de retorno <code>say_hello</code> para que se pareça com isto:</p>
+<p>Atualmente, a nossa aplicação escreve na consola quando se pressiona o botão. No entanto, as aplicações de GUI não devem realmente usar a consola para os resultados. Elas precisam usar caixas de diálogo para comunicar com os utilizadores.</p>
+<p>Vamos adicionar uma caixa de diálogo para dizer olá, em vez de escrever na consola. Modifique chamada de retorno <code>say_hello</code> para que se pareça com isto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
         <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
@@ -1657,50 +1648,34 @@ consola. Modifique chamada de retorno <code>say_hello</code> para que se pareça
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Precisamos criar o método <code>async</code> para que quando mostrarmos a caixa de diálogo,
-o resto da aplicação continue a ser executada. Não se preocupe muito com esse
-detalhe neste momento - vamos dar uma explicação mais detalhada no <a href="../tutorial-8/">Tutorial
-8</a>.</p>
-<p>Isto dirige o Toga a abrir uma caixa de diálogo modal quando o botão é
-pressionado.</p>
-<p>Se executar <code>briefcase dev</code>, digitar um nome e pressionar o botão, vai ver a
-nova caixa de diálogo:</p>
+<p>Precisamos criar o método <code>async</code> para que quando mostrarmos a caixa de diálogo, o resto da aplicação continue a ser executada. Não se preocupe muito com esse detalhe neste momento - vamos dar uma explicação mais detalhada no <a href="../tutorial-8/">Tutorial 8</a>.</p>
+<p>Isto dirige o Toga a abrir uma caixa de diálogo modal quando o botão é pressionado.</p>
+<p>Se executar <code>briefcase dev</code>, digitar um nome e pressionar o botão, vai ver a nova caixa de diálogo:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <figure>
-<p><img alt="Caixa de diálogo Hello World Tutorial 4, em
-macOS" src="../../images/macOS/tutorial-4.png" /></p>
+<p><img alt="Caixa de diálogo Hello World Tutorial 4, em macOS" src="../../images/macOS/tutorial-4.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
 <figure>
-<p><img alt="Caixa de diálogo Hello World Tutorial 4, em
-Linux" src="../../images/linux/tutorial-4.png" /></p>
+<p><img alt="Caixa de diálogo Hello World Tutorial 4, em Linux" src="../../images/linux/tutorial-4.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
 <figure>
-<p><img alt="Caixa de diálogo Hello World Tutorial 4, em
-Windows" src="../../images/windows/tutorial-4.png" /></p>
+<p><img alt="Caixa de diálogo Hello World Tutorial 4, em Windows" src="../../images/windows/tutorial-4.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>No entanto, se correr <code>briefcase run</code>, a caixa de diálogo não vai aparecer.</p>
-<p>Porquê isto? Bem, o <code>briefcase dev</code> opera executando o seu código no local - ele
-tenta produzir um ambiente de tempo de execução o mais realista possível para
-seu código, mas não fornece nem usa nada da infraestrutura da plataforma para
-envolver o seu código como uma aplicação. Parte do processo de empacotamento da
-aplicação envolve copiar o código <em>para</em> o bolo da aplicação - e no momento, a
-sua aplicação ainda contém o código antigo.</p>
-<p>Assim - precisamos dizer ao briefcase para atualizar a sua aplicação, copiando a
-nova versão do código. Nós <em>podíamos</em> fazer isso apagando o diretório da
-plataforma antiga e começando do zero. No entanto, o Briefcase oferece uma
-maneira mais fácil - pode atualizar o código do seu bolo de aplicação existente:</p>
+<p>Porquê isto? Bem, o <code>briefcase dev</code> opera executando o seu código no local - ele tenta produzir um ambiente de tempo de execução o mais realista possível para seu código, mas não fornece nem usa nada da infraestrutura da plataforma para envolver o seu código como uma aplicação. Parte do processo de empacotamento da aplicação envolve copiar o código <em>para</em> o bolo da aplicação - e no momento, a sua aplicação ainda contém o código antigo.</p>
+<p>Assim - precisamos dizer ao briefcase para atualizar a sua aplicação, copiando a nova versão do código. Nós <em>podíamos</em> fazer isso apagando o diretório da plataforma antiga e começando do zero. No entanto, o Briefcase oferece uma maneira mais fácil - pode atualizar o código do seu bolo de aplicação existente:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1748,44 +1723,23 @@ maneira mais fácil - pode atualizar o código do seu bolo de aplicação existe
 </div>
 </div>
 </div>
-<p>Se o Briefcase não conseguir encontrar o modelo de andaime, ele vai invocar
-automaticamente o <code>create</code> para gerar um novo andaime.</p>
-<p>Agora que atualizamos o código do instalador, podemos executar o <code>briefcase
-build</code> para recompilar a aplicação, o <code>briefcase run</code> para executar a aplicação
-atualizada e o <code>briefcase package</code> para reempacotar a aplicação para
-distribuição.</p>
+<p>Se o Briefcase não conseguir encontrar o modelo de andaime, ele vai invocar automaticamente o <code>create</code> para gerar um novo andaime.</p>
+<p>Agora que atualizamos o código do instalador, podemos executar o <code>briefcase build</code> para recompilar a aplicação, o <code>briefcase run</code> para executar a aplicação atualizada e o <code>briefcase package</code> para reempacotar a aplicação para distribuição.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Utilizadores do macOS, lembrem-se de que, conforme observado no <a href="../tutorial-3/">Tutorial
-3</a>, para o tutorial recomendamos executar o <code>briefcase package</code>
-com a bandeira <code>--adhoc-sign</code> para evitar a complexidade da configurar uma
-identidade de assinatura de código e manter o tutorial o mais simples possível.</p>
+<p>Utilizadores do macOS, lembrem-se de que, conforme observado no <a href="../tutorial-3/">Tutorial 3</a>, para o tutorial recomendamos executar o <code>briefcase package</code> com a bandeira <code>--adhoc-sign</code> para evitar a complexidade da configurar uma identidade de assinatura de código e manter o tutorial o mais simples possível.</p>
 </div>
 <h2 id="atualizar-e-executar-num-unico-passo">Atualizar e executar num único passo<a class="headerlink" href="#atualizar-e-executar-num-unico-passo" title="Permanent link">&para;</a></h2>
-<p>Se está a iterar rapidamente alterações de código, provavelmente vai querer
-fazer uma mudança de código, atualizar a aplicação e imediatamente re-correr a
-sua aplicação. Para a maioria dos propósitos, o modo de desenvolvedor
-(<code>briefcase dev</code>) será a maneira mais fácil de fazer esse tipo de iteração
-rápida; no entanto, se estiver a testar algo sobre como a sua aplicação corre
-como um binário nativo, ou caçando um bug que só se manifesta quando a sua
-aplicação está em formato empacotado, pode precisar de usar chamadas repetidas
-para <code>briefcase run</code>. Para simplificar o processo de atualização e execução do
-bolo da aplicação, o Briefcase tem um atalho para suportar este padrão de uso -
-a opção <code>-u</code> (ou <code>-update</code>) no comando <code>run</code>.</p>
-<p>Vamos tentar fazer outra alteração. Deve ter notado que, se não escrever um nome
-na caixa de entrada de texto, a caixa de diálogo vai dizer "Olá, ". Vamos
-modificar a função <code>say_hello</code> novamente para lidar com esse caso extremo.</p>
-<p>No topo do ficheiro, entre as importações e a definição da <code>classe HelloWorld</code>,
-adicione um método utilitário para gerar uma saudação apropriada, dependendo do
-valor do nome que foi fornecido:</p>
+<p>Se está a iterar rapidamente alterações de código, provavelmente vai querer fazer uma mudança de código, atualizar a aplicação e imediatamente re-correr a sua aplicação. Para a maioria dos propósitos, o modo de desenvolvedor (<code>briefcase dev</code>) será a maneira mais fácil de fazer esse tipo de iteração rápida; no entanto, se estiver a testar algo sobre como a sua aplicação corre como um binário nativo, ou caçando um bug que só se manifesta quando a sua aplicação está em formato empacotado, pode precisar de usar chamadas repetidas para <code>briefcase run</code>. Para simplificar o processo de atualização e execução do bolo da aplicação, o Briefcase tem um atalho para suportar este padrão de uso - a opção <code>-u</code> (ou <code>-update</code>) no comando <code>run</code>.</p>
+<p>Vamos tentar fazer outra alteração. Deve ter notado que, se não escrever um nome na caixa de entrada de texto, a caixa de diálogo vai dizer "Olá, ". Vamos modificar a função <code>say_hello</code> novamente para lidar com esse caso extremo.</p>
+<p>No topo do ficheiro, entre as importações e a definição da <code>classe HelloWorld</code>, adicione um método utilitário para gerar uma saudação apropriada, dependendo do valor do nome que foi fornecido:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Olá, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;Olá, desconhecido&quot;</span>
 </code></pre></div>
-<p>Depois, modifique a chamada de retorno <code>say_hello</code> para usar esse novo método
-utilitário:</p>
+<p>Depois, modifique a chamada de retorno <code>say_hello</code> para usar esse novo método utilitário:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
         <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
@@ -1794,9 +1748,7 @@ utilitário:</p>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Execute a sua aplicação no modo de desenvolvimento (com <code>briefcase dev</code>) para
-confirmar que a nova lógica funciona; em seguida, atualize, crie e execute a
-aplicação com um único comando:</p>
+<p>Execute a sua aplicação no modo de desenvolvimento (com <code>briefcase dev</code>) para confirmar que a nova lógica funciona; em seguida, atualize, crie e execute a aplicação com um único comando:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1859,15 +1811,10 @@ aplicação com um único comando:</p>
 </div>
 </div>
 </div>
-<p>O comando package também aceita o argumento <code>-u</code>, assim se fizer uma alteração
-no código da sua aplicação e quiser re-empacotar imediatamente, poderá executar
-<code>briefcase package -u</code>.</p>
+<p>O comando package também aceita o argumento <code>-u</code>, assim se fizer uma alteração no código da sua aplicação e quiser re-empacotar imediatamente, poderá executar <code>briefcase package -u</code>.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos a nossa aplicação empacotada para distribuição em plataformas de
-ambiente de trabalho e conseguimos atualizar o código na nossa aplicação.</p>
-<p>Mas e quanto aos dispositivos móveis? No <a href="../tutorial-5/">Tutorial 5</a>,
-vamos converter a nossa aplicação num aplicação móvel e vamos implantá-la num
-simulador de dispositivo, e num telemóvel.</p>
+<p>Agora temos a nossa aplicação empacotada para distribuição em plataformas de ambiente de trabalho e conseguimos atualizar o código na nossa aplicação.</p>
+<p>Mas e quanto aos dispositivos móveis? No <a href="../tutorial-5/">Tutorial 5</a>, vamos converter a nossa aplicação num aplicação móvel e vamos implantá-la num simulador de dispositivo, e num telemóvel.</p>
 
 
 

@@ -1679,20 +1679,11 @@ aria-label="Kopfzeile"
 
 
 <h1 id="tutorial-3-verpackung-fur-den-vertrieb">Tutorial 3 - Verpackung für den Vertrieb<a class="headerlink" href="#tutorial-3-verpackung-fur-den-vertrieb" title="Permanent link">&para;</a></h1>
-<p>Bisher haben wir unsere Anwendung im <code>Entwicklermodus</code> ausgeführt. Das macht es
-uns leicht, unsere Anwendung lokal auszuführen – aber was wir wirklich wollen,
-ist, unsere Anwendung anderen zur Verfügung stellen zu können.</p>
-<p>Wir möchten unseren Benutzern jedoch nicht beibringen müssen, wie sie Python
-installieren, eine virtuelle Umgebung erstellen, ein Git-Repository klonen und
-Briefcase im Entwicklermodus ausführen. Wir möchten ihnen lieber einfach ein
-Installationsprogramm zur Verfügung stellen, damit die Anwendung einfach
-funktioniert.</p>
-<p>Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung auf diese
-Weise zu verpacken.</p>
+<p>Bisher haben wir unsere Anwendung im <code>Entwicklermodus</code> ausgeführt. Das macht es uns leicht, unsere Anwendung lokal auszuführen – aber was wir wirklich wollen, ist, unsere Anwendung anderen zur Verfügung stellen zu können.</p>
+<p>Wir möchten unseren Benutzern jedoch nicht beibringen müssen, wie sie Python installieren, eine virtuelle Umgebung erstellen, ein Git-Repository klonen und Briefcase im Entwicklermodus ausführen. Wir möchten ihnen lieber einfach ein Installationsprogramm zur Verfügung stellen, damit die Anwendung einfach funktioniert.</p>
+<p>Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung auf diese Weise zu verpacken.</p>
 <h2 id="erstellen-ihres-anwendungsgerusts">Erstellen Ihres Anwendungsgerüsts<a class="headerlink" href="#erstellen-ihres-anwendungsgerusts" title="Permanent link">&para;</a></h2>
-<p>Da dies das erste Mal ist, dass wir unsere Anwendung paketieren, müssen wir
-einige Konfigurationsdateien und andere Gerüste erstellen, um den
-Paketierungsprozess zu unterstützen. Starten Sie im Verzeichnis <code>helloworld</code>:</p>
+<p>Da dies das erste Mal ist, dass wir unsere Anwendung paketieren, müssen wir einige Konfigurationsdateien und andere Gerüste erstellen, um den Paketierungsprozess zu unterstützen. Starten Sie im Verzeichnis <code>helloworld</code>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1754,12 +1745,9 @@ Paketierungsprozess zu unterstützen. Starten Sie im Verzeichnis <code>helloworl
 <p class="admonition-title">Fehler bei Python-Versionen</p>
 <p>Wenn Sie eine Fehlermeldung erhalten, die in etwa wie folgt lautet:</p>
 <blockquote>
-<p>Die zur Ausführung von Briefcase verwendete Python-Version (3.12) ist nicht
-die System-Python-Version (3.10).</p>
+<p>Die zur Ausführung von Briefcase verwendete Python-Version (3.12) ist nicht die System-Python-Version (3.10).</p>
 </blockquote>
-<p>Sie müssen Ihre virtuelle Umgebung mit dem System <code>python3</code> neu erstellen. Die
-Verwendung des Systems Python ist eine Voraussetzung für die Paketierung Ihrer
-Anwendung.</p>
+<p>Sie müssen Ihre virtuelle Umgebung mit dem System <code>python3</code> neu erstellen. Die Verwendung des Systems Python ist eine Voraussetzung für die Paketierung Ihrer Anwendung.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1786,79 +1774,32 @@ Anwendung.</p>
 </div>
 </div>
 </div>
-<p>Wahrscheinlich haben Sie gerade gesehen, wie seitenweise Inhalte an Ihrem
-Terminal vorbeigezogen sind&hellip; was ist also passiert? Briefcase hat das Folgende
-getan:</p>
+<p>Wahrscheinlich haben Sie gerade gesehen, wie seitenweise Inhalte an Ihrem Terminal vorbeigezogen sind&hellip; was ist also passiert? Briefcase hat das Folgende getan:</p>
 <ol>
 <li>
-<p>Es <strong>generiert eine Anwendungsvorlage</strong>. Um ein natives Installationsprogramm
-   zu erstellen, sind eine Menge Dateien und Konfigurationen erforderlich, die
-   über den Code der eigentlichen Anwendung hinausgehen. Dieses zusätzliche
-   Gerüst ist für jede Anwendung auf der gleichen Plattform fast gleich, mit
-   Ausnahme des Namens der eigentlichen Anwendung, die erstellt wird - daher
-   bietet Briefcase eine Anwendungsvorlage für jede unterstützte Plattform. In
-   diesem Schritt wird die Vorlage ausgerollt, wobei der Name Ihrer Anwendung,
-   die Bundle-ID und andere Eigenschaften Ihrer Konfigurationsdatei entsprechend
-   der Plattform, auf der Sie bauen, ersetzt werden. Wenn Sie mit der von
-   Briefcase bereitgestellten Vorlage nicht zufrieden sind, können Sie Ihre
-   eigene Vorlage erstellen. Sie sollten dies jedoch erst dann tun, wenn Sie
-   etwas mehr Erfahrung mit der Standardvorlage von Briefcase haben.</p>
+<p>Es <strong>generiert eine Anwendungsvorlage</strong>. Um ein natives Installationsprogramm zu erstellen, sind eine Menge Dateien und Konfigurationen erforderlich, die über den Code der eigentlichen Anwendung hinausgehen. Dieses zusätzliche Gerüst ist für jede Anwendung auf der gleichen Plattform fast gleich, mit Ausnahme des Namens der eigentlichen Anwendung, die erstellt wird - daher bietet Briefcase eine Anwendungsvorlage für jede unterstützte Plattform. In diesem Schritt wird die Vorlage ausgerollt, wobei der Name Ihrer Anwendung, die Bundle-ID und andere Eigenschaften Ihrer Konfigurationsdatei entsprechend der Plattform, auf der Sie bauen, ersetzt werden. Wenn Sie mit der von Briefcase bereitgestellten Vorlage nicht zufrieden sind, können Sie Ihre eigene Vorlage erstellen. Sie sollten dies jedoch erst dann tun, wenn Sie etwas mehr Erfahrung mit der Standardvorlage von Briefcase haben.</p>
 </li>
 <li>
-<p>Es <strong>lud ein Support-Paket herunter und installierte es</strong>. Der von Briefcase
-   verfolgte Paketierungsansatz lässt sich am besten als "das Einfachste, was
-   überhaupt möglich ist" beschreiben - es liefert einen vollständigen,
-   isolierten Python-Interpreter als Teil jeder Anwendung aus, die es erstellt
-   (mit Ausnahme der Pakete für das native Linux-System). Dies ist etwas
-   platzraubend - wenn Sie 5 Anwendungen mit Briefcase paketieren, haben Sie 5
-   Kopien des Python-Interpreters. Dieser Ansatz garantiert jedoch, dass jede
-   Anwendung völlig unabhängig ist und eine bestimmte Python-Version verwendet,
-   von der bekannt ist, dass sie mit der Anwendung funktioniert. Auch hier
-   bietet Briefcase ein Standard-Unterstützungspaket für jede Plattform; wenn
-   Sie möchten, können Sie Ihr eigenes Unterstützungspaket bereitstellen und
-   dieses als Teil des Erstellungsprozesses einbinden lassen. Dies kann sinnvoll
-   sein, wenn Sie bestimmte Optionen im Python-Interpreter aktiviert haben
-   möchten oder wenn Sie Module aus der Standardbibliothek entfernen möchten,
-   die Sie zur Laufzeit nicht benötigen. Briefcase verwaltet einen lokalen
-   Zwischenspeicher für Support-Pakete. Wenn Sie also ein bestimmtes
-   Support-Paket heruntergeladen haben, wird diese zwischengespeicherte Kopie
-   bei zukünftigen Builds verwendet. Wenn Briefcase eine Anwendung als natives
-   Linux-Systempaket packt (das Standard-Paketformat für Linux), wird kein
-   Support-Paket mit der Anwendung mitgeliefert, wie oben erwähnt. Stattdessen
-   verwendet die Anwendung das Python, das von der jeweiligen Linux-Distribution
-   bereitgestellt wird.</p>
+<p>Es <strong>lud ein Support-Paket herunter und installierte es</strong>. Der von Briefcase verfolgte Paketierungsansatz lässt sich am besten als "das Einfachste, was überhaupt möglich ist" beschreiben - es liefert einen vollständigen, isolierten Python-Interpreter als Teil jeder Anwendung aus, die es erstellt (mit Ausnahme der Pakete für das native Linux-System). Dies ist etwas platzraubend - wenn Sie 5 Anwendungen mit Briefcase paketieren, haben Sie 5 Kopien des Python-Interpreters. Dieser Ansatz garantiert jedoch, dass jede Anwendung völlig unabhängig ist und eine bestimmte Python-Version verwendet, von der bekannt ist, dass sie mit der Anwendung funktioniert. Auch hier bietet Briefcase ein Standard-Unterstützungspaket für jede Plattform; wenn Sie möchten, können Sie Ihr eigenes Unterstützungspaket bereitstellen und dieses als Teil des Erstellungsprozesses einbinden lassen. Dies kann sinnvoll sein, wenn Sie bestimmte Optionen im Python-Interpreter aktiviert haben möchten oder wenn Sie Module aus der Standardbibliothek entfernen möchten, die Sie zur Laufzeit nicht benötigen. Briefcase verwaltet einen lokalen Zwischenspeicher für Support-Pakete. Wenn Sie also ein bestimmtes Support-Paket heruntergeladen haben, wird diese zwischengespeicherte Kopie bei zukünftigen Builds verwendet. Wenn Briefcase eine Anwendung als natives Linux-Systempaket packt (das Standard-Paketformat für Linux), wird kein Support-Paket mit der Anwendung mitgeliefert, wie oben erwähnt. Stattdessen verwendet die Anwendung das Python, das von der jeweiligen Linux-Distribution bereitgestellt wird.</p>
 </li>
 <li>
-<p>Es <strong>installiert Anwendungsanforderungen</strong>. Ihre Anwendung kann alle Module
-   von Drittanbietern angeben, die zur Laufzeit benötigt werden. Diese werden
-   mittels <code>pip</code> in das Installationsprogramm Ihrer Anwendung installiert.</p>
+<p>Es <strong>installiert Anwendungsanforderungen</strong>. Ihre Anwendung kann alle Module von Drittanbietern angeben, die zur Laufzeit benötigt werden. Diese werden mittels <code>pip</code> in das Installationsprogramm Ihrer Anwendung installiert.</p>
 </li>
 <li>
-<p>Es <strong>Installiert Ihren Anwendungscode</strong>. Ihre Anwendung hat ihren eigenen
-   Code und Ressourcen (z. B. Bilder, die zur Laufzeit benötigt werden); diese
-   Dateien werden in das Installationsprogramm kopiert.</p>
+<p>Es <strong>Installiert Ihren Anwendungscode</strong>. Ihre Anwendung hat ihren eigenen Code und Ressourcen (z. B. Bilder, die zur Laufzeit benötigt werden); diese Dateien werden in das Installationsprogramm kopiert.</p>
 </li>
 <li>
-<p>Er <strong>installiert die von Ihrer Anwendung benötigten Ressourcen</strong>. Schließlich
-   fügt er alle zusätzlichen Ressourcen hinzu, die das Installationsprogramm
-   selbst benötigt. Dazu gehören Dinge wie Symbole, die an die endgültige
-   Anwendung angehängt werden müssen, und Splash-Screen-Bilder.</p>
+<p>Er <strong>installiert die von Ihrer Anwendung benötigten Ressourcen</strong>. Schließlich fügt er alle zusätzlichen Ressourcen hinzu, die das Installationsprogramm selbst benötigt. Dazu gehören Dinge wie Symbole, die an die endgültige Anwendung angehängt werden müssen, und Splash-Screen-Bilder.</p>
 </li>
 </ol>
-<p>Sobald dies abgeschlossen ist, sollten Sie im Verzeichnis <code>build</code> des Projekts
-nun ein Verzeichnis sehen, das Ihrer Plattform entspricht (<code>macOS</code>, <code>linux</code> oder
-<code>windows</code>) und zusätzliche Dateien enthält. Dies ist die plattformspezifische
-Paketkonfiguration für Ihre Anwendung. Unter macOS enthält Ihr
-Projektverzeichnis nun beispielsweise:</p>
+<p>Sobald dies abgeschlossen ist, sollten Sie im Verzeichnis <code>build</code> des Projekts nun ein Verzeichnis sehen, das Ihrer Plattform entspricht (<code>macOS</code>, <code>linux</code> oder <code>windows</code>) und zusätzliche Dateien enthält. Dies ist die plattformspezifische Paketkonfiguration für Ihre Anwendung. Unter macOS enthält Ihr Projektverzeichnis nun beispielsweise:</p>
 <div class="highlight"><pre><span></span><code>helloworld/
 └── build/
     └── helloworld/
  └── macos/
 </code></pre></div>
 <h2 id="erstellung-ihrer-anwendung">Erstellung Ihrer Anwendung<a class="headerlink" href="#erstellung-ihrer-anwendung" title="Permanent link">&para;</a></h2>
-<p>Sie können nun Ihre Anwendung kompilieren. In diesem Schritt wird die
-Binärkompilierung durchgeführt, die erforderlich ist, damit Ihre Anwendung auf
-Ihrer Zielplattform ausgeführt werden kann.</p>
+<p>Sie können nun Ihre Anwendung kompilieren. In diesem Schritt wird die Binärkompilierung durchgeführt, die erforderlich ist, damit Ihre Anwendung auf Ihrer Zielplattform ausgeführt werden kann.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1871,11 +1812,7 @@ Ihrer Zielplattform ausgeführt werden kann.</p>
 
 <span class="go">[helloworld] build/helloworld/macos/app/Hello World.app erstellt</span>
 </code></pre></div>
-<p>Unter macOS muss der Befehl <code>build</code> nichts <em>kompilieren</em>, aber er muss den
-Inhalt der Binärdatei signieren, damit sie ausgeführt werden kann. Diese
-Signatur ist eine <em>ad hoc</em> Signatur - sie funktioniert nur auf <em>Ihrem</em> Rechner;
-wenn Sie die Anwendung an andere weitergeben wollen, müssen Sie eine
-vollständige Signatur bereitstellen.</p>
+<p>Unter macOS muss der Befehl <code>build</code> nichts <em>kompilieren</em>, aber er muss den Inhalt der Binärdatei signieren, damit sie ausgeführt werden kann. Diese Signatur ist eine <em>ad hoc</em> Signatur - sie funktioniert nur auf <em>Ihrem</em> Rechner; wenn Sie die Anwendung an andere weitergeben wollen, müssen Sie eine vollständige Signatur bereitstellen.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
@@ -1900,11 +1837,7 @@ vollständige Signatur bereitstellen.</p>
 
 <span class="go">[helloworld] Erstellt: build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 </code></pre></div>
-<p>Sobald dieser Schritt abgeschlossen ist, wird der <code>build</code>-Ordner einen
-<code>helloworld-0.0.1</code>-Ordner enthalten, der einen Spiegel des Linux
-<code>/usr</code>-Dateisystems enthält. Dieser Spiegel des Dateisystems enthält einen
-<code>bin</code>-Ordner mit einer <code>helloworld</code>-Binärdatei, sowie die <code>lib</code>- und
-<code>share</code>-Ordner, die zur Unterstützung der Binärdatei benötigt werden.</p>
+<p>Sobald dieser Schritt abgeschlossen ist, wird der <code>build</code>-Ordner einen <code>helloworld-0.0.1</code>-Ordner enthalten, der einen Spiegel des Linux <code>/usr</code>-Dateisystems enthält. Dieser Spiegel des Dateisystems enthält einen <code>bin</code>-Ordner mit einer <code>helloworld</code>-Binärdatei, sowie die <code>lib</code>- und <code>share</code>-Ordner, die zur Unterstützung der Binärdatei benötigt werden.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build
@@ -1912,17 +1845,10 @@ vollständige Signatur bereitstellen.</p>
 
 <span class="go">[helloworld] Erstellt: build\helloworld\windows\app\src\Hello World.exe</span>
 </code></pre></div>
-<p>Unter Windows muss der <code>build</code>-Befehl nichts <em>kompilieren</em>, aber er muss einige
-Metadaten schreiben, damit die Anwendung ihren Namen, ihre Version und so weiter
-kennt.</p>
+<p>Unter Windows muss der <code>build</code>-Befehl nichts <em>kompilieren</em>, aber er muss einige Metadaten schreiben, damit die Anwendung ihren Namen, ihre Version und so weiter kennt.</p>
 <div class="admonition">
 <p class="admonition-title">Auslösen von Antivirus</p>
-<p>Da diese Metadaten direkt in die vorkompilierte Binärdatei geschrieben werden,
-die während des <code>create</code>-Befehls aus der Vorlage ausgerollt wird, kann dies
-Antivirensoftware auf Ihrem Rechner auslösen und verhindern, dass die Metadaten
-geschrieben werden. In diesem Fall weisen Sie das Antivirusprogramm an, die
-Ausführung des Tools (mit dem Namen <code>rcedit-x64.exe</code>) zu erlauben und führen Sie
-den obigen Befehl erneut aus.</p>
+<p>Da diese Metadaten direkt in die vorkompilierte Binärdatei geschrieben werden, die während des <code>create</code>-Befehls aus der Vorlage ausgerollt wird, kann dies Antivirensoftware auf Ihrem Rechner auslösen und verhindern, dass die Metadaten geschrieben werden. In diesem Fall weisen Sie das Antivirusprogramm an, die Ausführung des Tools (mit dem Namen <code>rcedit-x64.exe</code>) zu erlauben und führen Sie den obigen Befehl erneut aus.</p>
 </div>
 </div>
 </div>
@@ -1998,27 +1924,11 @@ den obigen Befehl erneut aus.</p>
 </div>
 </div>
 </div>
-<p>Dies startet Ihre native Anwendung unter Verwendung der Ausgabe des <code>build</code>
-Befehls.</p>
-<p>Möglicherweise bemerken Sie einige kleine Unterschiede im Aussehen Ihrer
-Anwendung, wenn sie ausgeführt wird. Beispielsweise können die vom
-Betriebssystem angezeigten Symbole und der Name etwas anders aussehen als bei
-der Ausführung im Entwicklermodus. Das liegt auch daran, dass Sie die gepackte
-Anwendung verwenden und nicht nur den Python-Code ausführen. Aus der Sicht des
-Betriebssystems führen Sie nun "eine Anwendung" und nicht "ein Python-Programm"
-aus, was sich in der Darstellung der Anwendung widerspiegelt.</p>
-<p>Bevor Sie fortfahren, schließen Sie die App. Wie in den vorherigen Schritten des
-Tutorials können Sie dies tun, indem Sie auf die Schaltfläche „Schließen“ im
-Anwendungsfenster klicken, im Menü der Anwendung „Beenden/Exit“ auswählen oder
-<strong>Strg+C</strong> in dem Terminal eingeben, in dem Sie <code>briefcase run</code> ausgeführt
-haben.</p>
+<p>Dies startet Ihre native Anwendung unter Verwendung der Ausgabe des <code>build</code> Befehls.</p>
+<p>Möglicherweise bemerken Sie einige kleine Unterschiede im Aussehen Ihrer Anwendung, wenn sie ausgeführt wird. Beispielsweise können die vom Betriebssystem angezeigten Symbole und der Name etwas anders aussehen als bei der Ausführung im Entwicklermodus. Das liegt auch daran, dass Sie die gepackte Anwendung verwenden und nicht nur den Python-Code ausführen. Aus der Sicht des Betriebssystems führen Sie nun "eine Anwendung" und nicht "ein Python-Programm" aus, was sich in der Darstellung der Anwendung widerspiegelt.</p>
+<p>Bevor Sie fortfahren, schließen Sie die App. Wie in den vorherigen Schritten des Tutorials können Sie dies tun, indem Sie auf die Schaltfläche „Schließen“ im Anwendungsfenster klicken, im Menü der Anwendung „Beenden/Exit“ auswählen oder <strong>Strg+C</strong> in dem Terminal eingeben, in dem Sie <code>briefcase run</code> ausgeführt haben.</p>
 <h2 id="erstellung-ihres-installationsprogramms">Erstellung Ihres Installationsprogramms<a class="headerlink" href="#erstellung-ihres-installationsprogramms" title="Permanent link">&para;</a></h2>
-<p>Sie können nun Ihre Anwendung mit dem Befehl <code>package</code> zur Verteilung verpacken.
-Der Befehl <code>package</code> führt alle Kompilierungen durch, die notwendig sind, um das
-gerüstete Projekt in ein endgültiges, verteilbares Produkt zu verwandeln.
-Abhängig von der Plattform kann dies die Kompilierung eines
-Installationsprogramms, die Durchführung einer Codesignierung oder andere
-Aufgaben vor der Verteilung beinhalten.</p>
+<p>Sie können nun Ihre Anwendung mit dem Befehl <code>package</code> zur Verteilung verpacken. Der Befehl <code>package</code> führt alle Kompilierungen durch, die notwendig sind, um das gerüstete Projekt in ein endgültiges, verteilbares Produkt zu verwandeln. Abhängig von der Plattform kann dies die Kompilierung eines Installationsprogramms, die Durchführung einer Codesignierung oder andere Aufgaben vor der Verteilung beinhalten.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2049,29 +1959,12 @@ Aufgaben vor der Verteilung beinhalten.</p>
 
 <span class="go">[helloworld] dist/Hello World-0.0.1.dmg gepackt</span>
 </code></pre></div>
-<p>Der Ordner <code>dist</code> enthält eine Datei namens <code>Hello World-0.0.1.dmg</code>. Wenn Sie
-diese Datei im Finder finden und auf das Symbol doppelklicken, wird die
-DMG-Datei gemountet und Sie erhalten eine Kopie der Hello World-Anwendung und
-einen Link zu Ihrem Programme-Ordner für eine einfache Installation. Ziehen Sie
-die Anwendungsdatei in den Ordner Programme, und schon ist Ihre Anwendung
-installiert. Schicken Sie die DMG-Datei an einen Freund oder eine Freundin,
-der/die das Gleiche tun kann.</p>
-<p>In diesem Beispiel haben wir die Option <code>--adhoc-sign</code> verwendet, d.h. wir
-signieren unsere Anwendung mit <em>ad hoc</em> Anmeldeinformationen - temporären
-Anmeldeinformationen, die nur auf Ihrem Rechner funktionieren. Wir haben dies
-getan, um das Tutorial einfach zu halten. Das Einrichten von
-Code-Signatur-Identitäten ist ein wenig fummelig, und sie sind nur
-<em>erforderlich</em>, wenn Sie Ihre Anwendung an andere weitergeben wollen. Würden wir
-eine echte Anwendung veröffentlichen, die andere nutzen können, müssten wir
-echte Anmeldeinformationen angeben.</p>
-<p>Wenn Sie bereit sind, eine echte Anwendung zu veröffentlichen, sehen Sie sich
-die Briefcase-Anleitung zum Thema <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Einrichten einer macOS Code Signing
-Identity</a> an</p>
+<p>Der Ordner <code>dist</code> enthält eine Datei namens <code>Hello World-0.0.1.dmg</code>. Wenn Sie diese Datei im Finder finden und auf das Symbol doppelklicken, wird die DMG-Datei gemountet und Sie erhalten eine Kopie der Hello World-Anwendung und einen Link zu Ihrem Programme-Ordner für eine einfache Installation. Ziehen Sie die Anwendungsdatei in den Ordner Programme, und schon ist Ihre Anwendung installiert. Schicken Sie die DMG-Datei an einen Freund oder eine Freundin, der/die das Gleiche tun kann.</p>
+<p>In diesem Beispiel haben wir die Option <code>--adhoc-sign</code> verwendet, d.h. wir signieren unsere Anwendung mit <em>ad hoc</em> Anmeldeinformationen - temporären Anmeldeinformationen, die nur auf Ihrem Rechner funktionieren. Wir haben dies getan, um das Tutorial einfach zu halten. Das Einrichten von Code-Signatur-Identitäten ist ein wenig fummelig, und sie sind nur <em>erforderlich</em>, wenn Sie Ihre Anwendung an andere weitergeben wollen. Würden wir eine echte Anwendung veröffentlichen, die andere nutzen können, müssten wir echte Anmeldeinformationen angeben.</p>
+<p>Wenn Sie bereit sind, eine echte Anwendung zu veröffentlichen, sehen Sie sich die Briefcase-Anleitung zum Thema <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS">Einrichten einer macOS Code Signing Identity</a> an</p>
 </div>
 <div class="tabbed-block">
-<p>Die Ausgabe des Paketschritts wird je nach Linux-Distribution leicht
-unterschiedlich sein. Wenn Sie mit einer von Debian abgeleiteten Distribution
-arbeiten, werden Sie sehen:</p>
+<p>Die Ausgabe des Paketschritts wird je nach Linux-Distribution leicht unterschiedlich sein. Wenn Sie mit einer von Debian abgeleiteten Distribution arbeiten, werden Sie sehen:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>package
 
 <span class="go">[helloworld] Anwendungskonfiguration wird abgeschlossen...</span>
@@ -2130,34 +2023,17 @@ arbeiten, werden Sie sehen:</p>
 <span class="go">[helloworld] Paket dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst erstellt</span>
 </code></pre></div>
 <p>Der Ordner <code>dist</code> enthält die Datei <code>.pkg.tar.zst</code>, die erzeugt wurde.</p>
-<p>Andere Linux-Distributionen werden derzeit nicht für die Paketierung
-unterstützt.</p>
-<p>Wenn Sie ein Paket für eine andere Linux-Distribution als die, die Sie
-verwenden, erstellen möchten, kann Briefcase ebenfalls helfen - allerdings
-müssen Sie Docker installieren.</p>
-<p>Offizielle Installationsprogramme für die <a href="https://docs.docker.com/engine/install">Docker
-Engine</a> sind für eine Reihe von
-Unix-Distributionen verfügbar. Folgen Sie den Anweisungen für Ihre Plattform;
-stellen Sie jedoch sicher, dass Sie Docker nicht im "Rootless"-Modus
-installieren.</p>
-<p>Sobald Sie Docker installiert haben, sollten Sie in der Lage sein, einen
-Linux-Container zu starten - zum Beispiel:</p>
+<p>Andere Linux-Distributionen werden derzeit nicht für die Paketierung unterstützt.</p>
+<p>Wenn Sie ein Paket für eine andere Linux-Distribution als die, die Sie verwenden, erstellen möchten, kann Briefcase ebenfalls helfen - allerdings müssen Sie Docker installieren.</p>
+<p>Offizielle Installationsprogramme für die <a href="https://docs.docker.com/engine/install">Docker Engine</a> sind für eine Reihe von Unix-Distributionen verfügbar. Folgen Sie den Anweisungen für Ihre Plattform; stellen Sie jedoch sicher, dass Sie Docker nicht im "Rootless"-Modus installieren.</p>
+<p>Sobald Sie Docker installiert haben, sollten Sie in der Lage sein, einen Linux-Container zu starten - zum Beispiel:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>ubuntu:22.04
 </code></pre></div>
-<p>zeigt Ihnen eine Unix-Eingabeaufforderung (etwa <code>root@84444e31cff9:/#</code>)
-innerhalb eines Ubuntu 22.04 Docker-Containers. Geben Sie Strg-D ein, um Docker
-zu beenden und zu Ihrer lokalen Shell zurückzukehren.</p>
-<p>Sobald Sie Docker installiert haben, können Sie Briefcase verwenden, um ein
-Paket für jede Linux-Distribution zu erstellen, die Briefcase unterstützt, indem
-Sie ein Docker-Image als Argument übergeben. Um beispielsweise ein DEB-Paket für
-Ubuntu 22.04 (Jammy) zu erstellen, können Sie, unabhängig vom Betriebssystem,
-das Sie verwenden, Folgendes ausführen:</p>
+<p>zeigt Ihnen eine Unix-Eingabeaufforderung (etwa <code>root@84444e31cff9:/#</code>) innerhalb eines Ubuntu 22.04 Docker-Containers. Geben Sie Strg-D ein, um Docker zu beenden und zu Ihrer lokalen Shell zurückzukehren.</p>
+<p>Sobald Sie Docker installiert haben, können Sie Briefcase verwenden, um ein Paket für jede Linux-Distribution zu erstellen, die Briefcase unterstützt, indem Sie ein Docker-Image als Argument übergeben. Um beispielsweise ein DEB-Paket für Ubuntu 22.04 (Jammy) zu erstellen, können Sie, unabhängig vom Betriebssystem, das Sie verwenden, Folgendes ausführen:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>package<span class="w"> </span>--target<span class="w"> </span>ubuntu:jammy
 </code></pre></div>
-<p>Dadurch wird das Docker-Image für das von Ihnen ausgewählte Betriebssystem
-heruntergeladen, ein Container erstellt, der Briefcase-Builds ausführen kann,
-und das Anwendungspaket innerhalb des Images erstellt. Sobald dies abgeschlossen
-ist, enthält der Ordner <code>dist</code> das Paket für die Linux-Zieldistribution.</p>
+<p>Dadurch wird das Docker-Image für das von Ihnen ausgewählte Betriebssystem heruntergeladen, ein Container erstellt, der Briefcase-Builds ausführen kann, und das Anwendungspaket innerhalb des Images erstellt. Sobald dies abgeschlossen ist, enthält der Ordner <code>dist</code> das Paket für die Linux-Zieldistribution.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase package
@@ -2186,31 +2062,14 @@ ist, enthält der Ordner <code>dist</code> das Paket für die Linux-Zieldistribu
 
 <span class="go">[helloworld] Paketiert dist\Hello_World-0.0.1.msi</span>
 </code></pre></div>
-<p>In diesem Beispiel haben wir die Option <code>--adhoc-sign</code> verwendet, d.h. wir
-signieren unsere Anwendung mit <em>ad hoc</em> Anmeldeinformationen - temporären
-Anmeldeinformationen, die nur auf Ihrem Rechner funktionieren. Wir haben dies
-getan, um das Tutorial einfach zu halten. Das Einrichten von
-Code-Signatur-Identitäten ist ein wenig fummelig, und sie sind nur
-<em>erforderlich</em>, wenn Sie Ihre Anwendung an andere weitergeben wollen. Würden wir
-eine echte Anwendung veröffentlichen, die andere nutzen können, müssten wir
-echte Anmeldeinformationen angeben.</p>
-<p>Wenn Sie bereit sind, eine echte Anwendung zu veröffentlichen, sehen Sie sich
-die Briefcase-Anleitung zum Thema <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Einrichten einer macOS Code Signing
-Identity</a>
-an</p>
-<p>Sobald dieser Schritt abgeschlossen ist, enthält der Ordner <code>dist</code> eine Datei
-mit dem Namen <code>Hello_World-0.0.1.msi</code>. Wenn Sie auf dieses Installationsprogramm
-doppelklicken, um es zu starten, sollten Sie den bekannten
-Windows-Installationsprozess durchlaufen. Sobald die Installation abgeschlossen
-ist, finden Sie einen "Hello World"-Eintrag in Ihrem Startmenü.</p>
+<p>In diesem Beispiel haben wir die Option <code>--adhoc-sign</code> verwendet, d.h. wir signieren unsere Anwendung mit <em>ad hoc</em> Anmeldeinformationen - temporären Anmeldeinformationen, die nur auf Ihrem Rechner funktionieren. Wir haben dies getan, um das Tutorial einfach zu halten. Das Einrichten von Code-Signatur-Identitäten ist ein wenig fummelig, und sie sind nur <em>erforderlich</em>, wenn Sie Ihre Anwendung an andere weitergeben wollen. Würden wir eine echte Anwendung veröffentlichen, die andere nutzen können, müssten wir echte Anmeldeinformationen angeben.</p>
+<p>Wenn Sie bereit sind, eine echte Anwendung zu veröffentlichen, sehen Sie sich die Briefcase-Anleitung zum Thema <a href="https://briefcase.beeware.org/en/latest/how-to/code-signing/windows">Einrichten einer macOS Code Signing Identity</a> an</p>
+<p>Sobald dieser Schritt abgeschlossen ist, enthält der Ordner <code>dist</code> eine Datei mit dem Namen <code>Hello_World-0.0.1.msi</code>. Wenn Sie auf dieses Installationsprogramm doppelklicken, um es zu starten, sollten Sie den bekannten Windows-Installationsprozess durchlaufen. Sobald die Installation abgeschlossen ist, finden Sie einen "Hello World"-Eintrag in Ihrem Startmenü.</p>
 </div>
 </div>
 </div>
 <h2 id="nachste-schritte">Nächste Schritte<a class="headerlink" href="#nachste-schritte" title="Permanent link">&para;</a></h2>
-<p>Wir haben unsere Anwendung jetzt für die Verteilung auf Desktop-Plattformen
-verpackt. Aber was passiert, wenn wir den Code in unserer Anwendung
-aktualisieren müssen? Wie bekommen wir diese Aktualisierungen in unsere gepackte
-Anwendung? Lesen Sie <a href="../tutorial-4/">Tutorial 4</a>, um das herauszufinden&hellip;</p>
+<p>Wir haben unsere Anwendung jetzt für die Verteilung auf Desktop-Plattformen verpackt. Aber was passiert, wenn wir den Code in unserer Anwendung aktualisieren müssen? Wie bekommen wir diese Aktualisierungen in unsere gepackte Anwendung? Lesen Sie <a href="../tutorial-4/">Tutorial 4</a>, um das herauszufinden&hellip;</p>
 
 
 

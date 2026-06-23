@@ -1648,8 +1648,7 @@ aria-label="页眉"
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>我们需要使用 "async "方法，以便在显示对话框时，应用程序的其他部分能够继续运行。现在不用太在意这个细节，我们会在【教程
-8】(tutorial-8.md)中给出更详细的解释。</p>
+<p>我们需要使用 "async "方法，以便在显示对话框时，应用程序的其他部分能够继续运行。现在不用太在意这个细节，我们会在【教程 8】(tutorial-8.md)中给出更详细的解释。</p>
 <p>这将指示 Toga 在按下按钮时打开一个模态对话框。</p>
 <p>如果运行 <code>briefcase dev</code>，输入名称并按下按钮，就会看到新的对话框：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
@@ -1675,10 +1674,8 @@ aria-label="页眉"
 </div>
 </div>
 <p>但是，如果运行\ <code>briefcase run</code>，对话框就不会出现。</p>
-<p>为什么会这样？简易开发包
-"的运行方式是在原地运行您的代码&ndash;它试图为您的代码提供尽可能逼真的运行环境，但并不提供或使用任何平台基础架构来将您的代码包装成应用程序。打包应用程序的部分过程包括将您的代码复制到应用程序捆绑包中，目前，您的应用程序中仍有旧代码。</p>
-<p>因此，我们需要告诉 Briefcase 让它更新应用程序，复制新版本的代码。我们\ <em>可以</em>\ 删除旧的平台目录，然后从头开始。不过，Briefcase
-提供了一种更简单的方法&ndash;您可以更新现有捆绑的应用程序的代码：</p>
+<p>为什么会这样？简易开发包 "的运行方式是在原地运行您的代码&ndash;它试图为您的代码提供尽可能逼真的运行环境，但并不提供或使用任何平台基础架构来将您的代码包装成应用程序。打包应用程序的部分过程包括将您的代码复制到应用程序捆绑包中，目前，您的应用程序中仍有旧代码。</p>
+<p>因此，我们需要告诉 Briefcase 让它更新应用程序，复制新版本的代码。我们\ <em>可以</em>\ 删除旧的平台目录，然后从头开始。不过，Briefcase 提供了一种更简单的方法&ndash;您可以更新现有捆绑的应用程序的代码：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1727,20 +1724,14 @@ aria-label="页眉"
 </div>
 </div>
 <p>如果 Briefcase 找不到脚手架模板，它会自动调用 <code>create</code> 生成一个新的脚手架。</p>
-<p>更新了安装程序代码后，我们就可以运行 <code>briefcase build</code> 来重新编译应用程序，运行 <code>briefcase run</code>
-来运行更新后的应用程序，并运行 <code>briefcase package</code> 来重新打包应用程序以便分发。</p>
+<p>更新了安装程序代码后，我们就可以运行 <code>briefcase build</code> 来重新编译应用程序，运行 <code>briefcase run</code> 来运行更新后的应用程序，并运行 <code>briefcase package</code> 来重新打包应用程序以便分发。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>(macOS 用户请记住，正如 [Tutorial 3<tutorial-3><code>中所述，我们建议在运行</code>briefcase
-package<code>时使用</code>&ndash;adhoc-sign` 标志，以避免设置代码签名身份的复杂性，并使教程尽可能简单）</p>
+<p>(macOS 用户请记住，正如 [Tutorial 3<tutorial-3><code>中所述，我们建议在运行</code>briefcase package<code>时使用</code>&ndash;adhoc-sign` 标志，以避免设置代码签名身份的复杂性，并使教程尽可能简单）</p>
 </div>
 <h2 id="_2">更新和运行一步到位<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>如果要快速迭代代码更改，很可能需要更改代码、更新应用程序并立即重新运行应用程序。对于大多数情况来说，开发人员模式 (<code>briefcase dev</code>)
-是进行这种快速迭代的最简单方法；但是，如果您要测试应用程序作为原生二进制文件的运行，或查找一个只有在应用程序打包时才会出现的错误，您可能需要反复调用
-<code>briefcase run</code>。为了简化更新和运行打包应用程序的过程，Briefcase 提供了支持这种使用模式的快捷方式 - <code>run</code> 命令上的
-<code>-u</code>（或 <code>--update</code>）选项。</p>
-<p>让我们尝试做另一个改动。您可能已经注意到，如果您不在文本输入框中输入姓名，对话框就会显示 "Hello, "。 让我们再次修改 <code>say_hello</code>
-函数，以处理这种边缘情况。</p>
+<p>如果要快速迭代代码更改，很可能需要更改代码、更新应用程序并立即重新运行应用程序。对于大多数情况来说，开发人员模式 (<code>briefcase dev</code>) 是进行这种快速迭代的最简单方法；但是，如果您要测试应用程序作为原生二进制文件的运行，或查找一个只有在应用程序打包时才会出现的错误，您可能需要反复调用 <code>briefcase run</code>。为了简化更新和运行打包应用程序的过程，Briefcase 提供了支持这种使用模式的快捷方式 - <code>run</code> 命令上的 <code>-u</code>（或 <code>--update</code>）选项。</p>
+<p>让我们尝试做另一个改动。您可能已经注意到，如果您不在文本输入框中输入姓名，对话框就会显示 "Hello, "。 让我们再次修改 <code>say_hello</code> 函数，以处理这种边缘情况。</p>
 <p>在文件顶部，在导入和 <code>class HelloWorld</code> 定义之间，添加一个实用程序方法，以根据所提供的名称值生成适当的问候语:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>

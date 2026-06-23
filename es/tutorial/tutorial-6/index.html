@@ -1657,30 +1657,14 @@ aria-label="Cabecera"
 
 
 <h1 id="tutorial-6-ponlo-en-la-web">Tutorial 6 – ¡Ponlo en la web!<a class="headerlink" href="#tutorial-6-ponlo-en-la-web" title="Permanent link">&para;</a></h1>
-<p>Además de ser compatible con plataformas móviles, el conjunto de herramientas de
-widgets Toga también es compatible con la web. Utilizando la misma API que
-usaste para desplegar tus aplicaciones de escritorio y móviles, puedes desplegar
-tu aplicación como una aplicación web de una sola página.</p>
+<p>Además de ser compatible con plataformas móviles, el conjunto de herramientas de widgets Toga también es compatible con la web. Utilizando la misma API que usaste para desplegar tus aplicaciones de escritorio y móviles, puedes desplegar tu aplicación como una aplicación web de una sola página.</p>
 <div class="admonition">
 <p class="admonition-title">Prueba de concepto</p>
-<p>El backend Toga Web es el menos maduro de todos los backend de Toga. Es lo
-suficientemente maduro como para presumir de algunas prestaciones, pero es
-probable que tenga fallos, y le faltarán muchos de los widgets que están
-disponibles en otras plataformas. En este momento, el despliegue de la web sería
-considerado como una «Prueba de Concepto» —suficiente para demostrar lo que se
-puede hacer, pero no lo suficiente como para confiar en él para un desarrollo
-serio.</p>
-<p>Si tiene problemas con este paso del tutorial, puede pasar a la página
-siguiente.</p>
+<p>El backend Toga Web es el menos maduro de todos los backend de Toga. Es lo suficientemente maduro como para presumir de algunas prestaciones, pero es probable que tenga fallos, y le faltarán muchos de los widgets que están disponibles en otras plataformas. En este momento, el despliegue de la web sería considerado como una «Prueba de Concepto» —suficiente para demostrar lo que se puede hacer, pero no lo suficiente como para confiar en él para un desarrollo serio.</p>
+<p>Si tiene problemas con este paso del tutorial, puede pasar a la página siguiente.</p>
 </div>
 <h2 id="desplegar-como-aplicacion-web">Desplegar como aplicación web<a class="headerlink" href="#desplegar-como-aplicacion-web" title="Permanent link">&para;</a></h2>
-<p>El proceso de despliegue de una aplicación web de una sola página sigue el mismo
-patrón familiar: se crea la aplicación, se compila y se ejecuta. Sin embargo,
-Portafolio puede ser un poco inteligente; si intentas ejecutar una aplicación, y
-Portafolio determina que no ha sido creada o construida para la plataforma a la
-que se dirige, realizará los pasos de creación y construcción por ti. Dado que
-esta es la primera vez que ejecutamos la aplicación para la web, podemos
-realizar los tres pasos con un solo comando:</p>
+<p>El proceso de despliegue de una aplicación web de una sola página sigue el mismo patrón familiar: se crea la aplicación, se compila y se ejecuta. Sin embargo, Portafolio puede ser un poco inteligente; si intentas ejecutar una aplicación, y Portafolio determina que no ha sido creada o construida para la plataforma a la que se dirige, realizará los pasos de creación y construcción por ti. Dado que esta es la primera vez que ejecutamos la aplicación para la web, podemos realizar los tres pasos con un solo comando:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1793,35 +1777,16 @@ realizar los tres pasos con un solo comando:</p>
 </div>
 </div>
 </div>
-<p>Esto abrirá un navegador web, apuntando a
-<nospell><a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></nospell>:</p>
+<p>Esto abrirá un navegador web, apuntando a <nospell><a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></nospell>:</p>
 <p>Hola Mundo Tutorial 6 diálogo, en un navegador](../images/tutorial-6.png)</p>
 <p>Si introduce su nombre y pulsa el botón, aparecerá un cuadro de diálogo.</p>
 <h2 id="como-funciona-esto">¿Como funciona esto?<a class="headerlink" href="#como-funciona-esto" title="Permanent link">&para;</a></h2>
-<p>Esta aplicación web es un sitio web estático – una única página fuente HTML, con
-algunos CSS y otros recursos. Briefcase ha iniciado un servidor web local para
-servir esta página y que tu navegador pueda verla. Si quisieras poner esta
-página web en producción, podrías copiar el contenido de la carpeta <code>www</code> en
-cualquier servidor web que pueda servir contenido estático.</p>
-<p>Pero cuando pulsas el botón, estás ejecutando código Python… ¿cómo funciona eso?
-Toga utiliza <a href="https://pyscript.net">PyScript</a> para proporcionar un intérprete de
-Python en el navegador. El portafolio empaqueta el código de tu aplicación como
-ruedas que PyScript puede cargar en el navegador. Cuando se carga la página, el
-código de la aplicación se ejecuta en el navegador, construyendo la interfaz de
-usuario utilizando el DOM del navegador. Cuando pulsas un botón, ese botón
-ejecuta el código de gestión de eventos en el navegador.</p>
+<p>Esta aplicación web es un sitio web estático – una única página fuente HTML, con algunos CSS y otros recursos. Briefcase ha iniciado un servidor web local para servir esta página y que tu navegador pueda verla. Si quisieras poner esta página web en producción, podrías copiar el contenido de la carpeta <code>www</code> en cualquier servidor web que pueda servir contenido estático.</p>
+<p>Pero cuando pulsas el botón, estás ejecutando código Python… ¿cómo funciona eso? Toga utiliza <a href="https://pyscript.net">PyScript</a> para proporcionar un intérprete de Python en el navegador. El portafolio empaqueta el código de tu aplicación como ruedas que PyScript puede cargar en el navegador. Cuando se carga la página, el código de la aplicación se ejecuta en el navegador, construyendo la interfaz de usuario utilizando el DOM del navegador. Cuando pulsas un botón, ese botón ejecuta el código de gestión de eventos en el navegador.</p>
 <h2 id="publicacion-de-la-aplicacion-web">Publicación de la aplicación web<a class="headerlink" href="#publicacion-de-la-aplicacion-web" title="Permanent link">&para;</a></h2>
-<p>Si lo deseas, también puedes intentar publicar esta aplicación web en Internet
-utilizando el <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">complementodel Portafolio
-PythonAnywhere</a>.
-El <a href="https://briefcase.pythonanywhere.com/tutorial/">tutorial</a> para ese
-complemento continúa donde termina esta página y te guía a través del proceso de
-empaquetado y publicación en <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
+<p>Si lo deseas, también puedes intentar publicar esta aplicación web en Internet utilizando el <a href="https://github.com/pythonanywhere/pythonanywhere-briefcase-plugin">complementodel Portafolio PythonAnywhere</a>. El <a href="https://briefcase.pythonanywhere.com/tutorial/">tutorial</a> para ese complemento continúa donde termina esta página y te guía a través del proceso de empaquetado y publicación en <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>.</p>
 <h2 id="siguientes-pasos">Siguientes pasos<a class="headerlink" href="#siguientes-pasos" title="Permanent link">&para;</a></h2>
-<p>Aunque ya hemos desplegado esta aplicación en escritorios, dispositivos móviles
-y la web, la aplicación es bastante sencilla y no incluye bibliotecas de
-terceros. ¿Podemos incluir bibliotecas del Python Package Index (PyPI) en
-nuestra aplicación? Visita <a href="../tutorial-7/">Tutorial 7</a> para averiguarlo&hellip;</p>
+<p>Aunque ya hemos desplegado esta aplicación en escritorios, dispositivos móviles y la web, la aplicación es bastante sencilla y no incluye bibliotecas de terceros. ¿Podemos incluir bibliotecas del Python Package Index (PyPI) en nuestra aplicación? Visita <a href="../tutorial-7/">Tutorial 7</a> para averiguarlo&hellip;</p>
 
 
 

@@ -1659,29 +1659,17 @@ aria-label="Cabecera"
 
 
 <h1 id="usando-la-camara">Usando la cámara<a class="headerlink" href="#usando-la-camara" title="Permanent link">&para;</a></h1>
-<p>Casi todos los dispositivos informáticos modernos tienen algún tipo de cámara.
-En este tutorial, mostramos una nueva aplicación que pueda solicitar acceso a
-esta cámara, tomar una fotografía y luego mostrarla en la aplicación. La nueva
-aplicación que utiliza la cámara de tu dispositivo.</p>
+<p>Casi todos los dispositivos informáticos modernos tienen algún tipo de cámara. En este tutorial, mostramos una nueva aplicación que pueda solicitar acceso a esta cámara, tomar una fotografía y luego mostrarla en la aplicación. La nueva aplicación que utiliza la cámara de tu dispositivo.</p>
 <div class="admonition">
 <p class="admonition-title">¡Este tutorial no funciona en todas las plataformas!</p>
-<p>Lamentablemente, por el momento, este tutorial solo funcionará en macOS y
-Android.</p>
-<p>Aunque todos los iPhone tienen cámaras, el <em>emulador</em> de iOS no tiene una cámara
-que funcione. Los dispositivos Windows y Linux también tienen cámaras, pero Toga
-actualmente no tiene la capacidad de acceder a la cámara en estas plataformas.</p>
-<p>El código que aquí se muestra <em>se ejecutará</em> en Windows o Linux; pero generará
-un error cuando intentes hacer una foto.</p>
-<p>El código funcionará si se ejecuta en un dispositivo iOS real, pero no podrá
-hacer una foto si se implementa en el emulador de iOS.</p>
+<p>Lamentablemente, por el momento, este tutorial solo funcionará en macOS y Android.</p>
+<p>Aunque todos los iPhone tienen cámaras, el <em>emulador</em> de iOS no tiene una cámara que funcione. Los dispositivos Windows y Linux también tienen cámaras, pero Toga actualmente no tiene la capacidad de acceder a la cámara en estas plataformas.</p>
+<p>El código que aquí se muestra <em>se ejecutará</em> en Windows o Linux; pero generará un error cuando intentes hacer una foto.</p>
+<p>El código funcionará si se ejecuta en un dispositivo iOS real, pero no podrá hacer una foto si se implementa en el emulador de iOS.</p>
 </div>
 <h2 id="iniciar-un-nuevo-proyecto">Iniciar un nuevo proyecto<a class="headerlink" href="#iniciar-un-nuevo-proyecto" title="Permanent link">&para;</a></h2>
-<p>Para este tutorial, no desarrollaremos la aplicación del tutorial principal —
-vamos a comenzar un proyecto nuevo. Puede utilizar el mismo entorno virtual que
-utilizó en el primer proyecto. Sin embargo, debemos ejecutar nuevamente el
-asistente <code>Nuevo maletín</code>.</p>
-<p>Regrese al directorio que contiene la carpeta del proyecto <code>helloworld</code> e inicie
-un proyecto nuevo llamado “Hello Camera”:</p>
+<p>Para este tutorial, no desarrollaremos la aplicación del tutorial principal — vamos a comenzar un proyecto nuevo. Puede utilizar el mismo entorno virtual que utilizó en el primer proyecto. Sin embargo, debemos ejecutar nuevamente el asistente <code>Nuevo maletín</code>.</p>
+<p>Regrese al directorio que contiene la carpeta del proyecto <code>helloworld</code> e inicie un proyecto nuevo llamado “Hello Camera”:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>new
 <span class="go">...</span>
@@ -1695,9 +1683,7 @@ un proyecto nuevo llamado “Hello Camera”:</p>
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>hellocamera
 </code></pre></div>
 <h2 id="anade-codigo-para-tomar-una-foto">Añade código para tomar una foto<a class="headerlink" href="#anade-codigo-para-tomar-una-foto" title="Permanent link">&para;</a></h2>
-<p>El asistente ha generado un nuevo proyecto Toga vacío. Ahora podemos agregar el
-código para tomar y tomar una fotografía. Edite el archivo <code>app.py</code> de la nueva
-aplicación para que tenga el siguiente contenido:</p>
+<p>El asistente ha generado un nuevo proyecto Toga vacío. Ahora podemos agregar el código para tomar y tomar una fotografía. Edite el archivo <code>app.py</code> de la nueva aplicación para que tenga el siguiente contenido:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">toga</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">toga.style.pack</span><span class="w"> </span><span class="kn">import</span> <span class="n">COLUMN</span><span class="p">,</span> <span class="n">ROW</span>
 
@@ -1747,47 +1733,19 @@ aplicación para que tenga el siguiente contenido:</p>
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">HelloCamera</span><span class="p">()</span>
 </code></pre></div>
-<p>Este código tiene dos cambios con respecto a la aplicación predeterminada que
-genera Briefcase. Estas novedades están resaltadas arriba:</p>
+<p>Este código tiene dos cambios con respecto a la aplicación predeterminada que genera Briefcase. Estas novedades están resaltadas arriba:</p>
 <ol>
-<li>El primer bloque de código resaltado (en el método <code>startup()</code>) agrega los
-   dos widgets necesarios para controlar la cámara: un <code>ImageView</code> para mostrar
-   una foto; y un <code>Button</code> para activar la cámara.</li>
-<li>El segundo bloque de código resaltado (el método <code>take_photo()</code>) define el
-   controlador de eventos cuando se presiona el botón. Este controlador primero
-   confirma si la aplicación tiene permiso para tomar una foto; si no existe
-   permiso, se solicita. Luego, se toma una foto. La solicitud de permiso y la
-   solicitud para tomar una foto son ambas solicitudes asincrónicas, por lo que
-   requieren el uso de <code>await</code>; mientras la aplicación espera que el usuario
-   confirme los permisos o tome la foto, el bucle de eventos de la aplicación
-   puede continuar en segundo plano.</li>
+<li>El primer bloque de código resaltado (en el método <code>startup()</code>) agrega los dos widgets necesarios para controlar la cámara: un <code>ImageView</code> para mostrar una foto; y un <code>Button</code> para activar la cámara.</li>
+<li>El segundo bloque de código resaltado (el método <code>take_photo()</code>) define el controlador de eventos cuando se presiona el botón. Este controlador primero confirma si la aplicación tiene permiso para tomar una foto; si no existe permiso, se solicita. Luego, se toma una foto. La solicitud de permiso y la solicitud para tomar una foto son ambas solicitudes asincrónicas, por lo que requieren el uso de <code>await</code>; mientras la aplicación espera que el usuario confirme los permisos o tome la foto, el bucle de eventos de la aplicación puede continuar en segundo plano.</li>
 </ol>
-<p>Si la cámara toma una foto correctamente, devolverá un objeto <code>Image</code> que se
-puede asignar como contenido de <code>ImageView</code>. Si el usuario canceló la solicitud
-de la foto, la llamada <code>self.camera.take_photo()</code> devolverá <code>None</code> y el
-resultado se puede ignorar. Si el usuario no otorga permiso para usar la cámara,
-o la cámara no está implementada en la plataforma actual, se generará un error y
-se mostrará un cuadro de diálogo al usuario.</p>
+<p>Si la cámara toma una foto correctamente, devolverá un objeto <code>Image</code> que se puede asignar como contenido de <code>ImageView</code>. Si el usuario canceló la solicitud de la foto, la llamada <code>self.camera.take_photo()</code> devolverá <code>None</code> y el resultado se puede ignorar. Si el usuario no otorga permiso para usar la cámara, o la cámara no está implementada en la plataforma actual, se generará un error y se mostrará un cuadro de diálogo al usuario.</p>
 <h2 id="agregar-permisos-al-dispositivo">Agregar permisos al dispositivo<a class="headerlink" href="#agregar-permisos-al-dispositivo" title="Permanent link">&para;</a></h2>
-<p>Parte de este código que acabamos de agregar solicita permiso para usar la
-cámara. Esta es una prestación común de las plataformas de aplicaciones
-modernas: no se puede acceder a las prestaciones de hardware sin pedirle permiso
-explícitamente al usuario primero.</p>
-<p>Sin embargo, esta solicitud se presenta en dos partes. La primera se encuentra
-en el código que acabamos de ver, pero antes de que la aplicación pueda
-solicitar permisos, necesita declarar los permisos que va a solicitar.</p>
-<p>Los permisos que requiere cada plataforma son ligeramente diferentes, pero
-Briefcase tiene una representación multiplataforma para muchos permisos de
-hardware comunes. En la sección de configuración
-<code>[tool.briefcase.app.helloworld]</code> del archivo <code>pyproject.toml</code> de su aplicación,
-agregue lo siguiente (justo encima de la declaración <code>sources</code>):</p>
+<p>Parte de este código que acabamos de agregar solicita permiso para usar la cámara. Esta es una prestación común de las plataformas de aplicaciones modernas: no se puede acceder a las prestaciones de hardware sin pedirle permiso explícitamente al usuario primero.</p>
+<p>Sin embargo, esta solicitud se presenta en dos partes. La primera se encuentra en el código que acabamos de ver, pero antes de que la aplicación pueda solicitar permisos, necesita declarar los permisos que va a solicitar.</p>
+<p>Los permisos que requiere cada plataforma son ligeramente diferentes, pero Briefcase tiene una representación multiplataforma para muchos permisos de hardware comunes. En la sección de configuración <code>[tool.briefcase.app.helloworld]</code> del archivo <code>pyproject.toml</code> de su aplicación, agregue lo siguiente (justo encima de la declaración <code>sources</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;La aplicación tomará fotos policiales.&quot;</span>
 </code></pre></div>
-<p>Esto explica que su aplicación necesita acceder a la cámara y proporciona una
-breve descripción de por qué se requiere la cámara. Esta descripción es
-obligatoria en algunas plataformas (en particular, macOS e iOS) y será
-presentada al usuario como información adicional cuando está presente el cuadro
-de diálogo de permisos.</p>
+<p>Esto explica que su aplicación necesita acceder a la cámara y proporciona una breve descripción de por qué se requiere la cámara. Esta descripción es obligatoria en algunas plataformas (en particular, macOS e iOS) y será presentada al usuario como información adicional cuando está presente el cuadro de diálogo de permisos.</p>
 <p>Ahora podemos generar y ejecutar la aplicación:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Android</label></div>
 <div class="tabbed-content">
@@ -1805,19 +1763,9 @@ de diálogo de permisos.</p>
 </div>
 </div>
 </div>
-<p>Cuando se ejecuta la aplicación, se te presentará un botón. Pulsa el botón y se
-mostrará el cuadro de diálogo de la cámara predeterminada de la plataforma. Toma
-una foto; el cuadro de diálogo de la cámara desaparecerá y la foto se mostrará
-en la aplicación, justo encima del botón. Luego, puedes tomar otra foto; esta
-reemplazará la primera foto.</p>
+<p>Cuando se ejecuta la aplicación, se te presentará un botón. Pulsa el botón y se mostrará el cuadro de diálogo de la cámara predeterminada de la plataforma. Toma una foto; el cuadro de diálogo de la cámara desaparecerá y la foto se mostrará en la aplicación, justo encima del botón. Luego, puedes tomar otra foto; esta reemplazará la primera foto.</p>
 <h2 id="agregar-mas-permisos">Agregar más permisos<a class="headerlink" href="#agregar-mas-permisos" title="Permanent link">&para;</a></h2>
-<p>Los permisos se declaran en los archivos que se generan durante la llamada
-original a <code>briefcase create</code>. Lamentablemente, Briefcase no puede actualizar
-estos archivos una vez que se han generado inicialmente; por lo tanto, si desea
-agregar un nuevo permiso a su aplicación o modificar los permisos existentes,
-deberá volver a crear la aplicación. Puede hacerlo volviendo a ejecutar
-<code>briefcase create</code>; esto le advertirá que la aplicación existente se
-sobrescribirá y luego regenerará la aplicación con los nuevos permisos.</p>
+<p>Los permisos se declaran en los archivos que se generan durante la llamada original a <code>briefcase create</code>. Lamentablemente, Briefcase no puede actualizar estos archivos una vez que se han generado inicialmente; por lo tanto, si desea agregar un nuevo permiso a su aplicación o modificar los permisos existentes, deberá volver a crear la aplicación. Puede hacerlo volviendo a ejecutar <code>briefcase create</code>; esto le advertirá que la aplicación existente se sobrescribirá y luego regenerará la aplicación con los nuevos permisos.</p>
 
 
 

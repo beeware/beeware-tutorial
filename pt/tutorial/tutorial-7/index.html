@@ -1679,21 +1679,12 @@ aria-label="Cabeçalho"
 
 
 <h1 id="tutorial-7-usar-bibliotecas-de-terceiros">Tutorial 7 - Usar bibliotecas de terceiros<a class="headerlink" href="#tutorial-7-usar-bibliotecas-de-terceiros" title="Permanent link">&para;</a></h1>
-<p>Até o momento, a aplicação que criamos usou apenas o nosso próprio código, além
-do código fornecido pelo BeeWare. No entanto, numa aplicação do mundo real,
-provavelmente vai desejar usar uma biblioteca de terceiros, descarregada do
-Índice e Pacotes Python (PyPI).</p>
+<p>Até o momento, a aplicação que criamos usou apenas o nosso próprio código, além do código fornecido pelo BeeWare. No entanto, numa aplicação do mundo real, provavelmente vai desejar usar uma biblioteca de terceiros, descarregada do Índice e Pacotes Python (PyPI).</p>
 <p>Vamos modificar a nossa aplicação para incluir uma biblioteca de terceiros.</p>
 <h2 id="adicionar-um-pacote">Adicionar um pacote<a class="headerlink" href="#adicionar-um-pacote" title="Permanent link">&para;</a></h2>
 <p>Vamos modificar a nossa aplicação para dizer um pouco mais do que apenas "Olá!".</p>
-<p>Para gerar um texto mais interessante para a caixa de diálogo, vamos usar uma
-biblioteca chamada <a href="https://faker.readthedocs.io/en/stable/">Faker</a>. Faker é um
-pacote Python que gera conteúdo falso, incluindo nomes e blocos de texto. Os
-nomes e as palavras no bloco de texto são gerados a partir de uma lista
-arbitrária de palavras fornecidas pelo Faker. Vamos usar o Faker para construir
-uma mensagem falsa, como se alguém estivesse a responder ao utilizador.</p>
-<p>Começamos por adicionar <code>faker</code> à nossa aplicação. Adicione uma importação no
-topo do <code>app.py</code> para importar <code>faker</code>:</p>
+<p>Para gerar um texto mais interessante para a caixa de diálogo, vamos usar uma biblioteca chamada <a href="https://faker.readthedocs.io/en/stable/">Faker</a>. Faker é um pacote Python que gera conteúdo falso, incluindo nomes e blocos de texto. Os nomes e as palavras no bloco de texto são gerados a partir de uma lista arbitrária de palavras fornecidas pelo Faker. Vamos usar o Faker para construir uma mensagem falsa, como se alguém estivesse a responder ao utilizador.</p>
+<p>Começamos por adicionar <code>faker</code> à nossa aplicação. Adicione uma importação no topo do <code>app.py</code> para importar <code>faker</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">faker</span>
 </code></pre></div>
 <p>Depois modifique a chamada de retorno <code>say_hello()</code> para ficar como isto:</p>
@@ -1706,8 +1697,7 @@ topo do <code>app.py</code> para importar <code>faker</code>:</p>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
-<p>Vamos correr a nossa aplicação atualizada no modo de desenvolvedor do Briefcase
-para verificar se a nossa alteração funcionou.</p>
+<p>Vamos correr a nossa aplicação atualizada no modo de desenvolvedor do Briefcase para verificar se a nossa alteração funcionou.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1765,29 +1755,19 @@ para verificar se a nossa alteração funcionou.</p>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as
-instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
+<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
 </div>
 <div class="tabbed-block">
-<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções
-para a plataforma de ambiente de trabalho escolhida.</p>
+<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções para a plataforma de ambiente de trabalho escolhida.</p>
 </div>
 </div>
 </div>
-<p>O que aconteceu? Adicionamos <code>faker</code> ao nosso <em>código</em>, mas não o adicionamos ao
-ambiente virtual usado para executar a aplicação em modo de desenvolvimento.</p>
-<p>Quando o Briefcase executa uma aplicação em modo de desenvolvimento, ele cria um
-ambiente virtual independente para essa aplicação, independente do ambiente em
-que executa <code>briefcase</code>. Se a sua aplicação não declarar que precisa de uma
-biblioteca específica, essa biblioteca não será instalada no ambiente virtual de
-desenvolvimento.</p>
+<p>O que aconteceu? Adicionamos <code>faker</code> ao nosso <em>código</em>, mas não o adicionamos ao ambiente virtual usado para executar a aplicação em modo de desenvolvimento.</p>
+<p>Quando o Briefcase executa uma aplicação em modo de desenvolvimento, ele cria um ambiente virtual independente para essa aplicação, independente do ambiente em que executa <code>briefcase</code>. Se a sua aplicação não declarar que precisa de uma biblioteca específica, essa biblioteca não será instalada no ambiente virtual de desenvolvimento.</p>
 <p>Então, como adicionar um novo requisito à sua aplicação?</p>
 <h2 id="atualizar-dependencias">Atualizar dependências<a class="headerlink" href="#atualizar-dependencias" title="Permanent link">&para;</a></h2>
-<p>No diretório raiz da sua aplicação, há um ficheiro chamado <code>pyproject.toml</code>.
-Esse ficheiro contém todos os detalhes de configuração da aplicação que forneceu
-quando executou originalmente o <code>briefcase new</code>.</p>
-<p>o <code>pyproject.toml</code> é dividido em secções; uma das secções descreve as
-configurações da sua aplicação:</p>
+<p>No diretório raiz da sua aplicação, há um ficheiro chamado <code>pyproject.toml</code>. Esse ficheiro contém todos os detalhes de configuração da aplicação que forneceu quando executou originalmente o <code>briefcase new</code>.</p>
+<p>o <code>pyproject.toml</code> é dividido em secções; uma das secções descreve as configurações da sua aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
 <span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
 <span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Uma aplicação de tutorial&quot;</span>
@@ -1796,45 +1776,22 @@ configurações da sua aplicação:</p>
 <span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
 </code></pre></div>
-<p>A opção <code>requires</code> descreve as dependências da nossa aplicação. É uma lista de
-strings que especifica as bibliotecas (e opcionalmente, as versões das
-bibliotecas) que deseja incluir na sua aplicação.</p>
+<p>A opção <code>requires</code> descreve as dependências da nossa aplicação. É uma lista de strings que especifica as bibliotecas (e opcionalmente, as versões das bibliotecas) que deseja incluir na sua aplicação.</p>
 <p>Modifique a definição <code>requires</code> para que fique assim:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>Ao adicionar essa configuração, estamos a dizer ao Briefcase "quando compilar a
-minha aplicação, corra <code>pip install httpx</code> no bolo da aplicação". Qualquer coisa
-que seja uma entrada legal para <code>pip install</code> pode ser usada aqui - por isso,
-pode especificar:</p>
+<p>Ao adicionar essa configuração, estamos a dizer ao Briefcase "quando compilar a minha aplicação, corra <code>pip install httpx</code> no bolo da aplicação". Qualquer coisa que seja uma entrada legal para <code>pip install</code> pode ser usada aqui - por isso, pode especificar:</p>
 <ul>
 <li>Uma versão específica da biblioteca (ex., <code>"faker==37.3.0"</code>);</li>
 <li>Uma gama de versões de biblioteca (ex., <code>"faker&gt;=37"</code>);</li>
-<li>Um caminho para um repositório git (ex.,
-  <code>"git+https://github.com/joke2k/faker/"</code>); ou</li>
-<li>Um caminho de ficheiro local (No entanto - esteja avisado: se der o seu código
-  a outra pessoa, esse caminho provavelmente não vai existir no computador dessa
-  pessoa!)</li>
+<li>Um caminho para um repositório git (ex., <code>"git+https://github.com/joke2k/faker/"</code>); ou</li>
+<li>Um caminho de ficheiro local (No entanto - esteja avisado: se der o seu código a outra pessoa, esse caminho provavelmente não vai existir no computador dessa pessoa!)</li>
 </ul>
-<p>Mais abaixo no <code>pyproject.toml</code>, vai notar outras secções que dependem do
-sistema operativo, como <code>[tool.briefcase.app.helloworld.macOS]</code> e
-<code>[tool.briefcase.app.helloworld.windows]</code>. Essas secções <em>também</em> têm uma
-configuração <code>requires</code>. Estas configurações permitem definir dependências
-adicionais específicas da plataforma - assim, por exemplo, se precisar de uma
-biblioteca específica da plataforma para lidar com algum aspecto da sua
-aplicação, pode especificar essa biblioteca na secção <code>requires</code> específica da
-plataforma, e essa configuração será usada somente para essa plataforma. Vai
-reparar que as bibliotecas <code>toga</code> são todas especificadas na secção <code>requires</code>
-específica da plataforma - isso porque as bibliotecas necessárias para mostrar
-uma interface de utilizador são específicas da plataforma.</p>
-<p>No nosso caso, queremos que o <code>faker</code> seja instalado em todas as plataformas,
-assim usamos a configuração <code>requires</code> em nível de aplicação. As dependências no
-nível da aplicação são sempre instaladas; as dependências específicas da
-plataforma são instaladas <em>em adição</em> das dependências no nível da aplicação.</p>
-<p>Após adicionar o novo requisito, salve <code>pyproject.toml</code> e execute <code>briefcase dev
--r</code>. A bandeira <code>-r</code> informa o Briefcase que os requisitos foram alterados, e o
-ambiente virtual de desenvolvimento precisa de ser atualizado:</p>
+<p>Mais abaixo no <code>pyproject.toml</code>, vai notar outras secções que dependem do sistema operativo, como <code>[tool.briefcase.app.helloworld.macOS]</code> e <code>[tool.briefcase.app.helloworld.windows]</code>. Essas secções <em>também</em> têm uma configuração <code>requires</code>. Estas configurações permitem definir dependências adicionais específicas da plataforma - assim, por exemplo, se precisar de uma biblioteca específica da plataforma para lidar com algum aspecto da sua aplicação, pode especificar essa biblioteca na secção <code>requires</code> específica da plataforma, e essa configuração será usada somente para essa plataforma. Vai reparar que as bibliotecas <code>toga</code> são todas especificadas na secção <code>requires</code> específica da plataforma - isso porque as bibliotecas necessárias para mostrar uma interface de utilizador são específicas da plataforma.</p>
+<p>No nosso caso, queremos que o <code>faker</code> seja instalado em todas as plataformas, assim usamos a configuração <code>requires</code> em nível de aplicação. As dependências no nível da aplicação são sempre instaladas; as dependências específicas da plataforma são instaladas <em>em adição</em> das dependências no nível da aplicação.</p>
+<p>Após adicionar o novo requisito, salve <code>pyproject.toml</code> e execute <code>briefcase dev -r</code>. A bandeira <code>-r</code> informa o Briefcase que os requisitos foram alterados, e o ambiente virtual de desenvolvimento precisa de ser atualizado:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1850,11 +1807,9 @@ ambiente virtual de desenvolvimento precisa de ser atualizado:</p>
 <span class="go">[helloworld] A iniciar no modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
-isto:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a isto:</p>
 <figure>
-<p><img alt="Caixa de diálogo do Tutorial 7 do Hello World, no
-macOS" src="../../images/macOS/tutorial-7.png" /></p>
+<p><img alt="Caixa de diálogo do Tutorial 7 do Hello World, no macOS" src="../../images/macOS/tutorial-7.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
@@ -1871,11 +1826,9 @@ macOS" src="../../images/macOS/tutorial-7.png" /></p>
 <span class="go">[helloworld] A iniciar em modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
-isto:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a isto:</p>
 <figure>
-<p><img alt="Caixa de diálogo do Tutorial 7 do Hello World, no
-Linux" src="../../images/linux/tutorial-7.png" /></p>
+<p><img alt="Caixa de diálogo do Tutorial 7 do Hello World, no Linux" src="../../images/linux/tutorial-7.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
@@ -1892,45 +1845,32 @@ Linux" src="../../images/linux/tutorial-7.png" /></p>
 <span class="go">[helloworld] A iniciar em modo de desenvolvimento...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a
-isto:</p>
+<p>Ao inserir um nome e pressionar o botão, deverá ver um diálogo semelhante a isto:</p>
 <figure>
-<p><img alt="Caixa de diálogo Hello World Tutorial 7, no
-Windows" src="../../images/windows/tutorial-7.png" /></p>
+<p><img alt="Caixa de diálogo Hello World Tutorial 7, no Windows" src="../../images/windows/tutorial-7.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
 <div class="tabbed-block">
-<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as
-instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
+<p>Não pode executar uma aplicação Android no modo de desenvolvedor - use as instruções para a sua plataforma de ambiente de trabalho escolhida.</p>
 </div>
 <div class="tabbed-block">
-<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções
-para a plataforma de ambiente de trabalho escolhida.</p>
+<p>Não pode executar uma aplicação iOS no modo de desenvolvedor - use as instruções para a plataforma de ambiente de trabalho escolhida.</p>
 </div>
 </div>
 </div>
 <div class="admonition">
 <p class="admonition-title">Possíveis erros ao executar <code>briefcase dev</code></p>
-<p>Se ainda estiver a receber um erro ao executar <code>briefcase dev</code>, certifique-se de
-que:</p>
+<p>Se ainda estiver a receber um erro ao executar <code>briefcase dev</code>, certifique-se de que:</p>
 <ol>
 <li>Adicionou <code>faker</code> à lista <code>requires</code> em <code>pyproject.toml</code>;</li>
 <li>Salvou as suas alterações em <code>pyproject.toml</code>; e</li>
 <li>Incluiu o argumento <code>-r</code> ao executar <code>briefcase dev -r</code>.</li>
 </ol>
 </div>
-<p>Na primeira vez que executa a sua aplicação usando <code>briefcase dev</code>, o argumento
-<code>-r</code> é adicionado automaticamente por si — é por isso que até agora não
-precisamos usar o argumento <code>-r</code>. O argumento <code>-r</code> só é necessário quando se
-adiciona, remove ou altera um requisito <em>depois</em> de executar a sua aplicação no
-modo de desenvolvimento. Se apenas atualizou o código, pode executar <code>briefcase
-dev</code> como temos feito no resto deste tutorial.</p>
+<p>Na primeira vez que executa a sua aplicação usando <code>briefcase dev</code>, o argumento <code>-r</code> é adicionado automaticamente por si — é por isso que até agora não precisamos usar o argumento <code>-r</code>. O argumento <code>-r</code> só é necessário quando se adiciona, remove ou altera um requisito <em>depois</em> de executar a sua aplicação no modo de desenvolvimento. Se apenas atualizou o código, pode executar <code>briefcase dev</code> como temos feito no resto deste tutorial.</p>
 <h2 id="executa-a-aplicacao-atualizada">Executa a aplicação atualizada<a class="headerlink" href="#executa-a-aplicacao-atualizada" title="Permanent link">&para;</a></h2>
-<p>Agora temos uma aplicação funcional, usando uma biblioteca de terceiros, a
-correr em modo de desenvolvimento. Vamos empacotar este código atualizado da
-aplicação como uma aplicação independente. Como fizemos alterações no código,
-precisamos seguir os mesmos passos do <a href="../tutorial-4/">Tutorial 4</a>:</p>
+<p>Agora temos uma aplicação funcional, usando uma biblioteca de terceiros, a correr em modo de desenvolvimento. Vamos empacotar este código atualizado da aplicação como uma aplicação independente. Como fizemos alterações no código, precisamos seguir os mesmos passos do <a href="../tutorial-4/">Tutorial 4</a>:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1954,11 +1894,9 @@ precisamos seguir os mesmos passos do <a href="../tutorial-4/">Tutorial 4</a>:</
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando a aplicação for executada, verá um erro na consola, além de
-um diálogo de falha:</p>
+<p>No entanto, quando a aplicação for executada, verá um erro na consola, além de um diálogo de falha:</p>
 <figure>
-<p><img alt="Falha da aplicação Hello World Tutorial 7, no
-macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
+<p><img alt="Falha da aplicação Hello World Tutorial 7, no macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
@@ -2024,11 +1962,9 @@ macOS" src="../../images/macOS/tutorial-7-crash.png" /></p>
 <span class="go">[helloworld] A iniciar a aplicação...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
-<p>No entanto, quando a aplicação for executada, verá um erro na consola, além de
-um diálogo de falha:</p>
+<p>No entanto, quando a aplicação for executada, verá um erro na consola, além de um diálogo de falha:</p>
 <figure>
-<p><img alt="Falha na aplicação Hello World Tutorial 7, no
-Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
+<p><img alt="Falha na aplicação Hello World Tutorial 7, no Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 <figcaption></figcaption>
 </figure>
 </div>
@@ -2129,14 +2065,8 @@ Windows" src="../../images/windows/tutorial-7-crash.png" /></p>
 </div>
 </div>
 </div>
-<p>Mais uma vez, a aplicação não foi iniciada porque o <code>faker</code> não foi instalado -
-mas por quê? Não instalamos já o <code>faker</code>?</p>
-<p>Sim, mas apenas no ambiente de desenvolvimento. Cada aplicação criada também tem
-o seu próprio ambiente independente, que é uma das coisas que o Briefcase produz
-quando executa <code>briefcase build</code>. Quando executamos <code>briefcase dev -r</code>,
-adicionamos <code>faker</code> ao nosso ambiente de <em>desenvolvimento</em>, mas não ao pacote da
-aplicação. Também precisamos correr <code>briefcase update -r</code> para que o Briefcase
-saiba que os requisitos do pacote da aplicação foram alterados:</p>
+<p>Mais uma vez, a aplicação não foi iniciada porque o <code>faker</code> não foi instalado - mas por quê? Não instalamos já o <code>faker</code>?</p>
+<p>Sim, mas apenas no ambiente de desenvolvimento. Cada aplicação criada também tem o seu próprio ambiente independente, que é uma das coisas que o Briefcase produz quando executa <code>briefcase build</code>. Quando executamos <code>briefcase dev -r</code>, adicionamos <code>faker</code> ao nosso ambiente de <em>desenvolvimento</em>, mas não ao pacote da aplicação. Também precisamos correr <code>briefcase update -r</code> para que o Briefcase saiba que os requisitos do pacote da aplicação foram alterados:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label><label for="__tabbed_4_4">Android</label><label for="__tabbed_4_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2239,58 +2169,20 @@ saiba que os requisitos do pacote da aplicação foram alterados:</p>
 </div>
 </div>
 </div>
-<p>Agora que atualizou, pode executar <code>briefcase build</code> e <code>briefcase run</code> - e deve
-ver a aplicação empacotada com o novo comportamento de diálogo.</p>
+<p>Agora que atualizou, pode executar <code>briefcase build</code> e <code>briefcase run</code> - e deve ver a aplicação empacotada com o novo comportamento de diálogo.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>A opção <code>-r</code> para atualizar os requisitos também é aceite pelos comandos <code>build</code>
-e <code>run</code>, assim se quiser atualizar, compilar e executar num único passo, pode
-usar <code>briefcase run -u -r</code>.</p>
+<p>A opção <code>-r</code> para atualizar os requisitos também é aceite pelos comandos <code>build</code> e <code>run</code>, assim se quiser atualizar, compilar e executar num único passo, pode usar <code>briefcase run -u -r</code>.</p>
 </div>
 <h2 id="pacotes-python-de-terceiros-para-dispositivos-moveis-e-web">Pacotes Python de Terceiros para Dispositivos Móveis e Web<a class="headerlink" href="#pacotes-python-de-terceiros-para-dispositivos-moveis-e-web" title="Permanent link">&para;</a></h2>
-<p>O Faker é apenas um exemplo de um pacote Python de terceiros - uma coleção de
-código que não faz parte do que o Python fornece de fábrica. Estes pacotes de
-terceiros são normalmente mais distribuídos usando o <a href="https://pypi.org">Python Package Index
-(PyPI)</a> e instalados no seu ambiente virtual local. Neste
-tutorial, usamos o <code>pip</code>, mas há outras opções.</p>
-<p>Em plataformas de ambiente de trabalho (macOS, Windows, Linux), basicamente
-qualquer pacote no PyPI pode ser instalado no seu ambiente virtual, ou
-adicionado aos requisitos da sua aplicação. No entanto, ao criar uma aplicação
-para plataformas móveis ou web, <a href="https://briefcase.beeware.org/en/latest/about/faq#can-i-use-third-party-python-packages-in-my-app">as suas opções são ligeiramente
-limitadas</a>.</p>
-<p>Resumindo; qualquer pacote <em>puro Python</em> (isto é, qualquer pacote criado a
-partir de um projeto escrito <em>somente</em> em Python) pode ser usado sem
-dificuldade. Alguns pacotes, entretanto, são criados a partir de projetos que
-contêm Python e outras linguagens (por exemplo, C, C++, Rust etc.). O código
-escrito nessas linguagens precisa ser compilado em módulos binários específicos
-da plataforma antes de poder ser usado, e esses módulos binários pré-compilados
-só estão disponíveis em plataformas específicas. As plataformas móveis e Web têm
-requisitos muito diferentes das plataformas de ambiente de trabalho "standard".
-No momento, a maioria dos pacotes Python não fornece binários pré-compilados
-para plataformas móveis e Web.</p>
-<p>No PyPI, os pacotes geralmente são fornecidos num formato de distribuição
-pré-construído chamado <em>wheels</em>. Para verificar se um pacote é Python puro, veja
-a página de descargas do projeto no PyPI. Se os wheels fornecidos tiverem um
-sufixo <code>-py3-none-any.whl</code> (ex.,
-<a href="https://pypi.org/project/Faker/37.3.0/#files">Faker</a>), então são wheels Python
-puros. No entanto, se os wheels tiverem extensões específicas de versão e da
-plataforma (ex., <a href="https://pypi.org/project/pillow/11.2.1/#files">Pillow</a>, que
-tem wheels com sufixos como <code>-cp313-cp313-macosx_11_0_arm64.whl</code> e
-<code>-cp39-cp39-win_amd64.whl</code>), então a wheel <em>contém um componente binário</em>. Esse
-pacote não pode ser instalado em plataformas móveis ou Web, a menos que seja
-fornecido um wheel compatível com essas plataformas.</p>
-<p>No momento, <em>a maioria</em> dos pacotes binários no PyPI não fornecem wheels
-compatíveis com dispositivos móveis ou Web. Para preencher essa lacuna, o
-BeeWare fornece binários para alguns módulos binários populares (incluindo
-<code>numpy</code>, <code>pandas</code> e <code>cryptography</code>). Estes wheels <em>não</em> são distribuídos no
-PyPI, mas o Briefcase vai instalar estes wheels se estiverem disponíveis.</p>
-<p>É <em>geralmente</em> possível compilar pacotes binário para plataformas móveis, mas
-isso não é fácil de configurar &ndash; e fica bem fora do escopo de um tutorial de
-introdução como este.</p>
+<p>O Faker é apenas um exemplo de um pacote Python de terceiros - uma coleção de código que não faz parte do que o Python fornece de fábrica. Estes pacotes de terceiros são normalmente mais distribuídos usando o <a href="https://pypi.org">Python Package Index (PyPI)</a> e instalados no seu ambiente virtual local. Neste tutorial, usamos o <code>pip</code>, mas há outras opções.</p>
+<p>Em plataformas de ambiente de trabalho (macOS, Windows, Linux), basicamente qualquer pacote no PyPI pode ser instalado no seu ambiente virtual, ou adicionado aos requisitos da sua aplicação. No entanto, ao criar uma aplicação para plataformas móveis ou web, <a href="https://briefcase.beeware.org/en/latest/about/faq#can-i-use-third-party-python-packages-in-my-app">as suas opções são ligeiramente limitadas</a>.</p>
+<p>Resumindo; qualquer pacote <em>puro Python</em> (isto é, qualquer pacote criado a partir de um projeto escrito <em>somente</em> em Python) pode ser usado sem dificuldade. Alguns pacotes, entretanto, são criados a partir de projetos que contêm Python e outras linguagens (por exemplo, C, C++, Rust etc.). O código escrito nessas linguagens precisa ser compilado em módulos binários específicos da plataforma antes de poder ser usado, e esses módulos binários pré-compilados só estão disponíveis em plataformas específicas. As plataformas móveis e Web têm requisitos muito diferentes das plataformas de ambiente de trabalho "standard". No momento, a maioria dos pacotes Python não fornece binários pré-compilados para plataformas móveis e Web.</p>
+<p>No PyPI, os pacotes geralmente são fornecidos num formato de distribuição pré-construído chamado <em>wheels</em>. Para verificar se um pacote é Python puro, veja a página de descargas do projeto no PyPI. Se os wheels fornecidos tiverem um sufixo <code>-py3-none-any.whl</code> (ex., <a href="https://pypi.org/project/Faker/37.3.0/#files">Faker</a>), então são wheels Python puros. No entanto, se os wheels tiverem extensões específicas de versão e da plataforma (ex., <a href="https://pypi.org/project/pillow/11.2.1/#files">Pillow</a>, que tem wheels com sufixos como <code>-cp313-cp313-macosx_11_0_arm64.whl</code> e <code>-cp39-cp39-win_amd64.whl</code>), então a wheel <em>contém um componente binário</em>. Esse pacote não pode ser instalado em plataformas móveis ou Web, a menos que seja fornecido um wheel compatível com essas plataformas.</p>
+<p>No momento, <em>a maioria</em> dos pacotes binários no PyPI não fornecem wheels compatíveis com dispositivos móveis ou Web. Para preencher essa lacuna, o BeeWare fornece binários para alguns módulos binários populares (incluindo <code>numpy</code>, <code>pandas</code> e <code>cryptography</code>). Estes wheels <em>não</em> são distribuídos no PyPI, mas o Briefcase vai instalar estes wheels se estiverem disponíveis.</p>
+<p>É <em>geralmente</em> possível compilar pacotes binário para plataformas móveis, mas isso não é fácil de configurar &ndash; e fica bem fora do escopo de um tutorial de introdução como este.</p>
 <h2 id="proximos-passos">Próximos passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
-<p>Agora temos uma aplicação que usa uma biblioteca de terceiros! No <a href="../tutorial-8/">Tutorial
-8</a>, aprenderemos a como garantir que a nossa aplicação permaneça
-funcional à medida que adicionamos lógica de aplicação mais complexa.</p>
+<p>Agora temos uma aplicação que usa uma biblioteca de terceiros! No <a href="../tutorial-8/">Tutorial 8</a>, aprenderemos a como garantir que a nossa aplicação permaneça funcional à medida que adicionamos lógica de aplicação mais complexa.</p>
 
 
 

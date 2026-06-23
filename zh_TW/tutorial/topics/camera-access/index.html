@@ -1663,14 +1663,12 @@ aria-label="頁首"
 <div class="admonition">
 <p class="admonition-title">本教學不會在所有平台上運作！</p>
 <p>不幸的是，目前本教學只適用於 macOS 和 Android。</p>
-<p>雖然 iPhone 都有相機，但 iOS <em>Simulator</em> 並沒有可用的相機。Windows 和 Linux 裝置也有攝影機，但 Toga
-目前無法在這些平台上存取攝影機。</p>
+<p>雖然 iPhone 都有相機，但 iOS <em>Simulator</em> 並沒有可用的相機。Windows 和 Linux 裝置也有攝影機，但 Toga 目前無法在這些平台上存取攝影機。</p>
 <p>這裡提出的程式碼可以在 Windows 或 Linux 上 * 執行；但當您嘗試拍照時，它會產生錯誤。</p>
 <p>如果在實際的 iOS 裝置上執行，程式碼將會正常運作，但如果部署到 iOS 模擬器上，則會無法拍照。</p>
 </div>
 <h2 id="_2">開始新專案<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>在本教程中，我們不打算在核心教程中的應用程式上進行建置 - 我們要開始一個全新的專案。您可以使用與第一個專案相同的虛擬環境；但我們需要重新執行
-<code>briefcase new</code> 精靈。</p>
+<p>在本教程中，我們不打算在核心教程中的應用程式上進行建置 - 我們要開始一個全新的專案。您可以使用與第一個專案相同的虛擬環境；但我們需要重新執行 <code>briefcase new</code> 精靈。</p>
 <p>變回包含專案資料夾 <code>helloworld</code> 的目錄，並開始一個名為「Hello Camera」的新專案：</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>new
@@ -1737,24 +1735,17 @@ aria-label="頁首"
 </code></pre></div>
 <p>與 Briefcase 所產生的預設應用程式相比，此程式碼有兩項變更。這些新增內容將在上文強調：</p>
 <ol>
-<li>第一個突出顯示的程式碼區塊（在 <code>startup()</code> 方法中）新增了控制攝影機所需的兩個 widget：顯示相片的
-   <code>ImageView</code>，以及觸發攝影機的 <code>Button</code>。</li>
-<li>第二個反白顯示的程式碼區塊（<code>take_photo()</code>
-   方法）定義了按鈕被按下時的事件處理程式。此處理器會首先確認應用程式是否有拍照的權限；如果沒有權限，則會請求權限。然後拍攝照片。請求權限和拍攝照片的請求都是異步請求，因此需要使用
-   <code>await</code>；當應用程式在等待使用者確認權限或拍攝照片時，應用程式的事件循環可以在背景中繼續。</li>
+<li>第一個突出顯示的程式碼區塊（在 <code>startup()</code> 方法中）新增了控制攝影機所需的兩個 widget：顯示相片的 <code>ImageView</code>，以及觸發攝影機的 <code>Button</code>。</li>
+<li>第二個反白顯示的程式碼區塊（<code>take_photo()</code> 方法）定義了按鈕被按下時的事件處理程式。此處理器會首先確認應用程式是否有拍照的權限；如果沒有權限，則會請求權限。然後拍攝照片。請求權限和拍攝照片的請求都是異步請求，因此需要使用 <code>await</code>；當應用程式在等待使用者確認權限或拍攝照片時，應用程式的事件循環可以在背景中繼續。</li>
 </ol>
-<p>如果相機成功拍攝了照片，它會返回一個 <code>Image</code> 物件，這個物件可以指定為 <code>ImageView</code>
-的內容。如果拍照請求被使用者取消，<code>self.camera.take_photo()</code> 呼叫將返回
-<code>None</code>，結果可以被忽略。如果使用者沒有允許使用照相機，或是照相機沒有在目前的平台上實作，將會產生錯誤，並顯示對話框給使用者。</p>
+<p>如果相機成功拍攝了照片，它會返回一個 <code>Image</code> 物件，這個物件可以指定為 <code>ImageView</code> 的內容。如果拍照請求被使用者取消，<code>self.camera.take_photo()</code> 呼叫將返回 <code>None</code>，結果可以被忽略。如果使用者沒有允許使用照相機，或是照相機沒有在目前的平台上實作，將會產生錯誤，並顯示對話框給使用者。</p>
 <h2 id="_4">新增裝置權限<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>我們剛剛加入的這段程式碼，有一部分是要求取得使用攝影機的權限。這是現代應用程式平台的常見功能 - 不先明確詢問用戶的許可，就無法存取硬體功能。</p>
 <p>不過，這個要求分為兩部分。第一部分在我們剛剛看到的程式碼中；但在應用程式要求權限之前，它需要先宣告它要要求的權限。</p>
-<p>每個平台所需的權限略有不同，但 Briefcase 對許多常見的硬體權限都有跨平台的表示。在您應用程式的 <code>pyproject.toml</code> 檔案的
-<code>[tool.briefcase.app.hellocamera]</code>配置區段中，新增下列內容 (就在 <code>sources</code> 宣告的上方)：</p>
+<p>每個平台所需的權限略有不同，但 Briefcase 對許多常見的硬體權限都有跨平台的表示。在您應用程式的 <code>pyproject.toml</code> 檔案的 <code>[tool.briefcase.app.hellocamera]</code>配置區段中，新增下列內容 (就在 <code>sources</code> 宣告的上方)：</p>
 <div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;應用程式將拍攝臉部照片。&quot;</span>
 </code></pre></div>
-<p>這宣告您的應用程式需要存取攝影機，並提供簡短的說明，說明為何需要使用攝影機。在某些平台 (最顯著的是 macOS 和 iOS)
-上需要此說明，並會在顯示權限對話框時，以附加資訊的形式顯示給使用者。</p>
+<p>這宣告您的應用程式需要存取攝影機，並提供簡短的說明，說明為何需要使用攝影機。在某些平台 (最顯著的是 macOS 和 iOS) 上需要此說明，並會在顯示權限對話框時，以附加資訊的形式顯示給使用者。</p>
 <p>現在我們可以產生並執行應用程式：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Android</label></div>
 <div class="tabbed-content">
@@ -1774,9 +1765,7 @@ aria-label="頁首"
 </div>
 <p>當應用程式執行時，您會看到一個按鈕。按下按鈕，平台的預設相機對話框將會顯示。拍張照片；相機對話框會消失，照片會顯示在應用程式中，就在按鈕上方。然後您可以再拍一張照片；這張照片會取代第一張照片。</p>
 <h2 id="_5">新增更多權限<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>權限是在原始呼叫 <code>briefcase create</code> 時產生的檔案中宣告的。不幸的是，Briefcase
-無法在初始產生這些檔案後更新它們；所以如果您想要在應用程式中加入新的權限，或是修改現有的權限，您需要重新建立應用程式。您可以重新執行 <code>briefcase
-create</code> 來做到這一點；這會警告您現有的應用程式將會被覆寫，然後用新的權限重新產生應用程式。</p>
+<p>權限是在原始呼叫 <code>briefcase create</code> 時產生的檔案中宣告的。不幸的是，Briefcase 無法在初始產生這些檔案後更新它們；所以如果您想要在應用程式中加入新的權限，或是修改現有的權限，您需要重新建立應用程式。您可以重新執行 <code>briefcase create</code> 來做到這一點；這會警告您現有的應用程式將會被覆寫，然後用新的權限重新產生應用程式。</p>
 
 
 

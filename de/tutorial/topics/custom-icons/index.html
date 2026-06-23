@@ -1615,44 +1615,26 @@ aria-label="Kopfzeile"
 
 
 <h1 id="symbole-anpassen">Symbole anpassen<a class="headerlink" href="#symbole-anpassen" title="Permanent link">&para;</a></h1>
-<p>Die App, die wir im Haupttutorial entwickelt haben, verwendet beim Verpacken
-standardmäßig das Symbol „gray bee“. Personalisieren wir diese Anwendung, indem
-wir sie so konfigurieren, dass sie unser eigenes Symbol verwendet.</p>
+<p>Die App, die wir im Haupttutorial entwickelt haben, verwendet beim Verpacken standardmäßig das Symbol „gray bee“. Personalisieren wir diese Anwendung, indem wir sie so konfigurieren, dass sie unser eigenes Symbol verwendet.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
 <p>In BeeWare kann sich der Begriff <em>Icon</em> auf zwei verschiedene Dinge beziehen:</p>
 <ul>
 <li>
-<p><strong>Anwendungssymbol</strong> - Das Bild, das Ihre Anwendung auf dem Desktop, dem Dock
-  oder dem Startbildschirm darstellt.</p>
+<p><strong>Anwendungssymbol</strong> - Das Bild, das Ihre Anwendung auf dem Desktop, dem Dock oder dem Startbildschirm darstellt.</p>
 </li>
 <li>
-<p><strong>Laufzeitsymbole</strong> - Bilder, die innerhalb der Benutzeroberfläche Ihrer
-  Anwendung verwendet werden (z. B. in Schaltflächen oder Tabellen).</p>
+<p><strong>Laufzeitsymbole</strong> - Bilder, die innerhalb der Benutzeroberfläche Ihrer Anwendung verwendet werden (z. B. in Schaltflächen oder Tabellen).</p>
 </li>
 </ul>
 </div>
 <h2 id="hinzufugen-eines-symbols">Hinzufügen eines Symbols<a class="headerlink" href="#hinzufugen-eines-symbols" title="Permanent link">&para;</a></h2>
-<p>Jede Plattform verwendet ein anderes Format für Anwendungssymbole – und einige
-Plattformen benötigen <em>mehrere</em> Symbole in unterschiedlichen Größen und Formen.
-Um dies zu berücksichtigen, bietet Briefcase eine Kurzform, mit der Sie ein
-Symbol einmal konfigurieren und diese Definition dann auf alle verschiedenen
-Symbole erweitern können, die für jede einzelne Plattform erforderlich sind.</p>
-<p>Bearbeiten Sie Ihr <code>pyproject.toml</code> und fügen Sie ein neues
-Konfigurationselement <code>Symbol</code> im Konfigurationsabschnitt
-<code>[tool.briefcase.app.helloworld]</code> direkt über der Definition von <code>Quellen</code>
-hinzu:</p>
+<p>Jede Plattform verwendet ein anderes Format für Anwendungssymbole – und einige Plattformen benötigen <em>mehrere</em> Symbole in unterschiedlichen Größen und Formen. Um dies zu berücksichtigen, bietet Briefcase eine Kurzform, mit der Sie ein Symbol einmal konfigurieren und diese Definition dann auf alle verschiedenen Symbole erweitern können, die für jede einzelne Plattform erforderlich sind.</p>
+<p>Bearbeiten Sie Ihr <code>pyproject.toml</code> und fügen Sie ein neues Konfigurationselement <code>Symbol</code> im Konfigurationsabschnitt <code>[tool.briefcase.app.helloworld]</code> direkt über der Definition von <code>Quellen</code> hinzu:</p>
 <div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;icons/helloworld&quot;</span>
 </code></pre></div>
-<p>Diese Icon-Definition gibt keine Dateierweiterung an. Der Wert wird als Präfix
-verwendet; jede Plattform fügt diesem Präfix zusätzliche Elemente hinzu, um die
-für die jeweilige Plattform erforderlichen Dateien zu erstellen. Einige
-Plattformen erfordern <em>mehrere</em> Icon-Dateien; dieses Präfix wird mit Dateigröße
-und Variantenmodifikatoren kombiniert, um die Liste der verwendeten Icon-Dateien
-zu generieren.</p>
-<p>Wir können nun erneut <code>briefcase update</code> ausführen – diesmal jedoch mit dem Flag
-<code>--update-resources</code>, um Briefcase mitzuteilen, dass wir neue
-Anwendungsressourcen (d. h. die Symbole) installieren möchten:</p>
+<p>Diese Icon-Definition gibt keine Dateierweiterung an. Der Wert wird als Präfix verwendet; jede Plattform fügt diesem Präfix zusätzliche Elemente hinzu, um die für die jeweilige Plattform erforderlichen Dateien zu erstellen. Einige Plattformen erfordern <em>mehrere</em> Icon-Dateien; dieses Präfix wird mit Dateigröße und Variantenmodifikatoren kombiniert, um die Liste der verwendeten Icon-Dateien zu generieren.</p>
+<p>Wir können nun erneut <code>briefcase update</code> ausführen – diesmal jedoch mit dem Flag <code>--update-resources</code>, um Briefcase mitzuteilen, dass wir neue Anwendungsressourcen (d. h. die Symbole) installieren möchten:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Windows</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1771,14 +1753,8 @@ Anwendungsressourcen (d. h. die Symbole) installieren möchten:</p>
 </div>
 </div>
 </div>
-<p>Dies gibt die spezifische(n) Icon-Datei(en) an, die Briefcase erwartet. Da wir
-jedoch keine tatsächlichen Icon-Dateien bereitgestellt haben, schlägt die
-Installation fehl und Briefcase greift auf einen Standardwert zurück (das
-gleiche „graue Bienen”-Icon).</p>
-<p>Lassen Sie uns einige aktuelle Symbole bereitstellen. Laden Sie <a href="../../../resources/icons.zip">dieses
-icons.zip-Paket</a> herunter, und entpacken Sie es in
-das Stammverzeichnis Ihres Projekts. Nach dem Entpacken sollte Ihr
-Projektverzeichnis etwa so aussehen:</p>
+<p>Dies gibt die spezifische(n) Icon-Datei(en) an, die Briefcase erwartet. Da wir jedoch keine tatsächlichen Icon-Dateien bereitgestellt haben, schlägt die Installation fehl und Briefcase greift auf einen Standardwert zurück (das gleiche „graue Bienen”-Icon).</p>
+<p>Lassen Sie uns einige aktuelle Symbole bereitstellen. Laden Sie <a href="../../../resources/icons.zip">dieses icons.zip-Paket</a> herunter, und entpacken Sie es in das Stammverzeichnis Ihres Projekts. Nach dem Entpacken sollte Ihr Projektverzeichnis etwa so aussehen:</p>
 <div class="highlight"><pre><span></span><code>beeware-tutorial/
 ├── beeware-venv/
 │   └── ...
@@ -1794,25 +1770,13 @@ Projektverzeichnis etwa so aussehen:</p>
     │   └── ...
     └── pyproject.toml
 </code></pre></div>
-<p>In diesem Ordner befinden sich <em>sehr viele</em> Symbole, aber die meisten davon
-sollten gleich aussehen: eine grüne Schlange auf hellblauem Hintergrund:</p>
+<p>In diesem Ordner befinden sich <em>sehr viele</em> Symbole, aber die meisten davon sollten gleich aussehen: eine grüne Schlange auf hellblauem Hintergrund:</p>
 <figure>
-<p><img alt="Symbol einer grünen Schlange mit hellblauem
-Hintergrund" src="../../../images/icon.png" /></p>
+<p><img alt="Symbol einer grünen Schlange mit hellblauem Hintergrund" src="../../../images/icon.png" /></p>
 <figcaption></figcaption>
 </figure>
-<p>Die einzige Ausnahme bilden die Symbole mit '-adaptive-' im Namen; diese haben
-einen transparenten Hintergrund. Dies umfasst alle verschiedenen Symbolgrößen
-und -formen, die Sie benötigen, um eine App auf jeder von Briefcase
-unterstützten Plattform zu unterstützen.</p>
-<p>Jetzt, da wir über Symbole verfügen, können wir die Anwendung erneut
-aktualisieren. Allerdings kopiert <code>briefcase update</code> nur die aktualisierten
-Ressourcen in das Build-Verzeichnis. Wir möchten jedoch auch die Anwendung neu
-erstellen, um sicherzustellen, dass das neue Symbol enthalten ist, und dann die
-Anwendung starten. Wir können diesen Vorgang abkürzen, indem wir
-<code>--update-resources</code> an unseren Aufruf von <code>run</code> übergeben. Dadurch wird die
-Anwendung aktualisiert, die Ressourcen der Anwendung aktualisiert und
-anschließend die Anwendung gestartet:</p>
+<p>Die einzige Ausnahme bilden die Symbole mit '-adaptive-' im Namen; diese haben einen transparenten Hintergrund. Dies umfasst alle verschiedenen Symbolgrößen und -formen, die Sie benötigen, um eine App auf jeder von Briefcase unterstützten Plattform zu unterstützen.</p>
+<p>Jetzt, da wir über Symbole verfügen, können wir die Anwendung erneut aktualisieren. Allerdings kopiert <code>briefcase update</code> nur die aktualisierten Ressourcen in das Build-Verzeichnis. Wir möchten jedoch auch die Anwendung neu erstellen, um sicherzustellen, dass das neue Symbol enthalten ist, und dann die Anwendung starten. Wir können diesen Vorgang abkürzen, indem wir <code>--update-resources</code> an unseren Aufruf von <code>run</code> übergeben. Dadurch wird die Anwendung aktualisiert, die Ressourcen der Anwendung aktualisiert und anschließend die Anwendung gestartet:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1925,10 +1889,7 @@ anschließend die Anwendung gestartet:</p>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
-<p>Wenn Sie eine aktuelle Version von Android verwenden, werden Sie möglicherweise
-feststellen, dass das App-Symbol zu einer grünen Schlange geändert wurde, der
-Hintergrund des Symbols jedoch <em>weiß</em> statt hellblau ist. Wir werden dies im
-nächsten Schritt beheben.</p>
+<p>Wenn Sie eine aktuelle Version von Android verwenden, werden Sie möglicherweise feststellen, dass das App-Symbol zu einer grünen Schlange geändert wurde, der Hintergrund des Symbols jedoch <em>weiß</em> statt hellblau ist. Wir werden dies im nächsten Schritt beheben.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1967,26 +1928,12 @@ nächsten Schritt beheben.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
-<p>Wenn Sie beim Ausführen der App einen Stacktrace erhalten, der auf <code>faker</code> oder
-<code>httpx</code> verweist, haben Sie möglicherweise Schritt 7 oder 8 des Tutorials
-übersprungen. Führen Sie die App erneut aus und fügen Sie das Argument <code>-r</code>
-hinzu, um die App-Anforderungen zu aktualisieren.</p>
+<p>Wenn Sie beim Ausführen der App einen Stacktrace erhalten, der auf <code>faker</code> oder <code>httpx</code> verweist, haben Sie möglicherweise Schritt 7 oder 8 des Tutorials übersprungen. Führen Sie die App erneut aus und fügen Sie das Argument <code>-r</code> hinzu, um die App-Anforderungen zu aktualisieren.</p>
 </div>
-<p>Wenn Sie die App auf iOS oder Android ausführen, sollten Sie neben der Änderung
-des Symbols auch feststellen, dass das neue Symbol in den Begrüßungsbildschirm
-integriert ist. Allerdings wirkt der hellblaue Hintergrund des Symbols vor dem
-weißen Hintergrund des Begrüßungsbildschirms etwas deplatziert. Wir können dies
-beheben, indem wir die Hintergrundfarbe des Begrüßungsbildschirms anpassen.
-Fügen Sie die folgende Definition zu Ihrer <code>pyproject.toml</code> hinzu, direkt nach
-der Definition <code>icon</code>:</p>
+<p>Wenn Sie die App auf iOS oder Android ausführen, sollten Sie neben der Änderung des Symbols auch feststellen, dass das neue Symbol in den Begrüßungsbildschirm integriert ist. Allerdings wirkt der hellblaue Hintergrund des Symbols vor dem weißen Hintergrund des Begrüßungsbildschirms etwas deplatziert. Wir können dies beheben, indem wir die Hintergrundfarbe des Begrüßungsbildschirms anpassen. Fügen Sie die folgende Definition zu Ihrer <code>pyproject.toml</code> hinzu, direkt nach der Definition <code>icon</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
 </code></pre></div>
-<p>Leider kann Briefcase diese Änderung nicht auf ein bereits generiertes Projekt
-anwenden, da dafür Änderungen an einer der Dateien vorgenommen werden müssen,
-die beim ursprünglichen Aufruf von <code>briefcase create</code> generiert wurden. Um diese
-Änderung anzuwenden, müssen wir die App neu erstellen, indem wir <code>briefcase
-create</code> erneut ausführen. Dabei werden wir aufgefordert, zu bestätigen, dass wir
-das vorhandene Projekt überschreiben möchten:</p>
+<p>Leider kann Briefcase diese Änderung nicht auf ein bereits generiertes Projekt anwenden, da dafür Änderungen an einer der Dateien vorgenommen werden müssen, die beim ursprünglichen Aufruf von <code>briefcase create</code> generiert wurden. Um diese Änderung anzuwenden, müssen wir die App neu erstellen, indem wir <code>briefcase create</code> erneut ausführen. Dabei werden wir aufgefordert, zu bestätigen, dass wir das vorhandene Projekt überschreiben möchten:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2054,27 +2001,10 @@ das vorhandene Projekt überschreiben möchten:</p>
 </div>
 </div>
 </div>
-<p>Sie können die App dann mit <code>briefcase run</code> neu erstellen und erneut ausführen.
-An der Desktop-App werden Sie keine Änderungen bemerken, aber die Android- oder
-iOS-Apps sollten nun einen hellblauen Hintergrund für den Begrüßungsbildschirm
-haben.</p>
-<p>Sie müssen die App jedes Mal neu erstellen, wenn Sie Änderungen an Ihrer
-<code>pyproject.toml</code> vornehmen, die nicht den Quellcode oder die Abhängigkeiten
-betreffen. Jede Änderung an Beschreibungen, Versionsnummern, Farben oder
-Berechtigungen erfordert einen Neuanlegungsvorgang. Aus diesem Grund sollten Sie
-während der Entwicklung Ihres Projekts keine manuellen Änderungen am Inhalt des
-Ordners <code>build</code> vornehmen und den Ordner <code>build</code> nicht zu Ihrem
-Versionskontrollsystem hinzufügen. Der Ordner <code>build</code> sollte als vollständig
-vergänglich betrachtet werden – als Ausgabe des Build-Systems, die bei Bedarf
-neu erstellt werden kann, um die aktuelle Konfiguration Ihres Projekts
-widerzuspiegeln.</p>
+<p>Sie können die App dann mit <code>briefcase run</code> neu erstellen und erneut ausführen. An der Desktop-App werden Sie keine Änderungen bemerken, aber die Android- oder iOS-Apps sollten nun einen hellblauen Hintergrund für den Begrüßungsbildschirm haben.</p>
+<p>Sie müssen die App jedes Mal neu erstellen, wenn Sie Änderungen an Ihrer <code>pyproject.toml</code> vornehmen, die nicht den Quellcode oder die Abhängigkeiten betreffen. Jede Änderung an Beschreibungen, Versionsnummern, Farben oder Berechtigungen erfordert einen Neuanlegungsvorgang. Aus diesem Grund sollten Sie während der Entwicklung Ihres Projekts keine manuellen Änderungen am Inhalt des Ordners <code>build</code> vornehmen und den Ordner <code>build</code> nicht zu Ihrem Versionskontrollsystem hinzufügen. Der Ordner <code>build</code> sollte als vollständig vergänglich betrachtet werden – als Ausgabe des Build-Systems, die bei Bedarf neu erstellt werden kann, um die aktuelle Konfiguration Ihres Projekts widerzuspiegeln.</p>
 <h2 id="hinzufugen-eines-laufzeitsymbols">Hinzufügen eines Laufzeitsymbols<a class="headerlink" href="#hinzufugen-eines-laufzeitsymbols" title="Permanent link">&para;</a></h2>
-<p>Wenn Sie der Benutzeroberfläche der Anwendung ein Symbol hinzufügen möchten,
-muss diese Art von Symbol in einem anderen Verzeichnis als die Anwendungssymbole
-gespeichert werden. Klicken Sie mit der rechten Maustaste auf Tiberius den Yak,
-speichern Sie das Bild als <code>.png</code>-Datei und nennen Sie es <code>helloworld</code>. Die
-Datei sollte dann im Ordner "icons/" in Ihrem Quellpaket der Anwendung
-gespeichert werden.</p>
+<p>Wenn Sie der Benutzeroberfläche der Anwendung ein Symbol hinzufügen möchten, muss diese Art von Symbol in einem anderen Verzeichnis als die Anwendungssymbole gespeichert werden. Klicken Sie mit der rechten Maustaste auf Tiberius den Yak, speichern Sie das Bild als <code>.png</code>-Datei und nennen Sie es <code>helloworld</code>. Die Datei sollte dann im Ordner "icons/" in Ihrem Quellpaket der Anwendung gespeichert werden.</p>
 <figure>
 <p><img alt="Ikone von Tiberius dem Yak" src="../../../images/runtime-icon.png" /></p>
 <figcaption></figcaption>
@@ -2098,10 +2028,7 @@ gespeichert werden.</p>
     │   └──...
     └── pyproject.toml
 </code></pre></div>
-<p>Nun, da das Laufzeitsymbol vorhanden ist, fügen wir ein Symbol zu unserer
-Schaltfläche hinzu. Das Toga-Schaltflächen-Widget kann nur entweder ein Symbol
-oder einen Text aufnehmen (nicht beides), also aktualisieren wir den Code für
-die Schaltfläche, um das Laufzeitsymbol aufzunehmen.</p>
+<p>Nun, da das Laufzeitsymbol vorhanden ist, fügen wir ein Symbol zu unserer Schaltfläche hinzu. Das Toga-Schaltflächen-Widget kann nur entweder ein Symbol oder einen Text aufnehmen (nicht beides), also aktualisieren wir den Code für die Schaltfläche, um das Laufzeitsymbol aufzunehmen.</p>
 <div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
 
 <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
@@ -2110,11 +2037,7 @@ die Schaltfläche, um das Laufzeitsymbol aufzunehmen.</p>
     <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
-<p>Da es sich bei den Laufzeitsymbolen um Anwendungsressourcen handelt, die in
-Ihrem Python-Paket gebündelt sind, ist kein Rebuild oder eine Aktualisierung der
-Ressourcen erforderlich. An diesem Punkt können Sie <code>briefcase dev</code> (oder
-<code>briefcase run</code>) ausführen, um das der Schaltfläche hinzugefügte Symbol zu
-sehen.</p>
+<p>Da es sich bei den Laufzeitsymbolen um Anwendungsressourcen handelt, die in Ihrem Python-Paket gebündelt sind, ist kein Rebuild oder eine Aktualisierung der Ressourcen erforderlich. An diesem Punkt können Sie <code>briefcase dev</code> (oder <code>briefcase run</code>) ausführen, um das der Schaltfläche hinzugefügte Symbol zu sehen.</p>
 
 
 
