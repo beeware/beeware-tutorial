@@ -40,8 +40,6 @@ Support for Raspberry Pi is limited at this time.
 
 If you're on Windows, you can get the official installer from [the Python website](https://www.python.org/downloads). You can use any version of Python from 3.10 to 3.14 (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer.
 
-Support for Windows on ARM64 is limited at this time.
-
 You can also install Python from the Windows App Store, or use [Anaconda](https://docs.anaconda.com/anaconda/install/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html). It doesn't matter *how* you've installed Python - it only matters that you can run `python3` from your command prompt and get a working, supported Python interpreter.
 
 ///
@@ -62,11 +60,11 @@ Building BeeWare apps on macOS requires:
 
 To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:
 
-### Ubuntu / Debian
+### Ubuntu 24.04+ / Debian 13+
 
 ```console
 $ sudo apt update
-$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module
+$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository-2.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module
 ```
 
 ### Red Hat / Fedora
