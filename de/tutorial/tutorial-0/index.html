@@ -670,10 +670,10 @@ aria-label="Kopfzeile"
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ubuntu-debian" class="md-nav__link">
+  <a href="#ubuntu-2404-debian-13" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ubuntu / Debian
+        Ubuntu 24.04+ / Debian 13+
       
     </span>
   </a>
@@ -1666,10 +1666,10 @@ aria-label="Kopfzeile"
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ubuntu-debian" class="md-nav__link">
+  <a href="#ubuntu-2404-debian-13" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ubuntu / Debian
+        Ubuntu 24.04+ / Debian 13+
       
     </span>
   </a>
@@ -1777,7 +1777,6 @@ aria-label="Kopfzeile"
 </div>
 <div class="tabbed-block">
 <p>Wenn Sie Windows verwenden, können Sie das offizielle Installationsprogramm von <a href="https://www.python.org/downloads">der Python-Website</a> herunterladen. Sie können jede Python-Version von 3.10 bis 3.14 verwenden (Sie sollten jedoch Alpha-, Beta- und Release-Candidate-Versionen vermeiden). Wir empfehlen dringend, Python 3.13 oder neuer zu verwenden.</p>
-<p>Raspberry Pi wird derzeit nur begrenzt unterstützt.</p>
 <p>Unter macOS oder Windows ist es egal, <em>wie</em> Sie Python installiert haben - wichtig ist nur, dass Sie <code>python3</code> über die Eingabeaufforderung/Terminalanwendung Ihres Betriebssystems ausführen können und einen funktionierenden Python-Interpreter erhalten.</p>
 </div>
 </div>
@@ -1794,9 +1793,9 @@ aria-label="Kopfzeile"
 </div>
 <div class="tabbed-block">
 <p>Um die lokale Entwicklung zu unterstützen, müssen Sie einige Systempakete installieren. Die Liste der erforderlichen Pakete hängt von Ihrer Distribution ab:</p>
-<h3 id="ubuntu-debian"><strong>Ubuntu / Debian</strong><a class="headerlink" href="#ubuntu-debian" title="Permanent link">&para;</a></h3>
+<h3 id="ubuntu-2404-debian-13">Ubuntu 24.04+ / Debian 13+<a class="headerlink" href="#ubuntu-2404-debian-13" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
-<span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository1.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
+<span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository-2.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
 <h3 id="red-hat-fedora">Red Hat / Fedora<a class="headerlink" href="#red-hat-fedora" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>gcc<span class="w"> </span>make<span class="w"> </span>pkg-config<span class="w"> </span>rpm-build<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-gobject-devel<span class="w"> </span>gtk3<span class="w"> </span>libcanberra-gtk3
@@ -1815,7 +1814,12 @@ aria-label="Kopfzeile"
 <div class="tabbed-block">
 <p>Die Erstellung von BeeWare-Anwendungen unter Windows erfordert:</p>
 <ul>
-<li><strong>Git</strong>, ein Versionskontrollsystem. Sie können Git von [git-scm.com]<nospell> herunterladen.</li>
+<li>
+<p><strong>Git</strong>, a version control system. You can install Git by running <code>winget install Git.Git</code>. Alternatively, you can download Git from from <nospell><a href="https://git-scm.com/downloads/">git-scm.com</a></nospell>.</p>
+</li>
+<li>
+<p><strong>The .NET 10 Desktop Runtime</strong>. You can install this by running <code>winget install Microsoft.DotNet.DesktopRuntime.10</code>. Alternatively, you can visit the <a href="https://dotnet.microsoft.com/en-us/download/dotnet/10.0">.NET 10 Downloads page</a> to obtain the installer.</p>
+</li>
 </ul>
 <p>Nach der Installation dieser Tools sollten Sie sicherstellen, dass Sie alle Terminalsitzungen neu starten. Windows zeigt neu installierte Tools nur auf Terminals an, die <em>nach</em> Abschluss der Installation gestartet wurden.</p>
 </div>

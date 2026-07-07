@@ -670,10 +670,10 @@ aria-label="Intestazione"
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ubuntu-2004-debian-10" class="md-nav__link">
+  <a href="#ubuntu-2404-debian-13" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ubuntu 20.04+ / Debian 10+
+        Ubuntu 24.04+ / Debian 13+
       
     </span>
   </a>
@@ -1666,10 +1666,10 @@ aria-label="Intestazione"
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ubuntu-2004-debian-10" class="md-nav__link">
+  <a href="#ubuntu-2404-debian-13" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ubuntu 20.04+ / Debian 10+
+        Ubuntu 24.04+ / Debian 13+
       
     </span>
   </a>
@@ -1777,7 +1777,6 @@ aria-label="Intestazione"
 </div>
 <div class="tabbed-block">
 <p>Se utilizzi Windows, puoi scaricare il programma di installazione ufficiale dal <a href="https://www.python.org/downloads">sito web di Python</a>. Puoi utilizzare qualsiasi versione di Python compresa tra la 3.10 e la 3.14 (anche se ti consigliamo di evitare le versioni alpha, beta e release candidate). Ti consigliamo vivamente di utilizzare Python 3.13 o versioni successive.</p>
-<p>Il supporto per Raspberry Pi è al momento limitato.</p>
 <p>Esistono molti modi diversi per installare Python. Si può installare Python tramite <a href="https://docs.anaconda.com/anaconda/install/">homebrew</a>. Si può usare <a href="https://docs.conda.io/en/latest/miniconda.html">pyenv</a> per gestire più installazioni di Python sulla stessa macchina. Gli utenti di Windows possono installare Python dal Windows App Store. Gli utenti con un background di scienza dei dati potrebbero voler usare [Anaconda]{3} o [Miniconda]{4}.</p>
 </div>
 </div>
@@ -1794,9 +1793,9 @@ aria-label="Intestazione"
 </div>
 <div class="tabbed-block">
 <p>Per supportare lo sviluppo locale, è necessario installare alcuni pacchetti di sistema. L'elenco dei pacchetti necessari varia a seconda della distribuzione:</p>
-<h3 id="ubuntu-2004-debian-10"><strong>Ubuntu 20.04+ / Debian 10+</strong><a class="headerlink" href="#ubuntu-2004-debian-10" title="Permanent link">&para;</a></h3>
+<h3 id="ubuntu-2404-debian-13">Ubuntu 24.04+ / Debian 13+<a class="headerlink" href="#ubuntu-2404-debian-13" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
-<span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository1.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
+<span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository-2.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
 <h3 id="red-hat-fedora">Red Hat / Fedora<a class="headerlink" href="#red-hat-fedora" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>gcc<span class="w"> </span>make<span class="w"> </span>pkg-config<span class="w"> </span>rpm-build<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-gobject-devel<span class="w"> </span>gtk3<span class="w"> </span>libcanberra-gtk3
@@ -1815,7 +1814,12 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <p>La creazione di applicazioni BeeWare su Windows richiede:</p>
 <ul>
-<li><strong>Git</strong>, un sistema di controllo delle versioni. È possibile scaricare Git da [git-scm.com]<nospell>.</li>
+<li>
+<p><strong>Git</strong>, a version control system. You can install Git by running <code>winget install Git.Git</code>. Alternatively, you can download Git from from <nospell><a href="https://git-scm.com/downloads/">git-scm.com</a></nospell>.</p>
+</li>
+<li>
+<p><strong>The .NET 10 Desktop Runtime</strong>. You can install this by running <code>winget install Microsoft.DotNet.DesktopRuntime.10</code>. Alternatively, you can visit the <a href="https://dotnet.microsoft.com/en-us/download/dotnet/10.0">.NET 10 Downloads page</a> to obtain the installer.</p>
+</li>
 </ul>
 <p>Dopo l'installazione di questi strumenti, è necessario assicurarsi di riavviare tutte le sessioni di terminale. Windows esporrà i terminali degli strumenti appena installati solo dopo il completamento dell'installazione.</p>
 </div>

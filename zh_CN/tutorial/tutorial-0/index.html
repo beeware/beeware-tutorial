@@ -670,10 +670,10 @@ aria-label="页眉"
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ubuntu-debian" class="md-nav__link">
+  <a href="#ubuntu-2404-debian-13" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ubuntu 或 Debian
+        Ubuntu 24.04+ / Debian 13+
       
     </span>
   </a>
@@ -1666,10 +1666,10 @@ aria-label="页眉"
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ubuntu-debian" class="md-nav__link">
+  <a href="#ubuntu-2404-debian-13" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ubuntu 或 Debian
+        Ubuntu 24.04+ / Debian 13+
       
     </span>
   </a>
@@ -1777,7 +1777,6 @@ aria-label="页眉"
 </div>
 <div class="tabbed-block">
 <p>如果您使用的是 Windows 系统，可以从 <a href="https://www.python.org/downloads">Python 官网</a> 下载官方安装程序。您可以使用 Python 3.10 至 3.14 之间的任意版本（但应避免使用 alpha、beta 和候选版本）。我们强烈建议使用 Python 3.13 或更高版本。</p>
-<p>目前对 Raspberry Pi 的支持有限。</p>
 <p>安装 Python 也有很多其他不同的方法。您可以通过 <a href="https://docs.anaconda.com/anaconda/install/">homebrew</a> 安装 Python，或使用 <a href="https://docs.conda.io/en/latest/miniconda.html">pyenv</a>来管理同一台机器上的多个 Python 安装，或使用 [Anaconda]{3} 或 [Miniconda]{4}。<em>怎么</em>\ 安装 Python 并不重要，只要可以从终端运行 <code>python3</code> 并获取到支持的、正常工作的 Python 解释器即可。</p>
 </div>
 </div>
@@ -1794,9 +1793,9 @@ aria-label="页眉"
 </div>
 <div class="tabbed-block">
 <p>为支持本地开发，您将需要安装一些系统软件包。所需的软件包列表因发行版而异：</p>
-<h3 id="ubuntu-debian"><strong>Ubuntu 或 Debian</strong><a class="headerlink" href="#ubuntu-debian" title="Permanent link">&para;</a></h3>
+<h3 id="ubuntu-2404-debian-13">Ubuntu 24.04+ / Debian 13+<a class="headerlink" href="#ubuntu-2404-debian-13" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
-<span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository1.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
+<span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>pkg-config<span class="w"> </span>python3-dev<span class="w"> </span>python3-venv<span class="w"> </span>libgirepository-2.0-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>gir1.2-gtk-3.0<span class="w"> </span>libcanberra-gtk3-module
 </code></pre></div>
 <h3 id="fedora">红帽/Fedora<a class="headerlink" href="#fedora" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>gcc<span class="w"> </span>make<span class="w"> </span>pkg-config<span class="w"> </span>rpm-build<span class="w"> </span>python3-devel<span class="w"> </span>gobject-introspection-devel<span class="w"> </span>cairo-gobject-devel<span class="w"> </span>gtk3<span class="w"> </span>libcanberra-gtk3
@@ -1815,7 +1814,12 @@ aria-label="页眉"
 <div class="tabbed-block">
 <p>在 Windows 上构建 BeeWare 应用程序需要：</p>
 <ul>
-<li><strong>Git</strong>，一个版本控制系统。您可以从 [git-scm.com]<nospell> 下载 Git。</li>
+<li>
+<p><strong>Git</strong>, a version control system. You can install Git by running <code>winget install Git.Git</code>. Alternatively, you can download Git from from <nospell><a href="https://git-scm.com/downloads/">git-scm.com</a></nospell>.</p>
+</li>
+<li>
+<p><strong>The .NET 10 Desktop Runtime</strong>. You can install this by running <code>winget install Microsoft.DotNet.DesktopRuntime.10</code>. Alternatively, you can visit the <a href="https://dotnet.microsoft.com/en-us/download/dotnet/10.0">.NET 10 Downloads page</a> to obtain the installer.</p>
+</li>
 </ul>
 <p>安装这些工具后，应确保重新启动任何终端会话。Windows 只在安装完成后开始的命令行<em>才</em>会暴露新安装的工具。</p>
 </div>
