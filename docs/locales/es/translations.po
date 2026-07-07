@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 02:45+0000\n"
+"POT-Creation-Date: 2026-07-07 21:44+0000\n"
 "PO-Revision-Date: 2026-04-10 19:09+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
@@ -106,7 +106,7 @@ msgstr "/// admonition | Traducciones disponibles"
 msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
 msgstr "Si no se siente cómodo con el inglés, las traducciones de este tutorial están disponibles en [Alemán]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6} y [中文(繁體)]{7}."
 
-#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:47 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:94 docs/en/tutorial/tutorial-0.md:96 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-0.md:121 docs/en/tutorial/tutorial-0.md:132 docs/en/tutorial/tutorial-0.md:161 docs/en/tutorial/tutorial-0.md:163 docs/en/tutorial/tutorial-0.md:171 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:135 docs/en/tutorial/tutorial-1.md:154 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-1.md:193 docs/en/tutorial/tutorial-1.md:199 docs/en/tutorial/tutorial-1.md:201 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-1.md:225 docs/en/tutorial/tutorial-1.md:227 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:153 docs/en/tutorial/tutorial-3.md:183 docs/en/tutorial/tutorial-3.md:200 docs/en/tutorial/tutorial-3.md:202 docs/en/tutorial/tutorial-3.md:231 docs/en/tutorial/tutorial-3.md:259 docs/en/tutorial/tutorial-3.md:283 docs/en/tutorial/tutorial-3.md:332 docs/en/tutorial/tutorial-3.md:429 docs/en/tutorial/tutorial-3.md:467 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:179 docs/en/tutorial/tutorial-7.md:181 docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:207 docs/en/tutorial/tutorial-7.md:231 docs/en/tutorial/tutorial-7.md:233 docs/en/tutorial/tutorial-7.md:239 docs/en/tutorial/tutorial-7.md:245 docs/en/tutorial/tutorial-7.md:255 docs/en/tutorial/tutorial-7.md:300 docs/en/tutorial/tutorial-7.md:302 docs/en/tutorial/tutorial-7.md:357 docs/en/tutorial/tutorial-7.md:396 docs/en/tutorial/tutorial-7.md:398 docs/en/tutorial/tutorial-7.md:473 docs/en/tutorial/tutorial-7.md:521 docs/en/tutorial/tutorial-7.md:548 docs/en/tutorial/tutorial-7.md:577 docs/en/tutorial/tutorial-7.md:600 docs/en/tutorial/tutorial-7.md:619 docs/en/tutorial/tutorial-7.md:643 docs/en/tutorial/tutorial-7.md:651 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
+#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:45 docs/en/tutorial/tutorial-0.md:57 docs/en/tutorial/tutorial-0.md:92 docs/en/tutorial/tutorial-0.md:94 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-0.md:121 docs/en/tutorial/tutorial-0.md:132 docs/en/tutorial/tutorial-0.md:161 docs/en/tutorial/tutorial-0.md:163 docs/en/tutorial/tutorial-0.md:171 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:135 docs/en/tutorial/tutorial-1.md:154 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-1.md:193 docs/en/tutorial/tutorial-1.md:199 docs/en/tutorial/tutorial-1.md:201 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-1.md:225 docs/en/tutorial/tutorial-1.md:227 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:153 docs/en/tutorial/tutorial-3.md:183 docs/en/tutorial/tutorial-3.md:200 docs/en/tutorial/tutorial-3.md:202 docs/en/tutorial/tutorial-3.md:231 docs/en/tutorial/tutorial-3.md:259 docs/en/tutorial/tutorial-3.md:283 docs/en/tutorial/tutorial-3.md:332 docs/en/tutorial/tutorial-3.md:429 docs/en/tutorial/tutorial-3.md:467 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:179 docs/en/tutorial/tutorial-7.md:181 docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:207 docs/en/tutorial/tutorial-7.md:231 docs/en/tutorial/tutorial-7.md:233 docs/en/tutorial/tutorial-7.md:239 docs/en/tutorial/tutorial-7.md:245 docs/en/tutorial/tutorial-7.md:255 docs/en/tutorial/tutorial-7.md:300 docs/en/tutorial/tutorial-7.md:302 docs/en/tutorial/tutorial-7.md:357 docs/en/tutorial/tutorial-7.md:396 docs/en/tutorial/tutorial-7.md:398 docs/en/tutorial/tutorial-7.md:473 docs/en/tutorial/tutorial-7.md:521 docs/en/tutorial/tutorial-7.md:548 docs/en/tutorial/tutorial-7.md:577 docs/en/tutorial/tutorial-7.md:600 docs/en/tutorial/tutorial-7.md:619 docs/en/tutorial/tutorial-7.md:643 docs/en/tutorial/tutorial-7.md:651 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
 msgid "///"
 msgstr "///"
 
@@ -400,7 +400,7 @@ msgstr "Esto explica que su aplicación necesita acceder a la cámara y proporci
 msgid "We can now generate and run the app:"
 msgstr "Ahora podemos generar y ejecutar la aplicación:"
 
-#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:53 docs/en/tutorial/tutorial-0.md:112 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:177 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:138 docs/en/tutorial/tutorial-3.md:208 docs/en/tutorial/tutorial-3.md:295 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:157 docs/en/tutorial/tutorial-7.md:263 docs/en/tutorial/tutorial-7.md:527 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
+#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:51 docs/en/tutorial/tutorial-0.md:112 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:177 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:138 docs/en/tutorial/tutorial-3.md:208 docs/en/tutorial/tutorial-3.md:295 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:157 docs/en/tutorial/tutorial-7.md:263 docs/en/tutorial/tutorial-7.md:527 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
 msgid "/// tab | macOS"
 msgstr "/// tab | macOS"
 
@@ -516,7 +516,7 @@ msgstr ""
 "\n"
 "[helloworld] Aplicación actualizada."
 
-#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:61 docs/en/tutorial/tutorial-0.md:123 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:137 docs/en/tutorial/tutorial-1.md:187 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:155 docs/en/tutorial/tutorial-3.md:233 docs/en/tutorial/tutorial-3.md:334 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:304 docs/en/tutorial/tutorial-7.md:550 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
+#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:123 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:137 docs/en/tutorial/tutorial-1.md:187 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:155 docs/en/tutorial/tutorial-3.md:233 docs/en/tutorial/tutorial-3.md:334 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:304 docs/en/tutorial/tutorial-7.md:550 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
 msgid "/// tab | Linux"
 msgstr "/// tab | Linux"
 
@@ -558,7 +558,7 @@ msgstr ""
 "\n"
 "[helloworld] Aplicación actualizada."
 
-#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:98 docs/en/tutorial/tutorial-0.md:134 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:156 docs/en/tutorial/tutorial-1.md:203 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:185 docs/en/tutorial/tutorial-3.md:261 docs/en/tutorial/tutorial-3.md:431 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:209 docs/en/tutorial/tutorial-7.md:359 docs/en/tutorial/tutorial-7.md:579 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
+#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:96 docs/en/tutorial/tutorial-0.md:134 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:156 docs/en/tutorial/tutorial-1.md:203 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:185 docs/en/tutorial/tutorial-3.md:261 docs/en/tutorial/tutorial-3.md:431 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:209 docs/en/tutorial/tutorial-7.md:359 docs/en/tutorial/tutorial-7.md:579 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
 msgid "/// tab | Windows"
 msgstr "/// tab | Windows"
 
@@ -2138,84 +2138,88 @@ msgid "If you're on Windows, you can get the official installer from [the Python
 msgstr "Si utilizas Windows, puedes descargar el instalador oficial desde [la página web de Python]{1}. Puedes utilizar cualquier versión de Python desde la 3.10 hasta la 3.14 (aunque es mejor evitar las versiones alfa, beta y candidatas a lanzamiento). Recomendamos encarecidamente utilizar Python 3.13 o una versión posterior."
 
 #: docs/en/tutorial/tutorial-0.md:43
-msgid "Support for Windows on ARM64 is limited at this time."
-msgstr "La asistencia para Windows en ARM64 está limitada en este momento."
-
-#: docs/en/tutorial/tutorial-0.md:45
 msgid "You can also install Python from the Windows App Store, or use [Anaconda]{1} or [Miniconda]{2}. It doesn't matter *how* you've installed Python - it only matters that you can run `python3` from your command prompt and get a working, supported Python interpreter."
 msgstr "También puedes instalar Python desde al Windows App Store, o utilizar [Anaconda]{1} o [Miniconda]{2}. No importa *cómo* has instalado Python: sólo importa que puedas ejecutar `python3` desde el intérprete de comando y obtener un intérprete de Python que funcione."
 
-#: docs/en/tutorial/tutorial-0.md:49
+#: docs/en/tutorial/tutorial-0.md:47
 msgid "Install dependencies { id=\"install-dependencies\" }"
 msgstr "Instalar dependencias { id=\"install-dependencies\" }"
 
-#: docs/en/tutorial/tutorial-0.md:51
+#: docs/en/tutorial/tutorial-0.md:49
 msgid "Next, install the additional dependencies needed for your operating system:"
 msgstr "A continuación, instale las dependencias adicionales necesarias para su sistema operativo:"
 
-#: docs/en/tutorial/tutorial-0.md:55
+#: docs/en/tutorial/tutorial-0.md:53
 msgid "Building BeeWare apps on macOS requires:"
 msgstr "Construir aplicaciones BeeWare en macOS requiere:"
 
-#: docs/en/tutorial/tutorial-0.md:57
+#: docs/en/tutorial/tutorial-0.md:55
 msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above. You may need to open Xcode for the first time in order for Git to work in your terminal session. If it still doesn't register that Git is installed, you may need to restart your terminal session."
 msgstr "**Git**, un sistema de control de versiones. Se incluye con Xcode o con las herramientas de línea de comandos para desarrolladores, que instalaste más arriba. Puede que tengas que abrir Xcode por primera vez para que Git funcione en tu sesión de terminal. Si aún no se registra que Git está instalado, puede que tenga que reiniciar su sesión de terminal."
 
-#: docs/en/tutorial/tutorial-0.md:63
+#: docs/en/tutorial/tutorial-0.md:61
 msgid "To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:"
 msgstr "Para soportar el desarrollo local, necesitarás instalar algunos paquetes del sistema. La lista de paquetes necesarios varía en función de tu distribución:"
 
-#: docs/en/tutorial/tutorial-0.md:65
-msgid "Ubuntu / Debian"
-msgstr "Ubuntu / Debian"
+#: docs/en/tutorial/tutorial-0.md:63
+#, fuzzy
+msgid "Ubuntu 24.04+ / Debian 13+"
+msgstr "Ubuntu 24.04 o posterior / Debian 13 o posterior"
 
-#: docs/en/tutorial/tutorial-0.md:67
+#: docs/en/tutorial/tutorial-0.md:65
+#, fuzzy
 msgid ""
 "$ sudo apt update\n"
-"$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module"
+"$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository-2.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module"
 msgstr ""
 "$ sudo apt update\n"
-"$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module"
+"$ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository-2.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module"
 
-#: docs/en/tutorial/tutorial-0.md:72
+#: docs/en/tutorial/tutorial-0.md:70
 msgid "Red Hat / Fedora"
 msgstr "Red Hat / Fedora"
 
-#: docs/en/tutorial/tutorial-0.md:74
+#: docs/en/tutorial/tutorial-0.md:72
 msgid "$ sudo dnf install git gcc make pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel gtk3 libcanberra-gtk3"
 msgstr "$ sudo dnf install git gcc make pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel gtk3 libcanberra-gtk3"
 
-#: docs/en/tutorial/tutorial-0.md:78
+#: docs/en/tutorial/tutorial-0.md:76
 msgid "Arch / Manjaro"
 msgstr "Arch / Manjaro"
 
-#: docs/en/tutorial/tutorial-0.md:80
+#: docs/en/tutorial/tutorial-0.md:78
 msgid "$ sudo pacman -Syu git base-devel pkgconf python3 gobject-introspection cairo gtk3 libcanberra"
 msgstr "$ sudo pacman -Syu git base-devel pkgconf python3 gobject-introspection cairo gtk3 libcanberra"
 
-#: docs/en/tutorial/tutorial-0.md:84
+#: docs/en/tutorial/tutorial-0.md:82
 msgid "OpenSUSE Tumbleweed"
 msgstr "OpenSUSE Tumbleweed"
 
-#: docs/en/tutorial/tutorial-0.md:86
+#: docs/en/tutorial/tutorial-0.md:84
 msgid "$ sudo zypper install git patterns-devel-base-devel_basis pkgconf-pkg-config python3-devel gobject-introspection-devel cairo-devel gtk3 'typelib(Gtk)=3.0' libcanberra-gtk3-module"
 msgstr "$ sudo zypper install git patterns-devel-base-devel_basis pkgconf-pkg-config python3-devel gobject-introspection-devel cairo-devel gtk3 'typelib(Gtk)=3.0' libcanberra-gtk3-module"
 
-#: docs/en/tutorial/tutorial-0.md:90
+#: docs/en/tutorial/tutorial-0.md:88
 msgid "/// admonition | Other Linux distributions"
 msgstr "/// admonition | Otras distribuciones de Linux"
 
-#: docs/en/tutorial/tutorial-0.md:92
+#: docs/en/tutorial/tutorial-0.md:90
 msgid "If you're on a Linux distribution that isn't on this list, and isn't derived from one on this list (e.g., Linux Mint and Pop! OS are both Debian-derived distributions; AlmaLinux is Fedora-derived), you will probably have difficulty completing this tutorial. If Briefcase warns you that it \"Can't verify system packages\", you won't be able to complete this tutorial."
 msgstr "Si utilizas una distribución de Linux que no aparece en este listado y que no deriva de ninguna de las que aparecen en ella (p.ej., Linux Mint y Pop! OS son distribuciones derivadas de Debian; AlmaLinux derivada de Fedora), probablemente tendrás dificultades para completar este tutorial. Si Portafolio te avisa de que «No puede verificar los paquetes del sistema», no podrás completar este tutorial."
 
-#: docs/en/tutorial/tutorial-0.md:100
+#: docs/en/tutorial/tutorial-0.md:98
 msgid "Building BeeWare apps on Windows requires:"
 msgstr "Construir aplicaciones BeeWare en Windows requiere:"
 
+#: docs/en/tutorial/tutorial-0.md:100
+#, fuzzy
+msgid "**Git**, a version control system. You can install Git by running `winget install Git.Git`. Alternatively, you can download Git from from {1}[git-scm.com]{2}."
+msgstr "**Git**, un sistema de control de versiones. Puedes instalar Git ejecutando `winget install Git.Git`. También puedes descargar Git desde {1}[git-scm.com]{2}."
+
 #: docs/en/tutorial/tutorial-0.md:102
-msgid "**Git**, a version control system. You can download Git from from {1}[git-scm.com]{2}."
-msgstr "**Git**, un sistema de control de versiones. Puedes descargar Git desde {1}[git-scm.com]{2}."
+#, fuzzy
+msgid "**The .NET 10 Desktop Runtime**. You can install this by running `winget install Microsoft.DotNet.DesktopRuntime.10`. Alternatively, you can visit the [.NET 10 Downloads page]{1} to obtain the installer."
+msgstr "**El entorno de ejecución de .NET 10 para escritorio**. Puedes instalarlo ejecutando `winget install Microsoft.DotNet.DesktopRuntime.10`. También puedes visitar la [página de descargas de .NET 10]{1} para obtener el instalador."
 
 #: docs/en/tutorial/tutorial-0.md:104
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
