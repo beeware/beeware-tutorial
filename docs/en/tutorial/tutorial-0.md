@@ -97,7 +97,9 @@ If you're on a Linux distribution that isn't on this list, and isn't derived fro
 
 Building BeeWare apps on Windows requires:
 
-- **Git**, a version control system. You can download Git from from <nospell>[git-scm.com](https://git-scm.com/downloads/)</nospell>.
+- **Git**, a version control system. You can install Git by running `winget install Git.Git`. Alternatively, you can download Git from from <nospell>[git-scm.com](https://git-scm.com/downloads/)</nospell>.
+
+- **The .NET 10 Desktop Runtime**. You can install this by running `winget install Microsoft.DotNet.DesktopRuntime.10`. Alternatively, you can visit the [.NET 10 Downloads page](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) to obtain the installer.
 
 After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed.
 
