@@ -1822,6 +1822,15 @@ aria-label="Header"
 </li>
 </ul>
 <p>After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started <em>after</em> the install has completed.</p>
+<div class="admonition">
+<p class="admonition-title">WSL 2</p>
+<p>If you are using WSL 2, just follow the Linux instructions for your distribution.
+To work with GUI projects or the Android emulator, open the <code>C:\Users\%USERNAME%\.wslconfig</code> file and make sure that:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[wsl2]</span>
+<span class="na">guiApplications</span><span class="o">=</span><span class="s">true</span>
+</code></pre></div>
+<p>is set to true. Afterward, shut down WSL using <code>wsl --shutdown</code> in the Windows command prompt and restart it.</p>
+</div>
 </div>
 </div>
 </div>

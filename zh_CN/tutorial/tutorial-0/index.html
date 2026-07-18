@@ -1822,6 +1822,14 @@ aria-label="页眉"
 </li>
 </ul>
 <p>安装这些工具后，应确保重新启动任何终端会话。Windows 只在安装完成后开始的命令行<em>才</em>会暴露新安装的工具。</p>
+<div class="admonition">
+<p class="admonition-title">WSL 2</p>
+<p>If you are using WSL 2, just follow the Linux instructions for your distribution. To work with GUI projects or the Android emulator, open the <code>C:\Users\%USERNAME%\.wslconfig</code> file and make sure that:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[wsl2]</span>
+<span class="na">guiApplications</span><span class="o">=</span><span class="s">true</span>
+</code></pre></div>
+<p>is set to true. Afterward, shut down WSL using <code>wsl --shutdown</code> in the Windows command prompt and restart it.</p>
+</div>
 </div>
 </div>
 </div>
