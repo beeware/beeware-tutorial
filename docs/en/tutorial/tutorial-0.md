@@ -103,6 +103,21 @@ Building BeeWare apps on Windows requires:
 
 After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed.
 
+/// admonition | WSL 2  
+
+If you are using WSL, just follow the Linux instructions for your distribution.
+To work with GUI projects or the emulator, open the `C:\Users\%USERNAME%\.wslconfig` file and make sure that:
+
+```ini
+[wsl2]
+guiApplications=true
+```
+
+is set to true.         Afterward, shut down WSL using `wsl --shutdown` in the Windows command prompt and restart it.
+This instruction requires WSL 2 version.
+
+///
+
 ///
 
 ## Set up a virtual environment
