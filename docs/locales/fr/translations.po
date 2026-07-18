@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 14:02+0000\n"
+"POT-Creation-Date: 2026-07-18 12:14+0000\n"
 "PO-Revision-Date: 2026-04-06 20:09+0000\n"
 "Last-Translator: kursk140 <yannick.monnier.1@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/fr/>\n"
@@ -107,7 +107,7 @@ msgstr "/// admonition | Des traductions sont disponibles"
 msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
 msgstr "Si vous n'êtes pas à l'aise en français, vous pouvez trouver des traductions de ce didacticiel en [English]{1}, [Deutsch]{2}, [Español]{3}, [Português]{4}, and [汉语]{5}."
 
-#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:45 docs/en/tutorial/tutorial-0.md:57 docs/en/tutorial/tutorial-0.md:92 docs/en/tutorial/tutorial-0.md:94 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-0.md:121 docs/en/tutorial/tutorial-0.md:132 docs/en/tutorial/tutorial-0.md:161 docs/en/tutorial/tutorial-0.md:163 docs/en/tutorial/tutorial-0.md:171 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:135 docs/en/tutorial/tutorial-1.md:154 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-1.md:193 docs/en/tutorial/tutorial-1.md:199 docs/en/tutorial/tutorial-1.md:201 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-1.md:225 docs/en/tutorial/tutorial-1.md:227 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:153 docs/en/tutorial/tutorial-3.md:183 docs/en/tutorial/tutorial-3.md:200 docs/en/tutorial/tutorial-3.md:202 docs/en/tutorial/tutorial-3.md:231 docs/en/tutorial/tutorial-3.md:259 docs/en/tutorial/tutorial-3.md:283 docs/en/tutorial/tutorial-3.md:332 docs/en/tutorial/tutorial-3.md:429 docs/en/tutorial/tutorial-3.md:467 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:179 docs/en/tutorial/tutorial-7.md:181 docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:207 docs/en/tutorial/tutorial-7.md:231 docs/en/tutorial/tutorial-7.md:233 docs/en/tutorial/tutorial-7.md:239 docs/en/tutorial/tutorial-7.md:245 docs/en/tutorial/tutorial-7.md:255 docs/en/tutorial/tutorial-7.md:300 docs/en/tutorial/tutorial-7.md:302 docs/en/tutorial/tutorial-7.md:357 docs/en/tutorial/tutorial-7.md:396 docs/en/tutorial/tutorial-7.md:398 docs/en/tutorial/tutorial-7.md:473 docs/en/tutorial/tutorial-7.md:521 docs/en/tutorial/tutorial-7.md:548 docs/en/tutorial/tutorial-7.md:577 docs/en/tutorial/tutorial-7.md:600 docs/en/tutorial/tutorial-7.md:619 docs/en/tutorial/tutorial-7.md:643 docs/en/tutorial/tutorial-7.md:651 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
+#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:45 docs/en/tutorial/tutorial-0.md:57 docs/en/tutorial/tutorial-0.md:92 docs/en/tutorial/tutorial-0.md:94 docs/en/tutorial/tutorial-0.md:118 docs/en/tutorial/tutorial-0.md:120 docs/en/tutorial/tutorial-0.md:135 docs/en/tutorial/tutorial-0.md:146 docs/en/tutorial/tutorial-0.md:175 docs/en/tutorial/tutorial-0.md:177 docs/en/tutorial/tutorial-0.md:185 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:135 docs/en/tutorial/tutorial-1.md:154 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-1.md:193 docs/en/tutorial/tutorial-1.md:199 docs/en/tutorial/tutorial-1.md:201 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-1.md:225 docs/en/tutorial/tutorial-1.md:227 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:153 docs/en/tutorial/tutorial-3.md:183 docs/en/tutorial/tutorial-3.md:200 docs/en/tutorial/tutorial-3.md:202 docs/en/tutorial/tutorial-3.md:231 docs/en/tutorial/tutorial-3.md:259 docs/en/tutorial/tutorial-3.md:283 docs/en/tutorial/tutorial-3.md:332 docs/en/tutorial/tutorial-3.md:429 docs/en/tutorial/tutorial-3.md:467 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:179 docs/en/tutorial/tutorial-7.md:181 docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:207 docs/en/tutorial/tutorial-7.md:231 docs/en/tutorial/tutorial-7.md:233 docs/en/tutorial/tutorial-7.md:239 docs/en/tutorial/tutorial-7.md:245 docs/en/tutorial/tutorial-7.md:255 docs/en/tutorial/tutorial-7.md:300 docs/en/tutorial/tutorial-7.md:302 docs/en/tutorial/tutorial-7.md:357 docs/en/tutorial/tutorial-7.md:396 docs/en/tutorial/tutorial-7.md:398 docs/en/tutorial/tutorial-7.md:473 docs/en/tutorial/tutorial-7.md:521 docs/en/tutorial/tutorial-7.md:548 docs/en/tutorial/tutorial-7.md:577 docs/en/tutorial/tutorial-7.md:600 docs/en/tutorial/tutorial-7.md:619 docs/en/tutorial/tutorial-7.md:643 docs/en/tutorial/tutorial-7.md:651 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
 msgid "///"
 msgstr "///"
 
@@ -407,7 +407,7 @@ msgstr "Elle déclare que votre application doit accéder à l'appareil photo, e
 msgid "We can now generate and run the app:"
 msgstr "Nous pouvons maintenant générer et exécuter l'application :"
 
-#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:51 docs/en/tutorial/tutorial-0.md:112 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:177 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:138 docs/en/tutorial/tutorial-3.md:208 docs/en/tutorial/tutorial-3.md:295 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:157 docs/en/tutorial/tutorial-7.md:263 docs/en/tutorial/tutorial-7.md:527 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
+#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:51 docs/en/tutorial/tutorial-0.md:126 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:177 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:138 docs/en/tutorial/tutorial-3.md:208 docs/en/tutorial/tutorial-3.md:295 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:157 docs/en/tutorial/tutorial-7.md:263 docs/en/tutorial/tutorial-7.md:527 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
 msgid "/// tab | macOS"
 msgstr "/// tab | macOS"
 
@@ -527,7 +527,7 @@ msgstr ""
 "\n"
 "[helloworld] Application mise à jour."
 
-#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:123 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:137 docs/en/tutorial/tutorial-1.md:187 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:155 docs/en/tutorial/tutorial-3.md:233 docs/en/tutorial/tutorial-3.md:334 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:304 docs/en/tutorial/tutorial-7.md:550 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
+#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:137 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:137 docs/en/tutorial/tutorial-1.md:187 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:155 docs/en/tutorial/tutorial-3.md:233 docs/en/tutorial/tutorial-3.md:334 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:304 docs/en/tutorial/tutorial-7.md:550 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
 msgid "/// tab | Linux"
 msgstr "/// tab | Linux"
 
@@ -570,7 +570,7 @@ msgstr ""
 "\n"
 "[helloworld] Application mise à jour."
 
-#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:96 docs/en/tutorial/tutorial-0.md:134 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:156 docs/en/tutorial/tutorial-1.md:203 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:185 docs/en/tutorial/tutorial-3.md:261 docs/en/tutorial/tutorial-3.md:431 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:209 docs/en/tutorial/tutorial-7.md:359 docs/en/tutorial/tutorial-7.md:579 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
+#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:96 docs/en/tutorial/tutorial-0.md:148 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:156 docs/en/tutorial/tutorial-1.md:203 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:185 docs/en/tutorial/tutorial-3.md:261 docs/en/tutorial/tutorial-3.md:431 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:209 docs/en/tutorial/tutorial-7.md:359 docs/en/tutorial/tutorial-7.md:579 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
 msgid "/// tab | Windows"
 msgstr "/// tab | Windows"
 
@@ -2315,15 +2315,39 @@ msgstr "**Le runtime .NET 10 pour ordinateur de bureau**. Vous pouvez l'installe
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
 msgstr "Après avoir installé ces outils, assurez-vous de redémarrer toutes les sessions de terminal. Sous Windows, les nouveaux outils installés ne seront accessibles qu'aux terminaux démarrés *après* la fin de l'installation."
 
+#: docs/en/tutorial/tutorial-0.md:106
+#, fuzzy
+msgid "/// admonition | WSL 2"
+msgstr "/// admonition | WSL 2"
+
 #: docs/en/tutorial/tutorial-0.md:108
+#, fuzzy
+msgid "If you are using WSL 2, just follow the Linux instructions for your distribution. To work with GUI projects or the Android emulator, open the `C:\\Users\\%USERNAME%\\.wslconfig` file and make sure that:"
+msgstr "Si vous utilisez WSL 2, il vous suffit de suivre les instructions Linux correspondant à votre distribution. Pour travailler sur des projets avec interface graphique ou avec l'émulateur Android, ouvrez le fichier `C:\\Users\\%USERNAME%\\.wslconfig` et assurez-vous que :"
+
+#: docs/en/tutorial/tutorial-0.md:111
+#, fuzzy
+msgid ""
+"[wsl2]\n"
+"guiApplications=true"
+msgstr ""
+"[wsl2]\n"
+"guiApplications=true"
+
+#: docs/en/tutorial/tutorial-0.md:116
+#, fuzzy
+msgid "is set to true. Afterward, shut down WSL using `wsl --shutdown` in the Windows command prompt and restart it."
+msgstr "est défini sur « true ». Ensuite, arrêtez WSL à l'aide de la commande `wsl --shutdown` dans l'invite de commandes Windows, puis redémarrez-le."
+
+#: docs/en/tutorial/tutorial-0.md:122
 msgid "Set up a virtual environment"
 msgstr "Mise en place d'un environnement virtuel"
 
-#: docs/en/tutorial/tutorial-0.md:110
+#: docs/en/tutorial/tutorial-0.md:124
 msgid "We're now going to create a virtual environment - a \"sandbox\" that we can use to isolate our work on this tutorial from our main Python installation. If we install packages into the virtual environment, our main Python installation (and any other Python projects on our computer) won't be affected. If we make a complete mess of our virtual environment, we'll be able to simply delete it and start again, without affecting any other Python project on our computer, and without the need to re-install Python."
 msgstr "Nous allons maintenant créer un environnement virtuel – un \"bac à sable\" (sandbox) que nous pouvons utiliser pour isoler notre travail sur ce tutoriel de notre installation Python principale. Si nous installons des paquets dans l'environnement virtuel, notre installation principale de Python (et tout autre projet Python sur notre ordinateur) ne sera pas affectée. Si nous provoquons un désordre complet dans notre environnement virtuel, nous pourrons simplement l'effacer et recommencer, sans affecter aucun autre projet Python sur notre ordinateur, et sans avoir besoin de réinstaller Python."
 
-#: docs/en/tutorial/tutorial-0.md:114 docs/en/tutorial/tutorial-0.md:125
+#: docs/en/tutorial/tutorial-0.md:128 docs/en/tutorial/tutorial-0.md:139
 #, fuzzy
 msgid ""
 "$ mkdir beeware-tutorial\n"
@@ -2336,7 +2360,7 @@ msgstr ""
 "$ python3 -m venv beeware-venv\n"
 "$ source beeware-venv/bin/activate"
 
-#: docs/en/tutorial/tutorial-0.md:136
+#: docs/en/tutorial/tutorial-0.md:150
 #, fuzzy
 msgid ""
 "C:\\...>md beeware-tutorial\n"
@@ -2349,65 +2373,65 @@ msgstr ""
 "C:\\...>py -3.12 -m venv beeware-venv\n"
 "C:\\...>beeware-venv\\Scripts\\activate"
 
-#: docs/en/tutorial/tutorial-0.md:143
+#: docs/en/tutorial/tutorial-0.md:157
 #, fuzzy
 msgid "If you're not using Python 3.12, replace the `-3.12` in these instructions with the version number that you are using."
 msgstr "Si vous n'utilisez pas Python 3.12, remplacez le `-3.12` dans ces instructions par le numéro de version que vous utilisez."
 
-#: docs/en/tutorial/tutorial-0.md:145
+#: docs/en/tutorial/tutorial-0.md:159
 #, fuzzy
 msgid "/// admonition | Errors running PowerShell Scripts"
 msgstr "/// admonition | Erreurs lors de l'exécution de scripts PowerShell"
 
-#: docs/en/tutorial/tutorial-0.md:147
+#: docs/en/tutorial/tutorial-0.md:161
 msgid "If you're using PowerShell, and you receive the error:"
 msgstr "Si vous utilisez PowerShell et que vous recevez l'erreur :"
 
-#: docs/en/tutorial/tutorial-0.md:149
+#: docs/en/tutorial/tutorial-0.md:163
 #, fuzzy
 msgid "File C:\\...\\beeware-tutorial\\beeware-venv\\Scripts\\activate.ps1 cannot be loaded because running scripts is disabled on this system."
 msgstr "Le fichier C:\\...\\beeware-tutorial\\beeware-venv\\Scripts\\activate.ps1 ne peut pas être chargé car l'exécution des scripts est désactivée sur ce système."
 
-#: docs/en/tutorial/tutorial-0.md:153
+#: docs/en/tutorial/tutorial-0.md:167
 #, fuzzy
 msgid "Your Windows account doesn't have permission to run scripts. To fix this:"
 msgstr "Votre compte Windows n'a pas l'autorisation d'exécuter des scripts. Pour résoudre ce problème :"
 
-#: docs/en/tutorial/tutorial-0.md:155
+#: docs/en/tutorial/tutorial-0.md:169
 #, fuzzy
 msgid "Run [Windows PowerShell as Administrator]{1}."
 msgstr "Exécutez [Windows PowerShell en tant qu'administrateur]{1}."
 
-#: docs/en/tutorial/tutorial-0.md:156
+#: docs/en/tutorial/tutorial-0.md:170
 msgid "Run `set-executionpolicy RemoteSigned`"
 msgstr "Exécutez `set-executionpolicy RemoteSigned`"
 
-#: docs/en/tutorial/tutorial-0.md:157
+#: docs/en/tutorial/tutorial-0.md:171
 msgid "Select `Y` to change the execution policy."
 msgstr "Sélectionnez `O` pour modifier la politique d'exécution."
 
-#: docs/en/tutorial/tutorial-0.md:159
+#: docs/en/tutorial/tutorial-0.md:173
 msgid "Once you've done this you can rerun `beeware-venv\\Scripts\\activate.ps1` in your original PowerShell session (or a new session in the same directory)."
 msgstr "Une fois que vous avez fait cela, vous pouvez exécuter à nouveau `beeware-venv\\Scripts\\activate.ps1` dans votre session PowerShell d'origine (ou dans une nouvelle session dans le même répertoire)."
 
-#: docs/en/tutorial/tutorial-0.md:165
+#: docs/en/tutorial/tutorial-0.md:179
 msgid "If this worked, your prompt should now be changed - it should have a `(beeware-venv)` prefix. This lets you know that you're currently in your BeeWare virtual environment. Whenever you're working on this tutorial, you should make sure your virtual environment is activated. If it isn't, re-run the last command (the `activate` command) to re-activate your environment."
 msgstr "Si cela a fonctionné, votre prompt devrait maintenant être modifié – il devrait avoir un préfixe `(beeware-venv)`. Cela vous permet de savoir que vous êtes actuellement dans votre environnement virtuel BeeWare. Chaque fois que vous travaillerez sur ce tutoriel, vous devrez vous assurer que votre environnement virtuel est activé. Si ce n'est pas le cas, relancez la dernière commande (la commande `activate`) pour réactiver votre environnement."
 
-#: docs/en/tutorial/tutorial-0.md:167
+#: docs/en/tutorial/tutorial-0.md:181
 #, fuzzy
 msgid "/// admonition | Alternative virtual environments"
 msgstr "/// admonition | Environnements virtuels alternatifs"
 
-#: docs/en/tutorial/tutorial-0.md:169
+#: docs/en/tutorial/tutorial-0.md:183
 msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of `virtualenv`, a predecessor to Python's built in `venv` module. As with Python installs -if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to `venv` and the system Python."
 msgstr "Si vous utilisez Anaconda ou miniconda, vous êtes peut-être plus familier avec l'utilisation des environnements conda. Vous avez peut-être aussi entendu parler de `virtualenv`, un prédécesseur du module intégré `venv` de Python. Comme pour les installations de Python, si vous êtes sous macOS ou Windows, *la manière* dont vous créez votre environnement virtuel n'a pas d'importance, tant que vous en avez un. Si vous êtes sous Linux, vous devriez vous en tenir à `venv` et au système Python."
 
-#: docs/en/tutorial/tutorial-0.md:173 docs/en/tutorial/tutorial-1.md:231 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:469 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:153 docs/en/tutorial/tutorial-7.md:667 docs/en/tutorial/tutorial-8.md:255
+#: docs/en/tutorial/tutorial-0.md:187 docs/en/tutorial/tutorial-1.md:231 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:469 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:153 docs/en/tutorial/tutorial-7.md:667 docs/en/tutorial/tutorial-8.md:255
 msgid "Next steps"
 msgstr "Étapes suivantes"
 
-#: docs/en/tutorial/tutorial-0.md:175
+#: docs/en/tutorial/tutorial-0.md:189
 #, fuzzy
 msgid "We've now set up our environment. We're ready to [create our first BeeWare application]{1}."
 msgstr "Nous avons maintenant mis en place notre environnement. Nous sommes prêts à [créer notre première application BeeWare]{1}."
