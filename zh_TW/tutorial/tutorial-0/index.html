@@ -1824,11 +1824,11 @@ aria-label="頁首"
 <p>安裝這些工具後，您應該確保重新啟動所有終端會話。 Windows 只會公開安裝完成 <em>之後</em> 啟動的新安裝的工具終端。</p>
 <div class="admonition">
 <p class="admonition-title">WSL 2</p>
-<p>If you are using WSL 2, just follow the Linux instructions for your distribution. To work with GUI projects or the Android emulator, open the <code>C:\Users\%USERNAME%\.wslconfig</code> file and make sure that:</p>
+<p>如果您使用的是 WSL 2，請直接依照您所使用發行版的 Linux 操作說明進行。若要處理 GUI 專案或使用 Android 模擬器，請開啟 <code>C:\Users\%USERNAME%\.wslconfig</code> 檔案，並確認以下事項：</p>
 <div class="highlight"><pre><span></span><code><span class="k">[wsl2]</span>
 <span class="na">guiApplications</span><span class="o">=</span><span class="s">true</span>
 </code></pre></div>
-<p>is set to true. Afterward, shut down WSL using <code>wsl --shutdown</code> in the Windows command prompt and restart it.</p>
+<p>將其設定為 true。之後，在 Windows 命令提示字元中使用 <code>wsl --shutdown</code> 關閉 WSL，並重新啟動它。</p>
 </div>
 </div>
 </div>
