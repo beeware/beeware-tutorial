@@ -191,15 +191,19 @@ async def say_hello(self, widget):
     )
 ```
 
-/// admonition | Android certificate verification
+/// admonition | SSL errors on Android
 
-On Android, the `truststore` dependency used by `httpx2` is currently unable to locate the system certificates. If you run this code on Android, import `ssl` and pass `verify=ssl.create_default_context()` when creating the client:
+There is currently a [known bug](https://github.com/sethmlarson/truststore/issues/217) that breaks `httpx2` on Android - you'll get an SSL verification error. 
+
+To work around this, import the `ssl` library (part of the Python standard library) into your app, and add a `verify` arugment when creating the client:
 
 ```python
+import ssl
+
 async with httpx2.AsyncClient(verify=ssl.create_default_context()) as client:
 ```
 
-This argument is not required on other platforms. See [truststore issue #217](https://github.com/sethmlarson/truststore/issues/217) for more information.
+This argument is not required on other platforms.
 
 ///
 
