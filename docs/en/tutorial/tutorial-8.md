@@ -12,21 +12,21 @@ This is a toy app, so we don't have a *real* API to work with, so we'll use a sa
 
 The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a "normal browser user" you're probably used to taking these details for granted, as a browser manages them for you.
 
-As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called [`httpx`](https://www.python-httpx.org) - to access a simple API.
+As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called [`httpx2`](https://httpx2.pydantic.dev/) - to access a simple API.
 
-Let's add an `httpx` API call to our app. First, as with `faker` in the [previous step](tutorial-7.md), we need to tell briefcase to install `httpx` when it builds our app. Modify the `requires` setting in our `pyproject.toml` to include the new requirement:
+Let's add an `httpx2` API call to our app. First, as with `faker` in the [previous step](tutorial-7.md), we need to tell briefcase to install `httpx2` when it builds our app. Modify the `requires` setting in our `pyproject.toml` to include the new requirement:
 
 ```python
 requires = [
     "faker",
-    "httpx",
+    "httpx2",
 ]
 ```
 
-Add an import to the top of the `app.py` to import `httpx`:
+Add an import to the top of the `app.py` to import `httpx2`:
 
 ```python
-import httpx
+import httpx2
 ```
 
 Then modify the `say_hello()` callback so it looks like this:
@@ -34,7 +34,7 @@ Then modify the `say_hello()` callback so it looks like this:
 ```python
 async def say_hello(self, widget):
     fake = faker.Faker()
-    with httpx.Client() as client:
+    with httpx2.Client() as client:
         response = client.get("https://tutorial.beeware.org/tutorial/message.json")
 
     payload = response.json()
@@ -178,7 +178,7 @@ To make our tutorial asynchronous, modify the `say_hello()` event handler so it 
 ```python
 async def say_hello(self, widget):
     fake = faker.Faker()
-    async with httpx.AsyncClient() as client:
+    async with httpx2.AsyncClient() as client:
         response = await client.get("https://jsonplaceholder.typicode.com/posts/42")
 
     payload = response.json()
@@ -191,9 +191,21 @@ async def say_hello(self, widget):
     )
 ```
 
+/// admonition | Android certificate verification
+
+On Android, the `truststore` dependency used by `httpx2` is currently unable to locate the system certificates. If you run this code on Android, import `ssl` and pass `verify=ssl.create_default_context()` when creating the client:
+
+```python
+async with httpx2.AsyncClient(verify=ssl.create_default_context()) as client:
+```
+
+This argument is not required on other platforms. See [truststore issue #217](https://github.com/sethmlarson/truststore/issues/217) for more information.
+
+///
+
 There are only three changes to this callback from the previous version:
 
-1. The client that is created is an asynchronous `AsyncClient()`, rather than a synchronous `Client()`. This tells `httpx` that it should operate in asynchronous mode, rather than synchronous mode.
+1. The client that is created is an asynchronous `AsyncClient()`, rather than a synchronous `Client()`. This tells `httpx2` that it should operate in asynchronous mode, rather than synchronous mode.
 2. The context manager used to create the client is marked as `async`. This tells Python that there is an opportunity to release control as the context manager is entered and exited.
 3. The `get` call is made with an `await` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop. We've seen this keyword before - we also use `await` when displaying the dialog box. The reason for that usage is the same as it is for the HTTP request - we need to tell the app that while the dialog is displayed, and we're waiting for the user to push a button, it's OK to release control back to the event loop.
 
@@ -208,7 +220,7 @@ If you save these changes and re-run the app in development mode, there won't be
 - If you move/resize the app window while waiting for the dialog to appear, the window will redraw.
 - If you try to open an app menu, the menu will appear immediately.
 
-We can now run the full app. However, as we've added an extra requirement (`httpx`) we also need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:
+We can now run the full app. However, as we've added an extra requirement (`httpx2`) we also need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:
 
 /// tab | macOS
 
