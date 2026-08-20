@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-02 22:17+0000\n"
+"POT-Creation-Date: 2026-08-20 01:39+0000\n"
 "PO-Revision-Date: 2026-07-18 16:01+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.15\n"
+"X-Generator: Translate Toolkit 3.19.17\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -106,7 +106,7 @@ msgstr "/// admonition | As traduções estão disponíveis"
 msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
 msgstr "Se não se sente confortável com Inglês, as traduções deste tutorial estão disponíveis em [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, e [中文(繁體)]{7}."
 
-#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:45 docs/en/tutorial/tutorial-0.md:57 docs/en/tutorial/tutorial-0.md:92 docs/en/tutorial/tutorial-0.md:94 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-0.md:121 docs/en/tutorial/tutorial-0.md:132 docs/en/tutorial/tutorial-0.md:161 docs/en/tutorial/tutorial-0.md:163 docs/en/tutorial/tutorial-0.md:171 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:135 docs/en/tutorial/tutorial-1.md:154 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-1.md:193 docs/en/tutorial/tutorial-1.md:199 docs/en/tutorial/tutorial-1.md:201 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-1.md:225 docs/en/tutorial/tutorial-1.md:227 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:153 docs/en/tutorial/tutorial-3.md:183 docs/en/tutorial/tutorial-3.md:200 docs/en/tutorial/tutorial-3.md:202 docs/en/tutorial/tutorial-3.md:231 docs/en/tutorial/tutorial-3.md:259 docs/en/tutorial/tutorial-3.md:283 docs/en/tutorial/tutorial-3.md:332 docs/en/tutorial/tutorial-3.md:429 docs/en/tutorial/tutorial-3.md:467 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:179 docs/en/tutorial/tutorial-7.md:181 docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:207 docs/en/tutorial/tutorial-7.md:231 docs/en/tutorial/tutorial-7.md:233 docs/en/tutorial/tutorial-7.md:239 docs/en/tutorial/tutorial-7.md:245 docs/en/tutorial/tutorial-7.md:255 docs/en/tutorial/tutorial-7.md:300 docs/en/tutorial/tutorial-7.md:302 docs/en/tutorial/tutorial-7.md:357 docs/en/tutorial/tutorial-7.md:396 docs/en/tutorial/tutorial-7.md:398 docs/en/tutorial/tutorial-7.md:473 docs/en/tutorial/tutorial-7.md:521 docs/en/tutorial/tutorial-7.md:548 docs/en/tutorial/tutorial-7.md:577 docs/en/tutorial/tutorial-7.md:600 docs/en/tutorial/tutorial-7.md:619 docs/en/tutorial/tutorial-7.md:643 docs/en/tutorial/tutorial-7.md:651 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:219 docs/en/tutorial/tutorial-8.md:227 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251
+#: docs/en/index.md:13 docs/en/index.md:25 docs/en/index.md:37 docs/en/tutorial/topics/camera-access.md:15 docs/en/tutorial/topics/camera-access.md:123 docs/en/tutorial/topics/camera-access.md:133 docs/en/tutorial/topics/custom-icons.md:13 docs/en/tutorial/topics/custom-icons.md:46 docs/en/tutorial/topics/custom-icons.md:70 docs/en/tutorial/topics/custom-icons.md:89 docs/en/tutorial/topics/custom-icons.md:127 docs/en/tutorial/topics/custom-icons.md:161 docs/en/tutorial/topics/custom-icons.md:190 docs/en/tutorial/topics/custom-icons.md:220 docs/en/tutorial/topics/custom-icons.md:252 docs/en/tutorial/topics/custom-icons.md:279 docs/en/tutorial/topics/custom-icons.md:323 docs/en/tutorial/topics/custom-icons.md:325 docs/en/tutorial/topics/custom-icons.md:361 docs/en/tutorial/topics/custom-icons.md:367 docs/en/tutorial/topics/custom-icons.md:392 docs/en/tutorial/topics/custom-icons.md:409 docs/en/tutorial/topics/custom-icons.md:426 docs/en/tutorial/topics/custom-icons.md:442 docs/en/tutorial/topics/custom-icons.md:458 docs/en/tutorial/topics/custom-icons.md:472 docs/en/tutorial/topics/testing.md:42 docs/en/tutorial/topics/testing.md:70 docs/en/tutorial/topics/testing.md:98 docs/en/tutorial/topics/testing.md:141 docs/en/tutorial/topics/testing.md:160 docs/en/tutorial/topics/testing.md:179 docs/en/tutorial/topics/testing.md:228 docs/en/tutorial/topics/testing.md:264 docs/en/tutorial/topics/testing.md:298 docs/en/tutorial/topics/testing.md:333 docs/en/tutorial/topics/testing.md:353 docs/en/tutorial/topics/testing.md:373 docs/en/tutorial/topics/testing.md:423 docs/en/tutorial/topics/testing.md:457 docs/en/tutorial/topics/testing.md:496 docs/en/tutorial/tutorial-0.md:25 docs/en/tutorial/tutorial-0.md:37 docs/en/tutorial/tutorial-0.md:45 docs/en/tutorial/tutorial-0.md:57 docs/en/tutorial/tutorial-0.md:92 docs/en/tutorial/tutorial-0.md:94 docs/en/tutorial/tutorial-0.md:106 docs/en/tutorial/tutorial-0.md:121 docs/en/tutorial/tutorial-0.md:132 docs/en/tutorial/tutorial-0.md:161 docs/en/tutorial/tutorial-0.md:163 docs/en/tutorial/tutorial-0.md:171 docs/en/tutorial/tutorial-1.md:15 docs/en/tutorial/tutorial-1.md:27 docs/en/tutorial/tutorial-1.md:29 docs/en/tutorial/tutorial-1.md:41 docs/en/tutorial/tutorial-1.md:43 docs/en/tutorial/tutorial-1.md:55 docs/en/tutorial/tutorial-1.md:63 docs/en/tutorial/tutorial-1.md:71 docs/en/tutorial/tutorial-1.md:135 docs/en/tutorial/tutorial-1.md:154 docs/en/tutorial/tutorial-1.md:173 docs/en/tutorial/tutorial-1.md:183 docs/en/tutorial/tutorial-1.md:185 docs/en/tutorial/tutorial-1.md:193 docs/en/tutorial/tutorial-1.md:199 docs/en/tutorial/tutorial-1.md:201 docs/en/tutorial/tutorial-1.md:209 docs/en/tutorial/tutorial-1.md:225 docs/en/tutorial/tutorial-1.md:227 docs/en/tutorial/tutorial-2.md:83 docs/en/tutorial/tutorial-2.md:111 docs/en/tutorial/tutorial-2.md:166 docs/en/tutorial/tutorial-2.md:239 docs/en/tutorial/tutorial-2.md:250 docs/en/tutorial/tutorial-2.md:261 docs/en/tutorial/tutorial-2.md:273 docs/en/tutorial/tutorial-2.md:275 docs/en/tutorial/tutorial-2.md:283 docs/en/tutorial/tutorial-2.md:285 docs/en/tutorial/tutorial-2.md:293 docs/en/tutorial/tutorial-2.md:295 docs/en/tutorial/tutorial-3.md:40 docs/en/tutorial/tutorial-3.md:83 docs/en/tutorial/tutorial-3.md:85 docs/en/tutorial/tutorial-3.md:111 docs/en/tutorial/tutorial-3.md:153 docs/en/tutorial/tutorial-3.md:183 docs/en/tutorial/tutorial-3.md:200 docs/en/tutorial/tutorial-3.md:202 docs/en/tutorial/tutorial-3.md:231 docs/en/tutorial/tutorial-3.md:259 docs/en/tutorial/tutorial-3.md:283 docs/en/tutorial/tutorial-3.md:332 docs/en/tutorial/tutorial-3.md:429 docs/en/tutorial/tutorial-3.md:467 docs/en/tutorial/tutorial-4.md:35 docs/en/tutorial/tutorial-4.md:37 docs/en/tutorial/tutorial-4.md:45 docs/en/tutorial/tutorial-4.md:47 docs/en/tutorial/tutorial-4.md:55 docs/en/tutorial/tutorial-4.md:57 docs/en/tutorial/tutorial-4.md:79 docs/en/tutorial/tutorial-4.md:102 docs/en/tutorial/tutorial-4.md:118 docs/en/tutorial/tutorial-4.md:128 docs/en/tutorial/tutorial-4.md:181 docs/en/tutorial/tutorial-4.md:210 docs/en/tutorial/tutorial-4.md:228 docs/en/tutorial/tutorial-5/android.md:38 docs/en/tutorial/tutorial-5/android.md:67 docs/en/tutorial/tutorial-5/android.md:96 docs/en/tutorial/tutorial-5/android.md:122 docs/en/tutorial/tutorial-5/android.md:142 docs/en/tutorial/tutorial-5/android.md:162 docs/en/tutorial/tutorial-5/android.md:168 docs/en/tutorial/tutorial-5/android.md:188 docs/en/tutorial/tutorial-5/android.md:202 docs/en/tutorial/tutorial-5/android.md:216 docs/en/tutorial/tutorial-5/android.md:228 docs/en/tutorial/tutorial-5/android.md:238 docs/en/tutorial/tutorial-5/android.md:248 docs/en/tutorial/tutorial-5/android.md:254 docs/en/tutorial/tutorial-5/android.md:264 docs/en/tutorial/tutorial-5/android.md:299 docs/en/tutorial/tutorial-5/android.md:315 docs/en/tutorial/tutorial-5/android.md:331 docs/en/tutorial/tutorial-5/android.md:341 docs/en/tutorial/tutorial-5/iOS.md:101 docs/en/tutorial/tutorial-6.md:11 docs/en/tutorial/tutorial-6.md:55 docs/en/tutorial/tutorial-6.md:95 docs/en/tutorial/tutorial-6.md:135 docs/en/tutorial/tutorial-7.md:54 docs/en/tutorial/tutorial-7.md:76 docs/en/tutorial/tutorial-7.md:98 docs/en/tutorial/tutorial-7.md:104 docs/en/tutorial/tutorial-7.md:110 docs/en/tutorial/tutorial-7.md:179 docs/en/tutorial/tutorial-7.md:181 docs/en/tutorial/tutorial-7.md:205 docs/en/tutorial/tutorial-7.md:207 docs/en/tutorial/tutorial-7.md:231 docs/en/tutorial/tutorial-7.md:233 docs/en/tutorial/tutorial-7.md:239 docs/en/tutorial/tutorial-7.md:245 docs/en/tutorial/tutorial-7.md:255 docs/en/tutorial/tutorial-7.md:300 docs/en/tutorial/tutorial-7.md:302 docs/en/tutorial/tutorial-7.md:357 docs/en/tutorial/tutorial-7.md:396 docs/en/tutorial/tutorial-7.md:398 docs/en/tutorial/tutorial-7.md:473 docs/en/tutorial/tutorial-7.md:521 docs/en/tutorial/tutorial-7.md:548 docs/en/tutorial/tutorial-7.md:577 docs/en/tutorial/tutorial-7.md:600 docs/en/tutorial/tutorial-7.md:619 docs/en/tutorial/tutorial-7.md:643 docs/en/tutorial/tutorial-7.md:651 docs/en/tutorial/tutorial-8.md:76 docs/en/tutorial/tutorial-8.md:78 docs/en/tutorial/tutorial-8.md:97 docs/en/tutorial/tutorial-8.md:99 docs/en/tutorial/tutorial-8.md:118 docs/en/tutorial/tutorial-8.md:120 docs/en/tutorial/tutorial-8.md:126 docs/en/tutorial/tutorial-8.md:132 docs/en/tutorial/tutorial-8.md:208 docs/en/tutorial/tutorial-8.md:235 docs/en/tutorial/tutorial-8.md:243 docs/en/tutorial/tutorial-8.md:251 docs/en/tutorial/tutorial-8.md:259 docs/en/tutorial/tutorial-8.md:267
 msgid "///"
 msgstr "///"
 
@@ -400,7 +400,7 @@ msgstr "Isso declara que a sua aplicação precisa aceder à câmera, e fornece 
 msgid "We can now generate and run the app:"
 msgstr "Agora podemos gerar e executar a aplicação:"
 
-#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:51 docs/en/tutorial/tutorial-0.md:112 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:177 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:138 docs/en/tutorial/tutorial-3.md:208 docs/en/tutorial/tutorial-3.md:295 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:157 docs/en/tutorial/tutorial-7.md:263 docs/en/tutorial/tutorial-7.md:527 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:213
+#: docs/en/tutorial/topics/camera-access.md:115 docs/en/tutorial/topics/custom-icons.md:29 docs/en/tutorial/topics/custom-icons.md:196 docs/en/tutorial/topics/custom-icons.md:377 docs/en/tutorial/topics/testing.md:19 docs/en/tutorial/topics/testing.md:124 docs/en/tutorial/topics/testing.md:196 docs/en/tutorial/topics/testing.md:315 docs/en/tutorial/topics/testing.md:381 docs/en/tutorial/tutorial-0.md:9 docs/en/tutorial/tutorial-0.md:51 docs/en/tutorial/tutorial-0.md:112 docs/en/tutorial/tutorial-1.md:9 docs/en/tutorial/tutorial-1.md:49 docs/en/tutorial/tutorial-1.md:118 docs/en/tutorial/tutorial-1.md:177 docs/en/tutorial/tutorial-2.md:230 docs/en/tutorial/tutorial-2.md:267 docs/en/tutorial/tutorial-3.md:13 docs/en/tutorial/tutorial-3.md:138 docs/en/tutorial/tutorial-3.md:208 docs/en/tutorial/tutorial-3.md:295 docs/en/tutorial/tutorial-4.md:29 docs/en/tutorial/tutorial-4.md:65 docs/en/tutorial/tutorial-4.md:160 docs/en/tutorial/tutorial-5/android.md:11 docs/en/tutorial/tutorial-5/android.md:104 docs/en/tutorial/tutorial-5/android.md:176 docs/en/tutorial/tutorial-5/android.md:285 docs/en/tutorial/tutorial-6.md:17 docs/en/tutorial/tutorial-7.md:34 docs/en/tutorial/tutorial-7.md:157 docs/en/tutorial/tutorial-7.md:263 docs/en/tutorial/tutorial-7.md:527 docs/en/tutorial/tutorial-8.md:59 docs/en/tutorial/tutorial-8.md:229
 msgid "/// tab | macOS"
 msgstr "/// tab | macOS"
 
@@ -414,7 +414,7 @@ msgstr ""
 "(beeware-venv) $ briefcase build\n"
 "(beeware-venv) $ briefcase run"
 
-#: docs/en/tutorial/topics/camera-access.md:125 docs/en/tutorial/topics/custom-icons.md:91 docs/en/tutorial/topics/custom-icons.md:281 docs/en/tutorial/topics/custom-icons.md:428 docs/en/tutorial/tutorial-7.md:100 docs/en/tutorial/tutorial-7.md:235 docs/en/tutorial/tutorial-7.md:400 docs/en/tutorial/tutorial-7.md:602 docs/en/tutorial/tutorial-8.md:122 docs/en/tutorial/tutorial-8.md:237
+#: docs/en/tutorial/topics/camera-access.md:125 docs/en/tutorial/topics/custom-icons.md:91 docs/en/tutorial/topics/custom-icons.md:281 docs/en/tutorial/topics/custom-icons.md:428 docs/en/tutorial/tutorial-7.md:100 docs/en/tutorial/tutorial-7.md:235 docs/en/tutorial/tutorial-7.md:400 docs/en/tutorial/tutorial-7.md:602 docs/en/tutorial/tutorial-8.md:122 docs/en/tutorial/tutorial-8.md:253
 msgid "/// tab | Android"
 msgstr "/// tab | Android"
 
@@ -516,7 +516,7 @@ msgstr ""
 "\n"
 "[helloworld] Aplicação atualizada."
 
-#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:123 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:137 docs/en/tutorial/tutorial-1.md:187 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:155 docs/en/tutorial/tutorial-3.md:233 docs/en/tutorial/tutorial-3.md:334 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:304 docs/en/tutorial/tutorial-7.md:550 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:221
+#: docs/en/tutorial/topics/custom-icons.md:48 docs/en/tutorial/topics/custom-icons.md:222 docs/en/tutorial/topics/custom-icons.md:394 docs/en/tutorial/topics/testing.md:44 docs/en/tutorial/topics/testing.md:143 docs/en/tutorial/topics/testing.md:230 docs/en/tutorial/topics/testing.md:335 docs/en/tutorial/topics/testing.md:425 docs/en/tutorial/tutorial-0.md:27 docs/en/tutorial/tutorial-0.md:59 docs/en/tutorial/tutorial-0.md:123 docs/en/tutorial/tutorial-1.md:17 docs/en/tutorial/tutorial-1.md:57 docs/en/tutorial/tutorial-1.md:137 docs/en/tutorial/tutorial-1.md:187 docs/en/tutorial/tutorial-2.md:241 docs/en/tutorial/tutorial-2.md:277 docs/en/tutorial/tutorial-3.md:42 docs/en/tutorial/tutorial-3.md:155 docs/en/tutorial/tutorial-3.md:233 docs/en/tutorial/tutorial-3.md:334 docs/en/tutorial/tutorial-4.md:39 docs/en/tutorial/tutorial-4.md:81 docs/en/tutorial/tutorial-4.md:183 docs/en/tutorial/tutorial-5/android.md:40 docs/en/tutorial/tutorial-5/android.md:124 docs/en/tutorial/tutorial-5/android.md:190 docs/en/tutorial/tutorial-5/android.md:301 docs/en/tutorial/tutorial-6.md:57 docs/en/tutorial/tutorial-7.md:56 docs/en/tutorial/tutorial-7.md:183 docs/en/tutorial/tutorial-7.md:304 docs/en/tutorial/tutorial-7.md:550 docs/en/tutorial/tutorial-8.md:80 docs/en/tutorial/tutorial-8.md:237
 msgid "/// tab | Linux"
 msgstr "/// tab | Linux"
 
@@ -558,7 +558,7 @@ msgstr ""
 "\n"
 "[helloworld] Aplicação atualizada."
 
-#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:96 docs/en/tutorial/tutorial-0.md:134 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:156 docs/en/tutorial/tutorial-1.md:203 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:185 docs/en/tutorial/tutorial-3.md:261 docs/en/tutorial/tutorial-3.md:431 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:209 docs/en/tutorial/tutorial-7.md:359 docs/en/tutorial/tutorial-7.md:579 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:229
+#: docs/en/tutorial/topics/custom-icons.md:72 docs/en/tutorial/topics/custom-icons.md:254 docs/en/tutorial/topics/custom-icons.md:411 docs/en/tutorial/topics/testing.md:72 docs/en/tutorial/topics/testing.md:162 docs/en/tutorial/topics/testing.md:266 docs/en/tutorial/topics/testing.md:355 docs/en/tutorial/topics/testing.md:459 docs/en/tutorial/tutorial-0.md:39 docs/en/tutorial/tutorial-0.md:96 docs/en/tutorial/tutorial-0.md:134 docs/en/tutorial/tutorial-1.md:31 docs/en/tutorial/tutorial-1.md:65 docs/en/tutorial/tutorial-1.md:156 docs/en/tutorial/tutorial-1.md:203 docs/en/tutorial/tutorial-2.md:252 docs/en/tutorial/tutorial-2.md:287 docs/en/tutorial/tutorial-3.md:87 docs/en/tutorial/tutorial-3.md:185 docs/en/tutorial/tutorial-3.md:261 docs/en/tutorial/tutorial-3.md:431 docs/en/tutorial/tutorial-4.md:49 docs/en/tutorial/tutorial-4.md:104 docs/en/tutorial/tutorial-4.md:212 docs/en/tutorial/tutorial-5/android.md:69 docs/en/tutorial/tutorial-5/android.md:144 docs/en/tutorial/tutorial-5/android.md:204 docs/en/tutorial/tutorial-5/android.md:317 docs/en/tutorial/tutorial-6.md:97 docs/en/tutorial/tutorial-7.md:78 docs/en/tutorial/tutorial-7.md:209 docs/en/tutorial/tutorial-7.md:359 docs/en/tutorial/tutorial-7.md:579 docs/en/tutorial/tutorial-8.md:101 docs/en/tutorial/tutorial-8.md:245
 msgid "/// tab | Windows"
 msgstr "/// tab | Windows"
 
@@ -656,7 +656,7 @@ msgstr ""
 "\n"
 "[helloworld] Aplicação atualizada."
 
-#: docs/en/tutorial/topics/custom-icons.md:129 docs/en/tutorial/topics/custom-icons.md:327 docs/en/tutorial/topics/custom-icons.md:444 docs/en/tutorial/tutorial-7.md:106 docs/en/tutorial/tutorial-7.md:241 docs/en/tutorial/tutorial-7.md:475 docs/en/tutorial/tutorial-7.md:621 docs/en/tutorial/tutorial-8.md:128 docs/en/tutorial/tutorial-8.md:245
+#: docs/en/tutorial/topics/custom-icons.md:129 docs/en/tutorial/topics/custom-icons.md:327 docs/en/tutorial/topics/custom-icons.md:444 docs/en/tutorial/tutorial-7.md:106 docs/en/tutorial/tutorial-7.md:241 docs/en/tutorial/tutorial-7.md:475 docs/en/tutorial/tutorial-7.md:621 docs/en/tutorial/tutorial-8.md:128 docs/en/tutorial/tutorial-8.md:261
 msgid "/// tab | iOS"
 msgstr "/// tab | iOS"
 
@@ -1055,8 +1055,9 @@ msgstr ""
 "[helloworld] A iniciar a aplicação..."
 
 #: docs/en/tutorial/topics/custom-icons.md:365
-msgid "If you get a stack trace referencing `faker` or `httpx` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements."
-msgstr "Se obter um rastreio de pilha referenciando `faker` ou `httpx` ao executar a aplicação, é possível que não tenha executado a aplicação durante as etapas 7 ou 8 do tutorial. Execute a aplicação novamente, adicionando o argumento `-r` para atualizar os requisitos da aplicação."
+#, fuzzy
+msgid "If you get a stack trace referencing `faker` or `httpx2` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements."
+msgstr "Se você receber um rastreamento de pilha fazendo referência a `faker` ou `httpx2` ao executar o aplicativo, é possível que você tenha esquecido de executá-lo durante a etapa 7 ou 8 do tutorial. Execute o aplicativo novamente, adicionando o argumento `-r` para atualizar os requisitos do aplicativo."
 
 #: docs/en/tutorial/topics/custom-icons.md:369
 msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your `pyproject.toml`, just after the `icon` definition:"
@@ -2300,7 +2301,7 @@ msgstr "/// admonition | Ambientes virtuais alternativos"
 msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of `virtualenv`, a predecessor to Python's built in `venv` module. As with Python installs -if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to `venv` and the system Python."
 msgstr "Se estiver a usar o Anaconda ou o miniconda, talvez esteja mais familiarizado com o uso de ambientes conda. Talvez também já tenha ouvido falar do `virtualenv`, um predecessor do módulo `venv` incorporado no Python. Tal como nas instalações do Python, se estiver no macOS ou no Windows, não importa *como* você cria o seu ambiente virtual, desde que tenha um. Se estiver no Linux, deve manter-se com o `venv` e o Python do sistema."
 
-#: docs/en/tutorial/tutorial-0.md:173 docs/en/tutorial/tutorial-1.md:231 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:469 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:153 docs/en/tutorial/tutorial-7.md:667 docs/en/tutorial/tutorial-8.md:255
+#: docs/en/tutorial/tutorial-0.md:173 docs/en/tutorial/tutorial-1.md:231 docs/en/tutorial/tutorial-2.md:301 docs/en/tutorial/tutorial-3.md:469 docs/en/tutorial/tutorial-4.md:232 docs/en/tutorial/tutorial-5/android.md:343 docs/en/tutorial/tutorial-5/iOS.md:123 docs/en/tutorial/tutorial-6.md:153 docs/en/tutorial/tutorial-7.md:667 docs/en/tutorial/tutorial-8.md:271
 msgid "Next steps"
 msgstr "Próximos passos"
 
@@ -6021,38 +6022,44 @@ msgid "The Python standard library contains all the tools you'd need to access a
 msgstr "A biblioteca standard do Python contém todas as ferramentas que vai precisar para aceder a uma API. No entanto, as APIs incorporadas são de nível muito baixo. Elas são boas implementações do protocolo HTTP - mas exigem que o utilizador faça gestão de muitos detalhes de baixo nível, como redirecionar de URL, sessões, autenticação e codificação de carga útil. Como um \"utilizador normal de navegador\", está provavelmente acostumado a considerar esses detalhes como garantidos, pois o navegador gere-os por si."
 
 #: docs/en/tutorial/tutorial-8.md:15
-msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called [`httpx`]{1} - to access a simple API."
-msgstr "Como resultado, pessoas desenvolveram bibliotecas de terceiros que envolvem as APIs integradas e fornecem uma API mais simples mais próxima da experiência diária dum navegador. Vamos usar uma dessas bibliotecas — uma biblioteca chamada [`httpx`]{1} — para aceder a uma API simples."
+#, fuzzy
+msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called [`httpx2`]{1} - to access a simple API."
+msgstr "Como resultado, foram desenvolvidas bibliotecas de terceiros que encapsulam as APIs integradas e oferecem uma API mais simples, mais próxima da experiência cotidiana do navegador. Vamos usar uma dessas bibliotecas — chamada [`httpx2`]{1} — para acessar uma API simples."
 
 #: docs/en/tutorial/tutorial-8.md:17
-msgid "Let's add an `httpx` API call to our app. First, as with `faker` in the [previous step]{1}, we need to tell briefcase to install `httpx` when it builds our app. Modify the `requires` setting in our `pyproject.toml` to include the new requirement:"
-msgstr "Vamos adicionar uma chamada API `httpx` à nossa aplicação. Primeiro, tal como fizemos com o `faker` [em passo anterior]{1}, precisamos informar o briefcase para instalar o `httpx` quando ele compilar a nossa aplicação. Modifique a configuração `requires` no nosso `pyproject.toml` para incluir o novo requisito:"
+#, fuzzy
+msgid "Let's add an `httpx2` API call to our app. First, as with `faker` in the [previous step]{1}, we need to tell briefcase to install `httpx2` when it builds our app. Modify the `requires` setting in our `pyproject.toml` to include the new requirement:"
+msgstr "Vamos adicionar uma chamada de API `httpx2` ao nosso aplicativo. Primeiro, assim como fizemos com `faker` na [etapa anterior]{1}, precisamos instruir o briefcase a instalar `httpx2` quando ele compilar nosso aplicativo. Modifique a configuração `requires` em nosso `pyproject.toml` para incluir o novo requisito:"
 
 #: docs/en/tutorial/tutorial-8.md:19
+#, fuzzy
 msgid ""
 "requires = [\n"
 "    \"faker\",\n"
-"    \"httpx\",\n"
+"    \"httpx2\",\n"
 "]"
 msgstr ""
 "requires = [\n"
 "    \"faker\",\n"
-"    \"httpx\",\n"
+"    \"httpx2\",\n"
 "]"
 
 #: docs/en/tutorial/tutorial-8.md:26
-msgid "Add an import to the top of the `app.py` to import `httpx`:"
-msgstr "Adicione uma importação no topo do `app.py` para importar o `httpx`:"
+#, fuzzy
+msgid "Add an import to the top of the `app.py` to import `httpx2`:"
+msgstr "Adicione uma instrução de importação no início do `app.py` para importar `httpx2`:"
 
 #: docs/en/tutorial/tutorial-8.md:28
-msgid "import httpx"
-msgstr "import httpx"
+#, fuzzy
+msgid "import httpx2"
+msgstr "import httpx2"
 
 #: docs/en/tutorial/tutorial-8.md:34
+#, fuzzy
 msgid ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
-"    with httpx.Client() as client:\n"
+"    with httpx2.Client() as client:\n"
 "        response = client.get(\"https://tutorial.beeware.org/tutorial/message.json\")\n"
 "\n"
 "    payload = response.json()\n"
@@ -6066,16 +6073,16 @@ msgid ""
 msgstr ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
-"    with httpx.Client() as client:\n"
-"        response = client.get(\"https://tutorial.beeware.org/tutorial/message.json\")\n"
+"    with httpx2.Client() as client:\n"
+"    response = client.get(\"https://tutorial.beeware.org/tutorial/message.json\")\n"
 "\n"
 "    payload = response.json()\n"
 "\n"
 "    await self.main_window.dialog(\n"
-"        toga.InfoDialog(\n"
-"            greeting(self.name_input.value),\n"
-"            f\"Uma mensagem de {fake.name()}: {payload['body']}\",\n"
-"        )\n"
+" toga.InfoDialog(\n"
+" greeting(self.name_input.value),\n"
+" f\"Uma mensagem de {fake.name()}: {payload['body']}\",\n"
+" )\n"
 "    )"
 
 #: docs/en/tutorial/tutorial-8.md:50
@@ -6233,10 +6240,11 @@ msgid "To make our tutorial asynchronous, modify the `say_hello()` event handler
 msgstr "Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos `say_hello()` para que tenha a seguinte aparência:"
 
 #: docs/en/tutorial/tutorial-8.md:178
+#, fuzzy
 msgid ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
-"    async with httpx.AsyncClient() as client:\n"
+"    async with httpx2.AsyncClient() as client:\n"
 "        response = await client.get(\"https://jsonplaceholder.typicode.com/posts/42\")\n"
 "\n"
 "    payload = response.json()\n"
@@ -6250,134 +6258,167 @@ msgid ""
 msgstr ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
-"    async with httpx.AsyncClient() as client:\n"
-"        response = await client.get(\"https://jsonplaceholder.typicode.com/posts/42\")\n"
+"    async with httpx2.AsyncClient() as client:\n"
+" response = await client.get(\"https://jsonplaceholder.typicode.com/posts/42\")\n"
 "\n"
 "    payload = response.json()\n"
 "\n"
 "    await self.main_window.dialog(\n"
-"        toga.InfoDialog(\n"
-"            greeting(self.name_input.value),\n"
-"            f\"Uma mensagem de {fake.name()}: {payload['body']}\",\n"
-"        )\n"
+" toga.InfoDialog(\n"
+" greeting(self.name_input.value),\n"
+" f\"Uma mensagem de {fake.name()}: {payload['body']}\",\n"
+" )\n"
 "    )"
 
 #: docs/en/tutorial/tutorial-8.md:194
+#, fuzzy
+msgid "/// admonition | SSL errors on Android"
+msgstr "/// admonition | Erros de SSL no Android"
+
+#: docs/en/tutorial/tutorial-8.md:196
+#, fuzzy
+msgid "There is currently a [known bug]{1} that breaks `httpx2` on Android - you'll get an SSL verification error."
+msgstr "Atualmente, há um [bug conhecido]{1} que impede o funcionamento de `httpx2` no Android — você receberá um erro de verificação SSL."
+
+#: docs/en/tutorial/tutorial-8.md:198
+#, fuzzy
+msgid "To work around this, import the `ssl` library (part of the Python standard library) into your app, and add a `verify` argument when creating the client:"
+msgstr "Para contornar isso, importe a biblioteca `ssl` (parte da biblioteca padrão do Python) para seu aplicativo e adicione um argumento `verify` ao criar o cliente:"
+
+#: docs/en/tutorial/tutorial-8.md:200
+#, fuzzy
+msgid ""
+"import ssl\n"
+"\n"
+"async with httpx2.AsyncClient(verify=ssl.create_default_context()) as client:"
+msgstr ""
+"import ssl\n"
+"\n"
+"async com httpx2.AsyncClient(verify=ssl.create_default_context()) como client:"
+
+#: docs/en/tutorial/tutorial-8.md:206
+#, fuzzy
+msgid "This argument is not required on other platforms."
+msgstr "Esse argumento não é necessário em outras plataformas."
+
+#: docs/en/tutorial/tutorial-8.md:210
 msgid "There are only three changes to this callback from the previous version:"
 msgstr "Há apenas três alterações nesta chamada de retorno a partir da versão anterior:"
 
-#: docs/en/tutorial/tutorial-8.md:196
-msgid "The client that is created is an asynchronous `AsyncClient()`, rather than a synchronous `Client()`. This tells `httpx` that it should operate in asynchronous mode, rather than synchronous mode."
-msgstr "O cliente criado é um `AsyncClient()` assíncrono, em vez de um `Client()` síncrono. Isso informa ao `httpx` que ele deve operar no modo assíncrono, e não no modo síncrono."
+#: docs/en/tutorial/tutorial-8.md:212
+#, fuzzy
+msgid "The client that is created is an asynchronous `AsyncClient()`, rather than a synchronous `Client()`. This tells `httpx2` that it should operate in asynchronous mode, rather than synchronous mode."
+msgstr "O cliente criado é um `AsyncClient()` assíncrono, e não um `Client()` síncrono. Isso indica ao `httpx2` que ele deve operar no modo assíncrono, e não no modo síncrono."
 
-#: docs/en/tutorial/tutorial-8.md:197
+#: docs/en/tutorial/tutorial-8.md:213
 msgid "The context manager used to create the client is marked as `async`. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
 msgstr "O gestor de contexto usado para criar o cliente é marcado como `async`. Isso informa o Python que há uma oportunidade de libertar o controle à medida que se entra e sai do gestor de contexto."
 
-#: docs/en/tutorial/tutorial-8.md:198
+#: docs/en/tutorial/tutorial-8.md:214
 msgid "The `get` call is made with an `await` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop. We've seen this keyword before - we also use `await` when displaying the dialog box. The reason for that usage is the same as it is for the HTTP request - we need to tell the app that while the dialog is displayed, and we're waiting for the user to push a button, it's OK to release control back to the event loop."
 msgstr "A chamada `get` é feita com uma palavra-chave `await`. Isso instruí a aplicação que, enquanto aguardamos a resposta da rede, ela pode libertar o controle para o ciclo de eventos. Já vimos essa palavra-chave antes - também usamos `await` ao mostrar a caixa de diálogo. O motivo desse uso é o mesmo da solicitação HTTP - precisamos informar a aplicação que, enquanto o diálogo é mostrado e estamos a aguardar que o utilizador pressione um botão, não há problema em libertar o controle de volta para o ciclo de eventos."
 
-#: docs/en/tutorial/tutorial-8.md:200
+#: docs/en/tutorial/tutorial-8.md:216
 msgid "It's also important to note that the handler itself is defined as `async def`, rather than just `def`. This tells Python that the method is an asynchronous coroutine. We made this change back in Tutorial 3 when we added the dialog box. You can only use `await` statements inside a method that is declared as `async def`."
 msgstr "Também é importante observar que o próprio manipulador é definido como `async def`, em vez de apenas `def`. Isso diz ao Python que o método é uma co-rotina assíncrona. Fizemos essa alteração atrás no Tutorial 3, quando adicionamos a caixa de diálogo. Só pode usar declarações `await` dentro de um método declarado como `async def`."
 
-#: docs/en/tutorial/tutorial-8.md:202
+#: docs/en/tutorial/tutorial-8.md:218
 msgid "Toga allows you to use regular methods or asynchronous coroutines as handlers; Toga manages everything behind the scenes to make sure the handler is invoked or awaited as required."
 msgstr "A Toga permite que use métodos regulares ou co-rotinas assíncronas como manipuladores; Toga gere tudo nos bastidores para garantir que o manipulador é invocado ou aguarda conforme necessário."
 
-#: docs/en/tutorial/tutorial-8.md:204
+#: docs/en/tutorial/tutorial-8.md:220
 msgid "If you save these changes and re-run the app in development mode, there won't be any obvious changes to the app. However, when you click on the button to trigger the dialog, you may notice a number of subtle improvements:"
 msgstr "Se salvar estas alterações e executar novamente a aplicação em modo de desenvolvimento, não vai haver nenhuma alteração óbvia na aplicação. No entanto, ao clicar no botão para acionar o diálogo, vai poder notar uma série de melhorias subtis:"
 
-#: docs/en/tutorial/tutorial-8.md:206
+#: docs/en/tutorial/tutorial-8.md:222
 msgid "The button returns to an \"unclicked\" state, rather than being stuck in a \"clicked\" state."
 msgstr "O botão retorna a um estado \"não clicado\", em vez de ficar preso num estado \"clicado\"."
 
-#: docs/en/tutorial/tutorial-8.md:207
+#: docs/en/tutorial/tutorial-8.md:223
 msgid "The \"beachball\"/\"spinner\" icon won't appear."
 msgstr "O ícone \"bola de praia\"/\"botão giratório\" não vai aparecer."
 
-#: docs/en/tutorial/tutorial-8.md:208
+#: docs/en/tutorial/tutorial-8.md:224
 msgid "If you move/resize the app window while waiting for the dialog to appear, the window will redraw."
 msgstr "Se mover/redimensionar a janela da aplicação enquanto aguarda o aparecer do diálogo, a janela é redesenhada."
 
-#: docs/en/tutorial/tutorial-8.md:209
+#: docs/en/tutorial/tutorial-8.md:225
 msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr "Se tentar abrir um menu de aplicação, o menu é mostrado imediatamente."
 
-#: docs/en/tutorial/tutorial-8.md:211
-msgid "We can now run the full app. However, as we've added an extra requirement (`httpx`) we also need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:"
-msgstr "Agora podemos executar a aplicação completa. No entanto, como adicionamos um requisito extra (`httpx`), também temos de atualizar os requisitos da nossa aplicação; podemos fazer isso ao passar `-r` ao `briefcase run`. Isto vai atualizar os requisitos da nossa aplicação, recompilar a aplicação, e depois inicia-la:"
+#: docs/en/tutorial/tutorial-8.md:227
+#, fuzzy
+msgid "We can now run the full app. However, as we've added an extra requirement (`httpx2`) we also need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:"
+msgstr "Agora podemos executar o aplicativo completo. No entanto, como adicionamos um requisito extra (`httpx2`), também precisamos atualizar os requisitos do nosso aplicativo; podemos fazer isso passando `-r` para `briefcase run`. Isso atualizará os requisitos do nosso aplicativo, depois irá recompilá-lo e, por fim, iniciá-lo:"
 
-#: docs/en/tutorial/tutorial-8.md:215 docs/en/tutorial/tutorial-8.md:223
+#: docs/en/tutorial/tutorial-8.md:231 docs/en/tutorial/tutorial-8.md:239
 msgid "(beeware-venv) $ briefcase run -r"
 msgstr "(beeware-venv) $ briefcase run -r"
 
-#: docs/en/tutorial/tutorial-8.md:231
+#: docs/en/tutorial/tutorial-8.md:247
 msgid "(beeware-venv) C:\\...>briefcase run -r"
 msgstr "(beeware-venv) C:\\...>briefcase run -r"
 
-#: docs/en/tutorial/tutorial-8.md:239
+#: docs/en/tutorial/tutorial-8.md:255
 msgid "(beeware-venv) $ briefcase run android -r"
 msgstr "(beeware-venv) $ briefcase run android -r"
 
-#: docs/en/tutorial/tutorial-8.md:247
+#: docs/en/tutorial/tutorial-8.md:263
 msgid "(beeware-venv) $ briefcase run iOS -r"
 msgstr "(beeware-venv) $ briefcase run iOS -r"
 
-#: docs/en/tutorial/tutorial-8.md:253
+#: docs/en/tutorial/tutorial-8.md:269
 msgid "You should see you app running, and remaining responsive when you press the button and network content is retrieved."
 msgstr "Deverá ver a sua aplicação a correr e a permanecer responsiva quando pressionar o botão e o conteúdo da rede for recuperado."
 
-#: docs/en/tutorial/tutorial-8.md:257
+#: docs/en/tutorial/tutorial-8.md:273
 msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. Over the course of this tutorial, you have:"
 msgstr "Esta foi uma amostra do que pode fazer com as ferramentas fornecidas pelo projeto BeeWare. No decorrer deste tutorial, você fez:"
 
-#: docs/en/tutorial/tutorial-8.md:259
+#: docs/en/tutorial/tutorial-8.md:275
 msgid "Created a new GUI app project;"
 msgstr "Criou um novo projeto de aplicação GUI;"
 
-#: docs/en/tutorial/tutorial-8.md:260
+#: docs/en/tutorial/tutorial-8.md:276
 msgid "Run that app in development mode;"
 msgstr "Correr essa aplicação em modo de desenvolvedor;"
 
-#: docs/en/tutorial/tutorial-8.md:261
+#: docs/en/tutorial/tutorial-8.md:277
 msgid "Built the app as a standalone binary for a desktop operating system;"
 msgstr "Criou a aplicação como um binário autónomo para um sistema operativo de ambiente de trabalho;"
 
-#: docs/en/tutorial/tutorial-8.md:262
+#: docs/en/tutorial/tutorial-8.md:278
 msgid "Packaged that project for distribution to others;"
 msgstr "Empacotou esse projeto para distribuir a outras pessoas;"
 
-#: docs/en/tutorial/tutorial-8.md:263
+#: docs/en/tutorial/tutorial-8.md:279
 msgid "Run the app on a mobile simulator and/or device;"
 msgstr "Correu a aplicação num simulador e/ou dispositivo móvel;"
 
-#: docs/en/tutorial/tutorial-8.md:264
+#: docs/en/tutorial/tutorial-8.md:280
 msgid "Run the app as a web app;"
 msgstr "Correu a aplicação como uma aplicação Web;"
 
-#: docs/en/tutorial/tutorial-8.md:265
+#: docs/en/tutorial/tutorial-8.md:281
 msgid "Added a third-party dependency to your app; and"
 msgstr "Adicionou uma dependência de terceiros à sua aplicação; e"
 
-#: docs/en/tutorial/tutorial-8.md:266
+#: docs/en/tutorial/tutorial-8.md:282
 msgid "Modified the app so that it remains responsive."
 msgstr "Modificou a aplicação para que ela permaneça responsiva."
 
-#: docs/en/tutorial/tutorial-8.md:268
+#: docs/en/tutorial/tutorial-8.md:284
 msgid "So - where to from here?"
 msgstr "Então - o que fazer a partir daqui?"
 
-#: docs/en/tutorial/tutorial-8.md:270
+#: docs/en/tutorial/tutorial-8.md:286
 msgid "If you'd like to go further, there are some additional [topic tutorials]{1} that go into detail on specific aspects of application development."
 msgstr "Se desejar ir além, há alguns [tutoriais de tópicos]{1} adicionais que detalham aspetos específicos do desenvolvimento de aplicações."
 
-#: docs/en/tutorial/tutorial-8.md:271
+#: docs/en/tutorial/tutorial-8.md:287
 msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into [Toga's documentation]{1}. Toga also has its own tutorial [demonstrating how to use various features of the widget toolkit]{2}."
 msgstr "Se quiser saber mais sobre como criar interfaces de utilizador complexas com o Toga, pode mergulhar na [documentação do Toga]{1}. Toga também tem seu próprio tutorial [que demonstra como usar vários recursos do kit de ferramentas de widget]{2}."
 
-#: docs/en/tutorial/tutorial-8.md:273
+#: docs/en/tutorial/tutorial-8.md:289
 msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into [Briefcase's documentation]{1}."
 msgstr "Se quiser saber mais sobre as capacidades do Briefcase, pode mergulhar na [documentação do Briefcase]{1}."
