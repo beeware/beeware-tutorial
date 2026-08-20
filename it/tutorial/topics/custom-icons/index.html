@@ -1631,7 +1631,7 @@ aria-label="Intestazione"
 <h2 id="aggiunta-di-unicona">Aggiunta di un'icona<a class="headerlink" href="#aggiunta-di-unicona" title="Permanent link">&para;</a></h2>
 <p>Ogni piattaforma utilizza un formato diverso per le icone delle applicazioni e alcune piattaforme hanno bisogno di <em>molte</em> icone di dimensioni e forme diverse. Per tenere conto di questo, Briefcase offre un modo breve per configurare un'icona una volta sola, e poi far sì che la definizione si espanda a tutte le diverse icone necessarie per ogni singola piattaforma.</p>
 <p>Modificare il file <code>pyproject.toml</code>, aggiungendo una nuova voce di configurazione <code>icon</code> nella sezione di configurazione <code>[tool.briefcase.app.helloworld]</code>, appena sopra la definizione <code>sources</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;icons/helloworld&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"icons/helloworld"</span>
 </code></pre></div>
 <p>Questa definizione di icona non specifica alcuna estensione di file. Il valore sarà usato come prefisso; ogni piattaforma aggiungerà ulteriori elementi a questo prefisso per creare i file necessari per ogni piattaforma. Alcune piattaforme richiedono <em>multipli</em> file di icone; questo prefisso sarà combinato con i modificatori di dimensione e variante del file per generare l'elenco dei file di icone utilizzati.</p>
 <p>Ora possiamo eseguire nuovamente <code>briefcase update</code>, ma questa volta passiamo il flag <code>--update-resources</code>, indicando a Briefcase che vogliamo installare le nuove risorse dell'applicazione (cioè le icone):</p>
@@ -1640,14 +1640,14 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>--update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Impossibile trovare icons/helloworld.icns per l&#39;icona dell&#39;applicazione; utilizzo dell&#39;icona predefinita</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Impossibile trovare icons/helloworld.icns per l'icona dell'applicazione; utilizzo dell'icona predefinita</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... completata</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... completata</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
@@ -1655,19 +1655,19 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>--update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Impossibile trovare icons/helloworld-16.png per l&#39;icona dell&#39;applicazione da 16 px; si utilizza quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-32.png per l&#39;icona dell&#39;applicazione da 32px; utilizzo quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-64.png per l&#39;icona dell&#39;applicazione da 64px; utilizzo quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-128.png per l&#39;icona dell&#39;applicazione da 128px; utilizzo quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-256.png per l&#39;icona dell&#39;applicazione da 256px; utilizzo quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-512.png per l&#39;icona dell&#39;applicazione da 512px; utilizzo quella predefinita</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Impossibile trovare icons/helloworld-16.png per l'icona dell'applicazione da 16 px; si utilizza quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-32.png per l'icona dell'applicazione da 32px; utilizzo quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-64.png per l'icona dell'applicazione da 64px; utilizzo quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-128.png per l'icona dell'applicazione da 128px; utilizzo quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-256.png per l'icona dell'applicazione da 256px; utilizzo quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-512.png per l'icona dell'applicazione da 512px; utilizzo quella predefinita</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
@@ -1675,14 +1675,14 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update --update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Impossibile trovare icons/helloworld.ico per l&#39;icona dell&#39;applicazione; utilizzo di quella predefinita</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Impossibile trovare icons/helloworld.ico per l'icona dell'applicazione; utilizzo di quella predefinita</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... completata</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... completata</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
@@ -1690,33 +1690,33 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>android<span class="w"> </span>--update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Impossibile trovare icons/helloworld-round-48.png per l&#39;icona rotonda dell&#39;applicazione da 48 px; utilizzo dell&#39;icona predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-round-72.png per l&#39;icona dell&#39;applicazione rotonda da 72px; utilizzo quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-round-96.png per l&#39;icona dell&#39;applicazione rotonda da 96px; utilizzo quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-round-144.png per l&#39;icona dell&#39;applicazione rotonda da 144px; utilizzo quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-round-192.png per l&#39;icona dell&#39;applicazione rotonda da 192px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-48.png per l&#39;icona dell&#39;applicazione quadrata da 48px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-72.png per l&#39;icona dell&#39;applicazione quadrata da 72px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-96.png per l&#39;icona dell&#39;applicazione quadrata da 96px; si utilizza quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-144.png per l&#39;icona dell&#39;applicazione quadrata da 144px; si utilizza quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-192.png per l&#39;icona dell&#39;applicazione quadrata da 192px; si utilizza quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-320.png per l&#39;icona dell&#39;applicazione quadrata da 320px; si utilizza quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-480.png per l&#39;icona dell&#39;applicazione quadrata da 480px; si utilizza quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-640.png per l&#39;icona dell&#39;applicazione quadrata da 640px; si utilizza quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-960.png per l&#39;icona dell&#39;applicazione quadrata da 960px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-square-1280.png per l&#39;icona dell&#39;applicazione quadrata da 1280px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-adaptive-108.png per l&#39;icona dell&#39;applicazione adattiva da 108px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-adaptive-162.png per l&#39;icona dell&#39;applicazione adattiva da 162px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-adaptive-216.png per l&#39;icona dell&#39;applicazione adattiva da 216px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-adaptive-324.png per l&#39;icona dell&#39;applicazione adattiva da 324px; utilizzo di quella predefinita</span>
-<span class="go">Impossibile trovare icons/helloworld-adaptive-432.png per l&#39;icona dell&#39;applicazione adattiva da 432px; utilizzo dell&#39;icona predefinita</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Impossibile trovare icons/helloworld-round-48.png per l'icona rotonda dell'applicazione da 48 px; utilizzo dell'icona predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-round-72.png per l'icona dell'applicazione rotonda da 72px; utilizzo quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-round-96.png per l'icona dell'applicazione rotonda da 96px; utilizzo quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-round-144.png per l'icona dell'applicazione rotonda da 144px; utilizzo quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-round-192.png per l'icona dell'applicazione rotonda da 192px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-48.png per l'icona dell'applicazione quadrata da 48px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-72.png per l'icona dell'applicazione quadrata da 72px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-96.png per l'icona dell'applicazione quadrata da 96px; si utilizza quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-144.png per l'icona dell'applicazione quadrata da 144px; si utilizza quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-192.png per l'icona dell'applicazione quadrata da 192px; si utilizza quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-320.png per l'icona dell'applicazione quadrata da 320px; si utilizza quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-480.png per l'icona dell'applicazione quadrata da 480px; si utilizza quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-640.png per l'icona dell'applicazione quadrata da 640px; si utilizza quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-960.png per l'icona dell'applicazione quadrata da 960px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-square-1280.png per l'icona dell'applicazione quadrata da 1280px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-adaptive-108.png per l'icona dell'applicazione adattiva da 108px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-adaptive-162.png per l'icona dell'applicazione adattiva da 162px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-adaptive-216.png per l'icona dell'applicazione adattiva da 216px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-adaptive-324.png per l'icona dell'applicazione adattiva da 324px; utilizzo di quella predefinita</span>
+<span class="go">Impossibile trovare icons/helloworld-adaptive-432.png per l'icona dell'applicazione adattiva da 432px; utilizzo dell'icona predefinita</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
@@ -1724,29 +1724,29 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>iOS<span class="w"> </span>--update-resources
 
-<span class="go">  [helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">  [helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">  Installazione di src/helloworld... completata</span>
 
-<span class="go">  [helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">  Impossibile trovare icons/helloworld-20.png per l&#39;icona dell&#39;applicazione da 20px; utilizzo quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-29.png per l&#39;icona dell&#39;applicazione da 29px; utilizzo quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-40.png per l&#39;icona dell&#39;applicazione da 40px; utilizzo quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-58.png per l&#39;icona dell&#39;applicazione da 58px; utilizzo di quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-60.png per l&#39;icona dell&#39;applicazione da 60px; utilizzo di quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-76.png per l&#39;icona dell&#39;applicazione da 76px; utilizzo di quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-80.png per l&#39;icona dell&#39;applicazione da 80px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-87.png per l&#39;icona dell&#39;applicazione da 87px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-120.png per l&#39;icona dell&#39;applicazione da 120px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-152.png per l&#39;icona dell&#39;applicazione da 152px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-167.png per l&#39;icona dell&#39;applicazione da 167px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-180.png per l&#39;icona dell&#39;applicazione da 180px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-640.png per l&#39;icona dell&#39;applicazione da 640px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-1024.png per l&#39;icona dell&#39;applicazione da 1024px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-1280.png per l&#39;icona dell&#39;applicazione da 1280px; si utilizza quella predefinita</span>
-<span class="go">  Impossibile trovare icons/helloworld-1920.png per l&#39;icona dell&#39;applicazione da 1920px; utilizzo dell&#39;icona predefinita</span>
+<span class="go">  [helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">  Impossibile trovare icons/helloworld-20.png per l'icona dell'applicazione da 20px; utilizzo quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-29.png per l'icona dell'applicazione da 29px; utilizzo quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-40.png per l'icona dell'applicazione da 40px; utilizzo quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-58.png per l'icona dell'applicazione da 58px; utilizzo di quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-60.png per l'icona dell'applicazione da 60px; utilizzo di quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-76.png per l'icona dell'applicazione da 76px; utilizzo di quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-80.png per l'icona dell'applicazione da 80px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-87.png per l'icona dell'applicazione da 87px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-120.png per l'icona dell'applicazione da 120px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-152.png per l'icona dell'applicazione da 152px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-167.png per l'icona dell'applicazione da 167px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-180.png per l'icona dell'applicazione da 180px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-640.png per l'icona dell'applicazione da 640px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-1024.png per l'icona dell'applicazione da 1024px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-1280.png per l'icona dell'applicazione da 1280px; si utilizza quella predefinita</span>
+<span class="go">  Impossibile trovare icons/helloworld-1920.png per l'icona dell'applicazione da 1920px; utilizzo dell'icona predefinita</span>
 
-<span class="go">  [helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">  Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">  [helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">  Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">  [helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
@@ -1782,110 +1782,110 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Installazione di icons/helloworld.icns come icona dell&#39;applicazione... fatto</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Installazione di icons/helloworld.icns come icona dell'applicazione... fatto</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 
-<span class="go">[helloworld] Firma ad hoc dell&#39;app...</span>
+<span class="go">[helloworld] Firma ad hoc dell'app...</span>
 <span class="go"> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100,0% • 00:01</span>
 
 <span class="go">[helloworld] Creata build/helloworld/macos/app/Hello World.app</span>
 
-<span class="go">[helloworld] Avvio dell&#39;app...</span>
+<span class="go">[helloworld] Avvio dell'app...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Installazione di icons/helloworld-16.png come icona dell&#39;applicazione da 16 px... completata</span>
-<span class="go">Installazione di icons/helloworld-32.png come icona dell&#39;applicazione da 32px... fatto</span>
-<span class="go">Installazione di icons/helloworld-64.png come icona dell&#39;applicazione da 64px... fatto</span>
-<span class="go">Installazione di icons/helloworld-128.png come icona dell&#39;applicazione da 128px... fatto</span>
-<span class="go">Installazione di icons/helloworld-256.png come icona dell&#39;applicazione da 256px... fatto</span>
-<span class="go">Installazione di icons/helloworld-512.png come icona dell&#39;applicazione da 512px... fatto</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Installazione di icons/helloworld-16.png come icona dell'applicazione da 16 px... completata</span>
+<span class="go">Installazione di icons/helloworld-32.png come icona dell'applicazione da 32px... fatto</span>
+<span class="go">Installazione di icons/helloworld-64.png come icona dell'applicazione da 64px... fatto</span>
+<span class="go">Installazione di icons/helloworld-128.png come icona dell'applicazione da 128px... fatto</span>
+<span class="go">Installazione di icons/helloworld-256.png come icona dell'applicazione da 256px... fatto</span>
+<span class="go">Installazione di icons/helloworld-512.png come icona dell'applicazione da 512px... fatto</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 
-<span class="go">[helloworld] Compilazione dell&#39;applicazione...</span>
+<span class="go">[helloworld] Compilazione dell'applicazione...</span>
 <span class="go">Compilazione del binario bootstrap...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Compilato build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 
-<span class="go">[helloworld] Avvio dell&#39;app...</span>
+<span class="go">[helloworld] Avvio dell'app...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase build --update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Installazione di icons/helloworld.ico come icona dell&#39;applicazione... fatto</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Installazione di icons/helloworld.ico come icona dell'applicazione... fatto</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 
-<span class="go">[helloworld] Creazione dell&#39;app...</span>
-<span class="go">Rimozione di eventuali firme digitali dall&#39;app stub... fatto</span>
-<span class="go">Impostazione dei dettagli dell&#39;app stub... fatto</span>
+<span class="go">[helloworld] Creazione dell'app...</span>
+<span class="go">Rimozione di eventuali firme digitali dall'app stub... fatto</span>
+<span class="go">Impostazione dei dettagli dell'app stub... fatto</span>
 
 <span class="go">[helloworld] Creato build\helloworld\windows\app\src\Hello World.exe</span>
 
-<span class="go">[helloworld] Avvio dell&#39;app...</span>
+<span class="go">[helloworld] Avvio dell'app...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>android<span class="w"> </span>--update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Installazione di icons/helloworld-round-48.png come icona dell&#39;applicazione rotonda da 48 px... completata</span>
-<span class="go">Installazione di icons/helloworld-round-72.png come icona dell&#39;applicazione rotonda da 72px... fatto</span>
-<span class="go">Installazione di icons/helloworld-round-96.png come icona dell&#39;applicazione rotonda da 96px... fatto</span>
-<span class="go">Installazione di icons/helloworld-round-144.png come icona dell&#39;applicazione rotonda da 144px... fatto</span>
-<span class="go">Installazione di icons/helloworld-round-192.png come icona dell&#39;applicazione rotonda da 192px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-48.png come icona dell&#39;applicazione quadrata da 48px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-72.png come icona dell&#39;applicazione quadrata da 72px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-96.png come icona dell&#39;applicazione quadrata da 96px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-144.png come icona dell&#39;applicazione quadrata da 144px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-192.png come icona dell&#39;applicazione quadrata da 192px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-320.png come icona dell&#39;applicazione quadrata da 320px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-480.png come icona dell&#39;applicazione quadrata da 480px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-640.png come icona dell&#39;applicazione quadrata da 640px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-960.png come icona dell&#39;applicazione quadrata da 960px... fatto</span>
-<span class="go">Installazione di icons/helloworld-square-1280.png come icona dell&#39;applicazione quadrata da 1280px... fatto</span>
-<span class="go">Installazione di icons/helloworld-adaptive-108.png come icona dell&#39;applicazione adattiva da 108px... fatto</span>
-<span class="go">Installazione di icons/helloworld-adaptive-162.png come icona dell&#39;applicazione adattiva da 162px... fatto</span>
-<span class="go">Installazione di icons/helloworld-adaptive-216.png come icona dell&#39;applicazione adattiva da 216px... fatto</span>
-<span class="go">Installazione di icons/helloworld-adaptive-324.png come icona dell&#39;applicazione adattiva da 324px... fatto</span>
-<span class="go">Installazione di icons/helloworld-adaptive-432.png come icona dell&#39;applicazione adattiva da 432px... fatto</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Installazione di icons/helloworld-round-48.png come icona dell'applicazione rotonda da 48 px... completata</span>
+<span class="go">Installazione di icons/helloworld-round-72.png come icona dell'applicazione rotonda da 72px... fatto</span>
+<span class="go">Installazione di icons/helloworld-round-96.png come icona dell'applicazione rotonda da 96px... fatto</span>
+<span class="go">Installazione di icons/helloworld-round-144.png come icona dell'applicazione rotonda da 144px... fatto</span>
+<span class="go">Installazione di icons/helloworld-round-192.png come icona dell'applicazione rotonda da 192px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-48.png come icona dell'applicazione quadrata da 48px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-72.png come icona dell'applicazione quadrata da 72px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-96.png come icona dell'applicazione quadrata da 96px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-144.png come icona dell'applicazione quadrata da 144px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-192.png come icona dell'applicazione quadrata da 192px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-320.png come icona dell'applicazione quadrata da 320px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-480.png come icona dell'applicazione quadrata da 480px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-640.png come icona dell'applicazione quadrata da 640px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-960.png come icona dell'applicazione quadrata da 960px... fatto</span>
+<span class="go">Installazione di icons/helloworld-square-1280.png come icona dell'applicazione quadrata da 1280px... fatto</span>
+<span class="go">Installazione di icons/helloworld-adaptive-108.png come icona dell'applicazione adattiva da 108px... fatto</span>
+<span class="go">Installazione di icons/helloworld-adaptive-162.png come icona dell'applicazione adattiva da 162px... fatto</span>
+<span class="go">Installazione di icons/helloworld-adaptive-216.png come icona dell'applicazione adattiva da 216px... fatto</span>
+<span class="go">Installazione di icons/helloworld-adaptive-324.png come icona dell'applicazione adattiva da 324px... fatto</span>
+<span class="go">Installazione di icons/helloworld-adaptive-432.png come icona dell'applicazione adattiva da 432px... fatto</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 
-<span class="go">[helloworld] Avvio dell&#39;app...</span>
+<span class="go">[helloworld] Avvio dell'app...</span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -1895,43 +1895,43 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS<span class="w"> </span>--update-resources
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Aggiornamento delle risorse dell&#39;applicazione...</span>
-<span class="go">Installazione di icons/helloworld-20.png come icona dell&#39;applicazione da 20px... fatto</span>
-<span class="go">Installazione di icons/helloworld-29.png come icona dell&#39;applicazione da 29px... fatto</span>
-<span class="go">Installazione di icons/helloworld-40.png come icona dell&#39;applicazione da 40px... fatto</span>
-<span class="go">Installazione di icons/helloworld-58.png come icona dell&#39;applicazione da 58px... fatto</span>
-<span class="go">Installazione di icons/helloworld-60.png come icona dell&#39;applicazione da 60px... fatto</span>
-<span class="go">Installazione di icons/helloworld-76.png come icona dell&#39;applicazione da 76px... fatto</span>
-<span class="go">Installazione di icons/helloworld-80.png come icona dell&#39;applicazione da 80px... fatto</span>
-<span class="go">Installazione di icons/helloworld-87.png come icona dell&#39;applicazione da 87px... fatto</span>
-<span class="go">Installazione di icons/helloworld-120.png come icona dell&#39;applicazione da 120px... fatto</span>
-<span class="go">Installazione di icons/helloworld-152.png come icona dell&#39;applicazione da 152px... fatto</span>
-<span class="go">Installazione di icons/helloworld-167.png come icona dell&#39;applicazione da 167px... fatto</span>
-<span class="go">Installazione di icons/helloworld-180.png come icona dell&#39;applicazione da 180px... fatto</span>
-<span class="go">Installazione di icons/helloworld-640.png come icona dell&#39;applicazione da 640px... fatto</span>
-<span class="go">Installazione di icons/helloworld-1024.png come icona dell&#39;applicazione da 1024px... fatto</span>
-<span class="go">Installazione di icons/helloworld-1280.png come icona dell&#39;applicazione da 1280px... fatto</span>
-<span class="go">Installazione di icons/helloworld-1920.png come icona dell&#39;applicazione da 1920px... fatto</span>
+<span class="go">[helloworld] Aggiornamento delle risorse dell'applicazione...</span>
+<span class="go">Installazione di icons/helloworld-20.png come icona dell'applicazione da 20px... fatto</span>
+<span class="go">Installazione di icons/helloworld-29.png come icona dell'applicazione da 29px... fatto</span>
+<span class="go">Installazione di icons/helloworld-40.png come icona dell'applicazione da 40px... fatto</span>
+<span class="go">Installazione di icons/helloworld-58.png come icona dell'applicazione da 58px... fatto</span>
+<span class="go">Installazione di icons/helloworld-60.png come icona dell'applicazione da 60px... fatto</span>
+<span class="go">Installazione di icons/helloworld-76.png come icona dell'applicazione da 76px... fatto</span>
+<span class="go">Installazione di icons/helloworld-80.png come icona dell'applicazione da 80px... fatto</span>
+<span class="go">Installazione di icons/helloworld-87.png come icona dell'applicazione da 87px... fatto</span>
+<span class="go">Installazione di icons/helloworld-120.png come icona dell'applicazione da 120px... fatto</span>
+<span class="go">Installazione di icons/helloworld-152.png come icona dell'applicazione da 152px... fatto</span>
+<span class="go">Installazione di icons/helloworld-167.png come icona dell'applicazione da 167px... fatto</span>
+<span class="go">Installazione di icons/helloworld-180.png come icona dell'applicazione da 180px... fatto</span>
+<span class="go">Installazione di icons/helloworld-640.png come icona dell'applicazione da 640px... fatto</span>
+<span class="go">Installazione di icons/helloworld-1024.png come icona dell'applicazione da 1024px... fatto</span>
+<span class="go">Installazione di icons/helloworld-1280.png come icona dell'applicazione da 1280px... fatto</span>
+<span class="go">Installazione di icons/helloworld-1920.png come icona dell'applicazione da 1920px... fatto</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 
-<span class="go">[helloworld] Avvio dell&#39;app...</span>
+<span class="go">[helloworld] Avvio dell'app...</span>
 </code></pre></div>
 </div>
 </div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Se si ottiene una traccia di stack che fa riferimento a <code>faker</code> o <code>httpx</code> quando si esegue l'applicazione, è possibile che non si sia eseguita l'applicazione durante i passi 7 o 8 del tutorial. Eseguire nuovamente l'applicazione, aggiungendo l'argomento <code>-r</code> per aggiornare i requisiti dell'applicazione.</p>
+<p>If you get a stack trace referencing <code>faker</code> or <code>httpx2</code> when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the <code>-r</code> argument to update the app requirements.</p>
 </div>
 <p>Quando si esegue l'app su iOS o Android, oltre al cambiamento dell'icona, si dovrebbe notare che lo splash screen incorpora la nuova icona. Tuttavia, lo sfondo azzurro dell'icona sembra un po' fuori luogo rispetto allo sfondo bianco della schermata iniziale. È possibile risolvere il problema personalizzando il colore di sfondo della schermata iniziale. Aggiungere la seguente definizione al file <code>pyproject.toml</code>, subito dopo la definizione <code>icon</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"#D3E6F5"</span>
 </code></pre></div>
 <p>Sfortunatamente, Briefcase non è in grado di applicare questa modifica a un progetto già generato, perché richiede la modifica di uno dei file generati durante la chiamata originale a <code>briefcase create</code>. Per applicare questa modifica, dobbiamo ricreare l'applicazione eseguendo nuovamente <code>briefcase create</code>. Quando lo facciamo, ci verrà chiesto di confermare che vogliamo sovrascrivere il progetto esistente:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
@@ -1939,11 +1939,11 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">L&#39;applicazione &quot;helloworld&quot; esiste già; sovrascrivere [s/N]? s</span>
+<span class="go">L'applicazione "helloworld" esiste già; sovrascrivere [s/N]? s</span>
 
-<span class="go">[helloworld] Rimozione del vecchio pacchetto dell&#39;applicazione...</span>
+<span class="go">[helloworld] Rimozione del vecchio pacchetto dell'applicazione...</span>
 
-<span class="go">[helloworld] Generazione del modello dell&#39;applicazione...</span>
+<span class="go">[helloworld] Generazione del modello dell'applicazione...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Creato build/helloworld/macos/app</span>
@@ -1952,11 +1952,11 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">L&#39;applicazione &quot;helloworld&quot; esiste già; sovrascrivere [s/N]? s</span>
+<span class="go">L'applicazione "helloworld" esiste già; sovrascrivere [s/N]? s</span>
 
-<span class="go">[helloworld] Rimozione del vecchio pacchetto dell&#39;applicazione...</span>
+<span class="go">[helloworld] Rimozione del vecchio pacchetto dell'applicazione...</span>
 
-<span class="go">[helloworld] Generazione del modello dell&#39;applicazione...</span>
+<span class="go">[helloworld] Generazione del modello dell'applicazione...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Creato build/helloworld/linux/ubuntu/jammy</span>
@@ -1965,11 +1965,11 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create
 
-<span class="go">L&#39;applicazione &quot;helloworld&quot; esiste già; sovrascrivere [s/N]? s</span>
+<span class="go">L'applicazione "helloworld" esiste già; sovrascrivere [s/N]? s</span>
 
-<span class="go">[helloworld] Rimozione del vecchio pacchetto dell&#39;applicazione...</span>
+<span class="go">[helloworld] Rimozione del vecchio pacchetto dell'applicazione...</span>
 
-<span class="go">[helloworld] Generazione del modello dell&#39;applicazione...</span>
+<span class="go">[helloworld] Generazione del modello dell'applicazione...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Creato build\helloworld\windows\app</span>
@@ -1978,11 +1978,11 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>android
 
-<span class="go">L&#39;applicazione &quot;helloworld&quot; esiste già; sovrascrivere [s/N]? s</span>
+<span class="go">L'applicazione "helloworld" esiste già; sovrascrivere [s/N]? s</span>
 
-<span class="go">[helloworld] Rimozione del vecchio bundle dell&#39;applicazione...</span>
+<span class="go">[helloworld] Rimozione del vecchio bundle dell'applicazione...</span>
 
-<span class="go">[helloworld] Generazione del modello dell&#39;applicazione...</span>
+<span class="go">[helloworld] Generazione del modello dell'applicazione...</span>
 <span class="go">...</span>
 <span class="go">[helloworld] Creato build/helloworld/android/gradle</span>
 </code></pre></div>
@@ -1990,11 +1990,11 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
 
-<span class="go">L&#39;applicazione &quot;helloworld&quot; esiste già; sovrascrivere [s/N]? s</span>
+<span class="go">L'applicazione "helloworld" esiste già; sovrascrivere [s/N]? s</span>
 
-<span class="go">[helloworld] Rimozione del vecchio pacchetto dell&#39;applicazione...</span>
+<span class="go">[helloworld] Rimozione del vecchio pacchetto dell'applicazione...</span>
 
-<span class="go">[helloworld] Generazione del modello dell&#39;applicazione...</span>
+<span class="go">[helloworld] Generazione del modello dell'applicazione...</span>
 <span class="go">...</span>
 <span class="go">[helloworld] Creato build/helloworld/ios/xcode</span>
 </code></pre></div>
@@ -2029,7 +2029,7 @@ aria-label="Intestazione"
     └── pyproject.toml
 </code></pre></div>
 <p>Ora che l'icona di runtime è pronta, aggiungiamo un'icona al nostro pulsante. Il widget del pulsante di Toga può contenere solo un'icona o del testo (non entrambi), quindi aggiorniamo il codice del pulsante per includere l'icona di runtime.</p>
-<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">"icons/helloworld"</span><span class="p">)</span>
 
 <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
     <span class="n">icon</span><span class="o">=</span><span class="n">helloworld_icon</span><span class="p">,</span>

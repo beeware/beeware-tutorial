@@ -1693,7 +1693,7 @@ aria-label="Cabeçalho"
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
         <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
             <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">&quot;Uma mensagem de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">"Uma mensagem de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
@@ -1703,55 +1703,55 @@ aria-label="Cabeçalho"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 <span class="go">Traceback (última chamada mais recente):</span>
-<span class="go">Ficheiro &quot;.../venv/bin/briefcase&quot;, linha 5, em &lt;module&gt;</span>
+<span class="go">Ficheiro ".../venv/bin/briefcase", linha 5, em &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/__main__.py", linha 3, em &lt;módulo&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/cmdline.py", linha 6, em &lt;módulo&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py", linha 1, em &lt;módulo&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, linha 5, em &lt;module&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/commands/build.py", linha 5, em &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, linha 14, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/commands/base.py", linha 14, em &lt;módulo&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nenhum módulo chamado 'faker'</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev
 <span class="go">Traceback (última chamada mais recente):</span>
-<span class="go">Ficheiro &quot;.../venv/bin/briefcase&quot;, linha 5, em &lt;module&gt;</span>
+<span class="go">Ficheiro ".../venv/bin/briefcase", linha 5, em &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/__main__.py", linha 3, em &lt;módulo&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/cmdline.py", linha 6, em &lt;módulo&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py", linha 1, em &lt;módulo&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/build.py&quot;, linha 5, em &lt;module&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/commands/build.py", linha 5, em &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="go">Ficheiro &quot;.../venv/lib/python3.13/site-packages/briefcase/commands/base.py&quot;, linha 14, em &lt;módulo&gt;</span>
+<span class="go">Ficheiro ".../venv/lib/python3.13/site-packages/briefcase/commands/base.py", linha 14, em &lt;módulo&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nenhum módulo chamado 'faker'</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev
 <span class="go">Traceback (última chamada mais recente):</span>
-<span class="gp">Ficheiro &quot;...\venv\bin\briefcase&quot;, linha 5, em &lt;module&gt;</span>
+<span class="gp">Ficheiro "...\venv\bin\briefcase", linha 5, em &lt;module&gt;</span>
 <span class="go">    from briefcase.__main__ import main</span>
-<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\__main__.py&quot;, linha 3, em &lt;módulo&gt;</span>
+<span class="gp">Ficheiro "...\venv\lib\python3.13\site-packages\briefcase\__main__.py", linha 3, em &lt;módulo&gt;</span>
 <span class="go">    from .cmdline import parse_cmdline</span>
-<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\cmdline.py&quot;, linha 6, em &lt;módulo&gt;</span>
+<span class="gp">Ficheiro "...\venv\lib\python3.13\site-packages\briefcase\cmdline.py", linha 6, em &lt;módulo&gt;</span>
 <span class="go">    from briefcase.commands import DevCommand, NewCommand, UpgradeCommand</span>
-<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py&quot;, linha 1, em &lt;módulo&gt;</span>
+<span class="gp">Ficheiro "...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py", linha 1, em &lt;módulo&gt;</span>
 <span class="go">    from .build import BuildCommand  # noqa</span>
-<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\build.py&quot;, linha 5, em &lt;module&gt;</span>
+<span class="gp">Ficheiro "...\venv\lib\python3.13\site-packages\briefcase\commands\build.py", linha 5, em &lt;module&gt;</span>
 <span class="go">    from .base import BaseCommand, full_options</span>
-<span class="gp">Ficheiro &quot;...\venv\lib\python3.13\site-packages\briefcase\commands\base.py&quot;, linha 14, em &lt;módulo&gt;</span>
+<span class="gp">Ficheiro "...\venv\lib\python3.13\site-packages\briefcase\commands\base.py", linha 14, em &lt;módulo&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nenhum módulo chamado 'faker'</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1769,17 +1769,17 @@ aria-label="Cabeçalho"
 <p>No diretório raiz da sua aplicação, há um ficheiro chamado <code>pyproject.toml</code>. Esse ficheiro contém todos os detalhes de configuração da aplicação que forneceu quando executou originalmente o <code>briefcase new</code>.</p>
 <p>o <code>pyproject.toml</code> é dividido em secções; uma das secções descreve as configurações da sua aplicação:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
-<span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
-<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Uma aplicação de tutorial&quot;</span>
-<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;Mais detalhes sobre a aplicação devem ser inseridos aqui.</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
+<span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Hello World"</span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Uma aplicação de tutorial"</span>
+<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"""Mais detalhes sobre a aplicação devem ser inseridos aqui.</span>
+<span class="s2">"""</span>
+<span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"src/helloworld"</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
 </code></pre></div>
 <p>A opção <code>requires</code> descreve as dependências da nossa aplicação. É uma lista de strings que especifica as bibliotecas (e opcionalmente, as versões das bibliotecas) que deseja incluir na sua aplicação.</p>
 <p>Modifique a definição <code>requires</code> para que fique assim:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"faker"</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
 <p>Ao adicionar essa configuração, estamos a dizer ao Briefcase "quando compilar a minha aplicação, corra <code>pip install httpx</code> no bolo da aplicação". Qualquer coisa que seja uma entrada legal para <code>pip install</code> pode ser usada aqui - por isso, pode especificar:</p>
@@ -1928,15 +1928,15 @@ aria-label="Cabeçalho"
 </code></pre></div>
 <p>No entanto, quando a aplicação é executada, vai ver um erro na consola:</p>
 <div class="highlight"><pre><span></span><code><span class="go">Traceback (última chamada mais recente):</span>
-<span class="go">  Ficheiro &quot;/usr/lib/python3.13/runpy.py&quot;, linha 194, em _run_module_as_main</span>
+<span class="go">  Ficheiro "/usr/lib/python3.13/runpy.py", linha 194, em _run_module_as_main</span>
 <span class="go">    return _run_code(code, main_globals, None,</span>
-<span class="go">  Ficheiro &quot;/usr/lib/python3.13/runpy.py&quot;, linha 87, em _run_code</span>
+<span class="go">  Ficheiro "/usr/lib/python3.13/runpy.py", linha 87, em _run_code</span>
 <span class="go">    exec(code, run_globals)</span>
-<span class="go">  Ficheiro &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py&quot;, linha 1, em &lt;module&gt;</span>
+<span class="go">  Ficheiro "/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py", linha 1, em &lt;module&gt;</span>
 <span class="go">    from helloworld.app import main</span>
-<span class="go">  Ficheiro &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py&quot;, linha 8, em &lt;module&gt;</span>
+<span class="go">  Ficheiro "/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py", linha 8, em &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nenhum módulo chamado 'faker'</span>
 
 <span class="go">Incapaz de iniciar a aplicação helloworld.</span>
 </code></pre></div>
@@ -1994,7 +1994,7 @@ aria-label="Cabeçalho"
 <div class="highlight"><pre><span></span><code><span class="go">--------- início da falha</span>
 <span class="go">E/AndroidRuntime: EXCEPÇÃO FATAL: main</span>
 <span class="go">E/AndroidRuntime: Processo: com.example.helloworld, PID: 8289</span>
-<span class="go">E/AndroidRuntime: java.lang.RuntimeException: Não foi possível iniciar a atividade ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity}: com.chaquo.python.PyException: ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
+<span class="go">E/AndroidRuntime: java.lang.RuntimeException: Não foi possível iniciar a atividade ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity}: com.chaquo.python.PyException: ModuleNotFoundError: Nenhum módulo chamado 'faker'</span>
 <span class="go">E/AndroidRuntime:   em android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3635)</span>
 <span class="go">E/AndroidRuntime:   em android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3792)</span>
 <span class="go">E/AndroidRuntime:   em android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)</span>
@@ -2008,7 +2008,7 @@ aria-label="Cabeçalho"
 <span class="go">E/AndroidRuntime:   em java.lang.reflect.Method.invoke(Método Nativo)</span>
 <span class="go">E/AndroidRuntime:   em com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)</span>
 <span class="go">E/AndroidRuntime:   em com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)</span>
-<span class="go">E/AndroidRuntime: Causado por: com.chaquo.python.PyException: ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
+<span class="go">E/AndroidRuntime: Causado por: com.chaquo.python.PyException: ModuleNotFoundError: Nenhum módulo chamado 'faker'</span>
 <span class="go">E/AndroidRuntime:   em &lt;python&gt;.helloworld.app.&lt;module&gt;(app.py:8)</span>
 <span class="go">E/AndroidRuntime:   em &lt;python&gt;.java.chaquopy.import_override(import.pxi:60)</span>
 <span class="go">E/AndroidRuntime:   em &lt;python&gt;.__main__.&lt;module&gt;(__main__.py:1)</span>
@@ -2056,11 +2056,11 @@ aria-label="Cabeçalho"
 <div class="highlight"><pre><span></span><code><span class="go">A aplicação estoirou!</span>
 <span class="go">========================</span>
 <span class="go">Traceback (última chamada mais recente):</span>
-<span class="go">  Ficheiro &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py&quot;, linha 1, em &lt;módulo&gt;</span>
+<span class="go">  Ficheiro "/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py", linha 1, em &lt;módulo&gt;</span>
 <span class="go">    from helloworld.app import main</span>
-<span class="go">  Ficheiro &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py&quot;, linha 8, no &lt;módulo&gt;</span>
+<span class="go">  Ficheiro "/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py", linha 8, no &lt;módulo&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: Nenhum módulo chamado &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Nenhum módulo chamado 'faker'</span>
 </code></pre></div>
 </div>
 </div>

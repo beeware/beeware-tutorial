@@ -233,7 +233,7 @@ aria-label="页眉"
     </li>
     <li class="md-tabs__item">
       <a href="https://beeware.org/zh_CN/membership" class="md-tabs__link">
-          赞助商
+          赞助
       </a>
     </li>
     
@@ -1643,8 +1643,8 @@ aria-label="页眉"
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
  <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
- <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
- <span class="s2">&quot;Hi there!&quot;</span><span class="p">,</span>
+ <span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+ <span class="s2">"Hi there!"</span><span class="p">,</span>
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
@@ -1735,16 +1735,16 @@ aria-label="页眉"
 <p>在文件顶部，在导入和 <code>class HelloWorld</code> 定义之间，添加一个实用程序方法，以根据所提供的名称值生成适当的问候语:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span>
     <span class="k">else</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+    <span class="k">return</span> <span class="s2">"Hello, stranger"</span>
 </code></pre></div>
 <p>然后，修改 <code>say_hello</code> 回调，以使用这个新的实用程序方法:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
  <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
  <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
- <span class="s2">&quot;你好！&quot;</span><span class="p">,</span>
+ <span class="s2">"你好！"</span><span class="p">,</span>
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>

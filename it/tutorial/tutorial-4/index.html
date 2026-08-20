@@ -1643,8 +1643,8 @@ aria-label="Intestazione"
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
  <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
- <span class="sa">f</span><span class="s2">&quot;Ciao, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
- <span class="s2">&quot;Ciao!&quot;</span><span class="p">,</span>
+ <span class="sa">f</span><span class="s2">"Ciao, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+ <span class="s2">"Ciao!"</span><span class="p">,</span>
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
@@ -1681,11 +1681,11 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... completata</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... completata</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
@@ -1693,17 +1693,17 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Completamento della configurazione dell&#39;applicazione...</span>
+<span class="go">[helloworld] Completamento della configurazione dell'applicazione...</span>
 <span class="go">Selezione della piattaforma ubuntu:jammy (base Debian del fornitore)</span>
 <span class="go">Determinazione della versione di glibc... fatto</span>
 <span class="go">Selezione di glibc 2.35</span>
 <span class="go">Selezione di Python 3.10</span>
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;applicazione...</span>
-<span class="go">Rimozione dei contenuti non necessari del pacchetto dell&#39;applicazione... completata</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'applicazione...</span>
+<span class="go">Rimozione dei contenuti non necessari del pacchetto dell'applicazione... completata</span>
 
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
@@ -1712,11 +1712,11 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... completata</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... completata</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 </code></pre></div>
@@ -1735,16 +1735,16 @@ aria-label="Intestazione"
 <p>All'inizio del file, tra le importazioni e la definizione della <code>classe HelloWorld</code>, aggiungiamo un metodo di utilità per generare un saluto appropriato a seconda del valore del nome fornito:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">saluto</span><span class="p">(</span><span class="n">nome</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">nome</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Ciao, </span><span class="si">{</span><span class="n">nome</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"Ciao, </span><span class="si">{</span><span class="n">nome</span><span class="si">}</span><span class="s2">"</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Ciao, sconosciuto&quot;</span>
+        <span class="k">return</span> <span class="s2">"Ciao, sconosciuto"</span>
 </code></pre></div>
 <p>Quindi, modificare il callback <code>say_hello</code> per utilizzare questo nuovo metodo di utilità:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
  <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
  <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
- <span class="s2">&quot;Ciao!&quot;</span><span class="p">,</span>
+ <span class="s2">"Ciao!"</span><span class="p">,</span>
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
@@ -1754,59 +1754,59 @@ aria-label="Intestazione"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 
-<span class="go">[helloworld] Compilazione dell&#39;applicazione...</span>
+<span class="go">[helloworld] Compilazione dell'applicazione...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Compilato build/helloworld/macos/app/Hello World.app</span>
 
-<span class="go">[helloworld] Avvio dell&#39;app...</span>
+<span class="go">[helloworld] Avvio dell'app...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>-u
 
-<span class="go">[helloworld] Completamento della configurazione dell&#39;applicazione...</span>
+<span class="go">[helloworld] Completamento della configurazione dell'applicazione...</span>
 <span class="go">Destinazione ubuntu:jammy (base Debian del fornitore)</span>
 <span class="go">Determinazione della versione glibc... fatto</span>
 <span class="go">Destinazione glibc 2.35</span>
 <span class="go">Destinazione Python3.10</span>
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... fatto</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;applicazione... fatto</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'applicazione... fatto</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 
-<span class="go">[helloworld] Compilazione dell&#39;applicazione...</span>
+<span class="go">[helloworld] Compilazione dell'applicazione...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Compilato build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
 
-<span class="go">[helloworld] Avvio dell&#39;applicazione...</span>
+<span class="go">[helloworld] Avvio dell'applicazione...</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run -u
 
-<span class="go">[helloworld] Aggiornamento del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Aggiornamento del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
-<span class="go">Rimozione dei contenuti non necessari del bundle dell&#39;app... completata</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
+<span class="go">Rimozione dei contenuti non necessari del bundle dell'app... completata</span>
 
 <span class="go">[helloworld] Applicazione aggiornata.</span>
 
-<span class="go">[helloworld] Avvio dell&#39;app...</span>
+<span class="go">[helloworld] Avvio dell'app...</span>
 </code></pre></div>
 </div>
 </div>

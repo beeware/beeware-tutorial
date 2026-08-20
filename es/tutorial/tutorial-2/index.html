@@ -1642,7 +1642,7 @@ aria-label="Cabecera"
 <p><code>__main__.py</code> marca el módulo <code>helloworld</code> como una familia especial del módulo —un módulo ejecutable. Si intentas ejecutar el módulo <code>helloworld</code> usando <code>python -m helloworld</code>, el archivo <code>__main__.py</code> es donde Python empezará a ejecutarse. El contenido de <code>__main__.py</code> es relativamente simple:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">main</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span><span class="o">.</span><span class="n">main_loop</span><span class="p">()</span>
 </code></pre></div>
 <p>Este archivo hace dos cosas:</p>
@@ -1710,7 +1710,7 @@ aria-label="Cabecera"
     <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
 
     <span class="n">name_label</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
-        <span class="s2">&quot;Tu nombre: &quot;</span><span class="p">,</span>
+        <span class="s2">"Tu nombre: "</span><span class="p">,</span>
         <span class="n">margin</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
     <span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -1720,7 +1720,7 @@ aria-label="Cabecera"
  <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="p">)</span>
 
  <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
- <span class="s2">&quot;¡Hola!&quot;</span><span class="p">,</span>
+ <span class="s2">"¡Hola!"</span><span class="p">,</span>
  <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">say_hello</span><span class="p">,</span>
  <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
  <span class="p">)</span>
@@ -1733,7 +1733,7 @@ aria-label="Cabecera"
  <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
  <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
- <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+ <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Hola, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <p>Veamos en detalle lo que ha cambiado.</p>
 <p>Seguimos creando una caja principal; sin embargo, ahora estamos aplicando un estilo:</p>
@@ -1749,7 +1749,7 @@ aria-label="Cabecera"
 </div>
 <p>A continuación, definimos un par de widgets:</p>
 <div class="highlight"><pre><span></span><code><span class="n">name_label</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
-    <span class="s2">&quot;Tu nombre: &quot;</span><span class="p">,</span>
+    <span class="s2">"Tu nombre: "</span><span class="p">,</span>
     <span class="n">margin</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
 <span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -1764,7 +1764,7 @@ aria-label="Cabecera"
 <p>La <code>name_box</code> es una caja igual que la caja principal; sin embargo, esta vez, es una caja <code>ROW</code>. Eso significa que el contenido se añadirá horizontalmente, e intentará que su anchura sea lo más estrecha posible. La caja también tiene algo de relleno —5px en todos los lados.</p>
 <p>Ahora definimos un botón:</p>
 <div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-    <span class="s2">&quot;¡Hola!&quot;</span><span class="p">,</span>
+    <span class="s2">"¡Hola!"</span><span class="p">,</span>
     <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">say_hello</span><span class="p">,</span>
     <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span>
@@ -1781,7 +1781,7 @@ aria-label="Cabecera"
 </code></pre></div>
 <p>Lo último que tenemos que hacer es definir el manejador para el botón. Un manejador puede ser cualquier método, generador o co‐rutina asíncrona; acepta el widget que generó el evento como argumento, y será invocado cada vez que se pulse el botón:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Hola, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <p>El cuerpo del método es una simple sentencia print —sin embargo, interrogará el valor actual de la entrada name, y usará ese contenido como el texto que se imprime.</p>
 <p>Ahora que hemos realizado estos cambios podemos ver que parece como inicia la aplicación otra vez. Como antes, usaremos el modo desarrollador:</p>

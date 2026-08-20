@@ -1694,7 +1694,7 @@ aria-label="Kopfzeile"
 
 <span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">photo</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">ImageView</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </span><span class="hll"> <span class="n">camera_button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Foto aufnehmen&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"Foto aufnehmen"</span><span class="p">,</span>
 </span><span class="hll"> <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_photo</span><span class="p">,</span>
 </span><span class="hll"> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
@@ -1717,15 +1717,15 @@ aria-label="Kopfzeile"
 </span><span class="hll"> <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
 </span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
 </span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Oh nein!&quot;</span><span class="p">,</span>
-</span><span class="hll">                    <span class="s2">&quot;Die Kamera-API ist auf dieser Plattform nicht implementiert&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"Oh nein!"</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">"Die Kamera-API ist auf dieser Plattform nicht implementiert"</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
 </span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
 </span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Oh nein!&quot;</span><span class="p">,</span>
-</span><span class="hll"> <span class="s2">&quot;Sie haben keine Berechtigung zum Aufnehmen von Fotos erteilt&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"Oh nein!"</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"Sie haben keine Berechtigung zum Aufnehmen von Fotos erteilt"</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="p">)</span>
 </span>
@@ -1743,7 +1743,7 @@ aria-label="Kopfzeile"
 <p>Ein Teil des Codes, den wir gerade hinzugefügt haben, fragt nach der Erlaubnis, die Kamera zu verwenden. Dies ist eine gängige Funktion moderner App-Plattformen – Sie können nicht auf Hardwarefunktionen zugreifen, ohne vorher ausdrücklich die Erlaubnis des Benutzers einzuholen.</p>
 <p>Diese Anfrage besteht aus zwei Teilen. Der erste Teil befindet sich im Code, den wir gerade gesehen haben. Bevor die App jedoch Berechtigungen anfordern kann, muss sie die Berechtigungen deklarieren, die sie anfordern wird.</p>
 <p>Die für jede Plattform erforderlichen Berechtigungen unterscheiden sich geringfügig, aber Briefcase bietet eine plattformübergreifende Darstellung für viele gängige Hardwareberechtigungen. Fügen Sie im Konfigurationsabschnitt <code>[tool.briefcase.app.helloworld]</code> der Datei <code>pyproject.toml</code> Ihrer App Folgendes hinzu (direkt über der Deklaration <code>Sources</code>):</p>
-<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Die App nimmt Porträtfotos auf.&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Die App nimmt Porträtfotos auf."</span>
 </code></pre></div>
 <p>Dies erklärt, dass Ihre App auf die Kamera zugreifen muss, und liefert eine kurze Beschreibung, warum die Kamera erforderlich ist. Diese Beschreibung ist auf einigen Plattformen erforderlich (insbesondere macOS und iOS) und wird dem Benutzer als zusätzliche Information angezeigt, wenn der Berechtigungsdialog angezeigt wird.</p>
 <p>Wir können jetzt die App generieren und ausführen:</p>

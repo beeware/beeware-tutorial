@@ -1631,7 +1631,7 @@ aria-label="頁首"
 <h2 id="_2">新增圖示<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>每個平台都使用不同的應用程式圖示格式，有些平台需要不同大小和形狀的多個圖示。為了解決這個問題，Briefcase 提供了一種速記的方式來一次設定圖示，然後將該定義展開為每個平台所需的所有不同圖示。</p>
 <p>編輯您的「pyproject.toml」，在「[tool.briefcase.app.helloworld]」配置區段中加入新的「icon」配置項目，就在「sources」定義的上方：</p>
-<div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;icons/helloworld&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"icons/helloworld"</span>
 </code></pre></div>
 <p>這個圖示定義沒有指定任何檔案副檔名。該值將作為前綴；每個平台會在此前綴中加入額外項目，以建立每個平台所需的檔案。某些平台需要<em>多個</em>圖示檔案；此前綴將結合檔案大小和變異修改器，以產生使用的圖示檔案清單。</p>
 <p>現在我們可以再次執行 <code>briefcase update</code> - 但這一次，我們傳入 <code>--update-resources</code> 標誌，告訴 Briefcase 我們要安裝新的應用程式資源 (也就是圖示)：</p>
@@ -1928,10 +1928,10 @@ aria-label="頁首"
 </div>
 <div class="admonition note">
 <p class="admonition-title">注意事項</p>
-<p>如果您在執行應用程式時收到引用 <code>faker</code> 或 <code>httpx</code> 的堆疊痕跡，可能是您在教程的第 7 或第 8 步遺漏了執行應用程式。重新執行應用程式，加入 <code>-r</code> 參數以更新應用程式需求。</p>
+<p>If you get a stack trace referencing <code>faker</code> or <code>httpx2</code> when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the <code>-r</code> argument to update the app requirements.</p>
 </div>
 <p>當您在 iOS 或 Android 上執行應用程式時，除了圖示變更之外，您應該也會注意到閃屏加入了新圖示。但是，圖示的淺藍色背景與閃屏的白色背景看起來有點格格不入。我們可以自訂閃屏的背景顏色來解決這個問題。將以下定義加入您的 <code>pyproject.toml</code>，就在 icon` 定義之後：</p>
-<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"#D3E6F5"</span>
 </code></pre></div>
 <p>不幸的是，Briefcase 無法將此變更套用至已產生的專案，因為這需要修改在原始呼叫 <code>briefcase create</code> 時產生的其中一個檔案。要套用這個變更，我們必須重新執行 <code>briefcase create</code> 來重新建立應用程式。當我們這樣做時，系統會提示我們確認是否要覆蓋現有的專案：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
@@ -1939,7 +1939,7 @@ aria-label="頁首"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">應用程式 &#39;helloworld&#39; 已存在；是否覆寫 [y/N]？ y</span>
+<span class="go">應用程式 'helloworld' 已存在；是否覆寫 [y/N]？ y</span>
 
 <span class="go">[helloworld] 正在移除舊的應用程式套件...</span>
 
@@ -1952,7 +1952,7 @@ aria-label="頁首"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">應用程式 &#39;helloworld&#39; 已存在；是否覆寫 [y/N]？ y</span>
+<span class="go">應用程式 'helloworld' 已存在；是否覆寫 [y/N]？ y</span>
 
 <span class="go">[helloworld] 正在移除舊的應用程式套件...</span>
 
@@ -1965,7 +1965,7 @@ aria-label="頁首"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create
 
-<span class="go">應用程式 &#39;helloworld&#39; 已存在；是否覆寫 [y/N]？ y</span>
+<span class="go">應用程式 'helloworld' 已存在；是否覆寫 [y/N]？ y</span>
 
 <span class="go">[helloworld] 正在移除舊的應用程式套件...</span>
 
@@ -1978,7 +1978,7 @@ aria-label="頁首"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>android
 
-<span class="go">應用程式 &#39;helloworld&#39; 已存在；是否覆寫 [y/N]？ y</span>
+<span class="go">應用程式 'helloworld' 已存在；是否覆寫 [y/N]？ y</span>
 
 <span class="go">[helloworld] 正在移除舊的應用程式套件...</span>
 
@@ -1990,7 +1990,7 @@ aria-label="頁首"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
 
-<span class="go">應用程式 &#39;helloworld&#39; 已存在；是否覆寫 [y/N]？ y</span>
+<span class="go">應用程式 'helloworld' 已存在；是否覆寫 [y/N]？ y</span>
 
 <span class="go">[helloworld] 正在移除舊的應用程式封裝檔...</span>
 
@@ -2029,7 +2029,7 @@ aria-label="頁首"
     └── pyproject.toml
 </code></pre></div>
 <p>現在 runtime 圖示已經就位，讓我們為按鈕加入圖示。Toga 按鈕 widget 只能容納圖示或文字 (不能同時容納)，所以讓我們更新按鈕的程式碼，加入執行時的圖示。</p>
-<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">"icons/helloworld"</span><span class="p">)</span>
 
 <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
     <span class="n">icon</span><span class="o">=</span><span class="n">helloworld_icon</span><span class="p">,</span>

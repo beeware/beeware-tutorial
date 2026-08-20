@@ -1693,7 +1693,7 @@ aria-label="Kopfzeile"
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
  <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
  <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
- <span class="sa">f</span><span class="s2">&quot;Eine Nachricht von </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="sa">f</span><span class="s2">"Eine Nachricht von </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
@@ -1769,17 +1769,17 @@ aria-label="Kopfzeile"
 <p>Im Hauptverzeichnis Ihrer Anwendung befindet sich eine Datei namens <code>pyproject.toml</code>. Diese Datei enthält alle Konfigurationsdetails der Anwendung, die Sie beim Ausführen von <code>briefcase new</code> angegeben haben.</p>
 <p><code>pyproject.toml</code> ist in Abschnitte unterteilt; einer der Abschnitte beschreibt die Einstellungen für Ihre Anwendung:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
-<span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
-<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eine Tutorial-App&quot;</span>
-<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;Weitere Details zur App sollten hier stehen.</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
+<span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Hello World"</span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Eine Tutorial-App"</span>
+<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"""Weitere Details zur App sollten hier stehen.</span>
+<span class="s2">"""</span>
+<span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"src/helloworld"</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
 </code></pre></div>
 <p>Die Option <code>requires</code> beschreibt die Abhängigkeiten unserer Anwendung. Es handelt sich um eine Liste von Zeichenfolgen, in der Bibliotheken (und optional auch Versionen von Bibliotheken) angegeben sind, die Sie in Ihre App aufnehmen möchten.</p>
 <p>Ändern Sie die Einstellung <code>requires</code> so, dass sie lautet:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"faker"</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
 <p>Durch Hinzufügen dieser Einstellung teilen wir Briefcase mit: "Wenn du meine Anwendung baust, führe <code>pip install httpx</code> in das Anwendungsbündel ein". Alles, was eine legale Eingabe für <code>pip install</code> wäre, kann hier verwendet werden - Sie könnten also angeben:</p>
@@ -1936,7 +1936,7 @@ aria-label="Kopfzeile"
 <span class="go">    from helloworld.app import main</span>
 <span class="go">  Datei „/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py“, Zeile 8, in &lt;module&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: Kein Modul namens &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Kein Modul namens 'faker'</span>
 
 <span class="go">App helloworld kann nicht gestartet werden.</span>
 </code></pre></div>
@@ -1994,7 +1994,7 @@ aria-label="Kopfzeile"
 <div class="highlight"><pre><span></span><code><span class="go">--------- Beginn des Absturzes</span>
 <span class="go">E/AndroidRuntime: FATAL EXCEPTION: main</span>
 <span class="go">E/AndroidRuntime: Prozess: com.example.helloworld, PID: 8289</span>
-<span class="go">E/AndroidRuntime: java.lang.RuntimeException: Aktivität ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity} kann nicht gestartet werden: com.chaquo.python.PyException: ModuleNotFoundError: Kein Modul namens &#39;faker&#39;</span>
+<span class="go">E/AndroidRuntime: java.lang.RuntimeException: Aktivität ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity} kann nicht gestartet werden: com.chaquo.python.PyException: ModuleNotFoundError: Kein Modul namens 'faker'</span>
 <span class="go">E/AndroidRuntime:   bei android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3635)</span>
 <span class="go">E/AndroidRuntime:   bei android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3792)</span>
 <span class="go">E/AndroidRuntime:   bei android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)</span>
@@ -2008,7 +2008,7 @@ aria-label="Kopfzeile"
 <span class="go">E/AndroidRuntime:   bei java.lang.reflect.Method.invoke(Native Method)</span>
 <span class="go">E/AndroidRuntime:   bei com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)</span>
 <span class="go">E/AndroidRuntime:   bei com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)</span>
-<span class="go">E/AndroidRuntime: Verursacht durch: com.chaquo.python.PyException: ModuleNotFoundError: Kein Modul namens &#39;faker&#39;</span>
+<span class="go">E/AndroidRuntime: Verursacht durch: com.chaquo.python.PyException: ModuleNotFoundError: Kein Modul namens 'faker'</span>
 <span class="go">E/AndroidRuntime:   bei &lt;python&gt;.helloworld.app.&lt;module&gt;(app.py:8)</span>
 <span class="go">E/AndroidRuntime:   bei &lt;python&gt;.java.chaquopy.import_override(import.pxi:60)</span>
 <span class="go">E/AndroidRuntime:   bei &lt;python&gt;.__main__.&lt;module&gt;(__main__.py:1)</span>
@@ -2056,11 +2056,11 @@ aria-label="Kopfzeile"
 <div class="highlight"><pre><span></span><code><span class="go">Die Anwendung ist abgestürzt!</span>
 <span class="go">========================</span>
 <span class="go">Traceback (letzter Aufruf zuletzt):</span>
-<span class="go">  Datei „/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py&quot;, Zeile 1, in &lt;Modul&gt;</span>
+<span class="go">  Datei „/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py", Zeile 1, in &lt;Modul&gt;</span>
 <span class="go">    from helloworld.app import main</span>
-<span class="go">  Datei „/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py&quot;, Zeile 8, in &lt;Modul&gt;</span>
+<span class="go">  Datei „/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py", Zeile 8, in &lt;Modul&gt;</span>
 <span class="go">    import faker</span>
-<span class="go">ModuleNotFoundError: Kein Modul namens &#39;faker&#39;</span>
+<span class="go">ModuleNotFoundError: Kein Modul namens 'faker'</span>
 </code></pre></div>
 </div>
 </div>

@@ -1685,28 +1685,28 @@ aria-label="Header"
 <p>A common time-consuming task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. Web APIs sometimes take a second or two to respond, so if we're calling an API like that, we need to ensure our application doesn't become unresponsive while we wait for the web API to return an answer.</p>
 <p>This is a toy app, so we don't have a <em>real</em> API to work with, so we'll use a sample API endpoint as a source of data. If you open <a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a> in your browser, you'll get a JSON payload with a message.</p>
 <p>The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a "normal browser user" you're probably used to taking these details for granted, as a browser manages them for you.</p>
-<p>As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called <a href="https://www.python-httpx.org"><code>httpx</code></a> - to access a simple API.</p>
-<p>Let's add an <code>httpx</code> API call to our app. First, as with <code>faker</code> in the <a href="../tutorial-7/">previous step</a>, we need to tell briefcase to install <code>httpx</code> when it builds our app. Modify the <code>requires</code> setting in our <code>pyproject.toml</code> to include the new requirement:</p>
+<p>As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called <a href="https://httpx2.pydantic.dev/"><code>httpx2</code></a> - to access a simple API.</p>
+<p>Let's add an <code>httpx2</code> API call to our app. First, as with <code>faker</code> in the <a href="../tutorial-7/">previous step</a>, we need to tell briefcase to install <code>httpx2</code> when it builds our app. Modify the <code>requires</code> setting in our <code>pyproject.toml</code> to include the new requirement:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;faker&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;httpx&quot;</span><span class="p">,</span>
+    <span class="s2">"faker"</span><span class="p">,</span>
+    <span class="s2">"httpx2"</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>Add an import to the top of the <code>app.py</code> to import <code>httpx</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
+<p>Add an import to the top of the <code>app.py</code> to import <code>httpx2</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx2</span>
 </code></pre></div>
 <p>Then modify the <code>say_hello()</code> callback so it looks like this:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
-    <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://tutorial.beeware.org/tutorial/message.json&quot;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://tutorial.beeware.org/tutorial/message.json"</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
         <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
             <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">&quot;A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">"A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">'body'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
@@ -1795,21 +1795,31 @@ aria-label="Header"
 <p>To make our tutorial asynchronous, modify the <code>say_hello()</code> event handler so it looks like this:</p>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
-    <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/posts/42&quot;</span><span class="p">)</span>
+    <span class="k">async</span> <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://jsonplaceholder.typicode.com/posts/42"</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
         <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
             <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">&quot;A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">"A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">'body'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
         <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
+<div class="admonition">
+<p class="admonition-title">SSL errors on Android</p>
+<p>There is currently a <a href="https://github.com/sethmlarson/truststore/issues/217">known bug</a> that breaks <code>httpx2</code> on Android - you'll get an SSL verification error.</p>
+<p>To work around this, import the <code>ssl</code> library (part of the Python standard library) into your app, and add a <code>verify</code> argument when creating the client:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">ssl</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">(</span><span class="n">verify</span><span class="o">=</span><span class="n">ssl</span><span class="o">.</span><span class="n">create_default_context</span><span class="p">())</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+</code></pre></div>
+<p>This argument is not required on other platforms.</p>
+</div>
 <p>There are only three changes to this callback from the previous version:</p>
 <ol>
-<li>The client that is created is an asynchronous <code>AsyncClient()</code>, rather than a synchronous <code>Client()</code>. This tells <code>httpx</code> that it should operate in asynchronous mode, rather than synchronous mode.</li>
+<li>The client that is created is an asynchronous <code>AsyncClient()</code>, rather than a synchronous <code>Client()</code>. This tells <code>httpx2</code> that it should operate in asynchronous mode, rather than synchronous mode.</li>
 <li>The context manager used to create the client is marked as <code>async</code>. This tells Python that there is an opportunity to release control as the context manager is entered and exited.</li>
 <li>The <code>get</code> call is made with an <code>await</code> keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop. We've seen this keyword before - we also use <code>await</code> when displaying the dialog box. The reason for that usage is the same as it is for the HTTP request - we need to tell the app that while the dialog is displayed, and we're waiting for the user to push a button, it's OK to release control back to the event loop.</li>
 </ol>
@@ -1822,7 +1832,7 @@ aria-label="Header"
 <li>If you move/resize the app window while waiting for the dialog to appear, the window will redraw.</li>
 <li>If you try to open an app menu, the menu will appear immediately.</li>
 </ul>
-<p>We can now run the full app. However, as we've added an extra requirement (<code>httpx</code>) we also need to update our app's requirements; we can do this by passing <code>-r</code> to <code>briefcase run</code>. This will update our app's requirements, then re-build the app, then launch the app:</p>
+<p>We can now run the full app. However, as we've added an extra requirement (<code>httpx2</code>) we also need to update our app's requirements; we can do this by passing <code>-r</code> to <code>briefcase run</code>. This will update our app's requirements, then re-build the app, then launch the app:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">

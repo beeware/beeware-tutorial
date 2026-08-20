@@ -1652,7 +1652,7 @@ aria-label="Cabeçalho"
 
 <span class="go">No futuro, pode especificar este dispositivo executando:</span>
 
-<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)::iOS 16.2&quot;</span>
+<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (3ª geração)::iOS 16.2"</span>
 
 <span class="go">ou:</span>
 
@@ -1680,10 +1680,10 @@ aria-label="Cabeçalho"
 </figure>
 <p>Enquanto a aplicação estiver a correr, vai ver uma série de mensagens de saída do relatório do Simulador na consola. Teclar Ctrl+C no terminal vai interromper as mensagens na consola, mas não fecha o simulador. Isto serve para que possa testar novas alterações sem reiniciar o simulador.</p>
 <p>Se souber antecipadamente qual simulador de iOS deseja usar, poderá dizer ao Briefcase para usar esse simulador fornecendo uma opção <code>-d</code> (ou <code>--device</code>). Usando o nome do dispositivo que selecionou quando compilou a aplicação, execute:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (3ª geração)"</span>
 </code></pre></div>
 <p>Se tiver várias versões do iOS disponíveis, o Briefcase vai escolher a versão mais alta do iOS; se quiser escolher uma versão específica do iOS, diga a ele para usar essa versão específica:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3ª geração)::iOS 15.5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (3ª geração)::iOS 15.5"</span>
 </code></pre></div>
 <p>Ou, pode nomear um UDID de dispositivo específico:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E

@@ -231,7 +231,7 @@ aria-label="页眉"
     </li>
     <li class="md-tabs__item">
       <a href="https://beeware.org/zh_CN/membership" class="md-tabs__link">
-          赞助商
+          赞助
       </a>
     </li>
     
@@ -1639,7 +1639,7 @@ aria-label="页眉"
 <h2 id="_2">运行测试套件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：[<code>src</code>\ 和\ <code>tests</code>。<code>src</code>\ 文件夹包含应用程序的代码；<code>tests</code>\ 文件夹包含测试套件。在\ <code>tests</code>\ 文件夹中，有一个名为\ <code>test_app.py</code>\ 的文件，内容如下:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;应用程序的初始测试&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""应用程序的初始测试"""</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
 <p>这是一个 <a href="https://pytest.org">Pytest</a><em>测试用例</em>&ndash;可用于验证应用程序某些行为的代码块。在本例中，该测试是一个占位符，并不测试我们应用程序的任何内容，但我们可以执行该测试。</p>
@@ -1723,15 +1723,15 @@ aria-label="页眉"
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_name</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;如果提供了名字，问候语中会包含该名字&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""如果提供了名字，问候语中会包含该名字"""</span>
 
- <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, Alice&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Hello, Alice"</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_empty</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;如果未提供姓名，则返回通用问候语&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""如果未提供姓名，则返回通用问候语"""</span>
 
- <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Hello, stranger"</span>
 </code></pre></div>
 <p>这将定义两个新测试，验证我们期望看到的两种行为：提供名称时的输出和名称为空时的输出。</p>
 <p>现在我们可以重新运行测试套件。这一次，我们不需要提供 <code>-r</code> 选项，因为测试需求已经安装完毕；我们只需要使用 <code>--test</code> 选项：</p>
@@ -1788,9 +1788,9 @@ aria-label="页眉"
 <h2 id="_3">测试驱动开发<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>现在我们有了测试套件，可以用它来推动新功能的开发。让我们修改应用程序，为某位用户添加特殊的问候语。首先，我们可以在 <code>test_app.py</code> 的底部为我们希望看到的新行为添加一个测试用例:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;如果名字是 Brutus，则返回一条特殊的问候语&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""如果名字是 Brutus，则返回一条特殊的问候语"""</span>
 
- <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;当心 Python 的 IDE！&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">"Brutus"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"当心 Python 的 IDE！"</span>
 </code></pre></div>
 <p>然后，用这个新测试运行测试套件：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
@@ -1812,16 +1812,16 @@ aria-label="页眉"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go"> &quot;&quot;&quot;如果名字是 Brutus，则提供特殊的问候语&quot;&quot;&quot;</span>
+<span class="go"> """如果名字是 Brutus，则提供特殊的问候语"""</span>
 
-<span class="go">&gt; assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">&gt; assert greeting("Brutus") == "BeeWare the IDEs of Python!"</span>
+<span class="go">E AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E - BeeWare the IDEs of Python!</span>
 <span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== 简短测试摘要信息 ============================</span>
-<span class="go">失败 tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">失败 tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...</span>
 <span class="go">========================= 1 个失败，2 个通过，耗时 0.14 秒 ==========================</span>
 </code></pre></div>
 </div>
@@ -1842,16 +1842,16 @@ aria-label="页眉"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go"> def test_brutus():</span>
-<span class="go"> &quot;&quot;&quot;如果名字是 Brutus，则提供一个特殊的问候语&quot;&quot;&quot;</span>
+<span class="go"> """如果名字是 Brutus，则提供一个特殊的问候语"""</span>
 
-<span class="go">&gt; assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">&gt; assert greeting("Brutus") == "BeeWare the IDEs of Python!"</span>
+<span class="go">E AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E - BeeWare the IDEs of Python!</span>
 <span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== 简短测试摘要信息 ============================</span>
-<span class="go">测试失败：tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">测试失败：tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...</span>
 <span class="go">========================= 1 个失败，2 个通过，耗时 0.14 秒 ==========================</span>
 
 <span class="go">============================== 2 个通过，耗时 0.11 秒 ===============================</span>
@@ -1874,16 +1874,16 @@ aria-label="页眉"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go"> &quot;&quot;&quot;如果名字是 Brutus，则提供一个特殊的问候语&quot;&quot;&quot;</span>
+<span class="go"> """如果名字是 Brutus，则提供一个特殊的问候语"""</span>
 
-<span class="gp">&gt;</span> assert greeting(<span class="s2">&quot;Brutus&quot;</span>) == <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="gp">&gt;</span> assert greeting(<span class="s2">"Brutus"</span>) == <span class="s2">"BeeWare the IDEs of Python!"</span>
+<span class="go">E AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E - BeeWare the IDEs of Python!</span>
 <span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== 简短测试摘要信息 ============================</span>
-<span class="go">失败 tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">失败 tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...</span>
 <span class="go">========================= 1 个失败，2 个通过，耗时 0.14 秒 ==========================</span>
 </code></pre></div>
 </div>
@@ -1892,12 +1892,12 @@ aria-label="页眉"
 <p>这一次，我们看到了测试失败&ndash;输出结果解释了失败的原因：测试期望输出 "BeeWare the IDEs of Python!"，但我们的 <code>greeting()</code> 实现却返回 "Hello, Brutus"。让我们修改 <code>src/helloworld/app.py</code> 中 <code>greeting()</code> 的实现，使其具有新的行为:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;当心 Python 的 IDE！&quot;</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">"Brutus"</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"当心 Python 的 IDE！"</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;你好，</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"你好，</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;你好，陌生人&quot;</span>
+        <span class="k">return</span> <span class="s2">"你好，陌生人"</span>
 </code></pre></div>
 <p>如果我们再次运行测试，就会发现测试通过了：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>

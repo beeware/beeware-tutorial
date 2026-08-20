@@ -1605,16 +1605,16 @@ aria-label="Intestazione"
 <span class="go">[helloworld] Installazione del pacchetto di supporto...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Installazione del codice dell&#39;applicazione...</span>
+<span class="go">[helloworld] Installazione del codice dell'applicazione...</span>
 <span class="go">Installazione di src/helloworld... completata</span>
 
 <span class="go">[helloworld] Installazione dei requisiti...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Installazione delle risorse dell&#39;applicazione...</span>
+<span class="go">[helloworld] Installazione delle risorse dell'applicazione...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Rimozione dei contenuti non necessari dell&#39;app...</span>
+<span class="go">[helloworld] Rimozione dei contenuti non necessari dell'app...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Creato build/helloworld/ios/xcode</span>
@@ -1623,7 +1623,7 @@ aria-label="Intestazione"
 <p>Si può quindi usare Briefcase per compilare l'applicazione usando <code>briefcase build iOS</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Aggiornamento dei metadati dell&#39;app...</span>
+<span class="go">[helloworld] Aggiornamento dei metadati dell'app...</span>
 <span class="go">Impostazione del modulo principale... fatto</span>
 
 <span class="go">[helloworld] Compilazione del progetto Xcode...</span>
@@ -1652,24 +1652,24 @@ aria-label="Intestazione"
 
 <span class="go">In futuro, potrai specificare questo dispositivo eseguendo:</span>
 
-<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3a generazione)::iOS 16.2&quot;</span>
+<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (3a generazione)::iOS 16.2"</span>
 
 <span class="go">oppure:</span>
 
 <span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
-<span class="go">[helloworld] Avvio dell&#39;app su un iPhone SE (3a generazione) con iOS 16.2 (UDID del dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
+<span class="go">[helloworld] Avvio dell'app su un iPhone SE (3a generazione) con iOS 16.2 (UDID del dispositivo 2614A2DD-574F-4C1F-9F1E-478F32DE282E)</span>
 <span class="go">Avvio del simulatore... fatto</span>
 <span class="go">Apertura del simulatore... fatto</span>
 
-<span class="go">[helloworld] Installazione dell&#39;app...</span>
-<span class="go">Disinstallazione di eventuali versioni esistenti dell&#39;app... fatto</span>
-<span class="go">Installazione della nuova versione dell&#39;app... fatto</span>
+<span class="go">[helloworld] Installazione dell'app...</span>
+<span class="go">Disinstallazione di eventuali versioni esistenti dell'app... fatto</span>
+<span class="go">Installazione della nuova versione dell'app... fatto</span>
 
-<span class="go">[helloworld] Avvio dell&#39;app...</span>
-<span class="go">Avvio dell&#39;app... fatto</span>
+<span class="go">[helloworld] Avvio dell'app...</span>
+<span class="go">Avvio dell'app... fatto</span>
 
-<span class="go">[helloworld] Di seguito l&#39;output del log del simulatore (digitare CTRL-C per interrompere il log)...</span>
+<span class="go">[helloworld] Di seguito l'output del log del simulatore (digitare CTRL-C per interrompere il log)...</span>
 <span class="go">===========================================================================</span>
 <span class="go">...</span>
 </code></pre></div>
@@ -1680,10 +1680,10 @@ aria-label="Intestazione"
 </figure>
 <p>Mentre l'applicazione è in esecuzione, nella console viene visualizzata una serie di messaggi di log del simulatore. Digitando Ctrl+C nel terminale si interromperanno i messaggi nella console, ma non si chiuderà il simulatore. In questo modo è possibile testare le nuove modifiche senza riavviare il simulatore.</p>
 <p>Se si sa in anticipo a quale simulatore iOS si vuole puntare, si può dire a Briefcase di usare quel simulatore fornendo un'opzione <code>-d</code> (o <code>--device</code>). Utilizzando il nome del dispositivo selezionato al momento della creazione dell'applicazione, eseguite:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3a generazione)&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (3a generazione)"</span>
 </code></pre></div>
 <p>Se sono disponibili più versioni di iOS, Briefcase sceglierà la versione di iOS più alta; se si vuole scegliere una versione di iOS in particolare, si dice di usare quella versione specifica:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (3a generazione)::iOS 15.5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (3a generazione)::iOS 15.5"</span>
 </code></pre></div>
 <p>In alternativa, è possibile assegnare un nome UDID a un dispositivo specifico:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E

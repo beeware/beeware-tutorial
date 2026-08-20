@@ -1673,9 +1673,9 @@ aria-label="Intestazione"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>new
 <span class="go">...</span>
-<span class="go">[hellocamera] Nuova applicazione &quot;Hello Camera&quot; generata</span>
+<span class="go">[hellocamera] Nuova applicazione "Hello Camera" generata</span>
 
-<span class="go">Per eseguire l&#39;applicazione, digita:</span>
+<span class="go">Per eseguire l'applicazione, digita:</span>
 
 <span class="gp"> $ </span><span class="nb">cd</span><span class="w"> </span>hellocamera
 <span class="gp">    $ </span>briefcase<span class="w"> </span>dev
@@ -1694,7 +1694,7 @@ aria-label="Intestazione"
 
 <span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">photo</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">ImageView</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </span><span class="hll"> <span class="n">camera_button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Scatta foto&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"Scatta foto"</span><span class="p">,</span>
 </span><span class="hll"> <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_photo</span><span class="p">,</span>
 </span><span class="hll"> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
@@ -1717,15 +1717,15 @@ aria-label="Intestazione"
 </span><span class="hll"> <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
 </span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
 </span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Oh no!&quot;</span><span class="p">,</span>
-</span><span class="hll">                    <span class="s2">&quot;L&#39;API della fotocamera non è implementata su questa piattaforma&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"Oh no!"</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">"L'API della fotocamera non è implementata su questa piattaforma"</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
 </span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
 </span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;Oh no!&quot;</span><span class="p">,</span>
-</span><span class="hll"> <span class="s2">&quot;Non hai concesso il permesso di scattare foto&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"Oh no!"</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"Non hai concesso il permesso di scattare foto"</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="p">)</span>
 </span>
@@ -1743,7 +1743,7 @@ aria-label="Intestazione"
 <p>Una parte del codice che abbiamo appena aggiunto chiede il permesso di utilizzare la fotocamera. Si tratta di una caratteristica comune alle moderne piattaforme di app: non è possibile accedere alle funzioni hardware senza chiedere esplicitamente il permesso all'utente.</p>
 <p>Tuttavia, questa richiesta avviene in due parti. La prima è nel codice che abbiamo appena visto; ma prima che l'applicazione possa chiedere i permessi, deve dichiarare i permessi che sta per chiedere.</p>
 <p>I permessi richiesti da ogni piattaforma sono leggermente diversi, ma Briefcase ha una rappresentazione multipiattaforma per molti permessi hardware comuni. Nella sezione di configurazione <code>[tool.briefcase.app.hellocamera]</code> del file <code>pyproject.toml</code> della propria applicazione, aggiungere quanto segue (appena sopra la dichiarazione <code>sources</code>):</p>
-<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;L&#39;app scatterà foto del viso.&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"L'app scatterà foto del viso."</span>
 </code></pre></div>
 <p>Dichiara che l'applicazione deve accedere alla fotocamera e fornisce una breve descrizione del motivo per cui la fotocamera è necessaria. Questa descrizione è necessaria su alcune piattaforme (in particolare macOS e iOS) e verrà mostrata all'utente come informazione aggiuntiva quando viene presentata la finestra di dialogo dei permessi.</p>
 <p>Ora possiamo generare ed eseguire l'applicazione:</p>

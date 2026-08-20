@@ -1693,7 +1693,7 @@ aria-label="En-tête"
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
  <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
  <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
- <span class="sa">f</span><span class="s2">&quot;Un message de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+ <span class="sa">f</span><span class="s2">"Un message de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
  <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
@@ -1769,17 +1769,17 @@ aria-label="En-tête"
 <p>Dans le répertoire racine de votre application, il y a un fichier nommé <code>pyproject.toml</code>. Ce fichier contient tous les détails de configuration de l'application que vous avez fournis lorsque vous avez lancé <code>briefcase new</code>.</p>
 <p><code>pyproject.toml</code> est divisé en sections ; l'une d'entre elles décrit les paramètres de votre application :</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.briefcase.app.helloworld]</span>
-<span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
-<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Une application didactique&quot;</span>
-<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;Vous pouvez ajouter ici plus de détails sur l&#39;application.</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/helloworld&quot;</span><span class="p">]</span>
+<span class="n">formal_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Hello World"</span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Une application didactique"</span>
+<span class="n">long_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"""Vous pouvez ajouter ici plus de détails sur l'application.</span>
+<span class="s2">"""</span>
+<span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"src/helloworld"</span><span class="p">]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
 </code></pre></div>
 <p>L'option <code>requires</code> décrit les dépendances de notre application. Il s'agit d'une liste de chaînes de caractères spécifiant les bibliothèques (et, éventuellement, les versions des bibliothèques) que vous souhaitez inclure dans votre application.</p>
 <p>Modifiez le paramètre <code>requires</code> de façon à ce qu'il se lise :</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;faker&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"faker"</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
 <p>En ajoutant ce paramètre, nous disons à Briefcase : "lorsque vous compilez mon application, lancez <code>pip install faker</code> dans le bundle de l'application". Tout ce qui serait une entrée légale pour <code>pip install</code> peut être utilisé ici - ainsi, vous pourriez spécifier :</p>
@@ -1797,9 +1797,9 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Activation de l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Activation de l'environnement de développement...</span>
 <span class="go">...</span>
-<span class="go">Recréation de l&#39;environnement virtuel (dev.cpython-313-darwin)... terminé</span>
+<span class="go">Recréation de l'environnement virtuel (dev.cpython-313-darwin)... terminé</span>
 
 <span class="go">[hello-world] Installation des dépendances...</span>
 <span class="go">...</span>
@@ -1816,9 +1816,9 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>-r
 
-<span class="go">[helloworld] Activation de l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Activation de l'environnement de développement...</span>
 <span class="go">...</span>
-<span class="go">Recréation de l&#39;environnement virtuel (dev.cpython-313-x86_64-linux-gnu)... terminée</span>
+<span class="go">Recréation de l'environnement virtuel (dev.cpython-313-x86_64-linux-gnu)... terminée</span>
 
 <span class="go">[hello-world] Installation des dépendances...</span>
 <span class="go">...</span>
@@ -1835,9 +1835,9 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev -r
 
-<span class="go">[helloworld] Activation de l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Activation de l'environnement de développement...</span>
 <span class="go">...</span>
-<span class="go">Recréation de l&#39;environnement virtuel (dev.cp313-win_amd64)... terminée</span>
+<span class="go">Recréation de l'environnement virtuel (dev.cp313-win_amd64)... terminée</span>
 
 <span class="go">[hello-world] Installation des prérequis...</span>
 <span class="go">...</span>
@@ -1877,7 +1877,7 @@ aria-label="En-tête"
 <p>Mettre à jour le code dans l'application packagée :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
@@ -1891,7 +1891,7 @@ aria-label="En-tête"
 <p>Enfin, lancez l'application :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
-<span class="go">[helloworld] Démarrage de l&#39;application...</span>
+<span class="go">[helloworld] Démarrage de l'application...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Cependant, lorsque l'application s'exécute, vous verrez une erreur dans la console, ainsi qu'une boîte de dialogue de plantage :</p>
@@ -1904,7 +1904,7 @@ aria-label="En-tête"
 <p>Mettre à jour le code dans l'application packagée :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
@@ -1912,10 +1912,10 @@ aria-label="En-tête"
 <p>Reconstruire l'application :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build
 
-<span class="go">[helloworld] Finalisation de la configuration de l&#39;application...</span>
+<span class="go">[helloworld] Finalisation de la configuration de l'application...</span>
 <span class="go">...</span>
 
-<span class="go">[helloworld] Compilation de l&#39;application...</span>
+<span class="go">[helloworld] Compilation de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Compilation terminée : build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld</span>
@@ -1923,7 +1923,7 @@ aria-label="En-tête"
 <p>Enfin, lancez l'application :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run
 
-<span class="go">[helloworld] Démarrage de l&#39;application...</span>
+<span class="go">[helloworld] Démarrage de l'application...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Cependant, lorsque l'application s'exécute, une erreur apparaît dans la console :</p>
@@ -1932,20 +1932,20 @@ aria-label="En-tête"
 <span class="go">    return _run_code(code, main_globals, None,</span>
 <span class="go">  Fichier « /usr/lib/python3.13/runpy.py », ligne 87, dans _run_code</span>
 <span class="go">    exec(code, run_globals)</span>
-<span class="go">  Fichier &quot;/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py&quot;, ligne 1, dans &lt;module&gt;</span>
+<span class="go">  Fichier "/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py", ligne 1, dans &lt;module&gt;</span>
 <span class="go">    from helloworld.app import main</span>
 <span class="go">  Fichier « /home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py », ligne 8, dans &lt;module&gt;</span>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError : Aucun module nommé « faker »</span>
 
-<span class="go">Impossible de démarrer l&#39;application helloworld.</span>
+<span class="go">Impossible de démarrer l'application helloworld.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>Mettre à jour le code dans l'application packagée :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
@@ -1959,7 +1959,7 @@ aria-label="En-tête"
 <p>Enfin, lancez l'application :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run
 
-<span class="go">[helloworld] Démarrage de l&#39;application...</span>
+<span class="go">[helloworld] Démarrage de l'application...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Cependant, lorsque l'application s'exécute, vous verrez une erreur dans la console, ainsi qu'une boîte de dialogue de plantage :</p>
@@ -1972,7 +1972,7 @@ aria-label="En-tête"
 <p>Mettre à jour le code dans l'application packagée :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>android
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
@@ -1980,21 +1980,21 @@ aria-label="En-tête"
 <p>Reconstruire l'application :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>android
 
-<span class="go">[helloworld] Mise à jour des métadonnées de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour des métadonnées de l'application...</span>
 <span class="go">...</span>
 <span class="go">[helloworld] Compilation terminée : build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk</span>
 </code></pre></div>
 <p>Enfin, exécutez l'application (en sélectionnant un simulateur lorsque vous y êtes invité) :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>android
 
-<span class="go">[helloworld] Voici le journal de l&#39;appareil (appuyez sur CTRL-C pour arrêter l&#39;affichage)...</span>
+<span class="go">[helloworld] Voici le journal de l'appareil (appuyez sur CTRL-C pour arrêter l'affichage)...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Cependant, lorsque l'application s'exécute, une erreur apparaît dans la console :</p>
 <div class="highlight"><pre><span></span><code><span class="go">--------- Début du plantage</span>
 <span class="go">E/AndroidRuntime : EXCEPTION FATALE : main</span>
 <span class="go">E/AndroidRuntime : Processus : com.example.helloworld, PID : 8289</span>
-<span class="go">E/AndroidRuntime : java.lang.RuntimeException : Impossible de démarrer l&#39;activité ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity} : com.chaquo.python.PyException : ModuleNotFoundError : Aucun module nommé « faker »</span>
+<span class="go">E/AndroidRuntime : java.lang.RuntimeException : Impossible de démarrer l'activité ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity} : com.chaquo.python.PyException : ModuleNotFoundError : Aucun module nommé « faker »</span>
 <span class="go">E/AndroidRuntime :   à android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3635)</span>
 <span class="go">E/AndroidRuntime :   à android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3792)</span>
 <span class="go">E/AndroidRuntime :   dans android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)</span>
@@ -2026,14 +2026,14 @@ aria-label="En-tête"
 <span class="go">E/AndroidRuntime :   à android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1329)</span>
 <span class="go">E/AndroidRuntime :   à android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3608)</span>
 <span class="go">E/AndroidRuntime :   ... 12 autres</span>
-<span class="go">I/Process : Envoi d&#39;un signal. PID : 8289 SIG : 9</span>
+<span class="go">I/Process : Envoi d'un signal. PID : 8289 SIG : 9</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>Mettre à jour le code dans l'application packagée :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
@@ -2041,7 +2041,7 @@ aria-label="En-tête"
 <p>Reconstruire l'application :</p>
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>build<span class="w"> </span>iOS
 
-<span class="go">[helloworld] Mise à jour des métadonnées de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour des métadonnées de l'application...</span>
 <span class="go">...</span>
 <span class="go">[helloworld] Application « build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app » créée</span>
 </code></pre></div>
@@ -2049,16 +2049,16 @@ aria-label="En-tête"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS
 
 <span class="go">...</span>
-<span class="go">[helloworld] Voici le journal du simulateur (appuyez sur CTRL-C pour arrêter l&#39;affichage)...</span>
+<span class="go">[helloworld] Voici le journal du simulateur (appuyez sur CTRL-C pour arrêter l'affichage)...</span>
 <span class="go">===========================================================================</span>
 </code></pre></div>
 <p>Cependant, lorsque l'application s'exécute, une erreur apparaît dans la console</p>
-<div class="highlight"><pre><span></span><code><span class="go">L&#39;application s&#39;est bloquée !</span>
+<div class="highlight"><pre><span></span><code><span class="go">L'application s'est bloquée !</span>
 <span class="go">========================</span>
 <span class="go">Traceback (dernier appel en dernier) :</span>
-<span class="go">  Fichier &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py&quot;, ligne 1, dans &lt;module&gt;</span>
+<span class="go">  Fichier "/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py", ligne 1, dans &lt;module&gt;</span>
 <span class="go">    from helloworld.app import main</span>
-<span class="go">  Fichier &quot;/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py&quot;, ligne 8, dans &lt;module&gt;</span>
+<span class="go">  Fichier "/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py", ligne 8, dans &lt;module&gt;</span>
 <span class="go">    import faker</span>
 <span class="go">ModuleNotFoundError : Aucun module nommé « faker »</span>
 </code></pre></div>
@@ -2072,7 +2072,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>-r
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">Installation de src/hello_world...</span>
 
 <span class="go">[helloworld] Mise à jour des dépendances...</span>
@@ -2082,7 +2082,7 @@ aria-label="En-tête"
 <span class="go">Installation des paquets collectés : tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
 <span class="go">Installation réussie de faker-37.3.0, fonttools-4.58.1, rubicon-objc-0.5.1, std-nslog-1.0.3, toga-cocoa-0.5.1, toga-core-0.5.1, travertino-0.5.1 et tzdata-2025.2</span>
 
-<span class="go">[helloworld] Suppression du contenu inutile de l&#39;application...</span>
+<span class="go">[helloworld] Suppression du contenu inutile de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
@@ -2091,13 +2091,13 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>-r
 
-<span class="go">[helloworld] Finalisation de la configuration de l&#39;application...</span>
+<span class="go">[helloworld] Finalisation de la configuration de l'application...</span>
 <span class="go">Cible : ubuntu:jammy (base Debian du fournisseur)</span>
 <span class="go">Détermination de la version de glibc... terminé</span>
 <span class="go">Cible : glibc 2.35</span>
 <span class="go">Cible : Python 3.13</span>
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">Installation de src/hello_world...</span>
 
 <span class="go">[helloworld] Mise à jour des dépendances...</span>
@@ -2107,7 +2107,7 @@ aria-label="En-tête"
 <span class="go">Installation des paquets collectés : tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
 <span class="go">Installation réussie de faker-37.3.0, fonttools-4.58.1, rubicon-objc-0.5.1, std-nslog-1.0.3, toga-cocoa-0.5.1, toga-core-0.5.1, travertino-0.5.1 et tzdata-2025.2</span>
 
-<span class="go">[helloworld] Suppression du contenu inutile de l&#39;application...</span>
+<span class="go">[helloworld] Suppression du contenu inutile de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
@@ -2116,7 +2116,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase update -r
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">Installation de src/helloworld...</span>
 
 <span class="go">[helloworld] Mise à jour des dépendances...</span>
@@ -2126,7 +2126,7 @@ aria-label="En-tête"
 <span class="go">Installation des paquets collectés : tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa</span>
 <span class="go">Installation réussie de faker-37.3.0, fonttools-4.58.1, rubicon-objc-0.5.1, std-nslog-1.0.3, toga-cocoa-0.5.1, toga-core-0.5.1, travertino-0.5.1 et tzdata-2025.2</span>
 
-<span class="go">[helloworld] Suppression du contenu inutile de l&#39;application...</span>
+<span class="go">[helloworld] Suppression du contenu inutile de l'application...</span>
 <span class="go">...</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
@@ -2135,14 +2135,14 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>android<span class="w"> </span>-r
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">Installation de src/helloworld... terminée</span>
 
 <span class="go">[helloworld] Mise à jour des dépendances...</span>
 <span class="go">Écriture du fichier de dépendances... terminé</span>
 
-<span class="go">[helloworld] Suppression du contenu inutile de l&#39;application...</span>
-<span class="go">Suppression du contenu inutile du bundle de l&#39;application... terminé</span>
+<span class="go">[helloworld] Suppression du contenu inutile de l'application...</span>
+<span class="go">Suppression du contenu inutile du bundle de l'application... terminé</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
 </code></pre></div>
@@ -2150,7 +2150,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>update<span class="w"> </span>iOS<span class="w"> </span>-r
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">Installation de src/helloworld... terminée</span>
 
 <span class="go">[helloworld] Mise à jour des dépendances...</span>
@@ -2159,10 +2159,10 @@ aria-label="En-tête"
 <span class="go">  Utilisation de faker-37.4.0-py3-none-any.whl.metadata mis en cache (15 ko)</span>
 <span class="go">...</span>
 
-<span class="go">Installation des dépendances de l&#39;application pour le simulateur iPhone... terminé</span>
+<span class="go">Installation des dépendances de l'application pour le simulateur iPhone... terminé</span>
 
-<span class="go">[helloworld] Suppression du contenu inutile de l&#39;application...</span>
-<span class="go">Suppression du contenu inutile du bundle de l&#39;application... terminé</span>
+<span class="go">[helloworld] Suppression du contenu inutile de l'application...</span>
+<span class="go">Suppression du contenu inutile du bundle de l'application... terminé</span>
 
 <span class="go">[helloworld] Application mise à jour.</span>
 </code></pre></div>

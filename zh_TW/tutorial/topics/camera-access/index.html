@@ -1694,7 +1694,7 @@ aria-label="頁首"
 
 <span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">photo</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">ImageView</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </span><span class="hll"> <span class="n">camera_button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;拍攝照片&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"拍攝照片"</span><span class="p">,</span>
 </span><span class="hll"> <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_photo</span><span class="p">,</span>
 </span><span class="hll"> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
@@ -1717,15 +1717,15 @@ aria-label="頁首"
 </span><span class="hll"> <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
 </span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
 </span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;哎呀！&quot;</span><span class="p">,</span>
-</span><span class="hll">                    <span class="s2">&quot;此平台尚未實作相機 API&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"哎呀！"</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">"此平台尚未實作相機 API"</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
 </span><span class="hll"> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
 </span><span class="hll"> <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll"> <span class="s2">&quot;哎呀！&quot;</span><span class="p">,</span>
-</span><span class="hll"> <span class="s2">&quot;您尚未授予拍照權限&quot;</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"哎呀！"</span><span class="p">,</span>
+</span><span class="hll"> <span class="s2">"您尚未授予拍照權限"</span><span class="p">,</span>
 </span><span class="hll"> <span class="p">)</span>
 </span><span class="hll"> <span class="p">)</span>
 </span>
@@ -1743,7 +1743,7 @@ aria-label="頁首"
 <p>我們剛剛加入的這段程式碼，有一部分是要求取得使用攝影機的權限。這是現代應用程式平台的常見功能 - 不先明確詢問用戶的許可，就無法存取硬體功能。</p>
 <p>不過，這個要求分為兩部分。第一部分在我們剛剛看到的程式碼中；但在應用程式要求權限之前，它需要先宣告它要要求的權限。</p>
 <p>每個平台所需的權限略有不同，但 Briefcase 對許多常見的硬體權限都有跨平台的表示。在您應用程式的 <code>pyproject.toml</code> 檔案的 <code>[tool.briefcase.app.hellocamera]</code>配置區段中，新增下列內容 (就在 <code>sources</code> 宣告的上方)：</p>
-<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;應用程式將拍攝臉部照片。&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"應用程式將拍攝臉部照片。"</span>
 </code></pre></div>
 <p>這宣告您的應用程式需要存取攝影機，並提供簡短的說明，說明為何需要使用攝影機。在某些平台 (最顯著的是 macOS 和 iOS) 上需要此說明，並會在顯示權限對話框時，以附加資訊的形式顯示給使用者。</p>
 <p>現在我們可以產生並執行應用程式：</p>

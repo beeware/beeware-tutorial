@@ -1673,7 +1673,7 @@ aria-label="Header"
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
 <span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>new
 <span class="go">...</span>
-<span class="go">[hellocamera] Generated new application &#39;Hello Camera&#39;</span>
+<span class="go">[hellocamera] Generated new application 'Hello Camera'</span>
 
 <span class="go">To run your application, type:</span>
 
@@ -1694,7 +1694,7 @@ aria-label="Header"
 
 <span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">photo</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">ImageView</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </span><span class="hll">        <span class="n">camera_button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-</span><span class="hll">            <span class="s2">&quot;Take photo&quot;</span><span class="p">,</span>
+</span><span class="hll">            <span class="s2">"Take photo"</span><span class="p">,</span>
 </span><span class="hll">            <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">take_photo</span><span class="p">,</span>
 </span><span class="hll">            <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 </span><span class="hll">        <span class="p">)</span>
@@ -1717,15 +1717,15 @@ aria-label="Header"
 </span><span class="hll">        <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
 </span><span class="hll">            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
 </span><span class="hll">                <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll">                    <span class="s2">&quot;Oh no!&quot;</span><span class="p">,</span>
-</span><span class="hll">                    <span class="s2">&quot;The Camera API is not implemented on this platform&quot;</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">"Oh no!"</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">"The Camera API is not implemented on this platform"</span><span class="p">,</span>
 </span><span class="hll">                <span class="p">)</span>
 </span><span class="hll">            <span class="p">)</span>
 </span><span class="hll">        <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
 </span><span class="hll">            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
 </span><span class="hll">                <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-</span><span class="hll">                    <span class="s2">&quot;Oh no!&quot;</span><span class="p">,</span>
-</span><span class="hll">                    <span class="s2">&quot;You have not granted permission to take photos&quot;</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">"Oh no!"</span><span class="p">,</span>
+</span><span class="hll">                    <span class="s2">"You have not granted permission to take photos"</span><span class="p">,</span>
 </span><span class="hll">                <span class="p">)</span>
 </span><span class="hll">            <span class="p">)</span>
 </span>
@@ -1743,7 +1743,7 @@ aria-label="Header"
 <p>Part of this code we've just added asks for permission to use the camera. This is a common feature of modern app platforms - you can't access hardware features without explicitly asking the user's permission first.</p>
 <p>However, this request comes in two parts. The first is in the code we've just seen; but before the app can ask for permissions, it needs to declare the permissions it is going to ask for.</p>
 <p>The permissions required by each platform are slightly different, but Briefcase has a cross-platform representation for many common hardware permissions. In the <code>[tool.briefcase.app.hellocamera]</code> configuration section of your app's <code>pyproject.toml</code> file, add the following (just above the <code>sources</code> declaration):</p>
-<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;App will take mugshots.&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">permission</span><span class="p">.</span><span class="n">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"App will take mugshots."</span>
 </code></pre></div>
 <p>This declares that your app needs to access the camera, and provides a short description why the camera is required. This description is needed on some platforms (most notably macOS and iOS) and will be displayed to the user as a additional information when the permission dialog is presented.</p>
 <p>We can now generate and run the app:</p>

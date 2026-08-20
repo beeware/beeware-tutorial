@@ -1639,7 +1639,7 @@ aria-label="En-tête"
 <h2 id="execution-de-la-suite-de-tests">Exécution de la suite de tests<a class="headerlink" href="#execution-de-la-suite-de-tests" title="Permanent link">&para;</a></h2>
 <p>Il s'avère que notre projet possède déjà une suite de tests ! Lorsque nous avons généré notre projet à l'origine, deux répertoires de premier niveau ont été générés : <code>src</code> et <code>tests</code>. Le dossier <code>src</code> contient le code de notre application ; le dossier <code>tests</code> contient notre suite de tests. Dans le dossier <code>tests</code> se trouve un fichier nommé <code>test_app.py</code> avec le contenu suivant :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Un premier test pour l&#39;application&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Un premier test pour l'application"""</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
 <p>Ceci est un <a href="https://pytest.org">Pytest</a> <em>test case</em> - un bloc de code qui peut être exécuté pour vérifier un certain comportement de votre application. Dans ce cas, le test est un placeholder, et ne teste rien de notre application - mais c'est un test que nous pouvons effectuer.</p>
@@ -1653,7 +1653,7 @@ aria-label="En-tête"
 <span class="go">...</span>
 <span class="go">Installation des dépendances de développement... terminée</span>
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">plateforme darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0 -- /Users/brutus/beeware-tutorial/beeware-venv/bin/python3.11</span>
@@ -1674,7 +1674,7 @@ aria-label="En-tête"
 <span class="go">...</span>
 <span class="go">Installation des dépendances de développement... terminée</span>
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">plateforme linux -- Python 3.11.0</span>
@@ -1698,7 +1698,7 @@ aria-label="En-tête"
 <span class="go">...</span>
 <span class="go">Installation des dépendances de développement... terminée</span>
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">plateforme win32 -- Python 3.11.0</span>
@@ -1723,15 +1723,15 @@ aria-label="En-tête"
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_name</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Si un nom est fourni, le message de bienvenue inclut ce nom&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Si un nom est fourni, le message de bienvenue inclut ce nom"""</span>
 
- <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Bonjour, Alice&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Bonjour, Alice"</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_empty</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Si aucun nom n&#39;est fourni, un message de bienvenue générique est affiché&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Si aucun nom n'est fourni, un message de bienvenue générique est affiché"""</span>
 
- <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Bonjour, inconnu&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Bonjour, inconnu"</span>
 </code></pre></div>
 <p>Ceci définit deux nouveaux tests, vérifiant les deux comportements que nous attendons : la sortie lorsqu'un nom est fourni, et la sortie lorsque le nom est vide.</p>
 <p>Nous pouvons maintenant réexécuter la suite de tests. Cette fois, nous n'avons pas besoin de fournir l'option <code>-r</code>, puisque les pré-requis pour les tests ont déjà été installés ; nous avons seulement besoin d'utiliser l'option <code>--test</code> :</p>
@@ -1740,7 +1740,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1755,7 +1755,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1770,7 +1770,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1788,9 +1788,9 @@ aria-label="En-tête"
 <h2 id="developpement-pilote-par-les-tests">Développement piloté par les tests<a class="headerlink" href="#developpement-pilote-par-les-tests" title="Permanent link">&para;</a></h2>
 <p>Maintenant que nous disposons d'une suite de tests, nous pouvons l'utiliser pour développer de nouvelles fonctionnalités. Modifions notre application pour avoir un message d'accueil spécial pour un utilisateur particulier. Nous pouvons commencer par ajouter un scénario de test pour le nouveau comportement que nous aimerions voir au bas de <code>test_app.py</code> :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Si le nom est Brutus, un message d&#39;accueil spécial s&#39;affiche&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Si le nom est Brutus, un message d'accueil spécial s'affiche"""</span>
 
- <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Méfiez-vous des IDE Python !&quot;</span>
+ <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">"Brutus"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Méfiez-vous des IDE Python !"</span>
 </code></pre></div>
 <p>Ensuite, exécutez la suite de tests avec ce nouveau test :</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
@@ -1798,7 +1798,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1812,23 +1812,23 @@ aria-label="En-tête"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go"> &quot;&quot;&quot;Si le nom est Brutus, un message d&#39;accueil spécial est affiché&quot;&quot;&quot;</span>
+<span class="go"> """Si le nom est Brutus, un message d'accueil spécial est affiché"""</span>
 
-<span class="go">&gt; assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">&gt; assert greeting("Brutus") == "BeeWare the IDEs of Python!"</span>
+<span class="go">E AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E - BeeWare the IDEs of Python!</span>
 <span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== Informations succinctes sur le test ============================</span>
-<span class="go">ÉCHEC tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">ÉCHEC tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...</span>
 <span class="go">========================= 1 échec, 2 réussites en 0,14 s ==========================</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1842,16 +1842,16 @@ aria-label="En-tête"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go"> def test_brutus():</span>
-<span class="go"> &quot;&quot;&quot;Si le nom est Brutus, fournir un message d&#39;accueil spécial&quot;&quot;&quot;</span>
+<span class="go"> """Si le nom est Brutus, fournir un message d'accueil spécial"""</span>
 
-<span class="go">&gt; assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">&gt; assert greeting("Brutus") == "BeeWare the IDEs of Python!"</span>
+<span class="go">E AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E - BeeWare the IDEs of Python!</span>
 <span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== bref résumé des tests ============================</span>
-<span class="go">ÉCHEC tests/test_app.py::test_brutus - AssertionError: assert &#39;Bonjour, Brutus...</span>
+<span class="go">ÉCHEC tests/test_app.py::test_brutus - AssertionError: assert 'Bonjour, Brutus...</span>
 <span class="go">========================= 1 échec, 2 réussis en 0,14 s ==========================</span>
 
 <span class="go">============================== 2 réussis en 0,11 s ===============================</span>
@@ -1860,7 +1860,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1874,16 +1874,16 @@ aria-label="En-tête"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go"> &quot;&quot;&quot;Si le nom est Brutus, afficher un message d&#39;accueil spécial&quot;&quot;&quot;</span>
+<span class="go"> """Si le nom est Brutus, afficher un message d'accueil spécial"""</span>
 
-<span class="gp">&gt;</span> assert greeting(<span class="s2">&quot;Brutus&quot;</span>) == <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="gp">&gt;</span> assert greeting(<span class="s2">"Brutus"</span>) == <span class="s2">"BeeWare the IDEs of Python!"</span>
+<span class="go">E AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E - BeeWare the IDEs of Python!</span>
 <span class="go">E + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== Informations succinctes sur le test ============================</span>
-<span class="go">ÉCHEC tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">ÉCHEC tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...</span>
 <span class="go">========================= 1 échec, 2 réussites en 0,14 s ==========================</span>
 </code></pre></div>
 </div>
@@ -1892,12 +1892,12 @@ aria-label="En-tête"
 <p>Cette fois, nous voyons un échec du test - et la sortie explique la source de l'échec : le test attend la sortie "BeeWare the IDEs of Python!", mais notre implémentation de <code>greeting()</code> retourne "Hello, Brutus". Modifions l'implémentation de <code>greeting()</code> dans <code>src/helloworld/app.py</code> pour avoir le nouveau comportement :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Méfiez-vous des IDE de Python !&quot;</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">"Brutus"</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"Méfiez-vous des IDE de Python !"</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Bonjour, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"Bonjour, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Bonjour, inconnu&quot;</span>
+        <span class="k">return</span> <span class="s2">"Bonjour, inconnu"</span>
 </code></pre></div>
 <p>Si nous exécutons à nouveau les tests, nous constatons qu'ils sont réussis :</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>
@@ -1905,7 +1905,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1921,7 +1921,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>dev<span class="w"> </span>--test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1937,7 +1937,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase dev --test
 
-<span class="go">[helloworld] Exécution de la suite de tests dans l&#39;environnement de développement...</span>
+<span class="go">[helloworld] Exécution de la suite de tests dans l'environnement de développement...</span>
 <span class="go">===========================================================================</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -1960,7 +1960,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">Installation de src/helloworld... terminée</span>
 <span class="go">Installation des tests... terminée</span>
 
@@ -1982,7 +1982,7 @@ aria-label="En-tête"
 <span class="go">Configuration de argc/argv...</span>
 <span class="go">Initialisation du runtime Python...</span>
 <span class="go">Installation du gestionnaire NSLog Python...</span>
-<span class="go">Exécution du module d&#39;application : tests.helloworld</span>
+<span class="go">Exécution du module d'application : tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>
@@ -2000,13 +2000,13 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>--test<span class="w"> </span>-r
 
-<span class="go">[helloworld] Finalisation de la configuration de l&#39;application...</span>
+<span class="go">[helloworld] Finalisation de la configuration de l'application...</span>
 <span class="go">Cible : ubuntu:jammy (base Debian du fournisseur)</span>
 <span class="go">Détermination de la version de glibc... terminé</span>
 <span class="go">Cible : glibc 2.35</span>
 <span class="go">Cible : Python 3.10</span>
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">Installation de src/helloworld... terminée</span>
 <span class="go">Installation des tests... terminée</span>
 
@@ -2030,7 +2030,7 @@ aria-label="En-tête"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase run --test -r
 
-<span class="go">[helloworld] Mise à jour du code de l&#39;application...</span>
+<span class="go">[helloworld] Mise à jour du code de l'application...</span>
 <span class="go">Installation de src/helloworld... terminée</span>
 <span class="go">Installation des tests... terminée</span>
 
@@ -2049,7 +2049,7 @@ aria-label="En-tête"
 <span class="go">- C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app</span>
 <span class="go">Configuration de argc/argv...</span>
 <span class="go">Initialisation du runtime Python...</span>
-<span class="go">Exécution du module d&#39;application : tests.helloworld</span>
+<span class="go">Exécution du module d'application : tests.helloworld</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">============================= Début de la session de test ==============================</span>
 <span class="go">...</span>

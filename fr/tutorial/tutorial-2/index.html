@@ -1642,7 +1642,7 @@ aria-label="En-tête"
 <p><code>__main__.py</code> marque le module <code>helloworld</code> comme un type spécial de module - un module exécutable. Si vous essayez d'exécuter le module <code>helloworld</code> en utilisant <code>python -m helloworld</code>, le fichier <code>__main__.py</code> est l'endroit où Python commencera à s'exécuter. Le contenu de <code>__main__.py</code> est relativement simple :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">helloworld.app</span><span class="w"> </span><span class="kn">import</span> <span class="n">main</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span><span class="o">.</span><span class="n">main_loop</span><span class="p">()</span>
 </code></pre></div>
 <p>Ce fichier a deux fonctions :</p>
@@ -1710,7 +1710,7 @@ aria-label="En-tête"
         <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
 
         <span class="n">name_label</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
-        <span class="s2">&quot;Votre nom : &quot;</span><span class="p">,</span>
+        <span class="s2">"Votre nom : "</span><span class="p">,</span>
         <span class="n">margin</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -1720,7 +1720,7 @@ aria-label="En-tête"
  <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="p">)</span>
 
  <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
- <span class="s2">&quot;Say Hello!&quot;</span><span class="p">,</span>
+ <span class="s2">"Say Hello!"</span><span class="p">,</span>
  <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">say_hello</span><span class="p">,</span>
  <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
  <span class="p">)</span>
@@ -1733,7 +1733,7 @@ aria-label="En-tête"
  <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
  <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
- <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bonjour, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+ <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Bonjour, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <p>Examinons en détail ce qui a changé.</p>
 <p>Nous sommes toujours en train de créer une boîte principale, mais nous appliquons maintenant un style :</p>
@@ -1749,7 +1749,7 @@ aria-label="En-tête"
 </div>
 <p>Ensuite, nous définissons quelques widgets :</p>
 <div class="highlight"><pre><span></span><code><span class="n">name_label</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
-    <span class="s2">&quot;Votre nom : &quot;</span><span class="p">,</span>
+    <span class="s2">"Votre nom : "</span><span class="p">,</span>
     <span class="n">margin</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
 <span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -1764,7 +1764,7 @@ aria-label="En-tête"
 <p>La <code>name_box</code> est une boîte comme la boîte principale, mais cette fois, c'est une boîte <code>ROW</code> (rangée). Cela signifie que le contenu sera ajouté horizontalement, et qu'il essaiera d'être le moins large possible. La boîte a également un peu de padding (espace) - 5px sur tous les côtés.</p>
 <p>Nous définissons maintenant un bouton :</p>
 <div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-    <span class="s2">&quot;Salut !&quot;</span><span class="p">,</span>
+    <span class="s2">"Salut !"</span><span class="p">,</span>
     <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">say_hello</span><span class="p">,</span>
     <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span>
@@ -1781,7 +1781,7 @@ aria-label="En-tête"
 </code></pre></div>
 <p>Notre dernière action est de définir le gestionnaire du bouton. Un gestionnaire peut être n'importe quelle méthode, générateur ou co-routine asynchrone ; il accepte le widget qui a généré l'événement comme argument, et sera invoqué chaque fois que le bouton est pressé :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">)</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bonjour, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Bonjour, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <p>Le corps de la méthode est une simple instruction d'affichage (print). Cependant, elle interroge la valeur actuelle de l'entrée name et utilise ce contenu comme texte à imprimer.</p>
 <p>Maintenant que nous avons effectué ces changements, nous pouvons voir à quoi ils ressemblent en relançant l'application. Comme précédemment, nous utiliserons le mode développeur :</p>

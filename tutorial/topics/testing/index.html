@@ -1639,7 +1639,7 @@ aria-label="Header"
 <h2 id="running-the-test-suite">Running the test suite<a class="headerlink" href="#running-the-test-suite" title="Permanent link">&para;</a></h2>
 <p>It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: <code>src</code> and <code>tests</code>. The <code>src</code> folder contains the code for our app; the <code>tests</code> folder contains our test suite. Inside the <code>tests</code> folder is a file named <code>test_app.py</code> with the following content:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_first</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;An initial test for the app&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""An initial test for the app"""</span>
     <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
 </code></pre></div>
 <p>This is a <a href="https://pytest.org">Pytest</a> <em>test case</em> - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform.</p>
@@ -1723,15 +1723,15 @@ aria-label="Header"
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_name</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If a name is provided, the greeting includes the name&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""If a name is provided, the greeting includes the name"""</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, Alice&quot;</span>
+    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Hello, Alice"</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">test_empty</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If a name is not provided, a generic greeting is provided&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""If a name is not provided, a generic greeting is provided"""</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Hello, stranger"</span>
 </code></pre></div>
 <p>This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty.</p>
 <p>We can now re-run the test suite. This time, we don't need to provided the <code>-r</code> option, as the test requirements have already been installed; we only need to use the <code>--test</code> option:</p>
@@ -1788,9 +1788,9 @@ aria-label="Header"
 <h2 id="test-driven-development">Test driven development<a class="headerlink" href="#test-driven-development" title="Permanent link">&para;</a></h2>
 <p>Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of <code>test_app.py</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_brutus</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""If the name is Brutus, a special greeting is provided"""</span>
 
-    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">&quot;Brutus&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+    <span class="k">assert</span> <span class="n">greeting</span><span class="p">(</span><span class="s2">"Brutus"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"BeeWare the IDEs of Python!"</span>
 </code></pre></div>
 <p>Then, run the test suite with this new test:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label></div>
@@ -1812,16 +1812,16 @@ aria-label="Header"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, a special greeting is provided&quot;&quot;&quot;</span>
+<span class="go">        """If the name is Brutus, a special greeting is provided"""</span>
 
-<span class="go">&gt;       assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">&gt;       assert greeting("Brutus") == "BeeWare the IDEs of Python!"</span>
+<span class="go">E       AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E         - BeeWare the IDEs of Python!</span>
 <span class="go">E         + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...</span>
 <span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
 </code></pre></div>
 </div>
@@ -1842,16 +1842,16 @@ aria-label="Header"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, provide a special greeting&quot;&quot;&quot;</span>
+<span class="go">        """If the name is Brutus, provide a special greeting"""</span>
 
-<span class="go">&gt;       assert greeting(&quot;Brutus&quot;) == &quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="go">&gt;       assert greeting("Brutus") == "BeeWare the IDEs of Python!"</span>
+<span class="go">E       AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E         - BeeWare the IDEs of Python!</span>
 <span class="go">E         + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...</span>
 <span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
 
 <span class="go">============================== 2 passed in 0.11s ===============================</span>
@@ -1874,16 +1874,16 @@ aria-label="Header"
 <span class="go">_________________________________ test_brutus __________________________________</span>
 
 <span class="go">    def test_brutus():</span>
-<span class="go">        &quot;&quot;&quot;If the name is Brutus, provide a special greeting&quot;&quot;&quot;</span>
+<span class="go">        """If the name is Brutus, provide a special greeting"""</span>
 
-<span class="gp">&gt;</span>       assert greeting(<span class="s2">&quot;Brutus&quot;</span>) == <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
-<span class="go">E       AssertionError: assert &#39;Hello, Brutus&#39; == &#39;BeeWare the IDEs of Python!&#39;</span>
+<span class="gp">&gt;</span>       assert greeting(<span class="s2">"Brutus"</span>) == <span class="s2">"BeeWare the IDEs of Python!"</span>
+<span class="go">E       AssertionError: assert 'Hello, Brutus' == 'BeeWare the IDEs of Python!'</span>
 <span class="go">E         - BeeWare the IDEs of Python!</span>
 <span class="go">E         + Hello, Brutus</span>
 
 <span class="go">tests/test_app.py:19: AssertionError</span>
 <span class="go">=========================== short test summary info ============================</span>
-<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert &#39;Hello, Brutus...</span>
+<span class="go">FAILED tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...</span>
 <span class="go">========================= 1 failed, 2 passed in 0.14s ==========================</span>
 </code></pre></div>
 </div>
@@ -1892,12 +1892,12 @@ aria-label="Header"
 <p>This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output "BeeWare the IDEs of Python!", but our implementation of <code>greeting()</code> is returning "Hello, Brutus". Let's modify the implementation of <code>greeting()</code> in <code>src/helloworld/app.py</code> to have the new behavior:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Brutus&quot;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;BeeWare the IDEs of Python!&quot;</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">"Brutus"</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">"BeeWare the IDEs of Python!"</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Hello, stranger&quot;</span>
+        <span class="k">return</span> <span class="s2">"Hello, stranger"</span>
 </code></pre></div>
 <p>If we run the tests again, we'll now see our tests pass:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">macOS</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">Windows</label></div>

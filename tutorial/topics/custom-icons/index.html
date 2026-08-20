@@ -1631,7 +1631,7 @@ aria-label="Header"
 <h2 id="adding-an-icon">Adding an icon<a class="headerlink" href="#adding-an-icon" title="Permanent link">&para;</a></h2>
 <p>Every platform uses a different format for application icons - and some platforms need <em>multiple</em> icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform.</p>
 <p>Edit your <code>pyproject.toml</code>, adding a new <code>icon</code> configuration item in the <code>[tool.briefcase.app.helloworld]</code> configuration section, just above the <code>sources</code> definition:</p>
-<div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;icons/helloworld&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"icons/helloworld"</span>
 </code></pre></div>
 <p>This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require <em>multiple</em> icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used.</p>
 <p>We can now run <code>briefcase update</code> again - but this time, we pass in the <code>--update-resources</code> flag, telling Briefcase that we want to install new application resources (i.e., the icons):</p>
@@ -1928,10 +1928,10 @@ aria-label="Header"
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you get a stack trace referencing <code>faker</code> or <code>httpx</code> when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the <code>-r</code> argument to update the app requirements.</p>
+<p>If you get a stack trace referencing <code>faker</code> or <code>httpx2</code> when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the <code>-r</code> argument to update the app requirements.</p>
 </div>
 <p>When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your <code>pyproject.toml</code>, just after the <code>icon</code> definition:</p>
-<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"#D3E6F5"</span>
 </code></pre></div>
 <p>Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to <code>briefcase create</code>. To apply this change, we have to re-create the app by re-running <code>briefcase create</code>. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
@@ -1939,7 +1939,7 @@ aria-label="Header"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">Application &#39;helloworld&#39; already exists; overwrite [y/N]? y</span>
+<span class="go">Application 'helloworld' already exists; overwrite [y/N]? y</span>
 
 <span class="go">[helloworld] Removing old application bundle...</span>
 
@@ -1952,7 +1952,7 @@ aria-label="Header"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create
 
-<span class="go">Application &#39;helloworld&#39; already exists; overwrite [y/N]? y</span>
+<span class="go">Application 'helloworld' already exists; overwrite [y/N]? y</span>
 
 <span class="go">[helloworld] Removing old application bundle...</span>
 
@@ -1965,7 +1965,7 @@ aria-label="Header"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">C:\...&gt;</span>briefcase create
 
-<span class="go">Application &#39;helloworld&#39; already exists; overwrite [y/N]? y</span>
+<span class="go">Application 'helloworld' already exists; overwrite [y/N]? y</span>
 
 <span class="go">[helloworld] Removing old application bundle...</span>
 
@@ -1978,7 +1978,7 @@ aria-label="Header"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>android
 
-<span class="go">Application &#39;helloworld&#39; already exists; overwrite [y/N]? y</span>
+<span class="go">Application 'helloworld' already exists; overwrite [y/N]? y</span>
 
 <span class="go">[helloworld] Removing old application bundle...</span>
 
@@ -1990,7 +1990,7 @@ aria-label="Header"
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(beeware-venv)</span> <span class="gp">$ </span>briefcase<span class="w"> </span>create<span class="w"> </span>iOS
 
-<span class="go">Application &#39;helloworld&#39; already exists; overwrite [y/N]? y</span>
+<span class="go">Application 'helloworld' already exists; overwrite [y/N]? y</span>
 
 <span class="go">[helloworld] Removing old application bundle...</span>
 
@@ -2029,7 +2029,7 @@ aria-label="Header"
     └── pyproject.toml
 </code></pre></div>
 <p>Now that the runtime icon is in place, let's add an icon to our button. The Toga button widget will only accommodate either an icon or text (not both), so let's update the code for the button to include the runtime icon.</p>
-<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">"icons/helloworld"</span><span class="p">)</span>
 
 <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
     <span class="n">icon</span><span class="o">=</span><span class="n">helloworld_icon</span><span class="p">,</span>

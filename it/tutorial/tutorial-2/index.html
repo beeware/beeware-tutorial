@@ -1642,7 +1642,7 @@ aria-label="Intestazione"
 <p><code>__main__.py</code> contrassegna il modulo <code>helloworld</code> come un tipo speciale di modulo, un modulo eseguibile. Se si cerca di eseguire il modulo <code>helloworld</code> usando <code>python -m helloworld</code>, il file <code>__main__.py</code> è il punto in cui Python inizierà l'esecuzione. Il contenuto di <code>__main__.py</code> è relativamente semplice:</p>
 <div class="highlight"><pre><span></span><code><span class="n">da</span> <span class="n">helloworld</span><span class="o">.</span><span class="n">app</span> <span class="kn">import</span><span class="w"> </span><span class="nn">main</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span><span class="o">.</span><span class="n">main_loop</span><span class="p">()</span>
 </code></pre></div>
 <p>Questo file svolge due funzioni:</p>
@@ -1710,7 +1710,7 @@ aria-label="Intestazione"
     <span class="n">main_box</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="n">COLUMN</span><span class="p">)</span>
 
     <span class="n">name_label</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
-        <span class="s2">&quot;Il tuo nome: &quot;</span><span class="p">,</span>
+        <span class="s2">"Il tuo nome: "</span><span class="p">,</span>
         <span class="n">margin</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
     <span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -1720,7 +1720,7 @@ aria-label="Intestazione"
  <span class="n">name_box</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="p">)</span>
 
  <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
- <span class="s2">&quot;Say Hello!&quot;</span><span class="p">,</span>
+ <span class="s2">"Say Hello!"</span><span class="p">,</span>
  <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">say_hello</span><span class="p">,</span>
  <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
  <span class="p">)</span>
@@ -1733,7 +1733,7 @@ aria-label="Intestazione"
  <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
  <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
- <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+ <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <p>Vediamo nel dettaglio cosa è cambiato.</p>
 <p>Stiamo ancora creando un riquadro principale, ma ora stiamo applicando uno stile:</p>
@@ -1749,7 +1749,7 @@ aria-label="Intestazione"
 </div>
 <p>Successivamente, definiamo un paio di widget:</p>
 <div class="highlight"><pre><span></span><code><span class="n">name_label</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
-    <span class="s2">&quot;Il tuo nome: &quot;</span><span class="p">,</span>
+    <span class="s2">"Il tuo nome: "</span><span class="p">,</span>
     <span class="n">margin</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
 <span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">name_input</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">flex</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -1764,7 +1764,7 @@ aria-label="Intestazione"
 <p>Il <code>nome_box</code> è un box come quello principale, ma questa volta è un box <code>ROW</code>. Ciò significa che il contenuto sarà aggiunto orizzontalmente e cercherà di avere una larghezza il più possibile ridotta. Il riquadro ha anche un padding di 5px su tutti i lati.</p>
 <p>Ora definiamo un pulsante:</p>
 <div class="highlight"><pre><span></span><code><span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
-    <span class="s2">&quot;Ciao!&quot;</span><span class="p">,</span>
+    <span class="s2">"Ciao!"</span><span class="p">,</span>
     <span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">say_hello</span><span class="p">,</span>
     <span class="n">margin</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span>
@@ -1781,7 +1781,7 @@ aria-label="Intestazione"
 </code></pre></div>
 <p>L'ultima cosa da fare è definire il gestore del pulsante. Un gestore può essere qualsiasi metodo, generatore o co-routine asincrona; accetta come argomento il widget che ha generato l'evento e sarà invocato ogni volta che il pulsante viene premuto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ciao, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Ciao, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <p>Il corpo del metodo è una semplice istruzione di stampa, che però interroga il valore corrente dell'input name e utilizza il suo contenuto come testo stampato.</p>
 <p>Ora che abbiamo apportato queste modifiche, possiamo vederne l'aspetto avviando nuovamente l'applicazione. Come prima, useremo la modalità sviluppatore:</p>

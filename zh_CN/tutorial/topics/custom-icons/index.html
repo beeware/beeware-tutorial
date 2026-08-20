@@ -233,7 +233,7 @@ aria-label="页眉"
     </li>
     <li class="md-tabs__item">
       <a href="https://beeware.org/zh_CN/membership" class="md-tabs__link">
-          赞助商
+          赞助
       </a>
     </li>
     
@@ -1631,7 +1631,7 @@ aria-label="页眉"
 <h2 id="_2">添加图标<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>每个平台都使用不同的应用程序图标格式 &ndash; 有些还需要\ <em>多个</em>\ 不同大小和形状的。为此考虑，Briefcase 提供了一种简短的方法，可以配置一次图标，并让这种定义扩充到每个单个平台的所有所需要的图标。</p>
 <p>编辑您的 <code>project.toml</code>，在 <code>[tool.briefcase.app.helloworld]</code> 配置部分中，在 <code>sources</code> 的正上方添加一个 <code>icon</code> 配置项:</p>
-<div class="highlight"><pre><span></span><code><span class="err">图标</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;icons/helloworld&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="err">图标</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"icons/helloworld"</span>
 </code></pre></div>
 <p>图标配置时，无需指定任何扩展文件名。这里的值将会被作为前缀使用；每个平台将会在此前缀基础上添加更多项目，以构建在那个平台上所需的文件。有些平台需要\ <em>多个</em>\ 图标文件；在这种情况下，前缀将与文件大小和变种结合在一起，生成使用的图标列表。</p>
 <p>我们现在可以重新运行 <code>briefcase update</code> — 但这次，我们传入 <code>--update-resources</code> 标志，以告诉 Briefcase 我们想要安装新的应用资源（图标）：</p>
@@ -1928,10 +1928,10 @@ aria-label="页眉"
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>如果在运行应用程序时出现引用 <code>faker</code> 或 <code>httpx</code> 的堆栈跟踪，则有可能是在教程的第 7 或第 8 步中没有运行应用程序。重新运行应用程序，添加 <code>-r</code> 参数以更新应用程序需求。</p>
+<p>If you get a stack trace referencing <code>faker</code> or <code>httpx2</code> when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the <code>-r</code> argument to update the app requirements.</p>
 </div>
 <p>在 iOS 或 Android 上运行应用程序时，除了图标的变化外，您还会发现闪屏也加入了新图标。不过，图标的淡蓝色背景与闪屏的白色背景显得有些格格不入。我们可以通过自定义闪屏的背景颜色来解决这个问题。将以下定义添加到 <code>pyproject.toml</code> 中，就在 icon` 定义之后：</p>
-<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"#D3E6F5"</span>
 </code></pre></div>
 <p>不幸的是，Briefcase 无法将此更改应用于已生成的项目，因为这需要修改在最初调用 <code>briefcase create</code> 时生成的文件之一。要应用这一更改，我们必须通过重新运行 <code>briefcase create</code> 来重新创建应用程序。当我们这样做时，系统会提示我们确认是否要覆盖现有项目：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
@@ -2029,7 +2029,7 @@ aria-label="页眉"
     └── pyproject.toml
 </code></pre></div>
 <p>现在运行时图标已经就位，让我们为按钮添加一个图标。Toga 按钮 widget 只能容纳图标或文本（不能同时容纳），因此让我们更新按钮的代码，加入运行时图标。</p>
-<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">"icons/helloworld"</span><span class="p">)</span>
 
 <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
     <span class="n">icon</span><span class="o">=</span><span class="n">helloworld_icon</span><span class="p">,</span>

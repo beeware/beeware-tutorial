@@ -1631,7 +1631,7 @@ aria-label="Cabecera"
 <h2 id="anadir-un-icono">Añadir un icono<a class="headerlink" href="#anadir-un-icono" title="Permanent link">&para;</a></h2>
 <p>Cada plataforma utiliza un formato diferente para los iconos de la aplicación; y algunas plataformas necesitan <em>múltiples</em> iconos de tamaños y formas diferentes. Para tener esto en cuenta, Briefcase proporciona una forma abreviada para configurar un icono una vez, y luego hacer que esa definición se expanda en todos los iconos diferentes necesarios para cada plataforma individual.</p>
 <p>Edita tu <code>pyproject.toml</code>, añadiendo un elemento de configuración <code>icon</code> nuevo en la sección de configuración <code>[tool.briefcase.app.helloworld]</code>, justo encima de la definición <code>sources</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;icons/helloworld&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"icons/helloworld"</span>
 </code></pre></div>
 <p>Esta definición de icono no especifica ninguna extensión de archivo. El valor será utilizada como prefijo; cada plataforma añadirá elementos adicionales a este prefijo para crear los archivos necesarios para cada plataforma. Algunas plataformas requieren <em>múltiples</em> archivos de icono; este prefijo se combinará con modificadores de tamaño de archivo y variantes para generar la lista de archivos de iconos que son utilizados.</p>
 <p>Ahora podemos ejecutar <code>briefcase update</code> de nuevo — pero esta vez, le pasamos el indicador <code>--update-resources</code>, diciéndole a Briefcase que queremos instalar recursos nuevos de la aplicación (es decir, los iconos):</p>
@@ -1927,10 +1927,10 @@ aria-label="Cabecera"
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Si obtienes una traza de pila en referencia a <code>faker</code> o <code>httpx</code> cuando ejecutas la app, es posible que olvidaste ejecutar tu app durante el paso 7 u 8 del tutorial. Vuelve a ejecutar la aplicación, añadiendo el argumento <code>-r</code> para actualizar los requerimientos de la aplicación.</p>
+<p>If you get a stack trace referencing <code>faker</code> or <code>httpx2</code> when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the <code>-r</code> argument to update the app requirements.</p>
 </div>
 <p>Cuando ejecutes la aplicación en iOS o Android, además del cambio de icono, también deberías tener en cuenta que la pantalla de inicio incorpora el icono nuevo. Sin embargo, el fondo azul claro del icono parece un poco fuera de lugar frente al fondo blanco de la pantalla de inicio. Podemos arreglar esto personalizando el color de fondo de la pantalla de inicio. Añade la definición siguiente a tu <code>pyproject.toml</code>, justo tras la definición de <code>icon</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#D3E6F5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">splash_background_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"#D3E6F5"</span>
 </code></pre></div>
 <p>Desafortunadamente, Briefcase no es capaz de aplicar este cambio a un proyecto ya generado, ya que requiere realizar modificaciones en uno de los archivos que fue generado durante la invocación original a <code>briefcase create</code>. Para aplicar este cambio, tenemos que volver a crear la aplicación ejecutando de nuevo <code>briefcase create</code>. Cuando hagamos esto, se nos pedirá que confirmemos que queremos sobrescribir el proyecto existente:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">macOS</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">Windows</label><label for="__tabbed_3_4">Android</label><label for="__tabbed_3_5">iOS</label></div>
@@ -2027,7 +2027,7 @@ aria-label="Cabecera"
     └── pyproject.toml
 </code></pre></div>
 <p>Ahora que el icono de tiempo de ejecución está en su lugar, vamos a añadir un icono a nuestro botón. El widget del botón Toga sólo admite o bien un icono o bien un texto (no ambos), así que vamos a actualizar el código del botón para incluir el icono de tiempo de ejecución.</p>
-<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">&quot;icons/helloworld&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">helloworld_icon</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="s2">"icons/helloworld"</span><span class="p">)</span>
 
 <span class="n">button</span> <span class="o">=</span> <span class="n">toga</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span>
     <span class="n">icon</span><span class="o">=</span><span class="n">helloworld_icon</span><span class="p">,</span>

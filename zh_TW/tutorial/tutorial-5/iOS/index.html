@@ -1652,7 +1652,7 @@ aria-label="頁首"
 
 <span class="go">未來，您可以透過執行以下指令來指定此裝置：</span>
 
-<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (第 3 代)::iOS 16.2&quot;</span>
+<span class="gp"> $ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (第 3 代)::iOS 16.2"</span>
 
 <span class="go">或：</span>
 
@@ -1680,10 +1680,10 @@ aria-label="頁首"
 </figure>
 <p>當應用程式執行時，您會在控制台看到一系列模擬器日誌輸出訊息。在終端機中輸入 Ctrl+C 將停止控制台中的訊息，但不會關閉模擬器。這樣您就可以測試新的變更，而無需重新啟動模擬器。</p>
 <p>如果您事先知道要定位哪個 iOS 模擬器，則可以透過提供<code>-d</code>（或<code>--device</code>）選項來告訴 Briefcase 使用該模擬器。使用您在建立應用程式時選擇的設備名稱，運行：</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (第 3 代)&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (第 3 代)"</span>
 </code></pre></div>
 <p>如果您有多個可用的 iOS 版本，公事包將選擇最高的 iOS 版本；如果你想選擇一個特定的 iOS 版本，你可以告訴它使用該特定版本：</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;iPhone SE (第 3 代)::iOS 15.5&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span><span class="s2">"iPhone SE (第 3 代)::iOS 15.5"</span>
 </code></pre></div>
 <p>或者，您可以命名特定設備 UDID：</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>briefcase<span class="w"> </span>run<span class="w"> </span>iOS<span class="w"> </span>-d<span class="w"> </span>2614A2DD-574F-4C1F-9F1E-478F32DE282E
