@@ -195,7 +195,7 @@ async def say_hello(self, widget):
 
 There is currently a [known bug](https://github.com/sethmlarson/truststore/issues/217) that breaks `httpx2` on Android - you'll get an SSL verification error.
 
-To work around this, import the `ssl` library (part of the Python standard library) into your app, and add a `verify` arugment when creating the client:
+To work around this, import the `ssl` library (part of the Python standard library) into your app, and add a `verify` argument when creating the client:
 
 ```python
 import ssl
