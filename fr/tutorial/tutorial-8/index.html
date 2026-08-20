@@ -1685,30 +1685,30 @@ aria-label="En-tête"
 <p>L'une des tâches les plus courantes et les plus fastidieuses qu'une application doit effectuer consiste à demander à une API web de récupérer des données et de les afficher à l'utilisateur. Les API web mettent parfois une ou deux secondes à répondre, de sorte que si nous appelons une API de ce type, nous devons veiller à ce que notre application ne devienne pas inactive pendant que nous attendons que l'API web renvoie une réponse.</p>
 <p>Il s'agit d'une application ludique, nous ne disposons donc pas d'une <em>véritable</em> API avec laquelle travailler. Nous utiliserons donc un exemple de point de terminaison API comme source de données. Si vous ouvrez <a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a> dans votre navigateur, vous obtiendrez une charge utile JSON avec un message.</p>
 <p>La bibliothèque standard de Python contient tous les outils dont vous avez besoin pour accéder à une API. Cependant, les API intégrées sont de très bas niveau. Ce sont de bonnes implémentations du protocole HTTP, mais elles exigent de l'utilisateur qu'il gère de nombreux détails de bas niveau, comme la redirection d'URL, les sessions, l'authentification et l'encodage des données utiles. En tant qu'"utilisateur de navigateur normal", vous avez probablement l'habitude de considérer ces détails comme allant de soi, puisque le navigateur les gère pour vous.</p>
-<p>As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called <a href="https://httpx2.pydantic.dev/"><code>httpx2</code></a> - to access a simple API.</p>
-<p>Let's add an <code>httpx2</code> API call to our app. First, as with <code>faker</code> in the <a href="../tutorial-7/">previous step</a>, we need to tell briefcase to install <code>httpx2</code> when it builds our app. Modify the <code>requires</code> setting in our <code>pyproject.toml</code> to include the new requirement:</p>
+<p>C'est pourquoi des développeurs ont créé des bibliothèques tierces qui encapsulent les API intégrées et proposent une API plus simple, plus proche de l'expérience quotidienne des utilisateurs de navigateurs. Nous allons utiliser l'une de ces bibliothèques — une bibliothèque appelée <a href="https://httpx2.pydantic.dev/"><code>httpx2</code></a> — pour accéder à une API simple.</p>
+<p>Ajoutons un appel API <code>httpx2</code> à notre application. Tout d’abord, comme pour <code>faker</code> à l’<a href="../tutorial-7/">étape précédente</a>, nous devons indiquer à Briefcase d’installer <code>httpx2</code> lors de la compilation de notre application. Modifiez le paramètre <code>requires</code> dans notre <code>pyproject.toml</code> afin d’y inclure cette nouvelle dépendance :</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">"faker"</span><span class="p">,</span>
     <span class="s2">"httpx2"</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>Add an import to the top of the <code>app.py</code> to import <code>httpx2</code>:</p>
+<p>Ajoutez une directive d'importation au début du bloc <code>app.py</code> pour importer <code>httpx2</code> :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx2</span>
 </code></pre></div>
 <p>Puis modifiez le callback <code>say_hello()</code> pour qu'il ressemble à ceci :</p>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">)</span> <span class="p">:</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
-    <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span> <span class="p">:</span>
         <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://tutorial.beeware.org/tutorial/message.json"</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">"A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">'body'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
-        <span class="p">)</span>
-    <span class="p">)</span>
+  <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+    <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+    <span class="sa">f</span><span class="s2">"Un message de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">'body'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+  <span class="p">)</span>
+  <span class="p">)</span>
 </code></pre></div>
 <p>Ceci modifiera le callback <code>say_hello()</code> de telle sorte que lorsqu'il est invoqué, il le fera :</p>
 <ul>
@@ -1793,33 +1793,33 @@ aria-label="En-tête"
 <p>En Python, la programmation asynchrone est implémentée à l'aide des mots-clés <code>async</code> et <code>await</code>, et du module <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> dans la bibliothèque standard. Le mot-clé <code>async</code> nous permet de déclarer qu'une fonction est une co-routine asynchrone. Le mot-clé <code>await</code> permet de déclarer qu'il existe une opportunité de changer de contexte vers une autre co-routine. Le module `asyncio](<a href="https://docs.python.org/3/library/asyncio.html">https://docs.python.org/3/library/asyncio.html</a>) fournit d'autres outils et primitives utiles pour le codage asynchrone.</p>
 <h2 id="rendre-le-didacticiel-asynchrone">Rendre le didacticiel asynchrone<a class="headerlink" href="#rendre-le-didacticiel-asynchrone" title="Permanent link">&para;</a></h2>
 <p>Pour rendre notre tutoriel asynchrone, modifiez le gestionnaire d'événement <code>say_hello()</code> pour qu'il ressemble à ceci :</p>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">)</span> <span class="p">:</span>
     <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
-    <span class="k">async</span> <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://jsonplaceholder.typicode.com/posts/42"</span><span class="p">)</span>
+    <span class="k">async</span> <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span> <span class="p">:</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://jsonplaceholder.typicode.com/posts/42"</span><span class="p">)</span>
 
     <span class="n">payload</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_window</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span>
-        <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
-            <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
-            <span class="sa">f</span><span class="s2">"A message from </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">'body'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
-        <span class="p">)</span>
+ <span class="n">toga</span><span class="o">.</span><span class="n">InfoDialog</span><span class="p">(</span>
+ <span class="n">greeting</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name_input</span><span class="o">.</span><span class="n">value</span><span class="p">),</span>
+ <span class="sa">f</span><span class="s2">"Un message de </span><span class="si">{</span><span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">()</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="n">payload</span><span class="p">[</span><span class="s1">'body'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+ <span class="p">)</span>
     <span class="p">)</span>
 </code></pre></div>
 <div class="admonition">
-<p class="admonition-title">SSL errors on Android</p>
-<p>There is currently a <a href="https://github.com/sethmlarson/truststore/issues/217">known bug</a> that breaks <code>httpx2</code> on Android - you'll get an SSL verification error.</p>
-<p>To work around this, import the <code>ssl</code> library (part of the Python standard library) into your app, and add a <code>verify</code> argument when creating the client:</p>
+<p class="admonition-title">Erreurs SSL sur Android</p>
+<p>Il existe actuellement un <a href="https://github.com/sethmlarson/truststore/issues/217">bug connu</a> qui empêche le fonctionnement de <code>httpx2</code> sur Android : vous obtiendrez une erreur de vérification SSL.</p>
+<p>Pour contourner ce problème, importez la bibliothèque <code>ssl</code> (qui fait partie de la bibliothèque standard de Python) dans votre application, puis ajoutez un argument <code>verify</code> lors de la création du client :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">ssl</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">(</span><span class="n">verify</span><span class="o">=</span><span class="n">ssl</span><span class="o">.</span><span class="n">create_default_context</span><span class="p">())</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">(</span><span class="n">verify</span><span class="o">=</span><span class="n">ssl</span><span class="o">.</span><span class="n">create_default_context</span><span class="p">())</span> <span class="k">as</span> <span class="n">client</span> <span class="p">:</span>
 </code></pre></div>
-<p>This argument is not required on other platforms.</p>
+<p>Cet argument n'est pas nécessaire sur les autres plateformes.</p>
 </div>
 <p>Il n'y a que 4 changements dans ce code par rapport à la version précédente :</p>
 <ol>
-<li>The client that is created is an asynchronous <code>AsyncClient()</code>, rather than a synchronous <code>Client()</code>. This tells <code>httpx2</code> that it should operate in asynchronous mode, rather than synchronous mode.</li>
+<li>Le client créé est un <code>AsyncClient()</code> asynchrone, et non un <code>Client()</code> synchrone. Cela indique à <code>httpx2</code> qu'il doit fonctionner en mode asynchrone, et non en mode synchrone.</li>
 <li>Le gestionnaire de contexte utilisé pour créer le client est marqué comme <code>async</code>. Cela indique à Python qu'il y a une opportunité de relâcher le contrôle lorsque le gestionnaire de contexte est entré et sorti.</li>
 <li>L'appel <code>get</code> est fait avec un mot-clé <code>await</code>. Cela indique à l'application que pendant que nous attendons la réponse du réseau, l'application peut laisser le contrôle à la boucle d'événements. Nous avons déjà vu ce mot-clé auparavant - nous utilisons également <code>await</code> lors de l'affichage de la boîte de dialogue. La raison de cette utilisation est la même que pour la requête HTTP - nous devons dire à l'application que pendant que la boîte de dialogue est affichée, et que nous attendons que l'utilisateur appuie sur un bouton, il est acceptable de redonner le contrôle à la boucle d'événements.</li>
 </ol>
@@ -1832,7 +1832,7 @@ aria-label="En-tête"
 <li>Si vous déplacez ou redimensionnez la fenêtre de l'application en attendant que la boîte de dialogue s'affiche, la fenêtre se redessinera.</li>
 <li>Si vous essayez d'ouvrir un menu d'application, le menu s'affiche immédiatement.</li>
 </ul>
-<p>We can now run the full app. However, as we've added an extra requirement (<code>httpx2</code>) we also need to update our app's requirements; we can do this by passing <code>-r</code> to <code>briefcase run</code>. This will update our app's requirements, then re-build the app, then launch the app:</p>
+<p>Nous pouvons désormais exécuter l'application dans son intégralité. Cependant, comme nous avons ajouté une dépendance supplémentaire (<code>httpx2</code>), nous devons également mettre à jour les dépendances de notre application ; pour ce faire, nous pouvons transmettre <code>-r</code> à <code>briefcase run</code>. Cela mettra à jour les dépendances de notre application, puis la recompilera et enfin la lancera :</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
