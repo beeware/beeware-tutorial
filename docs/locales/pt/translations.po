@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-20 01:39+0000\n"
-"PO-Revision-Date: 2026-07-18 16:01+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
-"Language: pt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.19.17\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-08-20 01:39+0000\nPO-Revision-Date: 2026-08-20 10:52+0000\nLast-Translator: Américo Monteiro <a_monteiro@gmx.com>\nLanguage-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\nLanguage: pt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 2026.9.dev0\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -1055,9 +1043,8 @@ msgstr ""
 "[helloworld] A iniciar a aplicação..."
 
 #: docs/en/tutorial/topics/custom-icons.md:365
-#, fuzzy
 msgid "If you get a stack trace referencing `faker` or `httpx2` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements."
-msgstr "Se você receber um rastreamento de pilha fazendo referência a `faker` ou `httpx2` ao executar o aplicativo, é possível que você tenha esquecido de executá-lo durante a etapa 7 ou 8 do tutorial. Execute o aplicativo novamente, adicionando o argumento `-r` para atualizar os requisitos do aplicativo."
+msgstr "Se receber um rastreamento de pilha fazendo referência a `faker` ou `httpx2` ao executar a aplicação, é possível que tenha se esquecido de executá-la durante o passo 7 ou 8 do tutorial. Execute a aplicação de novo, adicionando o argumento `-r` para atualizar os requisitos da aplicação."
 
 #: docs/en/tutorial/topics/custom-icons.md:369
 msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your `pyproject.toml`, just after the `icon` definition:"
@@ -6022,9 +6009,8 @@ msgid "The Python standard library contains all the tools you'd need to access a
 msgstr "A biblioteca standard do Python contém todas as ferramentas que vai precisar para aceder a uma API. No entanto, as APIs incorporadas são de nível muito baixo. Elas são boas implementações do protocolo HTTP - mas exigem que o utilizador faça gestão de muitos detalhes de baixo nível, como redirecionar de URL, sessões, autenticação e codificação de carga útil. Como um \"utilizador normal de navegador\", está provavelmente acostumado a considerar esses detalhes como garantidos, pois o navegador gere-os por si."
 
 #: docs/en/tutorial/tutorial-8.md:15
-#, fuzzy
 msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called [`httpx2`]{1} - to access a simple API."
-msgstr "Como resultado, foram desenvolvidas bibliotecas de terceiros que encapsulam as APIs integradas e oferecem uma API mais simples, mais próxima da experiência cotidiana do navegador. Vamos usar uma dessas bibliotecas — chamada [`httpx2`]{1} — para acessar uma API simples."
+msgstr "Como resultado, foram desenvolvidas bibliotecas de terceiros que envolvem as APIs integradas e oferecem uma API mais simples, mais próxima da experiência quotidiana do navegador. Vamos usar uma dessas bibliotecas — chamada [`httpx2`]{1} — para aceder a uma API simples."
 
 #: docs/en/tutorial/tutorial-8.md:17
 #, fuzzy
