@@ -362,7 +362,7 @@ Removing unneeded app bundle content... done
 
 /// note | Note
 
-If you get a stack trace referencing `faker` or `httpx` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements.
+If you get a stack trace referencing `faker` or `httpx2` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements.
 
 ///
 
