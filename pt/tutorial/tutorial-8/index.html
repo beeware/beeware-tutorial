@@ -1686,13 +1686,13 @@ aria-label="Cabeçalho"
 <p>Esta é uma aplicação de brincar, portanto não temos uma API <em>real</em> com a qual trabalhar, então vamos usar um ponto final de API de exemplo como fonte de dados. Se abrir <a href="https://tutorial.beeware.org/tutorial/message.json"><code>https://tutorial.beeware.org/tutorial/message.json</code></a> no seu navegador, receberá uma resposta JSON com uma mensagem.</p>
 <p>A biblioteca standard do Python contém todas as ferramentas que vai precisar para aceder a uma API. No entanto, as APIs incorporadas são de nível muito baixo. Elas são boas implementações do protocolo HTTP - mas exigem que o utilizador faça gestão de muitos detalhes de baixo nível, como redirecionar de URL, sessões, autenticação e codificação de carga útil. Como um "utilizador normal de navegador", está provavelmente acostumado a considerar esses detalhes como garantidos, pois o navegador gere-os por si.</p>
 <p>Como resultado, foram desenvolvidas bibliotecas de terceiros que envolvem as APIs integradas e oferecem uma API mais simples, mais próxima da experiência quotidiana do navegador. Vamos usar uma dessas bibliotecas — chamada <a href="https://httpx2.pydantic.dev/"><code>httpx2</code></a> — para aceder a uma API simples.</p>
-<p>Vamos adicionar uma chamada de API <code>httpx2</code> ao nosso aplicativo. Primeiro, assim como fizemos com <code>faker</code> na <a href="../tutorial-7/">etapa anterior</a>, precisamos instruir o briefcase a instalar <code>httpx2</code> quando ele compilar nosso aplicativo. Modifique a configuração <code>requires</code> em nosso <code>pyproject.toml</code> para incluir o novo requisito:</p>
+<p>Vamos adicionar uma chamada de API <code>httpx2</code> à nossa aplicação. Primeiro, assim como fizemos com <code>faker</code> no <a href="../tutorial-7/">passo anterior</a>, precisamos instruir o briefcase a instalar <code>httpx2</code> quando ele compilar a nossa aplicação. Modifique a definição <code>requires</code> no nosso <code>pyproject.toml</code> para incluir o novo requisito:</p>
 <div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">"faker"</span><span class="p">,</span>
     <span class="s2">"httpx2"</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>Adicione uma instrução de importação no início do <code>app.py</code> para importar <code>httpx2</code>:</p>
+<p>Adicione uma instrução de importação no topo do <code>app.py</code> para importar <code>httpx2</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">httpx2</span>
 </code></pre></div>
 <p>Depois modifique a chamada de retorno <code>say_hello()</code> para ficar como isto:</p>
@@ -1809,17 +1809,17 @@ aria-label="Cabeçalho"
 </code></pre></div>
 <div class="admonition">
 <p class="admonition-title">Erros de SSL no Android</p>
-<p>Atualmente, há um <a href="https://github.com/sethmlarson/truststore/issues/217">bug conhecido</a> que impede o funcionamento de <code>httpx2</code> no Android — você receberá um erro de verificação SSL.</p>
-<p>Para contornar isso, importe a biblioteca <code>ssl</code> (parte da biblioteca padrão do Python) para seu aplicativo e adicione um argumento <code>verify</code> ao criar o cliente:</p>
+<p>Atualmente, há um <a href="https://github.com/sethmlarson/truststore/issues/217">bug conhecido</a> que impede o funcionamento de <code>httpx2</code> no Android — vai receber um erro de verificação de SSL.</p>
+<p>Para contornar isto, importe a biblioteca <code>ssl</code> (parte da biblioteca standard do Python) para a sua aplicação e adicione um argumento <code>verify</code> ao criar o cliente:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">ssl</span>
 
-<span class="k">async</span> <span class="n">com</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">(</span><span class="n">verify</span><span class="o">=</span><span class="n">ssl</span><span class="o">.</span><span class="n">create_default_context</span><span class="p">())</span> <span class="n">como</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="n">com</span> <span class="n">httpx2</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">(</span><span class="n">verify</span><span class="o">=</span><span class="n">ssl</span><span class="o">.</span><span class="n">create_default_context</span><span class="p">())</span> <span class="n">como</span> <span class="n">cliente</span><span class="p">:</span>
 </code></pre></div>
-<p>Esse argumento não é necessário em outras plataformas.</p>
+<p>Este argumento não é necessário noutras plataformas.</p>
 </div>
 <p>Há apenas três alterações nesta chamada de retorno a partir da versão anterior:</p>
 <ol>
-<li>O cliente criado é um <code>AsyncClient()</code> assíncrono, e não um <code>Client()</code> síncrono. Isso indica ao <code>httpx2</code> que ele deve operar no modo assíncrono, e não no modo síncrono.</li>
+<li>O cliente criado é um <code>AsyncClient()</code> assíncrono, e não um <code>Client()</code> síncrono. Isto indica ao <code>httpx2</code> que deve operar no modo assíncrono, em vez de modo síncrono.</li>
 <li>O gestor de contexto usado para criar o cliente é marcado como <code>async</code>. Isso informa o Python que há uma oportunidade de libertar o controle à medida que se entra e sai do gestor de contexto.</li>
 <li>A chamada <code>get</code> é feita com uma palavra-chave <code>await</code>. Isso instruí a aplicação que, enquanto aguardamos a resposta da rede, ela pode libertar o controle para o ciclo de eventos. Já vimos essa palavra-chave antes - também usamos <code>await</code> ao mostrar a caixa de diálogo. O motivo desse uso é o mesmo da solicitação HTTP - precisamos informar a aplicação que, enquanto o diálogo é mostrado e estamos a aguardar que o utilizador pressione um botão, não há problema em libertar o controle de volta para o ciclo de eventos.</li>
 </ol>
@@ -1832,7 +1832,7 @@ aria-label="Cabeçalho"
 <li>Se mover/redimensionar a janela da aplicação enquanto aguarda o aparecer do diálogo, a janela é redesenhada.</li>
 <li>Se tentar abrir um menu de aplicação, o menu é mostrado imediatamente.</li>
 </ul>
-<p>Agora podemos executar o aplicativo completo. No entanto, como adicionamos um requisito extra (<code>httpx2</code>), também precisamos atualizar os requisitos do nosso aplicativo; podemos fazer isso passando <code>-r</code> para <code>briefcase run</code>. Isso atualizará os requisitos do nosso aplicativo, depois irá recompilá-lo e, por fim, iniciá-lo:</p>
+<p>Agora podemos executar a aplicação completa. No entanto, como adicionamos um requisito extra (<code>httpx2</code>), também precisamos atualizar os requisitos da nossa aplicação; podemos fazer isso ao passar <code>-r</code> para <code>briefcase run</code>. Isto vai atualizar os requisitos da nossa aplicação, depois vai recompilá-la e, por fim, iniciá-la:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">macOS</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">Windows</label><label for="__tabbed_2_4">Android</label><label for="__tabbed_2_5">iOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
