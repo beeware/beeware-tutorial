@@ -16,15 +16,21 @@ jobs:
     name: Update Translations
     if: github.actor != 'brutusthebee'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 1
           token: ${{ secrets.BRUTUS_PAT_TOKEN }}
+          # Don't persist the token in .git/config (avoids the artipacked
+          # credential-leak vector); pushes are authenticated via the gh
+          # credential helper configured in "Configure git" below.
+          persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.X"
           cache: pip
@@ -39,9 +45,14 @@ jobs:
         run: python -m pip install --group 'translate'
 
       - name: Configure git
+        env:
+          GH_TOKEN: ${{ secrets.BRUTUS_PAT_TOKEN }}
         run: |
           git config --local user.email "$(git log --pretty='%ae' -1)"
           git config --local user.name "brutusthebee[bot]"
+          # Authenticate git via the gh credential helper using BRUTUS_PAT_TOKEN,
+          # rather than a token persisted by actions/checkout.
+          gh auth setup-git
 
       - name: Configure Weblate
         env:
