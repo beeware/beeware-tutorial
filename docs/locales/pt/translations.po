@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-20 19:15+0000\n"
+"POT-Creation-Date: 2026-11-02 06:07+0000\n"
 "PO-Revision-Date: 2026-08-21 00:14+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Translate Toolkit 3.20.0\n"
+"X-Generator: Translate Toolkit 3.20.1\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -6404,6 +6404,6 @@ msgstr "Se desejar ir além, há alguns [tutoriais de tópicos]{1} adicionais qu
 msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into [Toga's documentation]{1}. Toga also has its own tutorial [demonstrating how to use various features of the widget toolkit]{2}."
 msgstr "Se quiser saber mais sobre como criar interfaces de utilizador complexas com o Toga, pode mergulhar na [documentação do Toga]{1}. Toga também tem seu próprio tutorial [que demonstra como usar vários recursos do kit de ferramentas de widget]{2}."
 
-#: docs/en/tutorial/tutorial-8.md:289
+#: docs/en/tutorial/tutorial-8.md:288
 msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into [Briefcase's documentation]{1}."
 msgstr "Se quiser saber mais sobre as capacidades do Briefcase, pode mergulhar na [documentação do Briefcase]{1}."

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-20 19:15+0000\n"
+"POT-Creation-Date: 2026-11-02 06:07+0000\n"
 "PO-Revision-Date: 2026-07-02 05:01+0000\n"
 "Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 3.20.0\n"
+"X-Generator: Translate Toolkit 3.20.1\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -6820,7 +6820,7 @@ msgstr "如果你想进一步了解，还有一些额外的 [主题教程]{1}，
 msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into [Toga's documentation]{1}. Toga also has its own tutorial [demonstrating how to use various features of the widget toolkit]{2}."
 msgstr "如果你想进一步了解如何使用 Toga 构建复杂的用户界面，可以查阅 [Toga 文档]{1}。Toga 也有自己的教程[演示如何使用 widget 工具包的各种功能]{2}。"
 
-#: docs/en/tutorial/tutorial-8.md:289
+#: docs/en/tutorial/tutorial-8.md:288
 #, fuzzy
 msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into [Briefcase's documentation]{1}."
 msgstr "如果你想了解更多有关公文包功能的信息，可以查阅[公文包文档]{1}。"
