@@ -1,6 +1,5 @@
 [project]
 site_name = "BeeWare Tutorial"
-site_url = "https://tutorial.beeware.org/zh_TW/"
 docs_dir = "zh_TW"
 
 [project.theme]
