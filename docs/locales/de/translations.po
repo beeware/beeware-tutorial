@@ -6872,10 +6872,9 @@ msgid "Tutorial 3 - Packaging for distribution"
 msgstr "Tutorial 3 - Verpackung für den Vertrieb"
 
 #: docs/en/titles.md
-#, fuzzy
 msgctxt "navigation"
 msgid "Going further"
-msgstr "Weiterführend"
+msgstr "Weiterführende Informationen"
 
 #: docs/en/titles.md
 #, fuzzy

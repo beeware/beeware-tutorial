@@ -7002,7 +7002,7 @@ msgstr "教學 3 - 分發包裝"
 #, fuzzy
 msgctxt "navigation"
 msgid "Going further"
-msgstr "進一步"
+msgstr "更進一步"
 
 #: docs/en/titles.md
 #, fuzzy

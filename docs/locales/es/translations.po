@@ -6414,7 +6414,7 @@ msgstr "Tutorial 3 - Empaquetado para distribución"
 #: docs/en/titles.md
 msgctxt "navigation"
 msgid "Going further"
-msgstr "Yendo más lejos"
+msgstr "Ir más allá"
 
 #: docs/en/titles.md
 msgctxt "navigation"

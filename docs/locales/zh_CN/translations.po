@@ -6816,7 +6816,7 @@ msgstr "教程 3 - 打包与分发"
 #: docs/en/titles.md
 msgctxt "navigation"
 msgid "Going further"
-msgstr "进一步"
+msgstr "更进一步"
 
 #: docs/en/titles.md
 msgctxt "navigation"
