@@ -1,0 +1,11 @@
+[project]
+site_name = "BeeWare Tutorial"
+site_url = "https://tutorial.beeware.org/"
+docs_dir = "en"
+
+[project.theme]
+language = "en"
+
+[project.extra]
+translation_type = "original"
+header = {}

@@ -1,0 +1,19 @@
+[project]
+site_name = "BeeWare Tutorial"
+site_url = "https://tutorial.beeware.org/fr/"
+docs_dir = "fr"
+
+[project.theme]
+language = "fr"
+
+[project.extra]
+language_url = "fr/"
+translation_type = "machine"
+
+[project.extra.header]
+About = "À propos"
+Documentation = "Documentation"
+Community = "Communauté"
+Contributing = "Contribuant"
+News = "Nouvelles"
+Sponsor = "Mécène"
