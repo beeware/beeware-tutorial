@@ -19,14 +19,14 @@ import faker
 Then modify the `say_hello()` callback so it looks like this:
 
 ```python
-async def say_hello(self, widget):
-    fake = faker.Faker()
-    await self.main_window.dialog(
-        toga.InfoDialog(
-            greeting(self.name_input.value),
-            f"A message from {fake.name()}: {fake.text()}",
+    async def say_hello(self, widget):
+        fake = faker.Faker()
+        await self.main_window.dialog(
+            toga.InfoDialog(
+                greeting(self.name_input.value),
+                f"A message from {fake.name()}: {fake.text()}",
+            )
         )
-    )
 ```
 
 Let's run our updated app in Briefcase developer mode to check that our change has worked.

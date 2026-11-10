@@ -26,7 +26,7 @@ The more interesting file is `app.py` - this contains the logic that creates our
 
 ```python
 import toga
-from toga.style.pack import COLUMN, ROW
+
 
 class HelloWorld(toga.App):
     def startup(self):
@@ -36,18 +36,18 @@ class HelloWorld(toga.App):
         self.main_window.content = main_box
         self.main_window.show()
 
+
 def main():
     return HelloWorld()
 ```
 
-Let's go through this line by line:
+Let's go through this line by line.
+
+First, we import the `toga` widget toolkit.
 
 ```python
 import toga
-from toga.style.pack import COLUMN, ROW
 ```
-
-First, we import the `toga` widget toolkit, as well as some style-related utility constants. Our code doesn't use these yet - but we'll make use of them shortly.
 
 Then, we define a class:
 
@@ -60,8 +60,8 @@ Each Toga application has a single `toga.App` instance, representing the running
 Next, we define a `startup()` method:
 
 ```python
-def startup(self):
-    main_box = toga.Box()
+    def startup(self):
+        main_box = toga.Box()
 ```
 
 The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space.
@@ -71,7 +71,7 @@ In this application, we define a single box, but we don't put anything into it.
 Next, we define a window into which we can put this empty box:
 
 ```python
-self.main_window = toga.MainWindow(title=self.formal_name)
+        self.main_window = toga.MainWindow(title=self.formal_name)
 ```
 
 This creates an instance of a `toga.MainWindow`, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window).
@@ -85,8 +85,8 @@ If you have made an error in your code, the main window of the app may not displ
 We then add our empty box as the content of the main window, and instruct the application to show our window:
 
 ```python
-self.main_window.content = main_box
-self.main_window.show()
+        self.main_window.content = main_box
+        self.main_window.show()
 ```
 
 Last of all, we define a `main()` function. This is what creates the instance of our application:
@@ -104,15 +104,13 @@ That's the simplest possible Toga application. Let's put some of our own content
 
 Let's do something more interesting with our `HelloWorld` app.
 
-/// note | Note
-
-When you make these changes, make sure you keep the imports at the top of the file, and the `main()` at the bottom of the file. You only need to update the `HelloWorld` class.
-
-///
-
-Modify your `HelloWorld` class inside `src/helloworld/app.py` so that it looks like this:
+Modify `app.py` so that it looks like this:
 
 ```python
+import toga
+from toga.style.pack import COLUMN, ROW
+
+
 class HelloWorld(toga.App):
     def startup(self):
         main_box = toga.Box(direction=COLUMN)
@@ -142,6 +140,10 @@ class HelloWorld(toga.App):
 
     def say_hello(self, widget):
         print(f"Hello, {self.name_input.value}")
+
+
+def main():
+    return HelloWorld()
 ```
 
 Let's look in detail at what has changed.
@@ -149,30 +151,19 @@ Let's look in detail at what has changed.
 We're still creating a main box; however, we are now applying a style:
 
 ```python
-main_box = toga.Box(direction=COLUMN)
+        main_box = toga.Box(direction=COLUMN)
 ```
 
-Toga's built-in layout system is called "Pack". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are `<div>`, `<span>`, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a `COLUMN` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible.
-
-/// note | Note
-
-For more advanced uses, Toga also supports a separate style object, which is used like this:
-
-```python
-from toga.style import Pack
-main_box = toga.Box(style=Pack(direction=COLUMN))
-```
-
-///
+Toga's built-in layout system is called "Pack". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are `<div>`, `<span>`, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a `COLUMN` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible. The definition for `COLUMN` has been imported from Toga.
 
 Next, we define a couple of widgets:
 
 ```python
-name_label = toga.Label(
-    "Your name: ",
-    margin=(0, 5),
-)
-self.name_input = toga.TextInput(flex=1)
+        name_label = toga.Label(
+            "Your name: ",
+            margin=(0, 5),
+        )
+        self.name_input = toga.TextInput(flex=1)
 ```
 
 Here, we define a Label and a TextInput. Both widgets have styles associated with them; the label will have 5px of margin on its left and right, and no margin on the top and bottom. The TextInput is marked as being flexible - that is, it will absorb all available space in its layout axis.
@@ -182,9 +173,9 @@ The TextInput is assigned as an instance variable of the class. This gives us ea
 Next, we define a box to hold these two widgets:
 
 ```python
-name_box = toga.Box(direction=ROW, margin=5)
-name_box.add(name_label)
-name_box.add(self.name_input)
+        name_box = toga.Box(direction=ROW, margin=5)
+        name_box.add(name_label)
+        name_box.add(self.name_input)
 ```
 
 The `name_box` is a box just like the main box; however, this time, it's a `ROW` box. That means content will be added horizontally, and it will try to make its width as narrow as possible. The box also has some margin - 5px on all sides.
@@ -192,11 +183,11 @@ The `name_box` is a box just like the main box; however, this time, it's a `ROW`
 Now we define a button:
 
 ```python
-button = toga.Button(
-    "Say Hello!",
-    on_press=self.say_hello,
-    margin=5,
-)
+        button = toga.Button(
+            "Say Hello!",
+            on_press=self.say_hello,
+            margin=5,
+        )
 ```
 
 The button also has 5px of margin on all sides. We also define a *handler* - a method to invoke when the button is pressed.
@@ -204,23 +195,23 @@ The button also has 5px of margin on all sides. We also define a *handler* - a m
 Then, we add the name box and the button to the main box:
 
 ```python
-main_box.add(name_box)
-main_box.add(button)
+        main_box.add(name_box)
+        main_box.add(button)
 ```
 
 This completes our layout; the rest of the startup method is as it was previously - defining a `MainWindow`, and assigning the main box as the window's content:
 
 ```python
-self.main_window = toga.MainWindow(title=self.formal_name)
-self.main_window.content = main_box
-self.main_window.show()
+        self.main_window = toga.MainWindow(title=self.formal_name)
+        self.main_window.content = main_box
+        self.main_window.show()
 ```
 
 The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed:
 
 ```python
-def say_hello(self, widget):
-    print(f"Hello, {self.name_input.value}")
+    def say_hello(self, widget):
+        print(f"Hello, {self.name_input.value}")
 ```
 
 The body of the method is a simple print statement - however, it will interrogate the current value of the name input, and use that content as the text that is printed.
