@@ -12,87 +12,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.20.2\n"
 
-#: docs/en/SUMMARY.md:5
-#, fuzzy
-msgid "[Tutorial 0 - Let's get set up!]{1}"
-msgstr "[教學 0 - 讓我們開始設定吧！]{1}"
-
-#: docs/en/SUMMARY.md:6
-#, fuzzy
-msgid "[Tutorial 1 - Your first app]{1}"
-msgstr "[教學 1 - 您的第一個應用程式]{1}"
-
-#: docs/en/SUMMARY.md:7
-#, fuzzy
-msgid "[Tutorial 2 - Making it interesting]{1}"
-msgstr "[教學 2 - 讓它變得有趣]{1}"
-
-#: docs/en/SUMMARY.md:8
-#, fuzzy
-msgid "[Tutorial 3 - Packaging for distribution]{1}"
-msgstr "[教學 3 - 分發包裝]{1}"
-
-#: docs/en/SUMMARY.md:9
-#, fuzzy
-msgid "[Tutorial 4 - Updating your application]{1}"
-msgstr "[教程 4 - 更新您的應用程式]{1}"
-
-#: docs/en/SUMMARY.md:10
-#, fuzzy
-msgid "Tutorial 5 - Taking it mobile"
-msgstr "教程 5 - 移動使用"
-
-#: docs/en/SUMMARY.md:10
-#, fuzzy
-msgid "[Tutorial 5 - Taking it mobile]{1}"
-msgstr "[教程 5 - 移動使用]{1}"
-
-#: docs/en/SUMMARY.md:10
-#, fuzzy
-msgid "[Tutorial 5 - Taking it mobile: Android]{1}"
-msgstr "[教學 5 - 行動裝置：Android]{1}"
-
-#: docs/en/SUMMARY.md:10
-#, fuzzy
-msgid "[Tutorial 5 - Taking it mobile: iOS]{1}"
-msgstr "[教學 5 - 行動裝置：iOS]{1}"
-
-#: docs/en/SUMMARY.md:14
-#, fuzzy
-msgid "[Tutorial 6 - Put it on the web!]{1}"
-msgstr "[教程 6 - 將其放在網路上！]{1}"
-
-#: docs/en/SUMMARY.md:15
-#, fuzzy
-msgid "[Tutorial 7 - Get this (third-)party started]{1}"
-msgstr "[教學 7 - 啟動此（第三方）]{1}"
-
-#: docs/en/SUMMARY.md:16
-#, fuzzy
-msgid "[Tutorial 8 - Making it Smooooth]{1}"
-msgstr "[教學 8 - 使其順～暢]{1}"
-
-#: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:1
+#: docs/en/tutorial/topics/index.md:1
 #, fuzzy
 msgid "Going further"
 msgstr "更進一步"
 
-#: docs/en/SUMMARY.md:17
-#, fuzzy
-msgid "[Going further]{1}"
-msgstr "[進一步]{1}"
-
-#: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:5
+#: docs/en/tutorial/topics/index.md:5
 #, fuzzy
 msgid "[Customizing icons]{1}"
 msgstr "[Customizing icons]{1}"
 
-#: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:9
+#: docs/en/tutorial/topics/index.md:9
 #, fuzzy
 msgid "[Using the camera]{1}"
 msgstr "[使用相機]{1}"
 
-#: docs/en/SUMMARY.md:17 docs/en/tutorial/topics/index.md:13
+#: docs/en/tutorial/topics/index.md:13
 #, fuzzy
 msgid "[Testing times]{1}"
 msgstr "[Testing times]{1}"
@@ -7014,3 +6949,93 @@ msgstr "如果您想進一步瞭解如何使用 Toga 建立複雜的使用者介
 #, fuzzy
 msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into [Briefcase's documentation]{1}."
 msgstr "如果您想瞭解更多關於 Briefcase 的功能，可以深入閱讀 [Briefcase 的說明文件]{1}。"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 5 - Taking it mobile: iOS"
+msgstr "教學 5 - 行動裝置：iOS"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 4 - Updating your application"
+msgstr "教程 4 - 更新您的應用程式"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Customizing icons"
+msgstr "Customizing icons"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 5 - Taking it mobile: Android"
+msgstr "教學 5 - 行動裝置：Android"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 5 - Taking it mobile"
+msgstr "教程 5 - 移動使用"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 8 - Making it Smooooth"
+msgstr "教學 8 - 使其順～暢"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Testing times"
+msgstr "Testing times"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 3 - Packaging for distribution"
+msgstr "教學 3 - 分發包裝"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Going further"
+msgstr "更進一步"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 1 - Your first app"
+msgstr "教學 1 - 您的第一個應用程式"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 2 - Making it interesting"
+msgstr "教學 2 - 讓它變得有趣"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 6 - Put it on the web!"
+msgstr "教程 6 - 將其放在網路上！"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 0 - Let's get set up!"
+msgstr "教學 0 - 讓我們開始設定吧！"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Using the camera"
+msgstr "使用相機"
+
+#: docs/en/titles.md
+#, fuzzy
+msgctxt "navigation"
+msgid "Tutorial 7 - Get this (third-)party started"
+msgstr "教學 7 - 啟動此（第三方）"

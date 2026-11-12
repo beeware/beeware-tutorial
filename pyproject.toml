@@ -3,10 +3,6 @@ pre-commit = [
     "pre-commit == 4.7.0",
 ]
 
-redirects = [
-    "mkdocs-redirects == 1.2.3",
-]
-
 tox-uv = [
     "tox-uv == 1.37.0",
 ]
@@ -27,9 +23,9 @@ translate = [
 ]
 
 docs = [
-    "beeware-docs-tools @ git+https://github.com/beeware/beeware-docs-tools",
+    # TEMPORARY: pinned to the docs-tools Zensical migration branch. Revert to beeware/main once that docs-tools PR is merged.
+    "beeware-docs-tools @ git+https://github.com/kattni/beeware-docs-tools@tooling/zensical-migration",
     # "beeware-docs-tools @ file://../beeware-docs-tools",
-    {include-group = "redirects"},
 ]
 
 [tool.rumdl]
@@ -44,7 +40,6 @@ disable = ["MD014",]
 
 [tool.rumdl.per-file-ignores]
 "docs/en/how-to/style-guide.md" = ["MD041"]
-"docs/en/SUMMARY.md" = ["MD041"]
 
 [tool.rumdl.MD026]  # Remove punctuation at the end of headings
 punctuation = ",;:"

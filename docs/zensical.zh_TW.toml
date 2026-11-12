@@ -1,0 +1,18 @@
+[project]
+site_name = "BeeWare Tutorial"
+docs_dir = "zh_TW"
+
+[project.theme]
+language = "zh-TW"
+
+[project.extra]
+language_url = "zh_TW/"
+translation_type = "machine"
+
+[project.extra.header]
+About = "關於"
+Documentation = "文件"
+Community = "社群"
+Contributing = "貢獻"
+News = "新聞"
+Sponsor = "贊助商"
