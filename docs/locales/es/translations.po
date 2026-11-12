@@ -1,18 +1,6 @@
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: BeeWare 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 06:07+0000\n"
-"PO-Revision-Date: 2026-07-18 16:01+0000\n"
-"Last-Translator: Libre <6n0n1m0s@proton.me>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Translate Toolkit 3.20.1\n"
+msgstr "Project-Id-Version: BeeWare 0.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-11-02 06:07+0000\nPO-Revision-Date: 2026-11-12 10:51+0000\nLast-Translator: fserrador <fserrador@users.noreply.hosted.weblate.org>\nLanguage-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/es/>\nLanguage: es\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 2026.11.2.dev0\n"
 
 #: docs/en/SUMMARY.md:5
 msgid "[Tutorial 0 - Let's get set up!]{1}"
@@ -1055,9 +1043,8 @@ msgstr ""
 "[helloworld] Iniciando la aplicación..."
 
 #: docs/en/tutorial/topics/custom-icons.md:365
-#, fuzzy
 msgid "If you get a stack trace referencing `faker` or `httpx2` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements."
-msgstr "Si al ejecutar la aplicación aparece un seguimiento de pila que hace referencia a `faker` o `httpx2`, es posible que no hayas ejecutado la aplicación en los pasos 7 u 8 del tutorial. Vuelve a ejecutar la aplicación añadiendo el argumento `-r` para actualizar los requisitos de la aplicación."
+msgstr "Si obtiene una traza de pila referenciando a `faker` o `httpx2` cuando se ejecute la aplicación, es posible que no hayas ejecutado su aplicación durante los pasos 7 u 8 del tutorial. Vuelve a ejecutar la aplicación, añadiendo el argumento `-r` para actualizar los requisitos de la aplicación."
 
 #: docs/en/tutorial/topics/custom-icons.md:369
 msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your `pyproject.toml`, just after the `icon` definition:"
@@ -6022,40 +6009,30 @@ msgid "The Python standard library contains all the tools you'd need to access a
 msgstr "La biblioteca estándar de Python contiene todas las herramientas necesarias para acceder a un API. Sin embargo, las API incorporadas son de muy bajo nivel. Son buenas implementaciones del protocolo HTTP, pero requieren que el usuario gestione muchos detalles de bajo nivel, como la redirección de URL, las sesiones, la autenticación y la codificación de la carga útil. Como «usuario normal de navegador», probablemente estés acostumbrado a dar por sentados estos detalles, ya que el navegador los gestiona por ti."
 
 #: docs/en/tutorial/tutorial-8.md:15
-#, fuzzy
 msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries - a library called [`httpx2`]{1} - to access a simple API."
-msgstr "Por ello, se han desarrollado bibliotecas de terceros que envuelven las API integradas y ofrecen una API más sencilla que se ajusta mejor a la experiencia habitual del navegador. Vamos a utilizar una de esas bibliotecas —una llamada [`httpx2`]{1}— para acceder a una API sencilla."
+msgstr "Como un resultado, la gente ha desarrollado bibliotecas de terceras partes que envuelven las API integradas y ofrecen una API más sencilla que se ajusta mejor a la experiencia habitual del navegador. Vamos a utilizar una de esas bibliotecas —una biblioteca llamada [`httpx2`]{1}— para acceder a una API sencilla."
 
 #: docs/en/tutorial/tutorial-8.md:17
-#, fuzzy
 msgid "Let's add an `httpx2` API call to our app. First, as with `faker` in the [previous step]{1}, we need to tell briefcase to install `httpx2` when it builds our app. Modify the `requires` setting in our `pyproject.toml` to include the new requirement:"
-msgstr "Vamos a añadir una llamada a la API `httpx2` a nuestra aplicación. En primer lugar, al igual que con `faker` en el [paso anterior]{1}, tenemos que indicarle a Briefcase que instale `httpx2` cuando compile nuestra aplicación. Modifica la configuración de `requires` en nuestro `pyproject.toml` para incluir el nuevo requisito:"
+msgstr "Vamos a añadir una llamada al API `httpx2` a nuestra aplicación. En primer lugar, al igual que con el [paso anterior]{1}, necesitamos decir al Portafolio que instale `httpx2` cuando construya nuestra aplicación. Modifique los ajustes de nuestro `pyproject.toml` para incluir el requisito nuevo:"
 
 #: docs/en/tutorial/tutorial-8.md:19
-#, fuzzy
 msgid ""
 "requires = [\n"
 "    \"faker\",\n"
 "    \"httpx2\",\n"
 "]"
-msgstr ""
-"requiere = [\n"
-"    \"faker\",\n"
-"    \"httpx2\",\n"
-"]"
+msgstr "requires = [\n    \"faker\",\n    \"httpx2\",\n]"
 
 #: docs/en/tutorial/tutorial-8.md:26
-#, fuzzy
 msgid "Add an import to the top of the `app.py` to import `httpx2`:"
-msgstr "Añade una instrucción «import» al principio del bloque `app.py` para importar `httpx2`:"
+msgstr "Añade una importación a la cima de `app.py` para importar `httpx2`:"
 
 #: docs/en/tutorial/tutorial-8.md:28
-#, fuzzy
 msgid "import httpx2"
-msgstr "import httpx2"
+msgstr "importe httpx2"
 
 #: docs/en/tutorial/tutorial-8.md:34
-#, fuzzy
 msgid ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
@@ -6070,20 +6047,7 @@ msgid ""
 "            f\"A message from {fake.name()}: {payload['body']}\",\n"
 "        )\n"
 "    )"
-msgstr ""
-"async def say_hello(self, widget):\n"
-"    fake = faker.Faker()\n"
-"    with httpx2.Client() as client:\n"
-"    response = client.get(\"https://tutorial.beeware.org/tutorial/message.json\")\n"
-"\n"
-"    payload = response.json()\n"
-"\n"
-"    await self.main_window.dialog(\n"
-" toga.InfoDialog(\n"
-" greeting(self.name_input.value),\n"
-" f\"Un mensaje de {fake.name()}: {payload['body']}\",\n"
-" )\n"
-"    )"
+msgstr "async def say_hello(self, widget):\n    fake = faker.Faker()\n    with httpx2.Client() as client:\n        response = client.get(\"https://tutorial.beeware.org/tutorial/message.json\")\n\n    payload = response.json()\n\n    await self.main_window.dialog(\n        toga.InfoDialog(\n            greeting(self.name_input.value),\n            f\"Un mensaje de {fake.name()}: {payload['body']}\",\n        )\n    )"
 
 #: docs/en/tutorial/tutorial-8.md:50
 msgid "This will change the `say_hello()` callback so that when it is invoked, it will:"
@@ -6240,7 +6204,6 @@ msgid "To make our tutorial asynchronous, modify the `say_hello()` event handler
 msgstr "Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de eventos `say_hello()` para que se vea así:"
 
 #: docs/en/tutorial/tutorial-8.md:178
-#, fuzzy
 msgid ""
 "async def say_hello(self, widget):\n"
 "    fake = faker.Faker()\n"
@@ -6255,60 +6218,38 @@ msgid ""
 "            f\"A message from {fake.name()}: {payload['body']}\",\n"
 "        )\n"
 "    )"
-msgstr ""
-"async def say_hello(self, widget):\n"
-"    fake = faker.Faker()\n"
-"    async with httpx2.AsyncClient() as client:\n"
-"    response = await client.get(\"https://jsonplaceholder.typicode.com/posts/42\")\n"
-"\n"
-"    payload = response.json()\n"
-"\n"
-"    await self.main_window.dialog(\n"
-" toga.InfoDialog(\n"
-" greeting(self.name_input.value),\n"
-" f\"Un mensaje de {fake.name()}: {payload['body']}\",\n"
-" )\n"
-"    )"
+msgstr "async def say_hello(self, widget):\n    fake = faker.Faker()\n    async with httpx2.AsyncClient() as client:\n        response = await client.get(\"https://jsonplaceholder.typicode.com/posts/42\")\n\n    payload = response.json()\n\n    await self.main_window.dialog(\n        toga.InfoDialog(\n            greeting(self.name_input.value),\n            f\"Un mensaje de {fake.name()}: {payload['body']}\",\n        )\n    )"
 
 #: docs/en/tutorial/tutorial-8.md:194
-#, fuzzy
 msgid "/// admonition | SSL errors on Android"
 msgstr "/// admonition | Errores SSL en Android"
 
 #: docs/en/tutorial/tutorial-8.md:196
-#, fuzzy
 msgid "There is currently a [known bug]{1} that breaks `httpx2` on Android - you'll get an SSL verification error."
-msgstr "Actualmente hay un [error conocido]{1} que impide el funcionamiento de `httpx2` en Android; aparecerá un error de verificación SSL."
+msgstr "Actualmente hay un [defecto conocido]{1} que impide el funcionamiento de `httpx2` en Android; obtendrá un error de verificación SSL."
 
 #: docs/en/tutorial/tutorial-8.md:198
-#, fuzzy
 msgid "To work around this, import the `ssl` library (part of the Python standard library) into your app, and add a `verify` argument when creating the client:"
-msgstr "Para solucionar este problema, importa la biblioteca `ssl` (que forma parte de la biblioteca estándar de Python) en tu aplicación y añade un argumento `verify` al crear el cliente:"
+msgstr "Para evitar esto, importa la biblioteca `ssl` (que forma parte de la biblioteca estándar de Python) en tu aplicación, y añade un argumento `verify` al crear el cliente:"
 
 #: docs/en/tutorial/tutorial-8.md:200
-#, fuzzy
 msgid ""
 "import ssl\n"
 "\n"
 "async with httpx2.AsyncClient(verify=ssl.create_default_context()) as client:"
-msgstr ""
-"import ssl\n"
-"\n"
-"async with httpx2.AsyncClient(verify=ssl.create_default_context()) as client:"
+msgstr "import ssl\n\nasync with httpx2.AsyncClient(verify=ssl.create_default_context()) as client:"
 
 #: docs/en/tutorial/tutorial-8.md:206
-#, fuzzy
 msgid "This argument is not required on other platforms."
-msgstr "Este argumento no es necesario en otras plataformas."
+msgstr "Este argumento no es requerido en otras plataformas."
 
 #: docs/en/tutorial/tutorial-8.md:210
 msgid "There are only three changes to this callback from the previous version:"
 msgstr "Sólo hay tres cambios en esta retro‐invocación desde la versión anterior:"
 
 #: docs/en/tutorial/tutorial-8.md:212
-#, fuzzy
 msgid "The client that is created is an asynchronous `AsyncClient()`, rather than a synchronous `Client()`. This tells `httpx2` that it should operate in asynchronous mode, rather than synchronous mode."
-msgstr "El cliente que se crea es un `AsyncClient()` asíncrono, en lugar de un `Client()` síncrono. Esto indica a `httpx2` que debe funcionar en modo asíncrono, en lugar de en modo síncrono."
+msgstr "El cliente que se crea es un `AsyncClient()` asíncrono, en lugar de un `Client()` síncrono. Esto le dice a `httpx2` que debería funcionar en modo asíncrono, en lugar de en modo síncrono."
 
 #: docs/en/tutorial/tutorial-8.md:213
 msgid "The context manager used to create the client is marked as `async`. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
@@ -6347,9 +6288,8 @@ msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr "Si intentas abrir un menú de aplicación, el menú aparecerá inmediatamente."
 
 #: docs/en/tutorial/tutorial-8.md:227
-#, fuzzy
 msgid "We can now run the full app. However, as we've added an extra requirement (`httpx2`) we also need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:"
-msgstr "Ahora podemos ejecutar la aplicación completa. Sin embargo, como hemos añadido un requisito adicional (`httpx2`), también tenemos que actualizar los requisitos de nuestra aplicación; podemos hacerlo pasando `-r` a `briefcase run`. Esto actualizará los requisitos de nuestra aplicación, volverá a compilarla y, a continuación, la iniciará:"
+msgstr "Ahora podemos ejecutar la aplicación completa. Sin embargo, como hemos añadido un requisito adicional (`httpx2`), también tenemos que actualizar nuestros requisitos de nuestra aplicación; podemos hacerlo pasando `-r` a `briefcase run`. Esto actualizará los requisitos de nuestra aplicación, después volverá a compilarla y, a continuación lanza la aplicación:"
 
 #: docs/en/tutorial/tutorial-8.md:231 docs/en/tutorial/tutorial-8.md:239
 msgid "(beeware-venv) $ briefcase run -r"
