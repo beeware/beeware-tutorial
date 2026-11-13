@@ -32,19 +32,19 @@ import httpx2
 Then modify the `say_hello()` callback so it looks like this:
 
 ```python
-async def say_hello(self, widget):
-    fake = faker.Faker()
-    with httpx2.Client() as client:
-        response = client.get("https://tutorial.beeware.org/tutorial/message.json")
+    async def say_hello(self, widget):
+        fake = faker.Faker()
+        with httpx2.Client() as client:
+            response = client.get("https://tutorial.beeware.org/tutorial/message.json")
 
-    payload = response.json()
+        payload = response.json()
 
-    await self.main_window.dialog(
-        toga.InfoDialog(
-            greeting(self.name_input.value),
-            f"A message from {fake.name()}: {payload['body']}",
+        await self.main_window.dialog(
+            toga.InfoDialog(
+                greeting(self.name_input.value),
+                f"A message from {fake.name()}: {payload['body']}",
+            )
         )
-    )
 ```
 
 This will change the `say_hello()` callback so that when it is invoked, it will:
